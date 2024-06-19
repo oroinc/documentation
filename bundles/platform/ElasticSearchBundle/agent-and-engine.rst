@@ -9,7 +9,7 @@ Index Agent
 **Class:** Oro\\Bundle\\ElasticSearchBundle\\Engine\\IndexAgent
 
 Index agent is used by the search engine to get index name, initialize client and perform reindexing.
-The agent receives DI configuration of the search engine, like access credentials and index name, and uses it to setup entity mapping.
+The agent receives DI configuration of the search engine, like access credentials and index name, and uses it to set up entity mapping.
 Afterwards it supplies additional settings to tokenize text fields and merge all generated data with the external configuration.
 
 The entity mapping is built based on the search entity configuration that is defined in `search.yml` files, main configuration and
