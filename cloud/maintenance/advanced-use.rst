@@ -291,7 +291,7 @@ Webserver configuration can be modified, as illustrated below:
 Redirects Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-This configuration option enables you to setup redirects to the existing URLs of OroCloud application.
+This configuration option enables you to set up redirects to the existing URLs of OroCloud application.
 
 * **redirects_map** — the hash where the key is an old URL, and the value is a new URL.
 

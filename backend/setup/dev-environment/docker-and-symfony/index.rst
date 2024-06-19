@@ -13,7 +13,7 @@ Set Up the Environment
 
 .. hint::
 
-   There are quick guides to setup Docker and Symfony Server development stack:
+   There are quick guides to set up Docker and Symfony Server development stack:
 
    - :ref:`Setup on Mac OS X <setup-dev-env-docker-symfony_mac>`
    - :ref:`Setup on Ubuntu 20.04 LTS <setup-dev-env-docker-symfony_ubuntu>`
@@ -258,12 +258,3 @@ If the list is empty, run ``docker compose up -d`` to start all the services.
 Make sure all the application services are up and healthy with ``docker compose ps``. There should be ``pgsql`` service in the list.
 
 If the list is empty, run ``docker compose up -d`` to start all the services.
-
-.. toctree::
-   :titlesonly:
-   :hidden:
-   :maxdepth: 1
-
-   Setup on Ubuntu <ubuntu>
-   Setup on macOS <mac>
-   Setup on Windows <windows>

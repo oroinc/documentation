@@ -357,4 +357,10 @@ backend/entities-data-management/search/elastic-tuning /backend/architecture/tec
 backend/entities-data-management/search/fuzzy-search /backend/architecture/tech-stack/search/fuzzy-search
 backend/entities-data-management/search/query-builder /backend/architecture/tech-stack/search/query-builder
 backend/entities-data-management/search/troubleshooting /backend/architecture/tech-stack/search/troubleshooting
+user/back-office/products/products/product-recommendations /user/concept-guides/catalog-promotions/product-management/index
 frontend/optimize-build /frontend/storefront/optimize-build
+backend/setup/dev-environment/community-edition /backend/setup/dev-environment/docker-and-symfony/index
+backend/setup/dev-environment/enterprise-edition /backend/setup/dev-environment/docker-and-symfony/index
+backend/setup/dev-environment/docker-and-symfony/mac /backend/setup/dev-environment/mac
+backend/setup/dev-environment/docker-and-symfony/ubuntu /backend/setup/dev-environment/ubuntu
+backend/setup/dev-environment/docker-and-symfony/windows /backend/setup/dev-environment/windows

@@ -4,7 +4,7 @@
 Set up Development Environment for OroPlatform Based Application
 ================================================================
 
-To set up the development environment for Oro applications customization tasks, please follow the steps outlined in the sections below.
+Please follow the steps outlined in the sections below to set up the development environment for Oro application customization tasks.
 
 .. admonition:: Business Tip
 
@@ -22,7 +22,7 @@ Meet the Hardware and OS Requirements
 
 * **Disk Drive**
 
-  A solid-state drive (SSD) is recommended. As Oro application uses lots of files (vendors, cache), an SSD makes everyday development operations much faster than when using HDD.
+  A solid-state drive (SSD) is recommended. As the Oro application uses many files (vendors, cache), an SSD speeds up everyday development operations much faster than an HDD.
 
 * **Available RAM**
 
@@ -96,13 +96,19 @@ Create a Custom Application
 Set Up Application Environment
 ------------------------------
 
-If you are using Oracle Linux, you can follow the :ref:`Environment Setup for Community Edition <environment-setup-community>`
-or :ref:`Environment Setup for the Enterprise Edition <environment-setup-enterprise>` to set up the environment for your custom Oro application.
-Otherwise, we recommend using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`.
+We recommend using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>` to set up the environment for your custom Oro application.
+
+.. hint::
+
+   There are quick guides to set up the Docker and Symfony Server development stack:
+
+   - :ref:`Setup on Mac OS X <setup-dev-env-docker-symfony_mac>`
+   - :ref:`Setup on Ubuntu 20.04 LTS <setup-dev-env-docker-symfony_ubuntu>`
+   - :ref:`Setup on Windows Subsystem for Linux (WSL) 2 <setup-dev-env-docker-symfony_windows>`
 
 Alternatively, to have a fully dockerized environment, you can use |Docker images and stacks for OroPlatform based applications by the Kiboko team|.
 
-To checks that the environment meets the application requirements, use the ``oro:check-requirements`` command:
+To check that the environment meets the application requirements, use the ``oro:check-requirements`` command:
 
 .. code-block:: none
 
@@ -118,7 +124,7 @@ By default, this command shows only errors, but you can increase the verbosity t
 
    php bin/console oro:check-requirements -vv
 
-The command will return 0 on exit if all application requirements are met and it will return 1 if some of the requirements are not fulfilled.
+The command will return 0 on exit if all application requirements are met and 1 if some of the requirements are not fulfilled.
 
 .. _dev-guide-development-practice-setup-dev-env-install-app:
 
@@ -131,12 +137,13 @@ When the environment is set up, follow the instructions in the :ref:`Installatio
 
    If you use :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`, follow :ref:`this guide <setup-dev-env-docker-symfony-install-application>`.
 
+
 .. _dev-guide-development-practice-setup-dev-env-create-bundle:
 
 Create a Custom Bundle
 ----------------------
 
-All OroPlatform-based applications have unique features that facilitate smooth development routine, like autoregistration of bundles and configuration files, for example.
+All OroPlatform-based applications have unique features that facilitate smooth development routines, like autoregistration of bundles and configuration files, for example.
 
 However, these features assume that all application code is **organized in bundles**. For this reason, you have to create your own bundle for your custom code to perform customization tasks.
 
@@ -151,8 +158,9 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    :hidden:
    :maxdepth: 1
 
-   Community Edition <community-edition>
-   Enterprise Edition <enterprise-edition>
+   Setup on Ubuntu <ubuntu>
+   Setup on macOS <mac>
+   Setup on Windows <windows>
    Docker & Symfony Server <docker-and-symfony/index>
    Web Server Configuration <web-server-config>
    Environment Types <environment-type-based-configuration>
