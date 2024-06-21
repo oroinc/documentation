@@ -37,9 +37,10 @@ As an illustration, we are going to proceed through the steps of the Checkout wo
 
 .. start_checkout_sample_0
 
-Several items have been added to a shopping list in the OroCommerce storefront. To proceed to the checkout, click **Create Order** on the bottom right of the shopping list page.
+Several items have been added to a shopping list in the OroCommerce storefront. To proceed to the checkout, click **Create Order**.
 
-|create_order_img|
+.. image:: /user/img/system/workflows/checkout/CreateOrderButton.png
+   :alt: Shopping list with option to create order and proceed to checkout
 
 .. note:: The **Create Order** button is available if the following conditions are met:
 
@@ -52,21 +53,20 @@ A warning message is shown if for some reason you are unable to start the checko
 
 .. finish_checkout_sample_0
 
-.. |create_order_img| image:: /user/img/system/workflows/checkout/CreateOrderButton.png
-   :alt: Shopping list with option to create order and proceed to checkout
-
-.. check the conditions
 
 Step 1: Agreements
 ^^^^^^^^^^^^^^^^^^
 
-At the Agreements step, you are required to accept all mandatory consents to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
+At the Agreements step, you are required to accept all mandatory :ref:`consents <system-consent-management>` to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
 
-  .. image:: /user/img/system/workflows/checkout_with_consents/storefront_step_agreements.png
-     :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
+.. important:: Keep in mind that for the Agreements section to be displayed in the checkout, you need to :ref:`add the necessary consents to the list of enabled consents <admin--guide--commerce--configuration--customers--consents--enable--globally>` in the system configuration.
 
-  .. image:: /user/img/system/workflows/checkout_with_consents/storefront_step_accept_agreement.png
-     :alt: Accept a mandatory consent on the agreements step at checkout
+
+.. image:: /user/img/system/workflows/checkout_with_consents/storefront_step_agreements.png
+   :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
+
+.. image:: /user/img/system/workflows/checkout_with_consents/storefront_step_accept_agreement.png
+   :alt: Accept a mandatory consent on the agreements step at checkout
 
 Once the consent is accepted, click **Continue** to proceed with the checkout.
 
@@ -85,7 +85,7 @@ Clicking **Continue** redirects you to the next step.
 
 .. finish_checkout_sample_1
 
-.. image:: /user/img/system/workflows/checkout/Checkout_BilInfo.png
+.. image:: /user/img/system/workflows/checkout_with_consents/Checkout_BilInfo.png
    :alt: The billing information step at the checkout (with consents)
 
 Step 3: Shipping Information
@@ -99,7 +99,7 @@ To edit shipping information, clear the **Use billing address** box and provide 
 
 .. finish_checkout_sample_2
 
-.. image:: /user/img/system/workflows/checkout/UseBillingAddressBox.png
+.. image:: /user/img/system/workflows/checkout_with_consents/UseBillingAddressBox.png
 
 Step 4: Shipping Method
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -110,7 +110,7 @@ Provide a :ref:`shipping method <user-guide--shipping>` by selecting one from th
 
 .. finish_checkout_sample_3
 
-.. image:: /user/img/system/workflows/checkout/Shipping_Info.png
+.. image:: /user/img/system/workflows/checkout_with_consents/Shipping_Info.png
    :alt: The shipping method step at the checkout
 
 Step 5: Payment
@@ -122,7 +122,7 @@ Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it fr
 
 .. finish_checkout_sample_4
 
-.. image:: /user/img/system/workflows/checkout/Payment.png
+.. image:: /user/img/system/workflows/checkout_with_consents/Payment.png
    :alt: The payment method step at the checkout
 
 Step 6: Order Review
@@ -145,16 +145,13 @@ Once all the necessary information has been provided, you can review the order a
 * Edit the Order
 * Edit the already provided information by clicking |IcEditInline| on the left side of the page
 
-To submit the order, click **Submit Order** at the bottom of the page.
+To submit the order, click **Submit Order**.
 
 .. finish_checkout_sample_alt5
 
 Once submitted, the order will be received and dealt with by the sales team.
 
 .. finish_checkout_sample_5
-
-.. |order_submitted_img| image:: /user/img/system/workflows/checkout/order_received.png
-   :alt: The page of the order in the back-office, once the order is submitted
 
 
 .. admonition:: Business Tip

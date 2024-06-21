@@ -452,3 +452,9 @@ frontend/storefront-design/storefront-style-guide/design-customization/colors /f
 frontend/storefront-design/storefront-style-guide/design-customization/ui-elements /frontend/storefront-style-guide/index
 user/back-office/marketing/search-history /user/back-office/marketing/search
 user/back-office/marketing/synonyms /user/back-office/marketing/search
+frontend/optimize-build /frontend/storefront/optimize-build
+backend/setup/dev-environment/community-edition /backend/setup/dev-environment/docker-and-symfony/index
+backend/setup/dev-environment/enterprise-edition /backend/setup/dev-environment/docker-and-symfony/index
+backend/setup/dev-environment/docker-and-symfony/mac /backend/setup/dev-environment/mac
+backend/setup/dev-environment/docker-and-symfony/ubuntu /backend/setup/dev-environment/ubuntu
+backend/setup/dev-environment/docker-and-symfony/windows /backend/setup/dev-environment/windows

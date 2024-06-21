@@ -45,5 +45,10 @@ You can also configure other CORS options. Here is the default configuration:
             expose_headers: []
 
 
+.. note::
+
+    The CORS for OAuth 2.0 token endpoint is configured as described in :ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle--configuration>`.
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

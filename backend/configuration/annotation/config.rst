@@ -128,8 +128,6 @@ Dictionary entities are responsible for storing a predefined set of values of a 
 
 * **representation_field** *string* - specifies the representation field used to render titles for search items in the reports filter.
 
-* **activity_support** *boolean* - enables the "activity_support" functionality.
-
 ``draft``
 ~~~~~~~~~
 

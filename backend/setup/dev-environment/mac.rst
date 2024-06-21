@@ -14,18 +14,18 @@ Environment Setup
 
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-2. Install Docker and start the Docker daemon:
+2. Install Docker with Docker Compose and start the Docker daemon:
 
    .. code-block:: none
 
       brew cask install docker
       open /Applications/Docker.app
 
-3. Install PHP 8.3, Composer, Node.js 20 and Docker Compose:
+3. Install PHP 8.3, Composer and Node.js 20:
 
    .. code-block:: none
 
-      brew install php@8.3 composer node docker-compose
+      brew install php@8.3 composer node
       echo 'export PATH="/usr/local/opt/php@8.3/bin:$PATH" \nexport PATH="/usr/local/opt/php@8.3/sbin:$PATH" \nexport PATH="/usr/local/opt/node@20/bin:$PATH"' >> ~/.bash_profile
 
 4. If you going to use an Enterprise Edition of the application, install and enable the mongodb php extension:

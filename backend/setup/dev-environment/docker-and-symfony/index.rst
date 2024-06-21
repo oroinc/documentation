@@ -13,7 +13,7 @@ Set Up the Environment
 
 .. hint::
 
-   There are quick guides to setup Docker and Symfony Server development stack:
+   There are quick guides to set up Docker and Symfony Server development stack:
 
    - :ref:`Setup on Mac OS X <setup-dev-env-docker-symfony_mac>`
    - :ref:`Setup on Ubuntu 20.04 LTS <setup-dev-env-docker-symfony_ubuntu>`
@@ -54,7 +54,7 @@ Install the Application
 
 .. code-block:: none
 
-   docker-compose up -d
+   docker compose up -d
 
 .. note::
     On Linux, it may not work if you use Docker as a root user. In this case, consider adding your user to the “docker” group with:
@@ -67,7 +67,7 @@ Install the Application
 
 .. code-block:: none
 
-   composer install -n
+   symfony composer install -n
 
 4. If you are using an Enterprise edition application, update the parameters.yml file. Skip this step if you are installing a Community edition application.
 
@@ -199,35 +199,35 @@ Run Application Services
 
 .. code-block:: none
 
-   docker-compose up -d
+   docker compose up -d
 
 Check Services Logs
 ^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: none
 
-   docker-compose logs -f
+   docker compose logs -f
 
 Check Application Services Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: none
 
-   docker-compose ps
+   docker compose ps
 
 Stop Application Services (No Data Loss)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: none
 
-   docker-compose stop
+   docker compose stop
 
 Destroy Application Services with all Volumes (Data Loss)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: none
 
-   docker-compose down -v
+   docker compose down -v
 
 For more details, see |Overview of Docker Compose|.
 
@@ -251,19 +251,10 @@ This error appears when the Symfony server does not pass environment variables f
 
 Make sure that all the application services are up and healthy with ``docker-compose ps``. There should be a ``redis`` service in the list.
 
-If the list is empty, run ``docker-compose up -d`` to start all the services.
+If the list is empty, run ``docker compose up -d`` to start all the services.
 
-**An exception occured while establishing a connection to figure out your platform version**
+**An exception occurred while establishing a connection to figure out your platform version**
 
-Make sure all the application services are up and healthy with ``docker-compose ps``. There should be ``pgsql`` service in the list.
+Make sure all the application services are up and healthy with ``docker compose ps``. There should be ``pgsql`` service in the list.
 
-If the list is empty, run ``docker-compose up -d`` to start all the services.
-
-.. toctree::
-   :titlesonly:
-   :hidden:
-   :maxdepth: 1
-
-   Setup on Ubuntu <ubuntu>
-   Setup on macOS <mac>
-   Setup on Windows <windows>
+If the list is empty, run ``docker compose up -d`` to start all the services.
