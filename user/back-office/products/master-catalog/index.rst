@@ -38,12 +38,12 @@ To create a master catalog category:
 
    * **URL Slug** — A web address generated automatically once the title of the category is defined. It is used to build a human-readable URL for the product page in the storefront. Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the same icon again to return to the single-language view.
 
-   * **Small Image** — An image used to represent the category in the storefront.
+   * **Small Image** — An image used to represent the category in the storefront. The setting applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility.
 
-   .. image:: /user/img/products/master_catalog/master_catalog_3.png
-      :alt: Representation of a small image in the storefront
+   * **Large Image** — An image used to represent the category in the storefront.
 
-   * **Large Image** — An image reserved for customization purposes.
+     .. image:: /user/img/products/master_catalog/large_image.png
+        :alt: Representation of the large image in the storefront
 
 4. In the **Short Description** section, provide a short but meaningful description of the category you are creating as a default value. Move from tab to tab to localize the description by setting the required fallback option. You can select whether to fall back to the default value, parent localization, or a custom value from the dropdown. When selecting the custom value, provide the localized version of the short description in the text field.
 

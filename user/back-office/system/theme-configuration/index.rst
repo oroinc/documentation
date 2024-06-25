@@ -67,7 +67,7 @@ To configure your current storefront theme:
      .. image:: /user/img/system/theme-configuration/search-on-small-screens.png
         :alt: Two representations of search on small screens in the storefront
 
-   * **Page Template** --- Select the product page template from the list. A page template is used to render the product page in the storefront by default, unless the template is overridden in the product details. Available options are *Tabs* and *Wide*.
+   * **Page Template** --- Select the product page template from the list. A page template is used to render the product page in the storefront by default, unless the template is overridden in the product details. Available options are *Default*, *Tabs*, and *Wide*.
 
      **Default Template**:
 
@@ -86,8 +86,13 @@ To configure your current storefront theme:
 
    * **Filter Panel Position** --- Specify where the filter panel should be represented in the storefront. Available options are *Top* and *Sidebar*.
 
-     .. image:: /user/img/system/theme-configuration/filter-panel-position.png
-        :alt: Two representations of filter panel positions in the storefront
+   .. image:: /user/img/system/theme-configuration/filter-panel-position.png
+      :alt: Two representations of filter panel positions in the storefront
+
+   .. hint::
+      To specify how to display the multi-select filter options, refer to the :ref:`theme-related settings <configuration--commerce--design--theme>`.
+
+      To control whether to hide or disable product attributes within filters, refer to the :ref:`filters and sorting settings <configuration--guide--commerce--configuration--catalog--filters-sorters>` documentation.
 
 6. Click **Save Settings**.
 

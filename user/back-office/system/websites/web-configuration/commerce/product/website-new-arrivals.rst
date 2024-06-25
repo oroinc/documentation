@@ -24,7 +24,7 @@ On the Product Promotions configuration page, you can enable **New** product ico
 Configure New Arrivals per Website (Version 5.1 and Below)
 ----------------------------------------------------------
 
-.. important:: The configuration applies to OroCommerce version 5.1 and below. To configure the new arrivals products block for the **Refreshing Teal** theme, please refer to the :ref:`related documentation <concept-guides--product-management--new-arrivals-products>`.
+.. important:: The configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please configure this option via the product segment content widget under Marketing > Content Widgets following the :ref:`new configuration logic <concept-guides--product-management--new-arrivals-products>`.
 
 Prerequisites
 ^^^^^^^^^^^^^

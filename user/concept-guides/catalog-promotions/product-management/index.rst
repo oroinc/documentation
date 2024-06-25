@@ -184,7 +184,7 @@ You can enable and configure the up-sell product feature options :ref:`globally 
 Featured Products
 ^^^^^^^^^^^^^^^^^
 
-.. note:: The Featured Products block is implemented differently for **Refreshing Teal** theme and **5.1 or earlier versions** of OroCommerce.
+.. important:: As of OroCommerce v6.0, the configuration logic for the featured products block has been updated. Users of v5.1 and earlier should configure the block following the :ref:`principles for those versions <sys--commerce--product--featured-products>`. While users of the **Refreshing Teal** theme can use the new configuration principles described in the section.
 
 The featured products feature provides sellers with an opportunity to highlight specific products in their website's storefront. This feature allows for strategic placement of products that are popular, on sale, or aligned with current marketing campaigns, effectively capturing the attention of customers as soon as they land on the website.
 
@@ -195,8 +195,6 @@ The featured products feature provides sellers with an opportunity to highlight 
 
 
 To add the featured products block to any storefront page, you need to:
-
-**Refreshing Teal**
 
 1. Mark the selected products as featured in the **General** section of the **Products > Products** main menu by setting **Is Featured** to *Yes*.
 
@@ -218,28 +216,17 @@ To add the featured products block to any storefront page, you need to:
 .. image:: /user/img/concept-guides/products/featured-products-content-widget-wysiwyg.png
    :alt:  Adding a block content widget to a WYSIWYG field
 
-**OroCommerce version 5.1 and below**
-
-1. Complete the configuration described in Step 1 and 2 of the Refreshing Teal theme.
-
-2. Once the segment is ready, you can connect it to the storefront website via the system configuration on the :ref:`global <sys--commerce--product--featured-products>`, :ref:`organization <sys--users--organization--commerce--products--featured-products>`, or :ref:`website <sys--websites--commerce--products--featured-products>` levels.
-
-.. image:: /user/img/concept-guides/products/connect-segment-to-storefront.png
-   :alt: Connecting the featured segment to the storefront
-
 
 .. _concept-guides--product-management--new-arrivals-products:
 
 New Arrivals Products
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: The New Arrivals Products block is implemented differently for **Refreshing Teal** theme and **5.1 or earlier versions** of OroCommerce.
+.. important:: As of OroCommerce v6.0, the configuration logic for the new arrivals products block has been updated. Users of v5.1 and earlier should configure the block following the :ref:`principles for those versions <configuration--guide--commerce--configuration--promotions>`. While users of the **Refreshing Teal** theme can use the new configuration principles described in the section.
 
 The new arrivals products feature provides sellers with an opportunity to highlight new products in their website's storefront, effectively capturing the attention of customers as soon as they land on the website.
 
 To add the new arrivals products block to any storefront page, you need to:
-
-**Refreshing Teal**
 
 1. Mark the selected products as new arrivals in the **General** section of the **Products > Products** main menu by setting **Is New Arrival** to *Yes*.
 
@@ -257,15 +244,6 @@ To add the new arrivals products block to any storefront page, you need to:
 
 .. image:: /user/img/concept-guides/products/new-arrivals-products-content-widget-wysiwyg.png
    :alt:  Adding a block content widget to a WYSIWYG field
-
-**OroCommerce version 5.1 and below**
-
-1. Complete the configuration described in Step 1 and 2 of the Refreshing Teal theme.
-
-2. Once the segment is ready, you can connect it to the storefront website via the system configuration on the :ref:`global <configuration--guide--commerce--configuration--promotions>`, :ref:`organization <sys--users--organization--commerce--products--new-arrivals>`, or :ref:`website <sys--websites--commerce--products--new-arrivals>` levels.
-
-.. image:: /user/img/concept-guides/products/connect-new-arrivals-segment-to-storefront.png
-   :alt: Connecting the new arrivals segment to the storefront
 
 
 As you can see, with OroCommerce you can create an appealing and functional product pages that are the key to sales in online stores of all kinds.

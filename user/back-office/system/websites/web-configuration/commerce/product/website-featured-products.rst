@@ -3,7 +3,7 @@
 Configure Settings for Featured Products per Website (Version 5.1 and Below)
 ============================================================================
 
-.. important:: The configuration applies to OroCommerce version 5.1 and below. To configure the featured products block for the **Refreshing Teal** theme, please refer to the :ref:`related documentation <concept-guides--product-management--featured-products>`.
+.. important:: The configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please configure this option via the product segment content widget under Marketing > Content Widgets following the :ref:`new configuration logic <concept-guides--product-management--featured-products>`.
 
 You can control which segment is used to store featured products :ref:`globally <products--featured-products>`, :ref:`per organization <sys--users--organization--commerce--products--featured-products>`, and per website.
 
