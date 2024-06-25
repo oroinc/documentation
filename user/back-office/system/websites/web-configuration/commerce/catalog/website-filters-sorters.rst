@@ -3,6 +3,8 @@
 Configure Filters and Sorters Settings per Website
 ==================================================
 
+.. hint:: Configuration for this option is available on three levels, :ref:`globally <configuration--guide--commerce--configuration--catalog--filters-sorters>`, :ref:`per organization <configuration--guide--commerce--configuration--catalog--filters-sorters--organization>`, and per website.
+
 To configure filters and sorting options per website:
 
 1. Navigate to **System > Websites** in the main menu.
@@ -13,34 +15,37 @@ To configure filters and sorting options per website:
 
    .. image:: /user/img/system/websites/web_configuration/filters_and_sorters_website.png
 
-4. The following configuration options are available:
-
-   * **Hide Unrelated Product Filters and Sorting Options** - removes unrelated filters and sorting options from the product collection page to display only those attributes that belong to the current product family. When a user adjusts the search to target the product with the desired attribute, but the attribute is no longer applicable, it gets removed from the filter.
-
-   * **Don't Change Initial Filter State** - disables unrelated attributes within a filter. When applying a filter to the initial product data set in the storefront, all unrelated attributes remain visible but become disabled in the filter dropdown.
-
-     .. note:: This option affects filters in the storefront only when **Hide Unrelated Product Filters and Sorting Options** is enabled. Please ensure to enable both options for this configuration.
-
-   * **Default Filter Panel State** - controls the visibility of the filters applied to the product grids in the storefront. The filter panel can be either expanded to show all filter bars or collapsed to reduce the screen space. In this case, the collapsed filters are substituted with the text representation of all applied filters.
-
-   * **Filter Panel Position** --- enables to select the required position of the filter bar in the storefront. There are two options available:
-
-     When *Top* (default) is selected, the filter bar is displayed on the top of the product listing page.
-
-     .. image:: /user/img/system/config_commerce/catalog/filters_panel_position_top.png
-        :alt: The storefront product page illustrating the filter on the top of the product listing page
-
-     When *Sidebar* is selected, the filter is displayed in the left sidebar.
-
-     .. image:: /user/img/system/config_commerce/catalog/filters_panel_position_sidebar.png
-        :alt: The storefront product page illustrating the filter in the left sidebar
-
-5. To change any of the options set on the organization level:
+4. To change any of the options set on the organization level:
 
      a) Clear the **Use Organization** checkbox next to the option.
      b) Select the necessary checkbox or a value.
 
+5. The following configuration options are available:
+
+   * **Hide Unrelated Product Filters and Sorting Options** - removes unrelated filters and sorting options from the product collection page to display only those attributes that belong to the current product family. When a user adjusts the search to target the product with the desired attribute, but the attribute is no longer applicable, it gets removed from the filter.
+
+   .. image:: /user/img/system/config_commerce/catalog/hide_unrelated_product_filters.png
+      :alt: The storefront product page illustrating the Hide Unrelated Product Filters and Sorting Options configuration
+
+   * **Don't Change Initial Filter State** - disables unrelated attributes within a filter. When applying a filter to the initial product data set in the storefront, all unrelated attributes remain visible but become disabled in the filter dropdown.
+
+    .. note:: This option affects filters in the storefront only when **Hide Unrelated Product Filters and Sorting Options** is enabled. Please ensure to enable both options for this configuration.
+
+    .. image:: /user/img/system/config_commerce/catalog/dont_change_initial_filter_state.png
+       :alt: The storefront product page illustrating the Don't Change Initial Filter State configuration
+
+
+   * **Default Filter Panel State** - controls the visibility of the filters applied to the product grids in the storefront. The filter panel can be either expanded to show all filter bars or collapsed to reduce the screen space. In this case, the collapsed filters are substituted with the text representation of all applied filters.
+
+   * **Filter Panel Position** --- specifies where the filter panel should be represented in the storefront, at the top or in the sidebar.
+
+   .. important:: The Filter Panel Position configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please configure this option under :ref:`System > Theme Configuration <back-office-theme-configuration>`.
+
+    .. hint:: To specify how to display the multi-select filter options, refer to the :ref:`theme-related settings <configuration--commerce--design--theme>`.
+
+
 6. Click **Save Settings**.
+
 
 .. include:: /include/include-images.rst
    :start-after: begin
