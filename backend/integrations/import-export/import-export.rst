@@ -1115,18 +1115,18 @@ Example of displaying the form with choice (radio buttons):
 Import CSV Files via CLI
 ------------------------
 
-OroPlatform provides the CLI command ``oro:import:csv`` that allows to import records from the specified CSV file.
+OroPlatform provides the CLI command ``oro:import:file`` that allows to import records from the specified CSV file.
 
 .. code-block:: none
 
-    $ php bin/console oro:import:csv --help
+    $ php bin/console oro:import:file --help
     Usage:
         oro:import:file [options] [--] <file>
         oro:import:file --email=<email> --jobName=<job> --processor=<processor> <file>
         oro:import:file --validation --email=<email> --jobName=<job> --processor=<processor> <file>
 
     Arguments:
-        file                    File name, to import CSV data from
+        file                   CSV file name
 
     Options:
         --jobName=JOBNAME      Import job name
