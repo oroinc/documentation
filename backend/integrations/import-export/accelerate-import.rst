@@ -32,18 +32,17 @@ Run Import Operation from the Command Line
 ------------------------------------------
 
 Import from the UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
-or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:csv``
+or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:file``
 that allows to import records from the specified CSV file.
 
 .. code-block:: none
 
 
-    $ php bin/console oro:import:csv --help
+    $ php bin/console oro:import:file --help
     Usage:
      oro:import:csv [--validation-processor="..."] [--processor="..."] file
 
-    Arguments:
-     file                    File name, to import CSV data from
+     file                   CSV file name
 
     Options:
      --validation-processor  Name of the processor for the entity data validation contained in the CSV
@@ -54,7 +53,7 @@ Here is a small example of its usage:
 .. code-block:: none
 
 
-    $ php bin/console oro:import:csv ~/Contact_2000.csv
+    $ php bin/console oro:import:file --email=test@test.com ~/Contact_2000.csv
     Choose Processor:
       [0 ] orocrm_contact.add_or_replace
       [1 ] orocrm_contact.add
@@ -97,8 +96,7 @@ the ``--env=prod`` option to your import command:
 
 .. code-block:: none
 
-
-    php bin/console oro:import:csv ~/Contact_2000.csv --env=prod
+    $ php bin/console oro:import:file --email=test@test.com ~/Contact_2000.csv --env=prod
 
 
 Skip Import File Validation
@@ -110,21 +108,9 @@ import can be performed without it. To do so, start the import command in no int
 
 .. code-block:: none
 
+    $ php bin/console oro:import:file ~/Contact_2000.csv --email=test@test.com --processor=oro_contact.add --jobName=entity_import_from_csv --no-interaction
 
-    $ php bin/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --no-interaction --env=prod
-    +---------------+-------+
-    | Results       | Count |
-    +---------------+-------+
-    | errors        | 0     |
-    | process       | 2000  |
-    | read          | 2000  |
-    | add           | 2000  |
-    | replace       | 0     |
-    | update        | 0     |
-    | delete        | 0     |
-    | error_entries | 0     |
-    +---------------+-------+
-    File was successfully imported.
+    Scheduled successfully. The result will be sent to the email
 
 .. hint::
 
@@ -153,7 +139,7 @@ it will disable all optional listeners. Here is an example:
 .. code-block:: none
 
 
-    $ bin/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --disabled-listeners=all --no-interaction --env=prod
+    $ bin/console oro:import:file ~/Contact_2000.csv --email=test@test.com --disabled-listeners=all
 
 .. caution::
 
