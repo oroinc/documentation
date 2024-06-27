@@ -27,7 +27,7 @@ To set up an integration with LDAP:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
 2. Click **Create Integration** on the top right.
-3. On the **Create Integration** page, select the *LDAP* integration type.
+3. On the **Create Integration** page, select the *LDAP* integration type. Th
 4. In the **General Settings**, provide the following details:
   
   
@@ -37,7 +37,7 @@ To set up an integration with LDAP:
      :header: "",""
      :widths: 10, 30
    
-     "**Name***","The name used to refer to the integration in Oro application."
+     "**Name***","The name used to refer to the integration in Oro application. It is better to keep the name reasonable."
      "**Hostname***","The hostname of the target LDAP server."
      "**Port***","The port of the LDAP server."
      "**Encryption**","Select the encryption used by the LDAP server. The possible values are:

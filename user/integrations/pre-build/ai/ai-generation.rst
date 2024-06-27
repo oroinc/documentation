@@ -37,7 +37,7 @@ You can also generate text for emails using keywords and/or the subject of the e
 .. image:: /user/img/integrations/emails-ai-generator.png
    :alt: Illustration of the AI generator feature in an email window
 
-Depending on where you use the AI generator, there may be various options available. Typically, you can select a number of tasks to perform, add features and keywords to base content, and specify the tone for the generated text.
+Depending on where you use the AI generator, you may be various options available. Typically, you can select a number of tasks to perform, add features and keywords to base content on, and specify the tone for the generated text.
 
 Typical tasks and text tones are listed below:
 

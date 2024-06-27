@@ -6,4 +6,3 @@ Configure Integration Settings per Organization
 
    Google Settings <organization-google>
    Microsoft Settings <organization-microsoft>
-   AI Content Generation <organization-ai-settings>
