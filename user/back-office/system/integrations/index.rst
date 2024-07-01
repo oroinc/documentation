@@ -45,6 +45,7 @@ Check the following integrations that can be enabled/disabled and configured in 
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`
 * :ref:`LDAP Integration <user-guide-ldap-integration>`
 
+
 * Embedded Forms
 
   * :ref:`Embedded Forms <admin-embedded-forms>`
@@ -53,6 +54,9 @@ Check the following integrations that can be enabled/disabled and configured in 
 
   * :ref:`OpenAPI Specifications <admin-openapi-specifications>`
 
+* AI Integrations (Open AI and Vertex AI)
+
+  * :ref:`AI Integrations <user-guide-ai-integrations>`
 
 .. toctree::
    :hidden:
@@ -66,3 +70,4 @@ Check the following integrations that can be enabled/disabled and configured in 
    LDAP Integration <ldap-integration>
    Embedded Forms <embedded-forms/index>
    OpenAPI Specifications <openapi-specifications/index>
+   AI Integrations <ai/index>

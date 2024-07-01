@@ -17,6 +17,7 @@ Learn how to enable and setup the integration between your Oro application and G
     * :ref:`Microsoft 365 Integrations <user-guide-integrations-microsoft>`
     * :ref:`Work with OroConnector for Outlook <oroconnector-for-microsoft>`
 * :ref:`CRM and Commerce <user-guide-commerce-integration>`
+* :ref:`AI Content Generation <admin-configuration-ai-integration-settings>`
 * :ref:`Dotdigital Settings <admin-configuration-dotmailer-integration-settings>`
 
 .. toctree::
@@ -25,4 +26,5 @@ Learn how to enable and setup the integration between your Oro application and G
    Google Settings <google-settings/index>
    Microsoft Settings <microsoft-settings/index>
    CRM and Commerce <commerce-integration>
+   AI Content Generation <ai-settings>
    Dotdigital Settings <dotdigital-integration-settings>

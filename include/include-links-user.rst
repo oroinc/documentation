@@ -944,3 +944,9 @@ Links (User)
 .. |Get Started with Tableau|  raw:: html
 
    <a href="https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm" target="_blank">Get Started with Tableau</a>
+
+.. |OpenAI API Keys|  raw:: html
+
+   <a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI API Keys</a>
+
+

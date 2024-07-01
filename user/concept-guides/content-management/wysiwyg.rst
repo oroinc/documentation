@@ -571,6 +571,36 @@ To uncover the blocks of content, images, or columns that were hidden for a part
 .. image:: /user/img/concept-guides/content-management/display-hidden-content.png
    :alt: Steps that you need to perform to uncover the hidden block of content
 
+.. _getting-started-wysiwyg-editor-field-ai:
+
+Generate Content Using AI
+-------------------------
+
+.. note:: This feature is available as of OroCommerce version 5.1.8.
+
+When OroCommerce is integrated with AI clients such as OpenAI or Vertex AI, you can use an AI-Powered Content Assistant widget in the WYSIWYG editor to generate content for product descriptions, landing pages, content blocks, master catalog categories, and emails.
+
+To use the AI widget, drag it to your canvas into a text field. Depending on which AI client you are integrated with and where in the application you use the AI widget, there may be various options available. Typically, you can select a number of tasks to perform, add features and keywords to base content  and specify the tone for the generated text. For example:
+
+.. csv-table::
+
+   "Task","
+    * Generate product description with a custom prompt
+    * Populate short description based title, sku and other attributes
+    * Generate product description with an open prompt
+    * Extract product features from  the description
+    * Make the description more specific by incorporating the product attributes into it
+    * Shorten text
+    * Expand text
+    * Correct Grammar"
+   "Text Tone","formal, casual, instructive, persuasive, humorous, professional, emotional, sarcastic, narrative, analytical, descriptive, informative, optimistic, cautious,reassuring, educational, dramatic, poetic, satirical"
+
+Once you select the task and tone, click **Generate**. If you are happy with the generated text, click **Add Content**. You can also modify the given text manually or click **Generate again**.
+
+.. image:: /user/img/concept-guides/content-management/ai-widget.png
+   :alt: An illustration on an AI widget generating content using Vertex AI integration
+
+For more information on the available AI integration options, see :ref:`Configure AI Integrations in the Back-Office <user-guide-ai-integrations>`.
 
 **Related Topics**
 
