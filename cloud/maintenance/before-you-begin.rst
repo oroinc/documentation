@@ -74,13 +74,15 @@ Manage Uploaded Data
 Once you uploaded data to you SFTP directory, you may need to move it to the destination location on your website.
 OroCloud maintenance agent supports the `media:upload` command for data transfer between your SFTP directory and your OroCommerce website. You can find a detailed description and usage examples :ref:`in the Media Upload <orocloud-maintenance-use-media-upload>` section of the OroCloud guide.
 
-Developers can allow the application to read / write directly from the SFTP directory using the environment variable defined in *parameters.yml(.dist)* or *config.yml*:
+Developers can allow the application to read / write directly from the SFTP directory using the parameter defined in ``parameters.yml``:
 
 .. code-block:: none
 
     parameters:
         sftp_root_path: '%env(ORO_SFTP_ROOT_PATH)%'
         env(ORO_SFTP_ROOT_PATH): null
+
+.. note:: SFTP parameters appear during the next ``upgrade``, ``app:package:deploy`` or ``cache:rebuild`` commands after enabling SFTP 
 
 You can use it as any other parameter but remember to add a specific path to your user, i.e:
 
@@ -102,6 +104,7 @@ The ``parameters.yml`` file has the following configuration:
 
    gaufrette_adapter.import_files: /mnt/sftproot
 
+.. note:: SFTP parameters appear during the next ``upgrade``, ``app:package:deploy`` or ``cache:rebuild`` commands after enabling SFTP 
 
 Usually, one or several users have access to sftp, and each of them may upload data to their own directory (username).
 Therefor, set ``[username]/image.jpg`` as the import data path to an image in a CSV file, where ``image.jpg`` is a picture uploaded by a ``username`` user.
