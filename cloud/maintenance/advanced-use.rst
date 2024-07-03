@@ -230,7 +230,7 @@ Webserver configuration can be modified, as illustrated below:
         redirects_map_include:
           - 'redirects/website1.yml'
           - 'redirects/website2.yaml'
-          - '/mnt/ocom/app/redirects.yml'
+          - '/mnt/maint-data/redirects.yml'
         locations:
           'root':
             type: 'php'
@@ -376,7 +376,7 @@ Examples:
           - 'redirects/redirects.yml'
 
           # Values with absolute paths are environment-specific.
-          - '/mnt/ocom/app/redirects.yml'
+          - '/mnt/maint-data/redirects.yml'
 
 Old URL values in redirects are case insensitive and must not contain duplicates.
 
@@ -854,7 +854,7 @@ Domain Configuration
           redirects_map_include:
             - 'redirects/website1.yml'
             - 'redirects/website2.yaml'
-            - '/mnt/ocom/app/redirects.yml'
+            - '/mnt/maint-data/redirects.yml'
           locations:
             'de':
               type: 'php'
@@ -886,7 +886,7 @@ Domain Configuration
           redirects_map_include:
             - 'redirects/website3.yml'
             - 'redirects/website4.yaml'
-            - '/mnt/ocom/app/redirects.yml'
+            - '/mnt/maint-data/redirects.yml'
           locations:
             'root':
               type: 'php'

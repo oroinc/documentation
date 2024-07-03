@@ -12,14 +12,26 @@ Configure OroCloud
 
 To make OroCloud skip the assets build during the upgrade, override upgrade commands in the :ref:`orocloud.yaml file <orocloud-maintenance-advanced-use>`:
 
-.. code-block:: yaml
+For OroCommerce 5.1 and higher:
 
+.. code-block:: yaml
 
     ---
     orocloud_options:
       deployment:
         upgrade_commands:
           - 'oro:platform:update'
+          - 'assets:install'
+
+For OroCommerce 5.0 and lower:
+
+.. code-block:: yaml
+
+    ---
+    orocloud_options:
+      deployment:
+        upgrade_commands:
+          - 'oro:platform:update --skip-assets'
           - 'assets:install'
 
 - The ``assets:install`` command installs assets that are served directly, and should not be built. This operation is fairly quick.
@@ -29,42 +41,34 @@ Store Pre-Built Assets in a Git Repository
 
 When the  application is ready to be released, follow the two steps outlined below:
 
-1. Build assets locally:
+1. Change `post-install-cmd` Composer hook in composer.json file:
 
-   - For OroCommerce v3.1.4 and higher run:
+   - For OroCommerce 6.0 and higher remove next scripts:
 
-     .. code-block:: none
+    .. code-block:: none
 
-        php bin/console oro:assets:install --env=prod
-        php bin/console oro:translations:dump --env=prod
+      @install-npm-assets
+      @install-assets
 
-   - For OroCommerce from v3.1.0 to v3.1.4 run:
 
-     .. code-block:: none
+   - For OroCommerce 5.1:
 
-        php bin/console assets:install --env=prod
-        php bin/console oro:assets:build --env=prod
-        php bin/console fos:js-routing:dump --env=prod
-        php bin/console oro:localization:dump --env=prod
-        php bin/console oro:translation:dump --env=prod
+    .. code-block:: none
 
-   - For the OroCommerce v1.6 run:
+      @auto-scripts
+      @install-assets
 
-     .. code-block:: none
+2. Build assets locally:
 
-        php bin/console oro:assets:install --env=prod
-        php bin/console assetic:dump --env=prod
-        php bin/console fos:js-routing:dump --env=prod
-        php bin/console oro:localization:dump --env=prod
-        php bin/console oro:translation:dump --env=prod
-        php bin/console oro:requirejs:build --env=prod
+   .. code-block:: none
 
+      php bin/console oro:assets:install --env=prod
 
    .. warning::
 
       Make sure you build assets in prod environment without ``--skip-*`` options. Otherwise, assets may be incomplete and not ready for the production use.
 
-2. Add built assets to the git repository.
+3. Add built assets to the git repository.
 
    In OroCommerce 4.1 and higher, built assets are placed in the `public/` folder. By default, they are added into the .gitignore file and not tracked by git.
 
@@ -72,7 +76,7 @@ When the  application is ready to be released, follow the two steps outlined bel
 
    - Remove the following lines for the .gitignore file to track changes on the built assets:
 
-        - For OroCommerce 4.2:
+        - For OroCommerce 4.2 and higher:
 
           .. code-block:: none
 
@@ -89,26 +93,9 @@ When the  application is ready to be released, follow the two steps outlined bel
              /public/layout-build
              /public/media/js
 
-        - For OroCommerce 3.1:
-
-          .. code-block:: none
-
-             /public/css
-             /public/js
-             /public/media/js
-
-        - For OroCommerce 1.6:
-
-          .. code-block:: none
-
-             /web/css
-             /web/images
-             /web/js
-             /web/media/js
-
    - Force the addition of the built assets to the git repository when they are ready.
 
-        - For OroCommerce 4.2:
+        - For OroCommerce 4.2 and higher:
 
           .. code-block:: none
 
@@ -119,19 +106,6 @@ When the  application is ready to be released, follow the two steps outlined bel
           .. code-block:: none
 
              git add -f public/build public/layout-build public/js/oro.locale_data.js public/media/js
-
-        - For OroCommerce 3.1:
-
-          .. code-block:: none
-
-             git add -f public/css public/js public/media/js
-
-        - For OroCommerce 1.6:
-
-          .. code-block:: none
-
-             git add -f web/css web/js web/media/js
-
 
    .. note::
 
