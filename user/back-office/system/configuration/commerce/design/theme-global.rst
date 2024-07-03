@@ -31,16 +31,21 @@ To configure the storefront theme options globally:
 
 4. In the **Page Templates** section, select the product page template from the list. A page template is used to render the product page in the storefront by default, unless the template is overridden in the product details. Available options are *Default*, *Tabs*, *Wide*.
 
-  .. important:: The Page Templates configuration applies to OroCommerce version 5.1 and below. To configure the setting for the **Refreshing Teal** theme, please refer to the :ref:`theme configuration <back-office-theme-configuration>` documentation.
+   .. important:: The Page Templates configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please configure this option under :ref:`System > Theme Configuration <back-office-theme-configuration>`.
 
 5. In the **Filter Settings** section, specify how the multi-select filters should look in the storefront. Available options are *Drop-down* and *All at once*.
 
    .. image:: /user/img/system/config_commerce/design/filter_settings_dropdown.png
       :alt: Illustration of the multi-select filter displayed in the drop-down and all at once in the storefront
 
+   .. hint::
+      To specify where the filter panel should be represented in the storefront, at the top or in the sidebar, refer to the :ref:`theme configuration <back-office-theme-configuration>` documentation.
+
+      To control whether to hide or disable product attributes within filters, refer to the :ref:`filters and sorting settings <configuration--guide--commerce--configuration--catalog--filters-sorters>` documentation.
+
 6. In the **Menu Templates** section, select the user menu display mode that defines the look and feel of the user menu in the storefront.
 
-  .. important:: The Menu Templates configuration applies to OroCommerce version 5.1 and below. To configure the setting for the **Refreshing Teal** theme, please refer to the :ref:`theme configuration <back-office-theme-configuration>` documentation.
+  .. important:: The Menu Templates configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility.
 
 7. In the **Grid Settings** section, configure the following options:
 

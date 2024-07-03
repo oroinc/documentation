@@ -32,27 +32,22 @@ To configure filters and sorting options globally:
     .. image:: /user/img/system/config_commerce/catalog/dont_change_initial_filter_state.png
        :alt: The storefront product page illustrating the Don't Change Initial Filter State configuration
 
-   .. note:: If a multi-attribute product has only one attribute, the filter is not displayed for it in the storefront.
+    .. note:: If a multi-attribute product has only one attribute, the filter is not displayed for it in the storefront.
 
-             For example, if a product (e.g., a shirt) has several options for the attribute of color (red, green, yellow) but only red items are available, then no filter by color will be displayed in the storefront. This way, customers will not see the filter for the attribute where multiple options are unavailable at that moment.
+              For example, if a product (e.g., a shirt) has several options for the attribute of color (red, green, yellow) but only red items are available, then no filter by color will be displayed in the storefront. This way, customers will not see the filter for the attribute where multiple options are unavailable at that moment.
 
 5. In the **Display Settings** section, select the required option for the following settings:
 
    * **Default Filter Panel State** --- controls the visibility of the filters applied to the product grids in the storefront. The filter panel can be either expanded to show all filter bars or collapsed to reduce the screen space. In this case, the collapsed filters are substituted with the text representation of all applied filters.
 
-    .. image:: /user/img/system/config_commerce/catalog/filters_and_sorters_storefront.png
-       :alt: The storefront product page illustrating the Default Filter Panel State configuration
+   * **Filter Panel Position** --- specifies where the filter panel should be represented in the storefront, at the top or in the sidebar.
 
-    * **Filter Panel Position** --- enables to select the required position of the filter bar in the storefront product grids. There are two options available:
+   .. important:: The Filter Panel Position configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please configure this option under :ref:`System > Theme Configuration <back-office-theme-configuration>`.
 
-     When *Top* (default) is selected, the filter bar is displayed on the top of the product listing page.
+    .. hint:: To specify how to display the multi-select filter options, refer to the :ref:`theme-related settings <configuration--commerce--design--theme>`.
 
-     .. image:: /user/img/system/config_commerce/catalog/filters_panel_position_top.png
-        :alt: The storefront product page illustrating the filter on the top of the product listing page
-
-     When *Sidebar* is selected, the filter is displayed in the left sidebar.
-
-     .. image:: /user/img/system/config_commerce/catalog/filters_panel_position_sidebar.png
-        :alt: The storefront product page illustrating the filter in the left sidebar
 
 6. Click **Save Settings**.
+
+
+

@@ -62,9 +62,9 @@ function stickyHeader() {
         $('body').addClass('fixed-header');
 
         if (versionsPanel.length > 0) {
-            $('body').css('padding-top', headerHeight + versionsPanel.outerHeight());
+            //$('body').css('padding-top', headerHeight + versionsPanel.outerHeight());
         } else {
-            $('body').css('padding-top', headerHeight)
+            //$('body').css('padding-top', headerHeight)
         }
 
         if ($(window).scrollTop() > 0) {

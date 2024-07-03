@@ -1,4 +1,5 @@
 {%- if current_version %}
+{% if '/cloud/' not in versions.branches|join(' ') %}
 <div class="switcher-container">
     <strong class="doc-title">Version:</strong>
     <div class="documentation-version-switcher">
@@ -21,4 +22,5 @@
         </ul>
     </div>
 </div>
+{%- endif %}
 {%- endif %}

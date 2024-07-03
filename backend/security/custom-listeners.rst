@@ -21,5 +21,5 @@ Example:
 
 .. code-block:: bash
 
-   php bin/console oro:import:csv ~/Contact_10k.csv --current-user=admin --current-organization=1
+   php bin/console oro:import:file ~/Contact_10k.csv --email=test@test.com --current-user=admin --current-organization=1
 

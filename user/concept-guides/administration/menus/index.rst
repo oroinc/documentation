@@ -71,8 +71,10 @@ However, keep in mind that the breadcrumbs on the product listing page and the p
    :alt: A sample of the breadcrumbs composed based on the structure of a web catalog
 
 
-Commerce_top_nav (Version 5.1 and Below)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Commerce_top_nav
+^^^^^^^^^^^^^^^^
+
+.. important:: **Commerce_top_nav** applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please use the **commerce_top_nav_refreshing_teal** menu to modify the links in the website's page header.
 
 The **commerce_top_nav** menu indicates the links that appear at the top right of your website's page header. If your customers need to reach your business, add the links to live chat. If they are looking for your store locations, add that. Whatever is important to you can be added to the header. The menu visibility in the storefront for 5.1 and earlier versions of OroCommerce is configured by its *Hide/Show* button.
 
@@ -91,8 +93,10 @@ You can then choose the place in the header where to locate your menu under :ref
    :alt: A sample of the commerce_top_nav_refreshing_teal in the storefront
 
 
-Commerce_quick_access (Version 5.1 and Below)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Commerce_quick_access
+^^^^^^^^^^^^^^^^^^^^^
+
+.. important:: **Commerce_quick_access** applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please use the **commerce_quick_access_refreshing_teal** menu to modify the quick access links.
 
 The **commerce_quick_access** menu provides links to the most frequently used pages or important actions for the customers to quickly locate them within your website.
 
@@ -127,13 +131,10 @@ The **commerce_footer_links** menu defines the structure of the links located in
 .. image:: /user/img/concept-guides/menus/commerce_footer_links_sample.png
    :alt: A sample of the commerce_footer_links menu in the storefront
 
-Featured_menu (Version 5.1 and Below)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Featured_menu** provides the possibility to include the necessary information as a separate block to the featured menu on the OroCommerce homepage. Usually, the menu is used to highlight the latest promotions, featured categories, or items to attract the customers’ attention to the critical information. The menu is hardcoded for 5.1 and earlier versions of OroCommerce, while the users of the Refreshing Teal theme can customize the menu as required.
-
 Featured_menu
 ^^^^^^^^^^^^^
+
+.. important:: **Featured_menu** applies to all versions of OroCommerce. Users of OroCommerce v5.1 and earlier should configure the menu following the principles for those versions. While users of the **Refreshing Teal** theme can use the new configuration principles described in the section.
 
 **Featured_menu** provides the possibility to include the necessary information as a separate featured block to the OroCommerce storefront header. Usually, the menu is used to highlight the latest promotions, featured categories, or items to attract the customers’ attention to the critical information.
 
@@ -147,16 +148,21 @@ You can use the nodes excluded from the main menu. For example, create a categor
 .. image:: /user/img/concept-guides/menus/featured_menu_vs_segment.png
    :alt: A sample of the featured_menu and a featured product segment in the storefront
 
-Customer_usermenu (Version 5.1 and Below)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Customer_usermenu
+^^^^^^^^^^^^^^^^^
+
+.. important:: **Customer_usermenu** applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility.
 
 **Customer_usermenu** is a storefront user menu that appears at the top right of the website's page header and defines what a customer will see within this menu. The menu look can either be concise (displaying all menu items in one raw) or expanded (displaying the full list of menu subitems in a popup). The way it is shown in the storefront can be customized under the **Theme Settings** configuration on the :ref:`global <configuration--commerce--design--theme>`, :ref:`organization <configuration--commerce--design--theme--theme-settings--organization>`, and :ref:`website levels <configuration--commerce--design--theme--theme-settings--website>`.
 
 .. image:: /user/img/concept-guides/menus/customer_usermenu_sample.png
    :alt: A sample of the customer_usermenu in the storefront
 
-Oro_customer_menu (Version 5.1 and Below)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Oro_customer_menu
+^^^^^^^^^^^^^^^^^
+
+.. important:: **Oro_customer_menu** applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please use the **oro_customer_menu_refreshing_teal** menu to modify the values in the **Account** section of the user menu.
+
 
 **Oro_customer_menu** defines the menu items that would populate the **Account** section of the user menu.
 

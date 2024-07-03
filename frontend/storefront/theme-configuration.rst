@@ -55,6 +55,16 @@ The theme configuration has the following option types:
 |                              | Previews depend on type field values  |
 |                              | (menu, web_catalog_node).             |
 +------------------------------+---------------------------------------+
+| `integer`                    | An input field looks like a text box  |
+|                              | and accepts only integer numbers.     |
++------------------------------+---------------------------------------+
+| `number`                     | An input field looks like a text box  |
+|                              | and accepts numbers. This type has    |
+|                              | options for the scale and rounding.   |
++------------------------------+---------------------------------------+
+| `text`                       | An input field represents the most    |
+|                              | basic text field.                     |
++------------------------------+---------------------------------------+
 
 The theme configuration has the following option parameters:
 
@@ -120,6 +130,12 @@ The theme configuration has the following option parameters:
                         values:
                             top: top
                             sidebar: sidebar
+                    negative_number:
+                        label: Negative Number
+                        type: number
+                        default: -2.35
+                        options:
+                            constraints: [] # overrides the default PositiveOrZero constraint
 
 
 .. note::

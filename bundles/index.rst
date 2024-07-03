@@ -87,7 +87,7 @@ Documentation that relates to extensions' bundles is collected below. You can do
 .. csv-table::
 
    "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
+   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`","**G**",":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
    ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",""
    "**D**","**I**","**P**",""
    ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`",""
@@ -218,6 +218,7 @@ CRM Bundles
    MakerBundle <extensions/MakerBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
    StripeBundle <extensions/StripeBundle/index>
+   AiContentGenerationBundle <extensions/AiContentGenerationBundle/index>
 
 
 .. include:: /include/include-links-seo.rst
