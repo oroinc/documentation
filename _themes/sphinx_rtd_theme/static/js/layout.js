@@ -4,7 +4,7 @@ $(document).ready(function() {
     topPosition();
     scrollSpy();
     navigationDropDown();
-    stickyHeader();
+    //stickyHeader();
     stickyBreadcrumbs();
     $('.scrollbar-outer').scrollbar();
     setTimeout(stickyBlock, 10);
@@ -48,7 +48,7 @@ $(window).scroll(function() {
 $(window).resize(function() {
     topPosition();
     navigationDropDown();
-    stickyHeader();
+    //stickyHeader();
     stickyBreadcrumbs();
     setTimeout(stickyBlock, 10);
     mobileCollapse();
@@ -58,11 +58,11 @@ $(window).resize(function() {
 
 function topPosition() {
     if ($(window).prop('innerWidth') > 767) {
-        topIndent = ($('.header-container').height() + parseInt($('.content-container').css('padding-top')) + 5)
+        topIndent = ($('.header.header-redesign').height() + parseInt($('.content-container').css('padding-top')) + 5)
     }
 
     if ($(window).prop('innerWidth') > 1199) {
-        topIndent = ($('.header-container').height() + $('.breadcrumbs').outerHeight() + 10);
+        topIndent = ($('.header.header-redesign').height() + $('.breadcrumbs').outerHeight() + 10);
     }
 }
 
@@ -125,8 +125,8 @@ function isLeftSidebarScrolled() {
 }
 
 function anchorScroll() {
-    if (($(window).prop('innerWidth') > 767) && ($('.rst-content .section').length > 0)) {
-        var section = $('.rst-content').find('.section'),
+    if (($(window).prop('innerWidth') > 767) && ($('.rst-content section').length > 0)) {
+        var section = $('.rst-content').find('section'),
             location = window.location.hash.slice(1);
 
         section.each(function() {
@@ -146,7 +146,7 @@ function anchorScroll() {
 }
 
 // sticky functional for header
-function stickyHeader() {
+/*function stickyHeader() {
     var headerHeight = $('#header').outerHeight(),
         versionsPanel = $('.header-panel');
 
@@ -168,7 +168,7 @@ function stickyHeader() {
         $('body').removeClass('fixed-header').removeAttr('style');
         $('.header-container').removeClass('shadow-active');
     }
-}
+}*/
 
 
 // sticky functional for breadcrumbs
@@ -182,8 +182,12 @@ function stickyBreadcrumbs() {
             contentContainer.css('padding-top', 0);
             mainColumn.css({'padding-top': $('.breadcrumbs').outerHeight()});
         }
-        if ($(window).prop('innerWidth') < 1200) {
-            contentContainer.css({'padding-top': $('.breadcrumbs').outerHeight() + 10});
+        if ($(window).prop('innerWidth') > 1024 && $(window).prop('innerWidth') < 1200) {
+            contentContainer.css('padding-top', 53);
+            mainColumn.css({'padding-top': 0});
+        }
+        if ($(window).prop('innerWidth') < 1025) {
+            contentContainer.css({'padding-top': $('.header.header-redesign').outerHeight() + $('.breadcrumbs').outerHeight()});
             mainColumn.css({'padding-top': 0});
         }
 
@@ -212,14 +216,14 @@ function stickyBlock() {
             var blockSticky = $('.sticky-block'),
                 scrollPos = $(window).scrollTop(),
                 scrollContainer = $('.three-columns-layout'),
-                footerPos = $('.footer-container').offset().top;
+                footerPos = $('footer.footer').offset().top;
 
             blockSticky.each(function() {
                 var currentSticky = $(this),
                     navBox = $(this).find('.sidebar-holder'),
                     currentStickyPaddings = parseInt(navBox.css('padding-top')) + parseInt(navBox.css('padding-bottom')),
                     sidebarCurrent = currentSticky.parent(),
-                    bodyTopPadding = $('.header-container').height(),
+                    bodyTopPadding = $('header.header-redesign').height(),
                     versionsSwitcher = currentSticky.find('.switcher-container'),
                     heightContent = $(window).height() - bodyTopPadding - parseInt(scrollContainer.css('padding-top')) - parseInt($('.content-container').css('padding-top')) - parseInt(scrollContainer.css('padding-bottom')) - parseInt(sidebarCurrent.css('padding-top')) - currentStickyPaddings,
                     heightWithFooter = scrollPos + $(window).height() - footerPos;
@@ -328,8 +332,12 @@ function scrollSpy() {
         topMenu = $("nav.contents-table > ul"),
         menuItems = topMenu.find("a"),
         scrollItems = menuItems.map(function() {
-            var itemHref = $(this).attr("href"),
-                item = itemHref === "#" ? $('.three-columns-layout') : $(itemHref);
+            var itemHref = $(this).attr("href");
+            try  {
+                var item = itemHref === "#" ? $('.three-columns-layout') : $(itemHref);
+            }  catch(error) {
+                var item = false;
+            }
             if (item.length) {
                 return item;
             }
@@ -360,7 +368,7 @@ function scrollSpy() {
         }
     }
 
-    smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference, .docutils .reference, .section .reference.internal', topIndent);
+    smoothScrollTop('section .toc-backref, section .headerlink, .contents .simple .reference, .docutils .reference, section .reference.internal', topIndent);
 }
 
 function isRightSidebarScrolled() {
