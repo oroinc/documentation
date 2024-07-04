@@ -172,7 +172,7 @@ Using prebuilt application packages speeds up the upgrade of applications (vanil
 
 * `orocloud-cli upgrade --reference=[git reference]` takes 1300 seconds with 800 seconds of maintenance mode.
 * `orocloud-cli app:package:upgrade [git reference]` takes 750 seconds with 230 seconds of maintenance mode.
-* `orocloud-cli app:package:deploy [package]` takes 400 seconds with 230 seconds of maintenance mode using bre-build package from the step above.
+* `orocloud-cli app:package:deploy [package]` takes 400 seconds with 230 seconds of maintenance mode using pre-build package from the step above.
 
 To create an application package, run the `orocloud-cli app:package:build [git reference]` command:
 

@@ -1,3 +1,5 @@
+.. _dev-doc-render-cache:
+
 OroCommerce Render Caching
 ==========================
 
