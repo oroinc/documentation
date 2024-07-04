@@ -6384,6 +6384,30 @@ Links (Dev)
 
     <a href="https://plugins.jenkins.io/gitlab-branch-source/" target="_blank">GitLab Branch Source Plugin</a>
 
+.. |Filesystem Cache Adapter| raw:: html
+
+    <a href="https://symfony.com/doc/current/components/cache/adapters/filesystem_adapter.html" target="_blank">Filesystem Cache Adapter</a>
+
+.. |PHP Files Cache Adapter| raw:: html
+
+    <a href="https://symfony.com/doc/current/components/cache/adapters/php_files_adapter.html" target="_blank">PHP Files Cache Adapter</a>
+
+.. |Redis Cache Adapter| raw:: html
+
+    <a href="https://symfony.com/doc/current/components/cache/adapters/redis_adapter.html" target="_blank">Redis Cache Adapter</a>
+
+.. |Symfony container| raw:: html
+
+    <a href="https://symfony.com/doc/current/components/dependency_injection/workflow.html#working-with-a-cached-container" target="_blank">Symfony container</a>
+
+.. |Twig caching| raw:: html
+
+    <a href="https://symfony.com/doc/current/reference/configuration/twig.html#cache" target="_blank">Twig caching</a>
+
+.. |Doctrine ORM caching| raw:: html
+
+    <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.15/reference/caching.html" target="_blank">Doctrine ORM caching</a>
+
 .. |DateTime| raw:: html
 
     <a href="https://www.php.net/manual/en/class.datetime.php" target="_blank">DateTime</a>

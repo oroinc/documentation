@@ -122,6 +122,51 @@ Supported search index providers:
 
 .. note:: For implementation details, see :ref:`Search Index Concept <search_index_overview>` topic for more information about the search index component.
 
+Cache Storage
+^^^^^^^^^^^^^
+
+The purpose of caching is to minimize the number of computing operations, including fetching data from other sources, by reusing results stored in the cache storage.
+
+In production environments, we employ the following types of cache:
+- Data Cache
+- System Cache
+- Content Cache
+
+**Data cache**
+
+Data cache is used for storing data that can be generated and changed in runtime.
+It depends on database data, therefore must be shared in :ref:`multi-node setups <cloud_architecture>`.
+It is implemented using |Redis Cache Adapter| and :ref:`OroRedisConfigBundle <bundle-docs-platform-redis-bundle>` with Redis Sentinel or Redis Cluster.
+
+Examples of such cache are below:
+
+* :ref:`Caching complex ACL structures <coobook-entities-acl-enable>`
+* :ref:`Catalog Menu Caching <bundle-docs-commerce-catalog-bundle>`
+* |Doctrine ORM caching|
+
+.. note:: See the :ref:`Data Cache Service <bundle-docs-platform-cache-bundle--data-cache-service>` documentation for more information.
+
+**System cache**
+
+System cache should be generated during deployment operations and must be read-only in runtime.
+It mainly relies on code sources such as DI container, annotations, TWIG, YAML and in some cases, database data like :ref:`Extend Entities <book-entities-extended-entities>`. As a result, it should not be shared in :ref:`multi-node setups <cloud_architecture>`.
+It is implemented using |Filesystem Cache Adapter| and |PHP Files Cache Adapter|, and it becomes the most efficient cache when combined with OPcache.
+
+Examples of such cache are below:
+
+* |Symfony container|
+* |Twig caching|
+
+.. note:: See the :ref:`Caching Static Configuration <bundle-docs-platform-cache-bundle--caching-static-configs>` documentation for more information.
+
+**Content cache**
+
+Content cache is used for storing html content to avoid its generation whenever the page is accessed.
+It depends on the database data, but must not be shared in :ref:`multi-node setups <cloud_architecture>`.
+It is implemented using |Redis Cache Adapter| and :ref:`OroRedisConfigBundle <bundle-docs-platform-redis-bundle>` using standalone Redis running alongside PHP-FPM and Nginx.
+
+.. note:: For more information, see :ref:`OroCommerce Render Caching <dev-doc-render-cache>`.
+
 Notes on Deployment Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

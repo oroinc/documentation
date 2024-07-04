@@ -141,6 +141,116 @@ We recommend to include additional files, like:
 * CHANGELOG.md - list of changes made in the package since the previous version
 * phpunit.xml.dist - template of phpunit.xml, which can be used to run package tests
 
+File System Permissions
+-----------------------
+
+* Default permissions are 755 for directories and 644 for files (non-executable).
+* Default owner is any non www-data user.
+* Default owner group is www-data.
+
+In OroCommerce, web requests and CLI scripts must get readonly access to sources with a limited write access to a
+set of folders using specific user www-data (bundled with Nginx and Apache). 
+
+To prepare application sources and pre-build assets, use orodeployer user:
+
+.. code-block:: bash
+
+    $ id -u -n
+    orodeployer
+
+    $ id -g -n
+    www-data
+
+    git clone https://github.com/oroinc/orocommerce-application.git
+    cd orocommerce-application
+    composer install
+    rm -rf var/cache/* var/logs/*
+
+Below is a list of sources with pre-built assets:
+
+.. code-block:: bash
+
+    tree -ug -L 1 -p
+    
+    [drwxr-xr-x orodeployer www-data]  .
+    |-- [-rw-r--r-- orodeployer www-data]  3rd-party-dependencies.md
+    |-- [-rw-r--r-- orodeployer www-data]  CHANGELOG.md
+    |-- [-rw-r--r-- orodeployer www-data]  Jenkinsfile
+    |-- [-rw-r--r-- orodeployer www-data]  LICENSE
+    |-- [-rw-r--r-- orodeployer www-data]  README.md
+    |-- [-rw-r--r-- orodeployer www-data]  UPGRADE.md
+    |-- [-rw-r--r-- orodeployer www-data]  Vagrantfile
+    |-- [-rw-r--r-- orodeployer www-data]  behat.yml.dist
+    |-- [drwxr-xr-x orodeployer www-data]  bin
+    |-- [-rw-r--r-- orodeployer www-data]  composer.json
+    |-- [-rw-r--r-- orodeployer www-data]  composer.lock
+    |-- [drwxr-xr-x orodeployer www-data]  config
+    |-- [-rw-r--r-- orodeployer www-data]  dev.json
+    |-- [-rw-r--r-- orodeployer www-data]  dev.lock
+    |-- [-rw-r--r-- orodeployer www-data]  docker-compose.yml
+    |-- [-rw-r--r-- orodeployer www-data]  karma.conf.js.dist
+    |-- [-rw-r--r-- orodeployer www-data]  package-lock.json
+    |-- [-rw-r--r-- orodeployer www-data]  package.json
+    |-- [-rw-r--r-- orodeployer www-data]  pdepend.xml.dist
+    |-- [-rw-r--r-- orodeployer www-data]  phpunit.xml.dist
+    |-- [drwxr-xr-x orodeployer www-data]  public
+    |-- [drwxr-xr-x orodeployer www-data]  src
+    |-- [drwxr-xr-x orodeployer www-data]  templates
+    |-- [drwxr-xr-x orodeployer www-data]  translations
+    |-- [drwxr-xr-x orodeployer www-data]  var
+    |-- [drwxr-xr-x orodeployer www-data]  vendor
+    `-- [-rw-r--r-- orodeployer www-data]  webpack.config.js
+
+To force required permissions, run:
+
+.. code-block:: bash
+
+    setfacl -b -R .
+    chown -R orodeployer:www-data .
+    find . -type d -not -perm 755 -print -exec chmod 755 {} \;
+    find . -type f -not -perm 644 -print -exec chmod 644 {} \;
+
+To allow www-user to write to specific folders, run:
+
+.. code-block:: bash
+
+    chown -R www-data:www-data var/sessions var/cache var/logs var/data public/media
+
+Current directories as files permissions:
+
+.. code-block:: bash
+
+    tree -ug -L 1 -p public/
+
+    [drwxr-xr-x orodeployer www-data]  public/
+    |-- [drwxr-xr-x orodeployer www-data]  bundles
+    |-- [-rw-r--r-- orodeployer www-data]  favicon.ico
+    |-- [-rw-r--r-- orodeployer www-data]  index.php
+    |-- [-rw-r--r-- orodeployer www-data]  index_dev.php
+    |-- [drwxr-xr-x orodeployer www-data]  js
+    |-- [-rw-r--r-- orodeployer www-data]  maintenance.html
+    |-- [drwxr-xr-x www-data www-data]  media
+    |-- [-rw-r--r-- orodeployer www-data]  notinstalled.html
+    |-- [-rw-r--r-- orodeployer www-data]  robots.txt
+    `-- [-rw-r--r-- orodeployer www-data]  tracking.php
+
+.. code-block:: bash
+
+    tree -ug -L 1 -p var/
+
+    [drwxr-xr-x orodeployer www-data]  var/
+    |-- [drwxr-xr-x www-data www-data]  cache
+    |-- [drwxr-xr-x www-data www-data]  data
+    |-- [drwxr-xr-x www-data www-data]  logs
+    `-- [drwxr-xr-x www-data www-data]  sessions
+
+You can also reduce the amount of writable folders and files:
+
+* Keep var/sessions read-only by using :ref:`OroRedisConfigBundle <bundle-docs-platform-redis-bundle>`
+* Keep public/media read-only by using |OroGridFSConfigBundle|
+
+.. note:: Commands like ``oro:assets:install`` or ``oro:assets:build`` are designed for the build phase and are not allowed in runtime and for the `www-data` user. Run commands using the `orodeployer` user during deployments only.
+
 .. finish_oro_php_app_structure
 
 **Related Articles**
