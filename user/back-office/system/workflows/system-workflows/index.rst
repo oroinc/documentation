@@ -53,6 +53,7 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
 
 * :ref:`Seller Product Approval Workflow <system--workflows--seller-product-approval-workflow>`
 
+* :ref:`Conversations Workflow <system--workflows--conversations-backoffice-workflow>`
 
 .. toctree::
    :maxdepth: 1
@@ -69,6 +70,7 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
    Contact Request Workflow <contact-request-wf>
    Seller Registration Request Workflow <seller-registration-flow>
    Seller Product Approval Workflow <seller-product-approval>
+   Conversations Workflow <conversations-workflow>
 
 .. include:: /include/include-images.rst
    :start-after: begin
