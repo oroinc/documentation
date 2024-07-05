@@ -3395,12 +3395,6 @@ header .search .field-search .ep-autosuggest-container .ep-autosuggest>ul>li {
     }
 }
 
-@media (max-width:1199px) {
-    .h1, h1 {
-        font-size: 4.5rem
-    }
-}
-
 @media (min-width:1299px) {
     .footer__grid-info.col-3 {
         grid-template-columns: 2fr auto !important
@@ -6694,5 +6688,11 @@ body.js-menu-open2:before {
 @media (max-width:1024px) {
     body.js-menu-open .nav__site {
         z-index: 1111
+    }
+}
+
+@media only screen and (min-width: 0) {
+    .header-redesign {
+        float: left;
     }
 }
