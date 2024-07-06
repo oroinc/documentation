@@ -73,7 +73,7 @@ The following table outlines what features are included in different types of Or
   "CDN","x","x"," "," "
   "Custom domain","x","x"," "," "
   "Advanced Monitoring","x","x"," "," "
-  "Backups","1 year","2 weeks"," "," "
+  "Backups","1 year","2 weeks","1 week"," "
   "Disaster Recovery","x"," "," "," "
   "SLA","x"," "," "," "
   "App Dev Mode"," "," ","x","x"

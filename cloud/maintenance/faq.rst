@@ -23,7 +23,7 @@ No, access to the index_dev.php file in OroCloud is prohibited for security reas
 What is in application backup?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A full backup consists of the application media files, database dump, and the application source code backup.
+A full backup consists of the application media files, database dump, and the application source code backup. However, it does not cover Elasticsearch and RabbitMQ.
 
 How do I know what OroCloud operation does?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -50,4 +50,4 @@ If the upgrade has failed before running the `oro:platform:update` and the `appl
 
 If the upgrade failed after or during the `oro:platform:update` execution, the changes in the application database have already been applied. Run the necessary restore operation:
 
-* `backup:restore` to recover both database and the application code.
+* `backup:restore` to recover both database and the application code, generating new caches. The command restores the application backup without media files from the specified backup time point. Media files can only be restored via a request to Support.
