@@ -23,15 +23,8 @@ To add a pattern to the list of allowed URL patterns, call `addAllowedUrlPattern
         class: Acme\Bundle\DemoBundle\GuestAccess\Provider\MyGuestAccessAllowedUrlsProvider
         tags: ['oro_frontend.guest_access_urls_provider']
 
-Frontend Datagrids
-------------------
+Frontend Datagrid
+-----------------
 
-The `frontend` option in the datagrid configuration controls the display of the back-office datagrids in the storefront. By default, it is suggested that all datagrids are intended to be used in the back-office. To allow a datagrid to be visible in the storefront, the `frontend` option should be set to `true`.
-
-.. code-block:: yaml
-
-
-    acme_frontend.frontend_customers_users:
-        options:
-            frontend: true
+The frontend datagrid configuration controls the display of the back-office datagrids in the storefront. The frontend datagrid is configured in the ``Resources/views/layouts/<theme>/config/datagrids.yml`` file within the configuration directory of your bundle.
 

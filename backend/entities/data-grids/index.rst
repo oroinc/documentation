@@ -16,7 +16,7 @@ Creating a basic datagrid to display the data of all tasks involves three steps:
 Configure the Grid
 ------------------
 
-The datagrid configuration happens in the ``datagrids.yml`` file in the configuration directory of your bundle and is divided into sections below.
+The backend datagrid is configured in the ``/config/oro/datagrids.yml`` file, while the frontend datagrid is configured in the ``/views/layouts/<theme>/config/datagrids.yml`` file within the configuration directory of your bundle, and is divided into the sections below.
 
 Datasource
 ~~~~~~~~~~
@@ -44,7 +44,7 @@ Then, the ``columns`` option needs to be used to configure how which data will b
        :lines: 1, 201, 227-236
 
 
-For each column, you can use the ``frontend_type`` option to customize how data will be displayed (by default, the data will be shown as is).
+Keep in mind that the frontend datagrid is configured in the ``Resources/views/layouts/<theme>/config/datagrids.yml`` file within the configuration directory of your bundle.
 
 Column Sorters
 ~~~~~~~~~~~~~~

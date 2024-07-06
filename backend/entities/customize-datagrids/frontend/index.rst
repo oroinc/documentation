@@ -3,6 +3,8 @@
 Frontend Datagrid
 =================
 
+The frontend datagrid is configured in the ``Resources/views/layouts/<theme>/config/datagrids.yml`` file within the configuration directory of your bundle.
+
 Oro/datagrid Events
 -------------------
 
@@ -92,7 +94,7 @@ Datagrid Settings operates with columns' attributes:
 - `required` if `true` the column/filters cannot be hidden (but can be ordered)
 - `manageable` if `false` the column does not appear in Datagrid Settings (generally is used for system columns such as `actions` or `selectRow`)
 
-There is the option that allows to turn off Datagrid Settings over `datagrids.yml` configuration:
+There is the option that allows to turn off Datagrid Settings over `datagrids.yml` configuration. Keep in mind that the backend datagrid is configured in the ``/config/oro/datagrids.yml`` file, while the frontend datagrid is configured in the ``/views/layouts/<theme>/config/datagrids.yml`` file within the configuration directory of your bundle.
 
 .. code-block:: yaml
 
@@ -270,7 +272,7 @@ Basic settings for layout grid
                 optionValue: frontend-some-grid
 
 
-2. In ``/config/oro/datagrids.yml`` should be defined:
+2. Define the following in ``/config/oro/datagrids.yml`` for backend datagrid, and in ``/views/layouts/<theme>/config/datagrids.yml`` for the frontend datagrid.
 
 .. code-block:: yaml
 

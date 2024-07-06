@@ -20,8 +20,7 @@ Configure a Report
 ^^^^^^^^^^^^^^^^^^
 
 Building a new report is as easy as defining a data grid. A data grid is a YAML configuration living in a
-file called ``datagrids.yml`` in your bundle's ``Resources/config/oro`` directory. Take a look at the
-following example:
+file called ``datagrids.yml`` in your bundle's ``Resources/config/oro`` directory for the backend datagrid and in ``Resources/views/layouts/<theme>/config/datagrids.yml`` for the frontend datagrid. Take a look at the following example:
 
 .. oro_integrity_check:: d8bb0b0ff5aa46f4c86f9ef1d5c11760d7802db6
 

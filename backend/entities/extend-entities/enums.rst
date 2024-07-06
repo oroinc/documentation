@@ -59,7 +59,7 @@ If for some reason you create system option sets and you have to render them man
 * Symfony form types that can be used to build forms contain option set fields: |EnumChoiceType| and |EnumSelectType|.
 
 * Grid filters: |EnumFilter| and |MultiEnumFilter|. Check out how to use these filters in `datagrids.yml`. You can learn
-  how to configure datagrid formatters for option sets in |ExtendColumnOptionsGuesser|.
+  how to configure datagrid formatters for option sets in |ExtendColumnOptionsGuesser|. Keep in mind that the backend datagrid is configured in the ``/config/oro/datagrids.yml`` file, while the frontend datagrid is configured in the ``/views/layouts/<theme>/config/datagrids.yml`` file within the configuration directory of your bundle.
 
   Please take in account that this class passes the class name as the option set identifier, but you can also use the enum code.
 

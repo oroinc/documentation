@@ -89,7 +89,7 @@ Yes. There are two ways to do that:
 
 `some_default_common_operation` is not displayed at `your_datagrid_name` grid anymore. However, action_configuration can accept callable as a value, so sometimes the options are occupied by service callback. If it is so, we can use a different approach.
 
-2. Disable the operation for custom datagrid using the `exclude_datagrids` option in the operation definition. So you can specify the name of the datagrid that should be excluded from the *operation* matching. If another bundle defines your operation, you can use the *merge* behavior of operation configuration and add an additional property value under your bundle configuration. For example, the operation that should not be displayed for the `product_view` datagrid is the default `DELETE` operation from `OroActionBundle`. You can exclude your grid from matching with the next addition to `<YourBundle>/Resources/config/oro/actions.yml`
+2. Disable the operation for custom datagrid using the `exclude_datagrids` option in the operation definition. So you can specify the name of the datagrid that should be excluded from the *operation* matching. If another bundle defines your operation, you can use the *merge* behavior of operation configuration and add an additional property value under your bundle configuration. For example, the operation that should not be displayed for the `product_view` datagrid is the default `DELETE` operation from `OroActionBundle`. You can exclude your grid from matching adding the following options to ``<YourBundle>/Resources/config/oro/actions.yml`` for the backend datagrid and to ``<YourBundle>/Resources/views/layouts/<theme>/config/datagrids.yml`` for the frontend datagrid.
 
 .. code-block:: none
 
