@@ -127,8 +127,7 @@ Datagrid Configuration
 
 The SearchBundle supplies a datasource that can be used interchangeably with the default ORM datasource. This datasource feeds pure search index data, bypassing the default DBMS, thus allowing pure index storage layer-driven datagrids to be built.
 
-The following is an example of a DatagridBundle's configuration entry in the ``Resources/config/oro/datagrids.yml`` file that builds a simple user
-datagrid using search index data only:
+The following is an example of a DatagridBundle's configuration entry in the ``Resources/config/oro/datagrids.yml`` file that builds a simple user datagrid using search index data only. Keep in mind that the frontend datagrid is configured in the `Resources/views/layouts/<theme>/config/datagrids.yml` file.
 
 .. oro_integrity_check:: 5d315bae78991ab2bfaae3144d09cf7bab2fa3ed
 
