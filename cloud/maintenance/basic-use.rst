@@ -337,7 +337,7 @@ The difference between this command and the original upgrade:
 Backup
 ------
 
-Once you start using the Oro application, you can set up a regular backup process.
+Once you start using the Oro application, you can establish a regular backup process. This process includes backing up the application media files, a database dump, and the application source code. However, it does not cover Elasticsearch and RabbitMQ. To restore data from a backup, run the ``backup:restore`` command as described later in the section.
 
 Backup Everything
 ~~~~~~~~~~~~~~~~~
@@ -380,7 +380,9 @@ By default, the command returns 25 backup records per page. To modify the number
 Restore Everything
 ~~~~~~~~~~~~~~~~~~
 
-To restore the information from backup, run the `backup:restore` command:
+To restore the information from backup, run the `backup:restore` command. This will recover both the database and the application code, generating new caches. The command restores the application backup without media files from the specified backup time point. Media files can only be restored via a request to Support.
+
+The command also enables the maintenance mode. Once the restoration is complete, the maintenance mode is turned off.
 
 .. code-block:: none
 
@@ -388,7 +390,6 @@ To restore the information from backup, run the `backup:restore` command:
 
 .. note:: The `{backup_date}` argument is the one of the available backups listed in the `backup:list` command output, e.g., `2018-11-12-1425`.
 
-The command enables the maintenance mode and restores the application. Once the restoration is complete, the maintenance mode is turned off.
 
 .. _orocloud-maintenance-use-sanitized-backup:
 
