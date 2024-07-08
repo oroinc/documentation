@@ -6,7 +6,7 @@
 Manage Order History in the Storefront
 ======================================
 
-The Order History section stores the information on all open and submitted orders of registered users. Here, you can check the details on the order number, the date it was created, the address this order was shipped to, the total amount, the payment method and the payment status.
+The Order History section stores the information on all open and submitted orders of registered users. Here, you can check the details on the order number, the date it was created, the address this order was shipped to, the total amount, the payment method and the payment status, and whether the order :ref:`was created by a seller or not <user-guide--customers--customer-user-impersonate>`.
 
 .. image:: /user/img/storefront/orders/order-history.png
 
@@ -27,6 +27,11 @@ From the all past orders table, you can:
 
 * Click |IcView| **View** at the end of the row to view an order or click the order to open it. To return to the Order History page, click **Back to Orders List** on the bottom left of the view page.
 * Click |IcCheckout| **Re-Order** at the end of the row to submit the same order
+
+If the order was created on behalf of the buyer, this will be reflected on the order view page with the following note: *This order was created on your behalf by a member of our staff.*
+
+.. image:: /user/img/storefront/orders/order-impersonated.png
+   :alt: An order view page with a note saying "This order was created on your behalf by a member of our staff".
 
 Information displayed in the tables depends on the columns selected in the |IcSettings| grid settings. Within each of the tables, you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
