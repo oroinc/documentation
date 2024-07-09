@@ -60,9 +60,9 @@ To update the related product settings per organization:
    * **Show Add Button** --- Enables a buyer to order a similar product from the similar products section in the main product details. When the option is disabled, a buyer needs to open the similar product details page before they can add it to the shopping list.
    * **Use Slider On Mobile** --- When enabled, one similar product is displayed below the main product information. Other similar products are accessible using the horizontal slider. Click < and > to slide through the similar products.
    * **Product Name Boost** --- A boost factor for the product name, the boost is applied for each matched word. Leave the field empty to disable the boost.
-   * **Product Category Boost** --- A boost factor for the product category. Leave the field empty to disable the boost.
-   * **Product Category Parent Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
-   * **Product Category 2nd Level Parent Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
+   * **Category Boost** --- A boost factor for the product category. Leave the field empty to disable the boost.
+   * **Parent Category Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
+   * **Second Level Parent Category Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
 
 8. In the **Similar Products in Shopping Lists**, the following options are available:
 
@@ -72,9 +72,9 @@ To update the related product settings per organization:
    * **Show Add Button** --- Enables a buyer to order a similar product directly from the shopping list page.
    * **Use Slider On Mobile** --- When enabled, one similar product is displayed below the main product information. Other similar products are accessible using the horizontal slider. Click < and > to slide through the similar products.
    * **Product Name Boost** --- A boost factor for the product name, the boost is applied for each matched word. Leave the field empty to disable the boost.
-   * **Product Category Boost** --- A boost factor for the product category. Leave the field empty to disable the boost.
-   * **Product Category Parent Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
-   * **Product Category 2nd Level Parent Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
+   * **Category Boost** --- A boost factor for the product category. Leave the field empty to disable the boost.
+   * **Parent Category Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
+   * **Second Level Parent Category Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
 
    .. image:: /user/img/system/config_commerce/catalog/sl-similar-products.png
       :alt: Illustration of the Similar Products block on the shopping list page
