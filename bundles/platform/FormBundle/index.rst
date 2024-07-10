@@ -25,6 +25,7 @@ Related Documentation
    InlineEditableViewComponent <inline-editable-view-component>
    editor/index
    search-apis
+   captcha-protection
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
