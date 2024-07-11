@@ -27,6 +27,8 @@ The following information about orders is available:
 .. image:: /user/img/sales/orders/external-order-status.png
    :alt: Illustration of external order status on the order view page and on the order status entity field page with sample options.
 
+.. note:: This option is available starting from OroCommerce version 6.0.2.
+
 * **Owner** --- The back-office user who is responsible for the order.
 * **Payment Status** --- Whether the order is already paid in full, the payment for the order is authorized, etc.
 * **Payment Method** --- The payment method selected to pay for the order.

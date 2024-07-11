@@ -13,7 +13,7 @@ To view the system information,
    :alt: The default product options details page
 
 
-2. **Application Usage** displays the following details:
+2. The **Application Usage** section is available as of OroCommerce version 6.0.2 and displays the following details:
 
    * **Products** --- The total number of products in the database (for single-organization applications) or the total number of products within the selected organization (for multi-organization applications).
    * **Back-Office Users** --- The total number of back-office users in the database (for single-organization applications) or the total number of back-office users within the selected organization (for multi-organization applications). The number is calculated based on the organization that the user belongs to, determined by entity ownership.

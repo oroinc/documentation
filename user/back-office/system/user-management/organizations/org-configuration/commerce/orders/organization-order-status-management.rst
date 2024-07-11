@@ -3,6 +3,8 @@
 Configure Order External Status Management per Organization
 ===========================================================
 
+.. note:: This setting is available starting from OroCommerce version 6.0.2.
+
 To configure an order external status management per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
