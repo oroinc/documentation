@@ -3,6 +3,8 @@
 OroAiContentGenerationBundle
 ============================
 
+.. note:: OroAiContentGenerationBundle is available as of OroCommerce version 5.1.8.
+
 OroAiContentGenerationBundle provides integrations with Open AI and Vertex AI to generate content.
 
 Configuration
