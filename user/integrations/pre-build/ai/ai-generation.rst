@@ -1,53 +1,50 @@
 .. _integrations-ai-generation:
 
-Integration with AI Clients: Open AI and Vertex AI
-==================================================
+Integration with AI Clients: OpenAI and Vertex AI
+=================================================
 
 .. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
-Oro offers integration with AI services to generate content for product descriptions, landing pages, content blocks, master catalog categories, and emails. Integration brings several benefits, including improved SEO with high-quality, unique content, significant time savings in content creation, and enhanced user experiences through more informative and engaging product descriptions on the website.
+Oro offers an out-of-the-box integration with AI services to generate content for product descriptions, landing pages, content blocks, master catalog categories, and emails. Integration brings several benefits, including improved SEO with high-quality, unique content, significant time savings in content creation, and enhanced user experiences through more informative and engaging product descriptions on the website.
 
 Supported AI Clients and Models
 -------------------------------
 
-The AI Content Generation integration feature works with two AI clients, Open AI and Vertex AI.
+The AI Content Generation integration feature works with two AI clients, OpenAI and Vertex AI.
 
 OpenAI is known for creating models like GPT-3 and GPT-4, which are large-scale, general-purpose language models that excel at natural language understanding and generation.
 Vertex AI is a part of Google Cloud's suite of AI and machine learning tools and services, designed to provide a comprehensive platform for developing, deploying, and managing machine learning models.
 
-Once the AI Content Generation integration is installed for your Oro application, you can choose between the two clients and their models in the back-office configuration settings (on global and/or organization :ref:`levels <mc-system-configuration>`):
+Once the AI Content Generation integration is :ref:`configured <user-guide-ai-integrations>` in your Oro application, you can choose between the two clients and their models in the back-office system configuration settings on global and/or organization levels, for example:
 
-* For Open AI, these are *gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4*, and others.
-* For Vertex AI, these are *text-bison, text-bison-32k, text-bison@001*.
+* For OpenAI - *gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4*, etc.
+* For Vertex AI - *text-bison, text-bison-32k*, etc.
 
-.. image:: /user/img/integrations/ai-generation-settings.png
-   :alt: AI generation settings for Open AI and Vertex AI in the Oro back-office
+.. image:: /user/img/system/config_system/ai-global-settings.png
+   :alt: Global AI configuration settings
 
-OpenAI's text generation in your Oro application is flexible in length, while Vertex AI allows for precise generation of text with options for generating 500, 1000, or 2000 words.
+OpenAI's text generation in your Oro application is flexible in length, while Vertex AI allows for precise generation of text with options for generating 500, 1000, or 2500 words.
 
 Content Generation Options
 --------------------------
 
-There are two ways to generate content in your WYSIWYG editor for product descriptions, landing pages, content blocks, and master catalog categories: via a button at the top or a :ref:`WYSIWYG function <getting-started-wysiwyg-editor-field>` on the right.
+When OroCommerce is integrated with AI clients such as OpenAI or Vertex AI, you can use an AI-Powered Content Assistant widget in the WYSIWYG editor to generate content for product descriptions, landing pages, content blocks, master catalog categories, and emails.
 
-In addition to generating simple text, you also have an option to generate text with HTML tags, producing content with HTML markup for formatting and structuring web content. This option can be enabled in the configuration settings on the Oro back-office.
-
-You can also generate text for emails using keywords and/or the subject of the email.
-
-.. image:: /user/img/integrations/emails-ai-generator.png
-   :alt: Illustration of the AI generator feature in an email window
+.. image:: /user/img/system/integrations/ai/ai-widget-example.png
+   :alt: An illustration on an AI widget generating content using OpenAI integration.
 
 Depending on where you use the AI generator, there may be various options available. Typically, you can select a number of tasks to perform, add features and keywords to base content, and specify the tone for the generated text.
 
-Typical tasks and text tones are listed below:
+Typical tasks and text tones may include the following:
 
 .. csv-table::
 
    "Task","
     * Generate product description with a custom prompt
-    * Populate short description based on long description
-    * Populate long description based on short description, product title, and other product attributes
-    * Extract product attributes from description
+    * Populate short description based title, sku and other attributes
+    * Generate product description with an open prompt
+    * Extract product features from  the description
+    * Make the description more specific by incorporating the product attributes into it
     * Shorten text
     * Expand text
     * Correct Grammar"
@@ -60,6 +57,12 @@ Security Measures
 -----------------
 
 Sensitive information, such as the OpenAI token, is stored securely in encrypted form, safeguarding it from unauthorized access. No other information is kept on our servers except for the execution of requests, receipt of information, and presentation to the client. If approved by the client, the information is transferred to one of the text fields, which are then processed as usual.
+
+
+**Related Articles**
+
+* :ref:`AI Integrations in the Back-Office <user-guide-ai-integrations>`
+* :ref:`Generate Content Using AI-Powered Content Assistant <getting-started-wysiwyg-editor-field-ai>`>
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
