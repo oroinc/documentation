@@ -36,6 +36,11 @@ To change the default customer user configuration settings globally:
 
    * **Case-Insensitive Email Addresses** --- If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled. The identical option for back-office users is managed :ref:`here <admin-configuration-user-settings>`. Keep in mind that the uniqueness of email addresses and personal data is checked only for the registered users. It means that no two users can have identical personal information unless they are customer visitors (guest users). Multiple guest customers are allowed to have exactly the same data, including email addresses.
 
+   * **Customer User Email Enumeration Protection** --- Typically, when a user attempts to register an account with an email that already exists in the system, an email address uniqueness validation message is displayed indicating that the email is already in use. With this option enabled, the validation message will no longer appear for duplicate emails. Instead, an email notification will be sent to the existing customer user, informing them of the registration attempt using their email. Enabling the feature helps enhance security and prevent fraudulent activities with known emails.
+
+     .. note:: Customer User Email Enumeration Protection is available as of OroCommerce version 6.0.3.
+
+
 5. In the **Customer Visitor** section, configure the options for the anonymous users:
 
    .. image:: /user/img/system/config_commerce/customer/global-customer-user-settings2.png
