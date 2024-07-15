@@ -27,6 +27,7 @@ Learn how to configure localization options, currency and tracking, as well as u
 
 * :ref:`Google Settings <admin-configuration-integrations-google>`
 * :ref:`Microsoft Settings <configuration-integrations-microsoft>`
+* :ref:`CAPTCHA Settings <admin--configuration--integrations--captcha--global>`
 * :ref:`CRM and Commerce <user-guide-commerce-integration>`
 * :ref:`Dotdigital Settings <admin-configuration-dotmailer-integration-settings>`
 

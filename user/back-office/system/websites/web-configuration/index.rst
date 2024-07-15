@@ -26,6 +26,7 @@ More information about the options available for each of the two categories is a
   * Integrations
 
     * :ref:`Google Settings for the Website <website-google-settings>`
+    * :ref:`CAPTCHA Settings for the Website <website-configuration-captcha-settings`
 
   * Website
 

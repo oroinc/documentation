@@ -31,6 +31,7 @@ The following categories of settings are available for system configuration at o
   * Integrations
 
     * :ref:`Microsoft Settings <organization-configuration-microsoft>`
+    * :ref:`CAPTCHA Settings <organization-configuration-captcha>`
 
 
 * **Commerce**

@@ -938,8 +938,18 @@ Links (User)
 
    <a href="https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm" target="_blank">Get Started with Tableau</a>
 
+.. |Google reCapture documentation|  raw:: html
+
+   <a href="https://developers.google.com/recaptcha/docs/v3" target="_blank">Google reCapture documentation</a>
+
+.. |hCapture documentation|  raw:: html
+
+   <a href="https://docs.hcaptcha.com/" target="_blank">hCapture documentation</a>
+
+.. |Cloudflare Turnstile documentation|  raw:: html
+
+   <a href="https://developers.cloudflare.com/turnstile/" target="_blank">Cloudflare Turnstile documentation</a>
+
 .. |OpenAI API Keys|  raw:: html
 
    <a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI API Keys</a>
-
-
