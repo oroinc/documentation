@@ -7,7 +7,7 @@ Oro offers integrations with leading AI solutions like OpenAI, Vertex AI, and Go
 
 Oro integrates with the following AI solutions:
 
-* :ref:`Open AI and Vertex AI <integrations-ai-generation>`
+* :ref:`OpenAI and Vertex AI <integrations-ai-generation>`
 * :ref:`Google Retail Recommendations <integrations-misc-google-retail-recommendations>`
 
 .. toctree::
