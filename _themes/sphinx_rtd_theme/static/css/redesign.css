@@ -632,6 +632,10 @@ body {
     font-size: 15px;
     line-height: 22px;
 }
+.hero-banner #searchbox-home a {
+    text-decoration: none;
+    font-weight: initial;
+}
 .section-container {
     background: #fff;
 }

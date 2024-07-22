@@ -11,3 +11,18 @@
         </div>
     </form>
 </div>
+
+{% set algoliaOptions = '{hitsPerPage: 10}' %}
+{% if current_version %}
+    {% set algoliaOptions = "{ 'facetFilters': [\"version:" ~ current_version.version ~ "\"], hitsPerPage: 10 }" %}
+{% endif %}
+<script>
+    docsearch({
+        appId: '71PYJZ7X87',
+        apiKey: '92194359ed33b2b76a70c7f8f305a8f0',
+        indexName: 'oroinc',
+        inputSelector: '#searchbox-home input[type=text]',
+        algoliaOptions: {{ algoliaOptions }},
+        debug: false
+    });
+</script>
