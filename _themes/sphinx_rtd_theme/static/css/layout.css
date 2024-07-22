@@ -4465,7 +4465,8 @@ body.js-menu-open2:before {
     z-index: 1001
 }
 
-.header .search .field-search:before {
+.header .search .field-search:before,
+#searchbox-home .field-search2:before {
     content: "" !important;
     background: url(../images/magnifying-glass-solid.svg) no-repeat;
     width: 13px;
@@ -4479,7 +4480,8 @@ body.js-menu-open2:before {
     margin: auto
 }
 
-.header .search .field-search input[type=submit] {
+.header .search .field-search input[type=submit],
+#searchbox-home .field-search2 input[type=submit] {
     position: absolute;
     left: 1px;
     top: 0;
@@ -4504,7 +4506,8 @@ body.js-menu-open2:before {
     top: -50px
 }
 
-.header .search .field-search input[type=text] {
+.header .search .field-search input[type=text],
+#searchbox-home .field-search2 input[type=text] {
     outline: 0 !important;
     border: none;
     box-shadow: none;
@@ -4518,7 +4521,10 @@ body.js-menu-open2:before {
     font-size: 14px
 }
 
-.header .search .field-search input[type=text]:focus, .header .search .field-search input[type=text]:hover {
+.header .search .field-search input[type=text]:focus, 
+.header .search .field-search input[type=text]:hover,
+#searchbox-home .field-search2 input[type=text]:focus, 
+#searchbox-home .field-search2 input[type=text]:hover {
     box-shadow: none !important
 }
 
@@ -6059,24 +6065,34 @@ body.js-menu-open2:before {
     border-left: 0
 }
 
-.header__nav.n-color .search .field-search {
+.header__nav.n-color .search .field-search,
+#searchbox-home .field-search2 {
     background: #fff;
     border: 1px solid #6e6e6e;
-    border-radius: 8px
+    border-radius: 8px;
+    position: relative;
+    margin: 0 auto;
 }
 
-.header__nav.n-color .search .field-search:before {
+#searchbox-home .field-search2 {
+    margin-bottom: 50px;
+}
+
+.header__nav.n-color .search .field-search:before,
+#searchbox-home .field-search2:before {
     width: 1.5rem;
     height: 1.5rem;
     background-size: contain;
     left: 22px
 }
 
-.header__nav.n-color .search .field-search input[type=submit] {
+.header__nav.n-color .search .field-search input[type=submit],
+#searchbox-home .field-search2 input[type=submit] {
     background: 0 0
 }
 
-.header__nav.n-color .search .field-search input[type=text] {
+.header__nav.n-color .search .field-search input[type=text],
+#searchbox-home .field-search2 input[type=text] {
     color: #151514;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.4rem;
@@ -6658,6 +6674,10 @@ body.js-menu-open2:before {
         margin: auto;
         width: 65.4rem !important;
         top: 6px
+    }
+
+    #searchbox-home .field-search2 {
+        width: 65.4rem !important;
     }
 
     .header.header-redesign.js-search-open .header__nav-product, .header.header-redesign.js-search-open .lang, .header.header-redesign.js-search-open .search-button {
