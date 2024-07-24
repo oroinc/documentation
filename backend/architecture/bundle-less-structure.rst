@@ -418,12 +418,8 @@ Themes & Layouts
 ~~~~~~~~~~~~~~~~
 
 1. Assets for themes should be moved to ``/assets/{your_theme_dir}/``.
-2. Admin theme configuration:
 
-   - ``/config/oro/assets.yml``
-   - ``/config/oro/jsmodules.yml``
-
-3. Storefront Themes and layouts should be placed in ``/templates/layouts/{your_theme_dir}/``.
+2. Storefront Themes and layouts should be placed in ``/templates/layouts/{your_theme_dir}/``.
 
    -  Themes configuration: ``/templates/layouts/{your_theme_dir}/theme.yml``
    -  Layout assets configuration: ``/templates/layouts/{your_theme_dir}/config/assets.yml``
@@ -447,6 +443,18 @@ Once the asset is placed in the public folder, you can reference it within your 
 
     {# the image lives at "public/images/example.jpg" #}
     <img src="{{ asset('images/example.jpg') }}" alt="Example Image"/>
+
+Admin Theme Configuration
+"""""""""""""""""""""""""
+
+The admin theme can be configured using the following files:
+
+   - ``/config/oro/assets.yml``
+   - ``/config/oro/jsmodules.yml``
+
+These configuration files can also be used to customize the admin theme.
+
+For more information on the :ref:`Back-Office Customization <dev-doc-frontend-back-office-theming>`, see the frontend developer guide.
 
 Tests
 ~~~~~
