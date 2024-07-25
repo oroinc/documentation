@@ -16,6 +16,7 @@ Learn how to enable and setup the integration between your Oro application and G
     * :ref:`Microsoft 365 Single Sign-On <user-guide-integrations-microsoft-single-sign-on>`
     * :ref:`Microsoft 365 Integrations <user-guide-integrations-microsoft>`
     * :ref:`Work with OroConnector for Outlook <oroconnector-for-microsoft>`
+* :ref:`CAPTCHA Settings <admin--configuration--integrations--captcha--global>`
 * :ref:`CRM and Commerce <user-guide-commerce-integration>`
 * :ref:`AI Content Generation <admin-configuration-ai-integration-settings>`
 * :ref:`Dotdigital Settings <admin-configuration-dotmailer-integration-settings>`
@@ -25,6 +26,7 @@ Learn how to enable and setup the integration between your Oro application and G
 
    Google Settings <google-settings/index>
    Microsoft Settings <microsoft-settings/index>
+   CAPTCHA Settings <captcha-settings>
    CRM and Commerce <commerce-integration>
    AI Content Generation <ai-settings>
    Dotdigital Settings <dotdigital-integration-settings>

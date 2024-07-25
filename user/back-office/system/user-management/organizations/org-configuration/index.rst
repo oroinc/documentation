@@ -32,6 +32,7 @@ The following categories of settings are available for system configuration at o
 
     * :ref:`Google Settings <user-guide-hangouts-org>`
     * :ref:`Microsoft Settings <organization-configuration-microsoft>`
+    * :ref:`CAPTCHA Settings <organization-configuration-captcha>`
 
 
 * **Commerce**
