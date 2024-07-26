@@ -42,6 +42,41 @@ In JS
         name: 'add-note'
     });
 
+Right-to-Left Support
+---------------------
+
+.. note::
+    Icons with corresponding pairs in the theme, such as `arrow-left` and `arrow-right` and those ending in `-left`, `-right` or `-start` , `-end`,
+    will be automatically swapped for locales with RTL mode enabled.
+
+Use Different Icons in TWIG
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: twig
+
+    {% import '@OroUI/layouts/renderIcon.html.twig' as renderIcon %}
+    {{ renderIcon.icon({name: oro_is_rtl_mode() ? 'alert-circle' : 'add-note'}) }}
+
+Use Different Icons in HTML Templates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: none
+
+   <% let oroui = _.macros('oroui') %>
+   <%= oroui.renderIcon({
+       name: _.isRTL() ? 'alert-circle' : 'add-note'
+   }) %>
+
+
+Use Different Icons in JS
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: none
+
+    import {macros} from 'underscore';
+
+    const icon = macros('oroui::renderIcon')({name: _.isRTL() ? 'alert-circle' : 'add-note'});
+
 Adding New Icons to SVG Sprite
 ------------------------------
 
