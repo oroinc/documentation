@@ -48,6 +48,9 @@ Application-level Structure Changes
     |   |   |── app/                                    # App extending configuration.
     |   |   |   |── app_config.yml
     |   |   |   └── ...
+    |   |   |── cache_metadata/                         # Cache metadata configuration.
+    |   |   |   |── cache_metadata.yml
+    |   |   |   └── ...
     |   |   |── channels/                               # Channels extending configuration.
     |   |   |   |── channels_config.yml
     |   |   |   └── ...
@@ -376,6 +379,16 @@ System Configurations
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/system_configuration.yml -> config/oro/system_configuration/your_config.yml
+
+
+Cache Metadata
+""""""""""""""
+
+.. code-block:: none
+
+    {BundleDir}/Resources/config/oro/cache_metadata.yml  -> config/oro/cache_metadata/cache_metadata.yml
+
+.. important:: All application-level caching data must be registered in the /config/oro/cache_metadata/cache_metadata.yml file.
 
 
 Extension and Configuration Moving
