@@ -729,19 +729,22 @@ To download full file backup from any adapter, use:
 Media Upload
 ~~~~~~~~~~~~
 
-.. note:: The files in the source directory always overwrite the same files in the destination directory.
+.. note:: The files in the source directory always overwrite the same files in the destination directory. Please always use *underscores* instead of *spaces* for the ``source`` directory name and for all file names too.
 
-.. note:: Please always use `underscores` instead of `spaces` for the `source` directory name and for all file names too.
+To upload media files and product images, use SFTP. It helps connect to the OroCommerce instance and transfer large amounts of data. To get SFTP access to your OroCloud instance, read the :ref:`related documentation <sftp-access>` and create a ticket in the support portal.
 
-Sometimes, you may require to upload media files that relate to custom CMS page(s) or products
-to a specific ``public`` directory.
+ The application must have a configured adapter: ``gaufrette_adapter.import_files: local:/mnt/sftproot``. In your CSV file, the path to the file should follow this format: ``/[sftp-user]/path/to/file/filename.jpg``.
+
+.. important:: Once you have uploaded the images via FTP/SFTP and moved them to the right location for the image import, please run :ref:`images import via the UI <user-guide-import-product-images>`, as this assigns the images to the products and makes them available in the asset library.
+
+
+Sometimes, you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` directory.
 This can be done with the ``media:upload`` command that allows to upload media files, e.g.,
 ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml | mp4``
 to the ``uploads`` gridFS database.
 
 .. note:: By default, the command runs in the ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with the ``--force`` flag.
 
-.. note:: For OroCommerce 4.1 and 3.1, upload product images into the ``products`` destination (``var/import_export/product_images`` application path). For OroCommerce 4.2+, upload product images via SFTP (application has a configured adapter ``gaufrette_adapter.import_files: local:/mnt/sftproot``; in a CSV file, the path to the file should follow this pattern: ``[sftp-user]/path/to/file/filename.jpg``).
 
 Usage examples:
 
@@ -830,7 +833,7 @@ If source file extension is not allowed, the appropriate notification is display
     +---------------------------------+------------------------------------+
     ✔ Ok
 
-.. important:: Once you have uploaded the images via FTP/SFTP and moved them to the right location for the image import, please run :ref:`images import via the UI <user-guide-import-product-images>`, as this assigns the images to the products and makes them available in the asset library.
+
 
 Media Delete
 ~~~~~~~~~~~~
