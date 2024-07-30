@@ -28,7 +28,7 @@ To automatically generate a price list in OroCommerce:
 
 #. Start editing the required price list or click **Create Price List** to create a new one.
 
-#. In the **Product Assignment** section, set up the product list. To complete this, in the **Rule** field, insert criteria into the text area to filter products in the catalog with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free.
+#. In the **Product Assignment** section, set up the product list. To complete this, in the **Rule** field, insert criteria into the text area to filter products in the catalog with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free (as illustrated in the screenshot below).
 
    .. image:: /user/img/sales/pricelist/advanced-query-builder.png
       :alt: The advanced query builder in the Product Assignment section
