@@ -16,7 +16,7 @@ This guide overviews the bundle-less structure and explains how to migrate the a
 The *bundle-less structure* includes the application structure changes outlined below (configuration and directory).
 
 Application-level Structure Changes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
 
 .. code-block:: none
 
@@ -47,6 +47,9 @@ Application-level Structure Changes
     |   |   |   └── ...
     |   |   |── app/                                    # App extending configuration.
     |   |   |   |── app_config.yml
+    |   |   |   └── ...
+    |   |   |── cache_metadata/                         # Cache metadata configuration.
+    |   |   |   |── cache_metadata.yml
     |   |   |   └── ...
     |   |   |── channels/                               # Channels extending configuration.
     |   |   |   |── channels_config.yml
@@ -110,6 +113,9 @@ Application-level Structure Changes
     |   |   |── websocket_routing/                       # Gos PubSub routing resources.
     |   |   |   |── websocket_routing_config.yml
     |   |   |   └── ...
+    |   |   |── sanitize                                 # Sanitizing rules configuration
+    |   |   |   |── sanitize_config.yml
+    |   |   |   └── ...
     |   |   |── assets.yml                               # Assets for administration themes/layouts.
     |   |   |── jsmodules.yml                            # Js modules for administration themes/layouts.
     |   |   └── behat_services.yml                       # Behat services must be registered here.
@@ -131,12 +137,12 @@ Application-level Structure Changes
     └── ...
 
 Moving Existing Bundle to Bundle-less Structure
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------
 
 To port an existing bundle to a bundle-less structure, you must update the directory structure to the one shown above. There is no automatic tool for this update, so you must move your code following these guidelines:
 
 Migrations
-""""""""""
+~~~~~~~~~~
 
 .. code-block:: none
 
@@ -146,7 +152,7 @@ Migrations
     Bundle/UserNamingBundle/Migrations/Schema/ -> migrations/UserNaming/Schema/
 
 Fixtures
-""""""""
+~~~~~~~~
 
 .. code-block:: none
 
@@ -156,7 +162,7 @@ Fixtures
     Bundle/UserNamingBundle/Migrations/Data/ -> migrations/UserNaming/Data/
 
 Entity
-""""""
+~~~~~~
 
 .. code-block:: none
 
@@ -166,7 +172,7 @@ Entity
     Bundle/UserNamingBundle/Entity/UserNamingType.php -> src/Entity/UserNamingType.php
 
 Controllers
-"""""""""""
+~~~~~~~~~~~
 
 .. code-block:: none
 
@@ -183,21 +189,21 @@ Controllers
       - { name: container.service_subscriber }
 
 Views
-"""""
+~~~~~
 
 .. code-block:: none
 
    {BundleDir}/Resources/views/{YourEntityName}/index.html.twig -> templates/{entity_alias_underscore}/index.html.twig
 
 Translations
-""""""""""""
+~~~~~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/translations/messages.en.yml -> translations/messages.en.yml
 
 Gridview
-"""""""""
+~~~~~~~~
 
 .. code-block:: none
 
@@ -207,7 +213,7 @@ Gridview
     BundleDir}/Resources/views/{YourEntityName}/Datagrid/yourTemplate.html.twig -> templates/{entity_alias_underscore}/Datagrid/yourTemplate.html.twig
 
 Search
-""""""
+~~~~~~
 
 .. code-block:: none
 
@@ -217,49 +223,49 @@ Search
     {BundleDir}/Resources/views/{YourEntityName}/Search/yourTemplate.html.twig -> templates/{entity_alias_underscore}/Search/yourTemplate.html.twig
 
 Navigation
-""""""""""
+~~~~~~~~~~
 
 .. code-block:: none
 
    {BundleDir}/Resources/config/oro/navigation.yml -> config/oro/navigation/{your_navigation_name.yml}
 
 Entity
-"""""""
+~~~~~~
 
 .. code-block:: none
 
   {BundleDir}/Resources/config/oro/entity.yml -> config/oro/entity/{your_entity_name.yml}
 
 ACLS
-"""""
+~~~~
 
 .. code-block:: none
 
   {BundleDir}/Resources/config/oro/acls.yml -> config/oro/acls/{your_acls_name.yml}
 
 API
-"""
+~~~
 
 .. code-block:: none
 
   {BundleDir}/Resources/config/oro/api.yml -> config/oro/api/{your_api_name.yml}
 
 Channels
-""""""""
+~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/channels.yml -> config/oro/channels/{your_channel_name.yml}
 
 Charts
-""""""
+~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/charts.yml -> config/oro/charts/{your_chart_name.yml}
 
 Workflows
-"""""""""
+~~~~~~~~~
 
 .. code-block:: none
 
@@ -269,7 +275,7 @@ Workflows
 
 
 Processes
-"""""""""
+~~~~~~~~~
 
 .. code-block:: none
 
@@ -279,14 +285,14 @@ Processes
 
 
 ACL Categories
-""""""""""""""
+~~~~~~~~~~~~~~
 
 .. code-block:: none
 
    {BundleDir}/Resources/config/oro/acl_categories.yml -> config/oro/acl_categories/your_acl_name.yml
 
 Address Format
-""""""""""""""
+~~~~~~~~~~~~~~
 
 .. code-block:: none
 
@@ -294,14 +300,14 @@ Address Format
 
 
 API Frontend
-""""""""""""
+~~~~~~~~~~~~
 
 .. code-block:: none
 
    {BundleDir}/Resources/config/oro/api_frontend.yml -> config/oro/api_frontend/your_api_name.yml
 
 Application Base Configuration
-""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: none
 
@@ -309,14 +315,14 @@ Application Base Configuration
 
 
 Configurable Permissions
-""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/configurable_permissions.yml -> config/oro/configurable_permissions/your_permission_name.yml
 
 Dashboards
-""""""""""
+~~~~~~~~~~
 
 .. code-block:: none
 
@@ -326,57 +332,69 @@ Dashboards
     {BundleDir}/Resources/views/Dashboard/yourTemplate.html.twig -> templates/Dashboard/yourTemplate.html.twig
 
 Entity Extend
-"""""""""""""
+~~~~~~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/entity_extend.yml -> config/oro/entity_extend/your_config.yml
 
 Entity Hidden Fields
-""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/entity_hidden_fields.yml -> config/oro/entity_hidden_fields/your_config.yml
 
 Locale Data
-"""""""""""
+~~~~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/locale_data.yml -> config/oro/locale_data/your_config.yml
 
 Naming Format
-"""""""""""""
+~~~~~~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/name_format.yml -> config/oro/name_format/your_config.yml
 
 Permissions
-"""""""""""
+~~~~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/permissions.yml -> config/oro/permissions/your_config.yml
 
 Placeholders
-"""""""""""""
+~~~~~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/placeholders.yml -> config/oro/placeholders/your_config.yml
 
 System Configurations
-"""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: none
 
     {BundleDir}/Resources/config/oro/system_configuration.yml -> config/oro/system_configuration/your_config.yml
 
 
-Extension and Configuration Moving
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Cache Metadata
+~~~~~~~~~~~~~~
+
+.. note:: This feature is available as of OroPlatform version 6.0.3.
+
+.. code-block:: none
+
+    {BundleDir}/Resources/config/oro/cache_metadata.yml  -> config/oro/cache_metadata/cache_metadata.yml
+
+.. important:: All application-level caching data must be registered in the /config/oro/cache_metadata/cache_metadata.yml file.
+
+
+Moving Extension and Configuration
+----------------------------------
 
 1. Create Extension and Configuration classes in ``/src/Configuration``.
 
@@ -415,7 +433,7 @@ Extension and Configuration Moving
     }
 
 Themes & Layouts
-~~~~~~~~~~~~~~~~
+----------------
 
 1. Assets for themes should be moved to ``/assets/{your_theme_dir}/``.
 
@@ -426,7 +444,7 @@ Themes & Layouts
    -  Layout theme configuration: ``/templates/layouts/{your_theme_dir}/config/config.yml``
 
 Asset Handling in Application Development
-"""""""""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If the build uses the image or any other asset, it is automatically copied to the public folder. Copying ensures that the assets are readily available and can be served to users without issues.
 
@@ -434,8 +452,148 @@ However, in some scenarios where assets are not directly utilized within the web
 
 To adhere to the best practices mentioned above, manually move the image or any other static asset to the public folder.
 
-Referencing Assets using the asset() Function in Twig
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
+Overriding SASS Variables
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Below is an example of overriding SASS variables in a custom theme:
+
+1. Define a custom theme. Add theme file `appRoot/templates/layouts/{theme_name}/theme.yml`:
+
+.. code-block:: yaml
+
+    label: 'Default New'
+    groups: [ commerce ]
+    svg_icons_support: true
+    parent: default
+    rtl_support: true
+
+2. Define theme-related styles:
+
+`appRoot/assets/{theme_name}/css/scss/settings/_colors.scss`
+
+
+.. code-block:: css
+
+   /* @theme: theme-name; */
+   $color-palette: (
+       'primary': (
+           'main': #0a7f8f,
+           'hover': #075963,
+           'active': #05444d,
+           'disabled': #7d999e,
+           'light': #e8fcff
+       ),
+       'secondary': (
+           'c1': #ffc221,
+           'c2': #f7941d,
+           'c3': #6e98dc,
+           'c4': #7ea6a4,
+           'c5': #197b30,
+           'sale': #9c0067
+       ),
+       'neutral': (
+           'white-100': #fff,
+           'white-50': rgb(255 255 255 / .5),
+           'white-30': rgb(255 255 255 / .3),
+           'white-15': rgb(255 255 255 / .15),
+           'grey1': #f0f3f5,
+           'grey2': #d4dcdd,
+           'grey3': #c3cfcf,
+           'dark': #002434,
+           'focus': #1a69fe
+       ),
+       'text': (
+           'primary': #002434,
+           'secondary': #45606e,
+           'disabled': #8e9da4,
+           'inverse': #fff,
+           'inverse-70': rgb(255 255 255 / .7),
+           'link': red,
+           'link-hover': red,
+           'link-hover-on-dark': red
+       ),
+       'destructive': (
+           'light': #ffebed,
+           'light-on-dark': rgb(255 107 107 / .3),
+           'base': #de0b07,
+           'main': #b50400,
+           'main-on-dark': #ff6b6b,
+           'dark': #9c0000,
+           'disabled': #d17573
+       ),
+       'success': (
+           'light': #e2fbe9,
+           'dark': #005e1f
+       ),
+       'warning': (
+           'light': #fff7d1,
+           'base': #f19500,
+           'dark': #8f3700
+       ),
+       'info': (
+           'light': #edf5ff,
+           'dark': #143dd4
+       )
+   );
+
+.. note:: If you extend your theme from existing themes, your new color palette must include all the colors present in the parent theme. Otherwise, you will encounter an assets build error, which is why in this example, $color-palette is fully shown and includes all the colors from the default theme.
+
+`appRoot/assets/{theme_name}/css/scss/settings/primary-settings.scss`
+
+.. code-block:: css
+
+    /* @theme: {theme_name}; */
+
+    @import 'colors';
+
+
+`appRoot/assets/{theme_name}/css/scss/variables/page-header-config.scss`
+
+.. code-block:: css
+
+    /* @theme: {theme_name}; */
+
+    $page-header-background-color: get-color('primary', 'light');
+
+3. Define theme-related assets config:
+
+`appRoot/templates/layouts/{theme_name}/config/assets.yml`
+
+.. code-block:: yaml
+
+    styles:
+        inputs:
+            - '../../assets/{theme_name}/css/scss/settings/primary-settings.scss'
+            - '../../assets/{theme_name}/css/scss/variables/page-header-config.scss'
+        output: 'css/styles.css'
+
+4. Enable the new theme. Update the application config:
+
+`appRoot/config/config.yml`
+
+.. code-block:: yaml
+
+    ...
+
+    oro_layout:
+        enabled_themes:
+            - default
+            - {theme_name}
+
+    ...
+
+5. To apply changes, clear the application cache and re-install assets.
+
+.. code-block:: text
+
+    php bin/console cache:clear
+    php bin/console oro:assets:install
+
+
+For more information on :ref:`Storefront Customization <dev-doc-frontend-layouts-quick-start>` and :ref:`AssetBundle CLI Commands <bundle-docs-platform-asset-bundle-commands>`, see the frontend developer guide.
+
+Referencing Assets Using the asset() Function in Twig
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once the asset is placed in the public folder, you can reference it within your application using the asset() function in Twig. The asset() function provides a convenient way to generate the correct URL for the asset, allowing you to include it within your templates or code.
 
@@ -445,7 +603,7 @@ Once the asset is placed in the public folder, you can reference it within your 
     <img src="{{ asset('images/example.jpg') }}" alt="Example Image"/>
 
 Admin Theme Configuration
-"""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The admin theme can be configured using the following files:
 
@@ -457,7 +615,7 @@ These configuration files can also be used to customize the admin theme.
 For more information on the :ref:`Back-Office Customization <dev-doc-frontend-back-office-theming>`, see the frontend developer guide.
 
 Tests
-~~~~~
+-----
 
 1. Unit tests should be placed in ``/src/Test/Unit/``.
 2. Functional tests should be placed in ``/src/Test/Functional/``.
@@ -478,3 +636,4 @@ Tests
                 And I click "Create Payment Rule"
                 Then I fill "Payment Rule Form" with:
                   | Method | PayPal |
+
