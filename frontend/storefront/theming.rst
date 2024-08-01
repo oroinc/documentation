@@ -37,36 +37,39 @@ The **theme configuration file** should be placed in the theme folder and named 
 
 The **allowed options in the theme configuration** file are the following:
 
-+-----------------+------------------------------+---------------------+
-| Option          | Description                  | Required            |
-+=================+==============================+=====================+
-| `label`         | The label displayed in       | yes                 |
-|                 | the theme management UI.     |                     |
-+-----------------+------------------------------+---------------------+
-| `logo`          | The logo displayed           | no                  |
-|                 | in the UI.                   |                     |
-+-----------------+------------------------------+---------------------+
-| `logo_small`    | The small logo is displayed  | no                  |
-|                 | on small screens in the UI   |                     |
-|                 | and also in a burger menu.   |                     |
-+-----------------+------------------------------+---------------------+
-| `parent`        | Parent theme identifier      | no                  |
-+-----------------+------------------------------+---------------------+
-| `groups`        | Group name or names for      | no                  |
-|                 | which it is applicable. Use  |                     |
-|                 | ``commerce`` group for an    |                     |
-|                 | OroCommerce application      |                     |
-+-----------------+------------------------------+---------------------+
-| `rtl_support`   | Defines whether Theme        | no                  |
-|                 | supports RTL and additional  |                     |
-|                 | \*.rtl.css\ files            |                     |
-|                 | have to be build             |                     |
-+-----------------+------------------------------+---------------------+
-| `configuration` | Defines theme configuration  | no                  |
-|                 | options that give theme      |                     |
-|                 | developers more possibility  |                     |
-|                 | for configurable storefront  |                     |
-+-----------------+------------------------------+---------------------+
++---------------------+------------------------------+---------------------+
+| Option              | Description                  | Required            |
++=====================+==============================+=====================+
+| `label`             | The label displayed in       | yes                 |
+|                     | the theme management UI.     |                     |
++---------------------+------------------------------+---------------------+
+| `logo`              | The logo displayed           | no                  |
+|                     | in the UI.                   |                     |
++---------------------+------------------------------+---------------------+
+| `logo_small`        | The small logo is displayed  | no                  |
+|                     | on small screens in the UI   |                     |
+|                     | and also in a burger menu.   |                     |
++---------------------+------------------------------+---------------------+
+| `parent`            | Parent theme identifier      | no                  |
++---------------------+------------------------------+---------------------+
+| `groups`            | Group name or names for      | no                  |
+|                     | which it is applicable. Use  |                     |
+|                     | ``commerce`` group for an    |                     |
+|                     | OroCommerce application      |                     |
++---------------------+------------------------------+---------------------+
+| `rtl_support`       | Defines whether Theme        | no                  |
+|                     | supports RTL and additional  |                     |
+|                     | \*.rtl.css\ files            |                     |
+|                     | have to be build             |                     |
++---------------------+------------------------------+---------------------+
+| `svg_icons_support` | Defines whether Theme        | no                  |
+|                     | supports SVG icons           |                     |
++---------------------+------------------------------+---------------------+
+| `configuration`     | Defines theme configuration  | no                  |
+|                     | options that give theme      |                     |
+|                     | developers more possibility  |                     |
+|                     | for configurable storefront  |                     |
++--------------------+-------------------------------+---------------------+
 
 **Example:**
 
