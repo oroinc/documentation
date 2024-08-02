@@ -377,7 +377,7 @@ function isRightSidebarScrolled() {
 }
 
 var smoothScrollTop = function(element, topPosition) {
-    $(element).click(function() {
+    $(element).on('click', function() {
         var href = $(this).attr("href"),
             currentOffset;
 

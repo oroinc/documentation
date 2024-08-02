@@ -12,7 +12,7 @@ jQuery(function ($) {
     });
 
     /*new menu*/
-    $(".header__nav-menu").click(function () {
+    $(".header__nav-menu").on('click', function () {
         $(this).closest(".header__nav").find(".header__menu-left").addClass("js-open");
         $(this).closest("body").addClass("js-menu-open");
 
@@ -27,7 +27,7 @@ jQuery(function ($) {
         }
     });
 
-    $(".js-menu-children-link").click(function (event){
+    $(".js-menu-children-link").on('click', function (event){
         var menu_children = this;
         event.preventDefault();
         if ($(this).hasClass("js-active")) {
@@ -41,7 +41,7 @@ jQuery(function ($) {
 
     });
     jQuery(function($){
-        $(document).click(function (e){
+        $(document).on('click', function (e){
             var menuParent = $(".header__nav-product .header__menu > .header__menu-parent");
             if (!menuParent.is(e.target)
                 && menuParent.has(e.target).length === 0) {
@@ -51,7 +51,7 @@ jQuery(function ($) {
         });
     });
 
-    $(".header__menu-left_closest").click(function () {
+    $(".header__menu-left_closest").on('click', function () {
         $(this).closest(".header__nav").find(".header__menu-left").removeClass("js-open");
         $(this).closest(".header__nav").find(".header__nav-product").find(".header__menu").removeClass("js-open");
         $(this).closest("body").removeClass("js-menu-open");
@@ -59,7 +59,7 @@ jQuery(function ($) {
 
     if($(window).width() >= 1025){
         if ($(".header__nav-breadcrumbs[data-class]").length>0) {
-            $('.header__nav-breadcrumbs[data-class]').click(function(){
+            $('.header__nav-breadcrumbs[data-class]').on('click', function(){
                 var menu_idBr = $(this).attr('data-class');
                 $("."+menu_idBr).parent().addClass("js-open3");
 
@@ -116,7 +116,7 @@ jQuery(function ($) {
     }
     if($(window).width() <= 1024){
         if ($(".header__nav-breadcrumbs[data-class]").length>0) {
-            $('.header__nav-breadcrumbs[data-class]').click(function(){
+            $('.header__nav-breadcrumbs[data-class]').on('click', function(){
                 var menu_idBr = $(this).attr('data-class');
                 $("."+menu_idBr).parent().addClass("js-open3");
 
@@ -159,7 +159,7 @@ jQuery(function ($) {
                 searchButton = $('.searchButton'),
                 searchClose = $('.searchClose');
 
-            globalMenuButton.click(function () {
+            globalMenuButton.on('click', function () {
                 if (!self.isMobile()) {
                     return false;
                 }
@@ -170,7 +170,7 @@ jQuery(function ($) {
 
                 return false;
             });
-            globalMenuClose.click(function () {
+            globalMenuClose.on('click', function () {
                 if (!self.isMobile()) {
                     return false;
                 }
@@ -211,7 +211,7 @@ jQuery(function ($) {
             //     }
             //     return false;
             // });
-            OroMenuClose.click(function () {
+            OroMenuClose.on('click', function () {
                 if (!self.isMobile()) {
                     return false;
                 }
@@ -243,7 +243,7 @@ jQuery(function ($) {
 
                 return false;
             });
-            globalMenuCloseAll.click(function () {
+            globalMenuCloseAll.on('click', function () {
                 if (!self.isMobile()) {
                     return false;
                 }
@@ -260,17 +260,17 @@ jQuery(function ($) {
 
                 return false;
             });
-            searchButton.click(function () {
+            searchButton.on('click', function () {
                 $(this).toggleClass('active');
                 if ($(this).hasClass('active')) {
                     $(this).next('form').show();
-                    $('.field-search input[name="s"]').focus();
+                    $('.field-search input[name="s"]').trigger('focus');
                 }else{
                     $(this).next('form').hide();
                 }
                 return false;
             });
-            searchClose.click(function () {
+            searchClose.on('click', function () {
                 searchButton.removeClass('active');
 
                 return false;
@@ -291,8 +291,8 @@ jQuery(function ($) {
                     if (!link && hash && hash != '#' && hash.search('=') < 0) {
                         var timeout = 0;
                         if (globalMenuButton.hasClass('active')) {
-                            globalMenuClose.click();
-                            OroMenuClose.click();
+                            globalMenuClose.trigger('click');
+                            OroMenuClose.trigger('click');
                             timeout = 400;
                         }
                         setTimeout(function () {
