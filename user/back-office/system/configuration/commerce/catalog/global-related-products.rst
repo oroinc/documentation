@@ -12,8 +12,9 @@ Related products may include accessories, services, and other items that are lik
 
 Up-sell products may advertise more expensive alternatives to the product, like a newer and more advanced model, upgrades and add-ons that may look tempting when bundled with the product, etc.
 
-   .. image:: /user/img/system/config_commerce/catalog/related_upsell_products.png
-      :alt: Illustration of the related and up-sell products segments in the storefront
+.. image:: /user/img/system/config_commerce/catalog/related-upsell-sf.png
+   :alt: Illustration of Related Products and Upsell Products blocks in the storefront
+   :align: center
 
 In the system configuration, you can:
 
@@ -22,7 +23,6 @@ In the system configuration, you can:
 * Limit the number of items displayed as related, up-sell, or similar.
 
 .. note:: Before configuring the related items settings, add the required related and up-sell products to the desired products as described in the :ref:`Add Related Items <products--related-items>` topic. Similar products are displayed automatically following the similar product calculation algorithm.
-
 
 To update the related, up-sell, or similar product settings globally:
 
@@ -46,19 +46,6 @@ To update the related, up-sell, or similar product settings globally:
 
    * **Minimum Items** --- The minimum number of related products that may be shown to the buyer. If the actual number of products is less than this value, the related products section is hidden in the storefront for the product.
    * **Show Add Button** --- Enables a buyer to order a related product from the related products section in the main product details. When the option is disabled, a buyer needs to open the related product details page before they can add it to the shopping list.
-
-     **Show Add Button is Enabled**
-
-     .. image:: /user/img/system/config_commerce/catalog/RelatedProductPreviewWithAdd.png
-        :class: with-border
-        :alt: A storefront product page illustrating the enabled Add to Shopping list button
-
-     **Show Add Button is Disabled**
-
-     .. image:: /user/img/system/config_commerce/catalog/RelatedProductPreview.png
-        :class: with-border
-        :alt: A storefront product page illustrating the disabled Add to Shopping list button
-
    * **Use Slider On Mobile** --- When enabled, one related product is displayed below the main product information. Other related products are accessible using the horizontal slider. Click < and > to slide through the related products.
 
 .. _sys--commerce--catalog--upsell-products:
@@ -77,8 +64,7 @@ To update the related, up-sell, or similar product settings globally:
 
 .. _sys--commerce--catalog--similar-products:
 
-
-.. note:: **Similar Products** are available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine.
+.. note:: **Similar Products** and **Similar Products in Shopping Lists** are available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine.
 
 6. In the **Similar Products** section, the following options are available:
 
@@ -92,11 +78,26 @@ To update the related, up-sell, or similar product settings globally:
    * **Show Add Button** --- Enables a buyer to order a similar product from the similar products section in the main product details. When the option is disabled, a buyer needs to open the similar product details page before they can add it to the shopping list.
    * **Use Slider On Mobile** --- When enabled, one similar product is displayed below the main product information. Other similar products are accessible using the horizontal slider. Click < and > to slide through the similar products.
    * **Product Name Boost** --- A boost factor for the product name, the boost is applied for each matched word. Leave the field empty to disable the boost.
-   * **Product Category Boost** --- A boost factor for the product category. Leave the field empty to disable the boost.
-   * **Product Category Parent Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
-   * **Product Category 2nd Level Parent Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
+   * **Category Boost** --- A boost factor for the product category. Leave the field empty to disable the boost.
+   * **Parent Category Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
+   * **Second Level Parent Category Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
 
-7. Click **Save**.
+7. In the **Similar Products in Shopping Lists**, the following options are available:
+
+   * **Enable Similar Products in Shopping Lists** -- Enabling this option add a block of Similar Products to the shopping list page.
+   * **Maximum Items** --- A limit of similar products that are shown to a buyer on the shopping list page.
+   * **Minimum Items** --- The minimum number of similar products that may be shown to the buyer on the shopping list page..
+   * **Show Add Button** --- Enables a buyer to order a similar product directly from the shopping list page.
+   * **Use Slider On Mobile** --- When enabled, one similar product is displayed below the main product information. Other similar products are accessible using the horizontal slider. Click < and > to slide through the similar products.
+   * **Product Name Boost** --- A boost factor for the product name, the boost is applied for each matched word. Leave the field empty to disable the boost.
+   * **Category Boost** --- A boost factor for the product category. Leave the field empty to disable the boost.
+   * **Parent Category Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
+   * **Second Level Parent Category Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
+
+   .. image:: /user/img/system/config_commerce/catalog/sl-similar-products.png
+      :alt: Illustration of the Similar Products block on the shopping list page
+
+8. Click **Save**.
 
 .. admonition:: Business Tip
 
