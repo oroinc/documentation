@@ -384,7 +384,7 @@ System Configurations
 Cache Metadata
 ~~~~~~~~~~~~~~
 
-.. note:: This feature is available as of OroPlatform version 6.0.3.
+.. note:: This feature is available as of OroPlatform version 5.1.9.
 
 .. code-block:: none
 
