@@ -41,7 +41,7 @@ To configure filters and sorting options per organization:
 
    .. important:: The Filter Panel Position configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please configure this option under :ref:`System > Theme Configuration <back-office-theme-configuration>`.
 
-    .. hint:: To specify how to display the multi-select filter options, refer to the :ref:`theme-related settings <configuration--commerce--design--theme>`.
+   .. hint:: To specify how to display the multi-select filter options, refer to the :ref:`theme-related settings <configuration--commerce--design--theme>`.
 
 
 6. Click **Save Settings**.
