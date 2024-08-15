@@ -64,7 +64,7 @@ Every child node must be populated with :ref:`content variants <user-guide--mark
 
 .. hint:: It is possible to add a custom content page and link it as a content variant, but this requires some customization effort.
 
-.. image:: /user/img/concept-guides/web-catalog/content-variants.png
+.. image:: /user/img/concept-guides/web-catalog/content_variants.png
    :alt: Content variants in the back-office
 
 You can configure more than one content variant per node, in case you want to display different variations of a page to different customers. By default, the web catalog with all its nodes has no **visibility restrictions** and may be displayed for any localization, on any website, and for any customer. However, depending on your business processes, you can adjust web catalog nodes to be displayed in a particular **localization** (e.g., Germany, UK, France, etc.), on a specific **website** (e.g., B2B, B2C, Europe, Australia), and/or for the selected **customer(s)** or **customer group** (e.g., Non-Authenticated Visitors, Wholesalers, Partners, etc.), while keeping the same URL.
