@@ -16,9 +16,11 @@ This guide explains and illustrates how to create workflows through configuratio
 * :ref:`Introduction <backend--workflows--intro>`
 * :ref:`Configuration Reference <backend--workflows--config-reference>`
 * :ref:`Basic Workflow Configuration <backend--workflows--create>`
+* :ref:`Transition Services <backend--workflows--transition-services>`
 * :ref:`Transition Forms <backend--workflows--transition-forms>`
 * :ref:`Managing Elements <backend--workflows--managing-elements>` (:ref:`Actions <backend--workflows--transition-actions>` and :ref:`Conditions <backend--workflows--transition-conditions>`)
 * :ref:`Workflow Translations <backend--workflows--translation-wizard>`
+* :ref:`Workflow Events <backend--workflows--workflow-events>`
 * :ref:`Example of Workflow Configuration <backend-workflows-example>`
 
 .. hint:: For information on how to create simple workflows via the user interface (application back-office), see the :ref:`Workflow Management <doc--system--workflow-management>` user guide.
@@ -31,5 +33,6 @@ This guide explains and illustrates how to create workflows through configuratio
    Elements <elements>
    Basic Configuration <create>
    Transition Forms <transition-forms>
+   Transition Services <transition-services>
    Translation Wizard <translations-wizard>
    Configuration Example <config-example>

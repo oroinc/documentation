@@ -62,7 +62,7 @@ How to disable a CRUD default operation for my Bundle?
 
 Supposing you need to disable the default `DELETE` operation for your new `MyEntity` entity. Here is the case which describes the solution. You can do this in `actions.yml` under your bundle configuration resources directory:
 
-.. code-block:: php
+.. code-block:: yaml
 
     operations:
         DELETE:

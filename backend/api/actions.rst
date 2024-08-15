@@ -496,7 +496,7 @@ See the ``handleUpdateSubresource`` method of |RequestActionHandler| as an examp
 
 Below is an example of registering a processor to build a form builder:
 
-.. code-block:: php
+.. code-block:: yaml
 
     acme.api.items.build_form_builder:
         class: Oro\Bundle\ApiBundle\Processor\Subresource\ChangeSubresource\BuildFormBuilder
@@ -551,7 +551,7 @@ See the ``handleAddSubresource`` method of |RequestActionHandler| as an example.
 
 Below is an example of registering a processor to build a form builder:
 
-.. code-block:: php
+.. code-block:: yaml
 
     acme.api.items.build_form_builder:
         class: Oro\Bundle\ApiBundle\Processor\Subresource\ChangeSubresource\BuildFormBuilder
@@ -606,7 +606,7 @@ See the ``handleDeleteSubresource`` method of |RequestActionHandler| as an examp
 
 Below is an example of registering a processor to build a form builder:
 
-.. code-block:: php
+.. code-block:: yaml
 
     acme.api.items.build_form_builder:
         class: Oro\Bundle\ApiBundle\Processor\Subresource\ChangeSubresource\BuildFormBuilder
@@ -834,7 +834,7 @@ An example of a processor used to modify the loaded data is |ComputePrimaryField
 
 The ``collection`` tag attribute can be used for processors of this action to process all primary entities in `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions or all entities in ``to-many`` associations for `get <#get-action>`__, `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions. An example of a case when using this attribute can be helpful if you want to execute one SQL query for all entities in a collection to get additional data instead of executing a separate SQL query for each entity in a collection. The default value the ``collection`` tag attribute is ``false``. An example of a processor that should be executed to a whole collection:
 
-.. code-block:: php
+.. code-block:: yaml
 
     services:
         acme.api.process_my_collection:
@@ -846,7 +846,7 @@ The ``collection`` tag attribute can be used for processors of this action to pr
 
 .. note:: All processors for this action have the ``identifier_only`` tag attribute set to ``false``. It means that such processors are not executed when loading relationships. If your processor should be executed when loading the relationships, set the ``identifier_only`` tag attribute to ``true``. If your processor should be executed when loading relationships, primary, and included entities, set the ``identifier_only`` tag attribute to ``null``. For example:
 
-    .. code-block:: php
+    .. code-block:: yaml
 
         services:
             acme.api.compute_my_field:

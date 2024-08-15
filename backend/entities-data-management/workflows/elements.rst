@@ -15,7 +15,7 @@ Conditions are based on the |ConfigExpression| component.
 
 To add a custom condition, add a service to DIC with tag `oro_action.condition`, as illustrated below:
 
-.. code-block:: php
+.. code-block:: yaml
 
 
     services:
@@ -66,7 +66,7 @@ Add a Custom Action
 
 To add a custom action, add a service to DIC with tag `oro_action.action`, as illustrated below:
 
-.. code-block:: php
+.. code-block:: yaml
 
 
     services:
@@ -88,7 +88,7 @@ Syntax examples are provided below:
 
 **Full Configuration Example**
 
-.. code-block:: php
+.. code-block:: yaml
 
 
     - '@alias_of_action':
@@ -102,7 +102,7 @@ Syntax examples are provided below:
 
 **Short Configuration Example**
 
-.. code-block:: php
+.. code-block:: yaml
 
 
     - '@alias_of_action':
