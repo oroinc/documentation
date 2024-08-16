@@ -35,4 +35,5 @@ This guide explains and illustrates how to create workflows through configuratio
    Transition Forms <transition-forms>
    Transition Services <transition-services>
    Translation Wizard <translations-wizard>
+   Workflow Events <workflow-events>
    Configuration Example <config-example>
