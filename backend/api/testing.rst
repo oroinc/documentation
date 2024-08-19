@@ -103,6 +103,42 @@ Example of a functional test for Batch API:
         $this->assertResponseContains($responseContent, $response);
     }
 
+To simplify the creation of the functional test for synchronous REST Batch API resources that conforms to |JSON:API specification|, use the |RestJsonApiSyncUpdateListTestCase| test case.
+
+Example of a functional test for synchronous Batch API:
+
+.. code-block:: php
+
+    public function testCreateEntities()
+    {
+        $response = $this->cpatch(
+            ['entity' => 'leads'],
+            [
+                'data' => [
+                    [
+                        'type'       => 'leads',
+                        'attributes' => ['name' => 'New Lead 1']
+                    ]
+                ]
+            ],
+            ['HTTP_X-Mode' => 'sync']
+        );
+
+        $responseContent = $this->updateResponseContent(
+            [
+                'data' => [
+                    [
+                        'type'       => 'leads',
+                        'id'         => 'new',
+                        'attributes' => ['name' => 'New Lead 1']
+                    ]
+                ]
+            ],
+            $response
+        );
+        $this->assertResponseContains($responseContent, $response);
+    }
+
 .. _api-load-fixtures:
 
 Load Fixtures

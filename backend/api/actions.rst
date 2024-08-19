@@ -455,7 +455,7 @@ See the ``handleGetSubresource`` method of |RequestActionHandler| as an example.
 update_subresource Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Updates an entity or entities (depending on the association type) connected to an entity to which the the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors.
+Updates an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
