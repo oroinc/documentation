@@ -368,6 +368,35 @@ The default configuration for extension with alias "oro_api":
                 # Prototype
                 name:                 ~
 
+            # The maximum number of seconds that API waits for a synchronous batch API operation finished. If the operation is not finished within this time interval it is processed as an asynchronous operation.
+            sync_processing_wait_timeout: 25
+
+            # The default maximum number of entities that can be processed by synchronous batch API.
+            sync_processing_limit: 100
+
+            # The default maximum number of included entities that can be processed by synchronous batch API.
+            sync_processing_included_data_limit: 50
+
+            # The maximum number of entities of a specific type that can be processed by synchronous batch API.
+            # The null value can be used to revert already configured limit for a specific entity type and use the default limit for it.
+            sync_processing_limit_per_entity:
+
+                # Example:
+                # Oro\Bundle\UserBundle\Entity\User: 10
+
+                # Prototype
+                name:                 ~
+
+            # The maximum number of included entities that can be processed by synchronous batch API for a specific primary entity type.
+            # The null value can be used to revert already configured limit for a specific entity type and use the default limit for it.
+            sync_processing_included_data_limit_per_entity:
+
+                # Example:
+                # Oro\Bundle\UserBundle\Entity\User: 20
+
+                # Prototype
+                name:                 ~
+
 oro_asset
 _________
 
