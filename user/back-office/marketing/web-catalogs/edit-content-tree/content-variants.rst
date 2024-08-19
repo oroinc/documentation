@@ -63,7 +63,7 @@ Add All Products Page to Web Catalog
 
 Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it as part of your web catalog.
 
-.. note:: We do not recommend enabling the All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.
+.. note:: We recommend enabling the All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.
 
 1. Navigate to **Marketing > Web Catalogs** in the main menu.
 2. For the necessary web catalog, hover over the |IcMore| more actions menu to the right and click |IcEditContentTree| to start editing the catalog content tree.
@@ -145,7 +145,7 @@ To add a landing page node to the menu in the OroCommerce storefront:
 
    #) Fill in the landing page details and contents as described :ref:`here <user-guide--landing-pages-create>`.
 
-   Enable option **Do not render Title** if you do not want to the title of the landing page to be displayed in the storefront.
+   Enable the **Do Not Render Title** option if you do not want the title of the landing page to be displayed in the storefront.
 
 #. This step applies only to the content nodes with more than one content variant.
 

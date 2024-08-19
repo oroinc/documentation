@@ -303,13 +303,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/environment" target="_blank">Docker Provision</a>
 
-.. |OroCommerce VM| raw:: html
+.. |OroHive| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">OroCommerce</a>
-
-.. |OroCRM VM| raw:: html
-
-   <a href="https://oroinc.com/orocrm/download" target="_blank">OroCRM</a>
+   <a href="https://hive.oroinc.com/download/" target="_blank">OroHive</a>
 
 .. |Red Hat| raw:: html
 
