@@ -269,6 +269,19 @@ If you need to load your part of the configuration directly from the file, use t
     When importing the file with a workflow that serves as the basis for others (`'workflows/b2b_flow_lead.yml'`), you can
     override its nodes for a particular case (different `entity` but shared remaining configuration).
 
+Imports With Conditions
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``import_condition`` option lets you import resources or workflows when certain conditions are met. If this option is available, the expression is checked early in the import process. If the conditions aren't met, the import is ignored.
+
+``import_condition`` uses Expression Language syntax like the Symfony DI component. It also has the ``parameter_or_null`` function, which works like ``parameter`` but returns ``null`` if the parameter doesn't exist.
+
+.. code-block:: yaml
+
+    imports:
+        - { resource: 'workflows/external_entity_flow.yml', import_condition: 'parameter_or_null("acme_demo.enable_external_entity_support") === true' }
+
+
 Configuration Loading
 ---------------------
 
