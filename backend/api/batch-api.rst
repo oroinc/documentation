@@ -53,6 +53,25 @@ All configuration options related to Batch API are grouped in the ``batch_api`` 
             included_data_chunk_size_per_entity:
                 Oro\Bundle\UserBundle\Entity\User: 20 # example
 
+            # The maximum number of seconds that API waits for a synchronous batch API operation finished. If the operation is not finished within this time interval it is processed as an asynchronous operation.
+            sync_processing_wait_timeout: 25
+
+            # The default maximum number of entities that can be processed by synchronous batch API.
+            sync_processing_limit: 100
+
+            # The maximum number of entities of a specific type that can be processed by synchronous batch API.
+            # The null value can be used to revert already configured limit for a specific entity type and use the default limit for it.
+            sync_processing_limit_per_entity:
+                Oro\Bundle\UserBundle\Entity\User: 10 # example
+
+            # The default maximum number of included entities that can be processed by synchronous batch API.
+            sync_processing_included_data_limit: 50
+
+            # The maximum number of included entities that can be processed by synchronous batch API for a specific primary entity type.
+            # The null value can be used to revert already configured limit for a specific entity type and use the default limit for it.
+            sync_processing_included_data_limit_per_entity:
+                Oro\Bundle\UserBundle\Entity\User: 20 # example
+
 Parameters ``chunk_size_per_entity`` and ``included_data_chunk_size_per_entity`` can be used to tuning of
 an API engine to have maximum performance.
 

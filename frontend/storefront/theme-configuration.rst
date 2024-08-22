@@ -55,6 +55,54 @@ The theme configuration has the following option types:
 |                              | Previews depend on type field values  |
 |                              | (menu, web_catalog_node).             |
 +------------------------------+---------------------------------------+
+| `css_background`             |  A multi field is used to             |
+|                              |  represent CssBackgroundConfigBuilder |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_border_radius`          |  A multi field is used to represent   |
+|                              |  CssBorderRadiusConfigBuilder         |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_box_shadow`             |  A multi field is used to             |
+|                              |  represent CssBoxShadowConfigBuilder  |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_color`                  |  A multi field is used to             |
+|                              |  represent CssColorConfigBuilder      |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_font_size`              |  A multi field is used to             |
+|                              |  represent CssFontSizeConfigBuilder   |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_gap`                    |  A multi field is used to             |
+|                              |  represent CssGapConfigBuilder        |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_background`             |  A multi field is used to             |
+|                              |  represent CssBackgroundConfigBuilder |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_length`                 |  A multi field is used to             |
+|                              |  represent CssLengthConfigBuilder     |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_line_height`            |  A multi field is used to             |
+|                              |  represent CssLineHeightConfigBuilder |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_min_height`             |  A multi field is used to             |
+|                              |  represent CssMinHeightConfigBuilder  |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_outline`                |  A multi field is used to             |
+|                              |  represent CssOutlineConfigBuilder    |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
+| `css_padding`                |  A multi field is used to             |
+|                              |  represent CssPaddingConfigBuilder    |
+|                              |  settings.                            |
++------------------------------+---------------------------------------+
 | `integer`                    | An input field looks like a text box  |
 |                              | and accepts only integer numbers.     |
 +------------------------------+---------------------------------------+

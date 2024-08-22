@@ -51,6 +51,7 @@ Find more information about Web API in the following topics:
    upsert-operation
    client-requirements
    batch-api
+   sync-batch-api
 
 The documentation for the server-side developers can be found in :ref:`API Developer Guide <web-api>`.
 

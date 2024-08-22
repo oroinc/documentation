@@ -3609,6 +3609,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Functional/RestJsonApiUpdateListTestCase.php" target="_blank">RestJsonApiUpdateListTestCase</a>
 
+.. |RestJsonApiSyncUpdateListTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Functional/RestJsonApiSyncUpdateListTestCase.php" target="_blank">RestJsonApiSyncUpdateListTestCase</a>
+
 .. |Doctrine and Alice fixtures| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Functional/RestJsonApiTestCase.php" target="_blank">Doctrine and Alice fixtures</a>

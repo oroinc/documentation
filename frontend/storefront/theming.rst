@@ -63,7 +63,10 @@ The **allowed options in the theme configuration** file are the following:
 |                     | have to be build             |                     |
 +---------------------+------------------------------+---------------------+
 | `svg_icons_support` | Defines whether Theme        | no                  |
-|                     | supports SVG icons           |                     |
+|                     | supports SVG icons. Default  |                     |
+|                     | value will be inherited from |                     |
+|                     | the parent themes if any,    |                     |
+|                     | otherwise - false.           |                     |
 +---------------------+------------------------------+---------------------+
 | `configuration`     | Defines theme configuration  | no                  |
 |                     | options that give theme      |                     |

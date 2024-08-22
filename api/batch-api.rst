@@ -8,6 +8,10 @@ The Batch API provides a way to create or update a list of entities of the same 
 The request is processed asynchronously. The server may process records in any order regardless of the order
 in which they are specified in the request.
 
+.. note::
+    It is also possible to process several entities synchronously.
+    For details, see :ref:`Synchronous Batch API <web-services-api--sync-batch-api>`.
+
 Input Data Format
 -----------------
 
