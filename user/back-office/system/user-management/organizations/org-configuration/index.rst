@@ -98,6 +98,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Warehouses <warehouses-organization>`
     * :ref:`Product Options <sys--conf--commerce--inventory--product-options--organization>`
     * :ref:`Limitations <inventory-limitations-org>`
+    * :ref:`Allowed Statuses <inventory-allowed-statuses-org>`
 
   * Marketplace
 

@@ -9,3 +9,4 @@ Configure Inventory Settings per Organization
    Warehouses <organization-warehouses>
    Product Options <organization-product-options>
    Limitations <organization-limitations>
+   Allowed Statuses <organization-allowed-statuses>
