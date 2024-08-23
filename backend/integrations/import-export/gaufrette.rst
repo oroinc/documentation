@@ -15,7 +15,7 @@ This configuration allows to use Amazon S3 cloud service for the importing and e
 
 **Example**
 
-.. code-block:: php
+.. code-block:: yaml
 
     services:
         aws_s3.client:

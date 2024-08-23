@@ -59,6 +59,47 @@ Here, there are two `@run_action_group` configuration options: `results` (transf
 .. hint::
     See :ref:`Actions <bundle-docs-platform-action-bundle-action-component>` for more information about `@run_action_group` options.
 
+
+Exposing Service as Action Group
+--------------------------------
+
+Action Group is a simple way to expose some logic to YAML that can be used by other Action Groups, Actions, or Workflows. However, at some point, supporting complex logic in YAML may require too much effort. To improve the maintainability of the logic, the developer may consider moving the logic from the action group to a service and use all the advantages of writing code in PHP. Another possible use case is to make an existing service method available as an action group.
+
+.. code-block:: yaml
+
+
+    action_groups:
+        prettify_string:
+            service: acme.demo.useful_functions
+            method: prettifyString
+            return_value_name: pretty_string
+            parameters:
+                input_string:
+                    service_argument_name: input
+
+
+In the example above, the *prettifyString* method of the *acme.demo.useful_functions* service was exposed as action group named *prettify_string* with *input* method argument mapped as *input_string* action group parameter. By default, all method parameters are exposed as action group parameters using PHP Reflection with their types and default values. ``return_value_name`` is configured to map the method return value correctly to the action data context.
+
+The ``call_service_method`` action can be used instead of exposing the service method as an action group, and it is up to the developer which syntax to use. At the same time, action group services are quite useful to keep backward compatibility when some complex logic has been considered to be moved to PHP and can still be called from different places as an action group.
+
+Action Executor Helper
+^^^^^^^^^^^^^^^^^^^^^^
+
+When considering moving an action group to PHP, its logic may depend on existing actions and conditions that can't simply be called from PHP because of their tight coupling to the action/expression component architecture and execution context. To simplify this transition, the ``Oro\Bundle\ActionBundle\Model\ActionExecutor`` helper has been added. It simplifies the execution of existing actions, action groups, and evaluation of expression conditions by providing the following methods:
+
+.. code-block:: php
+
+
+    public function executeAction(string $actionName, array $data = []): mixed;
+    public function executeActionGroup(string $actionGroupName, array $data = []): ActionData;
+    public function evaluateExpression(
+        string $expressionName,
+        array $data = [],
+        \ArrayAccess $errors = null,
+        string $message = null
+    ): bool;
+
+
 Action Group Diagram
 --------------------
 

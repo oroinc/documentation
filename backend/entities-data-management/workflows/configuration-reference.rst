@@ -269,6 +269,19 @@ If you need to load your part of the configuration directly from the file, use t
     When importing the file with a workflow that serves as the basis for others (`'workflows/b2b_flow_lead.yml'`), you can
     override its nodes for a particular case (different `entity` but shared remaining configuration).
 
+Imports With Conditions
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``import_condition`` option lets you import resources or workflows when certain conditions are met. If this option is available, the expression is checked early in the import process. If the conditions aren't met, the import is ignored.
+
+``import_condition`` uses Expression Language syntax like the Symfony DI component. It also has the ``parameter_or_null`` function, which works like ``parameter`` but returns ``null`` if the parameter doesn't exist.
+
+.. code-block:: yaml
+
+    imports:
+        - { resource: 'workflows/external_entity_flow.yml', import_condition: 'parameter_or_null("acme_demo.enable_external_entity_support") === true' }
+
+
 Configuration Loading
 ---------------------
 
@@ -322,7 +335,7 @@ A single workflow configuration has the following properties:
 
 * **transitions** - Contains configuration for transitions.
 
-* **transition_definitions** - Contains configuration for transition definitions.
+* **transition_definitions** (optional) - Contains YAML configuration for transition definitions.
 
 * **priority** - an integer value of the current workflow dominance level in part of automatically performed tasks (ordering, exclusiveness). It is recommended to use high-degree integer values to give scope for 3rd party integrators.
 
@@ -333,6 +346,8 @@ A single workflow configuration has the following properties:
 * **entity_restrictions** - Contains configuration for workflow restrictions.
 
 * **defaults** - node for default workflow configuration values that can be changed in UI later.
+
+* **metadata** - *array* - additional metadata associated with the workflow.
 
 * **active** - determines if the workflow should be active right after the first load of configuration.
 
@@ -649,7 +664,9 @@ Summarizing all the above, a step has the following configuration:
 Transitions Configuration
 -------------------------
 
-Transitions change the current step of the Workflow Item when it is performed. It also uses Transition Definition to check if the transition is allowed and to perform actions.
+Transitions change the current step of the Workflow Item when it is performed. It also uses Transition Definition or Transition Service to check if the transition is allowed and to perform actions.
+
+The Transition Service allows you to define all transition logic in a PHP class, which is preferable for complex logic. Transition Service should be used for complex logic and YAML for simpler configurations, allowing a balance between flexibility and accessibility.
 
 Transition configuration has the following options:
 
@@ -658,7 +675,9 @@ Transition configuration has the following options:
 * **button_label** (translation file field) - *Translatable*: `oro.workflow.{workflow_name}.transition.{transition_name}.button_label`. Used to define the text of a transition button. A `label` will be used if not defined.
 * **button_title** (translation file field) - *Translatable*: `oro.workflow.{workflow_name}.transition.{transition_name}.button_title`. Used to define the text of button hint (button hover). A `button_label` will be used if not defined.
 * **step_to** - *string* - Next step name. This is a reference to the step that will be set to Workflow Item after the transition is performed.
-* **transition_definition** - A reference to Transition Definition configuration.
+* **conditional_steps_to** (optional) - *array* - A list of step names (key) and reachability conditions (value). This configuration can be used to define additional target condition-based steps for the transition.
+* **transition_definition** (optional) - A reference to Transition Definition configuration. Either transition_definition or transition_service should be used.
+* **transition_service** (optional) - *string* - An id of the DIC service that is used to handle transition logic.
 * **is_start** - *boolean* - If true, this transition can start a new workflow. At least one start transition is required if the workflow does not have the `start_step` attribute.
 * **is_hidden** - *boolean* - Indicates that this transition must be hidden in the frontend.
 * **is_unavailable_hidden** - *boolean* - Indicates that this transition must be hidden in the frontend when the transition is not allowed.
@@ -707,7 +726,7 @@ To configure transitions, define the following:
                     step_to: start_conversation                 # The name of next step that will be set to Workflow Item
                                                                 # when transition will be performed
 
-                    transition_definition: connected_definition # A reference to Transition Definition configuration
+                    transition_service: acme.phone_call.workflow.transition.connected # An ID of the transition service
                     frontend_options:
                         icon: 'fa-check'                         # add icon to transition button with class "fa-check"
                         class: 'btn-primary'                    # add css class "btn-primary" to transition button
@@ -721,7 +740,11 @@ To configure transitions, define the following:
                     destination_page: index
                 not_answered:
                     step_to: end_call
-                    transition_definition: not_answered_definition
+                    conditional_steps_to:
+                        ask_details:                            # If there are open questions transit workflow to start_call step. Otherwise transit to default step_to (end_call step)
+                            conditions:
+                                '@not_empty': $unresolved_questions
+                    transition_definition: not_answered_definition # A reference to Transition Definition configuration
                 end_conversation:
                     step_to: end_call
                     transition_definition: end_conversation_definition
@@ -764,6 +787,7 @@ Define how the workflow transition name will appear on the user interface and th
 Transition Definition Configuration
 -----------------------------------
 
+Transition logic may be implemented either by a Transition Service or defined as Transition Definition Configuration.
 Transition Definition is used by transition to check conditions and perform actions.
 
 The transition definition configuration has the following options.

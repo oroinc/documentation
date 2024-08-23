@@ -18,12 +18,14 @@ On step "Call Phone Conversation", the user enters Workflow Data and navigates t
 Configuration
 -------------
 
-.. code-block:: php
+.. code-block:: yaml
 
     workflows:
         phone_call:
             entity: Acme\Bundle\DemoBundle\Entity\PhoneCall
             start_step: start_call
+            metadata:
+                is_collaboration_workflow: true
             steps:
                 start_call:
                     allowed_transitions:
@@ -49,6 +51,8 @@ Configuration
                     type: string
                 conversation_result:
                     type: string
+                unresolved_questions:
+                    type: string
                 conversation:
                     type: entity
                     options:
@@ -62,7 +66,7 @@ Configuration
                 start_call:
                     is_start: true                         # this transition used to start new workflow
                     step_to: start_conversation            # next step after transition performing
-                    transition_definition: create_call     # link to definition of conditions and actions
+                    transition_service: acme.demo.workflow.transition.connected # An ID of the transition service
                     init_context_attribute: init_source    # name of variable which contains init context
                     init_entities:                         # list of view page entities where will be displayed transition button
                         - 'Oro\Bundle\UserBundle\Entity\User'
@@ -75,31 +79,18 @@ Configuration
                     transition_definition: connected_definition
                 not_answered:
                     step_to: end_call
-                    transition_definition: not_answered_definition
+                    conditional_steps_to:
+                        start_call:                            # If there are open questions transit workflow to start_call step. Otherwise transit to default step_to (end_call step)
+                            conditions:
+                                '@not_empty': $unresolved_questions
+                    transition_service: acme.phone_call.workflow.transition.not_answered
                 end_conversation:
                     step_to: end_call
                     form_options:
                         attribute_fields:
-                            conversation_comment:
-                                options:
+                            conversation_comment: ~
                     transition_definition: end_conversation_definition
             transition_definitions:
-                create_call:
-                    conditions:    # Check that the transition start from the entity page
-                        '@and':
-                            - '@not_empty': [$init_source.entityClass]
-                            - '@not_empty': [$init_source.entityId]
-                    actions:
-                        - '@find_entity':
-                            class: $init_source.entityClass
-                            identifier: $init_source.entityId
-                            attribute: $.user
-                        - '@tree':
-                            conditions:
-                                - '@instanceof': [$init_source.entityClass, 'Oro\Bundle\UserBundle\Entity\User']
-                            actions:
-                                - '@assign_value': [$entity.phone, $.user.phone]
-                                - '@flush_entity': $entity    # flush created entity
                 connected_definition: # Try to make call connected
                     # Check that timeout is set
                     conditions:
@@ -138,6 +129,67 @@ Configuration
                                     successful: $conversation_successful
                                     call: $phone_call
 
+Transition Service
+-------------------
+
+In the example for the ``start_call`` transition the ``transition_service`` was set to handle the transition logic.
+Here is a service implementation:
+
+.. code-block:: php
+
+
+    namespace Acme\Bundle\DemoBundle\Workflow\PhoneCall\Transition;
+
+    use Doctrine\Persistence\ManagerRegistry;
+    use Oro\Bundle\ActionBundle\Provider\ButtonSearchContextProvider;
+    use Oro\Bundle\UserBundle\Entity\User;
+    use Oro\Bundle\WorkflowBundle\Model\TransitionServiceAbstract;
+
+    class ConnectedTransition extends TransitionServiceAbstract
+    {
+        public function __construct(
+            private ManagerRegistry $registry
+        ) {
+        }
+
+        public function isConditionAllowed(WorkflowItem $workflowItem, Collection $errors = null): bool
+        {
+            $initContext = $workflowItem->getData()->get('init_context');
+
+            return $initContext instanceof ButtonSearchContext
+                && $initContext->getEntityClass()
+                && $initContext->getEntityId();
+        }
+
+        public function execute(WorkflowItem $workflowItem): void
+        {
+            $data = $workflowItem->getData();
+            $initContext = $data->get('init_context');
+
+            $em = $this->registry->getManagerForClass($initContext->getEntityClass());
+            $user = $em->find($initContext->getEntityClass(), $initContext->getEntityId());
+
+            if ($user instanceof User) {
+                $workflowItem->getEntity()->setPhone($user->getPhone());
+                $em->flush();
+            }
+        }
+    }
+
+
+.. code-block:: yaml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+
+    services:
+            # ...
+            acme.demo.workflow.transition.connected:
+                class: Acme\Bundle\DemoBundle\Workflow\PhoneCall\Transition\ConnectedTransition
+                arguments:
+                    - '@doctrine'
+                tags:
+                    - { name: 'oro_workflow.transition_service' }
+
+
 Translation File Configuration
 ------------------------------
 
@@ -172,6 +224,8 @@ To define translatable textual representation of the configuration fields, creat
                         label: 'Conversation Result'
                     conversation:
                         label: Conversation
+                    unresolved_questions:
+                        label: 'Unresolved Questions'
                 transition:
                     connected:
                         label: Connected

@@ -20,6 +20,7 @@ Checkout workflows provided by this bundle are:
    Shipping Context <shipping-context>
    Payment Context <payment-context>
    Dependency Injection Tags <di-tags>
+   Checkout Customization <checkout-customization>
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
