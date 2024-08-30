@@ -65,8 +65,6 @@ To :ref:`manage default addresses in the address book <frontstore-guide--company
 
 .. image:: /user/img/storefront/profile/MyProfileManageAddresses.png
 
-.. image:: /user/img/storefront/profile/MyProfileAddressBooks.png
-
 .. _frontstore-guide--profile-consents:
 
 Data Protection
@@ -93,7 +91,7 @@ The following key rules apply to consents in OroCommerce:
 
   You can be aware of how exactly your data is going to be processed and shared, and what marketing communications you can expect once you provide your consent. Therefore, you can view all your accepted and pending consents (and their detailed description) in your profile under **My Profile > Account Info** in the storefront.
 
-  .. image:: /user/img/storefront/profile/MyProfilePage.png
+  .. image:: /user/img/storefront/profile/accepted-consent-profile.png
 
 * **Consents can be revoked**
 

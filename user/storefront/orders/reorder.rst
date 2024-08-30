@@ -24,7 +24,7 @@ To proceed with re-ordering:
 
 5. The **Checkout** page incorporates billing, shipping, and payment information provided by the customer in the original order.
 
-6. In case any personal information has been changed, the customer can easily update it from the checkout page.
+6. In case any personal information has been changed, the customer can easily update it from the checkout page when using the multistep checkout.
 
    .. image:: /user/img/storefront/orders/reorder_4.png
 

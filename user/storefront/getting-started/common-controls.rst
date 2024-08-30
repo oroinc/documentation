@@ -16,8 +16,8 @@ Such tables represent aggregated views of data and store records, making it easy
 
 .. _frontstore-guide--navigation-location-trail:
 
-Location Trail (Breadcrumbs)
-----------------------------
+Breadcrumbs
+-----------
 
 You can trace where the current page is located in the menu in the breadcrumbs under the top navigation bar.
 
@@ -73,8 +73,6 @@ Tables can be viewed, saved as new ones, shared, renamed, set as default and del
    * **Add**: Click **Add** to add a new saved view table.
    * **Cancel**: Click **Cancel** to exit.
 
-   .. image:: /user/img/storefront/navigation/SaveViewAsDefault.png
-
    The following actions are available for saved view:
 
    * share the selected saved view: |IcBookmarkOutline|
@@ -118,40 +116,29 @@ Filters are used when you need to quickly pick out the records you need from the
 
 The following actions are available for filters:
 
-1. To show/hide filters, click |IcFilter|
+1. To show/hide filters, click the filter toggle icon.
 
    .. image:: /user/img/storefront/navigation/Filters.png
 
-   .. note:: Note that not all filters may be visible by default.
+.. note:: Note that not all filters may be visible by default.
 
 2. To apply a filter, click on its button in the bar and select the required option from the dropdown list.
 
    .. image:: /user/img/storefront/navigation/FiltersSelect.png
 
-   .. note:: The dropdown list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the dropdown list
+.. note:: The dropdown list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the dropdown list or remain visible but disabled :ref:`depending on the website configuration <configuration--guide--commerce--configuration--catalog--filters-sorters>` when no items matching selected attributes in filters were found.
 
-      .. .. image:: /user/img/storefront/navigation/FiltersSelectOneAttribute.png
+   The appearance of filter controls may vary based on the type of data being filtered, such as text, numbers, dates, or options. Applied filters are displayed under the filter controls.
 
-      or remain visible but disabled :ref:`depending on the website configuration <configuration--guide--commerce--configuration--catalog--filters-sorters>` when no items matching selected attributes in filters were found.
+5. To remove a filter, click on a cross **x** after the query. To reset all applied filters, click **x Clear All Filters**.
 
-      .. .. image:: /user/img/storefront/navigation/dont_change_initial_filter_state.png
+   .. image:: /user/img/storefront/navigation/applied-filters.png
+      :alt: Applied storefront filters
 
-4. Another way to apply a filter is to click on its button and specify your query in the control that appears. Note that filter controls might look different depending on the type of data you are going to filter — whether it is textual, numeric, date or option set. After the filter is applied, its query will appear in the control, so you can easily recall how you have filtered the data.
+.. hint:: Filter in the storefront can be displayed either at the top (default) or in the left sidebar, depending on the **Filter Position** configuration applied in the :ref:`back-office theme configuration <back-office-theme-configuration>`.
 
-   .. image:: /user/img/storefront/navigation/FiltersApplied.png
-
-.. Filter controls may be hidden at all if there are no related products on the displayed page.
-
-   .. .. image:: /user/img/storefront/navigation/FiltersDisabled.png
-
-5. To remove a filter, click on a cross **x** after the query.
-
-   If you wish to reset all applied filters, click **x Clear All Filters**.
-
-.. note:: Filter in the storefront can be displayed either at the top (default) or in the left sidebar.
-
-          .. image:: /user/img/system/config_commerce/catalog/filters_panel_position_sidebar.png
-             :alt: The storefront product page illustrating the filter in the left sidebar
+          .. image:: /user/img/system/theme-configuration/filter-panel-position.png
+             :alt: Three representations of filter panel positions in the storefront
 
 .. _frontstore-guide--navigation-table-options:
 

@@ -89,10 +89,10 @@ To configure your current storefront theme:
 
     * **Display Price Tiers As** --- Select a multi or single unit table. A multi-unit table shows price tiers for all product units in the same table, which might not work well for products with many units or when quantity tiers are not aligned between units. Single-unit table shows price tiers only for the currently selected unit.
 
-    * **Filter Panel Position** --- Specify where the filter panel should be represented in the storefront. Available options are *Top* and *Sidebar*.
+    * **Filter Panel Position** --- Specify where the filter panel should be represented in the storefront. Available options are *Top*, *Sidebar* and *Overlay*.
 
     .. image:: /user/img/system/theme-configuration/filter-panel-position.png
-       :alt: Two representations of filter panel positions in the storefront
+       :alt: Three representations of filter panel positions in the storefront
 
     .. hint::
        To specify how to display the multi-select filter options, refer to the :ref:`theme-related settings <configuration--commerce--design--theme>`.
