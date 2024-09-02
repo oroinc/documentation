@@ -91,9 +91,17 @@ To change the default global pricing settings:
 
    * **Default Currency** --- The currency that is used by default to show prices in the storefront.
 
-9. Click **Reset** at the top right to roll back any changes to the pricing settings.
+9. In the **Minimum Sellable Quantity**, you can enable the following options:
 
-10. Click **Save Settings** to save the changes.
+   * **Allow fractional quantity price calculation on quantities smaller than the minimum quantity priced in a price list(s)** --- Applicable only to the product units that allow fractional quantity input (unit precision > 0). The implied minimum sellable quantity is 1 (one whole unit). The *Allow fractional quantity price calculation on quantity less than 1 whole unit* configuration option can be enabled to go lower than 1  unit. The *Minimum quantity to order* for specific products can be used to prevent purchases of fractional quantities smaller than the desired sellable quantity either way.
+   * **Allow fractional quantity price calculation on quantity less than 1 whole unit** --- Applicable only to the product units that allow fractional quantity input (unit precision > 0). The *Minimum quantity to order* for specific products can be set to 1 to prevent purchases of fractional quantities smaller than 1 whole unit.
+   * **Allow price calculation on quantities smaller than the minimal quantity priced in a price list(s)** --- Applicable to the product units that allow only whole numbers for quantity. The *Minimum quantity to order* for specific products can be used to prevent purchases of quantities smaller than the desired sellable quantity.
+
+   .. hint::  Minimum Sellable Quantity configuration options are available starting from OroCommerce version 5.1.9.
+
+10. Click **Reset** at the top right to roll back any changes to the pricing settings.
+
+11. Click **Save Settings** to save the changes.
 
 **Related Articles**
 
