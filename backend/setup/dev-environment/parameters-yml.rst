@@ -51,6 +51,7 @@ Default configuration options for the Oro application are defined in the ``confi
        oauth2_public_key: '%env(resolve:ORO_OAUTH_PUBLIC_KEY_PATH)%'
        oauth2_private_key: '%env(resolve:ORO_OAUTH_PRIVATE_KEY_PATH)%'
        log_path: '%env(resolve:ORO_LOG_PATH)%'
+       log_stacktrace_level: '%env(resolve:ORO_LOG_STACKTRACE_LEVEL)%' # The minimum log message level for which an exception stacktrace should be logged. To disable the stacktrace logging an empty string or "none" value can be used.
 
        env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
        env(ORO_DB_URL): 'postgresql://root@127.0.0.1/b2b_dev'
@@ -76,6 +77,7 @@ Default configuration options for the Oro application are defined in the ``confi
        env(ORO_OAUTH_PUBLIC_KEY_PATH): '%kernel.project_dir%/var/oauth_public.key'
        env(ORO_OAUTH_PRIVATE_KEY_PATH): '%kernel.project_dir%/var/oauth_private.key'
        env(ORO_LOG_PATH): "%kernel.logs_dir%/%kernel.environment%.log"
+       env(ORO_LOG_STACKTRACE_LEVEL): 'error'
 
 Sample Configuration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
