@@ -62,7 +62,7 @@ This section is for order details, such as who created the order or to which web
    "**Internal Status**","The order status is managed only in the back-office. See the :ref:`description of internal statuses <doc--orders--statuses--internal>`."
    "**Do Not Ship Later Than**","The date on which the order expires."
    "**Source Document**","If the order has been created from an RFQ, quote, or another order, this field contains a link to the corresponding record. If the order was created from scratch (in the back-office) or through the quick order form (in the storefront), the field shows 'N/A'."
-   "* **Created By**","The name of the user who created an order on behalf of a customer user, either via the back-office or :ref:`customer user impersonation <user-guide--customers--customer-user-impersonate>` in the storefront."
+   "**Created By**","The name of the user who created an order on behalf of a customer user, either via the back-office or :ref:`customer user impersonation <user-guide--customers--customer-user-impersonate>` in the storefront."
    "**Payment Method**","The payment method selected to pay for the order."
    "**Payment Status**","Whether the order is already paid in full, the payment for the order is authorized, etc."
    "**Website**","The storefront website from which the order was made."
@@ -169,7 +169,7 @@ This section provides information about payment transactions concerning the orde
 
 **Activity**
 
-This section displays any notes, calendar events, or emails related to the order.
+This section displays any notes, calendar events, conversations or emails related to the order.
 
 You can filter activities by type and by date (e.g., the exact date or a date range that covers the activity date) and browse them from the newest to the oldest and vice versa.
 
