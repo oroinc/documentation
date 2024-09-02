@@ -13,8 +13,9 @@ Logger Configuration
 
 Out-of-the-box, in a ``prod`` environment, an application is configured to:
 
-* log all the messages up to the DEBUG level in case of an `error` or a higher-level message to the `var/logs/prod.log` file,
-* send error logs notifications to the recipients configured in the global application settings in the back-office.
+* log all the messages up to the DEBUG level in case of an `error` or a higher-level message to the `var/logs/prod.log` file
+* send error logs notifications to the recipients configured in the global application settings in the back-office
+* for an `error` or a higher-level message that contains an Exception object in the 'exception' item of the log message context, the exception stack trace is added to the `stacktrace` item of the log message context; the :ref:`ORO_LOG_STACKTRACE_LEVEL <book-installation-github-clone-configuration-params--default>` environment variable can be used to change this behaviour
 
 If there are no errors, the application does not write any logs.
 
