@@ -24,9 +24,7 @@ available by default but depend on the order status:
 
 - **Shipping Tracking** --- Click to add :ref:`shipping tracking <user-guide--shipping-order>`.
 - **Cancel** --- Click to :ref:`cancel an order <doc--orders--actions--cancel>`. Available only for open orders.
-- **Close** --- Click to :ref:`close an order <doc--orders--actions--close>`. Available only for open, canceled, and shipped orders.
-- **Mark as Shipped** --- Click to :ref:`mark an order as shipped <doc--orders--actions--mark-shipped>`. Available only for open orders.
-- **Archive** --- Click to :ref:`archive an old order <doc--orders--actions--archive>`. Available only for closed orders.
+- **Close** --- Click to :ref:`close an order <doc--orders--actions--close>`. Available only for open and canceled orders.
 - **Add Special Discount** --- Click to :ref:`add special discounts <user-guide--sales--orders--promotions--add-special-discount>`.
 - **Add Coupon Code** --- Click to :ref:`provide a coupon code <user-guide--marketing--promotions--coupons--edit--on-order-page>`.
 - **Edit** --- Click to :ref:`edit an order <user-guide--sales--orders--edit>`.

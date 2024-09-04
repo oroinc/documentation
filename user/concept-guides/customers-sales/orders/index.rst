@@ -193,7 +193,7 @@ Depending on the :ref:`payment method <sys--integrations--manage-integrations--p
 For instance, when the order is paid for by using a credit or a debit card, the payment status depends on the **payment action** selected for the credit/debit card payment method when configuring a :ref:`payment integration <sys--integrations--manage-integrations--payment-methods>`. If such payment action is set to **pre-authorization** or **final authorization**, the order payment status will stay in the **payment authorized** status until the sales manager manually captures payment (i.e., clicks **capture**) in the OroCommerce back-office to complete the transaction. When the payment is captured, the payment status changes to **paid in full**.
 
 .. note::
-     Payment Status is based on the payment transaction status and is not linked to :ref:`the status of an actual order <doc--orders--statuses--internal>` (i.e., open, shipped, archived, etc.) in any way.
+     Payment Status is based on the payment transaction status and is not linked to :ref:`the status of an actual order <doc--orders--statuses--internal>` in any way.
 
 There are several types of payment transactions that can be displayed on the order page, for example:
 

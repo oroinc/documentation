@@ -13,7 +13,7 @@ To configure the :term:`order <Order>` creation options per organization:
 3. In the **Order Creation** section:
 
    a) Clear the **Use System** checkbox if it is selected.
-   b) From the **New Internal Order Status** list, select the required status. This option defines the :ref:`status <doc--orders--statuses--internal>` that is assigned to an order upon creation. This status is visible in the back-office. Select one of the following statuses: Open, Cancelled, Shipped, Closed, Archived.
+   b) From the **New Internal Order Status** list, select the required status. This option defines the :ref:`status <doc--orders--statuses--internal>` that is assigned to an order upon creation. This status is visible in the back-office. Select one of the following statuses: Open, Cancelled, Closed.
 
 #. Click **Save Settings**.
 

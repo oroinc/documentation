@@ -47,9 +47,8 @@ Move an Order Through Its Lifecycle
 You can control the order lifecycle and:
 
 * :ref:`Cancel orders <doc--orders--actions--cancel>`
-* :ref:`Mark orders as shipped <doc--orders--actions--mark-shipped>` and :ref:`track order shipping <user-guide--shipping-order>`
+* :ref:`Track order shipping <user-guide--shipping-order>`
 * :ref:`Close orders that lost relevance <doc--orders--actions--close>`
-* :ref:`Archive old orders <doc--orders--actions--archive>`
 
 
 .. include:: /include/include-images.rst
