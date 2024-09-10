@@ -3,6 +3,8 @@
 Email Templates Inheritance
 ===========================
 
+.. note:: Email Templates Inheritance feature is available as of OroCommerce version 6.0.3.
+
 Email Templates Inheritance feature provides the ability to extend an email template from another email template. This feature enables you to have multiple email templates that share the same base email template, which includes common styles, header, footer, etc.
 
 Implementation Overview
@@ -30,7 +32,7 @@ Usage example:
 
 
 
-Email template candidates names are provided by ``\Oro\Bundle\EmailBundle\EmailTemplateCandidates\EmailTemplateCandidatesProvider``. `Email template context` is automatically collected by ``\Oro\Bundle\EmailBundle\Provider\EmailTemplateContextProvider``. For more information, see :ref:`How an Email Template is Loaded <bundle-docs-platform-email-bundle-templates-loading>`.
+Email template candidate names are provided by ``\Oro\Bundle\EmailBundle\EmailTemplateCandidates\EmailTemplateCandidatesProvider``. `Email template context` is automatically collected by ``\Oro\Bundle\EmailBundle\Provider\EmailTemplateContextProvider``. For more information, see :ref:`How an Email Template is Loaded <bundle-docs-platform-email-bundle-templates-loading>`.
 
 If you cannot rely on the automatic detection of the current `email template context`, you could explicitly provide context parameters via 2nd argument: the `extends` tag.
 
@@ -38,6 +40,13 @@ If you cannot rely on the automatic detection of the current `email template con
 
 
     {% extends oro_get_email_template('base', { localization: 42 }) %}
+
+
+**Related Topics**
+
+* :ref:`Email Templates Bundle documentation <bundle-docs-commerce-customer-portal-frontend-bundle-email-templates>`.
+
+* :ref:`Configure Email Templates in the Back-Office <user-guide-using-emails-create-template>`.
 
 .. include:: /include/include-links-dev.rst
     :start-after: begin

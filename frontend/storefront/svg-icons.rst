@@ -49,7 +49,8 @@ Right-to-Left Support
 
 .. note::
     Icons with corresponding pairs in the theme, such as `arrow-left` and `arrow-right` and those ending in `-left`, `-right` or `-start` , `-end`,
-    will be automatically swapped for locales with RTL mode enabled.
+    will be automatically swapped for locales with RTL mode enabled. The feature is available as of OroCommerce version 6.0.3.
+
 
 Use Different Icons in TWIG
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

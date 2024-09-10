@@ -15,7 +15,7 @@ Study the example below:
 
 
          /**
-         * @Route("/sample_not_found_page_code")
+         * #[Route("/sample_not_found_page_code")
          *
          * @return Response
          */

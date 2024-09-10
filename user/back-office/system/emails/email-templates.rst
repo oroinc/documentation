@@ -51,6 +51,8 @@ Create a New Email Template
 Inherit Base Email Template
 ---------------------------
 
+.. note:: Email Templates Inheritance feature is available as of OroCommerce version 6.0.3.
+
 Email template inheritance allows developers to maintain common styles and foundational markup in a single **base template**, which can then be extended or modified for different email types without repetitive copying and pasting. This base template includes common styles, headers, footers, and foundational markup, ensuring consistency across different emails. Users or frontend developers can manage the base template; the system will first search for it by name among user-managed templates, and if not found, will check the storefront theme.
 
 You can have multiple base templates with different designs within the system, specified through a special markup tag, for instance:
