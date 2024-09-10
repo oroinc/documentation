@@ -3,9 +3,7 @@
 Google Cloud Platform
 =====================
 
-Google Cloud Platform enables you to deploy your Oro application instance in just one click without manually configuring the software and settings.
-
-Detailed guidance is provided further in this article.
+Google Cloud Platform enables you to deploy your Oro application instance in one click without manually configuring the software and settings. OroCommerce VM images comes with demo data and provides all the necessary information for you to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master, and web catalogs. You can also explore the storefront using one of the pre-configured demo user roles. Sign in either as a guest user, a buyer (use *BrandaJSanborn@example.org* as your login and password), or a manager (use *AmandaRCole@example.org* as your login and password).
 
 Deploy the Solution
 -------------------
@@ -15,24 +13,17 @@ Deploy the Solution
    .. image:: /img/backend/setup/gcp/oro_solution.png
       :alt: A page of the Oro solution
 
-2. Click **Launch on Compute Engine**.
+2. Click **Launch**.
 
 3. The Oro solution deployment page displays the default settings (e.g., name, zone, machine type, boot disk type, networking interfaces, etc.). You can accept or customize them if necessary.
 
-    .. image:: /img/backend/setup/gcp/oro_solution_settings.png
-       :alt: The details page of the Oro solution settings
+   .. image:: /img/backend/setup/gcp/oro_solution_settings.png
+      :alt: The details page of the Oro solution settings
 
-4. You can also select the image version, with or without demo data. The application with demo data provides all the necessary information for you to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master, and web catalogs. You can also explore the storefront using one of the pre-configured demo user roles. Sign in either as a guest user, a buyer (use *BrandaJSanborn@example.org* both as your login and password), or a manager (use *AmandaRCole@example.org* both as your login and password).
+4. When complete, click **Deploy** on the bottom left to launch the deployment process. Once the deployment is finished, you should see the following information:
 
-    .. image:: /img/backend/setup/gcp/oro_solution_image_version.png
-       :alt: Selecting the image version
-
-5. When complete, click **Deploy** on the bottom left to launch the deployment process.
-
-Once the deployment is finished, you should see the following information:
-
-    .. image:: /img/backend/setup/gcp/deployed_oro_solution.png
-       :alt: The details page of the deployed Oro solution
+   .. image:: /img/backend/setup/gcp/deployed_oro_solution.png
+      :alt: The details page of the deployed Oro solution
 
 Access the Oro Application
 --------------------------
