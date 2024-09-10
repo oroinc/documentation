@@ -6,6 +6,8 @@
 OroMultiWebsiteBundle
 =====================
 
+.. note:: This bundle is only available in the Enterprise edition.
+
 The OroMultiWebsiteBundle feature allows for the management of multiple websites in a single storefront.
 
 

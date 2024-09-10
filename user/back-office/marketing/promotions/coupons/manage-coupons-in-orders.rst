@@ -35,10 +35,10 @@ To add a coupon code to the required order from its page:
 
 1. Navigate to **Sales > Orders** in the main menu.
 2. Click to open the required order to open it.
-3. Click **Add Coupon Code** on the top right of the order page.
+3. Click **Add Coupon Code** in the **More Actions** menu on the top right of the order page.
 
-   .. image:: /user/img/marketing/coupons/AddCouponToOrder.png
-      :alt: Highlight the Add Coupon Code button on the Order's page
+   .. image:: /user/img/marketing/promotions/more-actions-discount.png
+      :alt: More Actions menu options on the order page
 
 4. In the popup that opens, choose a coupon code from the list:
 

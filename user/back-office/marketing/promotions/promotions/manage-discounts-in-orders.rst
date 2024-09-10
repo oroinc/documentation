@@ -46,14 +46,10 @@ Add Special Discounts to an Order
 
 To add one-time personalized discounts for selected customers:
 
-1. On the order page, click **Add Special Discount** on the top.
+1. On the order page, click **Add Special Discount** from the **More Actions** menu.
 
-   Alternatively:
-
-   Click **Add Special Discount**  under **Promotions and Discounts > All Special Discounts**.
-
-   .. image:: /user/img/marketing/promotions/AddSpecialDiscount4.png
-      :alt: Highlight the Add Special Discount button under the Promotions and Discounts section
+   .. image:: /user/img/marketing/promotions/more-actions-discount.png
+      :alt: More Actions menu options on the order page
 
 2. In the form that opens, provide the following information:
 
@@ -74,6 +70,9 @@ Manage Discounts When Editing the Order
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can manage promotions, coupons and special discounts for the required order by opening its edit page and navigating to the **Promotions and Discounts** section.
+
+.. image:: /user/img/marketing/promotions/AddSpecialDiscount4.png
+   :alt: Highlight the Add Special Discount button under the Promotions and Discounts section
 
 Under **All Promotions**, you can |IcView| view details of the selected promotion or coupon code, |IcDeactivate| deactivate, or |IcDelete| delete them from the system.
 
