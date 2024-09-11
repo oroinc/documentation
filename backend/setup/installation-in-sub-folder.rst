@@ -17,37 +17,22 @@ To prepare files for the website located in the sub-directory (e.g., /uk), do th
 
    .. code-block:: php
 
-       require_once __DIR__.'/../src/AppKernel.php';
+       require_once __DIR__.'/../vendor/autoload_runtime.php';
 
    should be changed to
 
    .. code-block:: php
 
-       require_once __DIR__.'/../../src/AppKernel.php';
+       require_once __DIR__.'/../../vendor/autoload_runtime.php';
 
-   and
-
-   .. code-block:: php
-
-      /** @var \Composer\Autoload\ClassLoader $loader */
-      $loader = require __DIR__.'/../vendor/autoload.php';
-
-   should be changed to
-
-   .. code-block:: php
-
-      /** @var \Composer\Autoload\ClassLoader $loader */
-      $loader = require __DIR__.'/../../vendor/autoload.php';
-
-2. Add WEBSITE_PATH parameter to ServerBag before $response = $kernel->handle($request); This parameter value should be the new website folder name.
+2. Add WEBSITE_PATH environment variable before return fn() => new AppKernel('dev', true);. This parameter value should be the new website folder name.
 
    .. code-block:: php
 
         // ...
-        $request = Request::createFromGlobals();
-        $request->server->add(['WEBSITE_PATH' => '/<yoursitename>']);
-        $response = $kernel->handle($request);
-        // ...
+        $_ENV['WEBSITE_PATH'] = '/<yoursitename>';
+
+        return fn() => new AppKernel('dev', true);
 
 where <yoursitename> is *uk* in our example.
 
