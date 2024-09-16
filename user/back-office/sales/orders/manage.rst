@@ -80,6 +80,24 @@ To edit an order:
 
 #. Click **Save** on the top right of the page.
 
+.. _user-guide--sales--orders--reorder:
+
+Re-Order
+--------
+
+If the order does not have sub orders, it can be re-ordered.
+
+To re-order an existing order:
+
+#. Navigate to **Sales > Orders** in the main menu.
+#. Choose an order in the list, hover over the |IcMore| **More Options** menu to the right of the item, and click **Re-order** to start new order from existing one.
+
+   Alternatively, click the order to open its details. On the order details page, click the **Re-order** button on the top right.
+
+#. Update the required information. See :ref:`Create an Order from Scratch <user-guide--sales--orders--create>` and :ref:`Manage Promotions in Orders <user-guide--sales--orders--promotions>` topics for detailed information on the available options.
+
+#. Click **Save** on the top right of the page.
+
 .. _doc--orders--actions--delete:
 
 Delete an Order
