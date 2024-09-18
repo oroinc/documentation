@@ -86,18 +86,18 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
 .. csv-table::
 
-   "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
-   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`","**G**",":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
-   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",""
-   "**D**","**I**","**P**",""
-   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`",""
+   "**A**","**D**","**I**","**P**"
+   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`",":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`"
+   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","M","S"
+   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`","G",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
+   "",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",""
 
 CRM Bundles
 -----------
 
 .. csv-table::
 
-    "A","C", "S"
+    "**A**","**C**", "**S**"
     ":ref:`ActivityContactBundle <bundle-docs-crm-activity-contact-bundle>`", ":ref:`ChannelBundle <bundle-docs-crm-channel-bundle>`", ":ref:`SalesBundle <bundle-docs-crm-sales-bundle>`"
     ":ref:`AnalyticsBundle <bundle-docs-crm-analytics-bundle>`", "", ""
 

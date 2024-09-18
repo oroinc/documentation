@@ -127,9 +127,6 @@ For instance:
 .. image:: /user/img/products/products/your_price_recalculated_sets.png
    :alt: Your price is recalculated for sets
 
-.. hint::
-    See another example of the difference between :ref:`Your Price and Listed price in the storefront <frontstore-guide--navigation-product-price>`.
-
 Use Units in Promotions
 ^^^^^^^^^^^^^^^^^^^^^^^
 

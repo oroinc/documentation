@@ -196,16 +196,6 @@ Glossary
        * If you buy from 10 to 19 items, the price per item is lowered to $42.74 per item
        * If you buy from 20 to 49 items, the price per item is lowered further to $40.49, and so on
 
-   Listed Price
-      The pricing assigned to the available product units and their variations of quantity.
-
-      .. image:: /user/img/glossary/listed_price.png
-
-   Your Price
-      The :term:`Listed Price` under your current :term:`tier pricing <Tier Price>` configuration. When the product quantity is changed, Your Price is recalculated to match the tier pricing set for the selected quantity.
-
-      .. image:: /user/img/glossary/your_price.png
-
    WYSIWYG (What You See Is What You Get)
       The editor that enables to edit the content of a landing page, product page, and any other HTML-like web page, embed codes, media files, and widgets, and preview the results in the editor's framework directly.
 
