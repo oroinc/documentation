@@ -6467,3 +6467,19 @@ Links (Dev)
 .. |WebsiteSearchSuggestionBundle| raw:: html
 
     <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebsiteSearchSuggestionBundle/" target="_blank">WebsiteSearchSuggestionBundle</a>
+
+.. |k6-docs| raw:: html
+
+    <a href="https://grafana.com/docs/k6/latest" target="_blank">k6-docs</a>
+
+.. |k6-github| raw:: html
+
+    <a href="https://github.com/grafana/k6" target="_blank">k6-github</a>
+
+.. |k6-best-practices| raw:: html
+
+    <a href="https://grafana.com/docs/k6/latest/testing-guides/automated-performance-testing" target="_blank">k6-best-practices</a>
+
+.. |k6-integrations| raw:: html
+
+    <a href="https://grafana.com/docs/k6/latest/misc/integrations" target="_blank">k6-integrations</a>
