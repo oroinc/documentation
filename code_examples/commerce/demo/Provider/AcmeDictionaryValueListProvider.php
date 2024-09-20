@@ -3,12 +3,12 @@
 namespace Acme\Bundle\DemoBundle\Provider;
 
 use Oro\Bundle\EntityBundle\Provider\DictionaryValueListProviderInterface;
-use Oro\Bundle\EntityExtendBundle\Provider\EnumValueListProvider;
+use Oro\Bundle\EntityExtendBundle\Provider\EnumOptionValueListProvider;
 
 /**
  * Acme dictionary value provider.
  */
-class AcmeDictionaryValueListProvider extends EnumValueListProvider implements DictionaryValueListProviderInterface
+class AcmeDictionaryValueListProvider extends EnumOptionValueListProvider implements DictionaryValueListProviderInterface
 {
     protected const ACME_PREFIX = 'Acme';
 

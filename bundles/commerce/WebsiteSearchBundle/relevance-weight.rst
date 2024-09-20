@@ -49,7 +49,7 @@ First, create an event listener class:
          */
         private function calculateRelevanceWeight(Product $product): float
         {
-            switch ($product->getInventoryStatus()->getId()) {
+            switch ($product->getInventoryStatus()->getInternalId()) {
                 case Product::INVENTORY_STATUS_IN_STOCK:
                     return 1.0;
                 case Product::INVENTORY_STATUS_OUT_OF_STOCK:

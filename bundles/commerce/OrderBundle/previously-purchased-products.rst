@@ -281,10 +281,10 @@ This service implements |OrderStatusesProviderInterface| and contains methods wh
 
 
     /**
-     * @param AbstractEnumValue|null $status
+     * @param EnumOptionInterface|null $status
      * @return bool
      */
-    protected function isAllowedStatus(AbstractEnumValue $status = null)
+    protected function isAllowedStatus(EnumOptionInterface $status = null)
     {
         // statusProvider implements OrderStatusesProviderInterface
         $availableStatuses = $this->statusesProvider->getAvailableStatuses();

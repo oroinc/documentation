@@ -212,11 +212,11 @@ The last step is to set the ``cellSelection`` option which is going to add the b
 Problem 4
 ~~~~~~~~~
 
-Let's take the previous problem but fill the selector in addiction to enum values.
+Let's take the previous problem but fill the selector in addiction to enum options.
 
 **Solution**:
 
-To solve this problem, use ``@oro_entity_extend.enum_value_provider->getEnumChoicesByCode('enum_code')`` instead of the choice the array is using.
+To solve this problem, use ``@oro_entity_extend.enum_options_provider->getEnumChoicesByCode('enum_code')`` instead of the choice the array is using.
 
 .. code-block:: yaml
 
@@ -238,7 +238,7 @@ Example:
                     label: oro.user.enabled.label
                     frontend_type: select
                     editable: true
-                    choices: "@oro_entity_extend.enum_value_provider->getEnumChoicesByCode('user_status')"
+                    choices: "@oro_entity_extend.enum_options_provider->getEnumChoicesByCode('user_status')"
                     translatable_options: false
 
 

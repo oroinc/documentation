@@ -173,11 +173,11 @@ The enum functionality is described in :ref:`Option Set Fields <book-entities-ex
 
 * **enum_locale** *string* - the locale name in which an enum name and options labels are entered. This is a temporary attribute used to allow creating an enum on a field edit page. As part of the schema update procedure, the value of this attribute is removed.
 
-* **enum_name** *string* - the name of an enum linked to a field. This is a temporary attribute used to allow creating an enum on a field edit page. The value of this attribute is used as a label for an entity that is used to store enum values, and then as part of the field reference update procedure, it is removed.
+* **enum_name** *string* - the name of an enum linked to a field. This is a temporary attribute used to allow creating an enum on a field edit page. The value of this attribute is used as a label for an entity that is used to store enum options, and then as part of the field reference update procedure, it is removed.
 
 * **enum_public** *boolean* - indicates whether an enum is public or not. This temporary attribute is used to create/edit an enum on a field edit page. As part of the schema update procedure, the value of this attribute is moved to the entity.enum.public attribute. This flag cannot be changed for system enums (owner='system').
 
-* **enum_options** *array* - the list of enum values. This temporary attribute is used to create/edit an enum on a field edit page. As part of the schema update procedure, the value of this attribute is moved to a table that is used to store enum values.
+* **enum_options** *array* - the list of enum options. This temporary attribute is used to create/edit an enum on a field edit page. As part of the schema update procedure, the value of this attribute is moved to a table that is used to store enum values.
 
 * **immutable** *boolean* - is used to prohibit changing the enum association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 

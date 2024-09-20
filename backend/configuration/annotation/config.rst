@@ -169,7 +169,7 @@ This attribute is only used for `Enum parameters`. For more information, see :re
 
 * **multiple** *boolean* - Indicates whether several options can be selected for this enum or it supports only one selected option.
 
-* **immutable** *boolean or array* - is used to prohibit changing the list of enum values and a public flag. This means that values cannot be added or deleted, but it is still possible to update the names of existing values, reorder them and change the default values. Below are examples of possible values:
+* **immutable** *boolean or array* - is used to prohibit changing the list of enum options and a public flag. This means that values cannot be added or deleted, but it is still possible to update the names of existing values, reorder them and change the default values. Below are examples of possible values:
 
    - false or empty array - no any restrictions
    - true - means that all constraints are applied, so it will not be allowed to add/delete options and change 'public' flag
@@ -190,7 +190,7 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 
 * **table** *string* - is the table name for a custom entity. This is optional attribute. If it is not specified, the table name is generated automatically.
 
-* **inherit** *string* - is the parent class name. You are not usually requires to specify this attribute as it is calculated automatically for regular extend and custom entities. An example of an entity where this attribute is used is EnumValue.
+* **inherit** *string* - is the parent class name. You are not usually requires to specify this attribute as it is calculated automatically for regular extend and custom entities. An example of an entity where this attribute is used is EnumOption.
 
 * **pending_changes** - when a user changes something that requires schema update, this change is not applied to the configuration, but is stored into "pending_changes" as changeset. The format of changeset is ['scope' => ['field' => ['oldValue', 'newValue'], ...], ...].
 

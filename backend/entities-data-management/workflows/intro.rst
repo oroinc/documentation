@@ -35,7 +35,7 @@ Configuration
 
 All Workflow entities are described in the configuration. Below is an example of Workflow configuration that performs some action with `User` entity.
 
-.. oro_integrity_check:: 57ab879a97393017b71652ea6675d9536ef7e3d3
+.. oro_integrity_check:: cc06764248f6dc9415927653e66b803dd97e9741
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/workflows.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml

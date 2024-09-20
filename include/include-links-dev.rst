@@ -5132,13 +5132,13 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/Manager/AssociationManager.php" target="_blank">AssociationManager</a>
 
-.. |AbstractEnumValue| raw:: html
+.. |EnumOptionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/AbstractEnumValue.php" target="_blank">AbstractEnumValue</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/EnumOptionInterface.php" target="_blank">EnumOptionInterface</a>
 
-.. |EnumValueTranslation| raw:: html
+.. |EnumOptionTranslation| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/EnumValueTranslation.php" target="_blank">EnumValueTranslation</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/EnumOptionTranslation.php" target="_blank">EnumOptionTranslation</a>
 
 .. |TWIG extension (Enum)| raw:: html
 
