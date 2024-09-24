@@ -69,7 +69,7 @@ The fields responsible for the draft must match the interface and have the appro
 
 After you complete it, you will have the ``installer`` with the following content:
 
-.. oro_integrity_check:: 6db6b35195c98b83244cdeaa69a06a05d593e354
+.. oro_integrity_check:: b75926a0d547466c76ea6787ca826ea101e96458
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Migrations/Schema/AcmeCMSBundleInstaller.php
         :language: php
@@ -85,7 +85,7 @@ For more details on how to create a controller and navigation, see the following
 * :ref:`Entity controller <cookbook-entity-controller>`
 * :ref:`Navigation <doc-managing-app-menu>`
 
-.. oro_integrity_check:: b2a3154fc5ba1245f613d65997656b272f9f084a
+.. oro_integrity_check:: c0abaf8dbeb38c81320a79408b14fcc501a57e85
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Controller/BlockController.php
         :language: php
@@ -144,7 +144,7 @@ Create a form type to handle the draft entity.
 
 Follow the instructions provided in the :ref:`The Form Type <cookbook-entity-form-type>` topic for more details.
 
-.. oro_integrity_check:: 18584cf7a86d66b721aa2e72c2efcb302151f400
+.. oro_integrity_check:: d24a10c064b2ef6428692f045233e3e6c7b0bd4f
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Form/Type/BlockType.php
         :language: php
@@ -166,7 +166,7 @@ Create a Filter
 
 ``Filter`` is a class that can modify the property value and be used in conjunction with ``Matcher``.
 
-.. oro_integrity_check:: 2fc54a3540d1c678237079e29d7e831eb173b815
+.. oro_integrity_check:: caf6feb86a6a5623b244ed408a9332e465d8eda0
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Filter/UniqueTitleFilter.php
         :language: php
@@ -177,7 +177,7 @@ Create a Matcher
 
 ``Matcher`` is a class that points to the field that ``Filter`` can work on. Matcher checks whether the specified field meets the criteria and applies the filter to this field.
 
-.. oro_integrity_check:: fcd725204d0a8697a7cea602591e6e98e8867f30
+.. oro_integrity_check:: 4f38f23b19f663da4d8ebb3d9f8b1c1a2e20dede
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Matcher/BlockTitleMatcher.php
         :language: php
@@ -188,7 +188,7 @@ Create an Extension
 
 ``Extension`` is a class that combines the logic of ``Filter`` and ``Matcher``.
 
-.. oro_integrity_check:: 5fd37b0dbd79f44e3ce52fd35841d7110e7fd07c
+.. oro_integrity_check:: f3ff2fbffd1ec5848b1cc421cba2374dd18cc4e3
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Extension/BlockTitleExtension.php
         :language: php

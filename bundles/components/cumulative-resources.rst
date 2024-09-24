@@ -27,9 +27,7 @@ For example, to load configuration for your current bundle from the ``Resources\
 
     class AcmeSomeExtension extends Extension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function load(array $configs, ContainerBuilder $container): void
         {
             // load configuration from acme.yml which can be located in any bundle
@@ -103,9 +101,7 @@ Load Configuration from Different File Types
 
     class AcmeSomeExtension extends Extension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function load(array $configs, ContainerBuilder $container): void
         {
             $acmeConfig = [];
@@ -131,9 +127,7 @@ Load Configuration Files from Different Folders
 
     class AcmeSomeExtension extends Extension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function load(array $configs, ContainerBuilder $container): void
         {
             $acmeConfig = [];

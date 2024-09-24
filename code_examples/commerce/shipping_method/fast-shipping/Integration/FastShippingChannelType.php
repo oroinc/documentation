@@ -10,17 +10,13 @@ use Oro\Bundle\IntegrationBundle\Provider\IconAwareIntegrationInterface;
  */
 class FastShippingChannelType implements ChannelInterface, IconAwareIntegrationInterface
 {
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getLabel(): string
     {
         return 'acme.fast_shipping.channel_type.label';
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getIcon(): string
     {
         return 'bundles/acmefastshipping/img/fast-shipping-logo.png';

@@ -13,17 +13,13 @@ class AddSerializedFieldMigration implements Migration, SerializedFieldsExtensio
 {
     protected SerializedFieldsExtension $serializedFieldsExtension;
 
-    /**
-     * @inheritDoc
-     */
+    #[\Override]
     public function setSerializedFieldsExtension(SerializedFieldsExtension $serializedFieldsExtension)
     {
         $this->serializedFieldsExtension = $serializedFieldsExtension;
     }
 
-    /**
-     * @inheritDoc
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries)
     {
         $this->serializedFieldsExtension->addSerializedField(

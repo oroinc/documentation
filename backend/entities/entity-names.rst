@@ -59,9 +59,7 @@ To create an Entity Name Provider, you should implement the |EntityNameProviderI
 
     class FullNameProvider implements EntityNameProviderInterface
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getName($format, $locale, $entity)
         {
             if ($format === self::FULL && $this->isFullFormatSupported(get_class($entity))) {
@@ -71,9 +69,7 @@ To create an Entity Name Provider, you should implement the |EntityNameProviderI
             return false;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getNameDQL($format, $locale, $className, $alias)
         {
             if ($format === self::FULL && $this->isFullFormatSupported($className)) {

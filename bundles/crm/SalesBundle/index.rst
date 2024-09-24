@@ -37,9 +37,7 @@ Migration example:
     {
         use CustomerExtensionTrait;
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function up(Schema $schema, QueryBag $queries)
         {
             $this->customerExtension->addCustomerAssociation($schema, 'target_customer_table');
@@ -61,9 +59,7 @@ Example:
     {
         const CUSTOMER_ICON_FILE = 'bundles/yourbundlename/img/customer-logo.png';
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getIcon($entity)
         {
             if (!$entity instanceof Customer) {

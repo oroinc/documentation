@@ -25,6 +25,7 @@ class ImagePlaceholderProviderPassTest extends \PHPUnit\Framework\TestCase
      */
     private $compilerPass;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->containerBuilder = new ContainerBuilder();

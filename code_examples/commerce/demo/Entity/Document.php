@@ -3,16 +3,16 @@
 namespace Acme\Bundle\DemoBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareInterface;
+use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareTrait;
 use Oro\Bundle\EntityConfigBundle\Attribute\Entity\AttributeFamily;
 use Oro\Bundle\EntityConfigBundle\Attribute\Entity\AttributeFamilyAwareInterface;
 use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
 use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField;
-use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareInterface;
-use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareTrait;
-use Oro\Bundle\OrganizationBundle\Entity\OrganizationAwareInterface;
-use Oro\Bundle\UserBundle\Entity\Ownership\AuditableUserAwareTrait;
 use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityInterface;
 use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait;
+use Oro\Bundle\OrganizationBundle\Entity\OrganizationAwareInterface;
+use Oro\Bundle\UserBundle\Entity\Ownership\AuditableUserAwareTrait;
 
 /**
  * ORM Entity Document.
@@ -144,6 +144,7 @@ class Document implements
     /**
      * @param AttributeFamily $attributeFamily
      */
+    #[\Override]
     public function setAttributeFamily(AttributeFamily $attributeFamily): self
     {
         $this->attributeFamily = $attributeFamily;
@@ -151,6 +152,7 @@ class Document implements
         return $this;
     }
 
+    #[\Override]
     public function getAttributeFamily(): ?AttributeFamily
     {
         return $this->attributeFamily;

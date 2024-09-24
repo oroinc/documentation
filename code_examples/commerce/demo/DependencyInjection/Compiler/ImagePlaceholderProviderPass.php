@@ -1,6 +1,7 @@
 <?php
 
 // DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
+
 namespace Acme\Bundle\DemoBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
@@ -12,6 +13,7 @@ use Symfony\Component\DependencyInjection\Reference;
  */
 class ImagePlaceholderProviderPass implements CompilerPassInterface
 {
+    #[\Override]
     public function process(ContainerBuilder $container)
     {
         if (!$container->hasDefinition('oro_product.provider.product_image_placeholder')) {

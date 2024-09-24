@@ -12,12 +12,13 @@ use Oro\Bundle\SecurityBundle\AccessRule\Expr\Path;
  */
 class FavoriteAccessRule implements AccessRuleInterface
 {
-
+    #[\Override]
     public function isApplicable(Criteria $criteria): bool
     {
         return true;
     }
 
+    #[\Override]
     public function process(Criteria $criteria): void
     {
         $criteria->andExpression(new Comparison(new Path('viewCount'), Comparison::GTE, 6));

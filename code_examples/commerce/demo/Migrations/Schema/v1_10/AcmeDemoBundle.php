@@ -12,9 +12,7 @@ class AcmeDemoBundle implements Migration, ActivityExtensionAwareInterface
 {
     use ActivityExtensionAwareTrait;
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries): void
     {
         $this->activityExtension->addActivityAssociation($schema, 'oro_email', 'acme_demo_document', true);

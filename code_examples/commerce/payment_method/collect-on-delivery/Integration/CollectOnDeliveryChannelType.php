@@ -12,17 +12,13 @@ class CollectOnDeliveryChannelType implements ChannelInterface, IconAwareIntegra
 {
     const TYPE = 'collect_on_delivery';
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getLabel()
     {
         return 'acme.collect_on_delivery.channel_type.label';
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getIcon()
     {
         return 'bundles/oromoneyorder/img/money-order-icon.png';

@@ -28,9 +28,7 @@ the integration section of the admin interface. A channel is a class that has to
 
     class TaskChannel implements ChannelInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getLabel(): string
         {
             return 'acme.task_channel.label';
@@ -54,17 +52,13 @@ returns a path to the icon relative to the project's web directory:
 
     class TaskChannel implements ChannelInterface, IconAwareIntegrationInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getLabel(): string
         {
             return 'acme.task_channel.label';
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getIcon(): string
         {
             return 'icons/task.png';
@@ -156,33 +150,25 @@ Your final step is to implement the ``Oro\Bundle\IntegrationBundle\Provider\Conn
 
     class TaskConnector implements ConnectorInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getLabel(): string
         {
             return 'acme.connector.task.label';
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getImportEntityFQCN(): string
         {
             return 'Acme\Bundle\DemoBundle\Entity\Task';
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getImportJobName()
         {
             return 'acme_task_import';
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getType(): string
         {
             return 'task';

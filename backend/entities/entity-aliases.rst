@@ -74,9 +74,7 @@ For this, you need to implement the |EntityAliasProviderInterface| interface in 
             $this->emailAddressProxyClass = $emailAddressManager->getEmailAddressProxyClass();
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getEntityAlias($entityClass)
         {
             if ($entityClass === $this->emailAddressProxyClass) {

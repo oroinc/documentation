@@ -17,9 +17,7 @@ Example of usage:
 
     class CustomAddOrReplaceStrategy extends ConfigurableAddOrReplaceStrategy
     {
-            /**
-             * {@inheritdoc}
-             */
+            #[\Override]
             protected function beforeProcessEntity($entity)
             {
                 $entity = parent::beforeProcessEntity($entity);
@@ -47,9 +45,7 @@ Example of usage:
 
     class CustomerTaxCodeImportExportSubscriber implements EventSubscriberInterface
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public static function getSubscribedEvents()
         {
             return [

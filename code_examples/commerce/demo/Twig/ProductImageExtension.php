@@ -1,6 +1,7 @@
 <?php
 
 // Twig/ProductImageExtension.php
+
 namespace Acme\Bundle\DemoBundle\Twig;
 
 use Oro\Bundle\AttachmentBundle\Entity\File;
@@ -25,9 +26,7 @@ class ProductImageExtension extends AbstractExtension implements ServiceSubscrib
         $this->container = $container;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getFunctions()
     {
         return [
@@ -50,9 +49,7 @@ class ProductImageExtension extends AbstractExtension implements ServiceSubscrib
         return $this->getImagePlaceholderProvider()->getPath($filter);
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public static function getSubscribedServices()
     {
         return [

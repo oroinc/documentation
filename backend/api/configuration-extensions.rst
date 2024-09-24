@@ -82,9 +82,7 @@ Example:
 
     class MyConfigExtension extends AbstractConfigExtension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getConfigureCallbacks(): array
         {
             return [
@@ -94,9 +92,7 @@ Example:
             ];
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getPreProcessCallbacks(): array
         {
             return [
@@ -107,9 +103,7 @@ Example:
             ];
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getPostProcessCallbacks(): array
         {
             return [
@@ -142,9 +136,7 @@ An example of a simple configuration section:
 
     class MyConfiguration extends AbstractConfigurationSection
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function configure(NodeBuilder $node): void
         {
             $node->scalarNode('some_option');
@@ -163,9 +155,7 @@ An example of a configuration section that other bundles can extend:
 
     class MyConfiguration extends AbstractConfigurationSection
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function configure(NodeBuilder $node): void
         {
             $sectionName = 'my_section';
@@ -191,9 +181,7 @@ An example of a configuration section loader:
 
     class MyConfigLoader extends AbstractConfigLoader
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function load(array $config): mixed
         {
             $result = new MyConfigSection();
@@ -217,17 +205,13 @@ An example of a configuration extension:
 
     class MyConfigExtension extends AbstractConfigExtension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getEntityConfigurationSections(): array
         {
             return ['my_section' => new MyConfiguration()];
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getEntityConfigurationLoaders(): array
         {
             return ['my_section' => new MyConfigLoader()];

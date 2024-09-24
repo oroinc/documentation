@@ -13,6 +13,7 @@ class CopyrightContentWidgetTypeTest extends \PHPUnit\Framework\TestCase
     /** @var CopyrightContentWidgetType */
     private $contentWidgetType;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->contentWidgetType = new CopyrightContentWidgetType();

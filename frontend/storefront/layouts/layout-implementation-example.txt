@@ -546,9 +546,7 @@ collection of the layout context using a :ref:`context configurator <dev-doc-fro
             $this->request = $request;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function configureContext(ContextInterface $context)
         {
             $context->data()->setDefault(
@@ -762,9 +760,7 @@ language code from the request and save it in the layout context.
             $this->request = $request;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function configureContext(ContextInterface $context)
         {
             $context->data()->setDefault(
@@ -979,17 +975,13 @@ First, create a `LinkExtension` class and place it in the
      */
     class LinkExtension extends AbstractBlockTypeExtension
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function configureOptions(OptionsResolver $resolver)
         {
             $resolver->setDefined('image');
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildView(BlockView $view, BlockInterface $block, Options $options)
         {
             // this operation better to use on finishView but if you are really sure you can write like this
@@ -998,9 +990,7 @@ First, create a `LinkExtension` class and place it in the
             }
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getExtendedType()
         {
             return LinkType::NAME;
@@ -1090,25 +1080,19 @@ register a new block prefix for it depending on the `type` option:
 
     class ContainerExtension extends AbstractBlockTypeExtension
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function configureOptions(OptionsResolver $resolver)
         {
             $resolver->setDefined(['type']);
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildView(BlockView $view, BlockInterface $block, Options $options)
         {
             BlockUtils::setViewVarsFromOptions($view, $options, ['type']);
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function finishView(BlockView $view, BlockInterface $block)
         {
             if (!$view->vars['type']) {
@@ -1116,9 +1100,7 @@ register a new block prefix for it depending on the `type` option:
             }
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getExtendedType()
         {
             return 'container';
@@ -1489,9 +1471,7 @@ First, we need to create a new form type and register it in the container:
     class ProductType extends AbstractType
     {
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
             $builder
@@ -1516,9 +1496,7 @@ First, we need to create a new form type and register it in the container:
                 );
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getName()
         {
             return 'acme_product_product';
@@ -1794,9 +1772,7 @@ First, we are going to create the block type file itself and place it in the
 
     class ImageType extends AbstractType
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function configureOptions(OptionsResolver $resolver)
         {
             $resolver
@@ -1804,9 +1780,7 @@ First, we are going to create the block type file itself and place it in the
                 ->setDefined(['alt']);
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildView(BlockView $view, BlockInterface $block, Options $options)
         {
             BlockUtils::processUrl($view, $options, true);
@@ -1817,9 +1791,7 @@ First, we are going to create the block type file itself and place it in the
             }
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getName()
         {
             return 'image';

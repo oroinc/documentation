@@ -12,32 +12,24 @@ use Oro\Bundle\IntegrationBundle\Provider\TransportInterface;
  */
 class CollectOnDeliveryTransport implements TransportInterface
 {
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function init(Transport $transportEntity)
     {
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getLabel()
     {
         return 'acme.collect_on_delivery.settings.transport.label';
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getSettingsFormType()
     {
         return CollectOnDeliverySettingsType::class;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getSettingsEntityFQCN()
     {
         return CollectOnDeliverySettings::class;

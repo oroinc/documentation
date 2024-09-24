@@ -11,9 +11,7 @@ class UniqueTitleDraft extends Constraint
 {
     public string $message = 'acme.cms.validators.unique_title_draft_message';
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getTargets(): string
     {
         return self::PROPERTY_CONSTRAINT;

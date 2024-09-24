@@ -13,14 +13,13 @@ class AddCommentSms implements Migration, CommentExtensionAwareInterface
     /** @var CommentExtension */
     protected $comment;
 
+    #[\Override]
     public function setCommentExtension(CommentExtension $commentExtension)
     {
         $this->comment = $commentExtension;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries)
     {
         $this->comment->addCommentAssociation($schema, 'acme_demo_sms');

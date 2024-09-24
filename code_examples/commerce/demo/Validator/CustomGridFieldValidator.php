@@ -17,14 +17,12 @@ class CustomGridFieldValidator implements CustomGridFieldValidatorInterface
     protected $accessor;
 
     public function __construct(
-         PropertyAccessorInterface $accessor
+        PropertyAccessorInterface $accessor
     ) {
         $this->accessor = $accessor;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function hasAccessEditField($entity, $fieldName): bool
     {
         if (!$entity instanceof Priority) {
@@ -38,9 +36,7 @@ class CustomGridFieldValidator implements CustomGridFieldValidatorInterface
             && !in_array($fieldName, $this->getPriorityFieldBlockList(), true);
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function hasField($entity, $fieldName): bool
     {
         try {

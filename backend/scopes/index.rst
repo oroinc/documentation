@@ -68,9 +68,7 @@ To add criteria to the scope, extend the scope entity using migration, as shown 
     {
         use ScopeExtensionAwareTrait;
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function up(Schema $schema, QueryBag $queries): void
         {
             $this->scopeExtension->addScopeAssociation($schema, 'customer', 'oro_customer', 'name');
@@ -101,17 +99,13 @@ To extend a scope with a criterion that your bundle may provide:
             $this->tokenStorage = $tokenStorage;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getCriteriaField()
         {
             return self::USER;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getCriteriaValue()
         {
             $token = $this->tokenStorage->getToken();
@@ -125,9 +119,7 @@ To extend a scope with a criterion that your bundle may provide:
             return null;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getCriteriaValueType()
         {
             return User::class;

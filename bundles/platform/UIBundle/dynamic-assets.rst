@@ -32,9 +32,7 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 
        class DemoBundle extends Bundle
        {
-           /**
-            * {@inheritdoc}
-            */
+           #[\Override]
            public function build(ContainerBuilder $container): void
            {
                parent::build($container);

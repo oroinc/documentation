@@ -13,6 +13,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  */
 class BlogPostType extends AbstractType
 {
+    #[\Override]
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
@@ -34,6 +35,7 @@ class BlogPostType extends AbstractType
             );
     }
 
+    #[\Override]
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults(
@@ -43,6 +45,7 @@ class BlogPostType extends AbstractType
         );
     }
 
+    #[\Override]
     public function getBlockPrefix(): string
     {
         return 'acme_wysiwyg_blog_post';

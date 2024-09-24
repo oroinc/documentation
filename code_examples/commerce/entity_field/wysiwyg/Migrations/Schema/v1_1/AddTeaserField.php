@@ -12,9 +12,7 @@ use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
 class AddTeaserField implements Migration
 {
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries): void
     {
         if (!$schema->hasTable('acme_blog_post')) {

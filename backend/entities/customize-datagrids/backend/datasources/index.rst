@@ -35,17 +35,13 @@ To implement your own datasource type:
 
         protected array $arraySource = [];
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function process(DatagridInterface $grid, array $config)
         {
             $grid->setDatasource(clone $this);
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getResults()
         {
             $rows = [];

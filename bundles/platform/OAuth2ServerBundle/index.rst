@@ -106,9 +106,7 @@ The OAuth applications can be added using data :ref:`fixtures <backend-entities-
     {
         use ContainerAwareTrait;
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function load(ObjectManager $manager)
         {
             $client = new Client();

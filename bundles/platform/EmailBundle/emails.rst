@@ -63,17 +63,13 @@ UserBundle/Entity/Provider/EmailOwnerProvider.php
 
     class EmailOwnerProvider implements EmailOwnerProviderInterface
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getEmailOwnerClass(): string
         {
             return User::class;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function findEmailOwner(EntityManagerInterface $em, string $email): ?EmailOwnerInterface
         {
             /** @var User|null $user */
@@ -89,9 +85,7 @@ UserBundle/Entity/Provider/EmailOwnerProvider.php
             return $user;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getOrganizations(EntityManagerInterface $em, string $email): array
         {
             $result = [];
@@ -128,9 +122,7 @@ UserBundle/Entity/Provider/EmailOwnerProvider.php
             return $result;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getEmails(EntityManagerInterface $em, int $organizationId): iterable
         {
             $qb = $em->createQueryBuilder()
@@ -205,17 +197,13 @@ For example:
 
     class SomeEmailBodyLoader implements EmailBodyLoaderInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function supports(EmailOrigin $origin)
         {
             return $origin instanceof SomeEmailOrigin;
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function loadEmailBody(EmailFolder $folder, Email $email, EntityManager $em)
         {
             // implementation

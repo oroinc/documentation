@@ -1288,9 +1288,7 @@ To create a new action, to create two classes:
 
     class MyActionProcessor extends ActionProcessor
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         protected function createContextObject(): MyActionContext
         {
             return new MyActionContext();

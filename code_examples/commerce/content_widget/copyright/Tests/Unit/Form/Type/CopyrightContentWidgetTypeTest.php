@@ -10,6 +10,7 @@ class CopyrightContentWidgetTypeTest extends FormIntegrationTestCase
     /** @var CopyrightContentWidgetType */
     private $formType;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->formType = new CopyrightContentWidgetType();

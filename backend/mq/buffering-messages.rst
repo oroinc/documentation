@@ -69,9 +69,7 @@ for the transaction watcher aware connection proxy in your application, for exam
             TransactionWatcherConfigurator::registerConnectionProxies($kernel->getCacheDir());
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function build(ContainerBuilder $container): void
         {
             parent::build($container);

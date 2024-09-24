@@ -182,9 +182,7 @@ In most cases, the :ref:`built-in filters <backend-filters-form-types>` would wo
 
     class ProductPriceListsFilter extends EntityFilter
     {
-        /**
-         * @inheritdoc
-         */
+        #[\Override]
         public function apply(FilterDatasourceAdapterInterface $ds, $data)
         {
             /** @var array $data */

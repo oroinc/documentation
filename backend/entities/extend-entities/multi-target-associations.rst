@@ -254,17 +254,13 @@ The following examples show how you can do it:
 
     class CommentEntityConfigDumperExtension extends AssociationEntityConfigDumperExtension
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         protected function getAssociationEntityClass()
         {
             return 'Oro\Bundle\CommentBundle\Entity\Comment';
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         protected function getAssociationScope()
         {
             return 'comment';

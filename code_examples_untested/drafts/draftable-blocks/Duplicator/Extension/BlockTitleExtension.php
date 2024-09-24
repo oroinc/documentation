@@ -16,16 +16,19 @@ use Oro\Bundle\DraftBundle\Manager\DraftManager;
  */
 class BlockTitleExtension extends AbstractDuplicatorExtension
 {
+    #[\Override]
     public function getFilter(): Filter
     {
         return new UniqueTitleFilter();
     }
 
+    #[\Override]
     public function getMatcher(): Matcher
     {
         return new BlockTitleMatcher();
     }
 
+    #[\Override]
     public function isSupport(DraftableInterface $source): bool
     {
         return

@@ -41,9 +41,7 @@ Simple CSV Storage example:
             $this->doctrineHelper = $doctrineHelper;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getPrices(
             ProductPriceScopeCriteriaInterface $scopeCriteria,
             array $products,
@@ -70,9 +68,7 @@ Simple CSV Storage example:
             return $prices;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getSupportedCurrencies(ProductPriceScopeCriteriaInterface $scopeCriteria)
         {
             /**
@@ -152,9 +148,7 @@ Voter example:
     {
         const PRICING_FEATURE_NAME = 'oro_pricing';
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function vote($feature, $scopeIdentifier = null)
         {
             if ($feature === self::PRICING_FEATURE_NAME) {

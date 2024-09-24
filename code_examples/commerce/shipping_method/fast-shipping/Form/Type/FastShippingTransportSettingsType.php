@@ -16,9 +16,7 @@ class FastShippingTransportSettingsType extends AbstractType
 {
     private const BLOCK_PREFIX = 'acme_fast_shipping_settings';
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
@@ -33,9 +31,7 @@ class FastShippingTransportSettingsType extends AbstractType
             );
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
@@ -43,9 +39,7 @@ class FastShippingTransportSettingsType extends AbstractType
         ]);
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getBlockPrefix()
     {
         return self::BLOCK_PREFIX;

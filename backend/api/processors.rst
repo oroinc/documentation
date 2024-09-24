@@ -29,9 +29,7 @@ To create a new processor, create a class that implements |ProcessorInterface| a
      **/
     class DoSomething implements ProcessorInterface
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function process(ContextInterface $context): void
         {
             /** @var Context $context */
@@ -317,9 +315,7 @@ Below is an illustration of throwing an exception to demonstrate how a processor
             $this->entitySerializer = $entitySerializer;
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function process(ContextInterface $context): void
         {
             /** @var Context $context */
@@ -380,9 +376,7 @@ Another way to add an **Error** object to the context is helpful for validation 
      */
     class ValidateEntityIdExists implements ProcessorInterface
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function process(ContextInterface $context): void
         {
             /** @var SingleItemContext $context */

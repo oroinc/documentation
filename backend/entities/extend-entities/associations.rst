@@ -24,7 +24,7 @@ the following combinations of entities:
 Many-To-One, Unidirectional
 ---------------------------
 
-.. oro_integrity_check:: 04805d356ac4c53290854e10ea1eac12dbc31728
+.. oro_integrity_check:: 3d3856e2bd72de9fd9cde9fa0c35887724075b81
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_5/AddDocument1RelationToUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddDocument1RelationToUser.php
@@ -35,7 +35,7 @@ Many-To-One, Unidirectional
 Many-To-One, Bidirectional
 --------------------------
 
-.. oro_integrity_check:: 71a05807d2673dd1ab99268bac5242afb43acb3e
+.. oro_integrity_check:: fbffca055fe1821f1b806742a3915cbfed862695
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_5/AddDocument2RelationToUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddDocument2RelationToUser.php
@@ -45,7 +45,7 @@ Many-To-One, Bidirectional
 Many-To-Many, Unidirectional
 ----------------------------
 
-.. oro_integrity_check:: 059c3527d417c6ddd03c651f160c3e0064392521
+.. oro_integrity_check:: 55013a8b3cd44b3f0474040b5c6127881fedb3ea
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_5/AddDocument3RelationToUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddDocument3RelationToUser.php
@@ -55,7 +55,7 @@ Many-To-Many, Unidirectional
 Many-To-Many, Unidirectional, Without Default Entity
 ----------------------------------------------------
 
-.. oro_integrity_check:: a30082c758242e77bb3a3f4016a74a7d64de3b00
+.. oro_integrity_check:: ec9d7b99d6285b30715c32cba66f9e6cf1d9a4f5
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_5/AddDocument4RelationToUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddDocument4RelationToUser.php
@@ -80,16 +80,12 @@ Many-To-Many, Unidirectional, Without Default Entity
 ..       class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
        {
            protected ExtendExtension $extendExtension;
-           /**
-            * @inheritDoc
-            */
+           #[\Override]
            public function setExtendExtension(ExtendExtension $extendExtension)
            {
                $this->extendExtension = $extendExtension;
            }
-           /**
-            * @inheritDoc
-            */
+           #[\Override]
            public function up(Schema $schema, QueryBag $queries)
            {
                $this->addRelationsToUser($schema);
@@ -151,16 +147,12 @@ Many-To-Many, Unidirectional, Without Default Entity
 ..       class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
        {
            protected ExtendExtension $extendExtension;
-           /**
-            * @inheritDoc
-            */
+           #[\Override]
            public function setExtendExtension(ExtendExtension $extendExtension)
            {
                $this->extendExtension = $extendExtension;
            }
-           /**
-            * @inheritDoc
-            */
+           #[\Override]
            public function up(Schema $schema, QueryBag $queries)
            {
                $this->addRelationsToUser($schema);
@@ -207,7 +199,7 @@ Many-To-Many, Unidirectional, Without Default Entity
 One-To-Many, Unidirectional
 ---------------------------
 
-.. oro_integrity_check:: 13fcbb599d67be77cb1159bed03f10ef75e88e31
+.. oro_integrity_check:: 18e3cc61b5732e1275b19c7c37d5379faa232a55
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_5/AddDocument5RelationToUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddDocument5RelationToUser.php
@@ -217,7 +209,7 @@ One-To-Many, Unidirectional
 One-To-Many, Unidirectional, Without Default Entity
 ---------------------------------------------------
 
-.. oro_integrity_check:: 0ef33103dec09d3e9f4c8b07d561353b9e876fba
+.. oro_integrity_check:: c5393f0e4a591f9acd3c3bb166a7cebc682fc605
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_5/AddDocument6RelationToUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddDocument6RelationToUser.php
@@ -227,7 +219,7 @@ One-To-Many, Unidirectional, Without Default Entity
 One-To-Many, Bidirectional
 --------------------------
 
-.. oro_integrity_check:: 0c4424d21ef0e5c074f98c45ab176d73e80bf6f9
+.. oro_integrity_check:: 5d906326ba19933bd42806714e7eae6ff2aab7f0
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_5/AddDocument7RelationToUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddDocument7RelationToUser.php
@@ -237,7 +229,7 @@ One-To-Many, Bidirectional
 One-To-Many, Bidirectional, Without Default Entity
 --------------------------------------------------
 
-.. oro_integrity_check:: 7794ef7cb0d7789807ee130748ae406ae739fb17
+.. oro_integrity_check:: 08b63e50d84e85ca5c5ca9edf28eeba6c8e077e2
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_5/AddDocument8RelationToUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddDocument8RelationToUser.php

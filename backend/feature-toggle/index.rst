@@ -113,9 +113,7 @@ Configuration extension:
 
     class FeatureConfigurationExtension implements ConfigurationExtensionInterface
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function extendConfigurationTree(NodeBuilder $node)
         {
             $node
@@ -230,17 +228,13 @@ Extension:
     {
         use FeatureCheckerHolderTrait;
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public static function getExtendedTypes(): iterable
         {
             return ['acme_product'];
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
             if (!$this->isFeaturesEnabled()) {

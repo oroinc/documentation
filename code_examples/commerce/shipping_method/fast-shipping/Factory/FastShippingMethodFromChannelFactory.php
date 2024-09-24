@@ -35,9 +35,7 @@ class FastShippingMethodFromChannelFactory implements IntegrationShippingMethodF
         $this->integrationIconProvider = $integrationIconProvider;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function create(Channel $channel): ShippingMethodInterface
     {
         /** @var FastShippingSettings $transport */

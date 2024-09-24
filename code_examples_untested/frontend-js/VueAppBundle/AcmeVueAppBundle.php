@@ -1,4 +1,5 @@
 <?php
+
 namespace Acme\Bundle\VueAppBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;

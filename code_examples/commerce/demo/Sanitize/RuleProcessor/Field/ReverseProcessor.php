@@ -21,11 +21,13 @@ class ReverseProcessor implements ProcessorInterface
     ) {
     }
 
+    #[\Override]
     public static function getProcessorName(): string
     {
         return 'str_reverse';
     }
 
+    #[\Override]
     public function getIncompatibilityMessages(
         string $fieldName,
         ClassMetadata $metadata,
@@ -43,9 +45,7 @@ class ReverseProcessor implements ProcessorInterface
         return [];
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getSqls(
         string $fieldName,
         ClassMetadata $metadata,

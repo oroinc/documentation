@@ -37,6 +37,7 @@ class SmsController extends RestController
      *
      * @return ApiEntityManager
      */
+    #[\Override]
     public function getManager()
     {
         return $this->container->get('acme_demo_sms.manager.api');
@@ -45,6 +46,7 @@ class SmsController extends RestController
     /**
      * @return FormAwareInterface
      */
+    #[\Override]
     public function getFormHandler()
     {
         return $this->container->get('acme_demo_sms.form.handler.sms_api');

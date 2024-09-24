@@ -180,18 +180,14 @@ To add a new dashboard defined in the dashboards.yml file (as described above) t
 
     class LoadDashboardData extends AbstractDashboardFixture implements DependentFixtureInterface
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getDependencies(): array
         {
             // we need admin user as a dashboard owner
             return [LoadAdminUserData::class];
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function load(ObjectManager $manager): void
         {
             // create new dashboard

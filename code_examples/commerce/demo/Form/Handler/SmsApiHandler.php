@@ -2,11 +2,11 @@
 
 namespace Acme\Bundle\DemoBundle\Form\Handler;
 
+use Acme\Bundle\DemoBundle\Entity\Sms;
+use Acme\Bundle\DemoBundle\Form\Type\SmsApiType;
 use Doctrine\Persistence\ObjectManager;
 use Oro\Bundle\FormBundle\Form\Handler\RequestHandlerTrait;
 use Oro\Bundle\SoapBundle\Controller\Api\FormAwareInterface;
-use Acme\Bundle\DemoBundle\Entity\Sms;
-use Acme\Bundle\DemoBundle\Form\Type\SmsApiType;
 use Symfony\Component\Form\FormFactory;
 use Symfony\Component\HttpFoundation\RequestStack;
 
@@ -64,9 +64,7 @@ class SmsApiHandler implements FormAwareInterface
         return false;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getForm()
     {
         return $this->formFactory->createNamed('', SmsApiType::class);

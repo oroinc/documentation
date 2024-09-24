@@ -51,25 +51,19 @@ In order to hook into the logic of generating a URL for a file or image, |decora
             $this->innerFileUrlProvider = $innerFileUrlProvider;
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getFileUrl(File $file, string $action = self::FILE_ACTION_GET, int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
         {
             return 'custom url here';
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getResizedImageUrl(File $file, int $width, int $height, string $format = '', int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
         {
             return 'custom url here';
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getFilteredImageUrl(File $file, string $filterName, string $format = '', int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
         {
             if (/* custom condition here */) {
@@ -135,9 +129,7 @@ with a class that implements the ``Oro\Bundle\AttachmentBundle\Provider\FileName
             $this->doctrineHelper = $doctrineHelper;
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getFileName(File $file): string
         {
             if (!$this->isApplicable($file)) {
@@ -147,9 +139,7 @@ with a class that implements the ``Oro\Bundle\AttachmentBundle\Provider\FileName
             return $this->getNameWithFormat($file);
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getFilteredImageName(File $file, string $filterName, string $format = ''): string
         {
             if (!$this->isApplicable($file)) {
@@ -159,9 +149,7 @@ with a class that implements the ``Oro\Bundle\AttachmentBundle\Provider\FileName
             return $this->getNameWithFormat($file, $format);
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getResizedImageName(File $file, int $width, int $height, string $format = ''): string
         {
             if (!$this->isApplicable($file)) {

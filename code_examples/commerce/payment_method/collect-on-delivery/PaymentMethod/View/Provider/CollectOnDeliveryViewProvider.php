@@ -28,9 +28,7 @@ class CollectOnDeliveryViewProvider extends AbstractPaymentMethodViewProvider
         parent::__construct();
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     protected function buildViews()
     {
         $configs = $this->configProvider->getPaymentConfigs();

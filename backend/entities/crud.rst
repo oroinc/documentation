@@ -21,7 +21,7 @@ The Form Type
 First, you need to create a form type that makes it possible to let the user enter all the data
 needed to describe a question:
 
-.. oro_integrity_check:: fc1d68e2446d5cc1e6a31ee3437a54eca5ac7504
+.. oro_integrity_check:: 5dbe4aa445092339a9c50eaf7fa705af95fc3a36
 
    .. literalinclude:: /code_examples/commerce/demo/Form/Type/QuestionType.php
        :caption: src/Acme/Bundle/DemoBundle/Form/Type/QuestionType.php
@@ -37,7 +37,7 @@ The Controllers
 
 You then need to create a controller class that comes with two actions: one that is called when a new question should be created and one that can fetch an existing question to let the user modify its data:
 
-.. oro_integrity_check:: 11bd1de1b8da7e7da78b11707342f76d98c86a3e
+.. oro_integrity_check:: 94e69cf5d41446a70dbe143efd12fd338282c0b7
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php

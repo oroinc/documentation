@@ -22,9 +22,7 @@ extension class in your bundle that loads the configuration file:
 
     class AcmeDemoExtension extends Extension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function load(array $configs, ContainerBuilder $container): void
         {
             $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
@@ -86,33 +84,25 @@ fixtures:
 
     class TaskFixture extends AbstractTemplateRepository implements TemplateFixtureInterface
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         protected function createEntity($key): Task
         {
             return new Task($key);
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getEntityClass(): string
         {
             return Task::class;
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getData()
         {
             return $this->getEntityData('example-task');
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function fillEntityData($key, $entity)
         {
             $entity->setId(1);
@@ -636,17 +626,13 @@ The data converter is responsible for converting the header of the import/export
 
     class GroupDataConverter extends AbstractTableDataConverter
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         protected function getHeaderConversionRules()
         {
             return ['ID' => 'id', 'Label' => 'label'];
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         protected function getBackendHeader()
         {
             return ['id', 'label'];
@@ -708,9 +694,7 @@ The strategy is a class that is responsible for the import logic processing, suc
 
     class ContactAddOrReplaceStrategy extends ConfigurableAddOrReplaceStrategy
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function process($entity)
         {
             $entity = parent::process($entity);
@@ -794,9 +778,7 @@ The fixture implementation is based on the default import/export process.
             $this->userFixture = $userFixture;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getData()
         {
             $contact = new Contact();
@@ -933,10 +915,9 @@ providers for each entity with options, described in the beginning of the sectio
         }
 
         /**
-         * {@inheritDoc}
-         *
          * @throws \InvalidArgumentException
          */
+        #[\Override]
         public function get(): ImportExportConfigurationInterface
         {
             return new ImportExportConfiguration([
@@ -1059,17 +1040,13 @@ To implement custom behavior of the import pop-up, you can extend the default **
 
     class CustomImportTypeExtension extends AbstractTypeExtension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public static function getExtendedTypes(): iterable
         {
             return [ImportType::NAME];
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options): void
         {
             // Please add your custom implementation to generate the form
@@ -1094,17 +1071,13 @@ Example of displaying the form with choice (radio buttons):
 
     class CustomExportTypeExtension extends AbstractTypeExtension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public static function getExtendedTypes(): iterable
         {
             return [ExportType::NAME];
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options): void
         {
             // Please add your custom implementation to generate the form

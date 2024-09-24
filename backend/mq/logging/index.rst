@@ -159,9 +159,7 @@ Create consumption extension with its own logic:
 
    class CustomExtension extends AbstractExtension
    {
-       /**
-        * {@inheritdoc}
-        */
+       #[\Override]
        public function onPostReceived(Context $context)
        {
            // ... own logic

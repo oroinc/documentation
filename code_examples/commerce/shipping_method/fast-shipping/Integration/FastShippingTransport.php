@@ -16,30 +16,25 @@ class FastShippingTransport implements TransportInterface
     /** @var ParameterBag */
     protected $settings;
 
+    #[\Override]
     public function init(Transport $transportEntity)
     {
         $this->settings = $transportEntity->getSettingsBag();
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getSettingsFormType(): string
     {
         return FastShippingTransportSettingsType::class;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getSettingsEntityFQCN(): string
     {
         return FastShippingSettings::class;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getLabel(): string
     {
         return 'acme.fast_shipping.transport.label';

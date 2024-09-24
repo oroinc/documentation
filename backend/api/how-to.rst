@@ -801,9 +801,7 @@ The following steps describe how to create such API resources:
 
         class RegisterAccount implements ProcessorInterface
         {
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function process(ContextInterface $context): void
             {
                 /** @var Account $account */
@@ -885,9 +883,7 @@ To do this, you need to perform the following:
             private const REQUEST_HEADER_VALUE = 'ERP';
             private const REQUEST_TYPE = 'erp';
 
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function process(ContextInterface $context): void
             {
                 /** @var Context $context */
@@ -1000,9 +996,7 @@ To implement this approach, you need to perform the following:
                 $this->tokenAccessor = $tokenAccessor;
             }
 
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function getDescription(): string
             {
                 return <<<MARKDOWN
@@ -1010,9 +1004,7 @@ To implement this approach, you need to perform the following:
         MARKDOWN;
             }
 
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function resolve(): mixed
             {
                 $user = $this->tokenAccessor->getUser();
@@ -1080,9 +1072,7 @@ For example, imagine that a "price" field need to be added to a product API. The
 
         class ComputeProductPriceField implements ProcessorInterface
         {
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function process(ContextInterface $context): void
             {
                 /** @var CustomizeLoadedDataContext $context */
@@ -1201,9 +1191,7 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
             $this->doctrineHelper = $doctrineHelper;
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function process(ContextInterface $context): void
         {
             /** @var ConfigContext $context */
@@ -1266,9 +1254,7 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
                 $this->doctrineHelper = $doctrineHelper;
             }
 
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function process(ContextInterface $context): void
             {
                 /** @var SubresourceContext $context */
@@ -1336,9 +1322,7 @@ a new ``Acme\Bundle\DemoBundle\Entity\SomeEntity`` entity:
 
     class ValidateLabelField implements ProcessorInterface
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function process(ContextInterface $context): void
         {
             /** @var CustomizeFormDataContext $context */

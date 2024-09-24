@@ -12,9 +12,7 @@ class AddNewAuditFieldType implements Migration, AuditFieldExtensionAwareInterfa
 {
     use AuditFieldExtensionAwareTrait;
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries): void
     {
         $this->auditFieldExtension->addType($schema, 'datetimetz', 'datetimenew');

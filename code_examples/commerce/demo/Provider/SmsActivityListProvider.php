@@ -45,9 +45,7 @@ class SmsActivityListProvider implements
         $this->commentAssociationHelper  = $commentAssociationHelper;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function isApplicableTarget($entityClass, $accessible = true)
     {
         return $this->activityAssociationHelper->isActivityAssociationEnabled(
@@ -58,52 +56,48 @@ class SmsActivityListProvider implements
     }
 
     /**
-     * {@inheritdoc}
      * @param Sms $entity
      */
+    #[\Override]
     public function getSubject($entity)
     {
         return substr(trim($entity->getMessage()), 0, 20);
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getDescription($entity)
     {
         return null;
     }
 
     /**
-     * {@inheritdoc}
      * @param Sms $entity
      */
+    #[\Override]
     public function getOwner($entity)
     {
         return $entity->getOwner();
     }
 
     /**
-     * {@inheritdoc}
      * @param Sms $entity
      */
+    #[\Override]
     public function getCreatedAt($entity)
     {
         return $entity->getCreatedAt();
     }
 
     /**
-     * {@inheritdoc}
      * @param Sms $entity
      */
+    #[\Override]
     public function getUpdatedAt($entity)
     {
         return $entity->getUpdatedAt();
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getData(ActivityList $activityList)
     {
         /** @var SMS $sms */
@@ -119,25 +113,21 @@ class SmsActivityListProvider implements
     }
 
     /**
-     * {@inheritdoc}
      * @param Sms $entity
      */
+    #[\Override]
     public function getOrganization($entity)
     {
         return $entity->getOrganization();
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getTemplate()
     {
         return '@AcmeDemo/Sms/js/activityItemTemplate.html.twig';
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getRoutes($entity)
     {
         return [
@@ -147,17 +137,13 @@ class SmsActivityListProvider implements
         ];
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getActivityId($entity)
     {
         return $this->doctrineHelper->getSingleEntityIdentifier($entity);
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function isApplicable($entity)
     {
         if (\is_object($entity)) {
@@ -168,26 +154,24 @@ class SmsActivityListProvider implements
     }
 
     /**
-     * {@inheritdoc}
      * @param Sms $entity
      */
+    #[\Override]
     public function getTargetEntities($entity)
     {
         return $entity->getActivityTargets();
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function isCommentsEnabled($entityClass)
     {
         return $this->commentAssociationHelper->isCommentAssociationEnabled($entityClass);
     }
 
     /**
-     * {@inheritdoc}
      * @param Sms $entity
      */
+    #[\Override]
     public function getActivityOwners($entity, ActivityList $activityList)
     {
         $organization = $this->getOrganization($entity);
@@ -205,9 +189,7 @@ class SmsActivityListProvider implements
         return [$activityOwner];
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function isActivityListApplicable(ActivityList $activityList): bool
     {
         return true;

@@ -23,9 +23,7 @@ Here is an example of such a class:
 
     class EmailTemplateMigrationExample extends AbstractHashEmailMigration
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         protected function getEmailHashesToUpdate(): array
         {
             return [
@@ -35,9 +33,7 @@ Here is an example of such a class:
             ];
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getEmailsDir(): string
         {
             return $this->container

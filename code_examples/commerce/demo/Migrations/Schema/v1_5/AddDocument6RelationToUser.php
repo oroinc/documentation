@@ -15,17 +15,13 @@ class AddDocument6RelationToUser implements Migration, ExtendExtensionAwareInter
 {
     protected ExtendExtension $extendExtension;
 
-    /**
-     * @inheritDoc
-     */
+    #[\Override]
     public function setExtendExtension(ExtendExtension $extendExtension)
     {
         $this->extendExtension = $extendExtension;
     }
 
-    /**
-     * @inheritDoc
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries)
     {
         $this->addRelationsToUser($schema);

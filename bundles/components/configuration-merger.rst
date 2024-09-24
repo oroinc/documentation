@@ -24,7 +24,7 @@ To create a new instance of a merger, you need a list of keys to be used as a so
 
     class ConfigurationPass implements CompilerPassInterface
     {
-        /** {@inheritDoc} */
+        #[\Override]
         public function process(ContainerBuilder $container)
         {
            ...
@@ -50,7 +50,7 @@ application and merge them into final configurations. Here, the bundle to be loa
 
     class ConfigurationPass implements CompilerPassInterface
     {
-        /** {@inheritDoc} */
+        #[\Override]
         public function process(ContainerBuilder $container)
         {
            ...

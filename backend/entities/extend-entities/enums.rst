@@ -15,7 +15,7 @@ To add the option set field to an entity, you can use |ExtendExtension|.
 
 The following example illustrates how to do it:
 
-.. oro_integrity_check:: 92e3a924d0a94f1becf632583c14c1462f91f47d
+.. oro_integrity_check:: d2fdbf395065c2b201384fbbddcfb8b79e1a9759
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_3/AddEnumFieldOroUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_3/AddEnumFieldOroUser.php
@@ -27,7 +27,7 @@ The same principle applies to the field name. In the case above, it should be le
 
 To load a list of options, use data fixtures, for example:
 
-.. oro_integrity_check:: 4a2294c587d9023122e92d0992cac0ec5a68fc50
+.. oro_integrity_check:: c9713339f60d363d76351c29c6f89972bbd42a27
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Data/ORM/LoadUserInternalRatingData.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadUserInternalRatingData.php

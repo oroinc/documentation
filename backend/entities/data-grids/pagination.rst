@@ -36,7 +36,7 @@ Suppose that pagination must be enabled for the User entity with an identifier c
    .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
        :language: php
-       :lines: 20-22, 33, 36-41, 107
+       :lines: 20-22, 33, 36-41, 108
 
 .. image:: /img/backend/entities/entity-pagination.png
    :alt: Enable Entity Pagination

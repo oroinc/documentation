@@ -8,6 +8,7 @@ use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
 class AddExtraContentField implements Migration
 {
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries): void
     {
         if (!$schema->hasTable('acme_blog_post')) {

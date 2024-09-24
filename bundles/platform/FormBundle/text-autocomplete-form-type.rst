@@ -12,9 +12,7 @@ Minimum required configuration using `autocomplete.alias`:
 
     class ProductType extends AbstractType
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
             $builder->add(
@@ -39,9 +37,7 @@ Configuration without `autocomplete.alias`:
 
     class ProductType extends AbstractType
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
             $builder->add(

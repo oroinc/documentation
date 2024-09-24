@@ -63,12 +63,12 @@ To implement a new content widget, create a class that stores content widget typ
 
        .. literalinclude:: /code_examples/commerce/content_widget/copyright/ContentWidget/CopyrightContentWidgetType.php
            :language: php
-           :lines: 47-50
+           :lines: 39-42
 
 
    The form type has the following code:
 
-   .. oro_integrity_check:: 8c45e0d6a8da1789cf7c20ca877519bf6731353d
+   .. oro_integrity_check:: eb8d7dd365bb6f4d13e289ef355f7b2c30c1ff87
 
        .. literalinclude:: /code_examples/commerce/content_widget/copyright/Form/Type/CopyrightContentWidgetType.php
            :language: php
@@ -140,7 +140,7 @@ Add translations to strings in the template.
 
     .. literalinclude:: /code_examples/commerce/content_widget/copyright/ContentWidget/CopyrightContentWidgetType.php
         :language: php
-        :lines: 36-42
+        :lines: 30-36
 
 
 .. note:: To pass additional data to the template, you can override *getBackOfficeViewSubBlocks* method. The example below illustrates how to add two blocks with two subblocks in each block.

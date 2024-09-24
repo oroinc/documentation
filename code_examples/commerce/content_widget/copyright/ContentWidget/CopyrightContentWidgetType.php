@@ -14,25 +14,19 @@ use Twig\Environment;
  */
 class CopyrightContentWidgetType extends AbstractContentWidgetType
 {
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public static function getName(): string
     {
         return 'copyright';
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getLabel(): string
     {
         return 'acme.copyright.content_widget.copyright.label';
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     protected function getAdditionalInformationBlock(ContentWidget $contentWidget, Environment $twig): string
     {
         return $twig->render(
@@ -41,25 +35,19 @@ class CopyrightContentWidgetType extends AbstractContentWidgetType
         );
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getSettingsForm(ContentWidget $contentWidget, FormFactoryInterface $formFactory): ?FormInterface
     {
         return $formFactory->create(FormType::class);
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getDefaultTemplate(ContentWidget $contentWidget, Environment $twig): string
     {
         return $twig->render('@AcmeCopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings());
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function isInline(): bool
     {
         return true;

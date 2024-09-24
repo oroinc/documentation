@@ -16,6 +16,7 @@ class BlockType extends AbstractType
 {
     public const NAME = 'acme_cms_block';
 
+    #[\Override]
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
@@ -37,9 +38,7 @@ class BlockType extends AbstractType
             );
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
@@ -57,9 +56,7 @@ class BlockType extends AbstractType
         return $this->getBlockPrefix();
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getBlockPrefix()
     {
         return self::NAME;

@@ -40,7 +40,7 @@ To make the ``Document`` entity from the first part of the chapter configurable,
 
 You can also change the default value of each configurable option using the ``defaultValues`` argument:
 
-.. oro_integrity_check:: ce5366c579b82e206bd949ccb9dec59117dbb0f9
+.. oro_integrity_check:: ee936d777bc00e1b5f1efa84f3dfa80fa0cfb3e3
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php

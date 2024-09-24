@@ -16,9 +16,7 @@ class CollectOnDeliverySettingsType extends AbstractType
 {
     const BLOCK_PREFIX = 'acme_collect_on_delivery_setting_type';
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
@@ -42,9 +40,7 @@ class CollectOnDeliverySettingsType extends AbstractType
             );
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(
@@ -54,9 +50,7 @@ class CollectOnDeliverySettingsType extends AbstractType
         );
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getBlockPrefix()
     {
         return self::BLOCK_PREFIX;

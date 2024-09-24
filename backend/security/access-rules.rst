@@ -90,12 +90,12 @@ Add a New Access Rule
 
 To add a new access rule, create a new class that implements |AccessRuleInterface|, for example:
 
-.. oro_integrity_check:: bd4881386bf2c136097162fa66153cfd1af1a270
+.. oro_integrity_check:: 2cb49fbdf61d579857ad572612a37ffecbc6ba84
 
     .. literalinclude:: /code_examples/commerce/demo/AccessRule/FavoriteAccessRule.php
         :caption: src/Acme/Bundle/DemoBundle/AccessRule/FavoriteAccessRule.php
         :language: php
-        :lines: 1-25
+        :lines: 1-
 
 
 Next, the access rule class should be registered as a service with the `oro_security.access_rule` tag:

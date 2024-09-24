@@ -442,9 +442,7 @@ Now you should implement the element's ``setValue`` method:
 
     class PaymentMethodConfigType extends Element
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function setValue($value)
         {
             $values = is_array($value) ? $value : [$value];
@@ -516,9 +514,7 @@ Sample Page class:
 
     class UserProfileView extends Page
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function open(array $parameters = [])
         {
             $userMenu = $this->elementFactory->createElement('UserMenu');

@@ -48,9 +48,7 @@ The following example shows it:
 
     class AcmeDemoBundle implements Migration
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function up(Schema $schema, QueryBag $queries)
         {
             $options = new OroOptions();

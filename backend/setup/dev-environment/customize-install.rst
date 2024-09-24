@@ -30,9 +30,7 @@ A migration is a class which implements the ``Oro\Bundle\MigrationBundle\Migrati
 
     class CustomMigration implements Migration
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function up(Schema $schema, QueryBag $queries)
         {
             // ...
@@ -60,9 +58,7 @@ To load your own data :ref:`fixtures <backend-entities-fixtures>`, you will need
 
     class CustomFixture implements FixtureInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function load(ObjectManager $manager)
         {
             // ...

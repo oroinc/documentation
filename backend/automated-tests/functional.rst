@@ -550,9 +550,7 @@ Here is an example of a fixture that adds a user without permissions:
         public const USER_API_KEY = 'user_api_key';
         public const USER_PASSWORD = 'user_password';
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function load(ObjectManager $manager): void
         {
             /** @var \Oro\Bundle\UserBundle\Entity\UserManager $userManager */

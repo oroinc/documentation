@@ -44,9 +44,7 @@ class CollectOnDeliveryConfigProvider implements CollectOnDeliveryConfigProvider
         $this->configFactory = $configFactory;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getPaymentConfigs()
     {
         $configs = [];
@@ -62,9 +60,7 @@ class CollectOnDeliveryConfigProvider implements CollectOnDeliveryConfigProvider
         return $configs;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getPaymentConfig($identifier)
     {
         $paymentConfigs = $this->getPaymentConfigs();
@@ -76,9 +72,7 @@ class CollectOnDeliveryConfigProvider implements CollectOnDeliveryConfigProvider
         return $paymentConfigs[$identifier];
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function hasPaymentConfig($identifier)
     {
         return null !== $this->getPaymentConfig($identifier);

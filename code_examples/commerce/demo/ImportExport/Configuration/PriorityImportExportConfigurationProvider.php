@@ -12,6 +12,7 @@ use Oro\Bundle\ImportExportBundle\Configuration\ImportExportConfigurationProvide
  */
 class PriorityImportExportConfigurationProvider implements ImportExportConfigurationProviderInterface
 {
+    #[\Override]
     public function get(): ImportExportConfigurationInterface
     {
         return new ImportExportConfiguration([

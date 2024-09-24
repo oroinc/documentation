@@ -12,7 +12,7 @@ use Oro\Bundle\MigrationBundle\Migration\QueryBag;
  */
 class TurnFieldAclSupportForFavorites implements Migration
 {
-
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries): void
     {
         $queries->addQuery(

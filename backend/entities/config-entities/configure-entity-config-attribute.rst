@@ -9,7 +9,7 @@ You can use configuration to define a new entity config attribute:
 
 Example:
 
-.. oro_integrity_check:: bfe144b9354c836439419947d40e44853c63f00c
+.. oro_integrity_check:: 1a8840d0a30237922518aa8bdfe3301858cabd6e
 
    .. literalinclude:: /code_examples/commerce/demo/EntityConfig/AcmeEntityConfiguration.php
        :caption: src/Acme/Bundle/DemoBundle/EntityConfig/AcmeEntityConfiguration.php
@@ -63,7 +63,7 @@ An example how to get a value of a configuration attribute:
 
 If you want to set a value different than the default one for some entity, write it in the `#[Config]` attribute for this entity. For example:
 
-.. oro_integrity_check:: fa229915513ac32a63f454d44eef468f3c2b1fb7
+.. oro_integrity_check:: dd531ce01319007b1ff1ed5d3b59f3f1b67d2b98
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php

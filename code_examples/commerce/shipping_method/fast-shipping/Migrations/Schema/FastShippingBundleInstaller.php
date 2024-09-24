@@ -12,17 +12,13 @@ use Oro\Bundle\MigrationBundle\Migration\QueryBag;
  */
 class FastShippingBundleInstaller implements Installation
 {
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getMigrationVersion()
     {
         return 'v1_0';
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries)
     {
         /** Tables generation **/

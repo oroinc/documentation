@@ -35,78 +35,61 @@ class FastShippingMethod implements ShippingMethodInterface, ShippingMethodIconA
         $this->types = $types;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getIdentifier(): string
     {
         return $this->identifier;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function isGrouped(): bool
     {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function isEnabled(): bool
     {
         return $this->enabled;
     }
 
+    #[\Override]
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getLabel(): string
     {
         return $this->label;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getIcon(): ?string
     {
         return $this->icon;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getTypes(): array
     {
         return $this->types;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getType(string $identifier): ?ShippingMethodTypeInterface
     {
         return $this->types[$identifier] ?? null;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getOptionsConfigurationFormType(): ?string
     {
         return HiddenType::class;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getSortOrder(): int
     {
         return 150;

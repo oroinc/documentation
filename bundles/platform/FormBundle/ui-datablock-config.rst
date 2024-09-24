@@ -39,9 +39,7 @@ Configure Block in FormType
 
     class UserType extends AbstractType
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
             $builder->add('name', TextType::class, ['block' => 'first']);
@@ -49,9 +47,7 @@ Configure Block in FormType
             $builder->add('email', EmailType::class, ['block' => 'second']);
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function configureOptions(OptionsResolver $resolver)
         {
             $resolver->setDefaults(

@@ -27,9 +27,7 @@ Suppose there is a form type that should have a field with the support of autoco
 
     class ProductType extends AbstractType
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
             $builder->add(
@@ -62,9 +60,7 @@ Minimum required configuration with use of "autocomplete_alias":
 
     class ProductType extends AbstractType
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
             $builder->add(
@@ -86,9 +82,7 @@ Configuration without "autocomplete_alias":
 
     class ProductType extends AbstractType
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
             $builder->add(

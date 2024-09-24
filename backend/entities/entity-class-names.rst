@@ -16,12 +16,12 @@ The |entity class name provider| service is a "chain" service. It works by askin
 
 To create own provider just create a class implementing |EntityClassNameProviderInterface| and register it in DI container with the tag **oro_entity.class_name_provider**. You can also use the existing |abstract provider| as a superclass for your provider.
 
-.. oro_integrity_check:: f2eec7dccdd2ebc9e97138acec553d4e0172b6fc
+.. oro_integrity_check:: 2028ed4062ecd0e7c92ca7dbf0e9c5e4fcf0e886
 
    .. literalinclude:: /code_examples/commerce/demo/Provider/AcmeClassNameProvider.php
        :caption: src/Acme/Bundle/DemoBundle/Provider/AcmeClassNameProvider.php
        :language: php
-       :lines: 3-35
+       :lines: 3-31
 
 .. oro_integrity_check:: 8895434b9b4194d7764a669ac25399169c151b75
 

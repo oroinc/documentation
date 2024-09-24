@@ -114,17 +114,13 @@ To register a new dashboard type, add a new config provider that implements the 
    {
        public const TYPE_NAME = 'my_type';
 
-       /**
-        * {@inheritDoc}
-        */
+       #[\Override]
        public function isSupported(?string $dashboardType): bool
        {
            return self::TYPE_NAME === $dashboardType;
        }
 
-       /**
-        * {@inheritDoc}
-        */
+       #[\Override]
        public function getConfig(Dashboard $dashboard): array
        {
            return ['twig' => '@AcmeDemo/Index/default.html.twig'];
@@ -156,17 +152,13 @@ The final step is the fixture that extends ``AbstractDashboardTypeFixture``. It 
     */
    class AddMyDashboardTypeFixture extends AbstractDashboardTypeFixture
    {
-       /**
-        * {@inheritDoc}
-        */
+       #[\Override]
        protected function getDashboardTypeIdentifier(): string
        {
            return 'my_type';
        }
 
-       /**
-        * {@inheritDoc}
-        */
+       #[\Override]
        protected function getDashboardTypeLabel(): string
        {
            return 'My type';

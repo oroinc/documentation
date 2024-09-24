@@ -14,17 +14,13 @@ class ProductOptionsType extends AbstractType
 {
     const BLOCK_PREFIX = 'oro_blogpostexample_product_options';
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('value');
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(
@@ -34,9 +30,7 @@ class ProductOptionsType extends AbstractType
         );
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getBlockPrefix()
     {
         return self::BLOCK_PREFIX;

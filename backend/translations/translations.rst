@@ -318,9 +318,7 @@ inside the bundle class:
 
     class AcmeDemoBundle extends Bundle
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function build(ContainerBuilder $container): void
         {
             parent::build($container);
@@ -346,9 +344,7 @@ To be able to provide translations in the UI, use the following example of the f
 
     class SomeType extends AbstractType
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
             $builder->add(

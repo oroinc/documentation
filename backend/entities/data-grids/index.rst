@@ -103,7 +103,7 @@ To make your datagrid accessible, create a controller that the user can visit, w
    .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
        :language: php
-       :lines: 3-5, 10-11, 14, 16, 20-24, 26-31, 107
+       :lines: 3-5, 10-11, 14, 16, 20-24, 26-31, 108
 
 
 The view can be straightforward if you extend the ``@OroUI/actions/index.html.twig`` template:

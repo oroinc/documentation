@@ -62,9 +62,7 @@ To add a custom key to the ``X-Include`` header:
             public const RESPONSE_HEADER_NAME = 'X-Include-Deleted-Count';
             public const REQUEST_HEADER_VALUE = 'deletedCount';
 
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function process(ContextInterface $context): void
             {
                 /** @var DeleteListContext $context */
@@ -108,9 +106,7 @@ To add a custom key to the ``X-Include`` header:
      */
     class RemoveDeletedCountHeader implements ProcessorInterface
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function process(ContextInterface $context): void
         {
             /** @var DeleteListContext $context */

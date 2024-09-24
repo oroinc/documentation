@@ -23,9 +23,7 @@ class CollectOnDelivery implements PaymentMethodInterface
         $this->config = $config;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function execute($action, PaymentTransaction $paymentTransaction)
     {
         $paymentTransaction->setAction(PaymentMethodInterface::INVOICE);
@@ -35,25 +33,19 @@ class CollectOnDelivery implements PaymentMethodInterface
         return [];
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getIdentifier()
     {
         return $this->config->getPaymentMethodIdentifier();
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function isApplicable(PaymentContextInterface $context)
     {
         return true;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function supports($actionName)
     {
         return $actionName === self::PURCHASE;

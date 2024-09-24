@@ -17,7 +17,7 @@ Example of usage:
     {
         use WebsiteSearchExtensionTrait;
 
-         /** {@inheritdoc} */
+            #[\Override]
             protected function setUp(): void
             {
                 ...

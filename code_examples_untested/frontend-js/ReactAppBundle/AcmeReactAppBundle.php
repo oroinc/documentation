@@ -1,4 +1,5 @@
 <?php
+
 namespace Acme\Bundle\ReactAppBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;

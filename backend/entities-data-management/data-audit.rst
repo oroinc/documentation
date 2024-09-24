@@ -21,12 +21,12 @@ DataAudit can only be enabled for Configurable entities. To add a property of an
 
 Example of attribute configuration:
 
-.. oro_integrity_check:: be5fa99c7eea5357f8c1dab27a409e8966888688
+.. oro_integrity_check:: 4717106d23ed7f2f97ed5b3f73f2e329de4f645f
 
     .. literalinclude:: /code_examples/commerce/demo/Entity/Question.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Question.php
         :language: php
-        :lines: 1-61, 136
+        :lines: 1-61, 134
 
 Every time a product's price is modified, the changes are logged in the database. The logging manager not only stores the data being modified but also logs a set of related information:
 
@@ -51,12 +51,12 @@ Suppose you create an extension that integrates Oro application with an external
 
 In our example, it can look like this:
 
-.. oro_integrity_check:: abcf9ebcab68a03a02fa1e3c2aed214a44a57ee1
+.. oro_integrity_check:: b4ad004e42479eacf26aa6ae2d6d1f0de2d74931
 
     .. literalinclude:: /code_examples/commerce/demo/Entity/Question.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Question.php
         :language: php
-        :lines: 1-4, 44-49, 129-136
+        :lines: 1-4, 44-49, 129-134
 
 Segment
 -------
@@ -80,21 +80,21 @@ Add New Auditable Types
 
 To add new auditable types, register a new type in your bundle's boot method:
 
-.. oro_integrity_check:: de67d0647236839f08a8d5566116210e497b9e31
+.. oro_integrity_check:: cc1f9145b59e893e8c407c19061b822d6438b4d1
 
     .. literalinclude:: /code_examples/commerce/demo/AcmeDemoBundle.php
         :caption: src/Acme/Bundle/DemoBundle/AcmeDemoBundle.php
         :language: php
-        :lines: 1-29
+        :lines: 1-28
 
 Next, create a migration that will add columns to the AuditField entity:
 
-.. oro_integrity_check:: 8c74b4e5e14eb55055674c7c2e5edc9da3a91801
+.. oro_integrity_check:: 5be1c5e878901e86dfe547cd6de04632d539c7e0
 
     .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_7/AddNewAuditFieldType.php
         :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_7/AddNewAuditFieldType.php
         :language: php
-        :lines: 1-22
+        :lines: 1-20
 
 
 To see the auditable option in the entity configuration, make sure your field type is in the allowed types here: **DataAuditBundle/Resources/config/oro/entity_config.yml**.

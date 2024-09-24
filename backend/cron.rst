@@ -70,25 +70,19 @@ value is **5 0 \* \* \***.
     {
         protected static $defaultName = 'oro:cron:acme_demo_some';
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getDefaultDefinition(): string
         {
             return '5 0 * * *';
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         protected function configure()
         {
             // ...
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         protected function execute(InputInterface $input, OutputInterface $output)
         {
             // ...

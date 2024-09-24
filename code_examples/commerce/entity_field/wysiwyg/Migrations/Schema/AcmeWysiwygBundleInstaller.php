@@ -11,17 +11,13 @@ use Oro\Bundle\MigrationBundle\Migration\QueryBag;
  */
 class AcmeWysiwygBundleInstaller implements Installation
 {
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getMigrationVersion(): string
     {
         return 'v1_0';
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries)
     {
         $table = $schema->createTable('acme_blog_post');

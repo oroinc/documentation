@@ -25,9 +25,7 @@ There are a few ways to define a custom form type and form options for a particu
 
         class AcmeExtendGuesserPass implements CompilerPassInterface
         {
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             public function process(ContainerBuilder $container)
             {
                 $guesser = $container->findDefinition('oro_entity_extend.provider.extend_field_form_type');
@@ -49,9 +47,7 @@ There are a few ways to define a custom form type and form options for a particu
 
         class ExtendFieldCustomFormOptionsProvider implements ExtendFieldFormOptionsProviderInterface
         {
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             public function getOptions(string $className, string $fieldName): array
             {
                 $options = [];
@@ -86,9 +82,7 @@ There are a few ways to define a custom form type and form options for a particu
 
         class CustomTypeGuesser implements FormTypeGuesserInterface
         {
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             public function guessType(string $class, string $property)
             {
                 // some conditions here
@@ -102,25 +96,19 @@ There are a few ways to define a custom form type and form options for a particu
                 return new ValueGuess(false, ValueGuess::LOW_CONFIDENCE);
             }
 
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             public function guessRequired(string $class, string $property)
             {
                 return new ValueGuess(false, ValueGuess::LOW_CONFIDENCE);
             }
 
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             public function guessMaxLength(string $class, string $property)
             {
                 return new ValueGuess(null, ValueGuess::LOW_CONFIDENCE);
             }
 
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             public function guessPattern(string $class, string $property)
             {
                 return new ValueGuess(null, ValueGuess::LOW_CONFIDENCE);

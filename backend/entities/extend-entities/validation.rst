@@ -33,7 +33,7 @@ There are two ways to pass the constraints:
 
 For example:
 
-.. oro_integrity_check:: b20e4f00175c963b7b63e4b7f84352db8a16dbdd
+.. oro_integrity_check:: 9bcadde661d06f8b74b6f6f940b36a2f4e98fd2b
 
    .. literalinclude:: /code_examples/commerce/demo/DependencyInjection/Compiler/AcmeExtendValidationPass.php
        :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/Compiler/AcmeExtendValidationPass.php
@@ -42,12 +42,12 @@ For example:
 
 Make sure to insert CompilerPass to the bundle root file.
 
-.. oro_integrity_check:: d258d55a419883f39277fdf5132a4a701fd66f17
+.. oro_integrity_check:: afa3610e3651448dba9459ee298574a61dc96276
 
    .. literalinclude:: /code_examples/commerce/demo/AcmeDemoBundle.php
        :caption: src/Acme/Bundle/DemoBundle/AcmeDemoBundle.php
        :language: php
-       :lines: 4-5, 7, 9-20, 22, 28-29
+       :lines: 4-5, 7, 9-19, 21, 27-28
 
 Keep in mind that all constraints defined here are applied to all extended fields with a corresponding type.
 

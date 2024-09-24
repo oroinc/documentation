@@ -140,17 +140,13 @@ If you need to add another placeholder type which is not declared yet, you will 
     {
         const NAME = 'FOO_ID';
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getPlaceholder(): string
         {
             return self::NAME;
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getDefaultValue(): string
         {
             return '0';

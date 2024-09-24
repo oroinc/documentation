@@ -47,6 +47,7 @@ class ProductOptions implements ProductHolderInterface
     /**
      * @return Product
      */
+    #[\Override]
     public function getProduct()
     {
         return $this->product;
@@ -64,17 +65,13 @@ class ProductOptions implements ProductHolderInterface
         return $this;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getEntityIdentifier()
     {
         return $this->getId();
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getProductSku()
     {
         return $this->getProduct()->getSku();

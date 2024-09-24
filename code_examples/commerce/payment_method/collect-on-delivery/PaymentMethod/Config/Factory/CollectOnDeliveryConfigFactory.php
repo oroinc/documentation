@@ -31,9 +31,7 @@ class CollectOnDeliveryConfigFactory implements CollectOnDeliveryConfigFactoryIn
         $this->identifierGenerator = $identifierGenerator;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function create(CollectOnDeliverySettings $settings)
     {
         $params = [];

@@ -11,6 +11,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  */
 class DoctrineTypeFieldCreateOrSelectType extends AbstractType
 {
+    #[\Override]
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(
@@ -22,6 +23,7 @@ class DoctrineTypeFieldCreateOrSelectType extends AbstractType
         );
     }
 
+    #[\Override]
     public function getParent()
     {
         return OroEntitySelectOrCreateInlineType::class;

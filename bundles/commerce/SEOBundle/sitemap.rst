@@ -56,9 +56,7 @@ To add custom logic to providers, each provider dispatches events on start and e
 .. code-block:: php
 
 
-    /**
-     * @inheritDoc
-     */
+    #[\Override]
     public function getUrlItems(WebsiteInterface $website, $version)
     {
         $this->loadConfigs($website);
@@ -129,9 +127,7 @@ Your new provider should implement `UrlItemsProviderInterface`:
 
     class MyProvider implements UrlItemsProviderInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getUrlItems(WebsiteInterface $website, $version)
         {
             // return \Generator|Oro\Bundle\SEOBundle\Model\DTO\UrlItem[]
@@ -169,9 +165,7 @@ The provider that depends on this feature should also implement `FeatureToggleab
     {
         use FeatureCheckerHolderTrait;
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getUrlItems(WebsiteInterface $website, $version)
         {
             if (!$this->isFeaturesEnabled()) {

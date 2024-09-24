@@ -29,9 +29,7 @@ class FastShippingMethodOptionsType extends AbstractType
         $this->roundingService = $roundingService;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $priceOptions = [
@@ -50,6 +48,7 @@ class FastShippingMethodOptionsType extends AbstractType
     /**
      * @throws AccessException
      */
+    #[\Override]
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
@@ -57,9 +56,7 @@ class FastShippingMethodOptionsType extends AbstractType
         ]);
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getBlockPrefix()
     {
         return self::BLOCK_PREFIX;

@@ -49,6 +49,7 @@ class FavoriteViewList extends AbstractViewsList
         ]
     ];
 
+    #[\Override]
     protected function getViewsList()
     {
         return $this->getSystemViewsList();

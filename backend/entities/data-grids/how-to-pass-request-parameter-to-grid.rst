@@ -41,7 +41,7 @@ You can do this by adding the ``bind_parameters`` option to your ``datagrids.yml
 
 The controller receives an entity "priority" and passes it to the view:
 
-.. oro_integrity_check:: 661e8ddd093d2460f35b400e4a3101bacc252fbf
+.. oro_integrity_check:: 3c0069630d0688c9266eb1c80538f6159c869164
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/PriorityController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/PriorityController.php

@@ -90,9 +90,7 @@ Below is an illustration of implementing a simple AJAX mass action for Unlock Us
            $this->errorMessage   = $errorMessage;
        }
 
-       /**
-        * @inheritDoc
-        */
+       #[\Override]
        public function handle(MassActionHandlerArgs $args)
        {
            $token = $this->tokenStorage->getToken();
@@ -279,9 +277,7 @@ Next, implement the custom-type logic. The example below defines the required op
        /** @var array */
        protected $requiredOptions = ['handler'];
 
-       /**
-        * @inheritDoc
-        */
+       #[\Override]
        public function setOptions(ActionConfiguration $options)
        {
            if (empty($options['frontend_handle'])) {
@@ -303,17 +299,13 @@ Next, implement the custom-type logic. The example below defines the required op
            return parent::setOptions($options);
        }
 
-       /**
-        * @inheritDoc
-        */
+       #[\Override]
        protected function getAllowedRequestTypes(): array
        {
            return [Request::METHOD_POST];
        }
 
-       /**
-        * @inheritDoc
-        */
+       #[\Override]
        protected function getRequestType(): string
        {
            return Request::METHOD_POST;

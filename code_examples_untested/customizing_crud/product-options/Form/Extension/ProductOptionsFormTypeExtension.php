@@ -30,17 +30,12 @@ abstract class ProductOptionsFormTypeExtension extends AbstractTypeExtension
         $this->registry = $registry;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getExtendedType()
     {
         return ProductType::class;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add(

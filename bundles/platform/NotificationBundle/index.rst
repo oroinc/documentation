@@ -79,9 +79,7 @@ An example:
                 $this->translator = $translator;
             }
 
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             public function getAssociations(string $entityClass): array
             {
                 if (!is_a($entityClass, Some::class, true)) {
@@ -96,9 +94,7 @@ An example:
                 ];
             }
 
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             public function isAssociationSupported($entity, string $associationName): bool
             {
                 return
@@ -106,9 +102,7 @@ An example:
                     && 'someAssociation' === $associationName;
             }
 
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             public function getAssociationValue($entity, string $associationName)
             {
                 // get target entity logic

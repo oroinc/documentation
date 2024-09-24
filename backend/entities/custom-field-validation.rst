@@ -22,9 +22,9 @@ The tag should contain `name` and `entity_name`:
 
 Example:
 
-.. oro_integrity_check:: a0961cdf3da9d03500f2f408859acbabbd4eb043
+.. oro_integrity_check:: 1ea4b6a4dfdd2741a89d981d6228a45ed46ceafb
 
    .. literalinclude:: /code_examples/commerce/demo/Validator/CustomGridFieldValidator.php
        :caption: src/Acme/Bundle/DemoBundle/Validator/CustomGridFieldValidator.php
        :language: php
-       :lines: 3-61
+       :lines: 3-57

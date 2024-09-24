@@ -13,9 +13,7 @@ use Oro\Bundle\OrganizationBundle\Entity\Organization;
  */
 class LoadRenamedFavoritesData extends AbstractFixture implements RenamedFixtureInterface
 {
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function load(ObjectManager $manager)
     {
         $organization = $manager->getRepository(Organization::class)->getFirst();
@@ -30,9 +28,7 @@ class LoadRenamedFavoritesData extends AbstractFixture implements RenamedFixture
         $manager->flush();
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getPreviousClassNames(): array
     {
         return [

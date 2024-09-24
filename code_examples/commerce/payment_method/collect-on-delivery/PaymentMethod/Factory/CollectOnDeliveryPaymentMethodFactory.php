@@ -10,9 +10,7 @@ use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryCo
  */
 class CollectOnDeliveryPaymentMethodFactory implements CollectOnDeliveryPaymentMethodFactoryInterface
 {
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function create(CollectOnDeliveryConfigInterface $config)
     {
         return new CollectOnDelivery($config);

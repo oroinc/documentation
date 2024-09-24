@@ -12,11 +12,13 @@ use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 class AcmeDemoBundleInstaller implements
     Installation
 {
+    #[\Override]
     public function getMigrationVersion()
     {
         return 'v1_0';
     }
 
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries)
     {
         /** Tables generation **/

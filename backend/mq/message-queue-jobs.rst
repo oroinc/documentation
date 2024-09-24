@@ -107,9 +107,7 @@ The processor creates a set of delayed jobs, each of them sends
 
 .. code-block:: php
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function process(MessageInterface $message, SessionInterface $session)
         {
             $bigJobParts = $message->getBody();
@@ -143,9 +141,7 @@ created delayed job.
 
 .. code-block:: php
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function process(MessageInterface $message, SessionInterface $session)
         {
             $payload = $message->getBody();
@@ -415,9 +411,7 @@ If you do not wish for that job to be staled, use `NullJobConfigurationProvider`
 
     class NullJobConfigurationProvider implements JobConfigurationProviderInterface
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getTimeBeforeStaleForJobName($jobName)
        {
             return null;

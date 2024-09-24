@@ -20,9 +20,7 @@ class LoadUserInternalRatingData extends AbstractFixture implements DependentFix
         '5' => false
     ];
 
-    /**
-     * @inheritDoc
-     */
+    #[\Override]
     public function load(ObjectManager $manager): void
     {
         /** @var EnumOptionRepository $enumRepo */
@@ -42,6 +40,7 @@ class LoadUserInternalRatingData extends AbstractFixture implements DependentFix
         $manager->flush();
     }
 
+    #[\Override]
     public function getDependencies(): array
     {
         return [LoadLanguageData::class];

@@ -14,6 +14,7 @@ class AcmeExtendValidationPass implements CompilerPassInterface
         ]
     ];
 
+    #[\Override]
     public function process(ContainerBuilder $container): void
     {
         if (!$container->has('oro_entity_extend.validation_loader')) {

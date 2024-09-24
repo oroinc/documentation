@@ -40,7 +40,7 @@ You have two options to define your custom access control lists:
 
 #. In your controller class, you can use the ``#[Acl]`` attribute:
 
-.. oro_integrity_check:: c114191b4c9b1bf34b370dfdf661502ae48fb788
+.. oro_integrity_check:: 40b99dc72036ee43168053c835f5b3c32b42e561
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -62,7 +62,7 @@ You have two options to define your custom access control lists:
 
     You can also create access control lists that are only used to protect specific actions unrelated to an entity. To do that, set the type of the ACL to ``action`` instead of ``entity``:
 
-    .. oro_integrity_check:: f09516f5ac3a7b7a4ef50b054f3fb27ec3979a41
+    .. oro_integrity_check:: 9ef6130d7177096691d8294d9793f5dca629f6be
 
         .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
             :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php

@@ -35,10 +35,12 @@ First, create a new entity to store custom data. It is still possible to create 
 
 Let's also make the entity compliant with the |ProductHolderInterface|, so it will be possible to reuse it in other places (e.g., reports). Besides the product reference, our entity will have only one text field to store our data. You can add multiple fields and use other data types according to your requirement:
 
+.. oro_integrity_check:: da39a3ee5e6b4b0d3255bfef95601890afd80709
+
 .. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Entity/ProductOptions.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Entity/ProductOptions.php
     :language: php
-    :lines: 1-22, 30-37, 102
+    :lines: 1-22, 30-37, 99
 
 
 Installation And Migrations

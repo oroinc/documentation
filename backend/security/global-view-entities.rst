@@ -48,9 +48,7 @@ If the entity already exists, create a migration to add the ``global_view`` para
      */
     class MakeMyEntityGlobalView implements Migration
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function up(Schema $schema, QueryBag $queries)
         {
             $table = $schema->getTable('name_of_my_table');

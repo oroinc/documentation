@@ -152,25 +152,19 @@ To do this, create a configuration factory class that implements |ConfigurationF
 
     class SomeAdapterConfigurationFactory implements ConfigurationFactoryInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getAdapterConfiguration(string $configString): array
         {
             // implement logic here
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getKey(): string
         {
             // implement logic here
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getHint(): string
         {
             // implement logic here
@@ -188,9 +182,7 @@ To do this, create a configuration factory class that implements |ConfigurationF
 
     class AcmeDemoBundle extends Bundle
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function build(ContainerBuilder $container): void
         {
             parent::build($container);
@@ -338,9 +330,7 @@ in your bundle and add it into the Bundle class:
      */
     class MigrateFileStorageCommandCompilerPass implements CompilerPassInterface
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function process(ContainerBuilder $container)
         {
             $container->getDefinition(MigrateFileStorageCommand::class)

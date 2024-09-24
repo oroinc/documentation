@@ -10,9 +10,7 @@ To achieve this, add a fixture in the ``SomeBundle\Migrations\Data\ORM`` folder 
 
     class DataFixtureName extends AbstractEmailFixture
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getEmailsDir(): string
         {
             return __DIR__ . DIRECTORY_SEPARATOR . '../data/emails';

@@ -47,7 +47,7 @@ Create an Entity to Store the Shipping Method Settings
 
 Define an entity that to store the configuration settings of the shipping method in the database. To do this, create <bundle_root>/Entity/FastShippingSettings.php:
 
-.. oro_integrity_check:: a6addacaae45af316843c96efc7becaa2551d9f8
+.. oro_integrity_check:: 5823e3a890f88378dfbad77272f449e5d589794d
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Entity/FastShippingSettings.php
        :language: php
@@ -70,7 +70,7 @@ Create a User Interface Form for the Shipping Method Integration
 
 When you add an integration via the user interface of the back-office, a form that contains the integration settings appears. In this step, implement the form. To do this, create <bundle_root>/Form/Type/FastShippingTransportSettingsType.php:
 
-.. oro_integrity_check:: 5fa455dc257824aee2298e4a6c3bacc9a00bace6
+.. oro_integrity_check:: eacaae45ec8c29e80502e28baace5c01885d5b4c
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Form/Type/FastShippingTransportSettingsType.php
        :language: php
@@ -98,7 +98,7 @@ When you select the type of the integration on the user interface, you will see 
 
 To implement a channel type, create <bundle_root>/Integration/FastShippingChannelType.php:
 
-.. oro_integrity_check:: 198438d8230165cea698afeffbcb613ffb32d3e7
+.. oro_integrity_check:: de8864606b8f2d55e89ed4353a74fcf8067beab3
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Integration/FastShippingChannelType.php
        :language: php
@@ -124,7 +124,7 @@ Create the Integration Transport
 
 Transport is generally responsible for how the data is obtained from the external system. While the Fast Shipping method does not interact with external systems, you still need to define transport and implement all methods of the TransportInterface for the integration to work properly. To add transport, create <bundle_root>/Integration/FastShippingTransport.php:
 
-.. oro_integrity_check:: 35d539f68cebf525962287aaf6cb4ce35af6d043
+.. oro_integrity_check:: d3e19dfe943b57275626af44e72261c30ff20a2c
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Integration/FastShippingTransport.php
        :language: php
@@ -151,7 +151,7 @@ Set up Services with DependencyInjection
 
 To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/AcmeFastShippingExtension.php with the following content:
 
-.. oro_integrity_check:: b4aebc45f391f2d11bb8f2a627ec75b2a84d0c68
+.. oro_integrity_check:: 455ef367a3fc4710eedab5b2cfed4b8559ae97f1
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/DependencyInjection/AcmeFastShippingExtension.php
        :language: php
@@ -179,7 +179,7 @@ Follow the instructions provided in the :ref:`How to generate an installer <inst
 
 After you complete the process, you will have the <bundle_root>/Migrations/Schema/FastShippingBundleInstaller.php class with the following content:
 
-.. oro_integrity_check:: 421117281a336b813934e44209228c8b4555f3a6
+.. oro_integrity_check:: c598c87410785f129edf3c67186df6677a9c2c8c
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Migrations/Schema/FastShippingBundleInstaller.php
        :language: php
@@ -217,7 +217,7 @@ Implement the Main Method
 
 To implement the main method, create the <bundle_root>/Method/FastShippingMethod.php class that implements two standard interfaces ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodInterface`` and ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodIconAwareInterface``:
 
-.. oro_integrity_check:: 7a2199d46c14bfc0132b77d248f88cb8ad4818eb
+.. oro_integrity_check:: 45247f8503debc70caa6fbf860ef7de526e65d50
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethod.php
        :language: php
@@ -259,7 +259,7 @@ This factory generates an individual configuration set for each instance of the 
 
 Create the <bundle_root>/Factory/FastShippingMethodFromChannelFactory.php class with the following content:
 
-.. oro_integrity_check:: da26c247ece0164adba6c605e24efebe09ecc0dc
+.. oro_integrity_check:: 3dc9d4aaa6d07d60b171652b81d600a3611d1355
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Factory/FastShippingMethodFromChannelFactory.php
        :language: php
@@ -296,7 +296,7 @@ Shipping method types define different specifics of the same shipping services. 
 
 To create a shipping method type, add the <bundle_root>/Method/FastShippingMethodType.php class with the following content:
 
-.. oro_integrity_check:: 3abb544a342f13812499393fc4cf2ad8585d1df2
+.. oro_integrity_check:: 5730fa8599eaafa3d94a5c7451dcea022b6a6f0e
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethodType.php
        :language: php
@@ -331,7 +331,7 @@ Create a Shipping Method Options Form
 
 This form with options for a shipping method appears on the user interface of the back-office when you add the shipping method to a shipping rule. Add FastShippingMethodOptionsType.php to the <bundle_root>/Form/Type/ directory:
 
-.. oro_integrity_check:: b26380713aaef64739ec72936c9b28d1a40fbc4f
+.. oro_integrity_check:: 4a7d1ab582ea74e8408ddd4e88d653be96c28901
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Form/Type/FastShippingMethodOptionsType.php
        :language: php

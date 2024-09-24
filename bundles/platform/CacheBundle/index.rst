@@ -78,9 +78,7 @@ To implement 3rd approach for your configuration, you need to take the following
 
     class MyConfiguration implements ConfigurationInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getConfigTreeBuilder(): TreeBuilder
         {
             $treeBuilder = new TreeBuilder('my_config');
@@ -109,17 +107,13 @@ To implement 3rd approach for your configuration, you need to take the following
     {
         private const CONFIG_FILE = 'Resources/config/oro/my_config.yml';
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getConfiguration(): array
         {
             return $this->doGetConfig();
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         protected function doLoadConfig(ResourcesContainerInterface $resourcesContainer)
         {
             $configs      = [];

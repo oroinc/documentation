@@ -39,9 +39,7 @@ To define your own configuration settings in a bundle, use the
 
     class Configuration implements ConfigurationInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getConfigTreeBuilder(): TreeBuilder
         {
             $treeBuilder = new TreeBuilder('acme_demo');
@@ -277,40 +275,30 @@ To add a new config scope:
 
         class TestScopeManager extends AbstractScopeManager
         {
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function getScopedEntityName(): string
             {
                 return 'test'; // scope entity name
             }
 
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function getScopeId(): int
             {
                 return 0; // scope entity id (can be different for different cases)
             }
 
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             public function setScopeId(?int $scopeId): void
             {
             }
 
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             protected function isSupportedScopeEntity(object $entity): bool
             {
                 return false;
             }
 
-            /**
-             * {@inheritDoc}
-             */
+            #[\Override]
             protected function getScopeEntityIdValue(object $entity): int
             {
                 throw new \LogicException(sprintf('"%s" is not supported.', ClassUtils::getClass($entity)));
@@ -368,17 +356,13 @@ To add a new config scope:
         {
             protected const TEST_TREE_NAME = 'test_configuration';
 
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             protected function getTreeName(): string
             {
                 return $this->getTreeData(self::TEST_TREE_NAME, self::CORRECT_FIELDS_NESTING_LEVEL);
             }
 
-            /**
-             * @inheritDoc
-             */
+            #[\Override]
             protected function getParentCheckboxLabel(): string
             {
                 return $this->getJsTreeData(self::TEST_TREE_NAME, self::CORRECT_MENU_NESTING_LEVEL);
@@ -729,18 +713,14 @@ Create your own `DemoSearchProvider` that implements |SearchProviderInterface|.
             $this->configBag = $configBag;
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function supports($name): bool
         {
             // example of how the field can be determined
             return $this->configBag->getFieldsRoot($name) !== false;
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function getData($name): array
         {
             // example how to filter by `search_type`

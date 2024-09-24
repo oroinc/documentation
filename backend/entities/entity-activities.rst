@@ -10,7 +10,7 @@ Usually, an administrator provides a predefined set of associations between the 
 
 The following example illustrates how to do it:
 
-.. oro_integrity_check:: a0b5e3bef79390a7f74e5f1fed6c20cf2ddcda51
+.. oro_integrity_check:: b7078f4c44ebf2c13028fb26aa10872456d33763
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_10/AcmeDemoBundle.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_10/AcmeDemoBundle.php
@@ -51,7 +51,7 @@ Set entity annotation to show a widget and its button on specific pages.
 
 The widget can be displayed on the `view` and/or `update` pages. The list of allowed values is available in ``\Oro\Bundle\ActivityBundle\EntityConfig\ActivityScope``, for example:
 
-.. oro_integrity_check:: 55b3078a602e6105cf7b640cae4255b825ccce92
+.. oro_integrity_check:: 8e4c70643b53097bf07b012c279c8ed9e76d53b5
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Priority.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Priority.php
@@ -125,12 +125,12 @@ If you select more than one activity type in the filter, you can filter based on
     {
         /** @var ActivityListExtension */
         protected $activityListExtension;
-        /** {@inheritdoc} */
+        #[\Override]
         public function setActivityListExtension(ActivityListExtension $activityListExtension)
         {
             $this->activityListExtension = $activityListExtension;
         }
-        /** {@inheritdoc} */
+        #[\Override]
         public function up(Schema $schema, QueryBag $queries)
         {
             $activityListExtension->addInheritanceTargets($schema, 'orocrm_account', 'orocrm_contact', ['accounts']);

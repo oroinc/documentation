@@ -40,7 +40,7 @@ To add a WYSIWYG field as an :ref:`extended field <book-entities-extended-entiti
 
 1. Create a migration that adds 3 columns of the following types: ``wysiwyg``, ``wysiwyg_style``, and ``wysiwyg_properties``.
 
-.. oro_integrity_check:: dee1b1130ef13ad31689371b2046a299812294e1
+.. oro_integrity_check:: c048197ebea78c5451e38ed1b89462517cfd97b9
 
     .. literalinclude:: /code_examples/commerce/entity_field/wysiwyg/Migrations/Schema/v1_1/AddTeaserField.php
         :language: php
@@ -61,7 +61,7 @@ To add a WYSIWYG field explicitly:
 
 1. Create a migration that adds 3 columns of the following types: ``wysiwyg``, ``wysiwyg_style``, and ``wysiwyg_properties``:
 
-.. oro_integrity_check:: c72e20bedce38d47f79f91857d3cbc77325c1c3f
+.. oro_integrity_check:: 11ef88c87c250de51003b499eebbc44c54d187f6
 
     .. literalinclude:: /code_examples/commerce/entity_field/wysiwyg/Migrations/Schema/v1_1/AddExtraContentField.php
         :language: php

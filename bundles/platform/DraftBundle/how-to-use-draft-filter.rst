@@ -39,9 +39,7 @@ This example describes how to disable the draft filter. The following validator 
            $this->filterManager = $filterManager;
        }
 
-       /**
-        * {@inheritDoc}
-        */
+       #[\Override]
        public function validate($value, Constraint $constraint): void
        {
            if (!$constraint instanceof UniqueTitleDraft) {

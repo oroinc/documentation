@@ -181,9 +181,7 @@ It is possible to create an image or a file field via :ref:`migrations <backend-
        {
            use AttachmentExtensionAwareTrait;
 
-           /**
-            * {@inheritdoc}
-            */
+           #[\Override]
            public function up(Schema $schema, QueryBag $queries)
            {
                $this->attachmentExtension->addImageRelation(
@@ -215,9 +213,7 @@ Also, you can enable attachments for an entity, e.g.,:
        {
            use AttachmentExtensionAwareTrait;
 
-           /**
-            * {@inheritdoc}
-            */
+           #[\Override]
            public function up(Schema $schema, QueryBag $queries)
            {
                $this->attachmentExtension->addAttachmentAssociation(
@@ -246,9 +242,7 @@ An example of creating MultiImage and MultiFile fields using migration using Att
        {
            use AttachmentExtensionAwareTrait;
 
-           /**
-            * {@inheritdoc}
-            */
+           #[\Override]
            public function up(Schema $schema, QueryBag $queries)
            {
                $this->attachmentExtension->addMultiImageRelation(

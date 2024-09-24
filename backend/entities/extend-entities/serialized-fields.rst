@@ -47,7 +47,7 @@ The Serialized Fields bundle adds a new field called Storage Type within New fie
 
 To create a serialized field via migration, use |SerializedFieldsExtension|. For example:
 
-.. oro_integrity_check:: a07efb1bbaee9541e4867596cd510c54e84ceabd
+.. oro_integrity_check:: 418a439696cf34dfe77184ebf48a4b9e0d78c47a
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_4/AddSerializedFieldMigration.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_4/AddSerializedFieldMigration.php

@@ -26,41 +26,31 @@ class FastShippingMethodType implements ShippingMethodTypeInterface
         $this->isWithPresent = $isWithPresent;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getIdentifier(): string
     {
         return $this->isWithPresent ? self::WITH_PRESENT_TYPE : self::WITHOUT_PRESENT_TYPE;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getLabel(): string
     {
         return $this->label;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getSortOrder(): int
     {
         return 0;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getOptionsConfigurationFormType(): ?string
     {
         return FastShippingMethodOptionsType::class;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function calculatePrice(
         ShippingContextInterface $context,
         array $methodOptions,

@@ -17,14 +17,13 @@ class KeepLastRowsProcessor implements ProcessorInterface
     {
     }
 
+    #[\Override]
     public static function getProcessorName(): string
     {
         return 'keep_last_rows';
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getSqls(ClassMetadata $metadata, array $sanitizeRuleOptions = []): array
     {
         try {

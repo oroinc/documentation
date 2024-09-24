@@ -51,7 +51,7 @@ Make Entity Extended
 
 #. Add new fields using a migration script:
 
-.. oro_integrity_check:: ad35e3d8a8b994cc8d3bb633aeac6a568f5d0b7b
+.. oro_integrity_check:: 5e6ed5db1f3027d672ff82436b6572785ff352ca
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_1/AddDocumentRatingColumn.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_1/AddDocumentRatingColumn.php
@@ -106,7 +106,7 @@ As an illustration, we will use the User entity from a custom DemoBundle.
 To achieve this, add a new field ``partnerSince`` to store the date and time of when a contact joined your network.
 To add the field, create a migration:
 
-.. oro_integrity_check:: 08e7acbc1364c4ab62df9b4e6bc7b0f8686e37dc
+.. oro_integrity_check:: fe9422ae42a62f86bd3aebfa38a80c3f3b9089b7
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_2/AddPartnerSinceToOroUser.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_2/AddPartnerSinceToOroUser.php;

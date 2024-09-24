@@ -31,18 +31,18 @@ Perform the following steps to override DefaultImagePlaceholderProvider that is 
 
 2. Add your newly created service to the ``oro_product.provider.product_image_placeholder`` chain service.  You can do it via DI CompilerPass.
 
-    .. oro_integrity_check:: fbf1e57c3c7e9f4d2c890aafd7453e31eff7921e
+    .. oro_integrity_check:: 547f385068c8de1c9568e45143e1b1bd0ad36f8a
 
         .. literalinclude:: ../../../code_examples/commerce/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
-            :lines: 3-17, 19-20, 23-27
+            :lines: 3-21, 25-32
 
 
 Pay attention to the way the chain works. It gets the first suitable value from providers, so we have put our own provider to the very top of the chain via ``ContainerBuilder::setMethodCalls`` and ``array_merge``. You can locate your own provider where required.
 
 Make sure to insert CompilerPass to the bundle root file.
 
-    .. oro_integrity_check:: 2ce87a1dbd8b6b9769f11cc5ca91362bb1bb7926
+    .. oro_integrity_check:: 28b2baa911e5c55eb4a4128b328a12f8bd6d6df4
 
         .. literalinclude:: ../../../code_examples/commerce/demo/AcmeDemoBundle.php
             :language: php
@@ -65,11 +65,11 @@ To do this, perform the following:
 
 2. Add the ``acme_demo.provider.demo_image_placeholder.theme`` service definition to CompilerPass.
 
-    .. oro_integrity_check:: 7aaabbe519eb3d88a5e7d1c249b9de1ea95d0294
+    .. oro_integrity_check:: 9f9fe8f7f810bdd533bbe645eb04a6476ef5648b
 
         .. literalinclude:: ../../../code_examples/commerce/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
-            :lines: 3, 17-18, 20, 22, 24-25
+            :lines: 3, 19-22, 24, 24-27, 23
 
 
 3. Create ``theme.yml``
@@ -103,11 +103,11 @@ To do this, perform the following:
 
 3. Add the ``acme_demo.provider.demo_image_placeholder.config`` service definition to CompilerPass.
 
-    .. oro_integrity_check:: ac8ab7028833306161b99ed116551edba5e9fc3c
+    .. oro_integrity_check:: e53ec650176abf423591bd95c80b3c82f3e48eec
 
         .. literalinclude:: ../../../code_examples/commerce/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
-            :lines: 3, 17-18, 20, 21, 24-25
+            :lines: 3, 19-23, 26-27, 23
 
 
 
@@ -116,11 +116,11 @@ TwigExtension and template examples
 
 To use the providers we have created previously, we need to create TwigExtension that fetches the Product image in the appropriate dimension or, if the main image is unavailable, provides the placeholder instead.
 
-    .. oro_integrity_check:: 10cfcf84798a3aa78cdd5ec9cd25706b7fa0e37b
+    .. oro_integrity_check:: 0c40aee96f8e2755556472a20113e90c7352fd79
 
         .. literalinclude:: ../../../code_examples/commerce/demo/Twig/ProductImageExtension.php
             :language: php
-            :lines: 3-73
+            :lines: 3-70
 
     .. oro_integrity_check:: 3c0bc2660a66ce70452225a42fb0240172114cd1
 

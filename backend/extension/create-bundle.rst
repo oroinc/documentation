@@ -17,12 +17,12 @@ First you need to specify name and namespace of your bundle. Symfony framework a
 Let us assume that we want to create the AcmeDemoBundle and put it under the namespace ``Acme\Bundle\DemoBundle``
 in the ``/src`` directory. We need to create the corresponding directory structure and the bundle file with the following content:
 
-.. oro_integrity_check:: 4afa3f69d42ea8e610dee77c76cafa70ef615d1c
+.. oro_integrity_check:: 60007b7c5dc2549192f5138c7861f5a16a193b3e
 
    .. literalinclude:: /code_examples/commerce/demo/AcmeDemoBundle.php
        :caption: src/Acme/Bundle/DemoBundle/AcmeDemoBundle.php
        :language: php
-       :lines: 4-5, 7, 11-13, 29
+       :lines: 4-6, 11-14, 28
 
 Basically, it is a regular Symfony bundle. The only difference is in the way it will be enabled (see chapter `Enable a Bundle`_).
 
@@ -31,12 +31,12 @@ Create a Bundle Service Container Extension
 
 For a load configuration files you need to create Service Container Extension. See |Symfony Configuration Files|
 
-.. oro_integrity_check:: 84bf73fc7101136310d0986bc40e96c04f0ac867
+.. oro_integrity_check:: 04414a05c934f584d038f4791e3ccd8c4db19876
 
    .. literalinclude:: /code_examples/commerce/demo/DependencyInjection/AcmeDemoExtension.php
        :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/AcmeDemoExtension.php
        :language: php
-       :lines: 4-18, 25-26
+       :lines: 4-20, 27-28
 
 Create basic ``Resources/config/services.yml`` for define service parameters. See |Symfony Service Parameters|
 

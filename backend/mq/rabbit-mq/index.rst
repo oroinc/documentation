@@ -192,9 +192,7 @@ bundle to use it.
 
     class AcmeCoreBundle extends Bundle
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function build(ContainerBuilder $container): void
         {
             parent::build($container);

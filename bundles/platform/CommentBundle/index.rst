@@ -27,9 +27,7 @@ Usually, you do not need to provide a predefined set of associations between the
     {
         use CommentExtensionAwareTrait;
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function up(Schema $schema, QueryBag $queries)
         {
             $this->commentExtension->addCommentAssociation($schema, 'acme_demo_entity');
@@ -55,9 +53,7 @@ If you created the new activity entity and want to comment on it in the activity
     {
         // ...
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function isCommentsEnabled($entityClass)
         {
             return $this->configManager->hasConfig($entityClass)

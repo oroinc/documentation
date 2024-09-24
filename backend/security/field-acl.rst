@@ -68,7 +68,7 @@ You can achieve this with the Config annotation if you have access to both the e
 
 The following example is an illustration of the entity configuration:
 
-.. oro_integrity_check:: 40c6278664e7bc22c3c94c76a2624e7c5e7d0b9b
+.. oro_integrity_check:: 0ee51ea5be63aa10f1909fd2181c3d1c9292d29c
 
     .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php
@@ -77,7 +77,7 @@ The following example is an illustration of the entity configuration:
 
 If you have no access to the entity to modify the Config annotation, set the `field_acl_supported` parameter with the migration:
 
-.. oro_integrity_check:: 751dd18f13a127dd9b15bf133176078b5d314d80
+.. oro_integrity_check:: a1a6ff26bc1cd03c3c169f035fd6061ba57daf75
 
     .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_8/TurnFieldAclSupportForFavorites.php
         :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_8/TurnFieldAclSupportForFavorites.php
@@ -105,7 +105,7 @@ The permissions should be listed as the string with the `;` delimiter.
 
 For example:
 
-.. oro_integrity_check:: 209af7c4b4dd1f646fbb784d91b657f27b6d5438
+.. oro_integrity_check:: 04c0180ebee59a0192cefde3c44b9ca9e765af90
 
     .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php

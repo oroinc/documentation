@@ -120,12 +120,12 @@ For example, let's assume we have migrations `v1_0`, `v1_1`, `v1_2`, `v1_3` and 
 
 Below is an example of an install migration file:
 
-.. oro_integrity_check:: 90b861330576af375d08e31240acbda642ec2cf7
+.. oro_integrity_check:: 2ea502e35d6b13ee9a3b7f6769f9ff18b17dea16
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/AcmeDemoBundleInstaller.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/AcmeDemoBundleInstaller.php
        :language: php
-       :lines: 3-24, 29-31, 36-42, 47-57, 62-65, 129-137, 150, 236
+       :lines: 3-26, 31-33, 38-45, 50-59, 64-67, 131-140, 153, 247
 
 Create Versioned Schema Migrations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -159,9 +159,7 @@ Below is an example of a migration file:
 
     class AddTmpTestTable implements Migration
     {
-       /**
-        * @inheritDoc
-        */
+       #[\Override]
         public function up(Schema $schema, QueryBag $queries)
         {
             $table = $schema->createTable('tmp_test_table');

@@ -80,7 +80,7 @@ This can be done through schema migration or by defining rules in the entity's c
 
 Example of adding sanitizing rules to the entity configuration via migration:
 
-.. oro_integrity_check:: f5df6fe450f7f77805cd6bdde9900a6f1be13726
+.. oro_integrity_check:: 8ab46e4bbd6be1d1958a985f31873eda0c7c7d5e
 
     .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_12/AddFieldsWithSanitizingRulesMigration.php
         :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_12/AddFieldsWithSanitizingRulesMigration.php
@@ -158,7 +158,7 @@ To define a custom rule processor, add a service that implements **Oro\\Bundle\\
 
 The sanitizing rule implementation:
 
-.. oro_integrity_check:: b373d0330420c3fddfa1f80ebafc7504640d0596
+.. oro_integrity_check:: 205878f925796d5230890f65eeb65aa689c7ebae
 
     .. literalinclude:: /code_examples/commerce/demo/Sanitize/RuleProcessor/Entity/KeepLastRowsProcessor.php
         :caption: src/Acme/Bundle/DemoBundle/Sanitize/RuleProcessor/Entity/KeepLastRowsProcessor.php
@@ -188,7 +188,7 @@ To simplify the definition of a sanitizing rule processor service, the parent ab
 
 The sanitizing rule implementation:
 
-.. oro_integrity_check:: b9a254af8acb608917e545b855607694a5d14229
+.. oro_integrity_check:: 45736ebbcbd56a724384fda5d7590291f5eb2de5
 
     .. literalinclude:: /code_examples/commerce/demo/Sanitize/RuleProcessor/Field/ReverseProcessor.php
         :caption: src/Acme/Bundle/DemoBundle/Sanitize/RuleProcessor/Field/ReverseProcessor.php

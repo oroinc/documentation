@@ -122,9 +122,7 @@ For example:
 
     class MyNewGlobalOptionsProvider implements GlobalOptionsProviderInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function addGlobalOptions(Command $command)
         {
             // Create a new option and add it to the definitions
@@ -133,9 +131,7 @@ For example:
             $command->getDefinition()->addOption($option);
         }
 
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function resolveGlobalOptions(InputInterface $input)
         {
             // Get the option's value and do something with it

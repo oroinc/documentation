@@ -16,20 +16,20 @@ You can enable attributes for any extendable and configurable entity by doing th
 
 The following example illustrates enabling attributes for the *Document* entity:
 
-.. oro_integrity_check:: 9587929fbbaf94d8484efd24a1062fce78ebc24b
+.. oro_integrity_check:: 6b893012dab1a48c041f7510af8212c65c920c35
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
        :language: php
-       :lines: 17-19, 22, 27, 47-51, 60, 55, 60, 136-158
+       :lines: 17-19, 22, 27, 47-51, 60, 55, 60, 136-160
 
 
-.. oro_integrity_check:: 0886c56aac30782ed1ef4e9df7c3accd2253e3f8
+.. oro_integrity_check:: 680f39c18e400d938ffaa763f577707f80e427c0
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_9/AddAttributeFamilyField.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_9/AddAttributeFamilyField.php
        :language: php
-       :lines: 3-32
+       :lines: 3-30
 
 .. note:: Remember to clear cache and update configuration after these changes.
 

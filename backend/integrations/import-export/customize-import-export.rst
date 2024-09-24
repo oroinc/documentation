@@ -57,9 +57,7 @@ extension class in the entity bundle and implement the *load* method, like in th
 
     class AcmeDemoExtension extends Extension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function load(array $configs, ContainerBuilder $container): void
         {
             $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
@@ -137,33 +135,25 @@ Please refer to the following example:
 
     class TaskFixture extends AbstractTemplateRepository implements TemplateFixtureInterface
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         protected function createEntity($key): Task
         {
             return new Task($key);
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getEntityClass(): string
         {
             return Task::class;
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getData()
         {
             return $this->getEntityData('example-task');
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function fillEntityData($key, $entity)
         {
             $entity->setId(1);

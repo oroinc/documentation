@@ -70,9 +70,7 @@ The example below illustrates the way to use context. We only update the draft e
            return new PropertyTypeMatcher(\DateTime::class);
        }
 
-       /**
-        * @inheritDoc
-        */
+       #[\Override]
        public function isSupport(DraftableInterface $source): bool
        {
            return $this->getContext()->offsetGet('action') === DraftManager::ACTION_CREATE_DRAFT;
@@ -149,9 +147,7 @@ As an example, consider a matcher that takes properties names. This enables you 
            $this->properties = $properties;
        }
 
-       /**
-        * @inheritDoc
-        */
+       #[\Override]
        public function matches($object, $property): bool
        {
            return in_array($property, $this->properties);

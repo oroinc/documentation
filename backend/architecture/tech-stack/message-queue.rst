@@ -391,9 +391,7 @@ A processor receives a message with the entity id. It finds the entity and chang
 
 .. code-block:: php
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function process(MessageInterface $message, SessionInterface $session)
         {
             $body = $message->getBody();

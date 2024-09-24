@@ -34,9 +34,7 @@ To create a new post processor, you need to do the following:
 
     class SomePostProcessor implements PostProcessorInterface
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function process(mixed $value, array $options): mixed
         {
         }
@@ -64,9 +62,7 @@ To create a new post processor, you need to do the following:
 
     class SomePostProcessorConfigExtension extends AbstractConfigExtension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getConfigureCallbacks(): array
         {
             return [

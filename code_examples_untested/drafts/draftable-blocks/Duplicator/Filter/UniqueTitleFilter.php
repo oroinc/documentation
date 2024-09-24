@@ -15,6 +15,7 @@ class UniqueTitleFilter implements Filter
      * @param string $property
      * @param callable $objectCopier
      */
+    #[\Override]
     public function apply($object, $property, $objectCopier): void
     {
         $resolvedField = sprintf('%s_%s', $object->getTitle(), uniqid());

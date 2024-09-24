@@ -16,6 +16,7 @@ class BlockTitleMatcher implements Matcher
      *
      * @return bool
      */
+    #[\Override]
     public function matches($object, $property): bool
     {
         return 'title' === $property;

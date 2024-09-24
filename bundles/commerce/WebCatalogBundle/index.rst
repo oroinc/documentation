@@ -36,9 +36,7 @@ This migration should implement `ExtendExtensionAwareInterface`.
 
     class OroWebCatalogBundle implements Migration, ExtendExtensionAwareInterface
     {
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function up(Schema $schema, QueryBag $queries)
         {
             $this->createRelationToBlogPostFromContentVariant($schema);
@@ -108,33 +106,25 @@ In our case it can be `new RouteData('frontend_blog_post_view', ['id' => $post->
 
         ...
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getName()
         {
             return self::TYPE;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getTitle()
         {
             return 'blog_post_page.label';
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getFormType()
         {
             return BlogPostPageVariantType::class;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getRouteData(ContentVariantInterface $contentVariant)
         {
             /** @var BlogPost $post */
@@ -143,17 +133,13 @@ In our case it can be `new RouteData('frontend_blog_post_view', ['id' => $post->
             return new RouteData('frontend_blog_post_view', ['id' => $post->getId()]);
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getApiResourceClassName()
         {
             return BlogPost::class;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function getApiResourceIdentifierDqlExpression($alias)
         {
             return sprintf('IDENTITY(%s.content_variant_blog_post)', $alias);

@@ -15,17 +15,13 @@ class AddFieldsWithSanitizingRulesMigration implements Migration, SerializedFiel
 {
     protected SerializedFieldsExtension $serializedFieldsExtension;
 
-    /**
-     * @inheritDoc
-     */
+    #[\Override]
     public function setSerializedFieldsExtension(SerializedFieldsExtension $serializedFieldsExtension)
     {
         $this->serializedFieldsExtension = $serializedFieldsExtension;
     }
 
-    /**
-     * @inheritDoc
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries)
     {
         $table = $schema->getTable('acme_demo_sms');
@@ -59,7 +55,7 @@ class AddFieldsWithSanitizingRulesMigration implements Migration, SerializedFiel
 
         // adding sanitizing options to existing field
         $queries->addQuery(
-            new UpdateEntityConfigFieldValueQuery(Sms::class, 'fromContact', 'sanitize', 'rule','str_reverse')
+            new UpdateEntityConfigFieldValueQuery(Sms::class, 'fromContact', 'sanitize', 'rule', 'str_reverse')
         );
     }
 }

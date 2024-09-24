@@ -247,12 +247,12 @@ This will add your provider class into providers (**ActivityListChainProvider**)
 
 Each activity entity has its own row template for the UI component. Although you can place it anywhere, make sure its path is returned in the Provider via the getTemplate() method. For instance:
 
-.. oro_integrity_check:: 07917fba3d7a75d98933e9f880c3a41dad71a236
+.. oro_integrity_check:: 9c58b781a610c60650325bf42a8155f37ab6db9d
 
    .. literalinclude:: /code_examples/commerce/demo/Provider/SmsActivityListProvider.php
        :caption: src/Acme/Bundle/DemoBundle/Provider/SmsActivityListProvider.php
        :language: php
-       :lines: 3-215
+       :lines: 3-197
 
 Here is an example of TWIG templates:
 
@@ -306,7 +306,7 @@ Example of implementing the deletion of an activity from an activity list on a p
 
 Create a controller. Here is an example of the controller:
 
-.. oro_integrity_check:: 16a3175fb0b2d6545c28185cd1608463c300c540
+.. oro_integrity_check:: 455ed06c4afdd60b65adc3289c9d4843e7c775a5
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/Api/Rest/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/Api/Rest/SmsController.php
@@ -338,21 +338,21 @@ Register the created controller.
 
 This API handler is the implementation of REST API.
 
-.. oro_integrity_check:: 06d4c6c7ced3a7c27c902cda3907440ec51898b1
+.. oro_integrity_check:: 4eca5d6516e7719bea432f00d6bde68c90fd2f0d
 
    .. literalinclude:: /code_examples/commerce/demo/Form/Handler/SmsApiHandler.php
        :caption: src/Acme/Bundle/DemoBundle/Form/Handler/SmsApiHandler.php
        :language: php
-       :lines: 3-83
+       :lines: 3-81
 
 Create a form type to add the createdAt field.
 
-.. oro_integrity_check:: c5184caca4c0c9618ec90780b410ea43dd2ce182
+.. oro_integrity_check:: 01f78905f786e4bbf0dd71d495ec2a8c9803b9e0
 
    .. literalinclude:: /code_examples/commerce/demo/Form/Type/SmsApiType.php
        :caption: src/Acme/Bundle/DemoBundle/Form/Type/SmsApiType.php
        :language: php
-       :lines: 3-62
+       :lines: 3-53
 
 
 .. include:: /include/include-links-dev.rst

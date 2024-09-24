@@ -12,6 +12,7 @@ class AcmeDictionaryValueListProvider extends EnumOptionValueListProvider implem
 {
     protected const ACME_PREFIX = 'Acme';
 
+    #[\Override]
     public function supports($className): bool
     {
         return str_ends_with($className, static::ACME_PREFIX) || parent::supports($className);

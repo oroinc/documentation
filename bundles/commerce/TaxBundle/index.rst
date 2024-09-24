@@ -28,49 +28,37 @@ You can add your own custom tax logic with custom tax provider.
    {
        const LABEL = 'acme.demo.providers.demo.label';
 
-       /**
-        * {@inheritdoc}
-        */
+       #[\Override]
        public function getLabel()
        {
            return self::LABEL;
        }
 
-       /**
-        * {@inheritdoc}
-        */
+       #[\Override]
        public function isApplicable()
        {
            return true;
        }
 
-       /**
-        * {@inheritdoc}
-        */
+       #[\Override]
        public function loadTax($object)
        {
            // implement your loadTax() method.
        }
 
-       /**
-        * {@inheritdoc}
-        */
+       #[\Override]
        public function getTax($object)
        {
            // implement your getTax() method.
        }
 
-       /**
-        * {@inheritdoc}
-        */
+       #[\Override]
        public function saveTax($object)
        {
            // implement your saveTax() method.
        }
 
-       /**
-        * {@inheritdoc}
-        */
+       #[\Override]
        public function removeTax($object)
        {
            // implement your removeTax() method.

@@ -7,7 +7,7 @@ Before your application contains an interface to create new tasks, you need to l
 programmatically. In OroPlatform, this can be done by creating :ref:`fixture classes <backend-entities-fixtures>` that are placed in the
 ``Migrations/Data/ORM`` subdirectory of your bundle and that implement the ``FixtureInterface``:
 
-.. oro_integrity_check:: 0802978d3a512d579a8ef4ecfff5ae88635f9a0f
+.. oro_integrity_check:: ebc9b3b4632d934fa3fab7fcb02515ba5c5edc40
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Data/ORM/LoadQuestions.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadQuestions.php

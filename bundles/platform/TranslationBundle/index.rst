@@ -40,9 +40,7 @@ The context resolver must implement ``oro\Bundle\TranslationBundle\Extension\Tra
             $this->translator = $translator;
         }
 
-        /**
-         * {@inheritdoc}
-         */
+        #[\Override]
         public function resolve($id)
         {
             /**

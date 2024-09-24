@@ -25,9 +25,7 @@ class UniqueTitleDraftValidator extends ConstraintValidator
         $this->filterManager = $filterManager;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function validate($value, Constraint $constraint): void
     {
         if (!$constraint instanceof UniqueTitleDraft) {

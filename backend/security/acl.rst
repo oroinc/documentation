@@ -236,7 +236,7 @@ Suppose you have configured an entity to be protectable via ACLs. You have grant
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 1-29, 92
+        :lines: 1-29, 93
 
 #. When you need to perform a particular check repeatedly, write ``#[Acl]`` repeatedly. This, however, is tedious, especially when your requirements change and you have to change a lot of ACLs.
 
@@ -256,7 +256,7 @@ Suppose you have configured an entity to be protectable via ACLs. You have grant
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 1-22, 45-61, 92
+        :lines: 1-22, 45-61, 93
 
   Sometimes you want to protect a controller method from code you do not control. Therefore, you cannot add the ``#[AclAncestor]`` attribute to it. Use the bindings key in the YAML configuration of your ACL to define which method(s) should be protected:
 
@@ -304,7 +304,7 @@ When building custom DQL queries, reduce the result set being returned to the se
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 1-22, 63-83, 92
+        :lines: 1-22, 63-83, 93
 
 
 In this example, a query is built that selects all products from the database that cost more than ``19.99``. Then, the query builder is passed to the ``apply()`` method of the ``oro_security.acl_helper`` service. This service, an instance of the ``Oro\Bundle\SecurityBundle\ORM\Walker\AclHelper`` class modifies the query only to the return entities to which the user has access.
@@ -321,7 +321,7 @@ In this case, you can use the ``isGranted`` function:
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 1-22, 45-61, 92
+        :lines: 1-22, 45-61, 93
 
 If you need to carry out an ACL check on an object not in the controller, use the ``isGranted`` method of the `security.authorization_checker` service.
 

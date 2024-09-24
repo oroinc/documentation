@@ -13,9 +13,7 @@ use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
 class UpdateContentField implements Migration
 {
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function up(Schema $schema, QueryBag $queries): void
     {
         if (!$schema->hasTable('acme_blog_post')) {

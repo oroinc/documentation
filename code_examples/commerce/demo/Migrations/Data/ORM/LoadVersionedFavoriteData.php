@@ -16,24 +16,18 @@ class LoadVersionedFavoriteData extends AbstractFixture implements
     VersionedFixtureInterface,
     LoadedFixtureVersionAwareInterface
 {
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function getVersion(): string
     {
         return '2.0';
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function setLoadedVersion($version = null): void
     {
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     public function load(ObjectManager $manager): void
     {
         $newFavorite = new Favorite();

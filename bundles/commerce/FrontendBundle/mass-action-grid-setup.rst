@@ -51,9 +51,7 @@ Next, add `mass_actions` section with params below:
 
     class CustomersDeleteActionHandler extends DeleteMassActionHandler
     {
-     /**
-      * {@inheritdoc}
-      */
+     #[\Override]
      protected function isDeleteAllowed($entity)
      {
          /** @var CustomerUser $entity */

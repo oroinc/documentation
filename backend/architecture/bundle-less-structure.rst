@@ -400,18 +400,14 @@ Moving Extension and Configuration
 
     class YourExtension extends Extension
     {
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function load(array $configs, ContainerBuilder $container): void
         {
             $config = $this->processConfiguration(new YourConfigurationClass(), $configs);
             $container->prependExtensionConfig($this->getAlias(), SettingsBuilder::getSettings($config));
         }
 
-        /**
-         * {@inheritDoc}
-         */
+        #[\Override]
         public function getAlias(): string
         {
             return YourConfigurationClass::ROOT_NODE;
@@ -422,9 +418,7 @@ Moving Extension and Configuration
 
 .. code-block:: php
 
-    /**
-     * {@inheritDoc}
-     */
+    #[\Override]
     protected function build(ContainerBuilder $container)
     {
         $container->registerExtension(new YourExtension());

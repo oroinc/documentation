@@ -27,9 +27,7 @@ For example:
 
     class CustomCollector implements CollectorInterface
     {
-        /**
-         * @inheritDoc
-         */
+        #[\Override]
         public function handle(Collection $data): void
         {
             $data->add([

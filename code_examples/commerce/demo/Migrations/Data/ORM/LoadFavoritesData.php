@@ -13,17 +13,13 @@ use Oro\Bundle\OrganizationBundle\Entity\Organization;
  */
 class LoadFavoritesData extends AbstractFixture implements VersionedFixtureInterface
 {
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function getVersion(): string
     {
         return '1.0';
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    #[\Override]
     public function load(ObjectManager $manager)
     {
         $organization = $manager->getRepository(Organization::class)->getFirst();
