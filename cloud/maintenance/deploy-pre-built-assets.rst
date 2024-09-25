@@ -1,3 +1,5 @@
+.. _orocloud-skip-assets:
+
 Application Upgrade Using Pre-Built Assets
 ==========================================
 

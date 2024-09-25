@@ -38,7 +38,7 @@ You can run any OroCloud command with the help option (--help or -h) to see the 
 Can I download an application database dump to troubleshoot issues in the local environment?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For security reasons, you cannot download backups with the sensitive data from OroCloud. However, you can create a :ref:`sanitized backup <orocloud-maintenance-use-sanitized-backup>`, :ref:`configure it as necessary <orocloud-maintenance-advanced-use-sanitization-conf>`, and use it for your needs.
+For security reasons, you cannot download backups with the sensitive data from OroCloud. However, you can create a :ref:`sanitized backup <orocloud-maintenance-use-sanitized-backup>`, configure it as necessary, and use it for your needs.
 
 
 The upgrade failed. What are the recommended steps to have application IP and running ASAP?

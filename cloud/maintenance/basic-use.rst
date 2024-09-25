@@ -1,43 +1,19 @@
-.. _orocloud-maintenance-use:
+.. _orocloud-usage:
 
-Maintenance Commands
-====================
+Basic Usage
+===========
 
 Once you are connected to the OroCloud server, you can run a series of maintenance commands.
 
-OroCloud Maintenance Management Commands List
----------------------------------------------
+Commands List
+-------------
 
 To list available OroCloud maintenance management commands, run `orocloud-cli` without parameters.
 
-.. warning:: OroCloud maintenance commands may affect the application performance. Please use them with extreme care and contact the OroCloud or Oro Support team for any questions.
+To get the current environment version, run `orocloud-cli --version` and use the major version.
 
-Configuration of `orocloud.yaml`
---------------------------------
+.. warning:: OroCloud maintenance commands may affect application performance. Please use them with extreme care and contact the OroCloud or Oro Support team for any questions.
 
-The `validation` command checks your configuration for syntax errors or wrong configuration values. Use the `files` argument to check custom files or multiple files merge result:
-
-.. code-block:: none
-
-    orocloud-cli config:validate
-
-    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml
-
-    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.yaml
-
-    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml
-
-    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml /mnt/ocom/app/www/orocloud_prod.yaml
-
-Valid changes are applied within 10 minutes or automatically during deployments.
-
-Use  the `help` command to get configuration details or configuration reference:
-
-.. code-block:: none
-
-    orocloud-cli config:help
-    orocloud-cli config:help webserver.limit_whitelist
-    orocloud-cli config:help orocloud_options.webserver.limit_whitelist
 
 Logs
 ----
@@ -53,990 +29,98 @@ The command output is similar to the following:
 
 .. code-block:: none
 
-    ➤ Executing task log:list
-    +------------------+-----------------+-----------------------------------+
-    | DATE             | OPERATION       | FILE                              |
-    +------------------+-----------------+-----------------------------------+
-    | 2021-12-08 16:13 | upgrade:source  | upgrade:source_20211208161329.log |
-    +------------------+-----------------+-----------------------------------+
-    [localhost] Total 1 item(s), 1 page(s). Current page: 1, items per page: 25.
-    ✔ Ok [5ms]
+    ------ ------------- ----------------- 
+    Logs   Page 1 of 4   Rows 1-25 of 91  
+    ------ ------------- ----------------- 
+    +---------------------+------+-----------------------------------------------------------------------+-----------------+---------+----------------------------+
+    | Date                | User | Command                                                               | Result          | Took    | Identifier                 |
+    +---------------------+------+-----------------------------------------------------------------------+-----------------+---------+----------------------------+
+    | 2024-08-14 14:15:30 | user | app:package:update 6.0.2 6.0.2-20240901 -vvv --label=Reference: 6.0.2 | Completed       | 15m 15s | 01J58KWT7FR0BZFXZARBD0PVNN |
 
 
 View Logs
 ~~~~~~~~~
 
+To view a log, use a log identifier from `orocloud-cli log:list`
+
 .. code-block:: none
 
-    orocloud-cli log:view upgrade:source_20211208161329.log
+    orocloud-cli log:view 01J58KWT7FR0BZFXZARBD0PVNN
 
 The command output is similar to the following:
 
 .. code-block:: none
 
-    ➤ Executing task log:view
-    Wed Dec  8 16:13:29 UTC 2021 : Clone source code from repository
-    Wed Dec  8 16:13:44 UTC 2021 : Run composer install
-    Wed Dec  8 16:15:49 UTC 2021 : Upgrade application
-    Dumping exposed routes.
-
-    [dir+]  /opt/ocom/app/deploy/20211208161329/public/media/js
-    [file+] /opt/ocom/app/deploy/20211208161329/public/media/js/admin_routes.json
-    Dumping exposed routes.
-
-    [file+] /opt/ocom/app/deploy/20211208161329/public/media/js/frontend_routes.json
-    16:16:54 [file+] oro.locale_data.js
-    Move "/opt/ocom/app/deploy/20211208161329/public/bundles/components" to "/opt/ocom/app/deploy/20211208161329/public/js/components"
-    WARNING: The directory "/opt/ocom/app/deploy/20211208161329/public/bundles/components" does not exist
-
-     Installing assets as hard copies.
-
-     --- -------------------------------------------- ----------------
-          Bundle                                       Method / Error
-     --- -------------------------------------------- ----------------
-
-     ..............
-
-      > loading [jsmessages] ... processed 1803 records.
-      > loading [maintenance] ... processed 7 records.
-      > loading [HWIOAuthBundle] ... processed 9 records.
-      > loading [entities] ... processed 4840 records.
-      > loading [workflows] ... processed 625 records.
-    Loading translations [en_AU] (0) ...
-    Loading translations [en_CA] (0) ...
-    Loading translations [en_GB] (0) ...
-    Loading translations [en_US] (0) ...
-    Loading translations [fr_CA] (0) ...
-    Loading translations [fr_FR] (1) ...
-      > loading [messages] ... processed 6 records.
-    Loading translations [de_DE] (1) ...
-      > loading [messages] ... processed 6 records.
-    Loading translations [es_AR] (0) ...
-    All messages successfully processed.
-    Rebuilding cache ... Done.
-    Wed Dec  8 16:31:56 UTC 2021 : Upgrade completed successfully.
-    ✔ Ok [26ms]
-
+        $ orocloud-cli app:package:update 6.0.2 6.0.2-20240901 -vvv --label=Reference: 6.0.2
+        $ Cloning repository 
+        $ git -C /source init
+        hint: Using 'master' as the name for the initial branch. This default branch name
+        hint: is subject to change. To configure the initial branch name to use in all
+        hint: of your new repositories, which will suppress this warning, call:
+        hint: 
+        hint:   git config --global init.defaultBranch <name>
+        hint: 
+        hint: Names commonly chosen instead of 'master' are 'main', 'trunk', and
+        hint: 'development'. The just-created branch can be renamed via this command:
+        hint: 
+        hint:   git branch -m <name>
+        Initialized empty Git repository in /source/.git/
 
 Locks
 -----
 
-Any time the `orocloud-cli` command runs with any argument or options, the maintenance agent is locked to prevent its simultaneous execution. This is required to avoid cases when different users execute commands that may lead to environment corruption, e.g., when different users run `deploy` and `upgrade` at the same time. If this happens, a warning message is displayed.
+Any time the `orocloud-cli` command runs with any argument or options, `orocloud-cli` is locked to prevent its simultaneous execution.
+This is required to avoid cases when different users execute commands that may lead to environment corruption, e.g., when different users run `app:package:deploy` and `app:package:upgrade` at the same time.
+If this happens, a warning message is displayed.
 
 As an example:
 
 .. code-block:: none
 
-    WARNING!
-    Another `orocloud-cli` instance is already running PID `2860`.
-    Nov 01 12:00:01 ocrm-prod-app maintenance_user: upgrade -vv --log ~/upgrade.log
+    [WARNING] Another command is running: "orocloud-cli app:package:deploy" by some user
 
-* `PID \`2860\`` - the currently running command process identifier.
-* `Nov 01 12:00:01` - the date and time when the command has started.
-* `ocrm-prod-app` - the name of the cloud node instance.
-* `maintenance_user` - the name of the user who runs the command.
-* `upgrade -vv --log ~/upgrade.log` - the `orocloud-cli` command argument and options being used.
-
-.. note:: When you need to check the current maintenance agent version or list all available commands, running `orocloud-cli` command without any arguments is allowed even when locked.
-
-.. note:: When the currently running command is finished or stopped with a warning or a notice, the maintenance agent is automatically unlocked.
-
-Deploy
-------
-
-To deploy an Oro application in the OroCloud environment with default installation parameters, run the `orocloud-cli deploy` command.
-
-.. note:: If the application is already deployed, the command execution is restricted. Please contact the OroCloud or Oro Support team in case a full re-deploy from scratch is required.
-
-.. _orocloud-maintenance-use-upgrade:
-
-[New] Application Packages
---------------------------
-
-You can use prebuilt application packages to upgrade Oro applications in OroCloud.
-Prebuilt application packages are shared between different environment types (dev, stag, uat, prod) of a single project.
-
-.. important:: Migrate to :ref:`Environment Type Approach <orocloud-diff-environments-environment-type-approach>`, other approaches are not supported by Application Packages feature.
-
-The following commands are available for Oro applications of versions 5.0 and above:
-
-.. code-block:: bash
-
-    app
-      app:package:build          Build application package for deployment.
-      app:package:deploy         Deploy prebuilt application package.
-      app:package:list           List application packages available for deployment .
-      app:package:upgrade        Build and deploy application package.
-
-Using prebuilt application packages speeds up the upgrade of applications (vanilla OroCommerce 5.1 LTS, exncluding custom migrations):
-
-* `orocloud-cli upgrade --reference=[git reference]` takes 1300 seconds with 800 seconds of maintenance mode.
-* `orocloud-cli app:package:upgrade [git reference]` takes 750 seconds with 230 seconds of maintenance mode.
-* `orocloud-cli app:package:deploy [package]` takes 400 seconds with 230 seconds of maintenance mode using pre-build package from the step above.
-
-To create an application package, run the `orocloud-cli app:package:build [git reference]` command:
-
-.. code-block:: bash
-
-    Application package harborio.oro.cloud/ocom-proj-dev1-reg1/orocommerce:5_1_0 is ready.
-
-Prebuilt application packages contain vendor packages, assets and other files and folders required for application runtime.
-
-To list available application packages, run the `orocloud-cli app:package:list` command:
-
-.. code-block:: bash
-
-    [user@ocom-proj-prod1-maint1 ~]$ orocloud-cli app:package:list
-    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+-------+
-    | Created At          | Environment              | Package                                                                                       | Label |
-    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+-------+
-    | 2023-03-21 20:37:28 | ocom-proj-uat1-reg1      | harborio.oro.cloud/ocom-proj-uat1-reg1/orocommerce:5_0_9                                      |       |
-    | 2023-01-18 22:12:56 | ocom-proj-dev1-reg1      | harborio.oro.cloud/ocom-proj-dev1-reg1/orocommerce:5_0_8                                      |       |
-    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+-------+
-
-To install an application packages, run the `orocloud-cli app:package:deploy [package] [--rolling] [--source]` command:
-
-* `orocloud-cli app:package:deploy [package]` equal to `orocloud-cli upgrade`.
-* `orocloud-cli app:package:deploy --rolling [package]` equal to `orocloud-cli upgrade:rolling`.
-* `orocloud-cli app:package:deploy --source [package]` `orocloud-cli upgrade:source`.
-
-To create and install an application packages at the same time, run the `orocloud-cli app:package:upgrade [git reference] [--rolling] [--source]` command:
-
-* `orocloud-cli app:package:upgrade [git reference]` equal to `orocloud-cli upgrade`.
-* `orocloud-cli app:package:upgrade --rolling [git reference]` equal to `orocloud-cli upgrade:rolling`.
-* `orocloud-cli app:package:upgrade --source [git reference]` `orocloud-cli upgrade:source`.
-
-
-Examples:
-
-
-.. code-block:: bash
-
-    # at ocom-proj-stag1
-
-    $ orocloud-cli app:package:build 5.1.0 --label=GA\ Release
-
-    $ orocloud-cli app:package:list
-    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+------------+
-    | Created At          | Environment              | Package                                                                                       | Label      |
-    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+------------+
-    | 2023-03-21 20:37:28 | ocom-proj-stag1-reg1     | harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0                                     | GA Release |
-
-    $ orocloud-cli app:package:deploy --rolling harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0
-
-    # later at ocom-proj-prod1
-
-    $ orocloud-cli app:package:deploy --rolling harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0
-
-
-.. code-block:: bash
-
-    # at ocom-proj-stag1
-
-    $ orocloud-cli app:package:upgrade --rolling 5.1.0 --label=GA\ Release
-
-    $ orocloud-cli app:package:list
-    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+------------+
-    | Created At          | Environment              | Package                                                                                       | Label      |
-    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+------------+
-    | 2023-03-21 20:37:28 | ocom-proj-stag1-reg1     | harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0                                     | GA Release |
-
-    # later at ocom-proj-prod1
-
-    $ orocloud-cli app:package:deploy --rolling harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0
-
-Upgrade
+Secrets
 -------
 
-During the Oro application upgrade, the Oro cloud maintenance tool pulls the new version of the application source code from the repository (either from a new tag, branch or commit) and runs the `oro:platform:update` command to launch the upgrade and any data migrations.
-
-.. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
-
-.. note:: By default, `upgrade` commands are run with the `--skip-search-reindexation` option. However, you can use the `--schedule-search-reindexation` option if you require reindexation.
-
-.. warning:: It is recommended to create a backup before launching an upgrade. If the upgrade does not succeed, you can roll back the application to the previous state and sustain all the data and configuration.
-
-To upgrade an Oro application, you can use the following modes:
-
-.. warning:: With the rolling upgrade, the source upgrade of the Oro application is not forced into maintenance mode; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before, and after the upgrade is simultaneously compatible with the old and new database structure. Usually, these are upgrades to minor versions. Do not drop tables, columns, or entity fields, and do not alter columns or entity field types.
-
-.. important:: Upgrade commands remove patches applied using :ref:`orocloud-cli patch:apply <orocloud-maintenance-patches>` command. Use can confirm it interactively or using `--skip-check-patches` option.
-
-Upgrade With Downtime
-~~~~~~~~~~~~~~~~~~~~~
-
-To upgrade the Oro application, run the `upgrade` command:
+Environment variables with secrets can be configured for application usage, as illustrated below:
 
 .. code-block:: none
 
-    orocloud-cli upgrade
+    $ orocloud-cli secret:list
 
-.. note:: You will be prompted to enter a tag, branch or commit to clone the application source file from. Use a valid tag, branch or commit from the Oro application repository, for example, the |1.6| branch, the|1.6.1| tag or the|d55c2f0| commit.
+    +-------+-------+--------+
+    | Name  | Value | Status |
+    +-------+-------+--------+
+    |     List is empty      |
+    +-------+-------+--------+
 
-This command executes the following operations:
+    $ orocloud-cli secret:set SHELL_VERBOSITY
 
-1. Enables the maintenance mode
-#. Stops the services (consumers, cron, websocket)
-#. Checks out the application code from the provided tag, branch or commit of the configured repository
-#. Installs the external dependencies via the composer install
-#. Performs `oro:platform:update` including assets
-#. Warms up layout caches
+    Type value:
+    > 1
 
-Once the cache warmup is complete, the maintenance mode is turned off, and the upgraded application is ready for use.
+    [OK] Secrets addition pending.
 
-Upgrade Without Downtime (Rolling Upgrade)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    $ orocloud-cli secret:apply
 
-.. warning:: With the rolling upgrade the Oro application is not forced into the maintenance mode; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before and after the upgrade are compatible with the old and new database structure simultaneously. Usually, these are upgrades to minor versions.
+    All you have to do is confirm the action [No]:
+    [y] Yes
+    [n] No
+    > y
+                                                                                                                            
+    [OK] Secrets successfully applied.       
 
-.. important:: Do not drop tables, columns, entity fields; do not alter columns, entity fields types, please.
+    $ orocloud-cli secret:list
 
-To perform Oro application upgrade without downtime, run the `upgrade:rolling` command:
-
-.. code-block:: none
-
-    orocloud-cli upgrade:rolling
-
-.. note:: You will be prompted to enter a tag, branch or commit to clone the application source file. Use a valid tag, branch or commit from the Oro application repository (for example, the |1.6| branch, the |1.6.1| tag or the|d55c2f0| commit).
-
-In the normal operation mode, this command executes the following operations:
-
-1. Checks out the code from a tag, branch or commit of the configured repository
-#. Installs the external dependencies via the composer install
-#. Build assets
-#. Performs `oro:platform:update --skip-assets`
-#. Warmup layout caches
-#. Restarts the related services (consumers, cron, websocket).
-
-Upgrade Without Downtime (Source Upgrade)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. warning:: With the source upgrade, the Oro application is not forced into maintenance mode; it runs and stays available for users during the upgrade process. This method is safe only when the Doctrine metadata does not change during the upgrade, or the versions before, and after the upgrade is simultaneously compatible with the old and new database structure. Usually, these are upgrades to minor versions.
-
-.. important:: Do not add new properties to existing Doctrine entities or new Doctrine entities.
-
-To perform Oro application upgrade without downtime, run the `upgrade:source` command:
-
-.. code-block:: none
-
-    orocloud-cli upgrade:source
-
-.. note:: You will be prompted to enter a tag, branch or commit to clone the application source file. Use a valid tag, branch or commit from the Oro application repository (for example, the |1.6| branch, the |1.6.1| tag or the |d55c2f0| commit).
-
-The purpose of this command is to deploy code changes (without updating dependencies) as quickly as possible.
-The difference between this command and the original upgrade:
-
-1. Checks out the code from a tag, branch or commit of the configured repository
-#. Installs the external dependencies via the composer install
-#. Build assets
-#. Warmup layout caches
-#. Restarts the related services (consumers, cron, websocket).
-
-.. note:: `oro:platform:update` is not executed.
-
-Backup
-------
-
-Once you start using the Oro application, you can establish a regular backup process. This process includes backing up the application media files, a database dump, and the application source code. However, it does not cover Elasticsearch and RabbitMQ. To restore data from a backup, run the ``backup:restore`` command as described later in the section.
-
-Backup Everything
-~~~~~~~~~~~~~~~~~
-
-To back up the application state, run the `backup:create` command:
-
-.. code-block:: none
-
-    orocloud-cli  backup:create [--label=my-backup]
-
-`--label` is an optional parameter for any comments related to the backup
-
-The List of Existing Backups
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To view the list of the backups, run the `backup:list` command:
-
-.. code-block:: none
-
-    orocloud-cli  backup:list
-
-The command output is similar to the following:
-
-.. code-block:: none
-
-    ➤ Executing task backup:list
-    +-----------------+-----------------------+
-    | DATE            | LABEL                 |
-    +-----------------+-----------------------+
-    | 2018-11-14-1725 | backup_before_upgrade |
-    | 2018-11-12-1425 | -                     |
-    | 2018-11-10-1025 | initial_deploy        |
-    +-----------------+-----------------------+
-    [localhost] Total 3 items.
-
-If the list is longer than one page, use the optional *page* parameter to switch between pages (e.g., *page=2*).
-
-By default, the command returns 25 backup records per page. To modify the number of records per page, use the optional *per-page* parameter (e.g. *per-page=50*).
-
-Restore Everything
-~~~~~~~~~~~~~~~~~~
-
-To restore the information from backup, run the `backup:restore` command. This will recover both the database and the application code, generating new caches. The command restores the application backup without media files from the specified backup time point. Media files can only be restored via a request to Support.
-
-The command also enables the maintenance mode. Once the restoration is complete, the maintenance mode is turned off.
-
-.. code-block:: none
-
-    orocloud-cli  backup:restore {backup_date}
-
-.. note:: The `{backup_date}` argument is the one of the available backups listed in the `backup:list` command output, e.g., `2018-11-12-1425`.
-
-
-.. _orocloud-maintenance-use-sanitized-backup:
-
-Sanitized Backup
-----------------
-
-Use the sanitized backups:
-
-* to share the sanitized data with the OroCloud and OroSupport team,
-* for local debug and development,
-* to sanitize and transfer database from the production to the staging environment, etc.
-
-The following commands are available:
-
-* **backup:create:sanitized** -- creates a sanitized backup of database data. Encryption is not applied
-* **backup:list:sanitized** -- lists available sanitized backups
-* **backup:restore:sanitized** -- restores the application from the sanitized backup
-
-Create a Sanitized Backup
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To display the command description and help, run:
-
-.. code-block:: none
-
-    orocloud-cli backup:create:sanitized --help
-
-.. code-block:: none
-
-    Description:
-      Creates a sanitized backup of database data. Encryption is not applied
-
-    Usage:
-      backup:create:sanitized [options]
-
-    Options:
-          --log=LOG                    Log to file
-      -h, --help                       Display a help message
-      -q, --quiet                      Do not output any message
-      -V, --version                    Display the application version
-      -n, --no-interaction             Do not ask any interactive question
-      -v|vv|vvv, --verbose             Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
-
-To create a backup, use the following command:
-
-.. code-block:: none
-
-    orocloud-cli backup:create:sanitized
-
-The command output is similar to the following:
-
-.. code-block:: none
-
-    ➤ Executing task backup:create:sanitized
-    [localhost] Done, sanitized backup saved to: '/mnt/ocom/backup/20200101102000-sanitized-db.sql.gz'
-    ✔ Ok [59s 77ms]
-
-The resulting backup is not encrypted and is located next to the ordinary encrypted backups.
-
-Once you have created the sanitized backup, you can determine its location with the `backup:list:sanitized` command and download it using:
-
-.. code-block:: none
-
-    scp oro_cloud_username@oro_cloud_hostname:/path/to/the/backup/file target_username@target_hostname:/path/to/the/target/backup/file
-
-.. hint:: Follow the :ref:`Restore a Database Dump <setup-from-db-dump_restore_local_cloud>` to see how to restore database dump locally.
-
-See :ref:`Sanitizing Configuration <orocloud-maintenance-advanced-use-sanitization-conf>` for details on how to configure the sanitizing scope and strategy.
-
-The List of Existing Sanitized Backups
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To review the list of available sanitized backups, their creation timestamps and the location they reside in, run:
-
-.. code-block:: none
-
-    orocloud-cli backup:list:sanitized
-
-The command output is similar to the following:
-
-.. code-block:: none
-
-    ➤ Executing task backup:list
-    +-----------------+-----------------------------------------------------+
-    | DATE            | PATH                                                |
-    +-----------------+-----------------------------------------------------+
-    | 2020-01-11-2121 | /mnt/ocom/backup/20200111212117-sanitized-db.sql.gz |
-    | 2020-01-10-1747 | /mnt/ocom/backup/20200110174752-sanitized-db.sql.gz |
-    +-----------------+-----------------------------------------------------+
-    [my-environment-staging] Total 2 item(s), 1 page(s). Current page: 1, items per page: 25.
-
-* **column "DATE"** - the date and time when a sanitized backup is created
-
-* **column "PATH"** - a full path where sanitized database dump is stored, so it can be used to download such backup.
-
-Restore Sanitized Backup
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-To display the command description and help, run the following:
-
-.. code-block:: none
-
-    orocloud-cli backup:restore:sanitized --help
-
-.. code-block:: none
-
-    Description:
-      Restores the application from the sanitized backup.
-
-    Usage:
-      backup:restore:sanitized [options] [--] [<backup-date>]
-
-    Arguments:
-      backup-date                                  A full path of the sanitized backup archive (*.gz). Can be retrieved with the `backup:list:sanitized` command.
-
-    Options:
-          --log=LOG                                Log to file
-          --force                                  Force operation restoration; otherwise, confirmation is requested.
-          --skip-assets-rebuild                    Skip application assets rebuild after backup restore.
-          --skip-cache-rebuild                     Skip application cache rebuild after backup restore.
-      -h, --help                                   Display a help message
-      -q, --quiet                                  Do not output any message
-      -V, --version                                Display the application version
-      -n, --no-interaction                         Do not ask any interactive question
-      -v|vv|vvv, --verbose                         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
-
-.. note:: For the cases when you are completely sure that application assets and cache are correct, for example, the restoration to the same backup, when the codebase is the same, and application cache is valid, it is possible to speed up the restore operation by disabling assets and cache rebuild with appropriate options **skip-assets-rebuild** and **skip-cache-rebuild**.
-
-To restore the information from the sanitized backup, run the `backup:restore:sanitized` command:
-
-.. code-block:: none
-
-    orocloud-cli  backup:restore:sanitized {backup_date}
-
-.. note:: The `{backup_date}` argument is one of the available backups listed in the `backup:list:sanitized` command output, e.g., `2020-01-01-1025`.
-
-.. note:: The command enables the maintenance mode, flushes Redis cache, stops PHP FPM, restores the application from sanitized backup, sets an application URL, rebuilds assets, rebuilds cache. Once the restoration is complete, the maintenance mode is turned off.
-
-The command output is similar to the following:
-
-.. code-block:: none
-
-    ➤ Executing task notification:start
-    ➤ Executing task notification:configure
-    ➤ Executing task deploy:get:current
-    Are you sure to restore application from sanitized backup `2020-01-01-1025`? [Y/n] Y
-    ➤ Executing task maintenance:lexik:create_lock_file
-    ➤ Executing task service:stop:consumer
-    ➤ Executing task service:stop:cron
-    ➤ Executing task service:stop:websocket
-    ➤ Executing task phpfpm:stop
-    ➤ Executing task redis:cache:flush
-    ➤ Executing task redis:doctrine:flush
-    ➤ Executing task redis:session:flush
-    ➤ Executing task redis:flush:not-used-db
-    ➤ Executing task backup:restore:sanitized:db
-    Done, 'local' sanitized backup '2020-01-01-1025' successfully restored.
-    ✔ Ok [8s 510ms] | [11s 55ms]
-    ➤ Executing task db:extensions:create
-    ➤ Executing task maintenance:update:application_url
-    Please provide application URL: [https://my-environment.oro-cloud.com]
-    ➤ Executing task backup:restore:sanitized:rebuild:assets
-    ➤ Executing task backup:restore:sanitized:rebuild:cache
-    ➤ Executing task phpfpm:restart
-    ➤ Executing task service:start:consumer
-    ➤ Executing task service:start:cron
-    ➤ Executing task service:start:websocket
-    ➤ Executing task maintenance:lexik:delete_lock_file
-    ➤ Executing task cache:front:warmup
-    [localhost]
-      Starting frontend check with URL:'https://my-environment.oro-cloud.com' and timeout '180' sec.
-    [localhost]
-      Frontend check completed with code '200' and took '10.76277' sec.
-    ➤ Executing task notification:finish
-    ✔ Ok [1ms] | [346s 741ms]
-
-.. note:: Keep in mind that after restoration from the sanitized backup, all application users credentials become invalid. To reset a password for the admin user, use the `orocloud-cli app:console "oro:user:update --user-password=new-admin-password admin"` command.
-
-.. note:: The ElasticSearch indices are NOT effected by restoration, so you may need to perform search reindex (for example, if a huge production sanitized database is restored on empty staging environment). For that, run the `orocloud-cli search:reindex` command.
-
-Application Commands
---------------------
-
-Custom Commands
-~~~~~~~~~~~~~~~
-
-Run application commands via `orocloud-cli app:console`, for example:
-
-.. code-block:: none
-
-    orocloud-cli app:console oro:user:list
-    orocloud-cli app:console oro:search:reindex
-
-To pass a command that contains arguments or options, wrap the command in quotes.
-
-.. code-block:: none
-
-    orocloud-cli app:console "oro:user:list --all"
-    orocloud-cli app:console 'oro:search:reindex --scheduled Oro\Bundle\UserBundle\Entity\User'
-
-Spaces and backslashes must be escaped with  ``\``.
-
-.. code-block:: none
-
-    orocloud-cli app:console "oro:user:list --roles=Sale\ Manager"
-    orocloud-cli app:console "oro:user:list --roles='Sale Manager'"
-    orocloud-cli app:console "oro:user:list --roles=\"Sale Manager\""
-    orocloud-cli app:console 'oro:user:list --roles=Sale\ Manager'
-    orocloud-cli app:console 'oro:user:list --roles="Sale Manager"'
-    orocloud-cli app:console 'oro:search:reindex Oro\Bundle\UserBundle\Entity\User'
-    orocloud-cli app:console "oro:search:reindex Oro\\Bundle\\UserBundle\\Entity\\User"
-    orocloud-cli app:console "oro:search:reindex Oro\Bundle\UserBundle\Entity\User"
-
-Schema Update
-~~~~~~~~~~~~~
-
-.. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
-
-Sometimes you may require to perform schema update operations. To do this, use the `orocloud-cli app:schema:update` command:
-
-.. code-block:: none
-
-    app:schema:update [--force]
-
-* `--force` is optional, it allows to skip execution confirmation.
-
-Application Cache
-~~~~~~~~~~~~~~~~~
-
-.. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
-
-Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache. If a :ref:`prebuilt application package <orocloud-maintenance-use-upgrade>` has been used to upgrade Oro applications in OroCloud the command is performed without downtime. This command does the following:
-
-* Stops `Consumer` and `Cron` jobs
-* Prepares `Redis` cache storage
-* Clears and warms up the application cache
-* Switches `Redis` storage
-* Starts `Consumer` and `Cron` jobs
-
-.. code-block:: none
-
-    orocloud-cli cache:rebuild [--force]
-
-.. note:: Since the `cache:rebuild` operation requires the `Consumer` and `Cron` jobs to be stopped, a confirmation message is displayed before execution.
-
-* `--force` is optional, it allows to skip execution confirmation.
-
-.. _orocloud-maintenance-use-media-upload:
-
-Cached Translated Values
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-:ref:`To add translations to the source code <dev-translation--add-to-source-code>`, run:
-
-.. code-block:: none
-
-    orocloud-cli app:translation:update
-
-API Cache
-~~~~~~~~~
-
-:ref:`Warmup API and API doc caches <oroapidoccacheclear-command>`
-
-.. code-block:: none
-
-    orocloud-cli app:cache:api
-
-Consumer
-~~~~~~~~
-
-:ref:`To run a consumer for a given queue for two minutes <dev-cookbook-system-mq-consumer>`, run:
-
-.. code-block:: none
-
-    orocloud-cli app:consumer oro.default
-
-Credentials Commands
---------------------
-
-.. note:: Credentials commands are not available in production (`prod`) environments.
-
-Get all connection credentials in the `yaml` format:
-
-.. code-block:: none
-
-    orocloud-cli credentials
-
-Get all connection credentials in the `json` format:
-
-.. code-block:: none
-
-    orocloud-cli credentials --format=json
-
-Get the connection credentials value:
-
-.. code-block:: none
-
-    orocloud-cli credentials --selector=[database][host]
-
-Media Commands
---------------
-
-.. note:: Commands are available with configured :ref:`OroGridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>` only.
-
-Media List
-~~~~~~~~~~
-
-To list files from the `uploads` adapter, use:
-
-.. code-block:: none
-
-    orocloud-cli media:list --adapter=uploads
-
-Use the `filter` prefix to filter listed files:
-
-.. code-block:: none
-
-    orocloud-cli media:list --adapter=public --filter=cache/attachment/filter/product_original
-
-Media Download
-~~~~~~~~~~~~~~
-
-Downloads media content from a source adapter to the destination (/mnt/ocom/backup or /mnt/ocrm/backup).
-
-To download a file from the `private` adapter, use:
-
-.. code-block:: none
-
-    orocloud-cli media:download --adapter=private attachments/61b0871967033945666770.jpeg
-
-To download full file backup from any adapter, use:
-
-.. code-block:: none
-
-    orocloud-cli media:dump private
-
-Media Upload
-~~~~~~~~~~~~
-
-.. note:: The files in the source directory always overwrite the same files in the destination directory. Please always use *underscores* instead of *spaces* for the ``source`` directory name and for all file names too.
-
-To upload media files and product images, use SFTP. It helps connect to the OroCommerce instance and transfer large amounts of data. To get SFTP access to your OroCloud instance, read the :ref:`related documentation <sftp-access>` and create a ticket in the support portal.
-
- The application must have a configured adapter: ``gaufrette_adapter.import_files: local:/mnt/sftproot``. In your CSV file, the path to the file should follow this format: ``/[sftp-user]/path/to/file/filename.jpg``.
-
-.. important:: Once you have uploaded the images via FTP/SFTP and moved them to the right location for the image import, please run :ref:`images import via the UI <user-guide-import-product-images>`, as this assigns the images to the products and makes them available in the asset library.
-
-
-Sometimes, you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` directory.
-This can be done with the ``media:upload`` command that allows to upload media files, e.g.,
-``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml | mp4``
-to the ``uploads`` gridFS database.
-
-.. note:: By default, the command runs in the ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with the ``--force`` flag.
-
-
-Usage examples:
-
-To display the command description and help, run the following:
-
-.. code-block:: none
-
-    orocloud-cli media:upload --help
-
-
-.. code-block:: none
-
-
-    Description:
-      Uploads media content from the given source to a selected destination: [uploads] (for GridFS).
-      Allowed file types: [ *.svg | *.ttf | *.woff | *.woff2 | *.jpg | *.jpeg | *.jp2 | *.jxr |
-       *.webp | *.gif | *.png | *.ico | *.css | *.scss | *.pdf | *.rtf | *.js | *.xml | mimetype ]
-
-    Usage:
-      media:upload [options] [--] [<source> [<destination>]]
-
-    Arguments:
-      source                A media source directory full path, e.g., `/tmp/media/`
-      destination           A media destination location. Allowed values: [ uploads ]
-
-    Options:
-          --log=LOG         Log to file
-          --cleanup-source  Deletes media sources after copying to the destination; otherwise, keeps sources.
-          --force           Transfers the media source directory content to the destination; otherwise, DRY-RUN mode
-      -h, --help            Display a help message
-      -q, --quiet           Do not output any message
-      -V, --version         Display the application version
-          --ansi            Force ANSI output
-          --no-ansi         Disable ANSI output
-      -n, --no-interaction  Do not ask any interactive question
-      -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
-
-The following command simulates (the command is executed in the ``DRY-RUN`` mode) the transfer of media files
-from the `/tmp/media` directory into the destination directory.
-Also, if some files cannot be transferred due to particular restrictions, the appropriate notification is displayed.
-
-.. code-block:: none
-
-    orocloud-cli media:upload /tmp/media
-
-.. code-block:: none
-
-    ➤ Executing task media:upload
-    100 files processed, last batch size is 16.08 MB.
-    160 files processed, last batch size is 4.09 MB.
-
-    Media transfer executed in DRY-RUN mode.
-    Please check output and if everything is fine - execute the command with the --force` flag.
-
-The following command transfers media files from the `/tmp/media` directory into the destination. The command is executed in the ``FORCED`` mode.
-
-.. code-block:: none
-
-    orocloud-cli media:upload /tmp/media --force
-
-.. code-block:: none
-
-    ➤ Executing task media:upload
-    100 files processed, last batch size is 16.08 MB.
-    160 files processed, last batch size is 4.09 MB.
-
-    Media has been transferred successfully (total 160 files, 20.16 MB).
-    ✔ Ok
-
-If source file extension is not allowed, the appropriate notification is displayed. For example:
-
-.. code-block:: none
-
-    ➤ Executing task media:upload
-    100 files processed, last batch size is 16.08 MB.
-    160 files processed, last batch size is 4.09 MB.
-
-    Media transfer executed in DRY-RUN mode.
-    Please check output and if everything is fine - execute the command with the --force` flag.
-
-    The following files CAN NOT be transferred:
-    +---------------------------------+------------------------------------+
-    | File path                       | Error reason                       |
-    +---------------------------------+------------------------------------+
-    | /tmp/media/dev.lock             | The file extension IS NOT allowed. |
-    +---------------------------------+------------------------------------+
-    ✔ Ok
-
-
-
-Media Delete
-~~~~~~~~~~~~
-
-This command removes the file or files within the designated folder recursively using the provided destination.
-
-To delete a file from the `uploads` destination, use
-
-.. code-block:: none
-
-    orocloud-cli media:delete --adapter=uploads consents.pdf
-
-To delete folder files from the `uploads` destination recursively, use
-
-.. code-block:: none
-
-    orocloud-cli media:delete --adapter=uploads consent_documents
-
-In both cases, the information about deleted files is revealed during the execution of the command.
-
-RabbitMQ Commands
------------------
-
-The RabbitMQ commands allows to list vhosts, queues, messages in queue, and to purge any queue.
-
-RabbitMq List
-~~~~~~~~~~~~~
-
-To view the messages list of the RabbitMQ, use the `rabbitmq:queue:list` command.
-
-.. code-block:: none
-
-    rabbitmq:queue:list [options] [--] [<vhost> [<queue>]]
-
-* `vhost` argument is required, RabbitMQ vhost name, e.g., `oro`.
-* `queue` argument is required, RabbitMQ queue name, e.g., `oro.default`.
-
-To get the list of available ``vhost`` values, please execute `rabbitmq:queue:list` without arguments, for example:
-
-.. code-block:: none
-
-    orocloud-cli rabbitmq:queue:list
-
-.. code-block:: none
-
-    The argument 'vhost' is missing. Please provide one.
-
-    +------------+---------+
-    | vhost name | message |
-    +------------+---------+
-    | "oro"      | "2"     |
-    | "/"        | ""      |
-    +------------+---------+
-    [localhost] Total 2 item(s), 1 page(s). Current page: 1, items per page: 25.
-
-To get the list of available ``queue`` values, please execute `rabbitmq:queue:list` with the ``vhost`` argument only, for example:
-
-.. code-block:: none
-
-    orocloud-cli rabbitmq:queue:list oro
-
-.. code-block:: none
-
-    The argument 'queue' is missing. Please provide one.
-    +---------------+---------+
-    | queue name    | message |
-    +---------------+---------+
-    | "oro.default" | "3"     |
-    +---------------+---------+
-
-To get the list of messages, please execute `rabbitmq:queue:list` with the ``vhost`` and ``queue`` arguments, for example:
-
-.. code-block:: none
-
-    orocloud-cli rabbitmq:queue:list oro oro.default
-
-.. code-block:: none
-
-    +------------------------+---------+----------------------------------------------------+-------------+
-    | routing key            | message | payload                                            | redelivered |
-    +------------------------+---------+----------------------------------------------------+-------------+
-    | "oro.cron.run_command" | "0"     | "{"command":"oro:cron:imap-sync","arguments":[]}"  | "True"      |
-    +------------------------+---------+----------------------------------------------------+-------------+
-    [localhost] Total 1 item(s), 1 page(s). Current page: 1, items per page: 25.
-
-.. note:: The messages list is limited to 1000 records.
-
-RabbitMq Purge
-~~~~~~~~~~~~~~
-
-To purge the messages from the RabbitMQ, use the `rabbitmq:queue:purge` command.
-
-.. code-block:: none
-
-    rabbitmq:queue:purge [options] [--] [<vhost> [<queue>]]
-
-* `vhost` argument is required, RabbitMQ vhost name, e.g., `oro`.
-* `queue` argument is required, RabbitMQ queue name, e.g., `oro.default`.
-
-.. note:: The ``vhost`` and ``queue`` argument values can be retrieved with the `rabbitmq:queue:list` command.
-
-RabbitMq Reroute
-~~~~~~~~~~~~~~~~
-
-To reroute the messages from RabbitMQ queue to exchange, use the `rabbitmq:reroute:queue` command.
-
-.. code-block:: none
-
-    rabbitmq:reroute:queue [options] [--] [<queue> [<exchange>]]
-
-* `queue` argument is required, RabbitMQ queue name, e.g., `oro.unprocessed`.
-* `exchange` argument is required, RabbitMQ exchange name, e.g., `oro.default`.
-* `contains` option is optional, filter messages by the topic name ("oro.message_queue.client.topic_name" key), examples: "oro.search", "reindex", "oro.search.reindex". Default - all messages.
-
-.. note:: The ``queue`` argument value can be retrieved with the `rabbitmq:queue:list` command.
-
-Service Commands
-----------------
-
-Service commands allow to manipulate with application services.
-
-Check Consumers Status
-~~~~~~~~~~~~~~~~~~~~~~
-
-To check consumers status, use the `service:status:consumer` command.
-
-.. code-block:: none
-
-    service:status:consumer [options] [--] [<host>]
-
-The `host` parameter is optional. You can list services from specified job host only. If no parameter is specified,`all` is used by default.
-
-Maintenance Commands
---------------------
-
-Maintenance commands enable you to turn on the maintenance mode for the webserver and services (consumers, cron, websocket).
-
-Oro Support Team will get a P1 notification after 1 hour of enabled maintenance mode.
-You can set custom downtime duration and comment to avoid P1 escalation using the following options:
-
-.. code-block:: none
-
-    --downtime-duration[=DOWNTIME-DURATION]  (OPTIONAL) Downtime duration, by default 1 hour. Expected format: '{number}d{number}h{number}m'. Usage example: '1d3h15m' means 1 day 3 hours 15 minutes OR '30m' means 30 minutes.
-    --downtime-comment[=DOWNTIME-COMMENT]    Comment for provided custom downtime value. Required if [downtime-duration] provided. Wrap with double-quotes if contains spaces.
-
-Maintenance On
-~~~~~~~~~~~~~~
-
-To enable maintenance mode for the webserver and services (consumers, cron, websocket), use the `maintenance:on` command.
-
-
-.. code-block:: none
-
-    maintenance:on [--force]
-
-* `--force` is optional, it allows to skip execution confirmation.
-
-Maintenance Off
-~~~~~~~~~~~~~~~
-
-To disable maintenance mode for the webserver and services (consumers, cron, websocket), use the `maintenance:off` command.
-
-.. code-block:: none
-
-    maintenance:off [--force]
-
-* `--force` is optional, it allows to skip execution confirmation.
-
-Emergency Commands
-------------------
-
-Emergency commands enable you to turn the maintenance mode for the webserver without stopping services.
-
-Emergency On
-~~~~~~~~~~~~
-
-The idea behind this command is that it does not block the infrastructure from changes that are rolling out continuously (unlike when you turn on the usual maintenance where the infrastructure is blocked from rolling out changes).
-
-To enable emergency mode for the webserver without stopping services, use the `emergency:on` command.
-
-.. code-block:: none
-
-    emergency:on [--force]
-
-* `--force` is optional, it allows to skip execution confirmation.
-
-Emergency Off
-~~~~~~~~~~~~~
-
-To disable emergency mode for the webserver, use the `emergency:off` command.
-
-.. code-block:: none
-
-    emergency:off [--force]
-
-* `--force` is optional, it allows to skip execution confirmation.
-
+    +-----------------+-------+--------+
+    | Name            | Value | Status |
+    +-----------------+-------+--------+
+    | SHELL_VERBOSITY | *     | Ready  |
+    +-----------------+-------+--------+
 
 .. admonition:: Business Tip
 
    Want to know everything on |eCommerce B2B| and understand how it differs from B2C? Read our detailed guide on this topic.
-
-
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin

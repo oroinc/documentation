@@ -19,17 +19,21 @@ The OroCloud application maintenance tool helps you to run and control complex m
 
    before-you-begin
    basic-use
+   Running Upgrades <run-upgrades>
+   Creating Backups <backups>
+   application-commands
+   Working with Queues <queues>
+   Working with Services <services>
+   Managing Maintenance Mode <maintenance-mode>
+   Working with the Media <media>
    advanced-use
    dif-environments
    deploy-pre-built-assets
-   patches
+   Applying Patches <patches>
    errors
-   scheduled-tasks
-   env-vars
-   faq
-
-* :ref:`Technical support <cloud_support>` service details (exclusions, priorities, SLA, etc).
-
+   Adding/Removing Scheduled Tasks <scheduled-tasks>
+   Adding/Removing Environment Variables <env-vars>
+   FAQs <faq>
 
 .. admonition:: Business Tip
 
