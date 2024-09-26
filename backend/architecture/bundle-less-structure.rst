@@ -602,6 +602,43 @@ Once the asset is placed in the public folder, you can reference it within your 
     {# the image lives at "public/images/example.jpg" #}
     <img src="{{ asset('images/example.jpg') }}" alt="Example Image"/>
 
+
+JS Modules
+~~~~~~~~~~
+
+Location of `jsmodules.yml` is as follows:
+
+- In the back-office  - ``oro-application/config/oro/jsmodules.yml``
+- In the storefront - ``oro-application/templates/layouts/{oro_theme_name}/config/jsmodules.yml``
+
+Below is an example of the webpack entry points configuration:
+
+.. code-block:: yaml
+
+    ...
+
+        entry:
+            app:
+                - js/example-module # path is relative
+
+    ...
+
+As an example, the specified resource ``js/example-module`` can be stored in the following ways:
+
+- oro-application/public/js/example-module.js
+- oro-application/assets/js/example-module.js
+- ...
+
+The path specified for any asset resource is relative, and the webpack builder will search for it in the following sequence:
+
+-  public/build/{themeName}
+-  public
+-  {resolvedExtraPaths} # if they are in the theme settings
+-  public/assets
+-  public/bundles
+-  public/js
+-  node_modules
+
 Admin Theme Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
