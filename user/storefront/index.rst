@@ -46,6 +46,7 @@ Before you proceed, consider watching the following media library tutorials:
    Navigation and UI <getting-started/index>
    Register and Log In <register/index>
    My Account <account/index>
+   Conversations <conversations/index>
    Orders <orders/index>
    Quotes <quotes/index>
    Quick Order Form <quick-order-form>

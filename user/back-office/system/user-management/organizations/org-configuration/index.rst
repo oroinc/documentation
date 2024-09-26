@@ -44,7 +44,7 @@ The following categories of settings are available for system configuration at o
   * Customer
 
     * :ref:`Customer Users <system--user-mngm--organization--configuration--commerce--customers--customer-users>`
-    * :ref:`Customer Requests <sys--conf--commerce--customer--contact-request-organization>`
+    * :ref:`Interactions <sys--conf--commerce--customer--interactions-organization>`
 
   * Design
 

@@ -458,3 +458,8 @@ backend/setup/dev-environment/enterprise-edition /backend/setup/dev-environment/
 backend/setup/dev-environment/docker-and-symfony/mac /backend/setup/dev-environment/mac
 backend/setup/dev-environment/docker-and-symfony/ubuntu /backend/setup/dev-environment/ubuntu
 backend/setup/dev-environment/docker-and-symfony/windows /backend/setup/dev-environment/windows
+user/back-office/system/configuration/commerce/customer/global-consents /user/back-office/system/configuration/commerce/customer/global-interactions
+user/back-office/system/configuration/commerce/customer/global-contact-us /user/back-office/system/configuration/commerce/customer/global-interactions
+user/back-office/system/user-management/organizations/org-configuration/commerce/customers/organization-contact-us /user/back-office/system/user-management/organizations/org-configuration/commerce/customers/organization-interactions
+user/back-office/system/websites/web-configuration/commerce/customers/website-consents /user/back-office/system/websites/web-configuration/commerce/customers/website-interactions
+user/back-office/system/websites/web-configuration/commerce/customers/website-contact-us /user/back-office/system/websites/web-configuration/commerce/customers/website-interactions

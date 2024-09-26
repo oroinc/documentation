@@ -46,9 +46,8 @@ More information about the options available for each of the two categories is a
 
   * Customer
 
-    * :ref:`Contact Requests <sys--conf--commerce--customer--contact-request-website>`
     * :ref:`Customer Users <system--website--configuration--commerce--customers--customer-users>`
-    * :ref:`Consents <admin--guide--commerce--configuration--customers--consents--enable--website>`
+    * :ref:`Interactions <system--website--configuration--commerce--customers--interactions>`
 
   * :ref:`Guests <sys--conf--commerce--guest>`
 
