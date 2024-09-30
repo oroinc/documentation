@@ -250,6 +250,26 @@ API
 
   {BundleDir}/Resources/config/oro/api.yml -> config/oro/api/{your_api_name.yml}
 
+.. note::
+
+    In the bundle-less structure, `documentation_resource` path must be defined as a relative path from the App`s root directory.
+
+    For example:
+
+        .. code-block:: yaml
+
+            # File placed `AppRootDir/doc/api/frontend/user.md`
+            api:
+                entities:
+                    App\Entity\User:
+                        documentation_resource: 'doc/api/frontend/user.md'
+                        ...
+
+    This feature is available as of OroPlatform version 6.0.3.
+
+
+For more information, see :ref:`Documenting API Resources <web-api--doc>`.
+
 Channels
 ~~~~~~~~
 
