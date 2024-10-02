@@ -40,7 +40,7 @@ Create your new Oro application project with the composer by running one of the 
    # OroCommerce Enterprise Edition (without CRM)
    composer create-project oro/commerce-enterprise-application my_project_name 6.0.3 --repository=https://satis.oroinc.com -n
 
-.. hint:: Version ``6.0.3` is an example. Please replace it with the version you want to download.
+.. hint:: Version ``6.0.3`` is an example. Please replace it with the version you want to download.
 
 This command creates a new directory called `my_project_name/` that contains an empty project. An absolute path to the directory will be used in the following steps and will be referred to as **<application-root-folder>** further in this topic.
 
