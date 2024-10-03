@@ -8,7 +8,7 @@ Manage Master Catalog in the Back-Office
 
 .. hint:: This section is part of the :ref:`Master Catalog <concept-guide-master-catalog>` concept guide topic that provides a general understanding of the master catalog concept in OroCommerce.
 
-:term:`Master Catalog` is a tree structure that organizes all the products of your store under corresponding categories. A category combines the products of the same type into groups and helps enforce the unified selling strategy by configuring a special set of product options, :ref:`visibility <products--product-visibility>`, and SEO settings that best fit the resulting product family.
+:term:`Master Catalog` is a tree structure that organizes all the products of your store under corresponding categories. A category combines the products of the same type into groups and helps enforce the unified selling strategy by configuring a special set of product options, visibility, and SEO settings that best fit the resulting product family.
 
 Once the categories are in place, you can:
 
@@ -78,26 +78,7 @@ To create a master catalog category:
 
 8. The **Activity** section displays all the :ref:`activities <user-guide-productivity-tools>` available for the selected category, such as *call*, *task*, *email*, *note*, or *calendar event*. You can use filters to select any activity type and the date of its implementation.
 
-.. _master-catalog-visibility:
-
-9. In the **Visibility** section, you can set a visibility restriction for the master catalog category and the products assigned to this category by clicking the necessary tab.
-
-   * **Visibility to All** --- The default visibility settings of the selected category.
-   * **Visibility to Customer Groups** --- The settings that define whether to show or hide the selected category from the group of customers in the storefront. Customers can be grouped based on authentication options or the type of business that the customers are in.
-   * **Visibility to Customers** --- The settings that define whether to show or hide the selected category from the user's organization or business unit (customer) in the storefront.
-
-In the tab, select one of the following options:
-
-   .. image:: /user/img/products/master_catalog/master_catalog_6.png
-      :width: 50%
-      :alt: The visibility options available in the visibility section
-
-   * *Parent Category* — Inherit the configuration from the parent category. In other words, when the *Parent Category* value is selected in the **Visibility to All** field, the current category visibility settings equal the value defined for the **Visibility to All** field of the parent category. Similarly, **Visibility to Customers = Parent Category** equals the value defined in the **Visibility to Customers** field of the parent category, and **Visibility to Customer Groups = Parent Category** equals the value defined in the **Visibility to Customer Groups** field of the parent category.
-   * *Config* — Inherit the :ref:`category visibility settings <user-guide--customers--configuration--visibility>` customized in the system configuration menu.
-   * *Hidden* — The category will be hidden from the storefront.
-   * *Visible* — The category will be shown in the storefront.
-
-10. In the **SEO** section, fill in the following details to help search engines show your master catalog content to the relevant audience.
+9. In the **SEO** section, fill in the following details to help search engines show your master catalog content to the relevant audience.
 
    * **Meta Keywords** --- Enter the meta keywords for the product. A meta keyword is a specific type of meta tag that appears in the HTML code of a web page and helps tell search engines what the topic of the page is.
    * **Meta Title** --- Enter the meta title for the product. A meta title is what is seen by the search engine users and helps a search engine to index the page.
@@ -105,12 +86,86 @@ In the tab, select one of the following options:
 
    Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-11. Click **Save** on the top right.
+10. Click **Save** on the top right.
 
 .. note:: You can drag the created category to a different position within the content tree on the left of the page, as illustrated below:
 
 .. image:: /user/img/products/master_catalog/master_catalog_8.png
    :alt: Show what happens when you drag a category to a different position
+
+
+
+.. _master-catalog-visibility:
+
+Manage Category Visibility
+--------------------------
+
+In the **Visibility** section, you can set a visibility restriction for the master catalog category and the products assigned to this category. However, visibility per individual product is controlled by the :ref:`product visibility settings <products--product-visibility>`.
+
+.. image:: /user/img/products/master_catalog/category-visibility.png
+   :alt: View the global visibility settings for products and categories under the system configuration page
+
+Click the necessary tab to configure the visibility of the selected category.
+
+.. important::
+
+            You can define system-wide category visibility for existing customers. This setting applies only whenever a category visibility configuration is set to **Config**. These settings apply :ref:`globally <user-guide--customers--configuration--visibility>` and can be toggled under **System > Configuration > Commerce > Customer > Visibility**.
+
+            .. image:: /user/img/products/master_catalog/ConfigVisibilityOptions.png
+               :alt: View the global visibility settings for products and categories under the system configuration page
+
+
+Category Visibility to All
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This setting controls the default visibility for the selected category and applies to all customers and customer groups unless otherwise configured. The available options include:
+
+* *Parent Category* -- Inherits configuration from the parent master catalog category. It means that the current category visibility settings equal the value defined in the **Category Visibility to All** field of the parent master catalog category. This option is available only for non-root categories.
+* *Config* -- Inherits settings from the :ref:`global system configuration <user-guide--customers--configuration--visibility>`.
+* *Hidden* -- The category is hidden from the storefront for all customers.
+* *Visible* -- The category is visible to all customers in the storefront.
+
+.. image:: /user/img/products/master_catalog/category-visibility-to-all.png
+   :alt: View the category visibility settings applied to all customers
+
+
+Category Visibility to Customer Groups
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The setting controls if the category is shown to the customers who are members of a particular customer group (wholesalers, retailers, VIP customers, or guests, etc). You can configure specific settings for these groups based on their relationship with your business. Use one of the following options:
+
+* *Visibility to All* -- Inherits the default category visibility configuration, meaning it matches the settings defined under the **Category Visibility to All** section for this category. By default, this setting is pre-populated for any new customer group.
+* *Parent Category* -- Inherits configuration from the parent master catalog category. It means that the current category visibility settings equal the value defined in the **Category Visibility to Customer Groups** field of the parent master catalog category. This option is available only for non-root categories.
+* *Hidden* -- The category is hidden from the storefront for the selected customer group.
+* *Visible* -- The category is visible to the selected customer group in the storefront.
+
+.. image:: /user/img/products/master_catalog/category-visibility-to-customer-groups.png
+   :alt: View the category visibility settings applied to customers groups
+
+Category Visibility to Customers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The setting controls if the category is shown to individual customers or businesses (Customer A, Customer B, etc). For instance, if a category is only available to selected customers, you can hide it from others. Use one of the following options:
+
+* *Customer Group* -- Inherits the category visibility configuration from the customer group to which the selected customer is assigned, meaning it matches the settings defined under the **Category Visibility to Customer Groups** section for this category. By default, this setting is pre-populated for any new customer.
+* *Visibility to All* -- Inherits the default category visibility configuration, meaning it matches the settings defined under the **Category Visibility to All** section for this category.
+* *Parent Category* -- Inherits configuration from the parent master catalog category. It means that the current category visibility settings equal the value defined in the **Category Visibility to Customers** field of the parent master catalog category. This option is available only for non-root categories.
+* *Hidden* -- The category is hidden from the storefront for the selected customer.
+* *Visible* -- The category is visible to the selected customer in the storefront.
+
+.. image:: /user/img/products/master_catalog/category-visibility-to-customers.png
+   :alt: View the category visibility settings applied to customers
+
+Category Visibility Priorities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **System-wide Category Visibility**: This is the global category visibility setting that applies across the entire system whenever the category visibility configuration is set to **Config**.
+* **Parent Category Visibility**: Inherits settings from the parent category unless specifically overridden by a subcategory or product visibility.
+* **Category Visibility to All**: Controls the visibility of the product’s category and overrides the parent category visibility.
+* **Customer Group Visibility**: Overrides the default category visibility. If a category is visible to a customer group, it applies to all customers in that group.
+* **Customer Visibility**: Overrides visibility for a customer group. If a category is set to be visible per individual customers, it remains visible to these customers even if visibility for a customer group to which the customer is assigned is set to be hidden.
+
+
 
 Create a Master Catalog Subcategory
 -----------------------------------
@@ -147,7 +202,7 @@ Proceed with the following steps:
 
 **Related Articles**
 
-* :ref:`Configure Product and Category Visibility to Customers <user-guide--customers--configuration--visibility>`
+* :ref:`Configure Product Visibility to Customers <user-guide--customers--configuration--visibility>`
 
 * :ref:`Web Catalog <user-guide--web-catalog>`
 
@@ -157,7 +212,6 @@ Proceed with the following steps:
 
    import-categories
    export-categories
-
 
 .. include:: /include/include-images.rst
    :start-after: begin

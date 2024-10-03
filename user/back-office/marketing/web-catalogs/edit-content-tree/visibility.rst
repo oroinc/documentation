@@ -9,8 +9,8 @@ Customize Web Catalog Contents for Localization, Customer, Customer Group, or We
 
 .. begin
 
-Set Up Visibility of Content Node
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Set Content Node Visibility Restrictions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By default, the web catalog with all its nodes has no visibility restrictions and can be displayed for any localization, on any website, and for any customer.
 
@@ -30,8 +30,8 @@ To modify the inherited default settings, clear the **Inherit Parent** box, and 
 .. image:: /user/img/marketing/web_catalogs/InheritParentOff.png
    :alt: Modify the inherited default settings by clearing the Inherit Parent box
 
-Set Up Visibility of Content Variants
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Set Content Variants Visibility Restrictions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once you add more than one content variant, you must apply restrictions to any non-default variants.
 

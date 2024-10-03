@@ -28,3 +28,8 @@ To change the default product and category visibility settings:
      b) Select the updated setting (e.g., visible or hidden).
 
 4. Click **Save**.
+
+**Related Topics**
+
+* :ref:`Manage Product Visibility <products--product-visibility>`.
+* :ref:`Manage Category Visibility <master-catalog-visibility>`.
