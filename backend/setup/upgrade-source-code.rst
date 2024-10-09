@@ -25,59 +25,61 @@ Preserve Old Custom Theme
 If you are upgrading from version 5.0 or 5.1 and wish to save time and resources by reusing the existing theme,
 you can dump it before the upgrade. First, you need to require the ``oro/theme-migration package``:
 
-    .. code-block:: none
+.. code-block:: none
 
-        composer require --dev oro/theme-migration --no-scripts
+   composer require --dev oro/theme-migration --no-scripts
 
-    .. warning::
+Please ensure that a theme package is created for the current (old) version you are upgrading from, not the target version.
 
-        The oro/theme-migration bundle requires the oro/platform version of at least 5.0.18 or 5.1.6.
-        If you encounter the error below, it may be due to having older versions of the oro/platform:
+.. warning::
 
-            .. code-block:: none
+    The oro/theme-migration bundle requires the oro/platform version of at least 5.0.18 or 5.1.6.
+    If you encounter the error below, it may be due to having older versions of the oro/platform:
 
-                Your requirements could not be resolved to an installable set of packages.
+        .. code-block:: none
 
-        To resolve this, consider upgrading related dependencies by re-running the command
-        with the ``--with-all-dependencies`` option.
+            Your requirements could not be resolved to an installable set of packages.
 
-            .. code-block:: none
+    To resolve this, consider upgrading related dependencies by re-running the command
+    with the ``--with-all-dependencies`` option.
 
-                composer require --dev oro/theme-migration --no-scripts --with-all-dependencies
+        .. code-block:: none
+
+            composer require --dev oro/theme-migration --no-scripts --with-all-dependencies
 
 .. note:: Please note that oro/platform 5.0.18 is available only for Enterprise customers and partners.
 
 Next, run the following commands:
 
-    .. code-block:: none
+.. code-block:: none
 
-       rm -rf var/cache/*
-       rm -rf public/bundles/*
-       php bin/console assets:install
-       php bin/console oro:theme:migrate
+   rm -rf var/cache/*
+   rm -rf public/bundles/*
+   php bin/console assets:install
+   php bin/console oro:theme:migrate
 
 The last command generates a new bundle with the old theme dump in the src/ folder called OroThemeDefaultXXBundle.
 
-.. hint:: Here and below, XX is the alias of the version you are upgrading. For 5.0, it’s 50; for 5.1, it’s 51.
+.. hint:: Here and below, XX is the alias of the version you are upgrading. For 5.0, it is 50; for 5.1, it is 51.
 
 You can now add the newly generated bundle to VCS. It will be used later as the base theme for all your custom themes:
 
-   .. code-block:: none
+.. code-block:: none
 
-       git add src/Oro/Bundle/ThemeDefault*
-       git commit -m "Generated OroThemeDefaultXXBundle"
-       git push
+    git add src/Oro/Bundle/ThemeDefault*
+    git commit -m "Generated OroThemeDefaultXXBundle"
+    git push
 
 Update the theme.yml file of the custom theme.
 
-   .. code-block:: yaml
+.. code-block:: yaml
 
-        ...
-        parent: default_XX
-        ...
-        resolve_extra_paths:
-            - /bundles/orothemedefaultXX
-        ...
+     ...
+     parent: default_XX
+     ...
+     resolve_extra_paths:
+         - /bundles/orothemedefaultXX
+     ...
 
 The resolve_extra_paths option in the generated code
 requires the "@oroinc/oro-webpack-config-builder" node module upgrade to version "6.0.0-dev002" or later. Therefore,  this code is not currently compatible with the old version but will work after upgrading the project to v6.
@@ -172,7 +174,7 @@ Overview & Estimates
 
 You can use the ``oro/upgrade-toolkit`` package to automatically migrate a significant portion of the PHP code.
 
-It's important to note that the tool handles most PHP changes but does not upgrade YAML, Twig, JS, or SCSS.
+It is important to note that the tool handles most PHP changes but does not upgrade YAML, Twig, JS, or SCSS.
 However, you can skip the frontend assets upgrade if you've used the theme dump as described earlier.
 Back-office customization and changes to YAML files should be processed manually.
 
@@ -199,15 +201,15 @@ Automatic Code Migration
 
 First, install the Oro Source Code Upgrade Toolkit:
 
-   .. code-block:: none
+.. code-block:: none
 
-       composer require oro/upgrade-toolkit:dev-master --dev
+    composer require oro/upgrade-toolkit:dev-master --dev
 
 Next, run the automatic migrations with the following command:
 
-   .. code-block:: none
+.. code-block:: none
 
-       php bin/upgrade-toolkit
+    php bin/upgrade-toolkit
 
 To verify the results without making any changes, you can add ``--dry-run`` to the ``bin/upgrade-toolkit`` command.
 
@@ -252,20 +254,20 @@ You may need to make some manual adjustments to ensure they meet the project's c
 We recommend using PhpStorm's built-in
 |Code > Reformat Code| feature for the changed files:
 
-    .. image:: /img/backend/setup/upgrade/php_storm_reformat_code.png
-       :alt: PhpStorm's Reformat Code image
+.. image:: /img/backend/setup/upgrade/php_storm_reformat_code.png
+   :alt: PhpStorm's Reformat Code image
 
 Run Our Php-CS-Fixer by running the following commands:
 
-    .. code-block:: none
+.. code-block:: none
 
-        php bin/php-cs-fixer fix src --verbose --config=vendor/oro/platform/build/.php-cs-fixer.php
+    php bin/php-cs-fixer fix src --verbose --config=vendor/oro/platform/build/.php-cs-fixer.php
 
 You can enforce PHP_CodeSniffer rules by running the phpcbf script to automatically correct coding standard violations:
 
-    .. code-block:: none
+.. code-block:: none
 
-        php bin/phpcbf src/ -p --encoding=utf-8 --extensions=php --standard=vendor/oro/platform/build/Oro/phpcs.xml
+    php bin/phpcbf src/ -p --encoding=utf-8 --extensions=php --standard=vendor/oro/platform/build/Oro/phpcs.xml
 
 Testing
 -------
