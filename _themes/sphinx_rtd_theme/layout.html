@@ -194,7 +194,13 @@
                 </nav>
               </div>
             </div>
-            {% include "versions.html"%}
+            {%- if current_version %}
+              {% if '/cloud/' not in versions.branches|join(' ') %}
+                {% include "versions.html"%}
+              {% else %}
+                {# include "versions_cloud.html" #}
+              {%- endif %}
+            {%- endif %}
           </div>
         </aside>
         {% endif %}

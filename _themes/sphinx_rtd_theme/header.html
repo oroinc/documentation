@@ -2,72 +2,72 @@
 {%- set current_item = "users" %}
 {%- set current_subitem = "concept-guides" %}
 {%- if current_version and current_version.release != '' %}
-    {%- set version_pref = "/" + current_version.release %}
+{%- set version_pref = "/" + current_version.release %}
 {%- endif %}
 
 {% if 'concept-guides' in pagename %}
-    {%- set current_subitem = "concept-guides" %} 
+{%- set current_subitem = "concept-guides" %}
 {% endif %}
 {% if 'user/back-office' in pagename %}
-    {%- set current_subitem = "back-office" %}  
+{%- set current_subitem = "back-office" %}
 {% endif %}
 {% if 'user/storefront' in pagename %}
-    {%- set current_subitem = "storefront" %}  
+{%- set current_subitem = "storefront" %}
 {% endif %}
 {% if 'user/glossary' in pagename %}
-    {%- set current_subitem = "glossary" %} 
+{%- set current_subitem = "glossary" %}
 {% endif %}
 {% if 'user/integrations' in pagename %}
-    {%- set current_subitem = "integrations" %} 
+{%- set current_subitem = "integrations" %}
 {% endif %}
 
 {% if 'backend' in pagename %}
-    {%- set current_item = "developers" %} 
-    {%- set current_subitem = "backend" %} 
+{%- set current_item = "developers" %}
+{%- set current_subitem = "backend" %}
 {% endif %}
 {% if 'frontend' in pagename %}
-    {%- set current_item = "developers" %} 
-    {%- set current_subitem = "frontend" %}  
+{%- set current_item = "developers" %}
+{%- set current_subitem = "frontend" %}
 {% endif %}
 {% if 'bundles' in pagename %}
-    {%- set current_item = "developers" %} 
-    {%- set current_subitem = "bundles" %}  
+{%- set current_item = "developers" %}
+{%- set current_subitem = "bundles" %}
 {% endif %}
 {% if 'api' in pagename %}
-    {%- set current_item = "developers" %}  
-    {%- set current_subitem = "api" %} 
+{%- set current_item = "developers" %}
+{%- set current_subitem = "api" %}
 {% endif %}
 {% if 'community' in pagename %}
-    {%- set current_item = "developers" %}  
-    {%- set current_subitem = "community" %} 
+{%- set current_item = "developers" %}
+{%- set current_subitem = "community" %}
 {% endif %}
 
 {% if 'cloud' in pagename %}
-    {%- set current_item = "cloud" %}  
+{%- set current_item = "cloud" %}
 {% endif %}
 {% if 'cloud/architecture' in pagename %}
-    {%- set current_subitem = "architecture" %} 
+{%- set current_subitem = "architecture" %}
 {% endif %}
 {% if 'cloud/environments' in pagename %}
-    {%- set current_subitem = "environments" %}  
+{%- set current_subitem = "environments" %}
 {% endif %}
 {% if 'cloud/security' in pagename %}
-    {%- set current_subitem = "security" %}  
+{%- set current_subitem = "security" %}
 {% endif %}
 {% if 'cloud/monitoring' in pagename %}
-    {%- set current_subitem = "monitoring" %} 
+{%- set current_subitem = "monitoring" %}
 {% endif %}
 {% if 'cloud/onboarding' in pagename %}
-    {%- set current_subitem = "onboarding" %} 
+{%- set current_subitem = "onboarding" %}
 {% endif %}
 {% if 'cloud/connect-vpn' in pagename %}
-    {%- set current_subitem = "connect-vpn" %}  
+{%- set current_subitem = "connect-vpn" %}
 {% endif %}
 {% if 'cloud/maintenance' in pagename %}
-    {%- set current_subitem = "maintenance" %} 
+{%- set current_subitem = "maintenance" %}
 {% endif %}
 {% if 'cloud/support' in pagename %}
-    {%- set current_subitem = "support" %} 
+{%- set current_subitem = "support" %}
 {% endif %}
 
 <!-- Header -->
@@ -77,16 +77,36 @@
             <div class="header__nav-menu header__nav-menu_product">
                 menu </div>
 
-            <a href="https://hive.oroinc.com/" class="header__logo header__logo-product n-logo"
-                title="OroHive: The Comprehensive Hub for Oro Product Info, Tutorials, Community Events, and Training Opportunities">
-                <img src="{{ pathto(link_prefix ~ '_static/images/OroHive.svg', 1) }}"
-                    alt="OroHive: The Comprehensive Hub for Oro Product Info, Tutorials, Community Events, and Training Opportunities"
-                    class="no-lazy lazyload"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-                        src="https://hive.oroinc.com/wp-content/themes/academy/images/redesign/OroHive.svg"
-                        alt="OroHive: The Comprehensive Hub for Oro Product Info, Tutorials, Community Events, and Training Opportunities"
-                        class="no-lazy"></noscript>
+            <a href="https://doc.oroinc.com/" class="header__logo header__logo-product n-logo"
+               title="Oro Documentation: Find everything you need to use and develop your OroCommerce, OroCRM, and OroPlatform application">
+                <img src="{{ pathto(link_prefix ~ '_static/images/doc-logo.svg', 1) }}"
+                     alt="Oro Documentation: Find everything you need to use and develop your OroCommerce, OroCRM, and OroPlatform application"
+                     class="no-lazy lazyload"
+                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                    src="{{ pathto(link_prefix ~ '_static/images/doc-logo.svg', 1) }}"
+                    alt="Oro Documentation: Find everything you need to use and develop your OroCommerce, OroCRM, and OroPlatform application"
+                    class="no-lazy"></noscript>
             </a>
+            <div class="search search-wrap" tabindex="0">
+                <a class="search-button searchButtonAlgolia" accesskey="4"><i class="icon-search"></i></a>
+                <div class="field-search form-inline" style="display: none;">
+                    {% include "searchbox.html" %}
+                </div>
+                <div class="algolia-search-results">
+                    <div class="algolia-search-results__tabs">
+                        <div class="algolia-search-results__category">
+                            <div class="category-subtitle">Result in:</div>
+                            <div id="refinements"></div>
+                        </div>
+
+                        <div class="algolia-search-results__content all-results js-active">
+                            <div id="all-hits"></div>
+                        </div>
+                        <div class="docsearch">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="header__nav-product nav__site">
                 <div class="header__nav-product_heading" tabindex="-1">
                     <div class="header__nav-product_item">
@@ -98,57 +118,56 @@
                     <li class="header__nav-product_back" tabindex="-1" role="none">
                         <a tabindex="-1" role="none" href="https://oroinc.com/">Back to Oro Inc</a>
                     </li>
-                    <li class="header__menu-parent oro-menu-l1 js-menu-children header__menu-l1 level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom"
+                    <li class="header__menu-parent oro-menu-l1 js-menu-children header__menu-l1 level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-ancestor' if 'users' == current_item }}"
                         role="none">
                         <a href=""
-                            class="level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom header__menu-children js-menu-children-link"
-                            aria-haspopup="true" aria-expanded="false" role="menuitem">Academy<span
+                           class="level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom header__menu-children js-menu-children-link"
+                           aria-haspopup="true" aria-expanded="false" role="menuitem">Users<span
                                 class="header__menu-desc"></span></a>
                         <div class="header__menu-wrapper">
                             <div class="header__menu-grid">
-                                <ul class="header__menu-list" role="menu" aria-label="Second-level menu Academy"
-                                    data-name="second-level-menu-academy">
+                                <ul class="header__menu-list" role="menu" aria-label="Second-level menu Users"
+                                    data-name="second-level-menu-users">
                                     <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
                                         role="none">
-                                        <a href="https://hive.oroinc.com/video-tutorials/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            role="menuitem">Tutorials<span class="header__menu-desc">Explore a
-                                                collection of concise, step-by-step tutorial videos covering key
-                                                functionalities of Oro products.
+                                        <a href="{{ version_pref }}/user/concept-guides/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'concept-guides' == current_subitem }}"
+                                           role="menuitem">Concept Guides<span class="header__menu-desc">Get contextual references to detailed
+                                                        feature descriptions based on your business use case.
                                             </span></a>
                                     </li>
                                     <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
                                         role="none">
-                                        <a href="https://hive.oroinc.com/courses/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            role="menuitem">Courses<span class="header__menu-desc">Learn at your own
-                                                pace and test your knowledge as you go with our on-demand, self-guided
-                                                online Oro courses.
+                                        <a href="{{ version_pref }}/user/back-office/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'back-office' == current_subitem }}"
+                                           role="menuitem">Back-Office<span class="header__menu-desc">Explore the key features and learn to
+                                                        automate workflows, create reporting and much more.
                                             </span></a>
                                     </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
                                         role="none">
-                                        <a href="https://hive.oroinc.com/advanced-custom-training/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            role="menuitem">Advanced Training<span class="header__menu-desc">Explore
-                                                training opportunities designed for experienced Oro developers and other
-                                                IT professionals.</span></a>
+                                        <a href="{{ version_pref }}/user/storefront/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'storefront' == current_subitem }}"
+                                           role="menuitem">Commerce Storefront<span class="header__menu-desc">Introduction to OroCommerce default
+                                                        storefront navigation, interaction, and browsing.</span></a>
                                     </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
                                         role="none">
-                                        <a href="https://hive.oroinc.com/oro-training-courses/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            role="menuitem">Essential Training<span class="header__menu-desc">Explore
-                                                our essential-level, instructor-led Oro training for business users and
-                                                developers.</span></a>
+                                        <a href="{{ version_pref }}/user/glossary/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'glossary' == current_subitem }}"
+                                           role="menuitem">Glossary<span class="header__menu-desc">Navigate OroCommerce terms easily with
+                                                        our comprehensive glossary guide.
+                                        </span>
+                                        </a>
                                     </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
                                         role="none">
-                                        <a href="https://hive.oroinc.com/certifications/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            role="menuitem">Certification<span class="header__menu-desc">Validate your
-                                                skills and competency through our Business and Developer exams, earning
-                                                an official certificate from Oro.</span></a>
+                                        <a href="{{ version_pref }}/user/integrations/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'integrations' == current_subitem }}"
+                                           role="menuitem">Integrations<span class="header__menu-desc">Explore OroCommerce's pre-built and
+                                                        custom integration options.
+                                        </span>
+                                        </a>
                                     </li>
                                 </ul>
                                 <div class="header__menu-item banner">
@@ -160,449 +179,199 @@
                                     <ul class="header__menu-list">
                                         <li class="header__menu-btn">
                                             <a href="https://hive.oroinc.com/certifications/"
-                                                class="widget5 menu-item menu-item-type-custom menu-item-object-custom header__menu-link"
-                                                role="button">Learn More</a>
+                                               class="widget5 menu-item menu-item-type-custom menu-item-object-custom header__menu-link"
+                                               role="button">Learn More</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="header__menu-parent oro-menu-l1 js-menu-children header__menu-l1 level3 widget-bg-claret menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent"
-                        role="none">
-                        <a href="https://doc.oroinc.com/"
-                            class="level3 widget-bg-claret menu-item menu-item-type-custom menu-item-object-custom header__menu-children js-menu-children-link"
-                             aria-haspopup="true" aria-expanded="false"
-                            role="menuitem">Documentation<span class="header__menu-desc"></span></a>
-                        <div class="header__menu-wrapper">
-                            <div class="header__menu-grid">
-                                <ul class="header__menu-list" role="menu" aria-label="Second-level menu Documentation"
-                                    data-name="second-level-menu-documentation">
-                                    <li class="header__menu-list_desc level2-link js-not-link menu-item menu-item-type-custom menu-item-object-custom {{ 'js-active-l3' if 'users' == current_item }}"
-                                        role="none">
-                                        <a href="#"
-                                            class="js-not-link menu-item menu-item-type-custom menu-item-object-custom header__menu-link js-lvl3-open"
-                                            aria-haspopup="true" aria-expanded="false" role="menuitem">Users<span
-                                                class="header__menu-desc">Explore the documentation for essential steps
-                                                to your first successful sale.</span></a>
-                                        <ul class="header__menu-l3" role="menu" aria-label="Second-level menu Users"
-                                            data-name="second-level-menu-users">
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'concept-guides' == current_subitem }}">
-                                                <a href="{{ version_pref }}/user/concept-guides/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'concept-guides' == current_subitem }}"
-                                                     role="menuitem">Concept Guides<span
-                                                        class="header__menu-desc">Get contextual references to detailed
-                                                        feature descriptions based on your business use case.
-                                                    </span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'back-office' == current_subitem }}">
-                                                <a href="{{ version_pref }}/user/back-office/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'back-office' == current_subitem }}"
-                                                     role="menuitem">Back-Office<span
-                                                        class="header__menu-desc">Explore the key features and learn to
-                                                        automate workflows, create reporting and much more.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'storefront' == current_subitem }}">
-                                                <a href="{{ version_pref }}/user/storefront/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'storefront' == current_subitem }}"
-                                                     role="menuitem">Commerce Storefront<span
-                                                        class="header__menu-desc">Introduction to OroCommerce default
-                                                        storefront navigation, interaction, and browsing.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'glossary' == current_subitem }}">
-                                                <a href="{{ version_pref }}/user/glossary/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'glossary' == current_subitem }}"
-                                                     role="menuitem">Glossary<span
-                                                        class="header__menu-desc">Navigate OroCommerce terms easily with
-                                                        our comprehensive glossary guide.
-                                                    </span></a>
-                                            </li>
-                                            {% if version_pref != '/5.0' %}
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'integrations' == current_subitem }}">
-                                                <a href="{{ version_pref }}/user/integrations/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'integrations' == current_subitem }}"
-                                                     role="menuitem">Integrations<span
-                                                        class="header__menu-desc">Explore OroCommerce's pre-built and
-                                                        custom integration options.
-                                                    </span></a>
-                                            </li>
-                                            {% endif %}
-                                        </ul>
-                                    </li>
-                                    <li class="header__menu-list_desc level2-link js-not-link menu-item menu-item-type-custom menu-item-object-custom {{ 'js-active-l3' if 'developers' == current_item }}"
-                                        role="none">
-                                        <a href="#"
-                                            class="js-not-link menu-item menu-item-type-custom menu-item-object-custom header__menu-link js-lvl3-open"
-                                            aria-haspopup="true" aria-expanded="false" role="menuitem">Developers<span
-                                                class="header__menu-desc">Essential OroCommerce architecture,
-                                                customization, extension, and setup info for tech teams.</span></a>
-                                        <ul class="header__menu-l3" role="menu"
-                                            aria-label="Second-level menu Developers"
-                                            data-name="second-level-menu-developers">
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'backend' == current_subitem }}">
-                                                <a href="{{ version_pref }}/backend/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'backend' == current_subitem }}"
-                                                     role="menuitem">Backend Developer Guide<span
-                                                        class="header__menu-desc">Comprehensive documentation on
-                                                        installing, customizing, and maintaining Oro applications
-                                                        efficiently.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'frontend' == current_subitem }}">
-                                                <a href="{{ version_pref }}/frontend/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'frontend' == current_subitem }}"
-                                                     role="menuitem">Frontend Developer Guide<span
-                                                        class="header__menu-desc">Learn to efficiently customize Oro
-                                                        apps appearance both on the Storefront and in the
-                                                        Back-office.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'bundles' == current_subitem }}">
-                                                <a href="{{ version_pref }}/bundles/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'bundles' == current_subitem }}"
-                                                     role="menuitem">Oro Bundles & Components<span
-                                                        class="header__menu-desc">Explore Oro Config Component and core
-                                                        bundle implementation for non-standard
-                                                        customizations.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'api' == current_subitem }}">
-                                                <a href="{{ version_pref }}/api/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'api' == current_subitem }}"
-                                                     role="menuitem">Web Services API Guide<span
-                                                        class="header__menu-desc">Integrate Oro functionality into
-                                                        third-party systems with REST API guide.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'community' == current_subitem }}">
-                                                <a href="{{ version_pref }}/community/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'community' == current_subitem }}"
-                                                     role="menuitem">Community Guide<span
-                                                        class="header__menu-desc">Learn about the best ways to
-                                                        contribute to Oro applications, and engage with the Oro
-                                                        community.</span></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="header__menu-list_desc level2-link js-not-link menu-item menu-item-type-custom menu-item-object-custom {{ 'js-active-l3' if 'cloud' == current_item }}"
-                                        role="none">
-                                        <a href="#"
-                                            class="js-not-link menu-item menu-item-type-custom menu-item-object-custom header__menu-link js-lvl3-open"
-                                            aria-haspopup="true" aria-expanded="false" role="menuitem">Cloud
-                                            Administrators<span class="header__menu-desc">Discover OroCloud's
-                                                architecture, security, onboarding, maintenance &amp; monitoring
-                                                capabilities.</span></a>
-                                        <ul class="header__menu-l3" role="menu"
-                                            aria-label="Second-level menu Cloud Administrators"
-                                            data-name="second-level-menu-cloud-administrators">
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'architecture' == current_subitem }}">
-                                                <a href="/cloud/architecture/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'architecture' == current_subitem }}"
-                                                     role="menuitem">Architecture<span
-                                                        class="header__menu-desc">Uncover OroCloud's architecture with
-                                                        illustrative diagrams for deeper understanding.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'environments' == current_subitem }}">
-                                                <a href="/cloud/environments/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'environments' == current_subitem }}"
-                                                     role="menuitem">Environment Types<span
-                                                        class="header__menu-desc">Understand OroCommerce environment
-                                                        types for tailored deployment options and configurations.
-                                                    </span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'security' == current_subitem }}">
-                                                <a href="/cloud/security/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'security' == current_subitem }}"
-                                                     role="menuitem">Security<span
-                                                        class="header__menu-desc">Discover OroCloud network diagram and
-                                                        Oro's comprehensive security protocols.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'monitoring' == current_subitem }}">
-                                                <a href="/cloud/monitoring/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'monitoring' == current_subitem }}"
-                                                     role="menuitem">Monitoring<span
-                                                        class="header__menu-desc">Ensure service continuity and
-                                                        proactive resource management with OroCloud monitoring
-                                                        tools.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'onboarding' == current_subitem }}">
-                                                <a href="/cloud/onboarding/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'onboarding' == current_subitem }}"
-                                                     role="menuitem">Onboarding<span
-                                                        class="header__menu-desc">Streamline your Oro application
-                                                        deployment with our comprehensive onboarding process
-                                                        guide.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'connect-vpn' == current_subitem }}">
-                                                <a href="/cloud/connect-vpn/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'connect-vpn' == current_subitem }}"
-                                                     role="menuitem">VPN Connection<span
-                                                        class="header__menu-desc">Learn how to connect OroCloud VPN
-                                                        across different operating systems.
-                                                    </span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'maintenance' == current_subitem }}">
-                                                <a href="/cloud/maintenance/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'maintenance' == current_subitem }}"
-                                                     role="menuitem">Maintenance<span
-                                                        class="header__menu-desc">Explore the tools to manage
-                                                        maintenance tasks within your OroCloud environment.</span></a>
-                                            </li>
-                                            <li
-                                                class="header__menu-list_desc  menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-item' if 'support' == current_subitem }}">
-                                                <a href="/cloud/support/"
-                                                    class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'support' == current_subitem }}"
-                                                     role="menuitem">Support<span
-                                                        class="header__menu-desc">Discover Oro's support process for Oro
-                                                        authorized partners and Enterprise customers.</span></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <div class="header__menu-item banner">
-                                    <div class="header__banner-content">
-                                        <div class="header__menu-title_btn ">Download the OroCommerce Storefront Style
-                                            Guide</div>
-                                        <div class="header__menu-icon">
-                                            <img src="https://hive.oroinc.com/wp-content/uploads/sites/21/2024/02/oro_final.svg"
-                                                class="attachment-full size-full lazyload" alt="oro_final" loading="lazy"
-                                                decoding="async" />
-                                        </div>
-                                        <div class="header__menu-subtitle_btn">Make customizing the Storefront Theme a
-                                            breeze!</div>
-                                    </div>
-                                    <ul class="header__menu-list">
-                                        <li class="header__menu-btn">
-                                            <a href="/frontend/storefront-style-guide/"
-                                                class="widget5 menu-item menu-item-type-custom menu-item-object-custom header__menu-link"
-                                                 role="button">Get It Now</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="header__menu-parent oro-menu-l1 js-menu-children header__menu-l1 level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom"
-                        role="none">
-                        <a href="#"
-                            class="level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom header__menu-children js-menu-children-link"
-                            aria-haspopup="true" aria-expanded="false" role="menuitem">Resourses<span
-                                class="header__menu-desc"></span></a>
-                        <div class="header__menu-wrapper">
-                            <div class="header__menu-grid">
-                                <ul class="header__menu-list" role="menu" aria-label="Second-level menu Resourses"
-                                    data-name="second-level-menu-resourses">
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
-                                        role="none">
-                                        <a href="https://oroinc.com/orocrm/download/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            target="_blank" role="menuitem">OroCRM CE Download<span
-                                                class="header__menu-desc">Download the free, open-source version of
-                                                Oro's powerful and flexible CRM application</span></a>
-                                    </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
-                                        role="none">
-                                        <a href="https://oroinc.com/b2b-ecommerce/download/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            target="_blank" role="menuitem">OroCommerce CE Download<span
-                                                class="header__menu-desc">Download and explore the basic functionality
-                                                of OroCommerce with its free, open-source version.
-                                            </span></a>
-                                    </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
-                                        role="none">
-                                        <a href="https://oroinc.com/oroplatform/download/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            target="_blank" role="menuitem">OroPlatform CE Download<span
-                                                class="header__menu-desc">Build your own B2B apps on top of the robust
-                                                foundation of OroPlatform, an open-source rapid application development
-                                                platform.
-                                            </span></a>
-                                    </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
-                                        role="none">
-                                        <a href="https://hive.oroinc.com/orocommerce-roadmap/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            role="menuitem">OroCommerce Roadmap<span class="header__menu-desc">Gain
-                                                insights into the future of OroCommerce product development with an
-                                                overview of upcoming features.
-                                            </span></a>
-                                    </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
-                                        role="none">
-                                        <a href="https://extensions.oroinc.com/orocommerce/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            target="_blank" role="menuitem">Extensions Portal<span
-                                                class="header__menu-desc">Browse through hundreds of useful add-ons that
-                                                enhance Oro applications' functionality.</span></a>
-                                    </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
-                                        role="none">
-                                        <a href="https://github.com/oroinc"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            target="_blank" role="menuitem">GitHub<span class="header__menu-desc">Stay
-                                                updated on Oro's latest releases and extensions by following our core
-                                                team on GitHub.</span></a>
-                                    </li>
-                                </ul>
-                                <div class="header__menu-item banner">
-                                    <div class="header__banner-content">
-                                        <div class="header__menu-title_btn "> Set up your Oro applications faster with
-                                            Oro DevBox!</div>
-                                        <div class="header__menu-subtitle_btn"></div>
-                                    </div>
-                                    <ul class="header__menu-list">
-                                        <li class="header__menu-btn">
-                                            <a href="https://hive.oroinc.com/blog/introducing-oro-devbox/"
-                                                class="widget5 menu-item menu-item-type-custom menu-item-object-custom header__menu-link"
-                                                role="button">Learn More</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="header__menu-l1 oro-menu-l1  menu-item menu-item-type-custom menu-item-object-custom"
-                        role="none">
-                        <a href="https://hive.oroinc.com/blog/"
-                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-children"
-                            role="menuitem">Blog<span class="header__menu-desc"></span></a>
-                    </li>
-                    <li class="header__menu-l1 oro-menu-l1  menu-item menu-item-type-custom menu-item-object-custom"
-                        role="none">
-                        <a href="https://hive.oroinc.com/events/"
-                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-children"
-                            role="menuitem">Events<span class="header__menu-desc"></span></a>
-                    </li>
-                    <li class="header__menu-parent oro-menu-l1 js-menu-children header__menu-l1 level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom"
+                    <li class="header__menu-parent oro-menu-l1 js-menu-children header__menu-l1 level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-ancestor' if 'developers' == current_item }}"
                         role="none">
                         <a href=""
-                            class="level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom header__menu-children js-menu-children-link"
-                            aria-haspopup="true" aria-expanded="false" role="menuitem">Join & Contribute<span
+                           class="level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom header__menu-children js-menu-children-link"
+                           aria-haspopup="true" aria-expanded="false" role="menuitem">Developers<span
                                 class="header__menu-desc"></span></a>
                         <div class="header__menu-wrapper">
                             <div class="header__menu-grid">
-                                <ul class="header__menu-list" role="menu"
-                                    aria-label="Second-level menu Join & Contribute"
-                                    data-name="second-level-menu-join-contribute">
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
+                                <ul class="header__menu-list" role="menu" aria-label="Second-level menu Developers"
+                                    data-name="second-level-menu-developers">
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
                                         role="none">
-                                        <a href="https://hive.oroinc.com/become-an-oro-partner/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            role="menuitem">Become an Oro Partner<span class="header__menu-desc">Explore
-                                                the opportunities, benefits, and prerequisites of becoming an official
-                                                Oro partner.</span></a>
-                                    </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
-                                        role="none">
-                                        <a href="https://hive.oroinc.com/extension-submission-process/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            role="menuitem">Submit an Extension<span
-                                                class="header__menu-desc">Contribute to the Oro Ecosystem with a useful
-                                                extension. Learn more about the submission process.
+                                        <a href="{{ version_pref }}/backend/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'backend' == current_subitem }}"
+                                           role="menuitem">Backend Developer Guide<span class="header__menu-desc">Comprehensive documentation on
+                                                        installing, customizing, and maintaining Oro applications
+                                                        efficiently.
                                             </span></a>
                                     </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
                                         role="none">
-                                        <a href="https://hive.oroinc.com/bug-bounty/"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            role="menuitem">Bug Bounty<span class="header__menu-desc">Assist us in
-                                                maintaining the security and stability of Oro applications and websites
-                                                and receive a reward.</span></a>
+                                        <a href="{{ version_pref }}/frontend/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'frontend' == current_subitem }}"
+                                           role="menuitem">Frontend Developer Guide<span class="header__menu-desc">Learn to efficiently customize Oro
+                                                        apps appearance both on the Storefront and in the
+                                                        Back-office.
+                                            </span></a>
                                     </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
                                         role="none">
-                                        <a href="http://bit.ly/oro-slack"
-                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link "
-                                            target="_blank" role="menuitem">Slack Community Channel<span
-                                                class="header__menu-desc">Connect with the entire Hive of Oro developers
-                                                and IT professionals to get answers to your questions and share your
-                                                knowledge.</span></a>
+                                        <a href="{{ version_pref }}/bundles/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'bundles' == current_subitem }}"
+                                           role="menuitem">Oro Bundles & Components<span class="header__menu-desc">Explore Oro Config Component and core
+                                                        bundle implementation for non-standard
+                                                        customizations.</span></a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="{{ version_pref }}/api/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'api' == current_subitem }}"
+                                           role="menuitem">Web Services API Guide<span class="header__menu-desc">Integrate Oro functionality into
+                                                        third-party systems with REST API guide.
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="{{ version_pref }}/community/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'community' == current_subitem }}"
+                                           role="menuitem">Community Guide<span class="header__menu-desc">Learn about the best ways to
+                                                        contribute to Oro applications, and engage with the Oro
+                                                        community.
+                                        </span>
+                                        </a>
                                     </li>
                                 </ul>
                                 <div class="header__menu-item banner">
                                     <div class="header__banner-content">
-                                        <div class="header__menu-title_btn "> Join forces with the most innovative B2B
-                                            eCommerce software company out there!</div>
+                                        <div class="header__menu-title_btn "> Up for a challenge? Validate your skills
+                                            and earn the Oro Certificate! </div>
                                         <div class="header__menu-subtitle_btn"></div>
                                     </div>
                                     <ul class="header__menu-list">
                                         <li class="header__menu-btn">
-                                            <a href="https://hive.oroinc.com/become-an-oro-partner/"
-                                                class="widget5 menu-item menu-item-type-custom menu-item-object-custom header__menu-link"
-                                                role="button">Partner with Oro</a>
+                                            <a href="https://hive.oroinc.com/certifications/"
+                                               class="widget5 menu-item menu-item-type-custom menu-item-object-custom header__menu-link"
+                                               role="button">Learn More</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="header__menu-l1 oro-menu-l1 visible-mob-sm btn-slac menu-item menu-item-type-custom menu-item-object-custom"
+                    <li class="header__menu-parent oro-menu-l1 js-menu-children header__menu-l1 level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom {{ 'current-menu-ancestor' if 'cloud' == current_item }}"
                         role="none">
-                        <a href="http://bit.ly/oro-slack"
-                            class="visible-mob-sm btn-slac menu-item menu-item-type-custom menu-item-object-custom header__menu-children"
-                            role="menuitem">Join us on Slack<span class="header__menu-desc"></span></a>
-                    </li>
-                </ul>
-
-                <div class="visible-mob-sm header__nav-mobile">
-                    <a class="header__nav-mobile_contact" href="https://hive.oroinc.com/contact-us/">Contact
-                        Us</a>
-
-                    <a href="http://bit.ly/oro-slack" class="btn-trydemo"><span class="icon-slack"></span> Join us on
-                        Slack
-                    </a>
-                </div>
-                <div class="header_nav-breadcrumbs_box"></div>
-            </div>
-
-            <div class="top-bar">
-                <div class="search" tabindex="0">
-                    <a class="search-button searchButtonAlgolia" accesskey="4"><i class="icon-search"></i></a>
-                    <div class="field-search form-inline" style="display: none;">
-                        {% include "searchbox.html" %}
-                        <span class="reset searchCloseAlgolia"><i class="reset__icon"></i></span>
-                    </div>
-
-                    <div class="algolia-search-results">
-
-
-                        <div class="algolia-search-results__tabs">
-                            <div class="algolia-search-results__category">
-                                <div class="category-subtitle">Result in:</div>
-                                <div id="refinements"></div>
-                            </div>
-
-                            <div class="algolia-search-results__content all-results js-active">
-                                <div id="all-hits"></div>
-                            </div>
-                            <div class="docsearch">
-
+                        <a href=""
+                           class="level2 widget-bg-orange menu-item menu-item-type-custom menu-item-object-custom header__menu-children js-menu-children-link"
+                           aria-haspopup="true" aria-expanded="false" role="menuitem">Cloud Administrators<span
+                                class="header__menu-desc"></span></a>
+                        <div class="header__menu-wrapper">
+                            <div class="header__menu-grid">
+                                <ul class="header__menu-list" role="menu" aria-label="Second-level menu Cloud Administrators"
+                                    data-name="second-level-menu-cloud">
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="/cloud/architecture/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'cloud/architecture' == current_subitem }}"
+                                           role="menuitem">Architecture<span class="header__menu-desc">Uncover OroCloud's architecture with
+                                                        illustrative diagrams for deeper understanding.
+                                            </span></a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="/cloud/environments/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'cloud/environments' == current_subitem }}"
+                                           role="menuitem">Environment Types<span class="header__menu-desc">Understand OroCommerce environment
+                                                        types for tailored deployment options and configurations.
+                                            </span></a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom  "
+                                        role="none">
+                                        <a href="/cloud/security/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'cloud/security' == current_subitem }}"
+                                           role="menuitem">Security<span class="header__menu-desc">Discover OroCloud network diagram and
+                                                        Oro's comprehensive security protocols.</span></a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="/cloud/monitoring/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'cloud/monitoring' == current_subitem }}"
+                                           role="menuitem">Monitoring<span class="header__menu-desc">Ensure service continuity and
+                                                        proactive resource management with OroCloud monitoring
+                                                        tools.
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="/cloud/onboarding/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'cloud/onboarding' == current_subitem }}"
+                                           role="menuitem">Onboarding<span class="header__menu-desc">Streamline your Oro application
+                                                        deployment with our comprehensive onboarding process
+                                                        guide.
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="/cloud/connect-vpn/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'cloud/connect-vpn' == current_subitem }}"
+                                           role="menuitem">VPN Connection<span class="header__menu-desc">Learn how to connect OroCloud VPN
+                                                        across different operating systems.
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="/cloud/maintenance/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'cloud/maintenance' == current_subitem }}"
+                                           role="menuitem">Maintenance<span class="header__menu-desc">Explore the tools to manage
+                                                        maintenance tasks within your OroCloud environment.
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="/cloud/support/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'cloud/support' == current_subitem }}"
+                                           role="menuitem">Support<span class="header__menu-desc">Discover Oro's support process for Oro
+                                                        authorized partners and Enterprise customers.
+                                        </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__menu-item banner">
+                                    <div class="header__banner-content">
+                                        <div class="header__menu-title_btn "> Up for a challenge? Validate your skills
+                                            and earn the Oro Certificate! </div>
+                                        <div class="header__menu-subtitle_btn"></div>
+                                    </div>
+                                    <ul class="header__menu-list">
+                                        <li class="header__menu-btn">
+                                            <a href="https://hive.oroinc.com/certifications/"
+                                               class="widget5 menu-item menu-item-type-custom menu-item-object-custom header__menu-link"
+                                               role="button">Learn More</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="login-top">
-                    <a rel="nofollow"
-                        href="https://hive.oroinc.com/user/login/"
-                        class="header__user sign">
-                        Sign In </a>
-                </div>
-                <a href="http://bit.ly/oro-slack" class="btn-trydemo"><span class="icon-slack"></span> Join us on Slack
-                </a>
+                    </li>
+                    <li class="header__menu-l1 oro-menu-l1  menu-item menu-item-type-custom menu-item-object-custom"
+                        role="none">
+                        <a href="https://oroinc.com/b2b-ecommerce/"
+                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-children"
+                           role="menuitem">B2B eCommerce<span class="header__menu-desc"></span></a>
+                    </li>
+                    <li class="header__menu-l1 oro-menu-l1  menu-item menu-item-type-custom menu-item-object-custom"
+                        role="none">
+                        <a href="https://hive.oroinc.com/"
+                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-children"
+                           role="menuitem">OroHive<span class="header__menu-desc"></span></a>
+                    </li>
+                </ul>
+                <div class="header_nav-breadcrumbs_box"></div>
             </div>
         </div>
     </nav>

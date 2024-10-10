@@ -383,6 +383,7 @@ redirects_file = 'redirects.txt'
 smv_tag_whitelist = 'a^'
 # By default will set to None. We need to owerwrite this in CLI parameters
 smv_branch_whitelist = r'^(maintenance/5.0|maintenance/5.1|maintenance/6.0|master)$'
+#smv_branch_whitelist = r'^(stage/5.0|stage/5.1|stage/6.0|stage/master)$'
 smv_remote_whitelist = r'^(origin)$'
 # Get release name as dir name. For current version release must be set to '' (empty string)
 smv_outputdir_format = '{config.release}'

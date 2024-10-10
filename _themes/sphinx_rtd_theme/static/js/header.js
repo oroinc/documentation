@@ -91,7 +91,7 @@ jQuery(function ($) {
                             flag = false;
                             break;
                     }
-        
+
                     if (flag) {
                         event.stopPropagation();
                         event.preventDefault();
@@ -159,7 +159,11 @@ jQuery(function ($) {
                 const thatChildrenLink = this;
                 if (!$(thatChildrenLink).hasClass("js-menu-children-link")) {
                     $(".js-menu-children > a").removeClass("js-active").next().removeClass("js-active").closest("body").removeClass("js-menu-open2");
-                } else {
+                }
+                else if($(thatChildrenLink).hasClass("js-active")){
+                    $(".js-menu-children > a").removeClass("js-active").next().removeClass("js-active").closest("body").removeClass("js-menu-open2");
+                }
+                else {
                     timeout = setTimeout(function () {
                         openLvl2Menu(thatChildrenLink);
                     }, 80)

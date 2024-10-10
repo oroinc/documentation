@@ -1,0 +1,31 @@
+{%- if current_version %}
+{% if '/cloud/' in versions.branches|join(' ') %}
+{% set allowed_versions = ['6.0', '6.1', 'master', 'stage/6.0', 'stage/6.1', 'stage/master'] %}
+<div class="switcher-container">
+    <strong class="doc-title">Architecture:</strong>
+    <div class="documentation-version-switcher">
+        <div class="version">
+            {{ 'K8s-based' if current_version.name == 'stage/master' }}{{ 'VM-based' if current_version.name == 'stage/6.0' }}
+        </div>
+        <ul class="documentation-version">
+            {%- if versions.branches %}
+                {%- for item in versions.branches %}
+                    {%- if item.name in allowed_versions %}
+                        {% if 'index.html' in item.url %}
+                            {% set url = item.url | replace('/index.html', '/') | replace('.html', '/') %}
+                        {% else %}
+                            {% set url = item.url | replace('.html', '/') %}
+                        {% endif %}
+                        {% if current_version.name == item.name  %}
+                            <li><a href="#">{{ 'K8s-based' if item.name == 'stage/master' }}{{ 'VM-based' if item.name == 'stage/6.0' }}</a></li>
+                        {% else %}
+                            <li><a href="/{{ url | replace('../', '') }}">{{ 'K8s-based' if item.name == 'stage/master' }}{{ 'VM-based' if item.name == 'stage/6.0' }}</a></li>
+                        {% endif %}
+                    {%- endif %}
+                {%- endfor %}
+            {%- endif %}
+        </ul>
+    </div>
+</div>
+{%- endif %}
+{%- endif %}
