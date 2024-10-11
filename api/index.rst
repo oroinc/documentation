@@ -49,6 +49,7 @@ Find more information about Web API in the following topics:
    filters
    create-update-related-resources
    upsert-operation
+   validate-operation
    client-requirements
    batch-api
    sync-batch-api

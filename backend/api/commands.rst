@@ -165,6 +165,12 @@ To get all entities that support :ref:`the upsert operation <web-services-api--u
 
     php bin/console oro:api:dump --upsert
 
+To get all entities that support :ref:`the validate operation <web-services-api--validate-operation>`, use the ``--validate`` option:
+
+.. code-block:: none
+
+    php bin/console oro:api:dump --validate
+
 .. _oroapidebug:
 
 oro:api:debug

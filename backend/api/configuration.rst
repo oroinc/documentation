@@ -222,6 +222,8 @@ The ``entities`` section describes the configuration of entities.
 
 *  **disable\_partial\_load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``. When using partial objects, the ``HINT_FORCE_PARTIAL_LOAD`` query hint is used together with them to avoid loading unneeded foreign keys.
 
+*  **enable\_validation** *boolean* - The flag indicates whether it is possible to use a `validate` meta flag on create and update actions. By default ``false``. When the value is ``true``, API requests with a `validate` meta flag make transaction rollback instead of commit. Please be advised that enabling this option will also roll back other component operations, such as sending a mail or triggering a search reindex.For details, see :ref:`Configure Validate Operation <configure-validate-operation>`.
+
 *  **hints** *array* - The |Doctrine query hints|. Each item can be a string or an array with ``name`` and ``value`` keys. The string value is a short form of ``[name: hint name]``.
 
 *  **inner\_join\_associations** *string[]* - A list of entity associations for which INNER JOIN should be used instead of LEFT JOIN. Use the ``dot`` notation to specify a path to a nested association, e.g., ``user.organization``. Each element in the path must be equal to the name of the existing property of an entity. This option can be used to optimize SQL query that is used to load data if some associations are mandatory and cannot be empty.

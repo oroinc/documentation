@@ -885,6 +885,7 @@ This action is executed when the following |ApiEvents| are dispatched:
     "pre_flush_data","This event is dispatched after the database transaction is open but before data are flushed into the database. Do not call EntityManager::persist() and EntityManager::remove() during handling of this event, use addAdditionalEntity() and addAdditionalEntityToRemove() methods of the context instead."
     "post_flush_data","This event is dispatched after data are successfully flushed into the database but before the database transaction is committed."
     "post_save_data","This event is dispatched after data are successfully flushed into the database, and the database transaction is committed. It can be used to perform some not crucial operations after data are saved into the database. It means that failure of these operations will not roll back data saved into the database."
+    "rollback_validated_request","This event is dispatched before the database transaction is rolled back for API requests with a meta `validate` operation flag."
 
 .. note:: All these events use the same context, so it can be used to share data between events.
 
