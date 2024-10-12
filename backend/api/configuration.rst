@@ -513,7 +513,9 @@ The ``actions`` configuration section enables you to specify action-specific opt
 
 *  **order\_by** *array* - The property can be used to configure the default ordering of the result. The item key is the name of a field. The value can be ``ASC`` or ``DESC``. By default, the result is ordered by identifier field.
 
-*  **page\_size** *integer* - The default page size. Set to ``-1`` to disable pagination or a positive number. By default, 10, see the ``default_page_size`` option in :ref:`General Configuration <web-api--configuration-general>`.
+*  **page\_size** *integer* - The default page size. Set to ``-1`` to disable pagination or a positive number. Also ``disable\_paging`` can be used to disable pagination. By default, 10, see the ``default_page_size`` option in :ref:`General Configuration <web-api--configuration-general>`.
+
+*  **disable\_paging** *boolean* - Indicates whether to disable the pagination. It is an alias for ``page\_size`` equals to ``-1``. By default, false.
 
 *  **disable\_sorting** *boolean* - Indicates whether to disable the sorting. By default, false.
 
