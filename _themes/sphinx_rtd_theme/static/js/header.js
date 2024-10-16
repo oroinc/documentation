@@ -154,7 +154,7 @@ jQuery(function ($) {
 
     } else {
         var timeout;
-        $('.header__menu-l1 > a').on({
+        $('.js-menu-children > a').on({
             mouseover: function () {
                 const thatChildrenLink = this;
                 if (!$(thatChildrenLink).hasClass("js-menu-children-link")) {
