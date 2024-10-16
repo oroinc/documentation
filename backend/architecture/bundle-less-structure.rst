@@ -622,6 +622,12 @@ Once the asset is placed in the public folder, you can reference it within your 
     {# the image lives at "public/images/example.jpg" #}
     <img src="{{ asset('images/example.jpg') }}" alt="Example Image"/>
 
+Placement of SVG Icons (Storefront)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When working in bundle-less architecture, SVG icons for the storefront must be placed in the `Resources` directory at the root level: ``Resources/public/{your_theme_dir}/svg-icons/``.
+For more information on SVG icons, see :ref:`Storefront Customization Guide: SVG Icons <frontend-svg-icons>`.
+
 
 JS Modules
 ~~~~~~~~~~
