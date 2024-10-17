@@ -74,7 +74,7 @@ The default configuration of OroOAuth2ServerBundle is illustrated below:
             # The full path to the public key file that is used to verify JWT tokens.
             public_key: '%kernel.project_dir%/var/oauth_public.key'
 
-.. note:: To use OAuth 2.0 authorization, generate the private and public keys and place them into locations specified in the `authorization_server / private_key` and `resource_server / public_key` options. See |Generating public and private keys| for details on how to generate the keys.
+.. note:: To use OAuth 2.0 authorization, generate the private and public RSA keys and place them into locations specified in the `authorization_server / private_key` and `resource_server / public_key` options. You can use `php bin/console oro:oauth-server:generate-keys` Symfony command to easily generate RSA keys. Also see |Generating public and private keys| for details on how to generate the keys manually.
 
 .. _bundle-docs-platform-oauth2-server-bundle--manage-applications:
 
@@ -137,6 +137,13 @@ See :ref:`OAuth Authentication in API <web-services-api--authentication--oauth>`
 
    Find out what sets |B2B eCommerce| apart from B2C and whether your company needs digital commerce.
 
+Related Documentation
+---------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   Commands <commands>
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

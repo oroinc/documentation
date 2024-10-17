@@ -67,14 +67,14 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
     ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`",":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`",":ref:`SellerDashboardBundle <bundle-docs-commerce-seller-dashboard-bundle>`"
     ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`","**M**",":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
     ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`",":ref:`MultiWebsiteBundle <bundle-docs-commerce-multi-website-bundle>`",":ref:`ShoppingListBundle <bundle-docs-commerce-shopping-list-bundle>`"
-    ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**O**","**T**"
-    ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
-    ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`","**P**","**W**"
-    ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
-    ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
-    "**F**",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
-    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteSearchSuggestionBundle <bundle-docs-commerce-website-search-suggestions-bundle>`"
-    "","**R**",""
+    ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**O**",":ref:`SalesFrontendBundle <bundle-docs-commerce-sales-frontend-bundle>`"
+    ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`","**T**"
+    ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`","**P**",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
+    ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`","**W**"
+    ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
+    "**F**",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
+    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
+    "","**R**",":ref:`WebsiteSearchSuggestionBundle <bundle-docs-commerce-website-search-suggestions-bundle>`"
     "",":ref:`RedirectBundle <bundle-docs-commerce-redireect-bundle>`",""
 
 .. _bundle-docs-extensions:
@@ -204,6 +204,7 @@ CRM Bundles
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>
    WebsiteSearchSuggestionBundle <commerce/WebsiteSearchSuggestionBundle/index>
+   SalesFrontendBundle <commerce/SalesFrontendBundle/index>
    ActivityContactBundle <crm/ActivityContactBundle/index>
    AnalyticsBundle <crm/AnalyticsBundle/index>
    ChannelBundle <crm/ChannelBundle/index>
