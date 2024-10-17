@@ -22,6 +22,7 @@ Related Documentation
 
    getting-product-price
    getting-product-line-item-price
+   getting-product-kit-price-by-API
    price-list-sharding
    optimize-index-and-price-calculation
    combined-price-lists
