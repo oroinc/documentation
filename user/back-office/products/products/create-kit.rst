@@ -50,7 +50,20 @@ To create a new product kit:
              .. image:: /user/img/products/products/kits/drag-drop.gif
                 :alt: Dragging and dropping products in the kit
 
-9. When you are ready to save the product, click **Save and Close**.
+9. In the **Shipping Options** section, define how fixed shipping costs should be calculated for the selected product kit (available starting from OroCommerce v5.1.10). The field is only applied when calculating :ref:`Fixed Product Shipping <doc-integration-fixed-shipping-cost>` costs for product kits. The field has the following options:
+
+   * **Kit product and kit items** (Default) --- Shipping costs are calculated based on the combined shipping parameters of both the main product kit and its individual items.
+
+   * **Only kit product itself** --- Shipping costs are calculated exclusively on the shipping parameters of the main product kit, ignoring the individual items within the kit.
+
+   * **Only kit items** --- Shipping costs are calculated exclusively based on the shipping parameters of the individual items within the kit, ignoring the main kit product itself.
+
+Provide unit, weight, and weight measuring unit, dimensions (width, height, depth), and dimensions measuring unit and freight class for the selected product kit.
+
+.. image:: /user/img/products/products/kits/kit-shipping-options.png
+   :alt: Shipping options details on the product kit edit page
+
+10. When you are ready to save the product, click **Save and Close**.
 
 .. hint:: You can choose to sell an item exclusively as part of the kit, and not separately. To hide it from buyers in the storefront, change the product's :ref:`visibility settings <products--product-visibility>` to **Hidden**. Customers will still be able to :ref:`purchase it <storefront-guide--orders-kits>` but only as part of the selected kit.
 
