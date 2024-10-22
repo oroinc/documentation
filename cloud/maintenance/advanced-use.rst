@@ -209,7 +209,7 @@ The ``maintenance_page``, ``error_pages_path`` and ``error_pages`` are relative 
 
 Valid changes are applied within 10 minutes or automatically during deployments.
 
-.. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to the Service Desk before making any changes. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``upgrade:source`` to apply changes.
+.. note:: Make sure you create a request to the Service Desk before making any changes. OroCloud’s customer support team can change your backend prefix, or you should wait for approximately 5 minutes after orocloud.yaml changes, and then, run ``upgrade:source`` or ``app:package:deploy --source`` to the previously released commit, tag, or application package to apply changes.
 
 Webserver Configuration
 -----------------------
