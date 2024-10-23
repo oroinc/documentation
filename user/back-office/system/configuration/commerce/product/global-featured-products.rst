@@ -5,7 +5,7 @@
 Configure Global Settings for Featured Products (Version 5.1 and Below)
 =======================================================================
 
-... important:: The configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please configure this option via the product segment content widget under Marketing > Content Widgets following the :ref:`new configuration logic <concept-guides--product-management--featured-products>`.
+.. important:: The configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please configure this option via the product segment content widget under Marketing > Content Widgets following the :ref:`new configuration logic <concept-guides--product-management--featured-products>`.
 
 You can mark some of the products as featured to display them in the Featured Products block on the main landing page (home page) in the storefront.
 
