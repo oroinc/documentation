@@ -247,6 +247,20 @@ The default configuration for extension with alias "oro_api":
             # Prototype
             name:                 ~
 
+        # The data types for which it is disallowed to use an array filter.
+        filter_disallow_array_data_types: []
+
+            # Examples:
+            # - string
+            # - text
+
+        # The data types for which it is disallowed to use a range filter.
+        filter_disallow_range_data_types: []
+
+            # Examples:
+            # - string
+            # - text
+
         # The form types that can be reused in API.
         form_types:
 
