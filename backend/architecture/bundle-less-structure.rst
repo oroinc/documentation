@@ -258,11 +258,11 @@ API
 
         .. code-block:: yaml
 
-            # File placed `AppRootDir/doc/api/frontend/user.md`
+            # File placed `appRoot/doc/api/frontend/user.md`
             api:
                 entities:
                     App\Entity\User:
-                        documentation_resource: 'doc/api/frontend/user.md'
+                        documentation_resource: '/doc/api/frontend/user.md'
                         ...
 
     This feature is available as of OroPlatform version 6.0.3.
