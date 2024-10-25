@@ -33,7 +33,7 @@ OroCloud Environment Infrastructure Diagram
 
 The diagram below reflects a standard Oro application deployment in GCP via OroCloud.
 
-.. image:: /cloud/img/standard_average_environment_schema.png
+.. image:: /cloud/img/standard_average_environment_schema_new.png
    :alt: Architecture of a standard Oro application deployment in GCP via OroCloud
 
 Redundancy
@@ -43,13 +43,37 @@ Redundancy is a system design that ensures all system components are duplicated.
 
 The OroCloud infrastructure uses fully redundant components and services for Oro application operations. Check out the following sections for details on how redundancy is achieved.
 
-Google CDN
+CDN and Load Balancing
+~~~~~~~~~~~~~~~~~~~~~~
+
+The content delivery network is the geographically distributed network of the caching proxy servers that help improve response time for static content and provide high availability for service.
+
+Load Balancing is the process of distributing incoming traffic among web servers to improve service availability and performance.
+OroCloud offers two options of CDN and load balancing depending on the service provider used.
+
+GCP
+~~~
+
+Google CDN uses edge servers distributed globally and perfectly integrated with Google Cloud Platform logging and monitoring services. For more information, see `CDN and Load Balancing`_ documentation.
+
+Load Balancing uses a standard GCP load balancer, which distributes traffic between web nodes. This option provides a basic level of DDoS mitigation and leaves service entry points exposed to the world due to the GCP architecture requirements.
+
+Cloudflare
 ~~~~~~~~~~
 
-The content delivery network is the geographically distributed network of the caching proxy servers that help to improve response time for static content as well as provide high availability for service. Google CDN uses |edge servers distributed globally| and perfectly integrated with Google Cloud Platform logging and monitoring services. For more information, see |Google CDN| documentation.
+Cloudflare is a leading content delivery network (CDN) and web application security service. It helps improve response time for static content, protects from DDoS attacks, and provides high availability for the web application. Cloudflare uses a connectivity cloud distributed globally to connect end-users to an OroCommerce instance, improving performance and providing an additional layer of network security. Please refer to the |Cloudflare documentation| for more details.
+
+An OroCommerce instance protected by Cloudflare Zero Trust has no entry points exposed to the public Internet. Instead, it connects securely to the Cloudflare Connectivity Cloud through a lightweight daemon (``cloudflared``),  which runs in a web node. This daemon establishes an encrypted tunnel to Cloudflare using the QUIC protocol. End-user requests to the specific OroCommerce site are received by Cloudflare, which then routes the traffic through the secure tunnel to the specific OroCommerce instance. This process is seamless for the end-user and addresses the most common security and availability risks, including DDoS attacks.
+
+Key details for an OroCommerce instance protected by Cloudflare:
+
+* The TLS (SSL) certificate for the site is managed by Oro through Cloudflare Connectivity Cloud.
+
+* HTTPS connections are terminated in the Cloudflare Connectivity Cloud, after which all traffic is routed within Cloudflare's infrastructure and then through the secure, encrypted tunnel to the specific OroCommerce instance.
+
+* Load balancing is performed using nginx load balancing capabilities.
 
 Oro customers also can use other CDN providers. Please contact Oro Support to check if your CDN is compatible with Oro application.
-
 
 
 Web Node

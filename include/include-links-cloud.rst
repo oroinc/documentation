@@ -242,3 +242,7 @@ Links (Cloud)
 .. |Composer Patches| raw:: html
 
    <a href="https://github.com/cweagans/composer-patches/blob/1.x/README.md" target="_blank">Composer Patches</a>
+
+.. |Cloudflare documentation| raw:: html
+
+   <a href="https://developers.cloudflare.com/cloudflare-one/" target="_blank">Cloudflare documentation</a>
