@@ -938,6 +938,14 @@ Domain Configuration
               deny:
                 - 'all'
 
+GeoIP Databases
+---------------
+
+The following variables are available for locations with the `php` type:
+
+* `GEOIP2_COUNTRY_CODE`, example value: `US` for USA
+* `GEOIP2_SUBDIVISION_ISO_CODE`, example value: `OH` for Ohio, US state
+
 Profiling Application Console Commands via Blackfire
 ----------------------------------------------------
 
