@@ -82,12 +82,12 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * ldap                                            |
 |                   | * mongodb (to use OroGridFSConfigBundle)          |
 +-------------------+---------------------------------------------------+
-| *Database*        | * |PostgreSQL| 15.1                               |
+| *Database*        | * |PostgreSQL| >=16.1                             |
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
 | *Assets*          | * |Node.js| >=20.10.0 <21                         |
-|                   | * |NPM| >=9.3.1 <10                               |
+|                   | * |NPM| >10                                       |
 |                   |                                                   |
 |                   | Used for JS assets minification and SCSS assets   |
 |                   | build.                                            |
@@ -105,11 +105,11 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |
 +------------------+-----------------------------------------------------+
-| *Database*       | * |PostgreSQL| / |EnterpriseDB| 15.1                |
+| *Database*       | * |PostgreSQL| / |EnterpriseDB| >=16.1              |
 +------------------+-----------------------------------------------------+
 | *Search Index*   | * |Elasticsearch| >=8.4.1, <9.0                     |
 +------------------+-----------------------------------------------------+
-| *Job Queue*      | * |RabbitMQ| 3.11.x                                 |
+| *Job Queue*      | * |RabbitMQ| 3.12.x                                 |
 +------------------+-----------------------------------------------------+
 
 .. _sys-requirements-postgre-config:
@@ -128,7 +128,7 @@ Optional recommendations
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 * |Tidy PHP extension| should be installed to make sure that HTML is correctly converted into a text representation
-* |Redis| - could be used for more efficient application caching. Supported versions of Redis 6.2.
+* |Redis| - could be used for more efficient application caching. Supported versions of Redis 7.2.x
 * |PNGQuant| and |JPEGOptim| are used if it is necessary to optimize the image size in storage
 
 
