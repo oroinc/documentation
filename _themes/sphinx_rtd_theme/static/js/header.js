@@ -247,18 +247,25 @@ jQuery(function ($) {
             })
         }
     });
-
     jQuery(function ($) {
-        $(document).click(function (e) {
+        function documentMenuClose(e){
             var menuParent = $(".header__nav-product .header__menu > .header__menu-parent");
             if (!menuParent.is(e.target)
                 && menuParent.has(e.target).length === 0) {
-                menuParent.find(".js-active").removeClass("js-active");
-                $("body").removeClass("js-menu-open2");
+                setTimeout(function (){
+                    menuParent.find(".js-active").removeClass("js-active");
+                    $("body").removeClass("js-menu-open2");
+                },100)
             }
+        }
+        $(document).click(function (e) {
+            documentMenuClose(e);
+        });
+        $(window).on('mouseenter', function (e) {
+            documentMenuClose(e);
         });
     });
-
+    
     $(".header__menu-left_closest").click(function () {
         $(this).closest(".header__nav").find(".nav__site").removeClass("js-open");
         $(this).closest(".header__nav").find(".header__nav-product").find(".header__menu").removeClass("js-open");

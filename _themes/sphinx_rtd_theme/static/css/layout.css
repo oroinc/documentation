@@ -6748,6 +6748,18 @@ body.js-menu-open2:before {
     .header__nav.n-color .search .field-search input[type=text], #searchbox-home .field-search2 input[type=text]{
         padding-right: 2rem;
     }
+    .header__menu-parent:hover:before{
+         content: "";
+         position: absolute;
+         width: 100vw;
+         height: 2rem;
+         top: 7.1rem;
+         background: transparent;
+         left: 0;
+         right: 0;
+         margin: auto;
+         max-width: 114.4rem;
+    }
 }
 @media (min-width: 768px) and (max-width: 1199px){
     .header__nav.n-color .search .field-search input[type=text],
@@ -6795,7 +6807,7 @@ body.js-menu-open2:before {
 @media (max-width: 767px){
     .header .header__nav.n-color .search-wrap {
         position: absolute;
-        right: 50px;
+        right: 0px;
         top: 7px;
     }
     .header .header__nav.n-color .search{
@@ -6803,6 +6815,7 @@ body.js-menu-open2:before {
     }
     .header .header__nav.n-color .search .field-search{
         top: 4px;
+        right:4px;
     }
     .header__nav .search .search-button{
         height: 5rem;
