@@ -953,3 +953,55 @@ Links (User)
 .. |OpenAI API Keys|  raw:: html
 
    <a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI API Keys</a>
+
+.. |pnpm|  raw:: html
+
+   <a href="https://pnpm.io/" target="_blank">pnpm</a>
+
+.. |Google Apps Script CLI (clasp)|  raw:: html
+
+   <a href="https://github.com/google/clasp" target="_blank">Google Apps Script CLI (clasp)</a>
+
+.. |Enable Apps Script API|  raw:: html
+
+   <a href="https://script.google.com/home/usersettings" target="_blank">Enable Apps Script API</a>
+
+.. |Google Apps Script|  raw:: html
+
+   <a href="https://script.google.com/" target="_blank">Google Apps Script</a>
+
+.. |Google Cloud Console|  raw:: html
+
+   <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a>
+
+.. |Google Add-on LICENSE|  raw:: html
+
+   <a href="https://github.com/oroinc/google-workspace-addon/blob/master/LICENSE.md" target="_blank">LICENSE</a>
+
+.. |public addon documentation|  raw:: html
+
+   <a href="https://developers.google.com/workspace/add-ons/how-tos/testing-workspace-addons" target="_blank">public documentation</a>
+
+.. |public addon documentation 2|  raw:: html
+
+   <a href="https://developers.google.com/workspace/add-ons/how-tos/publish-add-on-overview" target="_blank">public documentation</a>
+
+.. |Google Workspace add-on repository|  raw:: html
+
+   <a href="https://github.com/oroinc/google-workspace-addon" target="_blank">Google Workspace add-on repository</a>
+
+.. |MS365 Mailbox add-in repository|  raw:: html
+
+   <a href="https://git.oroinc.com/mailbox-addons/microsoft-365/-/tree/main" target="_blank">MS365 Mailbox add-in repository</a>
+
+.. |Get add-ins window|  raw:: html
+
+   <a href="https://aka.ms/olksideload" target="_blank">Get add-ins window</a>
+
+.. |Azure Service|  raw:: html
+
+   <a href="https://entra.microsoft.com/" target="_blank">Azure Service</a>
+
+.. |MS Admin Panel|  raw:: html
+
+   <a href="https://admin.microsoft.com/" target="_blank">MS Admin Panel</a>
