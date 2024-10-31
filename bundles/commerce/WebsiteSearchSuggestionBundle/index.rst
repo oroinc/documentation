@@ -10,7 +10,7 @@ Entities
 
 This bundle contains the following new entities:
 
-- **WebsiteSearchSuggestionBundle:Suggestion** -- represents a suggestion phrase for the product autocomplete functionality. When creating or updating a product, autocomplete can suggest products based on their sku or name fields.
+- **WebsiteSearchSuggestionBundle:Suggestion** -- represents a suggestion phrase for the product autocomplete functionality. When products are created or updated, suggestion phrases are generated based on the product’s ``name`` and ``SKU`` fields. These phrases are then displayed in autocomplete when users search for products
 - **WebsiteSearchSuggestionBundle:ProductSuggestion** -- represents a relation between a product and a suggestion phrase. Many products can reference the same suggestion.
 
 **Repositories**
@@ -20,6 +20,7 @@ This bundle contains the following new entities:
 
 Configuration
 -------------
+
 The bundle adds a new feature oro_website_search_suggestion that allows to enable or disable displaying suggestions in the storefront for users.
 The bundle also adds a new configuration option **Number Of Automatically Suggested Phrases In Search Autocomplete** under **System Configuration > Commerce > Product  > Product Search > Automatic Phrase Suggestions** in the back-office. This setting controls the maximum number of product search autocomplete suggestions displayed in the storefront. If set to zero, the suggestions will not appear.
 
