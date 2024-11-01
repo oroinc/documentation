@@ -12,7 +12,7 @@ Entities
 
 This bundle contains the following new entities:
 
-- **WebsiteSearchSuggestionBundle:Suggestion** -- represents a suggestion phrase for the product autocomplete functionality. When creating or updating a product, autocomplete can suggest products based on their sku or name fields.
+- **WebsiteSearchSuggestionBundle:Suggestion** -- When products are created or updated, suggestion phrases are generated based on the product’s ``name`` and ``SKU`` fields. These phrases are then displayed in autocomplete when users search for products.
 - **WebsiteSearchSuggestionBundle:ProductSuggestion** -- represents a relation between a product and a suggestion phrase. Many products can reference the same suggestion.
 
 **Repositories**
