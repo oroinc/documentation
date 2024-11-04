@@ -23,36 +23,10 @@ Ensure you have the following installed on your system before proceeding:
 Set Up the Project
 ------------------
 
-Set Up CI/CD
-^^^^^^^^^^^^
-
-1. Clone the |MS365 Mailbox add-in repository| code (for Enterprise customers only).
-2. Add a new *.env* file and set up environment variables for your CI/CD process following the example in the *.env.example* file.
-3. Install node_modules:
-
-.. code-block:: bash
-
-   pnpm i
-
-4. Run the following command to generate a manifest file to public folder:
-
-.. code-block:: bash
-
-   pnpm run generate-manifest
-
-5. Run the following command to create a build folder:
-
-.. code-block:: bash
-
-   pnpm run build
-
-6. Deploy **dist** folder.
-
-
 Set Up the Project Manually
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Clone the |MS365 Mailbox add-in repository| code to your project folder (for Enterprise customers only).
+1. Clone the MS365 Mailbox add-in repository code to your project folder (for Enterprise customers only).
 2. Install node_modules:
 
 .. code-block:: bash
@@ -72,7 +46,7 @@ Set Up the Project Manually
 
    pnpm run build
 
-6. Deploy **dist** folder on [your-addin-domain].
+6. Deploy **dist** folder on [your-addin-domain] (for example on Azure server).
 
 Set Up Individual Local Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -200,7 +174,7 @@ Set Up Add-in to Your Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create an OAuth Application.
-2. Follow the Ci/CD setup or Manual setup flow.
+2. Follow the `Set Up the Project Manually`_ flow.
 3. Navigate to |MS Admin Panel|.
 4. Go to **Settings > Integrated Apps** in the menu to the left.
 5. Click **Upload custom apps**.
