@@ -9,7 +9,7 @@ In the Customer Group section, you can organize customers into groups and share 
 
 On a customer group details page, you can:
 
-* |IcConfig| **Edit Frontend Menu**
+* |IcConfig| **Edit Storefront Menu**
 * |IcConfig| **Configure** customer group settings.
 * |IcEdit| **Edit** customer group details.
 * |IcDelete| **Delete** existing customer groups.

@@ -17,15 +17,13 @@ Flow
 To configure the All Products page:
 
 1. Enable **All Products Page** in system configuration on the required level --- globally (see below) or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`.
-2. Add it to the storefront as part of either your :ref:`web catalog <user-guide--marketing--web-catalog>` (**Marketing > Web Catalog**) or frontend menu (**System > Frontend Menus**) on the required level:
+2. Add it to the storefront as part of either your :ref:`web catalog <user-guide--marketing--web-catalog>` (**Marketing > Web Catalog**) or storefront menu (**System > Storefront Menus**) on the required level:
 
-   * :ref:`Globally <sys--conf--frontend-menus--all-products--global>` (**System > Frontend Menus**)
+   * :ref:`Globally <sys--conf--frontend-menus--all-products--global>` (**System > Storefront Menus**)
    * :ref:`Per organization <sys--users--organization--menus--all-products--organization>` (**System > User Management > Organizations**)
    * :ref:`Per website <sys--users--organization--menus--all-products--website>` (**System > Websites**)
    * :ref:`Per customer group <user-guide--customers--customer-groups--all-products>` (**Customers > Customer Group**)
    * :ref:`Per customer <user-guide--customers--customers--all-products>` (**Customers > Customers**)
-
-3. Check the :ref:`example of adding the All Products page <user-guide--all-products--sample>` for your reference.
 
 .. note:: Please note that it is recommended to enable the All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.
 

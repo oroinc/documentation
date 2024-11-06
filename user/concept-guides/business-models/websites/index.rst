@@ -71,7 +71,7 @@ Website-Specific System Configuration
 
 Each website has system settings that can be customized individually per website. The same set of settings are also available on the :ref:`global <mc-system-configuration>` and :ref:`organization <doc-organization-configuration>` levels. Provided that all levels have different configuration, the settings configured for a particular website will always be prioritized first.
 
-However, there are some settings that can be adjusted on the customer and customer group levels as well. This includes the configuration of :ref:`price lists <customers--customers--edit--price-lists>` and :ref:`frontend menus <frontend-menus-customer>`.
+However, there are some settings that can be adjusted on the customer and customer group levels as well. This includes the configuration of :ref:`price lists <customers--customers--edit--price-lists>` and :ref:`storefront menus <frontend-menus-customer>`.
 
    .. image:: /user/img/concept-guides/websites/website_system_config.png
       :alt: Website-specific system configuration settings
@@ -124,15 +124,15 @@ One of the substantial capabilities offered by OroCommerce is the ability to con
 Website Navigation
 ------------------
 
-The storefront navigation is highly customizable via the :ref:`Frontend Menus <doc--system--menu--config-levels--frontend-menus>` that can be set globally, per organization, per website, per customer, and per customer group.
+The storefront navigation is highly customizable via the :ref:`Storefront Menus <doc--system--menu--config-levels--frontend-menus>` that can be set globally, per organization, per website, per customer, and per customer group.
 
 .. image:: /user/img/concept-guides/websites/website_navigation.png
-   :alt: A list of menu items in Frontend menu
+   :alt: A list of menu items in Storefront menu
 
 All the visuals represented in the storefront are specific to each website. Go through the available menus to adapt content to particular audience and localization. You can enable or disable menu items for a particular customer, website, or mobile device by setting related conditions.
 
 .. image:: /user/img/concept-guides/websites/frontend_menu_refreshing_teal.png
-   :alt: Illustrate all available frontend menu items in the storefront
+   :alt: Illustrate all available storefront menu items in the storefront
 
 
 Web Catalogs per Website
@@ -199,7 +199,7 @@ With OroCommerce, you can either share the same payment and shipping methods acr
 * :ref:`Setup a Website Host <system-websites--prepare-to-host-a-website-in-the-domain-sub-folder>`
 * :ref:`Manage a Website <user-guide--system-websites--manage-websites>`
 * :ref:`Website Routing Configuration <sys--config--sysconfig--websites--routing>`
-* :ref:`Frontend Menu <backend-frontend-menus>`
+* :ref:`Storefront Menu <backend-frontend-menus>`
 
 
 

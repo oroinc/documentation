@@ -14,7 +14,7 @@ The oro:install command is the application installer. It installs the applicatio
 
    php bin/console oro:install
 
-The ``--application-url`` option can be used to specify the URL at which the management console (back-office) of the application will be available.
+The ``--application-url`` option can be used to specify the URL at which the back-office of the application will be available.
 Please make sure that you web-server is :ref:`configured properly <installation--web-server-configuration>`.
 
 .. code-block:: none

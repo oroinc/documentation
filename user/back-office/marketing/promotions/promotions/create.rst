@@ -11,10 +11,10 @@ To create a new promotion:
 
 1. Navigate to **Marketing > Promotions > Promotions** in the main menu.
 
+In the All Promotions grid, you can click any promotion to view its details, hover over the |IcMore| **More Options** menu to the right of the required promotion to |IcClone| duplicate, |IcView| view, |IcEdit| edit, or |IcDelete| delete it from the system.
+
    .. image:: /user/img/marketing/promotions/PromotionsGridNew.png
       :alt: The page of all promotions available in the system
-
-In the All Promotions grid, you can click any promotion to view its details, hover over the |IcMore| **More Options** menu to the right of the required promotion to |IcClone| duplicate, |IcView| view, |IcEdit| edit, or |IcDelete| delete it from the system.
 
 2. To create a new promotion, click **Create Promotion** in the top right corner.
 
@@ -22,6 +22,11 @@ In the All Promotions grid, you can click any promotion to view its details, hov
 
    * **Owner** --- Select the user responsible for the promotion from the list, or click |IcBars| to load the list of users to choose from. By default, the current user in predefined as the promotion owner.
    * **Name** --- Specify the promotion name to distinguish it from other promotions.
+   * **Storefront Labels** --- Specify the label (e.g., the promotion name) that will be displayed in the Order Summary section of the checkout in the storefront (illustrated below) alongside the coupon code. If left blank, the name of the promotion linked to the coupons will be used as the label.
+
+     .. image:: /user/img/marketing/promotions/CouponFrontStoreName.png
+        :alt: Displaying the promotion label at checkout
+
    * **Sort Order** --- Enter the sort order to set the priority compared to other available promotions. The lower is the number, the higher is the priority.
    * **Enabled** --- Enable the checkbox to activate the promotion. To deactivate it, clear the checkbox.
    * **Stop Further Rule Processing** --- Select this option if you wish to prevent applying other promotions with lower priority.
@@ -77,11 +82,6 @@ In the All Promotions grid, you can click any promotion to view its details, hov
 
       .. note:: You may use filter on the top of the dialog to limit the scope of the products and make it fit into the visible area.
 
-8. In the **Store Frontend** section, you can specify the label (e.g. the promotion name) in the Labels field that will be displayed in the Order Summary section of the checkout in the storefront (illustrated below) alongside the coupon code. If left blank, the name of the promotion linked to the coupons will be used as the label.
-
-
-   .. image:: /user/img/marketing/promotions/CouponFrontStoreName.png
-      :alt: The store frontend section of the promotions page where you can add the label to be displayed at checkout
 
 Discount Options for Order Line Item
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

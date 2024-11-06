@@ -26,9 +26,6 @@ To change the price list settings for the customer group:
 
    b) To add a price list, click **+ Add Price List** and select the price list in the newly added line. After you start typing the price list name, the list of suggestions appears. Press **Enter** or click the suggested value to add the price list.
 
-   .. image:: /user/img/customers/customer_groups/pricing_pricelist_add.png
-      :alt: Adding a new price list to the pricelist section
-
    .. note:: The price list is appended to the bottom of the list and, initially, has a lower priority than the existing price lists. Adjust the price list priority if necessary and specify whether the merge is allowed (the latter is shown only for the **Merge by priority** price selection strategy).
 
    c) To control the way prices are merged into the combined price list, select or clear the **Merge Allowed** option for the price lists.

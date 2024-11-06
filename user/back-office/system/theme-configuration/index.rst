@@ -38,17 +38,17 @@ To configure your current storefront theme:
     .. image:: /user/img/system/theme-configuration/promotional-content-block.png
        :alt: Promotional content configuration and representation in the storefront header
 
-    * **Top Navigation Menu** --- Select a frontend menu that will be rendered above the header. Please see the :ref:`concept guide on storefront menu items <menu-management-concept-guide>` to learn more about each menu.
+    * **Top Navigation Menu** --- Select a storefront menu that will be rendered above the header. Please see the :ref:`concept guide on storefront menu items <menu-management-concept-guide>` to learn more about each menu.
 
     .. image:: /user/img/system/theme-configuration/top-navigation-menu.png
        :alt: Top navigation menu representation in the storefront header
 
-    * **Quick Links Menu** --- The top level items from the selected frontend menu will be added to the header to provide quick access to the most frequently used pages. Please see the :ref:`concept guide on storefront menu items <menu-management-concept-guide>` to learn more about each menu.
+    * **Quick Links Menu** --- The top level items from the selected storefront menu will be added to the header to provide quick access to the most frequently used pages. Please see the :ref:`concept guide on storefront menu items <menu-management-concept-guide>` to learn more about each menu.
 
     .. image:: /user/img/system/theme-configuration/quick-links-menu.png
        :alt: Quick Links Menu representation in the storefront header
 
-    * **Quick Access Button** --- The quick access button can either open an additional frontend menu, be a direct shortcut to the product catalog, or another important section of the website. Select the type of the quick access button and specify the name to display it in the storefront header.
+    * **Quick Access Button** --- The quick access button can either open an additional storefront menu, be a direct shortcut to the product catalog, or another important section of the website. Select the type of the quick access button and specify the name to display it in the storefront header.
 
     .. image:: /user/img/system/theme-configuration/quick-access-button.png
        :alt: Quick access button representation in the storefront header

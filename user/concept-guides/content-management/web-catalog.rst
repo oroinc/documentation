@@ -47,7 +47,7 @@ Each of these nodes can have more child categories:
 .. image:: /user/img/concept-guides/web-catalog/bo-sf-further-child-nodes.png
    :alt: Deeper child menu items in back-office vs storefront
 
-.. hint:: In addition to the catalog items, the main storefront menu can also contain static custom menu items, such as Contact Us or About. These custom menu items are part of *commerce_main_menu* and can be moved to a different section of your storefront. Please see the :ref:`documentation on frontend menu items <backend-frontend-menus>` to learn more.
+.. hint:: In addition to the catalog items, the main storefront menu can also contain static custom menu items, such as Contact Us or About. These custom menu items are part of *commerce_main_menu* and can be moved to a different section of your storefront. Please see the :ref:`documentation on storefront menu items <backend-frontend-menus>` to learn more.
 
         .. image:: /user/img/concept-guides/web-catalog/commerce-main-menu-sf.png
            :alt: Commerce-main-menu in the storefront
@@ -185,11 +185,11 @@ The following table summarizes the difference between a master catalog and a web
 Changing Storefront's Product Menu
 ----------------------------------
 
-Whether you use the master catalog or a web catalog to display your product collection on the website, you can further modify how your storefront menu looks by using the frontend menu.
+Whether you use the master catalog or a web catalog to display your product collection on the website, you can further modify how your storefront menu looks by using the storefront menu.
 
-There are several :ref:`frontend menus <frontend-menus-overview>` that make up the navigation of the website storefront. The one that allows you to customize the main navigation menu in your storefront is called **commerce_main_menu**. It reflects the existing structure of your master catalog or :ref:`selected web catalog <user-guide--system--menu--menu-frontend>` and presents you with options to customize the name and position of its categories in the storefront without affecting the original master or web catalogs.
+There are several :ref:`storefront menus <frontend-menus-overview>` that make up the navigation of the website storefront. The one that allows you to customize the main navigation menu in your storefront is called **commerce_main_menu**. It reflects the existing structure of your master catalog or :ref:`selected web catalog <user-guide--system--menu--menu-frontend>` and presents you with options to customize the name and position of its categories in the storefront without affecting the original master or web catalogs.
 
-Commerce_main_menu is located under **System > Frontend Menus**.
+Commerce_main_menu is located under **System > Storefront Menus**.
 
 .. image:: /user/img/concept-guides/web-catalog/commerce-main-menu.png
    :alt: Location of the menu associated with the main product menu in the storefront
@@ -206,7 +206,7 @@ You can modify *system* items (which are reflection of the items from web/master
 .. note:: Keep in mind that, initially, the system takes the default values from the :ref:`routing settings <sys--config--sysconfig--websites--routing>` in the system configuration. However, once a user adjusts the values in the **commerce_main_menu**, the system starts adhering to these modified values, subsequently updating the storefront menu accordingly. This way, the menu configured to start from the *Building & Hardware* content node set in the system configuration will be overridden with the *Smart Home* content node set in the **commerce_main_menu**.
 
   .. image:: /user/img/concept-guides/web-catalog/nav-root-options.png
-     :alt: Illustrating that the navigation root configured from the Frontend menu supersedes the one set under system configuration.
+     :alt: Illustrating that the navigation root configured from the Storefront menu supersedes the one set under system configuration.
 
 
 You can also add promo images to the menu and add links to them. In the screenshot below, the image is created as a new menu item with target type URI and placed 2 levels deep in the tree.
@@ -231,7 +231,7 @@ The tree displayed on the left-hand side of the main menu represents the structu
 
 Every item in the tree is synchronized with the web catalog until you manually update the item in the commerce_main_menu, in which case your changes have priority. The system will not overwrite them if the original menu item is updated in the web catalog.
 
-In the example below, we have changed the title of category *Building Supplies* to *Construction Materials* via commerce_main_menu. As you can see in the screenshot below, the category's name in the original web catalog is unchanged, and the storefront uses the title from the frontend menu.
+In the example below, we have changed the title of category *Building Supplies* to *Construction Materials* via commerce_main_menu. As you can see in the screenshot below, the category's name in the original web catalog is unchanged, and the storefront uses the title from the storefront menu.
 
 .. image:: /user/img/concept-guides/web-catalog/sync-illustration.png
    :alt: Illustration of the storefront menu when one of the titles is updated in commerce_main_menu

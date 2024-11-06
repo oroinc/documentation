@@ -5,7 +5,7 @@ Manage Organizations in the Back-Office
 
 .. important:: Multi-organization management is only available in the Enterprise edition.
 
-From the page of the selected organization, you can edit its menu(s), access organization configuration settings, update the details for the selected organization, as well as manage its users. In OroCommerce, you can also edit the frontend menu for required organizations.
+From the page of the selected organization, you can edit its menu(s), access organization configuration settings, update the details for the selected organization, as well as manage its users. In OroCommerce, you can also edit the storefront menu for required organizations.
 
 To open the page of a specific organization:
 
@@ -17,7 +17,7 @@ To open the page of a specific organization:
 
    * To open :ref:`organization configuration settings <doc-organization-configuration>`, click |IcConfig| **Configuration** on the top right.
    * To edit the :ref:`back-office menu <doc-config-menus>` for this organization, click |IcConfig| **Edit Menu** on the top right.
-   * To edit the :ref:`storefront menu <backend-frontend-menus>` for this organization in OroCommerce, click |IcConfig|  **Edit Frontend Menu**.
+   * To edit the :ref:`storefront menu <backend-frontend-menus>` for this organization in OroCommerce, click |IcConfig|  **Edit Storefront Menu**.
    * To update organization details, such as it name or access level, click |IcEdit| **Edit**.
    * To view who updated organization details, click the **Change History** link.
    * To disable users within the organization, click |IcBan| in the table at the end of the row of the selected user.

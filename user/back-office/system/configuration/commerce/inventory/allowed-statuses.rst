@@ -21,7 +21,7 @@ To change the default inventory statuses:
 
 3. Customize any of the options by clearing the **Use Default** box next to the option. Click on the inventory status to select/deselect it. Press Shift and click to select/deselect a range of items. Press Ctrl and click to select/deselect multiple items in no particular order.
 
-4. In the **Store Frontend** section, the following options are available:
+4. In the **Storefront** section, the following options are available:
 
    * **Visible Inventory Statuses** - A buyer can see products with the selected inventory statuses in the OroCommerce storefront.
    * **Can Be Added To RFQs** - A buyer can add Products with the selected inventory statuses when creating an RFQ in the OroCommerce storefront.

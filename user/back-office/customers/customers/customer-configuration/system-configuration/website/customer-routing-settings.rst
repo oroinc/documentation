@@ -6,7 +6,7 @@ Configure Routing Settings per Customer
 .. note::
     The website routing settings can be configured :ref:`globally <sys--config--sysconfig--websites--routing>`, per :ref:`organization <organization-config-website-routing>`, per :ref:`website <sys--websites--sysconfig--websites--routing>`, :ref:`customer group <user-guide--customer-groups--configuration--settings--routing>` and customer.
 
-You can configure what :ref:`frontend menu <frontend-menus-overview>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
+You can configure what :ref:`storefront menu <frontend-menus-overview>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
 
 To configure the main navigation menu per customer:
 
@@ -19,7 +19,7 @@ To configure the main navigation menu per customer:
 3. Select **System Configuration > Websites > Routing** in the menu to the left.
 4. In the General section, clear the **Use Customer Group** check box and configure the following option:
 
-   * **Main Navigation Menu** -- Use the dropdown to select which frontend menu will represent the main menu in the storefront.
+   * **Main Navigation Menu** -- Use the dropdown to select which storefront menu will represent the main menu in the storefront.
 
 5. Click **Save Settings**.
 

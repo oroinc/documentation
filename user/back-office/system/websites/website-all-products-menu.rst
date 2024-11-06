@@ -1,15 +1,15 @@
 .. _sys--users--organization--menus--all-products--website:
 
-Add All Products Page to Frontend Menus per Website
----------------------------------------------------
+Add All Products Page to Storefront Menus per Website
+-----------------------------------------------------
 
 .. important:: Multi-website management is only available in the Enterprise edition.
 
-Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it to a frontend menu of a particular website:
+Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it to a storefront menu of a particular website:
 
 1. Navigate **System > Websites** in the main menu.
 2. Click on the required website to open its page.
-3. On the website page, click |IcConfig| **Edit Frontend Menu** to start editing the configuration.
+3. On the website page, click |IcConfig| **Edit Storefront Menu** to start editing the configuration.
 
    .. image:: /user/img/system/websites/AllProductsWebsiteEditMenu.png
 

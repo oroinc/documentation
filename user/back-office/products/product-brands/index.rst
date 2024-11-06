@@ -83,7 +83,7 @@ Once a brand has been created and assigned to a product, you may make it filtera
 
 1. Navigate to **Products > Product Attributes** in the main menu.
 2. Click the **brand** attribute or |IcEdit| at the end of the row to edit the attribute. Keep in mind that editing system attributes is only possible in the :ref:`global organization <user-guide-getting-started-change-organization>`.
-3. In the **Frontend options** section, set the **Filterable** option to **Yes**.
+3. In the **Storefront options** section, set the **Filterable** option to **Yes**.
 
    .. image:: /user/img/products/products/brand_filters_2.png
       :alt: Set the Filterable option to yes
