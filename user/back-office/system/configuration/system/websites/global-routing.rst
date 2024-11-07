@@ -41,7 +41,7 @@ To change the default global routing settings:
      .. image:: /user/img/system/config_system/visible_content_node.png
         :alt: The selected sub-menu nodes that will be visible in the storefront
 
-   * **Main Navigation Menu** - Select which :ref:`frontend menu <menu-management-concept-guide>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
+   * **Main Navigation Menu** - Select which :ref:`storefront menu <menu-management-concept-guide>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
 
      .. image:: /user/img/system/frontend_menu/main-navigation-menu.png
         :alt: Illustration of how changing Main Navigation Menu affects the storefront

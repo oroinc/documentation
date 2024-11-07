@@ -12,7 +12,7 @@ A navigation menu of an e-commerce website has a lot in common with the shelving
 
 Catering to the needs of your business, OroCommerce offers a useful solution to build the menu of your choice. The application provides several pre-configured menu items out-of-the-box that you can customize to fit your criteria. With the storefront and back-office menu functionality, you can personalize and optimize your site navigation for the convenient usage by customers in the storefront and administrators in the back-office.
 
-.. note:: Currently, Frontend Menus include menu items for both **Refreshing Teal** and **version 5.1 and below** to support all versions of OroCommerce.
+.. note:: Currently, Storefront Menus include menu items for both **Refreshing Teal** and **version 5.1 and below** to support all versions of OroCommerce.
 
 .. image:: /user/img/concept-guides/menus/menus_overview_new.png
    :alt: The lists of the default storefront and back-office menu items

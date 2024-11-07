@@ -33,41 +33,41 @@ To configure your current storefront theme:
    * **Description** --- Type a short but meaningful description that can help you and other users understand the specifics of the theme.
    * **Type** --- Select the theme type. Currently, only storefront themes are available for configuration.
 
-5. In the **Configuration** section, customize the following options:
+5. In the **Configuration** section, customize the following options. You can preview each menu configuration setting to visualize what the option does and where the selected storefront menu will be positioned.
 
    * **Promotional Content** --- Select a :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` from the dropdown list to display it at the top of the storefront header.
 
-     .. image:: /user/img/system/theme-configuration/promotional-content-block.png
-        :alt: Promotional content configuration and representation in the storefront header
+   .. image:: /user/img/system/theme-configuration/promotional-content-block.png
+      :alt: Promotional content configuration and representation in the storefront header
 
-   * **Top Navigation Menu** --- Select a frontend menu that will be rendered above the header. Please see the :ref:`concept guide on storefront menu items <menu-management-concept-guide>` to learn more about each menu.
+   * **Top Navigation Menu** --- Select a storefront menu that will be rendered above the header. Please see the :ref:`concept guide on storefront menu items <menu-management-concept-guide>` to learn more about each menu.
 
-     .. image:: /user/img/system/theme-configuration/top-navigation-menu.png
-        :alt: Top navigation menu representation in the storefront header
+   .. image:: /user/img/system/theme-configuration/top-navigation-menu.png
+      :alt: Top navigation menu representation in the storefront header
 
-   * **Quick Links Menu** --- The top level items from the selected frontend menu will be added to the header to provide quick access to the most frequently used pages. Please see the :ref:`concept guide on storefront menu items <menu-management-concept-guide>` to learn more about each menu.
+   * **Quick Links Menu** --- The top level items from the selected storefront menu will be added to the header to provide quick access to the most frequently used pages. Please see the :ref:`concept guide on storefront menu items <menu-management-concept-guide>` to learn more about each menu.
 
-     .. image:: /user/img/system/theme-configuration/quick-links-menu.png
-        :alt: Quick Links Menu representation in the storefront header
+   .. image:: /user/img/system/theme-configuration/quick-links-menu.png
+      :alt: Quick Links Menu representation in the storefront header
 
-   * **Quick Access Button** --- The quick access button can either open an additional frontend menu, be a direct shortcut to the product catalog, or another important section of the website. Select the type of the quick access button and specify the name to display it in the storefront header.
+   * **Quick Access Button** --- The quick access button can either open an additional storefront menu, be a direct shortcut to the product catalog, or another important section of the website. Select the type of the quick access button and specify the name to display it in the storefront header.
 
-     .. image:: /user/img/system/theme-configuration/quick-access-button.png
-        :alt: Quick access button representation in the storefront header
+   .. image:: /user/img/system/theme-configuration/quick-access-button.png
+      :alt: Quick access button representation in the storefront header
 
    * **Language And Currency Switchers** --- Select where you want to place the language and currency switcher. When *Above the header* option is selected, the language and currency switchers are rendered above the header on the devices with the sufficient screen width. On smaller screens the language/currency switchers will be placed inside the "hamburger" menu (product catalog).
 
-     .. image:: /user/img/system/theme-configuration/language-currency-switchers.png
-        :alt: Two representations of language and currency switchers in the storefront
+   .. image:: /user/img/system/theme-configuration/language-currency-switchers.png
+      :alt: Two representations of language and currency switchers in the storefront
 
    * **Standalone Main Menu** --- Enable the setting to let the main menu be rendered separately and to provide easy access to its top level items on the devices with sufficient screen width. On smaller screens the main menu will be placed inside the "hamburger" menu.
 
    * **Search on Smaller Screens** --- Select the way the search is going to be represented on devices with small screens. The search input can either be rendered in its own row to provide easy access to global search (*standalone*), or in line with the shopping list item (*integrated*).
 
-     .. image:: /user/img/system/theme-configuration/search-on-small-screens.png
-        :alt: Two representations of search on small screens in the storefront
+   .. image:: /user/img/system/theme-configuration/search-on-small-screens.png
+      :alt: Two representations of search on small screens in the storefront
 
-   * **Page Template** --- Select the product page template from the list. A page template is used to render the product page in the storefront by default, unless the template is overridden in the product details. Available options are *Default*, *Tabs*, and *Wide*.
+   * **Product View Page Template** --- Select the product page template from the list. A page template is used to render the product page in the storefront by default, unless the template is overridden in the product details. Available options are *Default*, *Tabs*, and *Wide*.
 
      **Default Template**:
 
@@ -82,12 +82,12 @@ To configure your current storefront theme:
      .. image:: /user/img/system/theme-configuration/wide-page-template.png
 
 
-   * **Display Price Tiers As** --- Select a multi or single unit table. A multi-unit table shows price tiers for all product units in the same table, which might not work well for products with many units or when quantity tiers are not aligned between units. Single-unit table shows price tiers only for the currently selected unit.
+  * **Display Price Tiers As** --- Select a multi or single unit table. A multi-unit table shows price tiers for all product units in the same table, which might not work well for products with many units or when quantity tiers are not aligned between units. Single-unit table shows price tiers only for the currently selected unit.
 
-   * **Filter Panel Position** --- Specify where the filter panel should be represented in the storefront. Available options are *Top* and *Sidebar*.
+   * **Filter Panel Position** --- Specify where the filter panel should be represented in the storefront. Available options are *Top*, and *Sidebar*.
 
    .. image:: /user/img/system/theme-configuration/filter-panel-position.png
-      :alt: Two representations of filter panel positions in the storefront
+      :alt: Three representations of filter panel positions in the storefront
 
    .. hint::
       To specify how to display the multi-select filter options, refer to the :ref:`theme-related settings <configuration--commerce--design--theme>`.

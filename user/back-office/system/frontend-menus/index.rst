@@ -22,7 +22,7 @@ To learn how to configure them on other levels, follow the links below:
 
 To configure a default storefront menu globally:
 
-1. Navigate to **System > Frontend Menus** in the main menu.
+1. Navigate to **System > Storefront Menus** in the main menu.
 2. Click on the menu you would like to edit.
 3. Update the menu contents following the guidelines provided in the :ref:`Edit a Storefront Menu <user-guide--system--menu--menu-frontend>` section.
    The changes apply automatically.

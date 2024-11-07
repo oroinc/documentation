@@ -1,15 +1,15 @@
 .. _sys--users--organization--menus--all-products--organization:
 
-Add All Products Page to Frontend Menus per Organization
---------------------------------------------------------
+Add All Products Page to Storefront Menus per Organization
+----------------------------------------------------------
 
 .. important:: Multi-organization management is only available in the Enterprise edition.
 
-Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it to a frontend menu of a particular organization:
+Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it to a storefront menu of a particular organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. Click on the necessary organization to open its page.
-3. Click the |IcConfig| **Edit Frontend Menu** icon to start editing the configuration.
+3. Click the |IcConfig| **Edit Storefront Menu** icon to start editing the configuration.
 
    .. image:: /user/img/products/all_products_page/AllProductsOrganizationEditMenu.png
 

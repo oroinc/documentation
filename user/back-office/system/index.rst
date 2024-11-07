@@ -25,7 +25,7 @@ The **System** menu of the back-office contains post-install configuration setti
 * :ref:`Entities <doc-entities>` --- Create and manage entities and entity fields.
 * :ref:`Tags Management <admin-guide-tag-management>` --- Create tags and taxonomies to organize data in the application.
 * :ref:`Menus <doc-config-menus>` --- Customize default back-office menus.
-* :ref:`Frontend Menus <backend-frontend-menus>` --- Configure default storefront menus.
+* :ref:`Storefront Menus <backend-frontend-menus>` --- Configure default storefront menus.
 * :ref:`System Calendars <user-guide-calendars>` --- Create system and organization calendars and add events to them.
 * :ref:`Shipping Rules <sys--shipping-rules>` --- Add shipping rules to bind customers to specific shipping prices based on the shipping locations and the products they purchase.
 * :ref:`Payment Rules <sys--payment-rules>` ---  Add payment rules to make payment options visible to buyers in the storefront.
@@ -68,7 +68,7 @@ Oro applications enable you to configure system settings on four configuration l
    Entities <entities/index>
    Tags Management <tags-management/index>
    Menus <menus/index>
-   Frontend Menus <frontend-menus/index>
+   Storefront Menus <frontend-menus/index>
    System Calendars <system-calendars/index>
    Shipping Rules <shipping-rules/index>
    Payment Rules <payment-rules/index>

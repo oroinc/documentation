@@ -13,11 +13,11 @@ You can control the way product inventory is displayed for your buyers (in the s
 
 4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
-5. In the **Store Frontend** section, select the following statuses:
+5. In the **Storefront** section, select the following statuses:
 
    * **Visible Inventory Statuses** --- A buyer can see products with the selected inventory statuses in the storefront.
-   * **Store Frontend: Can Be Added To RFQs** ---  A buyer can add Products with the selected inventory statuses when creating an RFQ in the storefront.
-   * **Store Frontend: Can Be Added To Orders** --- A buyer can add Products with the selected inventory statuses when creating an Order in the storefront.
+   * **Can Be Added To RFQs** ---  A buyer can add Products with the selected inventory statuses when creating an RFQ in the storefront.
+   * **Can Be Added To Orders** --- A buyer can add Products with the selected inventory statuses when creating an Order in the storefront.
 
 6. Click **Save Settings**.
 

@@ -35,7 +35,7 @@ When browsing documentation, be on the lookout for the |Extension| application i
           <li><a class="" href="system/integrations/shipping-integration/">Shipping Integrations</a></li>
           <li><a class="" href="system/integrations/payment-integration/">Payment Integrations</a></li>
           <li><a class="tag-very-important" href="system/websites/">Websites</a></li>
-          <li><a class="" href="system/frontend-menus/">Frontend Menus</a></li>
+          <li><a class="" href="system/frontend-menus/">Storefront Menus</a></li>
        </ul>
 
 

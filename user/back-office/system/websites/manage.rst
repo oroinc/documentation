@@ -83,7 +83,7 @@ To customize a storefront menu for the website:
    .. image:: /user/img/system/websites/view_website_australia1.png
       :alt: View the details of Australia website
 
-3. On the website details page, click |IcConfig| **Edit Frontend Menu**.
+3. On the website details page, click |IcConfig| **Edit Storefront Menu**.
 
    Now you are redirected to the list of OroCommerce storefront menus:
 
@@ -101,7 +101,7 @@ To customize a storefront menu for the website:
 
    * Click on the menu item to edit its details.
 
-Find more information on how to edit and customize the storefront menu in the :ref:`Menu Management <doc-config-menus-menuspage>` section.
+Find more information on how to edit and customize the storefront menu in the :ref:`Storefront Menu Management <frontend-menus-overview>` section.
 
 5. Once you are happy with the menu contents, click **Save**.
 

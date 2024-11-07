@@ -15,7 +15,7 @@ To change the default currency settings per organization:
 
 4. In the **General** section, define the following options:
 
-   * **Main Navigation Menu** - Select which :ref:`frontend menu <menu-management-concept-guide>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
+   * **Main Navigation Menu** - Select which :ref:`storefront menu <menu-management-concept-guide>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
 
    * **Homepage** - When no web catalog is available, you can choose any of the available landing pages as your homepage. Please note that on clean installations of Oro applications, the default homepage is blank.
 

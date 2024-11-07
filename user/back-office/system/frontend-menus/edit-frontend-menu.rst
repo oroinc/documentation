@@ -3,7 +3,7 @@
 Change a Storefront Menu
 ========================
 
-To update the storefront menu contents, navigate to **System > Frontend Menus** in the main menu and click the menu name or the |IcView| View icon in the corresponding row of the storefront menu list.
+To update the storefront menu contents, navigate to **System > Storefront Menus** in the main menu and click the menu name or the |IcView| View icon in the corresponding row of the storefront menu list.
 
 .. image:: /user/img/concept-guides/menus/frontend_menu_list.png
    :alt: A list of all available storefront menu items
@@ -18,11 +18,9 @@ A storefront menu can be multi-level, and the child menu items are nested under 
 .. image:: /user/img/system/frontend_menu/frontend_menu_2.png
    :alt: Configuration settings of the About menu under the commerce_footer_links storefront menu
 
-1. To minimize or maximize the left menu panel, click a double arrow on the top right of the panel.
+1. To minimize or maximize the left menu panel, click the arrow on the top right of the panel.
 
-2. To expand / collapse all menu items, click the ellipses drop-down menu on the top right of the left panel and click **Expand All** or **Collapse All**.
-
-3. To expand / collapse a parent menu item, click an arrow in front of it.
+2. To expand / collapse a parent menu item, click an arrow in front of it.
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_edit.png
    :alt: Numbers that define the actions you can do to storefront menu items described above
@@ -38,7 +36,7 @@ A storefront menu can be multi-level, and the child menu items are nested under 
 
    - If an arrow appears in front of a menu item, then the moved item will become a child of the item to which the arrow points.
 
-5. To update the target type of the root menu item of any frontend menu, click on the menu item, and select one of the three options from the dropdown:
+5. To update the target type of the root menu item of any storefront menu, click on the menu item, and select one of the three options from the dropdown:
 
    - **Category** --- Select a master catalog category from the list.
    - **Content Node** --- Select the :ref:`web catalog <user-guide--web-catalog>` from which you want to choose the content node and the :ref:`content node <user-guide--marketing--web-catalog--content-variant>` itself.
@@ -121,7 +119,6 @@ Add a Menu Item
      * The *does not match* operation checks when the specified value does not match the user agent string.
 
    .. image:: /user/img/system/frontend_menu/frontend_menu_5.png
-      :width: 70%
       :alt: A list of available operations under User Agent
 
   4) To create a more advanced condition, you can combine constraints into the expression using logical AND and OR operators:
@@ -172,9 +169,6 @@ Add a Menu Item
   .. image:: /user/img/system/frontend_menu/frontend_menu_11.png
      :alt: The steps you need to take to enable the About section to customers with configured taxes in the storefront
 
-  .. image:: /user/img/system/frontend_menu/frontend_menu_12.png
-     :alt: The steps you need to take to disable the About section to customers with configured taxes in the storefront
-
 * **Target Window** --- determines the way to open the linked document or URI. Select *Same Window* option to open it in the current browser window. Select *New Window* to open it in a new browser tab.
 
 4. Click **Save** to save your changes. If you wish to start creating another menu item right away, click **Save and New** on the top right.
@@ -187,7 +181,7 @@ Edit a Menu Item
 
 To edit an existing menu item, make sure you click on the required child menu item and update the field displayed for it on the right.
 
-.. image:: /user/img/system/frontend_menu/edit-item.png
+.. image:: /user/img/system/frontend_menu/edit-item1.png
 
 If you are editing a menu item with target type Content Node that you created previously, then you will be able to update all the existing fields for this menu item. If this menu item was created in the system previously and not by you, fields *Target Type, Web Catalog, Content Node* will be disabled, as illustrated below:
 

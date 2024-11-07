@@ -177,7 +177,7 @@ Proceed to create the attribute as described below.
 
 .. _products--product-attributes--create-frontend-options:
 
-3. In the **Frontend options** section, set up the storefront options applicable to the product attribute.
+3. In the **Storefront options** section, set up the storefront options applicable to the product attribute.
 
 .. important:: Please note that if the option is not applicable to attributes of the selected type (e.g., image, text, multi-select, etc.), it does not appear in this section.
 
@@ -199,11 +199,12 @@ Proceed to create the attribute as described below.
 
    "**Global Search Boost**", "Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option enables you to :ref:`boost <bundle-docs-commerce-website-elastic-search-bundle-attributes-boost>` the value of the field during search. By default, the boost for sku is set to 5, for names to 3, meaning that the searchable word is first searched among SKUs, then names, etc. The option works for searchable attributes only."
    "**Similar Products Boost**", "Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option allows you to use the attribute in the related products calculation. By default, all attributes are skipped. The option works for string, many-to-one, boolean, select and multi-select attributes only."
+   "**Similar Products Boost in Shopping Lists**", "Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option allows you to use the attribute in the related products calculation. By default, all attributes are skipped. The option works for string, many-to-one, boolean, select and multi-select attributes only."
 
 .. image:: /user/img/products/product_attributes/product_attributes_create_frontend.png
-   :alt: The settings available in the Frontend options section
+   :alt: The settings available in the storefront options section
 
-4. In the **Backoffice options** section, fill in the **Import & Export** subsection to configure details of the product attribute's import/export:
+4. In the **Back-Office options** section, fill in the **Import & Export** subsection to configure details of the product attribute's import/export:
 
 .. csv-table::
    :widths: 15, 50
@@ -217,7 +218,7 @@ Proceed to create the attribute as described below.
    * **Identity only** -- Export only the field that serves as an identifier of the related entity record.
    * **All** -- Export all fields of the related entity record."
 
-5. In the **Backoffice options** section, fill in the **Other** subsection, specifying the configuration options for the product attribute view, search and use in the back-office and storefront.
+5. In the **Back-Office options** section, fill in the **Other** subsection, specifying the configuration options for the product attribute view, search and use in the back-office and storefront.
 
 .. note:: Please note that available options depend on the type selected for the attribute (e.g., image, text, multi-select, etc.).
 
