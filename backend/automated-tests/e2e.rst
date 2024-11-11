@@ -177,14 +177,118 @@ To configure predefined integrations, you can use one of the built-in scenarios.
 Running the Test in `Watch` Mode
 ---------------------------------
 
-The Watch mode allows you to save time on writing tests and correcting errors with the tests.
+The Watch mode allows you to save time on correcting errors and writing with behat tests.
 
-If the test was run in '--watch' mode, it will stop every time there is an error in any step or at the end, when the last step is performed (this will simplify the process of writing the test in realtime)
+If the test was run with '--watch' option, it will stop every time there is an error in any step or at the end, when the last step is performed (this will simplify the process of writing the test in realtime)
 After stopping in the console, we can correct the error and continue the test from the required step (you can start from the failed step or from any other step to the failed step if necessary)
-If the error was not fixed correctly or the test fails at another step, the test will stop again (this process is cyclical and will continue until the test is completed or interrupted).
+If the error is not fixed correctly or the test fails at another step, the test will stop again (this process is cyclical and will continue until the test is completed or interrupted).
 
-To run the test in "Watch" mode, you need to add the `--watch` option to the command:
+To run the test in the `Watch` mode, you need to add the `--watch` option to the command:
 
    .. code-block:: bash
 
       php bin/behat --watch -- <path-to-behat.feature>
+
+1. The line number is shown before the step title in the `watch` mode:
+
+   .. code-block:: none
+
+      Scenario: Feature background
+          16 Given sessions active:
+            | Buyer | first_session  |
+            | Admin | second_session |
+      Scenario: Save "Requests For Quote" storefront menu item
+          21 Given I proceed as the Admin
+          22 And I log in as administrator
+          23 And I go to System/Storefront Menus
+          24 And I click view "oro_customer_menu" in the grid
+          25 And I click Orders in the menu tree
+
+2. The test stops when it fails and shows the question: `Press ENTER to continue from the current line #26, or enter the line number to continue (Ctrl+C to exit):`
+
+You can choose several options:
+    - Press Enter to continue from the current line #<line number>.
+    - Write the line number to continue from and press Enter.
+    - Press Ctrl+C to exit.
+
+   .. code-block:: none
+
+      24 And I click view "oro_customer_menu" in grid
+          25 And I click Orders in menu tree
+          26 And I click "CChoose Image" # incorrect element
+            Behat\Mink\Exception\ElementNotFoundException: Button with id|name|title|alt|value "CChoose Image" not found. in vendor/behat/mink/src/Element/TraversableElement.php:112
+      Press ENTER to continue from the current line #26, or enter the line number to continue (Ctrl+C to exit):
+
+.. note:: This process is cyclical, if the test step fails you can run from the input line again and again.
+
+3. Also, the step stops at the end when the last test step is passed.
+
+You can choose several options:
+    - Press Enter to continue (the test will continue from the next line - this can be useful if you are writing new test steps).
+    - Press Ctrl+C to exit.
+
+   .. code-block:: none
+
+       Press ENTER to continue from the current line #26, or enter the line number to continue (Ctrl+C to exit): 26
+          26 And I click "Choose Image"
+          27 And I click "Cancel"
+          28 And I click Requests For Quote in menu tree
+          29 And I save the form
+          30 Then I should see "Menu item saved successfully." flash message # Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext::iShouldSeeFlashMessage()
+      The last test step was passed. Press the Enter to continue or Ctrl+C to exit:
+
+.. note:: You can also stop the test at any point during execution `press Ctrl+C to exit`.
+.. note:: If an error occurred during the data fixture loading - there is no need to restore the state of the application after correcting the error, just restart.
+
+
+Self-Healing
+------------
+
+This feature looks like a set of extensions that can be applied to certain types of test steps, and if a test fails, we try to fix it automatically.
+
+Currently, there are several healers:
+    1. Reload Page Healer - fixes steps that look for an element on the page and don't find it (used to fix some random crashes)
+    2. OpenAI Healer - experimental (must be enabled manually) - tries to offer a fix for the test step, but does not change it.
+
+To enable OpenAI Healer, you need to configure the extension in "behat.yml":
+
+   .. code-block:: yaml
+
+       default: &default
+            extensions: &default_extensions
+                ....
+                Oro\Bundle\TestFrameworkBundle\BehatOpenAIExtension\ServiceContainer\BehatOpenAIExtension:
+                api_key: <OpenAI API Key>
+
+You can also add your own Healer. For this, you need:
+    1. Create your healer class and implement the interface - `Oro\Bundle\TestFrameworkBundle\Behat\Healer\HealerInterface`
+    2. Mark it with the `oro_test.behat.healer` tag, as in the example below:
+
+   .. code-block:: yaml
+
+       oro_test.healer.test.extension:
+           class: Oro\Bundle\TestFrameworkBundle\Behat\Healer\Extension\TestHealer
+           tags:
+               - { name: oro_test.behat.healer, priority: 50 }
+
+The work process of the healer can be seen in the process of performing the behat test, for example:
+
+   .. code-block:: none
+
+        Scenario: Save "Requests For Quote" storefront menu item
+            21 Given I proceed as the Admin
+            22 And I log in as administrator
+            23 And I go to System/Storefront Menus
+            24 And I click view "oro_customer_menu" in the grid
+            25 And I click Orders in the menu tree
+            Step: I click "CChoose Image" is failed
+            Trying to heal the step
+            Running OpenAI healer for clickable steps  # Oro\Bundle\TestFrameworkBundle\BehatOpenAIExtension\Healer\Extension\OpenAIClickableStepHealer
+               Suggested changes: FROM: `I click "CChoose Image"`, TO: `I click "Choose Image"`
+            Step is healed successfully
+            26 And I click "CChoose Image"
+              Button with id|name|title|alt|value "CChoose Image" not found. (Behat\Mink\Exception\ElementNotFoundException)
+              +-- Saved artifacts:
+              https://127.0.0.1:8000/media/behat/image673227019f7d7125671158.png
+        Press ENTER to continue from the current line #26, or enter the line number to continue (Ctrl+C to exit): 23 And I go to System/Storefront Menus
+
