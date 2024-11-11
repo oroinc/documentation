@@ -173,3 +173,18 @@ To configure predefined integrations, you can use one of the built-in scenarios.
    .. code-block:: bash
 
       php bin/behat --skip-isolators -- vendor/oro/e2e-tests/Tests/Behat/Features/create_mailchimp_integration.feature
+
+Running the Test in `Watch` Mode
+---------------------------------
+
+The Watch mode allows you to save time on writing tests and correcting errors with the tests.
+
+If the test was run in '--watch' mode, it will stop every time there is an error in any step or at the end, when the last step is performed (this will simplify the process of writing the test in realtime)
+After stopping in the console, we can correct the error and continue the test from the required step (you can start from the failed step or from any other step to the failed step if necessary)
+If the error was not fixed correctly or the test fails at another step, the test will stop again (this process is cyclical and will continue until the test is completed or interrupted).
+
+To run the test in "Watch" mode, you need to add the `--watch` option to the command:
+
+   .. code-block:: bash
+
+      php bin/behat --watch -- <path-to-behat.feature>
