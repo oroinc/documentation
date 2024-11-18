@@ -18,11 +18,7 @@ To start a new conversation in the storefront:
 .. image:: /user/img/storefront/conversation/new_conversation.png
    :alt: Show the New Conversation button under the Conversations menu
 
-Alternatively, you can click **Ask A Question** on the page of a supported record. Supported records are:
-
-* Order
-* Request for Quote
-* Quote
+Alternatively, you can click **Ask A Question** on the page of an order, a request for quote, or a quote.
 
 .. image:: /user/img/storefront/conversation/ask_a_question.png
    :alt: Show the Start Conversation button
