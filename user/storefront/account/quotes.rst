@@ -18,13 +18,13 @@ The All Quotes page contains the following information:
 7. Owner
 8. More Actions (View)
 
-You can print the selected quote by clicking **Print Quote** below the quote number.
+Here, you can also print the quote, accept it and submit to order, or start a :ref:`conversation <storefront-guide--conversations>` by clicking **Ask a question**.
 
 Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
-1. Refresh the view table: click |IcRefresh| to update the view table.
-2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
-3. Table settings: click |IcSettings| to define which columns to show in the table.
+1. Refresh (to update the view table).
+2. Reset (to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made).
+3. Table settings (that define which columns to show in the table)
 4. :ref:`Filters <frontstore-guide--navigation-filters>` |IcFilter|.
 
 .. note:: More details on how to accept an offered quote or submit a guest quote are described in the other :ref:`Quotes <frontstore-guide--quotes>` topic of the Storefront guide.

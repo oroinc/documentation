@@ -53,7 +53,7 @@ The Customer User View Page has the number of the selected RFQ in the page heade
 * Notes
 * Line Items (item name, requested quantity, target price).
 
-You can print the selected RFQ by clicking **Print RFQ**  on the top right of the view page.
+You can print the selected RFQ by clicking **Print RFQ**  on the top right of the view page, or ask a question, as part of the :ref:`conversations feature <storefront-guide--conversations>`.
 
 .. image:: /user/img/storefront/rfq/PrintRFQ.png
 
