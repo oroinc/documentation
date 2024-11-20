@@ -455,7 +455,7 @@ See the ``handleGetSubresource`` method of |RequestActionHandler| as an example.
 update_subresource Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Updates an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors.
+Updates an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors. Use the :ref:`request_target_class <subresources-config>` configuration option when request data are different from response data.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
@@ -510,7 +510,7 @@ Below is an example of registering a processor to build a form builder:
 add_subresource Action
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Adds an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors.
+Adds an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors. Use the :ref:`request_target_class <subresources-config>` configuration option when request data are different from response data.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
@@ -565,7 +565,7 @@ Below is an example of registering a processor to build a form builder:
 delete_subresource Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Deletes an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at BuildFormBuilder and BuildCollectionFormBuilder as examples of such processors.
+Deletes an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at BuildFormBuilder and BuildCollectionFormBuilder as examples of such processors. Use the :ref:`request_target_class <subresources-config>` configuration option when request data are different from response data.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
