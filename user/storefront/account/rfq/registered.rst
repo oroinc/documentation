@@ -10,7 +10,7 @@ There are a few ways to create RFQs if you are have registered and logged into t
 On the All Requests for Quote Page
 ----------------------------------
 
-1. Navigate to the :ref:`user menu <frontstore-guide--navigation-user-menu>`.
+1. Navigate to the :ref:`my account menu <frontstore-guide--navigation-user-menu>`.
 2. Click **Request for Quote** in the dropdown.
 3. Click **+New Quote** on the right of the page.
 
@@ -20,8 +20,8 @@ From the Shopping List
 ----------------------
 
 1. In the top right corner, click on the |IcShoppingLists| Shopping List(s) button to view all available shopping lists.
-2. Click on the necessary shopping list.
-3. Click |IcChevronDown| next to the **Create Order** button to reveal the **RequestQuote** button.
+2. Click the necessary shopping list.
+3. Click **Request Quote** in the Summary section of the shopping list.
 
    .. image:: /user/img/storefront/rfq/create-sl-widget.png
 

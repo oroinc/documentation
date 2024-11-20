@@ -32,8 +32,8 @@ The Users grid shows the following data:
 You also have the ability to:
 
 1. Refresh the view table: click |IcRefresh| to update the view table.
-2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
-3. Manage table settings: click |IcSettings| to define which columns to show in the table.
+2. Reset the view table to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
+3. Manage table settings to define which columns to show in the table.
 4. Manage :ref:`filters <frontstore-guide--navigation-filters>`.
 
 Customer User View Page

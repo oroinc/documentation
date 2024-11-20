@@ -32,7 +32,7 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout1.png
 
-2. Navigate to **Shopping List** on the top right of the page, and click Click **Create Order**.
+2. Navigate to **Shopping List** on the top right of the page, and click **Checkout**.
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout2.png
 
@@ -40,12 +40,11 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
     .. image:: /user/img/storefront/orders/SampleGuestCheckout5.png
 
-   * Sign in
-   * Create and Account
-   * Forgot Your Password
-   * Continue as a Guest
+   * Log in
+   * Proceed to Guest Checkout
+   * Create an Account and Continue
 
-#. Click **Continue as a Guest**.
+#. Click **Proceed to Guest Checkout**.
 
    .. note:: You will have another chance to register during order review.
 

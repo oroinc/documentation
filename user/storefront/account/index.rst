@@ -17,6 +17,7 @@ To reach the menu details, click **Account** in the user menu on the top left of
 Your account menu has the following sections:
 
 * :ref:`My Profile <frontstore-guide--profile>` -- consolidates all your personal contact information and the default addresses you use to provide the billing and shipping locations.
+* :ref:`Conversations <storefront-guide--conversations>` -- enables communication between back-office users and customers users.
 * :ref:`Address Book <frontstore-guide--address>` -- stores both your company and personal addresses.
 * :ref:`Users <frontstore-guide--users-roles>` --  lists all your team members along with other employees of your company and their personal contact information.
 * :ref:`Roles <frontstore-guide-roles>` -- enables to view and edit all predefined roles available in the system. The visibility of this section depends on the permissions assigned to your customer user role.

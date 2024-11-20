@@ -25,7 +25,7 @@ To create a guest RFQ from the shopping list:
 
    .. image:: /user/img/storefront/rfq/GuestSLButton.png
 
-3. Click |IcChevronDown| next to the **Create Order** button to reveal the **RequestQuote** button.
+3. Click **Request Quote** in the Summary section of the shopping list.
 
    .. image:: /user/img/storefront/rfq/GuestCreateRFQButtons.png
 
@@ -51,7 +51,7 @@ To create a guest RFQ from the shopping list:
 
    In the Data Protection section, you may be required to accept mandatory consents to process your personal information. If the consent is not accepted, you cannot submit the RFQ.
 
-.. image:: /user/img/storefront/rfq/rfq_data_protection.png
+.. image:: /user/img/storefront/rfq/rfq_data_protection_guest.png
 
 5. Click **Submit Request** to submit your RFQ. You should receive a confirmation email with your request details.
 
@@ -62,13 +62,14 @@ To create an RFQ from the quick order form:
 
 1. Click on the **Quick Order** widget in the top navigation bar.
 
-   .. image:: /user/img/storefront/orders/GuestQuickOrderButton.png
+   .. image:: /user/img/storefront/rfq/GuestQuickOrderButton.png
 
 2. Provide order details (item, quantity #, and unit) in the given fields.
 
+3. Click **Get Quote** below the form.
+
    .. image:: /user/img/storefront/rfq/GuestQuickOrderDetails.png
 
-3. Click **Get Quote** below the form.
 4. Provide information on the RFQ in the emerged form.
 
    In the Request a Quote section, enter:

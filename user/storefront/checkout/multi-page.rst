@@ -56,7 +56,7 @@ Navigate through Multi Page Checkout in the Storefront
 
   .. tip::
 
-     You can edit the order content if required. To do this, click |IcEditInline| on the top right of the item list. The shopping list page will open. Make the required changes and then click **Create Order**. You will be redirected back to the order you have been submitting.
+     You can edit the order content if required. To do this, click |IcEditInline| on the top right of the item list. The shopping list page will open. Make the required changes and then click **Checkout**. You will be redirected back to the order you have been submitting.
 
 2. If required, provide additional order options:
 

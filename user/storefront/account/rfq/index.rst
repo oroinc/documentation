@@ -19,7 +19,7 @@ The RFQ grid shows the following data:
 1. RFQ#
 2. Status
 3. PO Number
-4. DNSLT (Do not ship later than)
+4. Ship by
 5. Create At
 6. Owner
 7. Step

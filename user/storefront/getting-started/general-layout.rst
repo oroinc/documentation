@@ -27,10 +27,10 @@ Footer links are placed at the bottom of the storefront page and can be configur
 
 .. _frontstore-guide--navigation-user-menu:
 
-User Menu
-^^^^^^^^^
+My Account
+^^^^^^^^^^
 
-User Menu is displayed for authenticated users only, and provides quick access to a variety of pages, such as their profile, role management, address book, orders, saved searches, etc.
+:ref:`My Account <my-account>` menu is displayed for authenticated users only, and provides quick access to a variety of pages, such as their profile, role management, address book, orders, saved searches, etc.
 
  .. image:: /user/img/storefront/navigation/user-menu.png
 
