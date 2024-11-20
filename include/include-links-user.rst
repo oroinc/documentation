@@ -1005,3 +1005,7 @@ Links (User)
 .. |MS Admin Panel|  raw:: html
 
    <a href="https://admin.microsoft.com/" target="_blank">MS Admin Panel</a>
+
+.. |Conversations extension|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/oro-conversations/" target="_blank">Conversations extension</a>

@@ -5,6 +5,8 @@ Configure Global Interactions Settings
 
 The Interactions settings allow you to interact with your customer users, enabling conversations between back-office users and customer users, ensuring a smooth and compliant user experience.
 
+.. note:: The conversations feature is available as of OroCommerce version 6.0.4 as a |Conversations extension|, which you can download from the Oro Extensions Store. Next, use the composer to :ref:`install it on your application <cookbook-extensions-composer>`.
+
 To enable the conversations feature:
 
 1. Navigate to **System > Configuration** in the main menu.

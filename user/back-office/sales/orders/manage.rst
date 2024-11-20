@@ -88,6 +88,8 @@ To edit an order:
 Re-Order
 --------
 
+.. note:: This feature is available as of OroCommerce version 6.0.4.
+
 If the order does not have sub orders, it can be re-ordered.
 
 To re-order an existing order:

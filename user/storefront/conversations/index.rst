@@ -3,6 +3,8 @@
 Manage Conversations in the Storefront
 ======================================
 
+.. note:: The conversations feature is available as of OroCommerce version 6.0.4 as a |Conversations extension|, which you can download from the Oro Extensions Store. Next, use the composer to :ref:`install it on your application <cookbook-extensions-composer>`.
+
 Oro provides a conversation tool designed for communication both within the back-office and storefront environments. This tool enables communication between back-office users and customers users.
 
 Each conversation consists of a set of messages that can be sent by :ref:`back-office users <doc-activities-conversations>` or customer users.
@@ -53,3 +55,5 @@ You can view the existing conversations from the following pages in your Oro app
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
