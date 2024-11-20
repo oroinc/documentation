@@ -12,7 +12,7 @@ The All Quotes page contains the following information:
 1. Quote #
 2. Status
 3. PO Number
-4. DNSLT (Do Not Ship Later Than)
+4. Ship by
 5. Created At
 6. Valid Until
 7. Owner

@@ -7,7 +7,7 @@ Create Account in the Storefront
 
 To create a new account:
 
-1. Click **Sign Up** in the top navigation bar. You can also click **Log In** and then **Create an Account** at the bottom of the form.
+1. Click **Sign Up** in the top navigation bar. You can also click **Log In** and then **Sign Up** at the bottom of the form.
 
    .. image:: /user/img/storefront/sign_in/register_sign_in.png
       :alt: The Sign In page

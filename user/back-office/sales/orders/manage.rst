@@ -15,7 +15,7 @@ The following information about orders is available:
 
 * **Order Number** --- The unique order reference number. It is generated automatically for new orders.
 * **PO Number** --- Another order reference number. It is usually defined by the buyer and used by the buyer's side to match the invoice and the received goods with the purchase.
-* **DNSLT** (Do not ship later than) --- The date on which the order expires.
+* **Ship by** --- The date on which the order expires.
 * **Currency** --- The currency in which the order is made.
 * **Subtotal** --- The amount due for items included in the order. Does not include additional costs, taxes, or discounts.
 * **Total** --- The final amount due for the order. Includes all the additional costs (like shipping costs), taxes or discounts.
