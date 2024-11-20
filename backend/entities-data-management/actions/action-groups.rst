@@ -82,6 +82,44 @@ In the example above, the *prettifyString* method of the *acme.demo.useful_funct
 
 The ``call_service_method`` action can be used instead of exposing the service method as an action group, and it is up to the developer which syntax to use. At the same time, action group services are quite useful to keep backward compatibility when some complex logic has been considered to be moved to PHP and can still be called from different places as an action group.
 
+Action Group Events
+-------------------
+
+The platform provides several events that are triggered at various points in the action group lifecycle. These events allow developers to hook into the execution process and execute custom logic at specific points in the action group. This is particularly useful for adding additional business logic, sending notifications, or updating external systems based on action group activity. Special guard event can be used to prevent the action group from being executed.
+
+**Available Events**
+
+oro_action_group.guard
+^^^^^^^^^^^^^^^^^^^^^^
+
+Validate whether the action group is allowed.
+This is a guard event.
+
+The two events being dispatched are:
+
+- oro_action_group.guard
+- oro_action_group.[action group name].guard
+
+oro_action_group.pre_execute
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An action group logic is starting execution (triggered right before the execution of action group actions).
+
+The two events being dispatched are:
+
+- oro_action_group.pre_execute
+- oro_action_group.[action group name].pre_execute
+
+oro_action_group.execute
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+An action group logic is being executed (triggered right after execution of action group actions).
+
+The two events being dispatched are:
+
+- oro_action_group.execute
+- oro_action_group.[action group name].execute
+
 Action Executor Helper
 ^^^^^^^^^^^^^^^^^^^^^^
 
