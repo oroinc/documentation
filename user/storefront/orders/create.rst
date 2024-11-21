@@ -16,7 +16,7 @@ To create an order from a shopping list:
 1. Navigate to **Shopping Lists**.
 2. From the drop-down list, select the required shopping list.
 3. Click **View Details**.
-4. Click **Create Order** on the right.
+4. Click **Checkout** on the right.
 
    .. note:: If there are any discounts that apply to your order, this will be displayed in the order totals.
 

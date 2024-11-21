@@ -28,18 +28,19 @@ From the all past orders table, you can:
 * Click |IcView| **View** at the end of the row to view an order or click the order to open it. To return to the Order History page, click **Back to Orders List** on the bottom left of the view page.
 * Click |IcCheckout| **Re-Order** at the end of the row to submit the same order
 
+Information displayed in the tables depends on the columns selected in the |IcSettings| grid settings. Within each of the tables, you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
+
+* Refresh (to update the view table).
+* Reset  (to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made).
+* Adjust (to define which columns to show in the table).
+* Filter the displayed orders (see more in :ref:`Filters <frontstore-guide--navigation-filters>`).
+
 If the order was created on behalf of the buyer, this will be reflected on the order view page with the following note: *This order was created on your behalf by a member of our staff.*
 
 .. image:: /user/img/storefront/orders/order-impersonated.png
    :alt: An order view page with a note saying "This order was created on your behalf by a member of our staff".
 
-Information displayed in the tables depends on the columns selected in the |IcSettings| grid settings. Within each of the tables, you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
-
-* Refresh the view table: click |IcRefresh| to update the view table.
-* Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
-* Adjust the table settings: click |IcSettings| to define which columns to show in the table.
-* Filter the displayed orders: click |IcFilter| :ref:`Filters <frontstore-guide--navigation-filters>` .
-
+You can also start a :ref:`conversation <storefront-guide--conversations>` by clicking **Ask a question** on the order view page.
 
 .. note:: More details on how to review ordered items, billing and shipping information, and re-order products from the previous orders are described in the :ref:`Orders <frontstore-guide--orders>` section of the Storefront guide.
 

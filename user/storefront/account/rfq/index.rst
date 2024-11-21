@@ -19,7 +19,7 @@ The RFQ grid shows the following data:
 1. RFQ#
 2. Status
 3. PO Number
-4. DNSLT (Do not ship later than)
+4. Ship by
 5. Create At
 6. Owner
 7. Step
@@ -53,7 +53,7 @@ The Customer User View Page has the number of the selected RFQ in the page heade
 * Notes
 * Line Items (item name, requested quantity, target price).
 
-You can print the selected RFQ by clicking **Print RFQ**  on the top right of the view page.
+You can print the selected RFQ by clicking **Print RFQ**  on the top right of the view page, or ask a question, as part of the :ref:`conversations feature <storefront-guide--conversations>`.
 
 .. image:: /user/img/storefront/rfq/PrintRFQ.png
 

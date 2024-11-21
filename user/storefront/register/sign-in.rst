@@ -13,8 +13,6 @@ To log in to the website, if you have previously registered an account:
 
 2. Enter your email address and password into the provided fields.
 
-   .. image:: /user/img/storefront/SignInCredentials.png
-
 3. Click **Log In**.
 
 .. note:: The **Remember Me** checkbox saves your credentials, so that next time you visit the website you can automatically log in.

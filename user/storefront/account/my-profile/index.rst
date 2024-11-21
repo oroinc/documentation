@@ -83,9 +83,9 @@ The following key rules apply to consents in OroCommerce:
 
 * **All consents are obtained through explicit actions**
 
-  The checkboxes next to consents are never pre-selected and you can opt in only by explicitly clicking **Accept** under the consent.
+  The checkboxes next to consents are never pre-selected and you can opt in only by explicitly clicking **Agree** under the consent.
 
-  .. image:: /user/img/storefront/profile/explicit_accept_consent.png
+  .. image:: /user/img/storefront/profile/explicit_accept_consent1.png
 
 * **Consents are informed**
 
@@ -95,7 +95,7 @@ The following key rules apply to consents in OroCommerce:
 
 * **Consents can be revoked**
 
-  If you are no longer happy with a consent, you can revoke it through your profile in the storefront when editing your **Account Info**.
+  If you are no longer happy with a consent, you can revoke it through your profile in the storefront when editing your **Profile Info**.
 
   .. image:: /user/img/storefront/profile/revoke_consent.png
 
@@ -119,7 +119,7 @@ In the **Data Protection** section, select the checkbox next to the consent that
 
 .. image:: /user/img/storefront/profile/revoke_consent.png
 
-.. image:: /user/img/storefront/profile/explicit_accept_consent.png
+.. image:: /user/img/storefront/profile/explicit_accept_consent1.png
 
 .. _frontstore-guide--profile-consents--revoke:
 

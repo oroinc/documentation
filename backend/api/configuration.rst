@@ -513,9 +513,9 @@ The ``actions`` configuration section enables you to specify action-specific opt
 
 *  **order\_by** *array* - The property can be used to configure the default ordering of the result. The item key is the name of a field. The value can be ``ASC`` or ``DESC``. By default, the result is ordered by identifier field.
 
-*  **page\_size** *integer* - The default page size. Set to ``-1`` to disable pagination or a positive number. Also ``disable\_paging`` can be used to disable pagination. By default, 10, see the ``default_page_size`` option in :ref:`General Configuration <web-api--configuration-general>`.
+*  **page\_size** *integer* - The default page size. Set to ``-1`` to disable pagination or a positive number. Also ``disable_paging`` can be used to disable pagination. By default, 10, see the ``default_page_size`` option in :ref:`General Configuration <web-api--configuration-general>`.
 
-*  **disable\_paging** *boolean* - Indicates whether to disable the pagination. It is an alias for ``page\_size`` equals to ``-1``. By default, false.
+*  **disable\_paging** *boolean* - Indicates whether to disable the pagination. It is an alias for ``page_size`` equals to ``-1``. By default, false.
 
 *  **disable\_sorting** *boolean* - Indicates whether to disable the sorting. By default, false.
 
@@ -695,7 +695,7 @@ The ``subresources`` configuration section enables you to provide options for su
 
 -  **target\_type** *string* - The type of a target association. Can be **to-one** or **to-many**. **collection** can be used as an alias for **to-many**. **to-one** can be omitted as it is used by default.
 
--  **actions** *array* - The actions supported by the sub-resource. This section has the same options as :ref:`actions <web-api--actions-config>` configuration section. If an option exists in both the entity actions section and the sub-resource **actions** section, the sub-resource option wins.
+-  **actions** *array* - The actions supported by the sub-resource. This section has the same options as :ref:`actions <web-api--actions-config>` configuration section, except the ``request_target_class`` option. This option can be used for ``update_subresource``, ``add_subresource`` and ``delete_subresource`` actions to specify a class that represents request data. If an option exists in both the entity actions section and the sub-resource **actions** section, the sub-resource option wins.
 
 -  **filters** - The filters supported by the sub-resource. This section has the same options as :ref:`filters <filters-config>` configuration section. If an option exists in both `entity "filters" section <#filters-configuration-section>`__ and sub-resource **filters** section the sub-resource option wins.
 

@@ -29,6 +29,68 @@ Below is an example of a simple operation configuration that performs an executi
 
 This configuration describes the operation that relates to the ``Question`` entity. The button with the "adme.demo.myentity.operations.myentity_operation" label is displayed on the view page (acme_demo_myentity_view) of this entity (in case the 'updatedAt' field > new DateTime('now')). If the `expired` property of the entity = false, then clicking the button triggers the "assign_value" action that sets the 'expired' field to `true`. If `form_options` are specified, then the form dialog with attributes fields is displayed when clicking the button. The actions run only on the submit form.
 
+Instead of adding the operation logic to the configuration file, it can be placed in a separate service that implements the ``OperationServiceInterface``. This interface has 3 methods: ``isPreConditionAllowed``, ``isConditionAllowed`` and ``execute``. If the operation service is used, it should be set in the operation configuration with the ``service`` parameter. In this case, ``preactions``, ``preconditions``, ``conditions`` and ``action`` are not allowed to be used and their logic must be moved to an appropriate method of the operation service.
+
+.. code-block:: yaml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+
+    operations:
+        label: 'Base acme demo operation'
+        routes:
+            - acme_demo_priority_view
+        acl_resource: acme_demo_priority_view
+        service: acme_demo.operation.base_demo_operation
+
+
+Operation Events
+----------------
+
+The platform provides several events that are triggered at various points in the operation lifecycle. These events allow developers to hook into the execution process and execute custom logic at specific points in the operation. This is particularly useful for adding additional business logic, sending notifications, or updating external systems based on operation activity. Special guard events can be used to prevent the operation from being executed or displayed.
+
+**Available Events**
+
+oro_operation.announce
+^^^^^^^^^^^^^^^^^^^^^^
+
+Validate whether the operation button is allowed
+This is a guard event.
+
+The two events being dispatched are:
+
+- oro_operation.announce
+- oro_operation.[operation name].announce
+
+oro_operation.guard
+^^^^^^^^^^^^^^^^^^^
+
+Validate whether the operation is allowed.
+This is a guard event.
+
+The two events being dispatched are:
+
+- oro_operation.guard
+- oro_operation.[operation name].guard
+
+oro_operation.pre_execute
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Operation logic is starting execution (triggered right before the execution of operation actions).
+
+The two events being dispatched are:
+
+- oro_operation.pre_execute
+- oro_operation.[operation name].pre_execute
+
+oro_operation.execute
+^^^^^^^^^^^^^^^^^^^^^
+
+Operation logic is being executed (triggered right after execution of operation actions).
+
+The two events being dispatched are:
+
+- oro_operation.execute
+- oro_operation.[operation name].execute
+
 Configuration Validation
 ------------------------
 

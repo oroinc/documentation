@@ -35,10 +35,9 @@ Shopping lists can be created using several flows.
 **Flow 4**
 
 1. In the Quick Order Form, enter product SKU(s) and quantity.
-2. Click **Verify Order**.
-3. In the Verify Order window, Click **Add to** on the top.
-4. Select **Create New Shopping List**.
-5. Give the list a name and click **Create**.
+2. Open the dropdown next to the **Add to Shopping List** button.
+3. Select **+ Create New Shopping List**.
+4. Give the list a name and click **Create**.
 
 .. image:: /user/img/storefront/shopping_lists/CreateShoppingListQuickOrder.png
 
@@ -126,14 +125,13 @@ To delete the shopping list:
 
 To create an order from the shopping list:
 
-1. Click **Create Order** in the **Summary** section of the shopping list page.
+1. Click **Checkout** in the **Summary** section of the shopping list page.
 
 .. image:: /user/img/storefront/shopping_lists/SHCreateOrder.png
 
 To create a request for quote from the shopping list:
 
-1. Click |ICChevronDown| next to the **Create Order** button in the **Summary** section of the shopping list page.
-2. Click **Request Quote**.
+1. Click **Request Quote** in the **Summary** section of the shopping list page.
 
 .. include:: /include/include-images.rst
    :start-after: begin
