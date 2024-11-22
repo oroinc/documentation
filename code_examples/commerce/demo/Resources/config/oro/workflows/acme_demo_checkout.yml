@@ -1,0 +1,45 @@
+imports:
+    -
+        resource: '@OroCheckoutBundle/Resources/config/oro/workflows/b2b_flow_checkout_with_services.yml'
+        workflow: b2b_flow_checkout
+        as: acme_demo_checkout
+        replace: []
+
+workflows:
+    acme_demo_checkout:
+        defaults:
+            active: false
+
+        attributes:
+            # Extends the list of attributes of the b2b_flow_checkout.attributes
+            external_po_number:
+                property_path: checkout.external_po_number
+
+        steps:
+            manager_approval:
+                order: 80
+                allowed_transitions:
+                    - place_order
+                    - finish_checkout
+                    # A set of additional transitions are here
+
+            order_created:
+                # Overrides b2b_flow_checkout.steps.order_created.order
+                order: 90
+
+        transitions:
+            place_order:
+                # Overrides b2b_flow_checkout.transitions.place_order.transition_service
+                transition_service: 'acme_demo.workflow.transition.place_order'
+                # Adds conditional_step_to
+                conditional_steps_to:
+                    manager_approval:
+                        conditions:
+                            '@and':
+                                - '@start_with': [$external_po_number, 'EXT-']
+                                - '@not':
+                                      - '@acl_granted': 'acme_demo_checkout_approve'
+                form_options:
+                    # Extends the list of attribute_fields
+                    attribute_fields:
+                        external_po_number: ~

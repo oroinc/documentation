@@ -1,7 +1,5 @@
 .. _dev-doc-frontend-layouts-layout:
 
-
-
 Layout
 ======
 

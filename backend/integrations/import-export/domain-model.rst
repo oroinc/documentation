@@ -86,7 +86,7 @@ The *configuration* parameter is a specific configuration of a job obtained by C
 **The jobType and jobName parameters in jobs configuration of OroBatchBundle**
 
 
-.. code-block:: php
+.. code-block:: yaml
 
 
     connector:
@@ -126,7 +126,7 @@ Oro\\Bundle\\ImportExportBundle\\Context\\ContextInterface
 
 **Description:**
 
-Th context interface provides an interface for accessing different kinds of data and is shared during the import/export operation processing. 
+The context interface provides an interface for accessing different kinds of data and is shared during the import/export operation processing.
 
 The following data are available to access:
 
@@ -342,7 +342,7 @@ Oro\\Bundle\\ImportExportBundle\\Processor\\ProcessorRegistry
 
 ProcessorRegistry provides a storage of all registered processors declared by the client bundles. A specific processor of an entity extends the basic one (Import Processor or Export Processor) and contains its own components (Serializer, Data Converter, Strategy). Such processor should be registered in DIC with the following tag:
 
-.. code-block:: php
+.. code-block:: yaml
 
 
     services:
@@ -398,7 +398,7 @@ Oro\\Bundle\\ImportExportBundle\\Writer\\WriterInterface
 
 **Description:**
 
-WriterInterface is an interface for a class that is responsible for recording the data to its destination place. It is triggered at the end of a query process chain, after Reader and Processor complete their operations. 
+WriterInterface is an interface for a class that is responsible for recording the data to its destination place. It is triggered at the end of a query process chain, after Reader and Processor complete their operations.
 
 Csv File Writer
 ^^^^^^^^^^^^^^^
@@ -687,7 +687,7 @@ Oro\\Bundle\\ImportExportBundle\\Serializer\\Serializer
 
 Serializer is a class extended from a standard Symfony's serializer and used instead of it to perform serialization/deserialization. It has its own normalizers/denormalizers that are added using the following tags in the DI configuration:
 
-.. code-block:: php
+.. code-block:: yaml
 
 
     services:

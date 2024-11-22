@@ -135,3 +135,6 @@ workflows:
                     - '@flash_message':
                           message: 'Workflow was transited'
                           type: 'success'
+
+imports:
+    - { resource: 'workflows/acme_demo_checkout.yml' }

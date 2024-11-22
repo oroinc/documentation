@@ -22,5 +22,6 @@ class AcmeDemoExtension extends Extension
         $loader->load('import_export.yml');
         $loader->load('old_rest_api.yml');
         $loader->load('controllers_api.yml');
+        $loader->load('services_checkout.yml');
     }
 }

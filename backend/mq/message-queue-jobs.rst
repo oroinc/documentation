@@ -429,7 +429,7 @@ If you do not wish for that job to be staled, use `NullJobConfigurationProvider`
 
 To configure a specific job with a custom “time_before_stale” value, use the following configuration:
 
-.. code-block:: php
+.. code-block:: yaml
 
    oro_message_queue:
        time_before_stale:

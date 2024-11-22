@@ -14,3 +14,8 @@ acls:
         permission: CREATE
         group_name: ""
         bindings: ~
+    acme_demo_checkout_approve:
+        label: acme.demo.security.permission.checkout_approve
+        type: action
+        group_name: "commerce"
+        category: "checkout"

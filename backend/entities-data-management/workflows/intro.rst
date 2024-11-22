@@ -94,11 +94,15 @@ Workflow consists of several related entities.
 
 * **Attribute** is an entity that represents one value in the workflow item, used to render the field value on a step form. Attribute knows about its type (string, object, entity etc.) and additional options. Attribute contains name.
 
-* **Transition** is an action that changes the current step of the workflow item (i.e., moves it from one step to another). The transition is allowed if its conditions are satisfied. Pre-actions are executed before the transition is performed; and Actions are executed after the transition is performed. A transition can be used as a start transition. It means that this transition starts the Workflow and creates a new instance of the workflow item. Transitions optionally can have a form. In this case, this form is shown to user when the transition button is clicked. The transition contains name and some additional options. Optionally, the transition can contain a form with a list of attributes.
+* **Transition** is an action that changes the current step of the workflow item (i.e., moves it from one step to another). The transition is allowed if its conditions are satisfied. Pre-actions are executed before the transition is performed and pre-conditions or conditions are checked; and Actions are executed after the transition is performed. A transition can be used as a start transition. It means that this transition starts the Workflow and creates a new instance of the workflow item. Transitions optionally can have a form. In this case, this form is shown to user when the transition button is clicked. The transition contains name and some additional options. Optionally, the transition can contain a form with a list of attributes.
 
-* **Condition** defines whether a specific transition is allowed with the specified input data. Conditions can be nested.
+* **Pre-Actions** are assigned to the transition and executed before the transition button is rendered. This type of action is mainly used to predefine data used by Pre-Conditions, for example, to search for some data in the database.
 
-* **Actions** are assigned to the transition and executed when the transition is performed. There are two kinds of actions: Pre-Actions and Actions. The difference between them is that Pre-Actions are executed before the Transition, and Actions are executed after the transition. Actions can be used to manage entities (create, find), manipulate attributes (e.g., assign values) and perform any other action.
+* **Pre-Condition** defines whether a particular transition is available with the specified input data. Conditions can be nested. This type of condition is used to check the availability of transition buttons.
+
+* **Condition** defines whether a specific transition is allowed and can be executed with the specified input data. Conditions can be nested.
+
+* **Actions** are assigned to the transition and executed when the transition is performed. Actions can be used to manage entities (create, find), manipulate attributes (e.g., assign values) and perform any other action.
 
 * **Workflow** aggregates steps, attributes, and transitions. A workflow is a model that does not have its own state but it can be referred by the workflow items.
 

@@ -31,12 +31,12 @@ Create a Bundle Service Container Extension
 
 For a load configuration files you need to create Service Container Extension. See |Symfony Configuration Files|
 
-.. oro_integrity_check:: 84bf73fc7101136310d0986bc40e96c04f0ac867
+.. oro_integrity_check:: bf12dede4dd7f33959ae5ad0423a00a822e725f8
 
    .. literalinclude:: /code_examples/commerce/demo/DependencyInjection/AcmeDemoExtension.php
        :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/AcmeDemoExtension.php
        :language: php
-       :lines: 4-18, 25-26
+       :lines: 4-18, 25-27
 
 Create basic ``Resources/config/services.yml`` for define service parameters. See |Symfony Service Parameters|
 

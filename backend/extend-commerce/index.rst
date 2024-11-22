@@ -14,3 +14,4 @@ Extending Oro Application
    payment/index
    shipping
    how-to-co-install-applications
+   checkout-customization-methods

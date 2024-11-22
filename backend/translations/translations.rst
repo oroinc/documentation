@@ -195,7 +195,7 @@ Also, ``Gedmo/Translatable`` requires a dictionary with all translations for the
 
 For the grid to have working translations for entities with ``Gedmo`` fields, add the ``HINT_TRANSLATABLE`` hint to the ``Resources/config/oro/datagrids.yml`` configuration file. Keep in mind that the frontend datagrid is configured in the ``Resources/views/layouts/<theme>/config/datagrids.yml`` file.
 
-.. code-block:: php
+.. code-block:: yaml
 
     datagrids:
        acme-country-grid:
@@ -208,7 +208,7 @@ For the grid to have working translations for entities with ``Gedmo`` fields, ad
 
 Below is a simple example of a grid configuration that uses the hint:
 
-.. code-block:: php
+.. code-block:: yaml
 
     datagrids:
        acme-country-grid:
