@@ -9,10 +9,11 @@ Adoption of cloud platforms has skyrocketed due to their elasticity, security, a
 
 With full control over the resources and infrastructure configuration that cloud platforms offer today, one can hardly find any downsides of moving their business solutions from the private in-house infrastructure to the highly distributed and fault-tolerant global resources provided by the cloud niche leaders.
 
-Oro's cloud offering is based on |Google Cloud Platform (GCP)| which is used as Infrastructure-as-a-Service (IaaS) layer for OroCloud. GCP works well for OroCloud because it provides a flexible infrastructure that scales on-demand, end-to-end security, and a very competitive price. Google constantly expands their infrastructure by |opening new regions and enhancing the network|.
+OroCloud heavily utilizes the advantages of the different models of virtualization and cloud infrastructure-as-a-service providers, being completely vendor-agnostic. This means that Oro can support the deployment of OroCloud to the IaaS of your preference including customer on-premise instances.
 
-.. note::
-    See Google’s take on |Why Google Cloud|.
+Oro’s cloud offering is based on two Infrastructure-as-a-Service (IaaS) platforms: |Google Cloud Platform (GCP)| and |Oracle Cloud Infrastructure (OCI)| from the shelf. Both IaaS platforms work well for OroCloud because they provide a flexible infrastructure that scales on-demand, end-to-end security, and high availability.
+
+Using IaaS platform you can build and maintain the infrastructure that exactly fits any custom software and business domain, we have taken some steps to give you a hand in your Oro application roll-out. To enable flawless and seamless experience of launching and running Oro applications in the IaaS infrastructure, we have designed an optimized deployment architecture, a set of facilitating tools, services, and procedures and grouped them under the OroCloud offering.
 
 Although with GCP you can build and maintain the infrastructure that exactly fits any custom software and business domain, we have taken some steps to give you a hand in your Oro application roll-out. To enable flawless and seamless experience of launching and running Oro applications in the GCP infrastructure, we have designed an optimized deployment architecture, a set of facilitating tools, services, and procedures and grouped them under the OroCloud offering.
 
@@ -27,11 +28,9 @@ With OroCloud, you get the following package of services:
 
 The following benefits come along:
 
-* Ease of use -- With OroCloud, you can focus on your business and save time and money on the in-house infrastructure technical support. OroCloud manages the application environment as part of the service, but we also offer a customized application maintenance service.
-* Security -- OroCloud has been |PCI-DSS certified| since December 2017 and is scheduled for yearly reassessment and renewal. This means that every resource that the OroCloud environment uses -- the servers, network, software, and configuration -- comply with the |PCI DSS Shared Responsibility GCP v4.0| . See |How GCP smoothed our path to PCI-DSS compliance| for more details.
+* Ease of use -- With OroCloud, you can focus on your business and save time and money on the in-house infrastructure technical support. OroCloud manages the application environment as part of the service, but we also offer a customized application maintenance service
+* Security -- OroCloud has been |PCI-DSS certified| since December 2017 and is scheduled for yearly reassessment and renewal. This means that every resource that the OroCloud environment uses -- the servers, network, software, and configuration -- comply with the |PCI DSS Shared Responsibility GCP v4.0| .
 * Reliability -- OroCloud is based on the highly reliable cloud platform and supports high-availability and fault-tolerant deployments out-of-the-box and comes with 24x7 technical support for P1 issues.
-
-.. note:: Download the |OroCloud Commitments to GDPR| document to find out about the standards and best practices adopted by Oro Inc to support :ref:`GDPR requirements <user-guide--consents>`.
 
 **What’s Next**
 
