@@ -83,13 +83,9 @@ Links (Cloud)
 
    <a href="https://cloud.google.com/compute/docs/regions-zones" target="_blank">region</a>
 
-.. |Data center locations| raw:: html
+.. |GCP Data center locations| raw:: html
 
-   <a href="https://www.google.com/about/datacenters/locations/" target="_blank">Data center locations</a>
-
-.. |Google Cloud Load Balancing| raw:: html
-
-   <a href="https://cloud.google.com/load-balancing/" target="_blank">Google Cloud Load Balancing</a>
+   <a href="https://www.google.com/about/datacenters/locations/" target="_blank">GCP Data center locations</a>
 
 .. |Life Inside the Cluster| raw:: html
 
@@ -103,21 +99,9 @@ Links (Cloud)
 
    <a href="https://redis.io/docs/management/sentinel/" target="_blank">Redis Sentinel Documentation</a>
 
-.. |BeeGFS| raw:: html
-
-   <a href="https://www.beegfs.io/content/documentation/" target="_blank">BeeGFS</a>
-
 .. |GCP Region| raw:: html
 
    <a href="https://cloud.google.com/compute/docs/regions-zones/" target="_blank">GCP Region</a>
-
-.. |opening new regions and enhancing the network| raw:: html
-
-   <a href="https://www.blog.google/topics/google-cloud/expanding-our-global-infrastructure-new-regions-and-subsea-cables" target="_blank">opening new regions and enhancing the network</a>
-
-.. |Why Google Cloud| raw:: html
-
-   <a href="https://cloud.google.com/why-google-cloud" target="_blank">Why Google Cloud</a>
 
 .. |PCI-DSS certified| raw:: html
 
@@ -126,14 +110,6 @@ Links (Cloud)
 .. |PCI DSS Shared Responsibility GCP v4.0| raw:: html
 
    <a href="https://services.google.com/fh/files/misc/gcp_pci_dss_v4_responsibility_matrix.pdf" target="_blank">PCI DSS Shared Responsibility GCP v4.0</a>
-
-.. |How GCP smoothed our path to PCI-DSS compliance| raw:: html
-
-   <a href="https://cloud.google.com/blog/products/gcp/oro-how-gcp-smoothed-our-path-to-pci-dss-compliance/" target="_blank">How GCP smoothed our path to PCI-DSS compliance</a>
-
-.. |OroCloud Commitments to GDPR| raw:: html
-
-   <a href="https://oroinc.com/b2b-ecommerce/wp-content/uploads/sites/3/2018/06/OroCloud-commitments-to-the-GDPR.pdf" target="_blank">OroCloud Commitments to GDPR</a>
 
 .. |Tunnelblick| raw:: html
 
@@ -246,3 +222,24 @@ Links (Cloud)
 .. |Cloudflare documentation| raw:: html
 
    <a href="https://developers.cloudflare.com/cloudflare-one/" target="_blank">Cloudflare documentation</a>
+
+.. |Oracle Cloud Infrastructure (OCI)| raw:: html
+
+   <a href="https://docs.oracle.com/en-us/iaas/Content/home.htm" target="_blank">Oracle Cloud Infrastructure (OCI)</a>
+
+.. |OCI tenancy| raw:: html
+
+   <a href="https://docs.oracle.com/en/cloud/foundation/cloud_architecture/governance/tenancy.html" target="_blank">OCI tenancy</a>
+
+.. |OCI Data centers| raw:: html
+
+   <a href="https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm" target="_blank">OCI Data centers</a>
+
+.. |Cloudfare| raw:: html
+
+   <a href="https://www.cloudflare.com/learning/ddos/ddos-mitigation/" target="_blank">Cloudfare</a>
+
+.. |Google Cloud Platform| raw:: html
+
+   <a href="https://cloud.google.com/files/GCPDDoSprotection-04122016.pdf" target="_blank">Google Cloud Platform</a>
+
