@@ -106,3 +106,6 @@ Once saved, you can now enable your theme configuration under the theme system s
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

@@ -19,12 +19,11 @@ To redeem a coupon:
 
 This way you can apply as many coupons as the conditions of the active promotions allow.
 
-.. note:: To delete the coupon code, click |IcDelete| **Delete** next to the code.
+.. note:: To delete the coupon code, click |Trash-SVG| **Delete** next to the code.
 
 In addition, any discounts applied to the order will be displayed in the **Total** section of the **Order Summary**.
 
 .. image:: /user/img/storefront/orders/CouponCodeCheckout3.png
 
-
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

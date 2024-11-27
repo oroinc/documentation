@@ -145,7 +145,7 @@ From the opportunity page, the following actions are possible for the quote:
 
 - View: |IcView|
 - Edit: |IcEdit|
-- Delete: |IcDelete|
+- Delete: |Trash-SVG|
 - Expire: |IcExpire|
 
 .. note:: Note that the availability of the **Expire** option for a quote within the opportunity page depends on the types of workflows activated in your system.
@@ -168,6 +168,9 @@ You can create any number of quotes for one open opportunity.
 .. finish_opportunity_flows
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

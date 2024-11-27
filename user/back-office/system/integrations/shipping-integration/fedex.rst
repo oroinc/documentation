@@ -152,5 +152,8 @@ That is why, when you check or update the existing integration, you will see the
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. include:: /include/include-links-user.rst
    :start-after: begin

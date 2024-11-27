@@ -45,3 +45,6 @@ You can update the product watermark settings, enable image preview and configur
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

@@ -147,3 +147,6 @@ As an illustration, let us go through a sample flow to see RFQ Management Flow i
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+

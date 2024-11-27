@@ -70,3 +70,6 @@ To set up the new arrivals icons and segment per organization:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

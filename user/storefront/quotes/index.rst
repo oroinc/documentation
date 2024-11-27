@@ -21,5 +21,5 @@ After you submit a quote, it becomes available in the :ref:`Quotes <my-account-q
    Accept a Quote <accept>
    Send Guest Quotes <guests>
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

@@ -56,3 +56,6 @@ When previewing this page, you need to set the same restrictions in the configur
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

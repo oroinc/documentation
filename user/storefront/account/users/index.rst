@@ -31,10 +31,10 @@ The Users grid shows the following data:
 
 You also have the ability to:
 
-1. Refresh the view table: click |IcRefresh| to update the view table.
-2. Reset the view table to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
-3. Manage table settings to define which columns to show in the table.
-4. Manage :ref:`filters <frontstore-guide--navigation-filters>`.
+1. Refresh |Refresh-SVG| the view table.
+2. Reset |Reset-SVG| the view table to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
+3. Manage |Columns-SVG| table settings to define which columns to show in the table.
+4. Manage :ref:`filters <frontstore-guide--navigation-filters>` |Settings-SVG|.
 
 Customer User View Page
 -----------------------
@@ -72,6 +72,6 @@ A form will emerge with the following data to provide:
 
 .. image:: /user/img/storefront/users_roles/create-user.png
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
 

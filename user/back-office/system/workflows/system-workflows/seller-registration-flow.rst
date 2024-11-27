@@ -34,3 +34,6 @@ Seller Registration Request workflow is a system workflow, which means it cannot
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

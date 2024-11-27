@@ -54,6 +54,9 @@ You can control the order lifecycle and:
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. toctree::
    :hidden:
    :maxdepth: 1

@@ -38,7 +38,7 @@ Create a New Email Template
 
 5. Click **Save** to apply the changes.
 
-6. You can delete |IcDelete|, edit |IcEdit|, and clone |IcClone| email templates on the page of all templates.
+6. You can delete |Trash-SVG|, edit |IcEdit|, and clone |IcClone| email templates on the page of all templates.
 
    .. image:: /user/img/system/emails/templates/email_template_actions.png
       :alt: View a list of templates with three options available: edit, clone, delete
@@ -685,6 +685,9 @@ To enable the email template fallback to the parent localization, select the **U
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

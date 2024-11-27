@@ -25,3 +25,6 @@ In this case, the data in the datagrid will be filtered by this customer user:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

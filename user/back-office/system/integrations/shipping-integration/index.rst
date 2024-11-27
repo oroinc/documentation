@@ -28,7 +28,7 @@ To delete an integration and related shipping methods:
 
 1. Navigate to the **Manage Integrations** page by clicking **System > Integrations > Manage Integrations** in the main menu.
 
-2. Hover over the |IcMore| **More Options** menu on the right side of the line with the necessary integration and click |IcDelete|.
+2. Hover over the |IcMore| **More Options** menu on the right side of the line with the necessary integration and click |Trash-SVG|.
 
    The confirmation box is shown.
 
@@ -52,6 +52,9 @@ The shipping methods created due to this integration are no longer usable in Oro
    :start-after: begin
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. toctree::

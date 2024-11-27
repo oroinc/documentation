@@ -29,3 +29,6 @@ Provide Guest Contact Details
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

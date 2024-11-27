@@ -32,3 +32,6 @@ The section describes how to enable or disable the quote functionality for the r
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

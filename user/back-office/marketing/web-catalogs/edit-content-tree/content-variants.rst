@@ -252,3 +252,6 @@ Select the radio on the top left of its type to set up a newly added content var
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+

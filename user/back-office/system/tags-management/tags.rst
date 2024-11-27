@@ -59,7 +59,7 @@ From the General Page of an Entity
 
 1. Navigate to **Customers > Accounts** in the main menu or select any other entity to create a tag for.
 
-2. Within the list of an entity, select the required entity and click |IcPencil| edit.
+2. Within the list of an entity, select the required entity and click |Pencil-SVG| edit.
 
 3. Specify tags for the entity. You can enter multiple tags for one entity.
 
@@ -76,7 +76,7 @@ From the Details Page of an Entity
 
 2. Click the required entity to open its details page.
 
-2. Click |IcPencil| edit in Tags.
+2. Click |Pencil-SVG| edit in Tags.
 
    .. image:: /user/img/system/tags_management/entity_view_page_14.png
       :alt: Click the edit icon in the Tags field of the selected entity record
@@ -98,9 +98,9 @@ Navigate to **System > Tags Management > Tags**.
 
 Within the tags list, you can:
 
-1. Search records by a tag: |IcSearch|
+1. Search records by a tag: |Search-SVG|
 2. Edit the selected tag: |IcEdit|
-3. Delete a tag from the system:|IcDelete|
+3. Delete a tag from the system:|Trash-SVG|
 4. Filter tags: |IcFilter|
 5. Configure grid settings for tags: |IcSettings|
 
@@ -148,6 +148,9 @@ It is possible to filter your reports by tags. For instance, we can create a rep
 You can create any reports of your choice and filter them by tag in a similar manner.
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

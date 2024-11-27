@@ -16,3 +16,6 @@ To customize one of the storefront menus (e.g., commerce_main_menu) or customer/
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

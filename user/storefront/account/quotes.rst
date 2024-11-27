@@ -22,15 +22,14 @@ Here, you can also print the quote, accept it and submit to order, or start a :r
 
 Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
-1. Refresh (to update the view table).
-2. Reset (to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made).
-3. Table settings (that define which columns to show in the table)
-4. :ref:`Filters <frontstore-guide--navigation-filters>` |IcFilter|.
+1. Refresh |Refresh-SVG| the view table.
+2. Reset |Reset-SVG| the view table to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
+3. Manage |Columns-SVG| table settings to define which columns to show in the table.
+4. Manage :ref:`filters <frontstore-guide--navigation-filters>` |Settings-SVG|.
 
 .. note:: More details on how to accept an offered quote or submit a guest quote are described in the other :ref:`Quotes <frontstore-guide--quotes>` topic of the Storefront guide.
 
-
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

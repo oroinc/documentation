@@ -74,7 +74,7 @@ The **Designer** section consists of a table and an interactive chart representa
 
 -	**Update** (clicking the transition name opens the **Edit Transition** form).
 -	**Clone** (clicking the |IcClone| **Clone** icon next to the transition name opens the **Clone Transition** dialog).
--	**Delete** (clicking the |IcDelete| **Delete** icon next to the transition launches name **Delete Confirmation** dialog).
+-	**Delete** (clicking the |Trash-SVG| **Delete** icon next to the transition launches name **Delete Confirmation** dialog).
 
 .. image:: /user/img/system/workflows/designer_tab_transition.png
 
@@ -83,7 +83,7 @@ The **Designer** section consists of a table and an interactive chart representa
 - **Add a transition to a step** (clicking the **+** icon opens the **Add New Transition** dialog).
 - **Update** (clicking the |IcEdit| **Edit** icon opens the **Edit Step** dialog).
 - **Clone** (clicking the |IcClone| **Clone** icon opens the **Clone Step** dialog).
-- **Delete** (clicking the |IcDelete| **Delete** icon launches the **Delete Confirmation** dialog).
+- **Delete** (clicking the |Trash-SVG| **Delete** icon launches the **Delete Confirmation** dialog).
 
 .. image:: /user/img/system/workflows/designer_tab.png
 
@@ -103,7 +103,7 @@ The **Designer** section consists of a table and an interactive chart representa
 .. image:: /user/img/system/workflows/drag_transition.gif
 
 - **Undo/Redo changes** (click the |IcReply| **Undo** / |IcShare| **Redo** button at the top of the cart to revert or restore changes made to the chart).
-- **Edit/Clone/Delete** a step/transition (point to the step/transition button, and when the |IcCaretDown| arrow appears, click it, and then click the |IcEdit| **Edit** / |IcClone| **Clone** / |IcDelete| **Delete** icon.
+- **Edit/Clone/Delete** a step/transition (point to the step/transition button, and when the |IcCaretDown| arrow appears, click it, and then click the |IcEdit| **Edit** / |IcClone| **Clone** / |Trash-SVG| **Delete** icon.
 
 .. note:: All actions available for transitions and steps in the table are available in the chart as well.
 
@@ -370,6 +370,9 @@ See the following sections to get more information about the system workflows in
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

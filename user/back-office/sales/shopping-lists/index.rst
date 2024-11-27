@@ -42,7 +42,7 @@ To view a specific shopping list in the back-office:
 
    * |IcView| View complete details of the product that is added to the shopping list.
    * |IcEdit| Modify details of the product added as a line item to the shopping list.
-   * |IcDelete| remove the line item from the shopping list.
+   * |Trash-SVG| remove the line item from the shopping list.
 
    .. note:: To handle a significant volume of data, use page switcher, increase *View Per Page*, or use filters to narrow down the list to the information you need.
 
@@ -100,6 +100,9 @@ From the shopping list view page, you can perform the following actions for the 
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

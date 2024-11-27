@@ -171,3 +171,6 @@ You can issue more than one refund, but you cannot refund a total greater than t
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

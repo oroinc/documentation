@@ -539,3 +539,6 @@ Once the GTM integration is configured, you must connect it to the application i
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

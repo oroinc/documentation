@@ -29,13 +29,11 @@ The banner consist of the description about cookie usage at the site and buttons
 
     Would you like to benefit from the new digital commerce trend? Read about what makes a |B2B marketplace website| successful and how you can benefit.
 
-
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
-
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -34,3 +34,6 @@ You can customize marketing features, such as :ref:`marketing lists <user-guide-
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

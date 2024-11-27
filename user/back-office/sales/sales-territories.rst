@@ -114,7 +114,7 @@ You can perform the following actions for an **inactive** territory from the gri
 - Activate: |IcCheck|
 - View: |IcView|
 - Edit: |IcEdit|
-- Delete: |IcDelete|
+- Delete: |Trash-SVG|
 
 .. image:: /user/img/sales/sales_territories/inactive_territory_manage.png
    :alt: The actions you can perform to disabled territories from the grid
@@ -186,4 +186,7 @@ You can view records filtered within one or several specific territories within 
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

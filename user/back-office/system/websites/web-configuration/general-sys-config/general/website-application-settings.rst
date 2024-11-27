@@ -26,3 +26,6 @@ In this section, you can configure the storefront Web API feature availability f
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

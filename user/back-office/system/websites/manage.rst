@@ -182,3 +182,6 @@ Also, refer to the :ref:`shipping configuration on the system level <user-guide-
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

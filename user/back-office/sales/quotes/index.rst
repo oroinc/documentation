@@ -43,3 +43,6 @@ To learn more on how to create and use quotes and their workflows, check out the
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

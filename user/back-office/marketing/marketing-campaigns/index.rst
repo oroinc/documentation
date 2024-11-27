@@ -154,7 +154,7 @@ You can manage marketing campaigns directly from their details page. Here, you c
 
 The same actions are available for a campaign after you navigate to **Marketing > Campaigns** in the main menu.
 
-Hover over the |IcMore| **More Options** menu to the right of the required tracking website and select the necessary action, either |IcView| View, |IcEdit| Edit, or |IcDelete| Delete.
+Hover over the |IcMore| **More Options** menu to the right of the required tracking website and select the necessary action, either |IcView| View, |IcEdit| Edit, or |Trash-SVG| Delete.
 
 .. image:: /user/img/marketing/marketing/campaign_actions_general.png
    :alt: Actions that are available from the page of all marketing campaigns
@@ -184,10 +184,13 @@ The **Already shared with** section gets automatically populated with the person
 
 5. Click **Apply** to save the changes.
 
-6. To cancel the campaign sharing with a particular person, click **Share**, and then click |IcDelete| next to the username. Use mass actions to cancel sharing for more than one user.
+6. To cancel the campaign sharing with a particular person, click **Share**, and then click |Trash-SVG| next to the username. Use mass actions to cancel sharing for more than one user.
 
 
 .. stop
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

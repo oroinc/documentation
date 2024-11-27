@@ -88,7 +88,11 @@ When browsing documentation, be on the lookout for the |Extension| application i
    Reports and Segments <reports-segments/index>
    System <system/index>
 
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-seo.rst

@@ -39,7 +39,7 @@ Delete an Entity
 You can delete only *custom* entities that have no records. To delete such entities:
 
 1. Navigate to **System > Entities > Entity Management**.
-2. In the grid on the **All Entities** page, choose the entity you want to delete, click the ellipsis menu at the right end of the corresponding role and then click the |IcDelete| **Delete** icon.
+2. In the grid on the **All Entities** page, choose the entity you want to delete, click the ellipsis menu at the right end of the corresponding role and then click the |Trash-SVG| **Delete** icon.
 3. In the **Deletion Confirmation** dialog box, click **Yes**.
 4. Reload the page when you see the notification about item deletion. 
 
@@ -99,4 +99,7 @@ To manage unique keys:
 8. Click **Save**.      
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

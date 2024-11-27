@@ -49,3 +49,6 @@ More information about the options available for each of the two categories is a
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

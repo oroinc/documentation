@@ -286,3 +286,6 @@ Let us go through every step of this process:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

@@ -74,3 +74,6 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

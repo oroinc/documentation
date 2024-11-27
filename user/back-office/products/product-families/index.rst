@@ -35,3 +35,6 @@ In this section, you will learn how to:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

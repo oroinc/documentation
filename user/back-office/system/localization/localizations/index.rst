@@ -53,7 +53,7 @@ Hover over the |IcMore| **More Options** menu to the right of the necessary loca
 
 2. Click |IcEdit| to edit the localization.
 
-3. Click |IcDelete| to remove the localization from the list.
+3. Click |Trash-SVG| to remove the localization from the list.
 
 .. image:: /user/img/system/localization/localizations_more_options.png
 
@@ -85,4 +85,7 @@ Once the localization is configured, you need to enable it in the system configu
 .. finish
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

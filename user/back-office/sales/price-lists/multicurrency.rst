@@ -49,3 +49,6 @@ After the new currency is selected, product prices automatically adjust to show 
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

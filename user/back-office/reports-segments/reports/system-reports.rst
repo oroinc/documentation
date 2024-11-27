@@ -22,3 +22,6 @@ The following system reports are available out-of-the-box at the Oro application
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

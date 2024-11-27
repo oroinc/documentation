@@ -27,6 +27,5 @@ You can also use detailed search auto-complete across the whole storefront. It s
    General Layout <general-layout>
    Common Controls <common-controls>
 
-
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

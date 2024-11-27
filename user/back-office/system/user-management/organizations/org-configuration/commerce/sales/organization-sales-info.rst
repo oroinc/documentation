@@ -41,3 +41,6 @@ To enable or disable the display of sales representative information in the stor
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+

@@ -49,8 +49,6 @@ You can view the existing conversations from the following pages in your Oro app
   .. image:: /user/img/storefront/conversation/ConversationRelatedRecord.png
      :alt: The actions available for conversations on the page of a related record
 
-
-
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
 

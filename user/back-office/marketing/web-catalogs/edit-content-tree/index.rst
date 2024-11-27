@@ -73,3 +73,6 @@ Learn how to set up menus and configure content variants for the content node in
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+

@@ -5,7 +5,7 @@ Edit Records
 
 You can edit records in your application in three ways:
 
-1. By using |IcPencil| :ref:`inline editing <doc-grids-actions-records-edit-inline>` in :ref:`record tables <doc-grids>`.
+1. By using |Pencil-SVG| :ref:`inline editing <doc-grids-actions-records-edit-inline>` in :ref:`record tables <doc-grids>`.
 
    .. image:: /user/img/getting_started/records/inline_editing_example.png
       :alt: Illustration of the inline editing in record tables
@@ -54,4 +54,7 @@ The Ellipsis menu (or the more options menu) is located on the page of all recor
 .. finish_edit
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

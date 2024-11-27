@@ -63,7 +63,7 @@ You can manage widgets using tools in their header:
 
 * |IcCollapse| Collapse or |IcExpandPlus| Expand it. If a widget has been collapsed, only its header is displayed on the dashboard.
 * Move the widget by clicking on the widget's header, holding the |IcMoveArrow| button and placing the widget in the desired location on the dashboard.
-* |IcDelete| Delete delete the widget from the dashboard
+* |Trash-SVG| Delete delete the widget from the dashboard
 * Open widget settings menu |IcSettings| to configure the widget. See the `Configure Widgets`_ section for the options you can change.
 
 The specified owner, date range and the |territory| (if available) are displayed at the bottom of the widget.
@@ -82,6 +82,9 @@ To configure a widget, click |IcSettings| **Configure** in the widget header and
 * Other widget details (depending on widget type).
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

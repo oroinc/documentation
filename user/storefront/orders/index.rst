@@ -28,6 +28,6 @@ After you submit an order, it becomes available in the :ref:`Order History <my-a
    Order a Kit <kits>
    Re-Order Products <reorder>
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
 

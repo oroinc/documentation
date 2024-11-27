@@ -54,7 +54,7 @@ You can manage the information collected within accounts. Below is an overview o
      :alt: The sharing settings dialog displayed after clicking the share button on the account page
 
 * Edit account information by clicking |IcEdit| **Edit**.
-* Delete an account from the system by clicking |IcDelete| **Delete**.
+* Delete an account from the system by clicking |Trash-SVG| **Delete**.
 * Perform a number of actions under the **More Actions** menu:
 
   * :ref:`Add Attachment <user-guide-activities-attachments>`
@@ -80,10 +80,10 @@ The key actions that you can do to selected accounts on the list are located und
    :alt: Account actions from the account list displaying the view, edit, and delete icons for the selected account
 
 * View |IcView|
-* Delete  |IcDelete|
+* Delete  |Trash-SVG|
 * Edit |IcEdit|
 
-In addition to editing an account on the edit page, you can quickly amend the necessary information using inline editing for specific columns in the grid, such as account name, owner or tags. To edit within the grid, click |IcPencil|.
+In addition to editing an account on the edit page, you can quickly amend the necessary information using inline editing for specific columns in the grid, such as account name, owner or tags. To edit within the grid, click |Pencil-SVG|.
 
 .. image:: /user/img/customers/accounts/accounts_grid_inline_editing.gif
    :alt: Inline editing for specific columns on the page of all accounts
@@ -101,4 +101,7 @@ Aggregation capabilities of accounts extend even further, with the ability to me
    :start-after: begin
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

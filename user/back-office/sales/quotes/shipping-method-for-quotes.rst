@@ -39,3 +39,6 @@ To limit the shipping address and methods per quote:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

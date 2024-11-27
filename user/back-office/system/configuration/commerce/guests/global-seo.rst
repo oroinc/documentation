@@ -26,3 +26,6 @@ The SEO settings can be configured globally, :ref:`per organization <sys--conf--
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

@@ -159,7 +159,7 @@ To add related products to the product information:
 
    This will close the dialog and update the related items list with the products you have selected.
 
-   .. note:: To delete a related item, click |IcDelete| **Delete**  next to it.
+   .. note:: To delete a related item, click |Trash-SVG| **Delete**  next to it.
 
 #. Once you add the related items, click **Save and Close**.
 
@@ -187,7 +187,7 @@ To add up-sell items to the product information:
 
    This will close the dialog and update the related items list with the products you have selected.
 
-   .. note:: To delete a related item, click |IcDelete| **Delete**  next to it.
+   .. note:: To delete a related item, click |Trash-SVG| **Delete**  next to it.
 
 #. Once you add the related items, click **Save and Close**.
 
@@ -196,6 +196,9 @@ Now, you can configure up-sell products :ref:`globally <sys--commerce--catalog--
 .. stop_product_create_simple
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

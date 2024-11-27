@@ -224,7 +224,7 @@ Toggle Item Visibility
    .. note::
       If a menu item that you want to show has a parent, it will become visible too.
 
-3. **Find a Menu Item** ---  To quickly find a menu item, enter its name into the search field and click the |IcSearch| **Search** icon or press **Enter**.
+3. **Find a Menu Item** ---  To quickly find a menu item, enter its name into the search field and click the |Search-SVG| **Search** icon or press **Enter**.
 
    .. image:: /user/img/system/menus/menus_application_search.png
       :alt: Using the search tab to locate all references about sales
@@ -242,6 +242,9 @@ Toggle Item Visibility
    :start-after: begin
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

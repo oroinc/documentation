@@ -55,3 +55,6 @@ To change the default price list settings for the website:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

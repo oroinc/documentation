@@ -81,7 +81,7 @@ Delete a Quote from the Quote Grid
    * One of the workflows is active, and the current workflow step allows quote deletion.
 
 1. In the main menu, navigate to **Sales > Quotes**. The quote list opens.
-2. Choose the quote you need to delete, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcDelete| **Delete** icon.
+2. Choose the quote you need to delete, click the |IcMore| **More Options** menu at the end of the row, and then click the |Trash-SVG| **Delete** icon.
 #. In the confirmation dialog, click **Yes, Delete**.
 
 .. finish
@@ -112,7 +112,7 @@ Delete Multiple Quotes
 ^^^^^^^^^^^^^^^^^^^^^^
 
 1. In the main menu, navigate to **Sales > Quotes**. The quote list opens.
-2. Select the checkboxes in front of the quotes that you need to delete, click the |IcMore| **More Options** menu at the end of the list header, and then click |IcDelete| **Delete**.
+2. Select the checkboxes in front of the quotes that you need to delete, click the |IcMore| **More Options** menu at the end of the list header, and then click |Trash-SVG| **Delete**.
 
    .. tip::
       To select a bulk of items quickly, click |IcSortDesc| next to the checkbox at the beginning of the table header and then select one of the following options:
@@ -125,4 +125,7 @@ Delete Multiple Quotes
 #. In the confirmation dialog, click **Yes, Delete**.
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
