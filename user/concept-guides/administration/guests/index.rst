@@ -126,5 +126,8 @@ For the non-registered users to view your custom prices in the storefront, you n
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 
 

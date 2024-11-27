@@ -85,7 +85,7 @@ Manage Email Campaign Records
 
 The following actions are available for an email campaign from the grid:
 
-- Delete the campaign from the system: |IcDelete|
+- Delete the campaign from the system: |Trash-SVG|
 
 - Edit the campaign: |IcEdit|
 
@@ -126,6 +126,9 @@ This generates an email based on the selected template, populates it with the co
    dotdigital-data-fields-mappings
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. |email_campaign_schedule| image:: /user/img/marketing/marketing/email_campaign_schedule.png

@@ -68,7 +68,7 @@ To create a new segment:
 
    To manage the columns, use action icons in the last column:
 
-      - Delete a column from the segment with |IcDelete|.
+      - Delete a column from the segment with |Trash-SVG|.
 
       - Edit the column settings with |IcEdit|.
 
@@ -102,4 +102,7 @@ To view the records selected using the segment filter:
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

@@ -80,5 +80,11 @@ Oro User Documentation is split into five sections, each delivering user-specifi
    glossary
 
 
+.. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. include:: /include/include-links-seo.rst
    :start-after: begin

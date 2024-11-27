@@ -43,3 +43,6 @@ You can control whether you want to calculate taxes before or after discounts ar
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

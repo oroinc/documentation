@@ -133,11 +133,11 @@ You can delete roles if they are not assigned to any user, and if you are grante
 To delete an existing role:
 
 1. Navigate to **System > User Management > Roles** in the main menu. 
-2. On the page of **All Roles**, click the ellipsis menu at end of the corresponding row of the selected role, and then click the |IcDelete| **Delete** icon.  
+2. On the page of **All Roles**, click the ellipsis menu at end of the corresponding row of the selected role, and then click the |Trash-SVG| **Delete** icon.
 
    .. image:: /user/img/system/user_management/delete_role.png
    
-   Alternatively, you can edit the role from the page of the selected role by clicking |IcDelete| **Delete** on the top right.
+   Alternatively, you can edit the role from the page of the selected role by clicking |Trash-SVG| **Delete** on the top right.
 
    .. image:: /user/img/system/user_management/delete_role_from_page.png
 
@@ -150,6 +150,9 @@ To delete an existing role:
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

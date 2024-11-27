@@ -98,3 +98,6 @@ To share a record, click **Share** on the top right of the record page and enter
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

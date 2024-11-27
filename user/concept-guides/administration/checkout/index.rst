@@ -154,6 +154,9 @@ On top of what is provided by default, you can also add your own code customizat
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. include:: /include/include-links-user.rst
    :start-after: begin
 

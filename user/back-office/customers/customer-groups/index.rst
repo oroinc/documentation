@@ -12,7 +12,7 @@ On a customer group details page, you can:
 * |IcConfig| **Edit Storefront Menu**
 * |IcConfig| **Configure** customer group settings.
 * |IcEdit| **Edit** customer group details.
-* |IcDelete| **Delete** existing customer groups.
+* |Trash-SVG| **Delete** existing customer groups.
 * **Add a note**
 * **Create a new customer**. Alternatively, use a quick action button under the **Customers** menu to create a new customer directly from the customer group page. The form for data input can be displayed in a new browser tab, a popup dialog window, or replace the current page, :ref:`depending on its system configuration <doc-configuration-display-settings-quick-actions>`.
 
@@ -81,6 +81,9 @@ To configure the price list priority and controlled merge for the customer group
 #. Click **Save** once you are happy with the price list set up.
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

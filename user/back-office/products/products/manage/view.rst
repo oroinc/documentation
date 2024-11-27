@@ -29,7 +29,7 @@ You can see the product name on the top left of the page. Next to it, there is t
 
 In the next row, you can see when the product was created and updated.
 
-Additionally, you can |IcCopy| duplicate, |IcEdit| edit, or |IcDelete| delete the product by clicking the corresponding button.
+Additionally, you can |IcCopy| duplicate, |IcEdit| edit, or |Trash-SVG| delete the product by clicking the corresponding button.
 
 In the **More Actions** drop-down, you can:
 
@@ -248,7 +248,7 @@ Click the activity to see detailed information about it.
 
 To edit the activity, click the |IcMore| **More Options** menu at the end of the row and click |IcEdit| **Update Note**. In the dialog that appears, make required changed and then click **Save**.
 
-To delete the activity, click the |IcMore| **More Options** menu at the end of the row and click |IcDelete| **Delete Note**. In the confirmation dialog, click **Yes, Delete**.
+To delete the activity, click the |IcMore| **More Options** menu at the end of the row and click |Trash-SVG| **Delete Note**. In the confirmation dialog, click **Yes, Delete**.
 
 You can add and delete an activity context.
 
@@ -262,7 +262,7 @@ In the **Add Comment** dialog, type your message.
 Use the built-in text editor to format your comment. You can also attach a file to your comment.
 For this, click the **Upload** link in the dialog and locate the required file. When the comment is ready, click **Add**.
 
-To edit or delete a comment, click the |IcMore| **More Options** menu next to it and click the |IcEdit| **Edit** or |IcDelete| **Delete** icon correspondingly.
+To edit or delete a comment, click the |IcMore| **More Options** menu next to it and click the |IcEdit| **Edit** or |Trash-SVG| **Delete** icon correspondingly.
 
 For more information about activities, see the :ref:`Activities <user-guide-productivity-tools>` guide.
 
@@ -275,9 +275,9 @@ To view or download an attachment, click the file name.
 
 To edit an attachment, click the |IcEdit| **Edit** icon at the end of the row.
 
-To delete an attachment, click the |IcDelete| **Delete** icon at the end of the row.
+To delete an attachment, click the |Trash-SVG| **Delete** icon at the end of the row.
 
-To delete multiple attachments, select checkboxes in front of the files you want to delete, click the |IcMore| **More Options** menu at the end of the list header and then click |IcDelete| **Delete**.
+To delete multiple attachments, select checkboxes in front of the files you want to delete, click the |IcMore| **More Options** menu at the end of the list header and then click |Trash-SVG| **Delete**.
 
 
 
@@ -287,6 +287,9 @@ To delete multiple attachments, select checkboxes in front of the files you want
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-seo.rst

@@ -46,7 +46,7 @@ Once saved, the form is displayed on the page of all embedded forms under **Syst
 .. image:: /user/img/system/integrations/emb_form/emb_form_create_ex_01.png
    :alt: A list of all embedded forms
 
-You can view |IcView|, edit |IcEdit|, and delete |IcDelete| contact requests using the corresponding action icons.
+You can view |IcView|, edit |IcEdit|, and delete |Trash-SVG| contact requests using the corresponding action icons.
 
 .. _admin-embedded-forms-code:
 
@@ -65,4 +65,7 @@ To add the necessary embedded form to your website:
 .. stop
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

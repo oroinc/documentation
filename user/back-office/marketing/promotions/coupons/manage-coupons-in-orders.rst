@@ -70,7 +70,7 @@ When editing the selected order, you can perform the following actions with the 
 
    .. note:: When you deactivate the coupon code, its status is changed from active to inactive. It is not removed, and you can reactivate it when necessary.
 
-4. |IcDelete| Delete a coupon code.
+4. |Trash-SVG| Delete a coupon code.
 
 .. note:: When you add, deactivate, or delete coupons when editing orders, the price totals, and the shipping cost may change. Please, review the order totals to ensure the cost is acceptable.
 
@@ -78,4 +78,7 @@ When editing the selected order, you can perform the following actions with the 
 .. finish_edit_in_order_body
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

@@ -35,3 +35,6 @@ To configure the settings per website:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

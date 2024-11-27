@@ -12,10 +12,13 @@ To view all tax rates, navigate to **Taxes > Tax Rates** in the main menu.
 
 In the tax rate list, you will find the information about the tax rates' codes (unique identifier), detailed description, and the dates when the tax rate was created and updated.
 
-Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or  |IcDelete| to remove the tax rate.
+Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or  |Trash-SVG| to remove the tax rate.
 
 .. stop
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 

@@ -28,6 +28,9 @@ For detailed information on these topics, please see the following sections:
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. toctree::
    :maxdepth: 1
    :hidden:

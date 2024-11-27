@@ -18,7 +18,7 @@ To view product tax code details:
 
  * View details of the product linked to this product tax code --- Click on the line with the customer account details.
 
- * |IcEdit| **Edit** or |IcDelete| **Delete** the selected product tax code.
+ * |IcEdit| **Edit** or |Trash-SVG| **Delete** the selected product tax code.
    
    .. note:: You can edit the product details to remove the link to this product tax code, if necessary.
 
@@ -29,4 +29,7 @@ To view product tax code details:
 .. stop
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

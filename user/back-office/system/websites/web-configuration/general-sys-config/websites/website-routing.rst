@@ -79,5 +79,8 @@ To change the default routing settings for the website:
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. include:: /include/include-links-user.rst
    :start-after: begin

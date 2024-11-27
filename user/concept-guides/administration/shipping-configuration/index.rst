@@ -91,6 +91,9 @@ To calculate the shipping cost for an order, enter the order shipping address to
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. include:: /include/include-links-user.rst
    :start-after: begin
 

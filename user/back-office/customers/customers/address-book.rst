@@ -67,10 +67,13 @@ Manage an Address
 
 * **Edit an address** - To edit an address, click |IcEdit| on the top right of the address background, update the address details, and click **Save**.
 
-* **Delete an address** - Delete an address by clicking |IcDelete| next to it.
+* **Delete an address** - Delete an address by clicking |Trash-SVG| next to it.
 
 .. finish
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

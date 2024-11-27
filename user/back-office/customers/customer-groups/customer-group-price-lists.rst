@@ -52,3 +52,6 @@ To change the price list settings for the customer group:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

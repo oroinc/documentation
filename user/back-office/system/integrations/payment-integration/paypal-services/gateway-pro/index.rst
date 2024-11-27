@@ -72,4 +72,7 @@ Next, set up a payment rule that enables these payment methods (PayPal Payflow G
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 

@@ -23,3 +23,6 @@ You can control the way product inventory is displayed for your buyers (in the s
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

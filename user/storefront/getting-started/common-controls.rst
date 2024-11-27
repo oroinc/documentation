@@ -30,7 +30,7 @@ Display Options
 
 **Views**
 
-When browsing the website, buyers have the flexibility to choose how they view content, with three distinct options available: gallery view |IcTiles|, list view |IcDetails|, or compact view |IcCompactDetails|.
+When browsing the website, buyers have the flexibility to choose how they view content, with three distinct options available: gallery view |Grid-SVG|, list view |List-SVG|, or compact view |CompactList-SVG|.
 
 .. image:: /user/img/storefront/navigation/GridPages.png
 
@@ -62,7 +62,7 @@ The **default table view** is what you see when you open a view page, it shows u
 
 Tables can be viewed, saved as new ones, shared, renamed, set as default and deleted:
 
-1. To view the list of available tables: click on the |IcChevronDown| arrow next to the table name.
+1. To view the list of available tables: click on the |ChevronDown-SVG| arrow next to the table name.
 
    .. image:: /user/img/storefront/navigation/SavedView.png
 
@@ -77,11 +77,11 @@ Tables can be viewed, saved as new ones, shared, renamed, set as default and del
 
    The following actions are available for saved view:
 
-   * share the selected saved view: |IcBookmarkOutline|
-   * unshare the selected saved view: |IcBookmarkSolid|
-   * set the selected saved view as default: |IcTiles|
-   * rename the selected saved view: |IcPencil|
-   * delete the selected saved view: |IcDelete|
+   * share the selected saved view: |Bookmark-SVG|
+   * unshare the selected saved view: |BookmarkFilled-SVG|
+   * set the selected saved view as default: |Grid-SVG|
+   * rename the selected saved view: |Pencil-SVG|
+   * delete the selected saved view: |Trash-SVG|
 
    .. image:: /user/img/storefront/navigation/saved-view-actions.png
 
@@ -96,18 +96,18 @@ Action buttons are on the right of the view page. They enable you to perform a n
 
 The following action buttons can be available:
 
-1. Refresh the view table: click |IcUndo| to update the view table.
-2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
-3. Table settings: click |IcSettings| to define which columns to show in the table:
+1. Refresh the view table: click |Refresh-SVG| to update the view table.
+2. Reset the view table: click |Reset-SVG| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
+3. Table settings: click |Columns-SVG| to define which columns to show in the table:
 
    .. image:: /user/img/storefront/navigation/TableSettings.png
 
    * You can manually select the columns by clicking on the checkbox next to the required field.
    * To show/hide all columns in the table, click **Select All**/**Deselect All**.
-   * To clear customization, click |IcReset| **Reset**.
+   * To clear customization, click |Reset-SVG| **Reset**.
    * To change the order of the columns, click on the ellipsis icon next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
 
-4. Filters: click |IcFilter| to show/hide filters to select specific items to be shown in the table. More information on filters is provided in the Filters section below.
+4. Filters: click |Settings-SVG| to show/hide filters to select specific items to be shown in the table. More information on filters is provided in the Filters section below.
 
 .. _frontstore-guide--navigation-filters:
 
@@ -118,7 +118,7 @@ Filters are used when you need to quickly pick out the records you need from the
 
 The following actions are available for filters:
 
-1. To show/hide filters, click |IcFilter|
+1. To show/hide filters, click the filter toggle icon |Sliders-SVG|.
 
    .. image:: /user/img/storefront/navigation/Filters.png
 
@@ -185,7 +185,7 @@ Search
 
 Search is the fastest way to find a specific product:
 
-1. Click the |IcSearch| search icon at the top of the screen.
+1. Click the |Search-SVG| search icon at the top of the screen.
 2. Type in the search key into the text field.
 3. Click **Enter**.
 
@@ -252,5 +252,5 @@ When a buyer tries to  change the quantity of the items, this triggers change in
 .. image:: /user/img/storefront/navigation/your-listed-price.gif
    :alt: Illustration of the price change after when a user changes product quantity
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

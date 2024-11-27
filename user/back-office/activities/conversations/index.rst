@@ -72,8 +72,13 @@ You can view, update, delete the existing conversations, and add context or a ne
 * :ref:`Conversations Workflow <system--workflows--conversations-backoffice-workflow>`
 * :ref:`Enable the Conversations Feature <configuration--guide--commerce--configuration--interactions>`
 
+
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

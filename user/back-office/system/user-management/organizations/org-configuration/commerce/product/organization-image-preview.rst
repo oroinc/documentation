@@ -43,3 +43,6 @@ In the Product Images section of Commerce configuration settings, you can contro
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

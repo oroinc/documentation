@@ -30,7 +30,7 @@ To add cross-sell products to the product information:
 
    This will close the dialog and update the related items list with the products you have selected.
 
-   .. note:: To delete a related item, click |IcDelete| **Delete**  next to it.
+   .. note:: To delete a related item, click |Trash-SVG| **Delete**  next to it.
 
 #. Once you are done adding the related items, click **Save and Close**.
 
@@ -63,6 +63,9 @@ Enable and Set Up Cross-Sell Products per Website
 .. finish_cross_sell_items_configuration
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. toctree::

@@ -67,9 +67,9 @@ To create a new company address:
 
 You can perform the following actions for each address record:
 
-* Show an address on the map: click |IcMap|
-* Edit an address: click |IcPencil|
-* Delete an address: click |IcDelete|
+* Show an address on the map: click |Map-SVG|
+* Edit an address: click |Pencil-SVG|
+* Delete an address: click |Trash-SVG|
 
 Manage My Addresses
 -------------------
@@ -113,11 +113,11 @@ To create a new personal address:
 
 You can perform the following actions for each address record in the table:
 
-* Show an address on the map: click |IcMap|
-* Edit an address: click |IcPencil|
-* Delete an address: click |IcDelete|
+* Show an address on the map: click |Map-SVG|
+* Edit an address: click |Pencil-SVG|
+* Delete an address: click |Trash-SVG|
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

@@ -182,7 +182,7 @@ Click the activity to see detailed information about it.
 
 To edit the activity, click the |IcMore| **More Options** menu at the end of the row and click |IcEdit| **Update**. In the dialog that appears, make the required changes and then click **Save**.
 
-To delete the activity, click the |IcMore| **More Options** menu at the end of the row and click |IcDelete| **Delete**. In the confirmation dialog, click **Yes, Delete**.
+To delete the activity, click the |IcMore| **More Options** menu at the end of the row and click |Trash-SVG| **Delete**. In the confirmation dialog, click **Yes, Delete**.
 
 You can add and delete an activity context.
 
@@ -204,7 +204,7 @@ In the **Add Comment** dialog, type your message.
 Use the built-in text editor to format your comment. You can also attach a file to your comment.
 For this, click the **Upload** link in the dialog and locate the required file. When the comment is ready, click **Add**.
 
-To edit or delete a comment, click the |IcMore| **More Options** menu next to it and click the |IcEdit| **Edit** or |IcDelete| **Delete** icon correspondingly.
+To edit or delete a comment, click the |IcMore| **More Options** menu next to it and click the |IcEdit| **Edit** or |Trash-SVG| **Delete** icon correspondingly.
 
 For more information about activities, see the :ref:`Activities <user-guide-productivity-tools>` guide.
 
@@ -221,4 +221,7 @@ For information on attachments and how to manage them, see the :ref:`Attachments
 .. finish_view
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

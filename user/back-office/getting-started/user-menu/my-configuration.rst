@@ -215,5 +215,8 @@ For more information on how to configure the contact information visible to the 
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. include:: /include/include-links-user.rst
    :start-after: begin

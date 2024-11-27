@@ -74,6 +74,9 @@ Use the generated Client ID and Client Secret to retrieve an access token to con
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. include:: /include/include-links-user.rst
    :start-after: begin
 

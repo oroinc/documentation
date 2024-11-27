@@ -50,7 +50,7 @@ You can perform the following actions here:
 * Create a warehouse: Click the button on the top right.
 * **View Warehouse details**: Click on the warehouse to open its details page.
 * **Edit Warehouse details**: Click |IcEdit| at the end of the row to start editing the selected warehouse details. You might need to click the |IcMore| **More Options** menu at the end of the row to reach the |IcEdit| icon.
-* **Delete a Warehouse**: Click the |IcMore| **More Options** menu at the end of the row, and then click the |IcDelete| **Delete** icon.
+* **Delete a Warehouse**: Click the |IcMore| **More Options** menu at the end of the row, and then click the |Trash-SVG| **Delete** icon.
 
 .. note:: If the warehouse has been enabled in the :ref:`global system configuration <sys--conf--commerce--inventory--product-options--global>` with no other warehouses enabled, you cannot delete it.
 
@@ -62,4 +62,7 @@ You can perform the following actions here:
 * :ref:`Configure Website-specific Inventory <configuration--commerce--inventory-website>`
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

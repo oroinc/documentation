@@ -37,7 +37,7 @@ To view tax jurisdiction details:
    .. image:: /user/img/taxes/tax_jurisdiction_details.png
       :alt: View the tax jurisdiction details
 
-You can |IcEdit| edit or |IcDelete|  delete the tax jurisdiction by clicking the required button on the top right.
+You can |IcEdit| edit or |Trash-SVG|  delete the tax jurisdiction by clicking the required button on the top right.
 
 Edit a Tax Jurisdiction
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -79,4 +79,7 @@ You can edit the association of the tax jurisdiction with other tax components w
    viewlist
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

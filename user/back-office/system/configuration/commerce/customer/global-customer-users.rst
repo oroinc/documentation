@@ -146,3 +146,6 @@ Once the feature is enabled, customer users will no longer be able to reuse thei
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

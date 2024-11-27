@@ -19,7 +19,7 @@ On the All Requests for Quote Page
 From the Shopping List
 ----------------------
 
-1. In the top right corner, click on the |IcShoppingLists| Shopping List(s) button to view all available shopping lists.
+1. In the top right corner, click on the |ShoppingList-SVG| Shopping List(s) button to view all available shopping lists.
 2. Click the necessary shopping list.
 3. Click **Request Quote** in the Summary section of the shopping list.
 
@@ -44,7 +44,7 @@ In the Request a Quote section, provide:
 
 In the Products section:
 
-* Select a product from the dropdown, or click |IcCompactDetails| to see a complete list of products.
+* Select a product from the dropdown, or click |CompactList-SVG| to see a complete list of products.
 * Enter the number of items/sets.
 * Click **Add Another Line** to provide additional quantities and price.
 * Give the target price.
@@ -67,5 +67,5 @@ Registered users can also request a quote via the quick order widget in the top 
 
 .. image:: /user/img/storefront/rfq/rfq-from-quick-order.png
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

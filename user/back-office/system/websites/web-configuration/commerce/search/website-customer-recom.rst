@@ -57,3 +57,6 @@ See each formula's description and detailed explanation in the :ref:`CustomerRec
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+

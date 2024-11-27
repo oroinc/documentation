@@ -45,8 +45,8 @@ To create a guest RFQ from the shopping list:
 
    In the Products section, you can:
 
-   * Edit the item by clicking |IcPencil| at the end of the product item row.
-   * Delete the item by clicking |IcDelete| at the end of the product row.
+   * Edit the item by clicking |Pencil-SVG| at the end of the product item row.
+   * Delete the item by clicking |Trash-SVG| at the end of the product row.
    * Add another product by clicking **+Add Another Product**
 
    In the Data Protection section, you may be required to accept mandatory consents to process your personal information. If the consent is not accepted, you cannot submit the RFQ.
@@ -86,8 +86,8 @@ To create an RFQ from the quick order form:
 
    In the Products section, you can:
 
-   * Edit the item by clicking |IcPencil| at the end of the product item row.
-   * Delete the item by clicking |IcDelete| at the end of the product row.
+   * Edit the item by clicking |Pencil-SVG| at the end of the product item row.
+   * Delete the item by clicking |Trash-SVG| at the end of the product row.
    * Add another product by clicking **+Add Another Product**
 
    In the Data Protection section, you may be required to accept mandatory consents to process your personal information. If the consent is not accepted, you cannot submit the RFQ.
@@ -102,5 +102,5 @@ To create an RFQ from the quick order form:
 * :ref:`Guest Quote in the Storefront <frontstore-guide--guest-quotes>`
 * :ref:`Guest Quote in the Back-Office <user-guide--sales--guest-quotes>`
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

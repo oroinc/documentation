@@ -32,9 +32,8 @@ In the single page checkout, you can see how far along in the checkout you are, 
   1. Check the item SKUs, quantity, price and the subtotal amount.
   2. Check and/or edit **Order Options** (PO number and notes).
   3. Select the **Delete this shopping list after submitting order** checkbox to delete the shopping list after submitting the order.
-  4. Edit the already provided information by clicking |IcEditInline| on the right side of the section.
+  4. Edit the already provided information by clicking |Pencil-SVG| on the right side of the section.
   5. Submit the order by clicking **Submit Order** on the bottom of the checkout page.
 
-
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

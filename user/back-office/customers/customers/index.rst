@@ -65,3 +65,6 @@ All the subsidiary departments and divisions are displayed in the Subsidiaries s
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+

@@ -24,13 +24,13 @@ By default, only one shopping list is available for unregistered users:
 
     In the *Quantity* field, change the quantity of the product.
 
-3.  To remove items from the list, click |ICChevronDown| next to **Update Shopping List** and click **Remove from Shopping List**.
+3.  To remove items from the list, click |ChevronDown-SVG| next to **Update Shopping List** and click **Remove from Shopping List**.
 
      .. image:: /user/img/storefront/shopping_lists/shopping_list_dropdown_2.png
 
      Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top right corner of the store page, and click *View Details*.
 
-     Next to the product, click |IcDelete| to remove it.
+     Next to the product, click |Trash-SVG| to remove it.
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

@@ -22,3 +22,6 @@ You can get to the price list that stores the particular price by clicking |IcVi
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

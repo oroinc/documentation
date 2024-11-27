@@ -68,7 +68,7 @@ You can:
 
 - |IcSettings| Configure the widget settings.
 
-- |IcDelete| Remove the widget from the sidebar.
+- |Trash-SVG| Remove the widget from the sidebar.
 
 - **x** close the widget (appears when the panel is minimized).
 
@@ -142,9 +142,12 @@ You can perform the following actions with the task list sidebar widget:
 
 * Change a number of displayed tasks by entering the required value into the **Number of tasks to show** field. Click **OK**.
 
-* Remove the widget from a dashboard by clicking |IcDelete|.
+* Remove the widget from a dashboard by clicking |Trash-SVG|.
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 

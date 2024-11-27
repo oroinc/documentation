@@ -11,9 +11,12 @@ You can perform the following actions for them:
 - **View**: |IcView| (go to the view page of the workflow).
 - **Activate/Deactivate**: |IcCheck| / |IcTimes| (activate/deactivate the workflow).
 - **Edit**: |IcEdit| (open the edit form of the workflow).
-- **Delete**: |IcDelete| (delete the workflow from the system).
+- **Delete**: |Trash-SVG| (delete the workflow from the system).
 
 .. image:: /user/img/system/workflows/28_manage_wf_1.png
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

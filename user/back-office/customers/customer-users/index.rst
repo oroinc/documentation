@@ -45,7 +45,7 @@ Hover over the |IcMore| **More Options** menu to the right of the necessary cust
 * |IcBan| **Disable** a customer user.
 * |IcView| **View** customer user details. Alternatively, click on the item to open its details page.
 * |IcEdit| **Edit** customer user details.
-* |IcDelete| **Delete** existing customer users.
+* |Trash-SVG| **Delete** existing customer users.
 
 Create a Customer User
 ----------------------
@@ -230,6 +230,9 @@ Use the generated Client ID and Client Secret to retrieve an access token to con
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

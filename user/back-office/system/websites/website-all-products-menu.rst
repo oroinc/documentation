@@ -28,5 +28,8 @@ The All Products page should now become available as part of the selected menu o
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 
 

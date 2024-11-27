@@ -55,6 +55,9 @@ Next, set up a payment rule that enables this payment method for all or some cus
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 **Related Topics**
 
 * :ref:`Payment Configuration Concept Guide <user-guide--payment>`

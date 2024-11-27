@@ -34,10 +34,13 @@ Once saved, a request to create the specification is sent and the specification 
 .. image:: /user/img/system/integrations/openapi/grid.png
    :alt: A list of all OpenAPI specifications
 
-You can download |IcDownload|, renew |IcReset|, view |IcView|, edit |IcEdit|, clone |IcClone|, and delete |IcDelete| specifications using the corresponding action icons.
+You can download |IcDownload|, renew |Reset-SVG|, view |IcView|, edit |IcEdit|, clone |IcClone|, and delete |Trash-SVG| specifications using the corresponding action icons.
 
 Once you have finished the configuration of a specification and want to make it read-only, click Publish |IcPublish|. Also, when the public slug is provided, a published specification will be available for unauthorized users to download.
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

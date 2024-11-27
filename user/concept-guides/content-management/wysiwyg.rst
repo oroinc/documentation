@@ -632,3 +632,6 @@ For more information on the available AI integration options, see :ref:`Configur
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

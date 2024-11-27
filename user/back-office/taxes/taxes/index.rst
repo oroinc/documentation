@@ -32,7 +32,7 @@ To view tax rate details:
 
 #. Find the line with the necessary tax rate and click on it to open its details page.
 
-You can |IcEdit| **Edit** or |IcDelete| **Delete** the tax rate by clicking the required button on the top right.
+You can |IcEdit| **Edit** or |Trash-SVG| **Delete** the tax rate by clicking the required button on the top right.
 
 Edit a Tax Rate
 ^^^^^^^^^^^^^^^
@@ -87,4 +87,7 @@ Import Tax Rates
    import-tax-rates
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

@@ -75,5 +75,8 @@ Check out the :ref:`Login Attempts <user-guide-user-management-login-attempts>` 
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 
 

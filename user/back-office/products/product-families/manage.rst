@@ -80,7 +80,7 @@ Delete a Product Attribute from the Attribute Group
 Delete a Product Attribute Group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Click |IcDelete| on the top right of the group area.
+1. Click |Trash-SVG| on the top right of the group area.
 
    .. image:: /user/img/products/product_families/ProductAttributeRemoveGroup.png
       :alt: Click delete on the top right of the group area
@@ -90,4 +90,7 @@ Delete a Product Attribute Group
 2. Click **Save**.
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

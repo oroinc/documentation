@@ -34,7 +34,7 @@ Within the taxonomies list, you can:
 
 1. View the details of a taxonomic unit:|IcView|
 2. Edit a taxonomic unit: |IcEdit|
-3. Delete a taxonomic unit from the system:|IcDelete|
+3. Delete a taxonomic unit from the system:|Trash-SVG|
 4. Filter taxonomies: |IcFilter|
 5. Configure grid settings for taxonomies: |IcSettings|
 
@@ -42,6 +42,9 @@ Within the taxonomies list, you can:
    :alt: The actions available for the taxonomies in the grid
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

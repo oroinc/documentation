@@ -28,7 +28,7 @@ In the **Account Info** section you can view the following details:
 * Password Status
 * Data protection (consents)
 
-To edit the profile, click |IcPencil| next to **Account Info**.
+To edit the profile, click |Pencil-SVG| next to **Account Info**.
 
 .. note:: Please note that the ability to edit your account information depends on the permissions that correspond to your role. These are defined by the administrator.
 
@@ -56,8 +56,8 @@ The **Default Addresses** section shows the addresses used by the signed in user
 
 You can perform the following actions for each of the addresses listed here:
 
-* Edit |IcPencil|
-* Delete |IcDelete|
+* Edit |Pencil-SVG|
+* Delete |Trash-SVG|
 
 To :ref:`manage default addresses in the address book <frontstore-guide--company-address>`, click **Go to Personal Addresses**.
 
@@ -113,9 +113,9 @@ You can be asked to accept consents when:
 * :ref:`When requesting a quote <frontstore-guide--rfq>`
 * At checkout
 
-You can accept a :ref:`consent <frontstore-guide--profile-consents>` from the page of your profile, by clicking |IcEdit| **Edit** next to the **Account Info** section.
+You can accept a :ref:`consent <frontstore-guide--profile-consents>` from the page of your profile, by clicking |Pencil-SVG| **Edit** next to the **Account Info** section.
 
-.. note:: You can view the description of the available consents in the **Account Info** by clicking on the consent links. The |ConsentDeclined| icon indicates that the consent has not been accepted, while the |IcActivate| indicated that it has been read, understood and accepted.
+.. note:: You can view the description of the available consents in the **Account Info** by clicking on the consent links. The |MinusCircle-SVG| icon indicates that the consent has not been accepted, while the |Check-SVG| indicates that it has been read, understood and accepted.
 
 In the **Data Protection** section, select the checkbox next to the consent that you want to accept. At this point you are prompted to read the text of the consent. Click **Accept** to agree to the terms of the consent and Click **Save** on the bottom left.
 
@@ -128,13 +128,13 @@ In the **Data Protection** section, select the checkbox next to the consent that
 Revoke a Consent
 ~~~~~~~~~~~~~~~~
 
-You can decline the :ref:`consent <frontstore-guide--profile-consents>` that you have previously accepted, by clicking |IcEdit| **Edit** next to the **Account Info** section.
+You can decline the :ref:`consent <frontstore-guide--profile-consents>` that you have previously accepted, by clicking |Pencil-SVG| **Edit** next to the **Account Info** section.
 
-.. note:: You can view the description of the available consents in the **Account Info** section by clicking on the consent links. The |ConsentDeclined| icon indicates that the consent has not been accepted, while the |IcActivate| indicated that it has been read, understood and accepted.
+.. note:: You can view the description of the available consents in the **Account Info** section by clicking on the consent links. The |MinusCircle-SVG| icon indicates that the consent has not been accepted, while the |Check-SVG| indicates that it has been read, understood and accepted.
 
 In the **Data Protection** section, clear the checkbox next to the consent that you want to revoke and click **Save** on the bottom left of the page.
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

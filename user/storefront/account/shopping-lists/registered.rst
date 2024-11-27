@@ -10,7 +10,7 @@ Shopping lists can be created using several flows.
 
 **Flow 1**
 
-1. Click |IcChevronDown| next to **Shopping Lists** on the top right of the page.
+1. Click |ChevronDown-SVG| next to **Shopping Lists** on the top right of the page.
 2. Click **Create New List** on the bottom of the drop-down window.
 3. Give the list a name and click **Create**.
 
@@ -18,7 +18,7 @@ Shopping lists can be created using several flows.
 
 **Flow 2**
 
-1. Click on the drop-down icon |IcChevronDown| located in the **Add to** button next to each product.
+1. Click on the drop-down icon |ChevronDown-SVG| located in the **Add to** button next to each product.
 2. Select **Create New Shopping List**.
 3. Give the list a name and click **Create**.
 
@@ -43,7 +43,7 @@ Shopping lists can be created using several flows.
 
 **Flow 5**
 
-Configurable products (products that have many variations) can be purchased either via an :ref:`inline or pop-up matrix form <config-guide--landing-commerce--products--configurable-products>`. You can create a new shopping list next to **Add to Shopping Lst** by clicking on the drop-down icon |IcChevronDown| and then **Create Shopping List**.
+Configurable products (products that have many variations) can be purchased either via an :ref:`inline or pop-up matrix form <config-guide--landing-commerce--products--configurable-products>`. You can create a new shopping list next to **Add to Shopping Lst** by clicking on the drop-down icon |ChevronDown-SVG| and then **Create Shopping List**.
 
 Pop-up Matrix Form:
 
@@ -58,7 +58,7 @@ Inline Matrix Form:
 Duplicate the already existing shopping list to make multiple similar orders:
 
 1. Open a shopping list.
-2. Click the |IcMore| **More Options** menu at the end of the list header row.
+2. Click the |MoreHorizontal-SVG| **More Options** menu at the end of the list header row.
 3. Click **Duplicate** from the dropdown list.
 4. A copy of the shopping list will be created.
 
@@ -71,7 +71,7 @@ Duplicate the already existing shopping list to make multiple similar orders:
 Create a new shopping list when selecting multiple products using mass action on the product listing page.
 
 1. Select the required items one by one, or click **Select All on Page**.
-2. Click |IcChevronUp| next to **Add to Shopping List** and click **Create New Shopping List** from the drop-down.
+2. Click |ChevronUp-SVG| next to **Add to Shopping List** and click **Create New Shopping List** from the drop-down.
 
    .. image:: /user/img/storefront/navigation/MassActionProductListing.png
 
@@ -100,7 +100,7 @@ Here you can add a note to the current shopping list, as well as each of the ite
 Manage Shopping Lists
 ---------------------
 
-While adding a product to a shopping list, click |IcChevronDown| to view a list of additional options available for the selected product.
+While adding a product to a shopping list, click |ChevronDown-SVG| to view a list of additional options available for the selected product.
 
   .. image:: /user/img/storefront/shopping_lists/shopping_list_dropdown_1.png
 
@@ -112,7 +112,7 @@ While adding a product to a shopping list, click |IcChevronDown| to view a list 
 
 To edit the shopping list name from within its view page:
 
-1. Click the |IcMore| **More Options** menu at the end of the list header row and then click |IcEdit| **Rename**.
+1. Click the |MoreHorizontal-SVG| **More Options** menu at the end of the list header row and then click |Pencil-SVG| **Rename**.
 
 .. image:: /user/img/storefront/shopping_lists/SHEditName.png
 
@@ -120,7 +120,7 @@ To edit the shopping list name from within its view page:
 
 To delete the shopping list:
 
-1. Click the |IcMore| **More Options** menu at the end of the list header row and then |IcDelete| Delete.
+1. Click the |MoreHorizontal-SVG| **More Options** menu at the end of the list header row and then |Trash-SVG| Delete.
 2. Confirm the deletion by clicking **Yes, Delete** in the confirmation window.
 
 To create an order from the shopping list:
@@ -133,5 +133,5 @@ To create a request for quote from the shopping list:
 
 1. Click **Request Quote** in the **Summary** section of the shopping list page.
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

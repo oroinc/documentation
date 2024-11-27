@@ -18,11 +18,14 @@ To view customer tax code details:
 
  * View details of the customer who is linked to this customer tax code --- Click the line with the customer account details.
 
- * |IcEdit| **Edit** or |IcDelete| **Delete** the selected customer tax code.
+ * |IcEdit| **Edit** or |Trash-SVG| **Delete** the selected customer tax code.
    
    .. note:: You can edit the customer details to remove the link to this customer tax code, if necessary.
 
 .. stop
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

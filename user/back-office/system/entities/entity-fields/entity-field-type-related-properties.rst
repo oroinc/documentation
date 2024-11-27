@@ -113,3 +113,6 @@ Depending on the entity type selected when defining the :ref:`basic properties <
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

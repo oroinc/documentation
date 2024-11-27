@@ -161,5 +161,8 @@ Once submitted, the order will be received and dealt with by the sales team.
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. include:: /include/include-links-seo.rst
    :start-after: begin

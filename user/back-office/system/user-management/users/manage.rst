@@ -62,7 +62,7 @@ Delete a User
 To delete a user from the system:
 
 1. Navigate to **System > User Management > Users**.
-2. In the table of all users, hover over the ellipsis menu at the end of the row of the selected user and click |IcDelete| **Delete**.
+2. In the table of all users, hover over the ellipsis menu at the end of the row of the selected user and click |Trash-SVG| **Delete**.
 
    .. important:: Keep in mind that you can delete only those users who have no records assigned to them.
 
@@ -224,6 +224,9 @@ Use the generated Client ID and Client Secret to retrieve an access token to con
 * :ref:`Password History Policy <user-guide--customers--customer-user-password-history-policy>`
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

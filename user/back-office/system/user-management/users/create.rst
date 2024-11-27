@@ -108,3 +108,6 @@ For more information on the integration with LDAP, please see the topic on :ref:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

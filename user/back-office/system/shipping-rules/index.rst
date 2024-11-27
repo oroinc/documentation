@@ -150,7 +150,7 @@ To create a shipping rule:
 
          A shipping method appears in the list only if it is configured to support the selected currency.
 
-      To delete a shipping method, click the |IcDelete| **Delete** icon at the end of the corresponding row.
+      To delete a shipping method, click the |Trash-SVG| **Delete** icon at the end of the corresponding row.
 
    b) Configure all selected shipping methods. Configuration options vary depending on a shipping method. For details on options available for different methods, see :ref:`Configure a Shipping Method in a Shipping Rule <doc--shipping-rules--shipping-methods--detailed>`. The configuration summary appears next to the shipping method name, in the **Options** column.
 
@@ -316,6 +316,9 @@ To define which columns to show in the table, click |IcSettings| above the table
 * :ref:`Shipping Method Integration <user-guide--shipping--configuration--common-details>`
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

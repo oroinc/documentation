@@ -27,7 +27,7 @@ To manage product tax codes, navigate to **Taxes > Product Tax Codes** in the ma
 
 In the product tax codes list, you will find the information about the code (unique identifier), detailed description, and the dates when the product tax code was created and updated.
 
-Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or |IcDelete| to remove the product tax code.
+Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or |Trash-SVG| to remove the product tax code.
 
 View Product Tax Code Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -89,6 +89,9 @@ You can edit the association of the product tax code with the tax when :ref:`edi
    link-a-tax-code-to-a-product
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-seo.rst
