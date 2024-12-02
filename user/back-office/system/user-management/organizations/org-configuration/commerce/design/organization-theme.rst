@@ -46,3 +46,6 @@ In your Oro application, you can control and customize the storefront look and f
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

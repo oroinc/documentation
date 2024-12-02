@@ -30,3 +30,6 @@ In addition to configuring settings for the user as the administrator, each user
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

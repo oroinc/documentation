@@ -63,5 +63,8 @@ The customer is now bound to the selected payment term.
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. include:: /include/include-links-seo.rst
    :start-after: begin

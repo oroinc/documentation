@@ -11,7 +11,7 @@ Opportunity Grid
 You can perform the following actions for opportunities from the grid:
 
 * Export and import opportunity record details with Export and Import buttons.
-* Delete an opportunity from the system: |IcDelete|
+* Delete an opportunity from the system: |Trash-SVG|
 * Get to the edit form of the opportunity: |IcEdit|
 * Get to the view page of the opportunity: |IcView|
 
@@ -40,9 +40,9 @@ Inline Editing
 
 :ref:`Inline editing <doc-grids-actions-records-edit-inline>` can help you amend opportunity details without opening the edit opportunity form. For opportunities, it is available from records' grids and view pages.
 
-If the |IcPencil| **Edit Inline** icon appears next to the field, inline editing is available for that value.
+If the |Pencil-SVG| **Edit Inline** icon appears next to the field, inline editing is available for that value.
 
-To edit the opportunity from the grid, double-click on the field or the inline editing icon |IcPencil| in the field you wish to edit.
+To edit the opportunity from the grid, double-click on the field or the inline editing icon |Pencil-SVG| in the field you wish to edit.
 
 .. image:: /user/img/sales/opportunities/inline_editing.jpg
    :alt: Inline editing for opportunities
@@ -70,7 +70,7 @@ Within the board, you can:
   .. image:: /user/img/sales/opportunities/draggin_opportunity_kanban.png
      :alt: Drag opportunities between columns on Kanban Board
 
-* Delete an opportunity from the system:|IcDelete|
+* Delete an opportunity from the system:|Trash-SVG|
 * Get to the edit form of the opportunity:|IcEdit|
 * Get to the view page of the opportunity:|IcView|
 
@@ -102,4 +102,7 @@ Customer, Account, and Opportunity view pages contain a list of relevant opportu
    :alt: Opportunities page with related other opportunities
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

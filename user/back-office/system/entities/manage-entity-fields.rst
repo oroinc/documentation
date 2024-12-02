@@ -33,7 +33,7 @@ To delete a custom entity field:
 1. Navigate to **System > Entities > Entities Management**.
 2. On the **All Entities** page, click the required entity to select it. 
 3. On the page of the selected entity, click **Fields**. 
-4. In the  **Fields** section, choose the required entity field and click the |IcDelete| **Delete** icon at the right end of the corresponding row. 
+4. In the  **Fields** section, choose the required entity field and click the |Trash-SVG| **Delete** icon at the right end of the corresponding row.
 5. In the **Deletion Confirmation** dialog box, click **Yes**.
 6. :ref:`Update the schema <admin-guide-update-schema>` (if the storage type for the field is set to **Table Column**). 
 
@@ -104,4 +104,7 @@ Every time you create or delete :ref:`entity fields <doc-entity-fields>` with th
 * :ref:`Provide Advanced Entity Field Properties <admin-guide-create-entity-fields-advanced>`
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

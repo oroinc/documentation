@@ -109,7 +109,7 @@ Delete an Order from the Order Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. In the main menu, navigate to **Sales > Orders**.
-2. Select the order you need to delete, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcDelete| **Delete** icon.
+2. Select the order you need to delete, click the |IcMore| **More Options** menu at the end of the row, and then click the |Trash-SVG| **Delete** icon.
 3. In the confirmation dialog, click **Yes, Delete**.
 
 .. _doc--orders--actions--delete--fromviewpage:
@@ -129,7 +129,7 @@ Delete Multiple Orders
 
 1. In the main menu, navigate to **Sales > Orders**. The order list opens.
 
-2. Select the checkboxes in front of the orders you need to delete, click the |IcMore| **More Options** menu at the end of the list header, and then click |IcDelete| **Delete**.
+2. Select the checkboxes in front of the orders you need to delete, click the |IcMore| **More Options** menu at the end of the list header, and then click |Trash-SVG| **Delete**.
 
    .. tip::
       To select a bulk of items quickly, click |IcSortDesc| next to the checkbox at the beginning of the table header and then select one of the following options:
@@ -141,5 +141,9 @@ Delete Multiple Orders
 
 3. In the confirmation dialog, click **Yes, Delete**.
 
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

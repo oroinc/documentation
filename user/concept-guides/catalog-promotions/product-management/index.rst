@@ -260,6 +260,9 @@ As you can see, with OroCommerce you can create an appealing and functional prod
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. toctree::
    :hidden:
    :maxdepth: 1

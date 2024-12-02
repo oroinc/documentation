@@ -35,7 +35,7 @@ To manage a specific calendar event from the page of all calendar events:
    * **?** Accept Tentatively
    * |IcView| View
    * |IcEdit| Edit
-   * |IcDelete| Delete
+   * |Trash-SVG| Delete
 
    .. image:: /user/img/activities/ManageCalendarEventsPage.png
       :alt: The actions available for a calendar event on the calendar event's grid
@@ -86,4 +86,7 @@ You can view, edit, or delete events from the page of the selected system calend
 3. The list of all events related to the selected calendar is located under the **Calendar Events** section. For each event, you can perform the necessary action.
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

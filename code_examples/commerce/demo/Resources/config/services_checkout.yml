@@ -1,0 +1,30 @@
+services:
+    acme_demo.action_group.start_from_shopping_list:
+        class: Acme\Bundle\DemoBundle\Workflow\ActionGroup\StartShoppingListCheckout
+        decorates: oro_checkout.action_group.start_from_shopping_list
+        arguments:
+            - '@.inner'
+        tags:
+            - { name: 'oro_action_group_service' }
+
+    Acme\Bundle\DemoBundle\Workflow\EventListener\FinishCheckoutEventListener:
+        tags:
+            - { name: kernel.event_listener, event: extendable_action.finish_checkout, method: onFinishCheckout }
+
+    Acme\Bundle\DemoBundle\Workflow\EventListener\DisallowCheapOrdersForGuestsEventListener:
+        arguments:
+            - '@oro_customer.provider.customer_user_relations_provider'
+            - '@oro_config.manager'
+            - '@oro_pricing.subtotal_processor.total_processor_provider'
+            - '@oro_checkout.data_provider.manager.checkout_line_items'
+        tags:
+            - { name: kernel.event_listener, event: oro_workflow.acme_demo_checkout.pre_announce, method: onPreAnnounce }
+
+    acme_demo.workflow.transition.place_order:
+        class: Acme\Bundle\DemoBundle\Workflow\Transition\PlaceOrder
+        arguments:
+            - '@oro_checkout.workflow.b2b_flow_checkout.transition.place_order'
+            - '@security.authorization_checker'
+            - '@oro_action.action_executor'
+        tags:
+            - { name: 'oro_workflow.transition_service' }

@@ -35,3 +35,6 @@ To filter the output of a Best Selling Products report:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

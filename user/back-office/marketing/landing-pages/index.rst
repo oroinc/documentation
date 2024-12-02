@@ -80,11 +80,11 @@ Here, you can perform the following actions:
 
  * Create a new landing page by clicking **Create Landing Page** on the top right.
 
- * Bulk delete landing pages: In a bulk select to the top left, select one of the following options: All, All Visible, None. On the top right of the list (grid), click bulk |IcMore| **More Options** menu and click the |IcDelete| to remove all selected landing pages.
+ * Bulk delete landing pages: In a bulk select to the top left, select one of the following options: All, All Visible, None. On the top right of the list (grid), click bulk |IcMore| **More Options** menu and click the |Trash-SVG| to remove all selected landing pages.
 
  * View a landing page by clicking on the item to open its details page.
 
- * Hover over the |IcMore| **More Options** menu to the right of the item and select either to |IcView| view, |IcEdit| edit , or |IcDelete| delete the landing page.
+ * Hover over the |IcMore| **More Options** menu to the right of the item and select either to |IcView| view, |IcEdit| edit , or |Trash-SVG| delete the landing page.
 
  * Filter landing pages by ID or Title.
 
@@ -128,7 +128,7 @@ To create a draft of the required landing page:
   * **Cancel** -- cancels the draft creation.
   * **Delete** -- deletes the draft.
 
-5. To view the saved drafts, navigate to the **Drafts** section of the required landing page. Click the desired draft to get to its details page. Alternatively, hover over the |IcMore| **More Actions** menu to |IcEdit| edit, |IcDelete| delete, |IcCopy| duplicate, or |IcPublish| publish the draft.
+5. To view the saved drafts, navigate to the **Drafts** section of the required landing page. Click the desired draft to get to its details page. Alternatively, hover over the |IcMore| **More Actions** menu to |IcEdit| edit, |Trash-SVG| delete, |IcCopy| duplicate, or |IcPublish| publish the draft.
 
    .. image:: /user/img/marketing/landing_pages/all_drafts.png
       :alt: The list of all drafts for the Contact Us landing page
@@ -137,5 +137,9 @@ To create a draft of the required landing page:
 
 6. To publish the draft, click |IcPublish| **Publish draft** on the top right of the draft's details page. Once the action is confirmed, the draft is published, substituting the original landing page. The drafts previously created for this landing page remain unchanged under the **Drafts** section.
 
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

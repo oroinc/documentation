@@ -20,6 +20,9 @@ In Oro applications, you can create opportunities from scratch or convert them f
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 .. toctree::
    :maxdepth: 1
    :titlesonly:

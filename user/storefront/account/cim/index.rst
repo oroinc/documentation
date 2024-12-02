@@ -63,14 +63,14 @@ To add a new card during the checkout:
 Manage a Credit Card Profile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* To edit a credit card, click |IcPencil| **Edit** at the end of the row of the selected profile.
+* To edit a credit card, click |Pencil-SVG| **Edit** at the end of the row of the selected profile.
 
   .. image:: /user/img/storefront/cim/edit-cim.png
      :alt: Edit payment profile info
 
   To update card information, select the **Update Credit Card Information** checkbox and provide new information in the credit card form.
 
-* To delete credit card, click |IcDelete| **Delete** at the end of the row of the selected profile. Click **Yes** in the confirmation dialog.
+* To delete credit card, click |Trash-SVG| **Delete** at the end of the row of the selected profile. Click **Yes** in the confirmation dialog.
 
 Add a New Bank Account
 ----------------------
@@ -120,7 +120,7 @@ To add a new bank account during checkout:
 Manage a Bank Account
 ^^^^^^^^^^^^^^^^^^^^^
 
-* To edit a bank account, click |IcPencil| **Edit** at the end of the row of the selected profile.
+* To edit a bank account, click |Pencil-SVG| **Edit** at the end of the row of the selected profile.
 
   .. image:: /user/img/storefront/cim/update_bank_acc_profile.png
      :alt: Edit bank account payment profile info
@@ -130,7 +130,7 @@ Manage a Bank Account
   .. image:: /user/img/storefront/cim/update_bank_acc_info.png
      :alt: Update bank account payment details
 
-* To delete a bank account, click |IcDelete| **Delete** at the end of the row of the selected profile. Click **Yes** in the confirmation dialog.
+* To delete a bank account, click |Trash-SVG| **Delete** at the end of the row of the selected profile. Click **Yes** in the confirmation dialog.
 
   .. image:: /user/img/storefront/cim/delete_bank_acc.png
      :alt: Delete a bank account profile
@@ -149,9 +149,8 @@ All credit card and bank account payment profiles are synchronized with Authoriz
 
 * :ref:`Set Up Authorize.Net Integration in the Back-Office <user-guide--payment--configuration--payment-method-integration--authorizenet-details>`
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
-
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

@@ -34,3 +34,6 @@ To configure product data export settings per customer group:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

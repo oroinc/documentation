@@ -36,7 +36,7 @@ For a load configuration files you need to create Service Container Extension. S
    .. literalinclude:: /code_examples/commerce/demo/DependencyInjection/AcmeDemoExtension.php
        :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/AcmeDemoExtension.php
        :language: php
-       :lines: 4-20, 27-28
+       :lines: 4-20, 28-29
 
 Create basic ``Resources/config/services.yml`` for define service parameters. See |Symfony Service Parameters|
 

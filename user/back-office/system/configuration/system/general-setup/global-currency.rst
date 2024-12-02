@@ -190,3 +190,6 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

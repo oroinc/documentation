@@ -59,7 +59,7 @@ All contacts available in the system are displayed on the page of all contacts u
 
 :ref:`Inline editing <doc-grids-actions-records-edit-inline>` can help you amend details of contacts without opening the edit contact form. For contacts, it is available from records' grids and view pages.
 
-If the |IcPencil| **Edit Inline** icon appears next to a value, you can edit it inline. You can edit contacts inline from the grid the same way.
+If the |Pencil-SVG| **Edit Inline** icon appears next to a value, you can edit it inline. You can edit contacts inline from the grid the same way.
 
 .. image:: /user/img/customers/contacts/inline_editing_contacts.gif
    :alt: Illustrate inline editing
@@ -80,6 +80,9 @@ Create an Address
    import-contacts
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

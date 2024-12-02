@@ -10,31 +10,31 @@
 Architecture
 ------------
 
-Google Cloud Platform
-^^^^^^^^^^^^^^^^^^^^^
+IaaS Platforms
+^^^^^^^^^^^^^^
 
-|Google Cloud Platform (GCP)| is an Infrastructure as a Service (IaaS) provider with many data centers located all around the globe. To organize GCP resources for a particular OroCloud environment, the resources are grouped into a |GCP project|. Within a single project, resources are optimized for data transmission and communication within the same |region| and provide redundancy for high availability with redundant resources distributed among multiple zones.
+OroCloud supports two IaaS platforms – |Google Cloud Platform (GCP)| and |Oracle Cloud Infrastructure (OCI)| out-of-the-box. Both these platforms have similar approaches to support high availability and disaster recovery using many data centers located all around the globe. To organize IaaS resources for a particular OroCloud environment, the resources are grouped into a |GCP project| or |OCI tenancy|. Within a single project or tenancy, resources are optimized for data transmission and communication within the same |region| and provide redundancy for high availability with redundant resources distributed among multiple zones.
 
-GCP Data Centers
-~~~~~~~~~~~~~~~~
+IaaS Data Centers
+~~~~~~~~~~~~~~~~~
 
-Google's data centers are located in the US, South America, Europe, and Asia. Click |Data center locations| for more information. Google organizes its GCP resources into zones and regions to ensure:
+Google’s and Oracle’s data centers are located in the US, South America, Europe, and Asia. Fore more information, see |GCP Data center locations| and |OCI Data Centers|.
 
-* Fault tolerance, as every zone is isolated from other zones. It is highly unlikely for two zones to fail from the same cause.
-* Fast network connectivity between zones in the same region, resulting in latency of under 5ms.
+IaaS providers organize their resources into zones or availability domains to ensure:
+
+* Fault tolerance, as every zone/domain is isolated from other zones. It is highly unlikely for two zones/domains to fail from the same cause.
+* Fast network connectivity between zones/domains in the same region, resulting in latency of under 5ms.
 * On-demand resource distribution to multiple regions and protection from global disasters that may affect an entire region.
 
-.. note:: Google is the first North American company to obtain multi-site |ISO 50001| Energy Management System certification for their data centers across the US, Europe, and Asia.
-
-In OroCloud, you can pick the GCP region(s) where your Oro application environment will be allocated to. Taking fault-tolerance into account, all resources typically share the same geographic region for response-time optimization but are distributed across multiple zones within the selected region.
+In OroCloud, you can choose the IaaS region(s) for your Oro application environment. To ensure fault tolerance, all resources generally reside in the same geographic region for optimized response time, but they are distributed across multiple zones within that selected region.
 
 OroCloud Environment Infrastructure Diagram
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The diagram below reflects a standard Oro application deployment in GCP via OroCloud.
+The diagram below reflects a standard Oro application deployment in IaaS platform via OroCloud.
 
-.. image:: /cloud/img/standard_average_environment_schema_new.png
-   :alt: Architecture of a standard Oro application deployment in GCP via OroCloud
+.. image:: /cloud/img/standard_average_environment_schema.png
+   :alt: Omnicloud standard average environment schema
 
 Redundancy
 ^^^^^^^^^^
@@ -43,12 +43,14 @@ Redundancy is a system design that ensures all system components are duplicated.
 
 The OroCloud infrastructure uses fully redundant components and services for Oro application operations. Check out the following sections for details on how redundancy is achieved.
 
+
 CDN and Load Balancing
 ~~~~~~~~~~~~~~~~~~~~~~
 
+
 The content delivery network is the geographically distributed network of the caching proxy servers that help improve response time for static content and provide high availability for service.
-Load Balancing is the process of distributing incoming traffic among web servers to improve service availability and performance.
-OroCloud offers two options of CDN and load balancing depending on the service provider used.
+
+Load Balancing is the process of distributing incoming traffic among web servers to improve service availability and performance. OroCloud offers two options of CDN and load balancing depending on the service provider used.
 
 GCP
 ~~~
@@ -56,6 +58,8 @@ GCP
 Google CDN uses edge servers distributed globally and perfectly integrated with Google Cloud Platform logging and monitoring services. For more information, see `CDN and Load Balancing`_ documentation.
 
 Load Balancing uses a standard GCP load balancer, which distributes traffic between web nodes. This option provides a basic level of DDoS mitigation and leaves service entry points exposed to the world due to the GCP architecture requirements.
+
+Please note that GCP CDN and load balancing is available only for GCP hosting.
 
 Cloudflare
 ~~~~~~~~~~
@@ -72,13 +76,14 @@ Key details for an OroCommerce instance protected by Cloudflare:
 
 * Load balancing is performed using nginx load balancing capabilities.
 
-Oro customers also can use other CDN providers. Please contact Oro Support to check if your CDN is compatible with Oro application.
+Cloudflare is available both for GCP and OCI-hosted environments.
+
+Oro customers can also choose to utilize alternative CDN providers. Please contact Oro Support to check if your CDN is compatible with the Oro application.
 
 Web Node
 ~~~~~~~~
 
-Google Load Balancer distributes the incoming traffic to a set of the web nodes that enable on-demand scaling, fault tolerance, DDoS protection, etc. At least two web nodes are allocated in different zones for fault-tolerance.
-For more information, see the |Google Cloud Load Balancing| documentation.
+Inbound traffic is balanced between the web nodes. This enables on-demand scaling, fault tolerance, DDoS protection, etc. At least two web nodes are allocated in different availability zones/domains for fault-tolerance.
 
 Search Index
 ~~~~~~~~~~~~
@@ -116,7 +121,7 @@ See |Redis Sentinel Documentation| for more information.
 File Storage
 ~~~~~~~~~~~~
 
-OroCloud environments are configured with a |BeeGFS| clustered file system to store application files related to the user data (attachments, images, documents).
+OroCloud environments are configured with a |GridFS| clustered file system to store application files related to the user data (attachments, images, documents).
 
 Backups and Restore
 ^^^^^^^^^^^^^^^^^^^
@@ -128,9 +133,9 @@ Schedule and Backup Retention Policy
 
 Oro maintains a regular backup process which covers both database and media content. There are 3 types of backups depending on the target recovery point objective (RPO):
 
-* Hourly backups. RPO - 1 hour. Oro stores hourly backups for last 7 days.
+* Hourly backups. RPO - 1 hour. Oro stores hourly backups for the last 7 days.
 * Weekly backups. RPO - Sunday Oro stores weekly backups for the last 4 weeks.
-* Monthly backups. RPO - last Sunday of the month. Oro stores monthly backups for last 12 month.
+* Monthly backups. RPO - last Sunday of the month. Oro stores monthly backups for the last 12 month.
 
 You can get the list of available backups and restore to the specific recovery point using :ref:`maintenance tool commands <orocloud-maintenance-use>`.
 
@@ -148,23 +153,23 @@ Maintenance
 ^^^^^^^^^^^
 
 To maintain optimal performance, reliability, and security, the OroCloud team performs regular environment maintenance where the team may roll out environment updates during the predefined maintenance window.
-
 During the events when a critical infrastructure security patch is released or some maintenance activity is urgently required for security or performance reasons, the OroCloud Services team reserves the right for unplanned maintenance windows. The Oro team will inform the environment owner about such maintenance activity.
+
 
 Disaster Recovery
 ^^^^^^^^^^^^^^^^^
 
 **Disaster Recovery** (DR) is a process that allows the IT support team to recover OroCloud service operations during a total failure or major malfunction of main hosting resources.
 
-While every tier of GCP resources are redundant, there is still a chance a catastrophe can shut down the entire Google Cloud region. For service disruption, GCP Region failure should suffice but may not be required. Internet connectivity issues outside of Google and Oro's control may be caused by adversary actions or misconfiguration and may as well take down the Oro Cloud environments in a particular region.
+While every tier of IaaS resources is redundant, there is still a chance a catastrophe can shut down the entire IaaS region. For service disruption, IaaS Region failure should suffice but may not be required. Internet connectivity issues outside of the provider and Oro’s control may be caused by adversary actions or misconfiguration and may as well take down the Oro Cloud environments in a particular region.
 
 Disaster Recovery Objectives and Criteria
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following criteria define an event is classified under Disaster Recovery on OroCloud:
 
-* The |GCP Region| hosting a particular OroCloud environment is not available and is not anticipated to be recovered by Google in the next hour.
-* The OroCloud environment is not accessible because of network issues related to the GCP geographical location.
+* The IaaS Region hosting a particular OroCloud environment is not available and is not anticipated to be recovered by the provider in the next hour.
+* The OroCloud environment is not accessible because of network issues related to the IaaS region geographical location.
 
 In the event of a disaster, the OroCloud team takes the following disaster recovery objectives:
 
@@ -175,24 +180,25 @@ In the event of a disaster, the OroCloud team takes the following disaster recov
 Disaster Recovery Principles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Oro uses a cold disaster recovery location. No resources are allocated or billed until the disaster recovery is initiated. In case a disastrous event takes place at the primary location, the OroCloud environment is re-created at a different GCP Region unaffected by the disaster. Each GCP Region that is used for production hosting has a designated Disaster Recovery location.
+Oro uses a cold disaster recovery location. No resources are allocated or billed until the disaster recovery is initiated. In case a disastrous event takes place at the primary location, the OroCloud environment is re-created at a different IaaS Region unaffected by the disaster. Each IaaS Region that is used for production hosting has a designated Disaster Recovery location.
 
 Oro provides both primary and Disaster Recovery IP addresses to the customer as part of onboarding information. These IP addresses must be added to the whitelists if any whitelisting is used.
+
 
 Disaster Recovery Flow
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Customer Support will request DR approval by contacting environment owner technical contact person.
 
-Once the DR is approved, OroCloud SWAT team uses the following action plan:
+Once the DR is approved, the OroCloud SWAT team uses the following action plan:
 
-* Provision the DR infrastructure and restore latest backups at the new infrastructure
+* Provision the DR infrastructure and restore the latest backups at the new infrastructure
 * Update the DNS record to point to the new location (if possible)
 * Perform health checks for the restored instance
 
 Once the health check for the restored instance is complete and the instance is up and running, Customer Support will notify the technical contact that the service has been successfully restored.
 
-.. note:: If the Oro application is configured with the custom domain, the DNS record update should be handled by the domain owner.
+.. note:: If the Oro application is configured with the customer-managed domain, the DNS record update should be handled by the domain owner.
 
 System Configuration
 ^^^^^^^^^^^^^^^^^^^^

@@ -141,3 +141,6 @@ The information about the allowed currencies options is grouped in the following
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

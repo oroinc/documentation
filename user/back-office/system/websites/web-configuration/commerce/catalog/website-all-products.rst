@@ -39,3 +39,6 @@ Enable All Products Page per Website
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

@@ -146,7 +146,7 @@ Here is an example of how to enable logging every time an "opportunity_flow" wor
     namespace Acme\Bundle\DemoBundle\EventListener;
 
     use Psr\Log\LoggerInterface;
-    use Oro\Bundle\WorkflowBundle\Event\Transition\TransitionEvent;
+    use Oro\Bundle\WorkflowBundle\Event\Transition\StepLeaveEvent;
 
     class OpportunityFlowLoggingEventListener
     {
@@ -155,7 +155,7 @@ Here is an example of how to enable logging every time an "opportunity_flow" wor
         ) {
         }
 
-        public function onLeave(TransitionEvent $event): void
+        public function onLeave(StepLeaveEvent $event): void
         {
             $workflowItem = $event->getWorkflowItem();
             $transition = $event->getTransition();
@@ -199,11 +199,11 @@ Let's review an example of the "Close As Won" transition being blocked when the 
 
     namespace Acme\Bundle\DemoBundle\EventListener;
 
-    use Oro\Bundle\WorkflowBundle\Event\Transition\GuardEvent;
+    use Oro\Bundle\WorkflowBundle\Event\Transition\PreAnnounceEvent;
 
     class OpportunityFlowBudgetEventListener
     {
-        public function onPreAnnounce(GuardEvent $event): void
+        public function onPreAnnounce(PreAnnounceEvent $event): void
         {
             // Do nothing if the execution was already disabled
             if (!$event->isAllowed()) {
@@ -226,23 +226,28 @@ Let's review an example of the "Close As Won" transition being blocked when the 
             tags:
                 - { name: kernel.event_listener, event: oro_workflow.opportunity_flow.pre_announce.close_won, method: onPreAnnounce }
 
+Form Events
+-----------
 
-Disabling Events
-----------------
+In addition to workflow events there is a set of form specific events that are triggered on workflow attributes form pre-set data.
 
-Oro Workflows triggers a lot of events and allows to hook into the transition execution process at many stages. Such flexibility can be resource-consuming. If you are sure that some events are not used in the system, there is a possibility to disable event triggering by event name. To do this, add ``disableEvent`` with the event name as an argument to the ``oro_workflow.event_dispatcher`` service.
+oro_workflow.transition_form_init
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: yaml
+This event is triggered when workflow transition attributes form is initialized
 
+- oro_workflow.transition_form_init
+- oro_workflow.[workflow name].transition_form_init
+- oro_workflow.[workflow name].transition_form_init.[transition name]
 
-    services:
-        acme.demo.oro_workflow.event_dispatcher:
-            decorates: oro_workflow.event_dispatcher
-            calls:
-                - ['disableEvent', ['announce']]
+oro_workflow.attribute_form_init
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+This event is triggered when workflow attributes form is initialized
 
-.. note:: Be careful when disabling events, for example, ACL checks and checkout workflow states are event-based.
+- oro_workflow.attribute_form_init
+- oro_workflow.[workflow name].attribute_form_init
+
 
 Extending Workflow Configuration
 --------------------------------

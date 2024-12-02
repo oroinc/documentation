@@ -27,10 +27,10 @@ The RFQ grid shows the following data:
 
 Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
-1. Refresh the view table: click |IcRefresh| to update the view table.
-2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
-3. Table settings: click |IcSettings| to define which columns to show in the table.
-4. :ref:`Filters <frontstore-guide--navigation-filters>` |IcFilter|.
+1. Refresh |Refresh-SVG| the view table.
+2. Reset |Reset-SVG| the view table to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
+3. Manage |Columns-SVG| table settings to define which columns to show in the table.
+4. Manage :ref:`filters <frontstore-guide--navigation-filters>` |Settings-SVG|.
 
 RFQ View Page
 -------------
@@ -57,7 +57,7 @@ You can print the selected RFQ by clicking **Print RFQ**  on the top right of th
 
 .. image:: /user/img/storefront/rfq/PrintRFQ.png
 
-If an RFQ was previously cancelled, you can resubmit the RFQ by clicking |IcRedo| **Resubmit** on the top right of the view page.
+If an RFQ was previously cancelled, you can resubmit the RFQ by clicking |Resubmit-SVG| **Resubmit** on the top right of the view page.
 
 .. image:: /user/img/storefront/rfq/RFQResubmitNew.png
 
@@ -68,5 +68,5 @@ If an RFQ was previously cancelled, you can resubmit the RFQ by clicking |IcRedo
    Create an RFQ <registered>
    Create a Guest RFQ <guests>
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

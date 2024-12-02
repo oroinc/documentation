@@ -25,21 +25,21 @@ The roles table shows the following data:
 
 Within the table you have the following :ref:`actions buttons <frontstore-guide--navigation-action-buttons>` available:
 
-1. Refresh the view table: click |IcRefresh| to update the view table.
-2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
-3. Table settings: click |IcSettings| to define which columns to show in the table.
-4. :ref:`Filters <frontstore-guide--navigation-filters>` |IcFilter|.
+1. Refresh |Refresh-SVG| the view table.
+2. Reset |Reset-SVG| the view table to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
+3. Manage |Columns-SVG| table settings to define which columns to show in the table.
+4. Manage :ref:`filters <frontstore-guide--navigation-filters>` |Settings-SVG|.
 
 Role View Page
 --------------
 
 To open a specific role: click on the selected role in the view table.
 
-To edit a specific role from its view page: click |IcPencil| **Edit Role** on the right of the page.
+To edit a specific role from its view page: click |Pencil-SVG| **Edit Role** on the right of the page.
 
 .. image:: /user/img/storefront/users_roles/BuyerEditRole.png
 
-To delete a specific customizable role from its view page: click |IcDelete| **Delete**
+To delete a specific customizable role from its view page: click |Trash-SVG| **Delete**
 
 .. note:: If the role is predefined, it cannot be deleted. Neither can it be deleted if it is assigned to a user/users. Reassign the assigned users to a different role to be able to delete it.
 
@@ -136,6 +136,6 @@ To apply a role to a specific user:
 
 .. image:: /user/img/storefront/users_roles/RolesAllUsers.png
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
 

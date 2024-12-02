@@ -106,8 +106,8 @@ The page contains the list of all available coupons in your Oro application. Fro
 3. Export coupons: Click  **Export** on the top right.
 4. Import coupons: Click  **Import** on the top right.
 5. View coupon details: Click on the item from the list to open its details page.
-6. Hover over the |IcMore| **More Options** menu to the right of the necessary coupon and select either to |IcView| **View**, |IcEdit| **Edit**, or |IcDelete| **Delete** the existing coupons from the system.
-7. Mass edit or mass delete coupons: Select the checkboxes on the left of the corresponding rows. Click |IcMore| on the far right of the table header. Click |IcEdit| **Edit** to edit, or |IcDelete| **Delete** to delete the selected coupons.
+6. Hover over the |IcMore| **More Options** menu to the right of the necessary coupon and select either to |IcView| **View**, |IcEdit| **Edit**, or |Trash-SVG| **Delete** the existing coupons from the system.
+7. Mass edit or mass delete coupons: Select the checkboxes on the left of the corresponding rows. Click |IcMore| on the far right of the table header. Click |IcEdit| **Edit** to edit, or |Trash-SVG| **Delete** to delete the selected coupons.
 
    .. image:: /user/img/marketing/coupons/MassActionsCoupons.png
       :alt: The illustration of a mass action
@@ -171,6 +171,9 @@ Import Coupons
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

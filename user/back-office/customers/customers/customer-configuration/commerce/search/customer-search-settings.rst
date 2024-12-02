@@ -32,6 +32,9 @@ To configure the search history settings per customer:
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 
 
 

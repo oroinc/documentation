@@ -43,3 +43,6 @@ See the following topics for more details on how to create and manage web catalo
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

@@ -30,7 +30,7 @@ To view all customer tax codes, navigate to **Taxes > Customer Tax Codes** in th
 
 In the customer tax codes list, you will find the information about the code (unique identifier), a detailed description, and the dates when the customer tax code was created and updated.
 
-Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or  |IcDelete| to remove the customer tax code.
+Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or  |Trash-SVG| to remove the customer tax code.
 
 
 View Customer Tax Code Details
@@ -87,4 +87,7 @@ You can edit the association of the customer tax code with the tax when :ref:`ed
    link-a-tax-code-to-a-customer
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

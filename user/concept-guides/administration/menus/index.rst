@@ -271,3 +271,6 @@ In a nutshell, when editing the content of the selected menu item, click the |Ic
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

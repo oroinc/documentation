@@ -31,3 +31,6 @@ If enabled (see the section below), the workflow widget displays the process ste
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

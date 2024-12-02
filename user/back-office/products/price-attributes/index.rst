@@ -52,9 +52,9 @@ To view all price attributes, navigate to **Products > Price Attributes** in the
 .. image:: /user/img/products/price_attributes/PriceAttributes.png
    :alt: The page of all price attributes
 
-Here, you can create a new price attribute, filter the list of existing ones by a price attribute name or a field name, and view price attribute details by clicking on the item. Also, you can  |IcView| view, |IcEdit| edit, or |IcDelete| delete a price attribute by hovering over the |IcMore| **More Options** menu to the right of the item.
+Here, you can create a new price attribute, filter the list of existing ones by a price attribute name or a field name, and view price attribute details by clicking on the item. Also, you can  |IcView| view, |IcEdit| edit, or |Trash-SVG| delete a price attribute by hovering over the |IcMore| **More Options** menu to the right of the item.
 
-To remove multiple price attributes, select checkboxes in front of the price attributes that you want to delete. At the right end of the list header, click the |IcMore| **More Options** menu and click |IcDelete| **Delete** to remove all selected price attributes.
+To remove multiple price attributes, select checkboxes in front of the price attributes that you want to delete. At the right end of the list header, click the |IcMore| **More Options** menu and click |Trash-SVG| **Delete** to remove all selected price attributes.
 
 Find the necessary price attribute in the list and click on it.
 
@@ -127,6 +127,9 @@ To set a price attribute (e.g., Minimal Advertised Price) for a product:
 Now you can use the price attribute as a variable parameter in price list generation.
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

@@ -106,4 +106,7 @@ Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog-
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+
 

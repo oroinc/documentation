@@ -188,7 +188,7 @@ You can manage tracking websites directly from their details page. Here, you can
 
 The same actions are available on the page of all tracking websites under **Marketing > Tracking Websites**.
 
-Hover over the |IcMore| **More Options** menu to the right of the required tracking website and select the necessary action, either |IcView| View, |IcEdit| Edit, or |IcDelete| Delete.
+Hover over the |IcMore| **More Options** menu to the right of the required tracking website and select the necessary action, either |IcView| View, |IcEdit| Edit, or |Trash-SVG| Delete.
 
 .. image:: /user/img/marketing/tracking_websites/tracking_website_action.png
    :alt: Actions that are available from the page of all tracking websites
@@ -217,7 +217,7 @@ The **Already shared with** section gets automatically populated with the person
 
 5. Click **Apply** to save the changes.
 
-6. To cancel sharing of the tracking website with a particular person, click **Share**, and then click |IcDelete| next to the username. Use mass actions to cancel sharing for more than one user.
+6. To cancel sharing of the tracking website with a particular person, click **Share**, and then click |Trash-SVG| next to the username. Use mass actions to cancel sharing for more than one user.
 
 .. _user-guide-marketing-tracking-websites-plus-campaign:
 
@@ -259,6 +259,9 @@ In the example above, you can see the three kinds of events defined for the Jack
 .. stop
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

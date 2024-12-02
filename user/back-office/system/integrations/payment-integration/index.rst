@@ -53,7 +53,7 @@ To delete an integration with the payment provider and disable payment methods t
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu. The **Manage Integrations** page opens.
 
-#. Hover over the |IcMore| **More Options** menu at the end of the row with the necessary integration and click the |IcDelete| **Delete** icon.
+#. Hover over the |IcMore| **More Options** menu at the end of the row with the necessary integration and click the |Trash-SVG| **Delete** icon.
 
    The confirmation dialog appears.
 
@@ -70,6 +70,9 @@ The payment methods that were based on this integration are no longer usable in 
 .. stop
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

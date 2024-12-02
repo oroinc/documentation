@@ -99,3 +99,6 @@ The brand filter is now available in the storefront.
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

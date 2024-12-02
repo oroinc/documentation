@@ -32,3 +32,6 @@ The section contains the list of all OAuth applications created for customer use
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

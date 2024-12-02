@@ -36,7 +36,7 @@ Additionally, you can perform the following actions by clicking on the correspon
 
 * Click |IcEdit| to edit the quote.
 * Click |IcClone| to clone the quote.
-* Click |IcDelete| to delete it.
+* Click |Trash-SVG| to delete it.
 * Click |IcSend| **Send to Customer** to send a notification email message the customer user regarding their quote.
 
   .. image:: /user/img/sales/rfq/rfq_7.png
@@ -49,7 +49,7 @@ Once the message is prepared and sent, the quote backoffice status is changed to
    :width: 100%
    :alt: A sample of the quote with the Sent to Customer status and available actions
 
-From this page, you can cancel |IcTimes| or expire |IcExpireQuote| the quote, delete |IcDelete| the quote, and the back-office status will change to *Closed*.
+From this page, you can cancel |IcTimes| or expire |IcExpireQuote| the quote, delete |Trash-SVG| the quote, and the back-office status will change to *Closed*.
 
 Additionally, you can create a new quote for the customer, or if the customer declined the offer, you can mark it as **Declined by Customer**.
 
@@ -177,5 +177,8 @@ The internal status will be changed to *Deleted*.
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 

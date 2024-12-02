@@ -21,3 +21,6 @@ You can control the way sitemap is generated for specific organization in OroCom
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

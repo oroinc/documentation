@@ -44,14 +44,14 @@ To create a channel:
 
    Other entities are added to channels of a specific type by default. However, they are optional and can be removed.
 
-   To delete an entity, click |IcDelete| **Delete**. The action removes the entity from the channel's list, but not from the system.
+   To delete an entity, click |Trash-SVG| **Delete**. The action removes the entity from the channel's list, but not from the system.
   
 6. Click **Save and Close** to save the channel.
 
 Manage Channels
 ---------------
 
-From the channels grid, you can |IcView| view, |IcEdit| edit, or |IcDelete| delete the selected channel by hovering over the |IcMore| **More Options** menu to the right of the item and clicking the required button.
+From the channels grid, you can |IcView| view, |IcEdit| edit, or |Trash-SVG| delete the selected channel by hovering over the |IcMore| **More Options** menu to the right of the item and clicking the required button.
 
 .. caution:: Once a channel is deleted, the associated data is removed as well.
 
@@ -64,5 +64,8 @@ From the channel's details page, you can edit the channel or view and edit the a
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 

@@ -11,7 +11,7 @@ To create a new promotion:
 
 1. Navigate to **Marketing > Promotions > Promotions** in the main menu.
 
-In the All Promotions grid, you can click any promotion to view its details, hover over the |IcMore| **More Options** menu to the right of the required promotion to |IcClone| duplicate, |IcView| view, |IcEdit| edit, or |IcDelete| delete it from the system.
+In the All Promotions grid, you can click any promotion to view its details, hover over the |IcMore| **More Options** menu to the right of the required promotion to |IcClone| duplicate, |IcView| view, |IcEdit| edit, or |Trash-SVG| delete it from the system.
 
    .. image:: /user/img/marketing/promotions/PromotionsGridNew.png
       :alt: The page of all promotions available in the system
@@ -166,6 +166,9 @@ For the :ref:`shipping <user-guide--shipping>` discount, select the necessary sh
 .. finish
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

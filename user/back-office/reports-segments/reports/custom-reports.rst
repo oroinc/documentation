@@ -169,7 +169,7 @@ Delete a Column
 
 To delete a column:
 
-1. Click the |IcDelete| **Delete** icon to the right of the corresponding row.
+1. Click the |Trash-SVG| **Delete** icon to the right of the corresponding row.
 2. In the **Delete Confirmation** dialog box, click **Yes, Delete**.
 
 Rearrange Report Columns
@@ -194,7 +194,7 @@ Remove a Field from Grouping
 
 To remove a field from the **Grouping** section:
 
-1. Click the |IcDelete| **Delete** icon to the right of the corresponding row.
+1. Click the |Trash-SVG| **Delete** icon to the right of the corresponding row.
 2. In the **Delete Confirmation** dialog box, click **Yes, Delete**.
 
 Grouping by Date
@@ -324,7 +324,7 @@ From the Custom Reports Grid
 
 1. In the main menu, navigate to **Reports & Segments > Manage Reports**.
 
-2. On the custom reports page, select the report to delete, hover over the |IcEllipsisH| **More Options** menu, and then click |IcDelete| **Delete**.
+2. On the custom reports page, select the report to delete, hover over the |IcEllipsisH| **More Options** menu, and then click |Trash-SVG| **Delete**.
 
 3. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
 
@@ -345,7 +345,7 @@ You can delete multiple custom reports at a time.
 
 2. Select multiple custom reports by clicking |Bdropdown| in the left corner of the list header.
 
-3. Hover over the |IcMore| **More Options** menu at the end of the list header and click |IcDelete| to delete multiple reports simultaneously.
+3. Hover over the |IcMore| **More Options** menu at the end of the list header and click |Trash-SVG| to delete multiple reports simultaneously.
 
    .. image:: /user/img/reports/custom_reports_16.png
       :alt: Using the bulk delete function to delete multiple custom reports
@@ -359,6 +359,9 @@ You can delete multiple custom reports at a time.
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

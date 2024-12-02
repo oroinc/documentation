@@ -22,3 +22,6 @@ To enable sales territories for leads, opportunities and all types of customers 
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

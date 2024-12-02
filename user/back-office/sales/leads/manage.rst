@@ -6,7 +6,7 @@ Leads Grid
 
 You can perform the following actions for leads from the grid:
 
-* Delete |IcDelete|
+* Delete |Trash-SVG|
 * Edit |IcEdit|
 * View |IcView|
 
@@ -86,4 +86,7 @@ You can also edit the address details of a lead, as illustrated in the screensho
    :start-after: begin
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

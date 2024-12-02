@@ -74,9 +74,9 @@ You can manage promotions, coupons and special discounts for the required order 
 .. image:: /user/img/marketing/promotions/AddSpecialDiscount4.png
    :alt: Highlight the Add Special Discount button under the Promotions and Discounts section
 
-Under **All Promotions**, you can |IcView| view details of the selected promotion or coupon code, |IcDeactivate| deactivate, or |IcDelete| delete them from the system.
+Under **All Promotions**, you can |IcView| view details of the selected promotion or coupon code, |IcDeactivate| deactivate, or |Trash-SVG| delete them from the system.
 
-Under **All Special Discounts**, you can |IcEdit| edit, or |IcDelete| remove the discount.
+Under **All Special Discounts**, you can |IcEdit| edit, or |Trash-SVG| remove the discount.
 
 .. image:: /user/img/marketing/promotions/ManagePromotionsIcons.png
    :alt: View the actions that you can do to promotions and discounts
@@ -84,6 +84,9 @@ Under **All Special Discounts**, you can |IcEdit| edit, or |IcDelete| remove the
 .. finish_promotions_in_order
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

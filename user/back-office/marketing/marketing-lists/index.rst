@@ -78,7 +78,7 @@ To create a new marketing list:
 
    - Click **Add**.
 
-   You can |IcDelete| delete, |IcEdit| edit, or |IcReorder| change the column position by clicking the corresponding icon.
+   You can |Trash-SVG| delete, |IcEdit| edit, or |IcReorder| change the column position by clicking the corresponding icon.
 
 #. Once you finish configuring the marketing list, click **Save and Close** in the top right corner.
 
@@ -87,7 +87,7 @@ Now, you can use contacts from your marketing lists to run dedicated campaigns.
 Manage Marketing Lists
 ----------------------
 
-Navigate to **Marketing > Marketing Lists** in the main menu to be able to |IcView| view the marketing list details, |IcEdit| edit, or |IcDelete| delete unnecessary marketing lists by clicking the corresponding icon.
+Navigate to **Marketing > Marketing Lists** in the main menu to be able to |IcView| view the marketing list details, |IcEdit| edit, or |Trash-SVG| delete unnecessary marketing lists by clicking the corresponding icon.
 
 .. image:: /user/img/marketing/marketing/list_action_icons.png
    :alt: The actions available for each marketing list from the grid
@@ -166,7 +166,7 @@ To share the marketing list with other Oro application users:
 
 You can preview the sharing status and see who you already shared the marketing list with. For this, click **Share** again.
 
-To cancel sharing the marketing list with a particular person, click **Share**, and then click |IcDelete| next to the user name. Use mass actions to cancel sharing for more than one user.
+To cancel sharing the marketing list with a particular person, click **Share**, and then click |Trash-SVG| next to the user name. Use mass actions to cancel sharing for more than one user.
 
 Synchronize a Marketing List with External System
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -184,6 +184,9 @@ Once you integrate your Oro application with a third-party mailing system,   **C
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-seo.rst

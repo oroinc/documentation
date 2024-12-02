@@ -76,3 +76,6 @@ To add a product price in the product details:
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

@@ -53,7 +53,7 @@ The following actions can be performed with business customer records:
 
 **From the business customers grid**:
 
-1. Delete |IcDelete|
+1. Delete |Trash-SVG|
 2. Edit |IcEdit|
 3. View |IcView|
 
@@ -73,6 +73,9 @@ The following actions can be performed with business customer records:
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. toctree::

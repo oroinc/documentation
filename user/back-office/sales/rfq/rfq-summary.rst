@@ -17,7 +17,7 @@ Here, you can perform the following actions:
 * **Filter** --- Click |IcFilter| to show filters per column. You can limit displayed items to those that match the filtering criteria provided.
 * **Sort** --- To sort the items by the values in a particular column (e.g., RFQ#, Submitted by, etc.), click the respective column header. When sorting is ascending, an upward arrow appears next to the column name. When sorting is descending, a downward arrow appears.
 * **Refresh** --- Click |IcRedo| to reload the information about the items. If another user recently updated the item details, these changes are reflected upon the refresh.
-* **Reset** --- Click |IcReset| to roll back the view per page, filters, and columns configuration to the default values.
+* **Reset** --- Click |Reset-SVG| to roll back the view per page, filters, and columns configuration to the default values.
 * **Manage columns** --- Open the **Grid Settings** by clicking |IcSettings| to see the list of columns that organize the item details. To reorder the columns, click and hold the column name, then drag it to the new location. To show / hide a column, select / clear the **Show** checkbox next to it.
 
 Choose the required RFQ in the list, hover over the |IcEllipsisH| **More Options** menu, and perform one of the following:
@@ -36,4 +36,7 @@ Choose the required RFQ in the list, hover over the |IcEllipsisH| **More Options
 .. finish
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

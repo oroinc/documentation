@@ -57,7 +57,7 @@ The tables not only display record data but also contain links to the pages of t
 
 #. |IcRedo| **Refresh** --- Use to refresh the data displayed in the table and retrieve the latest details
 
-#. |IcReset| **Reset** --- Use to clear the table customization and return to default settings. Reset applies to all filters, records per page, and sorting changes you have made.
+#. |Reset-SVG| **Reset** --- Use to clear the table customization and return to default settings. Reset applies to all filters, records per page, and sorting changes you have made.
 
 #. |IcSettings| **Grid Settings** --- Use to define which columns to show in the table.
 
@@ -210,5 +210,8 @@ To manage saved views, click **Options** next to the view name. The following is
    :alt: The list of available options under Options
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
  

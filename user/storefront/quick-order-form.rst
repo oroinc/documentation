@@ -67,5 +67,5 @@ You can also import a purchase list into the system in the **Upload Your Order**
 
 .. finish
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

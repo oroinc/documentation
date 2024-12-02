@@ -86,7 +86,6 @@ These options are checked in workflow event listeners to automate routine tasks 
 
 .. note:: For more details on Workflow Events, refer to the :ref:`related documentation <backend--workflows--workflow-events>`.
 
-
 Checkout Workflow State Protection
 ----------------------------------
 
@@ -104,7 +103,6 @@ Checkout workflow state protection can be implemented manually in the checkout w
 Alternatively, checkout workflow state protection can be turned on via the workflow metadata options and is handled by the CheckoutConfigBuilderExtension, which adds the necessary attributes to workflow and transition forms, and the CheckoutStateListener, which handles all aspects of state processing.
 
 .. code-block:: yaml
-
 
     workflows:
         b2b_flow_checkout:

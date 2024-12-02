@@ -42,7 +42,7 @@ Manage a Seller Registration Request
 
 You can perform the following actions for requests from the grid:
 
-* Delete |IcDelete|
+* Delete |Trash-SVG|
 * Edit |IcEdit|
 * View |IcView|
 
@@ -67,6 +67,9 @@ On the view page of a request, you can transition it through the steps of the :r
 For more information, see :ref:`Information Management <user-guide-data-management-basics-entities>`.
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

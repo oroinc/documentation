@@ -52,3 +52,6 @@ To configure the product image settings globally:
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+

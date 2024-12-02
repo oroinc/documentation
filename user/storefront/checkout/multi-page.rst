@@ -56,7 +56,7 @@ Navigate through Multi Page Checkout in the Storefront
 
   .. tip::
 
-     You can edit the order content if required. To do this, click |IcEditInline| on the top right of the item list. The shopping list page will open. Make the required changes and then click **Checkout**. You will be redirected back to the order you have been submitting.
+     You can edit the order content if required. To do this, click |Pencil-SVG| on the top right of the item list. The shopping list page will open. Make the required changes and then click **Checkout**. You will be redirected back to the order you have been submitting.
 
 2. If required, provide additional order options:
 
@@ -76,15 +76,15 @@ Navigate through Multi Page Checkout in the Storefront
 
    * Click the step that you want to return to. In this case, *all the changes made at the later steps will be lost*.
 
-   * Click |IcEditInline| next to the step that you want to edit. In this case, *all the changes made at the later steps will be preserved*.
+   * Click |Pencil-SVG| next to the step that you want to edit. In this case, *all the changes made at the later steps will be preserved*.
 
      .. image:: /user/img/system/workflows/checkout/EditInfo.png
 
 .. tip::
 
-   It is also possible to amend the order content until the order is submitted. To do this, click |IcEditInline| **Edit Items** in the right corner of the **Order Review** section. You will be redirected back to the shopping list page.
+   It is also possible to amend the order content until the order is submitted. To do this, click |Pencil-SVG| **Edit Items** in the right corner of the **Order Review** section. You will be redirected back to the shopping list page.
 
    .. image:: /user/img/system/workflows/checkout/edit-items.png
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin

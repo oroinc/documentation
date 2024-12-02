@@ -79,3 +79,6 @@ In the Display section, you can configure the following display options for a pa
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

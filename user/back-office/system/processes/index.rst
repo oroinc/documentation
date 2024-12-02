@@ -37,3 +37,6 @@ Here, you can |IcActivate| Activate or |IcDeactivate| Deactivate the process by 
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

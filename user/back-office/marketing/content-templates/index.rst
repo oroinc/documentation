@@ -46,7 +46,7 @@ To create a content template:
 
 5. Click **Save and Close**.
 
-Once saved, the system automatically generates the content template preview, which you can also view in the All Templates' grid. There, you can select which content template to view |IcView|, edit |IcEdit|, clone |IcClone|, or delete |IcDelete|.
+Once saved, the system automatically generates the content template preview, which you can also view in the All Templates' grid. There, you can select which content template to view |IcView|, edit |IcEdit|, clone |IcClone|, or delete |Trash-SVG|.
 
 .. image:: /user/img/marketing/content-templates/all-content-templates-grid-options.png
    :alt: Available actions on the all Content Templates grid page
@@ -58,6 +58,9 @@ Once saved, the system automatically generates the content template preview, whi
 .. finish
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst

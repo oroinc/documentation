@@ -67,3 +67,6 @@ Buyers in the storefront can add coupon codes to their storefront orders to rece
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

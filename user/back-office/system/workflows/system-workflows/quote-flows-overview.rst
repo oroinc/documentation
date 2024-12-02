@@ -26,3 +26,6 @@ Out-of-the-box, OroCommerce supports two mutually exclusive quote management wor
 
 .. include:: /include/include-images.rst
    :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

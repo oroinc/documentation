@@ -25,7 +25,7 @@ To create a contact reason:
 
 6. Click **Save and Close**.
 
-7. Now you can edit the existing contact reasons or delete the unnecessary ones if necessary by clicking the |IcEdit| or |IcDelete| icons respectively at the end of the selected reason's row.
+7. Now you can edit the existing contact reasons or delete the unnecessary ones if necessary by clicking the |IcEdit| or |Trash-SVG| icons respectively at the end of the selected reason's row.
 
 Once saved, the reason appears in the dropdown list of the corresponding section of the *Contact Us* form in the storefront.
 
@@ -46,4 +46,7 @@ For more details, see the :ref:`How to Create a Contact Request Manually <user-g
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin

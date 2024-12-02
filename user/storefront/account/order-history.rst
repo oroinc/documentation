@@ -20,15 +20,15 @@ The Order History page contains two sections:
 From the all open orders table, you can:
 
 * Click the order in the table to open it.
-* Click |IcCheckout| **Check Out** at the end of the row to proceed to the checkout. You will be redirected to the ordering process page (the step where you left off).
-* Click |IcDelete| **Delete** at the end of the row to delete an open order.
+* Click |ShoppingCart-SVG|  **Check Out** at the end of the row to proceed to the checkout. You will be redirected to the ordering process page (the step where you left off).
+* Click |Trash-SVG| **Delete** at the end of the row to delete an open order.
 
 From the all past orders table, you can:
 
-* Click |IcView| **View** at the end of the row to view an order or click the order to open it. To return to the Order History page, click **Back to Orders List** on the bottom left of the view page.
-* Click |IcCheckout| **Re-Order** at the end of the row to submit the same order
+* Click |Eye-SVG| **View** at the end of the row to view an order or click the order to open it. To return to the Order History page, click **Back to Orders List** on the bottom left of the view page.
+* Click |ShoppingCart-SVG|  **Re-Order** at the end of the row to submit the same order
 
-Information displayed in the tables depends on the columns selected in the |IcSettings| grid settings. Within each of the tables, you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
+Information displayed in the tables depends on the columns selected in the |Columns-SVG| grid settings. Within each of the tables, you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
 * Refresh (to update the view table).
 * Reset  (to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made).
@@ -44,8 +44,7 @@ You can also start a :ref:`conversation <storefront-guide--conversations>` by cl
 
 .. note:: More details on how to review ordered items, billing and shipping information, and re-order products from the previous orders are described in the :ref:`Orders <frontstore-guide--orders>` section of the Storefront guide.
 
-
-.. include:: /include/include-images.rst
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 

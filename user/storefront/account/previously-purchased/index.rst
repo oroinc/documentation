@@ -7,7 +7,7 @@ The Previously Purchased Products page displays the products that were recently 
 
 .. image:: /user/img/storefront/previously_purchased/PreviouslyPurchased.png
 
-.. note:: The Previously Purchased section of the storefront can be enabled or disabled by the website administrator depending on the business and website requirements.
+.. note:: The Previously Purchased section of the storefront can be :ref:`enabled or disabled <sys--commerce--orders--previously-purchased--main>` by the website administrator depending on the business and website requirements.
 
 From the Previously Purchased section, you can:
 

@@ -41,3 +41,6 @@ To configure email, calendar events, and task synchronization with Microsoft 365
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-svg.rst
+   :start-after: begin
+

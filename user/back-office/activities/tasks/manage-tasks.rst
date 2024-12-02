@@ -46,7 +46,7 @@ To manage a specific task from its page:
    * |IcStart| Start/ |IcStop| Stop Progress of the task 
    * |IcActivate| Close the task
 
-.. note:: To delete a bulk of tasks in one go, click the |IcEllipsisH| **More Actions** menu at the end of the table header row and then click |IcDelete| **Delete**.
+.. note:: To delete a bulk of tasks in one go, click the |IcEllipsisH| **More Actions** menu at the end of the table header row and then click |Trash-SVG| **Delete**.
 
 From the Assignee's Profile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -87,6 +87,9 @@ You can also view, edit, or delete a task from the My Calendar page and the Toda
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
    :start-after: begin
 
 
