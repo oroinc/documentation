@@ -72,6 +72,8 @@ To add a new configurable product and make it available in the master catalog (f
       "**Is Featured**", "Select whether the product is featured. The field is mandatory. To add the featured products block with all the products marked as featured to the website's storefront, please refer to the :ref:`featured products <concept-guides--product-management--featured-products>` documentation."
       "**New Arrival**", "Select whether the product is a new arrival. When set to *Yes*, the product is highlighted in the storefront. The field is mandatory."
       "**Brand**", "Choose :ref:`the product brand <user-guide--product-brands>`, if available. Click |IcBars| to select the brand from the full list."
+      "**Unit of Quantity**", "Select the main :ref:`product unit <user-guide--products--product-units-in-use>` that is shown by default when you view the product details in the storefront. Available options: *each*, *item*, *kilogram*, *piece*, *set*. In the **Precision** field, set the acceptable precision (number of digits after the decimal point) for the quantity that a user may order or add into the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g., 0.5 kg)."
+      "**Additional Units**", "Add more than one unit of quantity if needed. For every additional unit, provide precision and conversion rate compared to the main unit of quantity. Select the **Sell** checkbox to enable selling the product in these units. Unless **Sell** is selected, the unit is considered a draft."
 
    Also, specify the value of your configurable attributes and define any other custom attributes if required.
 
@@ -86,7 +88,29 @@ To add a new configurable product and make it available in the master catalog (f
 
    Then, select whether to show the image as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove an image, click |IcClose| next to it.
 
-11. In the **SEO** section, specify the required attributes:
+11. In the **Design** section, select the :ref:`page template <back-office-theme-configuration>` from the list. A page template is used to render the product page in the storefront. Available options are *Default*, *Tabs*, and *Wide*. To override the template configuration set in the theme configuration menu, deselect **Use** and choose the required option from the list.
+
+   .. image:: /user/img/products/products/SimpleProductDesign.png
+      :alt: The list of available page templates in the dropdown of the Page Template field
+
+
+12. In the **Product Variants** section, select the configurable product variants by ticking the **Is Variant** checkbox next to the product. Ensure the configurable product has the same product unit as its product variants.
+
+   .. image:: /user/img/products/products/SampleProductVariantsForConfigProduct.png
+      :alt: Selecting the configurable product variants
+
+Once all variants are selected, you can choose the default variant to be displayed in the storefront by selecting it from the **Default Variant** dropdown list. The setting is available as of OroCommerce version 6.0.4.
+
+   .. image:: /user/img/products/products/select-default-variant.png
+      :alt: Selecting the default product variant to be displayed in the storefront
+
+The default variant is only possible if **No Matrix Form** is selected for configurable products in the :ref:`system configuration <config-guide--landing-commerce--products--configurable-products>`.
+
+   .. image:: /user/img/products/products/default-variant-storefront.png
+      :alt: Display the default product variant in the storefront
+
+
+13. In the **SEO** section, specify the required attributes:
 
    .. csv-table::
      :header: "Field", "Description"
@@ -98,17 +122,6 @@ To add a new configurable product and make it available in the master catalog (f
 
    And any other custom attributes if defined.
 
-12. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the list.
-
-   .. image:: /user/img/products/products/SimpleProductDesign.png
-      :alt: The list of available page templates in the dropdown of the Page Template field
-
-13. In the **Product Variants** section, select the configurable product variants by ticking the **Is Variant** checkbox next to the product.
-
-   .. image:: /user/img/products/products/SampleProductVariantsForConfigProduct.png
-      :alt: Selecting the configurable product variants
-
-   .. note: Ensure the configurable product has the same product unit as its product variants.
 
 14. Review translation rules for a product name, URL slug, long description, and short description.
 
