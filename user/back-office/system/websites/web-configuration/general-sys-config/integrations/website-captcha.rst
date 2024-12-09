@@ -44,7 +44,7 @@ To configure CAPTCHA settings per website:
    * **Site Key** --- Provide a site key to invoke Turnstile on your site generated in the settings of your Turnstile widget in your Cloudflare account.
    * **Secret Key** --- Provide a secret key to connect to the Cloudflare Turnstile server generated in the settings of your Turnstile widget in your Cloudflare account.
 
-   For more information on these options, please refer to the |hCapture documentation|.|Cloudflare Turnstile documentation|.
+   For more information on these options, please refer to the |Cloudflare Turnstile documentation|.
 
 7. Click **Save Settings**.
 
