@@ -24,7 +24,7 @@ To configure CAPTCHA settings per website:
 
    * **Enable CAPTCHA Protection** --- Enable or disable the CAPTCHA protection feature for the OroCommerce application.
    * **CAPTCHA Service** --- Select the CAPTCHA service for the storefront. Available options are Google reCAPTCHA, hCAPTCHA and Cloudflare Turnstile.
-   * **Protect Forms** --- Select which forms to enable the CAPTCHA protection for. Developers can add protection for custom forms via the DI Tag. For more information on how to do it, see :ref:`FormBundle documentation <bundle-docs-platform-form-bundle-captcha>`.
+   * **Protect Forms** --- Select which forms to enable the CAPTCHA protection for. *User Reset Password Form*, *Customer User Reset Password Form*, *User Login Form*, and *Customer User Login Form* are available for the CAPTCHA protection as of OroCommerce version 6.0.6. Developers can add protection for custom forms via the DI Tag. For more information on how to do it, see :ref:`FormBundle documentation <bundle-docs-platform-form-bundle-captcha>`.
 
 4. In the **Google reCAPTCHA** section, provide the following information:
 
@@ -46,7 +46,7 @@ To configure CAPTCHA settings per website:
    * **Site Key** --- Provide a site key to invoke Turnstile on your site generated in the settings of your Turnstile widget in your Cloudflare account.
    * **Secret Key** --- Provide a secret key to connect to the Cloudflare Turnstile server generated in the settings of your Turnstile widget in your Cloudflare account.
 
-   For more information on these options, please refer to the |hCapture documentation|.|Cloudflare Turnstile documentation|.
+   For more information on these options, please refer to the |Cloudflare Turnstile documentation|.
 
 7. Click **Save Settings**.
 
