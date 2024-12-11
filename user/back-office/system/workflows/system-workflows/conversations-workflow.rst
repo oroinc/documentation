@@ -29,7 +29,7 @@ The following table describes which options are available for each of the status
    :header: "Status", "Options"
    :widths: 15, 15
 
-   "Active", Close"
+   "Active", "Close"
    "Closed","Reopen"
 
 .. image:: /user/img/system/workflows/conversations/conversations-wf-view-page.png
