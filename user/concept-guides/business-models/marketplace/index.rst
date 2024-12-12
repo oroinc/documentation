@@ -40,7 +40,7 @@ Marketplace Operator must be of the **General** organization type to access all 
 Seller Registration
 -------------------
 
-There are three ways to create a marketplace seller in the application:
+There are three ways to create a marketplace seller in the application when the seller registration feature is enabled in the :ref:`settings of the global organization <configuration--commerce--marketplace--seller-organization>`:
 
 * Via the marketplace storefront by filling in a seller registration form (using :ref:`Seller Registration Workflow <system--workflows--seller-registration-flow>`)
 * Via the back-office by manually creating a new seller registration request

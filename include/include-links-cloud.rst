@@ -243,3 +243,6 @@ Links (Cloud)
 
    <a href="https://cloud.google.com/files/GCPDDoSprotection-04122016.pdf" target="_blank">Google Cloud Platform</a>
 
+.. |Crontab Guru| raw:: html
+
+   <a href="https://crontab.guru" target="_blank">Crontab Guru</a>

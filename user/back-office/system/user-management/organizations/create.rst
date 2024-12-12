@@ -5,7 +5,7 @@ Create an Organization in the Back-Office
 
 .. important:: Multi-organization management is only available in the Enterprise edition.
 
-To create a new organization in the Oro applications:
+You can create a new organization from within a global organization of the Enterprise edition the Oro application:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. Click **Create Organization** on the top right.
@@ -16,7 +16,12 @@ To create a new organization in the Oro applications:
 3. In the **General** section, provide the following details:
 
    * **Status** --- The current status of the organization (active or inactive).
-   * **Organization Type** --- An :ref:`organization type <user-management-organization-types>` is a set of predefined :ref:`restrictions and limitations provided by a developer <dev-organization-types>`. By default, all organizations are assigned to the **General** organization type, which means that an organization is allowed access to all functionality without any restrictions or limitations. This field is only available in the Enterprise edition and when there is at least one organization type in the application. In :ref:`OroMarketplace <concept-guide-oro-marketplace>`, you can create an organization of type **Marketplace Seller**, which set restrictions as to what functionality marketplace vendors can have access to.
+   * **Organization Type** --- An :ref:`organization type <user-management-organization-types>` is a set of predefined :ref:`restrictions and limitations provided by a developer <dev-organization-types>`.
+
+     By default, all organizations are assigned to the **General** organization type, which means that an organization is allowed access to all functionality without any restrictions or limitations. This field is only available in the Enterprise edition and when there is at least one organization type in the application.
+
+     In :ref:`OroMarketplace <concept-guide-oro-marketplace>`, you can create an organization of type **Marketplace Seller**, which set restrictions as to what functionality marketplace vendors can have access to.
+
    * **Name** --- The name used to refer to the organization on the interface.
    * **Description** --- Short description of the organization record.
 

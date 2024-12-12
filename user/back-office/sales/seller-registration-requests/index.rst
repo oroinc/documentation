@@ -8,7 +8,7 @@ Manage Seller Registration Requests in the Back-Office
 Merchants looking to sell their products online via OroMarketplace can submit an online registration form on the OroMarketplace website. Once the form is submitted, the details of the application are synchronized with the OroMarketplace back-office. A person responsible for processing seller registration requests in the marketplace owner organization can then start processing the request, accept it straight away, or decline it. They can also create a new request via the back-office of the (global) marketplace owner organization, as long as they have obtained the necessary details from the seller.
 
 .. hint::
-    Before you work with seller regsitration requests, make sure they are :ref:`enabled in the application <configuration--commerce--marketplace--seller-global>`.
+    Before you work with seller registration requests, make sure they are :ref:`enabled in the settings of the global organization settings <configuration--commerce--marketplace--seller-organization>`.
 
 Create a Seller Registration Request
 ------------------------------------
