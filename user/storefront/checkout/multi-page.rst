@@ -63,7 +63,7 @@ Navigate through Multi Page Checkout in the Storefront
    * **Do not ship later than** --- Click the field to select the date on which the order expires.
    * **PO Number** --- Enter the purchase order number for reference.
    * **Notes** --- Provide any additional information regarding the order.
-   * **Delete this shopping list after submitting order** --- Select this checkbox to remove the shopping list after the order is completed.
+   * **Delete this shopping list after ordering** --- Select this checkbox to remove the shopping list after the order is completed.
 
 3. To submit the order, click **Submit Order** at the bottom of the page.
 
