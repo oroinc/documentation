@@ -44,7 +44,15 @@ To change the default customer user configuration settings for an organization:
    * **Login Failure Lockout Interval** --- The time in minutes in which failed login attempts are counted. If one failed login attempt is followed by the second failed attempt within this lockout interval, the failed login count starts. The user will be locked out if they reach the maximum number of failed login attempts. Set zero (0) to count failed login attempts globally.
    * **Account Lockout Time** --- The time in minutes that indicates how long the user has before they are locked out of the system if they reach the maximum number of failed login attempts. Set zero (0) to disable automatic unlock.
 
-9. In the **Cookies Banner** section, enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time.
+9. In the **Login Redirect** section, configure the following option:
+
+   * **Do Not Leave Checkout** --- Enable this option to redirect a user back to the checkout page after a successful login. This overrides the *Redirect After Login* setting on the :ref:`website configuration level <system--website--configuration--commerce--customers--customer-users>` that may specify a different target page.
+
+10. In the **REST API** section, configure the following option:
+
+    * **Enable API Key Generation** --- Enable/disable automatic generation of API access keys for new customer users.
+
+11. In the **Cookies Banner** section, enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time.
 
    .. image:: /user/img/system/user_management/org_configuration/customers/cookie-banner-organization.png
       :alt: Cookie banner section
@@ -57,7 +65,7 @@ To change the default customer user configuration settings for an organization:
 
    * **Landing Page** - Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
 
-10. Click **Save Settings**.
+12. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin

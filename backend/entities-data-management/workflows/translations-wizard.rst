@@ -19,7 +19,6 @@ First of all, you should have your workflow configuration itself loaded, it is l
 
 .. code-block:: none
 
-
     bin/console oro:workflow:definitions:load --directories=$YOUR_BUNDLE_DIR/Resources/config/oro
 
 **Step 2**
@@ -32,18 +31,15 @@ For example, this is how you would create a translation file directly by redirec
 
 .. code-block:: none
 
-
     bin/console oro:workflow:translations:dump my_workflow --locale=en > $YOUR_BUNDLE_DIR/Resources/translations/workflows.en.yml
 
 This way, file `<YourBundleDirectory>/Resources/translations/workflows.en.yml` is filled by translation keys tree with empty strings, so a developer can fill their values with proper text (English in the example).
 
-If your workflow is extended from some another workflow, you may want to inherit existing translations from that parent workflow. To do so pass the name of the parent workflow as the `--parent-workflow` option value. Any translations that are not present in your workflow will automatically be copied from the parent workflow.
+If your workflow is extended from a different workflow, you may want to inherit existing translations from that parent workflow. To do so, pass the name of the parent workflow as the `--parent-workflow` option value. Any translations that are not present in your workflow will automatically be copied from the parent workflow.
 
 .. code-block:: none
 
-
     bin/console oro:workflow:translations:dump my_workflow --locale=en --parent-workflow=the_parent_workflow > $YOUR_BUNDLE_DIR/Resources/translations/workflows.en.yml
-
 
 **Step 3**
 
