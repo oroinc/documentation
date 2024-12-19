@@ -46,7 +46,7 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
 #. Click **Proceed to Guest Checkout**.
 
-   .. note:: You will have another chance to register during order review.
+   .. note:: You can also register during later during the order review.
 
 #. Fill in the billing and shipping information, as well as select the shipping method and provide payment details.
 
