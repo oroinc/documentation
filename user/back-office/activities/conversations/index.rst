@@ -66,7 +66,6 @@ You can view, update, delete the existing conversations, and add context or a ne
   .. image:: /user/img/activities/ConversationViewPage.png
      :alt: The actions available for conversations on the view conversation page
 
-
 **Related Topic**
 
 * :ref:`Conversations Workflow <system--workflows--conversations-backoffice-workflow>`
