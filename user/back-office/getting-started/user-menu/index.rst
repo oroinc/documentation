@@ -15,6 +15,7 @@ Follow the links below to find out what capabilities each section of this menu o
 * :ref:`My Emails <doc-my-oro-emails>`
 * :ref:`My Tasks <doc-activities-tasks>`
 * :ref:`My Calendar <user-guide-calendars-manage>`
+* :ref:`My Conversations <doc-activities-conversations>`
 * :ref:`Log Out <doc-log-out>`
 
 

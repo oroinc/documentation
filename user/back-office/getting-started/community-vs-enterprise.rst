@@ -17,6 +17,7 @@ On top of the features available in Oro CE, Oro EE provides:
 * Multiple currencies support.
 * Support for inventory management across multiple warehouses.
 * OroCRM capabilities integrated into OroCommerce interface.
+* B2B Marketplace solution.
 
 Complete information on the differences between Community and Enterprise editions is illustrated in |OroCommerce Editions| and |OroCRM Editions|.
 

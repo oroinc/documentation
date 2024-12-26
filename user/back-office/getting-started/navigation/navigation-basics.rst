@@ -47,33 +47,24 @@ At the very top of the page, there is a navigation panel that contains different
    :alt: A navigation panel that contains different navigation tools
 
 .. csv-table::
-  :header: "#","Item","Description","Related Document"
+  :header: "#","Item","Description","Related Documentation"
   :widths: 10, 20, 40,30
 
-  "1","**Organization Selector**","Switch between organizations when working in the multi-organization environment.","
-  :ref:`Working with Multiple Organizations <user-guide-getting-started-change-organization>` section of the Company Structure and Organization Selector guide"
-  "2","**Shortcuts**","Quickly perform the most common actions from anywhere in the system.","
-  :ref:`Shortcuts <user-guide-getting-started-shortcuts>`"
-  "3","**Search**","Find a specific record details.","
-  :ref:`Search <user-guide-getting-started-search>`"
-  "4","**Pinned pages**","Open pages preserved in the state they were pinned in.","
-  :ref:`Pinbar <user-guide-ui-components-pinned>`"
-  "5","**User menu**","Access your user profile, calendar, mailbox, and task list. Log out of the system.","
-  :ref:`User Menu <user-guide-getting-started-user-menu>`"
-  "6","**My Emails**","See if you have new and unread emails. Quickly read and reply to the most recent emails.
-
-  The envelop icon reflects the current state of your mailbox - from the menu under it, you can get to the *My Emails*
-  page, read and reply any of the most recent five emails, and mark all the emails as read.",""
-  "7","**Hamburger menu**","Access your
+  "1","**Organization Selector**","Switch between organizations when working in the multi-organization environment.",":ref:`Working with Multiple Organizations <user-guide-getting-started-change-organization>` section of the Company Structure and Organization Selector guide"
+  "2","**Shortcuts**","Quickly perform the most common actions from anywhere in the system.",":ref:`Shortcuts <user-guide-getting-started-shortcuts>`"
+  "3","**Search**","Find a specific record details.",":ref:`Search <user-guide-getting-started-search>`"
+  "4","**Pinned pages**","Open pages preserved in the state they were pinned in.",":ref:`Pinbar <user-guide-ui-components-pinned>`"
+  "5","**Help Icon**","Access the Oro documentation website.",""
+  "6","**Hamburger menu**","Access your
 
   * recently opened pages
   * favorite pages
   * most viewed pages","
   :ref:`Extended Menu <user-guide-getting-started-history>`"
-  "8","**Help Icon**","Access the corresponding section you are currently viewing in the Oro documentation",""
-  "9","**Sidebar panel**","Hosts widgets that provide fast and convenient access to constantly needed information, such
-  as recent emails or task lists. ",":ref:`Sidebar Pannel <user-guide-navigation-sidebar-panel>`"
-
+  "7","**My Emails**","See if you have new and unread emails. Quickly read and reply to the most recent emails.The envelop icon reflects the current state of your mailbox - from the menu under it, you can get to the *My Emails* page, read and reply any of the most recent five emails, and mark all the emails as read.",":ref:`My Emails <user-guide-using-emails>`"
+  "8","**Conversations Indicator**","View and open new :ref:`conversations <doc-activities-conversations>`.",":ref:`Conversations <doc-activities-conversations>`"
+  "9","**User menu**","Access your user profile, calendar, mailbox, and task list. Log out of the system.",":ref:`User Menu <user-guide-getting-started-user-menu>`"
+  "10","**Sidebar panel**","Hosts widgets that provide fast and convenient access to constantly needed information, such as recent emails or task lists. ",":ref:`Sidebar Panel <user-guide-navigation-sidebar-panel>`"
 
 This way, users can easily access, store, and organize any and all information required to manage customer relations in
 the most efficient way.
