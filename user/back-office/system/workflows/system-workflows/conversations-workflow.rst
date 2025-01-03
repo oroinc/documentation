@@ -36,5 +36,11 @@ The following table describes which options are available for each of the status
    :alt: View page of the conversation workflow showing the workflow diagram with transitions and a button to deactivate the workflow
 
 
+**Related Topics**
+
+* :ref:`Manage Conversations in the Back-Office <doc-activities-conversations>`
+* :ref:`Enable the Conversations Feature <configuration--guide--commerce--configuration--interactions>`
+
+
 .. include:: /include/include-links-user.rst
    :start-after: begin
