@@ -1157,8 +1157,8 @@ General methods:
 -  **getFilters()** -  Retrieves a |list of filters| to set additional restrictions to a query used to retrieve the entity data.
 -  **getFilterValues()** - Retrieves a collection of the |FilterValue| objects that contains all incoming filters.
 -  **setFilterValues(accessor)** - Sets an |object| to use for accessing the incoming filters.
--  **isMainRequest()** - Indicates whether the current action processes a master API request or is executed as part of another action.
--  **setMasterRequest(master)** - Sets a flag that indicates the current action processes a master API request or is executed as part of another action.
+-  **isMainRequest()** - Indicates whether the current action processes a main API request or is executed as part of another action.
+-  **setMainRequest(main)** - Sets a flag that indicates the current action processes a main API request or is executed as part of another action.
 -  **isCorsRequest()** - Indicates whether the current request is |CORS| request.
 -  **setCorsRequest(cors)** - Sets a flag indicates whether the current request is |CORS| request.
 -  **isHateoasEnabled()** - Indicates whether |HATEOAS| is enabled.
