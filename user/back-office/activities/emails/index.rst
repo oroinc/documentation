@@ -11,7 +11,7 @@ Connecting your mailbox with OroCommerce streamlines communication, efficiently 
 
 * **Customer Engagement** --- Emails sent to and received from customers are associated with their respective customer profiles. This link provides a comprehensive communication history, enabling you to understand the context of interactions and offer personalized service.
 
-* **Streamlined Communication** --- By centralizing email communication in the Oro application, your team can easily collaborate on customer inquiries, orders, and issues. This prevents information silos and improves response time. For Google Workspace and Microsoft 365 users, Oro Enterprise also offers an OroConnector add-on to eliminate the need for time-consuming switching between email applications and OroCommerce. OroConnector sync data directly into your Gmail or Outlook interface, allowing you to view, respond to, and take actions on emails while having instant access to Oro records.
+* **Streamlined Communication** --- By centralizing email communication in the Oro application, your team can easily collaborate on customer inquiries, orders, and issues. This prevents information silos and improves response time. For Google Workspace and Microsoft 365 users, Oro Enterprise also offers an OroConnector add-on to eliminate the need for time-consuming switching between email applications and OroCommerce. OroConnector syncs data directly into your Gmail or Outlook interface, allowing you to view, respond to, and take actions on emails while having instant access to Oro records.
 
 * **Automation and Triggers** --- Oro's email integration enables you to set up automated triggers and notifications based on specific events. For instance, an email can be automatically sent to a customer when their order status changes or to your team when a new lead is generated.
 
@@ -64,7 +64,6 @@ To learn how to create and manage email templates, see :ref:`Configure Email Tem
 Automation and Triggers
 -----------------------
 
-Notification rules in OroCommerce are predefined conditions that trigger automatic notifications or emails based on specific events or changes within the system. These rules are designed to keep users informed in real time. For instance, when the order status changes to "shipped," a notification rule can automatically email the customer with tracking information. Whenever an automatic email notification is sent out, it has to follow a specific :ref:`notification template <user-guide-using-emails-create-template>` created beforehand that gives it style and content.
 Notification rules in OroCommerce are predefined conditions that trigger automatic notifications or emails based on specific events or changes within the system. These rules are designed to keep users informed in real time. For instance, when the order status changes to "shipped," a notification rule can automatically email the customer with tracking information. Whenever an automatic email notification is sent out, it has to follow a specific :ref:`notification template <user-guide-using-emails-create-template>` created beforehand that gives it style and content.
 
 To learn how to work with notification rules, see :ref:`Configure Email Notification Rules <user-guide-using-emails-notifications>`.
