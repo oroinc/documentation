@@ -37,7 +37,8 @@ To configure the product search settings globally:
 
 5. In the **Automatic Phrase Suggestions** section, configure the following options:
 
-   * **Enable Automatic Phrase Suggestions in Search Autocomplete** --- Select the checkbox to enable displaying suggestions in the storefront.
+   * **Enable Automatic Phrase Suggestions in Search Autocomplete** --- Select the checkbox to enable displaying suggestions in the storefront. This will initiate the creation of an additional search index using product SKUs and names. The process will not impact the functionality of regular search on the storefront. However, the time required for the index to be fully created (typically several hours) depends on the size of the product catalog. Automatic phrase suggestions will only become fully functional once the indexing process is complete.
+
    * **Number Of Automatically Suggested Phrases In Search Autocomplete** --- The maximum number of suggestions displayed in the storefront autocomplete dropdown.
 
    .. image:: /user/img/concept-guides/search/phrase-suggestions.png
