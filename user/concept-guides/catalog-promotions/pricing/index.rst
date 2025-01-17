@@ -20,6 +20,8 @@ You can also have a separate price list for the Wholesalers customer group that 
 
 You can also have one or multiple price lists with prices entered in US dollars and Euros defining the pricing for all your customers, a different price list with prices in US dollars available only to your large-volume US-based distributors, and another price list with prices in Euros available only to some selected European partners of your company.
 
+.. _flat-vs-combined-pricing-strategy:
+
 Flat VS Combined Pricing
 ------------------------
 
@@ -35,8 +37,6 @@ Price Selection Strategy
 When one of your customers logs into the storefront, they may see prices for both product A and product B where the price for product A is taken from the default price list available to everybody, and the price for product B is from a custom price list created to override the default product B pricing for a specific customer. So while you can see all price lists and switch between them in the back-office, your customers in the storefront can see the prices you want them to see, depending on the price list you configured for them.
 
 Pricing strategy is the approach you take when considering which prices from the existing ones to use for your customers. Different prices depend on different situations. You can select whether your customers will see the lowest prices, or prices from a higher priority price list, as described in the :ref:`global price selection strategy <sys--config--commerce--catalog--pricing>` topic. A website, customer group, and customer can have their own set of price lists that overrides the default configuration.
-
-.. note:: The minimal price selection strategy is enabled by default starting from OroCommerce version 2.2. The priority-based price merging was the default configuration in the earlier OroCommerce versions.
 
 .. image:: /user/img/concept-guides/prices/price_selection_strategy.png
    :alt: Set a pricing selection strategy in the system configuration
