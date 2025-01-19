@@ -102,3 +102,7 @@ oro_sanitize:
     custom_email_domain: example.com
     # Digits mask for the 'generic_phone' sanitizing rule. The default value is shown
     generic_phone_mask: (XXX) XXX-XXXX
+
+oro_entity_extend:
+    custom_entities:
+        - Extend\Entity\CustomEntity
