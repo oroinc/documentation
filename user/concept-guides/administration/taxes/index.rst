@@ -146,7 +146,7 @@ Let's outline the steps that you need to take to configure the tax settings for 
 .. image:: /user/img/concept-guides/taxes/tax_rules_steps.png
    :alt: Steps you need to take to create a tax rule and the list of the rules created based on the provided example
 
-3. Decide whether you want to include or exclude the sales tax from product prices when displaying the products in the storefront.
+3. Decide how you want to calculate taxes and whether you want to include or exclude the sales tax from product prices when displaying the products in the storefront.
 
     .. hint:: The setting can be toggled in the :ref:`Tax Calculation configuration <user-guide--taxes--tax-configuration>`.
 
