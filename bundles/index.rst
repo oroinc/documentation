@@ -74,7 +74,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
     ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
     "**F**",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
     ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
-    "","**R**",":ref:`WebsiteSearchSuggestionBundle <bundle-docs-commerce-website-search-suggestions-bundle>`"
+    "","**R**",""
     "",":ref:`RedirectBundle <bundle-docs-commerce-redireect-bundle>`",""
 
 .. _bundle-docs-extensions:
@@ -203,7 +203,6 @@ CRM Bundles
    WebCatalogBundle <commerce/WebCatalogBundle/index>
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>
-   WebsiteSearchSuggestionBundle <commerce/WebsiteSearchSuggestionBundle/index>
    SalesFrontendBundle <commerce/SalesFrontendBundle/index>
    ActivityContactBundle <crm/ActivityContactBundle/index>
    AnalyticsBundle <crm/AnalyticsBundle/index>

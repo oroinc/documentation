@@ -28,11 +28,7 @@ To configure the product search settings per organization:
    * **Number of Categories in Search Autocomplete** --- Maximum number of categories shown in the storefront autocomplete dropdown.
    * **Allow Partial Product Search** --- When enabled, the customer can find a product in the global search and on quick order form using a substring inside a word. Enabling this option may have a performance impact on search behaviour.
 
-6. In the **Automatic Phrase Suggestions** section, configure the following options:
-
-   * **Number Of Automatically Suggested Phrases In Search Autocomplete** --- The maximum number of suggestions displayed in the storefront autocomplete dropdown.
-
-7. Click **Save Settings**.
+6. Click **Save Settings**.
 
 **Related Topics**
 
