@@ -253,6 +253,7 @@ We recommend to use them as examples for your custom code.
     frontend-stylebook
     oro-frontend-development-guidelines
     assets-css
+    critical-css
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
