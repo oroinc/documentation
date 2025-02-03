@@ -8,28 +8,28 @@ This guide demonstrates how to set up :ref:`Docker and Symfony Server developmen
 Environment Setup
 -----------------
 
-1. Install PHP 8.3 with all required extensions:
+1. Install php 8.4 with all required extensions:
 
    .. code-block:: none
 
       sudo apt install software-properties-common
       sudo add-apt-repository -y ppa:ondrej/php
       sudo apt update
-      sudo apt -y install php8.3 php8.3-fpm php8.3-cli php8.3-pdo php8.3-mysqlnd php8.3-xml php8.3-soap php8.3-gd php8.3-zip php8.3-intl php8.3-mbstring php8.3-opcache php8.3-curl php8.3-bcmath php8.3-ldap php8.3-pgsql php8.3-dev php8.3-mongodb
+      sudo apt -y install php8.4 php8.4-fpm php8.4-cli php8.4-pdo php8.4-mysqlnd php8.4-xml php8.4-soap php8.4-gd php8.4-zip php8.4-intl php8.4-mbstring php8.4-opcache php8.4-curl php8.4-bcmath php8.4-ldap php8.4-pgsql php8.4-dev php8.4-mongodb
 
 2. Configure PHP:
 
    .. code-block:: none
 
-      echo -e "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" | sudo tee -a  /etc/php/8.3/fpm/php.ini
-      echo -e "memory_limit = 2048M" | sudo tee -a  /etc/php/8.3/cli/php.ini
+      echo -e "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" | sudo tee -a  /etc/php/8.4/fpm/php.ini
+      echo -e "memory_limit = 2048M" | sudo tee -a  /etc/php/8.4/cli/php.ini
 
-3. Install Node.js 20:
+3. Install Node.js 22:
 
    .. code-block:: none
 
       sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
-      curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+      curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
       sudo apt -y install nodejs
 
 4. Install Docker and Docker Compose:
