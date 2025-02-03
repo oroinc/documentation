@@ -45,6 +45,12 @@ By default, all styles from Oro bundles are auto-processed:
 This list needs to be extended with a specific |wildcard file mask| to enable auto-processing for a custom style.
 See :ref:`Load Style Files from the Bundle <bundle-docs-platform-asset-bundle-load-css-from-bundle>` for more information.
 
+Left-Aligned Values in RTL and LTR
+----------------------------------
+Certain values, such as **ZIP codes**, **Phone number**, **PO number**, **SKU**, **Email**, etc are typically left-aligned
+in both Right-to-Left and Left-to-Right environments. This alignment is primarily due to the nature of these values.
+For example, phone numbers must be read in their numerical sequence, which remains unchanged regardless of the text direction.
+
 Develop
 -------
 
