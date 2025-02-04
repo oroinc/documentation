@@ -51,6 +51,13 @@ Certain values, such as **ZIP codes**, **Phone number**, **PO number**, **SKU**,
 in both Right-to-Left and Left-to-Right environments. This alignment is primarily due to the nature of these values.
 For example, phone numbers must be read in their numerical sequence, which remains unchanged regardless of the text direction.
 
+To display LTR Values, use ``bdo`` tag
+
+.. code-block:: html
+
+    <bdo dir="ltr">912-786-0311</bdo>
+
+
 Develop
 -------
 
