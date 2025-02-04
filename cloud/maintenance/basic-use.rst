@@ -576,6 +576,9 @@ Application Commands
 Custom Commands
 ~~~~~~~~~~~~~~~
 
+.. note:: Any cloud ``app:console`` command has a default timeout of **1 hour** and a memory limit of **2 GB**. If you need to run a command that exceeds these parameters, please contact our support team.
+
+
 Run application commands via `orocloud-cli app:console`, for example:
 
 .. code-block:: none
