@@ -130,20 +130,11 @@ By default, this param is 30 days, and it is accessible through the :ref:`System
 .. code-block:: php
 
 
-    const COOKIE_ATTR_NAME = '_security_customer_visitor_cookie';
-    const COOKIE_NAME = 'customer_visitor';
-
-    $cookieLifetime = $this->configManager->get('oro_customer.customer_visitor_cookie_lifetime_days');
-
-    $cookieLifetime = $cookieLifetime * Configuration::SECONDS_IN_DAY;
+    // $cookieFactory is an instance of Oro\Bundle\CustomerBundle\Security\Firewall\CustomerVisitorCookieFactory
 
     $request->attributes->set(
-        self::COOKIE_ATTR_NAME,
-        new Cookie(
-            self::COOKIE_NAME,
-            base64_encode(json_encode([$visitor->getId(), $visitor->getSessionId()])),
-            time() + $cookieLifetime
-        )
+        AnonymousCustomerUserAuthenticator::COOKIE_ATTR_NAME,
+        $cookieFactory->getCookie($visitor->getSessionId())
     );
 
 
