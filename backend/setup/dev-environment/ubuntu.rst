@@ -29,7 +29,7 @@ Environment Setup
    .. code-block:: none
 
       sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
-      curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+      curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
       sudo apt -y install nodejs
 
 4. Install Docker and Docker Compose:
