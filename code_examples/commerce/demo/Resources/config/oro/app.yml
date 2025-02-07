@@ -95,7 +95,7 @@ oro_website_search:
 
 oro_organization_pro:
     ignore_preferred_organization_tokens:
-        - cme\Bundle\DemoBundle\Security\AcmeWsseToken
+        - Acme\Bundle\DemoBundle\Security\AcmeCustomToken
 
 oro_sanitize:
     # Custom email domain for the 'email' sanitizing rule

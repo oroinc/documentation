@@ -56,5 +56,5 @@ Developer Documentation is intended for developers and contains information abou
   * Create a third-party integration through the OroIntegrationBundle
   * Create Twig email templates with certain pre-defined placeholders to define template metadata
   * Run regular time-based background tasks through cronjobs (on UNIX-based operating systems) or the Windows task scheduler
-  * Use REST API and WSSE Authentication to integrate Oro functionality into third-party software systems
+  * Use REST API and OAuth 2.0 to integrate Oro functionality into third-party software systems
 

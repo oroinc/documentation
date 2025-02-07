@@ -2853,14 +2853,6 @@ Links (Dev)
 
    <a href="https://oauth.net/2/grant-types/password/" target="_blank">OAuth 2.0 Password Grant</a>
 
-.. |WSSE specification| raw:: html
-
-   <a href="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf" target="_blank">WSSE specification</a>
-
-.. |OroWsseAuthenticationBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WsseAuthenticationBundle" target="_blank">OroWsseAuthenticationBundle</a>
-
 .. |Curl| raw:: html
 
    <a href="https://curl.haxx.se/" target="_blank">Curl</a>

@@ -9,7 +9,7 @@ The following example shows how to get the total number of accounts:
 
 .. code-block:: none
 
-    curl "http://orocrm.loc/index_dev.php/api/accounts?page=1&limit=2" -v --header="X-Include:totalCount" --header="X-WSSE:..."
+    curl "http://orocrm.loc/index_dev.php/api/accounts?page=1&limit=2" -v --header="X-Include:totalCount" --header="..."
 
 The corresponding response:
 
@@ -20,7 +20,6 @@ The corresponding response:
     < X-Include-Total-Count: 67
     ...
 
-.. hint:: To generate a WSSE header, run: ``php bin/console oro:wsse:generate-header YOUR_API_KEY``.
 
 .. _existing-x-include-keys:
 

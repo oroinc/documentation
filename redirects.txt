@@ -55,7 +55,6 @@ user/back-office/system/integrations/outlook/sync-flow /user/back-office/system/
 user/concept-guides/highlight-products/all-products /user/concept-guides/product-management
 user/concept-guides/pricing/pricing-overview /user/concept-guides/pricing
 backend/api/using/advanced-search /api/advanced-search
-backend/api/using/how-to-use-wsse-authentication /api/authentication/wsse
 backend/api/using/simple-search /api/simple-search
 concept-guides/highlight-products/featured /user/back-office/system/configuration/commerce/product/global-featured-products
 user/back-office/system/integrations/outlook/create-lead-opp-case /user/back-office/system/integrations
