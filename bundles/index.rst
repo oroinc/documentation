@@ -179,6 +179,7 @@ CRM Bundles
    WindowsBundle <platform/WindowsBundle/index>
    WorkflowBundle <platform/WorkflowBundle/index>
    DraftBundle <platform/DraftBundle/index>
+   AddressValidationBundle <commerce/AddressValidationBundle/index>
    CatalogBundle <commerce/CatalogBundle/index>
    CheckoutBundle <commerce/CheckoutBundle/index>
    CMSBundle <commerce/CMSBundle/index>

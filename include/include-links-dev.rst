@@ -6483,3 +6483,7 @@ Links (Dev)
 .. |Partitioned Cookies| raw:: html
 
     <a href="https://developer.mozilla.org/en-US/docs/Web/Privacy/Privacy_sandbox/Partitioned_cookies" target="_blank">Partitioned Cookies</a>
+
+.. |AddressValidationBundle| raw:: html
+
+    <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/AddressValidationBundle" target="_blank">AddressValidationBundle</a>
