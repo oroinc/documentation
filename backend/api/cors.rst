@@ -47,7 +47,15 @@ You can also configure other CORS options. Here is the default configuration:
 
 .. note::
 
+    The CORS for Storefront REST API resources is configured as described in :ref:`Storefront REST API <web-api--storefront>`.
+
+.. note::
+
     The CORS for OAuth 2.0 token endpoint is configured as described in :ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle--configuration>`.
+
+.. note::
+
+    The CORS for downloading published OpenAPI specifications is configured as described in :ref:`CORS Configuration for Published OpenAPI Specifications <openapi-cors-config>`.
 
 
 .. include:: /include/include-links-dev.rst

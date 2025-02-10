@@ -39,6 +39,7 @@ By default, only custom entities, dictionaries, and enumerations are accessible 
    post-processors
    how-to
    cors
+   cors-open-api
    testing
    storefront
    storefront-routes

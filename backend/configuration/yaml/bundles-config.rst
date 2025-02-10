@@ -196,6 +196,26 @@ The default configuration for extension with alias "oro_api":
                 # Prototype
                 name:                 ~
 
+            # The configuration of CORS requests to download published OpenAPI specifications.
+            cors:
+
+                # The amount of seconds the user agent is allowed to cache CORS preflight requests.
+                preflight_max_age:    600
+
+                # The list of origins that are allowed to send CORS requests.
+                allow_origins:        []
+
+                    # Examples:
+                    # - 'https://foo.com'
+                    # - 'https://bar.com'
+
+                # The list of headers that are allowed to send by CORS requests.
+                allow_headers:        []
+
+                    # Examples:
+                    # - X-Foo
+                    # - X-Bar
+
         # The definition of API actions.
         actions:
 
