@@ -434,7 +434,7 @@ After the login, the user can switch their current organization.
 
 For the security token to ignore the preferable organization, for example, an API token, add its class name to the  `ignore_preferred_organization_tokens` parameter of the `OrganizationPro` bundle in the app.yml file of your bundle:
 
-.. oro_integrity_check:: af4d28ce059352f6de82cfd41083531a58009e3a
+.. oro_integrity_check:: 4c5db40645b219ccf553309c773034dcd2db0ce9
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
