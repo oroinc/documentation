@@ -20,33 +20,30 @@ The following information about orders is available:
 * **Subtotal** --- The amount due for items included in the order. Does not include additional costs, taxes, or discounts.
 * **Total** --- The final amount due for the order. Includes all the additional costs (like shipping costs), taxes or discounts.
 * **Customer** --- The customer that made the order.
-* **Customer User** --- The customer user that made an order on behalf of the customer.
+* **Customer User** --- The customer user who made an order on behalf of the customer.
 * **Internal Status** --- The order status is managed only in the back-office. See the :ref:`description of internal statuses <doc--orders--statuses--internal>`.
-* **Status** --- An external order status displayed in the title next to the internal status and the order number. This status is managed by an external system and visible when :ref:`Enable External Status Management <sys--commerce--orders--status-management>` configuration option is enabled in the system configuration, and status options are created for the order status entity field via :ref:`entity management <entities-management>`. When enabled, this external order status will be visible in the Order History grid and on the order view page in the storefront user :ref:`account <my-account-order-history>`. If disabled, Internal Status will be displayed instead. Please be aware that the external order status is managed via the order REST API.
+* **Status** --- An external order status displayed in the title next to the internal status and the order number. This status can be used by an external system and is visible when :ref:`Enable External Status Management <sys--commerce--orders--status-management>` configuration option is enabled in the system configuration, and status options are created for the order status entity field via :ref:`entity management <entities-management>`. When enabled, this external order status will be visible in the Order History grid and on the order view page in the storefront user :ref:`account <my-account-order-history>`. If disabled, Internal Status will be displayed instead. Please be aware that the external order status is managed via the order :ref:`REST API <web-services-api>`.
 
 .. image:: /user/img/sales/orders/external-order-status.png
    :alt: Illustration of external order status on the order view page and on the order status entity field page with sample options.
 
-.. note:: This option is available starting from OroCommerce version 6.0.2.
-
-* **Owner** --- The back-office user who is responsible for the order.
+* **Owner** --- The back-office user responsible for the order.
 * **Payment Status** --- Whether the order is already paid in full, the payment for the order is authorized, etc.
 * **Payment Method** --- The payment method selected to pay for the order.
 * **Shipping Method** --- The shipping method selected for the order delivery.
 * **Source Document** --- If the order has been created from an RFQ, quote, or another order, this field contains a link to the corresponding record. If the order has been created from scratch (in the back-office) or the quick order form (in the storefront), the field shows 'N/A'.
 * **Discount** --- The total of all discounts applied to the order.
 * **Created At** --- The date and time the order was created.
-* **Created By** --- The name of the user who created an order on behalf of a customer user, either via the back-office or :ref:`customer user impersonation <user-guide--customers--customer-user-impersonate>` in the storefront. The option is available as of OroCommerce version 6.0.3.
-
+* **Created By** --- The name of the user who created an order on behalf of a customer user, either via the back-office or :ref:`customer user impersonation <user-guide--customers--customer-user-impersonate>` in the storefront.
 * **Updated At** --- The date and time when the order was last updated.
 * **Payment Term** --- The terms and conditions for order payment. For more information, see :ref:`Payment Terms Integration <sys--integrations--manage-integrations--payment-term>`.
-* **Warehouse** --- The warehouse that the goods are shipped from.
+* **Warehouse** --- The warehouse from which the goods are shipped.
 
 .. hint::
 
    To manage the columns displayed within the grid, click |IcConfig| on the right of the grid and select the information you wish to be displayed.
 
-   To handle the significant volume of data, use page switcher, increase the 'view per page' value, or use |IcFilter| filters to narrow down the list to the needed information.
+   To handle the significant volume of data, use the page switcher, increase the 'view per page' value, or use |IcFilter| filters to narrow down the list to the needed information.
 
    .. For more information on configuring visible fields, the number of items per page, etc., see the :ref:`Grids <doc-grids>` topic.
 
@@ -88,14 +85,12 @@ To edit an order:
 Re-Order
 --------
 
-.. note:: This feature is available as of OroCommerce version 6.0.4.
-
-If the order does not have sub orders, it can be re-ordered.
+If the order does not have sub-orders, it can be re-ordered.
 
 To re-order an existing order:
 
 #. Navigate to **Sales > Orders** in the main menu.
-#. Choose an order in the list, hover over the |IcMore| **More Options** menu to the right of the item, and click **Re-order** to start new order from existing one.
+#. Choose an order in the list, hover over the |IcMore| **More Options** menu to the right of the item, and click **Re-order** to start a new order from the existing one.
 
    Alternatively, click the order to open its details. On the order details page, click the **Re-order** button on the top right.
 
