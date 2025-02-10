@@ -24,21 +24,21 @@ Create your new Oro application project with the composer by running one of the 
    # OroCommerce Community Edition
    composer create-project oro/commerce-crm-application my_project_name 6.0.3 -n
    # OroCommerce Enterprise Edition
-   composer create-project oro/commerce-crm-enterprise-application my_project_name 6.0.3 --repository=https://satis.oroinc.com -n
+   composer create-project oro/commerce-crm-enterprise-application my_project_name 6.0.3 --repository=https://packagist.oroinc.com -n
    # OroCommerce Enterprise Platform Application
-   composer create-project oro/orocommerce-platform-application my_project_name 6.0.3 --repository=https://satis.oroinc.com -n
+   composer create-project oro/orocommerce-platform-application my_project_name 6.0.3 --repository=https://packagist.oroinc.com -n
    # OroCRM Community Edition
    composer create-project oro/crm-application my_project_name 6.0.3 -n
    # OroCRM Enterprise Edition
-   composer create-project oro/crm-enterprise-application my_project_name 6.0.3 --repository=https://satis.oroinc.com -n
+   composer create-project oro/crm-enterprise-application my_project_name 6.0.3 --repository=https://packagist.oroinc.com -n
    # OroPlatform Community Edition
    composer create-project oro/platform-application my_project_name 6.0.3 -n
    # OroCommerce Community Edition for Germany
    composer create-project oro/commerce-crm-application-de oroapp my_project_name 6.0.3 -n
    # OroCommerce Enterprise Edition for Germany
-   composer create-project oro/commerce-crm-enterprise-application-de my_project_name 6.0.3 --repository=https://satis.oroinc.com -n
+   composer create-project oro/commerce-crm-enterprise-application-de my_project_name 6.0.3 --repository=https://packagist.oroinc.com -n
    # OroCommerce Enterprise Edition (without CRM)
-   composer create-project oro/commerce-enterprise-application my_project_name 6.0.3 --repository=https://satis.oroinc.com -n
+   composer create-project oro/commerce-enterprise-application my_project_name 6.0.3 --repository=https://packagist.oroinc.com -n
 
 .. hint:: Version ``6.0.3`` is an example. Please replace it with the version you want to download.
 
