@@ -29,19 +29,19 @@ Method 1: Create a Project with Composer
       # OroCommerce Community Edition
       composer create-project oro/commerce-crm-application my_project_name 5.1.0
       # OroCommerce Enterprise Edition
-      composer create-project oro/commerce-crm-enterprise-application my_project_name 5.1.0 --repository=https://satis.oroinc.com
+      composer create-project oro/commerce-crm-enterprise-application my_project_name 5.1.0 --repository=https://packagist.oroinc.com
       # OroCRM Community Edition
       composer create-project oro/crm-application my_project_name 5.1.0
       # OroCRM Enterprise Edition
-      composer create-project oro/crm-enterprise-application my_project_name 5.1.0 --repository=https://satis.oroinc.com
+      composer create-project oro/crm-enterprise-application my_project_name 5.1.0 --repository=https://packagist.oroinc.com
       # OroPlatform Community Edition
       composer create-project oro/platform-application my_project_name 5.1.0
       # OroCommerce Community Edition for Germany
       composer create-project oro/commerce-crm-application-de oroapp my_project_name 5.1.0
       # OroCommerce Enterprise Edition for Germany
-      composer create-project oro/commerce-crm-enterprise-application-de my_project_name 5.1.0 --repository=https://satis.oroinc.com
+      composer create-project oro/commerce-crm-enterprise-application-de my_project_name 5.1.0 --repository=https://packagist.oroinc.com
       # OroCommerce Enterprise Edition (without CRM)
-      composer create-project oro/commerce-enterprise-application my_project_name 5.1.0 --repository=https://satis.oroinc.com
+      composer create-project oro/commerce-enterprise-application my_project_name 5.1.0 --repository=https://packagist.oroinc.com
 
    * Replace the ``5.1.0`` with the version to download.
 
