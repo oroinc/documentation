@@ -155,6 +155,35 @@ To add a column:
 
 The field you have defined will appear in the **COLUMN** table.
 
+.. warning:: When creating reports that display the number of orders and shopping lists for customer users, you may notice that the total count is multiplied incorrectly when both columns are included. For example, if a user has 4 orders and 6 shopping lists, the combined count may appear as 24 instead of showing the actual numbers separately. This occurs due to the SQL query structure in the query builder. The system uses ```LEFT JOIN`` to connect the `oro_shopping_list` and `oro_order tables`, resulting in duplicated records for each customer user if they have multiple related entries in these tables. As a result, the ``COUNT`` function counts each combination instead of distinct records. Currently, the query builder does not support ``COUNT(DISTINCT ...)``, meaning there is no built-in way to adjust the report to count unique items properly. To work around this, consider creating a custom report via the code with the following query:
+
+  .. code-block:: none
+
+     SELECT
+         o0_.id AS id_0,
+         o0_.name AS name_1,
+         COUNT(DISTINCT o1_.id) AS sclr_2,
+         COUNT(DISTINCT o2_.identifier) AS sclr_3
+     FROM
+         oro_customer_user o3_
+     LEFT JOIN oro_customer o0_ ON o3_.customer_id = o0_.id
+         AND o0_.is_preview = false
+         AND o0_.organization_id = 1
+     LEFT JOIN oro_shopping_list o1_ ON o1_.customer_user_id = o3_.id
+         AND o1_.organization_id = 1
+     LEFT JOIN oro_order o2_ ON o2_.customer_user_id = o3_.id
+         AND o2_.organization_id = 1
+     WHERE
+         o3_.organization_id = 1
+         AND o3_.is_preview = false
+     GROUP BY
+         o0_.id,
+         o0_.name
+     ORDER BY
+         id_0 ASC,
+         name_1 ASC
+     LIMIT 25;
+
 Edit a Column
 """""""""""""
 
@@ -247,7 +276,7 @@ OroCommerce supports line charts. To create a line chart for the report, define 
 
 For more details, see the :ref:`chart example <user-guide--business-intelligence--reports--chart-examples>`.
 
-View a Custom Report
+iew a Custom Report
 --------------------
 
 From the Custom Reports List
