@@ -13,11 +13,12 @@ Learn how to configure commerce-specific settings:
    Taxation <taxation/index>
    Design <design/index>
    Product <product/index>
+   Inventory <inventory/index>
    Sales <sales/index>
    Catalog <catalog/index>
    Orders <orders/index>
    Search <search/index>
-   Inventory <inventory/index>
+   Shipping <shipping/index>
    Marketplace <marketplace/index>
 
 

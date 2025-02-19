@@ -8,7 +8,7 @@ AddressValidationBundle
 Configuration
 -------------
 
-The bundle adds a new feature, oro_address_validation, that enables or disables address validation for users in the storefront and in the back-office. To enable the feature, navigate to System Configuration > Commerce > Shipping > Address Validation.
+The bundle adds a new feature, oro_address_validation, that enables or disables address validation for users in the storefront and in the back-office. To enable the feature, navigate to :ref:`System Configuration > Commerce > Shipping > Address Validation <sys--conf--commerce--shipping--address-validation>`.
 
 Integrate a New Address Validation Service into System Configuration
 --------------------------------------------------------------------
@@ -118,8 +118,8 @@ To display the Address Validation Dialog in the storefront, follow these steps:
     - If your form does **not** include a customer address book, render the
       ``\Oro\Bundle\AddressValidationBundle\Form\Type\Frontend\AddressValidationResultType`` form.
 
-Display Address Validation Dialog On Additional Backoffice Form
----------------------------------------------------------------
+Display Address Validation Dialog On Additional Back-Office Form
+----------------------------------------------------------------
 
 To display the Address Validation Dialog in the back-office, follow these steps:
 
@@ -187,6 +187,12 @@ To display the Address Validation Dialog in the back-office, follow these steps:
       ``\Oro\Bundle\AddressValidationBundle\Form\Type\AddressBookAwareAddressValidationResultType`` form.
     - If your form does **not** include a customer address book, render the
       ``\Oro\Bundle\AddressValidationBundle\Form\Type\AddressValidationResultType`` form.
+
+
+**Related Topics**
+
+* :ref:`Configure Global Address Validation Settings in the Back-Office <sys--conf--commerce--shipping--address-validation>`
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

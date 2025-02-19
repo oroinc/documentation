@@ -104,6 +104,10 @@ More information about the options available for each of the two categories is a
     * :ref:`Customer Recommendations <website-configuration--commerce--search--customer-recommendation>`
     * :ref:`Search Terms <configuration--website-commerce--search--history>`
 
+  * Shipping
+
+    * :ref:`Address Validation <website-commerce--configuration--shipping--address-validation>`
+
   * Orders
 
     * :ref:`Order Creation <configuration--commerce--orders--order-creation--website>`

@@ -100,6 +100,10 @@ The following categories of settings are available for system configuration at o
     * :ref:`Limitations <inventory-limitations-org>`
     * :ref:`Allowed Statuses <inventory-allowed-statuses-org>`
 
+  * Shipping
+
+    * :ref:`Address Validation <organization-commerce--configuration--shipping--address-validation>`
+
   * Marketplace
 
     * :ref:`General Marketplace Settings <configuration--commerce--marketplace--seller-organization>`
