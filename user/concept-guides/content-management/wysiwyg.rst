@@ -540,6 +540,21 @@ To set a different image per breakpoint:
 .. image:: /user/img/concept-guides/content-management/adapt-images-per-screen-size.gif
    :alt: Small video tutorial on how to change the image per breakpoint
 
+Adapt Image Resolution
+~~~~~~~~~~~~~~~~~~~~~~
+
+To adapt an image resolution per breakpoint:
+
+1. Choose the breakpoint where you want to upload a high-resolution image or adapt an existing image resolution.
+2. Click the image to display its menu settings. Click |IcConfig| to open the **Picture Sources Manager** menu to view all images assigned to different breakpoints.
+3. Enable the **HI-RES** option for the selected breakpoint.
+4. Once enabled, options for **2x, 3x, or 4x resolution** images will appear.
+5. Select the appropriate resolution and choose an image from the available :ref:`DA records <digital-assets>` to ensure proper display across different screen sizes.
+6. After adding the high-resolution image, click **Save** to apply the updates.
+
+.. image:: /user/img/concept-guides/content-management/high-resolution.png
+   :alt: High-resolution option enabled with the additional options to upload 2x and 3x resolution images
+
 Hide Content
 ~~~~~~~~~~~~
 
