@@ -60,7 +60,7 @@ You can specify a range of IDs of products to be reindexed, for example:
 
 .. code-block:: php
 
-    php bin/console oro:website-search:reindex --scheduled --product-id=1-5000
+    php bin/console oro:website-search:reindex --scheduled --class="Oro\Bundle\ProductBundle\Entity\Product" --ids="1-1000"
 
 The parameter also supports ID range splitting.
 
@@ -68,7 +68,7 @@ Let's assume we have a very large database of 5M products and want to distribute
  
 .. code-block:: php
 
-    php bin/console oro:website-search:reindex --scheduled --product-id=1-5000000/1000
+    php bin/console oro:website-search:reindex --scheduled --class="Oro\Bundle\ProductBundle\Entity\Product" --ids="1-1000"
 
 This command will generate reindex requests with 1000 products per each, thus allowing to split the 5M product pool into 5000 * 1k chunks. This strategy might drastically improve reindexation performance, depending on the amount of available consumers.
 
@@ -76,5 +76,5 @@ If you do not know the exact amount of products in the database, you can use the
 
 .. code-block:: php
 
-    php bin/console oro:website-search:reindex --scheduled --product-id=*/1000
+    php bin/console oro:website-search:reindex --scheduled --class="Oro\Bundle\ProductBundle\Entity\Product" --ids="*/1000"
 

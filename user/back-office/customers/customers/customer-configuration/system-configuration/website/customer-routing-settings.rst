@@ -17,7 +17,7 @@ To configure the main navigation menu per customer:
    :alt: Customer group routing terms configuration settings
 
 3. Select **System Configuration > Websites > Routing** in the menu to the left.
-4. In the General section, clear the **Use Customer Group** check box and configure the following option:
+4. In the General section, clear the **Use Customer Group** checkbox and configure the following option:
 
    * **Main Navigation Menu** -- Use the dropdown to select which frontend menu will represent the main menu in the storefront.
 

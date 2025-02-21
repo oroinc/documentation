@@ -20,13 +20,13 @@ To configure the search history settings per website:
 .. image:: /user/img/system/websites/web_configuration/web-search-terms.png
    :alt: Search history configuration options per website
 
-4. In the **Search History** section, clear the *Use Organization* check box to configure the following search history reporting options:
+4. In the **Search History** section, clear the *Use Organization* checkbox to configure the following search history reporting options:
 
    * **Enable Search History Reporting** --- enables the :ref:`Search History feature <user-guide-search-search-history>` globally to track your customers’ search activity in the storefront. The option also enables the :ref:`a Search Terms report <user-guide-search-terms-report>` that collects statistics on how many times a particular search term was used, the number of times that search term returned products, and the number of times it returned an empty result. When Enable Search History Reporting is disabled, the feature is removed from the main menu and grids, along with the Search Terms report.
 
    * **Enable Search History Collection** --- depends on the Enable Search History Reporting option above. When Enable Search History Collection is enabled, all search queries are logged into the database. This option allows enabling/disabling certain groups of visitors. For example, you can choose not to log requests from anonymous users by turning off this option at customer group level for Anonymous customers. Exercise care when enabling this option on popular websites as it may result in a large number of records saved to the database.
 
-5. In the **Special Pages** section, clear the *Use Organization* check box to configure the empty search results page:
+5. In the **Special Pages** section, clear the *Use Organization* checkbox to configure the empty search results page:
 
    * **Empty Search Result Page** --- You can configure an Empty Search Results Page, if the product search produced an empty result and there is no custom page configured for that specific combination of a :ref:`search term <user-guide-search-search-terms>` and additional search criteria. The web-node selected for this configuration option should be available for all users and cannot have restrictions.
 
