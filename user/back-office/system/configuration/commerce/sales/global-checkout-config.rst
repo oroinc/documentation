@@ -60,7 +60,22 @@ To configure checkout options globally:
 
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest checkout data, adjust permissions for the checkout entity in their roles accordingly.
 
-7. Click **Save Settings**.
+7. In the **Order Limits** section, enter the following values:
+
+   * **Minimum Order Amount** --- Specify the minimum subtotal required to start the checkout process (available as of OroCommerce version 6.0.6.). If the shopping list subtotal is less than the specified value, the **Checkout** button will be disabled, and customers will see an error notification, prompting them to add more products to proceed. Once the subtotal meets or exceeds the minimum amount, the error message disappears, and the **Checkout** button is enabled. If :ref:`multiple currencies <sys--config--sysconfig--general-setup--currency>` are enabled in the storefront, they are rendered as separate inputs for each currency. Validation in the storefront uses the value configured for the current currency. No automatic currency conversions are applied.
+
+    .. image:: /user/img/system/config_commerce/sales/order-limits-config.png
+       :alt: Global order limits configuration settings
+
+    .. image:: /user/img/system/config_commerce/sales/minimum-order-storefront.png
+       :alt: Shopping list view page with the amount less than the specified minimum order amount
+
+   * **Maximum Order Amount** --- Specify the maximum subtotal required to start the checkout (available as of OroCommerce version 6.0.6.). If the shopping list subtotal exceeds the specified value, the **Checkout** button will be disabled, and customers will see an error notification, prompting them to remove some products to proceed. Once the subtotal is within the allowed limit, the error message disappears, and the **Checkout** button is enabled. If :ref:`multiple currencies <sys--config--sysconfig--general-setup--currency>` are enabled in the storefront, they are rendered as separate inputs for each currency. Validation in the storefront uses the value configured for the current currency. No automatic currency conversions are applied.
+
+   .. image:: /user/img/system/config_commerce/sales/maximum-order-storefront.png
+      :alt: Shopping list view page with the amount more than the specified maximum order amount
+
+8. Click **Save Settings**.
 
 .. finish
 

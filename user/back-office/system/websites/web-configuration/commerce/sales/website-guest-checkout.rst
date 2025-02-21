@@ -38,7 +38,22 @@ Configure Checkout Settings per Website
 
    * **Apple Pay Domain Verification** --- Apple Pay is offered as part of the integration with :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`. Domain verification is one of the required prerequisites for Apple Pay to work. Whether Apple Pay will be offered as a payment option during checkout depends on what payment integrations are allowed on a specific website by the :ref:`payment rules <sys--payment-rules>`.
 
-9. Click **Save Settings**.
+9. In the **Order Limits** section, enter the following values:
+
+   * **Minimum Order Amount** --- Specify the minimum subtotal required to start the checkout process (available as of OroCommerce version 6.0.6.). If the shopping list subtotal is less than the specified value, the **Checkout** button will be disabled, and customers will see an error notification, prompting them to add more products to proceed. Once the subtotal meets or exceeds the minimum amount, the error message disappears, and the **Checkout** button is enabled. If :ref:`multiple currencies <admin-configuration-currency-org>` are enabled in the storefront, they are rendered as separate inputs for each currency. Validation in the storefront uses the value configured for the current currency. No automatic currency conversions are applied.
+
+    .. image:: /user/img/system/websites/web_configuration/order-limits-config-website.png
+       :alt: Order limits configuration settings per website
+
+    .. image:: /user/img/system/config_commerce/sales/minimum-order-storefront.png
+       :alt: Shopping list view page with the amount less than the specified minimum order amount
+
+   * **Maximum Order Amount** --- Specify the maximum subtotal required to start the checkout (available as of OroCommerce version 6.0.6.). If the shopping list subtotal exceeds the specified value, the **Checkout** button will be disabled, and customers will see an error notification, prompting them to remove some products to proceed. Once the subtotal is within the allowed limit, the error message disappears, and the **Checkout** button is enabled. If :ref:`multiple currencies <admin-configuration-currency-org>` are enabled in the storefront, they are rendered as separate inputs for each currency. Validation in the storefront uses the value configured for the current currency. No automatic currency conversions are applied.
+
+   .. image:: /user/img/system/config_commerce/sales/maximum-order-storefront.png
+      :alt: Shopping list view page with the amount more than the specified maximum order amount
+
+10. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin
