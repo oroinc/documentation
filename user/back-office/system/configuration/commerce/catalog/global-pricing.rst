@@ -97,7 +97,7 @@ To change the default global pricing settings:
    * **Allow fractional quantity price calculation on quantity less than 1 whole unit** --- Applicable only to the product units that allow fractional quantity input (unit precision > 0). The *Minimum quantity to order* for specific products can be set to 1 to prevent purchases of fractional quantities smaller than 1 whole unit.
    * **Allow price calculation on quantities smaller than the minimal quantity priced in a price list(s)** --- Applicable to the product units that allow only whole numbers for quantity. The *Minimum quantity to order* for specific products can be used to prevent purchases of quantities smaller than the desired sellable quantity.
 
-   .. hint::  Minimum Sellable Quantity configuration options are available starting from OroCommerce version 5.1.9.
+   .. hint::  Minimum Sellable Quantity configuration options are available starting from OroCommerce version 5.1.10.
 
 10. Click **Reset** at the top right to roll back any changes to the pricing settings.
 

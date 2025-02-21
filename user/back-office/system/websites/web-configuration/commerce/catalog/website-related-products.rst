@@ -67,7 +67,7 @@ To update the related product settings per website:
    * **Parent Category Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
    * **Second Level Parent Category Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
 
-8. In the **Similar Products in Shopping Lists**, the following options are available:
+8. In the **Similar Products in Shopping Lists** (available as of OroCommerce version 5.1.9), the following options are available:
 
    * **Enable Similar Products in Shopping Lists** -- Enabling this option add a block of Similar Products to the shopping list page.
    * **Maximum Items** --- A limit of similar products that are shown to a buyer on the shopping list page.

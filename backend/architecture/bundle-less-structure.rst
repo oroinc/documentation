@@ -265,7 +265,7 @@ API
                         documentation_resource: 'doc/api/frontend/user.md'
                         ...
 
-    This feature is available as of OroPlatform version 5.1.9.
+    This feature is available as of OroPlatform version 5.1.10.
 
 
 For more information, see :ref:`Documenting API Resources <web-api--doc>`.
