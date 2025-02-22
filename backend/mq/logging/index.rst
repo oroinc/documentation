@@ -195,6 +195,13 @@ A few examples of common errors that may occur in the course of your application
 
 If one listed error occurs, processor will return **REQUEUE**, and message will be redelivered.
 
+Error Reporting Level
+---------------------
+
+The error reporting level can be changed through customization:
+
+``AppKernel::getErrorReportingLevel()``
+
 Profiling
 ---------
 
