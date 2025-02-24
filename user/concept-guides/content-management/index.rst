@@ -17,6 +17,7 @@ The core default tools integrated into the OroCommerce application and are used 
 * :ref:`Content templates <user-guide--landing-pages--marketing--content-templates>` --- customisable blocks of content that you can add to a landing page and adjust as required (e.g., modify fonts, styles, align the content, alter the text, etc.).
 * :ref:`Content widgets <concept-guide-content-widgets>` --- preconfigured content fragments that you can insert into any landing page or content block with the WYSIWYG field. Out-of-the-box, there are several system content widget types that you can customize to fit your criteria. The creation of additional widgets may require some developer's assistance.
 * :ref:`WYSIWYG editor <getting-started-wysiwyg-editor-field>` --- advanced editor for creating and formatting the content. The editor is used with almost all content management tools enabling you to customize the content using different fonts, colors, sizes, alignments, and more. It also lets you view what your page's final result will look like in the storefront while creating the page.
+* :ref:`AI-powered content assistant <getting-started-wysiwyg-editor-field-ai>` --- a tool that uses services like OpenAI and Vertex AI to generate content for product descriptions, landing pages, content blocks, master catalog categories, and emails. It can create descriptions based on custom prompts, extract product features, and adjust text tone. This helps improve SEO, save time on content creation, and enhance the user experience with more engaging content.
 
 
 .. toctree::
