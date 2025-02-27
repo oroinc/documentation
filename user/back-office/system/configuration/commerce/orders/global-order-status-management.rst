@@ -5,8 +5,7 @@
 Configure Global Settings for Order External Status Management
 ==============================================================
 
-In addition to managing :ref:`an internal order status <user-guide--sales--orders>`, you can also manage an order status in an external system. By default, an external system cannot
-change the order status. To enable a modification of an external order status:
+In addition to managing :ref:`an internal order status <user-guide--sales--orders>`, you can also manage an order status in an external system. By default, an external system cannot change the order status. To enable a modification of an external order status:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Orders > Order Status Management** in the menu to the left.

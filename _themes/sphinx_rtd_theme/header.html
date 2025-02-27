@@ -14,13 +14,15 @@
 {% if 'user/storefront' in pagename %}
 {%- set current_subitem = "storefront" %}
 {% endif %}
-{% if 'user/glossary' in pagename %}
-{%- set current_subitem = "glossary" %}
-{% endif %}
 {% if 'user/integrations' in pagename %}
 {%- set current_subitem = "integrations" %}
 {% endif %}
-
+{% if 'user/solution-artchitect' in pagename %}
+{%- set current_subitem = "solution-architect" %}
+{% endif %}
+{% if 'user/glossary' in pagename %}
+{%- set current_subitem = "glossary" %}
+{% endif %}
 {% if 'backend' in pagename %}
 {%- set current_item = "developers" %}
 {%- set current_subitem = "backend" %}
@@ -41,7 +43,6 @@
 {%- set current_item = "developers" %}
 {%- set current_subitem = "community" %}
 {% endif %}
-
 {% if 'cloud' in pagename %}
 {%- set current_item = "cloud" %}
 {% endif %}
@@ -166,6 +167,15 @@
                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'integrations' == current_subitem }}"
                                            role="menuitem">Integrations<span class="header__menu-desc">Explore OroCommerce's pre-built and
                                                         custom integration options.
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="{{ version_pref }}/user/solution-architect/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'solution-architect' == current_subitem }}"
+                                           role="menuitem">Solution Architecture<span class="header__menu-desc">Learn about the OroCommerce
+                                            architecture, integration points, and the infrastructure to implement it.
                                         </span>
                                         </a>
                                     </li>

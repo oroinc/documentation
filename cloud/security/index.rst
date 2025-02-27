@@ -23,6 +23,8 @@ The following diagram illustrates the network segmentation of a typical Oro appl
 .. image:: /cloud/img/production_network_highlevel_public_diagram.png
    :alt: The network segmentation of an average Oro application deployment in OroCloud environment
 
+.. _cloud_security-application-subnet:
+
 Application Subnet
 ^^^^^^^^^^^^^^^^^^
 

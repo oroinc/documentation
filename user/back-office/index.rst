@@ -1,5 +1,7 @@
 :title: Oro Application Back-Office User Documentation
 
+.. _user-guide--back-office:
+
 .. meta::
    :description: Back-office manuals for the Oro application and OroMarketplace users
 

@@ -1,5 +1,7 @@
 :title: OroCommerce Integrations Documentation
 
+.. _business-users--integrations:
+
 .. meta::
    :description: Integrations documentation for the Oro application users
 
