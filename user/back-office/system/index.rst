@@ -1,5 +1,7 @@
 :title: System Configuration Management in the Oro Application Back-Office
 
+.. _user-guide-system-setting:
+
 .. meta::
    :description: Extensive manuals on the Oro application back-office system configuration
 

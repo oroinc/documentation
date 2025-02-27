@@ -29,6 +29,8 @@ Oro support team continues to put in all possible efforts to provide an initial 
 * 24 business hours for P2-P4 issues
 * 4 hours for P1 issues
 
+.. _cloud_support-process:
+
 Support Process
 ---------------
 

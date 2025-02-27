@@ -15,6 +15,15 @@ Oro User Documentation is split into five sections, each delivering user-specifi
 .. raw:: html
 
     <ul class="icons-list">
+         <li>
+            <div class="icon">
+                <img src="../_static/images/icon-business-users.png" alt="" role="presentation">
+            </div>
+            <div class="items-body">
+                <p class="first"><a class="reference internal" href="solution-architect/"><span class="std std-ref">Solution Architecture</span></a></p>
+                <p> Solution Architecture guide offers an overview of the application concepts, architectural framework, and key integration points that are essential for the successful deployment and integration of the OroCommerce application.</p>
+            </div>
+        </li>
         <li>
             <div class="icon">
                 <img src="../_static/images/business-and-finance.svg" alt="" role="presentation">
@@ -73,6 +82,7 @@ Oro User Documentation is split into five sections, each delivering user-specifi
    :titlesonly:
    :maxdepth: 7
 
+   solution-architect/index
    concept-guides/index
    back-office/index
    storefront/index

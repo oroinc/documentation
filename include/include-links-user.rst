@@ -1009,3 +1009,15 @@ Links (User)
 .. |Conversations extension|  raw:: html
 
    <a href="https://extensions.oroinc.com/orocommerce/extension/oro-conversations/" target="_blank">Conversations extension</a>
+
+.. |Customer Management|  raw:: html
+
+   <a href="https://hive.oroinc.com/course/customer-management/" target="_blank">Customer Management</a>
+
+.. |Product Management|  raw:: html
+
+   <a href="https://hive.oroinc.com/course/product-management/" target="_blank">Product Management</a>
+
+.. |Sales Management|  raw:: html
+
+   <a href="https://hive.oroinc.com/course/sales-management/" target="_blank">Sales Management</a>

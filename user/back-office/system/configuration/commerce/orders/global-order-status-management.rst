@@ -5,8 +5,6 @@
 Configure Global Settings for Order External Status Management
 ==============================================================
 
-.. note:: This setting is available starting from OroCommerce version 6.0.2.
-
 In addition to managing :ref:`an internal order status <user-guide--sales--orders>`, you can also manage an order status in an external system. By default, an external system cannot change the order status. To enable a modification of an external order status:
 
 1. Navigate to **System > Configuration** in the main menu.
@@ -23,4 +21,4 @@ In addition to managing :ref:`an internal order status <user-guide--sales--order
 
 After that, the external order status can be managed via the order REST API.
 
-This status will be visible in the back office in addition to the internal order status. Also, this status will be visible in the storefront.
+This status will be visible both in the back-office and in the storefront.

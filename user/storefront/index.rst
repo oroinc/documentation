@@ -4,6 +4,7 @@
    :description: OroCommerce Storefront user's manuals and guides
 
 .. _frontstore-guide:
+.. _user-guide-storefront:
 
 Commerce Storefront
 ===================

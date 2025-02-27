@@ -6483,3 +6483,25 @@ Links (Dev)
 .. |k6-integrations| raw:: html
 
     <a href="https://grafana.com/docs/k6/latest/misc/integrations" target="_blank">k6-integrations</a>
+
+.. |SalesFrontendBundle| raw:: html
+
+    <a href="https://github.com/oroinc/sales-frontend" target="_blank">SalesFrontendBundle</a>
+
+.. |ViteJs Env Files| raw:: html
+
+    <a href="https://vitejs.dev/guide/env-and-mode#env-files" target="_blank">ViteJs Env Files</a>
+
+.. |CSP| raw:: html
+
+    <a href="https://www.w3.org/TR/CSP/" target="_blank">CSP</a>
+
+.. |Partitioned Cookies| raw:: html
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/Privacy/Privacy_sandbox/Partitioned_cookies" target="_blank">Partitioned Cookies</a>
+
+.. |semantic versioning| raw:: html
+
+    <a href="https://semver.org/" target="_blank">semantic versioning</a>
+
+
