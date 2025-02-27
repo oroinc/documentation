@@ -246,3 +246,7 @@ Links (Cloud)
 .. |Crontab Guru| raw:: html
 
    <a href="https://crontab.guru" target="_blank">Crontab Guru</a>
+
+.. |the latest LTS version| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/" target="_blank">the latest LTS version</a>

@@ -1,5 +1,7 @@
 .. _orocloud-maintenance-use-upgrade:
 
+.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
+
 How to Run Upgrades
 ===================
 
@@ -123,3 +125,5 @@ To build and deploy an application packages at the same time, run the `orocloud-
 * `orocloud-cli app:package:upgrade --rolling [git reference]` equal to `orocloud-cli app:package:build` with `orocloud-cli app:package:deploy --rolling`.
 * `orocloud-cli app:package:upgrade --source [git reference]` equal to `orocloud-cli app:package:build` with `orocloud-cli app:package:deploy --source`.
 
+.. include:: /include/include-links-cloud.rst
+   :start-after: begin

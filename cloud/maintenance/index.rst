@@ -7,6 +7,8 @@
 
 .. _cloud_maintenance:
 
+.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
+
 Maintenance
 ===========
 
@@ -40,4 +42,7 @@ The OroCloud application maintenance tool helps you to run and control complex m
     Curious about the latest digital eCommerce trends? Learn more about the |wholesale B2B marketplace|, its unique characteristics, and how it can work for you.
 
 .. include:: /include/include-links-seo.rst
+   :start-after: begin
+
+.. include:: /include/include-links-cloud.rst
    :start-after: begin

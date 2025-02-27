@@ -1,5 +1,7 @@
 .. _orocloud-queues:
 
+.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
+
 How to Work with Queues
 =======================
 
@@ -109,3 +111,5 @@ To reroute some messages from a queue to the `oro.default` exchange, use the `or
 
 .. note:: Rerouting `oro.unprocessed` using the `--filter` option will send all messages to the exchange, however, only matching messages will go to the target queue, other messages will get back to `oro.unprocessed`.
 
+.. include:: /include/include-links-cloud.rst
+   :start-after: begin

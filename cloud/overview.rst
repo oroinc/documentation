@@ -1,5 +1,7 @@
 :orphan:
 
+.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
+
 Overview
 --------
 
@@ -42,6 +44,8 @@ This guide describes the following concepts and processes in detail:
 * :ref:`Monitoring <cloud_monitoring>` principles and tools
 * Information on how OroCloud team :ref:`handles incidents <cloud_monitoring>`
 * Technical :ref:`support <cloud_support>` service details (exclusions, priorities, SLA, etc).
+
+.. end_overview
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin

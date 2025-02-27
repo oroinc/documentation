@@ -1,4 +1,3 @@
-
 .. _cloud-security-best-practice:
 
 Shared Security Responsibility and Best Practices

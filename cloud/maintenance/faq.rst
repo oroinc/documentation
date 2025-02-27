@@ -1,5 +1,7 @@
 .. _orocloud-maintenance-faq:
 
+.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
+
 FAQ
 ===
 
@@ -51,3 +53,6 @@ If the upgrade has failed before running the `oro:platform:update` and the `appl
 If the upgrade failed after or during the `oro:platform:update` execution, the changes in the application database have already been applied. Run the necessary restore operation:
 
 * `backup:restore` to recover both database and the application code, generating new caches. The command restores the application backup without media files from the specified backup time point. Media files can only be restored via a request to Support.
+
+.. include:: /include/include-links-cloud.rst
+   :start-after: begin
