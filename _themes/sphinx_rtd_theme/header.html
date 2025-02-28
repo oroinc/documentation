@@ -17,7 +17,7 @@
 {% if 'user/integrations' in pagename %}
 {%- set current_subitem = "integrations" %}
 {% endif %}
-{% if 'user/solution-artchitect' in pagename %}
+{% if 'user/solution-architect' in pagename %}
 {%- set current_subitem = "solution-architect" %}
 {% endif %}
 {% if 'user/glossary' in pagename %}
@@ -129,6 +129,15 @@
                             <div class="header__menu-grid">
                                 <ul class="header__menu-list" role="menu" aria-label="Second-level menu Users"
                                     data-name="second-level-menu-users">
+                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
+                                        role="none">
+                                        <a href="{{ version_pref }}/user/solution-architect/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'solution-architect' == current_subitem }}"
+                                           role="menuitem">Solution Architecture<span class="header__menu-desc">Learn about the OroCommerce
+                                            architecture, integration points, and the infrastructure to implement it.
+                                        </span>
+                                        </a>
+                                    </li>
                                     <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom"
                                         role="none">
                                         <a href="{{ version_pref }}/user/concept-guides/"
@@ -154,15 +163,6 @@
                                     </li>
                                     <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
                                         role="none">
-                                        <a href="{{ version_pref }}/user/glossary/"
-                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'glossary' == current_subitem }}"
-                                           role="menuitem">Glossary<span class="header__menu-desc">Navigate OroCommerce terms easily with
-                                                        our comprehensive glossary guide.
-                                        </span>
-                                        </a>
-                                    </li>
-                                    <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
-                                        role="none">
                                         <a href="{{ version_pref }}/user/integrations/"
                                            class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'integrations' == current_subitem }}"
                                            role="menuitem">Integrations<span class="header__menu-desc">Explore OroCommerce's pre-built and
@@ -172,10 +172,10 @@
                                     </li>
                                     <li class="header__menu-list_desc level2-link  menu-item menu-item-type-custom menu-item-object-custom "
                                         role="none">
-                                        <a href="{{ version_pref }}/user/solution-architect/"
-                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'solution-architect' == current_subitem }}"
-                                           role="menuitem">Solution Architecture<span class="header__menu-desc">Learn about the OroCommerce
-                                            architecture, integration points, and the infrastructure to implement it.
+                                        <a href="{{ version_pref }}/user/glossary/"
+                                           class=" menu-item menu-item-type-custom menu-item-object-custom header__menu-link {{ 'current-menu-item' if 'glossary' == current_subitem }}"
+                                           role="menuitem">Glossary<span class="header__menu-desc">Navigate OroCommerce terms easily with
+                                                        our comprehensive glossary guide.
                                         </span>
                                         </a>
                                     </li>
