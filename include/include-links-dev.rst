@@ -6504,4 +6504,6 @@ Links (Dev)
 
     <a href="https://semver.org/" target="_blank">semantic versioning</a>
 
+.. |rfc6750| raw:: html
 
+    <a href="https://www.rfc-editor.org/rfc/rfc6750" target="_blank">Rfc6750</a>
