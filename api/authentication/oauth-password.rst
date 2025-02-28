@@ -76,8 +76,35 @@ An example of an API request:
     Accept: application/vnd.api+json
     Authorization: Bearer your access token
 
+According to |rfc6750|, an access token can be included as a body parameter in requests.
+
+.. note:: When sending the access token as a body parameter, the request must include a `Content-Type` header set to `application/vnd.api+json`.
+
+Here is an example of how to send the access token as a body parameter:
+
+.. code-block:: http
+
+
+    POST /api/users HTTP/1.1
+    Accept: application/vnd.api+json
+    Content-Type: application/vnd.api+json
+
+    {
+        "access_token": "your_access_token",
+        "data": {
+          "type": "contacts",
+          "attributes": {
+            "firstName": "Jerry12",
+            "lastName": "Coleman2"
+          }
+        }
+    }
+
 .. note:: Access tokens for back-office and storefront API are not interchangeable. If you attempt to request data for the storefront API with a token generated for the back-office application, access will be denied.
 
 .. note:: For the storefront API a customer user email address should be used as `username`.
 
 .. note:: To get the access token for a visitor for the storefront API, use ``guest`` as `username` and `password` in the request to the authorization server. A new customer visitor is created for each created access token.
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

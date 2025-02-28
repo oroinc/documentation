@@ -6491,3 +6491,7 @@ Links (Dev)
 .. |AddressValidationBundle| raw:: html
 
     <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/AddressValidationBundle" target="_blank">AddressValidationBundle</a>
+
+.. |rfc6750| raw:: html
+
+    <a href="https://www.rfc-editor.org/rfc/rfc6750" target="_blank">Rfc6750</a>
