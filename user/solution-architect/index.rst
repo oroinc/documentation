@@ -36,7 +36,7 @@ The guide offers a thorough overview of the application concepts, architectural 
                 <img src="../../_static/images/icon-demo.png" alt="" role="presentation">
             </div>
             <div class="items-body">
-                <p class="first"><a class="reference internal" href="storefront/"><span class="std std-ref">Cloud and Infrastructure</span></a></p>
+                <p class="first"><a class="reference internal" href="cloud-infrastructure/"><span class="std std-ref">Cloud and Infrastructure</span></a></p>
                 <p>The Cloud and Infrastructure section explains OroCommerce's deployment architecture, infrastructure services, deployment and environment types, network segmentation, security measures including subnets, firewall rules, and maintenance zones, as well as support options.</p>
             </div>
         </li>
@@ -48,4 +48,4 @@ The guide offers a thorough overview of the application concepts, architectural 
 
    Concepts <concepts>
    Integration Points <integration-points>
-   OroCloud <cloud-infrastructure>
+   Cloud and Infrastructure <cloud-infrastructure>
