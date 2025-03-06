@@ -62,7 +62,7 @@ Sensitive information, such as the OpenAI token, is stored securely in encrypted
 **Related Articles**
 
 * :ref:`AI Integrations in the Back-Office <user-guide-ai-integrations>`
-* :ref:`Generate Content Using AI-Powered Content Assistant <getting-started-wysiwyg-editor-field-ai>`>
+* :ref:`Generate Content Using AI-Powered Content Assistant <getting-started-wysiwyg-editor-field-ai>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

@@ -7,7 +7,6 @@ Oro offers integration with AI services such as OpenAI and Vertex AI to create c
 
 Once the :ref:`integration with the chosen AI client <user-guide-ai-integrations>` is created and established, you can configure AI integration settings in the system configuration :ref:`globally <admin-configuration-ai-integration-settings>` and per organization:
 
-
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu at the end of the row and click |IcConfig| to start editing the configuration.
 3. Click **System Configuration > Integrations > AI Content Generation** in the menu to the left.
