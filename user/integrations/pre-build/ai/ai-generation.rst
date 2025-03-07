@@ -58,11 +58,10 @@ Security Measures
 
 Sensitive information, such as the OpenAI token, is stored securely in encrypted form, safeguarding it from unauthorized access. No other information is kept on our servers except for the execution of requests, receipt of information, and presentation to the client. If approved by the client, the information is transferred to one of the text fields, which are then processed as usual.
 
-
 **Related Topics**
 
 * :ref:`Configure AI Integrations in the Back-Office <user-guide-ai-integrations>`
-* :ref:`Generate Content Using AI-Powered Content Assistant <getting-started-wysiwyg-editor-field-ai>`>
+* :ref:`Generate Content Using AI-Powered Content Assistant <getting-started-wysiwyg-editor-field-ai>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

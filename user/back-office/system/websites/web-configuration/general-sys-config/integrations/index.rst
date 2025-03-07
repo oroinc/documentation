@@ -5,4 +5,5 @@ Integrations Settings per Website
    :maxdepth: 1
 
    Google Settings <website-google-settings>
-   CAPTCHA Settings <website-captcha>
+   CAPTCHA settings <website-captcha>
+   AI Agent <website-ai-agent>

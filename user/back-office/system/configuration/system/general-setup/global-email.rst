@@ -165,12 +165,12 @@ To configure a system mailbox globally:
    .. image:: /user/img/system/config_system/synchronize_mb.png
       :alt: An example of synchronization for a gmail mailbox
 
-
-6. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox.
+6. In the **Email Processing** section, choose what happens to all the emails received in the mailbox.
 
    * *Do Nothing* --- No actions are performed. Letters are saved in the mailbox.
    * *Convert To Lead* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Lead record will be created in the Oro application.
    * *Convert To Case* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Case record will be created in the Oro application.
+   * *Convert To Draft Order* --- When :ref:`AI Smart Order <concept-guide--ai--smart-order>` is configured in an OroCommerce Enterprise application, the system will scan the email box for any incoming POs and create a draft order using the information it captures from the email and or its attachment automatically. Please |contact our support team| to help with implementation. Please note that this feature is available as of OroCommerce version 6.0.7.
 
    As an example, we have selected the **Convert To Lead** option. Once the action has been selected, define which user will own the records and choose the source of your leads in the **Source** field.
 

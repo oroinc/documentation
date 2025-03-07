@@ -23,11 +23,11 @@ Oro applications come with a number of out-of-the-box widgets that can simplify 
      * :ref:`Purchase funnel <user-guide--business-intelligence--widgets--purchase-funnel>`
      * :ref:`Campaigns by close revenue <user-guide--business-intelligence--widgets--close-revenue>`
      * :ref:`Sales Orders Volume <user-guide--widgets--sales-orders-volume>`
-     * :ref:`Sales Orders Number <user-guide--widgets--sales-orders-number>`","
+     * :ref:`Sales Orders Number <user-guide--widgets--sales-orders-number>`
+     * :ref:`AI Smart Order <user-guide-dashboards-widgets>`","
 
      * :ref:`Recent emails <user-guide--business-intelligence--widgets--recent-emails>`
      * :ref:`Recent calls <user-guide--business-intelligence--widgets--recent--calls>`","
-
 
      * :ref:`Quick launchpad <user-guide--business-intelligence--widgets--quick-launchpad>`
      * :ref:`Recently accessed contacts <user-guide--business-intelligence--widgets--recently-accessed--contacts>`
@@ -114,6 +114,7 @@ To configure a widget, click |IcSettings| **Configure** in the widget header and
    todays-calendar
    sales-orders-volume
    sales-orders-number
+   ai-smart-order
 
 
 
