@@ -40,6 +40,7 @@ Find more information about Web API in the following topics:
    enabling-api-feature
    sandbox
    authentication/index
+   Checkout API <checkout-api>
    schema
    http-methods
    http-header-specifics

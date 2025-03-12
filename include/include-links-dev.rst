@@ -5984,6 +5984,14 @@ Links (Dev)
 
    <a href="https://stripe.com/docs/js/appendix/style" target="_blank">Style object</a>
 
+.. |Stripe Payment Element| raw:: html
+
+    <a href="https://docs.stripe.com/payments/payment-element" target="_blank">Stripe Payment Element</a>
+
+.. |Stripe API - Payment Methods| raw:: html
+
+    <a href="https://docs.stripe.com/api/payment_methods" target="_blank">Stripe API - Payment Methods</a>
+
 .. |RFM| raw:: html
 
    <a href="https://en.wikipedia.org/wiki/RFM_(market_research)" target="_blank">RFM</a>
