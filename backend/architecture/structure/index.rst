@@ -151,7 +151,7 @@ File System Permissions
 In OroCommerce, web requests and CLI scripts must get readonly access to sources with a limited write access to a
 set of folders using specific user www-data (bundled with Nginx and Apache). 
 
-To prepare application sources and pre-build assets, use orodeployer user:
+To prepare application sources and pre-built assets, use orodeployer user:
 
 .. code-block:: bash
 

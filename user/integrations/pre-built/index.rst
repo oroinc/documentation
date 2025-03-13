@@ -1,4 +1,4 @@
-.. _pre-build-integrations:
+.. _pre-built-integrations:
 
 Pre-Built Integrations
 ======================
