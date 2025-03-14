@@ -34,6 +34,12 @@ The assets can be build only for a specific theme if its name is provided as an 
 
     php bin/console oro:assets:build default,admin.oro
 
+The assets can be built by running webpack separately for each enabled theme if the option ``--iterate-themes`` is provided.
+
+.. code-block:: none
+
+    php bin/console oro:assets:build --iterate-themes
+
 With ``--env=dev``, the assets are built without minification and with source-maps, while with ``--env=prod``, the assets are minified and do not include source-maps:
 
 .. code-block:: none
@@ -164,3 +170,9 @@ The ``--timeout`` option can be used to limit execution time of the child comman
 .. code-block:: none
 
     php bin/console oro:assets:install --timeout=<seconds> other options
+
+The ``--iterate-themes`` option can be used to run webpack for each enabled theme separately:
+
+.. code-block:: none
+
+    php bin/console oro:assets:install --iterate-themes other options
