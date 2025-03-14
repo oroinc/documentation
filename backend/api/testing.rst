@@ -112,15 +112,12 @@ You can use :ref:`Doctrine and Alice fixtures <automated-test>`:
 
 .. code-block:: php
 
-    class InventoryLevelApiTest extends RestJsonApiTestCase
+    class InventoryLevelTest extends RestJsonApiTestCase
     {
-        /**
-         * {@inheritdoc}
-         */
         protected function setUp()
         {
             parent::setUp();
-            $this->loadFixtures([__DIR__ . '/DataFixtures/inventory_level.yml']);
+            $this->loadFixtures([@OroInventoryBundle/Tests/Functional/DataFixtures/inventory_level.yml']);
         }
 
 Fixture file:
