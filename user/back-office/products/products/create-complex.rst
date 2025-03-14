@@ -99,7 +99,7 @@ To add a new configurable product and make it available in the master catalog (f
    .. image:: /user/img/products/products/SampleProductVariantsForConfigProduct.png
       :alt: Selecting the configurable product variants
 
-Once all variants are selected, you can choose the default variant to be displayed in the storefront by selecting it from the **Default Variant** dropdown list. The setting is available as of OroCommerce version 6.0.4.
+Once all variants are selected, you can choose the default variant to be displayed in the storefront by selecting it from the **Default Variant** dropdown list. The setting is available as of OroCommerce version 6.0.6.
 
    .. image:: /user/img/products/products/select-default-variant.png
       :alt: Selecting the default product variant to be displayed in the storefront
