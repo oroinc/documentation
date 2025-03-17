@@ -19,17 +19,17 @@ On the other hand, Oro also empowers users to create custom integrations tailore
     <h2>Pre-Built Integrations</h2>
 
        <ul class="tag-cloud">
-          <li><a class="tag-important" href="pre-build/ai">AI Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/crm">CRM and Marketplace Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/customer-support">Customer Support Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/erp">ERP Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/marketing">Marketing Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/payment">Payment Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/shipping">Shipping Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/PIM">PIM Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/procurement">E-Procurement Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/reporting">Reporting and Business Intelligence Integrations</a></li>
-          <li><a class="tag-important" href="pre-build/misc">Miscellaneous Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/ai">AI Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/crm">CRM and Marketplace Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/customer-support">Customer Support Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/erp">ERP Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/marketing">Marketing Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/payment">Payment Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/shipping">Shipping Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/PIM">PIM Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/procurement">E-Procurement Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/reporting">Reporting and Business Intelligence Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/misc">Miscellaneous Integrations</a></li>
        </ul>
 
 .. raw:: html
@@ -47,7 +47,7 @@ On the other hand, Oro also empowers users to create custom integrations tailore
 .. toctree::
    :hidden:
 
-   Pre-Built <pre-build/index>
+   Pre-Built <pre-built/index>
    Custom <custom/index>
 
 .. include:: /include/include-links-user.rst
