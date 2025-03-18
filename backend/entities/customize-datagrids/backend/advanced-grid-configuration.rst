@@ -500,6 +500,22 @@ The "There are no users" message is shown for an empty grid and "No users were f
             my_custom_empty_grid_message: 'There are no users'
             my_custom_empty_filtered_grid_message: 'No users were found to match your search. Try modifying your search criteria...'
 
+Problem 12
+~~~~~~~~~~
+
+*I want to hide the workflow step column that is rendered in the grid.*
+
+**Solution**:
+
+    .. code-block:: yaml
+
+        services:
+            oro_rfp.datagrid.listener.column:
+                class: 'Oro\Bundle\WorkflowBundle\Datagrid\HideWorkflowStepColumnListener'
+                tags:
+                    - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.before.rfp-requests-grid, method: onBuildBefore }
+
+
 **Related Articles**
 
 * :ref:`Datagrids <data-grids>`

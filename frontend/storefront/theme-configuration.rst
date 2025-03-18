@@ -46,6 +46,11 @@ The theme configuration has the following option types:
 |                              | Previews keys depend on content block |
 |                              | alias.                                |
 +------------------------------+---------------------------------------+
+| `content_widget_selector`    | A single field is used to choose one  |
+|                              | content widget from a list. The names |
+|                              | are provided dynamically. Previews    |
+|                              | keys depend on content widget names.  |
++------------------------------+---------------------------------------+
 | `product_page_template`      | A single field is used to choose one  |
 |                              | page template from a list (static     |
 |                              | values: default, tabs, wide).         |
@@ -201,3 +206,27 @@ To validate theme configuration options, use the following command:
 .. code-block:: none
 
    bin/console oro:theme:configuration:validate
+
+How-To Guides
+-------------
+
+Problem 1
+~~~~~~~~~
+
+*I want to forbid deleting entities that are stored in the theme configuration as a value of option.*
+
+**Solution**:
+
+    .. code-block:: yaml
+
+        services:
+            oro_cms.acl.voter.content_widget:
+                class: Oro\Bundle\ThemeBundle\Acl\Voter\ThemeConfigurationDependencyDeleteVoter
+                arguments:
+                    - '@oro_entity.doctrine_helper'
+                    - '@oro_theme.provider.theme_configuration'
+                    - 'content_widget_selector'
+                calls:
+                    - [setClassName, ['Oro\Bundle\CMSBundle\Entity\ContentWidget']]
+                tags:
+                    - { name: security.voter }

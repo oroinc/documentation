@@ -682,6 +682,24 @@ There is the option that allows to turn off Datagrid Settings over datagrids.yml
 
 See for more information :ref:`Frontend Datagrid <customizing-data-grid-in-orocommerce-frontend>`.
 
+itemsCounter
+~~~~~~~~~~~~
+
+transTemplate
+"""""""""""""
+
+type: ``string``
+
+There is an option that allows setting of a translation template for the datagrid items counter.
+
+.. code-block:: yaml
+
+    grid-name:
+        options:
+            toolbarOptions:
+                itemsCounter:
+                    transTemplate: 'oro_frontend.datagrid.pagination.totalRecords.ordersPlural'
+
 jsmodules
 ^^^^^^^^^
 
