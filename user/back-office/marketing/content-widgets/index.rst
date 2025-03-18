@@ -8,13 +8,14 @@ Manage Content Widgets in the Back-Office
 
 Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. :ref:`WYSIWYG fields <getting-started-wysiwyg-editor-field>` are available throughout OroCommerce; for example, in category descriptions, on edit pages of products, content blocks, and landing pages.
 
-There are four content widget types:
+There are six content widget types:
 
 * An Image Slider
-* A Contact Us form
+* A Contact Us Form
 * A Product Mini Block
 * A Product Segment
 * Tabbed Content
+* Customer Dashboard DataGrid
 
 Each of these widget types has a different set of options.
 
@@ -45,7 +46,7 @@ To create a new content widget:
 
 3. Depending on the widget type, form fields are different:
 
-   * **Contact Us Form** - Enables you to add a standard Contact Us form.
+   * **Contact Us Form** - Enables you to add a standard Contact Us form to the Contact Us storefront page. Once the widget is saved, add it to the **Contact Us Form** field under the :ref:`theme configuration <back-office-theme-configuration>`.
 
      .. image:: /user/img/marketing/content_widgets/contact_us.png
         :alt: Contact us content widget form
@@ -85,6 +86,21 @@ To create a new content widget:
 
      .. image:: /user/img/marketing/content_widgets/injected-widget-new.png
         :alt: Contact us widget embedded in tabbed content widget
+
+.. _content-widgets--dashboard-datagrid-widget:
+
+   * **Customer Dashboard DataGrid** - Enables you to add a structured, table-style (datagrid) widget to the customer user’s :ref:`Dashboard <storefront--dashboard>` page in the My Account section. Each widget presents up to five of the latest records and allows customers to navigate to a dedicated page for full details. You can configure the datagrid widget to display data from one of the following entities:
+
+     * **Latest Orders** – Lists the most recent orders placed by the current **customer user**, including order number, total amount, status, and last update.
+     * **Open Quotes** – Lists open quotes associated with the current **customer**, including quote number, PO number, and expiration date. Depending on the customer user's permissions, they may or may not see quotes from other users within their organization.
+     * **My Checkouts** – Lists ongoing checkout sessions of the current **customer user**, including the number of items, subtotal, and last update. Customers can proceed to checkout directly from this widget.
+     * **Requests for Quote** – Lists the most recent RFQs submitted by the current **customer**, including RFQ number, PO number, status, and last update. Depending on the customer user's permissions, they may or may not see RFQs from other users within their organization.
+     * **My Shopping Lists** – Shows the shopping lists of the current **customer user**, including the shopping list name, the number of items, subtotal, and last update. Users can either edit or view the list based on their permissions.
+
+   Once the widget is saved, add it to the **Customer Dashboard Content Widget** field in the :ref:`theme configuration <back-office-theme-configuration>`.
+
+     .. image:: /user/img/marketing/content_widgets/customer-dashboard-content-widget.png
+        :alt: Illustrating the created 5 content widgets on the customer user’s Dashboard page
 
 4. Once you have provided all widget-specific details, click **Save and Close**.
 

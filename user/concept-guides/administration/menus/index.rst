@@ -36,6 +36,8 @@ The way the menu looks and behaves on your website depends on the customization 
 
 Let's check each of the available menu items individually.
 
+.. _menu-management-concept-guide-storefront:
+
 Storefront Menu Components
 --------------------------
 
@@ -55,6 +57,16 @@ Once you have configured the menu items, you can add them to the selected :ref:`
 
 .. image:: /user/img/concept-guides/menus/theme-configurations.png
    :alt: Selecting a menu item under Theme configuration
+
+.. _menu-management-concept-guide--storefront--quick-access:
+
+Oro_customer_dashboard_quick_access_menu
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Oro_customer_dashboard_quick_access_menu** refers to a customizable quick access menu that appears on the customer user’s :ref:`Dashboard <storefront--dashboard>` page in their **My Account** section. If enabled in the :ref:`theme configuration <back-office-theme-configuration>`, this menu provides customer users with shortcuts to key sections of their account, such as orders, shopping lists, RFQs, quotes, or other important pages. You can edit the menu to include the necessary links, helping customer users navigate their account more efficiently.
+
+.. image:: /user/img/concept-guides/menus/oro-customer-dashboard-quick-access-menu1.png
+   :alt: Illustrating the enabled storefront quick access menu on the customer user’s Dashboard page
 
 
 Frontend_menu

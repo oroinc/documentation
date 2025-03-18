@@ -18,8 +18,8 @@ To configure your current storefront theme:
 
 4. In the **General** section, configure the following options:
 
-   .. image:: /user/img/system/theme-configuration/theme-configuration.png
-      :alt: Theme configuration details
+   .. image:: /user/img/system/theme-configuration/theme-configuration-general.png
+      :alt: General section of the theme configuration
 
    * **Owner** --- Select the owner responsible for the theme configuration.
    * **Theme** --- Select the storefront theme from the list. The default theme starting from version 6.1 LTS is *Refreshing Teal*. However, if you select one of your backup themes from the previous OroCommerce LTS versions, the settings under the Configuration menu below will become disabled. You can still configure them under the :ref:`theme system configuration <configuration--commerce--design--theme>` settings.
@@ -31,11 +31,39 @@ To configure your current storefront theme:
    * **Description** --- Type a short but meaningful description that can help you and other users understand the specifics of the theme.
    * **Type** --- Select the theme type. Currently, only storefront themes are available for configuration.
 
-5. In the **Configuration** section, customize the following options. You can preview each menu configuration setting to visualize what the option does and where the selected storefront menu will be positioned.
+5. In the **Configuration** section, customize the following options. You can preview several menu configuration setting to visualize what the option does and where the selected storefront menu will be positioned.
+
+   .. image:: /user/img/system/theme-configuration/theme-configuration-config-details.png
+      :alt: Configuration section of the theme configuration
+
+* **Show Quick Access Menu** --- Enable a storefront quick access menu (:ref:`oro_customer_dashboard_quick_access_menu <menu-management-concept-guide--storefront--quick-access>`) on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can edit this menu under *System > Storefront Menus* to include shortcuts to key sections.
+
+   .. image:: /user/img/system/theme-configuration/oro-customer-dashboard-quick-access-menu.png
+      :alt: Illustrating the enabled storefront quick access menu on the customer user’s Dashboard page
+
+* **Show Purchase Volume Chart** --- Enable a bar chart to show the customer user’s total purchase volume over the past 12 months on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. The total purchase volume is the sum of all orders placed by or for this customer user (excluding sub-orders and canceled orders).
+
+   .. image:: /user/img/system/theme-configuration/volume-chart.png
+      :alt: Illustrating the enabled Purchase Volume Chart on the customer user`s Dashboard page
+
+* **Customer Dashboard Content Widget (1-6)** --- Select a :ref:`datagrid content widget <content-widgets--dashboard-datagrid-widget>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to six content widgets. Only the widgets of the **Customer Dashboard DataGrid** type are displayed in the dropdown list. Each widget presents up to five of the latest records in a grid format, with an option to view all other records on a dedicated page.
+
+   .. image:: /user/img/system/theme-configuration/customer-dashboard-content-widgets.png
+      :alt: Illustrating the selected 5 content widgets on the customer user’s Dashboard page
+
+* **Recommended Products (1-2)** --- Select a :ref:`product segment content widget <content-widgets-user-guide>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to two content widgets. Only the widgets of the **Product Segment** type are displayed in the dropdown list. This widget highlights specific product segments for the customer user.
+
+   .. image:: /user/img/system/theme-configuration/recommended-products-widgets.png
+      :alt: Illustrating the selected 5 content widgets on the customer user’s Dashboard page
+
+* **Promotional Content Block (1-2)** --- Select a :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` from the dropdown list to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to two content blocks. This section can include important information such as news, blog posts, or other relevant content.
+
+   .. image:: /user/img/system/theme-configuration/dashboard-promotional-block.png
+      :alt: Illustrating the selected 5 content widgets on the customer user’s Dashboard page
 
 * **Promotional Content** --- Select a :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` from the dropdown list to display it at the top of the storefront header.
 
-    .. image:: /user/img/system/theme-configuration/promotional-content-block.png
+    .. image:: /user/img/system/theme-configuration/promotional-content.png
        :alt: Promotional content configuration and representation in the storefront header
 
 * **Top Navigation Menu** --- Select a storefront menu that will be rendered above the header. Please see the :ref:`concept guide on storefront menu items <menu-management-concept-guide>` to learn more about each menu.
@@ -124,6 +152,11 @@ To configure your current storefront theme:
        To specify how to display the multi-select filter options, refer to the :ref:`theme-related settings <configuration--commerce--design--theme>`.
 
        To control whether to hide or disable product attributes within filters, refer to the :ref:`filters and sorting settings <configuration--guide--commerce--configuration--catalog--filters-sorters>` documentation.
+
+* **Contact Us Form** --- Select a :ref:`contact us content widget <content-widgets-user-guide>` from the dropdown list of predefined widgets to display on the Contact Us page. Only the widgets of the **Contact Us Form** type are displayed in the dropdown list.
+
+   .. image:: /user/img/system/theme-configuration/contact-us-form-widget.png
+      :alt: Illustrating the selected contact us widget on the Contact Us page
 
 * **Quantity Inputs in Shopping List** --- Choose how quantity inputs are displayed in the shopping list. Available options are *Plain* (displays a simple input field where users can type the desired quantity manually) and *With Stepper Buttons* (adds ``+`` and ``-`` buttons next to the input field, allowing users to adjust the quantity incrementally).
 

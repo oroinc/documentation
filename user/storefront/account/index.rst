@@ -16,6 +16,7 @@ To reach the menu details, click **Account** in the user menu on the top left of
 
 Your account menu has the following sections:
 
+* :ref:`Dashboard <storefront--dashboard>` -- provides a quick and organized overview of a customer user’s key account activities.
 * :ref:`My Profile <frontstore-guide--profile>` -- consolidates all your personal contact information and the default addresses you use to provide the billing and shipping locations.
 * :ref:`Conversations <storefront-guide--conversations>` -- enables communication between back-office users and customers users.
 * :ref:`Address Book <frontstore-guide--address>` -- stores both your company and personal addresses.
@@ -34,6 +35,7 @@ Your account menu has the following sections:
    :titlesonly:
    :maxdepth: 1
 
+   Dashboard <dashboard/index>
    My Profile <my-profile/index>
    Address Book <address-book/index>
    Users <users/index>
