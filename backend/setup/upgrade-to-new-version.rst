@@ -11,7 +11,7 @@ Upgrade the Application to the Next Version
 
 This guide explains how to upgrade Oro application to the next version in a development environment.
 
-.. tip:: If you are looking for specific instructions on upgrading the source code itself, please refer to our detailed guide on :ref:`Upgrading the Source Code to v6.0 <upgrade-to-6>`.
+.. tip:: If you are looking for specific instructions on upgrading the source code itself, please refer to our detailed guide on :ref:`Upgrading the Source Code to v6.1 <upgrade-to-6>`.
 
 An absolute path to the directory where an application is installed will be used in the guide and will
 be referred to as **<application-root-folder>** further in this topic.

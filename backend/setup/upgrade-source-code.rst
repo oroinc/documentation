@@ -1,14 +1,14 @@
-:title: Upgrade Source Code to OroCommerce v6.0
+:title: Upgrade Source Code to OroCommerce v6.1
 
 .. index::
     single: Upgrade
 
 .. _upgrade-to-6:
 
-Upgrade the Source Code to v6.0
+Upgrade the Source Code to v6.1
 ===============================
 
-This guide covers the complete process of upgrading your codebase to OroCommerce v6.0, including dependency updates and code migration.
+This guide covers the complete process of upgrading your codebase to OroCommerce v6.1, including dependency updates and code migration.
 
 .. tip:: If you are looking for instructions on upgrading the entire OroCommerce application rather than just the source code, please refer to our guide on :ref:`Upgrading the Application to the Next Version <upgrade-application>`.
 
@@ -17,7 +17,7 @@ Upgrade Sequence for Earlier Versions
 -------------------------------------
 
 For users operating on versions of OroCommerce earlier than 5.1,
-it is recommended to bypass upgrading to 5.1 and instead upgrade directly to version 6.0.
+it is recommended to bypass upgrading to 5.1 and instead upgrade directly to version 6.1.
 
 Preserve Old Custom Theme
 -------------------------
@@ -83,6 +83,18 @@ Update the theme.yml file of the custom theme.
 
 The resolve_extra_paths option in the generated code
 requires the "@oroinc/oro-webpack-config-builder" node module upgrade to version "6.0.0-dev002" or later. Therefore,  this code is not currently compatible with the old version but will work after upgrading the project to v6.
+
+As a final step of the old custom theme preservation, use the following command to update dumped yaml files automatically:
+
+.. code-block:: none
+
+    php bin/upgrade-toolkit yml:fix --source=Path/To/Preserved/Theme/Resources
+
+.. tip:: The command is a part of the ``oro/upgrade-toolkit`` package.
+
+    .. code-block:: none
+
+        composer require oro/upgrade-toolkit:dev-master --dev
 
 
 Upgrade Application Level Assets (without the src/ folder)
@@ -174,7 +186,7 @@ Overview & Estimates
 
 You can use the ``oro/upgrade-toolkit`` package to automatically migrate a significant portion of the PHP code.
 
-It is important to note that the tool handles most PHP changes but does not upgrade YAML, Twig, JS, or SCSS.
+It is important to note that the tool handles most PHP changes but does not upgrade Twig, JS, or SCSS.
 However, you can skip the frontend assets upgrade if you've used the theme dump as described earlier.
 Back-office customization and changes to YAML files should be processed manually.
 
@@ -229,7 +241,7 @@ Regular Expressions in PhpStorm
 Regular expression replacements may process some changes not covered by the oro/upgrade toolkit.
 The most convenient tool for running them is PhpStorm. It is advisable to use them in case-sensitive mode.
 
-Below is the list of regular expressions you can use during the upgrade from 5.1 to 6.0:
+Below is the list of regular expressions you can use during the upgrade from 5.1 to 6.1:
 
 +-------------------------------------------------------------------------------------------------------------+
 | Short bundle alias references are not working after the Doctrine upgrade                                    |
@@ -277,7 +289,7 @@ Run required |automated tests| to ensure that the upgraded code still works prop
 Next Steps
 ----------
 
-Once the source code is upgraded, the next step is to upgrade the Oro application to v6.0 For comprehensive instructions on this process, please refer to the :ref:`Upgrading the Application to the Next Version <upgrade-application>` documentation.
+Once the source code is upgraded, the next step is to upgrade the Oro application to v6.1 For comprehensive instructions on this process, please refer to the :ref:`Upgrading the Application to the Next Version <upgrade-application>` documentation.
 
 
 
