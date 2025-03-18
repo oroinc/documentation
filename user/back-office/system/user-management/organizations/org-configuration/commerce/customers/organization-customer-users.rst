@@ -33,6 +33,11 @@ To change the default customer user configuration settings for an organization:
 
    * **Customer Visitor Cookie Lifetime (Days)** --- Once the provided period expires, active customer visitor (anonymous user) sessions will be reset. Keep in mind that the uniqueness of email addresses and personal data is checked only for the registered users. It means that no two users can have identical personal information unless they are customer visitors (guest users). Multiple guest customers are allowed to have exactly the same data, including email addresses.
 
+   * **Create Customer Visitors Immediately** (available starting from OroCommerce version 5.1.14) --- This feature controls whether customer visitor accounts are automatically created for all guest users who access the storefront.
+
+        * When enabled, visitor accounts are created automatically for every guest user, regardless of whether they interact with the website.
+        * When disabled, visitor accounts are only created for users who perform meaningful actions (e.g., adding items to the shopping list or proceeding to checkout). This reduces database load by avoiding unnecessary data storage for bots, idle visitors, or users who quickly leave without interacting.
+
 .. _organization-user-impersonation:
 
 7. In the **Login as Customer User** section (available in the Enterprise edition), you can enable user impersonation for a specific organization. User impersonation allows back-office users with the **Login as Customer User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user.
