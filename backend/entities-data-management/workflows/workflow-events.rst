@@ -102,6 +102,13 @@ The three events being dispatched are:
 - oro_workflow.[workflow name].entered
 - oro_workflow.[workflow name].entered.[new step name]
 
+oro_workflow.transition.assemble
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This event is fired just before the transition model is assembled. It allows to hook into the transition build process and modify transition options.
+
+For example, it can be used to add a form to the transition based on some conditions.
+
 oro_workflow.transition
 ^^^^^^^^^^^^^^^^^^^^^^^
 
