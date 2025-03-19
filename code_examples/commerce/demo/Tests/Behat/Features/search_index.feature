@@ -5,8 +5,7 @@ Feature: Search index
 
   Scenario: Check search configuration index for question
     Given I login as administrator
-    When I click "Search"
-    And type "TestSubject" in "search"
+    When type "TestSubject" in "search"
     Then I should see 2 search suggestions
     When I click "Search Submit"
     Then I should be on Search Result page
@@ -20,8 +19,7 @@ Feature: Search index
       | TestSubject1 TestDescription1 | Question |
 
   Scenario: Search by Questions
-    When I click "Search"
-    And I select "Question" from search types
+    When I select "Question" from search types
     And type "TestSubject" in "search"
     Then I should see 2 search suggestions
     When I click "Search Submit"
