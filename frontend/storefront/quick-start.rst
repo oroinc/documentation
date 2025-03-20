@@ -52,11 +52,29 @@ Add Stylesheets with SCSS
    .. code-block:: yaml
 
       #DemoBundle/Resources/views/layouts/first_theme/config/assets.yml
+      critical_css:
+         inputs:
+            - 'bundles/demobundle/first_theme/scss/settings/global-settings.scss'
+         output: 'css/critical.css'
+
       styles:
-       inputs:
-           - 'bundles/demobundle/first_theme/scss/settings/global-settings.scss'
-           - 'bundles/demobundle/first_theme/scss/components/logo.scss'
-       output: css/styles.css
+         inputs:
+            - 'bundles/demobundle/first_theme/scss/settings/global-settings.scss'
+            - 'bundles/demobundle/first_theme/scss/components/logo.scss'
+         output: css/styles.css
+
+      print_styles:
+         inputs:
+            - 'bundles/demobundle/first_theme/scss/settings/global-settings.scss'
+         output: 'css/styles-print.css'
+
+      stylebook_styles:
+         inputs:
+            - 'bundles/demobundle/first_theme/scss/settings/global-settings.scss'
+         output: 'css/stylebook.css'
+
+
+.. note:: Consider declaring those CSS files, each with their own outputs, to ensure that branding elements, such as colors and typography, are consistently applied across your entire theme if it is based on the "default" one.
 
 *  Run the ``bin/console oro:assets:build first_theme --watch`` command to process and combine SCSS files in  ``first_theme``.
 *  You can use SCSS source maps to find styles definition in a Browser and :ref:`Oro Frontend Stylebook <dev-doc-frontend-css-frontend-stylebook>` to check how updated styles affect the UI elements.

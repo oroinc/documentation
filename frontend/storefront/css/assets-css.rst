@@ -4,6 +4,13 @@
 Styles Assets Organization
 ==========================
 
+Out-of-the-box, each theme contains three independent ``CSS``` files with the same structure:
+
+* ``critical.css`` – minimal CSS needed for fast content rendering.
+* ``styles.css`` – the main CSS for the entire theme.
+* ``styles-print.css`` – CSS specific to the print version.
+* ``stylebook.css`` – CSS specific to the Style Book pages.
+
 Files structure with styles should be the following:
 
 .. code-block:: none

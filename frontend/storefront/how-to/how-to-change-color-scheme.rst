@@ -10,7 +10,7 @@ How to Change the Color Scheme of the Storefront
 
 To change the color scheme:
 
-1. Create your own list of colors and merge it with ``$color-palette`` using the ``map.merge($map1, $map2)`` SASS function.
+1. Create your own list of colors and merge it with ``$color-palette`` using the ``map.deep-merge($map1, $map2)`` SASS function.
     This way, your color scheme will rewrite or extend the already existing $color-palette.
 
     .. code-block:: scss
@@ -29,7 +29,7 @@ To change the color scheme:
             )
         ) !default;
 
-        $color-palette: map.merge($color-palette, $theme-color-palette);
+        $color-palette: map.deep-merge($color-palette, $theme-color-palette);
 
 2. To get the color you need, use the ``get-var-color($palette, $key);`` function.
 
