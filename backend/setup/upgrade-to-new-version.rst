@@ -85,24 +85,25 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
         php bin/console oro:platform:update --env=prod
 
-    .. note::
+    To speed up the update process, consider using ``--schedule-search-reindexation`` or ``--skip-search-reindexation`` option:
 
-      To speed up the update process, consider using ``--schedule-search-reindexation`` or ``--skip-search-reindexation`` option:
+    * ``--schedule-search-reindexation`` --- postpone search reindexation process until the message queue consumer is started (on step 12 below).
+    * ``--skip-search-reindexation`` --- skip search reindexation. Later, you can start it manually using commands
+         `oro:search:reindex` to update search index for the specified entities and `oro:website-search:reindex` to rebuild storefront search index.See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>` for more details.
 
-       * ``--schedule-search-reindexation`` --- postpone search reindexation process until the message queue consumer is started (on step 12 below).
-       * ``--skip-search-reindexation`` --- skip search reindexation. Later, you can start it manually using commands
-         `oro:search:reindex` to update search index for the specified entities and `oro:website-search:reindex` to rebuild storefront search index.
-         See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
+    When the following options are not provided, they are set up automatically for the ``test`` environment:
 
-    .. note::
+    * --force
+    * --skip-translations
+    * --timeout=600
 
-        When the following options are not provided, they are set up automatically for the ``test`` environment:
+    The verbose mode is always set to debug in the ``test`` environment.
 
-            * --force
-            * --skip-translations
-            * --timeout=600
+    .. important:: **Search Reindexation for Different Upgrade Types**
 
-        The verbose mode is always set to debug in the ``test`` environment.
+                   * **For LTS migrations (major version upgrades):** Running the search reindexation is **required** to ensure proper indexing and prevent issues with search functionality.
+
+                   * **For patch upgrades (minor updates within the same LTS):** While not mandatory, it is **highly recommended** to run search reindexation to ensure the Elasticsearch index structure remains correct.
 
 12. Remove the caches.
 
