@@ -12,6 +12,12 @@ in which they are specified in the request.
     It is also possible to process several entities synchronously.
     For details, see :ref:`Synchronous Batch API <web-services-api--sync-batch-api>`.
 
+Endpoint URL
+------------
+
+The Batch API data should be sent via the ``PATCH`` HTTP method to the ``/api/{entity}`` endpoint.
+Where the ``{entity}`` is an entity type, e.g. ``/api/accounts``.
+
 Input Data Format
 -----------------
 
