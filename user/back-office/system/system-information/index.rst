@@ -17,14 +17,13 @@ To view the system information,
 
    * **Products** --- The total number of products in the database (for single-organization applications) or the total number of products within the selected organization (for multi-organization applications).
    * **Back-Office Users** --- The total number of back-office users in the database (for single-organization applications) or the total number of back-office users within the selected organization (for multi-organization applications). The number is calculated based on the organization that the user belongs to, determined by entity ownership.
-   * **Sales Orders Number, YTD** --- The total number of orders created since the beginning of the current year in the database (for single-organization applications) or the total number of orders for the year to date within the selected organization (for multi-organization applications).
+   * **Revenue** --- The table with information about orders revenue grouped by order statuses and order currency. Data limited from the license start date (or from the start of the year if license start was not specified) to current date.
 
-   .. hint:: The number DOES NOT include sub-orders, and it DOES NOT take into account order status.
+   .. hint:: The number DOES NOT include sub-orders. Available only in enterprise
 
-   * **Sales Orders Volume, YTD** --- The total sales order amounts of all orders created since the beginning of the current year in the database (for single-organization applications) or the total sales order amounts of all orders for the year to date within the selected organization (for multi-organization applications).
+   * **Revenue In Previous Period** --- The table with information about orders revenue grouped by order statuses and order currency. Data limited from the license start date (or from the start of the year if license start was not specified) minus 1 year to license start date (or from the start of the year if license start was not specified).
 
-   .. hint:: The field is displayed only if there is only one :ref:`allowed currency <sys--config--sysconfig--general-setup--currency>` in the system due to high variability of the currency conversion rules in accounting. The amount DOES NOT include sub-orders, and it DOES NOT take into account order status.
-
+   .. hint:: The number DOES NOT include sub-orders. Available only in enterprise
 
 3. The **Deployment** section displays the type of the environment deployment.
 
