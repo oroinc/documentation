@@ -13,7 +13,8 @@ Infrastructure-related environment variable defaults are stored in the *.env-app
 * The ``ORO_SESSION_DSN`` value specifies the PHP |session handler| to be used.
 * The ``ORO_MQ_DSN`` environment variable is used to connect to the message queue transport.
 * The ``ORO_SECRET`` value is used to generate |CSRF tokens|.
-* The ``ORO_ENTERPRISE_LICENCE`` value defines the project enterprise licence.
+* The ``ORO_ENTERPRISE_LICENCE`` value defines the project enterprise license.
+* The ``ORO_ENTERPRISE_LICENCE_START`` value defines the project enterprise license start date in UTC timezone. The value format is YYYY-MM-DD, f.e. 2022-02-24. All other formats will be taken as January 1st of the current year.
 * The ``ORO_JPEGOPTIM_BINARY`` path to the |JpegOptimPostProcessor| library.
 * The ``ORO_PNGQUANT_BINARY`` path to the |PngquantPostProcessor| library.
 * The ``ORO_MAINTENANCE_LOCK_FILE_PATH`` path to the maintenance lock file in the system.

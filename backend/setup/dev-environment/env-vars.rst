@@ -263,6 +263,7 @@ These parameters:
 
    parameters:
        enterprise_licence:             ~
+       enterprise_licence_start:       ~
        liip_imagine.jpegoptim.binary:  null
        liip_imagine.pngquant.binary:   null
 
@@ -271,6 +272,7 @@ Are now set using the corresponding environment variables:
 .. code:: bash
 
    ORO_ENTERPRISE_LICENCE=
+   ORO_ENTERPRISE_LICENCE_START=
    ORO_JPEGOPTIM_BINARY=
    ORO_PNGQUANT_BINARY=
 

@@ -73,16 +73,17 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
       vagrant up
 
-   for the Enterprise Editions of Oro applications, specify the following two environment variables:
+   for the Enterprise Editions of Oro applications, specify the following environment variables:
 
    - **gittoken** - |Github token| use it to install Oro application dependencies
    - **licence** - Enterprise Licence key for your Oro Application
+   - **licencestart** - Enterprise License Start Day key for your Oro Application. The value format is YYYY-MM-DD, f.e. 2022-02-24.
 
    for Linux bash example:
 
    .. code-block:: none
 
-      gittoken=YourGithubToken licence=YourEnterpsiseLicenceKey vagrant up
+      gittoken=YourGithubToken licencestart=YourEnterpsiseLicenceKeyStartDay 2licence=YourEnterpsiseLicenceKey vagrant up
 
    for Windows PowerShell terminal example:
 
