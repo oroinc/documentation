@@ -206,3 +206,11 @@ Links (Cloud)
 .. |Composer Patches| raw:: html
 
    <a href="https://github.com/cweagans/composer-patches/blob/1.x/README.md" target="_blank">Composer Patches</a>
+
+.. |Sanitized Backup| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#sanitized-backup" target="_blank">Sanitized Backup</a>
+
+.. |Upgrade| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#upgrade" target="_blank">upgrade</a>

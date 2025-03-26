@@ -7,7 +7,7 @@ Deploy Application Changes to a New Environment (Testing or Production)
 
 This guide explains how to deploy changes for Oro applications.
 
-.. hint:: The instructions below will help you update a self-hosted application instance. If your application is hosted on OroCloud, follow the OroCloud guide to run the automated :ref:`Upgrade <orocloud-maintenance-use-upgrade>`.
+.. hint:: The instructions below will help you update a self-hosted application instance. If your application is hosted on OroCloud, follow the OroCloud guide to run the automated |Upgrade|.
 
 .. warning::  Ensure that you have the recent database and source code dump to roll back changes in case of errors before processing the upgrade
 
