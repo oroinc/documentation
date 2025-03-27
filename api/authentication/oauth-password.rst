@@ -62,7 +62,7 @@ Response Body
         "token_type": "Bearer",
         "expires_in": 3600,
         "access_token": "your access token",
-        "refresh_token" "your refresh token"
+        "refresh_token": "your refresh token"
     }
 
 The received access token can be used multiple times until it expires.
@@ -105,6 +105,22 @@ Here is an example of how to send the access token as a body parameter:
 .. note:: For the storefront API a customer user email address should be used as `username`.
 
 .. note:: To get the access token for a visitor for the storefront API, use ``guest`` as `username` and `password` in the request to the authorization server. A new customer visitor is created for each created access token.
+
+.. note:: When you need to transfer a visitor's shopping list to a user, you must include the visitor's access token in the access token generation request for that user. This visitor access token should be specified using the `visitor_access_token` parameter. For example:
+
+    .. code-block:: http
+
+        POST /oauth2-token HTTP/1.1
+        Content-Type: application/json
+
+        {
+            "grant_type": "password",
+            "client_id": "your client identifier",
+            "client_secret": "your client secret",
+            "username": "your user username",
+            "password": "your user password",
+            "visitor_access_token": "visitor's access token"
+        }
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
