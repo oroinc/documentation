@@ -108,6 +108,8 @@ Alternatively, a checkout process can be initiated using an existing source enti
 - **POST** ``/api/orders/{id}/checkout`` to create checkout based on a specific order.
 - **POST** ``/api/shoppinglists/{id}/checkout`` to create checkout based on a shopping list.
 
+.. note:: Please be aware that for guest users, checkout must be initiated from a shopping list.
+
 Step 2: Retrieve and Set Shipping and Payment Methods
 -----------------------------------------------------
 
@@ -161,6 +163,8 @@ Example:
         }
       }
     }
+
+.. note:: Please be aware that this is currently not applicable to multi-organization setups like OroMarketplace due to differences in how shipping is managed across multiple organizations. 
 
 Step 3: Validate Checkout Readiness
 -----------------------------------
