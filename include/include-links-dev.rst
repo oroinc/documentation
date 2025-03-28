@@ -6412,9 +6412,9 @@ Links (Dev)
 
     <a href="https://www.php.net/manual/en/class.datetime.php" target="_blank">DateTime</a>
 
-.. |PKCE extention (RFC 7636)| raw:: html
+.. |PKCE extension (RFC 7636)| raw:: html
 
-    <a href="https://datatracker.ietf.org/doc/html/rfc7636" target="_blank">PKCE extention (RFC 7636)</a>
+    <a href="https://datatracker.ietf.org/doc/html/rfc7636" target="_blank">PKCE extension (RFC 7636)</a>
 
 .. |Code challenge generation rules| raw:: html
 

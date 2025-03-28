@@ -11,7 +11,7 @@ client authentication using other means. Public clients are incapable of maintai
 credentials (e.g., clients executing on the device used by the resource owner, such as an installed native application or a web
 browser-based application), and incapable of secure client authentication via any other means.
 
-:ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>` supports |PKCE extention (RFC 7636)|
+:ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>` supports |PKCE extension (RFC 7636)|
 to the Authorization Code flow to prevent CSRF and authorization code injection attacks.
 
 Obtain the Authorization Code
@@ -60,6 +60,28 @@ If the application was created with the `Skip User Consent` option, the approve 
 Once the user approves the client, they are redirected from the authorization server to the client’s redirect URI with the following parameters in the query string:
 
    * `code` with the authorization code.
+
+Obtain the Authorization Code for a Visitor
+-------------------------------------------
+
+To obtain the authorization code for a visitor, the redirect should be sent to the ``https://yourapplication/oauth2-token/authorize-visitor`` URL.
+The request parameters are the same as described in the previous section.
+
+**Example**
+
+.. code-block:: http
+
+    GET /oauth2-token/authorize-visitor?response_type=code&client_id=your_client_identifier&redirect_uri=https://your_redirect_uri.com HTTP/1.1
+
+Next, the user is redirected from the authorization server to the client's redirect URI without needing any confirmation. The `code` parameter contains the authorization code for the visitor, which is appended to the client's redirect URI.
+
+When a visitor has a shopping list that needs to be transferred to a user, include the visitor's access token in the query string when requesting an access token for the user. This visitor's access token should be specified using the `visitor_access_token` parameter.
+
+**Example**
+
+.. code-block:: http
+
+    GET /oauth2-token/authorize?response_type=code&client_id=your_client_identifier&redirect_uri=https://your_redirect_uri.com&visitor_access_token=visitor's_access_token HTTP/1.1
 
 Generate Token
 --------------
