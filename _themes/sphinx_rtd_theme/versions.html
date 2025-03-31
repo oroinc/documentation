@@ -2,7 +2,7 @@
 <div class="switcher-container">
     <strong class="doc-title">Version:</strong>
     <div class="documentation-version-switcher">
-        <div class="version">{{ '6.1 (dev)' if current_version.name == 'master' }}{{ current_version.name if current_version.name != 'master' }}{{ ' (latest)' if '6.0' == current_version.name }}</div>
+        <div class="version">{{ '7.0 (dev)' if current_version.name == 'master' }}{{ current_version.name if current_version.name != 'master' }}{{ ' (latest)' if '6.1' == current_version.name }}</div>
         <ul class="documentation-version">
             {%- if versions.branches %}
                 {%- for item in versions.branches %}
@@ -12,9 +12,9 @@
                         {% set url = item.url | replace('.html', '/') %}
                     {% endif %}
                     {% if current_version.name == item.name  %}
-                        <li><a href="#">{{ '6.1 (dev)' if item.name == 'master' }}{{ item.name if item.name != 'master' }}{{ ' (latest)' if '6.0' == item.name }}</a></li>
+                        <li><a href="#">{{ '7.0 (dev)' if item.name == 'master' }}{{ item.name if item.name != 'master' }}{{ ' (latest)' if '6.1' == item.name }}</a></li>
                     {% else %}
-                        <li><a href="/{{ url | replace('../', '') }}">{{ '6.1 (dev)' if item.name == 'master' }}{{ item.name if item.name != 'master' }}{{ ' (latest)' if '6.0' == item.name }}</a></li>
+                        <li><a href="/{{ url | replace('../', '') }}">{{ '6.1 (dev)' if item.name == 'master' }}{{ item.name if item.name != 'master' }}{{ ' (latest)' if '6.1' == item.name }}</a></li>
                     {% endif %}
                 {%- endfor %}
             {%- endif %}
