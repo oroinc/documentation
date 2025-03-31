@@ -12,7 +12,6 @@ Demo Environment
    aws
    gcp
    azure
-   vagrant
 
 
 .. admonition:: Business Tip
