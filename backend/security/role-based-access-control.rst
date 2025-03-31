@@ -18,7 +18,7 @@ Example:
     # config/config.yaml
     oro_security:
         access_control:
-            - { path: ^%web_backend_prefix%/contact$, roles: ANY_ROLE }
+            - { path: ^/contact$, roles: ANY_ROLE }
 
 By default, the final rule list is sorted in the following order:
 
@@ -29,7 +29,7 @@ By default, the final rule list is sorted in the following order:
     # config/config.yaml
     oro_security:
         access_control:
-            - { path: ^%web_backend_prefix%/contact$, roles: security_yml_ROLE }
+            - { path: ^/contact$, roles: security_yml_ROLE }
 
 2. The list merged from vendor bundles in the bundle loading order
 
@@ -38,12 +38,12 @@ By default, the final rule list is sorted in the following order:
     # AclBundle/Resources/config/app.yml (5th. loaded bundle in kernel)
     oro_security:
         access_control:
-            - { path: ^%web_backend_prefix%/contact$, roles: acl_bundle_ROLE }
+            - { path: ^/contact$, roles: acl_bundle_ROLE }
 
     # OroActivityContactBundle/Resources/config/app.yml (61st. loaded bundle in kernel)
     oro_security:
         access_control:
-            - { path: ^%web_backend_prefix%/contact$, roles: activity_contact_bundle_ROLE }
+            - { path: ^/contact$, roles: activity_contact_bundle_ROLE }
 
 3. The list merged from the src folder
 
@@ -52,7 +52,7 @@ By default, the final rule list is sorted in the following order:
     # src/Resources/config/app.yml
     oro_security:
         access_control:
-            - { path: ^%web_backend_prefix%/contact$, roles: src_folder_ROLE, priority: 20 }
+            - { path: ^/contact$, roles: src_folder_ROLE, priority: 20 }
 
 If you want to override a rule and move to the top of the rule list which is going to be checked, you can use the ``priority`` flag.
 
@@ -62,12 +62,23 @@ In the example above, the final list will look like the following.
 
 .. code-block:: yaml
 
-    - { path: ^%web_backend_prefix%/contact$, roles: src_folder_ROLE }
-    - { path: ^%web_backend_prefix%/contact$, roles: security_yml_ROLE }
-    - { path: ^%web_backend_prefix%/contact$, roles: acl_bundle_ROLE }
-    - { path: ^%web_backend_prefix%/contact$, roles: activity_contact_bundle_ROLE }
+    - { path: ^/contact$, roles: src_folder_ROLE }
+    - { path: ^/contact$, roles: security_yml_ROLE }
+    - { path: ^/contact$, roles: acl_bundle_ROLE }
+    - { path: ^/contact$, roles: activity_contact_bundle_ROLE }
 
-The request coming for URL ``^%web_backend_prefix%/contact`` will be checked for role ``src_folder_ROLE`` because it was moved up for its priority of 20.
+The request coming for URL ``^/contact`` will be checked for role ``src_folder_ROLE`` because it was moved up for its priority of 20.
+
+4. Specify the access control rule applies to frontstore
+
+If you want to specify whether the access_control rule applies to frontstore, you need to add "frontend: true" to the parameters, otherwise "%web backend prefix%" will be added to the path.
+
+.. code-block:: yaml
+
+    # src/Resources/config/app.yml
+    oro_security:
+        access_control:
+            - { path: ^/contact$, roles: src_folder_ROLE, options: { frontend: true } }
 
 .. include:: /include/include-links-dev.rst
     :start-after: begin
