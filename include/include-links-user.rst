@@ -103,10 +103,6 @@ Links (User)
 
    <a href="https://mailchimp.com/help/customize-email-campaign-urls/?_ga=2.63720488.668787307.1531314044-10372005.1530783947" target="_blank">campaign URLs</a>
 
-.. |configuration| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/views/layouts/default/oro_frontend_root/home_page_slider.yml" target="_blank">configuration</a>
-
 .. |how to create a web catalog in OroCommerce| raw:: html
 
    <a href="https://academy.oroinc.com/media-library/create-web-catalog" target="_blank">how to create a web catalog in OroCommerce</a>
@@ -293,23 +289,23 @@ Links (User)
 
 .. |ImapBundle| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImapBundle" target="_blank">ImapBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ImapBundle" target="_blank">ImapBundle</a>
 
 .. |dedicated section| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImapBundle#synchronization-with-imap-servers" target="_blank">dedicated section</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ImapBundle#synchronization-with-imap-servers" target="_blank">dedicated section</a>
 
 .. |ReminderBundle| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ReminderBundle" target="_blank">ReminderBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ReminderBundle" target="_blank">ReminderBundle</a>
 
 .. |TrackingBundle| raw:: html
 
-   <a href="https://github.com/oroinc/OroCRMMarketingBundle/tree/master/src/Oro/Bundle/TrackingBundle" target="_blank">TrackingBundle</a>
+   <a href="https://github.com/oroinc/OroCRMMarketingBundle/tree/6.1/src/Oro/Bundle/TrackingBundle" target="_blank">TrackingBundle</a>
 
 .. |IntegrationBundle| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle" target="_blank">IntegrationBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/IntegrationBundle" target="_blank">IntegrationBundle</a>
 
 .. |how to create shipping rules in OroCommerce| raw:: html
 
@@ -413,27 +409,27 @@ Links (User)
 
 .. |oro_format| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Twig/FormatExtension.php#L76" target="_blank">oro_format</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/UIBundle/Twig/FormatExtension.php#L76" target="_blank">oro_format</a>
 
 .. |oro_format_date| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L122" target="_blank">oro_format_date</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L122" target="_blank">oro_format_date</a>
 
 .. |oro_format_time| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L174" target="_blank">oro_format_time</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L174" target="_blank">oro_format_time</a>
 
 .. |oro_format_datetime| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L92" target="_blank">oro_format_datetime</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L92" target="_blank">oro_format_datetime</a>
 
 .. |oro_format_price| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CurrencyBundle/Twig/CurrencyExtension.php#L111" target="_blank">oro_format_price</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/CurrencyBundle/Twig/CurrencyExtension.php#L111" target="_blank">oro_format_price</a>
 
 .. |oro_format_currency| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/NumberExtension.php#L212" target="_blank">oro_format_currency</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/LocaleBundle/Twig/NumberExtension.php#L212" target="_blank">oro_format_currency</a>
 
 .. |join| raw:: html
 
@@ -473,7 +469,7 @@ Links (User)
 
 .. |OroMessageQueueComponent| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/MessageQueue" target="_blank">OroMessageQueueComponent</a>
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Component/MessageQueue" target="_blank">OroMessageQueueComponent</a>
 
 .. |Crowdin| raw:: html
 
@@ -976,7 +972,7 @@ Links (User)
 
 .. |Google Add-on LICENSE|  raw:: html
 
-   <a href="https://github.com/oroinc/google-workspace-addon/blob/master/LICENSE.md" target="_blank">LICENSE</a>
+   <a href="https://github.com/oroinc/google-workspace-addon/blob/master/LICENSE" target="_blank">LICENSE</a>
 
 .. |public addon documentation|  raw:: html
 

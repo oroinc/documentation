@@ -9,7 +9,7 @@ Manage Content Blocks in the Back-Office
 
 Content Blocks are the foundation of your site, and they can help create a custom layout. You can modify the existing content blocks in Oro applications or create your own.
 
-.. note:: Creating a new content block requires developers' assistance. As a sample, use the Home Page Slider content block, |configuration| in the yaml file that helps embed it into the website homepage.
+.. note:: Creating a new content block requires developers' assistance.
 
 To edit a defined content block:
 
