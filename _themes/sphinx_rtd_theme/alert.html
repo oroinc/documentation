@@ -3,6 +3,9 @@
         {%- if current_version.release == 'master' %}
             {%- set you_are_browsing = "You are browsing upcoming documentation for version 7.0 of OroCommerce, scheduled for release in 2026." %}
         {%- endif %}
+        {%- if current_version.release == '6.1' %}
+        {%- set you_are_browsing = "We are updating the images for OroCommerce version 6.1 to align with the latest changes in the back-office design. During this transition, some images may still show older versions. Thank you for your patience as we work to update all visuals to reflect these changes." %}
+        {%- endif %}
         {%- if current_version.release == '6.0' %}
             {%- set you_are_browsing = "You are browsing documentation for version 6.0 of OroCommerce, supported until 2028." %}
         {%- endif %}
@@ -26,7 +29,7 @@
             <p class="last">
                 {%- if versions.branches %}
                     {%- for item in versions.branches %}
-                        {%- if 'maintenance/6.0' == item.name or '6.0' == item.name  %}
+                        {%- if 'maintenance/6.1' == item.name or '6.1' == item.name  %}
                             {%- if 'index.html' in item.url %}
                                 {% set url = item.url | replace('/index.html', '/') %}
                             {%- else %}
