@@ -1,13 +1,13 @@
 {%- if current_version %}
     {%- if current_version.release != '' %}
         {%- if current_version.release == 'master' %}
-            {%- set you_are_browsing = "You are browsing upcoming documentation for version 6.1 of OroCommerce, scheduled for release in 2025." %}
+            {%- set you_are_browsing = "You are browsing upcoming documentation for version 7.0 of OroCommerce, scheduled for release in 2026." %}
         {%- endif %}
         {%- if current_version.release == '5.1' %}
             {%- set you_are_browsing = "You are browsing documentation for version 5.1 of OroCommerce, supported until March 2027." %}
         {%- endif %}
         {%- if current_version.release == '5.0' %}
-            {%- set you_are_browsing = "You are browsing documentation for version 5.0 of OroCommerce, which is no longer maintained." %}
+            {%- set you_are_browsing = "You are browsing documentation for version 5.0 of OroCommerce. Support of this version ended in January 2025." %}
         {%- endif %}
         {%- if current_version.release == '4.2' %}
             {%- set you_are_browsing = "You are browsing the documentation for version 4.2 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
@@ -29,7 +29,7 @@
                             {%- else %}
                                 {% set url = item.url | replace('.html', '/') %}
                             {%- endif %}
-                            {{ you_are_browsing }} Read the documentation for <a href="/{{ url | replace('../', '') }}">version 6.0 (the latest LTS version)</a> to get up-to-date information.
+                            {{ you_are_browsing }} Read the documentation for <a href="/{{ url | replace('../', '') }}">version 7.0 (the latest LTS version)</a> to get up-to-date information.
                         {%- endif %}
                     {%- endfor %}
                 {%- endif %}
