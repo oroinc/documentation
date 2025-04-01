@@ -14,7 +14,7 @@
                     {% if current_version.name == item.name  %}
                         <li><a href="#">{{ '7.0 (dev)' if item.name == 'master' }}{{ item.name if item.name != 'master' }}{{ ' (latest)' if '6.1' == item.name }}</a></li>
                     {% else %}
-                        <li><a href="/{{ url | replace('../', '') }}">{{ '6.1 (dev)' if item.name == 'master' }}{{ item.name if item.name != 'master' }}{{ ' (latest)' if '6.1' == item.name }}</a></li>
+                        <li><a href="/{{ url | replace('../', '') }}">{{ '7.0 (dev)' if item.name == 'master' }}{{ item.name if item.name != 'master' }}{{ ' (latest)' if '6.1' == item.name }}</a></li>
                     {% endif %}
                 {%- endfor %}
             {%- endif %}
