@@ -1,48 +1,56 @@
 {%- if current_version %}
-    {%- if current_version.release != '' %}
-        {%- if current_version.release == 'master' %}
-            {%- set you_are_browsing = "You are browsing upcoming documentation for version 7.0 of OroCommerce, scheduled for release in 2026." %}
-        {%- endif %}
-        {%- if current_version.release == '6.1' %}
-        {%- set you_are_browsing = "We are updating the images for OroCommerce version 6.1 to align with the latest changes in the back-office design. During this transition, some images may still show older versions. Thank you for your patience as we work to update all visuals to reflect these changes." %}
-        {%- endif %}
-        {%- if current_version.release == '6.0' %}
-            {%- set you_are_browsing = "You are browsing documentation for version 6.0 of OroCommerce, supported until 2028." %}
-        {%- endif %}
-        {%- if current_version.release == '5.1' %}
-            {%- set you_are_browsing = "You are browsing documentation for version 5.1 of OroCommerce, supported until March 2027." %}
-        {%- endif %}
-        {%- if current_version.release == '5.0' %}
-            {%- set you_are_browsing = "You are browsing documentation for version 5.0 of OroCommerce. Support of this version ended in January 2025." %}
-        {%- endif %}
-        {%- if current_version.release == '4.2' %}
-            {%- set you_are_browsing = "You are browsing the documentation for version 4.2 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
-        {%- endif %}
-        {%- if current_version.release == '4.1' %}
-            {%- set you_are_browsing = "You are browsing the documentation for version 4.1 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
-        {%- endif %}
-        {%- if current_version.release == '3.1' %}
-            {%- set you_are_browsing = "You are browsing the documentation for version 3.1 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
-        {%- endif %}
+    {%- if current_version.release == 'master' %}
+        {%- set you_are_browsing = "You are browsing upcoming documentation for version 7.0 of OroCommerce, scheduled for release in 2026." %}
+    {%- endif %}
+
+    {# TODO: remove stage and maintenance versions on deployment #}
+    {%- if current_version.name == '6.1' or current_version.name == 'stage/6.1' or  current_version.name == 'maintenance/6.1'  %}
+        {%- set image_update_message = "We are updating the images for OroCommerce version 6.1 to align with the latest changes in the back-office design. During this transition, some images may still show older versions. Thank you for your patience as we work to update all visuals to reflect these changes." %}
+    {%- endif %}
+
+    {%- if current_version.release == '6.0' %}
+        {%- set you_are_browsing = "You are browsing documentation for version 6.0 of OroCommerce, supported until 2028." %}
+    {%- endif %}
+    {%- if current_version.release == '5.1' %}
+        {%- set you_are_browsing = "You are browsing documentation for version 5.1 of OroCommerce, supported until March 2027." %}
+    {%- endif %}
+    {%- if current_version.release == '5.0' %}
+        {%- set you_are_browsing = "You are browsing documentation for version 5.0 of OroCommerce. Support of this version ended in January 2025." %}
+    {%- endif %}
+    {%- if current_version.release == '4.2' %}
+        {%- set you_are_browsing = "You are browsing the documentation for version 4.2 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
+    {%- endif %}
+    {%- if current_version.release == '4.1' %}
+        {%- set you_are_browsing = "You are browsing the documentation for version 4.1 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
+    {%- endif %}
+    {%- if current_version.release == '3.1' %}
+        {%- set you_are_browsing = "You are browsing the documentation for version 3.1 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
+    {%- endif %}
+    {%- if you_are_browsing or image_update_message %}
         <div class="admonition important">
             <p class="first admonition-title">Important</p>
-            <p class="last">
-                {%- if versions.branches %}
-                    {%- for item in versions.branches %}
-                        {%- if 'maintenance/6.1' == item.name or '6.1' == item.name  %}
-                            {%- if 'index.html' in item.url %}
-                                {% set url = item.url | replace('/index.html', '/') %}
-                            {%- else %}
+            {%- if image_update_message %}
+                <p class="last">
+                    {{ image_update_message }}  {# This will display the update message for 6.1 #}
+                </p>
+            {%- endif %}
+            {%- if you_are_browsing %}
+                <p class="last">
+                    {%- if versions.branches %}
+                        {%- for item in versions.branches %}
+                            {% if 'index.html' in item.url %}
+                                {% set url = item.url | replace('/index.html', '/') | replace('.html', '/') %}
+                            {% else %}
                                 {% set url = item.url | replace('.html', '/') %}
-                            {%- endif %}
-                            {{ you_are_browsing }} Read the documentation for <a href="/{{ url | replace('../', '') }}">version 6.1 (the latest LTS version)</a> to get up-to-date information.
-                        {%- endif %}
-                    {%- endfor %}
-                {%- endif %}
-            </p>
-            <p class="last">
-                See our <a href="https://doc.oroinc.com/community/release-process/#orocommerce-and-orocrm-enterprise-edition-releases-and-support-cycle" target="_blank">Release Process documentation</a> for more information on the currently supported and upcoming releases.
-            </p>
+                            {% endif %}
+                        {%- endfor %}
+                        {{ you_are_browsing }} Read the documentation for <a href="/{{ url | replace('../', '') }}">version 6.1 (the latest LTS version)</a> to get up-to-date information.
+                    {%- endif %}
+                </p>
+                <p class="last">
+                    See our <a href="https://doc.oroinc.com/community/release-process/#orocommerce-and-orocrm-enterprise-edition-releases-and-support-cycle" target="_blank">Release Process documentation</a> for more information on the currently supported and upcoming releases.
+                </p>
+            {%- endif %}
         </div>
     {%- endif %}
 {%- endif %}
