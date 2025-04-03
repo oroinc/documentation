@@ -8,4 +8,4 @@ Integrating with e-procurement systems is crucial for modern businesses looking 
 .. toctree::
    :maxdepth: 1
 
-   Greenwig Punchout <greenwing-punchout>
+   Greenwing Punchout <greenwing-punchout>
