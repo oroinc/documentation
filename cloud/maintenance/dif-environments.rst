@@ -1,7 +1,6 @@
-.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
-
 Configuration in Different Environments
 =======================================
+
 
 A typical OroCloud project has at least 2 environments: “prod” and “stage”. The OroCloud application can be |configured using orocloud.yaml file|.
 

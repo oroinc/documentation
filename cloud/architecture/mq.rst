@@ -1,7 +1,5 @@
 .. _cloud-maintenance-mq:
 
-.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
-
 MessageQueue Configuration in OroCloud
 ======================================
 
@@ -154,8 +152,7 @@ Below is the topic mapping for default queues configuration.
 * ``oro.default`` manages all other topics.
 
 
-.. include:: /include/include-links-cloud.rst
-   :start-after: begin
+
 
 
 

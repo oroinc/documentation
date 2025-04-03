@@ -5,14 +5,11 @@
 
 .. _orocloud:
 
-.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
-
 OroCloud Documentation
 ======================
 
 .. include:: overview.rst
    :start-after: begin_overview
-   :end-before: end_overview
 
 .. admonition:: Business Tip
 
@@ -37,7 +34,4 @@ OroCloud Documentation
 
 
 .. include:: /include/include-links-seo.rst
-   :start-after: begin
-
-.. include:: /include/include-links-cloud.rst
    :start-after: begin
