@@ -18,6 +18,6 @@ Learn how to enable and set up commerce-related features per customer group:
    :maxdepth: 1
    :hidden:
 
-   commerce/product/customer-group-product-customer-settings
-   commerce/search/customer-group-search-terms-settings
-   system-configuration/websites/customer-group-routing-settings
+   Product Data Export <commerce/product/customer-group-product-customer-settings>
+   Search History <commerce/search/customer-group-search-terms-settings>
+   Routing <system-configuration/websites/customer-group-routing-settings>

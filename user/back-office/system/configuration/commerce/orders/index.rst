@@ -9,6 +9,7 @@ Learn how to define how open orders should be displayed in the storefront.
 * :ref:`Order Creation <configuration--commerce--orders-create>`
 * :ref:`Purchase History <sys--commerce--orders--previously-purchased--main>`
 
+
 .. toctree::
    :titlesonly:
    :hidden:

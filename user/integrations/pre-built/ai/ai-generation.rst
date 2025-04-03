@@ -65,6 +65,5 @@ Sensitive information, such as the OpenAI token, is stored securely in encrypted
 
 * :ref:`Configure AI Integrations in the Back-Office <user-guide-ai-integrations>`
 
-
 .. include:: /include/include-links-user.rst
    :start-after: begin

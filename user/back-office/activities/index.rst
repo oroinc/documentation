@@ -9,18 +9,18 @@
 Manage Activities in the Back-Office
 ====================================
 
-Activities are actions that employees of a company perform on a daily basis, be it fulfilling job tasks, communicating with colleagues and customers, or participating in events. In Oro, you can conveniently manage all of these activities and link them together to get a 360-degree view of all communications.
+Activities are the various actions that employees of a company perform on a daily basis. These can include fulfilling job tasks, communicating with colleagues and customers, or participating in events. In the Oro application, you can efficiently manage all of these activities and link them together to create a comprehensive view of all communications.
 
-In Oro application, capabilities for managing activities are quite wide. Mainly, they cover three logical directions: workflow management, communications, and adding valuable remarks.
+The capabilities for managing activities in Oro are extensive and mainly cover three key areas: workflow management, communications, and adding valuable remarks.
 
 .. image:: /user/img/activities/activities.png
    :alt: The types of activities available in the Oro application
 
-You can link related records to each activity (for example, it can be a link to an email with the discussion where the activity emerged). These links are called **contexts**, and they make it much easier to take account of all the details connected with the activity.
+You can link related records to each activity. For instance, this may include a link to an email discussion that led to the activity. These links are referred to as **contexts**, and they significantly simplify the process of keeping track of all the details associated with each activity.
 
-.. note:: Keep in mind that the ability to view and edit activities depends on specific roles and permissions defined in the system.
+.. note:: Please note that the ability to view and edit activities is dependent on the specific roles and permissions defined within the system.
 
-The Activities topic introduces you to the following types of activities:
+The Activities section introduces you to the following types of activities:
 
 * :ref:`Tasks <doc-activities-overview-tasks>`
 * :ref:`Calls <doc-activities-calls>`

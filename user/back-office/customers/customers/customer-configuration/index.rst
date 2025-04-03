@@ -18,6 +18,6 @@ Learn how to enable and set up commerce-related features per customer:
    :maxdepth: 1
    :hidden:
 
-   commerce/product/customer-product-settings
-   commerce/search/customer-search-settings
-   system-configuration/website/customer-routing-settings
+   Product Data Export <commerce/product/customer-product-settings>
+   Search History <commerce/search/customer-search-settings>
+   Routing <system-configuration/website/customer-routing-settings>

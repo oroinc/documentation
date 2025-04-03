@@ -57,6 +57,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
     Content Management <content-management/index>
     Customers and Sales <customers-sales/index>
     Administration <administration/index>
+    AI and Automation <ai/index>
 
 .. include:: /include/include-images.rst
    :start-after: begin

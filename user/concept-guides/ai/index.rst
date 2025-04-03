@@ -1,0 +1,52 @@
+.. _concept-guide--ai:
+
+AI and Automation
+=================
+
+.. note:: Please |contact our support team| to learn more about OroCommerce AI features, discuss how they can meet your business needs, and get started with implementation.
+
+.. note:: AI Smart Order is available as of OroCommerce version 5.1.14.
+
+Artificial Intelligence (AI) is rapidly transforming industries, and B2B eCommerce is no exception. In today’s highly competitive market, businesses need tools that enable smarter decision-making, improve operational efficiency, and provide exceptional customer experiences. OroCommerce is at the forefront of this transformation, introducing an AI-powered tool called Smart Order, tailored specifically to the complex needs of B2B eCommerce to help you enhance business operations and customer experiences.
+
+.. _concept-guide--ai--smart-order:
+
+AI Smart Order
+--------------
+
+The AI Smart Order tool modernizes and enhances the purchase order process for distributors and manufacturers, addressing inefficiencies caused by traditional methods like fax or email. In B2B commerce, many buyers still rely on these outdated processes, leading to manual data entry errors and delays. AI Smart Order eliminates these challenges by automating the capture and processing of purchase orders directly within OroCommerce, improving accuracy and operational efficiency.
+
+Using advanced recognition technology, AI Smart Order adapts to any purchase order template or format, accurately capturing key details and validating them against existing system records. This ensures product information, pricing, and inventory levels are correct before processing, minimizing errors and reducing administrative workload. Businesses can save time, lower overhead costs, and focus on scaling operations without the burden of manual order entry.
+
+.. image:: /user/img/concept-guides/ai/ai-smart-order-widget.png
+   :alt: Illustration of the dashboard with a Smart Order widget
+
+The AI Smart Order functionality is accessible through a dashboard widget and mailbox automation, making purchase order management even more efficient.
+
+Smart Order Widget
+^^^^^^^^^^^^^^^^^^
+
+The Smart Order dashboard :ref:`widget <user-guide-dashboards-widgets>` provides an intuitive interface for users to manually upload purchase order files or images for processing. This feature allows businesses to digitize and convert orders received through offline channels, ensuring all critical order details are accurately extracted and recorded in OroCommerce.
+
+.. image:: /user/img/concept-guides/ai/ai-smart-order-flow.png
+   :alt: Illustration of the dashboard with a Smart Order widget
+
+For businesses seeking full :ref:`automation <admin-configuration-system-mailboxes>`, OroCommerce can be configured to scan incoming emails for purchase order attachments, extract relevant details, and automatically generate orders in pending status. This eliminates the need for manual uploads and data entry, significantly improving efficiency, reducing processing time, and minimizing the risk of errors.
+
+.. image:: /user/img/concept-guides/ai/convert-to-draft-order.png
+   :align: center
+   :scale: 80%
+
+By integrating AI-powered recognition, validation, and automation, the AI Smart Order tool transforms purchase order management, creating a faster, error-free, and seamless purchasing experience for both buyers and businesses.
+
+**Related Articles:**
+
+* :ref:`OroCommerce AI Content Generation Widget <getting-started-wysiwyg-editor-field-ai>`
+* :ref:`Integration with AI Clients: OpenAI and Vertex AI <integrations-ai-generation>`
+* :ref:`Product recommendations with AI <integrations-misc-google-retail-recommendations>`
+
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
+
+
