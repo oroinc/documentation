@@ -55,13 +55,6 @@ Run Application
       docker compose up application
 
    The docker compose will download the required images, create networks and run containers. Application `commerce-crm-application` is used by default.
-   You can run other community applications, such as `crm-application`, `platform-application` or `commerce-crm-application-de`.
-   To select another application, set a different image in the `.env` file, for example:
-
-   .. code-block:: none
-
-      ORO_IMAGE=docker.io/oroinc/crm-application
-
 
    If you want to get the application in a different locale, add the contents of the file `.env-locale-de_DE` or `.env-locale-fr_FR` to `.env` and restart the restore service and application.
 
@@ -101,16 +94,9 @@ If you deployed the application before, pull up fresh images with `docker-compos
 About This Project
 ------------------
 
-This repository provides a Docker Compose configuration file (compose.yaml) and demonstrates how to run different applications and required services in containers.Oro Inc. provides images with applications Community Edition in public Docker Hub.
+This repository provides a Docker Compose configuration file (compose.yaml) and demonstrates how to run different applications and required services in containers. Oro Inc. provides images with applications Community Edition in public Docker Hub.
 
 .. important:: This deployment is NOT intended for a production environment.
-
-**Docker images with different applications:**
-
-* OroCommerce Community Edition: |docker.io/oroinc/commerce-crm-application|
-* OroCRM Community Edition: |docker.io/oroinc/crm-application|
-* OroPlatform Community Edition: |docker.io/oroinc/platform-application|
-* OroCommerce Community Edition for Germany: |docker.io/oroinc/commerce-crm-application-de|
 
 One image is used to run containers in several roles: web server, php-fpm, consumer, WebSocket server, and cron service.
 All these services must be running, and the PostgreSQL database must be prepared for a full-fledged application.

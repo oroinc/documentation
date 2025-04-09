@@ -3,7 +3,7 @@
 Azure Cloud Platform
 ====================
 
-Azure Marketplace enables you to deploy pre-configured demo instances of the latest LTS releases of OroCRM and OroCommerce Community Editions with or without demo data.
+Azure Marketplace enables you to deploy pre-configured demo instances of the latest LTS releases of OroCommerce Community Edition with demo data.
 
 To proceed with the installation, make sure you have registered with Azure marketplace and have a valid |Azure portal account|.
 
@@ -12,17 +12,13 @@ Deploy the Solution
 
 To deploy the solution, follow the steps below:
 
-1. Navigate to |Azure Marketplace| and search for the required Oro application (OroCRM VM or OroCommerce VM) in the search bar.
+1. Navigate to |Azure Marketplace| and search for OroCommerce VM in the search bar.
 
    .. image:: /img/backend/setup/azure/search.png
       :alt: OroCRM VM or OroCommerce VM in Azure Marketplace search dropdown
 
 2. Once you select the application type to deploy, click **GET IT NOW** under the application logo on your left.
-3. In the pop-up dialog, select the software plan -- an instance with or without demo data. The application with demo data provides all the necessary information for you to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master, and web catalogs.
-
-   .. image:: /img/backend/setup/azure/software-plan.png
-      :alt: Select the software plan pop-up dialog
-
+3. In the pop-up dialog, select the software plan with demo data. This provides all the necessary information for you to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master, and web catalogs.
 4. Click **Continue**.
 
    You are redirected to Azure Portal to complete the installation.
@@ -32,8 +28,8 @@ To deploy the solution, follow the steps below:
 
 6. Click **Create**.
 
-   .. image:: /img/backend/setup/azure/create-vm.png
-      :alt: Create a virtual machine of the selected type
+   .. image:: /img/backend/setup/azure/software-plan.png
+      :alt: Select the software plan pop-up dialog
 
 7. Complete the required fields in the **Basics** tab:
 
@@ -91,14 +87,12 @@ To deploy the solution, follow the steps below:
 
     .. important::
 
-                   **OroCRM VM Demo Data**: If you have deployed OroCRM VM with demo data, use **admin** as login and the password to access the back-office of the application. To access the application via SSH, specify your username and password/public key, and restart services (`systemctl restart oro*`).
-
-                   **OroCommerce VM Demo Data**: If you have deployed OroCommerce VM with demo data, use *AmandaRCole@example.org* both as your login and password to access the storefront (`http://<DNSprefix>.cloudapp.azure.com`). To access the back-office of the application (`http://<DNSprefix>.cloudapp.azure.com/admin/admin`), use *admin* as login and password. To access the application via SSH, specify your username and password or a public key, and restart services (`systemctl restart oro*`).
+                   **OroCommerce VM Demo Data**: Use *AmandaRCole@example.org* both as your login and password to access the storefront (`http://<DNSprefix>.cloudapp.azure.com`). To access the back-office of the application (`http://<DNSprefix>.cloudapp.azure.com/admin/admin`), use *admin* as login and password. To access the application via SSH, specify your username and password or a public key, and restart services (`systemctl restart oro*`).
 
 Configure Application URL
 -------------------------
 
-For the demo applications to work correctly, you need to configure the application URL (for OroCRM and OroCommerce), and Secure URL and URL (for OroCommerce).
+For the demo application to work correctly, you need to configure the application URL, Secure URL, and URL.
 
 1. Navigate to **System Configuration > General Setup > Application Settings** in the application back-office, and provide the *Application URL* (e.g., `http://<DNSprefix>.cloudapp.azure.com`, or a different domain).
 
