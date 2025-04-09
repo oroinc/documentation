@@ -55,8 +55,8 @@ To automatically generate a price list in OroCommerce:
 
    .. code-block:: rst
 
-       product.msrp.value > 100 and product.msrp.currency == ‘USD’ and
-       product.msrp.unit == ‘item’ and product.inventory_status == ‘in_stock’
+       product.msrp.value > 100 and product.msrp.currency == 'USD' and
+       product.msrp.unit == 'item' and product.inventory_status == 'in_stock'
 
    This filtering will result in the following product list:
 
@@ -180,6 +180,7 @@ In this topic, you can find examples of expressions for the automatic generation
 * :ref:`Price for selected products <price-rules--auto--examples--5>`
 * :ref:`Discounted price for all products except for the selected brand <price-rules--auto--examples--6>`
 * :ref:`Price depends on the custom property <price-rules--auto--examples--7>`
+* :ref:`Price Based on the Currency Rate <price-rules--auto--examples--8>`
 
 .. _price-rules--auto--examples--1:
 
@@ -386,6 +387,42 @@ And price rule that adds 10% to the list price:
 
     pricelist[1].prices.value * 1.1
 
+.. _price-rules--auto--examples--8:
+
+Example 8. Price Based on the Currency Rate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: The currency rates management is only available in the Enterprise edition.
+
+You sell products in different countries and want prices in non-default currencies to adjust automatically when the exchange rate changes.
+
+For this example, let's assume that you have set USD as the default currency and you want to automatically create prices in EUR based on the USD prices from the default price list.
+
+.. tip:: Currency rates may be added or changed in the System Configuration **System > Configuration > General Setup > Currency**
+
+Price Calculation Rule
+~~~~~~~~~~~~~~~~~~~~~~
+
+To work with exchange rates, you need to set the target currency and define a condition to restrict the source prices to the desired source currency.
+
+**Currency**
+
+.. code-block:: rst
+
+    EUR
+
+**Calculate As**
+
+.. code-block:: rst
+
+    pricelist[1].prices.value * rate.USD_EUR
+
+**Condition**
+
+.. code-block:: rst
+
+    pricelist[1].prices.currency == 'USD'
+
 .. _user-guide--pricing--auto--expression:
 
 Filtering Expression Syntax
@@ -404,6 +441,8 @@ The filtering expression for the product assignment rule and the price calculati
       + Any **custom properties** added to the product entity (e.g., product.awesomeness), or the product children entity (e.g., product.category.priority and product.price.season)
 
   - **Price properties**: pricelist[N].prices.currency, pricelist[N].prices.productSku, pricelist[N].prices.quantity, and pricelist[N].prices.value, where `N` is the ID of the pricelist that the product belongs to.
+
+  - **Exchange rate properties** (only available in the Enterprise edition): rate.<SourceCurrencyCode_TargetCurrencyCode> (e.g., rate.USD_EUR, rate.EUR_USD. Virtual field generated for each possible currency pair available)
 
   - **Relations** (for example, product.owner, product.organization, product.primaryUnitPrecision, product.category, and any virtual relations created in OroCommerce for entities of product and its children.
 
