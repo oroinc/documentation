@@ -1,9 +1,11 @@
+:oro_documentation_types: Extension
+
 .. _integrations-mics-marello:
 
 Integration with Marello
 ========================
 
-.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
+.. important:: This is a custom extension, not a core feature of OroCommerce, and is not covered by the Oro User License Agreement. For more details, see the |Marello| extension. Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Oro offers integration with Marello, an open-source order management system built on the OroPlatform. The integration allows business owners to utilize their OroCommerce online store as a SalesChannel within Marello (Enterprise). As Marello is built on the OroPlatform, all its features can work within the same user interface.
 

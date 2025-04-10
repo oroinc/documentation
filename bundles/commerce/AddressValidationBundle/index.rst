@@ -10,6 +10,8 @@ Configuration
 
 The bundle adds a new feature, oro_address_validation, that enables or disables address validation for users in the storefront and in the back-office. To enable the feature, navigate to :ref:`System Configuration > Commerce > Shipping > Address Validation <sys--conf--commerce--shipping--address-validation>`.
 
+.. important:: When testing the Address Validation feature using a **UPS account in test mode**, only addresses from New York (NY) and California (CA) will provide validation results. The validation is based on the **ZIP code**, rather than the state field. This limitation is specific to UPS's test mode and does not affect production behavior.
+
 Integrate a New Address Validation Service into System Configuration
 --------------------------------------------------------------------
 

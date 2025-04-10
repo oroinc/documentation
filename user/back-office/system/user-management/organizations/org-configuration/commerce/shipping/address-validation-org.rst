@@ -30,6 +30,8 @@ Prerequisites
 
 Before you enable the address validation feature, ensure that you have properly configured either :ref:`UPS <doc--integrations--ups>` or :ref:`FedEx <doc--integrations--fedex>` shipping integration for your application.
 
+.. important:: When testing the Address Validation feature using a **UPS account in test mode**, only addresses from New York (NY) and California (CA) will provide validation results. The validation is based on the **ZIP code**, rather than the state field. This limitation is specific to UPS's test mode and does not affect production behavior.
+
 Configuration
 -------------
 

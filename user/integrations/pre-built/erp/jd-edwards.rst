@@ -1,7 +1,11 @@
+:oro_documentation_types: Extension
+
 .. _integrations-erp-oracle-jd-edwards:
 
 Oracle JD Edwards ERP Integration
 =================================
+
+.. important:: This is a custom extension, not a core feature of OroCommerce, and is not covered by the Oro User License Agreement. Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 OroCommerce offers integration with Oracle JD Edwards ERP (formerly JD Edwards World), developed by Oracle Corporation.
 

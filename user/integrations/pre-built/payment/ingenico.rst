@@ -5,11 +5,11 @@
 Integration with Ingenico Payment Service
 =========================================
 
-.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
+.. important:: This is a custom extension, not a core feature of OroCommerce, and is not covered by the Oro User License Agreement. Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Ingenico is a well-known company specialized in providing payment solutions and services to businesses and organizations around the world. Ingenico enables businesses of all sizes to securely and efficiently process a wide range of payment methods, from credit and debit cards to contactless and mobile payments.
 
-.. note:: Ingenico Integration comes as an OroCommerce extension and requires :ref:`installation <cookbook-extensions-composer>` of the |Ingenico extension| package.
+.. note:: Ingenico Integration comes as an OroCommerce extension and requires :ref:`installation <cookbook-extensions-composer>` of the Ingenico extension package.
 
 Key Ingenico Features
 ---------------------
