@@ -735,14 +735,6 @@ Links (User)
 
    <a href="https://developer.cybersource.com/api/developer-guides/dita-gettingstarted/authentication/createSharedKey.html" target="_blank">Generated an API key</a>
 
-.. |Ingenico extension| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/ingenico-epayments-bundle/" target="_blank">Ingenico extension</a>
-
-.. |CyberSource extension| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/cybersource-orocommerce-integration/" target="_blank">CyberSource extension</a>
-
 .. |Added a security key| raw:: html
 
    <a href="https://support.cybersource.com/s/article/How-to-Create-or-Update-a-Secure-Acceptance-security-key" target="_blank">Added a security key</a>
@@ -1013,3 +1005,43 @@ Links (User)
 .. |Sales Management|  raw:: html
 
    <a href="https://hive.oroinc.com/course/sales-management/" target="_blank">Sales Management</a>
+
+.. |Epicor Prophet 21 (P21)|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/p21-erp-integration/" target="_blank">Epicor Prophet 21 (P21)</a>
+
+.. |SAP B1|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/sap-b1-ecommerce-integration/" target="_blank">SAP B1</a>
+
+.. |SAP ERP|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/sap-erp-integration/" target="_blank">SAP ERP</a>
+
+.. |Marello|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/orocommerce-marello-bridge/" target="_blank">Marello</a>
+
+.. |CyberSource Extension|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/cybersource-orocommerce-integration/" target="_blank">CyberSource</a>
+
+.. |InfinitePay|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/orocommerce-infinitepay-integration/" target="_blank">InfinitePay</a>
+
+.. |Akeneo|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/akeneo-pim-orocommerce-connector/" target="_blank">Akeneo</a>
+
+.. |Greenwing Punchout|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/punchout-via-greenwing-technology/" target="_blank">Greenwing Punchout</a>
+
+.. |Google Looker Studio|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/embedded-google-data-studio-dashboard/" target="_blank">Google Looker Studio</a>
+
+.. |Microsoft Power BI Dashboard|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/embedded-microsoft-powerbi-dashboard/" target="_blank">Microsoft Power BI Dashboard</a>

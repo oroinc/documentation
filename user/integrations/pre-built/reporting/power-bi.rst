@@ -1,9 +1,11 @@
+:oro_documentation_types: Extension
+
 .. _integrations-microsoft-reporting:
 
 Integration with Microsoft Power BI Dashboard
 =============================================
 
-.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
+.. important:: This is a custom extension, not a core feature of OroCommerce, and is not covered by the Oro User License Agreement. For more details, see the |Microsoft Power BI Dashboard| extension. Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Microsoft Power BI is a business analytics tool that enables users to visualize and analyze data, share insights across an organization, or embed them in an app or website. Oro offers integration with Microsoft Power BI to enable you to compile reports from different sources in one place in Oro. Using Microsoft Power BI with the Oro application improves analytical capabilities for real-time KPI monitoring, allowing users to make data-driven decisions more quickly.
 

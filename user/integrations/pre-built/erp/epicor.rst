@@ -1,9 +1,11 @@
+:oro_documentation_types: Extension
+
 .. _integrations-erp-epicor:
 
 Epicor Prophet 21 (P21) Integration
 ===================================
 
-.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
+.. important:: This is a custom extension, not a core feature of OroCommerce, and is not covered by the Oro User License Agreement. For more details, see the |Epicor Prophet 21 (P21)| extension. Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Oro offers integration with Epicor Prophet 21 (P21), an adaptable and expandable ERP solution designed to help wholesale distribution companies streamline their operations. It provides tools for managing supply chains, accounting, inventory, business intelligence, customer support, and documentation. The software comes with multiple modules that can be customized to meet the specific needs of each company.
 

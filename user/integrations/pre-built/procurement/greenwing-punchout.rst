@@ -1,9 +1,11 @@
+:oro_documentation_types: Extension
+
 .. _integrations-e-procurement-systems-greenwing-punchout:
 
 E-Procurement Integration with Greenwing Punchout
 =================================================
 
-.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
+.. important:: This is a custom extension, not a core feature of OroCommerce, and is not covered by the Oro User License Agreement. For more details, see the |Greenwing Punchout| extension. Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Integration Overview
 --------------------

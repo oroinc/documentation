@@ -1,9 +1,11 @@
+:oro_documentation_types: Extension
+
 .. _integrations-erp-eclipse:
 
 Integration with Eclipse
 ========================
 
-.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
+.. important:: This is a custom extension, not a core feature of OroCommerce, and is not covered by the Oro User License Agreement. Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Eclipse ERP is a real-time accounting software designed for wholesale distributors, offering various features such as order fulfillment, inventory control, accounting, purchasing, and sales.
 
