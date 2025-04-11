@@ -3,8 +3,19 @@
 Generate a Product Price Automatically
 ======================================
 
+OroCommerce enables you to automate the creation of price lists based on predefined pricing strategies, generate new price lists from a selected source price list, and filter which products to include using categories, tags, product types, etc. It is particularly useful for managing complex product hierarchies and applying consistent pricing logic across large catalogs.
+
 Automate a Price List
 ---------------------
+
+To automatically generate a price list in OroCommerce:
+
+#. Navigate to **Sales > Price Lists** in the main menu.
+
+#. Start editing the required price list or click **Create Price List** to create a new one.
+
+.. image:: /user/img/sales/pricelist/all-price-lists.png
+   :alt: A list of all price lists available in the system
 
 The following simplified product catalog is used in examples:
 
@@ -22,133 +33,141 @@ The following simplified product catalog is used in examples:
 | E      | Server        | no             | 5        | 30000      | -     | item | USD      |
 +--------+---------------+----------------+----------+------------+-------+------+----------+
 
-To automatically generate a price list in OroCommerce:
 
-#. Navigate to **Sales > Price Lists** in the main menu.
+Assign Products to the Price List
+---------------------------------
 
-#. Start editing the required price list or click **Create Price List** to create a new one.
+In the **Product Assignment** section, you can configure which products will be included in the generated price list. You can either select specific products or the entire product categories. To complete this, in the **Rule** field, insert criteria into the text area to filter products in the catalog with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free (as illustrated in the screenshot below). To view available properties used in filtering expressions, see the `Filtering Expression Syntax`_ topic below.
 
-#. In the **Product Assignment** section, set up the product list. To complete this, in the **Rule** field, insert criteria into the text area to filter products in the catalog with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free (as illustrated in the screenshot below).
+.. image:: /user/img/sales/pricelist/advanced-query-builder.png
+   :alt: The advanced query builder in the Product Assignment section
 
-   .. image:: /user/img/sales/pricelist/advanced-query-builder.png
-      :alt: The advanced query builder in the Product Assignment section
+**Example 1**
 
-   For example, to include all products in categories 1 and 5, use the following expression:
+For example, to include all products in categories 1 and 5, use the following expression:
 
-   .. code-block:: rst
+.. code-block:: rst
 
-      product.category == 1 or product.category == 5
+   product.category == 1 or product.category == 5
 
-   For the sample catalog, this will generate the following product list:
+For the sample catalog, this will generate the following product list:
 
-   **Price list A**
+**Price list A**
 
-   +--------+---------+----------------+----------+------------+-------+------+----------+
-   | Item # | Product | Is in stock?   | Category | List price | Price | Unit | Currency |
-   +========+=========+================+==========+============+=======+======+==========+
-   | A      | Laptop  | yes            | 1        | 2500       | -     | item | USD      |
-   +--------+---------+----------------+----------+------------+-------+------+----------+
-   | E      | Server  | no             | 5        | 30000      | -     | item | USD      |
-   +--------+---------+----------------+----------+------------+-------+------+----------+
++--------+---------+----------------+----------+------------+-------+------+----------+
+| Item # | Product | Is in stock?   | Category | List price | Price | Unit | Currency |
++========+=========+================+==========+============+=======+======+==========+
+| A      | Laptop  | yes            | 1        | 2500       | -     | item | USD      |
++--------+---------+----------------+----------+------------+-------+------+----------+
+| E      | Server  | no             | 5        | 30000      | -     | item | USD      |
++--------+---------+----------------+----------+------------+-------+------+----------+
 
-   The following example illustrates filtering products in stock with the list price (also known as manufacturer’s suggested retail price - MSRP) higher than 100 USD per item:
+**Example 2**
 
-   .. code-block:: rst
+The following example illustrates filtering products in stock with the list price (also known as manufacturer’s suggested retail price - MSRP) higher than 100 USD per item:
 
-       product.msrp.value > 100 and product.msrp.currency == 'USD' and
-       product.msrp.unit == 'item' and product.inventory_status == 'in_stock'
+.. code-block:: rst
 
-   This filtering will result in the following product list:
+   product.msrp.value > 100 and product.msrp.currency == 'USD' and
+   product.msrp.unit == 'item' and product.inventory_status == 'in_stock'
 
-   **Price list B**
+**Price list B**
 
-   +--------+---------------+----------------+----------+------------+-------+------+----------+
-   | Item # | Product       | Is in stock?   | Category | List Price | Price | Unit | Currency |
-   +========+===============+================+==========+============+=======+======+==========+
-   | A      | Laptop        | yes            | 1        | 2500       | -     | item | USD      |
-   +--------+---------------+----------------+----------+------------+-------+------+----------+
-   | D      | Office shelf  | yes            | 4        | 250        | -     | item | USD      |
-   +--------+---------------+----------------+----------+------------+-------+------+----------+
++--------+---------------+----------------+----------+------------+-------+------+----------+
+| Item # | Product       | Is in stock?   | Category | List Price | Price | Unit | Currency |
++========+===============+================+==========+============+=======+======+==========+
+| A      | Laptop        | yes            | 1        | 2500       | -     | item | USD      |
++--------+---------------+----------------+----------+------------+-------+------+----------+
+| D      | Office shelf  | yes            | 4        | 250        | -     | item | USD      |
++--------+---------------+----------------+----------+------------+-------+------+----------+
 
-   .. hint:: You can customize the automatically generated price list and add more products manually.
+.. hint:: You can customize the automatically generated price list and add more products manually.
 
-#. Set up the price. Pricing behavior is configured in the **Price Calculation Rule** section.
+Configure Price Calculation Rules
+---------------------------------
 
-   a. In the **Price for Quantity**, enter the quantity, select a product unit, and the currency to which the rule will be applied.
+In the **Price Calculation Rule** section, you can define how product prices are calculated and what final prices will appear in the price list.
 
-   b. In the **Calculate As** field, insert a price formula into the text area with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free.
+.. image:: /user/img/sales/pricelist/price-calculation-rules-section.png
+   :alt: The Price Calculation Rules section
 
-      For example:
+1. In the **Price for Quantity**, enter the quantity, select a product unit, and the currency to which the rule will be applied. The list of currencies displayed in the dropdown depends on the :ref:`allowed currencies <sys--config--sysconfig--general-setup--currency>` enabled in the system configuration.
 
-      To set the price for all products to 99 USD, use the following expression:
+2. In the **Calculate As** field, insert a price formula into the text area with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free. To view available properties used in filtering expressions, see the `Filtering Expression Syntax`_ topic below.
 
-      .. code-block:: rst
+**Example 1**
 
-              99
+To set the price for all products to 99 USD, use the following expression:
 
-      The result will be the following:
+.. code-block:: rst
 
-      **Price list A**
+   99
 
-      +--------+---------+----------------+----------+------------+--------+------+----------+
-      | Item # | Product | Is in stock?   | Category | List Price | Price  | Unit | Currency |
-      +========+=========+================+==========+============+========+======+==========+
-      | A      | Laptop  | yes            | 1        | 2500       | **99** | item | USD      |
-      +--------+---------+----------------+----------+------------+--------+------+----------+
-      | E      | Server  | no             | 5        | 30000      | **99** | item | USD      |
-      +--------+---------+----------------+----------+------------+--------+------+----------+
+The result will be the following:
 
-      To set the price (for one item in US dollars) to be 5 USD more than the target margin (custom property of the product category), use the following expression:
+**Price list A**
 
-      .. code-block:: rst
++--------+---------+----------------+----------+------------+--------+------+----------+
+| Item # | Product | Is in stock?   | Category | List Price | Price  | Unit | Currency |
++========+=========+================+==========+============+========+======+==========+
+| A      | Laptop  | yes            | 1        | 2500       | **99** | item | USD      |
++--------+---------+----------------+----------+------------+--------+------+----------+
+| E      | Server  | no             | 5        | 30000      | **99** | item | USD      |
++--------+---------+----------------+----------+------------+--------+------+----------+
 
-               product.msrp.value * product.category.margin + 5
+**Example 2**
+
+To set the price (for one item in US dollars) to be 5 USD more than the target margin (custom property of the product category), use the following expression:
+
+.. code-block:: rst
+
+   product.msrp.value * product.category.margin + 5
 
 
-      The result will be the following:
+The result will be the following:
 
-      **Price list B**
+**Price list B**
 
-      +--------+---------------+--------------+----------+------------+--------+----------+------+----------+
-      | Item # | Product       | Is in stock? | Category | List price | Margin | Price    | Unit | Currency |
-      +========+===============+==============+==========+============+========+==========+======+==========+
-      | A      | Laptop        | yes          | 1        | 2500       | 1.2    | **3005** | item | USD      |
-      +--------+---------------+--------------+----------+------------+--------+----------+------+----------+
-      | D      | Office shelf  | yes          | 4        | 250        | 1.5    | **380**  | item | USD      |
-      +--------+---------------+--------------+----------+------------+--------+----------+------+----------+
++--------+---------------+--------------+----------+------------+--------+----------+------+----------+
+| Item # | Product       | Is in stock? | Category | List price | Margin | Price    | Unit | Currency |
++========+===============+==============+==========+============+========+==========+======+==========+
+| A      | Laptop        | yes          | 1        | 2500       | 1.2    | **3005** | item | USD      |
++--------+---------------+--------------+----------+------------+--------+----------+------+----------+
+| D      | Office shelf  | yes          | 4        | 250        | 1.5    | **380**  | item | USD      |
++--------+---------------+--------------+----------+------------+--------+----------+------+----------+
 
-      In this expression, the (price formula) may contain product and product-related items properties of the numeric type, numbers and arithmetic operations.
+In this expression, the (price formula) may contain product and product-related items properties of the numeric type, numbers and arithmetic operations.
 
-   c. In the **Condition** field, insert a product filtering expression into the text area into the text area with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free.
+3. In the **Condition** field, insert a product filtering expression into the text area into the text area with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free. To view available properties used in filtering expressions, see the `Filtering Expression Syntax`_ topic below.
 
-      For example, you have decided to set the price of 99 USD only for the products from category 1. Then you have entered *99* in the **Calculate As** field (see step a. the first example. In the **Condition** field, enter the following expression:
+**Example 1**
 
-      .. code-block:: rst
+For example, you have decided to set the price of 99 USD only for the products from category 1. Then you have entered *99* in the **Calculate As** field (see Step 2: Example 1.) In the **Condition** field, enter the following expression:
 
-             product.category == 1
+.. code-block:: rst
 
-      The result will be the following:
+   product.category == 1
 
-      **Price list A**
+The result will be the following:
 
-      +--------+---------+----------------+----------+------------+--------+------+----------+
-      | Item # | Product | Is in stock?   | Category | List Price | Price  | Unit | Currency |
-      +========+=========+================+==========+============+========+======+==========+
-      | A      | Laptop  | yes            | 1        | 2500       | **99** | item | USD      |
-      +--------+---------+----------------+----------+------------+--------+------+----------+
-      | E      | Server  | no             | 5        | 30000      |   -    | item | USD      |
-      +--------+---------+----------------+----------+------------+--------+------+----------+
+**Price list A**
 
-      The (product filtering expression) is based on a |Symfony2 expression language| that additionally filters the list of products generated in step 3 to limit the products the price shall apply to.
++--------+---------+----------------+----------+------------+--------+------+----------+
+| Item # | Product | Is in stock?   | Category | List Price | Price  | Unit | Currency |
++========+=========+================+==========+============+========+======+==========+
+| A      | Laptop  | yes            | 1        | 2500       | **99** | item | USD      |
++--------+---------+----------------+----------+------------+--------+------+----------+
+| E      | Server  | no             | 5        | 30000      |   -    | item | USD      |
++--------+---------+----------------+----------+------------+--------+------+----------+
 
-   d. In the **Priority** field, specify the precedence for this rule. See `Filters, Priorities, and Matching Units in the Automatically Generated Price List`_ for more information.
+4. In the **Priority** field, specify the precedence for this rule. See `Filters, Priorities, and Matching Units in the Automatically Generated Price List`_ for more information.
 
-   e. If you need to set up prices for another range of products selected into the price list or for another currency/unit, click **+Add** and repeat steps 4.a‒d.
+5. If you need to set up prices for another range of products selected into the price list or for another currency/unit, click **+Add** and repeat steps 1-4.
 
    .. hint::
 
       * You can use :ref:`autocomplete <user-guide--pricing--price-list-auto--autocomplete>` to simplify the expression creation.
-      * For more information, see :ref:`Filtering Expression Syntax <user-guide--pricing--auto--expression>`.
+      * For available properties used in filtering expressions, see :ref:`Filtering Expression Syntax <user-guide--pricing--auto--expression>`.
       * For more help on expressions creation, see :ref:`Price Rules Automation Examples <price-rules--auto--examples>`.
 
 Filters, Priorities, and Matching Units in the Automatically Generated Price List
@@ -193,15 +212,13 @@ You have Wholesale's standard price list, on which you want to base a new price 
 
 Then use the following expressions.
 
-Product Assignment
-~~~~~~~~~~~~~~~~~~
+**1. Product Assignment**
 
 .. code-block:: rst
 
     product.id in pricelist[2].assignedProducts
 
-Price Calculation Rule
-~~~~~~~~~~~~~~~~~~~~~~
+**2. Price Calculation Rule**
 
 You need to enter two price calculation rules in this section.
 
@@ -246,15 +263,13 @@ You store medical tags with SKUs like TAG1, TAG2, TAG3, etc.
 
 Create a new price list with the following settings.
 
-Product Assignment
-~~~~~~~~~~~~~~~~~~
+**1. Product Assignment**
 
 .. code-block:: rst
 
    product.sku matches 'TAG%'
 
-Price Calculation Rule
-~~~~~~~~~~~~~~~~~~~~~~
+**2. Price Calculation Rule**
 
 **Calculate As**
 
@@ -271,15 +286,13 @@ You need to make the price for the products added after May 1, 2022 a 15% more t
 
 Create a new price list with the following settings.
 
-Product Assignment
-~~~~~~~~~~~~~~~~~~
+**1. Product Assignment**
 
 .. code-block:: rst
 
    product.createdAt > '1/5/2022'
 
-Price Calculation Rule
-~~~~~~~~~~~~~~~~~~~~~~
+**2. Price Calculation Rule**
 
 **Calculate As**
 
@@ -294,15 +307,13 @@ Example 4. MAP Price for all Featured Products in Certain Category
 
 You have decided to set the MAP (minimum advertised price) price attribute value for all 'featured' products price in the category 'Office Furniture' (category ID is 7),
 
-Product Assignment
-~~~~~~~~~~~~~~~~~~
+**1. Product Assignment**
 
 .. code-block:: rst
 
    product.featured == true and product.category.id == 7
 
-Price Calculation Rule
-~~~~~~~~~~~~~~~~~~~~~~
+**2. Price Calculation Rule**
 
 **Calculate As**
 
@@ -317,8 +328,7 @@ Example 5. Price for Selected Products
 
 You have decided to set the price $10 more than in the default price list (ID 1) for selected products, product IDs: 14, 10, 312, 62.
 
-Product Assignment
-~~~~~~~~~~~~~~~~~~
+**1. Product Assignment**
 
 .. code-block:: rst
 
@@ -330,8 +340,7 @@ Product Assignment
 
    ``product.sku in ['1GS46','2TK59','8DO33','6VC22']``
 
-Price Calculation Rule
-~~~~~~~~~~~~~~~~~~~~~~
+**2. Price Calculation Rule**
 
 **Calculate As**
 
@@ -346,15 +355,13 @@ Example 6. Discounted Price for all Products Except of the Selected Brand
 
 You wish to set a discounted price for all products in the default price list (ID 1), except those whose brand is 'Super' (brand ID is 5).
 
-Product Assignment
-~~~~~~~~~~~~~~~~~~
+**1. Product Assignment**
 
 .. code-block:: rst
 
    product.brand.id != 5
 
-Price Calculation Rule
-~~~~~~~~~~~~~~~~~~~~~~
+**2. Price Calculation Rule**
 
 **Calculate As**
 
@@ -375,11 +382,15 @@ You ensured that the product entity has the ‘color’ attribute as a prerequis
 
 Next, you entered the actual color for every product, and some of them indeed were yellow.
 
+**1. Product Assignment**
+
 Here is the product assignment rule that builds a price list of all yellow items in the catalog:
 
 .. code-block:: rst
 
     product.color == “yellow”
+
+**2. Price Calculation Rule**
 
 And price rule that adds 10% to the list price:
 
@@ -394,14 +405,19 @@ Example 8. Price Based on the Currency Rate
 
 .. note:: The currency rates management is only available in the Enterprise edition.
 
-You sell products in different countries and want prices in non-default currencies to adjust automatically when the exchange rate changes.
+.. note:: The price list recalculation based on the currency rate is available as of OroCommerce version 6.0.7.
 
-For this example, let's assume that you have set USD as the default currency and you want to automatically create prices in EUR based on the USD prices from the default price list.
+To simplify price management in multiple currencies, price calculation rules can directly use the :ref:`currency conversion rates <sys--config--sysconfig--general-setup--currency>` defined in the system configuration. However, currency rates are not updated automatically. If you need to recalculate prices due to a change in exchange rates, you must manually update the currency conversion rate in the system configuration. This update will trigger a full recalculation of all price lists that depend on that currency.
 
-.. tip:: Currency rates may be added or changed in the System Configuration **System > Configuration > General Setup > Currency**
+.. image:: /user/img/sales/pricelist/currency-rates.png
+   :alt: The global currency configuration settings
 
-Price Calculation Rule
-~~~~~~~~~~~~~~~~~~~~~~
+Suppose your business operates internationally, and you need product prices in non-default currencies, such as EUR, to automatically reflect exchange rate changes, based on prices defined in your default currency.
+
+Let's assume that your default currency is USD, and you want to automatically generate prices in EUR based on the USD prices from the default price list.
+
+
+**1. Price Calculation Rule**
 
 To work with exchange rates, you need to set the target currency and define a condition to restrict the source prices to the desired source currency.
 
@@ -430,30 +446,30 @@ Filtering Expression Syntax
 
 The filtering expression for the product assignment rule and the price calculation condition follow the |Symfony2 expression language| syntax and may contain the following elements:
 
-* Entity properties :ref:`stored as table columns <user-guide--pricing--auto--expression--storage-type>`, including:
+1. Entity properties :ref:`stored as table columns <user-guide--pricing--auto--expression--storage-type>`, including:
 
-  - **Product properties**: product.id, product.sku, product.status, product.createdAt, product.updatedAt, product.inventory_status, etc.
+* **Product properties**: product.id, product.sku, product.status, product.createdAt, product.updatedAt, product.inventory_status, etc.
 
-  - Properties of the product’s children entities, like:
+* **Properties of the product’s children entities**, such as:
 
-      + **Category properties**: product.category.id, product.category.left, product.category.right, product.category.level, product.category.root, product.category.createdAt, and product.category.updatedAt
+    + **Category properties**: product.category.id, product.category.left, product.category.right, product.category.level, product.category.root, product.category.createdAt, and product.category.updatedAt
 
-      + Any **custom properties** added to the product entity (e.g., product.awesomeness), or the product children entity (e.g., product.category.priority and product.price.season)
+    + Any **custom properties** added to the product entity (e.g., product.awesomeness), or the product children entity (e.g., product.category.priority and product.price.season)
 
-  - **Price properties**: pricelist[N].prices.currency, pricelist[N].prices.productSku, pricelist[N].prices.quantity, and pricelist[N].prices.value, where `N` is the ID of the pricelist that the product belongs to.
+* **Price properties**: pricelist[N].prices.currency, pricelist[N].prices.productSku, pricelist[N].prices.quantity, and pricelist[N].prices.value, where `N` is the ID of the pricelist that the product belongs to.
 
-  - **Exchange rate properties** (only available in the Enterprise edition): rate.<SourceCurrencyCode_TargetCurrencyCode> (e.g., rate.USD_EUR, rate.EUR_USD. Virtual field generated for each possible currency pair available)
+* **Exchange rate properties** (is available as of OroCommerce Enterprise version 6.0.7): rate.<SourceCurrencyCode_TargetCurrencyCode> (e.g., rate.USD_EUR, rate.EUR_USD. Virtual field generated for each possible currency pair enabled in :ref:`the system configuration <sys--config--sysconfig--general-setup--currency>`)
 
-  - **Relations** (for example, product.owner, product.organization, product.primaryUnitPrecision, product.category, and any virtual relations created in OroCommerce for entities of product and its children.
+* **Relations** (for example, product.owner, product.organization, product.primaryUnitPrecision, product.category, and any virtual relations created in OroCommerce for entities of product and its children.
 
-    .. note::
-       + To keep the filter behavior predictable, OroCommerce enforces the following limitation in regards to using relations in the filtering criteria: you can only use parameters residing on the “one” side of the “one-to-many” relation (including the custom ones).
-       + When using relation, the id is assumed and may be omitted (e.g. “product.category == 1” expression means the same as “product.category.id == 1”).
-       + Any product, price, and category entity attribute is accessible by field name.
+.. note::
+    + To keep the filter behavior predictable, OroCommerce enforces the following limitation in regards to using relations in the filtering criteria: you can only use parameters residing on the “one” side of the “one-to-many” relation (including the custom ones).
+    + When using relation, the id is assumed and may be omitted (e.g. “product.category == 1” expression means the same as “product.category.id == 1”).
+    + Any product, price, and category entity attribute is accessible by field name.
 
-* **Operators:** +, -,  *,  / , %, ** , ==, ===, !=, !==, <, >, <=, >=, matches (string) (e.g. matches 't-shirt'; you can also use the following wildcards in the string: % --- replaces any number of symbols, _ --- any single symbol, e.g., matches ' t_shirt' returns both 't-shirt' and 't shirt') and, or, not, ~ (concatenation), in, not in, and .. (range).
+2. **Operators:** +, -,  *,  / , %, ** , ==, ===, !=, !==, <, >, <=, >=, matches (string) (e.g. matches 't-shirt'; you can also use the following wildcards in the string: % --- replaces any number of symbols, _ --- any single symbol, e.g., matches ' t_shirt' returns both 't-shirt' and 't shirt') and, or, not, ~ (concatenation), in, not in, and .. (range).
 
-* **Literals:** You can use strings (e.g. *'hello'*), numbers (e.g. *345*), arrays (e.g. *[7, 8, 9]* ), hashes (e.g. *{ property_name: 'property_value' }*), *true*, *false* and *null*.
+3. **Literals:** You can use strings (e.g. *'hello'*), numbers (e.g. *345*), arrays (e.g. *[7, 8, 9]* ), hashes (e.g. *{ property_name: 'property_value' }*), *true*, *false* and *null*.
 
 Developer Notice
 ^^^^^^^^^^^^^^^^
@@ -465,9 +481,7 @@ The expression is converted into an internal Nodes tree. This tree is converted 
 Use Only Fields with Table Storage in Filtering Expressions
 -----------------------------------------------------------
 
-In filtering expressions for the price assignment rule, you can use only fields stored as table columns.
-
-:ref:`Serialized fields <book-entities-extended-entities-serialized-fields>` cannot be used in the filtering expressions for price lists.
+In filtering expressions for the price assignment rule, you can use only fields stored as **table columns**. :ref:`Serialized fields <book-entities-extended-entities-serialized-fields>` cannot be used in the filtering expressions for price lists.
 
 To check a storage type of a field:
 
