@@ -53,7 +53,7 @@ Registering via Storefront
 
 Prospective sellers looking to sell via the marketplace can submit a registration form online on the marketplace website.
 
-.. image:: /user/img/concept-guides/marketplace/seller-registration-storefront.png
+.. image:: /user/img/concept-guides/marketplace/seller-registration.png
    :alt: Seller registration button in the storefront
 
 The details provided in the registration form are immediately displayed in the OroMarketplace back-office under **Sales > Seller Registration Requests**, where you can view every such request and transition it through the corresponding workflow.
@@ -121,10 +121,10 @@ When a buyer submits an order with items sold by different sellers with differen
 .. image:: /user/img/concept-guides/marketplace/orders-split-by-sellers.png
    :alt: Orders split by seller in the back-office
 
-For the orders to be split by seller (i.e., organization), a person responsible for permissions from the global marketplace organization's owner must :ref:`enable this capability in the global organization's configuration settings <user-guide--system-configuration--commerce-sales-multi-shipping-org>`.
+.. note:: For the orders to be split by seller (i.e., organization), a person responsible for permissions from the global marketplace organization's owner must :ref:`enable this capability in the global organization's configuration settings <user-guide--system-configuration--commerce-sales-multi-shipping-org>`.
 
-.. image:: /user/img/concept-guides/marketplace/split-by-seller-config-in-global-org.png
-   :alt: Organization Settings of the Global Marketplace Organization
+          .. image:: /user/img/concept-guides/marketplace/split-by-seller-config-in-global-org.png
+             :alt: Organization Settings of the Global Marketplace Organization
 
 If a seller decides against using multi-shipping and the multi shipping feature is disabled for a seller organization, the marketplace owner must add the seller's warehouse to the list of enabled warehouses in the system configuration, so buyers could proceed through the checkout and place their orders online.
 
