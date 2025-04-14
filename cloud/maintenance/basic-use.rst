@@ -407,6 +407,7 @@ The following commands are available:
 * **backup:create:sanitized** -- creates a sanitized backup of database data. Encryption is not applied
 * **backup:list:sanitized** -- lists available sanitized backups
 * **backup:restore:sanitized** -- restores the application from the sanitized backup
+* **backup:delete:sanitized** -- deletes the sanitized backup
 
 Create a Sanitized Backup
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -484,6 +485,15 @@ The command output is similar to the following:
 * **column "DATE"** - the date and time when a sanitized backup is created
 
 * **column "PATH"** - a full path where sanitized database dump is stored, so it can be used to download such backup.
+
+Delete Sanitized Backup
+~~~~~~~~~~~~~~~~~~~~~~~
+
+To delete one of available sanitized backups, run:
+
+.. code-block:: none
+
+    orocloud-cli backup:delete:sanitized [DATE]
 
 Restore Sanitized Backup
 ~~~~~~~~~~~~~~~~~~~~~~~~

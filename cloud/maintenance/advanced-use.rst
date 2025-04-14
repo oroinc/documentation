@@ -1005,6 +1005,8 @@ Where:
 Sanitizing Configuration
 ------------------------
 
+.. important:: As of OroCommerce version 6.0 LTS, :ref:`Data Sanitization <dev-sanitize>` has replaced the previous Sanitizing Configuration functionality.
+
 Regardless of the Oro application type, each has its own default sanitize rules (`sanitize.method.rawsql` and `sanitize.method.update`). However, you can add your own rules, remove a specific default rule, or completely override them.
 
 The sanitize configuration is grouped under the `sanitize` node and supports the following sanitize methods:
