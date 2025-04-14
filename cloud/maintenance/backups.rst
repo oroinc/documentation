@@ -242,6 +242,8 @@ The command output is similar to the following:
 Sanitize Rules and Queries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. important:: As of OroCommerce version 6.0 LTS, :ref:`Data Sanitization <dev-sanitize>` has replaced the previous Sanitizing Configuration functionality.
+
 To display rules and queries, run the following:
 
 .. code-block:: none
