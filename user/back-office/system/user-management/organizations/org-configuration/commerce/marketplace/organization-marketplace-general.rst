@@ -28,7 +28,7 @@ To configure marketplace settings per organization:
 
    * Select the **Enable Seller Registration** checkbox to activate the ability for sellers to register with your marketplace online.
 
-   .. important:: This option can be ebabled only in the organization settings of the global organization.
+   .. important:: This option can be enabled only in the organization settings of the global organization.
 
    When registration is enabled, you can select the owner of the seller's request and select the :ref:`consents <user-guide--consents>` to be displayed in the Seller Registration form in the storefront website. Enabling this option also adds the :ref:`Seller Registration workflow <system--workflows--seller-registration-flow>` to the list of workflows under **System > Workflows**.
 

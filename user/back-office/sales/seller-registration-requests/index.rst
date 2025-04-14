@@ -49,7 +49,12 @@ You can perform the following actions for requests from the grid:
 .. image:: /user/img/sales/seller-registration-requests/grid-actions-seller-request.png
    :alt: Grid actions for seller registration requests
 
-Two grid views are available for seller registration requests: **Open Seller Registration Requests** and **All Seller Registration Requests**. You can filter the grid with all requests and then save the filtered page as another grid view.
+Two grid views are available for seller registration requests: **Open Seller Registration Requests** and **All Seller Registration Requests**.
+
+.. image:: /user/img/sales/seller-registration-requests/two-grid-views.png
+   :alt: Illustration of the two grid views
+
+You can filter the grid with all requests and then save the filtered page as another grid view.
 
 .. image:: /user/img/sales/seller-registration-requests/new-grid-for-seller-request.png
    :alt: Illustration of how to add a new grid page.
@@ -66,12 +71,13 @@ On the view page of a request, you can transition it through the steps of the :r
 
 For more information, see :ref:`Information Management <user-guide-data-management-basics-entities>`.
 
+
+.. image:: /user/img/sales/seller-registration-requests/request-view-page.png
+   :alt: Action available for a seller registration request from its view page
+
+
 .. include:: /include/include-images.rst
    :start-after: begin
 
 .. include:: /include/include-svg.rst
    :start-after: begin
-
-
-.. image:: /user/img/sales/seller-registration-requests/request-view-page.png
-   :alt: Action available for a seller registration request from its view page
