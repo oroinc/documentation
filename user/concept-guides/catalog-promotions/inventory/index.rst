@@ -77,7 +77,7 @@ Let's elaborate on some of the options to clarify their distinctive features.
 
 Inventory threshold is the minimum quantity of product that you need to have on hand to take care of orders. You can define an inventory level that becomes the threshold to determine when an item needs to be marked as out-of-stock and/or reordered.
 
-Let's say you have 10 items of Product A in stock. You set the Inventory Threshold option to ``1`` (in case you prefer avoiding an entirely dead stock). It means that when there is one item left in stock, the system will automatically change the product inventory status to Out of Stock. With such configuration, your customer is allowed to purchase up to 9 items only.
+Let's say you have 10 items of Product A in stock. You set the Inventory Threshold option to ``1`` (in case you prefer avoiding an entirely dead stock). It means that when there is 1 item left in stock, the system will automatically change the product inventory status to Out of Stock. With such configuration, your customer is allowed to purchase up to 9 items only.
 
 .. image:: /user/img/concept-guides/inventory/productA_inventory_status.png
    :alt: Display inventory statuses in the storefront
