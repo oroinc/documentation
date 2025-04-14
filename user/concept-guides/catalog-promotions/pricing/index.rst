@@ -46,12 +46,12 @@ The best way to illustrate the strategy differences is to compare prices for one
 Let's consider the following scenario:
 
 .. csv-table::
-   :header: "","**Stock Clearance PL**","**Customer A PL**","**Partner B PL**","**Wholesale PL**","**Spring Sale 2020 PL**"
+   :header: "","**Stock Clearance PL**","**Customer A PL**","**Partner B PL**","**Wholesale PL**","**Spring Sale PL**"
 
    "**Product Discount**","20%","15%","5%","10%","10% for purchasing less than 49 items, 13% for more than 50 items"
    "**Product Price with Discount**","$80 / 1 item","$85 / 1 item","$95 / 1 item","$90 / 1 item","$90 / 1 item"
 
-Customer A is assigned three price lists from the five available -- *Stock Clearance PL*, *Customer A PL*, and *Spring Sale 2020 PL*.
+Customer A is assigned three price lists from the five available -- *Stock Clearance PL*, *Customer A PL*, and *Spring Sale PL*.
 
 .. image:: /user/img/concept-guides/prices/price_lists_for_customerA.png
    :alt: View the three price lists assigned to Customer A
@@ -64,7 +64,7 @@ When you select the Minimal Prices strategy, all your price lists are combined t
 In our example, the minimal price per item for Customer A is $80 from the *Stock Clearance PL*.
 
 .. csv-table::
-   :header: "","**Stock Clearance PL**","**Customer A PL**","**Partner B PL**","**Wholesale PL**","**Spring Sale 2020 PL**"
+   :header: "","**Stock Clearance PL**","**Customer A PL**","**Partner B PL**","**Wholesale PL**","**Spring Sale PL**"
 
    "**Product Discount**","20%","15%","5%","10%","10% for purchasing less than 49 items, 13% for more than 50 items"
    "**Product Price with Discount**","**$80 / 1 item**","$85 / 1 item","$95 / 1 item","$90 / 1 item","$90 / 1 item"
@@ -115,7 +115,7 @@ Based on the price lists priority that you have set for Customer A, the lumen he
 
 **Merge Allowed** is a price list configuration setting that defines whether the system should combine price tiers of the same product from multiple price lists.
 
-If we enable the Merge Allowed option for all price lists available for the Customer A, we combine them all together, allowing the system to fill the empty price tiers for the lumen headlamp from other price lists in the priority order. The price will then be displayed as follows, where the first four price tiers for *1 through 99* items are taken from the *Customer A PL* which has the highest priority. As the *Customer A PL* does not define the price for 100+ items, the system then searches for the relevant price in the second priority price list, the *Stock Clearance PL*. It does not specify the required price either. Only the third priority price list, the *Spring Sale 2020 Pl*, has the required price for 100+ items which is taken by the system to display in the storefront.
+If we enable the Merge Allowed option for all price lists available for the Customer A, we combine them all together, allowing the system to fill the empty price tiers for the lumen headlamp from other price lists in the priority order. The price will then be displayed as follows, where the first four price tiers for *1 through 99* items are taken from the *Customer A PL* which has the highest priority. As the *Customer A PL* does not define the price for 100+ items, the system then searches for the relevant price in the second priority price list, the *Stock Clearance PL*. It does not specify the required price either. Only the third priority price list, the *Spring Sale Pl*, has the required price for 100+ items which is taken by the system to display in the storefront.
 
 .. image:: /user/img/concept-guides/prices/merge_by_priority_example3.png
    :alt: View all prices per tier for the lumen headlamp provided that Merge Allowed is enabled for all three price lists

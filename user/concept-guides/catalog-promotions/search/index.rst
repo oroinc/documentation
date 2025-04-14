@@ -46,11 +46,6 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 .. image:: /user/img/concept-guides/search/partial-product-search.png
    :alt: Partial Product Search illustration
 
-* :ref:`Automatic Phrase Suggestions <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates suggested phrases as users type their search queries. By presenting users with these automatic suggestions, the feature helps guide them towards more accurate and relevant search results, reducing the likelihood of misspellings or ambiguous queries. You can also provide the number of suggested phrases to users. You can configure the option on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
-
-.. image:: /user/img/concept-guides/search/phrase-suggestions.png
-   :alt: Automatic Phrase Suggestions illustration
-
 * :ref:`Saved Search <my-account-saved-search>` - The feature is available in the OroCommerce Enterprise edition. It enables customer users to save their search queries, view these saved search queries under the Saved Searches menu in the customer user account. You can also configure the registered customers to receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock. The configuration is available on the :ref:`global <configuration--guide--commerce--configuration--saved-search>`, :ref:`organization <organization-commerce--configuration--saved-search>`, and :ref:`website <configuration--website-commerce--search--saved-search>` levels.
 
 .. image:: /user/img/concept-guides/search/saved-search.png
@@ -104,3 +99,6 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
    :alt: Difference between the regular search and search by entity
 
 * :ref:`Fuzzy Search in the Back-Office <configuration--system-configuration--general-setup-sysconfig--search-global>` - The feature is available in the OroCommerce Enterprise edition. It works similarly to the storefront fuzzy search functionality but searches for the misspelled terms in the back-office. The configuration is only available globally.
+
+.. image:: /user/img/concept-guides/search/fuzzy-bo-search.png
+   :alt: Configuration options for fuzzy search in the back-office
