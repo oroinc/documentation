@@ -43,9 +43,9 @@ This example sets the ``auditable`` option from the ``dataaudit`` scope to ``tru
 
 *  **is_stored_externally** *boolean* - indicates whether the file referenced by this field is stored externally on a third party service. If enabled, the external URL text input is displayed instead of the file upload input. The URLs of the external files should be publicly available. The system will not process, resize or modify the files that are stored externally. By default ``false``.
 
-*  **acl_protected** *boolean* - indicates whether acl check should be applied when loading or displaying attachments. Each ACL-protected entity must have an ownership type. Various entities can act as one, such as a user, a business unit, an organization. By default ``false``.
+*  **acl_protected** *boolean* - indicates whether acl check should be applied when loading or displaying attachments.
 
-*  **file_applications** - the list of all allowed file applications. Possible values are: 'file', 'image', 'wysiwyg', 'wysiwyg_styles', 'multiFile', 'multiImage','default'. By default ``default``.
+*  **file_applications** - the list of all allowed file applications. Supported value: ``default``.
 
 *  **use_dam** *boolean* - indicates whether to use DAM (Digital Asset Management) to upload a file. OroDigitalAssetBundle bundle provides the Digital Asset Management (DAM) functionality and CRUD for digital assets. It can be enabled for fields of type File and Image  in the back-office UI both via the entity management and field configuration.
 
