@@ -53,7 +53,7 @@ Shopping Lists
 
 Buyers in B2B tend to work on numerous and varied projects that need different products for different business units within the organization, at the same time. It means that there is often a necessity to have more than one shopping cart for different needs. OroCommerce's shopping lists are enhanced B2C shopping carts explicitly built for B2B interactions and enable buyers to work with multiple shopping lists at the same time, when necessary.
 
-.. hint:: OroCommerce enables sellers to control how many shopping lists to make available. For some businesses, setting up several shopping lists is not essential, and they can absolutely work with one. One of the common use cases is when a seller configures the website to have one shopping list for unsigned-in buyers. Once they sign in, they get access to the multiple shopping lists functionality.
+.. hint:: OroCommerce enables sellers to control how many shopping lists to make available. For some businesses, setting up several shopping lists is not essential, and they can work with just one. One of the common use cases is when a seller configures the website to have one shopping list for unsigned-in buyers. Once they sign in, they get access to the multiple shopping lists functionality.
 
           .. image:: /user/img/concept-guides/orders/un-signed-in.png
 
