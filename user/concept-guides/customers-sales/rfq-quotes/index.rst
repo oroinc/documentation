@@ -63,26 +63,20 @@ RFQ-Related Options in the Back-Office
 
 To make the most of an RFQ-friendly store, make sure you enable all related features in the back-office either on the :ref:`global <configuration--guide--commerce--configuration--sales-rfq>`, :ref:`organization <user-guide--system-configuration--commerce-sales--rfq--organization>`, or :ref:`website <user-guide--system-configuration--commerce-sales--rfq--website>` level:
 
+  .. image:: /user/img/concept-guides/rfq/RFQ_system_config.png
+     :alt: Global RFQ configuration settings
+
 * **Request For Quote Configuration**
 
   The setting defines whether to enable or disable the RFQ feature for the back-office and the storefront. The configuration is convenient for businesses that run multiple websites (Enterprise edition only). This way, you can selectively enable the RFQ feature for certain websites and disable it for those that do not need it at all (for instance, if an RFQ is sent through emails and agreements).
-
-  .. image:: /user/img/concept-guides/rfq/RFQ_system_config.png
-     :alt: Global RFQ configuration settings
 
 * **RFQ Notifications**
 
   These RFQ options enable you to determine the employee responsible for processing RFQs. They will receive all incoming email notifications every time a customer submits an RFQ.
 
-  .. image:: /user/img/concept-guides/rfq/RFQ_notifications.png
-     :alt: Global RFQ notifications settings
-
 * **Guest RFQ**
 
   The option lets guest customers request quotes on the items they are interested in without registering an account. For this, make sure to enable :ref:`Guest Shopping List <user-guide--system-configuration--commerce-sales-shopping-list--mass-action>` and :ref:`Guest Quick Order Form <user-guide--system-configuration--commerce-sales--quick-order-form--global>` to display the RFQ button for unregistered visitors. As they do not have access to the Account menu, all the negotiations with sales reps are carried out via the email provided by the guest user in the RFQ form.
-
-  .. image:: /user/img/concept-guides/rfq/RFQ_guest.png
-     :alt: Global guest RFQ configuration settings
 
 * **RFQ Management Flow Workflow**
 
