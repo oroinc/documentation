@@ -1,0 +1,33 @@
+critical_css:
+    inputs:
+        # Settings
+        - 'bundles/orodemotheme/demo/scss/settings/global-settings.scss'
+
+        # Variables
+        - 'bundles/orodemotheme/demo/scss/variables/base-config.scss'
+        - 'bundles/orodemotheme/demo/scss/variables/uikit/buttons-config.scss'
+    output: 'css/critical.css'
+    auto_rtl_inputs:
+        - 'bundles/oro*/**'
+
+styles:
+    inputs:
+        # Settings
+        - 'bundles/orodemotheme/demo/scss/settings/global-settings.scss'
+
+        # Variables
+        - 'bundles/orodemotheme/demo/scss/variables/base-config.scss'
+        - 'bundles/orodemotheme/demo/scss/variables/uikit/buttons-config.scss'
+
+        # Components
+        # - 'bundles/orodemotheme/demo/scss/components/uikit/buttons.scss'
+    output: 'css/styles.css'
+    auto_rtl_inputs:
+        - 'bundles/oro*/**'
+
+stylebook_styles:
+    inputs:
+        - 'bundles/orodemotheme/demo/scss/settings/global-settings.scss'
+    output: 'css/stylebook.css'
+    auto_rtl_inputs:
+        - 'bundles/oro*/**'
