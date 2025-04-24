@@ -11,6 +11,7 @@ Related Documentation
 ---------------------
 
 * :ref:`Content Widgets <content-widgets>`
+* :ref:`Content Widget Types <bundle-docs-commerce-cms-bundle-content-widget-types>`
 * :ref:`WYSIWYG Field <WYSIWYG-field-dev-guide>`
 * :ref:`Content Blocks <bundle-docs-commerce-cms-bundle-content-blocks>`
 * :ref:`Editor Components <bundle-docs-commerce-cms-bundle-editor-components>`
@@ -20,6 +21,7 @@ Related Documentation
    :hidden:
 
    content-widgets/index
+   content-widget-types
    WYSIWYG-field/index
    content-blocks
    editor-components
