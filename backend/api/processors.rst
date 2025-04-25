@@ -148,7 +148,7 @@ Examples of Processor Conditions
     services:
         acme.api.do_something:
             tags:
-                - { name: oro.api.processor, action: get_list, group: initialize, requestType: !rest }
+                - { name: oro.api.processor, action: get_list, group: initialize, requestType: '!rest' }
 
 -  A processor is executed only for REST requests that conform to the |JSON:API| specification.
 
