@@ -135,7 +135,7 @@ If H2, H3, or any other formatting is applied to the text, then you have several
 Insert Multimedia
 ^^^^^^^^^^^^^^^^^
 
-To embed YouTube or Vimeo URLs to your content, you need to drag the video block to the canvas. Set the video provider (HTML5 Source, vimeo) in the **Settings** section under Style Manager and add the direct link to the **Source** field. The permissions to add videos depend on the restrictions set in the configuration file.
+To embed YouTube or Vimeo URLs to your content, you need to drag the **Video** block to the canvas. Set the video provider (HTML5 Source, vimeo) in the **Settings** section under Style Manager and add the direct link to the **Source** field. The permissions to add videos depend on the restrictions set in the configuration file.
 
 .. image:: /user/img/concept-guides/content-management/embed_video.png
    :alt: Setting the video provider (HTML5 Source, vimeo) in the Settings section
@@ -229,13 +229,10 @@ To insert an image to your content, you need to drag the image block to the canv
 Insert Clickable Images
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To add a clickable image to your content, you must first insert the link block (1,2). Then, place the image block inside the link block (3,4).
+To add a clickable image to your content, you must first insert the Link Block (1,2). Then, place the image block inside the link block (3,4).
 
 .. image:: /user/img/concept-guides/content-management/insert_clickable_image_1.png
    :alt: The steps you need to expose to add the link block to your content
-
-.. image:: /user/img/concept-guides/content-management/insert_clickable_image_2.png
-   :alt: The steps you need to expose to add the image block to the link block
 
 Click the link block again to display the **Style Manager** menu settings. In the **Settings** section, input the link for the image to direct people to the necessary website, once they click the image in the storefront.
 
@@ -337,7 +334,7 @@ Insert Content Blocks
 
 To add a content block to your web page, you need to drag the content block to your canvas and select the required one from the list of available content block that you have previously created and saved.
 
-.. image:: /user/img/concept-guides/content-management/add_content_block.png
+.. image:: /user/img/concept-guides/content-management/add_content_block_to_wysiwyg.png
    :alt: A sample of the Terms and Conditions landing page
 
 Once the landing page is added as a content variant to the content node of a web catalog, the content block should then become visible in the storefront.
@@ -503,8 +500,6 @@ Adapt Text
 
 You can change the text alignment, font size, letter spacing, color of the text, and its background under the **Typography** and **Decorations** style manager menu of a particular screen size.
 
-Be aware that you **cannot** change the original text, font, or font style (bold, italics). You can hide the irrelevant text and show the appropriate one instead.
-
 .. image:: /user/img/concept-guides/content-management/adapt-text-to-screen-size.png
    :alt: Illustrating different text formats and styles for the desktop and tablet breakpoints
 
@@ -564,7 +559,7 @@ To hide a particular fragment of content:
 2. Open the **Layer Manager** menu with a list of all available blocks for your canvas.
 3. Click the block to hide (text, content, quote, image, div, table, etc.), except for the tiles and columns.
 
-   Alternatively, click the required block on your canvas to open the Style Manager menu. Make sure you select the highest parent block, otherwise the block may not be hidden fully, and may break the content view.
+Alternatively, click the required block on your canvas to open the Style Manager menu. Make sure you select the highest parent block, otherwise the block may not be hidden fully, and may break the content view.
 
 4. Open **General > Display** and select the **none** option to hide the block.
 
@@ -600,9 +595,6 @@ To uncover the blocks of content, images, or columns that were hidden for a part
 4. The **none** option should have been selected for such block. It means that it is hidden for the particular breakpoint.
 5. Change **none** to **block** to reveal the content for the breakpoint.
 6. The changes are applied to all screens with a smaller resolution, while higher resolution screens remain unaffected.
-
-.. image:: /user/img/concept-guides/content-management/display-hidden-content.png
-   :alt: Steps that you need to perform to uncover the hidden block of content
 
 .. _getting-started-wysiwyg-editor-field-ai:
 

@@ -36,12 +36,7 @@ To create a new landing page:
 
 #. Enter the landing page content in the WYSIWYG text editor.
 
-   Drag the selected element (a text, an image, a column, or a source code) from the Blocks menu and drop it to the required location. Rearrange the content or modify the style of the elements by navigating from tab to tab in the WYSIWYG editor's manager bar. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
-
-   .. note:: You can insert the *Contact Us widget* into the required page. For this, enter ``{{widget('contact_us_form')}}`` in the text editor and click **Save** in the top right corner. Once the landing page is added as a content variant to the content node of a web catalog, the form should then become visible in the storefront.
-
-             .. image:: /user/img/marketing/landing_pages/ContactWidget.png
-                :alt: Show how the Contact Us widget is displayed in the storefront
+   Drag the selected element (a text, an image, a content block, a widget, or a source code) from the Blocks menu and drop it to the required location. Rearrange the content or modify the style of the elements by navigating from tab to tab in the WYSIWYG editor's manager bar. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
 
 #. In the SEO section, manage the meta description and meta keywords that will be encapsulated on the landing page.
 

@@ -113,7 +113,6 @@ To be able to display the text of the consent to customers in the storefront, yo
 As contents in OroCommerce can be either **mandatory** or **optional**, you may or may not require to add a landing page with a consent description to your catalog. The rule of thumb is that if your consent does not require any descriptive text, or if your consent is optional, you do not have to add it to the web catalog node as a landing page. However, if you need to comply with the GDPR, make sure that the mandatory consent has a detailed description of the terms that the buyer should agree to, in which case you should add this consent as a landing page to the selected web catalog node.
 
 .. image:: /user/img/concept-guides/web-catalog/consents.png
-   :align: center
    :alt: Web catalogs in consents
 
 Web Catalog and Master Catalog
@@ -175,7 +174,7 @@ The following table summarizes the difference between a master catalog and a web
    :header: "Master Catalog","Web Catalog","Notes"
    :widths: 5, 5, 30
 
-   "Yes","No","Product-related values fall back to the master catalog settings. Let's take inventory as an example. In the *Inventory* section on a product edit page, you can either provide a custom value to most inventory options, choose to fall back to category defaults, or follow the configuration determined on the website level. If in the master catalog, *Paper and Mailing* has **Is Upcoming** set to *Yes*, then *PPR1 - Copier Paper White A4 500 Sheets* that belongs to *Paper and Mailing* will have the option *Is Upcoming* set to *Yes* whenever the product falls back to *Category Defaults* (i.e. falls back to the value set for *Is Upcoming* on category level in the master catalog)."
+   "Yes","No","Some product settings — like inventory options — can automatically inherit values from the master catalog. For example, in the *Inventory* section on a product edit page, you can either enter a custom value to inventory options, choose to use the category’s default setting, or follow the configuration set at the website level. Let’s say your product belongs to the *Lighting Products* master category, and this category has **Is Upcoming** set to *Yes*. If the product is set to use **Category Defaults**, it will also have **Is Upcoming** set to *Yes* by default, because it inherits that value from its master category."
 
 .. image:: /user/img/products/master_catalog/value_fallback.png
    :alt: Value Fallback illustration
@@ -196,7 +195,7 @@ Commerce_main_menu is located under **System > Storefront Menus**.
 
 Here, categories in the tree to your left constitute the main menu your customers see on the website.
 
-When no :ref:`web catalog is connected <sys--config--sysconfig--websites--routing>`, **commerce_main_menu** is populated with the structure of the master catalog, and the target type of the system items is set to Category. When you connect a web catalog and define the navigation root, system menu items in the menu is set to Content Node.
+When no :ref:`web catalog is connected <sys--config--sysconfig--websites--routing>`, **commerce_main_menu** is populated with the structure of the *master catalog*, and the target type of the system items is set to **Category**. When you connect a web catalog and define the navigation root, system menu items in the menu is set to Content Node.
 
 .. image:: /user/img/concept-guides/web-catalog/master-vs-webcatalog-frontend-menu.png
    :alt: The difference between the way commerce_main_menu looks when either the master or web catalog is connected
@@ -209,12 +208,12 @@ You can modify *system* items (which are reflection of the items from web/master
      :alt: Illustrating that the navigation root configured from the Storefront menu supersedes the one set under system configuration.
 
 
-You can also add promo images to the menu and add links to them. In the screenshot below, the image is created as a new menu item with target type URI and placed 2 levels deep in the tree.
+You can also add promo images to the menu and add links to them. In the screenshot below, the image is created as a new menu item with target type URI and placed **2 levels deep in the tree**.
 
 .. image:: /user/img/concept-guides/web-catalog/promo-image.png
    :alt: Promo image at the bottom of the mega menu
 
-However, if you place such an image higher or lower than level 2, it will be displayed as a menu item, which means that you will only see the title of the menu item but not the image. This is the default behavior, and :ref:`customization is required <bundle-docs-commerce-commerce-menu-bundle-menu-templates>` if it needs changing for your business needs.
+However, if you place such an image **higher or lower than level 2**, it will be displayed as a menu item, which means that you will only see the title of the menu item but not the image. This is the default behavior, and :ref:`customization is required <bundle-docs-commerce-commerce-menu-bundle-menu-templates>` if it needs changing for your business needs.
 
 .. image:: /user/img/concept-guides/web-catalog/promo-image-no-preview.png
    :alt: Promo image as a link without preview

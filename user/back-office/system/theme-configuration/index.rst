@@ -61,6 +61,13 @@ To configure your current storefront theme:
    .. image:: /user/img/system/theme-configuration/dashboard-promotional-block.png
       :alt: Illustrating the selected 5 content widgets on the customer user’s Dashboard page
 
+.. note:: The Scorecard content widget is available as of OroCommerce version 6.1.1.
+
+* **Customer Dashboard Scorecard (1-4)** --- Select a :ref:`scorecard content widget <content-widgets--dashboard-scorecard-widget>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to four content widgets. Only the widgets of the **Scorecard** type are displayed in the dropdown list. The scorecards represent the information about the total number of customer users under the current customer, the number of shopping lists, open Requests for Quote (excluding cancelled ones), and the total value of all non-cancelled orders.
+
+    .. image:: /user/img/marketing/content_widgets/scorecard.png
+       :alt: Illustration of the Scorecard widget in the storefront
+
 * **Promotional Content** --- Select a :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` from the dropdown list to display it at the top of the storefront header.
 
     .. image:: /user/img/system/theme-configuration/promotional-content.png
