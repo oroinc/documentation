@@ -19,6 +19,7 @@ Learn how to configure commerce-specific settings:
    Orders <orders/index>
    Search <search/index>
    Shipping <shipping/index>
+   Contacts <contacts/index>
    Marketplace <marketplace/index>
 
 

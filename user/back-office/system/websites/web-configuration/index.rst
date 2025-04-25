@@ -39,7 +39,7 @@ More information about the options available for each of the two categories is a
     * :ref:`Website Localization <sys--websites--sysconfig--general-setup--localization>`
     * :ref:`Email Configuration for the Website <admin-configuration-system-mailboxes-website>`
     * :ref:`Display Settings for the Website <display-settings--website>`
-    * :ref:`Upload Settings <upload-settings--website>`
+    * :ref:`Upload Settings for the Website <upload-settings--website>`
 
 
 * **Commerce Configuration**
@@ -98,15 +98,20 @@ More information about the options available for each of the two categories is a
 
   * Search
 
+    * :ref:`Search Terms <configuration--website-commerce--search--history>`
     * :ref:`Saved Search <configuration--website-commerce--search--saved-search>`
     * :ref:`Fuzzy Search <configuration--website-commerce--search--fuzzy-search>`
     * :ref:`Search Synonyms <configuration--website-commerce--search--synonyms>`
+    * :ref:`Stop Words <configuration--website-commerce--search--stop-words>`
     * :ref:`Customer Recommendations <website-configuration--commerce--search--customer-recommendation>`
-    * :ref:`Search Terms <configuration--website-commerce--search--history>`
 
   * Shipping
 
     * :ref:`Address Validation <website-commerce--configuration--shipping--address-validation>`
+
+  * Contacts
+
+    * :ref:`Seller Info <system--website--configuration--commerce--contacts--seller-info>`
 
   * Orders
 

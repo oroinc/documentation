@@ -99,6 +99,13 @@ Learn how to define the merchant country.
 
 * :ref:`General <sys--conf--commerce--payment--general>`
 
+:ref:`Contacts <sys--conf--commerce--contacts>`
+-----------------------------------------------
+
+Learn how to configure and manage your company’s business details.
+
+* :ref:`Seller Info <sys--conf--commerce--contacts--seller-info>`
+
 :ref:`Search <configuration--guide--commerce--configuration--search>`
 ---------------------------------------------------------------------
 
@@ -146,6 +153,7 @@ Learn how to provide your shipping origin address and shipping options.
    Sales <sales/index>
    Taxation <taxation/index>
    Payment <payment/index>
+   Contacts <contacts/index>
    Search <search/index>
    Orders <orders/index>
    Shipping <shipping/index>

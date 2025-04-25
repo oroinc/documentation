@@ -104,6 +104,10 @@ The following categories of settings are available for system configuration at o
 
     * :ref:`Address Validation <organization-commerce--configuration--shipping--address-validation>`
 
+  * Contacts
+
+    * :ref:`Seller Info <org--commerce--configuration--contacts--seller-info>`
+
   * Marketplace
 
     * :ref:`General Marketplace Settings <configuration--commerce--marketplace--seller-organization>`
