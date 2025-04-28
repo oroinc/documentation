@@ -87,6 +87,7 @@ Configuration Sequence
    Once the integration is set up and a payment method is added, you need to add a payment rule to make this payment option visible to the buyer in the storefront. When this is done, the buyer in the storefront can proceed through the checkout.
 
 .. image:: /user/img/concept-guides/payment/payment-configuration-diagram.png
+   :align: center
    :alt: Payment Configuration Diagram
 
 
