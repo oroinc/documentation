@@ -19,122 +19,69 @@ Replace Favicons
 
     Additional favicon images and a |web app manifest file| with specified icons:
 
-    .. note:: For the detailed description of a purpose and role of additional favicons and the ``manifest.json`` file, check out an article on |Adding favicons in a multi-browser multi-platform world|.
+    .. note:: For the detailed description of a purpose and role of additional favicons and the ``site.webmanifest`` file, check out an article on |Adding favicons in a multi-browser multi-platform world|.
 
-    - Resources/public/default/favicons/apple-touch-icon-57x57.png
-    - Resources/public/default/favicons/apple-touch-icon-60x60.png
-    - Resources/public/default/favicons/apple-touch-icon-72x72.png
-    - Resources/public/default/favicons/apple-touch-icon-76x76.png
-    - Resources/public/default/favicons/apple-touch-icon-114x114.png
-    - Resources/public/default/favicons/apple-touch-icon-144x144.png
-    - Resources/public/default/favicons/apple-touch-icon-120x120.png
-    - Resources/public/default/favicons/apple-touch-icon-152x152.png
-    - Resources/public/default/favicons/apple-touch-icon-180x180.png
-    - Resources/public/default/favicons/favicon-32x32.png
-    - Resources/public/default/favicons/android-chrome-192x192.png
+    - Resources/public/default/favicons/apple-touch-icon.png
+    - Resources/public/default/favicons/favicon_padded.svg
     - Resources/public/default/favicons/favicon-96x96.png
-    - Resources/public/default/favicons/favicon-16x16.png
-    - Resources/public/default/favicons/manifest.json
-    - Resources/public/default/favicons/mstile-144x144.png
+    - Resources/public/default/favicons/favicon.ico
+    - Resources/public/default/favicons/favicon.svg
+    - Resources/public/default/favicons/site.webmanifest
+    - Resources/public/default/favicons/web-app-manifest-192x192.png
+    - Resources/public/default/favicons/web-app-manifest-512x512.png
 
-    Example of a ``manifest.json`` file:
+    Example of a ``site.webmanifest`` file:
 
     .. code-block:: json
 
         {
-            "name": "Acme Inc Storefront",
-            "short_name": "Acme Store",
+            "name": "Oro Commerce",
+            "short_name": "OroCommerce",
             "icons": [
-                {
-                    "src": "{{ site.baseurl }}/bundles/acmedemo/default/favicons/favicon-32x32.png",
-                    "sizes": "32x32",
-                    "type": "image/png"
-                },
-                {
-                    "src": "{{ site.baseurl }}/bundles/acmedemo/default/favicons/android-chrome-192x192.png",
-                    "sizes": "192x192",
-                    "type": "image/png"
-                }
+            {
+                "src": "/bundles/orodemotheme/demo/favicons/web-app-manifest-192x192.png",
+                "sizes": "192x192",
+                "type": "image/png",
+                "purpose": "maskable"
+            },
+            {
+                "src": "/bundles/orodemotheme/demo/favicons/web-app-manifest-512x512.png",
+                "sizes": "512x512",
+                "type": "image/png",
+                "purpose": "any"
+            },
+            {
+                "src": "/bundles/orodemotheme/demo/favicons/web-app-manifest-512x512.png",
+                "sizes": "512x512",
+                "type": "image/png",
+                "purpose": "maskable"
+            }
             ],
-            "start_url": "/",
-            "display": "standalone"
+            "theme_color": "#002434",
+            "background_color": "#ffffff",
+            "display_override": ["window-control-overlay", "minimal-ui"],
+            "display": "standalone",
+            "start_url": "/"
         }
 
-2. Create a :ref:`Layout Update <dev-doc-frontend-layouts-layout-updates>` file to replace other specific favicons in the storefront.
+2. Enable Favicons in Theme Configuration
 
-    .. important:: Please make sure to remove the default Oro favicons via the layout update, otherwise, they will be used instead of the new ones. Also, please, make sure to change the option id: favicon_theme_icon. This option will change background color for the top bar on android devices.
+    Update your ``theme.yml`` file to use the new favicons by changing the ``favicons_path`` option:
 
     .. code-block:: yaml
-        :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{your_theme_id}/favicon.yml
 
-        layout:
-            actions:
-                - '@setOption':
-                      id: apple_57x57
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/apple-touch-icon-57x57.png")'
-                - '@setOption':
-                      id: apple_60x60
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/apple-touch-icon-60x60.png")'
-                - '@setOption':
-                      id: apple_72x72
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/apple-touch-icon-72x72.png")'
-                - '@setOption':
-                      id: apple_76x76
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/apple-touch-icon-76x76.png")'
-                - '@setOption':
-                      id: apple_114x114
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/apple-touch-icon-114x114.png")'
-                - '@setOption':
-                      id: apple_144x144
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/apple-touch-icon-144x144.png")'
-                - '@setOption':
-                      id: apple_120x120
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/apple-touch-icon-120x120.png")'
-                - '@setOption':
-                      id: apple_152x152
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/apple-touch-icon-152x152.png")'
-                - '@setOption':
-                      id: apple_180x180
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/apple-touch-icon-180x180.png")'
-                - '@setOption':
-                      id: favicon_32x32
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/favicon-32x32.png")'
-                - '@setOption':
-                      id: android_chrome_192x192
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/android-chrome-192x192.png")'
-                - '@setOption':
-                      id: favicon_96x96
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/favicon-96x96.png")'
-                - '@setOption':
-                      id: favicon_16x16
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/favicon-16x16.png")'
-                - '@setOption':
-                      id: favicon_manifest
-                      optionName: href
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/manifest.json")'
-                - '@setOption':
-                      id: msapplication_tileimage
-                      optionName: content
-                      optionValue: '=data["asset"].getUrl("bundles/acmedemo/default/favicons/mstile-144x144.png")'
-                - '@setOption':
-                      id: favicon_theme_icon
-                      optionName: content
-                      optionValue: '#ed2d27'
-                - '@remove':
-                      id: favicon_mask_icon
+        # src/Oro/Bundle/DemoThemeBundle/Resources/views/layouts/demo/theme.yml
+        label: Demo Theme
+        description: 'Demo Theme description.'
+        groups: [ commerce ]
+        parent: default
+        icon: bundles/orofrontend/default/images/favicon.ico
+        - favicons_path: bundles/orofrontend/default/favicons/
+        + favicons_path: bundles/orodemotheme/demo/favicons/
+        logo: bundles/orofrontend/default/images/logo/demob2b-logo.svg
+        logo_small: bundles/orofrontend/default/images/logo/demob2b-logo-small.svg
+        rtl_support: true
+        svg_icons_support: true
 
 3. Rebuild the assets:
 
@@ -142,13 +89,13 @@ Replace Favicons
 
     .. code-block:: none
 
-        php bin/console cache:clear
+      php bin/console cache:clear
 
     Publish images to the public web folder:
 
     .. code-block:: none
 
-        php bin/console assets:install --symlink
+      php bin/console assets:install --symlink
 
 
 Replace Logos
@@ -157,18 +104,18 @@ Replace Logos
 1. Place a new logo images to your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/images/logo.svg``).
 
     .. code-block:: yaml
-        :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{your_theme_id}/theme.yml
+      :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{your_theme_id}/theme.yml
 
-        logo: '@AcmeDemoBundle/Resources/public/default/logo/logo.svg'
-        logo_small: '@AcmeDemoBundle/Resources/public/default/logo/small_logo.svg'
+      logo: '@AcmeDemoBundle/Resources/public/default/logo/logo.svg'
+      logo_small: '@AcmeDemoBundle/Resources/public/default/logo/small_logo.svg'
 
     or
 
     .. code-block:: yaml
-        :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{your_theme_id}/theme.yml
+      :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{your_theme_id}/theme.yml
 
-        logo: 'bundles/{your_theme_id}/images/logo/logo.svg'
-        logo_small: 'bundles/{your_theme_id}/images/logo/small_logo.svg'
+      logo: 'bundles/{your_theme_id}/images/logo/logo.svg'
+      logo_small: 'bundles/{your_theme_id}/images/logo/small_logo.svg'
 
 
 .. admonition:: Business Tip
