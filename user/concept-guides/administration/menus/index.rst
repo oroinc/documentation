@@ -52,6 +52,7 @@ You can configure each of the following menu elements on five different levels: 
 
 .. image:: /user/img/concept-guides/menus/frontend_menu_fallback.png
    :alt: Storefront menu fallback logic
+   :align: center
 
 Once you have configured the menu items, you can add them to the selected :ref:`theme configuration <back-office-theme-configuration>` of your website, placing them anywhere in the storefront header.
 
@@ -152,7 +153,7 @@ Featured_menu
 
 You can use the nodes excluded from the main menu. For example, create a category or content node (e.g., Promotions) with a number of discounted items and with the product listing page not be part of the main menu. Then add it to **featured menu** and place it anywhere in the storefront header under the :ref:`theme configuration <back-office-theme-configuration>`.
 
-.. image:: /user/img/concept-guides/web-catalog/featured-menu-nav-root.png
+.. image:: /user/img/concept-guides/web-catalog/featured-menu-navigation-root.png
    :alt: A segment of web catalog added to featured menu in the storefront
 
 .. note:: Keep in mind that **featured_menu** is different from the :ref:`featured products segment <concept-guides--product-management--featured-products>`. While the featured products segment is intended to store only the products and categories that are marked as featured, the featured menu is designed to offer any other information that you want to emphasize.
