@@ -19,7 +19,10 @@ Such tables represent aggregated views of data and store records, making it easy
 Breadcrumbs
 -----------
 
-You can trace where the current page is located in the menu in the breadcrumbs under the top navigation bar.
+Breadcrumbs displayed under the top navigation bar show the hierarchical path to the current page, based on the product catalog structure.
+
+- The current page is not included in the breadcrumbs on all pages.
+- Breadcrumbs that contain only one item are not shown.
 
 .. image:: /user/img/storefront/navigation/GridLocationName.png
 

@@ -38,6 +38,13 @@ and will look like:
 
      All Products \ category-1 \ category-1-1 \ category-1-1-1
 
+The breadcrumb logic follows SEO best practices:
+
+- The current page is automatically excluded from the breadcrumbs on all pages.
+- Breadcrumbs that consist of only one item are automatically removed.
+
+This logic is applied by default across the storefront and does not require manual configuration.
+
 
 Performance notes
 -----------------
