@@ -38,6 +38,13 @@ and will look like:
 
      All Products \ category-1 \ category-1-1 \ category-1-1-1
 
+Breadcrumbs behavior is configurable via the following options under **System > Configuration > Commerce > Product > SEO** :ref:`in the back-office <sys--commerce--product--seo>`:
+
+- *Exclude Current Page in Breadcrumbs on Product View*
+- *Exclude Current Page in Breadcrumbs on All Pages*
+- * Hides the breadcrumbs block entirely when it contains a single item*
+
+These options allow you to exclude the current product/category from the breadcrumbs, or remove single-item breadcrumbs entirely.
 
 Performance notes
 -----------------

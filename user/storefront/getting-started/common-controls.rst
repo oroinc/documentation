@@ -21,6 +21,16 @@ Location Trail (Breadcrumbs)
 
 You can trace where the current page is located in the menu in the breadcrumbs under the top navigation bar.
 
+Breadcrumbs are generated based on the current catalog structure and may include the full path from the main menu to the current product or category.
+
+You can configure the breadcrumbs behavior in the back-office via:
+
+- *Exclude Current Page in Breadcrumbs on Product View*
+- *Exclude Current Page in Breadcrumbs on All Pages*
+- *Hides the breadcrumbs block entirely when it contains a single item*
+
+These options are available under **System > Configuration > Commerce > Product > SEO**.
+
 .. image:: /user/img/storefront/navigation/GridLocationName.png
 
 .. _frontstore-guide--navigation-display-options:
