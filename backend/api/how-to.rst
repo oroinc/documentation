@@ -479,7 +479,7 @@ To illustrate the configuration of an unidirectional association, consider two e
                         data_type: unidirectionalAssociation:category
                         target_class: Acme\Bundle\DemoBundle\Entity\Product
 
-.. note:: Only many-to-one and many-to-many unidirectional associations are supported.
+.. note:: Only one-to-one, many-to-one and many-to-many unidirectional associations are supported.
 
 .. note:: This data type is not supported for models that replace ORM entities.
 
