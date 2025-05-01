@@ -3,7 +3,7 @@
 E-Commerce Accessibility
 ========================
 
-Although everyone now shops online, at Oro, we understand that shoppers are different and products must be accessible to all consumers. As of OroCommerce v.5.0LTS, we made sure that we are fully compliant with WCAG 2 Level AA and ADA Level 2 and compatible with screen readers and other assistive technology.
+Although everyone now shops online, at Oro, we understand that shoppers are different and products must be accessible to all consumers. As of OroCommerce v.5.0 LTS, we made sure that we are fully compliant with WCAG 2 Level AA and ADA Level 2 and compatible with screen readers and other assistive technology.
 
 Customers and employees with visual, hearing, or other impairments can take advantage of various assistive features, such as keyboard-optimized navigation, search autocomplete, captions, larger text fonts, and UI that adapts to magnification.
 
@@ -45,14 +45,9 @@ Adaptive Page Magnification
 
 You can use CTRL + / CTRL - to control the webpage size. We made sure that our design neatly adapts to magnification, with text, images, and menus adjusting depending on the chosen level of magnification. Below are examples of 100%, 125%, and 175% magnification.
 
-.. image:: /user/img/concept-guides/accessibility/zoom100.png
-   :alt: 100% page magnification
+.. image:: /user/img/concept-guides/accessibility/zoom.png
+   :alt: 100%, 125% and 175% page magnification
 
-.. image:: /user/img/concept-guides/accessibility/zoom125.png
-   :alt: 125% page magnification
-
-.. image:: /user/img/concept-guides/accessibility/zoom175.png
-   :alt: 175% magnification
 
 Search Autocomplete
 -------------------

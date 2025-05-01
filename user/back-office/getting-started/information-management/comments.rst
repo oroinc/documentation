@@ -2,6 +2,9 @@
 
 .. _user-guide-activities-comments:
 
+Create and View Comments
+------------------------
+
 Your Oro application enables you to add comments to an activity, such as leaving a comment on a task or a call.
 
 .. important::
@@ -13,8 +16,6 @@ Your Oro application enables you to add comments to an activity, such as leaving
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/kGSqqKoNL20" frameborder="0" allowfullscreen></iframe>
 
-How to Create and View Comments
--------------------------------
 
 Once a record or an activity is created, you can add a comment to it from:
 
@@ -40,7 +41,7 @@ To add a comment:
 
     You can :ref:`edit <doc-entity-actions-edit>` the **Comment** entity and add new fields if required.
 
- .. note:: Comments for cases have an additional **Make Public** checkbox when your Oro application is integrated with Zendesk. This enables you to make a specific comment public in :ref:`Zendesk <user-guide-zendesk-integration>`.
+.. note:: Comments for cases have an additional **Make Public** checkbox when your Oro application is integrated with Zendesk. This enables you to make a specific comment public in :ref:`Zendesk <user-guide-zendesk-integration>`.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

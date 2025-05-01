@@ -14,13 +14,6 @@ It is also possible to configure auto-actions and auto-responses. For example, w
 
 Oro also provides a feature of auto-assignment to contacts, thanks to which new emails synced into the application are automatically linked to contacts if the email addresses of these contacts appear in the correspondence.
 
-
-   See a short demo on |how to create and manage emails|, or keep reading the step-by-step guidance below.
-
-   .. raw:: html
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/hTI0IWEsSF4" frameborder="0" allowfullscreen></iframe>
-
 .. start_my_emails
 
 Navigate to **My Emails** by clicking on your user name on the top right of the application page.
@@ -97,7 +90,15 @@ To compose a new email:
 
 * **Body** --- Enter the text of your email. You can customize your email text using the following features:
 
-  - Bold, Italic, Underline styles                                                                                                                   - Text color                                                                                                                                       - Background color                                                                                                                                 - Bullet List                                                                                                                                      - Numbered List                                                                                                                                    - Insert/Edit link                                                                                                                                 - Source Code                                                                                                                                      - Image Embed Upload                                                                                                                               - Fullscreen view
+  - Bold, Italic, Underline styles
+  - Text color
+  - Background color
+  - Bullet List
+  - Numbered List
+  - Insert/Edit link
+  - Source Code
+  - Image Embed Upload
+  - Fullscreen view
 
 * **Add Signature** --- The signature may be added to any email you write in the Oro application. Your organization settings define whether the signature will be added automatically or manually. If you have a signature configured, you can add it by clicking **Add Signature**.
 
@@ -165,7 +166,7 @@ View Recent Emails
 You can reach your emails by clicking on the Recent Emails button in the top right corner of the Oro application window. A list of unread emails
 will appear, as illustrated in the screenshot below:
 
-.. image:: /user/img/getting_started/user_menu/recent_emails_button.jpg
+.. .. image:: /user/img/getting_started/user_menu/recent_emails_button.jpg
    :alt: View the list of unread emails displayed when clicking the Recent Emails button
 
 Clicking on an email from the list redirects you to the page of the selected email.
