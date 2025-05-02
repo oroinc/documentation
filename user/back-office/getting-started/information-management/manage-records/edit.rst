@@ -37,7 +37,6 @@ To edit a record using inline-editing:
    If a field can take only specific values, the inline editor will show you a list of values to select from.
 
    .. image:: /user/img/getting_started/records/grids/grids_inlineeditor2.png
-      :width: 20%
       :alt: An example of a list values editor type
 
 4. Click the |IcActivate| **Save Changes** icon to save a new value, or the |IcBan| **Discard Changes** icon to return to the old value.

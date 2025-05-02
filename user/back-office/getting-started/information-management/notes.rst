@@ -14,9 +14,6 @@ You can see a short demo on |how to add notes| or keep reading the guidance belo
    <iframe width="560" height="315" src="https://www.youtube.com/embed/TO_2SGV5KaU" frameborder="0" allowfullscreen></iframe>
 
 
-How to Add a Note
------------------
-
 .. important::
     By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description.
 

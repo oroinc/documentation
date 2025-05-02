@@ -104,7 +104,7 @@ Once the widget is saved, add it to the **Customer Dashboard Content Widget** fi
 .. _content-widgets--dashboard-scorecard-widget:
 
 
-.. note:: The Scorecard content widget is available as of OroCommerce version 6.1.1.
+.. note:: The Scorecard content widget is available as of OroCommerce version 6.1.2.
 
 * **Scorecard** - Enables you to add a block of key business metrics in a compact, easy-to-read format to the customer user’s :ref:`Dashboard <storefront--dashboard>` page in the My Account section. The scorecard is shown only if the current customer user has appropriate *View* permissions for the corresponding entity. If the customer user has *View – None* permission, the respective scorecard will not be displayed. Scorecards represent the following metrics:
 

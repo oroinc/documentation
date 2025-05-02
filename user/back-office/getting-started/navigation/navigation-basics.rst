@@ -25,11 +25,6 @@ The menu bar is the main mode of accessing data in the Oro application, and is a
 
 To view the subitems, click the corresponding menu section.
 
-In the mobile version, the menu bar can be accessed via the "hamburger" button next to the organization name:
-
-.. image:: /user/img/getting_started/navigation/header_mobile.png
-   :alt: The menu bar view in the mobile versions
-
 The list of menu items that are available to you depends on your access and permission settings, as defined in your
 organization.
 

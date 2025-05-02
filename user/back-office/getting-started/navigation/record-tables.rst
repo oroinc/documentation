@@ -110,7 +110,6 @@ The controls available for fields depend on the field type.
    For text fields that can take any value, you can enter search words (or part of the word) and select from the list in front of it whether the values that you select must contain these search phrase at any position or does not contain it at all, must start with it, end with it, etc.
 
    .. image:: /user/img/getting_started/navigation/grid_filters_define.png
-      :width: 40%
       :alt: Available values in the contains dropdown
 
    For conditions like 'Is Any Of' and 'Is Not Any Of,' enter search words separated by the comma.
@@ -126,13 +125,11 @@ The controls available for fields depend on the field type.
    In addition to selecting a strict calendar date, you can use variables that enable you to specify relative values, such as 'today,' 'start of the month,' etc.
 
    .. image:: /user/img/getting_started/navigation/grids_filters_apply2-2.png
-      :width: 40%
       :alt: Variables that enable to specify relative values such as ‘today,’ ‘start of the month,’ etc
 
    Also, specify the condition of how to form your desired time range, whether it starts from the day and time that you specified, lies between set dates, etc.
 
    .. image:: /user/img/getting_started/navigation/grids_filters_apply2-3.png
-      :width: 40%
       :alt: Specify the condition of desired time range
 
 .. important::  If more than one filter is active, only the records that meet the requirements of *all* selected filters are displayed.
@@ -162,15 +159,6 @@ For example:
 * Select which products to add to a product collection content variant in a web catalog
 
 .. image:: /user/img/getting_started/records/grids/web-catalog.png
-
-* Select what products qualify for a promotion
-
-.. image:: /user/img/getting_started/records/grids/grid-promotions.png
-
-* Choose what products to include in a master catalog category.
-
-.. image:: /user/img/getting_started/records/grids/master-catalog-grid.png
-
 
 .. note:: These checkboxes are for mass actions only, and **do not affect records during export**.
 

@@ -10,7 +10,6 @@ If you forgot your password, perform the following steps:
 
    .. image:: /user/img/getting_started/app_authentication/login_forgot1.png
       :alt: The forgot your password link on the login page
-      :width: 40%
 
 3. On the **Forgot Password** page, enter your username or the primary email address specified in your profile and click **Request**.
 4. The password reset link is sent to your email address.

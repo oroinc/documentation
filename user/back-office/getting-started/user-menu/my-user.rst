@@ -53,30 +53,12 @@ Several practical tools and actions are available on your user profile page, fro
 
 5. **View your profile details aggregated under 3 sections: general information, activity, and additional information.**
 
-   * In the **General Information** section, you can view the details of your profile, :ref:`create an API key <doc-my-user-actions-api>`.
+   * In the **General Information** section, you can view the details of your profile.
 
    * In the **Activity** section, you can see the emails you sent and the calls you logged. If a user mentions you as a context for their activity, this activity also appears on the list. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in the Oro application.
 
    * In the **Additional Information** section, you can view and manage tasks and cases related to you. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in the Oro application.
 
-
-.. _doc-my-user-actions-api:
-
-Generate an API Key
--------------------
-
-When a third-party software requires an API key to integrate with your Oro application, you can generate it on your profile page.
-
-1. Click on your user name on the top right of the screen.
-2. Click **My User**.
-3. In the **General Information section**, click **Generate Key** next to the API Key label.
-
-   .. image:: /user/img/getting_started/user_menu/My_User_Create_Api.png
-      :alt: The Generate key button
-
-4. Copy the generated key and use it where required.
-
-.. caution:: One user can have only one API key at a time. When you generate a new key, the old key becomes invalid.
 
 .. _user-guide-getting-started-profile-password:
 .. _doc-my-user-actions-change-password:

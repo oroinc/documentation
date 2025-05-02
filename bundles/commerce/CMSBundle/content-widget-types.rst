@@ -68,7 +68,7 @@ There are multiple ways to extend and add a new type of datagrid for selection i
 Scorecard
 ---------
 
-.. note:: The Scorecard content widget is available as of OroCommerce version 6.1.1.
+.. note:: The Scorecard content widget is available as of OroCommerce version 6.1.2.
 
 To extend and add a new type of scorecard for selection in this widget, create a custom scorecard provider that implements ``Oro\Bundle\CommerceBundle\ContentWidget\Provider\ScorecardInterface`` and tag it with `oro_commerce.scorecard`.
 
