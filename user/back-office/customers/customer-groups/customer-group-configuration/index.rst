@@ -7,19 +7,21 @@ Learn how to enable and set up commerce-related features per customer group:
 
 * **System Configuration Settings**
 
-  * :ref:`Websites <user-guide--customer-groups--configuration--settings--routing>`
-  * :ref:`AI Agent <user-guide--customer-groups--configuration--settings-ai-agent>`
+  * :ref:`Websites (Routing) <user-guide--customer-groups--configuration--settings--routing>`
+  * :ref:`Integrations (AI Smart Agent) <user-guide--customer-groups--configuration--settings-ai-agent>`
 
 * **Commerce**
 
-  * :ref:`Search <user-guide--customer-groups--configuration--settings--search>`
-  * :ref:`Product <user-guide--customer-groups--customer-settings>`
+  * :ref:`Search (Search Terms) <user-guide--customer-groups--configuration--settings--search>`
+  * :ref:`Product (Customer Settings) <user-guide--customer-groups--customer-settings>`
+  * :ref:`Sales (Checkout) <user-guide--customers--checkout--settings>`
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 
-   Product Data Export <commerce/product/customer-group-product-customer-settings>
-   Search History <commerce/search/customer-group-search-terms-settings>
    Routing <system-configuration/websites/customer-group-routing-settings>
    AI Agent <system-configuration/integrations/customer-group-ai-agent>
+   Search History <commerce/search/customer-group-search-terms-settings>
+   Product Data Export <commerce/product/customer-group-product-customer-settings>
+   Checkout Order Limits <commerce/sales/customer-group-checkout-settings>

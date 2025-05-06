@@ -33,7 +33,7 @@ To export the necessary records (e.g., customer information) in a .csv format:
 
 3. Once the export is complete, you will receive an email to download the .csv file.
 
-.. note:: Keep in mind that by clicking **Export** you download all records of the selected entity regardless of the filters applied to the grid. To export only the list of filtered records, use the **Export Grid** functionality where it is available.
+.. note:: Keep in mind that by clicking **Export** you download all records of the selected entity regardless of the filters applied to the grid. To export only filtered records, use the **Export Grid** functionality where it is available.
 
 
 

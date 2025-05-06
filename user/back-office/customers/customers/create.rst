@@ -43,10 +43,6 @@ To create a new customer:
 
 .. note:: Keep in mind that customers with at least one successful registered checkout cannot be deleted from the system.
 
-   .. image:: /user/img/customers/customers/unable_to_delete_customers.png
-      :alt: A note appears when deleting a customer warning that no entities can be deleted
-
-
 .. include:: /include/include-links-user.rst
    :start-after: begin
 

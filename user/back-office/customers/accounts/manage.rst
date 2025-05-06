@@ -13,10 +13,6 @@ Accounts aggregate information on all your customers and their activities. Here 
 * The date of account creation and its latest update.
 * Thd calculated amount of the account's :term:`Lifetime Sales Value`.
 * General details of the account, such as its name, tags, description and all the contacts assigned to the account.
-
-  .. image:: /user/img/customers/accounts/account_view_general_new.png
-     :alt: General information about account
-
 * Any :ref:`activities <user-guide-activities>` related to the account, such as attachments, calls, calendar events, notes, emails, or tasks (if available).
 
   .. image:: /user/img/customers/accounts/accounts_view_activities.png
@@ -47,11 +43,6 @@ Accounts aggregate information on all your customers and their activities. Here 
   There are seven tabs within a **Commerce** Channel with Commerce customer-related information: General, Customer Users, Shopping Lists, Requests For Quote, Quotes, Orders, and Opportunities.
 
 You can manage the information collected within accounts. Below is an overview of what actions you can perform from the view page of any account:
-
-* Share an account by clicking **Share** and providing information in a pop up form (available for the Enterprise edition).
-
-  .. image:: /user/img/customers/accounts/accounts_view_actions_share.png
-     :alt: The sharing settings dialog displayed after clicking the share button on the account page
 
 * Edit account information by clicking |IcEdit| **Edit**.
 * Delete an account from the system by clicking |Trash-SVG| **Delete**.
@@ -85,7 +76,7 @@ The key actions that you can do to selected accounts on the list are located und
 
 In addition to editing an account on the edit page, you can quickly amend the necessary information using inline editing for specific columns in the grid, such as account name, owner or tags. To edit within the grid, click |Pencil-SVG|.
 
-.. image:: /user/img/customers/accounts/accounts_grid_inline_editing.gif
+.. image:: /user/img/customers/accounts/accounts_grid_inline_editing.png
    :alt: Inline editing for specific columns on the page of all accounts
 
 Aggregation capabilities of accounts extend even further, with the ability to merge as many accounts as you want should you need to accumulate information from several accounts. Click |IcMerge| and follow the instructions on the screen to proceed with the merge.
