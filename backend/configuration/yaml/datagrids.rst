@@ -8,6 +8,19 @@ Datagrids
 
 The datagrid configuration happens in the datagrids.yml file in the configuration directory of your bundle. It is a large file that is a map of datagrid names mapped to options that configure their behavior:
 
+acl_resource
+------------
+
+type: ``string``
+
+This check determines whether the user has access to the data that the grid is built on.
+
+.. code-block:: yaml
+
+    datagrids:
+        grid_name:
+            acl_resource: SOME_ACL_IF_NEEDED
+
 actions
 -------
 
@@ -16,6 +29,20 @@ type: ``map``
 This is a map of actions that can be performed from the datagrid. The keys are used to give unique
 identifiers inside the grid, but do not have a special meaning. For each action, a map must be
 passed configuring the action using the following options:
+
+
+acl_resource
+^^^^^^^^^^^^
+
+This check is used to determine whether a specific action (such as view, edit, etc.) is available for a particular row in the grid.
+
+.. code-block:: yaml
+
+      datagrids:
+          gid_name:
+              actions:
+                  action_name:
+                      acl_resource: some_acl_resource
 
 disabled
 ^^^^^^^^
@@ -1060,20 +1087,6 @@ type: ``map``
 
 The data source that fetches the data to be shown in the grid. Several options control how data are
 fetched:
-
-acl_resource
-^^^^^^^^^^^^
-
-type: ``string``
-
-An access control list the user must be granted access to in order to actually fetch any data.
-
-.. code-block:: yaml
-
-    datagrids:
-        grid-name:
-            source:
-                acl_resource: SOME_ACL_IF_NEEDED
 
 bind_parameters
 ^^^^^^^^^^^^^^^
