@@ -52,12 +52,12 @@ Setting a priority determines what records a territory should display or which t
 
 .. note:: Always use positive numbers.
 
-As an illustration, two overlapping territories have been created - **Leads France** and **Leads Paris**. These two territories will overlap if some of the leads' addresses have France specified for the country and Paris for the city within the same address record.
+As an illustration, two overlapping territories (filtered by country > France) have been created - **Leads France** and **Leads Paris**. These two territories will overlap if some of the leads' addresses have France specified for the country and Paris for the city in the same address record.
 
 .. image:: /user/img/sales/sales_territories/leads_france_paris.png
    :alt: The list of all territories highlighting the two that overlap Paris
 
-The priority of 30 has been set for Leads France, and the priority of zero was left for Leads Paris. When the territories are activated, Leads Paris will display leads (assigned records) that fall into Leads France as well as Leads Paris category.
+The priority of 30 has been set for Leads France, and the priority of zero was left for Leads Paris. As priority 0 is higher than 30, Leads Paris has priority over Leads France. When the territories are activated, Leads Paris will display leads that fall into Leads France as well as Leads Paris category.
 
 .. image:: /user/img/sales/sales_territories/leads_paris_higher.png
    :alt: The Leads Paris territory view page
@@ -95,7 +95,7 @@ Once the details have been saved, a new territory with matching records should b
 
 Note that you can edit the territory only when it is inactive. If you wish to edit an active territory, click **Deactivate** and then **Edit**.
 
-Once the territory has been activated, **Assigned Records** section will become available on the territory view page. Assigned records are records that have been assigned a specific territory as the result of the filter conditions determined when creating a territory.
+Once the territory has been activated, **Matching Records** section will become available on the territory view page. Matching records are records that have been assigned a specific territory as the result of the filter conditions determined when creating a territory.
 
 .. image:: /user/img/sales/sales_territories/opp_activate.png
    :alt: A sample of the Opportunity territory with the records that have the budget amount higher than $1000
@@ -170,20 +170,8 @@ Sales Territories can also be used in the following widgets:
 - Opportunities Statistics
 - Opportunities by Status
 
-You can view records filtered within one or several specific territories within these widgets.
-
 .. image:: /user/img/sales/sales_territories/forecasts.png
    :alt: Enabling territories for the Forecast widget
-
-.. image:: /user/img/sales/sales_territories/opp_statistics.png
-   :alt: Enabling territories for the Opportunity Statistics widget
-
-.. image:: /user/img/sales/sales_territories/leads_statistics.png
-   :alt: Enabling territories for the Lead Statistics widget
-
-.. image:: /user/img/sales/sales_territories/opp_by_status_ter.png
-   :alt: Enabling territories for the Opportunities by Status widget
-
 
 .. include:: /include/include-images.rst
    :start-after: begin

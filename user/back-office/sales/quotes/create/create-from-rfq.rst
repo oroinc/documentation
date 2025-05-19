@@ -1,7 +1,7 @@
 .. _quote--create-from-rfq:
 
-Create a Quote on the Customer Request
-======================================
+Create a Quote on Customer Request
+==================================
 
 .. begin_create_from_rqf
 

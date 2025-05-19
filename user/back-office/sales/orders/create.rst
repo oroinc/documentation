@@ -50,10 +50,10 @@ To create a new order from the back-office:
 
 6. In the **Shipping Address** section, fill in the shipping address details. Use the drop-down list to select an existing shipping address, or select **Enter Other Address** to add a new one.
 
-7. In the **Shipping Information** section, provide information for the following:
+7. In the **Shipping** section, provide information for the following:
 
-   a) **Shipping Method**: Click **Calculate Shipping** to display any shipping options.
-   b) **Shipping Options**:  Use the radio button to select a shipping option among the preliminary configured shipping rules.
+   a) **Shipping Status**: Select whether the order is not shipped, partially or fully shipped.
+   b) **Shipping Options**:  Click **Calculate Shipping** to display any shipping options (if available), then use the radio button to select a shipping option among the preliminary configured shipping rules.
    c) **Overridden Shipping Cost Amount**: If required, override the shipping cost by adding your own value.
 
    .. image:: /user/img/sales/orders/orders_create_shippinginfo2.png

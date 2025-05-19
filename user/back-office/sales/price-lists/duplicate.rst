@@ -16,9 +16,4 @@ To duplicate the existing price list:
    .. image:: /user/img/sales/pricelist/duplicate_price_list_button.png
       :alt: Duplicate price list button on the price list details page
 
-   The details page of the duplicated price list is displayed:
-
-   .. image:: /user/img/sales/pricelist/duplicated_price_list_details_page.png
-      :alt: The details page of the duplicated price list
-
 4. Update the details of the new price list as required.

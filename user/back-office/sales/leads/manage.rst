@@ -45,11 +45,6 @@ The lead page contains all available information on the lead in the **General In
 
 The following actions are available for a lead on the lead view page:
 
--  **Share**: Share a lead with contacts of your choice (available for the Enterprise edition).
-
-   .. image:: /user/img/sales/leads/share_lead.png
-      :alt: The sharing configuration settings
-
 -  **Disqualify action:** Disqualify a lead.
 
    .. note:: You can disqualify a lead in three ways:
