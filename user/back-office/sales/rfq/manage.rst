@@ -154,7 +154,7 @@ Decline an RFQ
 
 To decline the RFQ,  click **Decline** on the RFQ page.
 
-This will change the internal status to *Declined*and the customer status to *Cancelled*.
+This will change the internal status to *Declined* and the customer status to *Cancelled*.
 
 .. image:: /user/img/sales/rfq/rfq_17.png
    :class: with-border

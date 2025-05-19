@@ -36,9 +36,6 @@ To create a new quote from scratch:
 
 5. In the **Line Items** section:
 
-   .. image:: /user/img/sales/quotes/create_quote_line_items.png
-      :alt: The details of the Line Items section
-
    a) Add products as quote line items.
 
       Use Select Product and Free-form entry link to switch between the following product entry modes:

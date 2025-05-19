@@ -22,41 +22,30 @@ To be able to manage currencies and change the rates:
 -  Unlock the currency grid by clearing the **Use System** checkbox.
 -  Enter the numbers in the corresponding field of the **Rate From/To** columns.
 
-In the following example, the base currency is US dollars, the currency format is set to Currency Symbol, and three deal currencies are set to Euro, British Pound, and Ukrainian Hryvnia.
+In the following example, the base currency is US dollars, the currency format is set to Currency Symbol, and two deal currencies are set to Euro, and British Pound.
 
 .. image:: /user/img/sales/opportunities/currencies_config.jpg
    :alt: Currency settings
 
-These exchange rates to the base currency are used to calculate and convert the actual budget value, close revenue, the total number of orders (for OroCommerce), etc.
+These exchange rates to the base currency are used to calculate and convert the actual budget value, close revenue, the total number of orders, etc.
 
-This is how the multi-currency feature is displayed in the **Create Opportunity** form:
+Below is an illustration of how the multi-currency feature may be represented in the **Create Opportunity** form:
 
 .. image:: /user/img/sales/opportunities/currency_opp_form.jpg
    :alt: Use currency for opportunities
 
-You can select one of the enabled currencies in the currency selector for the **Budget Amount** field. They are represented by a currency symbol, as configured in the settings.
+You can select one of the enabled currencies in the currency selector for the **Budget Amount** field. They are represented by a currency symbol, as configured in the settings. You can also specify the Close Revenue and the Budget Amount in different currencies.
 
-Note that you can specify the Close Revenue and the Budget Amount in different currencies.
-
-As you can see from the screenshot, the budget amount entered in Euro (€15000) has been recalculated to the base currency ($16,350) according to the defined exchange rate.
+As you can see from the screenshot, the budget amount entered in British Pounds (£15000) has been recalculated to the base currency ($18,300) according to the exchange rate defined in the system currency configuration earlier.
 
 .. image:: /user/img/sales/opportunities/opp_abc_view.jpg
    :alt: Budget amount recalculated to the base currency based on the exchange rate
 
-The same budget amounts will be available in the grid view and Reports and Segments.
+.. important:: A few important things to note:
 
-.. note:: In dashboard widgets, only amounts in the base currency is displayed.
-
-If you change the currency exchange rate, the changes will be displayed for all **open** opportunities. Rates for closed opportunities are fixed.
-
-As you can see from the screenshots below, the rate of the Euro towards the US dollar was changed from 1.09 to 1.15. This consequently changed the value of the base currency for the budget amount from $16350 to $17250.
-
-.. image:: /user/img/sales/opportunities/currency_changed.jpg
-   :alt: Changing currency in settings
-
-.. image:: /user/img/sales/opportunities/exchange_rate_changed.jpg
-   :alt: Rate changed for opportunities
-
-.. important:: If you are not using the **Opportunity Management Flow**, you can edit the budget amount/close revenue for a closed opportunity.
+                * The same budget amounts will be available in the grid view and Reports and Segments.
+                * Dashboard widgets display amounts only in the base currency.
+                * If you change the currency exchange rate, the changes will be displayed for all **open** opportunities. Rates for closed opportunities are fixed.
+                * If you do not use the **Opportunity Management Flow**, you can edit the budget amount/close revenue for a closed opportunity.
 
 .. finish_multi_currency_opportunities

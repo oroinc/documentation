@@ -26,8 +26,8 @@ To view a specific shopping list in the back-office:
 
 1. Navigate to **Sales > Shopping Lists** in the main menu.
 
-    .. image:: /user/img/sales/shopping_lists/SL_grid.png
-       :alt: Shopping lists grid
+   .. image:: /user/img/sales/shopping_lists/SL_grid.png
+      :alt: Shopping lists grid
 
 2. Find the required shopping list and click on it to open its details page.
 
@@ -47,9 +47,6 @@ To view a specific shopping list in the back-office:
    .. note:: To handle a significant volume of data, use page switcher, increase *View Per Page*, or use filters to narrow down the list to the information you need.
 
 5. The **Totals** section displays the aggregated amounts, like subtotal, tax, discount, and the total amount due for payment of the items in the shopping list. OroCommerce automatically recalculates these amounts when new items are edited in, added to, or removed from the shopping list.
-
-   .. image:: /user/img/sales/shopping_lists/ShoppingListsViewPageTotals.png
-      :alt: The shopping list amount details specified in the Totals section
 
 6. The **Sales Orders** section displays all orders converted from this shopping list. Click a required order to get redirected to the order details page.
 

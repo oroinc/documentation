@@ -93,7 +93,7 @@ As an illustration, let us go through a sample flow to see the QMF in action:
 
    .. image:: /user/img/system/workflows/workflows/Illustration_1.png
 
-2. The quote with an offer valid until 19 April is sent to a customer.
+2. The quote with an offer valid until a specific date is sent to a customer.
 
    .. image:: /user/img/system/workflows/workflows/Illustration_2.png
 
@@ -105,11 +105,11 @@ As an illustration, let us go through a sample flow to see the QMF in action:
   .. note:: If a customer generates an order based on the quote, you can leave the quote in the **Sent to Customer** state so that customer user could reuse it for future orders, or expire it to disable orders based on this quote.
 
 
-3. The customer provided no feedback on the quote before 19 April, and the quote is expired by the sales personnel, leaving it in the **Closed** step.
+3. The customer provided no feedback on the quote before the given date, and the quote is expired by the sales personnel, leaving it in the **Closed** step.
 
   .. image:: /user/img/system/workflows/workflows/Illustration_4.png
 
-4. The offer has been reconsidered and validation date was extended until 21 April. The quote is reopened. It is moved back to the draft step with the possibility to edit, clone, delete and send the quote to a customer. The quote number is changed (in our case, from 21 to 22).
+4. The offer has been reconsidered and validation date was extended until a later date. The quote is reopened. It is moved back to the draft step with the possibility to edit, clone, delete and send the quote to a customer. The quote number is changed (in our case, from 21 to 22).
 
   .. image:: /user/img/system/workflows/workflows/Illustration_5.png
 
