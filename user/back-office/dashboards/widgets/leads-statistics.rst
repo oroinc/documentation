@@ -3,8 +3,8 @@
 
 :oro_show_local_toc: false
 
-Leads Statistics
-----------------
+Lead Statistics
+---------------
 
 The Leads Statistics widget displays a set of metrics that indicate the performance of your lead pipeline. You can configure the widget to show only leads in certain conditions, e.g., only open leads owned by the current user.
 

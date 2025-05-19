@@ -24,6 +24,8 @@ You can adjust the following settings for the campaign leads widget:
 
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** checkbox and provide a new name.
 * **Date Range** --- the time for which the widget details are displayed.
+* **Number of most top** --- the number of campaigns to display in the widget. The campaigns are listed based on the number of leads they have generated, with the most effective ones shown first.
+* **Hide campaigns that are not used for any leads/opportunities** --- select *Yes* for the option to hide campaigns that haven't been associated with any leads or opportunities, helping you focus only on active and relevant campaigns.
 
 .. image:: /user/img/dashboards/campaign_leads_config.png
    :alt: Configuring the campaign leads widget

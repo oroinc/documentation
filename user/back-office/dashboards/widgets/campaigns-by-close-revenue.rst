@@ -22,6 +22,7 @@ You can adjust the following settings for the campaigns by close revenue widget:
 
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** checkbox and provide a new name.
 * **Date Range** --- the time for which the widget details are displayed.
+* **Number of most top** --- the number of campaigns to display in the widget. The campaigns are ranked by the total closed revenue they have generated, starting with the highest-performing ones.
 
 .. image:: /user/img/dashboards/campaign_revenue_config.png
    :alt: Configuring the Campaigns by Close Revenue widget

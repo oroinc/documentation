@@ -20,7 +20,6 @@ Oro applications come with a number of out-of-the-box widgets that can simplify 
      * :ref:`Campaign leads <user-guide--business-intelligence--widgets--campaign-leads>`
      * :ref:`Opportunity-generating campaigns <user-guide--business-intelligence--widgets--opportunity-generating-campaigns>`
      * :ref:`Average lifetime sales <user-guide--business-intelligence--widgets--average-lifetime-sales>`
-     * :ref:`Purchase funnel <user-guide--business-intelligence--widgets--purchase-funnel>`
      * :ref:`Campaigns by close revenue <user-guide--business-intelligence--widgets--close-revenue>`
      * :ref:`Sales Orders Volume <user-guide--widgets--sales-orders-volume>`
      * :ref:`Sales Orders Number <user-guide--widgets--sales-orders-number>`
@@ -33,6 +32,7 @@ Oro applications come with a number of out-of-the-box widgets that can simplify 
      * :ref:`Recently accessed contacts <user-guide--business-intelligence--widgets--recently-accessed--contacts>`
      * :ref:`Recently accessed accounts <user-guide--business-intelligence--widgets--recently-accessed-accounts>`
      * :ref:`Today's calendar <user-guide--business-intelligence--widgets--todays-calendar>`"
+
 
 .. note:: Additional widgets can be added via a third-party system integrations.
 
@@ -105,7 +105,6 @@ To configure a widget, click |IcSettings| **Configure** in the widget header and
    opportunities-by-status
    opportunities-list
    opportunity-generating-campaigns
-   purchase-funnel
    quick-launchpad
    recent-calls
    recent-emails

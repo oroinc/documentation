@@ -23,6 +23,7 @@ You can adjust the following settings for the opportunity generating campaigns w
 
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** checkbox and provide a new name.
 * **Date Range** --- the time for which the widget details are displayed.
+* **Number of most top** --- the number of campaigns to display in the widget. The campaigns are ranked by the number of opportunities they have generated, with the most effective ones shown at the top.
 
 .. image:: /user/img/dashboards/op_generating_camp_config.png
    :alt: Configuring the Opportunity Generating Campaigns widget
