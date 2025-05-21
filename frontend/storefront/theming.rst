@@ -37,42 +37,52 @@ The **theme configuration file** should be placed in the theme folder and named 
 
 The **allowed options in the theme configuration** file are the following:
 
-+---------------------+------------------------------+---------------------+
-| Option              | Description                  | Required            |
-+=====================+==============================+=====================+
-| `label`             | The label displayed in       | yes                 |
-|                     | the theme management UI.     |                     |
-+---------------------+------------------------------+---------------------+
-| `logo`              | The logo displayed           | no                  |
-|                     | in the UI.                   |                     |
-+---------------------+------------------------------+---------------------+
-| `logo_small`        | The small logo is displayed  | no                  |
-|                     | on small screens in the UI   |                     |
-|                     | and also in a burger menu.   |                     |
-+---------------------+------------------------------+---------------------+
-| `parent`            | Parent theme identifier      | no                  |
-+---------------------+------------------------------+---------------------+
-| `groups`            | Group name or names for      | no                  |
-|                     | which it is applicable. Use  |                     |
-|                     | ``commerce`` group for an    |                     |
-|                     | OroCommerce application      |                     |
-+---------------------+------------------------------+---------------------+
-| `rtl_support`       | Defines whether Theme        | no                  |
-|                     | supports RTL and additional  |                     |
-|                     | \*.rtl.css\ files            |                     |
-|                     | have to be build             |                     |
-+---------------------+------------------------------+---------------------+
-| `svg_icons_support` | Defines whether Theme        | no                  |
-|                     | supports SVG icons. Default  |                     |
-|                     | value will be inherited from |                     |
-|                     | the parent themes if any,    |                     |
-|                     | otherwise - false.           |                     |
-+---------------------+------------------------------+---------------------+
-| `configuration`     | Defines theme configuration  | no                  |
-|                     | options that give theme      |                     |
-|                     | developers more possibility  |                     |
-|                     | for configurable storefront  |                     |
-+--------------------+-------------------------------+---------------------+
++---------------------+------------------------------+---------------------+----------+
+| Option              | Description                  | Required            | Inherits |
++=====================+==============================+=====================+==========+
+| `label`             | The label is displayed in    | yes                 | no       |
+|                     | the theme management UI.     |                     |          |
++---------------------+------------------------------+---------------------+----------+
+| `description`       | The description is displayed | no                  | no       |
+|                     | in the theme selection UI.   |                     |          |
++---------------------+------------------------------+---------------------+----------+
+| `parent`            | Parent theme identifier      | no                  | no       |
++---------------------+------------------------------+---------------------+----------+
+| `groups`            | Group name or names for      | no                  | no       |
+|                     | which it is applicable. Use  |                     |          |
+|                     | ``commerce`` group for an    |                     |          |
+|                     | OroCommerce application      |                     |          |
++---------------------+------------------------------+---------------------+----------+
+| `logo`              | The logo is displayed        | no                  | no       |
+|                     | in the UI.                   |                     |          |
++---------------------+------------------------------+---------------------+----------+
+| `logo_small`        | The small logo is displayed  | no                  | no       |
+|                     | on small screens in the UI   |                     |          |
+|                     | and also in a burger menu.   |                     |          |
++---------------------+------------------------------+---------------------+----------+
+| `rtl_support`       | Defines whether Theme        | no                  | no       |
+|                     | supports RTL and additional  |                     |          |
+|                     | \*.rtl.css\ files            |                     |          |
+|                     | have to be build             |                     |          |
++---------------------+------------------------------+---------------------+----------+
+| `icon`              | The icon is displayed        | no                  | no       |
+|                     | in the UI.                   |                     |          |
++---------------------+------------------------------+---------------------+----------+
+| `favicons_path`     | The path to favicons         | no                  | no       |
++---------------------+------------------------------+---------------------+----------+
+| `svg_icons_support` | Defines whether Theme        | no                  | yes      |
+|                     | supports SVG icons. Default  |                     |          |
+|                     | value will be inherited from |                     |          |
+|                     | the parent themes if any,    |                     |          |
+|                     | otherwise - false.           |                     |          |
++---------------------+------------------------------+---------------------+----------+
+| `fonts`             | Defines fonts for theme      | no                  | no       |
++---------------------+------------------------------+---------------------+----------+
+| `configuration`     | Defines theme configuration  | no                  | no       |
+|                     | options that give theme      |                     |          |
+|                     | developers more possibility  |                     |          |
+|                     | for configurable storefront  |                     |          |
++---------------------+------------------------------+---------------------+----------+
 
 **Example:**
 
@@ -180,3 +190,49 @@ Out-of-the-box, the OroCommerce application comes with one predefined default st
 
 * **The Refreshing Teal theme** is a fully featured **default** theme that provides the complete look and feel for the OroCommerce storefront UI out-of-the-box. Also this theme is aimed to be *base for any* :ref:`customizations <storefront_customization_guide>`.
 
+Make the Theme Option Inherited
+-------------------------------
+
+To set the theme option inherited on the code level, add the following
+configuration to the ``config/config.yml`` file in an application:
+
+.. code-block:: yaml
+
+   #config/config.yml
+   oro_layout:
+       inherited_theme_options:
+            - fonts
+
+where ``fonts`` is the name of the theme option.
+
+To make the theme config option inherited, add the following configuration:
+
+.. code-block:: yaml
+
+   oro_layout:
+       inherited_theme_options:
+            - fonts
+            - config.icons
+
+Retrieving Theme Options
+------------------------
+
+To get the correct theme option value, use `getThemeOption` and `getThemeConfigOption` methods from `Oro\Component\Layout\Extension\Theme\Model\ThemeManager`, service definition - `oro_layout.theme_manager`.
+
+.. code-block:: php
+   :caption: src/Oro/Component/Layout/Extension/Theme/Model/ThemeManager.php
+
+   namespace Oro\Component\Layout\Extension\Theme\Model;
+
+   class ThemeManager implements ThemeManagerInterface, ResetInterface
+   {
+       public function getThemeOption(string $themeName, string $optionName, bool $inherited = true): mixed
+       {
+       }
+
+       public function getThemeConfigOption(string $themeName, string $configOptionName, bool $inherited = true): mixed
+       {
+       }
+   }
+
+.. note:: To retrieve the value of a theme option for the current theme only (excluding inherited values), pass `false` to the `$inherited` parameter.
