@@ -5568,6 +5568,10 @@ Links (Dev)
 
    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload" target="_blank">MDN Link types: preload</a>
 
+.. |Variable Fonts Guide| raw:: html
+
+   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide" target="_blank">Variable fonts guide</a>
+
 .. |glyphhanger| raw:: html
 
    <a href="https://github.com/zachleat/glyphhanger" target="_blank">glyphhanger</a>
@@ -6507,3 +6511,7 @@ Links (Dev)
 .. |rfc6750| raw:: html
 
     <a href="https://www.rfc-editor.org/rfc/rfc6750" target="_blank">Rfc6750</a>
+
+.. |Symfony Asset Preloading| raw:: html
+
+    <a href="https://symfony.com/doc/current/web_link.html#how-does-it-work" target="_blank">Symfony WebLink component</a>

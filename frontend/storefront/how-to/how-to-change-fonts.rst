@@ -1,7 +1,5 @@
 .. _dev-doc-frontend-storefront-css-fonts:
 
-
-
 How to Change Fonts and Typography in the Storefront
 ====================================================
 
@@ -149,20 +147,20 @@ To disable all Oro fonts without overriding them with yours:
 Change Font Size
 ----------------
 
-To change the font size and line height, override the following variables:
+To change the **font size** and **line height**, override the following variables:
 
 .. code-block:: scss
 
     // Fonts sizes
 
     $base-font: get-font-name('main');
-    $base-font-size: 14px !default;
-    $base-font-size--large: 18px !default;
-    $base-font-size--s: 12px !default;
-    $base-font-size--xs: 10px !default;
-    $base-line-height: 1.2 !default;
+    $base-font-size: 14px;
+    $base-font-size--large: 18px;
+    $base-font-size--s: 12px;
+    $base-font-size--xs: 10px;
+    $base-line-height: 1.2;
 
-    $base-font-weight: font-weight('normal') !default;
+    $base-font-weight: font-weight('normal');
 
 .. important:: In all cases above, you have to run the following console commands to publish the changes:
 
@@ -177,28 +175,12 @@ Recommendations for Optimizing Fonts
 
 You can apply several optimizations to speed up the delivery of fonts to the client and improve the user experience.
 
-Base Optimization with Preloading of Critical Fonts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+It is recommended to use `variable fonts`, which store multiple font styles—like different weights and widths—in one file,
+rather than having a separate font file for every width, weight, or style. Please see |Variable Fonts Guide| for more information.
 
-To enable preloading of critical fonts, add a layout update (e.g., preload FontAwesome):
+Enable `preloading` of the primary font used across all pages to ensure faster rendering during initial page load.
 
-.. code-block:: yaml
-
-    - '@add':
-        id: font-awesome
-        parentId: head
-        siblingId: styles
-        prepend: true
-        blockType: external_resource
-        options:
-            href: '=data["asset"].getUrl("/build/_static/_/node_modules/font-awesome/fonts/fontawesome-webfont.woff2")'
-            rel: preload
-            attr:
-                'as': 'font'
-                'type': 'font/woff2'
-                'crossorigin': anonymous
-
-For more information about preloading resources, see |Link types: preload|.
+.. note:: See :ref:`Preload Critical Assets <frontend-preload-critical-assets>` documentation for more details.
 
 Additional Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -207,60 +189,17 @@ You can split the font into Unicode subsets. For example, you can use |glyphhang
 
 .. code-block:: bash
 
-    glyphhanger --whitelist=U+F002,U+F007,U+F00C-F00E --subset=fontawesome-webfont.ttf --formats=ttf
+    glyphhanger --whitelist=U+F002,U+F007,U+F00C-F00E --subset=main-webfont.ttf --formats=ttf
     
 1. Convert ``ttf`` to ``woff2`` with |Web Font Tools|:
 
 .. code-block:: bash
 
-    woff2_compress ./fontawesome-webfont-subset.ttf
-    
-2. If the project still supports IE11, convert ``ttf`` to ``woff2``:
+    woff2_compress ./main-webfont-subset.ttf
 
-.. code-block:: bash
+2. Upload a new font and configure ``typography`` by overriding the default ``main`` section ``_typography.scss`` in your custom ``typography`` config as described above.
 
-    sfnt2woff-zopfli ./fontawesome-webfont-subset.ttf
-
-3. Upload the of the new fonts and configure ``typography`` by overriding the default ``font-awesome`` section ``_typography.scss`` in your custom ``typography`` config:
-
-.. code-block:: scss
-
-    @use 'sass:map';
-
-    $theme-custom-fonts: (
-        'font-awesome': (
-            'family': 'FontAwesome',
-            'variants': (
-                (
-                    'path': '#{$global-url}/orofrontend/default/fonts/fontawesome/fontawesome-webfont-preload',
-                    'weight': normal,
-                    'style': normal
-                )
-            ),
-            'formats': ('woff2', 'woff')
-        ),
-    );
-
-    $theme-fonts: map.merge($theme-fonts, $theme-custom-fonts);
-
-4. Create/Update path to the font in the preload link:
-
-.. code-block:: yaml
-
-    - '@add':
-        id: font-awesome
-        parentId: head
-        siblingId: styles
-        prepend: true
-        blockType: external_resource
-        options:
-            # new href value
-            href: '=data["asset"].getUrl("/build/_static/bundles/orofrontend/default/fonts/fontawesome/fontawesome-webfont-subset.woff2")'
-            rel: preload
-            attr:
-                'as': 'font'
-                'type': 'font/woff2'
-                'crossorigin': anonymous
+3. Enable `preloading` for a new font if necessary as described in :ref:`Preload Critical Assets <frontend-preload-critical-assets>` documentation.
 
 Text Fonts and Subsets
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -271,7 +210,7 @@ You can split text fonts into localization subsets:
 
     glyphhanger --formats=ttf --LATIN --subset=lato.ttf
 
-You can, therefore, preload the subset depending on the application's current localization.
+Therefore, subset fonts can be preloaded based on the current application's locale.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
