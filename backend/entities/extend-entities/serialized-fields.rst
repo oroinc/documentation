@@ -8,13 +8,17 @@ This package provides a possibility to avoid schema update when you create custo
 
 However, these fields have some restrictions. Their data is stored in the `serialized_data` column as a serialized array but the `serialized_data` field is hidden from the UI on entity config page.
 
+.. admonition:: Serialized Enum Fields
+
+    Serialized fields have different restrictions than enum fields (select, multiselect), which are also stored in the `serialized_data` column. The Enum fields functionality is described in :ref:`Option Set Fields <book-entities-extended-entities-enums>`.
+
 Not supported features:
 
 - grid filtering and sorting
 - segments and reports
 - charts
 - search
-- relations, enums, and option set field types
+- relations, and option set field types
 - data audit
 - usage of such fields in Doctrine query builder
 
@@ -35,6 +39,8 @@ The Serialized Fields bundle adds a new field called Storage Type within New fie
    - Decimal
    - Float
    - Integer
+   - Select
+   - Multi-select
    - Money
    - Percent
    - SmallInt

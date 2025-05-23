@@ -9,7 +9,7 @@ from a predefined set of options. The OroPlatform provides two different data ty
 * ``enum`` (named **Select** on UI) - only one option can be selected
 * ``multiEnum`` (named **Multi-Select** on UI) - several options can be selected
 
-The option sets are quite complex. Both the ``enum`` and ``multiEnum`` types are based on regular |Doctrine associations|. The main difference between them is that the ``enum`` type is based on |many-to-one association|, while the ``multiEnum`` type is based on |many-to-many association|.
+The option sets are quite complex. Both the ``enum`` and ``multiEnum`` types are based on :ref:`serialized fields <book-entities-extended-entities-serialized-fields>`. The main difference between them is that the ``enum`` type is based on a virtual many-to-one association, while the ``multiEnum`` type is based on a virtual many-to-many association.
 
 To add the option set field to an entity, you can use |ExtendExtension|.
 
