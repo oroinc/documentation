@@ -14,14 +14,12 @@ For example, when your OroCommerce store sells TVs and T-shirts, these items sha
 
 .. note:: You can manage product attributes per organization. Any changes made to product attributes within one organization do not affect the attributes of others. You can use the attributes created in the global organization in other organizations, but only a system administrator of the global organization can edit them.
 
-By default, OroCommerce comes with the following system product attributes:
+Product attributes in OroCommerce fall into two categories: custom attributes, which you create yourself, and system (global) attributes, which are provided out-of-the box. System attributes are shared across all product families and cannot be removed. However, you can reorganize how they are grouped within a family. By default, OroCommerce includes the following system product attributes:
 
 .. image:: /user/img/products/product_attributes/ProductAttributes_oob.png
    :alt: The list of the default system product attributes
 
-Add new product attributes to introduce new custom parameters in your product details. Include product attributes in one or multiple product families into the new or existing attribute group.
-
-.. note:: System attributes are shared among all product families. You can reorganize the way system attributes are grouped, but you cannot remove a product attribute from the product family.
+When you create a new product attribute, you add custom parameters to your product details. These attributes can be included in one or multiple product families and placed into a new or existing attribute group.
 
 .. hint:: Instead of using one general-purpose attribute (e.g., color), create multiple specific attributes (e.g., car_color, laptop_color, table_color). This prevents loading all attributes as filters on all product pages and as a result, reduces the load on the database and improves the overall application performance.
 
@@ -209,7 +207,6 @@ Proceed to create the attribute as described below.
 .. csv-table::
    :widths: 15, 50
 
-   "**Column Name**","Enter the name of the column (in a CSV file) that would represent the attribute you are creating. If left blank, a label will be used."
    "**Column Position**","Type a number that corresponds to the position of the attribute in a CSV file."
    "**Use As Identity**","Specify whether this column should be used as an identifier of the entity record. Select *No*, *Only when not empty*, or *Always*. If set to *Only when not empty*, the field may be omitted in the identity when it has no value."
    "**Exclude Column**","Select *No*, if you want this field available for export, or *Yes* if you wish to exclude the column."
@@ -231,7 +228,6 @@ Proceed to create the attribute as described below.
     - *Email* --- When this option is selected, the product attribute value is treated by marketing lists as email addresses.
     - *Phone* --- When this option is selected, the product attribute value is treated by marketing lists as a phone number."
    "**Show on Form**","In this field, select *Yes* if you wish to have the product attribute displayed and be editable on record and page edits."
-   "**Applicable Organization**","This checkbox determines whether you want the product attribute to be available throughout all organizations."
    "**Available in Email Templates**", "Select *Yes* if you wish the product attribute to be available in email templates. To use the product attribute value in the email template:
 
     1.  When creating an attribute, mark it as *Available in Email Templates*.
@@ -268,16 +264,6 @@ Proceed to create the attribute as described below.
 
     .. image:: /user/img/products/product_attributes/AttributeStorageType.png
        :alt: The list of all product attributes
-
-
-.. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
-
-Import Product Attributes
--------------------------
-
-.. include:: /user/back-office/products/product-attributes/import-product-attributes.rst
-   :start-after: start_import
-
 
 **Related Topics**
 

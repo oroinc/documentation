@@ -16,10 +16,12 @@ From the product families page, you can:
 - Filter existing product families
 - Manage product family grid settings (|IcView| **View** or |IcEdit| **Edit** product family details by clicking the required icon at the end of a product family row)
 
+Additionally, you can edit the details of a product family on the product families details page by clicking |IcEdit| **Edit** on the top right of its page.
+
+You can delete a product family if it was created within your organization and your :ref:`user role <user-guide-user-management-permissions>` has the necessary permissions. Product families created in other organizations cannot be deleted unless you are operating from the :ref:`global organization <user-management-organizations>` and your role has the appropriate permission to perform this action. Note that system product family(ies) cannot be deleted under any circumstances.
+
 .. image:: /user/img/products/product_families/ProductFamiliesView.png
    :alt: The actions available for product families from their general page
-
-Additionally, you can edit the details of a product family on the product families details page by clicking |IcEdit| **Edit** on the top right of its page.
 
 .. _product--product-families--edit:
 
