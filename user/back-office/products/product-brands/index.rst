@@ -28,11 +28,7 @@ Create a New Brand from Scratch
 
 4. In the **Short Description** section, provide a short but meaningful default description of the product brand to make identification of the brand more accessible. Move from tab to tab to localize the description by setting the required fallback option. You can select whether to fall back to the default value, parent localization, or a custom value from the dropdown. When selecting the custom value, provide the localized version of the short description in the text field.
 
-    .. image:: /user/img/products/products/localize_short_descriptions_brands.png
-       :alt: Localization fallback option for the short description of the master catalog
-
 5. In the **Long Description** section, enter a long default description of the product brand. Move from tab to tab to localize the description by setting the required fallback option. You can select whether to fall back to the default value, parent localization, or a custom value from the dropdown. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
-
 
 6. In the **SEO** section, provide the following information:
 

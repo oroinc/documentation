@@ -99,16 +99,15 @@ To add a new configurable product and make it available in the master catalog (f
    .. image:: /user/img/products/products/SampleProductVariantsForConfigProduct.png
       :alt: Selecting the configurable product variants
 
-Once all variants are selected, you can choose the default variant to be displayed in the storefront.
-
    .. image:: /user/img/products/products/select-default-variant.png
       :alt: Selecting the default product variant to be displayed in the storefront
+
+Once all variants are selected, you can choose the default variant to be displayed in the storefront.
 
 The default variant is only possible if **No Matrix Form** is selected for configurable products in the :ref:`system configuration <config-guide--landing-commerce--products--configurable-products>`.
 
    .. image:: /user/img/products/products/default-variant-storefront.png
       :alt: Display the default product variant in the storefront
-
 
 13. In the **SEO** section, specify the required attributes:
 
@@ -140,69 +139,52 @@ Create a Configurable Product (Example)
 
 The sample flow below shows all the steps required to create a configurable product.
 
-*Product: Red and green hats, sizes S and M.*
+*Product: External Hard Drive, memory capacity 1 TB and 2 TB.*
 
 **Step 1. Create Attributes.**
 
 1. Navigate to **Products > Product Attributes** in the main menu.
-2. Click **Create Attribute** on the top right.
+2. Click **Create Attribute** on the top right, and proceed to creating attribute `memory`.
+3. Choose `select` as the attribute type.
 
-   We will create two attributes, one after another: 'hatcolor' and 'hatsize'.
-3. Select the type of attribute.
+   .. important:: The only attribute types available for configurable attributes are *Select* and *Boolean*.
 
-   Currently, *Select* and *Boolean* types are available for configurable attributes. We will use *Select* for both attributes.
+4. Click **Add** to provide attribute options `1 TB` and `2 TB`.
 
-4. Fill in the required information and add the necessary options for the attributes by clicking **+Add**.
+    .. image:: /user/img/products/products/sample-product-attribute.png
+       :alt: Product attribute Memory with options 1TB and 2TB
 
-   For 'hatcolor', attribute options will be 'Red' and 'Green'.
-
-   .. image:: /user/img/products/products/SampleHatColor.png
-      :alt: Create the HatColor product attribute with the red and green options
-
-   For 'hatsize', attribute options will be 'S' and 'M'.
-
-   .. image:: /user/img/products/products/SampleHatSize.png
-      :alt: Create the HatSize product attribute with the s and m options
-
-5. Click **Save** to save the attributes.
-
-.. image:: /user/img/products/products/SampleHatColorSizeGrid.png
-   :alt: Newly created attributes are displayed in the list of all product attributes
+5. Click **Save**.
 
 **Step 2. Create a Product Family.**
 
 1. Navigate to **Products > Product Families** in the main menu.
 2. Click **Create Product Family** in the top right corner.
-3. Fill in the required information and add attributes 'HatColor' and 'HatSize' to the attribute group by clicking **+Add**.
-
-   Each attribute must have a separate group in our case.
+3. Fill in the required information for the product family (e.g., name `Tech`).
+4. Click  **Add** to create a new attribute group (e.g., Memory Capacity) and add attribute `memory` to it.
 
    .. image:: /user/img/products/products/SampleProductFamily.png
       :alt: Add new product attributes to separate groups when creating a product family
 
 4. Click **Save** to save the product family.
 
-
 **Step 3. Create Configurable Product Variants.**
 
-We now need to create one configurable product variant (simple product) per each variant we would like to have available in the configurable product. Since we have two attributes, 'HatSize' and 'HatColor', and each attribute has two options ('S'/'M' for the first and 'Red'/'Green' for the second), we need to create four simple products.
+Next, create two simple products, Hard Drive 1 TB and Hard Drive 2 TB, and select the corresponding memory attribute to each. These simple products will subsequently be added to the configurable product as its product variants.
 
 1. Navigate to **Products > Products** in the main menu.
 2. Click **Create Product** in the top right corner.
-3. Set the product type to *Simple*, select the 'HATS' product family.
+3. Set the product type to *Simple*, select the new product family (Tech).
 4. Fill in the required information and add the attributes required for this particular product.
+
+   .. note:: Make sure that the simple product is *enabled*.
 
    .. image:: /user/img/products/products/SampleSimpleProduct1.png
       :alt: Illustrate a simple product creation based on the provided parameters
 
 5. Click **Save**.
 
-Perform step 3 for all four simple products.
-
-.. note:: Make sure that all your simple products are *enabled*.
-
-.. image:: /user/img/products/products/SampleSimpleProductsGrid.png
-   :alt: Display all created simple products in the products' grid
+Repeat step 3 and 4 for the second product.
 
 **Step 4. Create a Configurable Product.**
 
@@ -233,7 +215,8 @@ Perform step 3 for all four simple products.
 
 The product should now be available on the website in the category we previously assigned it to.
 
-
+   .. image:: /user/img/products/products/default-variant-storefront.png
+      :alt: Display the default product variant in the storefront
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

@@ -114,14 +114,16 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
    .. image:: /user/img/products/products/simple_product_inventory.png
       :alt: The detailed settings of the inventory section
 
-14. Add fixed product prices in the **Product Price** section. Note that fixed prices override the automatically generated :ref:`price lists <user-guide--pricing>`.
+14. Provide :ref:`price attributes <user-guide--products--price-attributes>` (if available), and fixed product prices in the **Product Price** section. Note that fixed prices override the automatically generated :ref:`price lists <user-guide--pricing>`.
 
     Click **+Add**, select a price list, and specify quantity, units, price value, and currency.
 
     .. image:: /user/img/products/products/SimpleProductPrices.png
        :alt: The product prices setting
 
-15. In the **Shipping Options** section, click **+Add Options** and provide unit, weight, and weight measuring unit, dimensions (width, height, depth), and dimensions measuring unit and freight class.
+15. In the **Shipping Options** section, click **+Add Options** and provide unit, weight, and weight measuring unit, dimensions (width, height, depth), and dimensions measuring unit and freight class. You can also provide shipping cost below, if necessary.
+
+    .. image:: /user/img/products/products/shipping-options.png
 
 16. Review translation rules for a product name, URL slug, long description, and short description.
 
