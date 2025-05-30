@@ -90,7 +90,7 @@ Documentation that relates to extensions' bundles is collected below. You can do
    ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`",":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`"
    ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","M","S"
    ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`","G",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
-   "",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",""
+   "",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",":ref:`StorefrontAgentBundle <bundle-docs-extensions-storefront-agent-bundle-commands>`"
 
 CRM Bundles
 -----------
@@ -220,6 +220,7 @@ CRM Bundles
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
    StripeBundle <extensions/StripeBundle/index>
    AiContentGenerationBundle <extensions/AiContentGenerationBundle/index>
+   StorefrontAgentBundle <extensions/StorefrontAgentBundle/commands>
 
 
 .. include:: /include/include-links-seo.rst
