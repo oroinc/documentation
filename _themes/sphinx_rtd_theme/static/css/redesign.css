@@ -1862,9 +1862,6 @@ section .btn-orangedark:hover {
     .breadcrumbs:after {
         left: 50%;
     }
-    .three-columns-layout {
-        padding-top: 0;
-    }
     .three-columns-layout .main-column,
     .sidebar.right-sidebar {
         margin: 0 0 0 280px;
@@ -1921,6 +1918,9 @@ section .btn-orangedark:hover {
 @media (min-width: 768px) and (max-width: 1024px){
     .content-container{
         padding-top: 13.2rem;
+    }
+    .three-columns-layout {
+        padding-top: 0;
     }
 }
 @media only screen and (max-width: 979px) {
@@ -2191,10 +2191,11 @@ section .btn-orangedark:hover {
         width: 21%;
     }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .breadcrumbs-container {
         margin-bottom: 10px;
-        margin-top: -53px;
+        margin-top: -65px;
     }
     .sidebar.left-sidebar .sidebar-holder {
         width: 250px;
@@ -2205,6 +2206,11 @@ section .btn-orangedark:hover {
     }
     .sidebar.left-sidebar.v-hidden {
         visibility: hidden;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .breadcrumbs-container {
+        margin-top: -86px;
     }
 }
 @media only screen and (max-width: 1199px) {
@@ -2335,4 +2341,16 @@ section .btn-orangedark:hover {
 .frontstore-button span:before {
     content: "";
     font-size: 14px;
+}
+.wy-table-bordered-all th, .rst-content table.docutils th {
+    border-left: 1px solid #e1e4e5;
+}
+.wy-table-bordered-all th p, .rst-content table.docutils th p{
+    margin-bottom:0;
+}
+.wy-table th,
+.rst-content table.docutils th,
+.rst-content table.field-list th{
+    padding-top: 12px;
+    padding-bottom:12px;
 }
