@@ -887,6 +887,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/ExtendedAssociationFilter.php" target="_blank">ExtendedAssociationFilter</a>
 
+.. |NestedAssociationFilter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/NestedAssociationFilter.php" target="_blank">NestedAssociationFilter</a>
+
 .. |PrimaryFieldFilter| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/PrimaryFieldFilter.php" target="_blank">PrimaryFieldFilter</a>
@@ -1477,6 +1481,10 @@ Links (Dev)
 .. |EmptyValueComparisonExpression| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Collection/QueryVisitorExpression/EmptyValueComparisonExpression.php" target="_blank">EmptyValueComparisonExpression</a>
+
+.. |EntityComparisonExpression| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Collection/QueryVisitorExpression/EntityComparisonExpression.php" target="_blank">EntityComparisonExpression</a>
 
 .. |NestedTreeComparisonExpression| raw:: html
 

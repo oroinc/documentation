@@ -97,6 +97,7 @@ A list of filters that should be configured explicitly using the :ref:`type <fil
    :widths: 15, 30, 30
 
    "primaryField","`=`, `!=`, `*`, `!*`","|PrimaryFieldFilter|"
+   "nestedAssociation","`=`, `!=`, `*`, `!*`","|NestedAssociationFilter| "
    "nestedTree","`>`, `>=`","|NestedTreeFilter| "
    "searchQuery","`=`","|SearchQueryFilter|"
    "searchAggregation","`=`","|SearchAggregationFilter|"
@@ -125,7 +126,7 @@ FieldFilterInterface Interface
 
 The |FieldFilterInterface| is a marker interface that filters applied to a field must implement.
 
-Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |StringComparisonFilter|, |CompositeIdentifierFilter|, |AssociationCompositeIdentifierFilter|, |NestedTreeFilter|, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
+Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |StringComparisonFilter|, |CompositeIdentifierFilter|, |AssociationCompositeIdentifierFilter|, |NestedTreeFilter|, |ExtendedAssociationFilter|, |NestedAssociationFilter| and |PrimaryFieldFilter|.
 
 .. _fieldawarefilterinterface:
 
@@ -134,7 +135,7 @@ FieldAwareFilterInterface Interface
 
 Filters that are applied to a field and need to know the field name. must implement the |FieldAwareFilterInterface| interface.
 
-Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |StringComparisonFilter|, |ExtendedAssociationFilter|, |PrimaryFieldFilter| and |AssociationCompositeIdentifierFilter|.
+Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |StringComparisonFilter|, |ExtendedAssociationFilter|, |NestedAssociationFilter|, |PrimaryFieldFilter| and |AssociationCompositeIdentifierFilter|.
 
 .. _collectionawarefilterinterface:
 
@@ -152,13 +153,16 @@ ConfigAwareFilterInterface Interface
 
 Filters that depend on the |entity configuration| must implement the |ConfigAwareFilterInterface| interface.
 
+Examples of such filters are |ExtendedAssociationFilter| and |NestedAssociationFilter|.
+
 .. _metaawarefilterinterface:
 
 MetadataAwareFilterInterface Interface
 --------------------------------------
 
 Filters that depend on the |entity metadata| must implement the |MetadataAwareFilterInterface| interface.
-An example of such a filter is |CompositeIdentifierFilter| and |AssociationCompositeIdentifierFilter|.
+
+Examples of such filters are |CompositeIdentifierFilter| and |AssociationCompositeIdentifierFilter|.
 
 .. _requestawarefilterinterface:
 
@@ -167,7 +171,7 @@ RequestAwareFilterInterface Interface
 
 Filters that depend on a :ref:`request type <api-request-type>` must implement the |RequestAwareFilterInterface| interface.
 
-Examples of such filters are |ExtendedAssociationFilter|, |CompositeIdentifierFilter| and |AssociationCompositeIdentifierFilter|.
+Examples of such filters are |ExtendedAssociationFilter|, |NestedAssociationFilter|, |CompositeIdentifierFilter| and |AssociationCompositeIdentifierFilter|.
 
 .. _selfidentifiablefilterinterface:
 
@@ -176,7 +180,7 @@ SelfIdentifiableFilterInterface Interface
 
 Filters that should search for their value themselves must implement the |SelfIdentifiableFilterInterface| interface.
 
-An example of such a filter is |ExtendedAssociationFilter|.
+Examples of such filters are |ExtendedAssociationFilter| and |NestedAssociationFilter|.
 
 .. _namedvaluefilterinterface:
 
@@ -185,7 +189,7 @@ NamedValueFilterInterface Interface
 
 Filters with a named value should implement the |NamedValueFilterInterface| interface.
 
-An example of such a filter is |ExtendedAssociationFilter|.
+Examples of such filters are |ExtendedAssociationFilter| and |NestedAssociationFilter|.
 
 .. _specialhandlingfilterinterface:
 
@@ -194,7 +198,7 @@ SpecialHandlingFilterInterface Interface
 
 Filters with special handling must implement the |SpecialHandlingFilterInterface| interface. As a result, common normalization should not be applied to their values.
 
-Examples of such a filter are |MetaPropertyFilter|, |FieldsFilter|, and |IncludeFilter|.
+Examples of such filters are |MetaPropertyFilter|, |FieldsFilter|, and |IncludeFilter|.
 
 .. _standalonefilter-base-class:
 
@@ -208,6 +212,7 @@ Examples of such filters are:
 * :ref:`ComparisonFilter <comparisonfilter-filter>`
 * |StringComparisonFilter|
 * |ExtendedAssociationFilter|
+* |NestedAssociationFilter|
 * |CompositeIdentifierFilter|
 * |AssociationCompositeIdentifierFilter|
 * |NestedTreeFilter|
@@ -287,6 +292,7 @@ The following query expressions are implemented out-of-the-box:
     "ENDS_WITH","|EndsWithComparisonExpression|","LIKE ``%value`` comparison"
     "NOT_ENDS_WITH","|NotEndsWithComparisonExpression|","NOT LIKE ``%value`` comparison"
     "EMPTY_VALUE","|EmptyValueComparisonExpression|","EQUAL TO empty value OR IS NULL and NOT EQUAL TO empty value AND NOT IS NULL comparisons"
+    "ENTITY","|EntityComparisonExpression|","checks whether a field contains an identifier of an entity matched specified criteria"
     "NESTED_TREE","|NestedTreeComparisonExpression|","returns all child nodes for a given node depending on the nesting level"
     "NESTED_TREE_WITH_ROOT","|NestedTreeComparisonExpression|","returns a given node and all child nodes for this node depending on the nesting level"
 
@@ -306,6 +312,9 @@ To create a new filter:
 * Register this class in the `oro_api / filters` section using `Resources/config/oro/app.yml`.
   You can find examples of filters registration in
   |api app.yml|.
+
+    .. note::
+        The default value for `class` attribute in the `oro_api / filters` section is `Oro\Bundle\ApiBundle\Filter\ComparisonFilter`. The default value for `supported_operators` attribute there is `['=', '!=', '*', '!*']`.
 
 To configure your filter for an API resource, use the :ref:`type <filters-config>` option of the filter.
 
