@@ -1,4 +1,3 @@
-version: '3.5'
 services:
   doc:
     image: oroinc/documentation:sphinx-7.1.2
