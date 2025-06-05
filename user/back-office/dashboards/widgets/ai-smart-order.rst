@@ -23,5 +23,5 @@ Once you manually amend the fields that require your attention, click the green 
    :alt: Illustration of the system making areas of the order as requiring attention
 
 .. note::
-    You can also automate conversion of purchase orders into draft orders by configuring your system mailbox to allow the AI Smart Order feature to scan incoming emails and extract order details automatically. For more information, please see the :ref:`Email Configuration <admin-configuration-system-mailboxes>` guide.
+    You can also automate the conversion of purchase orders into draft orders by configuring your system mailbox to allow the AI Smart Order feature to scan incoming emails and extract order details automatically. The purchase orders must be attached to the email in JPG, PNG, or PDF format. For more information, please see the :ref:`Email Configuration <admin-configuration-system-mailboxes>` guide.
 
