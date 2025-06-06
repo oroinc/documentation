@@ -6424,6 +6424,14 @@ Links (Dev)
 
     <a href="https://www.php.net/manual/en/class.datetime.php" target="_blank">DateTime</a>
 
+.. |Mongo installation| raw:: html
+
+    <a href="https://www.php.net/manual/en/mongodb.installation.php" target="_blank">MongoDB PHP Extension installation</a>
+
+.. |Docker installation| raw:: html
+
+    <a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository" target="_blank">Docker installation on Ubuntu</a>
+
 .. |PKCE extention (RFC 7636)| raw:: html
 
     <a href="https://datatracker.ietf.org/doc/html/rfc7636" target="_blank">PKCE extention (RFC 7636)</a>
