@@ -170,7 +170,7 @@ To configure a system mailbox globally:
    * *Do Nothing* --- No actions are performed. Letters are saved in the mailbox.
    * *Convert To Lead* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Lead record will be created in the Oro application.
    * *Convert To Case* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Case record will be created in the Oro application.
-   * *Convert To Draft Order* --- When :ref:`AI Smart Order <concept-guide--ai--smart-order>` is configured in an OroCommerce Enterprise application, the system will scan the email box for any incoming POs and create a draft order using the information it captures from the email and or its attachment automatically. Please |contact our support team| to help with implementation.
+   * *Convert To Draft Order* --- When :ref:`AI Smart Order <concept-guide--ai--smart-order>` is configured in an OroCommerce Enterprise application, the system will scan the email box for any incoming POs and create a draft order using the information it captures from the email and or its attachment automatically. The purchase orders must be attached to the email in JPG, PNG, or PDF format. Please |contact our support team| to help with implementation.
 
 .. mention which templates are used and add screenshot
 
