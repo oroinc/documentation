@@ -60,7 +60,7 @@ The Smart Order dashboard :ref:`widget <user-guide-dashboards-widgets>` provides
 .. image:: /user/img/concept-guides/ai/ai-smart-order-flow.png
    :alt: Illustration of the dashboard with a Smart Order widget
 
-For businesses seeking full :ref:`automation <admin-configuration-system-mailboxes>`, OroCommerce can be configured to scan incoming emails for purchase order attachments, extract relevant details, and automatically generate orders in pending status. This eliminates the need for manual uploads and data entry, significantly improving efficiency, reducing processing time, and minimizing the risk of errors.
+For businesses seeking full :ref:`automation <admin-configuration-system-mailboxes>`, OroCommerce can be configured to scan incoming emails for purchase order attachments in JPG, PNG and PDF format, extract relevant details, and automatically generate orders in pending status. This eliminates the need for manual uploads and data entry, significantly improving efficiency, reducing processing time, and minimizing the risk of errors.
 
 .. image:: /user/img/concept-guides/ai/convert-to-draft-order.png
    :align: center
