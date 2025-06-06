@@ -103,7 +103,7 @@ We recommend using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony
    There are quick guides to set up the Docker and Symfony Server development stack:
 
    - :ref:`Setup on Mac OS X <setup-dev-env-docker-symfony_mac>`
-   - :ref:`Setup on Ubuntu 20.04 LTS <setup-dev-env-docker-symfony_ubuntu>`
+   - :ref:`Setup on Ubuntu 24.04 LTS <setup-dev-env-docker-symfony_ubuntu>`
    - :ref:`Setup on Windows Subsystem for Linux (WSL) 2 <setup-dev-env-docker-symfony_windows>`
 
 Alternatively, to have a fully dockerized environment, you can use |Docker images and stacks for OroPlatform based applications by the Kiboko team|.

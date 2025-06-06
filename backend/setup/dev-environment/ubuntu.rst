@@ -1,9 +1,9 @@
 .. _setup-dev-env-docker-symfony_ubuntu:
 
-Set up Environment for OroPlatform Based Application on Ubuntu 20.04
+Set up Environment for OroPlatform Based Application on Ubuntu 24.04
 ====================================================================
 
-This guide demonstrates how to set up :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Ubuntu 20.04 LTS.
+This guide demonstrates how to set up :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Ubuntu 24.04 LTS.
 
 Environment Setup
 -----------------
@@ -44,9 +44,23 @@ Environment Setup
 
    .. code-block:: none
 
-      sudo apt -y install docker.io docker-compose-plugin
+      # Set up Docker's apt repository
+      sudo install -m 0755 -d /etc/apt/keyrings
+      sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+      sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+      echo \
+        "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+        $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+        sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+      sudo apt update
+
+      # Install Docker and Docker Compose
+      sudo apt -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
       sudo usermod -aG docker $(whoami)
       sudo systemctl enable --now docker
+
+   For more information, see |Docker installation|.
 
 5. Install Composer v2:
 
@@ -83,5 +97,6 @@ What's Next
 
 
 .. include:: /include/include-links-seo.rst
+   :start-after: begin
 .. include:: /include/include-links-dev.rst
    :start-after: begin
