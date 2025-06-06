@@ -16,7 +16,7 @@ Set Up the Environment
    There are quick guides to set up Docker and Symfony Server development stack:
 
    - :ref:`Setup on Mac OS X <setup-dev-env-docker-symfony_mac>`
-   - :ref:`Setup on Ubuntu 20.04 LTS <setup-dev-env-docker-symfony_ubuntu>`
+   - :ref:`Setup on Ubuntu 24.04 LTS <setup-dev-env-docker-symfony_ubuntu>`
    - :ref:`Setup on Windows Subsystem for Linux (WSL) 2 <setup-dev-env-docker-symfony_windows>`
 
 **Development Stack**
