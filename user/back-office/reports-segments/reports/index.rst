@@ -23,5 +23,4 @@ See the following sections for more information:
 
    system-reports
    custom-reports
-   reports-examples
 

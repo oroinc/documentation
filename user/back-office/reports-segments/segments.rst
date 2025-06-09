@@ -48,9 +48,6 @@ To create a new segment:
 
 #. In the *Designer > Columns* section, define the set of the fields of the entity records to be shown in the segment.
 
-   .. image:: /user/img/reports/list_columns.png
-      :alt: Illustrate the Designer section on the create segment page
-
    To add a column to the grid:
 
       a) Choose a field from the drop-down in the **Column** section.
