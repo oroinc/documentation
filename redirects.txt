@@ -511,3 +511,4 @@ user/integrations/pre-build/shipping/fedex /user/integrations/pre-built/shipping
 user/integrations/pre-build/shipping/index /user/integrations/pre-built/shipping/index
 user/integrations/pre-build/shipping/ups /user/integrations/pre-built/shipping/ups
 backend/setup/demo-environment/vagrant /backend/setup/demo-environment/
+user/back-office/reports-segments/reports/reports-examples /user/back-office/reports-segments/reports/custom-reports

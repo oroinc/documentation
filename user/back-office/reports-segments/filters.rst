@@ -28,8 +28,6 @@ To define a filter, use any of the following filter options or combine them:
 - **Conditions Groups**: sets of field conditions that combine requirements of several other filters in one group.
 - **Segments**: sets of records dynamically or manually updated in compliance with predefined filters. More details are described in the :ref:`Segments guide <user-guide--business-intelligence--filters-segments>`.
 
-Sample filter that finds all the records with any related activity logged:
-
 .. image:: /user/img/reports/filters_1.1.png
    :alt: All options available under the Filters section
 
@@ -62,21 +60,16 @@ To define a field condition:
 
 2. Click **Choose a field**.
 
-3. A list of fields appears. At the top of the list, you can see the field's name, for which the records are filtered. (In the example below, it is an Opportunity). Below the Opportunity name is a list of all available fields related to it.
+3. A list of fields appears. At the top of the list, you can see the field's name, for which the records are filtered.
 
   .. image:: /user/img/reports/filters_4.png
      :alt: View the list of fields related to the opportunity record
 
 4. Select a field that you want to apply for the rule:
 
-  - This can be a field of the entity selected in the **General** section. For example, we can filter Opportunity records by status.
+  - This can be a field of the entity selected in the **General** section.
 
-  .. image:: /user/img/reports/filters_5.png
-     :alt: Filtering the opportunity record by status
-
-  - You can also select a field of another related entity. For example, if you want the list to contain only Opportunities assigned to a customer, scroll down the list and select this field under the *Related Entities* header.
-
-    The name of the selected field (e.g., *Customer*) will appear at the top of the list.
+  - You can also select a field of another entity under the *Related Entities* header. The name of the selected field (e.g., *Customer*) will appear at the top of the list.
 
     .. image:: /user/img/reports/filters_7.png
        :alt: Filtering the opportunity record by customer name
@@ -117,10 +110,10 @@ To define the activity settings:
     .. image:: /user/img/reports/filters_11.png
        :alt: Creating a filter condition using the Activity option setting Has Activity to All
 
-  - *Choose a field*: select the field to filter by. For example, we will select only the records for which a call was logged after June 1, 2019.
+  - *Choose a field*: select the field to filter by.
 
     .. image:: /user/img/reports/filters_12.png
-       :alt: Creating a filter condition for the calls logged after June 1, 2019.
+       :alt: Creating a filter condition for the conversations
 
 
 .. _user-guide--business-intelligence--filters-data-audit:
@@ -139,12 +132,6 @@ To define the data audit settings:
       :alt: Creating a filter condition using the Data Audit option
 
 3. Select the date when the changes have/have not been applied.
-
-For example, we will select only the records for which the Job Title value has been changed since June 1, 2019.
-
-.. image:: /user/img/reports/filters_14.png
-   :alt: Creating a filter condition for job titles that have been changed since June 1, 2019
-
 
 .. note::
 
