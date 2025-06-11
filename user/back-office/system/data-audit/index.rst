@@ -48,7 +48,7 @@ Make sure that the entity field of the entity are also marked as auditable if yo
 To set an entity field as *Auditable*:
 
 1. Open its edit page.
-2. In the **Backoffice options** section, select **Yes** from the dropdown list for the *Auditable* field.
+2. In the **Back-Office options** section, select **Yes** from the dropdown list for the *Auditable* field.
 
    .. image:: /img/backend/architecture/set_entity_field_to_auditable.png
       :alt: Set an entity field as auditable
@@ -80,7 +80,7 @@ As an illustration, we are going to create a report of products that have been d
 
    * Product > Inventory Status
    * Has been changed to > is any of > Discontinued
-   * Interval between > 1.01.2018-31.12.2019
+   * Interval equals > today
 
     .. image:: /img/backend/architecture/data_audit_report.png
        :alt: Data audit report
