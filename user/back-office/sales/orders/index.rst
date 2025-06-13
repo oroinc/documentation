@@ -19,6 +19,7 @@ You can create a new order in the following ways:
 * :ref:`From scratch <user-guide--sales--orders--create>`
 * :ref:`Based on shopping lists <user-guide--sales--orders--create--from-shopping-lists>`
 * :ref:`Based on requests for quotes <user-guide--sales--orders--create--from-rfq>`
+* :ref:`Import external orders in JSON format <user-guide--sales--orders--external-orders-import>`
 
 Manage Existing Orders
 ----------------------
@@ -62,6 +63,7 @@ You can control the order lifecycle and:
    :maxdepth: 1
 
    create
+   external-orders-import
    view
    manage
    control

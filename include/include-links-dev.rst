@@ -6527,3 +6527,15 @@ Links (Dev)
 .. |Symfony Asset Preloading| raw:: html
 
     <a href="https://symfony.com/doc/current/web_link.html#how-does-it-work" target="_blank">Symfony WebLink component</a>
+
+.. |External Orders Import| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/config/oro/external_order_import.yml" target="_blank">External Orders Import</a>
+
+.. |ComplexDataMappingProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Converter/ComplexData/Mapping/ComplexDataMappingProviderInterface.php" target="_blank">ComplexDataMappingProviderInterface</a>
+
+.. |OrderStatusMappingProvider| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/ImportExport/Converter/OrderStatusMappingProvider.php" target="_blank">OrderStatusMappingProvider</a>

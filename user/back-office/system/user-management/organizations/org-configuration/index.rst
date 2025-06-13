@@ -77,6 +77,8 @@ The following categories of settings are available for system configuration at o
     * :ref:`Order Creation <configuration--commerce--orders--order-creation--organization>`
     * :ref:`Purchase History <sys--commerce--orders--previously-purchased--org>`
     * :ref:`Order Status Management <sys--commerce--orders--status-management--org>`
+    * :ref:`External Order Import <configuration--commerce--orders--external-order-import--org>`
+
 
   * Search
 

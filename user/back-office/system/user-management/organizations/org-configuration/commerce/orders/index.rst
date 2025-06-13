@@ -8,3 +8,5 @@ Configure Order Settings per Organization
    Order Creation <organization-order-creation>
    Purchase History <organization-previously-purchased>
    Order Status Management <organization-order-status-management>
+   External Order Import <organization-external-order-import>
+

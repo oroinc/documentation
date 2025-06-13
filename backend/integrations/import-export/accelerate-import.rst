@@ -33,7 +33,7 @@ Run Import Operation from the Command Line
 
 Import from the UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
 or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:file``
-that allows to import records from the specified CSV file.
+that allows to import records from the specified file.
 
 .. code-block:: none
 
@@ -45,7 +45,7 @@ that allows to import records from the specified CSV file.
         oro:import:file --validation --email=<email> --jobName=<job> --processor=<processor> <file>
 
     Arguments:
-        file                   CSV file name
+        file                   File name
 
     Options:
         --jobName=JOBNAME      Import job name

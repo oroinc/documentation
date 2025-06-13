@@ -3,8 +3,6 @@ Create an Order
 
 .. _user-guide--sales--orders--create:
 
-.. begin
-
 Create an Order from Scratch
 ----------------------------
 
@@ -69,11 +67,9 @@ To create a new order from the back-office:
 
    By default, an order has :ref:`internal status <doc--orders--statuses--internal>` *Open* upon creation. If another status is required for new orders, an administrator must adjust the :ref:`order creation configuration settings <configuration--commerce--orders>`.
 
-.. finish
+
 
 .. _user-guide--sales--orders--create--from-shopping-lists:
-
-.. begin
 
 Create an Order from a Shopping List
 ------------------------------------
@@ -112,11 +108,9 @@ To create an order from a shopping list:
 
 .. hint:: By default, an order has :ref:`internal status <doc--orders--statuses--internal>` *Open* upon creation. If another status is required for new orders, an administrator must adjust the :ref:`order creation configuration settings <configuration--commerce--orders>`.
 
-.. finish
+
 
 .. _user-guide--sales--orders--create--from-rfq:
-
-.. begin
 
 Create an Order from an RFQ
 ---------------------------
@@ -146,7 +140,6 @@ The new order is now created.
 
 .. hint:: By default, an order has :ref:`internal status <doc--orders--statuses--internal>` *Open* upon creation. If another status is required for new orders, an administrator must adjust the :ref:`order creation configuration settings <configuration--commerce--orders>`.
 
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

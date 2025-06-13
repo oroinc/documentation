@@ -10,6 +10,8 @@ Learn how to define how open orders should be displayed in the storefront.
 * :ref:`Purchase History <sys--commerce--orders--previously-purchased--main>`
 * :ref:`Order Status Management <sys--commerce--orders--status-management>`
 * :ref:`AI Smart Order <admin-configuration-orders-ai-smart-order-settings>`
+* :ref:`External Order Import <system-configuration-orders-external-order-import>`
+
 
 .. toctree::
    :titlesonly:
@@ -21,3 +23,4 @@ Learn how to define how open orders should be displayed in the storefront.
    Purchase History <global-previously-purchased>
    Order Status Management <global-order-status-management>
    AI Smart Order <global-ai-smart-order>
+   External Order Import <global-external-order-import>
