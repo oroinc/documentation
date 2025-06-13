@@ -1043,7 +1043,7 @@ To implement custom behavior of the import pop-up, you can extend the default **
         #[\Override]
         public static function getExtendedTypes(): iterable
         {
-            return [ImportType::NAME];
+            return [ImportType::class];
         }
 
         #[\Override]

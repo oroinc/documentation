@@ -4,7 +4,7 @@ CLI Commands (ImportExportBundle)
 oro:import:file
 ---------------
 
-The ``oro:import:file`` command imports data from a CSV file.
+The ``oro:import:file`` command imports data from a file.
 
 This command only schedules the job by adding a message to the message queue, so ensure that the message consumer processes (oro:message-queue:consume) are running for data to be imported.
 

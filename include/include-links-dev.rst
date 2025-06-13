@@ -461,7 +461,7 @@ Links (Dev)
 
 .. |update.html.twig| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/UIBundle/Resources/views/actions/update.html.twig" target="_blank">update.html.twig</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/actions/update.html.twig" target="_blank">update.html.twig</a>
 
 .. |OroSecurityBundle| raw:: html
 
@@ -477,7 +477,7 @@ Links (Dev)
 
 .. |configuration.php| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ActionBundle/Configuration/Configuration.php" target="_blank">configuration.php</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Configuration/Configuration.php" target="_blank">configuration.php</a>
 
 .. |ConfigExpression| raw:: html
 
@@ -845,7 +845,7 @@ Links (Dev)
 
 .. |ConfigAwareFilterInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ApiBundle/Filter/ConfigAwareFilterInterface.php" target="_blank">ConfigAwareFilterInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/ConfigAwareFilterInterface.php" target="_blank">ConfigAwareFilterInterface</a>
 
 .. |MetadataAwareFilterInterface| raw:: html
 
@@ -885,7 +885,7 @@ Links (Dev)
 
 .. |ExtendedAssociationFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ApiBundle/Filter/ExtendedAssociationFilter.php" target="_blank">ExtendedAssociationFilter</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/ExtendedAssociationFilter.php" target="_blank">ExtendedAssociationFilter</a>
 
 .. |NestedAssociationFilter| raw:: html
 
@@ -893,7 +893,7 @@ Links (Dev)
 
 .. |PrimaryFieldFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ApiBundle/Filter/PrimaryFieldFilter.php" target="_blank">PrimaryFieldFilter</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/PrimaryFieldFilter.php" target="_blank">PrimaryFieldFilter</a>
 
 .. |NestedTreeFilter| raw:: html
 
@@ -949,11 +949,11 @@ Links (Dev)
 
 .. |CriteriaNormalizer| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ApiBundle/Util/CriteriaNormalizer.php" target="_blank">CriteriaNormalizer</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Util/CriteriaNormalizer.php" target="_blank">CriteriaNormalizer</a>
 
 .. |RequireJoinsDecisionMakerInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ApiBundle/Util/RequireJoinsDecisionMakerInterface.php" target="_blank">RequireJoinsDecisionMakerInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Util/RequireJoinsDecisionMakerInterface.php" target="_blank">RequireJoinsDecisionMakerInterface</a>
 
 .. |OptimizeJoinsDecisionMakerInterface| raw:: html
 
@@ -981,7 +981,7 @@ Links (Dev)
 
 .. |Client Side Navigation| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/UIBundle/Resources/doc/reference/mediator-handlers.md" target="_blank">Client Side Navigation</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/mediator-handlers.md" target="_blank">Client Side Navigation</a>
 
 .. |TWIG Filters (HTML, Array)| raw:: html
 
@@ -1001,11 +1001,11 @@ Links (Dev)
 
 .. |Viewport Manager| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/viewport-manager.md" target="_blank">Viewport Manager</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/viewport-manager.md" target="_blank">Viewport Manager</a>
 
 .. |Items Manager| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/UIBundle/Resources/doc/reference/items-manager.md" target="_blank">Items Manager</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/items-manager.md" target="_blank">Items Manager</a>
 
 .. |Content Providers| raw:: html
 
@@ -1021,7 +1021,7 @@ Links (Dev)
 
 .. |Formatters| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/UIBundle/Resources/doc/reference/formatters.md" target="_blank">Formatters</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/formatters.md" target="_blank">Formatters</a>
 
 .. |Dynamic Assets| raw:: html
 
@@ -1029,7 +1029,7 @@ Links (Dev)
 
 .. |Input Widgets| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/UIBundle/Resources/doc/reference/input-widgets.md" target="_blank">Input Widgets</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/input-widgets.md" target="_blank">Input Widgets</a>
 
 .. |Component Shortcuts| raw:: html
 
@@ -1037,7 +1037,7 @@ Links (Dev)
 
 .. |Error Handler| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/UIBundle/Resources/doc/reference/component-shortcuts.md" target="_blank">Error Handler</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/component-shortcuts.md" target="_blank">Error Handler</a>
 
 .. |Objects Registry| raw:: html
 
@@ -6527,3 +6527,15 @@ Links (Dev)
 .. |Symfony Asset Preloading| raw:: html
 
     <a href="https://symfony.com/doc/current/web_link.html#how-does-it-work" target="_blank">Symfony WebLink component</a>
+
+.. |External Orders Import| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/Oro/Bundle/OrderBundle/Resources/config/oro/external_order_import.yml" target="_blank">External Orders Import</a>
+
+.. |ComplexDataMappingProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/ImportExportBundle/Converter/ComplexData/Mapping/ComplexDataMappingProviderInterface.php" target="_blank">ComplexDataMappingProviderInterface</a>
+
+.. |OrderStatusMappingProvider| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/Oro/Bundle/OrderBundle/ImportExport/Converter/OrderStatusMappingProvider.php" target="_blank">OrderStatusMappingProvider</a>

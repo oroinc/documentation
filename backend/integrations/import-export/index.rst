@@ -19,3 +19,4 @@ To learn more about import and export capabilities and how to use them, please s
    customize-import-export
    accelerate-import
    rows-postponing
+   import-with-custom-format-via-batch-api

@@ -124,6 +124,9 @@ Learn how to define how open orders should be displayed in the storefront.
 * :ref:`Order Creation <configuration--commerce--orders-create>`
 * :ref:`Purchase History <sys--commerce--orders--previously-purchased--main>`
 * :ref:`Order Status Management <sys--commerce--orders--status-management>`
+* :ref:`AI Smart Order <admin-configuration-orders-ai-smart-order-settings>`
+* :ref:`External Order Import <system-configuration-orders-external-order-import>`
+
 
 :ref:`Shipping <configuration--guide--commerce--configuration--shipping>`
 -------------------------------------------------------------------------

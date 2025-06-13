@@ -71,6 +71,7 @@ There are seven mandatory steps in the product data upload sequence and some opt
 8. :ref:`Import Price Lists <import-price-lists>`
 9. :ref:`Import Product Images <user-guide-import-product-images>`
 10. :ref:`Import Inventory <import-inventory-levels>`
+11. :ref:`Import External Orders in JSON Format <user-guide--sales--orders--external-orders-import>`
 
 .. image:: /user/img/concept-guides/import/product-import-sequence.png
    :alt: Product Import Sequence
@@ -201,5 +202,6 @@ If the :ref:`Externally Stored Files <attachment-bundle-externally-stored-files>
 * :ref:`Import Opportunities <import-opportunities>`
 * :ref:`Import Accounts <mc-customers-accounts-import>`
 * :ref:`Import Contacts <import-contacts>`
+* :ref:`Import External Orders in JSON Format <user-guide--sales--orders--external-orders-import>`
 
 
