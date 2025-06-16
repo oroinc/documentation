@@ -1,11 +1,11 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--sales--promotions-organization:
 
 Configure Promotions Settings per Organization
 ==============================================
 
 The settings controls whether to enable or disable entering coupon codes that are different only by letter case (e.g., *SpringSale*, *SPRINGSALE*, *springsale*) during the checkout. Depending on the configuration you set, the coupon codes can be considered either equal or different.
+
+.. note:: The configuration is available :ref:`globally <sys-config--commerce--sales--promotions>` in Community edition. In Enterprise edition, it’s available at the organization level only.
 
 To configure the setting per organization:
 
@@ -21,11 +21,10 @@ To configure the setting per organization:
 
 4. Clear the **Use System** checkbox to customize the setting.
 
-5. **Case-Insensitive Coupon Codes** --- option determines whether to consider or ignore the letter case of the applied coupon codes. By default, the option is disabled, meaning that the system carefully checks the entered coupon code against the letter case, so *SpringSale*, *SPRINGSALE*, and *springsale*, are considered to be the three different codes. When the option is enabled, the mentioned codes will be considered equal.
+5. **Case-Insensitive Coupon Codes** --- The option determines whether to consider or ignore the letter case of the applied coupon codes. By default, the option is disabled, meaning that the system carefully checks the entered coupon code against the letter case, so *SpringSale*, *SPRINGSALE*, and *springsale*, are considered to be the three different codes. When the option is enabled, the mentioned codes will be considered equal.
 
 6. Click **Save**.
 
 .. include:: /include/include-images.rst
    :start-after: begin
-
 
