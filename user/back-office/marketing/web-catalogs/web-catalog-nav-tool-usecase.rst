@@ -5,7 +5,7 @@ Use Web Catalog Nodes as Root Nodes (Example)
 
 You can select any content node as a root node for the OroCommerce storefront menu. This enables you to display only the necessary sub-menu nodes in the storefront menu.
 
-As an illustration, we will create a new category and add it to the quick links menu in the storefront. The block will lead to a product collection page with new arrivals. The product listing page will not be part of the main menu and will only be available via a link from the quick links menu on the homepage.
+As an illustration, we will create a new category (*New Arrivals*) and add it to the quick links menu in the storefront. The block will lead to a product collection page with new arrivals. The product listing page will not be part of the main menu and will only be available via a link from the quick links menu on the homepage.
 
 .. note:: The following illustration involves configuration options that may only be modified by an administrator or a person with permission to access system configuration settings.
 
@@ -15,15 +15,21 @@ Step 1: Configure the Navigation Root
 Define the navigation root for the main menu so that the only relevant categories are displayed in the storefront instead of the whole web catalog tree:
 
 1. Navigate to **System > Websites > Routing** in the main menu.
-#. In the :ref:`Navigation Root <sys--config--sysconfig--websites--routing>` field, select a content node as the root for building the navigation tree in the storefront.
-#. Click **Save Settings** .
+2. In the :ref:`Navigation Root <sys--config--sysconfig--websites--routing>` field, select a content node as the root for building the navigation tree in the storefront.
+
+   .. note:: The *Navigation Root* option appears in the routing configuration settings when you clear the **Use Default** checkbox next to the *Web Catalog* field, select the necessary web catalog from the list (if you have more than one), and click **Save Settings**.
+
+3. Click **Save Settings**.
 
 .. image:: /user/img/marketing/web_catalogs/navigation_root/navigation_root_config.png
    :alt: Navigation root system configuration
 
 Once the navigation root scope is defined, the main menu in the storefront should display the sub-menus only from the selected navigation root range.
 
-.. note:: The *Navigation Root* option appears in the routing configuration settings when you clear the **Use Default** checkbox next to the *Web Catalog* field, select the necessary web catalog from the list (if you have more than one), and click **Save Settings**.
+.. image:: /user/img/marketing/web_catalogs/navigation_root/navigation_root_config-storefront.png
+   :alt: Navigation root in the storefront
+
+
 
 Step 2: Add a Content Node
 --------------------------
@@ -36,7 +42,7 @@ Create a new content node and add all the items eligible for your special offers
    .. image:: /user/img/marketing/web_catalogs/navigation_root/content_node_outside_nav_root.png
       :alt: Creating a content node outside of the navigation root
 
-#. In the **Content Variants** section, add *Product Collection* as a :ref:`content variant <user-guide--marketing--web-catalog--content-variant>` for the node you are creating, and populate it with the items for sale. In the example below, we have applied an existing |segment| (New Arrivals/Lightning Products) to the product collection we are adding as a content variant.
+#. In the **Content Variants** section, add *Product Collection* as a :ref:`content variant <user-guide--marketing--web-catalog--content-variant>` for the node you are creating, and populate it with the items for sale. In the example below, we have applied an existing |segment| (New Arrivals) to the product collection we are adding as a content variant.
 
    .. note:: See the :ref:`Add a Product Collection (Web Catalog Content) <user-guide--marketing--web-catalog--content-variant-product-collection>` topic for more details.
 
@@ -73,7 +79,7 @@ We can now connect the *commerce_quick_access_refreshing_teal* to a storefront m
 2. For the **Quick Links Menu** option, select *commerce_quick_access_refreshing_teal* from the dropdown.
 3. Click **Save and Close**.
 
-The New Arrivals menu item should now be available in the storefront and contain the product collection from the New Arrivals/Lighting segment.
+The New Arrivals menu item should now be available in the storefront and contain the product collection from the New Arrivals segment.
 
 .. image:: /user/img/marketing/web_catalogs/navigation_root/content-node-storefront.png
    :alt: Product collection content node in the quick access menu in the storefront

@@ -100,7 +100,7 @@ If an order contains :ref:`product kit(s) <products--products--create-product-ki
 This section displays details of shipping tracking and cost.
 
 
-**Promotions and Discounts**
+**Discounts**
 
 This section provides information about promotions and discounts applied to the order. The section is divided into **All Promotions** and **All Special Discounts**.
 

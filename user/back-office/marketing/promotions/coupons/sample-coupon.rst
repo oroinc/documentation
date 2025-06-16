@@ -5,7 +5,7 @@ Create a Sample Coupon
 
 .. begin
 
-As an illustration, let us create a sample promotion and generate 100 coupons. These coupons will be redeemed for orders placed by first-time customers. The promotion will offer a 20% discount for all orders between 1 March and 31 May 2024.
+As an illustration, let us create a sample promotion and generate 100 coupons. These coupons will be redeemed for orders placed by first-time customers. The promotion will offer a 20% discount for all orders between 1 March and 31 May 2026.
 
 Create a Promotion
 ^^^^^^^^^^^^^^^^^^
@@ -17,7 +17,7 @@ As coupons must be linked to promotions, the first step is to create a new promo
 3. In the form that opens, specify the discount details and items, making sure that the **Triggered by** field is set to *Coupons and Conditions*.
    The sample promotion is called **Spring Sale**, and the discount options are 20% off all orders.
 
-   .. image:: /user/img/marketing/promotions/coupon-promotion-20-off.png
+   .. image:: /user/img/marketing/coupons/coupon-promotion-20-off.png
 
 4. Click **Save and Close**.
 

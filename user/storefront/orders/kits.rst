@@ -17,7 +17,7 @@ Here, you can select which of the available items to select as part of the kit, 
 
 Once you have selected the items, click **Add to Shopping List**.
 
-You will be able to see the the price of each item in the kit on the shopping list page before you create an order.
+You will be able to see the price of each item in the kit on the shopping list page before you create an order.
 
 .. image:: /user/img/products/products/kits/kit-sl.png
    :alt: Kit in a shopping list

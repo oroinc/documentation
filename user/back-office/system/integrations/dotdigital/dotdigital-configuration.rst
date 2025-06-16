@@ -12,12 +12,12 @@ Create API Managed User on the Dotdigital Side
 To configure integration with an Oro application on the Dotdigital side, create **an API managed user**:
 
 1. Log in to Dotdigital.
-2. Navigate to **Settings > Access**.
+2. Navigate to **Settings > Access > API users**.
 
    .. image:: /user/img/marketing/marketing/dotdigital/access.png
       :alt: Open the Access menu to create a new user
 
-3. Click the **New User** button.
+3. Click the *Add New API User** button.
 
    Your unique email address is generated in the **Email Address** field. You need this email address to configure Oro integration with Dotdigital.
 
@@ -60,9 +60,9 @@ Create Integration on the Oro Application Side
 
    The Dotdigital menu group contains the following sections:
 
-   - **Email Studio** (see :ref:`Configure Single Sign-on guide <user-guide-dotmailer-single-sign-on>`)
    - **Data Fields** (see :ref:`Manage Dotdigital Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`)
    - **Data Field Mappings** (see :ref:`Manage Dotdigital Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`)
+   - **Email Studio** (see :ref:`Configure Single Sign-on guide <user-guide-dotmailer-single-sign-on>`)
 
    .. image:: /user/img/marketing/marketing/dotdigital/dotdigital-menu.png
       :alt: The dotdigital menu under the Marketing main menu

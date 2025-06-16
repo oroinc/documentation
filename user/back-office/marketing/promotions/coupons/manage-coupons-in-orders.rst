@@ -7,7 +7,7 @@ Manage Coupons in Orders
 
 In your Oro application, you can manage coupons from the page of the selected :ref:`order <user-guide--sales--orders>`. Specifically, you can:
 
-1. View the coupon applied to the order under **Promotions and Discounts** on the order page.
+1. View the coupon applied to the order under **Discounts** on the order page.
 2. Add a coupon to the order manually.
 
 View Coupon Codes
@@ -17,7 +17,7 @@ To view the coupon codes that apply to the selected order:
 
 1. Navigate to **Sales > Orders** in the main menu.
 2. Click to open the required order to open it.
-3. Click **Promotions and Discounts** to open the section.
+3. Click **Discounts** to open the section.
 4. Under **All Promotions** on the left of the section, click |IcView| at the end of the coupon code row.
 
    .. image:: /user/img/marketing/coupons/ViewCouponsIcon.png
@@ -37,7 +37,7 @@ To add a coupon code to the required order from its page:
 2. Click to open the required order to open it.
 3. Click **Add Coupon Code** in the **More Actions** menu on the top right of the order page.
 
-   .. image:: /user/img/marketing/promotions/more-actions-discount.png
+   .. image:: /user/img/marketing/coupons/more-actions-coupon.png
       :alt: More Actions menu options on the order page
 
 4. In the popup that opens, choose a coupon code from the list:
@@ -52,14 +52,14 @@ To add a coupon code to the required order from its page:
 
    .. note:: Please keep in mind that you cannot apply two coupon codes to one order if they are related to the same promotion.
 
-7. The applied coupon code will be displayed under **All Promotions** in the **Promotions and Discounts** section.
+7. The applied coupon code will be displayed under **All Promotions** in the **Discounts** section.
 
 This way, you can apply as many coupons to the order as necessary as long as they belong to different promotions.
 
 Manage Coupons When Editing the Order
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When editing the selected order, you can perform the following actions with the coupons under **All Promotions** in the **Promotions and Discounts** section:
+When editing the selected order, you can perform the following actions with the coupons under **All Promotions** in the **Discounts** section:
 
 .. image:: /user/img/marketing/coupons/AllPromotionsSectioninEditOrderForm.png
    :alt: The actions you can perform with the coupons under All Promotions

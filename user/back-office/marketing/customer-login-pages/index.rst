@@ -21,12 +21,12 @@ To edit the existing customer login page:
    .. image:: /user/img/marketing/customer_login_pages/customer_login_page.png
       :alt: Blank customer login page
 
-3. To update **Top Content**, provide the text of your choice in the block on the right. Once saved, the content in the storefront will be updated with new content appearing above credentials input fields.
+3. To update **Top Content**, provide the text of your choice in the related field block. Once saved, the content in the storefront will be updated with new content appearing above credentials input fields.
 
    .. image:: /user/img/marketing/customer_login_pages/top_content.png
       :alt: Top content added to storefront
 
-4. To update **Bottom Content**, provide the text of your choice in the block to the right. Once saved, the content in the storefront will be updated with new content appearing below the *Sign In* button.
+4. To update **Bottom Content**, provide the text of your choice in the related field block. Once saved, the content in the storefront will be updated with new content appearing below the *Log In* button.
 
    .. image:: /user/img/marketing/customer_login_pages/bottom_content.png
       :alt: Bottom content added to storefront

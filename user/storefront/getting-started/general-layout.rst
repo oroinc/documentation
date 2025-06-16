@@ -3,7 +3,7 @@
 Manage General Layout in the Storefront
 =======================================
 
-The screenshots in this guide are provided for illustration purposes only and use the default demo design. The layout, design and functionality of your application may be different. Elements such the the way product menu is displayed, the availability of the quick access menu and quick links are configured in the back-office :ref:`theme configuration <back-office-theme-configuration>` settings.
+The screenshots in this guide are provided for illustration purposes only and use the default demo design. The layout, design and functionality of your application may be different. Elements, such as the way product menu is displayed, the availability of the quick access menu, and quick links are configured in the back-office :ref:`theme configuration <back-office-theme-configuration>` settings.
 
 .. _frontstore-guide--navigation-top:
 

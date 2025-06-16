@@ -48,7 +48,7 @@ The following steps are performed in the course of the marketing list members sy
 
 * All the marketing list members are checked for subscription to the MailChimp audience. Unsubscribed members are scheduled for the subscription.
 * All the marketing list members absent from the static segment are scheduled for the mass addition to the segment.
-* All the members present in the static segment but absent in the marketing list are scheduled for removal from the the static segment.
+* All the members present in the static segment but absent in the marketing list are scheduled for removal from the static segment.
 
 Segment export has four steps:
 
