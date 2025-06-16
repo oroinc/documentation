@@ -9,14 +9,16 @@ Data Fields
 Dotdigital Side
 ^^^^^^^^^^^^^^^
 
-As well as utilizing the default contact data fields (FIRSTNAME, FULLNAME or LASTNAME) already in place in Dotdigital address books, you can create new contact data fields to capture and/or contain additional information about your contacts. The more useful data you can collect on your contacts, the more you can proficiently segment, target, and personalize your email campaigns and, in turn, generate better response rates.
+As well as utilizing the default contact data fields (FIRSTNAME, FULLNAME or LASTNAME) already in place in Dotdigital lists, you can create new contact data fields to capture and/or contain additional information about your contacts. The more useful data you can collect on your contacts, the more you can proficiently segment, target, and personalize your email campaigns and, in turn, generate better response rates.
 
-The default fields are listed on the **Default data fields** tab, while new customized fields are on **Custom data fields**. These are located in **Contacts > Contact Data fields**.
+To view all the default fields:
+
+1. Navigate to the **Settings > Contacts > Contact data fields** menu under the account menu. are listed on the **Default data fields** tab, while new customized fields are on **Custom data fields**. These are located in **Contacts > Contact Data fields**.
 
 .. image:: /user/img/marketing/marketing/dotdigital/dt_contacts_contact_data_fields.png
    :alt: Navigate to Contact Data fields under the Contacts main menu on the Dotdigital side
 
-Within **Custom data fields**, you can view, create, or remove new data fields.
+2. All custom fields that you can view, create, or remove are displayed in the **Custom data fields** tab.
 
 .. image:: /user/img/marketing/marketing/dotdigital/new_data_fields_example_dt.png
    :alt: The contact details displayed under Custom Data Fields tab
@@ -87,7 +89,7 @@ By default, data fields are synchronized with Dotdigital once a day. This interv
 Data Field Mappings
 -------------------
 
-**Data Field Mappings** is available under **Marketing** in the main menu.
+**Data Field Mappings** is available under **Marketing > Dotdigital** in the main menu.
 
 .. image:: /user/img/marketing/marketing/dotdigital/data_field_mappings.png
    :alt: All data field mappings grid

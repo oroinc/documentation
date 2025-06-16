@@ -123,11 +123,15 @@ The page contains the list of all available coupons in your Oro application. Fro
 
    * To choose the columns to be displayed in the table, select the checkbox next to the required column under **Show**. Clear the checkbox to make the column disappear from the table.
    * To change the order of the columns, click |IcReorder| next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
-   * To refresh the coupon list, click |IcRedo|.
-   * To reset the coupon list, click |IcRefresh| to clear list customization and return to default settings. Reset applies to all filters, records per page, and sorting changes you have made.
 
    .. image:: /user/img/marketing/coupons/coupon_grid_settings.png
       :alt: Coupon grid settings
+
+10. To refresh the coupon list, click |IcRedo|.
+
+11. To reset the coupon list, click |IcRefresh| to clear list customization and return to default settings. Reset applies to all filters, records per page, and sorting changes you have made.
+
+
 
 .. _user-guide--marketing--promotions--coupons--edit:
 .. _user-guide--marketing--promotions--coupons--edit--view:

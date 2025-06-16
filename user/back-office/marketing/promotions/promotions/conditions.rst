@@ -34,7 +34,7 @@ The expressions for these conditions are the following:
 .. image:: /user/img/marketing/promotions/promotion_with_conditions.png
    :alt: A promotion with two expressions 
 
-Once the promotion is saved, the customer user of Company A Amanda Cole should be able to receive the discount when placing her order at the checkout when purchasing more than 500 items of eligible products.
+Once the promotion is saved, the customer user of Company A, Amanda Cole, should be able to receive the discount when placing her order at the checkout when purchasing more than 500 items of eligible products.
 
 .. image:: /user/img/marketing/promotions/expression-applied.png
    :alt: The discount applied at checkout for customers with the required customer level

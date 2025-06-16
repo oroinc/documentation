@@ -35,7 +35,7 @@ To create a campaign in the Oro application, create a :ref:`Marketing List <user
 3. Add email information to the marketing list to send an email campaign via Mailchimp.
 
    .. image:: /user/img/marketing/marketing/mailchimp/o_marketing_list_email.png
-      :alt: Add email field to the columns
+      :alt: Add the contact information field to the columns
 
 4. Click **Save and Close**.
 
@@ -198,7 +198,7 @@ wish to promote your email in social media, select **Connect to Twitter** or **C
    .. image:: /user/img/marketing/marketing/mailchimp/review_campaign_content.png
       :alt: Review campaign details before sending
 
-7. Click **Send Now**
+7. Click **Send Now**.
 
    .. image:: /user/img/marketing/marketing/mailchimp/prepare_for_launch.png
       :alt: Send the email campaign from mailchimp
@@ -228,7 +228,7 @@ you will be able to see subscriber activity statistics, such as the number of cl
 
 .. note:: Please note that sometimes Mailchimp's summary information may not match the Oro application summary in the same report. This may happen because one set of statistics comes from Mailchimp directly. The other is generated as we receive specific reporting data back about recipients.
 
-For instance, if you need to exclude customers who did not open your email from the next campaign, go to **Marketing > Marketing List> Create New Marketing List.** Fill in the mandatory fields, remembering to include at least one contact column below.
+For instance, if you need to exclude customers who did not open your email from a certain campaign, go to **Marketing > Marketing List> Create New Marketing List.** Fill in the mandatory fields, remembering to include at least one contact column below.
 
 In the :ref:`Filters <user-guide-getting-started-filters>` section:
 

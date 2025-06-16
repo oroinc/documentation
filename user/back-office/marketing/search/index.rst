@@ -118,8 +118,8 @@ To create a new synonym group:
 
 4. Click **Save**.
 
-.. image:: /user/img/marketing/search/synonym-search-back-office-storefront-example.png
-   :alt: Illustration of how search synonyms configured in the back-office work in the storefront
+.. image:: /user/img/concept-guides/search/search-synonyms-storefront.png
+   :alt: Search synonyms illustration
 
 You can view the list of all created search synonyms in the Search Synonym :ref:`grid <user-guide-data-management-basics>`.
 

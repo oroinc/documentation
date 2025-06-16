@@ -14,9 +14,6 @@ By default, the web catalog with all its nodes has no visibility restrictions an
 
 The web catalog node inherits visibility settings from the root node or its parent node.
 
-.. image:: /user/img/marketing/web_catalogs/InheritParent.png
-   :alt: Check the Inherit Parent box to apply the visibility settings of the parent node
-
 However, you can adjust it to be displayed for particular localization, on a specific website, and/or for the selected customer(s).
 
 To modify the inherited default settings, clear the **Inherit Parent** box, and specify the restrictions by selecting all or some of the following: target localization, website, and customer or customer group.
@@ -25,8 +22,8 @@ To modify the inherited default settings, clear the **Inherit Parent** box, and 
 
 .. warning:: Never leave the restrictions for a non-default variant empty. This may cause an unexpected priority collision between the default and the non-default variant.
 
-.. image:: /user/img/marketing/web_catalogs/InheritParentOff.png
-   :alt: Modify the inherited default settings by clearing the Inherit Parent box
+.. image:: /user/img/marketing/web_catalogs/InheritParent.png
+   :alt: Check the Inherit Parent box to apply the visibility settings of the parent node
 
 Set Content Variants Visibility Restrictions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

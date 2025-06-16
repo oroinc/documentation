@@ -152,7 +152,7 @@ Once at least one item is deleted from the marketing list, it is moved to the **
 Share the Marketing List
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: Sharing records is available in the Enterprise edition applications.
+.. note:: Sharing records is available in the Enterprise edition applications and :ref:`if the feature is enabled in the back-office configuration settings <admin-configuration-user-settings-share>`.
 
 To share the marketing list with other Oro application users:
 

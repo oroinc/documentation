@@ -1,7 +1,5 @@
 .. _user-guide-marketing-tracking:
 
-.. updated on 18 October 2018
-
 Manage Tracking Websites in the Back-Office
 ===========================================
 
@@ -33,7 +31,6 @@ To generate a new website tracking code:
    * **Identifier** --- A unique code of the website used to generate its tracking.
    * **URL** --- The URL of the website to be tracked.
    * **Description** --- Additional information about the record. This field is optional.
-   * **Channel** --- Select the channel to connect the tracking record to. If this is done, you will be able to bind events registered by the tracking engine and other Oro application data like orders, shopping carts, customer profiles, etc. This connection can be further utilized in reports and segments.
 
    .. image:: /user/img/marketing/tracking_websites/tracking_create.png
       :alt: Creating a tracking website
@@ -200,7 +197,9 @@ Hover over the |IcMore| **More Options** menu to the right of the required track
 Share the Tracking Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To share the website tracking summary with other Oro application user (available for the Enterprise edition only):
+.. note:: Sharing tracking websites is available in the Enterprise edition applications and can be enabled for users in the :ref:`back-office configuration settings <admin-configuration-user-settings-share>`.
+
+To share the website tracking summary with other Oro application user:
 
 1. Navigate to **Marketing > Tracking Websites** in the main menu.
 
@@ -244,6 +243,12 @@ Or
 Collect Website Statistics
 --------------------------
 
+.. important:: To make sure that synchronization between your website and the application is successful, you may need to enable dynamic website tracking. For this, navigate to **System > Configuration > System Configuration > General Setup > Tracking**, and select the **Enable Dynamic Tracking** checkbox.
+
+   .. image:: /user/img/marketing/tracking_websites/enable_dynamic_tracking_new.png
+      :alt: Enable dynamic tracking in system configuration
+
+
 A list of events on the tracking website page helps you monitor every occurrence of the tracked action (e.g. a user has accessed a pre-defined part of the website following the campaign). You can find event name and value, user id (guest or user email), the URL of the visited page, the code of the marketing campaign and time when the event was logged.
 
   .. image:: /user/img/marketing/tracking_websites/tracking_view_events.png
@@ -251,10 +256,6 @@ A list of events on the tracking website page helps you monitor every occurrence
 
 In the example above, you can see the three kinds of events defined for the Jack and Johnson E-commerce website tracking. As soon as a user gets on any of the website pages, a *visit* event is logged with the *1* value. As soon as a user gets to the **Orders** page of the website, an *Order* event is logged, with the value that stores an ordered item id. As soon as a user gets to the **Item Details** page of the website, a *View item* event is logged with a value that stores a viewed item id.
 
-.. important:: To make sure that synchronization between your website and the application is successful, you may need to enable dynamic website tracking. For this, navigate to **System > Configuration > System Configuration > General Setup > Tracking**, and select the **Enable Dynamic Tracking** checkbox.
-
-   .. image:: /user/img/marketing/tracking_websites/enable_dynamic_tracking_new.png
-      :alt: Enable dynamic tracking in system configuration
 
 .. stop
 
