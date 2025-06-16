@@ -5,7 +5,7 @@ Configure Promotions Settings per Organization
 
 The settings controls whether to enable or disable entering coupon codes that are different only by letter case (e.g., *SpringSale*, *SPRINGSALE*, *springsale*) during the checkout. Depending on the configuration you set, the coupon codes can be considered either equal or different.
 
-The configuration is available :ref:`globally <sys-config--commerce--sales--promotions>` and per organization.
+.. note:: The configuration is available :ref:`globally <sys-config--commerce--sales--promotions>` in Community edition. In Enterprise edition, it’s available at the organization level only.
 
 To configure the setting per organization:
 
