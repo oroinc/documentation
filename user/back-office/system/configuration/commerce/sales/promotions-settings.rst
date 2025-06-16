@@ -7,8 +7,6 @@ Configure Global Promotions Settings
 
 You can enable or disable :ref:`promotions <user-guide--marketing--promotions>` and :ref:`coupons <user-guide--marketing--promotions--coupons>`, as well as control their strategy across your application in the system configuration. You can also control whether to enable or disable entering coupon codes that are different only by letter case (e.g., *SpringSale*, *SPRINGSALE*, *springsale*) during the checkout.
 
-The configuration is available globally and :ref:`per organization <sys--conf--commerce--sales--promotions-organization>`.
-
 To reach promotion configuration:
 
 1. Navigate to **System > Configuration** in the main menu.
@@ -26,6 +24,8 @@ To reach promotion configuration:
 **Enable Promotions** --- the option determines whether to activate or deactivate the promotions feature and promotions-related functionality in your Oro application.
 
 **Case-Insensitive Coupon Codes** --- the option determines whether to consider or ignore the letter case of the applied coupon codes. By default, the option is disabled, meaning that the system carefully checks the entered coupon code against the letter case, so *SpringSale*, *SPRINGSALE*, and *springsale*, are considered to be the three different codes. When the option is enabled, the mentioned codes will be considered equal.
+
+    .. note:: The Case-Insensitive Coupon Codes setting is available globally in Community edition. In Enterprise edition, it’s available at the :ref:`organization <sys--conf--commerce--sales--promotions-organization>` level only.
 
 **Discount Strategy** --- the option determines which strategy to use when calculating the promotion discount for a product:
 
