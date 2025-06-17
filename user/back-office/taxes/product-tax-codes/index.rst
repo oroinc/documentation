@@ -29,6 +29,9 @@ In the product tax codes list, you will find the information about the code (uni
 
 Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or |Trash-SVG| to remove the product tax code.
 
+.. image:: /user/img/taxes/all_product_tax_codes.png
+   :alt: The general page of all product tax codes
+
 View Product Tax Code Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
