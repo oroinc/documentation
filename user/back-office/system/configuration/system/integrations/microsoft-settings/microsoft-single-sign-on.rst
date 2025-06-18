@@ -21,7 +21,8 @@ To configure the Single Sign-On with Microsoft 365 in your Oro application:
 3. Define the following fields for **Microsoft 365 Single Sign-on**:
 
    * **Enable** --- Select the checkbox to enable the Single Sign-On setting.
-   * **Domains** --- A comma-separated list of allowed domains. It limits the list of application domains for which single sign-on can be used. Leave the field empty to set *No* for such limitation.
+   * **Domains** --- Enter a comma-separated list of email domains allowed to use Microsoft 365 SSO (e.g., domains associated with your company). It limits Microsoft 365 SSO access to users with email addresses matching these domains. Leave the field empty to allow any domain.
+   * **Disable Non-SSO Login for Listed Domains** --- When enabled, users with email addresses matching the domains specified in the *Domains* field will be required to sign in using **Microsoft 365 SSO only**. Username and password login will be restricted for these users.
    * **Redirect URI** --- **READ-ONLY** field, the value is auto-generated and should be added in Azure Application Redirect URIs configuration.
 
 
