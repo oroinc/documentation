@@ -823,6 +823,8 @@ The default configuration for extension with alias "oro_health_check":
             options:
                 ttl:                  600
                 file_path:            ~
+        last_cron_execution_cache:
+            ttl:                      900
 
 oro_help
 ________
