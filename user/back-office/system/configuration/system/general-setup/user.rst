@@ -29,7 +29,7 @@ Configure Sharing Records
   :header: "Option", "Description"
   :widths: 10, 30
 
-  "Allow Sharing","If this option is enabled, users are allowed to share entities in the Oro application back-office."
+  "Allow Sharing","If this option is enabled, users are allowed to share entities in the Oro application back-office. This option is available in the Enterprise Edition only."
 
 Configure Password Restrictions
 -------------------------------

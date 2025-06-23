@@ -33,14 +33,12 @@ Currency configuration allows to:
 
 Think of a US-based business that is shipping certain goods to the UK. Its base currency is US dollars, which means that this is the currency that its business’s turnover is usually in. The contract between the US and the UK companies, however, is to be signed in British pounds for the total value of £20 000. When creating a new opportunity for the mentioned contract, a sales manager of the US company would need to add the **Budget Amount** in pounds rather than dollars.
 
-With the Oro application Enterprise multi-currency feature, the system can make the necessary recalculations of this budget amount into the base currency for you. This means that if you enter the amount of £20 000 into the Budget Amount field, this value will be converted into your base currency and constitute $25 050, as illustrated in the screenshot below. This conversion is calculated according to the currency rate, determined beforehand.
+With the Oro application Enterprise multi-currency feature, the system can make the necessary recalculations of this budget amount into the base currency for you. This means that if you enter the amount of £20 000 into the Budget Amount field, this value will be converted into your base currency and constitute $27 200, as illustrated in the screenshot below. This conversion is calculated according to the currency rate, determined beforehand.
 
 .. image:: /user/img/system/config_system/budget_recalculated1.png
    :alt: The price is recalculated while selecting a currency
 
-.. note:: So far, opportunity is the only Oro application entity to have received multi-currency functionality out-of-the-box.
-
-With this example in mind, let us have a look at how you can configure your currencies and rates.
+Next, let us have a look at how you can configure currencies and rates.
 
 Global Currency Configuration
 -----------------------------
@@ -80,17 +78,10 @@ The following sections are available within the **Currency** tab:
 |                        | a) Clear the **Use Default** checkbox next to the option.                                                       |
 |                        | b) Select the new option value (either *Currency Code* or *Currency Symbol*).                                   |
 |                        |                                                                                                                 |
-|                        | **Note:** Not all currencies might have symbols. For such currencies, ISO codes are used instead.               |
-|                        |                                                                                                                 |
-|                        | The order subtotal when the display format is set to *Currency Code*:                                           |
-|                        |                                                                                                                 |
 |                        | .. image:: /user/img/system/config_system/currency_code.png                                                     |
 |                        |    :alt: Display the order total using the currency code                                                        |
 |                        |                                                                                                                 |
-|                        | The order subtotal when the display format is set to *Currency Symbol*:                                         |
-|                        |                                                                                                                 |
-|                        | .. image:: /user/img/system/config_system/currency_symbol.png                                                   |
-|                        |    :alt: Display the order total using the currency symbol                                                      |
+|                        | **Note:** Some currencies may not have symbols, in which case ISO codes are used instead.                       |
 |                        |                                                                                                                 |
 +------------------------+-----------------------------------------------------------------------------------------------------------------+
 
@@ -148,8 +139,6 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
    :alt: Sample of dashboard widgets that provide metrics in US
 
 2. To modify the currency exchange rate to and from the base currency, edit the **Rate To** and **Rate From** values in the corresponding row.
-
-   For example, if the rate of US dollar to British pound is 1:0.76, enter 0.76 in the Rate From field for US Dollar. The system will automatically calculate the Rate To value for US Dollar which will constitute 1.315789.
 
    .. image:: /user/img/system/config_system/rate_recalculation1.png
       :alt: Demonstrate the example of the currency calculation provided that the rate of US dollar to British pound is 1 to 0.76

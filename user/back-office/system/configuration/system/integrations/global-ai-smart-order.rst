@@ -13,7 +13,7 @@ AI Smart Order is available for OroCommerce Enterprise and is aimed at simplifyi
 To enable this feature globally:
 
 1. Navigate to **System > Configuration** in the main menu.
-2. Select **Commerce > Orders > AI Smart Order** in the menu to the left.
+2. In the menu to the left, click **System Configuration > Integrations > AI Smart Order**.
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 

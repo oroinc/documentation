@@ -21,9 +21,6 @@ To change the default global pricing settings:
 
 1. Navigate to **System > Configuration > Commerce > Catalog > Pricing** in the main menu.
 
-.. image:: /user/img/system/config_commerce/catalog/pricing_sys_config.png
-   :alt: Pricing system configuration page
-
 2. To customize the option configuration, clear the **Use Default** checkbox next to the option and select or type in the new option value.
 
 3. Click **Reset** at the top right to roll back any changes to the pricing settings.

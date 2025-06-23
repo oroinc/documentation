@@ -24,11 +24,7 @@ In the Product Images section of Commerce configuration settings, you can contro
 
    For example, the name of the file is **coffee_maker/bosch_#RND123.jpg**, the system-generated hash value is "media/cache/attachment/product_gallery_main/5bae287538.jpg". If the option is enabled, the file name will be displayed in the storefront as follows "media/cache/attachment/product_gallery_main/5bae287538-coffee-maker-bosch-RND123.jpg"
 
-
 6. In the **Image Gallery Options** section, enable or disable product preview on product listing pages in the storefront.
-
-   .. image:: /user/img/system/config_commerce/product/ImagePreviewGlobal.png
-      :alt: Global image gallery options configuration settings
 
    **Enable Image Preview on Product Listing** - Enable the option to add the |ZoomIc| icon to the product image on the product listing page in the storefront which will open a pop up image gallery once clicked.
 

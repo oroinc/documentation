@@ -19,6 +19,7 @@ Learn how to enable and setup the integration between your Oro application and G
 * :ref:`CRM and Commerce <user-guide-commerce-integration>`
 * :ref:`AI Content Generation <admin-configuration-ai-integration-settings>`
 * :ref:`AI Agent <admin-configuration-ai-agent-settings>`
+* :ref:`AI Smart Order <admin-configuration-orders-ai-smart-order-settings>`
 * :ref:`Dotdigital Settings <admin-configuration-dotmailer-integration-settings>`
 
 .. toctree::
@@ -30,4 +31,7 @@ Learn how to enable and setup the integration between your Oro application and G
    CRM and Commerce <commerce-integration>
    AI Content Generation <ai-settings>
    AI Agent <ai-agent>
-   Dotdigital Settings <dotdigital-integration-settings>
+   AI Smart Order <global-ai-smart-order>
+   dotdigital Settings <dotdigital-integration-settings>
+
+
