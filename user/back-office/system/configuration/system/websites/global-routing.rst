@@ -50,9 +50,6 @@ To change the default global routing settings:
 
 4. In the **Direct URLs** section, configure the following settings:
 
-   .. image:: /user/img/system/config_system/routing_direct_url.png
-      :alt: Global Direct URLs settings
-
    * **Enable Direct URLs** - when enabled, the page URL is built using the page slug (e.g., `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g., `/product/view/4`).
 
    * **Product URL Prefix** - the prefix that is appended to the product slug in the URL.
@@ -66,9 +63,6 @@ To change the default global routing settings:
 .. _routing-website-matchers-global:
 
 5. In the **Canonical URLs** section, configure the following parameters:
-
-   .. image:: /user/img/system/config_system/routing_canonical_url.png
-      :alt: Global Canonical URLs settings
 
    * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
 

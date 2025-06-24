@@ -33,9 +33,6 @@ You can update the product watermark settings, enable image preview and configur
 
 7. In the **Image Gallery Options** section, enable or disable product preview on product listing pages in the storefront.
 
-   .. image:: /user/img/system/config_commerce/product/ImagePreviewGlobal.png
-      :alt: Global image gallery options configuration settings
-
    **Enable Image Preview on Product Listing** - Enable the option to add the |ZoomIc| icon to the product image on the product listing page in the storefront which will open a pop up image gallery once clicked.
 
     .. image:: /user/img/system/config_commerce/product/ImagePreviewStorefront.png

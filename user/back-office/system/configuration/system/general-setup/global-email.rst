@@ -136,12 +136,8 @@ To configure a system mailbox globally:
 
      * *Connected Account* --- The account connected to Microsoft 365. Click **Retrieve Folders** to load folders from the connected account.
 
-|
-
-   .. image:: /user/img/system/integrations/microsoft/system-mailbox-365.png
+   .. .. image:: /user/img/system/integrations/microsoft/system-mailbox-365.png
       :alt: Email synchronization settings for Microsoft 365
-
-|
 
    * **Account Type: Other**:
 
@@ -171,8 +167,6 @@ To configure a system mailbox globally:
    * *Convert To Lead* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Lead record will be created in the Oro application.
    * *Convert To Case* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Case record will be created in the Oro application.
    * *Convert To Draft Order* --- When :ref:`AI Smart Order <concept-guide--ai--smart-order>` is configured in an OroCommerce Enterprise application, the system will scan the email box for any incoming POs and create a draft order using the information it captures from the email and or its attachment automatically. The purchase orders must be attached to the email in JPG, PNG, or PDF format. Please |contact our support team| to help with implementation.
-
-.. mention which templates are used and add screenshot
 
    As an example, we have selected the **Convert To Lead** option. Once the action has been selected, define which user will own the records and choose the source of your leads in the **Source** field.
 
