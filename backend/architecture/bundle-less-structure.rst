@@ -45,6 +45,9 @@ Application-level Structure Changes
     |   |   |── api_frontend/                           # API frontend extending configuration.
     |   |   |   |── api_frontend_config.yml
     |   |   |   └── ...
+    |   |   |── app/                                    # App extending configuration.
+    |   |   |   |── app_config.yml
+    |   |   |   └── ...
     |   |   |── cache_metadata/                         # Cache metadata configuration.
     |   |   |   |── cache_metadata.yml
     |   |   |   └── ...

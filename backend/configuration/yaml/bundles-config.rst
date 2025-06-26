@@ -455,15 +455,6 @@ The default configuration for extension with alias "oro_asset":
         # Npm installation timeout in seconds, null to disable timeout
         npm_install_timeout:  null
 
-        # External resource assets configuration
-        external_resources:
-
-        # Prototype
-        name:
-
-            # The link to the external resource
-            link:                 ~ # Required
-
         # Webpack Dev Server configuration
         webpack_dev_server:
 
