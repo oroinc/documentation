@@ -61,6 +61,10 @@ If an RFQ was previously cancelled, you can resubmit the RFQ by clicking |Resubm
 
 .. image:: /user/img/storefront/rfq/RFQResubmitNew.png
 
+If an RFQ is related to quote, you can navigate to its page via a dedicated link on the RFQ page.
+
+.. image:: /user/img/storefront/quotes/quote-to-rfq-link.png
+
 .. toctree::
    :maxdepth: 1
    :hidden:

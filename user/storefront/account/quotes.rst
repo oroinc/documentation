@@ -27,7 +27,11 @@ Within the table you have the following :ref:`action buttons <frontstore-guide--
 3. Manage |Columns-SVG| table settings to define which columns to show in the table.
 4. Manage :ref:`filters <frontstore-guide--navigation-filters>` |Settings-SVG|.
 
-.. note:: More details on how to accept an offered quote or submit a guest quote are described in the other :ref:`Quotes <frontstore-guide--quotes>` topic of the Storefront guide.
+If a quote is related to an RFQ, you can navigate to its page via a dedicated link on the quote page.
+
+.. image:: /user/img/storefront/quotes/quote-to-rfq-link.png
+
+.. note:: For more information on how to accept an offered quote or submit a guest quote, see :ref:`Quotes in the Storefront <frontstore-guide--quotes>`.
 
 .. include:: /include/include-svg.rst
    :start-after: begin
