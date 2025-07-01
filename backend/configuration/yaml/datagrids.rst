@@ -918,7 +918,7 @@ The name of the route to the controller action that should be called.
 
 type: ``string``
 
-Can be either ``route`` or ``callable`` to use a statically configured route or to dynamically generate a link.
+Can be either ``url`` or ``callable`` to use a statically configured route or to dynamically generate a link.
 
 sorters
 -------
