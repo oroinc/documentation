@@ -99,16 +99,6 @@ Configuration
                     actions:
                         - '@assign_value':
                             parameters: [$call_successfull, true]
-                not_answered_definition: # Callee did not answer
-                    # Make sure that caller waited at least 60 seconds
-                    conditions: # call_timeout not empty and >= 60
-                        '@and':
-                            - '@not_blank': [$call_timeout]
-                            - '@ge': [$call_timeout, 60]
-                    # Set call_successfull = false
-                    actions:
-                        - '@assign_value':
-                            parameters: [$call_successfull, false]
                 end_conversation_definition:
                     conditions:
                         # Check required properties are set
