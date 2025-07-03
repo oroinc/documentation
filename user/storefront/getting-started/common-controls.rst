@@ -19,7 +19,7 @@ Such tables represent aggregated views of data and store records, making it easy
 Breadcrumbs
 -----------
 
-Breadcrumbs displayed under the top navigation bar show the hierarchical path to the current page, based on the product catalog structure.
+Breadcrumbs displayed under the top navigation bar show the hierarchical path to the current page, based on the product catalog structure (as of OroCommerce 6.1.2).
 
 - The current page is not included in the breadcrumbs on all pages.
 - Breadcrumbs that contain only one item are not shown.

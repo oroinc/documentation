@@ -43,7 +43,7 @@ The breadcrumb logic follows SEO best practices:
 - The current page is automatically excluded from the breadcrumbs on all pages.
 - Breadcrumbs that consist of only one item are automatically removed.
 
-This logic is applied by default across the storefront and does not require manual configuration.
+This logic is applied by default across the storefront (as of OroCommerce 6.1.2) and does not require manual configuration.
 
 
 Performance notes
