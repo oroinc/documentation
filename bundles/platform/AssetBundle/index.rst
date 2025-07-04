@@ -165,13 +165,25 @@ Twig Functions
 
     <script async src="{{ oro_external_link('oro_google_analytics') }}"></script>
 
+Expected output:
+
+.. code-block:: html
+
+    <script async src="https://www.google-analytics.com/analytics.js" rel="dns-prefetch">
+
 - ``oro_integrity`` --- provides Subresource Integrity hash for local asset resources.
 
 **Example:**
 
 .. code-block:: twig
 
-    <script src="{{ '/build/default/app.js' }}" integrity="{{ oro_integrity('/build/default/app.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ '/build/default/app.js' }}" {{ oro_integrity('/build/default/app.js') }}></script>
+
+Expected output:
+
+.. code-block:: html
+
+    <script src="/build/default/app.js?v=e61610e4" integrity="sha384-DAILU17u6emSxfVg8atEESVcx0aMd5gHIbhmP9vx2BlXfdWSaQeRrRdVoXhnOwAQ" crossorigin="anonymous"></script>
 
 Load JS modules from the Bundle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
