@@ -1,7 +1,7 @@
-.. _configuration--guide--commerce--configuration--inventory--warehouses:
+.. _user-guide--customers--customer-group--inventory-settings:
 
-Configure Global Warehouses Settings
-====================================
+Configure Warehouses Settings per Customer Group
+================================================
 
 .. hint:: This section is part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides a general understanding of the inventory and warehouse concepts.
 
@@ -11,20 +11,20 @@ After you :ref:`created several warehouses <user-guide--inventory--warehouse--cr
 
     The ability to configure warehouses is only available in the Enterprise edition.
 
-    You can configure warehouse settings on the global, :ref:`organization <warehouses-organization>`, :ref:`website <warehouses-website>`, :ref:`customer group <user-guide--customers--customer-group--inventory-settings>`, and :ref:`customer <user-guide--customers--inventory-settings>` levels.
+    You can configure warehouse settings on the :ref:`global <configuration--guide--commerce--configuration--inventory--warehouses>`, :ref:`organization <warehouses-organization>`, :ref:`website <warehouses-website>`, customer group, and :ref:`customer <user-guide--customers--inventory-settings>` levels.
 
-To enable and prioritize warehouses:
 
-1. Navigate to **System > Configuration** in the main menu.
-2. Select **Commerce > Inventory > Warehouses** in the menu to the left.
+To enable and prioritize warehouses per customer group:
+
+1. Navigate to **Customers > Customer Groups** in the main menu.
+2. For the necessary customer group, hover over the |IcMore| **More Options** menu to the right of the necessary customer and click the |IcConfig| **Configuration** icon to start editing the configuration.
 
    .. note::
        For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user/img/system/config_commerce/inventory/Warehouses.png
-      :alt: Global warehouses configuration settings
+3. Select **Commerce > Inventory > Warehouses** in the menu to the left.
 
-3. In the **Enabled Warehouses**, add as many warehouses as you require to enable them:
+4. In the **Enabled Warehouses**, add as many warehouses as you require to enable them:
 
      a) If necessary, click **+Add Warehouse**.
      b) Select the warehouse name in the *Choose a Warehouse* dropdown.
@@ -41,7 +41,7 @@ To enable and prioritize warehouses:
 
           * To see the complete list of the warehouses in a table view, click **bars** sign to the right of the warehouse name. The list of warehouses opens in a popup window.
 
-4. Clear the **Use Default** checkbox next to the required setting to enable or disable customers in the storefront to view **inventory levels** (available as of OroCommerce version 6.1.3) on the following pages:
+5. Clear the **Use Website** checkbox next to the required setting to enable or disable customers in the storefront to view **inventory levels** (available as of OroCommerce version 6.1.3) on the following pages:
 
    * **Product Listing and Search Results** --- Enabling this option will trigger a full product search reindex.
    * **Product View Page**
@@ -56,7 +56,8 @@ To enable and prioritize warehouses:
 .. image:: /user/img/system/config_commerce/inventory/inventory-levels-storefront.png
    :alt: Global configuration for option Display Inventory Levels in product listing, shopping list, and on the quick order page
 
-5. In the **Displayed Warehouses**, select the warehouse(s) to be displayed in the storefront (available as of OroCommerce version 6.1.3). Available options are:
+
+6. In the **Displayed Warehouses**, select the warehouse(s) to be displayed in the storefront (available as of OroCommerce version 6.1.3). Available options are:
 
    * *All enabled warehouses* (regardless of available quantity): Inventory levels are shown for each enabled warehouse, in the order specified in the configuration. Customers can view a breakdown per warehouse (e.g., via a popup or expandable table). For example, ``Warehouse A: 10 units, Warehouse B: 5 units``.
    * *All enabled warehouses with non-zero quantities*: Inventory levels are shown for each enabled warehouse that has a non-zero quantity, in the order specified in the configuration. For example, if Warehouse A has 0 units and Warehouse B has 5 units, only Warehouse B will be shown: ``Warehouse B: 5 units``.
@@ -65,4 +66,10 @@ To enable and prioritize warehouses:
 
    .. note:: On the product listing page the inventory levels will be shown only for simple products (not for kits or configurable products).
 
-6. Click **Save Settings**.
+7. Click **Save Settings**.
+
+.. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-svg.rst
+   :start-after: begin

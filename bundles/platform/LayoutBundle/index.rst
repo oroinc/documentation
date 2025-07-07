@@ -20,12 +20,14 @@ Related Documentation
 * :ref:`Import Layout Updates <import-layout-updates>`
 * :ref:`Debug Information <dev-doc-frontend-layouts-debugging>`
 * :ref:`Layout Cache <layouts-layout-cache>`
+* :ref:`Old Themes <layouts-old-themes>`
 * :ref:`Returning Custom Status Code <dev-doc-frontend-layouts-returning-custom-status-code>`
 
 .. toctree::
    :hidden:
 
    layout-cache
+   old-themes
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

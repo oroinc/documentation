@@ -15,6 +15,8 @@ Learn how to enable and set up commerce-related features per customer group:
   * :ref:`Search (Search Terms) <user-guide--customer-groups--configuration--settings--search>`
   * :ref:`Product (Customer Settings) <user-guide--customer-groups--customer-settings>`
   * :ref:`Sales (Checkout & Invoices) <user-guide--customer-group---sales--settings>`
+  * :ref:`Inventory <user-guide--customers--customer-group--inventory-settings>`  
+
 
 .. toctree::
    :maxdepth: 1
@@ -22,6 +24,7 @@ Learn how to enable and set up commerce-related features per customer group:
 
    Routing <system-configuration/websites/customer-group-routing-settings>
    AI Agent <system-configuration/integrations/customer-group-ai-agent>
+   Warehouses <commerce/inventory/customer-group-warehouse-settings>
    Search History <commerce/search/customer-group-search-terms-settings>
    Product Data Export <commerce/product/customer-group-product-customer-settings>
    Sales <commerce/sales/index>
