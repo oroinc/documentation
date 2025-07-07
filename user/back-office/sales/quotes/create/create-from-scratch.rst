@@ -34,6 +34,8 @@ To create a new quote from scratch:
 
    #) Select a **Website** to make this quote visible only on the specified website.
 
+   .. hint:: If option :ref:`Project Name <sys--conf--commerce--guest--enable--guest_quotes>` is enabled in the configuration, you will be able to provide an identifier to help users search and track quotes by name, especially when records originate from external systems or third-parties.
+
 5. In the **Line Items** section:
 
    a) Add products as quote line items.
