@@ -14,7 +14,7 @@ Learn how to enable and set up commerce-related features per customer:
 
   * :ref:`Search (Search Terms) <user-guide--customers--search--settings>`
   * :ref:`Product (Customer Settings) <user-guide--customers--customer-settings>`
-  * :ref:`Sales (Checkout) <user-guide--customer-group---checkout--settings>`
+  * :ref:`Sales (Checkout and Invoices) <user-guide--customers--sales--settings>`
 
 .. toctree::
    :maxdepth: 1
@@ -24,4 +24,4 @@ Learn how to enable and set up commerce-related features per customer:
    AI Smart Agent <system-configuration/integrations/customer-ai-agent-setting>
    Search History <commerce/search/customer-search-settings>
    Product Data Export <commerce/product/customer-product-settings>
-   Checkout Order Limits <commerce/sales/customer-checkout-settings>
+   Sales <commerce/sales/index>

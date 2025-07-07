@@ -13,3 +13,4 @@ Sales Configuration Settings per Organization
    Multi Shipping Options <organization-multi-shipping>
    Quotes <organization-quote>
    Promotions <organization-promotions>
+   Invoices <organization-invoices>
