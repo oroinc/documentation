@@ -130,3 +130,40 @@ services:
             - ['setOptions', [{mask: '1 (800) XXX-XXX-XXXX'}]]
         tags:
             - { name: 'oro_sanitize.field_rule.processor', processor_name: 'toll_free_phone' }
+
+    Acme\Bundle\DemoBundle\Generator\CustomInvoiceNumberGenerator:
+        arguments:
+            - '@oro_config.manager'
+        tags:
+            - { name: oro_invoice.number_generator }
+
+    acme_demo.generator.order_number:
+        class: Acme\Bundle\DemoBundle\Generator\CustomOrderNumberGenerator
+        arguments:
+            - '@doctrine'
+        
+    acme_demo.listener.order_number:
+        class: Acme\Bundle\DemoBundle\EventListener\CustomOrderNumberListener
+        arguments:
+            - '@acme_demo.generator.order_number'
+        tags:
+            - { name: doctrine.event_listener, event: postPersist }
+
+    acme_demo.event_listener.delete_old_number_sequence:
+        class: Oro\Bundle\PlatformBundle\EventListener\DeleteOldNumberSequenceEventListener
+        arguments:
+            - '@doctrine'
+            - 'invoice' # You can specify any sequence type here, e.g., 'order'
+            - 'organization_periodic' # Likewise, this is a free-form discriminator type
+        calls:
+            - [ setLogger, [ '@logger' ] ]
+        tags:
+            - { name: kernel.event_listener, event: Oro\Bundle\PlatformBundle\Event\DeleteOldNumberSequenceEvent, method: onDeleteOldNumberSequence }
+            - { name: monolog.logger, channel: oro_invoice }
+    
+    acme_invoice.event_listener.custom_invoice_cleanup:
+        class: Acme\Bundle\DemoBundle\EventListener\CustomOrderSequenceCleanupListener
+        arguments:
+            - '@doctrine'
+        tags:
+            - { name: kernel.event_listener, event: Oro\Bundle\PlatformBundle\Event\DeleteOldNumberSequenceEvent, method: onDeleteOldNumberSequence }

@@ -1,4 +1,4 @@
-.. _bundle-docs-commerce-redireect-bundle:
+.. _bundle-docs-commerce-redirect-bundle:
 
 OroRedirectBundle
 =================

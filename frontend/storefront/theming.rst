@@ -76,6 +76,10 @@ The **allowed options in the theme configuration** file are the following:
 |                     | the parent themes if any,    |                     |          |
 |                     | otherwise - false.           |                     |          |
 +---------------------+------------------------------+---------------------+----------+
+| `pdf_document`      | Defines paths to Twig        | no                  | yes      |
+|                     | templates used to generate   |                     |          |
+|                     | PDF documents (e.g. invoice) |                     |          |
++---------------------+------------------------------+---------------------+----------+
 | `fonts`             | Defines fonts for theme      | no                  | no       |
 +---------------------+------------------------------+---------------------+----------+
 | `configuration`     | Defines theme configuration  | no                  | no       |
@@ -94,6 +98,12 @@ The **allowed options in the theme configuration** file are the following:
     parent: default
     groups: [ commerce ]
     rtl_support: true
+    config:
+        pdf_document:
+            invoice_default:
+                content_template: '@@Acme/layouts/first_theme/twig/pdf_document/invoice_default/content.html.twig'
+                header_template: '@@Acme/layouts/first_theme/twig/pdf_document/invoice_default/header.html.twig'
+                footer_template: '@@Acme/layouts/first_theme/twig/pdf_document/invoice_default/footer.html.twig'
     configuration:
         sections:
             header:
@@ -107,7 +117,7 @@ The **allowed options in the theme configuration** file are the following:
                             checked: 'path/to/image/checked.png'
                             unchecked: 'path/to/image/unchecked.png'
 
-where ``first_name`` is a unique theme identifier.
+The `pdf_document` option allows developers to override PDF templates per document type (e.g. `invoice_default`) within the theme, making it easier to customize branding and layout for downloadable documents.
 
 .. seealso::
     :ref:`theme configuration <dev-doc-frontend-theme-configuration>` reference for more detailed information.
