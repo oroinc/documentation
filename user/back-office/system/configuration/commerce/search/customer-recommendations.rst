@@ -16,8 +16,8 @@ To configure the product full-text search boost settings based on the global pur
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
- .. image:: /user/img/system/config_commerce/search/customer-recommendations-global.png
-    :alt: Global customer recommendation search configuration settings
+.. image:: /user/img/system/config_commerce/search/customer-recommendations-global.png
+   :alt: Global customer recommendation search configuration settings
 
 3. Configure the required boost setting to promote either the most viewed, purchased, or profitable products to your customers.
 

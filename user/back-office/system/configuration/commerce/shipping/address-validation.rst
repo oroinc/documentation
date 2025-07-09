@@ -43,10 +43,6 @@ To enable the address validation feature:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user/img/system/config_commerce/shipping/address-validation-default-global.png
-      :alt: Global address validation configuration without additional options
-
-
 3. Under the **General** section, select a shipping service whose databases will be used to verify the entered shipping or billing addresses in real-time (clear the **Use Default** checkbox to customize the settings).
 
 4. Save the settings for additional options to appear.
