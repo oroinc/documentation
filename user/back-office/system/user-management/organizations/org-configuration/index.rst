@@ -32,6 +32,8 @@ The following categories of settings are available for system configuration at o
 
     * :ref:`Microsoft Settings <organization-configuration-microsoft>`
     * :ref:`CAPTCHA Settings <organization-configuration-captcha>`
+    * :ref:`AI Agent <organization-ai-agent-settings>`
+    * :ref:`AI Smart Order <organization-ai-smart-order-settings>`
 
 
 * **Commerce**

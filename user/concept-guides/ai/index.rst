@@ -58,18 +58,24 @@ The Smart Order dashboard :ref:`widget <user-guide-dashboards-widgets>` provides
 .. image:: /user/img/concept-guides/ai/ai-smart-order-flow.png
    :alt: Illustration of the dashboard with a Smart Order widget
 
-For businesses seeking full :ref:`automation <admin-configuration-system-mailboxes>`, OroCommerce can be configured to scan incoming emails for purchase order attachments in JPG, PNG and PDF format, extract relevant details, and automatically generate orders in pending status. This eliminates the need for manual uploads and data entry, significantly improving efficiency, reducing processing time, and minimizing the risk of errors.
+Smart Order Automation
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: /user/img/concept-guides/ai/convert-to-draft-order.png
+For businesses aiming to fully :ref:`automate <admin-configuration-system-mailboxes>` purchase order processing, OroCommerce provides the AI Smart Order functionality. It can scan incoming emails with attached purchase orders in JPG, PNG, or PDF format, extract relevant data, and automatically create a draft order in the back-office. This reduces manual uploads and data entry and minimizes the risk of errors.
 
-By integrating AI-powered recognition, validation, and automation, the AI Smart Order tool transforms purchase order management, creating a faster, error-free, and seamless purchasing experience for both buyers and businesses.
+For more information on how to set up Smart Order automation, see :ref:`Create an Order via AI Smart Order Automation <user-guide--sales--orders--create--from-ai-smart-order>`.
+
+.. image:: /user/img/concept-guides/ai/so-illustration.png
+
+
 
 **Related Articles:**
 
 * :ref:`OroCommerce AI Content Generation Widget <getting-started-wysiwyg-editor-field-ai>`
 * :ref:`Integration with AI Clients: OpenAI and Vertex AI <integrations-ai-generation>`
 * :ref:`Product recommendations with AI <integrations-misc-google-retail-recommendations>`
-
+* :ref:`Create an Order via AI Smart Order Automation <user-guide--sales--orders--create--from-ai-smart-order>`
+* :ref:`AI Smart Order Widget <user-guide-dashboards-widgets>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

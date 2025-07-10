@@ -20,6 +20,7 @@ You can create a new order in the following ways:
 * :ref:`Based on shopping lists <user-guide--sales--orders--create--from-shopping-lists>`
 * :ref:`Based on requests for quotes <user-guide--sales--orders--create--from-rfq>`
 * :ref:`Import external orders in JSON format <user-guide--sales--orders--external-orders-import>`
+* :ref:`Via AI Smart Order Automation <user-guide--sales--orders--create--from-ai-smart-order>`
 
 Manage Existing Orders
 ----------------------
