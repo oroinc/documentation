@@ -67,8 +67,6 @@ To create a new order from the back-office:
 
    By default, an order has :ref:`internal status <doc--orders--statuses--internal>` *Open* upon creation. If another status is required for new orders, an administrator must adjust the :ref:`order creation configuration settings <configuration--commerce--orders>`.
 
-
-
 .. _user-guide--sales--orders--create--from-shopping-lists:
 
 Create an Order from a Shopping List
@@ -108,8 +106,6 @@ To create an order from a shopping list:
 
 .. hint:: By default, an order has :ref:`internal status <doc--orders--statuses--internal>` *Open* upon creation. If another status is required for new orders, an administrator must adjust the :ref:`order creation configuration settings <configuration--commerce--orders>`.
 
-
-
 .. _user-guide--sales--orders--create--from-rfq:
 
 Create an Order from an RFQ
@@ -125,7 +121,7 @@ To create an order based on a request for a quote (RFQ):
       :alt: Click Create Order on the top right
       :class: with-border
 
-The Create Order form opens prepopulated with the information from the RFQ:
+The Create Order form opens prefilled with the information from the RFQ:
 
 4. Amend or add new details to the order, as described in :ref:`the Create an Order from Scratch topic <user-guide--sales--orders--create>`.
 
@@ -133,12 +129,53 @@ The Create Order form opens prepopulated with the information from the RFQ:
 
 5. Click **Save** when you have finished.
 
-The new order is now created.
-
 .. image:: /user/img/sales/orders/orders_create_fromrfq2.png
    :alt: The new order that is just created
 
 .. hint:: By default, an order has :ref:`internal status <doc--orders--statuses--internal>` *Open* upon creation. If another status is required for new orders, an administrator must adjust the :ref:`order creation configuration settings <configuration--commerce--orders>`.
+
+.. _user-guide--sales--orders--create--from-ai-smart-order:
+
+Create an Order via AI Smart Order Automation
+---------------------------------------------
+
+.. hint:: This section is part of the :ref:`AI and Automation Concept Guide <concept-guide--ai>` topic that provides an overview of OroCommerce's AI-powered tools AI Smart Agent and AI Smart Order.
+
+AI Smart Order functionality helps automate the process of creating orders in OroCommerce from purchase orders emailed as attachments. Instead of entering order data manually, you can use OroCommerce's AI Smart Order widget or automation to read purchase orders in different formats (JPG, PNG and PDF) and templates and convert them into draft orders in the back-office.
+
+.. hint:: To learn more about AI Smart Order Widgets, see :ref:`OroCommerce AI Content Generation Widget <getting-started-wysiwyg-editor-field-ai>`.
+
+Before using AI Smart Order Automation, make sure that:
+
+1. AI Smart Order microservice is setup by the Oro Team. Please |contact our support team| to request the configuration of this functionality.
+2. AI Smart Order is enabled and :ref:`in the system configuration <admin-configuration-orders-ai-smart-order-settings>` for your instance by the admin of your organization.
+3. A system mailbox is set up by your administrator in the :ref:`Email Configuration settings <admin-configuration-system-mailboxes>` with and option to *Convert to Draft Order* selected for Email Processing.
+
+.. image:: /user/img/concept-guides/ai/convert-to-draft-order.png
+
+When the Smart Order functionality is configured and a mailbox is set up, any incoming emails sent by buyers to the designated inbox with purchase order attachments are automatically processed. The system scans the attachments and, upon successful conversion, sends a confirmation email to the same address. This email includes a link to the newly created draft order. To view your inbox, navigate to **Your Name > My Emails** in the top right corner of the back-office.
+
+.. image:: /user/img/concept-guides/ai/so-automation-steps.png
+
+The link to the created draft order is also available as a context added to original email with the attached purchase order. Clicking on the linked order redirects you to the draft order page.
+
+.. image:: /user/img/concept-guides/ai/attachment-email-with-draft-order-link.png
+
+All draft orders are also available under **Sales > Orders** with status *Pending*.
+
+.. image:: /user/img/concept-guides/ai/draft-order-grid.png
+
+You can approve the draft order if you are happy with the captured information, or you can edit it to provide the missing details.
+
+.. image:: /user/img/concept-guides/ai/edit-draft-order.png
+
+You have the option to:
+
+* Hide or show the original purchase order attachment file
+* Zoom the original purchase order file in/out
+* Hide or show the valid fields that have no missing information and require no amending
+
+Approved orders move from status Pending to Open and you can still edit them as you would a normal order.
 
 
 .. include:: /include/include-images.rst
