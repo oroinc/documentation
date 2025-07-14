@@ -250,3 +250,7 @@ Links (Cloud)
 .. |the latest LTS version| raw:: html
 
    <a href="https://doc.oroinc.com/cloud/" target="_blank">the latest LTS version</a>
+
+.. |Page Shield–PCI DSS mapping guide| raw:: html
+
+   <a href="https://developers.cloudflare.com/page-shield/reference/pci-dss/" target="_blank">Page Shield–PCI DSS mapping guide</a>
