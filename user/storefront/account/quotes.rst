@@ -31,6 +31,11 @@ If a quote is related to an RFQ, you can navigate to its page via a dedicated li
 
 .. image:: /user/img/storefront/quotes/quote-to-rfq-link.png
 
+If a quote has any relevant documents uploaded for the customer user, these will be visible on the quote page:
+
+.. image:: /user/img/sales/quotes/quotes-customer-documents.png
+   :alt: Illustration of the documents uploaded via back-office on the customer side in the storefront
+
 .. note:: For more information on how to accept an offered quote or submit a guest quote, see :ref:`Quotes in the Storefront <frontstore-guide--quotes>`.
 
 .. include:: /include/include-svg.rst

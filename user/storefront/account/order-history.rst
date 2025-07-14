@@ -40,6 +40,11 @@ If the order was created on behalf of the buyer, this will be reflected on the o
 .. image:: /user/img/storefront/orders/order-impersonated.png
    :alt: An order view page with a note saying "This order was created on your behalf by a member of our staff".
 
+If an order has any relevant documents uploaded for the customer user, these will be visible on the order page:
+
+.. image:: /user/img/sales/orders/order-customer-documents.png
+   :alt: Illustration of the documents uploaded via back-office on the customer side in the storefront
+
 You can also start a :ref:`conversation <storefront-guide--conversations>` by clicking **Ask a question** on the order view page.
 
 .. note:: More details on how to review ordered items, billing and shipping information, and re-order products from the previous orders are described in the :ref:`Orders <frontstore-guide--orders>` section of the Storefront guide.
