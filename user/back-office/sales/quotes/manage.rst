@@ -31,7 +31,7 @@ To edit a quote:
 
    .. important:: The icon that starts a workflow looks like the **Edit** icon. Please check the hint that appears when you hover over the icon to make sure that you select the desired action.
 
-#. Update the **Quote General Information**, **Line Items**, **Shipping Address**, or **Shipping Information** sections. See :ref:`Create a Quote <quote--create-from-scratch>` topic for detailed information on the available options.
+#. Update the **Quote General Information**, **Line Items**, **Shipping Address**, **Shipping Information** sections, or add any relevant documents under **Customer Documents**. See :ref:`Create a Quote <quote--create-from-scratch>` topic for detailed information on the available options.
 
 #. Click **Save** on the top right of the page.
 
@@ -58,7 +58,7 @@ To edit a quote:
    .. image:: /user/img/sales/quotes/quotes_edit1.png
       :alt: Click the Edit button on the quote edit page
 
-#. Update the **Quote General Information**, **Line Items**, **Shipping Address**, or **Shipping Information** sections. See :ref:`Create a Quote <quote--create-from-scratch>` topic for detailed information on the available options.
+#. Update the **Quote General Information**, **Line Items**, **Shipping Address**, **Shipping Information**, or **Customer Documents** sections. See :ref:`Create a Quote <quote--create-from-scratch>` topic for detailed information on the available options.
 #. Click **Save** on the top right of the page.
 
 The quote is updated.

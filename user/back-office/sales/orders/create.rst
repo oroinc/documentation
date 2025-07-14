@@ -59,9 +59,19 @@ To create a new order from the back-office:
 
 8. In the **Additional** section, enter additional details, if required (e.g., the PO number, the Do Not Ship Later Than date, the payment term, and the warehouse to ship the items from), and add notes for the customer.
 
-9. In the **Order Totals** section, review the final amount.
+9. In the **Totals** section, review the final amount.
 
-10. To save the order, click **Save** on the top right of the page.
+10. In the **Customer Documents** section, add files related to the customer's order. These files will be visible to the customer user in their storefront account:
+
+   * To add a new file, click *Choose File*.
+   * To remove a file, click on the bin icon.
+   * To add another file, click *Add File*.
+   * To adjust the order of files displayed to customers in the storefront, modify the number in the sort order input box. For example, files with a sort order of 1 will appear first on the list.
+
+   .. image:: /user/img/sales/orders/order-customer-documents.png
+      :alt: Illustration of the documents uploaded via back-office on the customer side in the storefront
+
+11. To save the order, click **Save** on the top right of the page.
 
 .. hint::
 
