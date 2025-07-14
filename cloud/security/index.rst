@@ -108,3 +108,4 @@ Please check the respective links for more details.
    :maxdepth: 1
 
    best-practices
+   shared-responsibility-model
