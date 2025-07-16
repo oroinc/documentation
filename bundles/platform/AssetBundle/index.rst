@@ -155,6 +155,36 @@ Storefront            styles             layout/[THEME_NAME]/css/styles.css
 
 .. note:: SCSS is the recommended format, CSS format is deprecated by `sass-loader` npm module.
 
+Twig Functions
+~~~~~~~~~~~~~~
+- ``oro_external_link`` --- Returns a link to an external asset resource stored in the "oro_asset.external_resources" configuration. For more details, see: `Subresource Integrity <https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity>`_.
+
+**Example:**
+
+.. code-block:: twig
+
+    <script async src="{{ oro_external_link('oro_google_analytics') }}"></script>
+
+Expected output:
+
+.. code-block:: html
+
+    <script async src="https://www.google-analytics.com/analytics.js" rel="dns-prefetch">
+
+- ``oro_integrity`` --- provides Subresource Integrity hash for local asset resources.
+
+**Example:**
+
+.. code-block:: twig
+
+    <script src="{{ '/build/default/app.js' }}" {{ oro_integrity('/build/default/app.js') }}></script>
+
+Expected output:
+
+.. code-block:: html
+
+    <script src="/build/default/app.js?v=e61610e4" integrity="sha384-DAILU17u6emSxfVg8atEESVcx0aMd5gHIbhmP9vx2BlXfdWSaQeRrRdVoXhnOwAQ" crossorigin="anonymous"></script>
+
 Load JS modules from the Bundle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

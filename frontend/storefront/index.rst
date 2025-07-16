@@ -44,6 +44,7 @@ The OroCommerce storefront design architecture has some differences from the bac
     render-cache
     debugging
     preload-critical-assets
+    subresource-integrity
     svg-icons
     Optimize Assets Build <optimize-build>
 
