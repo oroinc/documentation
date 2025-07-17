@@ -254,3 +254,8 @@ Links (Cloud)
 .. |Page Shield–PCI DSS mapping guide| raw:: html
 
    <a href="https://developers.cloudflare.com/page-shield/reference/pci-dss/" target="_blank">Page Shield–PCI DSS mapping guide</a>
+
+.. |Shared Responsibility Matrix| raw:: html
+
+   <a href="https://static.oroinc.com/orohive/orocloud_shared_responsibilities_matrix_2025.pdf" target="_blank">Shared Responsibility Matrix</a>
+
