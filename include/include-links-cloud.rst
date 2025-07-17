@@ -259,3 +259,7 @@ Links (Cloud)
 
    <a href="https://static.oroinc.com/orohive/orocloud_shared_responsibilities_matrix_2025.pdf" target="_blank">Shared Responsibility Matrix</a>
 
+.. |release in the OroCommerce repository| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/releases" target="_blank">release in the OroCommerce repository</a>
+

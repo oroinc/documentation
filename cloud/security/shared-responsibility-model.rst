@@ -44,9 +44,7 @@ Updates in PCI DSS 4.0 introduce strict requirements to secure payment pages in 
 
 This section explains the purpose of Page Shield in your compliance program, your responsibilities as an OroCloud client, the types of alerts you will receive, and how to respond to them.
 
-.. .. note:: For more information, please see |PCS DSS 4.0.1 Matrix|.
-
-.. add link when available
+.. note:: For more information, please see |Shared Responsibility Matrix|.
 
 Cloudflare Page Shield
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -151,7 +149,7 @@ Maintaining the Payment Page Script Inventory
 
 * The initial list may be based on the Payment Page Scripts Inventory and must include all the customization changes.
 
-  .. hint:: The Payment Page Scripts Inventory is version-specific. It is included in the release artifacts for each release in the OroCommerce repository.
+  .. hint:: The Payment Page Scripts Inventory is version-specific. It is included in the release artifacts for each *.*.0 |release in the OroCommerce repository|.
 
 * Clients must actively manage the payment page script inventory to reflect changes introduced during new version deployments and in response to Page Shield alerts. The process includes the following steps:
 
