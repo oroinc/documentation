@@ -106,3 +106,6 @@ oro_sanitize:
 oro_entity_extend:
     custom_entities:
         - Extend\Entity\CustomEntity
+
+oro_invoice:
+    number_generator: acme_custom

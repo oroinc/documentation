@@ -127,6 +127,22 @@ Links (Dev)
 
    <a href="https://github.com/tjko/jpegoptim" target="_blank">jpegoptim</a>
 
+.. |Gotenberg| raw:: html
+
+   <a href="https://gotenberg.dev" target="_blank">Gotenberg</a>
+
+.. |Gotenberg website installation| raw:: html
+
+   <a href="https://gotenberg.dev/docs/getting-started/installation/" target="_blank">Gotenberg website installation</a>
+
+.. |HTML file into PDF API route of the Gotenberg service| raw:: html
+
+   <a href="https://gotenberg.dev/docs/routes#html-file-into-pdf-route" target="_blank">HTML file into PDF API route of the Gotenberg service</a>
+
+.. |Gotenberg Documentation: Headers and Footers| raw:: html
+
+   <a href="https://gotenberg.dev/docs/routes#header-footer-chromium" target="_blank">Gotenberg Documentation: Headers and Footers</a>
+
 .. |PayPal| raw:: html
 
    <a href="https://www.paypal.com/" target="_blank">PayPal</a>
@@ -6539,3 +6555,23 @@ Links (Dev)
 .. |OrderStatusMappingProvider| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/ImportExport/Converter/OrderStatusMappingProvider.php" target="_blank">OrderStatusMappingProvider</a>
+
+.. |OroStripePaymentBundle| raw:: html
+
+    <a href="https://github.com/oroinc/orocommerce-stripe" target="_blank">OroStripePaymentBundle</a>
+
+.. |Special Cases| raw:: html
+
+    <a href="https://docs.stripe.com/currencies#special-cases" target="_blank">Special Cases</a>
+
+.. |OroInvoiceBundle| raw:: html
+
+    <a href="https://github.com/oroinc/invoice-management" target="_blank">OroInvoiceBundle</a>
+
+.. |date_format php documentation| raw:: html
+
+    <a href="https://www.php.net/manual/en/datetime.format.php" target="_blank">date_format php documentation</a>
+
+.. |sprintf php documentation| raw:: html
+
+    <a href="https://www.php.net/manual/en/function.sprintf.php" target="_blank">sprintf php documentation</a>

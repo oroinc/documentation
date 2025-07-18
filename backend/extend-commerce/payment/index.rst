@@ -1,3 +1,6 @@
+.. _dev-extend-commerce-payment-create-payment-method:
+
+
 Create Payment Method Integrations
 ==================================
 
@@ -424,6 +427,9 @@ Class
    This is where you define which transaction types are associated with the payment method. To keep it simple, for Collect On Delivery a single transaction is defined. Thus, it will work the following way: when a user submits an order, the "purchase" transaction takes place, and the order status becomes "purchased".
 
    Check |PaymentMethodInterface| for more information on other predefined transactions.
+
+.. note::
+    You can additionally implement the `\Oro\Bundle\PaymentBundle\Method\PaymentMethodGroupAwareInterface` to restrict the payment method to a specific group of payment methods. You can get the list of available payment methods in a specific group via `\Oro\Bundle\PaymentBundle\Method\Provider\PaymentMethodGroupAwareProvider`.
 
 Add the Payment Method Factory and Provider to the Services Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

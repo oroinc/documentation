@@ -150,10 +150,10 @@ Next, register this provider as a service with tag *oro_platform.console.global_
             tags:
                 - { name: oro_platform.console.global_options_provider }
 
-
 .. toctree::
     :hidden:
 
+    Number Sequence Management <number-sequence-management>
     Commands <commands>
 
 .. include:: /include/include-links-dev.rst

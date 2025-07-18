@@ -48,11 +48,12 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
     ":ref:`CommentBundle <bundle-docs-platform-comment-bundle>`",":ref:`FilterBundle <bundle-docs-platform-filter-bundle>` ","**O** ",":ref:`TwigInspectorBundle <bundle-docs-platform-twig-inspector-bundle>`"
     ":ref:`ConfigBundle <bundle-docs-platform-checkout-bundle>`",":ref:`FormBundle <bundle-docs-platform-form-bundle>` ",":ref:`OAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>`","**U**"
     ":ref:`CronBundle <bundle-docs-platform-cron-bundle>`","**G** ",":ref:`OrganizationBundle <bundle-docs-platform-organization-bundle>`",":ref:`UIBundle <bundle-docs-platform-ui-bundle>`"
-    ":ref:`CurrencyBundle <bundle-docs-platform-currency-bundle>`",":ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>` ","**P**","**W**"
+    ":ref:`CurrencyBundle <bundle-docs-platform-currency-bundle>`",":ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>` ",":ref:`PdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`","**W**"
     "**D**",":ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>` ",":ref:`PlatformBundle <bundle-docs-platform-platform-bundle>` ",":ref:`WindowsBundle <bundle-docs-platform-windows-bundle>`"
     ":ref:`DashboardBundle <bundle-docs-platform-dashboard-bundle>`","**I** ","**Q** ",":ref:`WorkflowBundle <bundle-docs-platform-workflow-bundle>`"
     ":ref:`DataAuditBundle <bundle-docs-platform--data-audit>`",":ref:`ImapBundle <bundle-docs-platform-imap-bundle>` ",":ref:`QueryDesignerBundle <bundle-docs-platform-query-designer-bundle>`",
     ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`",":ref:`ImportExportBundle <bundle-docs-platform-import-export-bundle>` ","**R**",
+
 
 .. _bundle-docs-commerce:
 
@@ -63,19 +64,20 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
 
 .. csv-table::
 
-    "**C**","**I**","**S**"
-    ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`",":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`",":ref:`SellerDashboardBundle <bundle-docs-commerce-seller-dashboard-bundle>`"
-    ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`","**M**",":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
-    ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`",":ref:`MultiWebsiteBundle <bundle-docs-commerce-multi-website-bundle>`",":ref:`ShoppingListBundle <bundle-docs-commerce-shopping-list-bundle>`"
-    ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**O**",":ref:`SalesFrontendBundle <bundle-docs-commerce-sales-frontend-bundle>`"
-    ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`","**T**"
-    ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`","**P**",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
-    ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`","**W**"
-    ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
-    "**F**",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
-    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
-    "","**R**","WarehouseBundle"
-    "",":ref:`RedirectBundle <bundle-docs-commerce-redireect-bundle>`",""
+   "**C**","**I**","**S**"
+   ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`",":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`",":ref:`SellerDashboardBundle <bundle-docs-commerce-seller-dashboard-bundle>`"
+   ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`",":ref:`InvoicePaymentBundle <bundle-docs-commerce-invoice-payment-bundle>`",":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
+   ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`",":ref:`MultiWebsiteBundle <bundle-docs-commerce-multi-website-bundle>`",":ref:`ShoppingListBundle <bundle-docs-commerce-shopping-list-bundle>`"
+   ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**O**",":ref:`SalesFrontendBundle <bundle-docs-commerce-sales-frontend-bundle>`"
+   ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`","**T**"
+   ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`","**P**",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
+   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`","**W**"
+   ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
+   "**F**",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
+   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
+   ":ref:`FrontendPdfGeneratorBundle <bundle-docs-commerce-frontend-pdf-generator-bundle>`","**R**","WarehouseBundle"
+   "",":ref:`RedirectBundle <bundle-docs-commerce-redirect-bundle>`",""
+
 
 .. _bundle-docs-extensions:
 
@@ -91,6 +93,7 @@ Documentation that relates to extensions' bundles is collected below. You can do
    ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","M","S"
    ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`","G",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
    "",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",":ref:`StorefrontAgentBundle <bundle-docs-extensions-storefront-agent-bundle-commands>`"
+   "","",":ref:`StripePaymentBundle <bundle-docs-extensions-stripe-payment-bundle>`"
 
 CRM Bundles
 -----------
@@ -149,6 +152,7 @@ CRM Bundles
    ImportExportBundle <platform/ImportExportBundle/index>
    InstallerBundle <platform/InstallerBundle/index>
    IntegrationBundle <platform/IntegrationBundle/index>
+   InvoiceBundle <platform/InvoiceBundle/index>
    LayoutBundle <platform/LayoutBundle/index>
    LocaleBundle <platform/LocaleBundle/index>
    LoggerBundle <platform/LoggerBundle/index>
@@ -179,12 +183,15 @@ CRM Bundles
    WindowsBundle <platform/WindowsBundle/index>
    WorkflowBundle <platform/WorkflowBundle/index>
    DraftBundle <platform/DraftBundle/index>
+   PdfGeneratorBundle <platform/PdfGeneratorBundle/index>
    AddressValidationBundle <commerce/AddressValidationBundle/index>
    CatalogBundle <commerce/CatalogBundle/index>
    CheckoutBundle <commerce/CheckoutBundle/index>
    CMSBundle <commerce/CMSBundle/index>
    ConsentBundle <commerce/ConsentBundle/index>
    CommerceMenuBundle <commerce/CommerceMenuBundle/index>
+   CommerceInvoiceBundle <commerce/CommerceInvoiceBundle/index>
+   InvoicePaymentBundle <commerce/InvoicePaymentBundle/index>
    CookieConsentBundle <commerce/CookieConsentBundle/index>
    CustomerBundle <commerce/CustomerBundle/index>
    CustomerRecommendationBundle <commerce/CustomerRecommendationBundle/index>
@@ -205,6 +212,7 @@ CRM Bundles
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>
    SalesFrontendBundle <commerce/SalesFrontendBundle/index>
+   FrontendPdfGeneratorBundle <commerce/FrontendPdfGeneratorBundle/index>
    ActivityContactBundle <crm/ActivityContactBundle/index>
    AnalyticsBundle <crm/AnalyticsBundle/index>
    ChannelBundle <crm/ChannelBundle/index>
@@ -219,6 +227,7 @@ CRM Bundles
    MakerBundle <extensions/MakerBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
    StripeBundle <extensions/StripeBundle/index>
+   StripePaymentBundle <extensions/StripePaymentBundle/index>
    AiContentGenerationBundle <extensions/AiContentGenerationBundle/index>
    StorefrontAgentBundle <extensions/StorefrontAgentBundle/commands>
 
