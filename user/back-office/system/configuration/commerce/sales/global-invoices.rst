@@ -27,10 +27,11 @@ You can configure invoice-related sales globally, per :ref:`organization <user-g
 
      .. image:: /user/img/sales/invoices/pay-button-storefront.png
 
-   * **Payment Method** --- Specifies the payment method used for invoice payments in the storefront. Currently, only the :ref:`Stripe Integration Element <user-guide--payment--payment-providers-stripe--element>` is supported. Ensure that a Stripe integration is configured under *System > Manage Integrations* before selecting it here. No additional payment rule configuration is required for this method to function in the storefront.
+   * **Payment Method** --- Specifies the payment method used for invoice payments in the storefront. Currently, only the :ref:`Stripe Integration Element <user-guide--payment--payment-providers-stripe--element>` and :ref:`OroPay <user-guide--payment--oropay>` are supported. Ensure that a Stripe integration or OroPay is configured under *System > Manage Integrations* before selecting it here. 
 
 5. Click **Save Settings**.
 
 * :ref:`Invoices in the Storefront <frontstore-guide--invoices>`
 * :ref:`Invoices in the Back-Office <user-guide--sales--invoices>`
 * :ref:`Stripe Integration Element <user-guide--payment--payment-providers-stripe--element>`
+* :ref:`OroPay Integration <user-guide--payment--oropay>`
