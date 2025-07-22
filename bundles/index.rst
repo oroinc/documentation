@@ -208,6 +208,7 @@ CRM Bundles
    SEOBundle <commerce/SEOBundle/index>
    ShoppingListBundle <commerce/ShoppingListBundle/index>
    TaxBundle <commerce/TaxBundle/index>
+   WarehouseBundle <commerce/WarehouseBundle/index>
    WebCatalogBundle <commerce/WebCatalogBundle/index>
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>

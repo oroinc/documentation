@@ -6128,6 +6128,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/TaxBundle" target="_blank">OroTaxBundle</a>
 
+.. |OroWarehouseBundle| raw:: html
+
+    <a href="https://github.com/oroinc/commerce-enterprise/tree/master/src/Oro/Bundle/WarehouseBundle" target="_blank">WarehouseBundle</a>
+
 .. |OroWebCatalogBundle| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebCatalogBundle" target="_blank">OroWebCatalogBundle</a>

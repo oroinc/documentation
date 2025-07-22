@@ -1,22 +1,28 @@
-.. _warehouses-organization:
+.. _user-guide--customers--inventory-settings:
 
-Configure Warehouse Settings per Organization
-=============================================
+Configure Warehouses Settings per Customer
+==========================================
+
+.. hint:: This section is part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides a general understanding of the inventory and warehouse concepts.
+
+After you :ref:`created several warehouses <user-guide--inventory--warehouse--create>` in the **Inventory > Warehouses** section, you should enable and prioritize them to ensure that OroCommerce uses the most efficient and recommended strategy for inventory updates that happen during the Store operations.
 
 .. note::
 
     The ability to configure warehouses is only available in the Enterprise edition.
 
-    You can configure warehouse settings on the :ref:`global <configuration--guide--commerce--configuration--inventory--warehouses>`, organization, :ref:`website <warehouses-website>`, :ref:`customer group <user-guide--customers--customer-group--inventory-settings>`, and :ref:`customer <user-guide--customers--inventory-settings>` levels.
+    You can configure warehouse settings on the :ref:`global <configuration--guide--commerce--configuration--inventory--warehouses>`, :ref:`organization <warehouses-organization>`, :ref:`website <warehouses-website>`, :ref:`customer group <user-guide--customers--customer-group--inventory-settings>`, and customer levels.
 
 
-To enable and prioritize warehouses per organization:
+To enable and prioritize warehouses per customer:
 
-1. Navigate to **System > User Management > Organizations** in the main menu.
-2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
+1. Navigate to **Customers > Customers** in the main menu.
+2. For the necessary customer, hover over the |IcMore| **More Options** menu to the right of the necessary customer and click the |IcConfig| **Configuration** icon to start editing the configuration.
+
+   .. note::
+       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
 3. Select **Commerce > Inventory > Warehouses** in the menu to the left.
-
-   .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 4. In the **Enabled Warehouses**, add as many warehouse as you require to enable them:
 
@@ -35,7 +41,7 @@ To enable and prioritize warehouses per organization:
 
           * To see the complete list of the warehouses in a table view, click **bars** sign to the right of the warehouse name. The list of warehouses opens in a popup window.
 
-5. Clear the **Use System** checkbox next to the required setting to enable or disable customers in the storefront to view inventory levels on the following pages:
+5. Clear the **Use Customer Group** checkbox next to the required setting to enable or disable customers in the storefront to view inventory levels on the following pages:
 
    * **Product Listing and Search Results** --- Enabling this option will trigger a full product search reindex.
    * **Product View Page**

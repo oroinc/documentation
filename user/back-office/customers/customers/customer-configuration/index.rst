@@ -15,6 +15,7 @@ Learn how to enable and set up commerce-related features per customer:
   * :ref:`Search (Search Terms) <user-guide--customers--search--settings>`
   * :ref:`Product (Customer Settings) <user-guide--customers--customer-settings>`
   * :ref:`Sales (Checkout) <user-guide--customer-group---checkout--settings>`
+  * :ref:`Inventory <user-guide--customers--inventory-settings>`
 
 .. toctree::
    :maxdepth: 1
@@ -25,3 +26,4 @@ Learn how to enable and set up commerce-related features per customer:
    Search History <commerce/search/customer-search-settings>
    Product Data Export <commerce/product/customer-product-settings>
    Checkout Order Limits <commerce/sales/customer-checkout-settings>
+   Warehouses <commerce/inventory/customer-warehouse-settings>
