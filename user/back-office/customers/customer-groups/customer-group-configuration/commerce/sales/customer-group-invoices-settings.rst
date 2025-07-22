@@ -5,7 +5,7 @@ Configure Invoice Settings per Customer Group
 
 .. important:: The Invoices functionality is partially available as of version 6.1.3 and is still under active development. Some features may not behave as expected. We appreciate your patience as our team continues to enhance and finalize this feature for a full release later in 2025.
 
-You can configure invoice-related sales :ref:`globally <configuration--guide--commerce--configuration--sales-invoices>`, per organization, :ref:`website <user-guide--system-configuration--commerce-sales-invoices-per-website>`, :ref:`customer group <user-guide--customer-group---invoice--settings>` and :ref:`customer <user-guide--customers--checkout--settings>`.
+You can configure invoice-related sales :ref:`globally <configuration--guide--commerce--configuration--sales-invoices>`, per organization, :ref:`website <user-guide--system-configuration--commerce-sales-invoices-per-website>`, customer group, and :ref:`customer <user-guide--customers--invoice--settings>`.
 
 To configure invoices per customer group:
 
@@ -18,6 +18,10 @@ To configure invoices per customer group:
 
 4. Click **Save Settings**.
 
+* :ref:`Invoices in the Storefront <frontstore-guide--invoices>`
+* :ref:`Invoices in the Back-Office <user-guide--sales--invoices>`
+* :ref:`Stripe Integration Element <user-guide--payment--payment-providers-stripe--element>`
+* :ref:`OroPay Integration <user-guide--payment--oropay>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

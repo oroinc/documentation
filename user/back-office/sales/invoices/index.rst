@@ -24,10 +24,11 @@ As invoices are related to orders, you can access the original order the invoice
 .. image:: /user/img/sales/invoices/invoices-order-view-page.png
    :alt: Invoices tab on the order view page
 
-.. hint:: The ability to pay the invoice in the storefront is controlled by the :ref:`Stripe Integration Element <user-guide--payment--payment-providers-stripe--element>` in the back-office.
+.. hint:: The ability to pay the invoice in the storefront is controlled by the :ref:`Stripe Integration Element <user-guide--payment--payment-providers-stripe--element>` and :ref:`OroPay <user-guide--payment--oropay>` in the back-office.
 
 **Related Articles**
 
 * :ref:`Configure Global Invoice Settings <configuration--guide--commerce--configuration--sales-invoices>`
 * :ref:`Invoices in the Storefront <frontstore-guide--invoices>`
 * :ref:`Stripe Integration Element <user-guide--payment--payment-providers-stripe--element>`
+* :ref:`OroPay Integration <user-guide--payment--oropay>`
