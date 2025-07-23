@@ -71,7 +71,7 @@ A customer can select the preferred payment method, or enter a card number, expi
 Pay Invoices with OroPay
 ------------------------
 
-.. important:: The Invoices functionality is partially available as of version 6.1.3 and is still under active development. Some features may not behave as expected. We appreciate your patience as our team continues to enhance and finalize this feature for a full release later in 2025.
+.. note:: The Invoices functionality is available as of OroCommerce version 6.1.3.
 
 To pay invoices with OroPay, make sure you have configured the following:
 
