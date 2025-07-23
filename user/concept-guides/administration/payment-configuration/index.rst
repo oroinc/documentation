@@ -32,6 +32,10 @@ OroCommerce works with the following payment methods:
 
   Payment term is a set of conditions required for the sale to be completed, e.g. the period that is allowed to a buyer to pay off the amount due. Payment terms may also include cash in advance requirement, cash collection on delivery, a deferred payment period of 10/20/30 days, etc. Payment terms are configured per customer to help them use the payment conditions guaranteed by their contract with your company. This integration does not require registration with third-party services.
 
+* :ref:`OroPay <user-guide--payment--oropay>`
+
+  OroPay is OroCommerce’s integrated payment feature, created in partnership with Global Payments. It allows customers to pay invoices and complete checkout transactions using credit cards or ACH, all within the platform. Integrated with both the invoice portal and checkout, OroPay connects payment processing with existing ERP and commerce systems. This integration helps reduce manual work, improve accuracy, and provide better visibility into payment status.
+
 * :ref:`PayPal Payment Services <user-guide--payment--payment-providers-overview--paypal>`
 
   PayPal is a global online payment system. OroCommerce supports integration with PayPal services to offer the following payment methods: PayPal Payflow Gateway, PayPal Payments Pro, and PayPal Express Package. However, the list of available payment methods in OroCommerce may also vary when integrated using PayPal accounts created in different countries. This integration requires registration with a business account with Paypal, a Paypal Payflow Gateaway account, and a PayPal Manager/Merchant account to accept payments.

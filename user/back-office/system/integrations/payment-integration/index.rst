@@ -34,6 +34,7 @@ You integrate OroCommerce with the following systems and services:
 
 * :ref:`Check/Money Order <user-guide--payment--check-money-order>`
 * :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term-config>`
+* :ref:`OroPay <user-guide--payment--oropay>`
 * :ref:`PayPal Payflow Gateway / PayPal Payment Pro <sys--integrations--manage-integrations--paypal-payflow-gateway>`
 * :ref:`PayPal Express <config-guide--payment--paypal-express>`
 * :ref:`Apruve <user-guide--payment--payment-providers-overview--apruve>`
@@ -84,6 +85,7 @@ The payment methods that were based on this integration are no longer usable in 
 
    Check/Money Order Service <check-money-order/index>
    Payment Terms <payment-terms/index>
+   OroPay <oropay/index>
    PayPal Payment Services <paypal-services/index>
    Apruve Payment Service <apruve/index>
    Authorize.Net Payments Services <authorizenet/index>

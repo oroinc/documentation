@@ -127,10 +127,9 @@ This section shows order costs, including any discounts (in all currencies, conf
 .. image:: /user/img/sales/orders/order_details_totals.png
    :alt: The Totals section of the order details page
 
+**Payments**
 
-**Payment History**
-
-This section provides information about payment transactions concerning the order.
+This section provides information about payment transactions related to the order.
 
 .. image:: /user/img/sales/orders/order_details_paymenthistory.png
    :alt: The Payment History section of the order details page
@@ -164,6 +163,13 @@ This section provides information about payment transactions concerning the orde
    If you do not see this section, contact your administrator.
 
    If you are an administrator, find the Order entity and check the access level configured for the View Payment action.
+
+**Invoices**
+
+When the invoice functionality is :ref:`enabled in the system configuration <configuration--guide--commerce--configuration--sales-invoices>`, you can view invoices associated with an order in the dedicated *Invoices* tab. Click on the invoice to open its view page.
+
+.. image:: /user/img/sales/invoices/invoices-order-view-page.png
+   :alt: Invoices tab on the order view page
 
 **Activity**
 

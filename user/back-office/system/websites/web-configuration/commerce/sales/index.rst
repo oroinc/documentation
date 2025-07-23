@@ -12,4 +12,5 @@ Configure Sales Settings per Website
    Orders History <website-open-orders>
    Multi Shipping Options <website-multi-shipping>
    Quotes <website-quotes>
+   Invoices <website-invoices>
 

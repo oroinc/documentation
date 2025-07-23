@@ -24,6 +24,7 @@ You can find more in-depth information on all Oro sales tools below:
    Request for Quote (RFQ) <rfq/index>
    Quotes <quotes/index>
    Orders <orders/index>
+   Invoices <invoices/index>
    Price Lists <price-lists/index>
    Payment Terms <payment-terms/index>
    Sales Territories <sales-territories>

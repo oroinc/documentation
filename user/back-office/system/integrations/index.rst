@@ -7,7 +7,7 @@ OroCommerce fulfills individual customer wishes and provides miscellaneous exten
 
 The section focuses on the integrations pre-implemented for your Oro applications and illustrates:
 
-* what payment providers to use to help process different types of payments (PayPal, Apruve, Authorize.Net, etc.)
+* what payment providers to use to help process different types of payments (OroPay, PayPal, Apruve, Authorize.Net, etc.)
 * what shipping methods you can offer your OroCommerce customers (UPS, FedEx)
 * how to set up integrations with payment and shipping services
 * how to use email marketing activities and email marketing automation (Mailchimp, Dotdigital)
@@ -21,6 +21,7 @@ Check the following integrations that can be enabled/disabled and configured in 
 
   * :ref:`Check/Money Order <user-guide--payment--check-money-order>`
   * :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term-config>`
+  * :ref:`OroPay <user-guide--payment--oropay>`
   * :ref:`PayPal Payment Services <user-guide--payment--payment-providers-overview--paypal>`
   * :ref:`Apruve <user-guide--payment--payment-providers-overview--apruve>`
   * :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`
