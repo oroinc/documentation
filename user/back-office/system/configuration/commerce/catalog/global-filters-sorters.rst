@@ -48,7 +48,7 @@ To configure filters and sorting options globally:
 
 6. In the **Product Sorting** section, configure the options that enable you to override the default product sorting behavior in the storefront, which is typically based on a product sort order (if specified) and by relevance score.
 
-    .. note:: The product sorting feature is only available as of OroCommerce Enterprise version 6.1.3.
+    .. note:: The product sorting feature was introduced in OroCommerce Enterprise versions 6.1.3 and 6.1.4.
 
     .. hint:: Before enabling the options, ensure to:
 

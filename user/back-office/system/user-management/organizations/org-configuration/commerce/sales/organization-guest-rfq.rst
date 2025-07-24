@@ -27,6 +27,8 @@ To configure the request for quote settings per organization:
 
    * **Enable RFQ (Storefront)** --- the option enables the OroCommerce-driven RFQ functionality for the storefront. Your customers will be able to submit RFQs from the storefront.
 
+   .. note:: The Enable RFQ Project Name feature was introduced in OroCommerce versions 6.1.3 and 6.1.4.
+
    * **Enable RFQ Project Name** --- this option enables project name management for RFQs in the storefront. In the back-office, the feature is enabled automatically if it is turned on for an organization or for at least one website within that organization. Once active, a Project Name field appears on RFQ edit pages, and a Project Name column is added to the RFQ grid in the back-office. The project name serves as an optional identifier that helps users search for and track RFQs by name, particularly when records originate from external systems or third parties.
 
 6. In the **Notifications** section, configure notifications for all the parties concerned, namely:

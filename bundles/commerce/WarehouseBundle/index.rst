@@ -3,7 +3,7 @@
 Inventory Levels in WarehouseBundle
 ===================================
 
-.. note:: The Inventory Levels feature is available as of OroCommerce version 6.1.3.
+.. note:: The Inventory Levels feature was introduced in OroCommerce versions 6.1.3 and 6.1.4.
 
 The WarehouseBundle provides advanced inventory level management for products across multiple warehouses. Inventory levels can be displayed in the storefront, managed in the back-office, and integrated into search, datagrid results, shopping list, checkout, quick order pages, product view pages, and into the similar, related, and upsell product blocks.
 
