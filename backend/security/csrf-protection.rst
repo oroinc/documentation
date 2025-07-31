@@ -14,12 +14,12 @@ To protect controllers against CSRF, use AJAX `#[CsrfProtection]` attribute. You
 
 **Controller level protection**
 
-.. oro_integrity_check:: 5c766aef3c1bee7c0af9d7d51caff5b81e92a611
+.. oro_integrity_check:: 8e2212f65b960a9a58a7b2b43fc342e8902311bc
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 1-20, 32, 20-22, 93
+        :lines: 1-19, 32, 20-22, 93
 
 
 **Action level protection**

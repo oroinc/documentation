@@ -40,12 +40,12 @@ You have two options to define your custom access control lists:
 
 #. In your controller class, you can use the ``#[Acl]`` attribute:
 
-.. oro_integrity_check:: 40b99dc72036ee43168053c835f5b3c32b42e561
+.. oro_integrity_check:: 607783b5ec3320bd0b874bbfedd3e63ac922239b
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
        :language: php
-       :lines: 3-5, 7, 9, 11, 13, 16-22, 31-43, 92
+       :lines: 3-5, 7, 9, 11, 13, 16-22, 31-43, 93
 
    Using the ``#[Acl]`` attribute does not only create new access control lists to which you can refer in other parts of your code, it also triggers the access decision manager when your actions are accessed by users and thus protect them from being accessed without the needed permissions.
 
@@ -62,12 +62,12 @@ You have two options to define your custom access control lists:
 
     You can also create access control lists that are only used to protect specific actions unrelated to an entity. To do that, set the type of the ACL to ``action`` instead of ``entity``:
 
-    .. oro_integrity_check:: 9ef6130d7177096691d8294d9793f5dca629f6be
+    .. oro_integrity_check:: 4f45681c371072d678e087112dd368768401ff0e
 
         .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
             :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
             :language: php
-            :lines: 3-5, 7, 9, 11, 13, 16-22, 63-83, 92
+            :lines: 3-5, 7, 9, 11, 13, 16-22, 63-83, 93
 
     When configuring the ACL using the YAML config format, you also have to set the controller to use the ``bindings`` option to bind the ACL:
 

@@ -231,7 +231,7 @@ Suppose you have configured an entity to be protectable via ACLs. You have grant
 
 #. Use the ``#[Acl]`` attribute on a controller method, providing the entity class name and the permission to check for:
 
-.. oro_integrity_check:: 289ba9e63a2e20b189700991e20a2dbf67f64cd0
+.. oro_integrity_check:: e9420e09e1cd86c57c54240d3c8a34db41ad0552
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -251,7 +251,7 @@ Suppose you have configured an entity to be protectable via ACLs. You have grant
 
   Attribute #[AclAncestor] enables you to reuse ACL resources defined with the ACL attribute or described in the acls.yml file. The name of the ACL resource is used as the parameter of this attribute:
 
-.. oro_integrity_check:: 3edd40e1934c7c592eb31b7e296f0010606b382b
+.. oro_integrity_check:: 57c78bb46271819c163d080cef0c32d80581671f
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -299,7 +299,7 @@ Protecting Custom DQL Queries
 
 When building custom DQL queries, reduce the result set being returned to the set of domain objects to which the user is granted access. To achieve this, use the ACL helper provided by the OroSecurityBundle:
 
-.. oro_integrity_check:: 053cf9d151fbfc634d2f3cd95daff684d9284a15
+.. oro_integrity_check:: 1d840edfbf368d8743c3ceb57e4369aa418ac3b0
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -316,7 +316,7 @@ Sometimes it is impossible to do an ACL check in the controller using annotation
 
 In this case, you can use the ``isGranted`` function:
 
-.. oro_integrity_check:: af42382c89659c8df432e62b59a589436ff603f9
+.. oro_integrity_check:: 7f1f437aa809408b21497c7f5b26615c9fc5e935
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php

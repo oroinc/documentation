@@ -47,7 +47,7 @@ You can configure routes for your controller actions the same way as in Symfony.
 
     default_controller:
         resource: "@AcmeDemoBundle/Controller/DefaultController.php"
-        type:     annotation
+        type:     attribute
 
     acme_demo:
         resource: "@AcmeDemoBundle/Resources/config/routing.yml"

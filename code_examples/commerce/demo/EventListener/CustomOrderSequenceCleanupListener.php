@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Acme\Bundle\DemoBundle\EventListener;
 
-use Oro\Bundle\PlatformBundle\Event\DeleteOldNumberSequenceEvent;
 use Doctrine\Persistence\ManagerRegistry;
 use Oro\Bundle\PlatformBundle\Entity\NumberSequence;
+use Oro\Bundle\PlatformBundle\Event\DeleteOldNumberSequenceEvent;
 
 class CustomOrderSequenceCleanupListener
 {

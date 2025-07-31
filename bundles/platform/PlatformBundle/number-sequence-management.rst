@@ -18,19 +18,19 @@ The ``Oro\Bundle\PlatformBundle\Entity\NumberSequence`` stores sequence states i
 NumberSequenceManager
 ---------------------
 
-The ``Oro\Bundle\PlatformBundle\NumberSequence\Manager\GenericNumberSequenceManager`` class is used to manage numeric sequences for business entities. 
+The ``Oro\Bundle\PlatformBundle\NumberSequence\Manager\GenericNumberSequenceManager`` class is used to manage numeric sequences for business entities.
 It implements the ``Oro\Bundle\PlatformBundle\NumberSequence\Manager\NumberSequenceManagerInterface`` interface and provides the following methods:
 
-* ``nextNumber(): int``  
+* ``nextNumber(): int``
   Returns the next available number in the sequence and increments it atomically.
 
-* ``resetSequence(int $number = 0): void``  
+* ``resetSequence(int $number = 0): void``
   Resets the sequence to the specified number (default: 0).
 
-* ``reserveSequence(int $size): array<int>``  
+* ``reserveSequence(int $size): array<int>``
   Reserves a batch of sequential numbers for use in bulk operations.
 
-**Thread Safety**  
+**Thread Safety**
 All operations are wrapped in transactions and use row-level database locking for concurrency control.
 
 **Example**:
@@ -102,7 +102,7 @@ Use the provided ``Oro\Bundle\PlatformBundle\EventListener\DeleteOldNumberSequen
         :language: yaml
         :lines: 2, 152-162
 
-* **Implement a custom listener** 
+* **Implement a custom listener**
 
 If your application requires more advanced logic (e.g., keeping sequences for the last 3 months, or based on organization), you can create a custom listener for the ``Oro\Bundle\PlatformBundle\Event\DeleteOldNumberSequenceEvent``:
 Register the custom listener in your bundle's service configuration, just like the default one, and subscribe it to the ``Oro\Bundle\PlatformBundle\Event\DeleteOldNumberSequenceEvent``.
@@ -114,7 +114,7 @@ Register the custom listener in your bundle's service configuration, just like t
         :language: yaml
         :lines: 2, 164-169
 
-.. oro_integrity_check:: 584c0cbec759dab6d2d19a462e0c3cd443eedbb2
+.. oro_integrity_check:: de0ee97634ae42d94dc60f418e332700d194bd5a
 
     .. literalinclude:: /code_examples/commerce/demo/EventListener/CustomOrderSequenceCleanupListener.php
         :caption: src/Acme/Bundle/DemoBundle/EventListener/CustomOrderSequenceCleanupListener.php

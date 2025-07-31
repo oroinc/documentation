@@ -37,7 +37,7 @@ The Controllers
 
 You then need to create a controller class that comes with two actions: one that is called when a new question should be created and one that can fetch an existing question to let the user modify its data:
 
-.. oro_integrity_check:: 94e69cf5d41446a70dbe143efd12fd338282c0b7
+.. oro_integrity_check:: 8326431aa975e332384dbb375f8a8f662e9fb70f
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
@@ -48,7 +48,7 @@ You then need to create a controller class that comes with two actions: one that
 Then, make sure that the controller is loaded in your routing configuration so that Symfony knows
 which controller needs to be called for particular routes:
 
-.. oro_integrity_check:: 286ae005d3a46e9359b8a167282c3b662af2161f
+.. oro_integrity_check:: d7d310228a6ba4a4e8358e38d029f2eba9ec771c
 
    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/routing.yml
        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/routing.yml

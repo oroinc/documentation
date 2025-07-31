@@ -98,7 +98,7 @@ Create the Controller and View
 
 To make your datagrid accessible, create a controller that the user can visit, which will serve as a view that renders the configured datagrid:
 
-.. oro_integrity_check:: a5ea535b78f2c337594f8b2a8ee75856f2adc5db
+.. oro_integrity_check:: e230fc189e6a665ba25993799539f48820c9438f
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
