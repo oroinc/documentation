@@ -114,7 +114,7 @@ A customer must enter a card number, expiration date, CVC, and a ZIP code (if re
 .. image:: /user/img/system/integrations/stripe/stripe-checkout.png
    :alt: View the Stripe payment method at checkout
 
-The system assigns a reference code to each submitted order. The code is used to identify the order on the Stripe side. You can find the reference code on the order details page, under the **Payment History** menu.
+The system assigns a reference code to each submitted order. The code is used to identify the order on the Stripe side. You can find the reference code on the order details page, under the **Payments** section.
 
 .. image:: /user/img/system/integrations/stripe/stripe-reference-code.png
    :alt: Illustrating how to find the order on the Stripe side using the reference code
@@ -129,7 +129,7 @@ A customer must enter a card number, expiration date, CVC, and a ZIP code (if re
 .. image:: /user/img/system/integrations/stripe/sub-order-checkout.png
    :alt: A sample checkout with the order split to two sub-orders
 
-Once submitted, the system splits the order to the respective sub-orders, assigning them the corresponding reference codes. The codes are used to identify the order on the Stripe side. You can find the details on the primary or sub-order details page, under the **Payment History** menu.
+Once submitted, the system splits the order to the respective sub-orders, assigning them the corresponding reference codes. The codes are used to identify the order on the Stripe side. You can find the details on the primary or sub-order details page, under the **Payments** section.
 
 .. image:: /user/img/system/integrations/stripe/sub-order-reference-codes.png
    :alt: Highlighting reference codes for both primary order and its sub-orders
@@ -137,13 +137,13 @@ Once submitted, the system splits the order to the respective sub-orders, assign
 To **capture** an authorized payment:
 
 1. From the primary order details page --- Select the sub-order tab under the **Sub-Orders Payment History** menu and click |IcCapture|.
-2. From the sub-order details page --- Click |IcCapture| at the end of the row under the **Payment History** menu.
+2. From the sub-order details page --- Click |IcCapture| at the end of the row under the **Payments** section.
 
 
 To **cancel** an authorized payment:
 
 1. From the primary order details page --- Select the sub-order tab under the **Sub-Orders Payment History** menu and click **X**.
-2. From the sub-order details page --- Click **X** at the end of the row under the **Payment History** menu.
+2. From the sub-order details page --- Click **X** at the end of the row under the **Payments** section.
 
 
 To **refund** (partially or fully) any successful payment:
