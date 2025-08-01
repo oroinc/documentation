@@ -42,7 +42,7 @@ You can also set a namespace for the cache pool that extends ``oro.data.cache``:
         acme_demo.my_data_cache.service:
             class: Acme\Bundle\DemoBundle\Provider\CacheService
             arguments:
-                - '@acme.data.cache'
+                - '@acme_demo.data.cache'
 
 .. _bundle-docs-platform-cache-bundle--caching-static-configs:
 
