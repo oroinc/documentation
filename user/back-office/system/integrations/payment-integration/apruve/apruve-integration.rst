@@ -53,8 +53,6 @@ To set up a payment method integration with Apruve, perform the following steps:
 
    Once the Apruve Integration is saved, the **Webhook URL** becomes available. You can check it by loading the Apruve page again. If necessary, the **Webhook URL** can be regenerated to prevent any attempted fraud.
 
-   .. image:: /user/img/system/integrations/apruve/apruve_integration_3.png
-
 8. Copy the webhook URL to your clipboard and paste it into the **Notifications** section in the Apruve system. It enables Apruve to send you notifications regarding any activity performed via Apruve.
 
    .. image:: /user/img/system/integrations/apruve/apruve_integration_3.1.png

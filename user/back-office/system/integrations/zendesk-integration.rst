@@ -13,20 +13,27 @@ Generate API token in Zendesk
 
 To retrieve your API token on the Zendesk side:
 
-1. Open your account profile and go to the **Admin** page.
+1. Open your account profile.
+2. Click on the cog icon in the panel to the left to open the **Admin** menu.
 
    .. image:: /user/img/system/integrations/zendesk/zendesk_admin.png
 
-2. Navigate to the **CHANNELS > API**.
+2. Navigate to the **Apps & Integrations > API Configuration**.
 
    .. image:: /user/img/system/integrations/zendesk/zendesk_api.png
 
 3. Make sure the **Token Access** is enabled.
 
-4. Copy an active API token.
+4. Click on API Tokens in the panel to the left to open the API Tokens page.
+5. Click **Add API Token** to create a new one.
 
    .. image:: /user/img/system/integrations/zendesk/zendesk_api_token.png
 
+6. Provide a description for the new token, and click **Save**. This will prompt generation of a new token.
+
+   .. image:: /user/img/system/integrations/zendesk/new-token.png
+
+7. Copy and store this the token as you will need it to connect to the OroCommerce application. Please be aware that it will not be shown again after you click **Save**.
 
 Create the Integration
 ----------------------
@@ -89,7 +96,7 @@ Once integration has been created, the data is automatically synchronized.
 To start the synchronization manually:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
-2. For the integraion with Zendesk, hover over the |IcMore| **More Options** menu to the right and click |BSchedule| to schedule sync.
+2. For the integration with Zendesk, hover over the |IcMore| **More Options** menu to the right and click |BSchedule| to schedule sync.
 
 .. note:: Alternatively, open the integration details page and click **Schedule Sync** on the top right. 
 

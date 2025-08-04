@@ -106,8 +106,8 @@ To enable several shipping rules at the same time:
 
 3. Click |IcActivate| **Enable**.
 
-    .. image:: /user/img/system/payment_rules/mass_action_payment_rule.png
-       :class: with-border
+   .. image:: /user/img/system/payment_rules/mass_action_payment_rule.png
+      :class: with-border
 
 Filter a Payment Rule List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
