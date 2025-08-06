@@ -161,7 +161,7 @@ function stickyBreadcrumbs() {
             mainColumn.css({'padding-top': 0});
         }
         if ($(window).prop('innerWidth') > 767 && $(window).prop('innerWidth') < 1025) {
-            contentContainer.css({'padding-top': $('.header.header-redesign').outerHeight() + $('.breadcrumbs').outerHeight()});
+            contentContainer.css({'padding-top': $('.header.header-redesign').outerHeight() + $('.breadcrumbs').outerHeight() - 10});
             mainColumn.css({'padding-top': 0});
         }
         if ($(window).prop('innerWidth') < 767) {

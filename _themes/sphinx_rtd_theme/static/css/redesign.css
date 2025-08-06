@@ -1,4 +1,4 @@
-body.wy-body-for-nav {
+§body.wy-body-for-nav {
     background: #fff;
     color: #252525;
     font: 14px/20px 'Open Sans', Helvetica, Arial, sans-serif;
@@ -2210,7 +2210,7 @@ section .btn-orangedark:hover {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .breadcrumbs-container {
-        margin-top: -86px;
+        margin-top: -75px;
     }
 }
 @media only screen and (max-width: 1199px) {

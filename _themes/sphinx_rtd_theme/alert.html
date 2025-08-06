@@ -1,11 +1,7 @@
 {%- if current_version %}
+    {%- set need_alert = "1" %}
     {%- if current_version.release == 'master' %}
         {%- set you_are_browsing = "You are browsing upcoming documentation for version 7.0 of OroCommerce, scheduled for release in 2026." %}
-    {%- endif %}
-
-    {# TODO: remove stage and maintenance versions on deployment #}
-    {%- if current_version.name == '6.1' or current_version.name == 'stage/6.1' or  current_version.name == 'maintenance/6.1'  %}
-        {%- set image_update_message = "We are updating the images for OroCommerce version 6.1 to align with the latest changes in the back-office design. During this transition, some images may still show older versions. Thank you for your patience as we work to update all visuals to reflect these changes." %}
     {%- endif %}
 
     {%- if current_version.release == '6.0' %}
@@ -26,6 +22,13 @@
     {%- if current_version.release == '3.1' %}
         {%- set you_are_browsing = "You are browsing the documentation for version 3.1 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
     {%- endif %}
+
+    {# TODO: remove stage and maintenance versions on deployment #}
+    {%- if current_version.name == '6.1' or current_version.name == 'stage/6.1' or  current_version.name == 'maintenance/6.1'  %}
+        {%- set image_update_message = "We are updating the images for OroCommerce version 6.1 to align with the latest changes in the back-office design. During this transition, some images may still show older versions. Thank you for your patience as we work to update all visuals to reflect these changes." %}
+        {%- set need_alert = "0" %}
+    {%- endif %}
+
     {%- if you_are_browsing or image_update_message %}
         <div class="admonition important">
             <p class="first admonition-title">Important</p>
@@ -38,13 +41,15 @@
                 <p class="last">
                     {%- if versions.branches %}
                         {%- for item in versions.branches %}
-                            {% if 'index.html' in item.url %}
-                                {% set url = item.url | replace('/index.html', '/') | replace('.html', '/') %}
-                            {% else %}
-                                {% set url = item.url | replace('.html', '/') %}
-                            {% endif %}
+                            {%- if item.name in ['6.1', 'stage/6.1', 'maintenance/6.1'] %}
+                                {% if 'index.html' in item.url %}
+                                    {% set url = item.url | replace('/index.html', '/') | replace('.html', '/') %}
+                                {% else %}
+                                    {% set url = item.url | replace('.html', '/') %}
+                                {% endif %}
+                                {{ you_are_browsing }} Read the documentation for <a href="/{{ url | replace('../', '') }}">version 6.1 (the latest LTS version)</a> to get up-to-date information.
+                            {%- endif %}
                         {%- endfor %}
-                        {{ you_are_browsing }} Read the documentation for <a href="/{{ url | replace('../', '') }}">version 6.1 (the latest LTS version)</a> to get up-to-date information.
                     {%- endif %}
                 </p>
                 <p class="last">
