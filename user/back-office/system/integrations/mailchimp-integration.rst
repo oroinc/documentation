@@ -74,6 +74,8 @@ Configure Integration on the Oro Side
 
    .. image:: /user/img/system/integrations/mailchimp/choose_mc_integration.png
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 4. Click **Save and Close.**
 
 The integration has been successfully configured and will now appear in the integration grid.

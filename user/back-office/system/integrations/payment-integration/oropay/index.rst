@@ -55,6 +55,8 @@ To configure the OroPay integration, follow the steps outlined below:
 * **Status** --- Set the status to *Active* to enable the integration.
 * **Default Owner** - A user who is responsible for this integration and manages it.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 4. Click **Save and Close**.
 
 .. important:: Once the integration with OroPay is created, the next step is to :ref:`set up a payment rule <sys--payment-rules>` under **System > Payment Rules** and add your integration to it to display this method to the customers at checkout. For invoice payments, enable the feature and select OroPay as a payment method :ref:`in the system configuration <configuration--guide--commerce--configuration--sales-invoices>`.

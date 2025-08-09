@@ -92,6 +92,8 @@ To enable communication with UPS in order to request the shipping cost estimate 
 
 11. Set status to **Active** to enable the integration.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 12. Click **Save**.
 
 Next, set up a shipping rule via the :ref:`Shipping Rules Configuration <sys--shipping-rules>` page to enable this shipping method for all or some customer orders.

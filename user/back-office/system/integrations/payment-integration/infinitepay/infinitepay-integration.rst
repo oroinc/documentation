@@ -42,6 +42,8 @@ To enable payments using InfinitePay:
    * **Status**  --- Set the status to **Active** to enable the integration.
    * **Default Owner** --- A user who is responsible for this integration and manages it.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 #. Click **Save and Close**.
 
 Next, set up a payment rule that enables this payment method for all or some customer orders via the :ref:`Payment Rules Configuration <sys--payment-rules>` page.
