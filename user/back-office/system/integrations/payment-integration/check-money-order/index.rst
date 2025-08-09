@@ -48,6 +48,8 @@ To enable check/money order payments, complete the following steps:
 
    * **Status** --- Set the status to *Active* to enable the integration.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 #. Click **Save and Close**.
 
 Next, set up a payment rule that enables this payment method for all or some customer orders via the :ref:`Payment Rules Configuration <sys--payment-rules>` page.

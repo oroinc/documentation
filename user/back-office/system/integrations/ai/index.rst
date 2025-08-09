@@ -45,6 +45,8 @@ To create an integration with OpenAI as the AI content generator of choice:
 .. image:: /user/img/system/integrations/ai/open-ai.png
    :alt: OpenAI integration settings page
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 3. Click **Save and Close**.
 
 Create Integration with Vertex AI
@@ -70,6 +72,8 @@ To create and integration with Vertex AI as the AI content generator of choice:
 
 .. image:: /user/img/system/integrations/ai/vertex-ai.png
    :alt: Vertex AI integration settings page
+
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
 
 3. Click **Save and Close**.
 

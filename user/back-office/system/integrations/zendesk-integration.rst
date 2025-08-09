@@ -70,6 +70,8 @@ To create an integration with Zendesk:
    * **Remote wins** --- Zendesk data is applied to both Zendesk and the Oro application.
    * **Local wins** --- Oro application data is applied to both Zendesk and the Oro application.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 .. _user-guide-Zendesk-channel-integration-details_edit:
 
 Manage the Integration
