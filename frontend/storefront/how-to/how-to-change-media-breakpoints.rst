@@ -7,13 +7,18 @@ To update media breakpoints, change the next breakpoints:
 
 .. code-block:: scss
 
-    $breakpoint-desktop: 1366px;
-    $breakpoint-desktop-small: 1280px;
-    $breakpoint-tablet: $breakpoint-desktop-small - 1px;
+    $site-width: 1920px !default;
+
+    // @Notice! Named Breakpoints have been chosen due to its names are used in configuration for menu, GrapesJS, Viewport manager, etc.
+    $breakpoint-desktop: 1366px !default;
+    $breakpoint-desktop-big: 1600px !default;
+    $breakpoint-desktop-small: 1280px !default;
+    $breakpoint-tablet: $breakpoint-desktop-small - 1px !default;
     $breakpoint-tablet-small: 992px !default;
     $breakpoint-mobile-big: 767px !default;
-    $breakpoint-mobile-landscape: 640px;
-    $breakpoint-mobile: 414px;
+    $breakpoint-mobile-landscape: 640px !default;
+    // iPhone 15 Pro Max (430 * 932)
+    $breakpoint-mobile: 430px !default;
 
 To add, update media queries theme, a developer must create files with the ``your-theme/settings/global-settings.scss`` global-settings and update the list with custom breakpoints.
 
