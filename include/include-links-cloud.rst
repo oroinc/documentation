@@ -263,3 +263,6 @@ Links (Cloud)
 
    <a href="https://github.com/oroinc/orocommerce-application/releases" target="_blank">release in the OroCommerce repository</a>
 
+.. |ASN| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)" target="_blank">ASN</a>

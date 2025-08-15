@@ -290,6 +290,12 @@ Webserver configuration can be modified, as illustrated below:
               - '172.16.0.0/16'
             'deny'  :
               - '10.0.0.1'
+          'asn':
+            'type'  : 'allow'
+            'allow' :
+              - '31898'
+            'deny'  :
+              - '16591'
           'country':
             'type'  : 'deny'
             'allow' :
@@ -336,7 +342,7 @@ Examples, applicable both for `redirects_map` values and those which are listed 
     orocloud_options:
       webserver:
         redirects_map:
-          # Simple examples that don't envolve using special characters other than `/`.
+          # Simple examples that don't involve using special characters other than `/`.
           /us: /us/
           /gb: /gb/
           /news/new_event: https://corpsite.com/events/newest
@@ -354,9 +360,9 @@ Examples, applicable both for `redirects_map` values and those which are listed 
 
 
           # Examples of values wrapped with `"` or `'` characters.
-          # Wrapping values in the examples bellow is required because of `{` character within the values.
+          # Wrapping values in the examples below is required because of the `{` character within the values.
           
-          # Value wrapped with `"` character requires to escape `'` character with `'` character itself.
+          # Value wrapped with `"` character requires escaping the `'` character with the `'` character itself.
           '"~/about''\d{1}$"': /about
           '"~/about''(\d{3})$"': /about#$1
           
@@ -378,7 +384,7 @@ Examples:
           # Values with absolute paths are environment-specific.
           - '/mnt/maint-data/redirects.yml'
 
-Old URL values in redirects are case insensitive and must not contain duplicates.
+Old URL values in redirects are case-insensitive and must not contain duplicates.
 
 Valid changes are applied within 10 minutes or automatically during deployments.
 
@@ -416,7 +422,7 @@ This configuration option is used to manage locations.
       * `auth_basic_userlist` — the hash of hashes with a user name as a key and mandatory nested keys:
 
           * `ensure` — ensures if the user is **present** or **absent**.
-          * `password` — a plain text user password.
+          * `password` — a plain-text user password.
 
    * `allow` — an array of IP addresses or network masks allowed to access location. Use one record per line or ``any`` to allow access from anywhere.
    * `deny` — an array of IP addresses or network masks denied to access location. Use one record per line or ``any`` to deny access from anywhere.
@@ -439,6 +445,7 @@ Requests Filtering
 This layer is responsible for filtering HTTP requests depending on their sources. The requests can come from certain:
 
 * IP addresses or networks
+* Autonomous Systems (|ASN|)
 * Countries
 * User Agents
 
@@ -447,241 +454,47 @@ The rules used by this firewall are defined in the ``access_policy`` section of 
 Robot Detection
 """""""""""""""
 
-The application drops requests from the user agents that do not support JS effectively protecting from the simple robots. Any request from a client (browser, robot, etc.) which do not support cookies and JS is dropped with HTTP status 451, and this client is redirected to the error page. It is possible to whitelist specific user agents using the rules described below.
+The testcookie module implements bot detection and mitigation functionality within the WAF Server. 
+Trusted user agents, whitelisted IP addresses, approved ASN numbers, and specific URI patterns can be skipped; 
+others must return a valid cookie or face redirection or blocking after a few tries.
 
-The IP addresses of the search engines, which cannot pass the WAF test cookie module, are whitelisted to allow the exchange of information between the Oro application and these platforms, facilitating accurate search results. See the complete list of IP addresses below:
+The Naxsi request-scanning module inspects incoming traffic for common injection patterns and applies simple thresholds to decide whether to block or forward each request. 
+Whitelisted requests can skip this scan.
+The IP addresses of the search engines, which cannot pass the WAF test cookie module, are whitelisted to allow the exchange of information between the Oro application and these platforms, facilitating accurate search results. 
+OroCloud customers can obtain the most up-to-date list of these IP addresses via a Customer Support Portal request.
 
-.. code-block:: none
+Error Responses:
 
-   # OroInc monitoring IP list
-      - '35.246.191.79' # puppet-prod1-mon1
-      - '35.239.98.170' # puppet-prod2-mon1
-      # Alexa Bot IP Addresses
-      - '204.236.235.245'
-      - '75.101.186.145'
-      # Baidu Bot IP Addresses
-      - '180.76.15.0/24'
-      - '119.63.196.0/24'
-      - '115.239.212.0/24'
-      - '119.63.199.0/24'
-      - '122.81.208.0/22'
-      - '123.125.71.0/24'
-      - '180.76.4.0/24'
-      - '180.76.5.0/24'
-      - '180.76.6.0/24'
-      - '185.10.104.0/24'
-      - '220.181.108.0/24'
-      - '220.181.51.0/24'
-      - '111.13.202.0/24'
-      - '123.125.67.144/29'
-      - '123.125.67.152/31'
-      - '61.135.169.0/24'
-      - '123.125.68.68/30'
-      - '123.125.68.72/29'
-      - '123.125.68.80/28'
-      - '123.125.68.96/30'
-      - '202.46.48.0/20'
-      - '220.181.38.0/24'
-      - '123.125.68.80/30'
-      - '123.125.68.84/31'
-      - '123.125.68.0/24'
-      # Bing Bot IP Addresses
-      - '65.52.104.0/24'
-      - '65.52.108.0/22'
-      - '65.55.24.0/24'
-      - '65.55.52.0/24'
-      - '65.55.55.0/24'
-      - '65.55.213.0/24'
-      - '65.55.217.0/24'
-      - '131.253.24.0/22'
-      - '131.253.46.0/23'
-      - '40.77.167.0/24'
-      - '199.30.27.0/24'
-      - '157.55.16.0/23'
-      - '157.55.18.0/24'
-      - '157.55.32.0/22'
-      - '157.55.36.0/24'
-      - '157.55.48.0/24'
-      - '157.55.109.0/24'
-      - '157.55.110.40/29'
-      - '157.55.110.48/28'
-      - '157.56.92.0/24'
-      - '157.56.93.0/24'
-      - '157.56.94.0/23'
-      - '157.56.229.0/24'
-      - '199.30.16.0/24'
-      - '207.46.12.0/23'
-      - '207.46.192.0/24'
-      - '207.46.195.0/24'
-      - '207.46.199.0/24'
-      - '207.46.204.0/24'
-      - '157.55.39.0/24'
-      # Duckduck Bot IP Addresses
-      - '46.51.197.88'
-      - '46.51.197.89'
-      - '50.18.192.250'
-      - '50.18.192.251'
-      - '107.21.1.61'
-      - '176.34.131.233'
-      - '176.34.135.167'
-      - '184.72.106.52'
-      - '184.72.115.86'
-      # Facebook Bot IP Addresses
-      - '31.13.107.0/24'
-      - '31.13.109.0/24'
-      - '31.13.200.0/24'
-      - '66.220.144.0/20'
-      - '69.63.189.0/24'
-      - '69.63.190.0/24'
-      - '69.171.224.0/20'
-      - '69.171.240.0/21'
-      - '69.171.248.0/24'
-      - '173.252.73.0/24'
-      - '173.252.74.0/24'
-      - '173.252.77.0/24'
-      - '173.252.100.0/22'
-      - '173.252.104.0/21'
-      - '173.252.112.0/24'
-      - '2a03:2880:10::/48'
-      - '2a03:2880:11::/48'
-      - '2a03:2880:20::/48'
-      - '2a03:2880:1010::/48'
-      - '2a03:2880:1020::/48'
-      - '2a03:2880:2020::/48'
-      - '2a03:2880:2050::/48'
-      - '2a03:2880:2040::/48'
-      - '2a03:2880:2110::/48'
-      - '2a03:2880:2130::/48'
-      - '2a03:2880:3010::/48'
-      - '2a03:2880:3020::/48'
-      # Google Bot IP Addresses
-      - '203.208.60.0/24'
-      - '66.249.64.0/20'
-      - '72.14.199.0/24'
-      - '209.85.238.0/24'
-      - '66.249.90.0/24'
-      - '66.249.91.0/24'
-      - '66.249.92.0/24'
-      - '2001:4860:4801:1::/64'
-      - '2001:4860:4801:2::/64'
-      - '2001:4860:4801:3::/64'
-      - '2001:4860:4801:4::/64'
-      - '2001:4860:4801:5::/64'
-      - '2001:4860:4801:6::/64'
-      - '2001:4860:4801:7::/64'
-      - '2001:4860:4801:8::/64'
-      - '2001:4860:4801:9::/64'
-      - '2001:4860:4801:a::/64'
-      - '2001:4860:4801:b::/64'
-      - '2001:4860:4801:c::/64'
-      - '2001:4860:4801:d::/64'
-      - '2001:4860:4801:e::/64'
-      - '2001:4860:4801:2001::/64'
-      - '2001:4860:4801:2002::/64'
-      # Sogou Bot IP Addresses
-      - '220.181.125.0/24'
-      - '123.126.51.64/27'
-      - '123.126.51.96/28'
-      - '123.126.68.25'
-      - '61.135.189.74'
-      - '61.135.189.75'
-      # Yahoo Bot IP Addresses
-      - '67.195.37.0/24'
-      - '67.195.50.0/24'
-      - '67.195.110.0/24'
-      - '67.195.111.0/24'
-      - '67.195.112.0/23'
-      - '67.195.114.0/24'
-      - '67.195.115.0/24'
-      - '68.180.224.0/21'
-      - '72.30.132.0/24'
-      - '72.30.142.0/24'
-      - '72.30.161.0/24'
-      - '72.30.196.0/24'
-      - '72.30.198.0/24'
-      - '74.6.254.0/24'
-      - '74.6.8.0/24'
-      - '74.6.13.0/24'
-      - '74.6.17.0/24'
-      - '74.6.18.0/24'
-      - '74.6.22.0/24'
-      - '74.6.27.0/24'
-      - '98.137.72.0/24'
-      - '98.137.206.0/24'
-      - '98.137.207.0/24'
-      - '98.139.168.0/24'
-      - '114.111.95.0/24'
-      - '124.83.159.0/24'
-      - '124.83.179.0/24'
-      - '124.83.223.0/24'
-      - '183.79.63.0/24'
-      - '183.79.92.0/24'
-      - '203.216.255.0/24'
-      - '211.14.11.0/24'
-      # Yandex Bot IP Addresses
-      - '100.43.90.0/24'
-      - '37.9.115.0/24'
-      - '37.140.165.0/24'
-      - '77.88.22.0/25'
-      - '77.88.29.0/24'
-      - '77.88.31.0/24'
-      - '77.88.59.0/24'
-      - '84.201.146.0/24'
-      - '84.201.148.0/24'
-      - '84.201.149.0/24'
-      - '87.250.243.0/24'
-      - '87.250.253.0/24'
-      - '93.158.147.0/24'
-      - '93.158.148.0/24'
-      - '93.158.151.0/24'
-      - '93.158.153.0/32'
-      - '95.108.128.0/24'
-      - '95.108.138.0/24'
-      - '95.108.150.0/23'
-      - '95.108.158.0/24'
-      - '95.108.156.0/24'
-      - '95.108.188.128/25'
-      - '95.108.234.0/24'
-      - '95.108.248.0/24'
-      - '100.43.80.0/24'
-      - '130.193.62.0/24'
-      - '141.8.153.0/24'
-      - '178.154.165.0/24'
-      - '178.154.166.128/25'
-      - '178.154.173.29'
-      - '178.154.200.158'
-      - '178.154.202.0/24'
-      - '178.154.205.0/24'
-      - '178.154.239.0/24'
-      - '178.154.243.0/24'
-      - '37.9.84.253'
-      - '199.21.99.99'
-      - '178.154.162.29'
-      - '178.154.203.251'
-      - '178.154.211.250'
-      - '95.108.246.252'
-      - '5.45.254.0/24'
-      - '5.255.253.0/24'
-      - '37.140.141.0/24'
-      - '37.140.188.0/24'
-      - '100.43.81.0/24'
-      - '100.43.85.0/24'
-      - '100.43.91.0/24'
-      - '199.21.99.0/24'
-      # Youdao Bot IP Addresses
-      - '61.135.249.200/29'
-      - '61.135.249.208/28'
-      # Symantec Corporation IP
-      - '168.149.144.12'
+* 451 Unavailable for Legal Reasons - Returned when JS is not supported or blocked by Naxsi.
 
 Rate Limiting Request
 ~~~~~~~~~~~~~~~~~~~~~
 
 On this layer, WAF performs rate limiting to detect crawling robots and excessive HTTP requests using the following mechanisms.
 
-Rate limiting algorithm uses 3 parameters: ``rate limit``, ``delay``, and ``burst``. It groups requests by the source IP and destination URI and throttles them to the ``rate limit`` if there are more than a ``delay`` requests per second for a given group of requests. Nginx drops all consequent requests from a group if their amount is bigger than the ``burst`` value. The exact values of these parameters depend on the grouping factor (IP, URI, etc.).
+.. image:: /cloud/img/cloud/rate_limit.png
+   :alt: Rate limit detailed processing flow.
 
-HTTP request dropped at this layer of protection has HTTP status 451 “Unavailable For Legal Reasons”. It is possible to define exceptions for rate limiting using the ``limit_whitelist`` and ``limit_whitelist_uri`` sections of the `orocloud.yaml` file.
+Request rate is calculated for the source IP addresses sharing the same |ASN| or originating from the zones defined by the setup, e.g.: 
+
+* riskdb_bot: For known bots.
+* riskdb_crawler: For web crawlers.
+* ip_goodbot: For trusted bots.
+* ip_datacenter: For requests from known datacenter IPs.
+
+These zones are updated daily to keep the lists of bots, crawlers, and datacenter IPs current. 
+Each zone uses a specific set of parameters for the rate limiting, which defines the rate limit itself,
+applied locations, and the status code, e.g., 429 (Too Many Requests) or 503 (Service Unavailable), returned if the rate limit condition is met.
+OroCloud customers can obtain the most up-to-date list of all used zones and their rate-limiting parameters via a Customer Support Portal request.
+
+Rate limit definition can be bypassed for the specific source IPs or URI using the limit_whitelist and limit_whitelist_uri sections of the orocloud.yaml file.
+
+Rate Limit for AJAX Requests
+""""""""""""""""""""""""""""
+
+OroCommerce rate limit setup contains a rate limit definition that specifically applies to AJAX requests, including the X-Requested-With: XMLHttpRequest header, which is a standard way for web applications to identify AJAX calls.
+The rule ensures that AJAX traffic (like dynamic content loading) is managed separately from other requests, such as API calls or static file downloads.
+This allows for more precise control over different types of traffic.
 
 Rules Definition
 ~~~~~~~~~~~~~~~~
@@ -691,9 +504,9 @@ WAF Rules
 
 Rules to manage HTTP requests filtering are defined in the following sections of the `orocloud.yaml` file.
 
-Before implementing changes in this file on production, you should always test it at the environment stage to avoid issues with live application.
+Before implementing changes in this file on production, you should always test it in the environment stage to avoid issues with the live application.
 
-Source filtering rules are defined in the ``webserver`` section. This is the child element of the ``orocloud_options`` data structure. Here is an example of rules definitions:
+Source filtering rules are defined in the ``webserver`` section. This is the child element of the ``orocloud_options`` data structure. Here is an example of rule definitions:
 
 .. code-block:: none
 
@@ -709,6 +522,12 @@ Source filtering rules are defined in the ``webserver`` section. This is the chi
               - '172.16.0.0/16'
             'deny'  :
               - '10.0.0.1'
+          'asn':
+            'type'  : 'allow'
+            'allow' :
+              - '31898'
+            'deny'  :
+              - '16591'
           'country':
             'type'  : 'deny'
             'allow' :
@@ -728,12 +547,11 @@ Source filtering rules are defined in the ``webserver`` section. This is the chi
 
 ``access_policy`` --- The hash of hashes provides the ability to manage Oro Web Application Firewall and allow or deny requests depending on the source address, source country, user agent, and URI.
 
-All rejected requests receive status 451.
-
 The following hashes can be used:
 
 * ``ip`` — the hash defines the rules for the source IP filtering.
-* ``country`` — the hash defines rules for the originating country filtering. The value of `type` key defines if the hash contains the allowed or prohibited countries. Country must be defined by ISO 3166 Alpha1 code. GeoIP database is used to define a country from the source IP.
+* ``asn`` — the hash defines the rules for the source ASN filtering.
+* ``country`` — the hash defines rules for the originating country filtering. The `type` key value defines whether the hash contains the allowed or prohibited countries. Country must be defined by ISO 3166 Alpha1 code. The GeoIP database is used to define a country from the source IP.
 
 An example of the rule to allow only the defined countries:
 
@@ -809,7 +627,7 @@ Here is an example:
    limit_whitelist_uri:
      - '~(^/admin/test/(.*))'
 
-``limit_whitelist`` --- The list contains source IPs and subnets which are allowed to send requests to the application with any rate. This can be used to whitelist some service IPs which need to perform many requests, e.g., for load testing.
+``limit_whitelist`` --- The list contains source IPs and subnets which are allowed to send requests to the application with ``common`` zone request rate. This can be used to whitelist some service IPs which need to perform more requests, e.g., for load testing.
 
 An example of the whitelist:
 
@@ -820,9 +638,9 @@ An example of the whitelist:
      - '8.8.8.8'
      - '10.1.0.0/22'
 
-This rule allows unlimited rate of requests from IP 127.0.0.1 (local host) and subnet 10.1.0.0/22.
+This rule allows an unlimited rate of requests from IP 127.0.0.1 (local host) and subnet 10.1.0.0/22.
 
-``limit_whitelist_uri`` ---  The list contains regular expressions to define URI of the application which must not be limited by request rate. This can be used to whitelist URIs that need to receive many requests, e.g., integration URI.
+``limit_whitelist_uri`` ---  The list contains regular expressions to define URI of the application which must be limited by ``common`` zone request rate. This can be used to whitelist URIs that need to receive more requests, e.g., integration URI.
 
 An example of the whitelist:
 
@@ -831,9 +649,9 @@ An example of the whitelist:
    limit_whitelist_uri:
      - '~(^/admin/test/(.*))'
 
-This rule allows the unlimited rate of requests to URI containing the /admin/test/ string.
+This rule allows an unlimited rate of requests to a URI containing the /admin/test/ string.
 
-.. note:: Allowing access via WAF does not affect simultaneous connections limits. Use **limit_whitelist** or **limit_whitelist_uri** to set unlimited connectios for a client IP or URI on the server.
+.. note: Allowing access via WAF does not affect the simultaneous connections limits. Use **limit_whitelist** or **limit_whitelist_uri** to set unlimited connectios for a client IP or URI on the server.
 
 Domain Configuration
 --------------------
@@ -951,17 +769,17 @@ Profiling Application Console Commands via Blackfire
 
 The configuration option enables you to configure Blackfire.
 
-``blackfire_options`` --- The hash is used to configure the Blackfire agent on environment
+``blackfire_options`` --- The hash is used to configure the Blackfire agent in the environment
 
    * `agent_enabled` — a boolean trigger for Blackfire installation
-   * `apm_enabled` - the option enables (1) or disables (0) the Blackfire APM feature. Please note that you need to have it included into your license.
+   * `apm_enabled` - the option enables (1) or disables (0) the Blackfire APM feature. Please note that you need to have it included in your license.
    * `server_id` — a server ID string. Refer your Blackfire account to this value.
    * `server_token` — a server token string. Refer your Blackfire account to this value.
    * `log_level` — Blackfire agent log verbosity.
    * `log_path` — a path to the log file location.
 
 
-You can then profile the application console commands via configured Blackfire:
+You can then profile the application console commands via the configured Blackfire:
 
 .. code-block:: none
 
@@ -980,7 +798,7 @@ The ``newrelic_options`` configuration option allows you to configure NewRelic p
 Mail Settings
 -------------
 
-To prevent sending test emails accidentally from the staging environment to any real users or customers, add the domains of email recepients that you will be using for testing to your whitelist:
+To prevent sending test emails accidentally from the staging environment to any real users or customers, add the domains of email recipients that you will be using for testing to your whitelist:
 
 .. code-block:: none
 
@@ -998,7 +816,7 @@ Where:
 * **mail** is a hash of mail-related settings
 * **whitelist** is an array of whitelisted mail domains
 
-.. note:: In production environments all domains are whitelisted. When you create a whitelist, it blocks sending email to any recipients, except for the ones in the whitelisted email domains.
+.. note:: In production environments, all domains are whitelisted. When you create a whitelist, it blocks sending emails to any recipients, except those in the whitelisted email domains.
 
 .. _orocloud-maintenance-advanced-use-sanitization-conf:
 
@@ -1011,17 +829,17 @@ Regardless of the Oro application type, each has its own default sanitize rules 
 
 The sanitize configuration is grouped under the `sanitize` node and supports the following sanitize methods:
 
-* **sanitize.rawsql_add_rules** — the list of raw SQL queries that helps you to sanitize the existing data, for example, delete data using the TRUNCATE method, UPDATE data to apply any custom modification, etc.
+* **sanitize.rawsql_add_rules** — the list of raw SQL queries that help you to sanitize the existing data, for example, delete data using the TRUNCATE method, UPDATE data to apply any custom modification, etc.
 
 * **sanitize.rawsql_delete_rules** —  the list of raw SQL queries, which should be removed from the list in `sanitize.method.rawsql`. The format is the same as `sanitize.rawsql_add`.
 
-* **sanitize.rawsql_override_rules** —  the list of raw SQL queries, which will be applied to sanitizing data and override default sanitize rule `sanitize.method.rawsql`. Please note, that if this option is specified, all `sanitize.rawsql_add_rules` and `sanitize.rawsql_delete_rules` will be ignored. The format is the same as `sanitize.rawsql_add_rules`.
+* **sanitize.rawsql_override_rules** —  the list of raw SQL queries, which will be applied to sanitizing data and override the default sanitize rule `sanitize.method.rawsql`. Please note that if this option is specified, all `sanitize.rawsql_add_rules` and `sanitize.rawsql_delete_rules` will be ignored. The format is the same as `sanitize.rawsql_add_rules`.
 
 * **sanitize.update_add_rules** — the mapping between specific table columns and the sanitizing method that should be used for the values.
 
 * **sanitize.update_delete_rules** — the list of rules which will be deleted from the list in `sanitize.method.update`. The format is the same as in `sanitize.update_add_rules`.
 
-* **sanitize.update_override_rules** — the list of rules which will be applied to sanitizing data and overriding the default sanitize rule `sanitize.method.update`. Please note, that if this option is specified, all `sanitize.update_add_rules` and `sanitize.update_delete_rules` will be ignored. The format is the same as `sanitize.update_add_rules`.
+* **sanitize.update_override_rules** — the list of rules which will be applied to sanitizing data and overriding the default sanitize rule `sanitize.method.update`. Please note that if this option is specified, all `sanitize.update_add_rules` and `sanitize.update_delete_rules` will be ignored. The format is the same as `sanitize.update_add_rules`.
 
 .. note:: Please keep in mind that **ALL** values in `rawsql_*_rules` and `update_*_rules` **MUST** be wrapped in **SINGLE** quotes.
 
@@ -1063,7 +881,7 @@ Please use the following conventions to design your `sanitize.update_*` strategy
             - '{ table: oro_business_unit, columns: [{name: email, method: email}, {name: name, method: md5}, {name: phone, method: md5}] }'
 
 * Provide the table name in the table node.
-* In the columns section, provide an array of column name and sanitizing method pairs for all the columns that should be sanitized in the mentioned table.
+* In the columns section, provide an array of column names and sanitizing method pairs for all the columns that should be sanitized in the mentioned table.
 
   For example:
 
@@ -1101,7 +919,7 @@ This means that you can push data from the current environment to the linked env
 .. code-block:: none
 
     Description:
-      Create application environment data dump and copy it to another environment.
+      Create an application environment data dump and copy it to another environment.
 
     Usage:
       dump:create [options]
@@ -1109,27 +927,27 @@ This means that you can push data from the current environment to the linked env
     Options:
           --log=LOG                                Log to file
           --downtime-duration[=DOWNTIME-DURATION]  (OPTIONAL) Downtime duration, by default 1 hour. Expected format: '{number}d{number}h{number}m'. Usage example: '1d3h15m' means 1 day 3 hours 15 minutes OR '30m' means 30 minutes.
-          --downtime-comment[=DOWNTIME-COMMENT]    Comment for provided custom downtime value. Required if [downtime-duration] provided. Wrap with double-quotes if contains spaces.
+          --downtime-comment[=DOWNTIME-COMMENT]    Comment for provided custom downtime value. Required if [downtime-duration] provided. Wrap with double-quotes if it contains spaces.
       -e, --environment[=ENVIRONMENT]              Name of the destination environment where data dump will be copied. To list all available environments, please use dump:environments command.
-      -c, --components[=COMPONENTS]                Comma-separated components list (without spaces) to be included in the dump. Allowed: db,ess,media,code. Default: db. Database is sanitized. If media component selected, it may take much time. [default: "db"]
-      -i, --indices[=INDICES]                      Comma-separated Elastic indices list to be included in the dump. If not set - all indices will be included.
+      -c, --components[=COMPONENTS]                Comma-separated components list (without spaces) to be included in the dump. Allowed: db,ess,media,code. Default: db. The database is sanitized. If the media component is selected, it may take a long time. [default: "db"]
+      -i, --indices[=INDICES]                      Comma-separated Elastic indices list to be included in the dump. If not set, all indices will be included.
       -h, --help                                   Display this help message
       -q, --quiet                                  Do not output any message
       -V, --version                                Display this application version
           --ansi                                   Force ANSI output
           --no-ansi                                Disable ANSI output
       -n, --no-interaction                         Do not ask any interactive question
-      -v|vv|vvv, --verbose                         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+      -v|vv|vvv, --verbose                         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
 
-    * **option "--environment"** - Name of the destination environment where data dump will be copied.
+    * **option "--environment"** - Name of the destination environment where the data dump will be copied.
 
-    * **option "--components"** - Comma-separated components list (without spaces) to be included in the dump. Allowed: db,ess,rpm. Default: db. Database is sanitized.
+    * **option "--components"** - Comma-separated components list (without spaces) to be included in the dump. Allowed: db,ess,rpm. Default: db. The database is sanitized.
 
-    * **option "--indices"** - Comma-separated Elastic indices list to be included in the dump. If not set - all indices will be included.
+    * **option "--indices"** - Comma-separated Elastic indices list to be included in the dump. If not set, all indices will be included.
 
-.. note:: RabbitMQ messages sync is not supported. If media component is selected, sync may take a long time.
+.. note:: RabbitMQ messages sync is not supported. If the media component is selected, sync may take a long time.
 
-When data push is done, you may start with import in the target environment.
+When the data push is done, you may start with the import in the target environment.
 
 To list all available data dumps that can be restored to the current environment, run:
 
@@ -1177,12 +995,12 @@ To restore it as is, run the following command in the target environment:
     Options:
           --log=LOG                                Log to file
           --downtime-duration[=DOWNTIME-DURATION]  (OPTIONAL) Downtime duration, by default 1 hour. Expected format: '{number}d{number}h{number}m'. Usage example: '1d3h15m' means 1 day 3 hours 15 minutes OR '30m' means 30 minutes.
-          --downtime-comment[=DOWNTIME-COMMENT]    Comment for provided custom downtime value. Required if [downtime-duration] provided. Wrap with double-quotes if contains spaces.
+          --downtime-comment[=DOWNTIME-COMMENT]    Comment for provided custom downtime value. Required if [downtime-duration] provided. Wrap with double-quotes if it contains spaces.
           --force[=FORCE]                          Force dump:load operation execution, otherwise the confirmation will be requested. [default: false]
           --host[=HOST]                            Stop program(s) on specified job host only [ocom-vdrizheruk-dev2-app1], otherwise [all].
-      -c, --components[=COMPONENTS]                Comma-separated list (without spaces) of components for data to be loaded. Allowed: db,ess,media,code. Default: db. Database is sanitized. If media component selected, it may take much time.
+      -c, --components[=COMPONENTS]                Comma-separated list (without spaces) of components for data to be loaded. Allowed: db,ess,media,code. Default: db. The database is sanitized. If the media component is selected, it may take a long time.
           --skip-purge-media                       Skip purging media on fetch operation
-          --skip-prepare-app                       Skip prepare application operations. With this option application will not be usable after finishing operation.
+          --skip-prepare-app                       Skip prepare application operations. With this option, the application will not be usable after finishing the operation.
           --flush-elasticsearch                    Flush ElasticSearch. All ElasticSearch data will be lost.
           --run-base-reindex                       Run command [oro:search:reindex] in background.
           --run-website-reindex                    Run command [oro:website-search:reindex] in background.
@@ -1192,11 +1010,11 @@ To restore it as is, run the following command in the target environment:
           --ansi                                   Force ANSI output
           --no-ansi                                Disable ANSI output
       -n, --no-interaction                         Do not ask any interactive question
-      -v|vv|vvv, --verbose                         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+      -v|vv|vvv, --verbose                         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
 
-    * **option "--components"** - Comma-separated list (without spaces) of components for data to be loaded. Allowed: db,ess,rpm. Default: db. Database is sanitized.
+    * **option "--components"** - Comma-separated list (without spaces) of components for data to be loaded. Allowed: db,ess,rpm. Default: db. The database is sanitized.
 
-    * **option "--skip-prepare-app"** - Skip prepare application operations. With this option application will not be usable after finishing operation.
+    * **option "--skip-prepare-app"** - Skip prepare application operations. With this option, the application will not be usable after finishing the operation.
 
     * **option "--flush-elasticsearch"** - Flush ElasticSearch. All ElasticSearch data will be lost.
 
