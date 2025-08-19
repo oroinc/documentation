@@ -37,42 +37,43 @@ Create Tags
 
 Tags can be created in a number of ways:
 
-1. From the Tag page under **System > Tags Management > Tags**.
-2. From the general page of an entity (ensure that tagging is enabled for the required entity).
-3. From the details page of an entity.
-
 From the Tag Page
 ^^^^^^^^^^^^^^^^^
 
-1. Click **Create Tag** to create a new tag.
+1. Navigate to the Tag page under **System > Tags Management > Tags**.
+2. Click **Create Tag** to create a new tag.
 
-2. Define the following fields:
+3. Define the following fields:
 
    * **Owner** --- Limits the list of users who can manage the tag.
    * **Name** --- Specify the name for your tag.
    * **Taxonomy** --- Select the :ref:`taxonomy <user-guide--system--tags-management--taxonomies>` to which the tag will be assigned.
 
-3. Click **Save and Close**.
+4. Click **Save and Close**.
 
-From the General Page of an Entity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+From the Grid Page
+^^^^^^^^^^^^^^^^^^
 
-1. Navigate to **Customers > Accounts** in the main menu or select any other entity to create a tag for.
+1. Navigate to a grid page for an entity that supports tag creation. For example, open **Customers > Accounts** from the main menu. Tags will be available from the grid of that entity.
 
-2. Within the list of an entity, select the required entity and click |Pencil-SVG| edit.
+2. Click |Pencil-SVG| edit next to the selected entity record.
 
-3. Specify tags for the entity. You can enter multiple tags for one entity.
+3. Start typing in the tag name. If it does not yet exist in the system, (New Tag) will appear next to it in the drop down.
+
+   .. image:: /user/img/system/tags_management/new-tag.png
+
+   Alternatively, select an existing tag from the list. You can add multiple tags.
 
    .. image:: /user/img/system/tags_management/entity_grid_inline_tag_12.png
       :alt: Select the required tags from the list
 
-4. Click |IcCheck| to save the tags for the entity.
+4. Click |IcCheck| to save the tag(s).
 
 
 From the Details Page of an Entity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Navigate to **Customers > Accounts** in the main menu or select any other entity to create a tag for.
+1. Navigate to a grid page for an entity that supports tag creation. For example, open **Customers > Accounts** in the main menu.
 
 2. Click the required entity to open its details page.
 
@@ -81,18 +82,15 @@ From the Details Page of an Entity
    .. image:: /user/img/system/tags_management/entity_view_page_14.png
       :alt: Click the edit icon in the Tags field of the selected entity record
 
-3. Specify tags for the entity. You can enter multiple tags for one entity.
+3. Specify one or more tags for the entity.
 
    .. image:: /user/img/system/tags_management/entity_view_page_15.png
       :alt: Specify the tags for the entity in the field that opened
 
-4. Click |IcCheck| to save the tags for the entity.
-
-   .. image:: /user/img/system/tags_management/entity_view_page_17.png
-      :alt: The tags selected for the entity are saved successfully
+4. Click |IcCheck| to save the tags.
 
 Manage Tags From the Grid
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 Navigate to **System > Tags Management > Tags**.
 
@@ -106,7 +104,6 @@ Within the tags list, you can:
 
 .. image:: /user/img/system/tags_management/tags_grid_manage_18.png
    :alt: The actions available for the tags in the grid
-
 
 View Tagged Content
 -------------------
