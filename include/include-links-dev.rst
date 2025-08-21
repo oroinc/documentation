@@ -6492,13 +6492,13 @@ Links (Dev)
 
     <a href="https://www.figma.com/signup" target="_blank">Figma account</a>
 
-.. |Style Guide| raw:: html
+.. |Style Guide 6.0| raw:: html
 
-    <a href="https://static.oroinc.com/doc/storefront-style-guide-6.0.fig" target="_blank">Style Guide</a>
+    <a href="https://static.oroinc.com/doc/storefront-style-guide-6.0.fig" target="_blank">Style Guide 6.0</a>
 
-.. |Design Mockups| raw:: html
+.. |Design Mockups 6.0| raw:: html
 
-    <a href="https://static.oroinc.com/doc/design-mockups-6.0.fig" target="_blank">Design Mockups</a>
+    <a href="https://static.oroinc.com/doc/design-mockups-6.0.fig" target="_blank">Design Mockups 6.0</a>
 
 .. |k6-docs| raw:: html
 
@@ -6579,3 +6579,15 @@ Links (Dev)
 .. |sprintf php documentation| raw:: html
 
     <a href="https://www.php.net/manual/en/function.sprintf.php" target="_blank">sprintf php documentation</a>
+
+.. |Golden Carbon theme| raw:: html
+
+    <a href="https://github.com/oroinc/storefront-themes/" target="_blank">Golden Carbon theme</a>
+
+.. |Style Guide 6.1| raw:: html
+
+    <a href="https://static.oroinc.com/Storefront_Style_Guide_6.1_Public_Files.fig" target="_blank">Style Guide</a>
+
+.. |Design Mockups 6.1| raw:: html
+
+    <a href="https://static.oroinc.com/Design_Mockups_6.1.fig" target="_blank">Design Mockups</a>
