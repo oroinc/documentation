@@ -40,16 +40,15 @@ Backend Developer Guide is an essential resource for developers that provides co
                   </li>
                  <li>
                       <div class="text-center">
-                           <h2>Entity Data</h2>
+                           <h2>Integrations</h2>
                       </div>
-                          <p>Learn how to run Oro applications in the Google Cloud Platform infrastructure and its services.</p>
+                          <p>Learn about the concepts and components of integrations in OroCommerce and how to start creating your own.</p>
                           <ul class="guideline__list">
-                               <li><a class="reference internal" href="entities-data-management/data-fixtures/">Fixtures</a></li>
-                               <li><a class="reference internal" href="entities-data-management/reports-and-segments/">Reports & Segments</a></li>
-                               <li><a class="reference internal" href="architecture/tech-stack/search/">Search Index</a></li>
-                               <li><a class="reference internal" href="entities-data-management/workflows/">Workflows</a></li>
-                               <li><a class="reference internal" href="entities-data-management/operations/">Operations (Actions)</a></li>
-                               <li><a class="reference internal" href="entities-data-management/data-audit/">Data Audit</a></li>
+                               <li><a class="reference internal" href="integrations/import-export/">Import & Export</a></li>
+                               <li><a class="reference internal" href="integrations/integration-config/">Oro Integration Bundle</a></li>
+                               <li><a class="reference internal" href="integrations/api-based/">API-Based Integration</a></li>
+                               <li><a class="reference internal" href="integrations/initial-data-load/">Initial Data Loading</a></li>
+                               <li><a class="reference internal" href="integrations/notification-alerts/">Notification Alerts</a></li>
                             </ul>
                   </li>
               </ul>
