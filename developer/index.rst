@@ -16,7 +16,7 @@ Developer Documentation is intended for developers and contains information abou
 
 .. raw:: html
 
-   <h2><a href="../solution-architect/">Solution Architecture</a></h2>
+   <h2><a href="../user/solution-architect/">Solution Architecture</a></h2>
    <p>The guide outlines the application concepts, architecture, integration points, and the necessary cloud and infrastructure required for the seamless implementation and integration of the OroCommerce application.</p>
 
 .. raw:: html
