@@ -15,6 +15,7 @@ Learn how to configure localization options, currency and tracking, as well as u
 * :ref:`Currency <admin-configuration-currency>`
 * :ref:`Display Settings <configuration--general-setup--display-settings>`
 * :ref:`User Settings <admin-configuration-user-settings>`
+* :ref:`User Login <admin-configuration-user-login-form>`
 * :ref:`Search <configuration--system-configuration--general-setup-sysconfig--search-global>`
 * :ref:`Tracking <admin-configuration-tracking>`
 * :ref:`Upload Settings <admin-configuration-upload-settings>`
