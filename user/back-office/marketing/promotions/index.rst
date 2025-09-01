@@ -5,9 +5,9 @@ Manage Promotions and Coupons in the Back-Office
 
 OroCommerce’s powerful promotions engine allows sellers to generate promotions, coupons, and discounts to incentivize customers to place new orders. In addition, promotions help drive traffic, increase conversions, and induce the desired customer activity.
 
-This topic introduces you to the key concepts of loyalty programs in OroCommerce and illustrates how to:
+With OroCommerce, you can:
 
-* Create promotions to enable sellers to apply various discounts for the order total, the shipping cost, the line items, or a certain quantity of items by providing the Buy X Get Y discount for the same items
+* Create custom promotions to enable sellers to apply various discounts for the order total, the shipping cost, the line items, or a certain quantity of items by providing the Buy X Get Y discount for the same items
 * Generate personalized discount coupons
 * Apply discounts via coupons (for salespeople and customers in the storefront)
 * Add special discounts to orders
