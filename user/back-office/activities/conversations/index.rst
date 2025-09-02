@@ -83,10 +83,62 @@ You can view, update, delete the existing conversations, and add context or a ne
   .. image:: /user/img/activities/my-conversations.png
      :alt: My conversations menu and view page
 
+.. _doc-activities-conversations-email-notifications:
+
+Set Up Email Notifications for Conversations
+--------------------------------------------
+
+In OroCommerce, you can configure email notifications to alert users about new conversations and new messages within existing conversations.
+To set up email notifications, you need to create an email template and notification rules to send the templates when conversation events occur.
+
+.. note:: Email notifications are sent regardless of who starts the conversation or sends a message, a back-office or a storefront user.
+
+To create new email templates:
+
+1. In the back-office, navigate to **System > Emails > Templates**.
+2. Click **Create Template**.
+3. Fill in the required fields.
+4. From the Entity Name list, select *Conversation*.
+5. Define the template details for each of the two templates you are creating (separately):
+
+   * For a new conversation: Create a subject and body, using ``entity variables`` or free-form text as needed.
+   * For a new message in a conversation: Create a separate template for message events.
+
+  .. image:: /user/img/activities/conversation-email-templates.png
+     :alt: Illustration of email templates for a new conversation and a new conversation message
+
+6. Save both templates for use in the next step.
+
+To create two notification rules:
+
+1. In the back-office, go to **System > Emails > Notification Rules**.
+2. Click **Create Notification Rule**.
+3. Define the rule details for each of the two rules you are creating (separately):
+
+   * In the *Entity Name* field, select the Conversation entity.
+   * For the *Event Name* field, select *Entity Create* for the new conversation and *Entity Update* for a new conversation message.
+   * In the *Template* field, choose one of the previously created templates. Make sure you select the template you created for a new conversation if you selected *Entity Create* even name and a template for a new conversation message of you selected *Entity Update*.
+
+4. Define the recipients. You can select specific users or email addresses depending on your business requirements.
+
+   .. image:: /user/img/activities/conversation-notification-rule.png
+      :alt: Illustration of two new notification rules, one for a new conversation and the other one for a new conversation message
+
+5. Save the new notification rules.
+
+Once templates and notification rules are configured, relevant users should automatically receive email alerts for new conversations and new messages within existing conversations.
+
+.. image:: /user/img/activities/conversations-email-notifications-received.png
+   :alt: Example mailbox showing received email notifications for a newly created conversation and a new message in an existing conversation
+
+
 **Related Topics**
 
 * :ref:`Conversations Workflow <system--workflows--conversations-backoffice-workflow>`
 * :ref:`Enable the Conversations Feature <configuration--guide--commerce--configuration--interactions>`
+* :ref:`Configure Emails in the Back-Office <admin-guide-email-configuration>`
+
+
 
 
 .. include:: /include/include-images.rst
