@@ -3,6 +3,8 @@
 AI Smart Order
 --------------
 
+.. note:: Please |contact our support team| to learn more about OroCommerce AI features, discuss how they can meet your business needs, and get started with implementation.
+
 The AI Smart Order widget in OroCommerce is an AI-powered tool designed to automate the processing of offline purchase orders, such as PDFs or email attachments. By converting these documents into digital drafts within the system, it eliminates manual data entry, thereby speeding up order processing and reducing errors.
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
@@ -24,4 +26,7 @@ Once you manually amend the fields that require your attention, click the green 
 
 .. note::
     You can also automate the conversion of purchase orders into draft orders by configuring your system mailbox to allow the AI Smart Order feature to scan incoming emails and extract order details automatically. The purchase orders must be attached to the email in JPG, PNG, or PDF format. For more information, please see the :ref:`Email Configuration <admin-configuration-system-mailboxes>` guide.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 

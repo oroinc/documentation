@@ -187,6 +187,7 @@ You have the option to:
 
 Approved orders move from status Pending to Open and you can still edit them as you would a normal order.
 
+.. note:: Please |contact our support team| to learn more about OroCommerce AI features, discuss how they can meet your business needs, and get started with implementation.
 
 .. include:: /include/include-images.rst
    :start-after: begin
