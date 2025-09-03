@@ -26,6 +26,8 @@ With the Oro AI Smart Agent, buyers can efficiently complete essential e-commerc
 * **Shopping Lists** – Manage shopping lists, add products, and create orders from them.
 * And more.
 
+The Smart Agent also supports multi-website environments. Responses, product data, and links are always generated for the specific website a buyer is currently using (available as of OroCommerce version 6.0.7).
+
 Once integrated by the Oro team and configured via the :ref:`back-office <admin-configuration-ai-agent-settings>`, any logged-in buyer can access the Oro AI Smart Agent by clicking its icon in the storefront. The agent interface includes three sections:
 
 * **Threads** – Saves previous inquiries for easy reference.
