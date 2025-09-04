@@ -119,6 +119,7 @@ Backend Developer Guide is an essential resource for developers that provides co
    automated-tests/index
    api/index
    organization-types/index
+   Field Sales App <field-sales-app/index>
 
 
 .. include:: /include/include-links-seo.rst

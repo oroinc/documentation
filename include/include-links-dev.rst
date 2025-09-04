@@ -6520,6 +6520,10 @@ Links (Dev)
 
     <a href="https://github.com/oroinc/sales-frontend" target="_blank">SalesFrontendBundle</a>
 
+.. |Sales Frontend Extension| raw:: html
+
+    <a href="https://github.com/oroinc/sales-frontend" target="_blank">SalesFrontendBundle</a>
+
 .. |ViteJs Env Files| raw:: html
 
     <a href="https://vitejs.dev/guide/env-and-mode#env-files" target="_blank">ViteJs Env Files</a>
@@ -6560,6 +6564,18 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/Oro/Bundle/OrderBundle/ImportExport/Converter/OrderStatusMappingProvider.php" target="_blank">OrderStatusMappingProvider</a>
 
+.. |Vite configuration guide| raw:: html
+
+   <a href="https://vite.dev/config/" target="_blank">Vite configuration guide</a>
+
+.. |Vite Env Variables and Modes| raw:: html
+
+   <a href="https://vite.dev/guide/env-and-mode.html#env-variables-and-modes" target="_blank">Vite Env Variables and Modes</a>
+
+.. |base configuration option| raw:: html
+
+   <a href="https://vite.dev/config/shared-options.html#base" target="_blank">base configuration option</a>
+
 .. |OroStripePaymentBundle| raw:: html
 
     <a href="https://github.com/oroinc/orocommerce-stripe" target="_blank">OroStripePaymentBundle</a>
@@ -6580,6 +6596,10 @@ Links (Dev)
 
     <a href="https://www.php.net/manual/en/function.sprintf.php" target="_blank">sprintf php documentation</a>
 
+.. |Field Sales application| raw:: html
+
+    <a href="https://github.com/oroinc/field-sales-frontend" target="_blank">Field Sales application</a>
+
 .. |Golden Carbon theme| raw:: html
 
     <a href="https://github.com/oroinc/storefront-themes/" target="_blank">Golden Carbon theme</a>
@@ -6591,3 +6611,4 @@ Links (Dev)
 .. |Design Mockups 6.1| raw:: html
 
     <a href="https://static.oroinc.com/Design_Mockups_6.1.fig" target="_blank">Design Mockups</a>
+

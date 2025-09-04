@@ -8,11 +8,6 @@
 Emails
 ======
 
-Once the ORO application is installed, you can access it at the following link
-
-.. index::
-    single: Emails
-
 Email Templates
 ---------------
 
