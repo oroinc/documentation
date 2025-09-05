@@ -23,12 +23,6 @@
         {%- set you_are_browsing = "You are browsing the documentation for version 3.1 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
     {%- endif %}
 
-    {# TODO: remove stage and maintenance versions on deployment #}
-    {%- if current_version.name == '6.1' or current_version.name == 'stage/6.1' or  current_version.name == 'maintenance/6.1'  %}
-        {%- set image_update_message = "We are updating the images for OroCommerce version 6.1 to align with the latest changes in the back-office design. During this transition, some images may still show older versions. Thank you for your patience as we work to update all visuals to reflect these changes." %}
-        {%- set need_alert = "0" %}
-    {%- endif %}
-
     {%- if you_are_browsing or image_update_message %}
         <div class="admonition important">
             <p class="first admonition-title">Important</p>
