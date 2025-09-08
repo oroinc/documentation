@@ -1,0 +1,10 @@
+dashboards:
+    widgets:
+        all_users_widget:
+            label: All Users
+            acl: oro_user_view
+            description: This widgets shows all users
+            route: oro_dashboard_grid
+            route_parameters:
+                gridName: users-grid
+                widget: all_users_widget
