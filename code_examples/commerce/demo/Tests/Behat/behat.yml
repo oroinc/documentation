@@ -27,6 +27,17 @@ oro_behat_extension:
       selector: 'a[aria-label="Start oro.workflow.acme_demo_b2b_quote_backoffice_flow.label row action"]'
     Process acme demo b2b quote backoffice flow transition:
       selector: 'a[aria-label="oro.workflow.acme_demo_b2b_quote_backoffice_flow.transition.to_processed.label row action"]'
+    All Users:
+      selector:
+        type: 'xpath'
+        locator: '//div[@title="All Users"]/../..'
+    All Users Actions:
+      selector:
+        type: 'xpath'
+        locator: '//div[@title="All Users"]/..//div[@class="default-actions-container"]//button[contains(@id,"dashboard-action")]'
+    Grid View Widget Setting Select:
+      selector: 'select[name="all_users_widget[gridView]"]'
+      class: Oro\Bundle\FormBundle\Tests\Behat\Element\Select2Entity
 
   suites:
     AcmeDemoBundle:
@@ -40,5 +51,6 @@ oro_behat_extension:
         - Oro\Bundle\SecurityBundle\Tests\Behat\Context\ACLContext
         - Oro\Bundle\ActivityListBundle\Tests\Behat\Context\ActivityContext
         - Oro\Bundle\NavigationBundle\Tests\Behat\Context\ScrollspyContext
+        - Oro\Bundle\DashboardBundle\Tests\Behat\Context\FeatureContext
       paths:
         - '@AcmeDemoBundle/Tests/Behat/Features'
