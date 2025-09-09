@@ -7,7 +7,7 @@ Add All Products Page to Storefront Menus per Website
 
 Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it to a storefront menu of a particular website:
 
-1. Navigate **System > Websites** in the main menu.
+1. Navigate to **System > Websites** in the main menu.
 2. Click on the required website to open its page.
 3. On the website page, click |IcConfig| **Edit Storefront Menu** to start editing the configuration.
 

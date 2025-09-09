@@ -81,7 +81,7 @@ From the Page of a System Calendar
 
 You can view, edit, or delete events from the page of the selected system calendar:
 
-1. Navigate **System > System Calendars** in the main menu.
+1. Navigate to **System > System Calendars** in the main menu.
 2. Click on the required calendar.
 3. The list of all events related to the selected calendar is located under the **Calendar Events** section. For each event, you can perform the necessary action.
 

@@ -23,22 +23,36 @@ Create a New Email Template
    * **Owner** --- Limits the list of users that can manage the template, subject to the :ref:`access and permission settings <user-guide-user-management-permissions>`.
    * **Template Name** --- Name used to refer to the template in the system.
    * **Type** --- Use html or plain text.
-   * **Entity Name** --- The field is optional and is used to define an :term:`entity <Entity>`, variables whereof can be used in the template. If no entity name is defined, only system variables are available.
+   * **Entity Name** --- The field is optional and is used to define an :ref:`entity <entities-management>`, variables whereof can be used in the template. If no entity name is defined, only system variables are available.
 
      .. important:: If you want to use the template for :ref:`autoresponses <admin-configuration-system-mailboxes-autoresponse>`, the **Entity Name** field value should be **Email**.
 
    * **Website** --- Choose a website for which this template applies, or leave it blank if the template should be applicable to all websites. To apply this template customization to a different website, clone the template and define the necessary website. Ensure the original template name remains unchanged for the template to work correctly.
 
-4. Under **Template Data**, define the email template. Click on the necessary variable to add it to the text box.
+4. Under **Template Data**, define the email template.
+
+   * **Subject** --- Provide the subject for the email template. Click on the necessary system or entity variable from the right to add it to the text box.
+
+   * **Content** --- Provide the content for the email template. Click on the necessary system or entity variable from the right to add it to the text box.
 
    .. image:: /user/img/system/emails/templates/email_template_ex.png
       :alt: A sample of an email template
 
    .. note:: If you prefer working with email templates via the WYSIWYG editor, you can enable it :ref:`globally <admin-configuration-email-configuration-global>` or :ref:`per organization <admin-configuration-email-configuration-organization>`. However, remember that the WYSIWYG editor is incompatible with the default base email template. Enabling it may break existing email templates and prevent them from being saved. Therefore, it is disabled by default.
 
-5. Click **Save** to apply the changes.
+   * **Attachments** --- The field enables you to include files or images in email templates. The ability to add these files or images depends on the entity you select when creating the template (e.g., Order, User, Quote, etc). The selected entity must contain one of the following :ref:`entity field types <admin-guide-create-entity-fields-basic>`: *File, Image, Multiple Files*, *Multiple Images*.
 
-6. You can delete |Trash-SVG|, edit |IcEdit|, and clone |IcClone| email templates on the page of all templates.
+        * If the entity already has predefined files or images, you can select them directly from the **Attachments** field. If several files or images are uploaded into the entity field and you select it in the **Attachments** field, then all the uploaded files will be attached to the email.
+        * If there are no predefined files, you can upload your own file or image manually to be sent with the email template.
+
+   .. image:: /user/img/system/emails/templates/order-entity-multi-file.png
+      :alt: Attachments field view with the Orders selected as entity
+
+5. Once the email template is ready, move from tab to tab to localize the template by setting the required fallback option. You can select whether to fall back to the default value, parent localization, or provide a custom template per localization. To create a custom template, uncheck the checkbox and enter the new details for the template.
+
+6. Click **Save and Close** to apply the changes.
+
+7. You can delete |Trash-SVG|, edit |IcEdit|, and clone |IcClone| email templates on the page of all templates.
 
    .. image:: /user/img/system/emails/templates/email_template_actions.png
       :alt: View a list of templates with three options available: edit, clone, delete
