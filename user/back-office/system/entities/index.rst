@@ -20,7 +20,6 @@ Follow the links below to learn more:
 .. toctree::
    :maxdepth: 2
       
-   create-entities
    manage-entities
    entity-fields/index
    manage-entity-fields

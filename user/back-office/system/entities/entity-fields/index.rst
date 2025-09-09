@@ -5,21 +5,18 @@
 Create Entity Fields
 ====================
 
-Fields are used to store details of entity records. For example, a 'street name', a 'zip code', and a 'building number' may be fields of an 'address.' You can add new fields to any :term:`custom entity <Custom Entity>` or an extendable :term:`system entity <System Entity>`.
+Fields are used to store details of entity records. For example, a 'street name', a 'zip code', and a 'building number' may be fields of an 'address.' You can add new fields to any extendable :term:`system entity <System Entity>`.
 
 This topic describes how you can create custom entity fields, explains what basic and advanced entity field properties are available for them, and illustrates :ref:`examples <admin-guide-create-entity-fields-example>` of adding new fields to existing entities.
 
-.. note:: See a short demo on |how to create a custom field| or keep reading the step-by-step guidance below.
-
-  .. raw:: html
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/DwXQG9dcB0k" frameborder="0" allowfullscreen></iframe>   
-
 To create a custom entity field:
 
-1. Navigate **System > Entities > Entities Management** in the main menu.
+1. Navigate to **System > Entities > Entities Management** in the main menu.
 2. On the **All Entities** page, click the required entity to open its page. 
 3. On the entity page, click **Create Field**  on the top right.
+
+.. image:: /user/img/system/entity_management/create-field.png
+   :alt: Highlighting the Create field button
 
 .. hint:: You may receive the following warning message which notifies you about the limits for the number of fields that can be created, which can effect the future export of entities.
 

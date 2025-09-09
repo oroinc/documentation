@@ -20,6 +20,8 @@ Key benefits:
 Configure OroPay Integration Settings
 -------------------------------------
 
+.. important:: Before using OroPay, please contact the :ref:`OroCloud team <cloud_support>` to have OroPay provisioned in your cloud environment.
+
 To configure the OroPay integration, follow the steps outlined below:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu of the OroCommerce back-office.

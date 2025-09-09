@@ -8,7 +8,7 @@ In your Oro applications, you can manage the already existing and newly added en
 Edit Custom Entity Fields
 -------------------------
 
-.. warning:: If the **Show on Form** value has been set to **No** when creating the field, you cannot create or update its values from the Oro application. This is only reasonable for the field values uploaded to the system during synchronization. 
+.. important:: If the **Show on Form** value has been set to **No** when creating the field, you cannot create or update its values from the Oro application. This is only reasonable for the field values uploaded to the system during synchronization.
 
 To edit a custom entity field:
 
@@ -16,8 +16,8 @@ To edit a custom entity field:
 2. On the **All Entities** page, click the required entity to select it. 
 3. On the page of the selected entity, click **Fields**. 
 
-   .. image:: /user/img/system/entity_management/opportunity_entity_fields.png
-      :alt: A list of custom entity fields displayed in the field section
+.. image:: /user/img/system/entity_management/opportunity_entity_fields.png
+   :alt: A list of custom entity fields displayed in the field section
 
 4. In the **Fields** section, click the required field.
 5. Update the field, as described in the :ref:`Create Entity Fields <admin-guide-create-entity-fields>` topic. 

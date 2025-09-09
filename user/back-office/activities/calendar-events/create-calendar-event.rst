@@ -118,7 +118,7 @@ From the Page of a System Calendar
 
 To add an event to a system calendar from its page:
 
-1. Navigate **System > System Calendars** in the main menu.
+1. Navigate to **System > System Calendars** in the main menu.
 2. Click on the required calendar.
 3. On the page of the selected calendar, click **Create Calendar Event**.
 4. The **Create Calendar Event** page appears. Specify the event details.

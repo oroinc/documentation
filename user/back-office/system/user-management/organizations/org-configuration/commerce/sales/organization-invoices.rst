@@ -18,6 +18,7 @@ To configure invoices per organization:
        For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 .. image:: /user/img/sales/invoices/invoice_org.png
+   :alt: The organization-wide invoice configuration settings
 
 4. In the **General** section, toggle the following options:
 
@@ -25,12 +26,24 @@ To configure invoices per organization:
    * **Invoice Number Prefix** --- define the prefix to be used when generating invoice numbers (e.g., INV-).
    * **Show Invoices in the Storefront** --- enable this option to display invoices in the storefront.
 
-5. In the **Payments** section, toggle the following options:
+5. In the **Invoice PDF** section, configure the following options (available as of OroCommerce v.6.1.5):
+
+   * **Generate PDF When Invoice Becomes Posted** --- Enable the option to generate a PDF file when the invoice is marked as *Posted*. Once created, the PDF will not be re-created, even if the invoice is modified later.
+
+   .. image:: /user/img/sales/invoices/download-invoice.png
+      :alt: The Download button appears on the Invoice details page once the invoice changes its status to Posted
+
+   * **Enable Invoice PDF Download in Customer Portal** --- Enable the option to display a **Download** button on invoice pages in the storefront, if a PDF file has been created and attached to the invoice.
+
+   .. image:: /user/img/sales/invoices/download-invoice-storefront.png
+      :alt: The Download button on the Invoice details page in the storefront
+
+6. In the **Payments** section, toggle the following options:
 
    * **Enable Invoice Payments** --- Enables or disables the invoice payment functionality system-wide. When enabled, a Pay button is displayed in the storefront, and a Payments section is added to the invoice view page in the back-office.
    * **Payment Method** --- Specifies the payment method used for invoice payments in the storefront. Currently, only the :ref:`Stripe Integration Element <user-guide--payment--payment-providers-stripe--element>` and :ref:`OroPay <user-guide--payment--oropay>` are supported. Ensure that a Stripe integration or OroPay is configured under *System > Manage Integrations* before selecting it here.
 
-6. Click **Save Settings**.
+7. Click **Save Settings**.
 
 
 * :ref:`Invoices in the Storefront <frontstore-guide--invoices>`

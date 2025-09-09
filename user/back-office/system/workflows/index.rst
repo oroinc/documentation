@@ -207,7 +207,7 @@ Set Workflow Configuration Parameters
 
 To set a workflow configuration parameters:
 
-1. In the main menu, navigate **System > Workflows**.
+1. In the main menu, navigate to **System > Workflows**.
 2. On the workflow list, click the required workflow.
 3. If the workflow has configuration parameters, you can see the **Configuration** button on the top right of the workflow view page. Click this button.
 
