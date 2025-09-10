@@ -119,6 +119,34 @@ You can either upload inventory statuses only or detailed inventory levels based
 
 As you can see, the data that needs to be prepared before every import is available in every import template. Once the data is ready and validated, you can launch import and select the import strategy (if strategy selection is available for your entity). Interactive status messages display the import progress, and once the import is complete, the changes are reflected in the list after a refresh. You will also get an email with the import status.
 
+Fallback Fields
+---------------
+
+Some entity fields in OroCommerce support fallbacks, which define where the field value should come from. A fallback can either:
+
+* Use a system-defined value (system), or
+* Be overridden by a custom value provided in the import file
+
+The meaning of system depends on the field:
+
+* For localized fields (e.g., ``Name.English.fallback``, ``URL Slug.Spanish.fallback``), system means the **fallback to the default value**.
+
+* For default fields (e.g., ``URL Slug.default.fallback``), system means the **fallback to the system URL** (such as ``product/view/ID``).
+
+When importing data, if you set a field’s ``*.fallback`` column to **system**, the system ignores any value provided in the corresponding ``*.value`` column.
+To import your own value, leave the ``*.fallback`` column empty and fill in the ``*.value`` column.
+
+For example:
+
+Example:
+
+.. csv-table::
+
+   "SKU","Name.default.fallback","Name.default.value","URL Slug.default.fallback","URL Slug.default.value"
+   "0RT28","system","","system","lumen-rechargeable-headlamp"
+
+In this example, the Name field uses the default value, and the Slug field uses the system URL. If we wanted to apply the imported slug, we would leave ``URL Slug.default.fallback`` empty and add *lumen-rechargeable-headlamp* to the ``.value`` column.
+
 Import Strategies
 -----------------
 
