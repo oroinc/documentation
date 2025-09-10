@@ -37,7 +37,11 @@ protection is enabled and configured.
 
 To enable or disable the protection of a particular form,  add the DI tag ``oro_form.captcha_protected``
 and pass the form name with ``form_name``. The use of the DI tag allows the administrator to configure the protection status
-of the form in question. CAPTCHA protection must be enabled and configured.
+of the form in question. CAPTCHA protection must be enabled and configured. You can also add the `scope_restrictions` attribute to the tag, which specifies the configuration scope where the current form type can be configured. The available scopes are "all," "global," "organization," and "website" (only in Enterprise Edition).
+
+Using a specific scope restriction means that the form configuration options will be available in the current scope and all top-level scopes. For example, a global scope restriction will display form configuration options in app, organization, and website configurations. An organization scope will show options in the organization and website, while the "all" scope will display options across all existing scopes.
+
+If you do not specify the `scope_restriction` attribute in the tag, the form type will be configured with all scope restrictions available.
 
 .. code-block:: yaml
     :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
@@ -47,7 +51,7 @@ of the form in question. CAPTCHA protection must be enabled and configured.
             class: 'Acme\Bundle\DemoBundle\Form\Type\UserType'
             tags:
                 - { name: form.type }
-                - { name: oro_form.captcha_protected, form_name: user_form }
+                - { name: oro_form.captcha_protected, form_name: user_form, scope_restrictions: all }
 
 
 For correct form listing the translation, make sure that key ``oro_form.captcha.protected_form_name.<form_name>`` is defined.
@@ -188,5 +192,37 @@ In addition, you need to define system config options to simplify CAPTCHA servic
         public function getBlockPrefix(): string
         {
             return static::NAME;
+        }
+    }
+
+Adding a New Scope Restriction to CAPTCHA Protected Form Services
+-----------------------------------------------------------------
+
+To add a new CAPTCHA-protected form scope restriction, call the `addScopeToRestrictionMapping` method in your bundle's compiler pass. Then, use the restriction name in the `scope_restriction` attribute within the `oro_form.captcha_protected` tag to display form options in the required scopes.
+
+.. code-block:: php
+    :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/Compiler/CaptchaProtectedFormsCompilerPass.php
+
+    namespace Acme\Bundle\DemoBundle\DependencyInjection\Compiler;
+
+    use Oro\Bundle\OrganizationConfigBundle\Config\OrganizationScopeManager;
+    use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+    use Symfony\Component\DependencyInjection\ContainerBuilder;
+
+    class CaptchaProtectedFormsCompilerPass implements CompilerPassInterface
+    {
+        private const CUSTOM_RESTRICTION_LEVEL = 3;
+
+        public function process(ContainerBuilder $container): void
+        {
+            $container->getDefinition('oro_form.captcha.protected_forms_registry')
+                ->addMethodCall(
+                    'addScopeToRestrictionMapping',
+                    [
+                        'custom', // configuration scope name
+                        'custom', // restriction name that used in scope_restrictions tag attribute
+                        self::CUSTOM_RESTRICTION_LEVEL // scope restriction level
+                    ]
+                );
         }
     }
