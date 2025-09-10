@@ -25,6 +25,14 @@ Import Products
       id=,label=“Base Unit”,optional=true,products=sku_001|sku_002,min_qty=1,max_qty=2,unit=item
        "
 
+.. important:: Some fields, such as ``URL Slug.default.value``, may have an associated fallback field (e.g., ``URL Slug.default.fallback``).
+
+               * For localized fallbacks (e.g., URL Slug.Spanish.fallback), setting the fallback to system means the field will use the default value.
+
+               * For default fallbacks (e.g., URL Slug.default.fallback), setting the fallback to system means the field will use the system-generated value (such as product/view/ID). In this case, any custom value provided in the .value column is ignored.
+
+               To avoid conflicts, only set either a fallback or a value, not both.
+
 To import a bulk of product information:
 
 1. In the main menu, navigate to **Products > Products**. The product list opens.
