@@ -415,7 +415,7 @@ get_payment_status (OroCommerce only)
 
 **Description:** Returns the payment status for requested order.
 
-**Returns:** string, one of Oro\\Bundle\\PaymentBundle\\Provider\\PaymentStatusProvider class statuses
+**Returns:** string, one of Oro\\Bundle\\PaymentBundle\\PaymentStatus\\PaymentStatuses class statuses
 ('full', 'partially', 'invoiced', 'authorized', 'declined', 'pending')
 
 **Example:**
