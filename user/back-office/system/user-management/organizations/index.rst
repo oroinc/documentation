@@ -22,12 +22,6 @@ If you have access to more than one organization, you can switch between them us
 
 When creating a new record in the global organization, you first need to select the organization this record should belong to. Once the organization is selected, you can proceed to the usual record creation flow.
 
-.. note:: See a short demo on |how to create organizations and business units|, or keep reading the topics below.
-
-   .. raw:: html
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/_PpE536CQ9c" frameborder="0" allowfullscreen></iframe>
-
 
 .. toctree::
    :maxdepth: 1
