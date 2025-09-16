@@ -9,12 +9,6 @@ For instance, one toy company with three toy shops can be set up as the main org
 
 .. note:: If strict data isolation is needed between business units, it makes sense to use the :ref:`multi-organization <user-ee-multi-org-system>` approach (available for the Enterprise edition only).
 
-.. note:: See a short demo on |how to create organizations and business units| or keep reading the step-by-step guidance below.
-
-    .. raw:: html
-
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/_PpE536CQ9c" frameborder="0" allowfullscreen></iframe>
-
 To create a new business unit:
 
 1. Navigate to **System > User Management > Business Units** in the main menu.

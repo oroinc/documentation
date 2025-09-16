@@ -263,10 +263,6 @@ Links (User)
 
    <a href="https://academy.oroinc.com/media-library/create-and-manage-calendars#play=fVcOy3TmuQg" target="_blank">how to create and manage calendars</a>
 
-.. |how to create organizations and business units| raw:: html
-
-   <a href="https://www.orocrm.com/media-library/create-organizations-and-business-units" target="_blank">how to create organizations and business units</a>
-
 .. |Google support page| raw:: html
 
    <a href="https://support.google.com/mail/troubleshooter/1668960?hl=en&rd=1#ts=1665018%2C1665144" target="_blank">Google support page</a>
@@ -282,10 +278,6 @@ Links (User)
 .. |Less secure apps & your Google Account| raw:: html
 
    <a href="https://support.google.com/accounts/answer/6010255?hl=en" target="_blank">Less secure apps & your Google Account</a>
-
-.. |how to create a and manage roles| raw:: html
-
-   <a href="https://www.orocrm.com/media-library/create-manage-roles" target="_blank">how to create a and manage roles</a>
 
 .. |how to create tags| raw:: html
 
@@ -326,10 +318,6 @@ Links (User)
 .. |Oro PayPal Express Integration| raw:: html
 
    <a href="https://packagist.oroinc.com/?#oro/paypal-express" target="_blank">Oro PayPal Express Integration</a>
-
-.. |Customer Consent Management| raw:: html
-
-   <a href="https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce" target="_blank">Customer Consent Management</a>
 
 .. |Matomo1| raw:: html
 
