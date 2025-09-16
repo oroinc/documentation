@@ -6,12 +6,6 @@ Configure User Roles in the Back-Office
 
 You can create new roles and apply permissions to fit specifically your business processes, clone and modify the existing roles.
 
-See a short demo on |how to create a and manage roles| or continue reading the step-by-step guidance below.
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jgiKa_rov8Y" frameborder="0" allowfullscreen></iframe>
-
 Create a Role
 -------------
 

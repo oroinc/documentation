@@ -1872,17 +1872,13 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/UIBundle" target="_blank">UIBundle</a>
 
-.. |Oro StyleBook| raw:: html
-
-   <a href="https://demo.orocommerce.com/demo/login?user_id=1&redirect=oro_stylebook" target="_blank">Oro StyleBook</a>
-
 .. |StyleBook| raw:: html
 
-   <a href="https://demo.orocommerce.com/style-book/" target="_blank">StyleBook</a>
+   <a href="https://b2b-demo.orocommerce.com/desktop/style-book/" target="_blank">StyleBook</a>
 
 .. |StyleBook General Look and Feel| raw:: html
 
-      <a href="https://demo.orocommerce.com/style-book/configs/" target="_blank">StyleBook General Look and Feel</a>
+   <a href="https://b2b-demo.orocommerce.com/desktop/style-book/configs/" target="_blank">StyleBook General Look and Feel</a>
 
 .. |SASS| raw:: html
 
@@ -2434,11 +2430,11 @@ Links (Dev)
 
 .. |OroCRM project| raw:: html
 
-   <a href="https://translate.orocrm.com" target="_blank">OroCRM project</a>
+   <a href="https://crowdin.com/project/oro-crm" target="_blank">OroCRM project</a>
 
 .. |OroPlatform project| raw:: html
 
-   <a href="http://translate.platform.orocrm.com" target="_blank">OroPlatform project</a>
+   <a href="https://crowdin.com/project/oro-platform" target="_blank">OroPlatform project</a>
 
 .. |contact| raw:: html
 
