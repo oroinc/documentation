@@ -14,7 +14,7 @@ To protect controllers against CSRF, use AJAX `#[CsrfProtection]` attribute. You
 
 **Controller level protection**
 
-.. oro_integrity_check:: 8e2212f65b960a9a58a7b2b43fc342e8902311bc
+.. oro_integrity_check:: 1cffa7a8cbed059433329ef431d593c0cfc6ceea
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php

@@ -7,7 +7,7 @@ use Acme\Bundle\CMSBundle\Form\Type\BlockType;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
 use Oro\Bundle\SecurityBundle\Attribute\Acl;
 use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Bridge\Twig\Attribute\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Attribute\Route;
@@ -19,7 +19,7 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 class BlockController extends AbstractController
 {
     #[Route(path: '/', name: 'acme_cms_block_index')]
-    #[Template]
+    #[Template('@AcmeCMS/Block/index.html.twig')]
     #[AclAncestor('acme_cms_block_view')]
     public function indexAction(): array
     {
@@ -27,7 +27,7 @@ class BlockController extends AbstractController
     }
 
     #[Route(path: '/view/{id}', name: 'acme_cms_block_view', requirements: ['id' => '\d+'])]
-    #[Template]
+    #[Template('@AcmeCMS/Block/view.html.twig')]
     #[Acl(id: 'acme_cms_block_view', type: 'entity', class: 'Acme\Bundle\CMSBundle\Entity\Block', permission: 'VIEW')]
     public function viewAction(Block $block): array
     {
@@ -36,7 +36,12 @@ class BlockController extends AbstractController
 
     #[Route(path: '/create', name: 'acme_cms_block_create')]
     #[Template('@AcmeCMS/Block/update.html.twig')]
-    #[Acl(id: 'acme_cms_block_create', type: 'entity', class: 'Acme\Bundle\CMSBundle\Entity\Block', permission: 'CREATE')]
+    #[Acl(
+        id: 'acme_cms_block_create',
+        type: 'entity',
+        class: 'Acme\Bundle\CMSBundle\Entity\Block',
+        permission: 'CREATE'
+    )]
     public function createAction(): array|RedirectResponse
     {
         $block = new Block();
@@ -45,7 +50,7 @@ class BlockController extends AbstractController
     }
 
     #[Route(path: '/update/{id}', name: 'acme_cms_block_update', requirements: ['id' => '\d+'])]
-    #[Template]
+    #[Template('@AcmeCMS/Block/update.html.twig')]
     #[Acl(id: 'acme_cms_block_update', type: 'entity', class: 'Acme\Bundle\CMSBundle\Entity\Block', permission: 'EDIT')]
     public function updateAction(Block $block): array|RedirectResponse
     {

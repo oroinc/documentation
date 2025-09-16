@@ -8,7 +8,7 @@ use Oro\Bundle\EntityBundle\Tools\EntityRoutingHelper;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
 use Oro\Bundle\SecurityBundle\Attribute\Acl;
 use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Bridge\Twig\Attribute\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -26,7 +26,11 @@ class SmsController extends AbstractController
      * This action is used to render the list of sms associated with the given entity
      * on the view page of this entity
      */
-    #[Route(path: '/activity/view/{entityClass}/{entityId}', name: 'acme_demo_sms_activity_view', requirements: ['entityClass' => '\w+', 'entityId' => '\d+'])]
+    #[Route(
+        path: '/activity/view/{entityClass}/{entityId}',
+        name: 'acme_demo_sms_activity_view',
+        requirements: ['entityClass' => '\w+', 'entityId' => '\d+']
+    )]
     #[AclAncestor('acme_demo_sms_view')]
     public function activityAction(string $entityClass, int $entityId): Response
     {
@@ -38,7 +42,12 @@ class SmsController extends AbstractController
         );
     }
 
-    #[Route(path: '/widget/info/{id}', name: 'acme_demo_sms_widget_info', requirements: ['id' => '\d+'], options: ['expose' => true])]
+    #[Route(
+        path: '/widget/info/{id}',
+        name: 'acme_demo_sms_widget_info',
+        requirements: ['id' => '\d+'],
+        options: ['expose' => true]
+    )]
     #[Template('@AcmeDemo/Sms/widget/info.html.twig')]
     #[AclAncestor('acme_demo_sms_view')]
     public function infoAction(Request $request, Sms $entity): array
@@ -77,7 +86,12 @@ class SmsController extends AbstractController
      */
     #[Route(path: '/create', name: 'acme_demo_sms_create', options: ['expose' => true])]
     #[Template('@AcmeDemo/Sms/update.html.twig')]
-    #[Acl(id: 'acme_demo_sms_create', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Sms', permission: 'CREATE')]
+    #[Acl(
+        id: 'acme_demo_sms_create',
+        type: 'entity',
+        class: 'Acme\Bundle\DemoBundle\Entity\Sms',
+        permission: 'CREATE'
+    )]
     public function createAction(Request $request): array|RedirectResponse
     {
         $createMessage = $this->container->get(TranslatorInterface::class)->trans(
@@ -90,8 +104,13 @@ class SmsController extends AbstractController
     /**
      * Edit Sms form
      */
-    #[Route(path: '/update/{id}', name: 'acme_demo_sms_update', requirements: ['id' => '\d+'], options: ['expose' => true])]
-    #[Template]
+    #[Route(
+        path: '/update/{id}',
+        name: 'acme_demo_sms_update',
+        requirements: ['id' => '\d+'],
+        options: ['expose' => true]
+    )]
+    #[Template('@AcmeDemo/Sms/update.html.twig')]
     #[Acl(id: 'acme_demo_sms_update', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Sms', permission: 'EDIT')]
     public function updateAction(Sms $entity, Request $request): array|RedirectResponse
     {
@@ -103,7 +122,7 @@ class SmsController extends AbstractController
     }
 
     #[Route(path: '/', name: 'acme_demo_sms_index')]
-    #[Template]
+    #[Template('@AcmeDemo/Sms/index.html.twig')]
     #[AclAncestor('acme_demo_sms_view')]
     public function indexAction(): array
     {
@@ -113,7 +132,7 @@ class SmsController extends AbstractController
     }
 
     #[Route(path: '/view/{id}', name: 'acme_demo_sms_view', requirements: ['id' => '\d+'], options: ['expose' => true])]
-    #[Template]
+    #[Template('@AcmeDemo/Sms/view.html.twig')]
     #[Acl(id: 'acme_demo_sms_view', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Sms', permission: 'VIEW')]
     public function viewAction(Sms $entity): array
     {

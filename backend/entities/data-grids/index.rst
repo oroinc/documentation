@@ -98,12 +98,12 @@ Create the Controller and View
 
 To make your datagrid accessible, create a controller that the user can visit, which will serve as a view that renders the configured datagrid:
 
-.. oro_integrity_check:: e230fc189e6a665ba25993799539f48820c9438f
+.. oro_integrity_check:: baa20b42e437f4fa9ab9c5398acbb691d127118f
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
        :language: php
-       :lines: 3-5, 10-11, 14, 16, 20-24, 26-31, 108
+       :lines: 3-5, 10-11, 14, 16, 20-24, 26-31, 123
 
 
 The view can be straightforward if you extend the ``@OroUI/actions/index.html.twig`` template:

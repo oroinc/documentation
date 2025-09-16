@@ -33,10 +33,7 @@ Arguments
 
 When the `type`_ option is set to ``entity``, the fully qualified class name configured with the
 ``class`` option is used to decide whether or not the ACL has to be evaluated when checking if a
-user has access to a certain class. If the given action is annotated with the |ParamConverter|
-parameter, and the class of this parameter is the same as the class parameter from the ACL
-attribute, the check will be done on the object level (check if the user has access to the given
-object).
+user has access to a certain class.
 
 ``group``
 ~~~~~~~~~

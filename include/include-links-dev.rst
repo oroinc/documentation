@@ -351,10 +351,6 @@ Links (Dev)
 
    <a href="http://supervisord.org/" target="_blank">Supervisord</a>
 
-.. |SensioFrameworkExtraBundle documentation| raw:: html
-
-   <a href="https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/index.html" target="_blank">SensioFrameworkExtraBundle documentation</a>
-
 .. |oroui/js/app/application| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/application.js" target="_blank">oroui/js/app/application</a>
@@ -1162,11 +1158,6 @@ Links (Dev)
    <a href="http://demo.orocrm.com/api/doc" target="_blank">http://demo.orocrm.com/api/doc</a>
 
 
-.. |ParamConverter| raw:: html
-
-   <a href="https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html" target="_blank">ParamConverter</a>
-
-
 .. |Font Awesome Icon1| raw:: html
 
    <a href="http://fontawesome.io/3.2.1/icons/" target="_blank">Font Awesome Icon</a>
@@ -1268,10 +1259,6 @@ Links (Dev)
 .. |usage of ACLs| raw:: html
 
    <a href="https://github.com/symfony/acl-bundle/blob/master/src/Resources/doc/index.rst" target="_blank">usage of ACLs</a>
-
-.. |@ParamConverter annotation| raw:: html
-
-   <a href="https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html" target="_blank">@ParamConverter annotation</a>
 
 .. |https://symfony.com/doc/6.4/security/acl.html| raw:: html
 

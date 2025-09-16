@@ -73,12 +73,12 @@ Keep in mind that:
 - The entity class name can be encoded to avoid routing collisions. That is why you need to use the `oro_entity.routing_helper` service to get the entity by its class name and id.
 - In the following example, the `activity-sms-grid` datagrid is used to render the list of activities. This grid is defined in the *datagrids.yml* file:
 
-.. oro_integrity_check:: f5cddc2010bf95efd54a63646e095ba55cda2e5b
+.. oro_integrity_check:: 2c8a62091565caa15dfcd2b5c5d7ec5f90b5877d
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/SmsController.php
        :language: php
-       :lines: 25-39
+       :lines: 25-43
 
 
 .. oro_integrity_check:: 2010a0bebda816961f23a8676dbd73b7a0303cd8
@@ -273,12 +273,12 @@ View an Activity in the Activity list
 
 Create a view action in your controller and a TWIG template.
 
-.. oro_integrity_check:: 41fca72a41f4165cf349181619ffa7c5d93e3310
+.. oro_integrity_check:: d6fb5992e7196d711edcbc9dead88605df5923e4
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/SmsController.php
        :language: php
-       :lines: 41-73
+       :lines: 45-82
 
 .. oro_integrity_check:: 55962f6c4d5a758a5a71678f08661ddbad4f86fc
 
@@ -292,12 +292,12 @@ Edit an Activity in the Activity List
 
 Define the update action in your controller.
 
-.. oro_integrity_check:: aff1eb334254910e55130ce2b46346d9a1a6e3b3
+.. oro_integrity_check:: 0b3f382e655fc790b33f3b406dd0df9d7f8d8318
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/SmsController.php
        :language: php
-       :lines: 90-103
+       :lines: 104-122
 
 Delete an Activity in the Activity List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

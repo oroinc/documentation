@@ -390,7 +390,7 @@ To add a new config scope:
             requirements: ['id' => '\d+'],
             defaults: ['activeGroup' => null, 'activeSubGroup' => null]
         )]
-        #[Template]
+        #[Template('@AcmeDemo/Config/testConfig.html.twig')]
         public function testConfigAction(Request $request, $activeGroup = null, $activeSubGroup = null)
         {
             $provider = $this->get('acme_demo.provider.form_provider.test');

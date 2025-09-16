@@ -7,7 +7,7 @@ use Acme\Bundle\DemoBundle\Form\Type\DocumentType;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
 use Oro\Bundle\SecurityBundle\Attribute\Acl;
 use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Bridge\Twig\Attribute\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,7 +21,7 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 class DocumentController extends AbstractController
 {
     #[Route(path: '/', name: 'index')]
-    #[Template]
+    #[Template('@AcmeDemo/Document/index.html.twig')]
     #[AclAncestor('acme_demo_document_view')]
     public function indexAction(): array
     {
@@ -31,8 +31,13 @@ class DocumentController extends AbstractController
     }
 
     #[Route(path: '/view/{id}', name: 'view', requirements: ['id' => '\d+'])]
-    #[Template]
-    #[Acl(id: 'acme_demo_document_view', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Document', permission: 'VIEW')]
+    #[Template('@AcmeDemo/Document/view.html.twig')]
+    #[Acl(
+        id: 'acme_demo_document_view',
+        type: 'entity',
+        class: 'Acme\Bundle\DemoBundle\Entity\Document',
+        permission: 'VIEW'
+    )]
     public function viewAction(Document $entity): array
     {
         return [
@@ -45,7 +50,12 @@ class DocumentController extends AbstractController
      */
     #[Route(path: '/create', name: 'create', options: ['expose' => true])]
     #[Template('@AcmeDemo/Document/update.html.twig')]
-    #[Acl(id: 'acme_demo_document_create', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Document', permission: 'CREATE')]
+    #[Acl(
+        id: 'acme_demo_document_create',
+        type: 'entity',
+        class: 'Acme\Bundle\DemoBundle\Entity\Document',
+        permission: 'CREATE'
+    )]
     public function createAction(Request $request): array|RedirectResponse
     {
         $createMessage = $this->container->get(TranslatorInterface::class)->trans(
@@ -59,8 +69,13 @@ class DocumentController extends AbstractController
      * Edit Document form
      */
     #[Route(path: '/update/{id}', name: 'update', requirements: ['id' => '\d+'])]
-    #[Template]
-    #[Acl(id: 'acme_demo_document_update', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Document', permission: 'EDIT')]
+    #[Template('@AcmeDemo/Document/update.html.twig')]
+    #[Acl(
+        id: 'acme_demo_document_update',
+        type: 'entity',
+        class: 'Acme\Bundle\DemoBundle\Entity\Document',
+        permission: 'EDIT'
+    )]
     public function updateAction(Document $entity, Request $request): array|RedirectResponse
     {
         $updateMessage = $this->container->get(TranslatorInterface::class)->trans(
