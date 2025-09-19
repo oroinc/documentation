@@ -370,6 +370,7 @@ To purge lost files, use this command with the ``--force`` option:
 
    php bin/console oro:attachment:cleanup-gridfs-files --force
 
+.. important:: The ``oro:attachment:cleanup-gridfs-files --force`` command removes files in batches, not all at once. This behavior is intentional and prevents issues caused by large bulk deletions, such as MongoDB or PostgreSQL failures. To completely clear all unlinked files, re-run the command multiple times until the output shows that no files remain to delete.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
