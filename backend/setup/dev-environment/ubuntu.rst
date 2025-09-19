@@ -40,7 +40,13 @@ Environment Setup
       curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
       sudo apt -y install nodejs
 
-4. Install Docker and Docker Compose:
+4. Install PNPM Using NPM:
+
+   .. code-block:: none
+
+        npm install -g pnpm@latest-10
+
+5. Install Docker and Docker Compose:
 
    .. code-block:: none
 
@@ -62,7 +68,7 @@ Environment Setup
 
    For more information, see |Docker installation|.
 
-5. Install Composer v2:
+6. Install Composer v2:
 
    .. code-block:: none
 
@@ -70,7 +76,7 @@ Environment Setup
       php -r "unlink('composer-setup.php');"
       sudo mv composer.phar /usr/bin/composer
 
-6. Install Symfony Server and enable TLS:
+7. Install Symfony Server and enable TLS:
 
    .. code-block:: none
 
@@ -80,7 +86,7 @@ Environment Setup
       source ~/.bashrc
       symfony server:ca:install
 
-7. Restart the terminal and web browser to get them ready.
+8. Restart the terminal and web browser to get them ready.
 
 
 .. admonition:: Business Tip

@@ -203,7 +203,7 @@ Detailed information about JS modules configuration is available in the :ref:`JS
 Configuration Reference
 -----------------------
 
-AssetBundle defines the configuration for NodeJs and NPM executable.
+AssetBundle defines the configuration for NodeJs and PNPM executable.
 
 All these options are configured under the `oro_asset` key in your application configuration.
 
@@ -225,12 +225,12 @@ nodejs_path
 
 Path to NodeJs executable.
 
-npm_path
-^^^^^^^^
+pnpm_path
+^^^^^^^^^
 
 **type: `string` required, default: found dynamically**
 
-Path to NPM executable.
+Path to PNPM executable.
 
 build_timeout
 ^^^^^^^^^^^^^
@@ -239,12 +239,12 @@ build_timeout
 
 Assets build timeout in seconds, null to disable the timeout.
 
-npm_install_timeout
-^^^^^^^^^^^^^^^^^^^
+pnpm_install_timeout
+^^^^^^^^^^^^^^^^^^^^
 
 **type: `integer` required, default: `null`**
 
-Npm installation timeout in seconds, null to disable the timeout.
+PNPM installation timeout in seconds, null to disable the timeout.
 
 webpack_dev_server
 ^^^^^^^^^^^^^^^^^^
@@ -304,6 +304,20 @@ To fix the error, remove an application cache and warm it up:
 
     rm -rf var/cache/*
     php bin/console cache:warmup
+
+**PNPM not found**
+
+Appears after migration to `PNPM`.
+
+To fix the error, install `pnpm`, remove the existing node modules and re-build the assets:
+
+.. code-block:: none
+
+    npm install -g pnpm
+    rm -rf ./node_modules
+    php bin/console cache:clear
+    php bin/console oro:assets:build
+
 
 **Error: "output" for "assets" group in theme "oro" is not defined**
 

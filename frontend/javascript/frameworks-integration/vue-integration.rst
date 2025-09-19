@@ -48,7 +48,7 @@ The example below illustrates creating a simple component, such as the one shown
       :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/config/jsmodules.yml
       :language: yaml
 
-5. To build the application after changes, run the ``npm run build`` command. To rebuild the application automatically, run the ``npm run watch`` command.
+5. To build the application after changes, run the ``pnpm run build`` command. To rebuild the application automatically, run the ``pnpm run watch`` command.
 
 6. In the Twig template, define where our Vue app will be displayed with a specific Page component using the ``data-page-component-vue-app`` shortcut. Copy and paste the code below:
 
@@ -75,7 +75,7 @@ The example below implements the same functionality discussed above but uses the
    :alt: Vue SFC demo
    :align: center
 
-1. Install the ``vue-loader`` by running the command ``npm install vue-loader@next -D``.
+1. Install the ``vue-loader`` by running the command ``pnpm install vue-loader@next -D``.
 
 2. Open your ``webpack.config.js`` and replace the code with the one below:
 
@@ -122,7 +122,7 @@ The example below implements the same functionality discussed above but uses the
       :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/config/jsmodules.yml
       :language: none
 
-6. To build the application after changes, run the ``npm run build`` command.  To rebuild the application automatically, run the ``npm run watch`` command.
+6. To build the application after changes, run the ``pnpm run build`` command.  To rebuild the application automatically, run the ``pnpm run watch`` command.
 
 7. Once the page component with Vue instance is created, declare it in the template of the required page. Copy and paste the code below:
 

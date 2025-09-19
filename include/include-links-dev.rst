@@ -215,6 +215,18 @@ Links (Dev)
 
    <a href="https://docs.npmjs.com/" target="_blank">NPM documentation</a>
 
+.. |PNPM| raw:: html
+
+   <a href="https://pnpm.io/" target="_blank">PNPM</a>
+
+.. |PNPM documentation| raw:: html
+
+   <a href="https://pnpm.io/motivation" target="_blank">PNPM documentation</a>
+
+.. |the official PNPM installation guide| raw:: html
+
+   <a href="https://pnpm.io/installation" target="_blank">the official PNPM installation guide</a>
+
 .. |Karma documentation| raw:: html
 
    <a href="http://karma-runner.github.io/4.0/config/configuration-file.html" target="_blank">Karma documentation</a>

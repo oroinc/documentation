@@ -201,13 +201,13 @@ To run the check manually from the command line:
 
     .. code-block:: none
 
-       npm install
+       pnpm install
 
 2. Then, run |ESLint| to check JS files for code-style
 
     .. code-block:: none
 
-       npm run eslint file.js [file.js] [dir] -- [options]
+       pnpm run eslint file.js [file.js] [dir] -- [options]
 
 .NET Code Style
 ^^^^^^^^^^^^^^^
@@ -235,13 +235,13 @@ To run the check manually from the command line:
 
    .. code-block:: none
 
-       npm install
+       pnpm install
 
 2. Then, run |StyleLint| to check SCSS files for the code-style:
 
    .. code-block:: none
 
-       npm run stylelint "**/*.scss" -- [options]
+       pnpm run stylelint "**/*.scss" -- [options]
 
 **See Also**
 

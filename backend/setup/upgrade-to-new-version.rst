@@ -70,16 +70,22 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
        rm -rf var/cache/prod/
 
-9. Set up your project source code with Composer.
+9. Remove old JS packages
+
+   .. code-block:: none
+
+       rm -rf ./node_modules
+
+10. Set up your project source code with Composer.
 
    .. code-block:: none
 
        composer install --prefer-dist --no-dev
 
-10. Refer to the ``UPGRADE.md`` and ``CHANGELOG.md`` files in the application repository for a list of changes in the code that
+11. Refer to the ``UPGRADE.md`` and ``CHANGELOG.md`` files in the application repository for a list of changes in the code that
     may affect the upgrade of some customizations.
 
-11. Upgrade the platform.
+12. Upgrade the platform.
 
     .. code-block:: none
 
@@ -105,7 +111,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
                    * **For patch upgrades (minor updates within the same LTS):** While not mandatory, it is **highly recommended** to run search reindexation to ensure the Elasticsearch index structure remains correct.
 
-12. Remove the caches.
+13. Remove the caches.
 
     .. code-block:: none
 
@@ -118,7 +124,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
         rm -rf var/cache/prod/
         php bin/console cache:warmup --env=prod
 
-13. Enable cron.
+14. Enable cron.
 
     .. code-block:: none
 
@@ -130,13 +136,13 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
         */1 * * * * /usr/bin/php <application-root-folder>/bin/console --env=prod oro:cron >> /dev/null
 
-14. Switch your application back to the normal mode from the maintenance mode.
+15. Switch your application back to the normal mode from the maintenance mode.
 
     .. code-block:: none
 
         php bin/console lexik:maintenance:unlock --env=prod
 
-15. Run the consumer(s).
+16. Run the consumer(s).
 
     .. code-block:: none
 

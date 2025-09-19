@@ -21,7 +21,7 @@ Set Up the Environment
 
 **Development Stack**
 
--  PHP, Composer, Node.js, and NPM should be installed locally for a better development experience.
+-  PHP, Composer, Node.js, NPM and PNPM should be installed locally for a better development experience.
 -  |Symfony Local Web Server| is used to make you more productive while
    developing applications. This server is not intended for production
    use. It supports HTTP/2, TLS/SSL, automatic generation of security

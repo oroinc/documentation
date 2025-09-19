@@ -27,9 +27,9 @@ The example below illustrates creating a simple component, such as the one shown
 
    .. note:: To learn how to add dependencies to Composer, see :ref:`Managing NPM dependencies with Composer <dev-doc-frontend-composer-js-dependencies>`.
 
-2. Install a react preset for Babel using the ``npm install @babel/preset-react --save-dev`` command.
+2. Install a react preset for Babel using the ``pnpm install @babel/preset-react --save-dev`` command.
 
-   .. important:: Since React uses JSX syntax, you must build with Babel. You can change the command parameters for building in ``package.json`` in the project. Use ``"watch": "npm run webpack -- -w --progress --env withBabel"`` and ``"build": "npm run webpack -- --mode=production --env withBabel"`` commands with additional ``withBabel`` option.
+   .. important:: Since React uses JSX syntax, you must build with Babel. You can change the command parameters for building in ``package.json`` in the project. Use ``"watch": "pnpm run webpack -- -w --progress --env withBabel"`` and ``"build": "pnpm run webpack -- --mode=production --env withBabel"`` commands with additional ``withBabel`` option.
 
 3. Open your ``webpack.config.js`` and replace the existing code with the code below:
 
@@ -62,7 +62,7 @@ The example below illustrates creating a simple component, such as the one shown
       :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/config/jsmodules.yml
       :language: yaml
 
-6. To build the application after changes, run the ``npm run build`` command. To rebuild the application automatically, run the ``npm run watch`` command.
+6. To build the application after changes, run the ``pnpm run build`` command. To rebuild the application automatically, run the ``pnpm run watch`` command.
 
 7. Once the page component with Vue instance is created, declare it in the template of the required page. Copy and paste the code below:
 

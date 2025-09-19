@@ -1,7 +1,7 @@
 .. _dev-doc-frontend-composer-js-dependencies:
 
-Managing NPM dependencies with Composer
-=======================================
+Managing PNPM dependencies with Composer
+========================================
 
 Oro application code (including PHP code, Javascript code, SCSS, etc.) is distributed via Composer packages.
 In the previous versions, we also used Composer to manage all external dependencies - both PHP and frontend.
@@ -17,15 +17,16 @@ The following software is required for `composer` to install JS dependencies:
 
  - |Node.js|, version 20
  - |NPM|
+ - |PNPM|
 
 .. hint:: For instructions on how to install **Node.js**, navigate to the |Node.js official website|.
 
 General Information
 -------------------
 
-|NPM| packages represent JS dependencies of the application. NPM packages are recursively collected from `composer.json` files of all application dependencies. During `composer install` (either `update` or `require`) they are passed to NPM utility, which handles further installation.
+|NPM| packages represent JS dependencies of the application. NPM packages are recursively collected from `composer.json` files of all application dependencies. During `composer install` (either `update` or `require`) they are passed to PNPM utility, which handles further installation.
 
-.. hint:: For more information on NPM, see |NPM documentation|.
+.. hint:: For more information on NPM, see |NPM documentation| and |PNPM documentation|.
 
 Workflow
 --------
@@ -33,7 +34,7 @@ Workflow
 Initial Install of Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-During the `composer install` command composer runs the ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets`` post-install command, which recursively collects NPM packages from `composer.json` files of all application dependencies. Collected NPM packages are passed to `npm install` which handles further installation:
+During the `composer install` command composer runs the ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets`` post-install command, which recursively collects NPM packages from `composer.json` files of all application dependencies. Collected NPM packages are passed to `pnpm install` which handles further installation:
 
 * updates `dependencies` section in existing `package.json` or creates new file
 * generates `package-lock.json` file
@@ -60,13 +61,13 @@ An example of `composer.json` containing NPM dependencies in the `extra.npm` sec
 Application Install When Lock Files Already Exist
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If `package-lock.json` already exists, post-install command ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets`` runs `npm ci` which looks into the lock file, fetches NPM packages, and puts them into the `node_modules/` directory.
+If `pnpm-lock.yaml` already exists, post-install command ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets`` runs `pnpm ci` which looks into the lock file, fetches NPM packages, and puts them into the `node_modules/` directory.
 
 Adding New NPM Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Add the NPM package name and version constraint to the `extra.npm` section of composer.json, e.g `"fullcalendar": "3.4.0"`.
-- Delete `composer.lock` and the `package-lock.json` files.
+- Delete `composer.lock` and the `pnpm-lock.yaml` files.
 - Run `composer install`.
 
 Resolving Conflicting NPM Dependencies

@@ -9,6 +9,7 @@ Installation
 The following software is required to run JS tests:
 
  - |Node.js| (JavaScript Engine)
+ - |PNPM| (Disk Space Efficient Package Manager)
  - |Karma| (Test Runner for JavaScript)
  - |Jasmine 3.5| (Behavior-Driven Development Testing Framework)
 
@@ -17,8 +18,8 @@ The following software is required to run JS tests:
 Once the `node` is installed, install several modules using |Node Packaged Modules| manager by executing the following command from the root folder of your application:
 
 .. code-block:: none
-  
-    npm install
+
+    pnpm install
 
 Configuration
 -------------
@@ -35,8 +36,8 @@ Running
 To run tests, call the following command:
 
 .. code-block:: none
-   
-   npm run test
+
+   pnpm run test
 
 To run testsuite with a custom configuration, you can use the command line parameters which overwrite the parameters in the configuration file.
 
@@ -50,8 +51,8 @@ There are few custom options added for preparing karma config:
 To keep tests continuously running and re-executing when any watched file is modified, use the following command:
 
 .. code-block:: none
-   
-   npm run test-watch
+
+   pnpm run test-watch
 
 To debug unit test:
 
@@ -59,13 +60,19 @@ To debug unit test:
  - open the ``http://localhost:9876/debug.html`` page in you browser (check the port in the address, it has to be the same as in terminal's output)
  - open the inspector panel and use it for the debug purpose
 
-Any modification of the source or test file will lead to reassembly, after which you can reload the page in the browser and debug the updated code.  
+Any modification of the source or test file will lead to reassembly, after which you can reload the page in the browser and debug the updated code.
 
 To run specific test, use the `--spec "<path/to/someSpec.js>"` parameter:
 
 .. code-block:: none
-  
-   npm run test-watch -- --spec vendor/oro/platform/src/Oro/Bundle/UIBundle/Tests/JS/mediatorSpec.js
+
+   pnpm run test-watch --spec vendor/oro/platform/src/Oro/Bundle/UIBundle/Tests/JS/mediatorSpec.js
+
+To run without watching, use the `--single-run --spec "<path/to/someSpec.js>"` parameter:
+
+.. code-block:: none
+
+   pnpm run test-watch --single-run --spec vendor/oro/platform/src/Oro/Bundle/UIBundle/Tests/JS/mediatorSpec.js
 
 The following extensions can be useful if you use PHPStorm:
 

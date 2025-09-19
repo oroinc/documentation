@@ -84,7 +84,13 @@ Environment Setup
       curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
       sudo apt -y install nodejs
 
-9. Install Composer:
+9. Install PNPM 10 Using NPM:
+
+   .. code-block:: none
+
+        npm install -g pnpm@latest-10
+
+10. Install Composer:
 
    .. code-block:: none
 
@@ -92,7 +98,7 @@ Environment Setup
       php -r "unlink('composer-setup.php');"
       sudo mv composer.phar /usr/bin/composer
 
-10. Install Symfony Server:
+11. Install Symfony Server:
 
     .. code-block:: none
 
@@ -116,7 +122,7 @@ Environment Setup
        :alt: Importing certificate to Chrome
 
 
-11. Configure the network. WSL 2 changes the way networking is configured compared to WSL 1. You need to enable proxy of traffic to permit the traffic through the Windows firewall.
+12. Configure the network. WSL 2 changes the way networking is configured compared to WSL 1. You need to enable proxy of traffic to permit the traffic through the Windows firewall.
 
     Run in Ubuntu ``ip addr | grep eth0`` to see the IP address of the WSL 2 virtual machine.
 
@@ -145,7 +151,7 @@ Environment Setup
     .. image:: /img/backend/setup/wsl/firewall-6.png
        :alt: Configure Windows Defender Firewall step 6
 
-12. Restart the terminal and the web browser to get them ready.
+13. Restart the terminal and the web browser to get them ready.
 
 What's Next
 -----------

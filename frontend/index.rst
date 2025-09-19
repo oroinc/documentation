@@ -38,6 +38,7 @@ All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-java
     storefront/index
     javascript/index
     back-office/index
+    pnpm-package-manager
     rtl-support
 
 .. include:: /include/include-links-seo.rst
