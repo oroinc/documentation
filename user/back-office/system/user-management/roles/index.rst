@@ -114,7 +114,6 @@ Keep in mind that as soon as the entity is created, its ownership type cannot be
 * :ref:`Field Level Permissions <user-guide-user-management-permissions-roles--field-level-acl>`
 * :ref:`Entity and System Capabilities <admin-capabilities>`
 * :ref:`Create and Manage Roles <user-guide-user-management-permissions-roles--actions>` 
-* :ref:`End-to-end Access Configuration in Context <user-guide-user-management-permissions-roles--examples>`
 
 .. include:: /include/include-images.rst
    :start-after: begin
@@ -130,4 +129,3 @@ Keep in mind that as soon as the entity is created, its ownership type cannot be
    Entity and System Capabilities <admin-capabilities>
    Configure User Roles <create-manage-roles>
    Field Level Permissions <field-level-acl>
-   Configure End-to-End Access in Context <access-in-context>

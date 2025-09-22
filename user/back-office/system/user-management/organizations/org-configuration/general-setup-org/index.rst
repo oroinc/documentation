@@ -17,8 +17,10 @@ Learn how to configure localization options, currency and tracking, as well and 
 * :ref:`Website Sitemap Settings <organization-config-website-sitemap>`
 * :ref:`Google Settings <organization-google-settings>`
 * :ref:`Microsoft Settings <organization-configuration-microsoft>`
+* :ref:`AI Content Generation <organization-ai-settings>`
 * :ref:`AI Agent <organization-ai-agent-settings>`
 * :ref:`AI Smart Order <organization-ai-smart-order-settings>`
+* :ref:`CAPTCHA Settings <organization-configuration-captcha>`
 
 
 .. toctree::

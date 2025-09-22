@@ -3,6 +3,8 @@
 Configure Customer User Settings per Organization
 =================================================
 
+.. note:: Customer User settings can be configured :ref:`globally <sys-config--configuration--commerce--customers--customer-users>`, per organization, and :ref:`per website <system--website--configuration--commerce--customers--customer-users>`.
+
 To change the default customer user configuration settings for an organization:
 
 1. Navigate to **System > User Management > Organization** in the main menu.
@@ -12,7 +14,6 @@ To change the default customer user configuration settings for an organization:
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/user_management/org_configuration/customers/CustomerUsersPerOrganization.png
-      :class: with-border
 
 4. To customize any of the options:
 
@@ -48,11 +49,7 @@ To change the default customer user configuration settings for an organization:
 
    * **Do Not Leave Checkout** --- Enable this option to redirect a user back to the checkout page after a successful login. This overrides the *Redirect After Login* setting on the :ref:`website configuration level <system--website--configuration--commerce--customers--customer-users>` that may specify a different target page.
 
-10. In the **REST API** section, configure the following option:
-
-    * **Enable API Key Generation** --- Enable/disable automatic generation of API access keys for new customer users.
-
-11. In the **Cookies Banner** section, enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time.
+10. In the **Cookies Banner** section, enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time.
 
    .. image:: /user/img/system/user_management/org_configuration/customers/cookie-banner-organization.png
       :alt: Cookie banner section
@@ -65,7 +62,7 @@ To change the default customer user configuration settings for an organization:
 
    * **Landing Page** - Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
 
-12. Click **Save Settings**.
+11. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin

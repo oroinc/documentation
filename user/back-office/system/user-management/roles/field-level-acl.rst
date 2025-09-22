@@ -8,7 +8,7 @@ Overview
 
 Entity fields are used to store details of entity records in |oro_application|. When you need to hide certain fields from one group of users and still have them available for others, you can apply field-level permissions to entities when creating or editing roles in |oro_application|. 
 
-For example, both the sales team and the support team require to see **Opportunity** entity records, but because financial information is considered sensitive, you can hide the **Budget Amount** field from the support team members. 
+For example, both the sales team and the support team require to see **Opportunity** entity records, but because financial information is considered sensitive, you can hide the **Budget Amount** field from the support team members.
 
 .. important:: Out of the box, field-level permissions can be applied only to the account, opportunity and custom entities.
 
@@ -21,7 +21,7 @@ The following table illustrates the actions that can be performed to entity fiel
 +--------+-------------------------------------------------------------------------------+
 | Create | A user can see and modify entity record fields on the 'new entity' form.      |
 +--------+-------------------------------------------------------------------------------+
-| Edit   | A user can see and modify entity record fields on the 'edit entity' form.     |
+| Edit   | A user can see and modify entity record fields on the 'view entity' form.     |
 +--------+-------------------------------------------------------------------------------+
 
 .. image:: /user/img/system/user_management/roles_permissions_fields_general_ex.png
@@ -59,14 +59,14 @@ To enable field-level access:
 
 When field-level permissions are enabled, the **+** icon appears next to the entities when creating or editing a role.
 
-.. image:: /user/img/system/user_management/enable_field_acl.gif
+.. image:: /user/img/system/user_management/enable_field_acl.png
 
 .. _user-guide-user-management-permissions-roles--field-level-acl--enable-user:
 
 Enable Users to See Restricted Fields 
 -------------------------------------
 
-You can enable users to modify only certain entity fields and restrict them from modifying others. For example, you can enable sales managers to modify opportunity statuses, but restrict sales representatives to only viewing them with no permissions to update statuses in any way. Fields disabled for editing will appear dimmed on the interface. 
+You can enable users to modify only certain entity fields and restrict them from modifying others. For example, you can enable sales managers to modify opportunity budget amount, but restrict sales assistants to only viewing it with no permissions to update amount in any way. Fields disabled for editing will appear dimmed on the interface.
 
 .. image:: /user/img/system/user_management/opportunity_greyed-status.png
 
@@ -90,7 +90,6 @@ To enable field-level access:
 
 * :ref:`Introduction to Role Management <user-guide-user-management-permissions-roles>`
 * :ref:`Create and Manage Roles <user-guide-user-management-permissions-roles--actions>` 
-* :ref:`End-to-end Access Configuration in Context <user-guide-user-management-permissions-roles--examples>`
 * :ref:`Entity and System Capabilities <admin-capabilities>`
 
 .. |oro_application| replace:: OroCommerce

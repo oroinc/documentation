@@ -8,6 +8,9 @@ Configure Guest Website Access Settings per Organization
 
 .. note:: Guest access can be enabled :ref:`globally <sys--conf--commerce--guest-access--global>`, per organization, and :ref:`per website <sys--conf--commerce--guest-access--website>`.
 
+.. image:: /user/img/system/user_management/org_configuration/guests/GuestAccessOrg.png
+   :alt: Guest access configuration per organization
+
 To enable guest access per organization:
 
 1. Navigate to **System > User Management > Organizations**.
@@ -17,13 +20,14 @@ To enable guest access per organization:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. Select the **Enable Guest Access** checkbox.
-5. Click **Save Settings**.
- 
-.. note:: To disable guest access globally, clear the **Enable Guest Access** checkbox.
+4. Clear the **Use System** checkbox to change the system-wide settings.
 
-.. image:: /user/img/system/user_management/org_configuration/guests/GuestAccessOrg.png
-   :alt: Guest access configuration per organization
+5. In the **Website Access** section, toggle the **Enable Guest Access** checkbox to enable or disable guest users from browsing the website.
+
+6. In the **Anonymous Customer Group Access** section, select a customer user group to represent **Non-authenticated Visitors (guests)** in the storefront. This group is used to define product and catalog visibility rules, as well as other features that depend on customer group settings.
+
+7. Click **Save Settings**.
+ 
 
 .. include:: /include/include-images.rst
    :start-after: begin

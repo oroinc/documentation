@@ -14,20 +14,18 @@ Step 1: Create Business Units
 
 The first step is to :ref:`create the corresponding business units <user-management-bu>`, which are the following:
 
-* Main Office 
 * USA
-* EU
 * Los Angeles
 * Dallas
 * New York
 * Western Europe
 * Eastern Europe
 
-When creating business units, we need to specify parent business units. In this scenario, the *Main Office* does not have a parent business unit as it represents the business unit that has access to the whole organization. 
+When creating business units, we need to specify parent business units. In this scenario, the *USA_Main Office ACME* does not have a parent business unit as it represents the business unit that has access to the whole organization *Acme, General*.
 
 .. image:: /user/img/system/user_management/sales_bu_usa.png
 
-The *Main Office* is the parent business unit for the *USA* and *EU* business units. The *USA* business unit is the parent unit for *Los Angeles, Dallas, New York*. The *EU* business unit is the parent unit for *Western Europe, Eastern Europe*.
+The *USA_Main Office ACME* is the parent business unit for the *Acme, West* and *Acme, East* business units. The *USA_Main Office ACME* business unit is the parent unit for *USA, Los Angeles, Dallas, New York*. The *Acme, West* business unit is the parent unit for *Western Europe*. The *Acme, East* business unit is the parent unit for *Eastern Europe*.
 
 .. image:: /user/img/system/user_management/sales_bu_la.png
 

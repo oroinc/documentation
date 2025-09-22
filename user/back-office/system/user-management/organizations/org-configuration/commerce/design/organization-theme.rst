@@ -21,7 +21,7 @@ In your Oro application, you can control and customize the storefront look and f
 
    * **Category Image Placeholder** --- select the image file to be applied to the category that has no associated image. The image is usually used in various category widgets.
 
- 5. In the **Page Templates** section, select the product page template from the list. Available options are *Default*, *Tabs*, *Wide*.
+5. In the **Page Templates** section, select the product page template from the list. Available options are *Default*, *Tabs*, *Wide*.
 
    .. important:: The Page Templates configuration applies to OroCommerce version 5.1 and below and is retained in the current version only for legacy backward compatibility. For v6.0 and above, please configure this option under :ref:`System > Theme Configuration <back-office-theme-configuration>`.
 

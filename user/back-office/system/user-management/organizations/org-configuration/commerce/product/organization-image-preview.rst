@@ -14,11 +14,12 @@ In the Product Images section of Commerce configuration settings, you can contro
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/user_management/org_configuration/products/ImagePreviewOrganization.png
-      :class: with-border
 
 4. Clear the **Use System** checkbox to change the system-wide setting.
 
 5. In the **General** section, configure the following options:
+
+   .. note:: The option appears only when the :ref:`Enable Original File Names <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` setting for Upload Settings is disabled.
 
    **Enable Original File Names** --- When enabled, the original image file name will be appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") will be replaced with "-" (dash).
 
@@ -30,8 +31,6 @@ In the Product Images section of Commerce configuration settings, you can contro
 
     .. image:: /user/img/system/config_commerce/product/ImagePreviewStorefront.png
       :alt: Illustration of the Enable Image Preview on Product Listing option in the storefront being enabled and disabled
-
-    .. note:: When **Use System** checkbox is enabled, system settings are applied.
 
 7. Click **Save**.
 

@@ -32,7 +32,7 @@ Enable/Disable Multiple Users
 To enable/disable several users at the same time, use mass actions:
 
 1. Navigate to **System > User Management > Users**.
-2. In the table of all users, select the checkboxes in front of the names of those users whose passwords you want to reset.
+2. In the table of all users, select the checkboxes in front of the required users.
 3. Click the ellipsis menu at the right end of the table header row and then click |IcActivate| **Enable** or |IcBan| **Disable**.
 
    .. image:: /user/img/system/user_management/users_enable_disable_mass_action.png
@@ -91,26 +91,6 @@ To export user records:
 
    .. image:: /user/img/system/user_management/users_grid_export.png
 
-   .. image:: /user/img/system/user_management/users_export_csv.png
-
-.. _doc-user-management-users-actions-api:
-
-Generate an API Key for a User
-------------------------------
-
-Integration with third-party software sometimes requires API access to the Oro application. A user can generate an API key to grant access to the required API while protecting their password from being disclosed to the third party.
-
-1. Navigate to **System > User Management > Users** in the main menu.
-2. On the page of all users, click on the selected user to open their page.
-3. In the **General Information**, click **Generate Key** next to the **API Key** field.
-
-   .. image:: /user/img/system/user_management/users_generate_api_key.png
-
-Once the API key is generated, the user can execute API requests via the sandbox, Curl command, any other REST client, or use the API via the custom application.
-
-.. important:: Only one key can be generated for one user within one organization.
-
-
 .. _doc-user-management-users-actions-change-password:
 
 Change User Passwords
@@ -123,8 +103,7 @@ You can change the password for a specific user on their profile page in the **M
 1. Navigate to **System > User Management > Users**.
 2. On the page of all users, click on the selected user to open their page.
 3. On the user page, click **More Actions** on the top right.
-
-   * Click |IcChangePassword| **Change Password** to open a new dialog and provide a new password. Alternatively, you can click the **Suggest Password** link to generate a secure random password. To see / hide  the entered password, click the |IcShow| **Show**/|IcHide| **Hide** icon next to the **New password** field. Once a new password is provided, a reset password email is sent to this user.
+4. Click |IcChangePassword| **Change Password** to open a new dialog and provide a new password. Alternatively, you can click the **Suggest Password** link to generate a secure random password. To see / hide  the entered password, click the |IcShow| **Show**/|IcHide| **Hide** icon next to the **New password** field. Once a new password is provided, a reset password email is sent to this user.
 
      .. image:: /user/img/system/user_management/user_change_password.png
 
@@ -135,7 +114,7 @@ Reset User Passwords
 
 An administrator can request the customer user to change their password by clicking the **More Actions** menu on user profile page and selecting the |IcPassReset| **Reset Password** option:
 
-.. image:: /user/img/system/user_management/user_page_change_reset_password.png
+.. image:: /user/img/system/user_management/user_page_reset_password.png
 
 The confirmation dialogue will be shown to confirm the reset of the user password.
 

@@ -14,7 +14,6 @@ In this section, you can specify the display settings for the organization.
 3. Select **System Configuration > General Setup > Display Settings** in the menu to the left.
 
    .. image:: /user/img/system/user_management/org_configuration/general/organization_display_settings.png
-      :width: 500
       :alt: Settings menu configuration for organization
 
 4. Clear the **Use System** checkbox to change the system-wide setting.
