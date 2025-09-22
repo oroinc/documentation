@@ -125,7 +125,7 @@ Application Setup and Configuration
    :maxdepth: 1
    :hidden:
 
-
+   repositories
    system-requirements/index
    Development Environment <dev-environment/index>
    demo-environment/index

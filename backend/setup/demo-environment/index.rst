@@ -8,7 +8,6 @@ Demo Environment
    :maxdepth: 1
 
    docker
-   vm
    aws
    gcp
    azure

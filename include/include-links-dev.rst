@@ -6608,3 +6608,6 @@ Links (Dev)
 
     <a href="https://static.oroinc.com/Design_Mockups_6.1.fig" target="_blank">Design Mockups</a>
 
+.. |feature chart| raw:: html
+
+    <a href="https://oroinc.com/b2b-ecommerce/editions/#features-list" target="_blank">feature chart</a>

@@ -513,3 +513,5 @@ user/integrations/pre-build/shipping/ups /user/integrations/pre-built/shipping/u
 backend/setup/demo-environment/vagrant /backend/setup/demo-environment/
 user/back-office/reports-segments/reports/reports-examples /user/back-office/reports-segments/reports/custom-reports
 user/back-office/system/entities/create-entities /user/back-office/system/entities/manage-entities
+user/back-office/getting-started/community-vs-enterprise /backend/setup/repositories
+backend/setup/demo-environment/vm /backend/setup/demo-environment
