@@ -112,7 +112,6 @@ To delete an existing role:
 
 * :ref:`Introduction to Role Management <user-guide-user-management-permissions-roles>`
 * :ref:`Field Level Permissions <user-guide-user-management-permissions-roles--field-level-acl>`
-* :ref:`End-to-end Access Configuration in Context <user-guide-user-management-permissions-roles--examples>`
 * :ref:`Entity and System Capabilities <admin-capabilities>`
 
 

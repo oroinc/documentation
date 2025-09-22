@@ -47,7 +47,6 @@ The following topics describe the available access levels and explain the differ
 * :ref:`Field Level Permissions <user-guide-user-management-permissions-roles--field-level-acl>`
 * :ref:`Entity and System Capabilities <admin-capabilities>`
 * :ref:`Create and Manage Roles <user-guide-user-management-permissions-roles--actions>`
-* :ref:`End-to-end Access Configuration in Context <user-guide-user-management-permissions-roles--examples>`
 
 OAuth Applications
 ------------------

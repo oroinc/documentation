@@ -90,7 +90,6 @@ To enable field-level access:
 
 * :ref:`Introduction to Role Management <user-guide-user-management-permissions-roles>`
 * :ref:`Create and Manage Roles <user-guide-user-management-permissions-roles--actions>` 
-* :ref:`End-to-end Access Configuration in Context <user-guide-user-management-permissions-roles--examples>`
 * :ref:`Entity and System Capabilities <admin-capabilities>`
 
 .. |oro_application| replace:: OroCommerce
