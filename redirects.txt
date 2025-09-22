@@ -496,3 +496,8 @@ user/integrations/pre-build/shipping/dpd-service /user/integrations/pre-built/sh
 user/integrations/pre-build/shipping/fedex /user/integrations/pre-built/shipping/fedex
 user/integrations/pre-build/shipping/index /user/integrations/pre-built/shipping/index
 user/integrations/pre-build/shipping/ups /user/integrations/pre-built/shipping/ups
+backend/setup/demo-environment/vagrant /backend/setup/demo-environment/
+user/back-office/reports-segments/reports/reports-examples /user/back-office/reports-segments/reports/custom-reports
+user/back-office/system/entities/create-entities /user/back-office/system/entities/manage-entities
+user/back-office/getting-started/community-vs-enterprise /backend/setup/repositories
+backend/setup/demo-environment/vm /backend/setup/demo-environment

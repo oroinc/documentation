@@ -10,7 +10,6 @@ You can obtain the application source code and the required dependencies in one 
 
 * :ref:`Clone the GitHub repository and install dependencies <platform-installation-github-clone>`.
 
-* :ref:`Download the source code archive <platform-installation-download-archive>`.
 
 These methods are detailed below.
 
@@ -90,31 +89,6 @@ Method 2: Use the GitHub Repository
 
    Note that you can find the description for every environment variable in the :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
 
-.. _platform-installation-download-archive:
-
-Method 3: Download the Source Code Archive
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. Download the latest version of the application source code from the download section on |the website| (you may be required to fill in a form to request access):
-
-   * |Download OroCommerce|
-   * |Download OroCRM|
-   * |Download OroPlatform|
-
-   Click the **download zip**, **download tar.gz**, or **download tar.bz2** link to download the archive.
-
-   .. note:: You can also download the **virtual machine** to quickly :ref:`deploy the application in the virtual sandbox environment <virtual_machine_deployment>`.
-
-   Then extract the source files. For example, on a Linux-based OS run:
-
-   .. code-block:: none
-
-       $ cd <application-root-folder>
-       $ tar -xzvf crm-application.tar.gz
-
-2. All required dependencies are already installed in the vendor folder in the extracted archive.
-
-   .. warning:: If necessary, update the configuration parameters in the ``.env-app.local`` file once the command execution is complete.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

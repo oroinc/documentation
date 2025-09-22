@@ -3,7 +3,6 @@
 .. meta::
    :description: Generic concepts and details of the Oro Application back-office navigation and functions
 
-
 Getting Started with the Oro Application Back-Office
 ====================================================
 
@@ -11,7 +10,6 @@ Oro application is a flexible application that can be easily custom-tailored to 
 
 The Getting Started guide explains generic concepts and details of Oro application navigation and use and illustrates:
 
-* the differences between Community and Enterprise editions
 * account registration basics and troubleshooting login issues
 * main principles of creating and managing records and data in the Oro application
 * how to work with the User Menu and quickly access your profile configuration page
@@ -26,7 +24,6 @@ The Getting Started guide explains generic concepts and details of Oro applicati
    :hidden:
    :maxdepth: 1
 
-   community-vs-enterprise
    application-authentication/index
    User Menu <user-menu/index>
    navigation/index

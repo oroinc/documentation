@@ -8,7 +8,7 @@ Application Structure
 Source Code Repositories
 ------------------------
 
-Source code of the Community Editions of OroPlatform, OroCRM, and OroCommerce applications is open and is available for download, contribution, and collaboration on GitHub, in the |OroInc| organization.
+Source code of the Community Editions of OroPlatform, OroCRM, and OroCommerce applications is open and is available for contribution and collaboration on GitHub in the |OroInc| organization.
 
 The repositories in the OroInc organization may vary by type and contain the source code of the projects of various scales:
 
@@ -30,7 +30,7 @@ A **package** repository contains a module that groups a set of ready-to-use fea
 
 For example, the |Marketing| package is, by default, enabled in Oro applications.
 
-A component repository contains the source code of the reusable development module that enables a set of commonly used functions that you can use as third-party libraries without the Oro application. Rather than a complete business feature, the Oro component can handle generic functionality that is not bound to the business domain. Component repositories are typically published as read-only subtree distributions of independent package bundles or components.
+A **component** repository contains the source code of the reusable development module that enables a set of commonly used functions that you can use as third-party libraries without the Oro application. Rather than a complete business feature, the Oro component can handle generic functionality that is not bound to the business domain. Component repositories are typically published as read-only subtree distributions of independent package bundles or components.
 
 Sample component: |OroMessageQueueBundle|
 
