@@ -52,8 +52,7 @@ To create a new user in the Oro application:
    * **Emails** --- Click **Add Another Email** and type an additional email address in the field that appears. You can add as many email addresses as required. To delete an email address, click **x** next to the email field you want to delete.
    * **Phone** --- The user's phone number.
 
-4. In the **Additional** section, provide more information about the user (e.g., a job title). When visible custom fields are added to the **User** entity, they appear in this section.
-5. In the **Groups and Roles** section, select the required system-wide :ref:`group <user-management-groups>` and :ref:`role <user-guide-user-management-permissions>` for the user you are creating. At least one role must be assigned to the user, otherwise, you will be unable to save their information.
+4. In the **Groups and Roles** section, select the required system-wide :ref:`group <user-management-groups>` and :ref:`role <user-guide-user-management-permissions>` for the user you are creating. At least one role must be assigned to the user, otherwise, you will be unable to save their information.
 
    .. important:: If you have the Enterprise edition of the Oro application and wish to limit access of the user you are creating to a specific organization, select it in the **Access Settings** section. If the organization has organization-specific roles, these will appear on the list in the **Group and Roles** section once you select the required organization in **Access Settings**.
 
@@ -65,7 +64,7 @@ To create a new user in the Oro application:
 
    .. image:: /user/img/system/user_management/groups_roles_organization.jpg
 
-6. In **Access Settings** select the checkboxes in front of the organization(s) you want the user to have access to.
+5. In **Access Settings**, select the checkboxes in front of the organization(s) you want the user to have access to.
 
    .. caution:: Please be aware that users must have an organization and a business unit selected, otherwise they will be unable to log into the system.
 
@@ -74,6 +73,8 @@ To create a new user in the Oro application:
    * You can select one or more business units. In this case, the data owned by the user will be considered as belonging to all these business units and users that have access to these business units and corresponding permissions will be able to access it.
 
    * When the user's role includes division level permissions, the user will be able to access data of each business unit specified in these sections, as well as the data of the whole chain of business units subordinated to those selected in this section.
+
+6. In the **Additional** section, provide more information about the user (e.g., a job title). When visible custom fields are added to the **User** entity, they appear in this section.
 
 7. Click **Save**.
 

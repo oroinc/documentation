@@ -10,7 +10,7 @@ login attempts.
 
 The login info data is stored in the database and in the logs in the **security** log channel. The logs have the ID parameter used in the database to enable you to find a particular log item quickly.
 
-The list of all login attempts is available under **System > User Management > Login Attempts** in the main back-office menu. 
+The list of all login attempts is available under **System > User Management > Login Attempts** in the main back-office menu under the Global organization.
 
 .. image:: /user/img/system/user_management/login_attempts/login_attempts.png
    :alt: Login Attempts

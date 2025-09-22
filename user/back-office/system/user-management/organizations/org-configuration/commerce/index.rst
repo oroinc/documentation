@@ -8,13 +8,13 @@ Learn how to configure commerce-specific settings:
 .. toctree::
    :maxdepth: 1
 
+   Sales <sales/index>
    Guests <guests/index>
    Customers <customers/index>
    Taxation <taxation/index>
    Design <design/index>
    Product <product/index>
    Inventory <inventory/index>
-   Sales <sales/index>
    Catalog <catalog/index>
    Orders <orders/index>
    Search <search/index>

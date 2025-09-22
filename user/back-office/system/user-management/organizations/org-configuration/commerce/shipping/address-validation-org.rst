@@ -65,9 +65,6 @@ To enable the address validation feature per specific organization:
 
 By default, the system validates only shipping addresses.
 
-   .. image:: /user/img/system/config_commerce/shipping/address-validation-back-office-global.png
-      :alt: Global address validation configuration with additional back-office options
-
 
 .. include:: /include/include-images.rst
    :start-after: begin

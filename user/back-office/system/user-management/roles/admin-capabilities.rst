@@ -24,16 +24,15 @@ Account Management
 
 In the Account Management section, the following capabilities are available:
 
+  .. image:: /user/img/system/user_management/account-capabilities.png
+
 * **Access System Information** --- Enables a user to view the system information page under **System > System Information** in the main menu. This page contains the list of Oro packages and third-party packages that are installed, and is usually only used by system administrators and integrators.
 
   .. image:: /user/img/system/user_management/system_information_enabled.png
 
 * **Enter The Billing Address Manually** --- Enables a user to provide the billing address manually.
 * **Enter The Shipping Address Manually** --- Enables a user to provide the shipping address manually.
-* Override Customer Payment Term
-
-.. comment: Enables to change the existing payment term for the customer and its customer users.
-
+* **Override Customer Payment Term** --- Enables to change the existing payment term for the customer and its customer users.
 * **Login as Customer User** --- Enables a back-office user to access and operate the OroCommerce storefront as if they were logged in as a specific customer user. Keep in mind that this feature is available in the Enterprise edition.
 
   .. image:: /user/img/system/user_management/user-impersonation-button.png
@@ -54,6 +53,8 @@ Catalog
 -------
 
 In the Catalog section, the following capabilities are available:
+
+.. image:: /user/img/system/user_management/catalog-capabilities.png
 
 * **[Product Attribute] Create Attribute** --- Enables a user to create product attributes in the application.
 
@@ -81,6 +82,8 @@ Quotes
 
 In the Quotes section, the following capabilities are available:
 
+.. image:: /user/img/system/user_management/quotes-capabilities.png
+
 * **Add Free-Form Items** --- Enables a user to provide product details (SKU, product name) using free-form entry when creating a quote in the back-office.
 
   .. image:: /user/img/system/user_management/free_form_entry.png
@@ -89,12 +92,12 @@ In the Quotes section, the following capabilities are available:
 
   .. image:: /user/img/system/user_management/shipping_address_quote.png
 
-* Override Customer Payment Term
+* **Override Customer Payment Term** --- Enables to change the existing payment term for the customer and its customer users in quotes.
 * **Override Quote Prices** --- Enables a user to override prices in quotes. When disabled, the price fields on quote edit pages are inactive.
 
-  .. image:: /user/img/system/user_management/override_quote_price_disabled.png
+  .. image:: /user/img/system/user_management/override_quote_price_enabled.png
 
-* **Review And Approve Quotes** --- Enables a user to manage quotes (e.g. sent to customer) without approval. When disabled, the user has to submit quotes for review first. This capability affects quotes when :ref:`Backoffice Quotes Flow with Approvals <doc--workflows--backoffice-quote-flow-with-approvals>` is enabled in the application.
+* **Review And Approve Quotes** --- Enables a user to manage quotes (e.g., sent to customer) without approval. When disabled, the user has to submit quotes for review first. This capability affects quotes when :ref:`Backoffice Quotes Flow with Approvals <doc--workflows--backoffice-quote-flow-with-approvals>` is enabled in the application.
 
   .. image:: /user/img/system/user_management/approve_quotes_disabled.png
 
@@ -129,6 +132,8 @@ System Capabilities
 
 In the System Capabilities section, the following capabilities are available:
 
+.. image:: /user/img/system/user_management/system-capabilities.png
+
 Application
 ^^^^^^^^^^^
 
@@ -141,11 +146,6 @@ Application
 * **Access System Configuration** --- Enables a user to access system configuration settings under **System > Configuration** in the main menu.
 
   .. image:: /user/img/system/user_management/sys_config.png
-
-* **Debug Prices** -- Enables a user to access the Price Calculation Details menu under Sales to understand how prices for a particular product are created, what the current prices are for a given customer and website, and what the prices will be for a specific date.
-
-  .. image:: /user/img/sales/prices-debug/prices-debug-ACL.png
-     :alt: Illustration of the permission that enables Pricing Debug Menu
 
 * **Assign/Unassign Tags** --- Enables a user to assign/unassign :ref:`tags <admin-guide-tag-management>` to records.
 * **Connect to Mailchimp** --- Enables a user to map the contents of a marketing list in |oro_application| to use a segment of the subscribers list in :ref:`Mailchimp <user-guide-mailchimp-campaign>`. When the capability is enabled, the **Connect to Mailchimp** button appears on the page of the selected marketing list. Make sure that the integration between |oro_application| and :ref:`Mailchimp is configured <user-guide-mc-integration>` for the capability to work.
@@ -169,6 +169,11 @@ Application
   .. hint:: This capability does not influence a user's ability to edit their own password from the **My User** page.
 
   .. image:: /user/img/system/user_management/manage_passwords.png
+
+* **Price Calculation Details** -- Enables a user to access the Price Calculation Details menu under Sales to understand how prices for a particular product are created, what the current prices are for a given customer and website, and what the prices will be for a specific date.
+
+  .. image:: /user/img/sales/prices-debug/prices-debug-ACL.png
+     :alt: Illustration of the permission that enables Pricing Debug Menu
 
 * **Share Data View** --- Enables a user to :ref:`share and unshare the grid views <doc-grids-actions-grid-views-share>` that they have configured.
 

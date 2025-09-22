@@ -21,5 +21,3 @@ To configure the merchant location:
    a) Clear the **Use Default** box next to the option.
    b) Select a new country from the list.
    c) Click **Save**.
-
-
