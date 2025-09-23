@@ -1,4 +1,4 @@
-.. _bundle-docs-platform-promotion-bundle:
+.. _bundle-docs-commerce-promotion-bundle:
 
 OroPromotionBundle
 ==================
