@@ -29,7 +29,13 @@ The bundle also provides ``\Oro\Bundle\InvoicePaymentBundle\PaymentMethod\Invoic
 Invoice Payment Page
 --------------------
 
-Invoice payment page is available in the storefront via the ``oro_invoice_payment_frontend_invoice_payment`` route implemented by the ``\Oro\Bundle\InvoicePaymentBundle\Controller\Frontend\InvoicePaymentController`` controller.
+An invoice payment page URL can be obtained via the ``\Oro\Bundle\InvoicePaymentBundle\Provider\InvoicePaymentPageUrlProvider`` class that returns one of the following:
+
+- an external payment page URL if it is set in the invoice;
+- an invoice payment page URL for guest users;
+- a regular invoice payment page URL for logged-in users.
+
+Regular invoice payment page is available in the storefront via the ``oro_invoice_payment_frontend_invoice_payment`` route implemented by the ``\Oro\Bundle\InvoicePaymentBundle\Controller\Frontend\InvoicePaymentController`` controller.
 
 Invoice payment page for guest users is available via the ``oro_invoice_payment_frontend_invoice_payment_guest`` route that is implemented by ``\Oro\Bundle\InvoicePaymentBundle\Controller\Frontend\InvoicePaymentGuestController``. The correct way to get the URL for the invoice payment page for guest users is to use the ``\Oro\Bundle\InvoicePaymentBundle\Provider\InvoiceGuestPaymentPageUrlProvider``.
 

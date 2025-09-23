@@ -71,12 +71,13 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**O**",":ref:`SalesFrontendBundle <bundle-docs-commerce-sales-frontend-bundle>`"
    ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`","**T**"
    ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`","**P**",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
-   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`","**W**"
-   ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
-   "**F**",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
-   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
-   ":ref:`FrontendPdfGeneratorBundle <bundle-docs-commerce-frontend-pdf-generator-bundle>`","**R**","WarehouseBundle"
-   "",":ref:`RedirectBundle <bundle-docs-commerce-redirect-bundle>`",""
+   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PaymentBundle <bundle-docs-commerce-payment-bundle>`","**W**"
+   ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
+   "**F**",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
+   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
+   ":ref:`FrontendPdfGeneratorBundle <bundle-docs-commerce-frontend-pdf-generator-bundle>`",":ref:`PromotionBundle <bundle-docs-commerce-promotion-bundle>`",":ref:`WarehouseBundle <bundle-docs-commerce-warehouse-bundle>`"
+   "**R**","",""
+   ":ref:`RedirectBundle <bundle-docs-commerce-redirect-bundle>`","",""
 
 
 .. _bundle-docs-extensions:
@@ -199,6 +200,7 @@ CRM Bundles
    InventoryBundle <commerce/InventoryBundle/index>
    MultiWebsiteBundle <commerce/MultiWebsiteBundle/index>
    OrderBundle <commerce/OrderBundle/index>
+   PaymentBundle <commerce/PaymentBundle/index>
    PayPalBundle <commerce/PayPalBundle/index>
    PricingBundle <commerce/PricingBundle/index>
    PromotionBundle <commerce/PromotionBundle/index>

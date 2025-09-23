@@ -1,4 +1,4 @@
-.. _bundle-docs-commerce-warehouse-bundle-inventory-levels:
+.. _bundle-docs-commerce-warehouse-bundle:
 
 Inventory Levels in WarehouseBundle
 ===================================
