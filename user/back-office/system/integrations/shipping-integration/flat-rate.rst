@@ -27,6 +27,8 @@ To enable flat rate shipping:
 
 #. Set status to **Active** to enable the integration.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 #. Click **Save**.
 
 Next, set up a shipping rule via the :ref:`Shipping Rules Configuration <sys--shipping-rules>` page to enable this shipping method for all or some customer orders.

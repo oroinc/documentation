@@ -100,6 +100,8 @@ To configure the integration between Stripe and OroCommerce, follow the steps ou
    * **Status** --- Set the status to *Active* to enable the integration.
    * **Default Owner** - A user who is responsible for this integration and manages it.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 4. Click **Save and Close**.
 
 .. important:: Once the integration with Stripe is created, the next step is to :ref:`set up a payment rule <sys--payment-rules>` under **System > Payment Rules** and add your integration to it to display this method to the customers at checkout.
@@ -203,6 +205,8 @@ To configure the integration, follow the steps outlined below:
    * **User Monitoring** - Select the option to enable Stripe to fight fraud by detecting suspicious behavior. When enabled, the Stripe.js script is loaded on all storefront pages to provide real-time fraud protection.
    * **Status** - Select whether the integration is active or inactive.
    * **Default Owner** - A user responsible for this integration and its management.
+
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
 
 4. Click **Save and Close**
 

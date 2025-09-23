@@ -52,6 +52,8 @@ Create Integration on the Oro Application Side
      "**Custom OAuth Domain**","Enter custom domain if it is used in Dotdigital. By default |https://r1-app.dotdigital.com/| is used."
      "**Default Owner**","Select the owner of the integration. The selected user will be defined as the owner for all the records imported within the integration."
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 4. Once all the details of the integration have been specified, click **Save and Close**.
 
    As soon as the integration is successfully configured, it will appear in the integration grid.
