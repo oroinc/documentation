@@ -49,6 +49,8 @@ To configure the integration between Ingenico and OroCommerce, follow the steps 
    * **Direct Debit Text** - Provide the description of the transaction displayed on the customer bank statement to assist the customer in recognizing the transaction. This field is mandatory if you selected SEPA and ACH payment methods.
    * **Default Owner** - A user who is responsible for this integration and manages it.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 4. Click **Save and Close**.
 
 Once the integration with Ingenico is created, the next step is to :ref:`set up a payment rule <sys--payment-rules>` that enables these payment methods for all or some customer orders in the OroCommerce application.

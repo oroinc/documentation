@@ -86,6 +86,8 @@ To set up integration with Authorize.Net, complete the following:
    * **Status**  --- Set the status to **Active** to enable the integration.
    * **Default Owner** --- A user who is responsible for this integration and manages it.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 8. Click **Save and Close**.
 
 

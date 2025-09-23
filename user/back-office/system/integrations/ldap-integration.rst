@@ -93,6 +93,8 @@ To set up an integration with LDAP:
    * **Remote wins**: the LDAP server data will be applied
    * **Local wins**: the Oro application data will be applied
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 8. In the **Mapping Settings** section, define how the user attributes and role names of the Oro application and the target LDAP server will be mapped to each other.
 
    * Provide the following details: 

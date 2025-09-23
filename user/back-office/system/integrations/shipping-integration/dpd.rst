@@ -64,6 +64,8 @@ To set up a DPD integration in OroCommerce:
    * **Label Start Position** - Select the start position of the shipping label - Upper Left or Upper Right; Lower Left or Lower Right.
    * **Default Owner** - The **Default Owner** field is filled in with the name of the user creating the integration. You can change this value to a different user if necessary
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 4. Click **Save and Close**.
 
 .. hint:: OroCommerce periodically downloads zip code rules from DPD and caches them. By clicking **Invalidate Cache**, OroCommerce resets cached zip code rules.

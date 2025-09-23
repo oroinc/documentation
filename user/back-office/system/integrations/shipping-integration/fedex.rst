@@ -112,6 +112,8 @@ Click the |IcTranslations| **Translations** icon to provide spelling for differe
 
 12. The **Default Owner** field is prepopulated with the user creating the integration. You can change this value to a different user, if necessary.
 
+.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
+
 13. Click **Save and Close**.
 
 Next, set up a shipping rule via the :ref:`Shipping Rules Configuration <sys--shipping-rules>` page to enable this shipping method for all or some customer orders.
