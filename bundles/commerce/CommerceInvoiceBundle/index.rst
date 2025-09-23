@@ -72,3 +72,23 @@ You can also use the predefined Twig function ``oro_commerce_invoice_pdf_documen
 
     <a href="{{ oro_commerce_invoice_pdf_document_default_download_url(invoice) }}">Download PDF</a>
 
+Invoice PDF Download in the Storefront
+--------------------------------------
+
+OroCommerceInvoiceBundle allows customers to download an invoice PDF document directly from the invoice storefront view page via the **Download** button. This button is displayed by default but can be hidden via the ``oro_commerce_invoice.pdf_download_enabled`` system configuration setting.
+
+The bundle also provides the layout data provider that allows to check if the invoice has a PDF document of the specified type before rendering the **Download** button. The layout data provider is implemented by ``\Oro\Bundle\CommerceInvoiceBundle\Layout\DataProvider\InvoicePdfDocumentChecker`` class and registered in the DI container with the ``oro_invoice_pdf_document_checker`` name. Usage example:
+
+.. code-block:: yaml
+    :caption: Resources/views/layouts/default/layout.yml
+
+    layout:
+        actions:
+            -   '@add':
+                    id: invoice_generate_pdf_button
+                    blockType: block
+                    parentId: invoice_view_page_top_bar_actions_list
+                    options:
+                        vars:
+                            invoice: '=data["invoice"]'
+                        visible: '=data["oro_invoice_pdf_document_checker"].hasInvoiceDefaultPdfDocument(data["invoice"])'

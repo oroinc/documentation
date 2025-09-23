@@ -7,11 +7,10 @@ InvoiceBundle
 
 OroInvoiceBundle enables invoice management in a standalone application, relying exclusively on OroPlatform as a dependency.
 
-The bundle introduces ``\Oro\Bundle\InvoiceBundle\Entity\Invoice`` that represents an invoice and includes the generic invoice fields such as invoice number, invoice date, total amount, etc.
+The bundle introduces the following entities:
 
-
-Configuration
--------------
+- ``\Oro\Bundle\InvoiceBundle\Entity\Invoice`` - represents an invoice and includes the generic invoice fields such as invoice number, invoice date, total amount, etc.
+- ``\Oro\Bundle\InvoiceBundle\Entity\InvoiceLineItem`` - represents an individual line item within an invoice and includes fields such as description, unit, quantity, price, etc.
 
 .. note:: This package is designed to operate independently of OroCommerce and should not include any commerce-related functionalities. All OroCommerce-specific features must be included in the :ref:`OroCommerceInvoiceBundle <bundle-docs-commerce-invoice-bundle>`.
 
@@ -21,70 +20,32 @@ The bundle introduces the ``invoice`` feature, enabling the invoice management f
 * Invoice index and view pages in the back-office
 * Invoice PDF generation in the back-office
 
+Each invoice gets a unique invoice number generated automatically when an invoice is created. For more information, see :ref:`Invoice Number Generation <bundle-docs-platform-invoice-number-generation>`.
 
-Invoice PDF Generation
-----------------------
+Invoice Internal Status
+-----------------------
 
-The bundle makes use of the :ref:`OroPdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>` to generate PDF documents for invoices. It extends the ``PDF document`` generation functionality with ``Invoice PDF document manager`` that encloses the invoice-specific logic to simplify the PDF generation process for invoices.
+Invoice entity has the ``internalStatus`` enum field that represents the internal status of the invoice. The statuses available out-of-the-box are listed in the ``\Oro\Bundle\InvoiceBundle\Entity\Invoice`` class. You can manage the invoice internal status using ``\Oro\Bundle\InvoiceBundle\Manager\InvoiceInternalStatusManager`` manager.
 
-``Invoice PDF document manager`` is the main entry point for invoice PDF document management. It provides methods to check, retrieve, create, update, and delete PDF documents for invoices. This manager abstracts the complexity of handling different PDF document types and provides a unified interface for invoice PDF document operations. It is implemented by ``\Oro\Bundle\InvoiceBundle\PdfDocument\Manager\InvoicePdfDocumentManager`` class, which provides the following methods:
+Sending an Invoice to a Customer
+--------------------------------
 
-* ``hasPdfDocument(Invoice $invoice, string $pdfDocumentType): bool`` - checks if the invoice has a ``PDF document`` of the specified ``PDF document type``.
-* ``retrievePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` - retrieves the ``PDF document`` of the specified ``PDF document type`` for the invoice if it exists, or returns ``null`` if it does not.
-* ``createPdfDocument(AbstractInvoicePdfDocumentDemand $invoicePdfDocumentDemand): AbstractPdfDocument`` - creates a new ``PDF document`` for the invoice based on the provided ``Invoice PDF document demand``.
-* ``updatePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` - updates the existing ``PDF document`` of the specified ``PDF document type`` for the invoice and returns it. If the invoice does not have such ``PDF document``, it returns ``null``.
-* ``deletePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` - deletes the existing ``PDF document`` of the specified ``PDF document type`` for the invoice and returns it. If the invoice does not have such ``PDF document``, it returns ``null``.
+OroInvoiceBundle provides the ability to send an invoice to a customer via email. It leverages the :ref:`OroEmailBundle <bundle-docs-platform-email-bundle>` to facilitate this functionality. The main entry points are ``\Oro\Bundle\CommerceInvoiceBundle\Email\InvoiceEmailModelBuilder`` to build an email model and ``\Oro\Bundle\InvoiceBundle\Email\InvoiceEmailModelSender`` to send it.
 
-``PDF document types`` available out-of-the-box are listed in the ``\Oro\Bundle\InvoiceBundle\PdfDocument\InvoicePdfDocumentType`` class. The only available type is **invoice_default** for now. For information on how to create your own ``PDF document type``, see the :ref:`How to Create a PDF Document Type <bundle-docs-platform-pdf-generator-bundle-create-pdf-document-type>` section of the documentation.
+The bundle declares the ``oro_invoice_send_invoice_to_customer`` operation backed by the ``\Oro\Bundle\InvoiceBundle\Operation\SendInvoiceToCustomer`` class to expose this functionality in the UI as the **Send to Customer** button on the invoice view back-office page. It opens the *Send Email* dialog pre-filled with the compiled email model, including its email attachments (if any).
 
-The Twig templates for **invoice_default** ``PDF document type`` are located in the ``Resources/views/PdfDocument/InvoiceDefault/`` directory of the bundle. They are designed to be easily extended from another template, allowing you to customize as many blocks as possible without duplicating the entire template. For example, you can create a custom template for the invoice PDF document by extending the default template:
+.. note:: If the invoice is not yet in the **posted** status, it is transitioned to this status before the dialog opens.
 
-.. code-block:: twig
-    :caption: templates/bundles/PdfDocument/InvoiceDefault/content.html.twig
+The email template used to compile the email is ``invoice_notification_template`` that contains general information about an invoice and a PDF attachment of the invoice. For more information about invoice PDF documents see :ref:`Invoice PDF Documents <bundle-docs-platform-invoice-pdf-documents>`.
 
-    {% extends '@!OroInvoice/PdfDocument/InvoiceDefault/content.html.twig' %}
-
-    {% block invoice_header_logo %}
-        {# Custom header logo #}
-    {% endblock %}
-
-
-Invoice PDF URL
----------------
-
-The bundle makes use and extends the :ref:`PDF document URL generator <bundle-docs-platform-pdf-generator-bundle-download-pdf-document>` to generate a URL for the invoice PDF document. It introduces the ``invoice PDF document URL generator`` that is implemented by ``\Oro\Bundle\InvoiceBundle\PdfDocument\UrlGenerator\InvoicePdfDocumentUrlGenerator`` class. It simplifies the process of generating a URL specifically for invoices.
-
-Usage example:
-
-.. code-block:: php
-
-    $invoice = ...; // Retrieve the invoice entity
-    $pdfDocumentType = InvoicePdfDocumentType::DEFAULT; // Specify the PDF document type
-
-    $invoicePdfDocumentUrl = $this->invoicePdfDocumentUrlGenerator->generateUrl($invoice, $pdfDocumentType);
-
-
-You can also generate a URL for the invoice PDF document in Twig templates using the ``oro_invoice_pdf_document_download_url`` Twig function:
-
-.. code-block:: twig
-
-    <a href="{{ oro_invoice_pdf_document_download_url(invoice, 'invoice_default') }}">Download PDF</a>
-
-
-Or using the predefined Twig function ``oro_invoice_pdf_document_default_download_url`` - for **invoice_default** ``PDF document type``:
-
-.. code-block:: twig
-
-    <a href="{{ oro_invoice_pdf_document_default_download_url(invoice) }}">Download PDF</a>
-
-
-    :start-after: begin
+.. hint:: Learn more about how email template attachments work in :ref:`Email Template Attachments <bundle-docs-platform-email-bundle-templates-attachments>`.
 
 
 .. toctree::
-   :hidden:
+   :titlesonly:
    :maxdepth: 1
 
    invoice-number-generation
+   invoice-pdf-documents
    configuration
 
