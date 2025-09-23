@@ -1,3 +1,4 @@
+.. _bundle-docs-platform-email-bundle-commands:
 
 CLI Commands (EmailBundle)
 ==========================

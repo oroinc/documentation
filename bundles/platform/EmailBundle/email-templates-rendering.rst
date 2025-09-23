@@ -102,5 +102,8 @@ Example:
     }
 
 
+.. note:: Email renderer also compiles the email template attachments (if any) to make it possible to convert them into email attachments. For more details, see :ref:`Email Templates Attachments <bundle-docs-platform-email-bundle-templates-attachments>`.
+
+
 .. include:: /include/include-links-dev.rst
     :start-after: begin

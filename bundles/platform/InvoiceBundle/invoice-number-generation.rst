@@ -1,3 +1,5 @@
+.. _bundle-docs-platform-invoice-number-generation:
+
 Invoice Number Generation
 =========================
 

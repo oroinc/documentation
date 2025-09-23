@@ -25,6 +25,7 @@ Related Documentation
    email-templates-inheritance
    email-templates-send
    email-templates-migrations
+   email-templates-attachments
    mailboxes
    ownership
    transition-actions
