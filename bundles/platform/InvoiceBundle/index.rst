@@ -20,6 +20,8 @@ The bundle introduces the ``invoice`` feature, enabling the invoice management f
 * Invoice index and view pages in the back-office
 * Invoice PDF generation in the back-office
 
+.. note:: By default, the **Enable Invoices** option is disabled.
+
 Each invoice gets a unique invoice number generated automatically when an invoice is created. For more information, see :ref:`Invoice Number Generation <bundle-docs-platform-invoice-number-generation>`.
 
 Invoice Internal Status
@@ -40,7 +42,6 @@ The email template used to compile the email is ``invoice_notification_template`
 
 .. hint:: Learn more about how email template attachments work in :ref:`Email Template Attachments <bundle-docs-platform-email-bundle-templates-attachments>`.
 
-
 .. toctree::
    :titlesonly:
    :maxdepth: 1
@@ -48,4 +49,3 @@ The email template used to compile the email is ``invoice_notification_template`
    invoice-number-generation
    invoice-pdf-documents
    configuration
-
