@@ -15,12 +15,14 @@ Related Documentation
 * :ref:`Reindex Listeners <previously-purchased-products-reindex-listeners>`
 * :ref:`Managers <previously-purchased-products-managers>`
 * :ref:`Providers <previously-purchased-products-providers>`
+* :ref:`Order PDF Documents <bundle-docs-commerce-order-pdf-documents>`
 
 .. toctree::
    :hidden:
    :maxdepth: 1
 
    previously-purchased-products
+   order-pdf-documents
 
 
 .. include:: /include/include-links-dev.rst

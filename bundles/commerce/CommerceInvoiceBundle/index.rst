@@ -66,7 +66,7 @@ You can also generate a storefront URL for the invoice PDF document in Twig temp
     <a href="{{ oro_commerce_invoice_pdf_document_download_url(invoice, 'invoice_default') }}">Download PDF</a>
 
 
-You can also use the predefined Twig function ``oro_commerce_invoice_pdf_document_default_download_url`` for **invoice_default** ``PDF document type``:
+You can also use the predefined Twig function ``oro_commerce_invoice_pdf_document_default_download_url`` for ``invoice_default`` **PDF document type**:
 
 .. code-block:: twig
 
