@@ -40,6 +40,8 @@ Create a New Email Template
 
    .. note:: If you prefer working with email templates via the WYSIWYG editor, you can enable it :ref:`globally <admin-configuration-email-configuration-global>` or :ref:`per organization <admin-configuration-email-configuration-organization>`. However, remember that the WYSIWYG editor is incompatible with the default base email template. Enabling it may break existing email templates and prevent them from being saved. Therefore, it is disabled by default.
 
+.. _email-templates-attachments:
+
    * **Attachments** --- The field enables you to include files or images in email templates. The ability to add these files or images depends on the entity you select when creating the template (e.g., Order, User, Quote, etc). The selected entity must contain one of the following :ref:`entity field types <admin-guide-create-entity-fields-basic>`: *File, Image, Multiple Files*, *Multiple Images*.
 
         * If the entity already has predefined files or images, you can select them directly from the **Attachments** field. If several files or images are uploaded into the entity field and you select it in the **Attachments** field, then all the uploaded files will be attached to the email.
