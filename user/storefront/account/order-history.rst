@@ -35,19 +35,32 @@ Information displayed in the tables depends on the columns selected in the |Colu
 * Adjust (to define which columns to show in the table).
 * Filter the displayed orders (see more in :ref:`Filters <frontstore-guide--navigation-filters>`).
 
-If the order was created on behalf of the buyer, this will be reflected on the order view page with the following note: *This order was created on your behalf by a member of our staff.*
+Order View Page
+---------------
+
+If the order was created on behalf of the buyer, this will be indicated on the order view page with the following note: *This order was created on your behalf by a member of our staff.*
 
 .. image:: /user/img/storefront/orders/order-impersonated.png
    :alt: An order view page with a note saying "This order was created on your behalf by a member of our staff".
 
-If an order has any relevant documents uploaded for the customer user, these will be visible on the order page:
+Any documents uploaded for the customer user will also be visible directly on the order page:
 
 .. image:: /user/img/sales/orders/order-customer-documents.png
    :alt: Illustration of the documents uploaded via back-office on the customer side in the storefront
 
-You can also start a :ref:`conversation <storefront-guide--conversations>` by clicking **Ask a question** on the order view page.
+Customers can start a :ref:`conversation <storefront-guide--conversations>` by clicking Ask a question on the order view page.
+
+There is also an option download a PDF version of any placed order directly from the order view page, if the :ref:`Order PDF download feature <configuration--commerce--orders--order-creation--global>` is enabled in the back-office. Each download generates a fresh PDF with an updated timestamp.
+
+.. image:: /user/img/system/config_commerce/order/order-pdf.png
+   :alt: Illustration of the Order Download Button in the storefront
+
+.. note:: Order PDF functionality is available as of OroCommerce version 6.1.6.
+
+To print an order, click on the **Print** button on the top right and follow the instructions on your device.
 
 .. note:: More details on how to review ordered items, billing and shipping information, and re-order products from the previous orders are described in the :ref:`Orders <frontstore-guide--orders>` section of the Storefront guide.
+
 
 .. include:: /include/include-svg.rst
    :start-after: begin
