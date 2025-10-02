@@ -20,6 +20,7 @@ Related Documentation
    product-variant-search
    related-items
    external-product-images
+   quick-order-form-validation
    customize-products/index
 
 
