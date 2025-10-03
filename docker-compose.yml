@@ -1,5 +1,0 @@
-services:
-  doc:
-    image: oroinc/documentation:sphinx-7.1.2
-    volumes:
-        - ./:/documentation

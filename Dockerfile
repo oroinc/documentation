@@ -7,6 +7,7 @@ ARG MAINTENANCE_BRANCHES
 ARG BUILDER=html
 
 RUN apt-get -y update && \
+    apt-get -y dist-upgrade && \
     apt-get -y install git && \
     apt-get clean
 
@@ -32,9 +33,9 @@ EOT
 
 FROM scratch AS build_artifacts
 WORKDIR /
-COPY --from=build /documentation/_build/ .
+COPY --link --from=build /documentation/_build/ .
 
-FROM nginx:stable-alpine-slim AS runtime
+FROM nginx:stable AS runtime
 
 LABEL org.opencontainers.image.title="Oro Documentation" \
     org.opencontainers.image.description="Docker image for building and serving Sphinx documentation" \
