@@ -147,7 +147,7 @@ Get action element when after render.
 Parameters:
 
 .. csv-table::
-   :header: "Name", ""Type", "Description"
+   :header: "Name", "Type", "Description"
    :widths: 20, 20, 20
 
    "key","string","action name"
