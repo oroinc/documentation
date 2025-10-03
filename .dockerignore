@@ -1,0 +1,26 @@
+# Docker files
+Dockerfile
+.dockerignore
+docker-compose.yml
+docker-compose*.yml
+docker-bake.hcl
+
+# CI/CD
+.gitlab-ci.yml
+.travis.yml
+Jenkinsfile
+.circleci
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Documentation build artifacts (if any in repo)
+_build/
+.sphinx_cache/
+*.doctree
+
