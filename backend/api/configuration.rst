@@ -300,6 +300,8 @@ This section describes the configuration of entity fields.
 
 *  **meta\_property** *boolean* - A flag indicates whether the field represents meta information. For JSON:API, such fields are returned in the |JSON:API: Meta Section| section. By default, ``false``.
 
+*  **meta\_property\_result\_name** *string* - The name by which the meta property should be returned in the response. Can be used when the name of a meta property is not suitable the response.
+
 *  **target\_class** *string* - The class name of a target entity if a field represents an association. If the API resource is based on the non-ORM entity, set the target class in a configuration file.
 
 *  **target\_type** *string* - The type of a target association. Can be **to-one** or **to-many**. Also, **collection** can be used as an alias for **to-many**. **to-one** can be omitted as it is used by default. If the API resource is based on the non ORM entity, set the target type in a configuration file.
