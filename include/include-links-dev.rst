@@ -21,11 +21,11 @@ Links (Dev)
 
 .. |ContactBundle| raw:: html
 
-   <a href="https://github.com/oroinc/crm/tree/6.1/srcOro/Bundle/ContactBundle" target="_blank">ContactBundle</a>
+   <a href="https://github.com/oroinc/crm/tree/6.1/src/Oro/Bundle/ContactBundle" target="_blank">ContactBundle</a>
 
 .. |ImportExport namespace| raw:: html
 
-   <a href="https://github.com/oroinc/crm/tree/6.1/srcOro/Bundle/ContactBundle/ImportExport" target="_blank">ImportExport namespace</a>
+   <a href="https://github.com/oroinc/crm/tree/6.1/src/Oro/Bundle/ContactBundle/ImportExport" target="_blank">ImportExport namespace</a>
 
 .. |Resources/config/importexport.yml| raw:: html
 
@@ -5322,7 +5322,7 @@ Links (Dev)
 
 .. |Complex migration| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Migrations/Schema/OroProductBundleInstaller.php" target="_blank">Complex migration</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/Oro/Bundle/ProductBundle/Migrations/Schema/OroProductBundleInstaller.php" target="_blank">Complex migration</a>
 
 .. |RenameExtension| raw:: html
 
@@ -6138,19 +6138,19 @@ Links (Dev)
 
 .. |OroSalesBundle| raw:: html
 
-    <a href="https://github.com/oroinc/crm/tree/6.1/srcOro/Bundle/SalesBundle" target="_blank">OroSalesBundle</a>
+    <a href="https://github.com/oroinc/crm/tree/6.1/src/Oro/Bundle/SalesBundle" target="_blank">OroSalesBundle</a>
 
 .. |OroActivityContactBundle| raw:: html
 
-    <a href="https://github.com/oroinc/crm/tree/6.1/srcOro/Bundle/ActivityContactBundle" target="_blank">OroActivityContactBundle</a>
+    <a href="https://github.com/oroinc/crm/tree/6.1/src/Oro/Bundle/ActivityContactBundle" target="_blank">OroActivityContactBundle</a>
 
 .. |OroAnalyticsBundle| raw:: html
 
-    <a href="https://github.com/oroinc/crm/tree/6.1/srcOro/Bundle/AnalyticsBundle" target="_blank">OroAnalyticsBundle</a>
+    <a href="https://github.com/oroinc/crm/tree/6.1/src/Oro/Bundle/AnalyticsBundle" target="_blank">OroAnalyticsBundle</a>
 
 .. |OroChannelBundle| raw:: html
 
-    <a href="https://github.com/oroinc/crm/tree/6.1/srcOro/Bundle/ChannelBundle" target="_blank">OroChannelBundle</a>
+    <a href="https://github.com/oroinc/crm/tree/6.1/src/Oro/Bundle/ChannelBundle" target="_blank">OroChannelBundle</a>
 
 .. |OroInfinitePayBundle| raw:: html
 
