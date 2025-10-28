@@ -7,6 +7,8 @@ variable "BUILD_TIMESTAMP" { default = null }
 variable "GIT_BRANCH" { default = null }
 variable "TAG_NAME" { default = null }
 variable "MAINTENANCE_BRANCHES" { default = "" }
+variable "BUILDER" { default = "html" }
+
 
 function "labelList" {
   params = []
@@ -33,6 +35,7 @@ target "runtime" {
   labels = labelList()
   args = {
     MAINTENANCE_BRANCHES = "${MAINTENANCE_BRANCHES}"
+    BUILDER              = "${BUILDER}"
   }
 }
 
@@ -42,5 +45,6 @@ target "build_artifacts" {
   output     = ["type=local, dest=./_build"]
   args = {
     MAINTENANCE_BRANCHES = "${MAINTENANCE_BRANCHES}"
+    BUILDER              = "${BUILDER}"
   }
 }

@@ -61,6 +61,8 @@ def get_locales(app, exception):
 
 
 def html_page_context(app, pagename, templatename, context, doctree):
+    if app.builder.name == 'markdown':
+        return
     add_html_link(app, pagename, context)
 
 
@@ -72,6 +74,8 @@ def add_html_link(app, pagename, context):
 
 def create_sitemap(app, exception):
     """Generates the sitemap.xml from the collected HTML page links"""
+    if app.builder.name == 'markdown':
+        return
     site_url = app.builder.config.site_url or app.builder.config.html_baseurl
     if not site_url:
         print("sphinx-sitemap error: neither html_baseurl nor site_url "
