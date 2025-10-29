@@ -42,6 +42,8 @@ To create a new OAuth application in the back-office:
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations (available for the Enterprise edition only).
    * **Application Name** --- Provide a meaningful name for the application you are adding.
    * **Active** --- Select the **Active** checkbox to activate the new application.
+   * **Client Support All API Types** --- Select whether the client should support all available API types. If disabled, the *Selected API Types* filed appears with a list of API types for the user to select the required one.
+   * **Selected API Types** --- The field appears when the *Client Support All API Types* field is disabled. Select the API type that the client should support. Available options are JSON:API, Email Addon, Smart Agent Integration, and :ref:`SCIM <admin-configuration-user-settings-scim>`.
    * **Grant Type** --- Select the grant type to apply to the new application. Currently, the available grant types are *Authorization Code*, *Client Credentials*, and *Password*. The |Authorization Code Grant| type is used by confidential and public clients to exchange an authorization code for an access token, the |OAuth Client Credentials Grant| type is used for machine-to-machine authentication (e.g., in a cron job that performs maintenance tasks over an API) and |OAuth Password Grant| is used by trusted first-party clients to exchange the credentials (username and password) for an access token.
    * **Users** --- The field appears when selecting *Client Credentials* as a grant type in the previous field. Select a customer user who you want to assign the new application to.
    * **Redirect URLs** --- The field appears when selecting *Authorization Code* as a grant type. The list of URLs to which it is allowed to redirect the user back to.
@@ -58,13 +60,17 @@ Once the application is created, you are provided with a Client ID and a Client 
 
 .. important:: For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe so you can access it later.
 
+Use the generated Client ID and Client Secret to retrieve an access token to connect to your Oro application.
+
+For Client Credentials grant type application, an access token will be generated and shown as well. It can be used for API requests.
+
+    .. image:: /user/img/system/user_management/oauth/client_creds_app.png
+
 You can create as many applications as you need for any of your existing organizations. All added applications are displayed in the grid, and you can filter them by name, organization, and status.
 
 .. hint:: Use the |IcMore| **More Options** menu to view, edit, delete, activate or deactivate the existing OAuth applications.
 
           .. image:: /user/img/system/user_management/oauth/oauth_app_actions.png
-
-Use the generated Client ID and Client Secret to retrieve an access token to connect to your Oro application.
 
 .. finish_oauth2
 
