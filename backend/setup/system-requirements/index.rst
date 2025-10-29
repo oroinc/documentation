@@ -127,10 +127,10 @@ PostgreSQL `uuid-ossp` extension should be loaded for proper doctrine's `guid` t
 Optional recommendations
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* |Tidy PHP extension| should be installed to make sure that HTML is correctly converted into a text representation
-* |Redis| - could be used for more efficient application caching. Supported versions of Redis: 7.2.x
-* |PNGQuant| and |JPEGOptim| are used if it is necessary to optimize the image size in storage
-* |Gotenberg| is used for PDF generation. Supported versions of Gotenberg: 8.0.x
+* |Tidy PHP extension| should be installed to make sure that HTML is correctly converted into a text representation.
+* |Redis| can be used for more efficient application caching. Supported versions of Redis: 7.2.x.
+* |PNGQuant| and |JPEGOptim| are used if it is necessary to optimize the image size in storage.
+* |Gotenberg| is used for PDF generation. Supported versions of Gotenberg: >=8.5.x. It is recommended that you install the latest available version to benefit from frequent Chromium updates.
 
 
 Client-side Requirements
