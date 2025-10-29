@@ -14,3 +14,4 @@ sphinxcontrib-phpdomain
 sphinxcontrib-jquery
 git+https://github.com/oroinc/sphinxdoc-integrity-check-ext.git@new-sphinx
 sphinx-multiversion
+git+https://github.com/oroinc/sphinx-markdown-builder.git@main

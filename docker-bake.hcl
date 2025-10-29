@@ -6,6 +6,9 @@ variable "GIT_URL" { default = null }
 variable "BUILD_TIMESTAMP" { default = null }
 variable "GIT_BRANCH" { default = null }
 variable "TAG_NAME" { default = null }
+variable "MAINTENANCE_BRANCHES" { default = "" }
+variable "BUILDER" { default = "html" }
+
 
 function "labelList" {
   params = []
@@ -30,10 +33,18 @@ target "runtime" {
     "${ORO_IMAGE}:${formatdate("YYYYMMDD", timestamp())}"
   ]
   labels = labelList()
+  args = {
+    MAINTENANCE_BRANCHES = "${MAINTENANCE_BRANCHES}"
+    BUILDER              = "${BUILDER}"
+  }
 }
 
 target "build_artifacts" {
   target     = "build_artifacts"
   dockerfile = "Dockerfile"
   output     = ["type=local, dest=./_build"]
+  args = {
+    MAINTENANCE_BRANCHES = "${MAINTENANCE_BRANCHES}"
+    BUILDER              = "${BUILDER}"
+  }
 }

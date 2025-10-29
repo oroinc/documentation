@@ -31,6 +31,11 @@ TEMPLATE = """<html>
 
 def generate_redirects(app):
     logger = logging.getLogger(__name__)
+    
+    if app.builder.name == 'markdown':
+        logger.debug("Skipping redirects for Markdown builder")
+        return
+    
     path = os.path.join(app.srcdir, app.config.redirects_file)
     if not os.path.exists(path):
         logger.info("Could not find redirects file at '%s'" % path)
