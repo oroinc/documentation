@@ -12,6 +12,7 @@ Learn how to configure localization options, currency and tracking, as well and 
   * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
   * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
   * :ref:`Currency <admin-configuration-currency-org>`
+  * :ref:`User Settings <admin-configuration-user-settings-org>`
   * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
   * :ref:`Website Routing Settings <organization-config-website-routing>`
   * :ref:`Website Sitemap Settings <organization-config-website-sitemap>`
@@ -26,6 +27,7 @@ Learn how to configure localization options, currency and tracking, as well and 
    Display Settings <organization-display-settings>
    Email Configuration <organization-email-settings>
    Currency <organization-currency>
+   User Settings <organization-user-settings>
    Upload Settings <organization-upload-settings>
    Routing Settings <organization-routing>
    Sitemap Settings <organization-sitemap>

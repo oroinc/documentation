@@ -164,6 +164,7 @@ CRM Bundles
    QueryDesignerBundle <platform/QueryDesignerBundle/index>
    RedisConfigBundle <platform/RedisConfigBundle/index>
    ReportBundle <platform/ReportBundle/index>
+   ScimBundle <platform/ScimBundle/index>
    ScopeBundle <platform/ScopeBundle/index>
    SearchBundle <platform/SearchBundle/index>
    SecurityBundle <platform/SecurityBundle/index>

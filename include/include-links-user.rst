@@ -1009,3 +1009,31 @@ Links (User)
 .. |Sales Management|  raw:: html
 
    <a href="https://hive.oroinc.com/course/sales-management/" target="_blank">Sales Management</a>
+
+.. |RFC 7642|  raw:: html
+
+   <a href="https://datatracker.ietf.org/doc/html/rfc7642" target="_blank">RFC 7642</a>
+
+.. |RFC 7643|  raw:: html
+
+   <a href="https://datatracker.ietf.org/doc/html/rfc7643" target="_blank">RFC 7643</a>
+
+.. |RFC 7644|  raw:: html
+
+   <a href="https://datatracker.ietf.org/doc/html/rfc7644" target="_blank">RFC 7644</a>
+
+.. |Microsoft Entra ID|  raw:: html
+
+   <a href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/user-provisioning" target="_blank">Microsoft Entra ID</a>
+
+.. |Microsoft Entra provisioning service|  raw:: html
+
+   <a href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service" target="_blank">Microsoft Entra provisioning service</a>
+
+.. |Microsoft Entra admin center|  raw:: html
+
+   <a href="https://entra.microsoft.com/" target="_blank">Microsoft Entra admin center</a>
+
+.. |Application Administrator|  raw:: html
+
+   <a href="https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#application-administrator" target="_blank">Application Administrator</a>
