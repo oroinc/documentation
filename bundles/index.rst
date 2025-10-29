@@ -135,6 +135,7 @@ CRM Bundles
    DataGridBundle <platform/DataGridBundle/index>
    DistributionBundle <platform/DistributionBundle/index>
    DigitalAssetBundle <platform/DigitalAssetBundle/index>
+   DraftBundle <platform/DraftBundle/index>
    ElasticSearchBundle <platform/ElasticSearchBundle/index>
    EmailBundle <platform/EmailBundle/index>
    EmbeddedFormBundle <platform/EmbeddedFormBundle/index>
@@ -169,6 +170,7 @@ CRM Bundles
    QueryDesignerBundle <platform/QueryDesignerBundle/index>
    RedisConfigBundle <platform/RedisConfigBundle/index>
    ReportBundle <platform/ReportBundle/index>
+   ScimBundle <platform/ScimBundle/index>
    ScopeBundle <platform/ScopeBundle/index>
    SearchBundle <platform/SearchBundle/index>
    SecurityBundle <platform/SecurityBundle/index>
@@ -183,7 +185,6 @@ CRM Bundles
    UIBundle <platform/UIBundle/index>
    WindowsBundle <platform/WindowsBundle/index>
    WorkflowBundle <platform/WorkflowBundle/index>
-   DraftBundle <platform/DraftBundle/index>
    PdfGeneratorBundle <platform/PdfGeneratorBundle/index>
    AddressValidationBundle <commerce/AddressValidationBundle/index>
    CatalogBundle <commerce/CatalogBundle/index>
