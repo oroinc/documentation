@@ -3,13 +3,13 @@
 Externally Stored Product Images
 ================================
 
-Out-of-the-box, product images are stored in-house and with the support of :ref:`Digital Asset Manager <digital-assets>`. If you need to switch the product images field to the :ref:`externally stored files <attachment-bundle-externally-stored-files>` flow, you have to do it manually via code as the **Stored Externally** entity field config cannot be changed from the UI for the already existing fields.
+Out-of-the-box, product images are stored in-house and with the support of :ref:`Digital Asset Manager <digital-assets>`. If you need to switch the product images field to the :ref:`externally stored files <attachment-bundle-externally-stored-files>` flow, you have to do it manually via code, as the **Stored Externally** entity field config cannot be changed from the UI for the already existing fields.
 
 .. note:: The rule of thumb is to decide how product images field should work before you create products and upload images. Otherwise, you may have to create a data migration for the already existing product images.
 
 .. note:: Switching to the externally stored product images flow disables :ref:`Digital Asset Manager <digital-assets>` for that field.
 
-Below you can find the example of how to manually switch to the externally stored product images flow.
+Below you can find an example of how to manually switch to the externally stored product images flow.
 
 1. Create the migration that switches `attachment.is_stored_externally` entity field config to `true`:
 
@@ -73,11 +73,31 @@ Below you can find the example of how to manually switch to the externally store
                tags:
                    - { name: form.type_extension }
 
-.. note:: The product image field is system-owned, therefore you need to create a form extension as the product image field's options should be controlled explicitly by a developer. For the :ref:`custom extend fields <book-entities-extended-entities-add-fields>` added to a form automatically, form options are generated automatically so you do not have to create a form extension that toggles an option.
+.. note:: The product image field is system-owned, therefore you need to create a form extension as the product image field's options should be controlled explicitly by a developer. For the :ref:`custom extend fields <book-entities-extended-entities-add-fields>` added to a form automatically, form options are generated automatically, so you do not have to create a form extension that toggles an option.
 
-Afterward, the product images field on a the product form will switch from the file upload input to the external URL input. The application will not process, resize or modify product images, but return an external URL as is. Product images import will also switch to the externally stored files, so it will not try to upload files, but only pick their URLs.
+Afterward, the product images field on the product form will switch from the file upload input to the external URL input. The application will not process, resize, or modify product images, but return an external URL as is. Product images import will also switch to the externally stored files, so it will not try to upload files, but only pick their URLs.
 
-.. note:: If you need to have more control on how the externally stored files URLs are used for displaying images, look towards :ref:`custom URL provider <attachment-bundle-custom-url-provider>`.
+.. note:: If you need more control over how the externally stored files' URLs are used for displaying images, refer to the :ref:`custom URL provider <attachment-bundle-custom-url-provider>` documentation.
+
+Getting External Data From a URL
+--------------------------------
+
+There are two methods in ``Oro/Bundle/AttachmentBundle/Tools/ExternalFileFactory.php`` for representing external file data - `createFromFile` and `createFromUrl`.
+By default, the createFromUrl method uses the `HEAD` HTTP method to retrieve file metadata. If `HEAD` is disabled on the requested server, you can configure the external URL with a regex and specify alternative HTTP methods for metadata retrieval.
+
+  .. code-block:: yaml
+       :caption: config/config.yml
+
+       oro_attachment:
+           external_file_details_http_methods:
+               - regex: '/^https:\/\/example\.com\/products\/*/'
+                 methods: [ GET ]
+               - regex: '/^https:\/\/example\.com\/media\/*/'
+                 methods: [ HEAD, GET ]
+
+.. note:: The script will attempt the HTTP methods (e.g., `GET`, `HEAD`, etc.) in the listed order for each URL pattern. Once a request succeeds, the script stops and does not try any subsequent methods for that endpoint.
+
+.. note:: The `HEAD` method will be used by default if the requested URL does not match any regex or if the external_file_details_http_methods configuration is missing.
 
 .. include:: /include/include-links-dev.rst
     :start-after: begin
