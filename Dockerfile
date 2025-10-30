@@ -1,4 +1,4 @@
-FROM sphinxdoc/sphinx:7.1.2
+FROM sphinxdoc/sphinx:7.4.7 AS build
 
 # Used for run in multi-version documentation builds for doc.oroinc.com
 # Pipe separated list of branch names, e.g. "5.1|6.0|6.1|master"
