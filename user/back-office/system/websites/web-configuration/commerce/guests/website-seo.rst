@@ -29,9 +29,9 @@ To configure the settings per website:
 
 6. Click **Save Settings**.
 
-.. image:: /user/img/system/config_commerce/seo/website-seo-settings.png
+.. .. image:: /user/img/system/config_commerce/seo/website-seo-settings.png
    :alt: SEO settings configuration per website
-
+.. leaving screenshot with old UI while BB-26449 is open.
 
 .. include:: /include/include-images.rst
    :start-after: begin

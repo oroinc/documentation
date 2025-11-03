@@ -19,19 +19,13 @@ You can update the product watermark settings, enable image preview and configur
 
 4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
-5. In the **General** section, configure the following options:
-
-   **Enable Original File Names** --- When enabled, the original image file name will be appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") will be replaced with "-" (dash).
-
-   For example, the name of the file is **coffee_maker/bosch_#RND123.jpg**, the system-generated hash value is "media/cache/attachment/product_gallery_main/5bae287538.jpg". If the option is enabled, the file name will be displayed in the storefront as follows "media/cache/attachment/product_gallery_main/5bae287538-coffee-maker-bosch-RND123.jpg"
-
-6. In the **Product Image Watermark** section, the following options are available:
+5. In the **Product Image Watermark** section, the following options are available:
 
    * **File** -- The image file with the watermark on a transparent background.
    * **Size** -- The size of the watermark in percentage compared to the whole image.
    * **Position** -- The watermark position on the image (e.g, top left, top, top right, left, right, center, bottom left, bottom, and bottom right).
 
-7. In the **Image Gallery Options** section, enable or disable product preview on product listing pages in the storefront.
+6. In the **Image Gallery Options** section, enable or disable product preview on product listing pages in the storefront.
 
    **Enable Image Preview on Product Listing** - Enable the option to add the |ZoomIc| icon to the product image on the product listing page in the storefront which will open a pop up image gallery once clicked.
 
