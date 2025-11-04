@@ -33,7 +33,7 @@ Exchanged General Data
 
 During the integration between OroCommerce and Stripe, multiple types of data are exchanged to facilitate the smooth flow of payment information and enable secure and seamless transactions. The data exchanged between OroCommerce and Stripe includes:
 
-**Transaction Amount:** The total amount of the payment, which is sent from OroCommerce to Stripe  for processing.
+**Transaction Amount:** The total amount of the payment, which is sent from OroCommerce to Stripe for processing.
 
 **Currency:** The currency in which the transaction is made.
 
