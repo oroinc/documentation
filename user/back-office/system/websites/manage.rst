@@ -29,7 +29,7 @@ OroCommerce redirects anonymous users to the default website. Logged in customer
 
 To set a website as default:
 
-1. Navigate to **System > Websites** using the main menu.
+1. Navigate to **System > Websites** using the main menu of the :ref:`global organization <user-management-organizations>`.
 
 2. Click on the website you would like to use as default (e.g., Australia).
 
@@ -62,7 +62,9 @@ A B2C website can be configured in two ways, either :ref:`during creation <syste
 
 4. The popup confirmation dialog displays the list of options that will be modified by this configuration.
 
-   .. image:: /user/img/system/websites/B2C_settings2.png
+   .. image:: /user/img/system/websites/B2C_settings.png
+      :align: center
+      :scale: 60%
       :alt: The list of options that are modified for the B2C website
 
 5. Click **Yes** to confirm.

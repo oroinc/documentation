@@ -131,7 +131,9 @@ In the B2C business model, unlike B2B, you can enable guest shopping lists, disa
 
 Here is a list of options that are configured to match the B2C strategy:
 
-.. image:: /user/img/system/websites/B2C_settings2.png
+.. image:: /user/img/system/websites/B2C_settings.png
+   :align: center
+   :scale: 60%
    :alt: The list of options that are modified for the B2C website
 
 All the settings can be manually adjusted in the system configuration later on, if needed.
