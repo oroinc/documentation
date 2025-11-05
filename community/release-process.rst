@@ -77,21 +77,21 @@ If you are planning to start a new project in 2025, we recommend beginning devel
 OroCommerce Community Edition Releases
 --------------------------------------
 
-The Oro team produces patch releases for an **LTS** version of OroCommerce Community Edition only until the next LTS version is released (typically in 12 months).
+The Oro team produces patch releases for each version of OroCommerce Community Edition for 12 months after its release.
 
 Community developers and users have access to the following two product branches:
 
-- **Stable** – |6.1 branch| points to the latest LTS version. Use this branch for testing and deployment. To benefit from the latest features, fixes, and security updates, upgrade to the next patch release tag or LTS release tag as soon as they are available.
+- **Stable** – |6.1 branch| points to the latest stable release. Use this branch for testing and deployment. To benefit from the latest features, fixes, and security updates, upgrade to the next patch release tag as soon as it becomes available.
 - **Development** – |7.0 branch| points to the latest published commit and is updated frequently. This branch should be used **only by the developers and contributors** who actively follow the project progress on GitHub. This branch is not considered stable and is not recommended for production use.
 
 .. csv-table::
    :header: "OroCommerce Community Edition", "Release Date", "Patch Releases Available Until"
    :widths: 50, 35, 45
 
-   "**5.0 LTS**", "**January 2022**", "**March 2023**"
-   "**5.1 LTS**", "**March 2023**", "**March 2024**"
-   "**6.0 LTS**", "**March 2024**", "**March 2025**"
-   "**6.1 LTS**", "**March 2025**", "**March 2026**"
+   "**5.0**", "**January 2022**", "**March 2023**"
+   "**5.1**", "**March 2023**", "**March 2024**"
+   "**6.0**", "**March 2024**", "**March 2025**"
+   "**6.1**", "**March 2025**", "**March 2026**"
 
 .. admonition:: Business Tip
 
