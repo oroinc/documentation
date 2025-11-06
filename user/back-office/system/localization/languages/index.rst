@@ -5,6 +5,8 @@ Configure Languages in the Back-Office
 
 .. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
 
+.. note:: The Languages settings are accessible from the **Global organization only**. Find more on working with organizations in the :ref:`Company Structure and Organization Selector <user-guide-getting-started-company-structure>`.
+
 .. begin
 
 In the Oro applications, language is a core component of system localization and content translation. It performs the following functions:
