@@ -8,7 +8,7 @@ Manage Localizations, Languages, and Translations in the Back-Office
 
 .. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
 
-.. note:: The Localization configuration is accessible from the Global organization only. Find more on working with organizations in the :ref:`Company Structure and Organization Selector <user-guide-getting-started-company-structure>`.
+.. note:: The Localization configuration is accessible from the **Global organization only**. Find more on working with organizations in the :ref:`Company Structure and Organization Selector <user-guide-getting-started-company-structure>`.
 
 :term:`Localization` is the process of translating and adapting a product for a specific country or region. Oro application allows a user to customize the format of date and time, numeric, percent, and monetary values as well as the format of names and addresses.
 

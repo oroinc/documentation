@@ -7,6 +7,8 @@ Configure Translations in the Back-Office
 
 .. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
 
+.. note:: The Translations settings are accessible from the **Global organization only**. Find more on working with organizations in the :ref:`Company Structure and Organization Selector <user-guide-getting-started-company-structure>`.
+
 .. begin
 
 Translations are a collection of visual elements in the Oro application, like labels, information massages, notifications, alerts, workflow statuses, etc.
@@ -28,8 +30,6 @@ The following information about the translations is available in the All Transla
 +---------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | TRANSLATED VALUE    | The translation value of the text item to the target language.                                                                 |
 +---------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| CURRENT VALUE       | The translation of the system element currently displayed to the user on the UI of the Oro application.                        |
-+---------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | KEY                 | A coded text string that identifies the text system element and is used to find its translation to the target language         |
 |                     | (e.g. oro.ui.updated_at) in Oro applications.                                                                                  |
 +---------------------+--------------------------------------------------------------------------------------------------------------------------------+
@@ -43,7 +43,7 @@ The following information about the translations is available in the All Transla
 
    Remember a rule of thumb:
 
-   The translations which are currently displayed to the user in the Oro application are located in the **Current value** column. This column inherits the values from the **Translated value** column upon update. If there is no translation provided for a specific language, the **Current value** column is populated with the default English translation mentioned in the **English translation** column. If the system element doesn't have the English equivalent, the **Current value** column takes the value from the **Key** column.
+   The translations which are currently displayed to the user in the Oro application are located in the **Translated Value** column. This column inherits the values from the **English Translation** column upon update. If there is no translation provided for a specific language, then the **Key** value is used for the system element.
 
    .. image:: /user/img/system/localization/translations_rule_of_thumb.png
 
