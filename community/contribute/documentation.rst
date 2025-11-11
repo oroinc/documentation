@@ -30,12 +30,16 @@ For large volume of  updates, fixes, and enhancements please use the following p
 
 #. Update your local copy of documentation (see `Update Documentation`_ for more information on the process and formatting).
 
-#. Build and test the documentation before submitting a pull request to be sure you haven't accidentally introduced any layout or formatting issues.
+#. Build and test the documentation before submitting a pull request to be sure you have not accidentally introduced any layout or formatting issues.
 
-   - To build documentation, set up a local build environment by installing |Docker| and |Docker Compose|.
-   - To test your changes before you commit them, run ``docker compose up`` in the documentation folder.
+   - Set up a local build environment by installing |Docker|.
+   - Run the following command to generate the documentation in ``./_build/html`` and create a Docker image:
 
-   Check the generated documentation in the ``_build/html`` directory.
+     .. code-block:: bash
+
+        docker bake --load
+
+     .. hint::  By default, this command builds only the current branch. To build documentation as it appears on the website, including version selection in the index, set the appropriate variables MAINTENANCE_BRANCHES=5.1|6.0|6.1|master. To generate the documentation in **Markdown** format instead of HTML, set the ``BUILDER="markdown"`` variable.
 
 Update Documentation
 --------------------
