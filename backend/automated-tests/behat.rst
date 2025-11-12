@@ -295,6 +295,96 @@ Sometimes tests require mocks to simulate dependencies, such as an external web 
 
 To run Behat tests that rely on a custom configuration, use the behat_test application environment and tag the tests with ``@behat-test-env``. This ensures that mocks are used for testing purposes only and that the production environment remains unaffected.
 
+Using Different Mocks for Different Behat Tests
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When running different Behat tests with different mocks in the behat_test environment, you can conditionally activate specific mocks based on feature tags.
+
+The feature provides two key services:
+- ``Oro\Bundle\TestFrameworkBundle\Behat\BehatFeature`` - Checks if a Behat feature tag is active
+- ``Oro\Bundle\TestFrameworkBundle\Behat\Factory\FeatureTagAwareFactory`` - Creates services based on active feature tags
+
+How It Works
+------------
+
+When a Behat scenario runs, the following sequence occurs:
+
+1. The ``TagsBasedFeatureToggleContext`` captures all feature tags (via ``@BeforeFeature`` hook) and stores them in cache using the ``BehatFeature`` service.
+2. Services configured with ``FeatureTagAwareFactory`` check the cache at runtime.
+3. If the specified tag is active, the factory returns the alternative service (for example, a specific mock).
+4. If the tag is not active, the factory returns the default service.
+5. After the feature completes, feature tags are cleared from cache (via ``@AfterFeature`` hook).
+
+Example Use Case
+----------------
+
+Consider a payment integration that needs three different mocks of the ``acme_payment.client`` service for different Behat features.
+
+1. Add all mock definitions to your bundle's ``Tests/Behat/parameters.yml``:
+
+   .. code-block:: yaml
+  
+      services:
+          # Default mock
+          acme_payment.test.client.default_mock:
+              class: Acme\Bundle\PaymentBundle\Tests\Behat\Mock\PaymentClientMock
+  
+          # Provider-specific mocks
+          acme_payment.test.client.paypal_mock:
+              class: Acme\Bundle\PaymentBundle\Tests\Behat\Mock\PayPalClient
+  
+          acme_payment.test.client.stripe_mock:
+              class: Acme\Bundle\PaymentBundle\Tests\Behat\Mock\StripeClient
+
+
+2. Replace the ``acme_payment.client`` service with a factory that creates different mocks based on feature tags:
+
+   .. code-block:: yaml
+  
+      services:
+          acme_payment.client:
+              class: Acme\Bundle\PaymentBundle\Client\PaymentClientInterface
+              factory: '@oro_test.behat.feature_tag_aware_factory'
+              arguments:
+                  - '@acme_payment.test.client.default_mock'
+                  - ['@acme_payment.test.client.paypal_mock', 'use-paypal-mock']
+                  - ['@acme_payment.test.client.stripe_mock', 'use-stripe-mock']
+
+
+3. Tag scenarios
+
+   This scenario uses ``PaymentClientMock`` because no specific tag is set:
+
+   .. code-block:: gherkin
+
+       Feature: Basic payment processing
+         Scenario: Create payment
+           Given I create a payment
+           Then the payment should be successful
+
+   Add the ``@use-paypal-mock`` tag to use the ``PayPalClient`` mock:
+
+   .. code-block:: gherkin
+
+       @use-paypal-mock
+       Feature: PayPal integration
+         Scenario: Process PayPal payment with specific options
+           Given I configure PayPal merchant account
+           When I process payment through PayPal
+           Then PayPal should return authorization code
+
+
+   Add the ``@use-stripe-mock`` tag to use the ``StripeClient`` mock:
+
+   .. code-block:: gherkin
+
+       @use-stripe-mock
+       Feature: Stripe integration
+         Scenario: Process Stripe payment with specific options
+           Given I configure Stripe merchant account
+           When I process payment through Stripe
+           Then Stripe should return authorization code
+
 Autoload Suites
 ^^^^^^^^^^^^^^^
 
