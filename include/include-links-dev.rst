@@ -6605,11 +6605,11 @@ Links (Dev)
 
 .. |Style Guide 6.1| raw:: html
 
-    <a href="https://static.oroinc.com/Storefront_Style_Guide_6.1_Public_Files.fig" target="_blank">Style Guide</a>
+    <a href="https://static.oroinc.com/doc/Storefront_Style_Guide-6.1-Public_Files-November_2025.fig" target="_blank">Style Guide</a>
 
 .. |Design Mockups 6.1| raw:: html
 
-    <a href="https://static.oroinc.com/Design_Mockups_6.1.fig" target="_blank">Design Mockups</a>
+    <a href="https://static.oroinc.com/doc/Design_Mockups_6.1-November_2025.fig" target="_blank">Design Mockups</a>
 
 .. |feature chart| raw:: html
 
