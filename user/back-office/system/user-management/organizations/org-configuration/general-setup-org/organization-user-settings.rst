@@ -27,15 +27,19 @@ To set the user provisioning settings per specific organization:
 * **Enable SCIM** --- Enable or disable the SCIM integration on the global level.
 * **Default Access to Organization Business Units** --- Select the organizations and business units that will be automatically assigned to newly synchronized users.
 * **Default Roles** --- Select the user roles that new users will receive upon synchronization.
+* **Extra fields handling** --- Choose how the system should handle cases when the identity provider send extra fields. The available options are:
+
+    * **Return error** (default) --- If selected, and the identity provider sends extra fields to Oro, the system will return an error.
+    * **Ignore extra fields** --- If selected, and the identity provider sends extra fields to Oro, the system will ignore these fields.
 * **Empty name values handling** --- Choose how the system should handle cases when the identity provider does not send first or last name values. The available options are:
 
-    * **Leave as is and expect validation errors** --- If selected, and the identity provider sends no first or last name to Oro, the system will return an exception without generating any replacement values.
+    * **Leave as is and expect validation errors** --- If selected, and the identity provider sends no first or last name to Oro, the system will return an error without generating any replacement values.
     * **Generate based on user name** (default) --- If selected, the first and last name values will be copied from the username field.
-    * **Use random string** ---  If selected, the first and last name values will be automatically generated as random strings.
+    * **Use random string** --- If selected, the first and last name values will be automatically generated as random strings.
 
 5. Click **Save settings** to apply the changes.
 
-6. Once enabled, you can configure Microsoft Entra provisioning service, following the steps described in the :ref:`related documentation <microsoft-entra-provisioning-service>`.
+6. Once enabled, you can configure a user provisioning service, following the steps described in the :ref:`Configure Okta Provisioning Service <okta-provisioning-service>` or the :ref:`Configure Microsoft Entra Provisioning Service <microsoft-entra-provisioning-service>`.
 
 
 
