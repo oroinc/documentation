@@ -1022,6 +1022,14 @@ Links (User)
 
    <a href="https://datatracker.ietf.org/doc/html/rfc7644" target="_blank">RFC 7644</a>
 
+.. |Okta provisioning service|  raw:: html
+
+   <a href="https://help.okta.com/en-us/content/topics/provisioning/lcm/con-okta-prov.htm" target="_blank">Okta provisioning service</a>
+
+.. |Okta SCIM API - authentication|  raw:: html
+
+   <a href="https://developer.okta.com/docs/guides/scim-provisioning-integration-prepare/main/#authentication" target="_blank">authentication</a>
+
 .. |Microsoft Entra ID|  raw:: html
 
    <a href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/user-provisioning" target="_blank">Microsoft Entra ID</a>

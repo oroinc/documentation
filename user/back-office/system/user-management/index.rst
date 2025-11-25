@@ -52,7 +52,7 @@ The following topics describe the available access levels and explain the differ
 OAuth Applications
 ------------------
 
-The section aggregates information on all OAuth applications created for users in the back-office. Here, you can view and manage the existing OAuth applications, create new ones, and get access tokens through the applications with client credentials and passwords grant types. Check out the :ref:`OAuth Applications <oauth-applications>` topic for more details on how to add the application both from the Oro and third-party sides via various APIs (JSON:API, SCIM, Email Addon, or Smart Agent Integration).
+The section aggregates information on all OAuth applications created for users in the back-office. Here, you can view and manage the existing OAuth applications, create new ones, and get access tokens through the applications with client credentials and passwords grant types. Check out the :ref:`OAuth Applications <oauth-applications>` topic for more details on how to add the application both from the Oro and third-party sides via various APIs (JSON:API, SCIM, Email Addon, etc.).
 
 Login Attempts
 --------------
