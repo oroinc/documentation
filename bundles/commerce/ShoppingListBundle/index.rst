@@ -14,6 +14,7 @@ Related Documentation
    :maxdepth: 1
 
    shopping-list-on-storefront
+   shopping-list-page-validation
 
 
 .. include:: /include/include-links-dev.rst

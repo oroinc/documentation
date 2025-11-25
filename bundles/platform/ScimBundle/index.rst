@@ -3,7 +3,7 @@
 OroScimBundle
 =============
 
-.. note:: This bundle is available as of OroCommerce Enterprise version 6.1.6.
+.. note:: This bundle is available as of OroCommerce Enterprise version 6.1.7.
 
 OroScimBundle adds support for the **System for Cross-domain Identity Management (SCIM)** protocol in the Oro application. It enables automatic user management between Oro and external identity systems, such as |Microsoft Entra ID| (formerly Azure Active Directory), via SCIM API by SCIM extension. This integration allows imported users to sign in to Oro via :ref:`Microsoft 365 Single Sign-On <user-guide-integrations-microsoft-single-sign-on>`.
 
