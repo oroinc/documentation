@@ -1,6 +1,7 @@
 .. _mc-system-wf:
 .. _user-guide--system--workflow-management:
 .. _doc--system--workflow-management:
+.. _doc-workflows-actions-create-designer:
 
 Configure Workflows in the Back-Office
 ======================================
@@ -21,6 +22,7 @@ In Oro applications, any workflow may be classified as either **system** or **cu
 For more information on system and custom workflows, see :ref:`System Workflows <doc--workflows--actions--system>` and :ref:`Custom Workflows <doc--workflows--actions--custom>`.
 
 .. _doc-workflows-actions-create:
+.. _doc-workflows-actions-create-general:
 
 Create a Workflow
 -----------------
@@ -29,85 +31,59 @@ To create a workflow for an entity:
 
 1. In the main menu, navigate to **System > Workflows**.
 2. Click **Create Workflow** on the top right of the page.
-3. On the **Create Workflow** page, specify the details of your workflow in the **General** section.
+3. Specify the details of your workflow in the **General** section.
 
    .. image:: /user/img/system/workflows/4_create_wfpng.png
 
-4. Once the details in the **General** section have been specified, add steps and transitions in the **Designer** section.
+   .. csv-table::
+     :header: "Field", "Description"
+     :widths: 10, 30
 
-5. When done, click **Save**.
+     "**Name**", "The name of the workflow."
+     "**Related Entity**", "A related entity is the entity for which the workflow is created. When the workflow is active, it can be launched and executed on the records of its related entity."
+     "**Exclusive Active Groups**","Exclusive Active Groups is a list of group names for which the current workflow should be active exclusively. Determining Exclusive Record Groups allows to set up mutually exclusive workflows in order to configure how they each correlate in the system. This makes it possible for only one workflow to be active, or for an entity record to use only one workflow from the group at a time."
+     "**Exclusive Record Groups**","Exclusive Record Groups specify how workflows apply to certain sets of records in order to limit their applicability. This lets users create specific workflows for specific segments (subsets) of records. For example, no concurrent transitions are possible among workflows in same exclusive record group."
+     "**Default Step**", "Specifying the default steps launches the workflow in a particular step by default. For instance, when you activate Opportunity Management Flow, a newly created opportunity will appear as open, if **open** was specified as the default step.
+     If no step is selected, all newly created records will have no workflow associated with them, and it must be launched with one of the starting transitions."
+     "**Display Steps Ordered**", "Display Steps Ordered box is not checked by default.
 
-.. _doc-workflows-actions-create-general:
+      - **If checked**, all workflow steps are displayed in the workflow widget.
+      - **If not checked**, only the steps that have actually been performed are displayed."
 
-General Section
-^^^^^^^^^^^^^^^
+4. Add steps and transitions for the workflow in the dedicated section. You can view them in a table and an interactive chart representations of a workflow.
 
-The **General** section of the create a workflow page contains the following information:
+   .. image:: /user/img/system/workflows/5_table_chart_example.png
 
+   **Within the table**, you can perform the following actions for a **transition**:
 
-.. csv-table::
-  :header: "Field", "Description"
-  :widths: 10, 30
+   - **Update** (clicking the transition name opens the **Edit Transition** form).
+   - **Clone** (clicking the |IcClone| **Clone** icon next to the transition name opens the **Clone Transition** dialog).
+   - **Delete** (clicking the |Trash-SVG| **Delete** icon next to the transition launches name **Delete Confirmation** dialog).
 
+   .. image:: /user/img/system/workflows/designer_tab_transition.png
 
-  "**Name**", "The name of the workflow."
-  "**Related Entity**", "A related entity is the entity for which the workflow is created. When the workflow is active, it can be launched and executed on the records of its related entity."
-  "**Exclusive Active Groups**","Exclusive Active Groups is a list of group names for which the current workflow should be active exclusively. Determining Exclusive Record Groups allows to set up mutually exclusive workflows in order to configure how they each correlate in the system. This makes it possible for only one workflow to be active, or for an entity record to use only one workflow from the group at a time."
-  "**Exclusive Record Groups**","Exclusive Record Groups specify how workflows apply to certain sets of records in order to limit their applicability. This lets users create specific workflows for specific segments (subsets) of records. For example, no concurrent transitions are possible among workflows in same exclusive record group."
-  "**Default Step**", "Specifying the default steps launches the workflow in a particular step by default. For instance, when you activate Opportunity Management Flow, a newly created opportunity will appear as open, if **open** was specified as the default step.
-  If no step is selected, all newly created records will have no workflow associated with them, and it must be launched with one of the starting transitions."
-  "**Display Steps Ordered**", "Display Steps Ordered box is not checked by default.
+   **For a step**, you can perform the following action by clicking the corresponding icons in the **Actions** column:
 
-   - **If checked**, all workflow steps are displayed in the workflow widget.
-   - **If not checked**, only the steps that have actually been performed are displayed."
+   - **Add a transition to a step** (clicking the **+** icon opens the **Add New Transition** dialog).
+   - **Update** (clicking the |IcEdit| **Edit** icon opens the **Edit Step** dialog).
+   - **Clone** (clicking the |IcClone| **Clone** icon opens the **Clone Step** dialog).
+   - **Delete** (clicking the |Trash-SVG| **Delete** icon launches the **Delete Confirmation** dialog).
 
-.. _doc-workflows-actions-create-designer:
+   **Within the chart**, you can:
 
-Designer Section
-^^^^^^^^^^^^^^^^
+   - **Add a transition** (clicking the **+ Add Transition** button at the top of the chart opens the **Add Transition** dialog).
+   - **Add a step** (clicking the **+ Add Step** button at the top of the chart opens the **Add Step** dialog).
+   - **Autosort** (clicking the **Auto Sort** button at the top of the chart automatically shapes your chart).
+   - **Rearrange the chart** for clearer workflow view (drag-and-drop transitions and steps in the chart as required, or click the |IcExpand| **Expand** button in the top right corner of the chart).
+   - **Zoom in/out** (click the |IcSearchPlus| **Zoom In** / |IcSearchMinus| **Zoom Out** button in the top right corner of the chart to zoom the chart in/out, or select zoom percent from the list).
+   - **Show transition labels** (select this checkbox in the top left corner of the chart to display transition labels in the chart).
+   - **Drag transitions from one step to another** (point to one of four corners of the step box, and when the cursor changes shape to the hand, click the corner and drag an arrow to another step).
+   - **Undo/Redo changes** (click the |IcReply| **Undo** / |IcShare| **Redo** button at the top of the cart to revert or restore changes made to the chart).
+   - **Edit/Clone/Delete** a step/transition (point to the step/transition button, and when the |IcCaretDown| arrow appears, click it, and then click the |IcEdit| **Edit** / |IcClone| **Clone** / |Trash-SVG| **Delete** icon.
 
-The **Designer** section consists of a table and an interactive chart representations of a workflow.
+   .. note:: All actions available for transitions and steps in the table are available in the chart as well.
 
-.. image:: /user/img/system/workflows/5_table_chart_example.png
-
-**Within the table**, you can perform the following actions for a **transition**:
-
--	**Update** (clicking the transition name opens the **Edit Transition** form).
--	**Clone** (clicking the |IcClone| **Clone** icon next to the transition name opens the **Clone Transition** dialog).
--	**Delete** (clicking the |Trash-SVG| **Delete** icon next to the transition launches name **Delete Confirmation** dialog).
-
-.. image:: /user/img/system/workflows/designer_tab_transition.png
-
-**For a step**, you can perform the following action by clicking the corresponding icons in the **Actions** column:
-
-- **Add a transition to a step** (clicking the **+** icon opens the **Add New Transition** dialog).
-- **Update** (clicking the |IcEdit| **Edit** icon opens the **Edit Step** dialog).
-- **Clone** (clicking the |IcClone| **Clone** icon opens the **Clone Step** dialog).
-- **Delete** (clicking the |Trash-SVG| **Delete** icon launches the **Delete Confirmation** dialog).
-
-.. image:: /user/img/system/workflows/designer_tab.png
-
-**Within the chart**, you can:
-
-- **Add a transition** (clicking the **+ Add Transition** button at the top of the chart opens the **Add Transition** dialog).
-- **Add a step** (clicking the **+ Add Step** button at the top of the chart opens the **Add Step** dialog).
-- **Autosort** (clicking the **Auto Sort** button at the top of the chart automatically shapes your chart).
-- **Rearrange the chart** for clearer workflow view (drag-and-drop transitions and steps in the chart as required, or click the |IcExpand| **Expand** button in the top right corner of the chart).
-- **Zoom in/out** (click the |IcSearchPlus| **Zoom In** / |IcSearchMinus| **Zoom Out** button in the top right corner of the chart to zoom the chart in/out, or select zoom percent from the list).
-
-.. image:: /user/img/system/workflows/auto_sort.gif
-
-- **Show transition labels** (select this checkbox in the top left corner of the chart to display transition labels in the chart).
-- **Drag transitions from one step to another** (point to one of four corners of the step box, and when the cursor changes shape to the hand, click the corner and drag an arrow to another step).
-
-.. image:: /user/img/system/workflows/drag_transition.gif
-
-- **Undo/Redo changes** (click the |IcReply| **Undo** / |IcShare| **Redo** button at the top of the cart to revert or restore changes made to the chart).
-- **Edit/Clone/Delete** a step/transition (point to the step/transition button, and when the |IcCaretDown| arrow appears, click it, and then click the |IcEdit| **Edit** / |IcClone| **Clone** / |Trash-SVG| **Delete** icon.
-
-.. note:: All actions available for transitions and steps in the table are available in the chart as well.
-
-.. image:: /user/img/system/workflows/6_manage_chart.png
+   .. image:: /user/img/system/workflows/6_manage_chart.png
 
 A Workflow Creation Illustration
 --------------------------------
@@ -132,8 +108,6 @@ To add a step to a workflow:
 For the sample Opportunity Support Flow, we will start off by creating two steps: **No Complaints** and **Complaint Received**.
 
 .. image:: /user/img/system/workflows/8_add_step_form.png
-
-.. image:: /user/img/system/workflows/9_add_step_form_2.png
 
 3. Click **Apply** to save the steps.
 
@@ -223,9 +197,8 @@ To set a workflow configuration parameters:
 
                When you clone a workflow, pay attention that configuration parameters are cloned too and cannot be removed from the cloned item.
 
-
-The Created Workflow Visualization
-----------------------------------
+Visualization of Sample Workflow
+--------------------------------
 
 Once the workflow has been configured and saved, you can see how it is visualized for the records:
 
@@ -250,7 +223,7 @@ Clicking each of these buttons will pass the user on to the next step specified 
 
 .. image:: /user/img/system/workflows/19_osf_ui.png
 
-As an illustration, we have unselected the **Display Steps Ordered** checkbox in the edit mode for the same workflow. Here is what the steps look like in this case:
+As an illustration, we have unselected the **Display Steps Ordered** checkbox in the edit mode for the same workflow (in the workflow configuration). Here is what the steps look like in this case:
 
 .. image:: /user/img/system/workflows/20_osf_ui_5.png
 
@@ -267,11 +240,11 @@ Multiple Active Workflows
 
 It is possible to have multiple active workflows for the same record. If you have more than one active workflow, you can separately activate each of them. In the following example, two workflows are available for one record:
 
-.. image:: /user/img/system/workflows/24_multiple_wfs.jpg
+.. image:: /user/img/system/workflows/24_multiple_wfs.png
 
 Workflow group can be expanded / collapsed, if necessary, by clicking the **+** **Expand** / **-** **Collapse** icon on the left of the workflow group, as illustrated below:
 
-.. image:: /user/img/system/workflows/25_collapse_flow.jpg
+.. image:: /user/img/system/workflows/25_collapse_flow.png
 
 .. _doc--workflows--ui-limitations:
 
@@ -337,6 +310,8 @@ All workflow labels can be translated into other languages, providing better loc
 To define a translation:
 
 1. Click the |IcLanguage| **To Translations** icon next to the label that you want to translate. The translations list opens and is filtered to show only relevant translations.
+
+   .. note:: The Localization configuration and the translations list are accessible from the **Global organization only**. Find more on working with organizations in the :ref:`Company Structure and Organization Selector <user-guide-getting-started-company-structure>`.
 
    .. image:: /user/img/system/workflows/translations_relevantlist.png
 
