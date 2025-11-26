@@ -46,6 +46,7 @@ extensions = [
     # Disable generating of sitemapindex.xml
 #    'ext.sitemap-index',
     'ext.redirects',
+    'sphinx_copybutton'
 ]
 
 spelling_lang='en_US'
