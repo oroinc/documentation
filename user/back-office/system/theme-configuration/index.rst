@@ -22,7 +22,7 @@ To configure your current storefront theme:
       :alt: General section of the theme configuration
 
    * **Owner** --- Select the owner responsible for the theme configuration.
-   * **Theme** --- Select the storefront theme from the list. The default theme starting from version 6.1 LTS is *Refreshing Teal*. However, if you select one of your backup themes from the previous OroCommerce LTS versions, the settings under the Configuration menu below will become disabled. You can still configure them under the :ref:`theme system configuration <configuration--commerce--design--theme>` settings.
+   * **Theme** --- Select the storefront theme from the list. The default themes starting from version 6.1 LTS are *Refreshing Teal* and *Golden Carbon*. However, if you select one of your backup themes from the previous OroCommerce LTS versions, the settings under the Configuration menu below will become disabled. You can still configure them under the :ref:`theme system configuration <configuration--commerce--design--theme>` settings.
 
     .. image:: /user/img/system/theme-configuration/theme-configuration-5.0.png
        :alt: Theme configuration details when the default 5.0 theme is selected
@@ -31,7 +31,7 @@ To configure your current storefront theme:
    * **Description** --- Type a short but meaningful description that can help you and other users understand the specifics of the theme.
    * **Type** --- Select the theme type. Currently, only storefront themes are available for configuration.
 
-5. In the **Configuration** section, customize the following options. You can preview several menu configuration setting to visualize what the option does and where the selected storefront menu will be positioned.
+5. In the **Configuration** section, customize the following options. You can preview several menu configuration settings to visualize what the option does and where the selected storefront menu will be positioned.
 
    .. image:: /user/img/system/theme-configuration/theme-configuration-config-details.png
       :alt: Configuration section of the theme configuration
@@ -63,7 +63,7 @@ To configure your current storefront theme:
 
 * **Customer Dashboard Scorecard (1-4)** --- Select a :ref:`scorecard content widget <content-widgets--dashboard-scorecard-widget>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to four content widgets. Only the widgets of the **Scorecard** type are displayed in the dropdown list. The scorecards represent the information about the total number of customer users under the current customer, the number of shopping lists, open Requests for Quote (excluding cancelled ones), and the total value of all non-cancelled orders.
 
-    .. image:: /user/img/marketing/content_widgets/scorecard.png
+    .. image:: /user/img/system/theme-configuration/scorecard.png
        :alt: Illustration of the Scorecard widget in the storefront
 
 * **Promotional Content** --- Select a :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` from the dropdown list to display it at the top of the storefront header.
@@ -105,20 +105,9 @@ To configure your current storefront theme:
     .. image:: /user/img/system/theme-configuration/CSS-variables-configuration.png
        :alt: CSS variables configuration represented as as text inputs to be filled by back-office users
 
-* **Product View Page Template** --- Select the product page template from the list. A page template is used to render the product page in the storefront by default, unless the template is overridden in the product details. Available options are *Default*, *Tabs*, and *Wide*.
+* **Product View Page Template** --- Select the product page template from the list. A page template is used to render the product page in the storefront by default, unless the template is overridden in the product details. Available options are *Default*, *Tabs* (additional attribute groups are displayed in tabs), and *Wide* (additional attribute groups are displayed in collapse one below another for full page width).
 
-    **Default Template**:
-
-    .. image:: /user/img/system/theme-configuration/default-page-template.png
-
-    **Tabs (Additional Attribute Groups Are Displayed In Tabs)**:
-
-    .. image:: /user/img/system/theme-configuration/tabbed-page-template.png
-
-    **Wide (Additional Attribute Groups Are Displayed In Collapse One Below Another For Full Page Width)**:
-
-    .. image:: /user/img/system/theme-configuration/wide-page-template.png
-
+    .. image:: /user/img/system/theme-configuration/page-templates.png
 
 * **Display Price Tiers As** --- Select a multi or single unit table. A multi-unit table shows price tiers for all product units in the same table, which might not work well for products with many units or when quantity tiers are not aligned between units. Single-unit table shows price tiers only for the currently selected unit.
 
