@@ -3,18 +3,24 @@
 BaseClass
 =========
 
-BaseClass implements |Backbone events API|, Chaplin's |declarative event bindings| and |Chaplin.EventBroker API|.
+`BaseClass` implements the |Backbone events API|, Chaplin's |declarative event bindings|, and the |Chaplin.EventBroker API|.
+
+Constructor Options
+-------------------
 
 .. csv-table::
    :header: "Param","Type","Description"
    :widths: 20, 20, 20
 
    "options","`Object`","Options container"
-   "options.listen","`Object`","options.listen"
+   "options.listen","`Object`","Object defining event listeners for this instance"
 
-* **baseClass.disposed**: `boolean`
+Properties
+----------
 
-The flag shows if the class is disposed or not
+- **baseClass.disposed**: `boolean`
+
+  Indicates whether the class instance has been disposed. This flag helps prevent operations on disposed instances.
 
 * **Kind**: instance property of BaseClass
 

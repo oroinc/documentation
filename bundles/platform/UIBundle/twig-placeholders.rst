@@ -3,18 +3,19 @@
 TWIG Placeholders
 =================
 
-Introduction to Placeholders
-----------------------------
+Introduction
+------------
 
-In order to improve layouts and make them more flexible, a new twig token `placeholder` is implemented. It enables us to combine several blocks (templates or actions) and output them in different places in twig templates. This way we can customize layouts without modifying twig templates.
+To make layouts more flexible, a new Twig token, **`placeholder`**, is implemented.
+It allows combining multiple blocks (templates or actions) and rendering them in different locations within Twig templates.
+This enables customizing layouts without modifying the Twig templates themselves.
 
 Placeholder Declaration in YAML
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 
-Placeholders can be defined in any bundle under `/SomeBundleName/Resource/oro/placeholders.yml`
+Placeholders can be defined in any bundle under `/SomeBundleName/Resources/oro/placeholders.yml`.
 
 .. code-block:: yaml
-
 
     placeholders:
         items:                             # items to use in placeholders (templates or actions)
@@ -32,10 +33,9 @@ Placeholders can be defined in any bundle under `/SomeBundleName/Resource/oro/pl
                 order: 200
               <one_more_item_name>: ~      # sort order will be set to 0
 
-Any configuration defined in bundle `placeholders.yml` file can be overridden in the `config/config.yml` file.
+Any configuration defined in a bundle's `placeholders.yml` file can be overridden in the `config/config.yml` file.
 
 .. code-block:: yaml
-
 
     oro_ui:
         placeholders:
@@ -48,32 +48,33 @@ Any configuration defined in bundle `placeholders.yml` file can be overridden in
                     <item_name>:
                         order: 200     # change item order in placeholder
 
+Placeholder Item Properties
+---------------------------
+
 Each placeholder item can have the following properties:
 
-- **template** or **action** - The path to TWIG template or controller action is used to rendering the item.
-- **applicable** - The condition indicates whether the item can be rendered or not.
-- **acl** - The ACL resource(s). Can be a string or array of strings. Can be used to restrict access to the item. If several ACL resources are provided an access is granted only if all of them grant an access.
-- **data** - An additional data to be passed to TWIG template or controller.
+- **template** or **action** – The path to TWIG template or controller action used to render the item.
+- **applicable** – Condition to indicate whether the item should be rendered.
+- **acl** – ACL resource(s). Can be a string or array of strings. Access is granted only if all ACLs permit access.
+- **data** – Additional data passed to Twig template or controller.
 
-Each property can be a constant or some expression supported by :ref:`System Aware Resolver Component <dev-components-system-aware-resolver>`. Examples can be found in existing *placeholders.yml* files.
+Each property can be a constant or an expression supported by :ref:`System Aware Resolver Component <dev-components-system-aware-resolver>`. Examples exist in the current *placeholders.yml* files.
 
 Rendering Placeholders
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
-To render placeholder content in twig template we need to put
+To render the content of a placeholder in a Twig template:
 
 .. code-block:: html
-
 
     {% placeholder <placeholder_name> %}
 
-
-Additional options can be passed to all placeholder child items using `with`, e.g.
+Additional options can be passed to all child items of a placeholder using `with`, for example:
 
 .. code-block:: html
-
 
    {% placeholder <placeholder_name> with {'form' : form} %}
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+

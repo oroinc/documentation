@@ -3,13 +3,14 @@
 Dynamic Assets
 ==============
 
-You can change assets during an application life cycle, for instance when an administrator is configuring your website. In this case, the assets cache should be busted properly. Symfony does not manage this case out-of-the-box but the |Asset Component| can be easily enhanced to support this feature.
+Dynamic assets allow you to update assets during the application lifecycle, for example when an administrator configures your website.
+In such cases, the asset cache must be properly invalidated. Symfony does not provide this feature out-of-the-box, but the |Asset Component| can be extended to support it.
 
-The following samples of code show how to add dynamic versioning for any asset package.
+The following example demonstrates how to add dynamic versioning for any asset package.
 
-For example, let us assume that `acme` asset package should use the dynamic versioning.
+For instance, assume that the `acme` asset package should use dynamic versioning.
 
-1. First, register the package. Use `Resources/config/oro/app.yml` in your bundle or `config/config.yml`:
+1. **Register the package** using `Resources/config/oro/app.yml` in your bundle or `config/config.yml`:
 
    .. code-block:: none
 
@@ -19,7 +20,7 @@ For example, let us assume that `acme` asset package should use the dynamic vers
                   acme:
                       version_strategy: 'Oro\Bundle\AssetBundle\VersionStrategy\BuildVersionStrategy'
 
-2. Set |DynamicAssetVersionStrategy| for this package.
+2. **Set |DynamicAssetVersionStrategy|** for this package:
 
    .. code-block:: php
 
@@ -41,9 +42,9 @@ For example, let us assume that `acme` asset package should use the dynamic vers
            }
        }
 
-   The configuration is finished.
+   After this, the configuration is complete.
 
-3. Update the package version when your assets are changed:
+3. **Update the package version** whenever assets change:
 
    .. code-block:: php
 
@@ -73,19 +74,18 @@ For example, let us assume that `acme` asset package should use the dynamic vers
             }
         }
 
-The usage of your assets is the same as other assets, for example by the well-known `asset()` Twig function:
+Once configured, your assets are used like any other asset, for example via the `asset()` Twig function:
 
 .. code-block:: twig
-
 
    {{ asset('test.js', 'acme') }}
    {# the result may be something like this: test.js?version=123-2 #}
    {# where #}
    {# '123' is the static asset version #}
-   {# '2' is the dynamic asset version; this number is increased each time you call $assetVersionManager->updateAssetVersion('acme') #}
+   {# '2' is the dynamic asset version; this number increases each time you call $assetVersionManager->updateAssetVersion('acme') #}
 
-
-Keep in mind that the package name should be passed to the `asset()` function. This tells Symfony that the asset belongs to your package and that dynamic versioning strategy should be applied.
+**Important:** The package name must be passed to the `asset()` function.
+This tells Symfony that the asset belongs to your package and that the dynamic versioning strategy should be applied.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

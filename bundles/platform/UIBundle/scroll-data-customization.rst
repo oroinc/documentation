@@ -3,42 +3,42 @@
 Scroll Data Customization
 =========================
 
-To customize data rendered with macros `scrollData(...)` from `macros.html.twig` developer can use special event
-triggered in the very beginning of marcos processing. Event name has format `oro_ui.scroll_data.before.<dataTarget>`
-where `<dataTarget>` is a string identifier passed to macros as a first argument. This way developer can modify
-data that will be rendered on any page where scrollData macros is used.
+Developers can customize the data rendered by the `scrollData(...)` macro from `macros.html.twig` by listening to a special event triggered at the very beginning of macro processing.
+The event name has the format ``oro_ui.scroll_data.before.<dataTarget>``, where `<dataTarget>` is the string identifier passed as the first argument to the macro. This allows developers to modify the data that will be rendered on any page using the `scrollData` macro.
 
-Event object used in this case is ``Oro\Bundle\UIBundle\Event\BeforeListRenderEvent`` - it provides ``\Twig\Environment``
-object, data wrapped into ``Oro\Bundle\UIBundle\View\ScrollData`` object and optional `FormView` instance. Data can be
-completely replaced.
+The event object is an instance of ``Oro\Bundle\UIBundle\Event\BeforeListRenderEvent``.
+It provides:
 
-Scroll Data
------------
+* A ``\Twig\Environment`` object
+* The scroll data wrapped in a ``Oro\Bundle\UIBundle\View\ScrollData`` object
+* An optional `FormView` instance
 
-Scroll data object provides several useful methods to add information to scroll data:
+The scroll data can be fully replaced if needed.
 
-- **addBlock($title, $priority, $class, $useSubBlockDivider)** adds a new block at the end of the list, block title is required
-- **addSubBlock($blockId, $title)** adds a new sub-block to a block with a specified identifier (an array key)
-- **addSubBlockData($blockId, $subBlockID, $html)** adds HTML code to the existing sub-block inside the specified block
+The **ScrollData** object provides several useful methods to add or modify content:
+
+* **addBlock($title, $priority, $class, $useSubBlockDivider)** – Adds a new block at the end of the list; the block title is required.
+* **addSubBlock($blockId, $title)** – Adds a sub-block to a block with the specified identifier (array key).
+* **addSubBlockData($blockId, $subBlockId, $html)** – Adds HTML content to an existing sub-block within the specified block.
 
 Customization Example
 ---------------------
 
-Lets look at an example of scroll data customization. Here is definition of listener used to customize scroll data:
+Below is an example of customizing scroll data for the User update page. First, define a listener service:
 
 .. code-block:: yaml
-
 
     user_update_scroll_data_listener:
         class: ...
         tags:
             - { name: kernel.event_listener, event: oro_ui.scroll_data.before.user-profile, method: onUserUpdate }
 
+This service listens for the event ``oro_ui.scroll_data.before.user-profile`` with handler method ``onUserUpdate``.
+It will be executed before rendering the page identified as ``user-profile``.
 
-This definition shows service used as an event listener for event ``oro_ui.scroll_data.before.user-profile`` with handler method ``onUserUpdate``. This listener will be executed before rendering of user update page (it has identifier ``user-profile``). Here is how such listener can look like:
+The listener implementation might look like this:
 
 .. code-block:: php
-
 
     use Oro\Bundle\UIBundle\Event\BeforeListRenderEvent;
 
@@ -54,12 +54,12 @@ This definition shows service used as an event listener for event ``oro_ui.scrol
         }
     }
 
-And the corresponding template `@My/User/my_update.html.twig`:
+And the corresponding Twig template `@My/User/my_update.html.twig`:
 
 .. code-block:: none
 
    {{ form_row(form.myField) }}
 
-csvThis example demonstrates addition of an additional field to the User update page - the template is rendered via the environment object
-and added to the scroll data.
+This example demonstrates how to add an additional field to the User update page.
+The template is rendered via the Twig environment and added dynamically to the scroll data through the ``oro_ui.scroll_data.before.<dataTarget>`` event.
 
