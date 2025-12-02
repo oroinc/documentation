@@ -3,29 +3,28 @@
 Loading Mask View
 =================
 
-The loading mask is used for visualizing loading process and blocking some page functionality with transparent overlay to prevent the influence on loading process
+The `LoadingMaskView` is used to visualize a loading process and block page interactions with a transparent overlay, preventing interference with ongoing operations.
 
-The `LoadingMaskView` is an extension of `BaseView` (that inherits all functionality from `Chaplin.View` and `Backbone.View`).
+It extends `BaseView` (which itself inherits from `Chaplin.View` and `Backbone.View`), so it supports all standard view functionality.
 
 Initialization
 --------------
 
-`LoadingMaskView` is rendered automatically once it is initialized (has defined property `autoRender: true`). To create an instance, it is sufficient to pass one option -- the container (the element that you want to cover).
+The `LoadingMaskView` is rendered automatically when initialized if the `autoRender: true` property is set.
+To create an instance, you only need to specify the container—the element you want to cover:
 
 .. code-block:: javascript
-
 
     var loadingMask = new LoadingMaskView({
         container: $myElement
     });
 
-Other `LoadingMaskView` specific options that might be passed to constructor are:
+Additional constructor options:
 
- - `loadingHint` is a string, a short message displayed to the user during the loading process, `'Loading...'`
- - `hideDelay` is a number in milliseconds or false and allows to hide loading mask with delay
+- **loadingHint**: A string message displayed during loading. Default is `'Loading...'`.
+- **hideDelay**: Number in milliseconds or `false`. Determines the delay before hiding the loading mask.
 
 .. code-block:: javascript
-
 
      var loadingMask = new LoadingMaskView({
          container: $myElement,
@@ -33,12 +32,12 @@ Other `LoadingMaskView` specific options that might be passed to constructor are
          hideDelay: 25
      });
 
+Usage
+-----
 
-How to Usage
-------------
+The following methods are available for controlling the loading mask:
 
 .. code-block:: javascript
-
 
     /**
      * Shows loading mask
@@ -46,7 +45,7 @@ How to Usage
     loadingMask.show();
 
     /**
-     * Shows the mask with specific loading hint
+     * Shows the mask with a specific loading hint
      */
     loadingMask.show('Sending...');
 
@@ -56,41 +55,43 @@ How to Usage
     loadingMask.hide();
 
     /**
-     * If loading mask was defined with some `hideDelay`,
-     * this flag allows to hide loading mask instantly for this time
+     * Instantly hides the loading mask,
+     * ignoring any `hideDelay` set on initialization
      */
     loadingMask.hide(true);
 
     /**
-     * Toggles loading mask
-     * (shows if it was hidden and hides if it was shown)
+     * Toggles loading mask visibility
+     * - shows if it was hidden
+     * - hides if it was shown
      */
     loadingMask.toggle();
 
     /**
-     * Same as show();
+     * Same as show()
      */
     loadingMask.toggle(true);
 
     /**
-     * Same as hide();
+     * Same as hide()
      */
     loadingMask.toggle(false);
 
     /**
-     * Returns current state of loading mask
-     *  - true if it is shown
-     *  - false if it is hidden
+     * Returns current state of the loading mask
+     * - true if shown
+     * - false if hidden
      */
     loadingMask.isShown();
 
     /**
-     * Allows to change loading hint for the instance
+     * Updates the loading hint text for this instance
      */
     loadingMask.setLoadingHint('Processing...');
-
 
 Markup
 ------
 
-The markup of loading a mask is built in the way that allows to show only the top level loading mask. So if your container is covered it and at the same time an element inside your container has its own loading mask shown, then the user will see only the top level of the loading process. And once the top level mask is hidden, they will keep seeing the remaining mask until it gets hidden as well.
+The markup ensures that only the top-level loading mask is visible.
+If a container is covered while a nested element inside it also has a loading mask, the user will only see the top-level mask.
+When the top-level mask is hidden, the nested mask will become visible until it is also hidden.

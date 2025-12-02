@@ -5,12 +5,15 @@
 ApiAccessor
 ===========
 
-Abstraction of api access point. This class is by design to be initiated from the server configuration.
+**ApiAccessor** provides an abstraction for API access points.
+It is designed to be initialized from server-side configuration and simplifies sending requests with consistent options and caching support.
 
-The following example of configuration provided on the server is a sample usage of api_accessor with a full set of options provided(except `route_parameters_rename_map`):
+Server Configuration Example
+----------------------------
+
+The following example demonstrates how to configure `api_accessor` on the server with a full set of options (excluding `route_parameters_rename_map`):
 
 .. code-block:: yaml
-
 
     save_api_accessor:
         route: orocrm_opportunity_task_update # for example this route uses following mask
@@ -23,20 +26,24 @@ The following example of configuration provided on the server is a sample usage 
         action: patch
         query_parameter_names: [action]
 
-Then the following code on the client:
+Client Usage Example
+--------------------
+
+Once configured, you can use the ApiAccessor from the client:
 
 .. code-block:: javascript
-
 
     var apiAP = new ApiAccessror(serverConfiguration);
     apiAP.send({id: 321}, {name: 'new name'}).then(function(result) {
         console.log(result)
     })
 
-Will raise POST request to `/api/opportunity/23/tasks/321?action=patch` with body == `{name: 'new name'}`
-and will put response to console after completion
+This will issue a POST request to `/api/opportunity/23/tasks/321?action=patch` with the body `{name: 'new name'}` and log the response to the console.
 
-Extends :ref:`BaseClass <bundle-docs-platform-ui-bundle-baseclass>`:
+Extends
+-------
+
+Extends :ref:`BaseClass <bundle-docs-platform-ui-bundle-baseclass>` with the following options:
 
 .. csv-table::
    :header: "Param","Type","Description"
@@ -44,91 +51,71 @@ Extends :ref:`BaseClass <bundle-docs-platform-ui-bundle-baseclass>`:
 
    "options","`Object`","Options container"
    "options.route","`string`","Required. Route name"
-   "options.http_method","`string`","Http method to access this route (e.g., GET/POST/PUT/PATCH. By default `'GET'`."
-   "options.form_name","`string`","Optional. Wraps the request body into a form_name, so request will look like `{<form_name>:<request_body>}`"
-   "options.headers","`Object`","Optional. Allows to provide additional http headers"
-   "options.default_route_parameters","`Object`","Optional. Provides default parameters for route, this defaults will be merged the `urlParameters` to get url"
-   "options.route_parameters_rename_map`","`Object`","Optional. Allows to rename incoming parameters, which came into send() function, to proper names. Please provide here an object with following structure: `{<old-name>: <new-name>, ...}`"
-   "options.query_parameter_names","`Array.string`","Optional. Array of parameter names to put into query string (e.g. `?<parameter-name>=<value>&<parameter-name>=<value>`). (The reason of adding this argument is that FOSRestBundle doesn’t provides acceptable query parameters for client usage, so it is required to specify list of them)"
+   "options.http_method","`string`","HTTP method to access this route (e.g., GET/POST/PUT/PATCH). Defaults to 'GET'."
+   "options.form_name","`string`","Optional. Wraps the request body into a form_name so request looks like `{<form_name>:<request_body>}`"
+   "options.headers","`Object`","Optional. Additional HTTP headers"
+   "options.default_route_parameters","`Object`","Optional. Default parameters for route, merged with `urlParameters` to build URL"
+   "options.route_parameters_rename_map`","`Object`","Optional. Rename incoming parameters provided to `send()` to proper names, e.g., `{<old-name>: <new-name>, ...}`"
+   "options.query_parameter_names","`Array.string`","Optional. List of parameters to include in query string (e.g., `?<parameter-name>=<value>`). Needed for FOSRestBundle compatibility"
 
-apiAccessor.initialize(options)
--------------------------------
+Instance Methods
+----------------
 
-**Kind**: instance method of ApiAccessor
-
-.. csv-table::
-   :header: "Param","Type","Description"
-   :widths: 20, 20, 20
-
-   "options","`Object`","passed to the constructor"
-
-apiAccessor.isCacheAllowed() ⇒ `boolean`
-----------------------------------------
-
-Returns true if selected HTTP_METHOD allows caching
-
-**Kind**: instance method of ApiAccessor
-
-apiAccessor.clearCache()
-------------------------
-
-Clears response cache
-
-**Kind**: instance method of ApiAccessor
-
-apiAccessor.validateUrlParameters(urlParameters) ⇒ `boolean`
-------------------------------------------------------------
-
-Validates url parameters
-
-**Kind**: instance method of ApiAccessor
-**Returns**: `boolean` - true, if parameters are valid and route url can be built
+**apiAccessor.initialize(options)**
 
 .. csv-table::
    :header: "Param","Type","Description"
    :widths: 20, 20, 20
 
-   "urlParameters","`Object`","Url parameters to compose the url"
+   "options","`Object`","Passed to the constructor"
 
-apiAccessor.send(urlParameters, body, headers, options) ⇒ `$.Promise`
-----------------------------------------------------------------------
+**apiAccessor.isCacheAllowed() ⇒ `boolean`**
 
-Sends request to the server and returns $.Promise instance with abort() support
+Returns true if the selected HTTP method allows caching.
 
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
-**Returns**: `$.Promise` - - $.Promise instance with abort() support  
+**apiAccessor.clearCache()**
+
+Clears response cache.
+
+**apiAccessor.validateUrlParameters(urlParameters) ⇒ `boolean`**
+
+Validates URL parameters. Returns true if parameters are valid and the route URL can be built.
 
 .. csv-table::
    :header: "Param","Type","Description"
    :widths: 20, 20, 20
 
-   "urlParameters","`Object`","Url parameters to compose the url"
+   "urlParameters","`Object`","URL parameters to compose the URL"
+
+**apiAccessor.send(urlParameters, body, headers, options) ⇒ `$.Promise`**
+
+Sends a request to the server and returns a `$.Promise` instance with `abort()` support.
+
+.. csv-table::
+   :header: "Param","Type","Description"
+   :widths: 20, 20, 20
+
+   "urlParameters","`Object`","URL parameters to compose the URL"
    "body","`Object`","Request body"
    "headers","`Object`","Headers to send with the request"
    "options","`Object`","Additional options"
-   "options.processingMessage","`string`","Shows notification message while request is going"
-   "options.preventWindowUnload","`boolean` &#124; `string`","Prevent window from being unloaded without user confirmation until request is finished. If true provided - page unload will be prevented with default message. If string provided - please describe change in it. This string will be added to list on changes.Default message will be like: Server is being updated and the following changes might be lost:{messages list, each on new line}"
+   "options.processingMessage","`string`","Shows notification message while request is in progress"
+   "options.preventWindowUnload","`boolean` &#124; `string`","Prevents window unload until request is finished. Can be boolean or string describing changes."
 
-apiAccessor._makeAjaxRequest(options)
--------------------------------------
+**apiAccessor._makeAjaxRequest(options)**
 
-Makes Ajax request or returns result from cache
-
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
-**Access:** protected  
+Makes an AJAX request or returns the cached result.
+Access: protected.
 
 .. csv-table::
    :header: "Param","Type","Description"
    :widths: 20, 20, 20
 
-   "options","`Object`","options to pass to ajax call"
+   "options","`Object`","Options to pass to the AJAX call"
 
-apiAccessor.hashCode(url) ⇒ `string`
-------------------------------------
+**apiAccessor.hashCode(url) ⇒ `string`**
 
-Returns hash code of url
-
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
+Returns a hash code of the URL.
 
 .. csv-table::
    :header: "Param","Type"
@@ -136,39 +123,29 @@ Returns hash code of url
 
    "url","`string`"
 
-apiAccessor.isCacheExistsFor(urlParameters)
--------------------------------------------
+**apiAccessor.isCacheExistsFor(urlParameters)**
 
-Returns true if data is cached for concrete urlParameters
-
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
-**Access:** protected  
+Returns true if data is cached for the given URL parameters. Access: protected.
 
 .. csv-table::
    :header: "Param","Type","Description"
    :widths: 20, 20, 20
 
-   "urlParameters","`Object`","url parameters to check"
+   "urlParameters","`Object`","URL parameters to check"
 
-apiAccessor.getHeaders(headers) ⇒ `Object`
-------------------------------------------
+**apiAccessor.getHeaders(headers) ⇒ `Object`**
 
 Prepares headers for the request.
 
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
-
 .. csv-table::
    :header: "Param","Type","Description"
    :widths: 20, 20, 20
 
-   "headers","`Object`","Headers to merge into the default list"
+   "headers","`Object`","Headers to merge into default list"
 
-apiAccessor.prepareUrlParameters(urlParameters) ⇒ `Object`
-----------------------------------------------------------
+**apiAccessor.prepareUrlParameters(urlParameters) ⇒ `Object`**
 
-Prepares url parameters before the url build
-
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
+Prepares URL parameters before building the URL.
 
 .. csv-table::
    :header: "Param"
@@ -176,38 +153,29 @@ Prepares url parameters before the url build
 
    "urlParameters"
 
-apiAccessor.getUrl(urlParameters) ⇒ `string`
---------------------------------------------
+**apiAccessor.getUrl(urlParameters) ⇒ `string`**
 
-Prepares url for the request.
-
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
+Prepares URL for the request.
 
 .. csv-table::
    :header: "Param","Type","Description"
    :widths: 20, 20, 20
 
-   "urlParameters","`Object`","Map of url parameters to use"
+   "urlParameters","`Object`","Map of URL parameters to use"
 
-apiAccessor.formatBody(body) ⇒ `Object`
----------------------------------------
+**apiAccessor.formatBody(body) ⇒ `Object`**
 
 Prepares the request body.
 
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
-
 .. csv-table::
    :header: "Param","Type","Description"
    :widths: 20, 20, 20
 
-   "body","`Object`","Map of the url parameters to use"
+   "body","`Object`","Map of URL parameters to use"
 
-apiAccessor.formatResult(response) ⇒ `Object`
----------------------------------------------
+**apiAccessor.formatResult(response) ⇒ `Object`**
 
-Formats response before it is sent out from this api accessor.
-
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
+Formats the response before returning it.
 
 .. csv-table::
    :header: "Param","Type"
@@ -215,16 +183,12 @@ Formats response before it is sent out from this api accessor.
 
    "response","`Object`"
 
-apiAccessor.getErrorHandlerMessage(options) ⇒ `boolean`
---------------------------------------------------------
+**apiAccessor.getErrorHandlerMessage(options) ⇒ `boolean`**
 
-Returns error handler message attribute from given options
-
-**Kind**: instance method of [ApiAccessor](#module_ApiAccessor)  
+Returns the error handler message attribute from the given options.
 
 .. csv-table::
    :header: "Param"
    :widths: 20
 
    "options"
-

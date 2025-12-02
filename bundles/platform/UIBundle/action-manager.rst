@@ -3,12 +3,12 @@
 Action Manager
 ==============
 
-Action Manager enables you to add actions globally for all jsTree in the application, in one place
+The **Action Manager** allows you to define actions globally for all jsTree instances in the application, in a single place.
 
-**ActionManager.addAction(name, action)** method takes two arguments {name, action}
+**ActionManager.addAction(name, action)** accepts two arguments:
 
-* 'name' - a unique action identifier
-* 'action' - an object with a view instance and a hook property, when this property contain *true*, action is appended to the tree view
+* **name** – a unique identifier for the action
+* **action** – an object containing a `view` instance and a `hook` property. When the `hook` property is `true`, the action is appended to the tree view.
 
 .. code-block:: javascript
 
@@ -18,10 +18,9 @@ Action Manager enables you to add actions globally for all jsTree in the applica
         hook: 'someProperty'
     }
 
-or hook parameter can get multiple properties
+The `hook` property can also accept multiple properties:
 
 .. code-block:: javascript
-
 
     {
         view: 'path/to/some-action-view',
@@ -34,7 +33,6 @@ or hook parameter can get multiple properties
 **Example of Usage**
 
 .. code-block:: javascript
-
 
     // Create action
 
@@ -64,7 +62,6 @@ or hook parameter can get multiple properties
         return SomeActionView;
 
     // Register new action
-
 
         var ActionManager = require('oroui/js/jstree-action-manager');
         var SomeActionView_1 = require('oroui/js/app/views/jstree/some-action-view-1');

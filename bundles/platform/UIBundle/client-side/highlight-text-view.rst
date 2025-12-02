@@ -3,17 +3,19 @@
 Highlight Text View
 ===================
 
-Highlight Text View is used to highlight text in view element.
-
-Example: highlight query string in search results.
+The Highlight Text View is used to highlight text within a view element.
+A common scenario is highlighting matched query strings in search results.
 
 Initialization
 --------------
 
-Initialize in twig:
+The view can be initialized either in Twig or in JavaScript.
+
+**Initialize in twig**
+
+This example demonstrates how to attach the Highlight Text View via ``data-page-component-view`` and configure it with selectors for highlighting and for toggling visibility.
 
 .. code-block:: twig
-
 
     //example from System Configuration page content
     <div data-page-component-view="{{ {
@@ -35,11 +37,11 @@ Initialize in twig:
         {{ _self.renderTabContent(data.form, data.content) }}
     </div>
 
+**Initialize in JavaScript**
 
-Initialize in JavaScript:
+In this example, the view is instantiated directly in JavaScript, assigned to the current element, and configured with the appropriate highlight selector.
 
 .. code-block:: javascript
-
 
     //example from "oroui/js/app/views/jstree/base-tree-view"
     this.subview('highlight', new HighlightTextView({
@@ -47,7 +49,6 @@ Initialize in JavaScript:
         viewGroup: 'configuration',
         highlightSelectors: ['.jstree-search']
     }));
-
 
 Options
 -------

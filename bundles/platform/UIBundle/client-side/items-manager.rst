@@ -3,19 +3,22 @@
 Items Manager
 =============
 
+The Items Manager provides a framework for managing a list of items. It includes a Backbone
+collection for storing items, and jQuery-UI widgets for editing and rendering them in a table.
+
 Components
 ----------
 
 - Backbone collection for storing list of items
-- `itemsManagerEditor` - [jQuery-UI widget] for binding html inputs to the item
-- `itemsManagerTable` - [jQuery-UI widget] for rendering list of items
+- `itemsManagerEditor` - jQuery-UI widget for binding HTML inputs to the item
+- `itemsManagerTable` - jQuery-UI widget for rendering the list of items
 
-**Example**:
+Example
+-------
 
 Define `Backbone.Model` for an item:
 
 .. code-block:: js
-
 
     var ItemModel = Backbone.Model.extend({
         defaults: {
@@ -26,21 +29,17 @@ Define `Backbone.Model` for an item:
         }
     });
 
-
 Define `Backbone.Collection` for the item list:
 
 .. code-block:: javascript
-
 
     var ItemCollection = Backbone.Collection.extend({
         model: ItemModel
     });
 
-
-Define html for `itemsManagerEditor`:
+Define HTML for `itemsManagerEditor`:
 
 .. code-block:: html
-
 
     <div id="editor">
         <input name="name"></input>
@@ -52,11 +51,9 @@ Define html for `itemsManagerEditor`:
         <button class="cancel-button"></button>
     </div>
 
-
-Define html for `itemsManagerTable`:
+Define HTML for `itemsManagerTable`:
 
 .. code-block:: html
-
 
     <table>
         <thead>
@@ -72,11 +69,9 @@ Define html for `itemsManagerTable`:
         </tbody>
     </table>
 
-
-Define template file `templates/item.html` for the item on the list:
+Define template file `templates/item.html` for the items on the list:
 
 .. code-block:: none
-
 
      <tr data-cid="<%= cid %>">
          <td><%= name %></td>
@@ -94,10 +89,9 @@ Define template file `templates/item.html` for the item on the list:
          </td>
      </tr>
 
-Instantiate item collection:
+Instantiate the item collection:
 
 .. code-block:: javascript
-
 
     var items = new ItemCollection([
         {
@@ -117,21 +111,17 @@ Instantiate item collection:
         },
     ]);
 
-
 Apply `itemsManagerEditor` widget on `div#editor`:
 
 .. code-block:: js
-
 
     $('div#editor').itemsManagerEditor({
         collection: items
     });
 
-
 Apply `itemsManagerTable` widget to `tbody.item-container`:
 
 .. code-block:: javascript
-
 
     import itemTemplate from 'tpl-loader!templates/item.html';
 
@@ -141,6 +131,7 @@ Apply `itemsManagerTable` widget to `tbody.item-container`:
     });
 
 .. seealso:: |jQuery-UI widget| and |jQuery-UI sortable|
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
