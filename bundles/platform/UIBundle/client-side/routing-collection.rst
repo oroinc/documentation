@@ -5,14 +5,13 @@
 RoutingCollection
 =================
 
-RoutingCollection is an abstraction of collection which uses Oro routing system.
+`RoutingCollection` is an abstraction of a collection that integrates with the Oro routing system.
+It automatically keeps itself in sync whenever the route or collection state changes.
 
-It keeps itself in actual state when route or state changes.
-
-Basic usage:
+Basic Usage
+-----------
 
 .. code-block:: javascript
-
 
     var CommentCollection = RoutingCollection.extend({
         routeDefaults: {
@@ -46,59 +45,65 @@ Basic usage:
     commentCollection.setPage(2)
 
 
-**Augment**: BaseCollection
+**Augment:** BaseCollection
+
+Properties
+----------
 
 routingCollection._route : `RouteModel`
 ---------------------------------------
 
-Route object which used to generate urls. Collection will reload whenever route is changed.
-Attributes will be available at the view as `<%= route.page %>`
+Route object used to generate URLs. The collection will reload automatically whenever the route changes.
+Attributes of the route will be available in views as `<%= route.page %>`.
 
-Access to route attributes should be realized in descendants. (e.g. `setPage()` or `setPerPage()`)
+Access to route attributes should be implemented in descendant classes (e.g., `setPage()` or `setPerPage()`).
 
 **Kind**: instance property of RoutingCollection
-**Access:** protected  
+**Access:** protected
 
 routingCollection._state : `BaseModel`
 --------------------------------------
 
-State of the collection. Must contain both settings and server response parts such as
-totalItemsQuantity of items
-on server. Attributes will be available at the view as `<%= state.totalItemsQuantity %>`.
+State of the collection. Must include both settings and server response data, such as `totalItemsQuantity`.
+Attributes are accessible in views as `<%= state.totalItemsQuantity %>`.
 
-The `stateChange` event is fired when state is changed.
-
-Override `parse()` function to add values from server response to the state
+The `stateChange` event is triggered whenever the state changes.
+Override `parse()` to add server response values to the state.
 
 **Kind**: instance property of RoutingCollection
-**Access:** protected  
+**Access:** protected
 
 routingCollection.routeDefaults : `Object`
 ------------------------------------------
 
-Default route attributes
+Default route attributes.
 
 **Kind**: instance property of RoutingCollection
 
 routingCollection.stateDefaults : `Object`
 ------------------------------------------
 
-Default state
+Default state attributes.
 
 **Kind**: instance property of RoutingCollection
 
+Methods
+-------
+
 routingCollection.initialize()
 ------------------------------
+
+Initializes the collection.
 
 **Kind**: instance method of RoutingCollection
 
 routingCollection._createState(parameters)
 ------------------------------------------
 
-Creates state object. Merges attributes from all stateDefaults objects/functions in class hierarchy.
+Creates the state object by merging attributes from all `stateDefaults` objects/functions in the class hierarchy.
 
 **Kind**: instance method of RoutingCollection
-**Access:** protected  
+**Access:** protected
 
 .. csv-table::
    :header: "Param","Type"
@@ -109,10 +114,10 @@ Creates state object. Merges attributes from all stateDefaults objects/functions
 routingCollection._createRoute(parameters)
 ------------------------------------------
 
-Creates route. Merges attributes from all routeDefaults objects/functions in class hierarchy.
+Creates the route object by merging attributes from all `routeDefaults` objects/functions in the class hierarchy.
 
 **Kind**: instance method of RoutingCollection
-**Access:** protected  
+**Access:** protected
 
 .. csv-table::
    :header: "Param","Type"
@@ -123,83 +128,93 @@ Creates route. Merges attributes from all routeDefaults objects/functions in cla
 routingCollection._mergeAllPropertyVersions(attrName) ⇒ `Object`
 -----------------------------------------------------------------
 
-Utility function. Extends `Chaplin.utils.getAllPropertyVersions` with merge and `_.result()` like call, if property is function
+Utility function that extends `Chaplin.utils.getAllPropertyVersions` by merging values and calling `_.result()` if the property is a function.
 
-**Kind**: instance method of outingCollection
+**Kind**: instance method of RoutingCollection
 **Access:** protected
 
 .. csv-table::
    :header: "Param","Type","Description"
    :widths: 20, 20, 20
 
-   "attrName","`string`","attribute to merge"
+   "attrName","`string`","Name of the attribute to merge"
 
 routingCollection.getRouteParameters() ⇒ `Object`
 -------------------------------------------------
 
-Returns current route parameters
+Returns the current route parameters.
 
 **Kind**: instance method of RoutingCollection
 
 routingCollection.getState() ⇒ `Object`
 ---------------------------------------
 
-Returns collection state
+Returns the current state of the collection.
 
 **Kind**: instance method of RoutingCollection
 
 routingCollection.url()
 -----------------------
 
+Returns the URL for the collection.
+
 **Kind**: instance method of RoutingCollection
 
 routingCollection.sync()
 ------------------------
+
+Syncs the collection with the server.
 
 **Kind**: instance method of RoutingCollection
 
 routingCollection.parse()
 -------------------------
 
+Parses server response and updates the state.
+
 **Kind**: instance method of RoutingCollection
 
 routingCollection.checkUrlChange()
 ----------------------------------
 
-Fetches collection if url is changed. Callback for state and route changes.
+Fetches the collection if the URL has changed. Called automatically on route or state changes.
 
 **Kind**: instance method of RoutingCollection
 
 routingCollection.serializeExtraData()
 --------------------------------------
 
+Serializes additional data for requests.
+
 **Kind**: instance method of RoutingCollection
 
 routingCollection._onErrorResponse()
 ------------------------------------
 
-Default error response handler function. It will show error messages for all HTTP error codes except 400.
+Default error handler. Displays error messages for all HTTP error codes except 400.
 
 **Kind**: instance method of RoutingCollection
-**Access:** protected  
+**Access:** protected
 
 routingCollection._onAdd()
 --------------------------
 
-General callback for 'add' event
+Callback for the 'add' event.
 
 **Kind**: instance method of RoutingCollection
-**Access:** protected  
+**Access:** protected
 
 routingCollection._onRemove()
 -----------------------------
 
-General callback for 'remove' event
+Callback for the 'remove' event.
 
 **Kind**: instance method of RoutingCollection
-**Access:** protected  
+**Access:** protected
 
 routingCollection.dispose()
 ---------------------------
+
+Cleans up the collection and removes references.
 
 **Kind**: instance method of RoutingCollection

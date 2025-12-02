@@ -4,19 +4,20 @@ HiddenInitializationView ⇐ `BaseView`
 =====================================
 
 * **Extends:** `BaseView`
-* **Kind**: global class
+* **Kind:** global class
 
-new HiddenInitializationView()
-------------------------------
+HiddenInitializationView()
+--------------------------
 
-View allows to hide part of the DOM tree until all page components are initialized.
+The **HiddenInitializationView** is used to temporarily hide a section of the DOM until all page components within it are fully initialized.
 
-Usage sample:
+Usage Example
+-------------
 
-.. note:: Keep in mind that all div's attributes are required for valid work.
+.. note::
+   All attributes on the `<div>` element below are required for correct functionality.
 
 .. code-block:: html
-
 
     <div class="invisible"
             data-page-component-module="oroui/js/app/components/view-component"

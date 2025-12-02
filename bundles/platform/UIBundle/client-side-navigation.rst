@@ -3,11 +3,12 @@
 Client Side Navigation
 ======================
 
-Client Side Navigation allows to load page in different formats HTML or JSON in depends on request. First request form browser loads complete HTML page. All following requests are made by JavaScript and load page blocks in JSON format.
+**Client Side Navigation** enables pages to be loaded in different formats (HTML or JSON) depending on the request.
+The first request from the browser loads the complete HTML page, while all subsequent requests are handled by JavaScript and load page blocks in JSON format.
 
-To get the page ready for the client side navigation, follow the steps below:
+To prepare a page for client-side navigation, follow these steps:
 
-- Add an additional check in main layout template:
+- Add an additional check in the main layout template:
 
 .. code-block:: none
 
@@ -19,22 +20,22 @@ To get the page ready for the client side navigation, follow the steps below:
     ...
     </html>
     {% else %}
-    {# Template for hash tag navigation#}
+    {# Template for hash navigation #}
     {% include '@OroNavigation/HashNav/hashNavAjax.html.twig'
-        with {'script': block('head_script'), 'messages':block('messages'), 'content': block('page_container')}
+        with {'script': block('head_script'), 'messages': block('messages'), 'content': block('page_container')}
     %}
     {% endif %}
 
-where:
+Where:
 
-  `block('head_script')` -a  block with a page related javascripts;
-  `block('messages')` - a block with system messages;
-  `block('page_container')` - a content area block (without header/footer) that is reloaded during navigation
+* ``block('head_script')`` – contains page-related JavaScript
+* ``block('messages')`` – contains system messages
+* ``block('page_container')`` – content area block (without header/footer) that is reloaded during navigation
 
-- To exclude links from processing with client side navigation (like windows open buttons, delete links), add an additional css class "no-hash" to the tag, e.g.
+- To exclude links from client-side navigation (for example, window-open buttons or delete links), add the CSS class ``no-hash`` to the link tag:
 
 .. code-block:: none
 
    <a href="page-url" class="no-hash">...</a>
 
-As part of the navigation, form submit is also processed with Ajax.
+Forms are also submitted via AJAX as part of the client-side navigation process.

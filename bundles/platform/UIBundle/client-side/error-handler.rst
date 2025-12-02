@@ -3,15 +3,15 @@
 Error Handler
 =============
 
-Error Handler provides a generalized system display of errors in the application. It allows to show different error formats for `prod` and `dev` environment.
+The **Error Handler** provides a unified way to display errors across the application.
+It supports different error output formats depending on the environment (`prod` or `dev`) and helps ensure that errors are visible either in the UI, the console, or both.
 
 How to Use It
 -------------
 
-Import `oroui/js/error` into your component:
+To use the Error Handler in your component, import `oroui/js/error`:
 
 .. code-block:: javascript
-
 
     define(function(require) {
         'use strict';
@@ -21,85 +21,88 @@ Import `oroui/js/error` into your component:
         /* Another code */
     });
 
-
-To display an error message, use the methods provided in Error Handler
+After importing, you can use its various methods to display errors.
 
 showError
 ^^^^^^^^^
 
-Options:
+**Options:**
 
 * `context`: {Object|Error}
-* `errorMessage`: {String|null} _(optional)_
+* `errorMessage`: {String|null} *(optional)*
 
-Description:
+**Description:**
 
-Show an error both in the UI Flash Message and Console 
+Displays an error in **both** the UI Flash Message and the browser Console.
 
 showErrorInUI
 ^^^^^^^^^^^^^
 
-Options:
+**Options:**
 
 * `context`: {Object|Error|String}
 
-Description:
+**Description:**
 
-Show an error only in UI Flash Message.
-If `context` is Error, then in `prod` env the output is a simple message, but in `dev` env additional debug information can be shown.
+Shows an error **only** in the UI Flash Message.
+
+If `context` is an Error object:
+
+- In `prod`, the user sees a concise message.
+- In `dev`, additional debugging details may also be shown.
 
 showErrorInConsole
 ^^^^^^^^^^^^^^^^^^
 
-Options:
+**Options:**
 
 * `context`: {Object|Error}
 
-Description:
+**Description:**
 
-Show an error only in Console
+Logs the error **only** in the Console.
 
 showFlashError
 ^^^^^^^^^^^^^^
 
-Options:
+**Options:**
 
 * `message`: {String}
 
-Description:
+**Description:**
 
-Show a simple Error Flash Message
+Displays a simple error Flash Message in the UI.
 
 Default Options
 ---------------
 
-The following options can be redefined when calling the `error` module
+The Error Handler provides default values, which can be overridden when calling the `error` module.
 
 message
 ^^^^^^^
 
 * **Type:** {String}
-* **Default:** 'There was an error performing the requested operation. Please try again or contact us for assistance.'
+* **Default:** `'There was an error performing the requested operation. Please try again or contact us for assistance.'`
 
-Description:
+**Description:**
 
-Default error text message
+Defines the default error message shown to the user.
 
 loginRoute
 ^^^^^^^^^^
 
 * **Type:** {String}
-* **Default:** 'oro_user_security_login'
+* **Default:** `'oro_user_security_login'`
 
-Description:
+**Description:**
 
-Specifies the redirect url if XHR status is 401
+Specifies the redirect URL used when an XHR request returns a `401 Unauthorized` response.
 
-Error Handler and `$.ajax()` errors
+Error Handler and `$.ajax()` Errors
 -----------------------------------
 
-By default, Error Handler catches and shows all default errors provided by `$.ajax()`.
-However, developers can change or disable this behavior by adding the `errorHandlerMessage` option into ajax settings.
+By default, the Error Handler intercepts and displays all standard errors raised by `$.ajax()`.
+Developers can customize or disable this behavior via the `errorHandlerMessage` option in AJAX settings.
 
 errorHandlerMessage
 ^^^^^^^^^^^^^^^^^^^
@@ -107,32 +110,29 @@ errorHandlerMessage
 * **Type:** {Boolean|String|Function}
 * **Default:** `true`
 
-Disable ajax Error Flash Message:
+Examples:
+
+Disable AJAX Error Flash Message:
 
 .. code-block:: javascript
-
 
    $.ajax({
        url: 'test',
        errorHandlerMessage: false
    });
 
-
-Set a custom error message:
+Set a custom message:
 
 .. code-block:: javascript
-
 
    $.ajax({
        url: 'test',
        errorHandlerMessage: "Custom Error Message"
    });
 
-
-Callback function can also be used for `errorHandlerMessage`:
+Use a callback function:
 
 .. code-block:: javascript
-
 
    $.ajax({
        url: 'test',
