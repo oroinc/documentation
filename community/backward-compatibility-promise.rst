@@ -11,11 +11,29 @@ Our Backward Compatibility Promise
 Code Compatibility Promise
 --------------------------
 
-In compliance with our :ref:`Release Process <doc--community--release>` and to ensure seamless upgrades, we promise the following:
+In compliance with our :ref:`Release Process <doc--community--release>` and to ensure clear expectations, we use a
+**MAJOR.MINOR.PATCH** versioning scheme. While this format resembles Semantic Versioning, it does **not** follow
+SemVer's strict backward-compatibility guarantees between **MINOR** versions.
 
-1. MAJOR and MINOR releases MAY introduce backward-incompatible changes. MAJOR, MINOR, and PATCH are SemVer terms that describe release versions (e.g., 2.1.4), where 2 is a MAJOR, 1 is a MINOR, and 4 is a PATCH release (MAJOR.MINOR.PATCH).
-2. Internal implementation and some parts of the logic MAY be changed even in PATCH releases, however, they should preserve the external interface following the instructions provided below.
-3. At the same time, backward-incompatible changes (marked as "No" in the table below) in the PATCH release SHOULD NOT replace the existing logic. Instead, they SHOULD be marked as deprecated, and a new implementation should be added instead.
+In Oro products, the MAJOR version reflects the Symfony LTS version used by that release line. A non-changing MAJOR
+version indicates only that the underlying major Symfony version remains the same - it does *not* guarantee API or
+behavioral stability within Oro code from one **MINOR** version to the next.
+
+As a result:
+
+* **Both MAJOR and MINOR releases may introduce backward-incompatible changes** in Oro code.
+* System requirements may also change between MINOR versions, including updates to the minimally supported
+  versions of PHP, PostgreSQL, and other required components.
+* Third-party dependencies used by the Oro application may be upgraded or replaced in MINOR releases. Such
+  updates may include major-version changes or library substitutions, in both PHP and JavaScript, and may introduce
+  breaking changes.
+
+..
+
+* **PATCH releases are expected to remain fully backward compatible.** A breaking change would only be considered for a
+  PATCH release if it were absolutely required to remediate a critical security issue and no viable non-breaking
+  alternative existed. Any such exceptions are extremely rare and will be documented in the CHANGELOG, release notes,
+  and release announcements.
 
 Code Covered
 ------------
@@ -28,11 +46,6 @@ This BC promise applies to all PHP code except for:
 - Other code related to tests (located in ``*/Test/``)
 - Bundles with the testing framework extensions and demo data definitions ``*/Bundle/TestFrameworkBundle/``, ``*/Bundle/TestFrameworkCRMBundle/``, ``*/Bundle/DemoDataBundle/``, ``*/Bundle/DemoDataCommerceCRMBundle/``
 - An enterprise package with additional OroCRM demo data ``oro/crm-pro-demo-data-bundle``
-
-BC Exceptions
--------------
-
-Backward compatibility can be ignored in security bug fixes or critical bugs. In this case, all the incompatible changes are described in the CHANGELOG.md in a corresponding package.
 
 Using Code
 ----------
