@@ -167,9 +167,9 @@ To install ChromeDriver, run the following commands:
 
 .. code-block:: none
 
-    CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
+    CHROME_DRIVER_VERSION=142.0.7444.175
     mkdir -p "$HOME/chrome" || true
-    wget "http://chromedriver.storage.googleapis.com/${CHROME_DRIVER_VERSION}/chromedriver_linux64.zip" -O "$HOME/chrome/chromedriver_linux64_${CHROME_DRIVER_VERSION}.zip"
+    wget "https://storage.googleapis.com/chrome-for-testing-public/${CHROME_DRIVER_VERSION}/linux64/chromedriver-linux64.zip" -O "$HOME/chrome/chromedriver_linux64_${CHROME_DRIVER_VERSION}.zip"
     unzip "$HOME/chrome/chromedriver_linux64_${CHROME_DRIVER_VERSION}.zip" -d "$HOME/chrome"
     sudo ln -s "$HOME/chrome/chromedriver" /usr/local/bin/chromedriver
 
