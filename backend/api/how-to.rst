@@ -577,7 +577,7 @@ An example of the `Resources/config/oro/routing.yml` configuration file:
         path: '%oro_api.rest.prefix%myresources/{id}'
         methods: [GET]
         defaults:
-            _controller: AcmeDemoBundle:Api\MyResource:get
+            _controller: Acme\DemoBundle\Controller\Api\MyResourceController::get
         options:
             group: rest_api
 

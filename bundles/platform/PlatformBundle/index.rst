@@ -29,12 +29,8 @@ bundle. This file should contain a plain list of service names under key *lazy_s
 .. code-block:: yaml
 
     lazy_services:
-        - assetic.asset_manager
         - knp_menu.renderer.twig
-        - templating
         - twig
-        - templating.engine.twig
-        - twig.controller.exception
 
 .. _bundle-docs-platform-platform-bundle-add-config-settings:
 
