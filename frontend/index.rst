@@ -40,6 +40,7 @@ All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-java
     back-office/index
     pnpm-package-manager
     rtl-support
+    Incompatibilities in 7.0 LTS <frontend-incompatibility/index>
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
