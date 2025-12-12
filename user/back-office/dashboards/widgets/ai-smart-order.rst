@@ -17,6 +17,12 @@ Once the widget is added to the dashboard, you can upload a file of an image of 
 .. image:: /user/img/concept-guides/ai/ai-smart-order-flow.png
    :alt: Illustration of the dashboard with a Smart Order widget
 
+.. note::
+    If :ref:`Async Processing <admin-configuration-orders-ai-smart-order-settings>` is enabled, the uploaded purchase order is processed in the background via the message queue. After uploading a file, you can click the provided link to check the job status on the **System > Jobs** page, allowing you to monitor progress and review any issues once processing completes.
+
+     .. image:: /user/img/concept-guides/ai/async.png
+        :scale: 50%
+
 Any draft created using the AI smart order feature includes a preview of the original uploaded document. You can turn this preview on or off using the Display/Hide Preview button. When the preview is displayed, you can zoom in and out using the controls above the image and move it horizontally by holding the Ctrl (or Command) key while dragging it.
 
 Once you manually amend the fields that require your attention, click the green checkbox near the field to confirm your changes, and then **Save and Close** to close the order edit page. The order will now be available under **Sales > Orders** in the main menu.
