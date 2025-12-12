@@ -9,7 +9,7 @@ Configure Global AI Smart Order Settings
 
 AI Smart Order is available for OroCommerce Enterprise and is aimed at simplifying the process of handling purchase orders. With AI Smart Order feature that includes a dashboard widget and an email automation, you can have emailed PDFs and other document types converted directly into draft orders in your OroCommerce application.
 
-.. image:: /user/img/system/config_commerce/order/ai-smart-order-config-global.png
+.. image:: /user/img/concept-guides/ai/ai-smart-order-config-global.png
    :alt: AI Smart Order configuration settings and dashboard widget
 
 To enable this feature globally:
@@ -22,9 +22,11 @@ To enable this feature globally:
 3. In the **AI Smart Order** section:
 
    a) Clear the **Use Default** checkbox, and select the checkbox next to *Enable AI Agent* to enable the feature.
-   b) Provide the **Order Recognition API Key** and **Order Recognition URL** to configure the feature.
+   b) Provide the **Smart Order API Key** and **Smart Order URL** to configure the feature.
 
-4. Click **Save Settings**.
+4. Select the **Enable Async Processing** checkbox to process purchase orders asynchronously via the message queue, improving performance and accuracy for large or complex orders.
+
+5. Click **Save Settings**.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

@@ -9,7 +9,6 @@ Learn how to define how open orders should be displayed in the storefront.
 * :ref:`Order Creation <configuration--commerce--orders-create>`
 * :ref:`Purchase History <sys--commerce--orders--previously-purchased--main>`
 * :ref:`Order Status Management <sys--commerce--orders--status-management>`
-* :ref:`AI Smart Order <admin-configuration-orders-ai-smart-order-settings>`
 
 .. toctree::
    :titlesonly:
@@ -20,4 +19,3 @@ Learn how to define how open orders should be displayed in the storefront.
    Order Creation <global-order-creation>
    Purchase History <global-previously-purchased>
    Order Status Management <global-order-status-management>
-   AI Smart Order <global-ai-smart-order>
