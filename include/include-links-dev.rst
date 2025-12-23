@@ -6618,3 +6618,11 @@ Links (Dev)
 .. |scheduler property| raw:: html
 
     <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scheduler" target="_blank">Window: scheduler property</a>
+
+.. |Model Context Protocol| raw:: html
+
+   <a href="https://modelcontextprotocol.io/" target="_blank">Model Context Protocol</a>
+
+.. |mcp/sdk| raw:: html
+
+   <a href="https://github.com/modelcontextprotocol/php-sdk" target="_blank">mcp/sdk</a>
