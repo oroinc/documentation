@@ -1,6 +1,7 @@
 <?php
 
 // Twig/ProductImageExtension.php
+
 namespace Acme\Bundle\DemoBundle\Twig;
 
 use Oro\Bundle\AttachmentBundle\Entity\File;
@@ -53,7 +54,7 @@ class ProductImageExtension extends AbstractExtension implements ServiceSubscrib
     /**
      * {@inheritdoc}
      */
-    public static function getSubscribedServices()
+    public static function getSubscribedServices(): array
     {
         return [
             AttachmentManager::class,

@@ -152,6 +152,7 @@ CRM Bundles
    LayoutBundle <platform/LayoutBundle/index>
    LocaleBundle <platform/LocaleBundle/index>
    LoggerBundle <platform/LoggerBundle/index>
+   McpBundle <platform/McpBundle/index>
    MessageQueueBundle <platform/MessageQueueBundle/index>
    MigrationBundle <platform/MigrationBundle/index>
    MicrosoftSyncBundle <platform/MicrosoftSyncBundle/index>
@@ -189,6 +190,7 @@ CRM Bundles
    CustomerBundle <commerce/CustomerBundle/index>
    CustomerRecommendationBundle <commerce/CustomerRecommendationBundle/index>
    FrontendBundle <commerce/FrontendBundle/index>
+   FrontendMcpBundle <commerce/FrontendMcpBundle/index>
    InventoryBundle <commerce/InventoryBundle/index>
    MultiWebsiteBundle <commerce/MultiWebsiteBundle/index>
    OrderBundle <commerce/OrderBundle/index>

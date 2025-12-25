@@ -785,6 +785,66 @@ The default configuration for extension with alias "oro_frontend":
                     - X-Foo
                     - X-Bar
 
+oro_frontend_mcp
+________________
+
+The default configuration for extension with alias "oro_frontend_mcp":
+
+.. code-block:: yaml
+
+    oro_frontend_mcp:
+
+        # The application name to be exposed to storefront MCP clients.
+        app:                  frontend-app
+
+        # The application version to be exposed to storefront MCP clients.
+        version:              0.0.1
+
+        # Instructions describing storefront MCP server purpose and usage context (for LLMs).
+        instructions:         null
+
+        # The maximum number of items returned per storefront MCP list request.
+        pagination_limit:     50
+
+        # Storefront MCP HTTP transport configuration.
+        http:
+
+            # Storefront MCP HTTP endpoint path.
+            path:                 /_mcp_frontend
+
+            # Storefront MCP session store configuration.
+            session:
+
+                # The session store type.
+                store:                file # One of "cache"; "memory"; "file"
+
+                # The prefix for cache store.
+                cache_prefix:         frontend_mcp_
+
+                # The directory for file store.
+                directory:            '%kernel.cache_dir%/mcp-frontend-sessions'
+
+                # The session TTL in seconds.
+                ttl:                  3600
+
+        # Storefront MCP services discovery configuration.
+        discovery:
+
+            # Example:
+            # - { base_path: Acme\Bundle\McpBundle\AcmeMcpBundle, scan_dirs: [McpFrontend] }
+
+            # Prototype
+            -
+
+                # The base path for scanning directories. Also can be PHP class name.
+                base_path:            ~
+
+                # The list of directories (relative to the base path) to scan.
+                scan_dirs:            []
+
+                # The list of directories (relative to the base path) to exclude from the scan.
+                exclude_dirs:         []
+
 oro_gaufrette
 _____________
 
@@ -906,6 +966,66 @@ The default configuration for extension with alias "oro_maintenance":
             code:                 503
             status:               'Service Temporarily Unavailable'
             exception_message:    'Service Temporarily Unavailable'
+
+oro_mcp
+_______
+
+The default configuration for extension with alias "oro_mcp":
+
+.. code-block:: yaml
+
+    oro_mcp:
+
+        # The application name to be exposed to MCP clients.
+        app:                  app
+
+        # The application version to be exposed to MCP clients.
+        version:              0.0.1
+
+        # Instructions describing MCP server purpose and usage context (for LLMs).
+        instructions:         null
+
+        # The maximum number of items returned per MCP list request.
+        pagination_limit:     50
+
+        # MCP HTTP transport configuration.
+        http:
+
+            # MCP HTTP endpoint path.
+            path:                 /_mcp
+
+            # MCP session store configuration.
+            session:
+
+                # The session store type.
+                store:                file # One of "cache"; "memory"; "file"
+
+                # The prefix for cache store.
+                cache_prefix:         mcp_
+
+                # The directory for file store.
+                directory:            '%kernel.cache_dir%/mcp-sessions'
+
+                # The session TTL in seconds.
+                ttl:                  3600
+
+        # MCP services discovery configuration.
+        discovery:
+
+            # Example:
+            # - { base_path: Acme\Bundle\McpBundle\AcmeMcpBundle, scan_dirs: [Mcp] }
+
+            # Prototype
+            -
+
+                # The base path for scanning directories. Also can be PHP class.
+                base_path:            ~
+
+                # The list of directories (relative to the base path) to scan.
+                scan_dirs:            []
+
+                # The list of directories (relative to the base path) to exclude from the scan.
+                exclude_dirs:         []
 
 oro_message_queue
 _________________

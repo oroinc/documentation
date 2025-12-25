@@ -6532,3 +6532,10 @@ Links (Dev)
 
     <a href="https://symfony.com/doc/current/web_link.html#how-does-it-work" target="_blank">Symfony WebLink component</a>
 
+.. |Model Context Protocol| raw:: html
+
+   <a href="https://modelcontextprotocol.io/" target="_blank">Model Context Protocol</a>
+
+.. |mcp/sdk| raw:: html
+
+   <a href="https://github.com/modelcontextprotocol/php-sdk" target="_blank">mcp/sdk</a>
