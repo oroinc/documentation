@@ -31,28 +31,28 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
 
 .. csv-table::
 
-    "**A**",":ref:`DistributionBundle <bundle-docs-platform-distribution-bundle>`",":ref:`InstallerBundle <bundle-docs-platform-installer-bundle>` ",":ref:`RedisConfigBundle <bundle-docs-platform-redis-bundle>`"
-    ":ref:`ActionBundle <bundle-docs-platform-action-bundle>`",":ref:`DigitalAssetBundle <bundle-docs-platform-dam>`",":ref:`IntegrationBundle <bundle-docs-platform-integration-bundle>` ",":ref:`ReportBundle <bundle-docs-platform-report-bundle>`"
-    ":ref:`ActivityBundle <bundle-docs-platform-activity-bundle>`","**E**","**L** ","**S**"
-    ":ref:`ActivityListBundle <bundle-docs-platform-activity-list-bundle>`",":ref:`ElasticSearchBundle <bundle-docs-platform-elastic-search-bundle>`",":ref:`LayoutBundle <bundle-docs-platform-layout-bundle>` ",":ref:`ScopeBundle <bundle-docs-platform-scope-bundle>`"
-    ":ref:`AddressBundle <bundle-docs-platform-address-bundle>`",":ref:`EmailBundle <bundle-docs-platform-email-bundle>`",":ref:`LocaleBundle <bundle-docs-platform-locale-bundle>` ",":ref:`SearchBundle <bundle-docs-platform-search-bundle>`"
-    ":ref:`ApiBundle <bundle-docs-platform-api-bundle>`",":ref:`EmbeddedFormBundle <bundle-docs-platform-embedded-form-bundle>`",":ref:`LoggerBundle <bundle-docs-platform-logger-bundle>` ",":ref:`SecurityBundle <bundle-docs-platform-security-bundle>`"
-    ":ref:`AssetBundle <bundle-docs-platform-asset-bundle>`",":ref:`EntityBundle <bundle-docs-platform-entity-bundle>` ","**M**",":ref:`SegmentBundle <bundle-docs-platform-segment-bundle>`"
-    ":ref:`AttachmentBundle <bundle-docs-platform-attachment-bundle>`",":ref:`EntityConfigBundle <bundle-docs-platform-entity-config-bundle>`",":ref:`MessageQueueBundle <bundle-docs-platform-message-queue-bundle>`",":ref:`SidebarBundle <bundle-docs-platform-sidebar-bundle>`"
-    "**B**",":ref:`EntityExtendBundle <bundle-docs-platform-entity-extend-bundle>`",":ref:`MicrosoftSyncBundle <bundle-docs-platform-microsoft-sync-bundle>`",":ref:`SyncBundle <bundle-docs-platform-sync-bundle>`"
-    ":ref:`BatchBundle <bundle-docs-platform-batch-bundle>`",":ref:`EntityMergeBundle <bundle-docs-platform-entity-merge-bundle>`",":ref:`MigrationBundle <bundle-docs-platform-migration-bundle>`","**T**"
-    "**C**",":ref:`EntityPaginationBundle <bundle-docs-platform-entity-pagination-bundle>` ","**N**",":ref:`TagBundle <bundle-docs-platform-tag-bundle>`"
-    ":ref:`CacheBundle <bundle-docs-platform-cache-bundle>`",":ref:`EntitySerializedFieldsBundle <bundle-docs-platform-entity-serialized-bundle>` ",":ref:`NavigationBundle <bundle-docs-platform-navigation-bundle>`",":ref:`TestFrameworkBundle <bundle-docs-platform-test-framework-bundle>`"
-    ":ref:`CalendarBundle <bundle-docs-platform-calendar-bundle>`","**F** ",":ref:`NoteBundle <bundle-docs-platform-note-bundle>`",":ref:`ThemeBundle <bundle-docs-platform-theme-bundle>`"
-    ":ref:`ChartBundle <bundle-docs-platform-chart-bundle>`",":ref:`FeatureToggleBundle <bundle-docs-platform-feature-toggle-bundle>` ",":ref:`NotificationBundle <bundle-docs-platform-notification-bundle>` ",":ref:`TranslationBundle <bundle-docs-platform-translation-bundle>`"
-    ":ref:`CommentBundle <bundle-docs-platform-comment-bundle>`",":ref:`FilterBundle <bundle-docs-platform-filter-bundle>` ","**O** ",":ref:`TwigInspectorBundle <bundle-docs-platform-twig-inspector-bundle>`"
-    ":ref:`ConfigBundle <bundle-docs-platform-checkout-bundle>`",":ref:`FormBundle <bundle-docs-platform-form-bundle>` ",":ref:`OAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>`","**U**"
-    ":ref:`CronBundle <bundle-docs-platform-cron-bundle>`","**G** ",":ref:`OrganizationBundle <bundle-docs-platform-organization-bundle>`",":ref:`UIBundle <bundle-docs-platform-ui-bundle>`"
-    ":ref:`CurrencyBundle <bundle-docs-platform-currency-bundle>`",":ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>` ",":ref:`PdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`","**W**"
-    "**D**",":ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>` ",":ref:`PlatformBundle <bundle-docs-platform-platform-bundle>` ",":ref:`WindowsBundle <bundle-docs-platform-windows-bundle>`"
-    ":ref:`DashboardBundle <bundle-docs-platform-dashboard-bundle>`","**I** ","**Q** ",":ref:`WorkflowBundle <bundle-docs-platform-workflow-bundle>`"
-    ":ref:`DataAuditBundle <bundle-docs-platform--data-audit>`",":ref:`ImapBundle <bundle-docs-platform-imap-bundle>` ",":ref:`QueryDesignerBundle <bundle-docs-platform-query-designer-bundle>`",
-    ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`",":ref:`ImportExportBundle <bundle-docs-platform-import-export-bundle>` ","**R**",
+    "**A**",":ref:`DistributionBundle <bundle-docs-platform-distribution-bundle>`",":ref:`InstallerBundle <bundle-docs-platform-installer-bundle>`",":ref:`QueryDesignerBundle <bundle-docs-platform-query-designer-bundle>`"
+    ":ref:`ActionBundle <bundle-docs-platform-action-bundle>`",":ref:`DigitalAssetBundle <bundle-docs-platform-dam>`",":ref:`IntegrationBundle <bundle-docs-platform-integration-bundle>`","**R**"
+    ":ref:`ActivityBundle <bundle-docs-platform-activity-bundle>`","**E**","**L** ",":ref:`RedisConfigBundle <bundle-docs-platform-redis-bundle>`"
+    ":ref:`ActivityListBundle <bundle-docs-platform-activity-list-bundle>`",":ref:`ElasticSearchBundle <bundle-docs-platform-elastic-search-bundle>`",":ref:`LayoutBundle <bundle-docs-platform-layout-bundle>`",":ref:`ReportBundle <bundle-docs-platform-report-bundle>`"
+    ":ref:`AddressBundle <bundle-docs-platform-address-bundle>`",":ref:`EmailBundle <bundle-docs-platform-email-bundle>`",":ref:`LocaleBundle <bundle-docs-platform-locale-bundle>`","**S**"
+    ":ref:`ApiBundle <bundle-docs-platform-api-bundle>`",":ref:`EmbeddedFormBundle <bundle-docs-platform-embedded-form-bundle>`",":ref:`LoggerBundle <bundle-docs-platform-logger-bundle>`",":ref:`ScopeBundle <bundle-docs-platform-scope-bundle>`"
+    ":ref:`AssetBundle <bundle-docs-platform-asset-bundle>`",":ref:`EntityBundle <bundle-docs-platform-entity-bundle>`","**M**",":ref:`SearchBundle <bundle-docs-platform-search-bundle>`"
+    ":ref:`AttachmentBundle <bundle-docs-platform-attachment-bundle>`",":ref:`EntityConfigBundle <bundle-docs-platform-entity-config-bundle>`",":ref:`McpBundle <bundle-docs-platform-mcp-bundle>`",":ref:`SecurityBundle <bundle-docs-platform-security-bundle>`"
+    "**B**",":ref:`EntityExtendBundle <bundle-docs-platform-entity-extend-bundle>`",":ref:`MessageQueueBundle <bundle-docs-platform-message-queue-bundle>`",":ref:`SegmentBundle <bundle-docs-platform-segment-bundle>`"
+    ":ref:`BatchBundle <bundle-docs-platform-batch-bundle>`",":ref:`EntityMergeBundle <bundle-docs-platform-entity-merge-bundle>`",":ref:`MicrosoftSyncBundle <bundle-docs-platform-microsoft-sync-bundle>`",":ref:`SidebarBundle <bundle-docs-platform-sidebar-bundle>`"
+    "**C**",":ref:`EntityPaginationBundle <bundle-docs-platform-entity-pagination-bundle>`",":ref:`MigrationBundle <bundle-docs-platform-migration-bundle>`",":ref:`SyncBundle <bundle-docs-platform-sync-bundle>`"
+    ":ref:`CacheBundle <bundle-docs-platform-cache-bundle>`",":ref:`EntitySerializedFieldsBundle <bundle-docs-platform-entity-serialized-bundle>`","**N**","**T**"
+    ":ref:`CalendarBundle <bundle-docs-platform-calendar-bundle>`","**F** ",":ref:`NavigationBundle <bundle-docs-platform-navigation-bundle>`",":ref:`TagBundle <bundle-docs-platform-tag-bundle>`"
+    ":ref:`ChartBundle <bundle-docs-platform-chart-bundle>`",":ref:`FeatureToggleBundle <bundle-docs-platform-feature-toggle-bundle>`",":ref:`NoteBundle <bundle-docs-platform-note-bundle>`",":ref:`TestFrameworkBundle <bundle-docs-platform-test-framework-bundle>`"
+    ":ref:`CommentBundle <bundle-docs-platform-comment-bundle>`",":ref:`FilterBundle <bundle-docs-platform-filter-bundle>`",":ref:`NotificationBundle <bundle-docs-platform-notification-bundle>`",":ref:`ThemeBundle <bundle-docs-platform-theme-bundle>`"
+    ":ref:`ConfigBundle <bundle-docs-platform-checkout-bundle>`",":ref:`FormBundle <bundle-docs-platform-form-bundle>`","**O** ",":ref:`TranslationBundle <bundle-docs-platform-translation-bundle>`"
+    ":ref:`CronBundle <bundle-docs-platform-cron-bundle>`","**G** ",":ref:`OAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>`",":ref:`TwigInspectorBundle <bundle-docs-platform-twig-inspector-bundle>`"
+    ":ref:`CurrencyBundle <bundle-docs-platform-currency-bundle>`",":ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>`",":ref:`OrganizationBundle <bundle-docs-platform-organization-bundle>`","**U**"
+    "**D**",":ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`","**P**",":ref:`UIBundle <bundle-docs-platform-ui-bundle>`"
+    ":ref:`DashboardBundle <bundle-docs-platform-dashboard-bundle>`","**I** ",":ref:`PdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`","**W**"
+    ":ref:`DataAuditBundle <bundle-docs-platform--data-audit>`",":ref:`ImapBundle <bundle-docs-platform-imap-bundle>`",":ref:`PlatformBundle <bundle-docs-platform-platform-bundle>`",":ref:`WindowsBundle <bundle-docs-platform-windows-bundle>`"
+    ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`",":ref:`ImportExportBundle <bundle-docs-platform-import-export-bundle>`","**Q** ",":ref:`WorkflowBundle <bundle-docs-platform-workflow-bundle>`"
 
 
 .. _bundle-docs-commerce:
@@ -64,9 +64,9 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
 
 .. csv-table::
 
-   "**C**","**I**","**S**"
-   ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`",":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`",":ref:`SellerDashboardBundle <bundle-docs-commerce-seller-dashboard-bundle>`"
-   ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`",":ref:`InvoicePaymentBundle <bundle-docs-commerce-invoice-payment-bundle>`",":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
+   "**C**",":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`","**S**"
+   ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`",":ref:`InvoicePaymentBundle <bundle-docs-commerce-invoice-payment-bundle>`",":ref:`SellerDashboardBundle <bundle-docs-commerce-seller-dashboard-bundle>`"
+   ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`","**M**",":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
    ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`",":ref:`MultiWebsiteBundle <bundle-docs-commerce-multi-website-bundle>`",":ref:`ShoppingListBundle <bundle-docs-commerce-shopping-list-bundle>`"
    ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**O**",":ref:`SalesFrontendBundle <bundle-docs-commerce-sales-frontend-bundle>`"
    ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`","**T**"
@@ -75,10 +75,9 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
    "**F**",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
-   ":ref:`FrontendPdfGeneratorBundle <bundle-docs-commerce-frontend-pdf-generator-bundle>`",":ref:`PromotionBundle <bundle-docs-commerce-promotion-bundle>`",":ref:`WarehouseBundle <bundle-docs-commerce-warehouse-bundle>`"
-   "**R**","",""
-   ":ref:`RedirectBundle <bundle-docs-commerce-redirect-bundle>`","",""
-
+   ":ref:`FrontendMcpBundle <bundle-docs-commerce-frontend-mcp-bundle>`",":ref:`PromotionBundle <bundle-docs-commerce-promotion-bundle>`",":ref:`WarehouseBundle <bundle-docs-commerce-warehouse-bundle>`"
+   ":ref:`FrontendPdfGeneratorBundle <bundle-docs-commerce-frontend-pdf-generator-bundle>`","**R**",""
+   "**I**",":ref:`RedirectBundle <bundle-docs-commerce-redirect-bundle>`",""
 
 .. _bundle-docs-extensions:
 
@@ -89,12 +88,11 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
 .. csv-table::
 
-   "**A**","**D**","**I**","**P**"
-   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`",":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`"
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","M","S"
-   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`","G",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
-   "",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",":ref:`StorefrontAgentBundle <bundle-docs-extensions-storefront-agent-bundle-commands>`"
-   "","",":ref:`StripePaymentBundle <bundle-docs-extensions-stripe-payment-bundle>`"
+   "**A**",":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`"
+   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
+   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
+   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",":ref:`StripePaymentBundle <bundle-docs-extensions-stripe-payment-bundle>`"
+   "**D**","**I**","**P**",":ref:`StorefrontAgentBundle <bundle-docs-extensions-storefront-agent-bundle-commands>`"
 
 CRM Bundles
 -----------
@@ -117,24 +115,42 @@ CRM Bundles
    Components <components/index>
    ActionBundle <platform/ActionBundle/index>
    ActivityBundle <platform/ActivityBundle/index>
+   ActivityContactBundle <crm/ActivityContactBundle/index>
    ActivityListBundle <platform/ActivityListBundle/index>
    AddressBundle <platform/AddressBundle/index>
+   AddressValidationBundle <commerce/AddressValidationBundle/index>
+   AiContentGenerationBundle <extensions/AiContentGenerationBundle/index>
+   AnalyticsBundle <crm/AnalyticsBundle/index>
    ApiBundle <platform/ApiBundle/index>
+   ApruveBundle <extensions/ApruveBundle/index>
    AssetBundle <platform/AssetBundle/index>
    AttachmentBundle <platform/AttachmentBundle/index>
+   AuthorizeNetBundle <extensions/AuthorizeNetBundle/index>
    BatchBundle <platform/BatchBundle/index>
    CacheBundle <platform/CacheBundle/index>
    CalendarBundle <platform/CalendarBundle/index>
+   CatalogBundle <commerce/CatalogBundle/index>
+   ChannelBundle <crm/ChannelBundle/index>
    ChartBundle <platform/ChartBundle/index>
+   CheckoutBundle <commerce/CheckoutBundle/index>
+   CMSBundle <commerce/CMSBundle/index>
    CommentBundle <platform/CommentBundle/index>
+   CommerceInvoiceBundle <commerce/CommerceInvoiceBundle/index>
+   CommerceMenuBundle <commerce/CommerceMenuBundle/index>
    ConfigBundle <platform/ConfigBundle/index>
+   ConsentBundle <commerce/ConsentBundle/index>
+   CookieConsentBundle <commerce/CookieConsentBundle/index>
    CronBundle <platform/CronBundle/index>
    CurrencyBundle <platform/CurrencyBundle/index>
+   CustomerBundle <commerce/CustomerBundle/index>
+   CustomerRecommendationBundle <commerce/CustomerRecommendationBundle/index>
    DashboardBundle <platform/DashboardBundle/index>
    DataAuditBundle <platform/DataAuditBundle/index>
    DataGridBundle <platform/DataGridBundle/index>
-   DistributionBundle <platform/DistributionBundle/index>
    DigitalAssetBundle <platform/DigitalAssetBundle/index>
+   DistributionBundle <platform/DistributionBundle/index>
+   DotmailerBundle <extensions/DotmailerBundle/index>
+   DPDBundle <extensions/DPDBundle/index>
    DraftBundle <platform/DraftBundle/index>
    ElasticSearchBundle <platform/ElasticSearchBundle/index>
    EmailBundle <platform/EmailBundle/index>
@@ -148,92 +164,76 @@ CRM Bundles
    FeatureToggleBundle <platform/FeatureToggleBundle/index>
    FilterBundle <platform/FilterBundle/index>
    FormBundle <platform/FormBundle/index>
+   FrontendBundle <commerce/FrontendBundle/index>
+   FrontendMcpBundle <commerce/FrontendMcpBundle/index>
+   FrontendPdfGeneratorBundle <commerce/FrontendPdfGeneratorBundle/index>
    GaufretteBundle <platform/GaufretteBundle/index>
+   GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
    GridFSConfigBundle <platform/GridFSConfigBundle/index>
    ImapBundle <platform/ImapBundle/index>
    ImportExportBundle <platform/ImportExportBundle/index>
+   InfinitePayBundle <extensions/InfinitePayBundle/index>
    InstallerBundle <platform/InstallerBundle/index>
    IntegrationBundle <platform/IntegrationBundle/index>
+   InventoryBundle <commerce/InventoryBundle/index>
    InvoiceBundle <platform/InvoiceBundle/index>
+   InvoicePaymentBundle <commerce/InvoicePaymentBundle/index>
    LayoutBundle <platform/LayoutBundle/index>
    LocaleBundle <platform/LocaleBundle/index>
    LoggerBundle <platform/LoggerBundle/index>
+   MailchimpBundle <extensions/MailchimpBundle/index>
+   MakerBundle <extensions/MakerBundle/index>
+   McpBundle <platform/McpBundle/index>
    MessageQueueBundle <platform/MessageQueueBundle/index>
-   MigrationBundle <platform/MigrationBundle/index>
    MicrosoftSyncBundle <platform/MicrosoftSyncBundle/index>
+   MigrationBundle <platform/MigrationBundle/index>
+   MultiWebsiteBundle <commerce/MultiWebsiteBundle/index>
    NavigationBundle <platform/NavigationBundle/index>
    NoteBundle <platform/NoteBundle/index>
    NotificationBundle <platform/NotificationBundle/index>
    OAuth2ServerBundle <platform/OAuth2ServerBundle/index>
+   OrderBundle <commerce/OrderBundle/index>
    OrganizationBundle <platform/OrganizationBundle/index>
+   PaymentBundle <commerce/PaymentBundle/index>
+   PayPalBundle <commerce/PayPalBundle/index>
+   PaypalExpressBundle <extensions/PaypalExpressBundle/index>
+   PdfGeneratorBundle <platform/PdfGeneratorBundle/index>
    PlatformBundle <platform/PlatformBundle/index>
+   PricingBundle <commerce/PricingBundle/index>
+   ProductBundle <commerce/ProductBundle/index>
+   PromotionBundle <commerce/PromotionBundle/index>
    QueryDesignerBundle <platform/QueryDesignerBundle/index>
+   RedirectBundle <commerce/RedirectBundle/index>
    RedisConfigBundle <platform/RedisConfigBundle/index>
    ReportBundle <platform/ReportBundle/index>
+   SalesBundle <crm/SalesBundle/index>
+   SalesFrontendBundle <commerce/SalesFrontendBundle/index>
    ScimBundle <platform/ScimBundle/index>
    ScopeBundle <platform/ScopeBundle/index>
    SearchBundle <platform/SearchBundle/index>
    SecurityBundle <platform/SecurityBundle/index>
    SegmentBundle <platform/SegmentBundle/index>
+   SellerDashboardBundle <commerce/SellerDashboardBundle/index>
+   SEOBundle <commerce/SEOBundle/index>
+   ShoppingListBundle <commerce/ShoppingListBundle/index>
    SidebarBundle <platform/SidebarBundle/index>
+   StorefrontAgentBundle <extensions/StorefrontAgentBundle/commands>
+   StripeBundle <extensions/StripeBundle/index>
+   StripePaymentBundle <extensions/StripePaymentBundle/index>
    SyncBundle <platform/SyncBundle/index>
    TagBundle <platform/TagBundle/index>
+   TaxBundle <commerce/TaxBundle/index>
    TestFrameworkBundle <platform/TestFrameworkBundle/index>
    ThemeBundle <platform/ThemeBundle/index>
    TranslationBundle <platform/TranslationBundle/index>
    TwigInspectorBundle <platform/TwigInspectorBundle/index>
    UIBundle <platform/UIBundle/index>
-   WindowsBundle <platform/WindowsBundle/index>
-   WorkflowBundle <platform/WorkflowBundle/index>
-   PdfGeneratorBundle <platform/PdfGeneratorBundle/index>
-   AddressValidationBundle <commerce/AddressValidationBundle/index>
-   CatalogBundle <commerce/CatalogBundle/index>
-   CheckoutBundle <commerce/CheckoutBundle/index>
-   CMSBundle <commerce/CMSBundle/index>
-   ConsentBundle <commerce/ConsentBundle/index>
-   CommerceMenuBundle <commerce/CommerceMenuBundle/index>
-   CommerceInvoiceBundle <commerce/CommerceInvoiceBundle/index>
-   InvoicePaymentBundle <commerce/InvoicePaymentBundle/index>
-   CookieConsentBundle <commerce/CookieConsentBundle/index>
-   CustomerBundle <commerce/CustomerBundle/index>
-   CustomerRecommendationBundle <commerce/CustomerRecommendationBundle/index>
-   FrontendBundle <commerce/FrontendBundle/index>
-   InventoryBundle <commerce/InventoryBundle/index>
-   MultiWebsiteBundle <commerce/MultiWebsiteBundle/index>
-   OrderBundle <commerce/OrderBundle/index>
-   PaymentBundle <commerce/PaymentBundle/index>
-   PayPalBundle <commerce/PayPalBundle/index>
-   PricingBundle <commerce/PricingBundle/index>
-   PromotionBundle <commerce/PromotionBundle/index>
-   ProductBundle <commerce/ProductBundle/index>
-   RedirectBundle <commerce/RedirectBundle/index>
-   SellerDashboardBundle <commerce/SellerDashboardBundle/index>
-   SEOBundle <commerce/SEOBundle/index>
-   ShoppingListBundle <commerce/ShoppingListBundle/index>
-   TaxBundle <commerce/TaxBundle/index>
    WarehouseBundle <commerce/WarehouseBundle/index>
    WebCatalogBundle <commerce/WebCatalogBundle/index>
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>
-   SalesFrontendBundle <commerce/SalesFrontendBundle/index>
-   FrontendPdfGeneratorBundle <commerce/FrontendPdfGeneratorBundle/index>
-   ActivityContactBundle <crm/ActivityContactBundle/index>
-   AnalyticsBundle <crm/AnalyticsBundle/index>
-   ChannelBundle <crm/ChannelBundle/index>
-   SalesBundle <crm/SalesBundle/index>
-   ApruveBundle <extensions/ApruveBundle/index>
-   AuthorizeNetBundle <extensions/AuthorizeNetBundle/index>
-   DotmailerBundle <extensions/DotmailerBundle/index>
-   DPDBundle <extensions/DPDBundle/index>
-   GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
-   InfinitePayBundle <extensions/InfinitePayBundle/index>
-   MailchimpBundle <extensions/MailchimpBundle/index>
-   MakerBundle <extensions/MakerBundle/index>
-   PaypalExpressBundle <extensions/PaypalExpressBundle/index>
-   StripeBundle <extensions/StripeBundle/index>
-   StripePaymentBundle <extensions/StripePaymentBundle/index>
-   AiContentGenerationBundle <extensions/AiContentGenerationBundle/index>
-   StorefrontAgentBundle <extensions/StorefrontAgentBundle/commands>
+   WindowsBundle <platform/WindowsBundle/index>
+   WorkflowBundle <platform/WorkflowBundle/index>
 
 
 .. include:: /include/include-links-seo.rst

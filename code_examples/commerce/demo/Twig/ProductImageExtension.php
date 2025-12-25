@@ -50,7 +50,7 @@ class ProductImageExtension extends AbstractExtension implements ServiceSubscrib
     }
 
     #[\Override]
-    public static function getSubscribedServices()
+    public static function getSubscribedServices(): array
     {
         return [
             AttachmentManager::class,

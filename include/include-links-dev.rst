@@ -6615,3 +6615,11 @@ Links (Dev)
 .. |feature chart| raw:: html
 
     <a href="https://oroinc.com/b2b-ecommerce/editions/#features-list" target="_blank">feature chart</a>
+
+.. |Model Context Protocol| raw:: html
+
+   <a href="https://modelcontextprotocol.io/" target="_blank">Model Context Protocol</a>
+
+.. |mcp/sdk| raw:: html
+
+   <a href="https://github.com/modelcontextprotocol/php-sdk" target="_blank">mcp/sdk</a>
