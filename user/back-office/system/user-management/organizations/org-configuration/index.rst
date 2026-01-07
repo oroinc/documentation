@@ -22,6 +22,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
     * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
     * :ref:`Currency <admin-configuration-currency-org>`
+    * :ref:`User Login <admin-configuration-user-login-form-org>`
     * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
 
   * Websites
