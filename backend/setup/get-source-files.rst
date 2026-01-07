@@ -61,7 +61,7 @@ Method 2: Use the GitHub Repository
     # OroCommerce Enterprise Edition
     git clone -b 6.1.0 https://github.com/oroinc/orocommerce-enterprise-application my_project_name
     # OroCommerce Platform Application
-    git clone -b 5.0.0 https://github.com/oroinc/orocommerce-platform-application my_project_name
+    git clone -b 6.1.0 https://github.com/oroinc/orocommerce-platform-application my_project_name
     # OroCRM Community Edition
     git clone -b 6.1.0 https://github.com/oroinc/crm-application my_project_name
     # OroCRM Enterprise Edition
@@ -75,7 +75,7 @@ Method 2: Use the GitHub Repository
     # OroCommerce Enterprise Edition (without CRM)
     git clone -b 6.1.0 https://github.com/oroinc/orocommerce-enterprise-nocrm-application my_project_name
 
-   * Replace the ``6.1.0`` with the version to download.
+   * **Replace the ``6.1.0`` with the version to download**.
 
    * ``my_project_name`` is the directory into which you need to clone the application source files.
 
