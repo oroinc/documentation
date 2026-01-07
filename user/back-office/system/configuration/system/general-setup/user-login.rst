@@ -125,3 +125,10 @@ In the Two-Factor Authentication section, configure the following options:
 
 * **Code Validity Period** --- This option determines how long the authentication code will be valid. If not used within the validity period, the code expires and the user must log in again. By default, the option is set to 1 hour.
 * **Code Length** --- This option determines the number of characters in authentication code. By default, the option is set to 6.
+
+LDAP Users
+----------
+
+In the LDAP Users section, configure the following option:
+
+* **Disable Local Password Change/Reset for LDAP Users** --- This configuration option controls whether back-office users whose accounts are synchronized from LDAP can manage their passwords locally in the Oro application. When enabled, LDAP users (identified by a non-empty *LDAP Distinguished Names* field in their profile) cannot change their password on the My User page, use the *Forgot your password?* flow, or have their password reset by administrators.
