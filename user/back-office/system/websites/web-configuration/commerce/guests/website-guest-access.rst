@@ -3,9 +3,9 @@
 Configure Guest Website Access Settings per Website
 ===================================================
 
-.. hint:: This section is part of the :ref:`Guest Functions <concept-guides--product-management>` topic that provides a general understanding of the guest access concept in OroCommerce.
+.. hint:: This section is part of the :ref:`Guest Functions <sys--conf--commerce--guest>` topic that provides a general understanding of the guest access concept in OroCommerce.
 
-To enable guest access per website:
+To manage guest access per website:
 
 1. Navigate to **System > Websites**.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website, and click |IcConfig| to start editing the configuration.
@@ -14,15 +14,24 @@ To enable guest access per website:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
+.. image:: /user/img/system/websites/web_configuration/GuestAccessWeb.png
+   :alt: Guest access configuration per website
+
 4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
-5. Select the **Enable Guest Access** checkbox.
+5. In the Website Access section, toggle the **Enable Guest Access** checkbox to enable or disable guest users from browsing the website.
+
+   When **Enable Guest Access** is disabled, the storefront becomes inaccessible to guest users except for the login/forgot/reset password page and any system or landing pages explicitly allowed by the administrator.
+
+   In this case, the following additional options become available (available starting from OroCommerce version 6.1.7):
+
+   * **Allow Guest Access to System Pages** — Select the system pages that should remain available to guest users.
+
+   * **Allow Guest Access to Landing Pages** — Select the landing (CMS) pages that should remain available to guest users.
 
 6. Click **Save Settings**.
-   
-.. note:: To disable guest access globally, clear the **Enable Guest Access** checkbox.
 
-.. image:: /user/img/system/websites/web_configuration/GuestAccessWeb.png
+
 
 
 .. include:: /include/include-images.rst
