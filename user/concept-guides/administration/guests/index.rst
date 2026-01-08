@@ -44,7 +44,7 @@ Flexible website access management gives you the possibility to customize every 
 
 You can toggle the following features in the system configuration to control the storefront guest users activity:
 
-1. Enable :ref:`website access for guests <sys--conf--commerce--guest-access--global>` to allow guest customers interact with your website. When this option is disabled, the only page that unregistered users can access is the login page.
+1. Enable :ref:`website access for guests <sys--conf--commerce--guest-access--global>` to allow guest customers interact with your website. When this option is disabled, the only page that unregistered users can access is the login page, unless specific system or landing pages are explicitly allowed for guest access in the configuration. When guest access is disabled, administrators can optionally allow guest users to access a limited set of system pages (such as legal or informational pages) and landing (CMS) pages. This makes it possible to keep selected content publicly available while restricting access to the rest of the storefront.
 
 2. Enable or disable additional features that expand the capabilities of your guest visitors:
 
@@ -60,7 +60,7 @@ You can toggle the following features in the system configuration to control the
 
    * :ref:`Contacts <sys--conf--commerce--sales--contacts-global>` - enables to enter the necessary contact information that will be shown to unregistered visitors. Instead of providing your company's contacts to all anonymous customers, you may use this field to ask for registration and display the contact of your sales representatives who can handle any guest customers' issues.
 
-.. image:: /user/img/concept-guides/guests/guest_functions.png
+.. image:: /user/img/system/config_commerce/guests/GuestAccessSysConfig.png
    :alt: All guest-related features that can be customized in the system configuration
 
 Guest Product Visibility
