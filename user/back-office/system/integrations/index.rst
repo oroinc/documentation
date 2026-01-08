@@ -40,35 +40,43 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`FedEx <doc--integrations--fedex>`
   * :ref:`DPD <doc--integrations--dpd>`
 
+* AI Integrations (Open AI and Vertex AI)
+
+  * :ref:`AI Integrations <user-guide-ai-integrations>`
+
+* OpenID Connect
+
+  * :ref:`OpenID Connect <user-guide--integrations--openid-connect>`
+
+* OpenAPI Specifications
+
+  * :ref:`OpenAPI Specifications <admin-openapi-specifications>`
+
 * :ref:`Google Tag Manager Integration <gtm-ga-4-integration>`
 * :ref:`Dotdigital Integration <user-guide-dotmailer-overview>`
 * :ref:`Mailchimp Integration <user-guide-mc-integration>`
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`
 * :ref:`LDAP Integration <user-guide-ldap-integration>`
 
-
 * Embedded Forms
 
   * :ref:`Embedded Forms <admin-embedded-forms>`
 
-* OpenAPI Specifications
 
-  * :ref:`OpenAPI Specifications <admin-openapi-specifications>`
 
-* AI Integrations (Open AI and Vertex AI)
 
-  * :ref:`AI Integrations <user-guide-ai-integrations>`
 
 .. toctree::
    :hidden:
 
    Manage Integrations: Payment Method Integration <payment-integration/index>
    Manage Integrations: Shipping Method Integration <shipping-integration/index>
+   AI Integrations <ai/index>
+   OpenId Connect <openid/index>
+   OpenAPI Specifications <openapi-specifications/index>
    Google Tag Manager Integration <gtm/index>
    Dotdigital Integration <dotdigital/index>
    Mailchimp Integration <mailchimp-integration>
    Zendesk Integration <zendesk-integration>
    LDAP Integration <ldap-integration>
    Embedded Forms <embedded-forms/index>
-   OpenAPI Specifications <openapi-specifications/index>
-   AI Integrations <ai/index>

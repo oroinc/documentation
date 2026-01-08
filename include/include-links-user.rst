@@ -1069,3 +1069,7 @@ Links (User)
 .. |Application Administrator|  raw:: html
 
    <a href="https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#application-administrator" target="_blank">Application Administrator</a>
+
+.. |OpenID Connect|  raw:: html
+
+   <a href="https://openid.net/developers/how-connect-works/" target="_blank">OpenID Connect</a>
