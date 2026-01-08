@@ -31,9 +31,9 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
 
 .. csv-table::
 
-    "**A**",":ref:`DistributionBundle <bundle-docs-platform-distribution-bundle>`",":ref:`InstallerBundle <bundle-docs-platform-installer-bundle>`",":ref:`QueryDesignerBundle <bundle-docs-platform-query-designer-bundle>`"
-    ":ref:`ActionBundle <bundle-docs-platform-action-bundle>`",":ref:`DigitalAssetBundle <bundle-docs-platform-dam>`",":ref:`IntegrationBundle <bundle-docs-platform-integration-bundle>`","**R**"
-    ":ref:`ActivityBundle <bundle-docs-platform-activity-bundle>`","**E**","**L** ",":ref:`RedisConfigBundle <bundle-docs-platform-redis-bundle>`"
+    "**A**",":ref:`DigitalAssetBundle <bundle-docs-platform-dam>`",":ref:`InstallerBundle <bundle-docs-platform-installer-bundle>`","**Q**"
+    ":ref:`ActionBundle <bundle-docs-platform-action-bundle>`",":ref:`DistributionBundle <bundle-docs-platform-distribution-bundle>`",":ref:`QueryDesignerBundle <bundle-docs-platform-query-designer-bundle>`","**R**"
+    ":ref:`ActivityBundle <bundle-docs-platform-activity-bundle>`","**E**","**L**",":ref:`RedisConfigBundle <bundle-docs-platform-redis-bundle>`"
     ":ref:`ActivityListBundle <bundle-docs-platform-activity-list-bundle>`",":ref:`ElasticSearchBundle <bundle-docs-platform-elastic-search-bundle>`",":ref:`LayoutBundle <bundle-docs-platform-layout-bundle>`",":ref:`ReportBundle <bundle-docs-platform-report-bundle>`"
     ":ref:`AddressBundle <bundle-docs-platform-address-bundle>`",":ref:`EmailBundle <bundle-docs-platform-email-bundle>`",":ref:`LocaleBundle <bundle-docs-platform-locale-bundle>`","**S**"
     ":ref:`ApiBundle <bundle-docs-platform-api-bundle>`",":ref:`EmbeddedFormBundle <bundle-docs-platform-embedded-form-bundle>`",":ref:`LoggerBundle <bundle-docs-platform-logger-bundle>`",":ref:`ScopeBundle <bundle-docs-platform-scope-bundle>`"
@@ -43,16 +43,16 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
     ":ref:`BatchBundle <bundle-docs-platform-batch-bundle>`",":ref:`EntityMergeBundle <bundle-docs-platform-entity-merge-bundle>`",":ref:`MicrosoftSyncBundle <bundle-docs-platform-microsoft-sync-bundle>`",":ref:`SidebarBundle <bundle-docs-platform-sidebar-bundle>`"
     "**C**",":ref:`EntityPaginationBundle <bundle-docs-platform-entity-pagination-bundle>`",":ref:`MigrationBundle <bundle-docs-platform-migration-bundle>`",":ref:`SyncBundle <bundle-docs-platform-sync-bundle>`"
     ":ref:`CacheBundle <bundle-docs-platform-cache-bundle>`",":ref:`EntitySerializedFieldsBundle <bundle-docs-platform-entity-serialized-bundle>`","**N**","**T**"
-    ":ref:`CalendarBundle <bundle-docs-platform-calendar-bundle>`","**F** ",":ref:`NavigationBundle <bundle-docs-platform-navigation-bundle>`",":ref:`TagBundle <bundle-docs-platform-tag-bundle>`"
+    ":ref:`CalendarBundle <bundle-docs-platform-calendar-bundle>`","**F**",":ref:`NavigationBundle <bundle-docs-platform-navigation-bundle>`",":ref:`TagBundle <bundle-docs-platform-tag-bundle>`"
     ":ref:`ChartBundle <bundle-docs-platform-chart-bundle>`",":ref:`FeatureToggleBundle <bundle-docs-platform-feature-toggle-bundle>`",":ref:`NoteBundle <bundle-docs-platform-note-bundle>`",":ref:`TestFrameworkBundle <bundle-docs-platform-test-framework-bundle>`"
     ":ref:`CommentBundle <bundle-docs-platform-comment-bundle>`",":ref:`FilterBundle <bundle-docs-platform-filter-bundle>`",":ref:`NotificationBundle <bundle-docs-platform-notification-bundle>`",":ref:`ThemeBundle <bundle-docs-platform-theme-bundle>`"
-    ":ref:`ConfigBundle <bundle-docs-platform-checkout-bundle>`",":ref:`FormBundle <bundle-docs-platform-form-bundle>`","**O** ",":ref:`TranslationBundle <bundle-docs-platform-translation-bundle>`"
-    ":ref:`CronBundle <bundle-docs-platform-cron-bundle>`","**G** ",":ref:`OAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>`",":ref:`TwigInspectorBundle <bundle-docs-platform-twig-inspector-bundle>`"
-    ":ref:`CurrencyBundle <bundle-docs-platform-currency-bundle>`",":ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>`",":ref:`OrganizationBundle <bundle-docs-platform-organization-bundle>`","**U**"
+    ":ref:`ConfigBundle <bundle-docs-platform-checkout-bundle>`",":ref:`FormBundle <bundle-docs-platform-form-bundle>`","**O**",":ref:`TranslationBundle <bundle-docs-platform-translation-bundle>`"
+    ":ref:`CronBundle <bundle-docs-platform-cron-bundle>`","**G**",":ref:`OAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>`",":ref:`TwigInspectorBundle <bundle-docs-platform-twig-inspector-bundle>`"
+    ":ref:`CurrencyBundle <bundle-docs-platform-currency-bundle>`",":ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>`",":ref:`OidcBundle <bundle-docs-platform-oidcbundle>`","**U**"
     "**D**",":ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`","**P**",":ref:`UIBundle <bundle-docs-platform-ui-bundle>`"
-    ":ref:`DashboardBundle <bundle-docs-platform-dashboard-bundle>`","**I** ",":ref:`PdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`","**W**"
+    ":ref:`DashboardBundle <bundle-docs-platform-dashboard-bundle>`","**I**",":ref:`PdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`","**W**"
     ":ref:`DataAuditBundle <bundle-docs-platform--data-audit>`",":ref:`ImapBundle <bundle-docs-platform-imap-bundle>`",":ref:`PlatformBundle <bundle-docs-platform-platform-bundle>`",":ref:`WindowsBundle <bundle-docs-platform-windows-bundle>`"
-    ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`",":ref:`ImportExportBundle <bundle-docs-platform-import-export-bundle>`","**Q** ",":ref:`WorkflowBundle <bundle-docs-platform-workflow-bundle>`"
+    ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`",":ref:`ImportExportBundle <bundle-docs-platform-import-export-bundle>`","**Q**",":ref:`WorkflowBundle <bundle-docs-platform-workflow-bundle>`"
 
 
 .. _bundle-docs-commerce:
@@ -193,6 +193,7 @@ CRM Bundles
    NotificationBundle <platform/NotificationBundle/index>
    OAuth2ServerBundle <platform/OAuth2ServerBundle/index>
    OrderBundle <commerce/OrderBundle/index>
+   OidcBundle <platform/OidcBundle/index>
    OrganizationBundle <platform/OrganizationBundle/index>
    PaymentBundle <commerce/PaymentBundle/index>
    PayPalBundle <commerce/PayPalBundle/index>
