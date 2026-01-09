@@ -120,19 +120,21 @@ Its ``generate()`` method should return a unique invoice number. It accepts the 
         :language: php
         :lines: 4-
 
-.. oro_integrity_check:: 3036ea332a5a50b2da361acbf29f2b3e057733b1
+.. code-block:: yaml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
-    .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
-        :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
-        :language: yaml
-        :lines: 2, 134-138
+   services:
+       Acme\Bundle\DemoBundle\Generator\CustomInvoiceNumberGenerator:
+           arguments:
+               - '@oro_config.manager'
+           tags:
+               - { name: oro_invoice.number_generator }
 
-.. oro_integrity_check:: 8f869012bf43a50bcb985b72297404a231dc3c53
+.. code-block:: yaml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
 
-    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
-        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
-        :language: yaml
-        :lines: 110-111
+   oro_invoice:
+       number_generator: acme_custom
 
 Your custom invoice number generator will now be used to generate invoice numbers automatically for all new invoices (see ``Oro\Bundle\InvoiceBundle\EventListener\Doctrine\InvoiceNumberListener``).
 

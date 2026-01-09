@@ -21,12 +21,12 @@ Environment Setup
       brew cask install docker
       open /Applications/Docker.app
 
-3. Install php 8.4, Composer and Node.js 22:
+3. Install php 8.5, Composer and Node.js 24:
 
    .. code-block:: none
 
-      brew install php@8.4 composer node
-      echo 'export PATH="/usr/local/opt/php@8.4/bin:$PATH" \nexport PATH="/usr/local/opt/php@8.4/sbin:$PATH" \nexport PATH="/usr/local/opt/node@20/bin:$PATH"' >> ~/.bash_profile
+      brew install php@8.5 composer node
+      echo 'export PATH="/usr/local/opt/php@8.5/bin:$PATH" \nexport PATH="/usr/local/opt/php@8.5/sbin:$PATH" \nexport PATH="/usr/local/opt/node@20/bin:$PATH"' >> ~/.bash_profile
 
 4. Install PNPM 10 Using NPM:
 
@@ -39,13 +39,13 @@ Environment Setup
    .. code-block:: none
 
       pecl install mongodb
-      echo "extension=\"mongodb.so\"" >> /usr/local/etc/php/8.4/php.ini
+      echo "extension=\"mongodb.so\"" >> /usr/local/etc/php/8.5/php.ini
 
 6. Configure PHP:
 
    .. code-block:: none
 
-      echo "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" >> /usr/local/etc/php/8.4/php.ini
+      echo "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" >> /usr/local/etc/php/8.5/php.ini
 
 7. Install Symfony Server and enable TLS:
 

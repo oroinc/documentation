@@ -77,7 +77,7 @@ To use number sequences for custom entities like orders:
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
         :language: yaml
-        :lines: 2, 140-150
+        :lines: 2, 134-144
 
 Automatic Sequence Cleanup
 --------------------------
@@ -100,7 +100,7 @@ Use the provided ``Oro\Bundle\PlatformBundle\EventListener\DeleteOldNumberSequen
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
         :language: yaml
-        :lines: 2, 152-162
+        :lines: 2, 146-156
 
 * **Implement a custom listener**
 
@@ -112,7 +112,7 @@ Register the custom listener in your bundle's service configuration, just like t
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
         :language: yaml
-        :lines: 2, 164-169
+        :lines: 2, 158-163
 
 .. oro_integrity_check:: de0ee97634ae42d94dc60f418e332700d194bd5a
 

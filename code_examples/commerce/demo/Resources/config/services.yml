@@ -131,12 +131,6 @@ services:
         tags:
             - { name: 'oro_sanitize.field_rule.processor', processor_name: 'toll_free_phone' }
 
-    Acme\Bundle\DemoBundle\Generator\CustomInvoiceNumberGenerator:
-        arguments:
-            - '@oro_config.manager'
-        tags:
-            - { name: oro_invoice.number_generator }
-
     acme_demo.generator.order_number:
         class: Acme\Bundle\DemoBundle\Generator\CustomOrderNumberGenerator
         arguments:

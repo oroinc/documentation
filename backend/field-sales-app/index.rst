@@ -22,7 +22,7 @@ Two components are required to run the Field Sales application: an instance of t
 Field Sales Application System Requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Node.js is version 22 or higher
+* Node.js is version 24 or higher
 * PNPM is version 9 or higher
 * You have received access and cloned the |Field Sales application| source code from GitHub. Once you have the application in place, proceed with one of the installation options described below.
 
