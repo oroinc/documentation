@@ -160,6 +160,7 @@ CRM Bundles
    NoteBundle <platform/NoteBundle/index>
    NotificationBundle <platform/NotificationBundle/index>
    OAuth2ServerBundle <platform/OAuth2ServerBundle/index>
+   OidcBundle <platform/OidcBundle/index>
    OrganizationBundle <platform/OrganizationBundle/index>
    PlatformBundle <platform/PlatformBundle/index>
    QueryDesignerBundle <platform/QueryDesignerBundle/index>
