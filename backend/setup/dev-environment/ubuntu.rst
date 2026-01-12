@@ -15,15 +15,25 @@ Environment Setup
       sudo apt install software-properties-common
       sudo add-apt-repository -y ppa:ondrej/php
       sudo apt update
-      sudo apt -y install php8.5 php8.5-fpm php8.5-cli php8.5-pdo php8.5-mysqlnd php8.5-xml php8.5-soap php8.5-gd php8.5-zip php8.5-intl php8.5-mbstring php8.5-opcache php8.5-curl php8.5-bcmath php8.5-ldap php8.5-pgsql php8.5-dev
+      sudo apt -y install php8.5 php8.5-fpm php8.5-cli php8.5-pdo php8.5-mysqlnd php8.5-xml php8.5-soap php8.5-gd php8.5-zip php8.5-intl php8.5-mbstring php8.5-curl php8.5-bcmath php8.5-ldap php8.5-pgsql php8.5-dev
 
    Install the MongoDB PHP Extension with PECL:
 
    .. code-block:: none
 
-      sudo pecl install mongodb-1.15.0
+      sudo pecl install mongodb
 
    For more information, see |Mongo installation|.
+
+   .. hint::
+
+      MongoDB PHP Extension can be installed with :ref:`Symfony CLI <ubuntu-install-symfony-server-and-enable-tls>` from the application directory
+
+      .. code-block:: none
+
+          cd <application-root-folder>
+          symfony pecl install mongodb
+
 
 2. Configure PHP:
 
@@ -75,6 +85,8 @@ Environment Setup
       php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
       php -r "unlink('composer-setup.php');"
       sudo mv composer.phar /usr/bin/composer
+
+.. _ubuntu-install-symfony-server-and-enable-tls:
 
 7. Install Symfony Server and enable TLS:
 
