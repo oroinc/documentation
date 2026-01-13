@@ -501,3 +501,4 @@ user/back-office/reports-segments/reports/reports-examples /user/back-office/rep
 user/back-office/system/entities/create-entities /user/back-office/system/entities/manage-entities
 user/back-office/getting-started/community-vs-enterprise /backend/setup/repositories
 backend/setup/demo-environment/vm /backend/setup/demo-environment
+api/schema /api
