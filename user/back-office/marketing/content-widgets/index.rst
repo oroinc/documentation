@@ -56,9 +56,10 @@ To create a new content widget:
 
 * **Image Slider** - Enables you to add an image slider with multiple images, configure slider options and style each slide. To configure the image slider, you can select the number of slides to show or scroll, enable or disable autoplay and control its speed in milliseconds, select whether to display dots and/or arrows at the bottom of the image slider in the storefront, control how the slide images are positioned and scaled, and enable or disable infinite scroll. To add slides, click **Add** at the bottom of the *Slides* section. You can customize each slide by setting its sort order, URL, target window, ALT text, text alignment, header and text for the image. You can choose different image sizes based on screen size (extra large, large, medium, small).
 
+  In addition, you can control how each slide's image loads using the **Loading** and **Fetch Priority** options. **Loading** defines when the image is loaded (*Lazy* or *Eager*), while **Fetch Priority** defines its importance for page load (*Auto*, *High*, or *Low*). Use *Eager* and *High* for images that are visible immediately when the page opens. Prefer *Lazy* with *Auto* or *Low* for images shown after sliding or placed lower on the page.
+
 .. image:: /user/img/marketing/content_widgets/image_slider_1.png
    :alt: Image slider content widget form
-
 
 * **Product Mini Block** - Enables you to add a block with product information with or without prices and/or the **Add to Shopping List** button.
 
