@@ -21,6 +21,7 @@ Related Documentation
 * :ref:`Image Formatters <attachment-bundle-image-formatters>`
 * :ref:`Enable Debugging Images <attachment-bundle-debug-img>`
 * :ref:`Image Processing <attachment-image-processing>`
+* :ref:`Image Metadata Preservation <attachment-metadata-preservation>`
 
 
 

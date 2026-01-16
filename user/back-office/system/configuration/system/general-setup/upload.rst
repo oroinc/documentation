@@ -62,7 +62,17 @@ To configure the upload settings globally:
    .. note::
       When this option is enabled, the **Enable Original File Names** setting for Product Images is hidden from the system configuration page.
 
-10. Click **Save Settings**.
+10. In the **Image Metadata Preservation** section, you can control whether uploaded images preserve their original metadata (available as of OroCommerce version 6.1.7).
+
+   .. image:: /user/img/system/config_system/upload_settings_metadata.png
+      :alt: Image Metadata Preservation settings
+
+   **Preserve Original Image Metadata** --- When enabled, uploaded images will keep their original metadata, such as copyright information, camera settings, and other embedded data. Keep in mind that metadata may include sensitive information such as GPS location, author identity, or other personal details. Make sure the images you upload only contain information you want to share publicly.
+
+   .. warning::
+      Modification of the default value may cause temporary storefront slow-down until all product images are regenerated with new metadata. The changes on the product listing page will not be applied immediately and will require manual start of the search re-index. Make sure that the hard-drive has at least 50% space available as the regenerated images will be stored alongside the existing ones.
+
+11. Click **Save Settings**.
 
 If :ref:`attachments are enabled for an entity <doc-entity-actions-create>`, the configuration of the entity will prevail and override the corresponding global one.
 
