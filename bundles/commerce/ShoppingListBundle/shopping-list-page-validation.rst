@@ -3,16 +3,14 @@
 Shopping List Page Validation
 =============================
 
-Enables validation of the shopping list before starting Checkout or Request for Quote (RFQ). Prevents customers from proceeding until all product-related issues - such as inventory status, quantity limits, configuration errors, and similar conditions - are resolved or moved to "Saved for Later".
+The feature enables validation of the shopping list before starting Checkout or Request for Quote (RFQ). It also prevents customers from proceeding until all product-related issues, such as inventory status, quantity limits, configuration errors, and similar conditions are resolved or moved to the **Saved for Later** section within the same shopping list.
 
 Configuration
 -------------
 
-The ``saved_for_later`` feature toggle enables the ability to move invalid or unwanted shopping list items to a separate "Saved for Later" section instead of deleting them.
+The ``saved_for_later`` feature toggle enables the ability to move invalid or unwanted shopping list items to a separate **Saved for Later** section instead of deleting them.
 
-To enable it, go to **System > Configuration > Commerce > Sales > Shopping List** and enable:
-
-- **Enable Save For Later**
+To enable it :ref:`in the OroCommerce back-office <configuration-shopping-list>`, go to **System > Configuration > Commerce > Sales > Shopping List** and select the **Enable Save For Later** checkbox.
 
 The feature toggle key is ``saved_for_later`` and the system configuration option is ``oro_shopping_list.saved_for_later_enabled``.
 
@@ -29,15 +27,18 @@ It provides three main public methods:
 3. `getInvalidItemsViolations` - returns detailed validation results grouped by severity, including messages and sub-item data.
 
 Two validation groups are used:
-- **datagrid_line_items_data_for_checkout** - for checkout.
-- **datagrid_line_items_data_for_rfq** - for RFQ.
+
+- **datagrid_line_items_data_for_checkout** for checkout.
+- **datagrid_line_items_data_for_rfq** for RFQ.
 
 The system evaluates every shopping list line item against both groups to determine its severity status:
+
 1. **Error** - defines the contract for component processors.
 2. **Warning** - only one validation group fails (the item is invalid for either Checkout or RFQ, but not both).
 3. **Valid** - both groups pass successfully.
 
 To improve user experience, all line items in the shopping list are sorted by validation severity:
+
 1. Items with errors are shown first.
 2. Then items with warnings.
 3. Finally, fully valid items.
@@ -150,4 +151,6 @@ To add a custom validation rule for shopping list line items:
                 groups:
                     - datagrid_line_items_data_for_checkout
 
-.. note:: If your constraint represents a error (i.e., it should prevent both Checkout and RFQ), add both validation groups - **datagrid_line_items_data_for_checkout** and **datagrid_line_items_data_for_rfq**.
+
+.. note:: If your constraint represents an error (i.e., it should prevent both Checkout and RFQ), add both validation groups - **datagrid_line_items_data_for_checkout** and **datagrid_line_items_data_for_rfq**.
+
