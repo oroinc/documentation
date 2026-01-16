@@ -94,7 +94,7 @@ The same can be done for the storefront (website) index:
 Custom SSL Configuration
 ------------------------
 
-OroCommerce 5.1 supports Elasticsearch 8.* only and does not have external parameters or environment variables
+OroCommerce 5.1 supports Elasticsearch >=9.2, <10.0 and does not have external parameters or environment variables
 to set up an SSL connection. However, these options can still be set manually via the application configuration in
 config.yml or app.yml. It can be done both for standard and website search indices:
 

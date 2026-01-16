@@ -82,7 +82,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * ldap                                            |
 |                   | * mongodb (to use OroGridFSConfigBundle)          |
 +-------------------+---------------------------------------------------+
-| *Database*        | * |PostgreSQL| >=16.1                             |
+| *Database*        | * |PostgreSQL| >=17.6                             |
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
@@ -105,11 +105,11 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |
 +------------------+-----------------------------------------------------+
-| *Database*       | * |PostgreSQL| / |EnterpriseDB| >=16.1              |
+| *Database*       | * |PostgreSQL| / |EnterpriseDB| >=17.6              |
 +------------------+-----------------------------------------------------+
-| *Search Index*   | * |Elasticsearch| >=8.4.1, <9.0                     |
+| *Search Index*   | * |Elasticsearch| >=9.2, <10.0                      |
 +------------------+-----------------------------------------------------+
-| *Job Queue*      | * |RabbitMQ| 3.12.x                                 |
+| *Job Queue*      | * |RabbitMQ| >=4.2                                  |
 +------------------+-----------------------------------------------------+
 
 .. _sys-requirements-postgre-config:
@@ -128,7 +128,7 @@ Optional recommendations
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 * |Tidy PHP extension| should be installed to make sure that HTML is correctly converted into a text representation.
-* |Redis| can be used for more efficient application caching. Supported versions of Redis: 7.2.x.
+* |Redis| can be used for more efficient application caching. Supported versions of Redis: >=8.4.
 * |PNGQuant| and |JPEGOptim| are used if it is necessary to optimize the image size in storage.
 * |Gotenberg| is used for PDF generation. Supported versions of Gotenberg: >=8.5.x. It is recommended that you install the latest available version to benefit from frequent Chromium updates.
 

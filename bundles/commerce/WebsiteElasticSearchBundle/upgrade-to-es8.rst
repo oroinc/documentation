@@ -1,5 +1,5 @@
-Upgrade Website Index to Elasticsearch >=8.4, <9.0
-==================================================
+Upgrade Website Index to Elasticsearch >=9.2, <10.0
+===================================================
 
 You have only one option to perform the upgrade: via full reindexation.
 
@@ -16,7 +16,7 @@ So, once you have turned on maintenance mode through ``app/console lexik:mainten
 
 1. |Stop old Elasticsearch|
 2. Modify credentials for search engine configuration in the corresponding environment variables
-3. |Start the Elasticsearch| 8.\* service.
+3. |Start the Elasticsearch| 9.\* service.
 
 Proceed with the :ref:`standard upgrade procedure <upgrade-application>`.
 

@@ -22,7 +22,7 @@ The Client layer provides the ability to start
 Installation
 ------------
 
-You need to have RabbitMQ **version 3.7.21**  and above installed to use the AMQP
+You need to have RabbitMQ **version 4.2**  and above installed to use the AMQP
 transport. To install the RabbitMQ you should follow the |download and installation manual|.
 
 After the installation, please check that you have all the required plugins
