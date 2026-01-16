@@ -350,6 +350,29 @@ You can use 3 parameters for optimization images:
 
 .. note:: This feature covers backward compatibility, so all existing images will not be deleted or replaced (even after migration), in which case only new images will be processed. To optimize old images, you need to delete them manually.
 
+.. _attachment-metadata-preservation:
+
+Image Metadata Preservation
+----------------------------
+
+Image Metadata Preservation enables an administrator to control whether uploaded images preserve their original metadata such as copyright information, camera settings, GPS location, and other embedded information.
+
+When this feature is enabled, all metadata from uploaded images will be preserved. Administrators should ensure that images only contain metadata they wish to share publicly, as some metadata may include sensitive information such as GPS coordinates, author identity, or personal details.
+
+To configure the metadata preservation service, you need to set the following environment variables:
+
+.. code-block:: bash
+
+   ORO_METADATA_SERVICE_URL=http://127.0.0.1:8040
+   ORO_METADATA_SERVICE_API_KEY=your-api-key-here
+
+.. note::
+    - If the metadata service is not configured or unavailable, the system will work without metadata preservation, and uploaded images will have their metadata stripped as per default behavior.
+    - Modification of the default value may cause temporary storefront slow-down until all images are regenerated with new metadata settings.
+    - All existing images will be regenerated automatically when the setting is changed. For images in the search index, a full reindexation is required.
+
+.. warning:: When metadata preservation is enabled, ensure that uploaded images do not contain sensitive information in their metadata (e.g., GPS location, personal details, author information) unless you intend to share this information publicly.
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
