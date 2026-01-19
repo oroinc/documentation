@@ -257,6 +257,11 @@ are not allowed by default and should be enabled by a developer who creates API 
 |                     | array or null          |                                                            |
 +---------------------+------------------------+------------------------------------------------------------+
 
+.. note ::
+
+    It is possible to use a filter by the same field several times with different operators. For example:
+    `GET /api/users?filter[id][gte]=5&filter[id][lte]=7`.
+
 **Example of Using Operators to Filter Data**
 
 *Request*
