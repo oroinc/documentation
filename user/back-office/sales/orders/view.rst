@@ -28,6 +28,7 @@ available by default but depend on the order status:
 - **Add Special Discount** --- Click to :ref:`add special discounts <user-guide--sales--orders--promotions--add-special-discount>`.
 - **Add Coupon Code** --- Click to :ref:`provide a coupon code <user-guide--marketing--promotions--coupons--edit--on-order-page>`.
 - **Edit** --- Click to :ref:`edit an order <user-guide--sales--orders--edit>`.
+- **Schedule Recurring Order** --- Click to :ref:`schedule a recurring order <user-guide--sales--recurring-orders>` based on a previous order.
 - **Delete** --- Click to :ref:`delete an order <doc--orders--actions--delete>`.
 - **Download** --- Click to download a PDF of the current order (available as of OroCommerce version 6.1.6). Each time you click, a new PDF is generated with an updated timestamp.
 - **More Actions** drop-down:

@@ -14,7 +14,7 @@ Learn how to enable and set up commerce-related features per customer group:
 
   * :ref:`Search (Search Terms) <user-guide--customer-groups--configuration--settings--search>`
   * :ref:`Product (Customer Settings) <user-guide--customer-groups--customer-settings>`
-  * :ref:`Sales (Checkout & Invoices) <user-guide--customer-group---sales--settings>`
+  * :ref:`Sales (Checkout, Recurring Orders & Invoices) <user-guide--customer-group---sales--settings>`
   * :ref:`Inventory <user-guide--customers--customer-group--inventory-settings>`  
 
 

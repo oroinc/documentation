@@ -14,7 +14,7 @@ Learn how to enable and set up commerce-related features per customer:
 
   * :ref:`Search (Search Terms) <user-guide--customers--search--settings>`
   * :ref:`Product (Customer Settings) <user-guide--customers--customer-settings>`
-  * :ref:`Sales (Checkout and Invoices) <user-guide--customers--sales--settings>`
+  * :ref:`Sales (Checkout, Recurring Orders and Invoices) <user-guide--customers--sales--settings>`
   * :ref:`Inventory <user-guide--customers--inventory-settings>`
 
 .. toctree::

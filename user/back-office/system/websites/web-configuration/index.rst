@@ -85,6 +85,7 @@ More information about the options available for each of the two categories is a
     * :ref:`Shopping Lists <user-guide--system-configuration--commerce-sales-shopping-list-per-website>`
     * :ref:`Contacts <sys--conf--commerce--sales--contacts-website>`
     * :ref:`Checkout <user-guide--system-configuration--commerce-sales-checkout-website>`
+    * :ref:`Recurring Orders <user-guide--system-configuration--commerce-sales-recurring-orders>`
     * :ref:`Orders History <website-commerce--configuration--sales-order-history>`
     * :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping-website>`
     * :ref:`Quotes <sys--websites-quotes>`
