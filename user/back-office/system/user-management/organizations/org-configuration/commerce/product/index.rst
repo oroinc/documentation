@@ -10,3 +10,4 @@ Configure Product Settings per Organization
    Promotions <organization-new-arrivals>
    Configurable Products <organization-configurable-products>
    Customer Settings <organization-customer-settings>
+   Product Import/Export <organization-product-import-export>

@@ -15,6 +15,7 @@ Learn the key options for setting up products in your Oro application, as well a
 * :ref:`Seller Product Approval Workflow <system-configuration--commerce--product--seller-product-approval-workflow>`
 * :ref:`Product Collections <configuration--guide--commerce--configuration--product-collections>`
 * :ref:`Customer Settings <sys--commerce--product--customer-settings>`
+* :ref:`Product Import/Export <configuration--guide--commerce--product-import-export>`
 
 .. toctree::
    :titlesonly:
@@ -30,3 +31,4 @@ Learn the key options for setting up products in your Oro application, as well a
    Seller Product Approval Workflow <seller-product-approval-flow>
    Product Collections <product-collections>
    Customer Settings <global-customer-settings>
+   Product Import/Export <product-import-export>
