@@ -152,5 +152,15 @@ Validation configuration should be placed in the *Resources/config/validation.ym
             addresses:
                 - Oro\Bundle\AddressBundle\Validator\Constraints\UniqueAddressTypes: ~
 
+Related Documentation
+---------------------
+
+* :ref:`CLI Commands (AddressBundle) <bundle-docs-platform-address-bundle-commands>`
+
+.. toctree::
+   :hidden:
+
+   Commands <commands>
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
