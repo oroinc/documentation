@@ -27,6 +27,10 @@ Once you manually amend the fields that require your attention, click the green 
 .. image:: /user/img/concept-guides/ai/ai-smart-order-manual-update.png
    :alt: Illustration of the system making areas of the order as requiring attention
 
+If the |Customer Part Number| (CPN) extension is installed, :ref:`enabled <sys--commerce--product--customer-settings>` and :ref:`configured to work <admin-configuration-orders-ai-smart-order-settings>` with the AI Smart Order functionality, you can add and manage customer-specific part numbers for individual line items while the order is in the **Draft** status. Once a product is selected for a line item, a **Set as CPN** option becomes available, allowing you to create, update, or remove CPNs based on the detected SKUs. Any CPNs you define are saved only when you assign a customer to the order and then click **Save** or **Save and Close**. After that, previously added CPNs are no longer editable for that session, though you can add new ones if needed.
+
 .. note::
     You can also automate the conversion of purchase orders into draft orders by configuring your system mailbox to allow the AI Smart Order feature to scan incoming emails and extract order details automatically. The purchase orders must be attached to the email in JPG, PNG, or PDF format. For more information, please see the :ref:`Email Configuration <admin-configuration-system-mailboxes>` guide.
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin

@@ -1049,3 +1049,7 @@ Links (User)
 .. |OpenID Connect|  raw:: html
 
    <a href="https://openid.net/developers/how-connect-works/" target="_blank">OpenID Connect</a>
+
+.. |Customer Part Number|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/customer-part-number/" target="_blank">Customer Part Number</a>
