@@ -3,7 +3,7 @@
 Configure Global Settings for Product Import/Export
 ===================================================
 
-You can define how product categories are exported and identified during product import. Product Import/Export settings below help ensure predictable category assignment by controlling which category attributes are included in export files and how categories are resolved when importing products, particularly in scenarios where category titles or paths are not unique within the master catalog.
+You can define how product categories are exported and identified during product import (available as of OroCommerce v6.1.7). Product Import/Export settings below help ensure predictable category assignment by controlling which category attributes are included in export files and how categories are resolved when importing products, particularly in scenarios where category titles or paths are not unique within the master catalog.
 
 .. note:: You can also configure category options :ref:`per organization <sys--users--organization--commerce--products--import-export>`.
 
