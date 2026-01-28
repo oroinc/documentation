@@ -1000,3 +1000,99 @@ Links (User)
 .. |MS Admin Panel|  raw:: html
 
    <a href="https://admin.microsoft.com/" target="_blank">MS Admin Panel</a>
+
+.. |Customer Management|  raw:: html
+
+   <a href="https://hive.oroinc.com/course/customer-management/" target="_blank">Customer Management</a>
+
+.. |Product Management|  raw:: html
+
+   <a href="https://hive.oroinc.com/course/product-management/" target="_blank">Product Management</a>
+
+.. |Sales Management|  raw:: html
+
+   <a href="https://hive.oroinc.com/course/sales-management/" target="_blank">Sales Management</a>
+
+.. |Epicor Prophet 21 (P21)|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/p21-erp-integration/" target="_blank">Epicor Prophet 21 (P21)</a>
+
+.. |SAP B1|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/sap-b1-ecommerce-integration/" target="_blank">SAP B1</a>
+
+.. |SAP ERP|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/sap-erp-integration/" target="_blank">SAP ERP</a>
+
+.. |Marello|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/orocommerce-marello-bridge/" target="_blank">Marello</a>
+
+.. |CyberSource Extension|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/cybersource-orocommerce-integration/" target="_blank">CyberSource</a>
+
+.. |InfinitePay|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/orocommerce-infinitepay-integration/" target="_blank">InfinitePay</a>
+
+.. |Akeneo|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/akeneo-pim-orocommerce-connector/" target="_blank">Akeneo</a>
+
+.. |Greenwing Punchout|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/punchout-via-greenwing-technology/" target="_blank">Greenwing Punchout</a>
+
+.. |Google Looker Studio|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/embedded-google-data-studio-dashboard/" target="_blank">Google Looker Studio</a>
+
+.. |Microsoft Power BI Dashboard|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/embedded-microsoft-powerbi-dashboard/" target="_blank">Microsoft Power BI Dashboard</a>
+
+.. |RFC 7642|  raw:: html
+
+   <a href="https://datatracker.ietf.org/doc/html/rfc7642" target="_blank">RFC 7642</a>
+
+.. |RFC 7643|  raw:: html
+
+   <a href="https://datatracker.ietf.org/doc/html/rfc7643" target="_blank">RFC 7643</a>
+
+.. |RFC 7644|  raw:: html
+
+   <a href="https://datatracker.ietf.org/doc/html/rfc7644" target="_blank">RFC 7644</a>
+
+.. |Okta provisioning service|  raw:: html
+
+   <a href="https://help.okta.com/en-us/content/topics/provisioning/lcm/con-okta-prov.htm" target="_blank">Okta provisioning service</a>
+
+.. |Okta SCIM API - authentication|  raw:: html
+
+   <a href="https://developer.okta.com/docs/guides/scim-provisioning-integration-prepare/main/#authentication" target="_blank">authentication</a>
+
+.. |Microsoft Entra ID|  raw:: html
+
+   <a href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/user-provisioning" target="_blank">Microsoft Entra ID</a>
+
+.. |Microsoft Entra provisioning service|  raw:: html
+
+   <a href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service" target="_blank">Microsoft Entra provisioning service</a>
+
+.. |Microsoft Entra admin center|  raw:: html
+
+   <a href="https://entra.microsoft.com/" target="_blank">Microsoft Entra admin center</a>
+
+.. |Application Administrator|  raw:: html
+
+   <a href="https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#application-administrator" target="_blank">Application Administrator</a>
+
+.. |OpenID Connect|  raw:: html
+
+   <a href="https://openid.net/developers/how-connect-works/" target="_blank">OpenID Connect</a>
+
+.. |Customer Part Number|  raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/customer-part-number/" target="_blank">Customer Part Number</a>

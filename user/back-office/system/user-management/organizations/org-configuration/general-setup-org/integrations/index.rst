@@ -8,3 +8,4 @@ Configure Integration Settings per Organization
    Microsoft Settings <organization-microsoft>
    AI Content Generation <organization-ai-settings>
    CAPTCHA Settings <organization-captcha>
+   AI Smart Order <organization-ai-smart-order>
