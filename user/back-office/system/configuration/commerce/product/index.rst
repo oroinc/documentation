@@ -16,6 +16,7 @@ Learn the key options for setting up products in your Oro application, as well a
 * :ref:`Product Collections <configuration--guide--commerce--configuration--product-collections>`
 * :ref:`Customer Settings <sys--commerce--product--customer-settings>`
 * :ref:`SEO (Breadcrumbs Rendering) <sys--commerce--product--seo>`
+* :ref:`Product Import/Export <configuration--guide--commerce--product-import-export>`
 
 .. toctree::
    :titlesonly:
@@ -32,3 +33,4 @@ Learn the key options for setting up products in your Oro application, as well a
    Product Collections <product-collections>
    Customer Settings <global-customer-settings>
    SEO <seo>
+   Product Import/Export <product-import-export>

@@ -56,6 +56,7 @@ Learn the key options for setting up products in your Oro application, as well a
 * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products>`
 * :ref:`Product Collections <configuration--guide--commerce--configuration--product-collections>`
 * :ref:`Customer Settings <sys--commerce--product--customer-settings>`
+* :ref:`Product Import/Export <configuration--guide--commerce--product-import-export>`
 
 :ref:`Inventory <configuration--guide--commerce--configuration--inventory>`
 ---------------------------------------------------------------------------
