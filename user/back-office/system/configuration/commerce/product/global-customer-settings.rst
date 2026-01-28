@@ -27,4 +27,8 @@ To configure these settings globally:
    * **Include Product Prices** --- Enable this option to add product prices to the exported product data file. Data will be displayed only for the primary unit, minimum quantity and the currency currently selected in the storefront.
    * **Include Price Tiers** --- Enable this option to include price tiers to the exported product data file, if available. If product units have no price, they will be omitted in the exported file.
 
-4. Click **Save Settings**.
+4. If you have a |Customer Part Number| extension installed, enable it here under **Customer Part Number** to allow customers to manage CPN per product.
+5. Click **Save Settings**.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
