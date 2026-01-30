@@ -567,18 +567,6 @@ Links (User)
 
    <a href="https://www.infinitepay.de/" target="_blank">https://www.infinitepay.de/</a>
 
-.. |https://www.apruve.com/| raw:: html
-
-   <a href="https://www.apruve.com/" target="_blank">https://www.apruve.com/</a>
-
-.. |https://app.apruve.com| raw:: html
-
-   <a href="https://app.apruve.com" target="_blank">https://app.apruve.com</a>
-
-.. |https://test.apruve.com| raw:: html
-
-   <a href="https://test.apruve.com" target="_blank">https://test.apruve.com</a>
-
 .. |sign-on| raw:: html
 
    <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-dotdigital" target="_blank">sign-on</a>
@@ -698,10 +686,6 @@ Links (User)
 .. |Authorize.Net extension| raw:: html
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-authorize.net-integration/" target="_blank">Authorize.Net extension</a>
-
-.. |Apruve extension| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-and-apruve-integration/" target="_blank">Apruve extension</a>
 
 .. |InfinitePay extension| raw:: html
 
