@@ -44,10 +44,6 @@ OroCommerce works with the following payment methods:
 
   InfinitePay is a financial management company that provides guaranteed delayed payments on open account terms. Integration of OroCommerce with InfinitePay enables you to secure your company from financial risks related to delayed payments. This integration requires registration with the InfinitePay service, and obtaining the required credentials for the integration with OroCommerce from their support team.
 
-* :ref:`Apruve <user-guide--payment--payment-providers-overview--apruve>`
-
-  Apruve is a B2B credit management service that provides a credit line for your buyers. This integration requires registration with the Apruve service, and obtaining the required credentials for the integration with OroCommerce from the Apruve support team.
-
 * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
 
   Ingenico ePayments' global payment platform extension for OroCommerce enables sellers to improve their payments experience by accepting online payments from customers in the OroCommerce storefront and manage all transactions in the OroCommerce back office.

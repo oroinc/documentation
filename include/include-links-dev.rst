@@ -5860,10 +5860,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/CheckoutBundle" target="_blank">at the checkout</a>
 
-.. |Apruve| raw:: html
-
-   <a href="https://apruve.com/" target="_blank">Apruve</a>
-
 .. |Authorize.Net| raw:: html
 
    <a href="https://www.authorize.net/" target="_blank">Authorize.Net</a>
@@ -5911,10 +5907,6 @@ Links (Dev)
 .. |OroAuthorizeNetBundle| raw:: html
 
    <a href="https://github.com/oroinc/OroAuthorizeNetBundle" target="_blank">OroAuthorizeNetBundle</a>
-
-.. |OroApruveBundle| raw:: html
-
-   <a href="https://github.com/oroinc/OroApruveBundle" target="_blank">OroApruveBundle</a>
 
 .. |products-embedded-list-gtm-component.js| raw:: html
 
