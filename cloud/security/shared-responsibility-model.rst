@@ -105,7 +105,6 @@ The default allowlist covering standard OroCommerce functionality and core integ
 * ``https://*.stripe.com``
 * ``https://*.stripe.network``
 * ``https://*.paypal.com``
-* ``https://*.apruve.com``
 * ``https://*.authorize.net``
 * ``https://r.orocrm.com``
 * ``https://www.googletagmanager.com``

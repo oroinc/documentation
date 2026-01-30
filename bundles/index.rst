@@ -88,11 +88,11 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
 .. csv-table::
 
-   "**A**",":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`"
-   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
+   "**A**",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
+   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
    ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",":ref:`StripePaymentBundle <bundle-docs-extensions-stripe-payment-bundle>`"
    "**D**","**I**","**P**",":ref:`StorefrontAgentBundle <bundle-docs-extensions-storefront-agent-bundle-commands>`"
+   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`",""
 
 CRM Bundles
 -----------
@@ -122,7 +122,6 @@ CRM Bundles
    AiContentGenerationBundle <extensions/AiContentGenerationBundle/index>
    AnalyticsBundle <crm/AnalyticsBundle/index>
    ApiBundle <platform/ApiBundle/index>
-   ApruveBundle <extensions/ApruveBundle/index>
    AssetBundle <platform/AssetBundle/index>
    AttachmentBundle <platform/AttachmentBundle/index>
    AuthorizeNetBundle <extensions/AuthorizeNetBundle/index>
