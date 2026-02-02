@@ -502,3 +502,8 @@ user/back-office/system/entities/create-entities /user/back-office/system/entiti
 user/back-office/getting-started/community-vs-enterprise /backend/setup/repositories
 backend/setup/demo-environment/vm /backend/setup/demo-environment
 api/schema /api
+user/back-office/system/integrations/payment-integration/apruve/apruve-integration /user/back-office/system/integrations/payment-integration/index
+user/back-office/system/integrations/payment-integration/apruve/apruve-prerequisites /user/back-office/system/integrations/payment-integration/index
+user/back-office/system/integrations/payment-integration/apruve/index /user/back-office/system/integrations/payment-integration/index
+user/integrations/pre-built/payment/apruve /user/integrations/pre-built/payment/index
+bundles/extensions/ApruveBundle/index /bundles/index

@@ -84,12 +84,12 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
 .. csv-table::
 
-   "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
-   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`","**G**",":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
+   "**A**",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
+   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
    ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",""
    "**D**","**I**","**P**",""
    ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`",""
+
 
 CRM Bundles
 -----------
@@ -206,7 +206,6 @@ CRM Bundles
    AnalyticsBundle <crm/AnalyticsBundle/index>
    ChannelBundle <crm/ChannelBundle/index>
    SalesBundle <crm/SalesBundle/index>
-   ApruveBundle <extensions/ApruveBundle/index>
    AuthorizeNetBundle <extensions/AuthorizeNetBundle/index>
    DotmailerBundle <extensions/DotmailerBundle/index>
    DPDBundle <extensions/DPDBundle/index>

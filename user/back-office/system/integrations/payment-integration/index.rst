@@ -36,7 +36,6 @@ You integrate OroCommerce with the following systems and services:
 * :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term-config>`
 * :ref:`PayPal Payflow Gateway / PayPal Payment Pro <sys--integrations--manage-integrations--paypal-payflow-gateway>`
 * :ref:`PayPal Express <config-guide--payment--paypal-express>`
-* :ref:`Apruve <user-guide--payment--payment-providers-overview--apruve>`
 * :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`
 * :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`
 * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
@@ -82,7 +81,6 @@ The payment methods that were based on this integration are no longer usable in 
    Check/Money Order Service <check-money-order/index>
    Payment Terms <payment-terms/index>
    PayPal Payment Services <paypal-services/index>
-   Apruve Payment Service <apruve/index>
    Authorize.Net Payments Services <authorizenet/index>
    InfinitePay Payment Service <infinitepay/index>
    Ingenico Payment Service <ingenico/index>
