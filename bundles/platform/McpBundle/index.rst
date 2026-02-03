@@ -3,7 +3,7 @@
 OroMcpBundle
 ============
 
-.. note:: This bundle is only available in the Enterprise edition.
+.. note:: This bundle is available as of OroPlatform Enterprise version 6.1.7.
 
 OroMcpBundle implements of |Model Context Protocol| using the official MCP SDK |mcp/sdk|.
 

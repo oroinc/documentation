@@ -62,7 +62,7 @@ To configure the upload settings globally:
    .. note::
       When this option is enabled, the **Enable Original File Names** setting for Product Images is hidden from the system configuration page.
 
-10. In the **Image Metadata Preservation** section, you can control whether uploaded images preserve their original metadata (available as of OroCommerce version 6.1.7).
+10. In the **Image Metadata Preservation** section, you can control whether uploaded images preserve their original metadata (available as of OroCommerce version 6.1.8).
 
    .. image:: /user/img/system/config_system/upload_settings_metadata.png
       :alt: Image Metadata Preservation settings

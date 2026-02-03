@@ -355,8 +355,7 @@ You can use 3 parameters for optimization images:
 Image Metadata Preservation
 ----------------------------
 
-
-.. note:: This feature is available as of OroCommerce version 6.1.7.
+.. note:: This feature is available as of OroCommerce version 6.1.8.
 
 Image Metadata Preservation enables an administrator to control whether uploaded images preserve their original metadata such as copyright information, camera settings, GPS location, and other embedded information.
 

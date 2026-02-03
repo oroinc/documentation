@@ -1,11 +1,11 @@
-.. _user-guide--system-configuration--commerce-sales-recurring-orders:
+.. _user-guide--organization-configuration--commerce-sales-recurring-orders:
 
 Configure Recurring Orders Settings per Organization
 ====================================================
 
 .. note:: This is an OroCommerce Enterprise feature, introduced in version 6.1.7.
 
-Recurring Orders enable customers to automatically place repeat orders based on previously submitted orders. Customers can define a schedule with configurable frequency, start date, and optional end date, and manage recurring orders by pausing, resuming, or canceling them as needed. On each scheduled date, the system generates a new order and sends notifications according to the configured settings. Recurring order functionality and related notifications can be configured at the :ref:`global level <user-guide--system-configuration--commerce-sales-recurring-orders>` and per organization, :ref:`website <user-guide--system-configuration--commerce-sales-recurring-orders>`, :ref:`customer group <user-guide--customer-group---sales-recurring-orders>`, and :ref:`customer <user-guide--customers--sales--recurring-orders>`.
+Recurring Orders enable customers to automatically place repeat orders based on previously submitted orders. Customers can define a schedule with configurable frequency, start date, and optional end date, and manage recurring orders by pausing, resuming, or canceling them as needed. On each scheduled date, the system generates a new order and sends notifications according to the configured settings. Recurring order functionality and related notifications can be configured at the :ref:`global level <user-guide--system-configuration--commerce-sales-recurring-orders>` and per organization, :ref:`website <user-guide--website-configuration--commerce-sales-recurring-orders>`, :ref:`customer group <user-guide--customer-group---sales-recurring-orders>`, and :ref:`customer <user-guide--customers--sales--recurring-orders>`.
 
 To configure recurring orders per organization:
 

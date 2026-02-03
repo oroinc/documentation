@@ -13,6 +13,8 @@ To apply user login-related options in your Oro application instance per organiz
 
 4. In the LDAP Users section, configure the following option:
 
+   .. note:: **Disable Local Password Change/Reset for LDAP Users** is available as of OroCommerce version 6.1.7.
+
    * **Disable Local Password Change/Reset for LDAP Users** --- This configuration option controls whether back-office users whose accounts are synchronized from LDAP can manage their passwords locally in the Oro application. When enabled, LDAP users (identified by a non-empty *LDAP Distinguished Names* field in their profile) cannot change their password on the My User page, use the *Forgot your password?* flow, or have their password reset by administrators.
 
 5. Click **Save Settings**.

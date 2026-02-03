@@ -61,5 +61,9 @@ Alternatively, a recurring order can be created directly from the **Orders** gri
 
 **Related Topics**
 
-* :ref:`Configure Recurring Orders Globally <user-guide--system-configuration--commerce-sales-recurring-orders>`
 * :ref:`Recurring Orders in the Storefront <my-account-recurring-orders>`
+* :ref:`Configure Recurring Orders Globally <user-guide--system-configuration--commerce-sales-recurring-orders>`
+* :ref:`Configure Recurring Orders per Organization <user-guide--organization-configuration--commerce-sales-recurring-orders>`
+* :ref:`Configure Recurring Orders per Website <user-guide--website-configuration--commerce-sales-recurring-orders>`
+* :ref:`Configure Recurring Orders per Customer Group <user-guide--customer-group---sales-recurring-orders>`
+* :ref:`Configure Recurring Orders per Customer <user-guide--customers--sales--recurring-orders>`

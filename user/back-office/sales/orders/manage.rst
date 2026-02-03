@@ -162,8 +162,9 @@ Delete Multiple Orders
 
 **Related Topics**
 
-* :ref:`Configure Recurring Orders Globally <user-guide--system-configuration--commerce-sales-recurring-orders>`
 * :ref:`Recurring Orders in the Storefront <my-account-recurring-orders>`
+* :ref:`Configure Recurring Orders Globally <user-guide--system-configuration--commerce-sales-recurring-orders>`
+
 
 .. include:: /include/include-images.rst
    :start-after: begin
