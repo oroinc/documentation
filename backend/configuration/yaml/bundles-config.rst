@@ -1250,6 +1250,36 @@ The default configuration for extension with alias "oro_oauth2_server":
             # The list of security firewalls for which OAuth 2.0 authorization should be enabled.
             oauth_firewalls:      []
 
+        # The list of OAuth protected resources which metadata can be obtained via "/.well-known/oauth-protected-resource/{resourcePath}".
+        protected_resources:
+
+            # Example:
+            # /path/resource:      { name: 'My Resource', supported_scopes: ['data:read'] }
+
+            # Prototype
+            path:
+
+                # The resource name.
+                name:                 ~ # Required
+
+                # The resource route name.
+                route:                ~ # Required
+
+                # The resource route parameters.
+                route_params:
+
+                    # Prototype
+                    name:                 ~
+
+                # Scopes supported by the resource.
+                supported_scopes:     [] # Required
+
+                # Additional options for the resource.
+                options:
+
+                    # Prototype
+                    name:                 ~
+
 oro_organization_pro
 ____________________
 

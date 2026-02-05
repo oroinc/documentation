@@ -74,6 +74,11 @@ The default configuration of OroOAuth2ServerBundle is illustrated below:
             # The full path to the public key file that is used to verify JWT tokens.
             public_key: '%kernel.project_dir%/var/oauth_public.key'
 
+        # The list of OAuth protected resources which metadata can be obtained via "/.well-known/oauth-protected-resource/{resourcePath}".
+        # Example:
+        #  '/path/resource': { name: 'My Resource', route: 'acme.my_resource', supported_scopes: ['data:read'] }
+        protected_resources: []
+
 .. note:: To use OAuth 2.0 authorization, generate the private and public keys and place them into locations specified in the `authorization_server / private_key` and `resource_server / public_key` options. See |Generating public and private keys| for details on how to generate the keys.
 
 .. _bundle-docs-platform-oauth2-server-bundle--manage-applications:
