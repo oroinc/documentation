@@ -20,7 +20,7 @@ In order to create a new OpenAPI specification:
    * **Public Slug** --- The URL slug for downloading the OpenAPI specification without authorization. When the slug is not specified the unauthorized access is not permitted.
    * **Requested By** --- A user who requested the OpenAPI specification.
    * **Format** --- The format in which the OpenAPI specification should be created, e.g. JSON or YAML.
-   * **API Type (View)** --- The API type for which the OpenAPI specification should be created, e.g. "Back-Office API" or "Storefront API".
+   * **API** --- The API for which the OpenAPI specification should be created, e.g. "Back-Office API" or "Storefront API".
    * **Entities** --- The list of entities for which the OpenAPI specification should be created. When no entity is specified, the specification is created for all entities.
    * **Server URLs** --- The list of server URLs that should be added to the OpenAPI specification.
 
