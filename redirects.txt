@@ -522,3 +522,4 @@ user/back-office/system/integrations/payment-integration/apruve/apruve-prerequis
 user/back-office/system/integrations/payment-integration/apruve/index /user/back-office/system/integrations/payment-integration/index
 user/integrations/pre-built/payment/apruve /user/integrations/pre-built/payment/index
 bundles/extensions/ApruveBundle/index /bundles/index
+backend/setup/dev-environment/orodevbox /backend/setup/dev-environment
