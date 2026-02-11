@@ -167,7 +167,6 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    Environment Variables <env-vars>
    Healthcheck and Data Monitoring <monitoring>
    Setup From Database Dump <setup-from-db-dump>
-   Oro Devbox VM <orodevbox>
 
 
 .. include:: /include/include-links-dev.rst
