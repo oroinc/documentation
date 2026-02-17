@@ -168,7 +168,7 @@ To configure Redis connections, including types, instead of:
 .. code:: yaml
 
    parameters:
-       session_handler:         'snc_redis.session.handler'
+       session_handler:         'oro.session_handler'
        redis_dsn_session:       'redis://127.0.0.1:6379/0'
        redis_dsn_cache:         'redis://127.0.0.1:6380/0'
        redis_dsn_doctrine:      'redis://127.0.0.1:6380/1'
