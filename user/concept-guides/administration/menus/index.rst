@@ -48,11 +48,10 @@ The storefront menu functionality consists of several components that are suppli
 .. image:: /user/img/concept-guides/menus/frontend_menu_list.png
    :alt: A list of all available storefront menu items
 
-You can configure each of the following menu elements on five different levels: :ref:`global <frontend-menu-globally>`, :ref:`organization <frontend-menu-organization>`, :ref:`website <frontend-menus-website>`, :ref:`customer group <frontend-menus-customer-group>`, and a :ref:`customer <frontend-menus-customer>`. Always keep an eye on the fallback logic, which means that the values set on a lower level (e.g., customer level) would always prevail and override the configuration set on the higher level.
+You can configure each of the following menu elements on five different levels: :ref:`global <frontend-menu-globally>`, :ref:`organization <frontend-menu-organization>`, :ref:`website <frontend-menus-website>`, :ref:`customer group <frontend-menus-customer-group>`, and a :ref:`customer <frontend-menus-customer>`. Always keep an eye on the fallback logic, which means that the values set on a more specific level (e.g., customer level) would always prevail and override the configuration set on a more general level (e.g., global).
 
 .. image:: /user/img/concept-guides/menus/frontend_menu_fallback.png
    :alt: Storefront menu fallback logic
-   :align: center
 
 Once you have configured the menu items, you can add them to the selected :ref:`theme configuration <back-office-theme-configuration>` of your website, placing them anywhere in the storefront header.
 
