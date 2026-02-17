@@ -132,7 +132,7 @@ Once the price list is created, and the price selection strategy is selected, yo
 * A :ref:`website <sys--website--edit--price-lists>`
 * :ref:`System-wide <pricing-configuration>`
 
-.. note:: The website level configuration has higher priority and overrides the global configuration settings. Customer group configuration overrides configuration on the website level. Custom configuration on the customer level has the highest priority.
+.. note:: Custom configuration on the customer level has the highest priority, and it overrides configuration on the customer group level. Customer group configuration overrides configuration on the website level. The website level configuration overrides the global configuration settings.
 
 You can activate and deactivate price lists manually or automatically, allowing to :ref:`display prices at scheduled times <user-guide--pricing--schedule-price-adjustments>`. You can add as many dates and times as necessary. This option is great for running a special sale or promotion campaign that occurs at a specified time. If no schedule is set, the price list is immediately visible to buyers. You can define multiple time slots as well.
 
@@ -178,15 +178,19 @@ With the fallback option, you enable (or disable) the selected price list's acce
 
 In a default configuration, all customers users have access to all price lists assigned to their customers and the price lists assigned to the customer group that their customer belongs to, as well as to the price lists assigned to the website they are currently browsing and the default price lists configured at the system level.
 
-The fallback configuration logic for the registered users is: **Current Customer PLs > Current Customer Group PLs > Current Website PLs > Global PLs**. It means that if no matching price is found in the price list created for the selected customer, the application goes further to the price lists configured for the customer group, then to the website pricing, and the default pricing at the system level to fill in the missing product price.
+The application resolves prices by evaluating these levels from **most specific to most general**, stopping as soon as a matching price is found. The fallback configuration logic for the registered users is: **Current Customer PLs > Current Customer Group PLs > Current Website PLs > Global (System) PLs**. It means that if no matching price is found in the price list created for the selected customer, the application goes further to the price lists configured for the customer group, then to the website pricing, and the default pricing at the system level to fill in the missing product price.
 
 .. image:: /user/img/concept-guides/prices/price_list_fallback.png
    :alt: The fallback configuration logic for the registered users
 
-Whenever you disable fallback configuration at one level, deeper levels in the fallback chain are no longer available. For example, disabling fallback settings at the customer group level restricts access to the website and global pricing for all customers that belong to this customer group.
+When a price list is assigned at a **more specific level** (e.g., customer group), it **limits access to price lists from more general levels** (e.g., website).
 
-.. image:: /user/img/concept-guides/prices/price_list_fallback_dimmed.png
-   :alt: Illustration of the fallback logic when the fallback settings are disabled at the customer group level
+For example:
+
+* Assigning a price list fallback configuration directly to a **Customer** restricts access to **Customer Group, Website**, and **Global** price lists.
+* Assigning a price list fallback configuration to a **Customer Group** restricts access to **Website** and **Global** price lists for all customers in that group.
+* Assigning a price list fallback configuration to a **Website** restricts access to **Global** price lists only.
+
 
 Price Attributes
 ----------------

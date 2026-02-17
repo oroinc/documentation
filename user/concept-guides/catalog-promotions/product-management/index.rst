@@ -44,7 +44,6 @@ All the product components are used when creating simple and configurable produc
 
 .. image:: /user/img/concept-guides/products/product_creation_steps.png
    :alt: Product filters in the storefront
-   :align: center
 
 .. _concept-guides--product-management-types:
 

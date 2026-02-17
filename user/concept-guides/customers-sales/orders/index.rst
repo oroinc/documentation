@@ -40,7 +40,6 @@ Once a customer or their assigned sales rep place an order, OroCommerce immediat
 
 .. image:: /user/img/concept-guides/orders/front-flow.png
    :alt: Order management flow
-   :align: center
 
 Creation
 ^^^^^^^^
