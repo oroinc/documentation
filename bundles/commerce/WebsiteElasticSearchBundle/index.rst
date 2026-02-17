@@ -11,7 +11,7 @@ OroWebsiteElasticSearchBundle
 
 OroWebsiteElasticSearchBundle enables support of the |Elasticsearch| engine for the search functionality on the OroCommerce Enterprise application storefront.
 
-The WebsiteElasticSearchBundle bundle has exactly the same requirements as ElasticSearchBundle - Elasticsearch 6.*.
+The WebsiteElasticSearchBundle bundle has exactly the same requirements as ElasticSearchBundle - Elasticsearch 9.2.*.
 
 .. toctree::
    :maxdepth: 1
@@ -21,7 +21,7 @@ The WebsiteElasticSearchBundle bundle has exactly the same requirements as Elast
    configuration
    attributes-boost
    request-builders
-   upgrade-to-es8
+   upgrade-to-es9
    synonym-management
 
 .. include:: /include/include-links-dev.rst
