@@ -128,9 +128,7 @@ Then, register provider in a service container with tag ``seller.chart.data.prov
         class: My\Bundle\SellerDashboardBundle\Provider\MyChartDataProvider
         parent: Oro_seller_dashboard.provider.abstract
         tags:
-            -
-                name: 'seller.chart.data.provider'
-                key: 'chart-container-my-chart'
+            - { name: seller.chart.data.provider, key: chart-container-my-chart }
 
 **Step 2**
 
@@ -139,27 +137,46 @@ initial state of the chart, e.g. ``Oro\Bundle\SellerDashboardBundle\Twig\OrderCh
 
 .. code-block:: php
 
-
     namespace My\Bundle\SellerDashboardBundle\Twig;
 
-    use ...
-    class MyTwigExtension extends AbstractExtension implements ExtensionInterface
-    {
-        private MyChartDataProvider $myChartDataProvider;
+    use My\Bundle\SellerDashboardBundle\Provider\MyChartDataProvider;
+    use Psr\Container\ContainerInterface;
+    use Symfony\Contracts\Service\ServiceSubscriberInterface;
+    use Twig\Extension\AbstractExtension;
+    use Twig\TwigFunction;
 
-        public function __construct(MyChartDataProvider $myChartDataProvider) {
-            $this->myChartDataProvider = $myChartDataProvider;
+    class MyTwigExtension extends AbstractExtension implements ServiceSubscriberInterface
+    {
+        public function __construct(
+            private readonly ContainerInterface $container
+        ) {
         }
 
-        public function getFunctions()
+        #[\Override]
+        public function getFunctions(): array
         {
             return [
-                new TwigFunction(
-                    'get_my_chart_data',
-                    [$this->myChartDataProvider, 'getChartData']
-                )
+                new TwigFunction('get_my_chart_data', [$this, 'getMyChartData'])
             ];
        }
+
+        public function getMyChartData(?string $period = null): array
+        {
+            return $this->getMyChartDataProvider()->getChartData($period);
+        }
+
+        #[\Override]
+        public static function getSubscribedServices(): array
+        {
+            return [
+                MyChartDataProvider::class
+            ];
+        }
+
+        private function getMyChartDataProvider(): MyChartDataProvider
+        {
+            return $this->container->get(MyChartDataProvider::class);
+        }
     }
 
 And register the extension in the service container, e.g.:
@@ -169,9 +186,10 @@ And register the extension in the service container, e.g.:
     my_bundle.twig.my_charts_data:
         class: My\Bundle\SellerDashboardBundle\Twig\MyTwigExtension
         arguments:
-            - '@my_bundle.provider.my_chart_data_provider'
+            - '@oro_platform.twig.service_locator'
         tags:
             - { name: twig.extension }
+            - { name: container.service_subscriber, id: my_bundle.provider.my_chart_data_provider, key: My\Bundle\SellerDashboardBundle\Provider\MyChartDataProvider }
 
 **Step 3**
 
