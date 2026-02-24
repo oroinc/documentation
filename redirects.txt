@@ -518,3 +518,5 @@ user/back-office/system/integrations/payment-integration/apruve/index /user/back
 user/integrations/pre-built/payment/apruve /user/integrations/pre-built/payment/index
 bundles/extensions/ApruveBundle/index /bundles/index
 backend/setup/dev-environment/orodevbox /backend/setup/dev-environment
+bundles/commerce/FrontendMcpBundle /bundles/commerce/CommerceMcpBundle
+bundles/platform/McpBundle /bundles/commerce/CommerceMcpBundle
