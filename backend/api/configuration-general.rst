@@ -27,8 +27,8 @@ or `config/config.yml` of your application.
         max_entities: -1
 
         # The maximum number of related entities that can be retrieved by a request.
-        # The default value is 100.
-        max_related_entities: 100
+        # The default value is 1000.
+        max_related_entities: 1000
 
         # The maximum number of entities that can be deleted by one request.
         # The default value is 100.
