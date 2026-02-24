@@ -31,28 +31,28 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
 
 .. csv-table::
 
-    "**A**",":ref:`DigitalAssetBundle <bundle-docs-platform-dam>`",":ref:`InstallerBundle <bundle-docs-platform-installer-bundle>`","**Q**"
-    ":ref:`ActionBundle <bundle-docs-platform-action-bundle>`",":ref:`DistributionBundle <bundle-docs-platform-distribution-bundle>`",":ref:`QueryDesignerBundle <bundle-docs-platform-query-designer-bundle>`","**R**"
-    ":ref:`ActivityBundle <bundle-docs-platform-activity-bundle>`","**E**","**L**",":ref:`RedisConfigBundle <bundle-docs-platform-redis-bundle>`"
-    ":ref:`ActivityListBundle <bundle-docs-platform-activity-list-bundle>`",":ref:`ElasticSearchBundle <bundle-docs-platform-elastic-search-bundle>`",":ref:`LayoutBundle <bundle-docs-platform-layout-bundle>`",":ref:`ReportBundle <bundle-docs-platform-report-bundle>`"
-    ":ref:`AddressBundle <bundle-docs-platform-address-bundle>`",":ref:`EmailBundle <bundle-docs-platform-email-bundle>`",":ref:`LocaleBundle <bundle-docs-platform-locale-bundle>`","**S**"
-    ":ref:`ApiBundle <bundle-docs-platform-api-bundle>`",":ref:`EmbeddedFormBundle <bundle-docs-platform-embedded-form-bundle>`",":ref:`LoggerBundle <bundle-docs-platform-logger-bundle>`",":ref:`ScopeBundle <bundle-docs-platform-scope-bundle>`"
-    ":ref:`AssetBundle <bundle-docs-platform-asset-bundle>`",":ref:`EntityBundle <bundle-docs-platform-entity-bundle>`","**M**",":ref:`SearchBundle <bundle-docs-platform-search-bundle>`"
-    ":ref:`AttachmentBundle <bundle-docs-platform-attachment-bundle>`",":ref:`EntityConfigBundle <bundle-docs-platform-entity-config-bundle>`",":ref:`McpBundle <bundle-docs-platform-mcp-bundle>`",":ref:`SecurityBundle <bundle-docs-platform-security-bundle>`"
-    "**B**",":ref:`EntityExtendBundle <bundle-docs-platform-entity-extend-bundle>`",":ref:`MessageQueueBundle <bundle-docs-platform-message-queue-bundle>`",":ref:`SegmentBundle <bundle-docs-platform-segment-bundle>`"
-    ":ref:`BatchBundle <bundle-docs-platform-batch-bundle>`",":ref:`EntityMergeBundle <bundle-docs-platform-entity-merge-bundle>`",":ref:`MicrosoftSyncBundle <bundle-docs-platform-microsoft-sync-bundle>`",":ref:`SidebarBundle <bundle-docs-platform-sidebar-bundle>`"
-    "**C**",":ref:`EntityPaginationBundle <bundle-docs-platform-entity-pagination-bundle>`",":ref:`MigrationBundle <bundle-docs-platform-migration-bundle>`",":ref:`SyncBundle <bundle-docs-platform-sync-bundle>`"
-    ":ref:`CacheBundle <bundle-docs-platform-cache-bundle>`",":ref:`EntitySerializedFieldsBundle <bundle-docs-platform-entity-serialized-bundle>`","**N**","**T**"
-    ":ref:`CalendarBundle <bundle-docs-platform-calendar-bundle>`","**F**",":ref:`NavigationBundle <bundle-docs-platform-navigation-bundle>`",":ref:`TagBundle <bundle-docs-platform-tag-bundle>`"
-    ":ref:`ChartBundle <bundle-docs-platform-chart-bundle>`",":ref:`FeatureToggleBundle <bundle-docs-platform-feature-toggle-bundle>`",":ref:`NoteBundle <bundle-docs-platform-note-bundle>`",":ref:`TestFrameworkBundle <bundle-docs-platform-test-framework-bundle>`"
-    ":ref:`CommentBundle <bundle-docs-platform-comment-bundle>`",":ref:`FilterBundle <bundle-docs-platform-filter-bundle>`",":ref:`NotificationBundle <bundle-docs-platform-notification-bundle>`",":ref:`ThemeBundle <bundle-docs-platform-theme-bundle>`"
-    ":ref:`ConfigBundle <bundle-docs-platform-checkout-bundle>`",":ref:`FormBundle <bundle-docs-platform-form-bundle>`","**O**",":ref:`TranslationBundle <bundle-docs-platform-translation-bundle>`"
-    ":ref:`CronBundle <bundle-docs-platform-cron-bundle>`","**G**",":ref:`OAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>`",":ref:`TwigInspectorBundle <bundle-docs-platform-twig-inspector-bundle>`"
-    ":ref:`CurrencyBundle <bundle-docs-platform-currency-bundle>`",":ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>`",":ref:`OidcBundle <bundle-docs-platform-oidcbundle>`","**U**"
-    "**D**",":ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`","**P**",":ref:`UIBundle <bundle-docs-platform-ui-bundle>`"
-    ":ref:`DashboardBundle <bundle-docs-platform-dashboard-bundle>`","**I**",":ref:`PdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`","**W**"
-    ":ref:`DataAuditBundle <bundle-docs-platform--data-audit>`",":ref:`ImapBundle <bundle-docs-platform-imap-bundle>`",":ref:`PlatformBundle <bundle-docs-platform-platform-bundle>`",":ref:`WindowsBundle <bundle-docs-platform-windows-bundle>`"
-    ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`",":ref:`ImportExportBundle <bundle-docs-platform-import-export-bundle>`","**Q**",":ref:`WorkflowBundle <bundle-docs-platform-workflow-bundle>`"
+    "**A**",":ref:`DigitalAssetBundle <bundle-docs-platform-dam>`",":ref:`InstallerBundle <bundle-docs-platform-installer-bundle>`","**R**"
+    ":ref:`ActionBundle <bundle-docs-platform-action-bundle>`",":ref:`DistributionBundle <bundle-docs-platform-distribution-bundle>`","**Q**",":ref:`RedisConfigBundle <bundle-docs-platform-redis-bundle>`"
+    ":ref:`ActivityBundle <bundle-docs-platform-activity-bundle>`","**E**",":ref:`QueryDesignerBundle <bundle-docs-platform-query-designer-bundle>`",":ref:`ReportBundle <bundle-docs-platform-report-bundle>`"
+    ":ref:`ActivityListBundle <bundle-docs-platform-activity-list-bundle>`",":ref:`ElasticSearchBundle <bundle-docs-platform-elastic-search-bundle>`","**L**","**S**"
+    ":ref:`AddressBundle <bundle-docs-platform-address-bundle>`",":ref:`EmailBundle <bundle-docs-platform-email-bundle>`",":ref:`LayoutBundle <bundle-docs-platform-layout-bundle>`",":ref:`ScopeBundle <bundle-docs-platform-scope-bundle>`"
+    ":ref:`ApiBundle <bundle-docs-platform-api-bundle>`",":ref:`EmbeddedFormBundle <bundle-docs-platform-embedded-form-bundle>`",":ref:`LocaleBundle <bundle-docs-platform-locale-bundle>`",":ref:`SearchBundle <bundle-docs-platform-search-bundle>`"
+    ":ref:`AssetBundle <bundle-docs-platform-asset-bundle>`",":ref:`EntityBundle <bundle-docs-platform-entity-bundle>`",":ref:`LoggerBundle <bundle-docs-platform-logger-bundle>`",":ref:`SecurityBundle <bundle-docs-platform-security-bundle>`"
+    ":ref:`AttachmentBundle <bundle-docs-platform-attachment-bundle>`",":ref:`EntityConfigBundle <bundle-docs-platform-entity-config-bundle>`","**M**",":ref:`SegmentBundle <bundle-docs-platform-segment-bundle>`"
+    "**B**",":ref:`EntityExtendBundle <bundle-docs-platform-entity-extend-bundle>`",":ref:`MessageQueueBundle <bundle-docs-platform-message-queue-bundle>`",":ref:`SidebarBundle <bundle-docs-platform-sidebar-bundle>`"
+    ":ref:`BatchBundle <bundle-docs-platform-batch-bundle>`",":ref:`EntityMergeBundle <bundle-docs-platform-entity-merge-bundle>`",":ref:`MicrosoftSyncBundle <bundle-docs-platform-microsoft-sync-bundle>`",":ref:`SyncBundle <bundle-docs-platform-sync-bundle>`"
+    "**C**",":ref:`EntityPaginationBundle <bundle-docs-platform-entity-pagination-bundle>`",":ref:`MigrationBundle <bundle-docs-platform-migration-bundle>`","**T**"
+    ":ref:`CacheBundle <bundle-docs-platform-cache-bundle>`",":ref:`EntitySerializedFieldsBundle <bundle-docs-platform-entity-serialized-bundle>`","**N**",":ref:`TagBundle <bundle-docs-platform-tag-bundle>`"
+    ":ref:`CalendarBundle <bundle-docs-platform-calendar-bundle>`","**F**",":ref:`NavigationBundle <bundle-docs-platform-navigation-bundle>`",":ref:`TestFrameworkBundle <bundle-docs-platform-test-framework-bundle>`"
+    ":ref:`ChartBundle <bundle-docs-platform-chart-bundle>`",":ref:`FeatureToggleBundle <bundle-docs-platform-feature-toggle-bundle>`",":ref:`NoteBundle <bundle-docs-platform-note-bundle>`",":ref:`ThemeBundle <bundle-docs-platform-theme-bundle>`"
+    ":ref:`CommentBundle <bundle-docs-platform-comment-bundle>`",":ref:`FilterBundle <bundle-docs-platform-filter-bundle>`",":ref:`NotificationBundle <bundle-docs-platform-notification-bundle>`",":ref:`TranslationBundle <bundle-docs-platform-translation-bundle>`"
+    ":ref:`ConfigBundle <bundle-docs-platform-checkout-bundle>`",":ref:`FormBundle <bundle-docs-platform-form-bundle>`","**O**",":ref:`TwigInspectorBundle <bundle-docs-platform-twig-inspector-bundle>`"
+    ":ref:`CronBundle <bundle-docs-platform-cron-bundle>`","**G**",":ref:`OAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>`","**U**"
+    ":ref:`CurrencyBundle <bundle-docs-platform-currency-bundle>`",":ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>`",":ref:`OidcBundle <bundle-docs-platform-oidcbundle>`",":ref:`UIBundle <bundle-docs-platform-ui-bundle>`"
+    "**D**",":ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`","**P**","**W**"
+    ":ref:`DashboardBundle <bundle-docs-platform-dashboard-bundle>`","**I**",":ref:`PdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`",":ref:`WindowsBundle <bundle-docs-platform-windows-bundle>`"
+    ":ref:`DataAuditBundle <bundle-docs-platform--data-audit>`",":ref:`ImapBundle <bundle-docs-platform-imap-bundle>`",":ref:`PlatformBundle <bundle-docs-platform-platform-bundle>`",":ref:`WorkflowBundle <bundle-docs-platform-workflow-bundle>`"
+    ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`",":ref:`ImportExportBundle <bundle-docs-platform-import-export-bundle>`","",""
 
 
 .. _bundle-docs-commerce:
@@ -68,14 +68,14 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`",":ref:`InvoicePaymentBundle <bundle-docs-commerce-invoice-payment-bundle>`",":ref:`SellerDashboardBundle <bundle-docs-commerce-seller-dashboard-bundle>`"
    ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`","**M**",":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
    ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`",":ref:`MultiWebsiteBundle <bundle-docs-commerce-multi-website-bundle>`",":ref:`ShoppingListBundle <bundle-docs-commerce-shopping-list-bundle>`"
-   ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**O**",":ref:`SalesFrontendBundle <bundle-docs-commerce-sales-frontend-bundle>`"
+   ":ref:`CommerceMcpBundle <bundle-docs-commerce-commerce-mcp-bundle>`","**O**",":ref:`SalesFrontendBundle <bundle-docs-commerce-sales-frontend-bundle>`"
    ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`","**T**"
-   ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`","**P**",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
-   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PaymentBundle <bundle-docs-commerce-payment-bundle>`","**W**"
-   ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
-   "**F**",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
-   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
-   ":ref:`FrontendMcpBundle <bundle-docs-commerce-frontend-mcp-bundle>`",":ref:`PromotionBundle <bundle-docs-commerce-promotion-bundle>`",":ref:`WarehouseBundle <bundle-docs-commerce-warehouse-bundle>`"
+   ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**P**",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
+   ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`",":ref:`PaymentBundle <bundle-docs-commerce-payment-bundle>`","**W**"
+   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
+   ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
+   "**F**",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
+   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`PromotionBundle <bundle-docs-commerce-promotion-bundle>`",":ref:`WarehouseBundle <bundle-docs-commerce-warehouse-bundle>`"
    ":ref:`FrontendPdfGeneratorBundle <bundle-docs-commerce-frontend-pdf-generator-bundle>`","**R**",""
    "**I**",":ref:`RedirectBundle <bundle-docs-commerce-redirect-bundle>`",""
 
@@ -135,6 +135,7 @@ CRM Bundles
    CMSBundle <commerce/CMSBundle/index>
    CommentBundle <platform/CommentBundle/index>
    CommerceInvoiceBundle <commerce/CommerceInvoiceBundle/index>
+   CommerceMcpBundle <commerce/CommerceMcpBundle/index>
    CommerceMenuBundle <commerce/CommerceMenuBundle/index>
    ConfigBundle <platform/ConfigBundle/index>
    ConsentBundle <commerce/ConsentBundle/index>
@@ -164,7 +165,6 @@ CRM Bundles
    FilterBundle <platform/FilterBundle/index>
    FormBundle <platform/FormBundle/index>
    FrontendBundle <commerce/FrontendBundle/index>
-   FrontendMcpBundle <commerce/FrontendMcpBundle/index>
    FrontendPdfGeneratorBundle <commerce/FrontendPdfGeneratorBundle/index>
    GaufretteBundle <platform/GaufretteBundle/index>
    GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
@@ -182,7 +182,6 @@ CRM Bundles
    LoggerBundle <platform/LoggerBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
    MakerBundle <extensions/MakerBundle/index>
-   McpBundle <platform/McpBundle/index>
    MessageQueueBundle <platform/MessageQueueBundle/index>
    MicrosoftSyncBundle <platform/MicrosoftSyncBundle/index>
    MigrationBundle <platform/MigrationBundle/index>

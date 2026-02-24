@@ -39,7 +39,7 @@ The default configuration for extension with alias "oro_api":
         max_entities:         -1
 
         # The maximum number of related entities that can be retrieved by a request.
-        max_related_entities: 100
+        max_related_entities: 1000
 
         # The maximum number of entities that can be deleted by one request.
         max_delete_entities:  100
@@ -570,6 +570,97 @@ The default configuration for extension with alias "oro_calendar":
         #
         enabled_system_calendar: system
 
+oro_commerce_mcp
+________________
+
+The default configuration for extension with alias "oro_commerce_mcp":
+
+.. code-block:: yaml
+
+    oro_commerce_mcp:
+
+        # The application name to be exposed to MCP clients.
+        app:                  ~ # Required
+
+        # The application version to be exposed to MCP clients.
+        version:              ~ # Required
+
+        # Instructions in Markdown format describing MCP server purpose and usage context (for LLMs).
+        # The instructions should start with a top-level section name, for example:
+        # # Critical Rules
+        #
+        # If several bundles provide instructions with the same top-level sections, their contents will be merged.
+        instructions:         null
+
+        # The maximum number of items returned per MCP list request.
+        pagination_limit:     50
+
+        # MCP HTTP transport configuration.
+        http:                 # Required
+
+            # MCP HTTP endpoint path.
+            path:                 ~ # Required
+
+            # The authorization server scopes required for accessing MCP server.
+            scopes:               [] # Required
+
+            # MCP session store configuration.
+            session:
+
+                # The session store type.
+                store:                file # One of "cache"; "memory"; "file"
+
+                # The prefix for cache store.
+                cache_prefix:         ~
+
+                # The directory for file store.
+                directory:            ~
+
+                # The session TTL in seconds.
+                ttl:                  3600
+
+        # MCP services discovery configuration.
+        discovery:
+
+            # Example:
+            # - { base_path: Acme\Bundle\McpBundle\AcmeMcpBundle, scan_dirs: [Mcp] }
+
+            # Prototype
+            -
+
+                # The base path for scanning directories. Also can be PHP class.
+                base_path:            ~
+
+                # The list of directories (relative to the base path) to scan.
+                scan_dirs:            [] # Required
+
+                # The list of directories (relative to the base path) to exclude from the scan.
+                exclude_dirs:         []
+
+        # API related configuration.
+        api:                  # Required
+
+            # The API type that is used to group and protect MCP capabilities.
+            type:                 ~ # Required
+
+            # The human-readable API name.
+            name:                 ~ # Required
+
+            # Indicates whether API is storefront or back-office.
+            frontend:             false
+
+            # The request type for API that is used by MCP tools based on API.
+            request_type:         []
+
+            # All supported API configuration files for MCP tools based on API.
+            config_files:         []
+
+            # A map between API and MCP data types.
+            data_types:
+
+                # Prototype
+                name:                 ~
+
 oro_contact
 ___________
 
@@ -814,66 +905,6 @@ The default configuration for extension with alias "oro_frontend":
                     - X-Foo
                     - X-Bar
 
-oro_frontend_mcp
-________________
-
-The default configuration for extension with alias "oro_frontend_mcp":
-
-.. code-block:: yaml
-
-    oro_frontend_mcp:
-
-        # The application name to be exposed to storefront MCP clients.
-        app:                  frontend-app
-
-        # The application version to be exposed to storefront MCP clients.
-        version:              0.0.1
-
-        # Instructions describing storefront MCP server purpose and usage context (for LLMs).
-        instructions:         null
-
-        # The maximum number of items returned per storefront MCP list request.
-        pagination_limit:     50
-
-        # Storefront MCP HTTP transport configuration.
-        http:
-
-            # Storefront MCP HTTP endpoint path.
-            path:                 /_mcp_frontend
-
-            # Storefront MCP session store configuration.
-            session:
-
-                # The session store type.
-                store:                file # One of "cache"; "memory"; "file"
-
-                # The prefix for cache store.
-                cache_prefix:         frontend_mcp_
-
-                # The directory for file store.
-                directory:            '%kernel.cache_dir%/mcp-frontend-sessions'
-
-                # The session TTL in seconds.
-                ttl:                  3600
-
-        # Storefront MCP services discovery configuration.
-        discovery:
-
-            # Example:
-            # - { base_path: Acme\Bundle\McpBundle\AcmeMcpBundle, scan_dirs: [McpFrontend] }
-
-            # Prototype
-            -
-
-                # The base path for scanning directories. Also can be PHP class name.
-                base_path:            ~
-
-                # The list of directories (relative to the base path) to scan.
-                scan_dirs:            []
-
-                # The list of directories (relative to the base path) to exclude from the scan.
-                exclude_dirs:         []
-
 oro_gaufrette
 _____________
 
@@ -995,66 +1026,6 @@ The default configuration for extension with alias "oro_maintenance":
             code:                 503
             status:               'Service Temporarily Unavailable'
             exception_message:    'Service Temporarily Unavailable'
-
-oro_mcp
-_______
-
-The default configuration for extension with alias "oro_mcp":
-
-.. code-block:: yaml
-
-    oro_mcp:
-
-        # The application name to be exposed to MCP clients.
-        app:                  app
-
-        # The application version to be exposed to MCP clients.
-        version:              0.0.1
-
-        # Instructions describing MCP server purpose and usage context (for LLMs).
-        instructions:         null
-
-        # The maximum number of items returned per MCP list request.
-        pagination_limit:     50
-
-        # MCP HTTP transport configuration.
-        http:
-
-            # MCP HTTP endpoint path.
-            path:                 /_mcp
-
-            # MCP session store configuration.
-            session:
-
-                # The session store type.
-                store:                file # One of "cache"; "memory"; "file"
-
-                # The prefix for cache store.
-                cache_prefix:         mcp_
-
-                # The directory for file store.
-                directory:            '%kernel.cache_dir%/mcp-sessions'
-
-                # The session TTL in seconds.
-                ttl:                  3600
-
-        # MCP services discovery configuration.
-        discovery:
-
-            # Example:
-            # - { base_path: Acme\Bundle\McpBundle\AcmeMcpBundle, scan_dirs: [Mcp] }
-
-            # Prototype
-            -
-
-                # The base path for scanning directories. Also can be PHP class.
-                base_path:            ~
-
-                # The list of directories (relative to the base path) to scan.
-                scan_dirs:            []
-
-                # The list of directories (relative to the base path) to exclude from the scan.
-                exclude_dirs:         []
 
 oro_message_queue
 _________________
