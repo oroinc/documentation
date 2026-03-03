@@ -397,11 +397,19 @@ Stale Jobs
 
 You cannot create two unique jobs with the same name, so if one unique job is unable to finish its work, it can block another job. To handle this, use **stale jobs**.
 
-By default, `JobProcessor` uses `JobConfigurationProvider`, so a unique job will be “staled” after 1800 seconds, which is the “time_before_stale“ default value.
+A job is considered stale when one of the following conditions is met:
 
-In this case, if the second unique job with the same name is created, but the previous job has not been updated for more than one hour and has not started a child, it gets the ``Job::STATUS_STALE`` status, and a new job is created.
+* **Inactivity timeout** (``time_before_stale``): the job has not been updated for longer than the configured threshold and has not started a child. Default value is 1800 seconds.
 
-In addition, if the processor tries to finish a “stale” job, it is removed.
+* **Redelivery loop** (``redelivery_max_runtime``): the job has been running longer than the configured threshold and all remaining active children are stuck in ``Job::STATUS_FAILED_REDELIVERED`` status. Disabled by default (set to ``-1``).
+
+Both checks use ``JobConfigurationProvider`` with their respective configurations.
+
+.. note::
+
+    The **inactivity timeout** marks a job as stale if there has been no activity for a prolonged period, regardless of child job statuses. The **redelivery loop** check applies when all children have completed successfully except one or more that failed and are being redelivered indefinitely.
+
+When a stale job is detected and a new unique job with the same name is created, the old job gets the ``Job::STATUS_STALE`` status. In addition, if the processor tries to finish a "stale" job, it is removed.
 
 If you do not wish for that job to be staled, use `NullJobConfigurationProvider` where the `getTimeBeforeStaleForJobName` method returns null:
 
@@ -421,15 +429,19 @@ If you do not wish for that job to be staled, use `NullJobConfigurationProvider`
     $jobProcessor = new JobProcessor(/* arguments */);
     $jobProcessor->setJobConfigurationProvider(new NullJobConfigurationProvider());
 
-To configure a specific job with a custom “time_before_stale” value, use the following configuration:
+To configure custom values for “time_before_stale and “redelivery_max_runtime”, use the following configuration:
 
 .. code-block:: yaml
 
    oro_message_queue:
        time_before_stale:
+           default: 1800
            jobs:
                'oro_dotmailer:export_contacts_status_update': 3600
-
+       redelivery_max_runtime:
+           default: -1 # disabled by default
+           jobs:
+               'some_job_type_name': 600
 
 Jobs Statuses
 -------------
