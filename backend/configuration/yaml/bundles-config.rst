@@ -975,6 +975,27 @@ The default configuration for extension with alias "oro_message_queue":
                 # Prototype
                 job_name:             ~
 
+        # The maximum time a job can run when all remaining active children
+        # are stuck in FAILED_REDELIVERED status (redelivery loop).
+        # If the runtime exceeds this value, the job is marked as "stale".
+        redelivery_max_runtime:
+
+            # Examples:
+            # default:           X
+            # jobs:              { '# some_job_type_name': 'Y' }
+
+            # The number of seconds since job start to qualify a job stuck
+            # in a redelivery loop as stale.
+            # If this attribute is not set or set to -1, this check is disabled.
+            default:              ~
+
+            # The number of seconds for specific job types.
+            # The key can be a whole job name or a part of it from the beginning of string to any "."
+            jobs:
+
+                # Prototype
+                job_name:             ~
+
 oro_microsoft_sync
 __________________
 
