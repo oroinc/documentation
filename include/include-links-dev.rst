@@ -6607,3 +6607,8 @@ Links (Dev)
 .. |mcp/sdk| raw:: html
 
    <a href="https://github.com/modelcontextprotocol/php-sdk" target="_blank">mcp/sdk</a>
+
+
+.. |iconly.io| raw:: html
+
+    <a href="https://iconly.io/tools/svg-convert-stroke-to-fill" target="_blank">iconly.io</a>
