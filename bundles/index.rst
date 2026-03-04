@@ -89,9 +89,9 @@ Documentation that relates to extensions' bundles is collected below. You can do
 .. csv-table::
 
    "**A**",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
-   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
-   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",":ref:`StripePaymentBundle <bundle-docs-extensions-stripe-payment-bundle>`"
-   "**D**","**I**","**P**",":ref:`StorefrontAgentBundle <bundle-docs-extensions-storefront-agent-bundle-commands>`"
+   ":ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripePaymentBundle <bundle-docs-extensions-stripe-payment-bundle>`"
+   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",":ref:`StorefrontAgentBundle <bundle-docs-extensions-storefront-agent-bundle-commands>`"
+   "**D**","**I**","**P**",""
    ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`",""
 
 CRM Bundles
@@ -217,7 +217,6 @@ CRM Bundles
    ShoppingListBundle <commerce/ShoppingListBundle/index>
    SidebarBundle <platform/SidebarBundle/index>
    StorefrontAgentBundle <extensions/StorefrontAgentBundle/commands>
-   StripeBundle <extensions/StripeBundle/index>
    StripePaymentBundle <extensions/StripePaymentBundle/index>
    SyncBundle <platform/SyncBundle/index>
    TagBundle <platform/TagBundle/index>

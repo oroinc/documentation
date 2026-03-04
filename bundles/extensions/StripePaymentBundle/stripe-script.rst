@@ -24,7 +24,6 @@ These parameters are provided by the ``\Oro\Bundle\StripePaymentBundle\StripeScr
 Out-of-the-box there are following providers:
 
 * ``\Oro\Bundle\StripePaymentBundle\StripeScript\Provider\StripePaymentElementStripeScriptProvider`` - provides the Stripe Script parameters for the Stripe Payment Element integration.
-* ``\Oro\Bundle\StripePaymentBundle\StripeScript\Provider\StripeCardElementStripeScriptProvider`` - adapter for the legacy Stripe Card Element integration. It is used to ensure the Stripe Script still works for the legacy Stripe Card Element payment method provided by OroStripeBundle.
 * ``\Oro\Bundle\StripePaymentBundle\StripeScript\Provider\StripeScriptEnabledProvider`` - provides an ability to explicitly enable the Stripe Script on the page.
 
 

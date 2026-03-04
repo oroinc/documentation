@@ -164,7 +164,7 @@ Example:
       }
     }
 
-.. note:: Please be aware that this is currently not applicable to multi-organization setups like OroMarketplace due to differences in how shipping is managed across multiple organizations. 
+.. note:: Please be aware that this is currently not applicable to multi-organization setups like OroMarketplace due to differences in how shipping is managed across multiple organizations.
 
 Step 3: Validate Checkout Readiness
 -----------------------------------
@@ -204,27 +204,31 @@ On successful completion of the payment process, the checkout process is complet
 Stripe Payment
 ^^^^^^^^^^^^^^
 
-1. Submit Stripe payment details by making a **POST** request to ``/api/checkouts/{id}/paymentInfoStripe``. Stripe PaymentMethod ID (``pm_stripepaymentmethodid`` in the example) should be received by your application from |Stripe Payment Element| or |Stripe API - Payment Methods|.
+1. Submit Stripe payment details by making a **POST** request to ``/api/checkouts/{id}/paymentInfoStripePaymentElement``. The Stripe Confirmation Token ID (``ctoken_1Pxxxxxxxxxxxxxxxxxxxxxx`` in the example) and the payment method type must be provided. The confirmation token should be generated on the client side using the |Stripe Payment Element|.
+
+.. note::
+    If you are using the Stripe.js Payment Element on the frontend to generate the confirmation token, you **must** provide the ``setupFutureUsage: 'off_session'`` option during the confirmation step. This ensures that the payment method can be saved and reused for off-session charges if necessary.
 
 Example:
 
 .. code-block:: http
 
-    POST /api/checkouts/1/paymentInfoStripe HTTP/1.1
+    POST /api/checkouts/1/paymentInfoStripePaymentElement HTTP/1.1
 
     {
       "meta": {
-        "stripePaymentMethodId": "pm_stripepaymentmethodid"
+        "confirmationTokenId": "ctoken_1Pxxxxxxxxxxxxxxxxxxxxxx",
+        "paymentMethodType": "card"
       }
     }
 
-2. Execute the payment by making a **POST** request to ``/api/checkouts/{id}/paymentStripe``.
+2. Execute the payment by making a **POST** request to ``/api/checkouts/{id}/paymentStripePaymentElement``.
 
 Example:
 
 .. code-block:: http
 
-    POST /api/checkouts/1/paymentStripe HTTP/1.1
+    POST /api/checkouts/1/paymentStripePaymentElement HTTP/1.1
 
     {
       "meta": {
@@ -238,7 +242,7 @@ On successful completion, the checkout process is concluded, and an :ref:`order 
 
 If the payment cannot be completed, the API will return error responses containing the information necessary to complete the payment process.
 
-If additional steps (such as 3D Secure authentication) are required, they must be handled within the application before making a follow-up **POST** request to ``/api/checkouts/{id}/paymentStripe`` to finalize the payment. You should follow the documentation provided by the payment method service for more information on how to proceed and use the data provided.
+If additional steps (such as 3D Secure authentication) are required, they must be handled within the application before making a follow-up **POST** request to ``/api/checkouts/{id}/paymentStripePaymentElement`` to finalize the payment. You should follow the documentation provided by the payment method service for more information on how to proceed and use the data provided.
 
 PayPal Express Payment
 ^^^^^^^^^^^^^^^^^^^^^^
