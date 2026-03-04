@@ -10,6 +10,7 @@ Manage Landing Pages in the Back-Office
 .. image:: /user/img/marketing/landing_pages/LandingPagesSample.png
    :alt: A sample of a landing page
 
+While there are a number of default editable landing pages out-of-the-box (e.g., homepage, accessibility, about, etc.), you can also create your own from scratch.
 
 .. _user-guide--landing-pages-create:
 

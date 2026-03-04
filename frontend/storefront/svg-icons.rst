@@ -129,6 +129,22 @@ Run the following console command to update the SVG sprite:
 
    php bin/console oro:assets:build
 
+Troubleshoot Display Icons Issues
+---------------------------------
+
+1. The Added icon has incorrect size or not fully displayed
+
+.. note::
+    Make sure that your icon has set `with`, `height` and `viewBox` attributes properly.
+
+.. code-block:: html
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"></svg>
+
+2. The copied icon from `Figma` is not shown properly.
+
+.. note::
+    Convert SVG strokes to fills. It is possible to use online tools such as |iconly.io|
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

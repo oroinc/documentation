@@ -20,6 +20,11 @@ Watch for visual focus indicators: you can use the Tab key for elements that lig
 .. image:: /user/img/concept-guides/accessibility/blue-tab_yellow-arrows.png
    :alt: Blue for tab element vs yellow for arrows
 
+For users who rely on keyboard-only interaction, OroCommerce also provides a dedicated accessibility reference page available at ``/accessibility`` in the storefront. This page explains how to navigate and operate the application without using a mouse, including commonly used keyboard commands, navigation patterns, and interaction behavior across menus, forms, and dialogs.
+
+.. image:: /user/img/concept-guides/accessibility/accessibility-page.png
+   :alt: Illustration of the /accessibility page in the OroCommerce storefront
+
 Screen Readers
 --------------
 

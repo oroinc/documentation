@@ -6599,6 +6599,11 @@ Links (Dev)
 
     <a href="https://oroinc.com/b2b-ecommerce/editions/#features-list" target="_blank">feature chart</a>
 
+.. |iconly.io| raw:: html
+
+    <a href="https://iconly.io/tools/svg-convert-stroke-to-fill" target="_blank">iconly.io</a>
+
+
 .. |scheduler property| raw:: html
 
     <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scheduler" target="_blank">Window: scheduler property</a>
