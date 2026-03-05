@@ -82,14 +82,13 @@ The payment methods that were based on this integration are no longer usable in 
    :maxdepth: 2
    :hidden:
 
-   Check/Money Order Service <check-money-order/index>
+   Check/Money Order <check-money-order/index>
    Payment Terms <payment-terms/index>
    OroPay <oropay/index>
-   PayPal Payment Services <paypal-services/index>
-   Authorize.Net Payments Services <authorizenet/index>
-   InfinitePay Payment Service <infinitepay/index>
-   Ingenico Payment Service <ingenico/index>
+   PayPal <paypal-services/index>
+   Authorize.Net <authorizenet/index>
+   InfinitePay <infinitepay/index>
+   Ingenico <ingenico/index>
    Stripe <stripe/index>
-   Payments at Checkout <checkout/index>
 
 ..  CyberSource Payment Service <cybersource/index>

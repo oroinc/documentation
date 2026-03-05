@@ -525,5 +525,6 @@ bundles/extensions/ApruveBundle/index /bundles/index
 backend/setup/dev-environment/orodevbox /backend/setup/dev-environment
 bundles/commerce/WebsiteElasticSearchBundle/upgrade-to-es8 /bundles/commerce/WebsiteElasticSearchBundle/upgrade-to-es9
 bundles/platform/ElasticSearchBundle/upgrade-to-es8 /bundles/platform/ElasticSearchBundle/upgrade-to-es9
-bundles/commerce/FrontendMcpBundle /bundles/commerce/CommerceMcpBundle
-bundles/platform/McpBundle /bundles/commerce/CommerceMcpBundle
+bundles/commerce/FrontendMcpBundle/index /bundles/commerce/CommerceMcpBundle
+bundles/platform/McpBundle/index /bundles/commerce/CommerceMcpBundle
+bundles/extensions/StripeBundle/index /bundles/extensions/StripePaymentBundle

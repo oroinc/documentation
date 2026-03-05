@@ -1,66 +1,47 @@
 .. _user-guide--payment--payment-providers-stripe--overview:
+.. _user-guide--payment--payment-providers-stripe--element:
 
-Manage Stripe (Legacy) Payment Service in the Back-Office
-=========================================================
+Configure Stripe Payment Element Integration in the Back-Office
+===============================================================
 
 .. hint:: This section is part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides a general understanding of the payment concept in OroCommerce.
 
-Stripe is a payment service provider that helps accept online payments from customers in the OroCommerce storefront. OroCommerce offers two types of Stripe integrations, Stripe Legacy and Stripe Integration Element.
-
-Stripe (Legacy) integration supports order splitting, enabling you to capture, cancel, or refund (fully or partially) payments for each sub-order separately. It also provides a solution to identify potential fraudulent activity and prevent placement of fraudulent orders. This integration follows the standard OroCommerce flow, where the creating of integration is followed by creating a payment rule to connect the payment method to the storefront.
-
-Stripe Integration Element, on the other hand, is an additional integration that supports the invoice functionality and allows customer users to pay their invoices in the OroCommerce storefront. Once created, this integration must be selected as the payment method of choice in the :ref:`system configuration <configuration--guide--commerce--configuration--sales-invoices>` (available on all configuration levels).
+Stripe is a payment service provider that helps accept online payments from customers in the OroCommerce storefront. The Stripe Payment Element integration allows customers to pay both invoices and orders directly at checkout, offering a wide range of payment options in a single, unified UI. This includes credit and debit cards, local payment methods in international markets, payment wallets, and buy-now-pay-later options. The integration also supports order splitting, enabling you to capture, cancel, or refund (fully or partially) payments for each sub-order separately, while providing tools to detect potential fraudulent activity and prevent fraudulent orders.
 
 .. note::
-    See a short demo on |how to configure integration with Stripe| (Legacy) or keep reading the step-by-step guidance below.
+    See a short demo on |how to configure integration with Stripe| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/CUjmniejCQU?si=xuUwGKosDUQbsgRZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Integration Prerequisites
--------------------------
-
 .. note:: Stripe Integration comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the |Stripe Integration| package.
 
-To start using Stripe with the OroCommerce application:
+To start using Stripe Payment Element with the OroCommerce application:
 
 1. Register with |Stripe| to receive the test credentials.
 
    .. image:: /user/img/system/integrations/stripe/stripe-account-test.png
       :alt: Test credentials under the Stripe account
 
-2. To get the live credentials and start accepting payments, you need to |add your business details| to view live keys.
+2. To get the live credentials and start accepting payments, |add your business details| to view live keys.
+3. In the main menu of the OroCommerce back-office, navigate to **System > Integrations > Manage Integrations**.
+4. Click **Create Integration** on the top right.
+5. Provide the following information in the form:
 
-Stripe Legacy Integration
--------------------------
+   .. image:: /user/img/system/config_commerce/sales/stripe-integration-element.png
+      :alt: Create an integration with Stripe Payment Element in the back-office
 
-Configure Integration Settings in the Back-Office
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To configure the integration between Stripe and OroCommerce, follow the steps outlined below:
-
-1. Navigate to **System > Integrations > Manage Integrations** in the main menu of the OroCommerce back-office.
-2. Click **Create Integration** on the top right.
-3. Provide the following information in the form:
-
-   .. image:: /user/img/system/integrations/stripe/create-stripe-integration.png
-      :alt: Create an integration with Stripe in the back-office
-
-   * **Type** - Select *Stripe* from the drop-down list.
+   * **Type** - Select *Stripe Payment Element* from the drop-down list.
    * **Name** - Provide the payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
-   * **Labels** - The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the icon next to the field.
-   * **Short labels** - The payment method name/label that is shown in the order details in the OroCommerce back-office and storefront after the order is submitted. To translate the label into other languages, click on the icon next to the field.
-   * **Apple Pay/Google Pay Labels** - This label is used at checkout in the storefront, and in the order history and payment rules in the back-office for the optional Apple Pay/Google Pay payment method. When using Apple Pay, please make sure to upload the Apple Pay domain verification file in the configuration of the website(s) where Apple Pay will be used (see :ref:`Apple Pay Domain Verification <user-guide--system-configuration--commerce-sales-checkout-website>`). Please note that Apple Pay is a payment method exclusive to the Safari browser and Google Pay is exclusive for the Chrome browser.
-
-     .. image:: /user/img/system/integrations/stripe/stripe-apple-google-pay.png
-        :alt: ApplePay and Google Pay payment method on the checkout page in the storefront
-
    * **API Public Key** - An identifier that helps authenticate your account. It refers to **Publishable key** on the Stripe side. You must use separate keys for the test and production environments.
    * **API Secret Key** - A pre-shared key used to cipher payment information. It refers to **Secret key** on the Stripe side. You must use separate keys for the test and production environments.
-   * **Webhook Signing Secret** - A key that helps identify your webhook endpoints. Webhooks help synchronize actions and payment transactions between Oro and Stripe. They are used to notify the Oro application when an event happens in the Stripe account (e.g., capturing the payment).
+   * **Payment Method Name** - The name for the payment method in back-office, e.g., *Stripe Payment Element*.
+   * **Payment Method Label** - The label for the payment method in storefront, e.g., *Stripe Payment*.
+   * **Payment Method Short Label** - The short variant of the label for payment method in storefront, e.g., *Stripe*.
+   * **Create Webhook Endpoint Automatically** - If enabled, the system automatically creates and configures a Stripe webhook endpoint. This ensures real-time payment events (e.g., successful charges, refunds, or failures) are sent to your application. If you choose to create webhook manually, please provide :ref:`Webhook Signing Secret <stripe-integration-webhook-signing-secret>`.
 
-.. _stripe-integration-webhook-signing-secret:
+     .. _stripe-integration-webhook-signing-secret:
 
      .. hint::
 
@@ -81,59 +62,51 @@ To configure the integration between Stripe and OroCommerce, follow the steps ou
         .. image:: /user/img/system/integrations/stripe/signing-secret.png
            :alt: Highlighting the signing secret in the Stripe dashboard
 
+   * **Payment Actions for Supported Methods** --- Select one of the options for credit cards:
 
-   * **Payment Actions** --- Select one of the options for credit cards:
+     - *Manual (Authorize)* --- The payment gateway checks with the cardholder's issuing bank that the submitted card is valid and that there are sufficient funds to cover the transaction. The required amount is placed on hold on the card **for 7 days** but not yet charged. When you click **Capture** in the order details (Sales > Orders), the customer is charged the given amount. Payment status changes from **Payment Authorized** to **Paid in Full**. If you do not capture the funds within 7 days, the funds are returned to the customer, and the payment status changes to **Canceled**.
 
-      - *Manual (Authorize)* --- The payment gateway checks with the cardholder's issuing bank that the submitted card is valid and that there are sufficient funds to cover the transaction. The required amount is placed on hold on the card **for 7 days** but not yet charged. When you click **Capture** in the order details (Sales > Orders), the customer is charged the given amount. Payment status changes from **Payment Authorized** to **Paid in Full**. If you do not capture the funds within 7 days, the funds are returned to the customer, and the payment status changes to **Canceled**.
+     - *Automatic (Capture)* --- The payment gateway checks the card with the cardholder's issuing bank and, if everything is OK, initiates a money transfer from the card to your account. The customer is charged the given amount in full automatically.
 
-         .. image:: /user/img/system/integrations/stripe/authorize-method.png
-            :alt: Payment is authorized and must be captured to charge the amount
-
-      - *Automatic (Capture)* --- The payment gateway checks the card with the cardholder's issuing bank and, if everything is OK, initiates a money transfer from the card to your account. The customer is charged the given amount in full automatically.
-
-         .. image:: /user/img/system/integrations/stripe/capture-method.png
-            :alt: Payment is captured automatically
-
-   * **User Monitoring** --- Select the option to enable Stripe to fight fraud by detecting suspicious behavior. When enabled, the Stripe.js script is loaded on all storefront pages to provide real-time fraud protection.
-   * **Automatically Re-Authorize Every 6 Days 20 Hours** --- By default, you need to capture the reserved funds within 7 days, otherwise, the funds are released. Select the option to enable Oro to automatically re-authorize the payments placed on hold every 6 days 20 hours to prevent payment cancellation if the authorization expires. Keep in mind that expired payments can only be re-authorized once. If re-authorization fails, such payment transaction cannot be re-authorized again.
-   * **Re-Authorization Errors Notification Email** --- The email address which is used to send notifications on failed re-authorization attempts.
-   * **Status** --- Set the status to *Active* to enable the integration.
-   * **Default Owner** - A user who is responsible for this integration and manages it.
+   * **User Monitoring** - Select the option to enable Stripe to fight fraud by detecting suspicious behavior. When enabled, the Stripe.js script is loaded on all storefront pages to provide real-time fraud protection.
+   * **Status** - Select whether the integration is active or inactive.
+   * **Default Owner** - A user responsible for this integration and its management.
 
 .. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
 
-4. Click **Save and Close**.
+6. Click **Save and Close**
 
-.. important:: Once the integration with Stripe is created, the next step is to :ref:`set up a payment rule <sys--payment-rules>` under **System > Payment Rules** and add your integration to it to display this method to the customers at checkout.
+Once the integration is saved, you can connect it as a payment method in the :ref:`configuration settings for Invoices <configuration--guide--commerce--configuration--sales-invoices>` or create :ref:`payment rules <sys--payment-rules>` to enable it for order payments in the storefront checkout.
 
-Checkout with Stripe
-^^^^^^^^^^^^^^^^^^^^
+Connect Stripe as Payment Method for Invoice Payments
+-----------------------------------------------------
 
-Once the payment methods are linked to a payment rule, they become available at checkout in the OroCommerce storefront.
+Stripe Payment Element can be used to pay invoices in the OroCommerce storefront. To set it up, first create a Stripe Payment Element integration under **System > Integrations > Manage Integrations**, as described above. Then, add this integration as a **Payment Method** in the Invoices configuration settings under **System > Commerce > Sales > Invoices** at the level you want it to be available (:ref:`global <configuration--guide--commerce--configuration--sales-invoices>`, :ref:`per organization <user-guide--system-configuration--commerce-sales-invoices-org>`, or :ref:`per website <user-guide--system-configuration--commerce-sales-invoices-per-website>`).
 
-A customer must enter a card number, expiration date, CVC, and a ZIP code (if required) to be able to process the payment via the Stripe service.
+.. image:: /user/img/system/integrations/stripe/connect-stripe-to-invoices.png
+   :alt: Illustration of the system configuration settings where you can connect the Stripe payment element to the Invoices functionality
 
-.. image:: /user/img/system/integrations/stripe/stripe-checkout.png
-   :alt: View the Stripe payment method at checkout
+Once configured, customers will see Stripe as a payment option when paying invoices.
 
-The system assigns a reference code to each submitted order. The code is used to identify the order on the Stripe side. You can find the reference code on the order details page, under the **Payments** section.
+Connect Stripe as Payment Method for Storefront Checkout
+--------------------------------------------------------
 
-.. image:: /user/img/system/integrations/stripe/stripe-reference-code.png
-   :alt: Illustrating how to find the order on the Stripe side using the reference code
+Once the payment method is added to a :ref:`payment rule <sys--payment-rules>`, it becomes available at checkout in the OroCommerce storefront. When a customer picks Stripe Payment Element, a modal pops up with the Stripe widget after the final step of the checkout, showing the most relevant payment options—credit and debit cards, wallets, local methods, and even buy-now-pay-later—based on their location, currency, and order total. When they click **Pay Order**, the payment goes through securely, with 3DS and SCA handled automatically.
 
-Sub-Order Checkout with Stripe
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: /user/img/system/integrations/stripe/stripe-payment-method-checkout.png
+   :alt: Stripe Payment Element modal at checkout, showing relevant payment options and the Pay Order button
 
-If the :ref:`order split <user-guide--system-configuration--commerce-sales-multi-shipping>` is enabled for the application, then each sub-order is processed separately by Stripe. You can charge, cancel, or refund (full or partially) each individual sub-order independently from their primary order.
+Sub-Order Checkout with Stripe Payment Element
+----------------------------------------------
 
-A customer must enter a card number, expiration date, CVC, and a ZIP code (if required) to be able to process the payment via the Stripe service.
+If the :ref:`order split <user-guide--system-configuration--commerce-sales-multi-shipping>` is enabled for the application, then each sub-order is processed separately by Stripe Payment Element.
 
 .. image:: /user/img/system/integrations/stripe/sub-order-checkout.png
    :alt: A sample checkout with the order split to two sub-orders
 
 Once submitted, the system splits the order to the respective sub-orders, assigning them the corresponding reference codes. The codes are used to identify the order on the Stripe side. You can find the details on the primary or sub-order details page, under the **Payments** section.
 
-.. image:: /user/img/system/integrations/stripe/sub-order-reference-codes.png
+ .. image:: /user/img/system/integrations/stripe/sub-order-reference-codes.png
    :alt: Highlighting reference codes for both primary order and its sub-orders
 
 To **capture** an authorized payment:
@@ -141,12 +114,10 @@ To **capture** an authorized payment:
 1. From the primary order details page --- Select the sub-order tab under the **Sub-Orders Payment History** menu and click |IcCapture|.
 2. From the sub-order details page --- Click |IcCapture| at the end of the row under the **Payments** section.
 
-
 To **cancel** an authorized payment:
 
 1. From the primary order details page --- Select the sub-order tab under the **Sub-Orders Payment History** menu and click **X**.
 2. From the sub-order details page --- Click **X** at the end of the row under the **Payments** section.
-
 
 To **refund** (partially or fully) any successful payment:
 
@@ -162,57 +133,6 @@ To **refund** (partially or fully) any successful payment:
 
 You can issue more than one refund, but you cannot refund a total greater than the original charge amount.
 
-.. _user-guide--payment--payment-providers-stripe--element:
-
-Stripe Integration Element (for Invoices)
------------------------------------------
-
-Stripe Integration Element is designed to handle invoice payments in the OroCommerce storefront, and is separate from the Stripe Legacy functionality.
-
-To connect this element to the storefront, you need to:
-
-1. Create a Stripe Integration Element integration under **System > Manage Integrations**.
-2. Add this element as a payment method to the Invoices :ref:`configuration settings <configuration--guide--commerce--configuration--sales-invoices>` on the required level.
-
-Configure Integration in the Back-Office
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To configure the integration, follow the steps outlined below:
-
-1. Navigate to **System > Integrations > Manage Integrations** in the main menu of the OroCommerce back-office.
-2. Click **Create Integration** on the top right.
-3. Provide the following information in the form:
-
-   .. image:: /user/img/system/config_commerce/sales/stripe-integration-element.png
-      :alt: Create an integration with Stripe Element in the back-office
-
-   * **Type** - Select *Stripe Integration Element* from the drop-down list.
-   * **Name** - Provide the payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
-   * **API Public Key** - An identifier that helps authenticate your account. It refers to **Publishable key** on the Stripe side. You must use separate keys for the test and production environments.
-   * **API Secret Key** - A pre-shared key used to cipher payment information. It refers to **Secret key** on the Stripe side. You must use separate keys for the test and production environments.
-   * **Payment Method Name** - The name for payment method to use in back-office, e.g., *Stripe Payment Element*.
-   * **Payment Method Label** - The label for payment method to use in storefront, e.g., *Stripe Payment*.
-   * **Payment Method Short Label** - The short variant of the label for payment method to use in storefront, e.g., *Stripe*.
-   * **Create Webhook Endpoint Automatically** - If enabled, the system automatically creates and configures a Stripe webhook endpoint. This ensures real-time payment events (e.g., successful charges, refunds, or failures) are sent to your application. If you choose to create webhook manually, please provide :ref:`Webhook Signing Secret <stripe-integration-webhook-signing-secret>`.
-   * **Payment Actions for Supported Methods** --- Select one of the options for credit cards:
-
-     - *Manual (Authorize)* --- The payment gateway checks with the cardholder's issuing bank that the submitted card is valid and that there are sufficient funds to cover the transaction. The required amount is placed on hold on the card **for 7 days** but not yet charged. When you click **Capture** in the order details (Sales > Orders), the customer is charged the given amount. Payment status changes from **Payment Authorized** to **Paid in Full**. If you do not capture the funds within 7 days, the funds are returned to the customer, and the payment status changes to **Canceled**.
-
-     - *Automatic (Capture)* --- The payment gateway checks the card with the cardholder's issuing bank and, if everything is OK, initiates a money transfer from the card to your account. The customer is charged the given amount in full automatically.
-
-   * **User Monitoring** - Select the option to enable Stripe to fight fraud by detecting suspicious behavior. When enabled, the Stripe.js script is loaded on all storefront pages to provide real-time fraud protection.
-   * **Status** - Select whether the integration is active or inactive.
-   * **Default Owner** - A user responsible for this integration and its management.
-
-.. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
-
-4. Click **Save and Close**
-
-Once the integration is saved, connect it as a payment method in the :ref:`configuration settings for Invoices <configuration--guide--commerce--configuration--sales-invoices>`:
-
-.. image:: /user/img/system/config_commerce/sales/invoice-global-config-payment-method.png
-   :alt: Connecting Stripe Element as a payment method in the configuration settings for Invoices
-
 **Related Topics**
 
 * :ref:`Payment Configuration Concept Guide <user-guide--payment>`
@@ -221,7 +141,6 @@ Once the integration is saved, connect it as a payment method in the :ref:`confi
 * :ref:`Invoices <user-guide--sales--invoices>`
 * :ref:`Invoice Configuration Settings <configuration--guide--commerce--configuration--sales-invoices>`
 * :ref:`Invoices in the Storefront <frontstore-guide--invoices>`
-
 
 
 .. include:: /include/include-links-user.rst

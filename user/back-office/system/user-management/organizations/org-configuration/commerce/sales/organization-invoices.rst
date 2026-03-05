@@ -1,6 +1,5 @@
 .. _user-guide--system-configuration--commerce-sales-invoices-org:
 
-
 Configure Invoice Settings per Organization
 ===========================================
 

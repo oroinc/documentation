@@ -61,8 +61,8 @@ The shipping methods created due to this integration are no longer usable in Oro
    :hidden:
    :maxdepth: 2
 
-   Flat Rate Shipping Integration <flat-rate>
-   Fixed Product Shipping Cost Integration <fixed-shipping>
-   UPS Shipping Integration <ups>
-   FedEx Shipping Integration <fedex>
-   DPD Shipping Integration <dpd>
+   Flat Rate Shipping <flat-rate>
+   Fixed Product Shipping Cost <fixed-shipping>
+   UPS <ups>
+   FedEx <fedex>
+   DPD <dpd>
