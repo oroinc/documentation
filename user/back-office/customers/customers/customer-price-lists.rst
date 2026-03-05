@@ -22,7 +22,7 @@ To change the price list settings for the customer:
 
       * *Customer Group* --- OroCommerce uses :ref:`Price Lists from the customer group configuration <customers--customer-groups--edit--price-lists>` to calculate the prices shown in the storefront.
 
-      * *Current customer only* --- OroCommerce uses the configurations (per website) in the current customer group for price calculation.
+      * *Current customer only* --- OroCommerce uses the configurations (per website) in the current customer for price calculation.
 
    b) To add a price list, click **+ Add Price List** and select the price list in the newly added line. After you start typing the price list name, the list of suggestions appears. Press **Enter** or click the suggested value to add the price list.
 
