@@ -266,3 +266,11 @@ Links (Cloud)
 .. |ASN| raw:: html
 
    <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)" target="_blank">ASN</a>
+
+.. |OroCloud Architecture| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/architecture/#schedule-and-backup-retention-policy" target="_blank">OroCloud Architecture</a>
+
+.. |Environment Plans| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/environments/#environment-plans" target="_blank">Environment Plans</a>

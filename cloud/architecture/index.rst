@@ -129,6 +129,8 @@ Backups and Restore
 
 Backups of OroCloud environment include the database dump, media files, and either the application source code or the repository commit hash that may be used to retrieve the code.
 
+.. _cloud_architecture-schedule-backup-retention-policy:
+
 Schedule and Backup Retention Policy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
