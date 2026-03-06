@@ -36,9 +36,11 @@ Under **Sharing Records**, activate or deactivate the ability to share entity re
 User Provisioning
 -----------------
 
+.. hint:: This section is part of the :ref:`Identity Management Concept Guide <concept-guide--identity-management>` topic that provides a general understanding of external identity systems supported by OroCommerce.
+
 .. note:: The SCIM synchronization is only available in the Enterprise edition.
 
-Under **User Provisioning**, configure the SCIM (System for Cross-domain Identity Management) protocol in the Oro application. This setup allows you to import and synchronize users from external identity systems, such as Microsoft Entra ID or Okta, into Oro. Once imported, these users can log in to Oro via Microsoft 365 Single Sign-On or Okta Single Sign-On.
+Under **User Provisioning**, configure the SCIM (System for Cross-domain Identity Management) protocol in the Oro application. This setup allows you to import and synchronize users from external identity systems, such as Microsoft Entra ID or Okta, into Oro. Once imported, these users can log into Oro via Microsoft Entra Single Sign-On or Okta Single Sign-On.
 
 Enable SCIM Synchronization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -48,6 +50,9 @@ To enable and control SCIM synchronization, set the following options:
 * **Enable SCIM** --- Enable or disable the SCIM integration on the global level.
 * **Default Access to Organization Business Units** --- Select the organizations and business units that will be automatically assigned to newly synchronized users.
 * **Default Roles** --- Select the user roles that new users will receive upon synchronization.
+
+    .. important:: At least one organization business unit and user role should be configured in order to allow login of imported users.
+
 * **Extra Fields Handling** --- Choose how the system should handle cases when the identity provider sends extra fields. The available options are:
 
     * **Return error** (default) --- If selected, and the identity provider sends extra fields to Oro, the system will return an error.
@@ -65,29 +70,39 @@ Configure Okta Provisioning Service
 
 **OroCommerce side**
 
-To configure the user provisioning via |Okta provisioning service|, make sure you have:
+To configure the user provisioning via |Okta provisioning service| and allow importing of users from Okta to Oro, make sure you have:
 
-1. Configured the SCIM synchronization globally or :ref:`per required organization <admin-configuration-user-settings-org>`.
+1. Configured the **SCIM synchronization** globally or :ref:`per required organization <admin-configuration-user-settings-org>`.
 
     .. important:: At least one organization business unit and user role should be configured in order to allow login of imported users.
 
-2. Created Authorization Code OAuth application as described in the :ref:`Create an OAuth Application <oauth-applications>` topic.
+2. Created **Authorization Code** OAuth application as described in the :ref:`Create an OAuth Application <oauth-applications>` topic.
 
-    .. note:: The redirect URL you can see in |Okta SCIM API - authentication| in the Okta SCIM API documentation. Add a fake URL if you have not yet created an Okta application. The correct URL can be set later.
+    .. note:: You can find the redirect URL in the |Okta SCIM API| authentication documentation which provides example URLs to use. These URLs include an identifier ``{appName}`` generated after you create your app integration in Okta. If the Okta application is already created, use the generated URL. Otherwise, you can temporarily specify a placeholder (fake) URL and update it later once the application is created.
 
-3. Copied Client ID and Client secret. For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you leave a page with the created application information, so make sure you save it somewhere safe so you can access it later.
+   .. image:: /user/img/system/config_system/okta_oauth_app.png
+      :alt: Creating an Okta OAuth app page
 
-4. Created the Okta OpenID Connect integration under System > Manage Integrations as described in the :ref:`Configure OpenID Connect Integrations in the Back-Office <user-guide--integrations--openid-connect>` topic.
+3. Copied **Client ID** and **Client secret**. For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you leave a page with the created application information, so make sure you save it somewhere safe so you can access it later.
+
+   .. image:: /user/img/system/config_system/okta_client_id_secret.png
+      :alt: Client Id and Client Secret details of the Okta OAuth app
+
 
 **Okta side**
 
-1. Log in to your Okta Admin Console.
+**Create an Okta app instance**
+
+1. Log into your |Okta Admin Console|.
 
 2. Navigate to **Applications > Applications**.
 
 3. Click **Create App Integration**.
 
 4. Choose **SAML 2.0** sign-in method and click **Next**.
+
+ .. image:: /user/img/system/config_system/okta-create-new-app.png
+    :alt: Creating a new app integration on the Okta side
 
 5. Provide a name and a logo for the new application and click **Next**.
 
@@ -98,15 +113,37 @@ To configure the user provisioning via |Okta provisioning service|, make sure yo
 
 7. Specify options that will help Okta Support understand how you configured this application and click **Finish**.
 
-    .. note:: As the Okta application has been successfully created, you can now add the redirect URL to the OroCommerce OAuth application.
+**Get Redirect URL**
 
-8. On the application management page, navigate to the **General** tab and click **Edit** in **App Settings**.
+As the Okta application has been successfully created, you can now add the **Redirect URL** to the OroCommerce OAuth application. You can find the redirect URL example in the |Okta SCIM API| authentication documentation.
 
-9. Choose **SCIM** provisioning method and click **Save**.
+.. note:: Okta requires the **Redirect URL to follow this format**:
 
-10. Navigate to the **Provisioning** tab and click **Edit** in **SCIM Connection**.
+   ``https://system-admin.okta.com/admin/app/cpc/{appName}/oauth/callback``
 
-11. Fill in the form with the following data and click **Save**:
+   The ``{appName}`` value is generated when you create your app integration in Okta. You can obtain it from the Admin Console URL after navigating to **Applications > Applications > your app instance**.
+
+   The Admin Console URL has the following format:
+
+   ``https://{orgSubDomain}-admin.{oktaEnvironment}.com/admin/app/{appName}/instance/{instanceID}/#tab-general``
+
+   The ``{appName}`` is the string between ``/app/`` and ``/instance/`` in the URL.
+
+  .. image:: /user/img/system/config_system/okta-app-name.png
+     :alt: Retrieving the appName from Okta app instance and pasting into the Redirect URL field of the Oro OAuth application
+
+**Edit Okta app instance**
+
+1. On the application details page, navigate to the **General** tab and click **Edit** in **App Settings**.
+
+2. Choose **SCIM** provisioning method and click **Save**.
+
+  .. image:: /user/img/system/config_system/okta-app-details-page.png
+     :alt: Okta app details page
+
+3. Navigate to the **Provisioning** tab and click **Edit** in **SCIM Connection**.
+
+4. Fill in the form with the following data and click **Save**:
 
     * **SCIM connector base URL**: ``https://yourapplication/{backend_prefix}/scim``
     * **Unique identifier field for users**: ``userName``
@@ -117,17 +154,20 @@ To configure the user provisioning via |Okta provisioning service|, make sure yo
     * **Client ID**: The Client ID value of the OAuth 2 application
     * **Client Secret**: The client secret of the OAuth 2 application
 
-12. Click **Authorize with {your application}** and grant access to your application to Okta.
+   .. image:: /user/img/system/config_system/okta-app-scim-connection.png
+      :alt: Okta app SCIM connection details page
 
-13. Navigate to the **Provisioning** tab, click **To App** in the left menu and click **Edit** in **Provisioning to App**.
+5. Click **Authorize with {your application}** and grant access to your application to Okta.
 
-14. Fill in the form with the following data and click **Save**:
+6. Navigate to the **Provisioning** tab, click **To App** in the left menu and click **Edit** in **Provisioning to App**.
+
+7. Fill in the form with the following data and click **Save**:
 
     * **Create Users**: Enable
     * **Update User Attributes**: Enable
     * **Deactivate Users**: Enable
 
-15. Navigate to the **Provisioning** tab and click **To App** in the left menu and configure user mapping with the following attributes:
+8. Configure user mapping with the following attributes:
 
     +------------------+----------------+----------------------------------------------------------------------+
     | Attribute        | Attribute Type | Value                                                                |
@@ -155,9 +195,18 @@ To configure the user provisioning via |Okta provisioning service|, make sure yo
     | primaryPhoneType | Personal       | (user.primaryPhone != null && user.primaryPhone != '') ? 'work' : '' |
     +------------------+----------------+----------------------------------------------------------------------+
 
-16. Navigate to the **Assignments** tab and configure the user to be provisioned.
+9. Navigate to the **Assignments** tab and configure the user to be provisioned.
 
-.. important:: The next step is to configure the :ref:`Okta OpenID Connect <user-guide--integrations--openid-connect>` integration under **System > Manage Integrations** menu in the back-office to enable synced users to log in via OIDC SSO.
+Once the provision is established, the users that are/will be registered within this Okta app instance will be synced to Oro. Their details will appear under **System > User Management > Users** in the OroCommerce back-office.
+
+.. image:: /user/img/system/config_system/okta-users.png
+   :alt: Okta-imported users available under the Users menu in the OroCommerce back-office
+
+
+.. important:: The next step is to configure the :ref:`Okta OpenID Connect <user-guide--integrations--openid-connect>` integration under **System > Manage Integrations** menu in the back-office to enable synced users to log into Oro via OIDC SSO.
+
+                .. image:: /user/img/system/config_system/okta-sso-back-office.png
+                   :alt: The Login via Okta button is available on the Oro login page after the Okta OIDC integration is created
 
 .. _microsoft-entra-provisioning-service:
 
@@ -168,17 +217,16 @@ Configure Microsoft Entra Provisioning Service
 
 To configure the user provisioning via |Microsoft Entra provisioning service|, make sure you have:
 
-1. Configured the SCIM synchronization globally or :ref:`per required organization <admin-configuration-user-settings-org>`.
+1. Configured the **SCIM synchronization** globally or :ref:`per required organization <admin-configuration-user-settings-org>`.
 
     .. important:: At least one organization business unit and user role should be configured in order to allow login of imported users.
 
-2. Created Client Credentials OAuth application as described in the :ref:`Create an OAuth Application <oauth-applications>` topic.
+2. Created **Client Credentials** OAuth application as described in the :ref:`Create an OAuth Application <oauth-applications>` topic.
 
-3. Copied Client ID and Client secret. For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you leave a page with the created application information, so make sure you save it somewhere safe so you can access it later.
+3. Copied **Client ID** and **Client secret**. For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you leave a page with the created application information, so make sure you save it somewhere safe so you can access it later.
 
     .. image:: /user/img/system/user_management/oauth/client_creds_app.png
 
-4. Created the Microsoft OpenID Connect integration under System > Manage Integrations as described in the :ref:`Configure OpenID Connect Integrations in the Back-Office <user-guide--integrations--openid-connect>` topic.
 
 **Microsoft Entra side**
 
@@ -249,8 +297,22 @@ To configure the user provisioning via |Microsoft Entra provisioning service|, m
 
 After the initial provisioning cycle begins, go to **Provisioning logs** in the left menu to track its progress. This section displays all the actions performed by the provisioning service for your application.
 
-.. important:: The next step is to configure the :ref:`Microsoft OpenID Connect <user-guide--integrations--openid-connect>` integration under **System > Manage Integrations** menu in the back-office to enable synced users to log in via OIDC SSO.
+Once the provision is established, the users that are/will be registered within this Okta app instance will be synced to Oro. Their details will appear under **System > User Management > Users** in the OroCommerce back-office.
 
+.. image:: /user/img/system/config_system/okta-users.png
+   :alt: Microsoft-imported users available under the Users menu in the OroCommerce back-office
+
+.. important:: The next step is to configure the :ref:`Microsoft OpenID Connect <user-guide--integrations--openid-connect>` integration under **System > Manage Integrations** menu in the back-office to enable synced users to log into Oro via OIDC SSO.
+
+                .. image:: /user/img/system/config_system/microsoft-sso-back-office.png
+                   :alt: The Login via Microsoft button is available on the Oro login page after the Microsoft OIDC integration is created
+
+
+**Related Articles**
+
+* :ref:`Identity Management Concept Guide <concept-guide--identity-management>`
+* :ref:`Configure OpenID Connect Integrations in the Back-Office <user-guide--integrations--openid-connect>`
+* :ref:`OroOidcBundle Developer Documentation <bundle-docs-platform-oidcbundle>`
 
 
 .. include:: /include/include-images.rst
