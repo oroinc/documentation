@@ -1034,9 +1034,9 @@ Links (User)
 
    <a href="https://help.okta.com/en-us/content/topics/provisioning/lcm/con-okta-prov.htm" target="_blank">Okta provisioning service</a>
 
-.. |Okta SCIM API - authentication|  raw:: html
+.. |Okta SCIM API|  raw:: html
 
-   <a href="https://developer.okta.com/docs/guides/scim-provisioning-integration-prepare/main/#authentication" target="_blank">authentication</a>
+   <a href="https://developer.okta.com/docs/guides/scim-provisioning-integration-prepare/main/#authentication" target="_blank">Okta SCIM API</a>
 
 .. |Microsoft Entra ID|  raw:: html
 
@@ -1061,3 +1061,7 @@ Links (User)
 .. |Customer Part Number|  raw:: html
 
    <a href="https://extensions.oroinc.com/orocommerce/extension/customer-part-number/" target="_blank">Customer Part Number</a>
+
+.. |Okta Admin Console|  raw:: html
+
+   <a href="https://login.okta.com/" target="_blank">Okta Admin Console</a>

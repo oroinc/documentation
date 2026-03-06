@@ -20,3 +20,4 @@ This section includes the following elements:
    Checkout Configuration <checkout/index>
    Consent Management <consents/index>
    Data Import <data-import/index>
+   Identity Management <identity-management/index>

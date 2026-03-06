@@ -23,6 +23,7 @@ OpenID Connect provides a standardized, secure, and interoperable way to exchang
 
 **Related Articles**
 
+* :ref:`Identity Management Concept Guide <concept-guide--identity-management>`
 * :ref:`Configure OpenID Connect Integrations in the Back-Office <user-guide--integrations--openid-connect>`
 * :ref:`Configure User Provisioning and SCIM Synchronization <admin-configuration-user-settings-scim>`
 * :ref:`Configure Okta Provisioning Service <okta-provisioning-service>`
