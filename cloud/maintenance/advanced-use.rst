@@ -640,8 +640,6 @@ An example of the whitelist:
      - '8.8.8.8'
      - '10.1.0.0/22'
 
-This rule allows an unlimited rate of requests from IP 127.0.0.1 (local host) and subnet 10.1.0.0/22.
-
 ``limit_whitelist_uri`` ---  The list contains regular expressions to define URI of the application which must be limited by ``common`` zone request rate. This can be used to whitelist URIs that need to receive more requests, e.g., integration URI.
 
 An example of the whitelist:
@@ -650,8 +648,6 @@ An example of the whitelist:
 
    limit_whitelist_uri:
      - '~(^/admin/test/(.*))'
-
-This rule allows an unlimited rate of requests to a URI containing the /admin/test/ string.
 
 .. note: Allowing access via WAF does not affect the simultaneous connections limits. Use **limit_whitelist** or **limit_whitelist_uri** to set unlimited connectios for a client IP or URI on the server.
 
