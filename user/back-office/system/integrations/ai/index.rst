@@ -67,7 +67,7 @@ To create and integration with Vertex AI as the AI content generator of choice:
       "**API Endpoint**","Use the Endpoint value from the VertexAI text playground."
       "**Project ID**","Use the ProjectID value from the VertexAI text playground."
       "**Location**","Use the Location value from the VertexAI text playground"
-      "**Model**","Select the model that will generate the result, e.g., text-bison@001. Click **Check Vertex AI Connection** to make sure the connection has been established successfully."
+      "**Model**","Select the model that will generate the result. Click **Check Vertex AI Connection** to make sure the connection has been established successfully."
       "**Default Owner**","Select the owner of the integration."
 
 .. image:: /user/img/system/integrations/ai/vertex-ai.png
