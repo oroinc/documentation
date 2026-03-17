@@ -926,6 +926,14 @@ Links (User)
 
    <a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI API Keys</a>
 
+.. |OpenAI API models|  raw:: html
+
+   <a href="https://developers.openai.com/api/docs/models" target="_blank">OpenAI API models</a>
+
+.. |Vertex AI models|  raw:: html
+
+   <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models" target="_blank">Vertex AI models</a>
+
 .. |pnpm|  raw:: html
 
    <a href="https://pnpm.io/" target="_blank">pnpm</a>
