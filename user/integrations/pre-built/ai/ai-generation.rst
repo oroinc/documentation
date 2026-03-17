@@ -17,8 +17,8 @@ Vertex AI is a part of Google Cloud's suite of AI and machine learning tools and
 
 Once the AI Content Generation integration is installed for your Oro application, you can choose between the two clients and their models in the back-office configuration settings (on global and/or organization :ref:`levels <mc-system-configuration>`):
 
-* For Open AI, these are *gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4*, and others.
-* For Vertex AI, these are *text-bison, text-bison-32k, text-bison@001*.
+* For OpenAI - see the list of available models at |OpenAI API models|.
+* For Vertex AI - see the list of available models at |Vertex AI models|.
 
 .. image:: /user/img/integrations/ai-generation-settings.png
    :alt: AI generation settings for Open AI and Vertex AI in the Oro back-office
