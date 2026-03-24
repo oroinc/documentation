@@ -129,7 +129,7 @@ This action has the following processor groups:
     "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
     "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
     "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because the |EntitySerializer| loads most entities and returns already normalized data. For details, see |LoadEntityByEntitySerializer|."
-    "finalize","Final validation of the loaded data and addition of the required response headers.","--"
+    "finalize","Final validation of the loaded data and adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -172,7 +172,7 @@ This action has the following processor groups:
     "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
     "data_security_check","Checking whether access to the loaded data is granted.","--"
     "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because the |EntitySerializer| loads most entities and returns already normalized data. For details see |LoadEntitiesByEntitySerializer|."
-    "finalize","Final validation of the loaded data and adding required response headers.","--"
+    "finalize","Final validation of the loaded data and adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from one of the previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -214,7 +214,7 @@ This action has the following processor groups:
     "load_data","Loading an entity to be deleted.","--"
     "data_security_check","Checking whether access to the loaded data is granted.","--"
     "delete_data","Deleting an entity.","--"
-    "finalize","Adding required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if any processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -261,7 +261,7 @@ This action has the following processor groups:
     "load_data","Loading the list of entities to be deleted.","--"
     "data_security_check","Checking whether access to the loaded data is granted.","--"
     "delete_data","Deleting the list of entities.","--"
-    "finalize","Adding required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -305,7 +305,7 @@ This action has the following processor groups:
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data and entities to be persisted into the database."
     "normalize_data","Converting created entity into array.","--"
-    "finalize","Adding required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|. Processors from this group are not executed for 4."
 
 The following diagram shows the main data flow for this action:
@@ -349,7 +349,7 @@ This action has the following processor groups:
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
     "normalize_data","Converting updated entity into an array.","--"
-    "finalize","Adding the required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -397,7 +397,7 @@ This action has the following processor groups:
     "security_check","Checking whether access to the requested resource is granted.","When you add a new processor to the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
     "load_data","Loading a request data to the storage.","--"
     "save_data","Creating an asynchronous batch operation.","--"
-    "finalize","Adding the required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -440,7 +440,7 @@ This action has the following processor groups:
     "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
     "data_security_check","Checking whether access to the loaded data is granted.","--"
     "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because the |EntitySerializer| loads most entities and returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
-    "finalize","Final validation of the loaded data and adding the required response headers","--"
+    "finalize","Final validation of the loaded data and adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -484,7 +484,7 @@ This action has the following processor groups:
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
     "normalize_data","Converting the resulting entity into an array.","--"
-    "finalize","Final validation of the loaded data. Adding the required response headers.","--"
+    "finalize","Final validation of the loaded data and adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -539,7 +539,7 @@ This action has the following processor groups:
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
     "normalize_data","Converting the resulting entity into an array.","--"
-    "finalize","Adding the required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -594,7 +594,7 @@ This action has the following processor groups:
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
     "normalize_data","Converting the resulting entity into an array.","--"
-    "finalize","Adding the required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -648,7 +648,7 @@ This action has the following processor groups:
     "load_data","Loading data.","--"
     "data_security_check","Checking whether access to the loaded data is granted.","--"
     "normalize_data","Converting loaded data into an array.","In most cases, the processors from this group are skipped because the |EntitySerializer| loads most entities and returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
-    "finalize","Final validation of the loaded data and adding the required response headers.","--"
+    "finalize","Final validation of the loaded data and adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -692,7 +692,7 @@ This action has the following processor groups:
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","--"
     "normalize_data","Converting the resulting relationship into an array.","--"
-    "finalize","Adding the required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 See the ``handleUpdateRelationship`` method of |RequestActionHandler| as an example.
@@ -731,7 +731,7 @@ This action has the following processor groups:
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","--"
     "normalize_data","Converting the resulting relationship into an array.","--"
-    "finalize","Adding the required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -775,7 +775,7 @@ This action has the following processor groups:
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","--"
     "normalize_data","Converting the resulting relationship into an array.","--"
-    "finalize","Adding the required response headers.","--"
+    "finalize","Adding response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
@@ -1090,7 +1090,7 @@ This action has the following processor groups:
     :widths: 15, 30, 30
 
     "initialize","Context initialization.","--"
-    "finalize","Adding the required response headers.","--"
+    "finalize","Adding response headers.","--"
     "save_data","Persisting entities.","--"
     "save_errors","Persisting found errors.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |ByStepNormalizeResultActionProcessor|."
