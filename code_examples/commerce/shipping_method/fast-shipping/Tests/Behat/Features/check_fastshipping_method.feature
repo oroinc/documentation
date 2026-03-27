@@ -53,6 +53,7 @@ Feature: Check FastShipping method
     And I check "Payment Terms" on the "Payment" checkout step and press Continue
     And I fill "Checkout Order Review Form" with:
       | PO Number | TEST_PO_NUMBER |
+    And I click "Expand Checkout Footer"
     And I should see "Subtotal $10.00"
     And I should see "Shipping $15.00"
     And I should see "Total: $25.00"

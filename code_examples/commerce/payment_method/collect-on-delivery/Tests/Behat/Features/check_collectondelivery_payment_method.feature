@@ -50,6 +50,7 @@ Feature: Check CollectOnDelivery payment method
     And I check "Collect on Delivery" on the "Payment" checkout step and press Continue
     And I fill "Checkout Order Review Form" with:
       | PO Number | TEST_PO_NUMBER |
+    And I click "Expand Checkout Footer"
     And I should see "Subtotal $10.00"
     And I should see "Shipping $3.00"
     And I should see "Total: $13.00"
