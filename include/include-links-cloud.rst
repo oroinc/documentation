@@ -97,7 +97,7 @@ Links (Cloud)
 
 .. |Redis Sentinel Documentation| raw:: html
 
-   <a href="https://redis.io/docs/management/sentinel/" target="_blank">Redis Sentinel Documentation</a>
+   <a href="https://redis.io/docs/latest/develop/reference/sentinel-clients/" target="_blank">Redis Sentinel Documentation</a>
 
 .. |GCP Region| raw:: html
 

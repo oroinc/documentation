@@ -469,7 +469,7 @@ Links (User)
 
 .. |registered with UPS.com| raw:: html
 
-   <a href="https://www.ups.com/one-to-one/register" target="_blank">registered with UPS.com</a>
+   <a href="https://wwwapps.ups.com/doapp/signup" target="_blank">registered with UPS.com</a>
 
 .. |ups.com| raw:: html
 
@@ -713,7 +713,7 @@ Links (User)
 
 .. |CCPA| raw:: html
 
-   <a href="https://ccpa-info.com/" target="_blank">CCPA</a>
+   <a href="https://oag.ca.gov/privacy/ccpa/" target="_blank">CCPA</a>
 
 .. |CalOPPA| raw:: html
 
@@ -912,7 +912,7 @@ Links (User)
 
 .. |OpenAI API Keys|  raw:: html
 
-   <a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI API Keys</a>
+   <a href="https://platform.openai.com/api-keys" target="_blank">OpenAI API Keys</a>
 
 .. |OpenAI API models|  raw:: html
 

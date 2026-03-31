@@ -113,7 +113,7 @@ Links (Dev)
 
 .. |OPcache| raw:: html
 
-   <a href="http://php.net/manual/en/intro.opcache.php" target="_blank">OPcache</a>
+   <a href="https://www.php.net/manual/en/book.opcache.php" target="_blank">OPcache</a>
 
 .. |Tidy PHP extension| raw:: html
 
@@ -137,11 +137,11 @@ Links (Dev)
 
 .. |HTML file into PDF API route of the Gotenberg service| raw:: html
 
-   <a href="https://gotenberg.dev/docs/routes#html-file-into-pdf-route" target="_blank">HTML file into PDF API route of the Gotenberg service</a>
+   <a href="https://gotenberg.dev/docs/convert-with-chromium/convert-html-to-pdf" target="_blank">HTML file into PDF API route of the Gotenberg service</a>
 
 .. |Gotenberg Documentation: Headers and Footers| raw:: html
 
-   <a href="https://gotenberg.dev/docs/routes#header-footer-chromium" target="_blank">Gotenberg Documentation: Headers and Footers</a>
+   <a href="https://gotenberg.dev/docs/convert-with-chromium/convert-html-to-pdf#header--footer" target="_blank">Gotenberg Documentation: Headers and Footers</a>
 
 .. |PayPal| raw:: html
 
@@ -533,7 +533,7 @@ Links (Dev)
 
 .. |Doctrine website| raw:: html
 
-   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/reference/improving-performance.html" target="_blank">Doctrine website</a>
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/improving-performance.html" target="_blank">Doctrine website</a>
 
 .. |Blackfire| raw:: html
 
@@ -594,26 +594,6 @@ Links (Dev)
 .. |OroCRM Application| raw:: html
 
    <a href="https://github.com/oroinc/crm-application" target="_blank">OroCRM Application</a>
-
-.. |Enable Previously Purchased Products| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Resources/doc/previously-purchased-products.md#config" target="_blank">Enable Previously Purchased Products</a>
-
-.. |Website Search Index| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Resources/doc/previously-purchased-products.md#website-search-index" target="_blank">Website Search Index</a>
-
-.. |Reindex Listeners| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Resources/doc/previously-purchased-products.md#reindex-listeners" target="_blank">Reindex Listeners</a>
-
-.. |Managers| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Resources/doc/previously-purchased-products.md#managers" target="_blank">Managers</a>
-
-.. |Providers| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Resources/doc/previously-purchased-products.md#providers" target="_blank">Providers</a>
 
 .. |Doctrine ORM documentation| raw:: html
 
@@ -957,7 +937,7 @@ Links (Dev)
 
 .. |Doctrine Criteria| raw:: html
 
-   <a href="https://github.com/doctrine/collections/blob/2.0.x/src/Criteria.php" target="_blank">Doctrine Criteria</a>
+   <a href="https://github.com/doctrine/collections/blob/3.0.x/src/Criteria.php" target="_blank">Doctrine Criteria</a>
 
 .. |CriteriaConnector| raw:: html
 
@@ -1219,7 +1199,7 @@ Links (Dev)
 
 .. |PaymentMethodInterface| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/PaymentBundle/Method/PaymentMethodInterface.php" target="_blank">PaymentMethodInterface</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/PaymentBundle/Method/PaymentMethodInterface.php" target="_blank">PaymentMethodInterface</a>
 
 .. |Access Control Lists| raw:: html
 
@@ -1227,11 +1207,11 @@ Links (Dev)
 
 .. |#[Acl]| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/SecurityBundle/Annotation/Acl.php" target="_blank">#[Acl]</a>
+   <a href="https://github.com/oroinc/platform/blob/6.1/src/Oro/Bundle/SecurityBundle/Acl/AccessLevel.php" target="_blank">#[Acl]</a>
 
 .. |#[AclAncestor]| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/6.1/src/Oro/Bundle/SecurityBundle/Annotation/AclAncestor.php" target="_blank">#[AclAncestor]</a>
+   <a href="https://github.com/oroinc/platform/blob/6.1/src/Oro/Bundle/SecurityBundle/Attribute/AclAncestor.php" target="_blank">#[AclAncestor]</a>
 
 .. |Oro Extensions Store Commerce| raw:: html
 
@@ -1291,7 +1271,7 @@ Links (Dev)
 
 .. |INTL library| raw:: html
 
-   <a href="http://www.php.net/manual/en/intro.intl.php" target="_blank">INTL library</a>
+   <a href="https://www.php.net/manual/en/book.intl.php" target="_blank">INTL library</a>
 
 .. |datetime.js| raw:: html
 
@@ -1339,11 +1319,11 @@ Links (Dev)
 
 .. |session handler| raw:: html
 
-   <a href="https://symfony.com/doc/6.4/components/http_foundation/session_configuration.html#save-handlers" target="_blank">session handler</a>
+   <a href="https://symfony.com/doc/current/session.html#store-sessions-in-a-key-value-database-redis" target="_blank">session handler</a>
 
 .. |sessions| raw:: html
 
-   <a href="https://www.php.net/manual/en/intro.session.php" target="_blank">sessions</a>
+   <a href="https://www.php.net/manual/en/book.session.php" target="_blank">sessions</a>
 
 .. |session data is locked| raw:: html
 
@@ -1367,7 +1347,7 @@ Links (Dev)
 
 .. |products-grid| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Resources/config/oro/datagrids.yml#L305" target="_blank">products-grid</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Resources/config/oro/datagrids.yml#L305" target="_blank">products-grid</a>
 
 .. |the CustomGridBundle.zip file| raw:: html
 
@@ -1995,7 +1975,7 @@ Links (Dev)
 
 .. |this block theme| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/layout.html.twig" target="_blank">this block theme</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/layout.html.twig" target="_blank">this block theme</a>
 
 .. |List of all css properties| raw:: html
 
@@ -2295,7 +2275,7 @@ Links (Dev)
 
 .. |Contributor License Agreement| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/contributor-license-agreement" target="_blank">Contributor License Agreement</a>
+   <a href="https://oroinc.com/b2b-ecommerce/contributor-license-agreement/" target="_blank">Contributor License Agreement</a>
 
 .. |Oro documentation| raw:: html
 
@@ -3583,7 +3563,7 @@ Links (Dev)
 
 .. |Website Search Index Type| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/WebsiteSearchBundle/README.md" target="_blank">Website Search Index Type</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/Oro/Bundle/WebsiteSearchBundle/README.md" target="_blank">Website Search Index Type</a>
 
 .. |How to use compiler passes| raw:: html
 
@@ -4207,7 +4187,7 @@ Links (Dev)
 
 .. |Doctrine Filters| raw:: html
 
-   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/filters.html" target="_blank">Doctrine Filters</a>
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/filters.html" target="_blank">Doctrine Filters</a>
 
 .. |Sketch app| raw:: html
 
@@ -4395,7 +4375,7 @@ Links (Dev)
 
 .. |image_placeholder.yml| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Resources/config/image_placeholder.yml" target="_blank">image_placeholder.yml</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Resources/config/image_placeholder.yml" target="_blank">image_placeholder.yml</a>
 
 .. |System Configuration| raw:: html
 
@@ -4485,31 +4465,31 @@ Links (Dev)
 
 .. |example of using low_inventory| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/InventoryBundle/Resources/views/layouts/default/imports/oro_product_list_item/low_inventory.html.twig" target="_blank">example of using low_inventory</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/InventoryBundle/Resources/views/layouts/default/imports/oro_product_list_item/low_inventory.html.twig" target="_blank">example of using low_inventory</a>
 
 .. |OroBundleInventoryBundleEventListenerLowInventoryCheckoutLineItemValidationListener| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/InventoryBundle/EventListener/LowInventoryCheckoutLineItemValidationListener.php" target="_blank">Oro\Bundle\InventoryBundle\EventListener\LowInventoryCheckoutLineItemValidationListener</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/InventoryBundle/EventListener/LowInventoryCheckoutLineItemValidationListener.php" target="_blank">Oro\Bundle\InventoryBundle\EventListener\LowInventoryCheckoutLineItemValidationListener</a>
 
 .. |OroBundleInventoryBundleInventoryLowInventoryProvider| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/InventoryBundle/Inventory/LowInventoryProvider.php" target="_blank">Oro\Bundle\InventoryBundle\Inventory\LowInventoryProvider</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/InventoryBundle/Inventory/LowInventoryProvider.php" target="_blank">Oro\Bundle\InventoryBundle\Inventory\LowInventoryProvider</a>
 
 .. |Product entity| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Entity/Product.php" target="_blank">Product entity</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Entity/Product.php" target="_blank">Product entity</a>
 
 .. |ProductUnit entity| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Entity/ProductUnit.php" target="_blank">ProductUnit entity</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Entity/ProductUnit.php" target="_blank">ProductUnit entity</a>
 
 .. |OroBundleInventoryBundleValidatorLowInventoryCheckoutLineItemValidator| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/InventoryBundle/Validator/LowInventoryCheckoutLineItemValidator.php" target="_blank">Oro\Bundle\InventoryBundle\Validator\LowInventoryCheckoutLineItemValidator</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/InventoryBundle/Validator/LowInventoryCheckoutLineItemValidator.php" target="_blank">Oro\Bundle\InventoryBundle\Validator\LowInventoryCheckoutLineItemValidator</a>
 
 .. |TaxProviderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/TaxBundle/Provider/TaxProviderInterface.php" target="_blank">TaxProviderInterface</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/TaxBundle/Provider/TaxProviderInterface.php" target="_blank">TaxProviderInterface</a>
 
 .. |Authorization Checker| raw:: html
 
@@ -4729,27 +4709,27 @@ Links (Dev)
 
 .. |SystemPage Model| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/WebCatalogBundle/Api/Model/SystemPage.php" target="_blank">SystemPage Model</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/WebCatalogBundle/Api/Model/SystemPage.php" target="_blank">SystemPage Model</a>
 
 .. |SystemPage declaration in Resources/config/oro/api_frontend.yml| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/WebCatalogBundle/Resources/config/oro/api_frontend.yml" target="_blank">SystemPage declaration in Resources/config/oro/api_frontend.yml</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/WebCatalogBundle/Resources/config/oro/api_frontend.yml" target="_blank">SystemPage declaration in Resources/config/oro/api_frontend.yml</a>
 
 .. |SystemPageRepository class| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/WebCatalogBundle/Api/Repository/SystemPageRepository.php" target="_blank">SystemPageRepository class</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/WebCatalogBundle/Api/Repository/SystemPageRepository.php" target="_blank">SystemPageRepository class</a>
 
 .. |LoadSystemPage API processor| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/WebCatalogBundle/Api/Processor/LoadSystemPage.php" target="_blank">LoadSystemPage API processor</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/WebCatalogBundle/Api/Processor/LoadSystemPage.php" target="_blank">LoadSystemPage API processor</a>
 
 .. |ExpandSystemPageContentVariant API processor| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/WebCatalogBundle/Api/Processor/ExpandSystemPageContentVariant.php" target="_blank">ExpandSystemPageContentVariant API processor</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/WebCatalogBundle/Api/Processor/ExpandSystemPageContentVariant.php" target="_blank">ExpandSystemPageContentVariant API processor</a>
 
 .. |LoadSystemPageContentVariantSubresource API processor| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/WebCatalogBundle/Api/Processor/LoadSystemPageContentVariantSubresource.php" target="_blank">LoadSystemPageContentVariantSubresource API processor</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/WebCatalogBundle/Api/Processor/LoadSystemPageContentVariantSubresource.php" target="_blank">LoadSystemPageContentVariantSubresource API processor</a>
 
 .. |Storefront REST API| raw:: html
 
@@ -4757,7 +4737,7 @@ Links (Dev)
 
 .. |WebsiteSearchExtensionTrait| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/WebsiteSearchBundle/Tests/Functional/WebsiteSearchExtensionTrait.php" target="_blank">WebsiteSearchExtensionTrait</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/WebsiteSearchBundle/Tests/Functional/WebsiteSearchExtensionTrait.php" target="_blank">WebsiteSearchExtensionTrait</a>
 
 .. |size parameter| raw:: html
 
@@ -4817,7 +4797,7 @@ Links (Dev)
 
 .. |in the app.yml file of the CMSBundle| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/CMSBundle/Resources/config/oro/app.yml" target="_blank">in the app.yml file of the CMSBundle</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/CMSBundle/Resources/config/oro/app.yml" target="_blank">in the app.yml file of the CMSBundle</a>
 
 .. |preprocessor| raw:: html
 
@@ -4829,75 +4809,75 @@ Links (Dev)
 
 .. |WebsiteSearchProductIndexerListener| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/EventListener/WebsiteSearchProductIndexerListener.php" target="_blank">WebsiteSearchProductIndexerListener</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/EventListener/WebsiteSearchProductIndexerListener.php" target="_blank">WebsiteSearchProductIndexerListener</a>
 
 .. |previously purchased products grid| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Resources/config/oro/datagrids.yml#L751" target="_blank">previously purchased products grid</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/Resources/config/oro/datagrids.yml#L751" target="_blank">previously purchased products grid</a>
 
 .. |website_search.yml| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Resources/config/oro/website_search.yml" target="_blank">website_search.yml</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/Resources/config/oro/website_search.yml" target="_blank">website_search.yml</a>
 
 .. |datagrids.yml| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Resources/config/oro/datagrids.yml#L75" target="_blank">datagrids.yml</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/Resources/config/oro/datagrids.yml#L75" target="_blank">datagrids.yml</a>
 
 .. |ReindexProductLineItemListener| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/EventListener/ORM/ReindexProductLineItemListener.php" target="_blank">ReindexProductLineItemListener</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/EventListener/ORM/ReindexProductLineItemListener.php" target="_blank">ReindexProductLineItemListener</a>
 
 .. |OrderLineItem| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Entity/OrderLineItem.php" target="_blank">OrderLineItem</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/Entity/OrderLineItem.php" target="_blank">OrderLineItem</a>
 
 .. |ReindexProductOrderListener| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/EventListener/ORM/ReindexProductOrderListener.php" target="_blank">ReindexProductOrderListener</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/EventListener/ORM/ReindexProductOrderListener.php" target="_blank">ReindexProductOrderListener</a>
 
 .. |Order entity| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Entity/Order.php" target="_blank">Order entity</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/Entity/Order.php" target="_blank">Order entity</a>
 
 .. |PreviouslyPurchasedFeatureToggleListener| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/EventListener/PreviouslyPurchasedFeatureToggleListener.php" target="_blank">PreviouslyPurchasedFeatureToggleListener</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/EventListener/PreviouslyPurchasedFeatureToggleListener.php" target="_blank">PreviouslyPurchasedFeatureToggleListener</a>
 
 .. |ProductReindexManager| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Search/Reindex/ProductReindexManager.php" target="_blank">ProductReindexManager</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Search/Reindex/ProductReindexManager.php" target="_blank">ProductReindexManager</a>
 
 .. |ProductListBuilder| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Provider/ProductListBuilder.php" target="_blank">ProductListBuilder</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Provider/ProductListBuilder.php" target="_blank">ProductListBuilder</a>
 
 .. |ProductView| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Model/ProductView.php" target="_blank">ProductView</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Model/ProductView.php" target="_blank">ProductView</a>
 
 .. |BuildQueryProductListEvent| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Event/BuildQueryProductListEvent.php" target="_blank">BuildQueryProductListEvent</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Event/BuildQueryProductListEvent.php" target="_blank">BuildQueryProductListEvent</a>
 
 .. |BuildResultProductListEvent| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/ProductBundle/Event/BuildResultProductListEvent.php" target="_blank">BuildResultProductListEvent</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/ProductBundle/Event/BuildResultProductListEvent.php" target="_blank">BuildResultProductListEvent</a>
 
 .. |PreviouslyPurchasedConfigProvider| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Provider/PreviouslyPurchasedConfigProvider.php" target="_blank">PreviouslyPurchasedConfigProvider</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/Provider/PreviouslyPurchasedConfigProvider.php" target="_blank">PreviouslyPurchasedConfigProvider</a>
 
 .. |LatestOrderedProductsInfoProvider| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Provider/LatestOrderedProductsInfoProvider.php" target="_blank">LatestOrderedProductsInfoProvider</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/Provider/LatestOrderedProductsInfoProvider.php" target="_blank">LatestOrderedProductsInfoProvider</a>
 
 .. |PreviouslyPurchasedOrderStatusesProvider| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Provider/PreviouslyPurchasedOrderStatusesProvider.php" target="_blank">PreviouslyPurchasedOrderStatusesProvider</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/Provider/PreviouslyPurchasedOrderStatusesProvider.php" target="_blank">PreviouslyPurchasedOrderStatusesProvider</a>
 
 .. |OrderStatusesProviderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/OrderBundle/Provider/OrderStatusesProviderInterface.php" target="_blank">OrderStatusesProviderInterface</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/OrderBundle/Provider/OrderStatusesProviderInterface.php" target="_blank">OrderStatusesProviderInterface</a>
 
 .. |DatagridConfiguration| raw:: html
 
@@ -5061,7 +5041,7 @@ Links (Dev)
 
 .. |Doctrine ORM Lifecycle Events| raw:: html
 
-   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.8/reference/events.html#lifecycle-events" target="_blank">Doctrine ORM Lifecycle Events</a>
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/events.html#events" target="_blank">Doctrine ORM Lifecycle Events</a>
 
 .. |Entity Name Resolver| raw:: html
 
@@ -5266,7 +5246,7 @@ Links (Dev)
 
 .. |SluggableInterface| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
 
 .. |ExtendScope.php| raw:: html
 
@@ -5358,11 +5338,11 @@ Links (Dev)
 
 .. |PaymentTermExtension| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/PaymentTermBundle/Migration/Extension/PaymentTermExtension.php" target="_blank">PaymentTermExtension</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/PaymentTermBundle/Migration/Extension/PaymentTermExtension.php" target="_blank">PaymentTermExtension</a>
 
 .. |SlugExtension| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/RedirectBundle/Migration/Extension/SlugExtension.php" target="_blank">SlugExtension</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/Oro/Bundle/RedirectBundle/Migration/Extension/SlugExtension.php" target="_blank">SlugExtension</a>
 
 .. |CustomerExtension| raw:: html
 
@@ -5822,7 +5802,7 @@ Links (Dev)
 
 .. |RFP Request entity| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/6.1/src/OroBundle/RFPBundle/Entity/Request.php" target="_blank">RFP Request entity</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/6.1/src/Oro/Bundle/RFPBundle/Entity/Request.php" target="_blank">RFP Request entity</a>
 
 .. |User entity| raw:: html
 
@@ -6378,7 +6358,7 @@ Links (Dev)
 
 .. |jenkins| raw:: html
 
-    <a href="https://github.com/oroinc/docker-build/jenkins/README.md" target="_blank">jenkins</a>
+    <a href="https://github.com/oroinc/docker-build/blob/master/jenkins/README.md" target="_blank">jenkins</a>
 
 .. |GitHub Branch Source Plugin| raw:: html
 
