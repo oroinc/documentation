@@ -101,6 +101,7 @@ To retrieve the **Client ID** and **Client Secret** values from the Okta app ins
 * :ref:`Configure User Provisioning and SCIM Synchronization <admin-configuration-user-settings-scim>`
 * :ref:`Configure Okta Provisioning Service <okta-provisioning-service>`
 * :ref:`Configure Microsoft Entra Provisioning Service <microsoft-entra-provisioning-service>`
+* :ref:`LDAP Integration <user-guide-ldap-integration>`
 * :ref:`OroOidcBundle Developer Documentation <bundle-docs-platform-oidcbundle>`
 
 

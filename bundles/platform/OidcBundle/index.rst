@@ -28,6 +28,8 @@ OpenID Connect provides a standardized, secure, and interoperable way to exchang
 * :ref:`Configure User Provisioning and SCIM Synchronization <admin-configuration-user-settings-scim>`
 * :ref:`Configure Okta Provisioning Service <okta-provisioning-service>`
 * :ref:`Configure Microsoft Entra Provisioning Service <microsoft-entra-provisioning-service>`
+* :ref:`LDAP Integration <user-guide-ldap-integration>`
+
 
 
 .. include:: /include/include-links-user.rst
