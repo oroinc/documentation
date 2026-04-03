@@ -39,7 +39,7 @@ For large volume of  updates, fixes, and enhancements please use the following p
 
         docker bake --load
 
-     .. hint::  By default, this command builds only the current branch. To build documentation as it appears on the website, including version selection in the index, set the appropriate variables MAINTENANCE_BRANCHES=5.1|6.0|6.1|master. To generate the documentation in **Markdown** format instead of HTML, set the ``BUILDER="markdown"`` variable.
+     .. hint::  By default, this command builds only the current branch. To build documentation as it appears on the website, including version selection in the index, set the appropriate variables MAINTENANCE_BRANCHES=5.1|6.0|6.1|7.0|master. To generate the documentation in **Markdown** format instead of HTML, set the ``BUILDER="markdown"`` variable.
 
 Update Documentation
 --------------------

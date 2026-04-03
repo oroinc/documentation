@@ -45,14 +45,10 @@ To set the shopping list globally:
 .. image:: /user/img/system/config_commerce/sales/show_all_lists_in_widget.png
    :alt: Illustration of the mentioned sample
 
-.. note:: The **Enable Saved For Later** option is available as of OroCommerce version 6.1.7.
-
 * **Enable Saved For Later** --- The option allows customers to temporarily set aside items on their shopping list without removing them. When enabled, users can mark any item as **Saved for Later**, which moves it to a dedicated section on the shopping list page. These items remain visible but are excluded from Checkout, Request for Quote (RFQ), total cost and quantity calculations. Customers can move items to and from the **Saved for Later** section at any time, provided they have the necessary *Edit permission* for the shopping list.
 
 .. image:: /user/img/system/config_commerce/sales/saved-for-later-section.png
    :alt: The Saved for Later section on the shopping list page
-
-.. note:: The **Enforce Separate Shopping List Validations For Checkout and RFQ** option is available as of OroCommerce version 6.1.7.
 
 * **Enforce Separate Shopping List Validations For Checkout and RFQ** --- The option controls how validation issues on a shopping list are handled when a customer attempts to proceed to **Checkout** or submit a **Request for Quote (RFQ)**:
 
