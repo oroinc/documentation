@@ -142,17 +142,49 @@ Installation and Operation
 
 .. code-block:: shell
 
-   pnpm run build --mode=development
+   pnpm run build
 
 This will build the application source code in the specified `BUILD_DIR` (default is `dist`). Make sure you have the web server configured to serve the files from this directory.
 
-If you want to run the application for development or debugging purposes, or if you do not have the appropriate web server set up, you can use the Vite development server:
+Linking the Build to OroCommerce
+--------------------------------
 
-.. code-block:: shell
+To make the compiled Field Sales application accessible via the OroCommerce web server, you must create a symbolic link from the frontend's ``dist`` directory to the OroCommerce ``public/sales-frontend`` directory.
 
-    pnpm run dev
+It is recommended to automate this process by adding a custom script to the ``scripts`` section of your OroCommerce Enterprise root ``composer.json`` file:
 
-This command will start the Vite development server, which offers features like hot module replacement (HMR) and other development tools. You do not need to configure a web server to serve the application files, as Vite will take care of that during development.
+1. **Update composer.json**:
+
+.. code-block:: json
+
+    {
+        "scripts": {
+            "link-sales-frontend-dist": [
+                "rm -f public/sales-frontend",
+                "ln -s ../path-to-field-sales-frontend/dist public/sales-frontend"
+            ]
+        }
+    }
+
+.. note::
+    Replace ``../path-to-field-sales-frontend/`` with the actual relative path to your Field Sales frontend repository.
+
+2. **Run the script**:
+
+From the OroCommerce root directory, execute:
+
+.. code-block:: bash
+
+    composer run-script link-sales-frontend-dist
+
+Once linked, the application will be available at ``http://<your-oro-url>/sales-frontend``.
+
+.. hint::
+    If you want to run the application for development or debugging purposes, or if you do not have the appropriate web server set up, you can use the Vite development server:
+
+    .. code-block:: bash
+
+        pnpm run dev
 
 .. include:: /include/include-links-dev.rst
     :start-after: begin
