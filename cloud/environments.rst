@@ -5,8 +5,6 @@
 
 .. _cloud-environments:
 
-.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
-
 Environment Types
 -----------------
 
@@ -92,7 +90,4 @@ The following table outlines what features are included in different types of Or
    :start-after: begin
 
 .. include:: /include/include-links-seo.rst
-   :start-after: begin
-
-.. include:: /include/include-links-cloud.rst
    :start-after: begin

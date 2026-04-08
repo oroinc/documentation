@@ -1,7 +1,5 @@
 .. _orocloud-maintenance-scheduled-tasks:
 
-.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
-
 How to Add/Remove Scheduled task
 =================================
 

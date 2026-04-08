@@ -1,7 +1,5 @@
 .. _orocloud-maintenance-faq:
 
-.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
-
 FAQ
 ===
 
@@ -40,7 +38,7 @@ You can run any OroCloud command with the help option (--help or -h) to see the 
 Can I download an application database dump to troubleshoot issues in the local environment?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For security reasons, you cannot download backups with the sensitive data from OroCloud. However, you can create a :ref:`sanitized backup <orocloud-maintenance-use-sanitized-backup>`, configure it as necessary, and use it for your needs.
+For security reasons, you cannot download backups with the sensitive data from OroCloud. However, you can create a :ref:`sanitized backup <orocloud-maintenance-use-sanitized-backup>`, :ref:`configure it as necessary <orocloud-maintenance-advanced-use-sanitization-conf>`, and use it for your needs.
 
 
 The upgrade failed. What are the recommended steps to have application IP and running ASAP?
@@ -53,6 +51,3 @@ If the upgrade has failed before running the `oro:platform:update` and the `appl
 If the upgrade failed after or during the `oro:platform:update` execution, the changes in the application database have already been applied. Run the necessary restore operation:
 
 * `backup:restore` to recover both database and the application code, generating new caches. The command restores the application backup without media files from the specified backup time point. Media files can only be restored via a request to Support.
-
-.. include:: /include/include-links-cloud.rst
-   :start-after: begin

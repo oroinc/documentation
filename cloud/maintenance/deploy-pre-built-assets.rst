@@ -1,7 +1,3 @@
-.. _orocloud-skip-assets:
-
-.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
-
 Application Upgrade Using Pre-Built Assets
 ==========================================
 
@@ -120,6 +116,3 @@ After pushing pre-built assets to the git repository, you can run an upgrade wit
 .. warning::
 
    It is required to rebuild assets every time before the upgrade. Otherwise, you can end up with outdated or broken styles and javascript assets on your website.
-
-.. include:: /include/include-links-cloud.rst
-   :start-after: begin

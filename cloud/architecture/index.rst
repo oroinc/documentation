@@ -7,8 +7,6 @@
 
 .. _cloud_architecture:
 
-.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
-
 Architecture
 ------------
 
@@ -81,6 +79,7 @@ Key details for an OroCommerce instance protected by Cloudflare:
 Cloudflare is available both for GCP and OCI-hosted environments.
 
 Oro customers can also choose to utilize alternative CDN providers. Please contact Oro Support to check if your CDN is compatible with the Oro application.
+
 
 Web Node
 ~~~~~~~~

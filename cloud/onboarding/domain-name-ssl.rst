@@ -1,7 +1,5 @@
 .. _ssl-certificate:
 
-.. important:: You are viewing the upcoming documentation for OroCloud, scheduled for release later in 2025. For accurate and up-to-date information, please refer only to the documentation of |the latest LTS version|.
-
 Domain Name and SSL Certificate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -42,8 +40,4 @@ You also should reconfigure your application so it is not redirected to oro-clou
 
 Please keep in mind that you are fully responsible for provisioning, renewal, and support of the SSL certificate that you have provided to Oro.
 
-.. include:: /include/include-links-cloud.rst
-   :start-after: begin
-
 .. finish_include
-
