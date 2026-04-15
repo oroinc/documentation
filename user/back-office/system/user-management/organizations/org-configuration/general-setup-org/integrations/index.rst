@@ -7,6 +7,7 @@ Configure Integration Settings per Organization
    Google Settings <organization-google>
    Microsoft Settings <organization-microsoft>
    AI Content Generation <organization-ai-settings>
-   AI Agent <organization-ai-agent>
+   AI Smart Agent <organization-ai-agent>
+   OroIQ <organization-oroiq>
    AI Smart Order <organization-ai-smart-order>
    CAPTCHA Settings <organization-captcha>

@@ -104,6 +104,8 @@ To edit an entity:
 .. image:: /user/img/system/entity_management/entity_showworkflowstep.png
    :alt: A sample of an entity record with enabled workflow step
 
+* **Include in Smart Insights** --- When set to *Yes*, this entity will be considered in :ref:`OroIQ Smart Insights <concept-guide--oroiq>` to generate analytics, trends, and contextual recommendations.
+
 7. Click **Save and Close** on the top right.
 
 8. Once you saved the entity, you must :ref:`update the schema <admin-guide-update-schema>` to apply the changes.
