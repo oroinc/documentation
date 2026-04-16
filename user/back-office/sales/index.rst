@@ -30,6 +30,7 @@ You can find more in-depth information on all Oro sales tools below:
    Sales Territories <sales-territories>
    Seller Registration Requests <seller-registration-requests/index>
    Price Calculation Details <prices-debug>
+   Recurring Orders <recurring-orders/index>
 
 
 
