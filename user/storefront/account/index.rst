@@ -26,6 +26,7 @@ Your account menu has the following sections:
 * :ref:`Requests for Quote <frontstore-guide--rfq>` -- enables to view all the submitted RFQs, check their statuses, print or cancel them.
 * :ref:`Order History <my-account-order-history>` -- stores the information on all your orders both open and already submitted.
 * :ref:`Previously Purchased <frontstore-guide--previously-purchased>` -- lists all items you bought from the store in the past. By default, previously purchased products are sorted by recency with the newest items displayed first. The visibility of this section depends on the configuration of a particular website.
+* :ref:`Recurring Orders <my-account-recurring-orders>` --- enables customers to automatically place repeat orders based on previously submitted orders.
 * :ref:`Invoices <frontstore-guide--invoices>` --- enables to view all customer user's invoices, check their statuses, download them as .pdf files, and pay directly from the grid or view page.
 * :ref:`Quotes <my-account-quotes>` -- provides the information on whether the submitted request for quote has been accepted by sales representatives and under what conditions. Here, you can view all the offered quotes and decide whether to accept them and submit an order or keep negotiating.
 * :ref:`Saved Search <my-account-saved-search>` -- reflects customer users' saved search queries (meaningful for the Enterprise edition application).
@@ -45,6 +46,7 @@ Your account menu has the following sections:
    Requests for Quote <rfq/index>
    Order History <order-history>
    Previously Purchased Products <previously-purchased/index>
+   Recurring Orders <recurring-orders>
    Invoices <invoices/index>
    Quotes <quotes>
    Saved Search <saved-search>

@@ -7,4 +7,5 @@ Configure Sales Settings per Customer Group
    :maxdepth: 1
 
    Checkout Order Limits <customer-group-checkout-settings>
+   Recurring Orders <customer-group-recurring-orders>
    Invoices <customer-group-invoices-settings>

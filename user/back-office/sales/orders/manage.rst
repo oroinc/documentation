@@ -95,6 +95,28 @@ To re-order an existing order:
 
 #. Click **Save** on the top right of the page.
 
+Schedule a Recurring Order
+--------------------------
+
+Back-office users can schedule a :ref:`recurring order <user-guide--sales--recurring-orders>` based on an existing order.
+
+To schedule a recurring order from the order view page:
+
+#. Navigate to **Sales > Orders** in the main menu.
+#. Click the required order to open its details page.
+#. Click **Schedule Recurring Order** at the top of the page.
+#. When the new page opens, configure the recurring order schedule by selecting the repeat frequency, start date, and optional end date, as well as selecting which line items to include.
+#. Click **Save and Close**.
+
+.. image:: /user/img/sales/recurring-orders/new-ro.png
+
+Alternatively, a recurring order can be scheduled directly from the **Orders** grid. Hover over the |IcMore| **More Options** menu for the required order and click **Schedule Recurring Order**.
+
+.. image:: /user/img/sales/recurring-orders/new-ro-grid.png
+
+Once scheduled, the recurring order is created and managed separately from the original order under **Sales > Recurring Orders** in the back-office menu.
+
+
 .. _doc--orders--actions--delete:
 
 Delete an Order
@@ -138,6 +160,10 @@ Delete Multiple Orders
 
 3. In the confirmation dialog, click **Yes, Delete**.
 
+**Related Topics**
+
+* :ref:`Configure Recurring Orders Globally <user-guide--system-configuration--commerce-sales-recurring-orders>`
+* :ref:`Recurring Orders in the Storefront <my-account-recurring-orders>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

@@ -8,4 +8,5 @@ Configure Sales Settings per Customer
    :maxdepth: 1
 
    Checkout Order Limits <customer-checkout-settings>
+   Recurring Orders <customer-recurring-orders>
    Invoices <customer-invoices-settings>

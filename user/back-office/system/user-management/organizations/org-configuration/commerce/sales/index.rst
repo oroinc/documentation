@@ -8,6 +8,7 @@ Sales Configuration Settings per Organization
    Shopping List <organization-guest-shopping-list>
    Contacts <organization-sales-info>
    Checkout <organization-guest-checkout>
+   Recurring Orders <organization-recurring-orders>
    Request for Quote <organization-guest-rfq>
    Orders History <organization-orders-history>
    Multi Shipping Options <organization-multi-shipping>
