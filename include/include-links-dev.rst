@@ -6523,3 +6523,7 @@ Links (Dev)
 .. |mcp/sdk| raw:: html
 
    <a href="https://github.com/modelcontextprotocol/php-sdk" target="_blank">mcp/sdk</a>
+
+.. |application_name| raw:: html
+
+   <a href="https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-APPLICATION-NAME" target="_blank">application_name</a>
