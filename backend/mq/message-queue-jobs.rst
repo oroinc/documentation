@@ -30,7 +30,7 @@ Recommendations that may help you:
 
 -  The action is complicated and can be executed for a long time.
 -  There is a need to monitor execution status.
--  There is a need to run an unique job i.e. do not allow running a job with the
+-  There is a need to run a unique job i.e. do not allow running a job with the
    same name until the previous job has finished.
 -  There is a need to run a step-by-step action i.e. the message flow has
    several steps (tasks) which run one after another.
