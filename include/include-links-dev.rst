@@ -6215,3 +6215,6 @@ Links (Dev)
 
     <a href="https://github.com/oroinc/orocommerce/tree/5.1/src/Oro/Bundle/WebsiteSearchSuggestionBundle/" target="_blank">WebsiteSearchSuggestionBundle</a>
 
+.. |application_name| raw:: html
+
+   <a href="https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-APPLICATION-NAME" target="_blank">application_name</a>
