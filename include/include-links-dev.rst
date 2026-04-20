@@ -6592,3 +6592,7 @@ Links (Dev)
 .. |iconly.io| raw:: html
 
     <a href="https://iconly.io/tools/svg-convert-stroke-to-fill" target="_blank">iconly.io</a>
+
+.. |application_name| raw:: html
+
+   <a href="https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-APPLICATION-NAME" target="_blank">application_name</a>
