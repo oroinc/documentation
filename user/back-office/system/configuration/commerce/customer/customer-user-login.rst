@@ -14,11 +14,23 @@ To apply customer user login-related options in your Oro application instance:
 Configure Customer User Login Form
 ----------------------------------
 
+.. note:: The feature is available as of OroCommerce version 6.0.9.
+
 In the Customer User Login Form section, configure the ability for a customer user to sign in with a username and password.
 
 * **Enable Username/Password Login** - When this option is enabled, customer users can sign in with a username and password, and all features related to passwords will be available. If you disable this option, password login will be turned off for all customer users. Consequently, all password-related features will also become unavailable.
 
 .. important:: Before disabling this option, make sure that at least one external authentication method (such as Single Sign-On) is properly set up.
+
+Configure Login Attempts
+------------------------
+
+In the **Login Attempts** section, configure the following options:
+
+   * **Enable Failed Logins Limit** --- Defines whether a user can be locked out when the max number of login attempts is reached. By default, the option is enabled.
+   * **Max Login Attempts** --- The number of attempts within the login failure lockout interval that a user has to authenticate before they are locked out. By default, the number is set to 10.
+   * **Login Failure Lockout Interval** --- The time in minutes in which failed login attempts are counted. If one failed login attempt is followed by the second failed attempt within this lockout interval, the failed login count starts. The user will be locked out if they reach the maximum number of failed login attempts. Set zero (0) to count failed login attempts globally. By default, it is set to 60 minutes.
+   * **Account Lockout Time** --- The time in minutes that indicates how long the user has before they are locked out of the system if they reach the maximum number of failed login attempts. Set zero (0) to disable automatic unlock. By default, it is set to 60 minutes.
 
 .. _user-guide--customers--customer-user-password-change-policy:
 .. _configuration--guide--commerce--configuration--customer-user-password-change-policy:
@@ -36,12 +48,4 @@ In the **Password Change Policy** section, configure the following options:
 
     * **Enforce Password History Policy** --- By default, the system collects the last 12 previously used passwords, but you can change this number by toggling this option.
 
-Configure Login Attempts
-------------------------
 
-In the **Login Attempts** section, configure the following options:
-
-   * **Enable Failed Logins Limit** --- Defines whether a user can be locked out when the max number of login attempts is reached. By default, the option is enabled.
-   * **Max Login Attempts** --- The number of attempts within the login failure lockout interval that a user has to authenticate before they are locked out. By default, the number is set to 10.
-   * **Login Failure Lockout Interval** --- The time in minutes in which failed login attempts are counted. If one failed login attempt is followed by the second failed attempt within this lockout interval, the failed login count starts. The user will be locked out if they reach the maximum number of failed login attempts. Set zero (0) to count failed login attempts globally. By default, it is set to 60 minutes.
-   * **Account Lockout Time** --- The time in minutes that indicates how long the user has before they are locked out of the system if they reach the maximum number of failed login attempts. Set zero (0) to disable automatic unlock. By default, it is set to 60 minutes.

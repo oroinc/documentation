@@ -59,9 +59,9 @@ To change the default customer user configuration settings globally:
 
    * **Enable Login As Customer User** --- The option enables back-office users with the **Login as Customer User** :ref:`role capability <admin-capabilities>` assigned to them to temporarily sign into the OroCommerce storefront and operate it as a specific customer user (i.e., impersonate a customer user). This option is disabled by default. User impersonation is also available at the :ref:`organization level <organization-user-impersonation>`.
 
-7. In the **Login Redirect** section, configure the following option:
+7. In the **REST API** section, configure the following option:
 
-   * **Do Not Leave Checkout** --- Enable this option to redirect a user back to the checkout page after a successful login. This will override the *Redirect After Login* setting on the :ref:`website configuration level <system--website--configuration--commerce--customers--customer-users>` that may specify a different target page.
+   * **Enable API Key Generation** --- Enable/disable automatic generation of API access keys for new customer users.
 
 .. _configuration--guide--commerce--configuration--cookie-consents:
 
@@ -86,7 +86,6 @@ If the application was installed without demo data, the banner is disabled. Conf
 
 9. Click **Save Settings**.
 
-.. image:: /user/img/customers/customer_users/customer_user_password_history_used_password.png
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
