@@ -14,6 +14,8 @@ To apply customer user login-related options in your Oro application instance:
 Configure Customer User Login Form
 ----------------------------------
 
+.. note:: This feature is available as of OroCommerce version 6.1.8.
+
 In the Customer User Login Form section, configure the ability for a customer user to sign in with a username and password.
 
 * **Enable Username/Password Login** - When this option is enabled, customer users can sign in with a username and password, and all features related to passwords will be available. If you disable this option, password login will be turned off for all customer users. Consequently, all password-related features will also become unavailable.
