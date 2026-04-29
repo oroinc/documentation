@@ -6593,6 +6593,10 @@ Links (Dev)
 
     <a href="https://iconly.io/tools/svg-convert-stroke-to-fill" target="_blank">iconly.io</a>
 
+.. |JSON:API include format| raw:: html
+
+   <a href="https://jsonapi.org/format/#fetching-includes" target="_blank">JSON:API include format</a>
+
 .. |application_name| raw:: html
 
    <a href="https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-APPLICATION-NAME" target="_blank">application_name</a>
