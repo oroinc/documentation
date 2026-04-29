@@ -16,6 +16,12 @@ Related Documentation
 * :ref:`Reverse Synchronization <dev-integrations-integrations-reverse-sync>`
 * :ref:`Define Owner for Related Entities on Integration Level <dev-integrations-integrations-default-owner>`
 * :ref:`Save Service Data Between Synchronizations <dev-integrations-integrations-additional-capabilities>`
+* :ref:`Webhooks <bundle-docs-platform-integration-bundle-webhooks>`
+
+.. toctree::
+   :hidden:
+
+   webhooks
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

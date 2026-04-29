@@ -52,8 +52,8 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
     "**D**",":ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`","**P**","**W**"
     ":ref:`DashboardBundle <bundle-docs-platform-dashboard-bundle>`","**I**",":ref:`PdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`",":ref:`WindowsBundle <bundle-docs-platform-windows-bundle>`"
     ":ref:`DataAuditBundle <bundle-docs-platform--data-audit>`",":ref:`ImapBundle <bundle-docs-platform-imap-bundle>`",":ref:`PlatformBundle <bundle-docs-platform-platform-bundle>`",":ref:`WorkflowBundle <bundle-docs-platform-workflow-bundle>`"
+    "",":ref:`IntegrationBundle <bundle-docs-platform-integration-bundle>`","",""
     ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`",":ref:`ImportExportBundle <bundle-docs-platform-import-export-bundle>`","",""
-
 
 .. _bundle-docs-commerce:
 
