@@ -25,6 +25,21 @@ to consume from and a message processor service. For example:
         Message with topic that is not claimed by any message processor is passed to ``\Oro\Component\MessageQueue\Client\NoopMessageProcessor``
         that does nothing but requeue such incoming message. Default status can be changed via ``oro_message_queue.client.noop_status`` configuration option.
 
+Consumption Modes
+-----------------
+
+When the consumer is bound to multiple queues, the consumption mode controls the order in which queues are polled. The mode is selected with the ``--mode`` option. The default mode is ``default``.
+
+Built-in modes:
+
+* ``default`` -- Polls each queue once in round-robin order.
+* ``sequential-exhaustive`` -- Drains each queue fully before advancing to the next.
+* ``strict-priority-interleaving`` -- Drains the high-priority queue, then polls one message from each lower-priority queue in turn.
+* ``hierarchical-strict-priority-interleaving`` -- A recursive version of strict-priority-interleaving where the sub-pattern of higher-priority queues repeats until idle.
+* ``weighted-round-robin`` -- Polls each queue for up to a configured number of messages (weight) before advancing.
+
+For a detailed description of each mode, including consumption schemas, and instructions for creating custom modes, see :ref:`Consumption Modes <dev-guide-mq-consumption-modes>`.
+
 
 Options
 -------
