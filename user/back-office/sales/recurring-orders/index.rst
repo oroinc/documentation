@@ -3,7 +3,7 @@
 Manage Recurring Orders in the Back-Office
 ==========================================
 
-.. note:: This is an OroCommerce Enterprise feature, introduced in version 6.1.7.
+.. note:: This is an OroCommerce Enterprise feature.
 
 Recurring Orders allow customers in the storefront to automatically :ref:`place repeat orders based on previously submitted orders <my-account-recurring-orders>` and a predefined schedule. Each recurring order defines the frequency, start date, and optional end date for order generation. On each scheduled date, the system automatically creates a new standard order, while back-office users can monitor and manage recurring orders throughout their lifecycle under **Sales > Recurring Orders** in the back-office menu.
 

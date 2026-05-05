@@ -309,6 +309,9 @@ You should add the logger in the Decorator of the service and replace the origin
 
 Log Traceability
 ----------------
+
+.. note:: Log Traceability is available as of OroCommerce version 7.0.1.
+
 Log traceability enables correlating all log entries associated with a single user action or operation across multiple processes and services.
 
 Configuration

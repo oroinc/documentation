@@ -58,10 +58,12 @@ Logging Console Commands
 
 All console commands are logged automatically on **ConsoleEvents::COMMAND** and **ConsoleEvents::EXCEPTION**. See |ConsoleCommandSubscriber| for more information.
 
+.. _bundle-docs-platform-logger-bundle-logs-traceability:
+
 Logs Traceability
 -----------------
 
-.. _bundle-docs-platform-logger-bundle-logs-traceability:
+.. note:: Log Traceability is available as of OroCommerce version 7.0.1.
 
 Log traceability provides tracking of related log entries across different parts of the application by assigning a unique trace ID to each request, console command, and message queue operation.
 
