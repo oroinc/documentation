@@ -65,7 +65,7 @@ Environment Setup
       sudo apt install software-properties-common
       sudo add-apt-repository -y ppa:ondrej/php
       sudo apt update
-      sudo apt -y install php8.5 php8.5-fpm php8.5-cli php8.5-pdo php8.5-mysqlnd php8.5-xml php8.5-soap php8.5-gd php8.5-zip php8.5-intl php8.5-mbstring php8.5-opcache php8.5-curl php8.5-bcmath php8.5-ldap php8.5-pgsql php8.5-dev php8.5-mongodb
+      sudo apt -y install php8.5 php8.5-fpm php8.5-cli php8.5-pdo php8.5-mysqlnd php8.5-xml php8.5-soap php8.5-gd php8.5-zip php8.5-intl php8.5-mbstring php8.5-opcache php8.5-curl php8.5-bcmath php8.5-ldap php8.5-pgsql php8.5-mongodb
 
   You will be prompted to type in your password as you are running the commands as a sudo user.
 

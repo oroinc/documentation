@@ -80,13 +80,13 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * soap                                            |
 |                   | * bcmath                                          |
 |                   | * ldap                                            |
-|                   | * mongodb (to use OroGridFSConfigBundle)          |
+|                   | * mongodb >=2.0 (to use OroGridFSConfigBundle)    |
 +-------------------+---------------------------------------------------+
 | *Database*        | * |PostgreSQL| >=17.6                             |
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| >=24.11                               |
+| *Assets*          | * |Node.js| >=24.11.0 <25                         |
 |                   | * |PNPM| >=10.7.0                                 |
 |                   |                                                   |
 |                   | Used for JS assets minification and SCSS assets   |
@@ -105,7 +105,7 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |
 +------------------+-----------------------------------------------------+
-| *Database*       | * |PostgreSQL| / |EnterpriseDB| >=17.6              |
+| *Database*       | * |PostgreSQL| / |EnterpriseDB| >=18.3              |
 +------------------+-----------------------------------------------------+
 | *Search Index*   | * |Elasticsearch| >=9.2, <10.0                      |
 +------------------+-----------------------------------------------------+

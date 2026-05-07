@@ -15,13 +15,13 @@ Environment Setup
       sudo apt install software-properties-common
       sudo add-apt-repository -y ppa:ondrej/php
       sudo apt update
-      sudo apt -y install php8.5 php8.5-fpm php8.5-cli php8.5-pdo php8.5-mysqlnd php8.5-xml php8.5-soap php8.5-gd php8.5-zip php8.5-intl php8.5-mbstring php8.5-curl php8.5-bcmath php8.5-ldap php8.5-pgsql php8.5-dev
+      sudo apt -y install php8.5 php8.5-fpm php8.5-cli php8.5-pdo php8.5-mysqlnd php8.5-xml php8.5-soap php8.5-gd php8.5-zip php8.5-intl php8.5-mbstring php8.5-curl php8.5-bcmath php8.5-ldap php8.5-pgsql
 
-   Install the MongoDB PHP Extension with PECL:
+   Install the MongoDB PHP Extension:
 
    .. code-block:: none
 
-      sudo pecl install mongodb
+      sudo apt -y install php8.5-mongodb
 
    For more information, see |Mongo installation|.
 
@@ -39,8 +39,8 @@ Environment Setup
 
    .. code-block:: none
 
-      echo -e "extension=mongodb.so \n\nmemory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" | sudo tee -a  /etc/php/8.5/fpm/php.ini
-      echo -e "extension=mongodb.so \n\nmemory_limit = 2048M" | sudo tee -a  /etc/php/8.5/cli/php.ini
+      echo -e "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" | sudo tee -a  /etc/php/8.5/fpm/php.ini
+      echo -e "memory_limit = 2048M" | sudo tee -a  /etc/php/8.5/cli/php.ini
 
 3. Install Node.js 24:
 

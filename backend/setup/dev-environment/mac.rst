@@ -34,26 +34,24 @@ Environment Setup
 
         npm install -g pnpm@latest-10
 
-5. If you are going to use an Enterprise Edition of the application, install and enable the mongodb php extension:
+5. If you are going to use an Enterprise Edition of the application, install the mongodb php extension:
 
    .. code-block:: none
 
-      pecl install mongodb
-      echo "extension=\"mongodb.so\"" >> /usr/local/etc/php/8.5/php.ini
+      brew tap shivammathur/extensions
+      brew install mongodb@8.5
 
 6. Configure PHP:
 
    .. code-block:: none
 
-      echo "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" >> /usr/local/etc/php/8.5/php.ini
+      echo "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" >> $(brew --prefix)/etc/php/8.5/php.ini
 
 7. Install Symfony Server and enable TLS:
 
    .. code-block:: none
 
-      curl -sS https://get.symfony.com/cli/installer | bash
-      echo 'export PATH="$HOME/.symfony/bin:$PATH"' >> ~/.bash_profile
-      source ~/.bash_profile
+      brew install symfony-cli
       symfony local:server:ca:install
 
 8. Restart the terminal and web browser to get them ready.
