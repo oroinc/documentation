@@ -24,7 +24,7 @@ To change the default customer user configuration settings globally:
 
    * **Default Customer Owner** --- Service information that determines which user has full access to managing and viewing customer information. Usually, this is the default customer administrator or the administrator assigned to the customer. Applies to the customers created in the back-office as well as to those who register on the OroCommerce website.
    * **Registration Allowed** --- Enables/disables registration of new customers from the storefront login screen.
-   * **Confirmation Required** --- Enables/disables the email confirmation step following user registration.
+   * **Email Confirmation Required** --- Enables/disables the email confirmation step following user registration.
    * **Show Registration Link** --- Shows/hides the registration link from the storefront login screen. The link is next to the Sign In link in the top bar.
    * **Auto Login** ---Enables/disables customer users to login after registration or email confirmation. Disabled by default.
    * **Required Company Name** --- Shows/hides the company name field in the registration form in the storefront. Required for individual customers who do not belong to any company.
