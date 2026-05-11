@@ -22,6 +22,32 @@ In the Customer User Login Form section, configure the ability for a customer us
 
 .. important:: Before disabling this option, make sure that at least one external authentication method (such as Single Sign-On) is properly set up.
 
+Configure Login Attempts
+------------------------
+
+In the **Login Attempts** section, configure the following options:
+
+   * **Enable Failed Logins Limit** --- Defines whether a user can be locked out when the max number of login attempts is reached. By default, the option is enabled.
+   * **Max Login Attempts** --- The number of attempts within the login failure lockout interval that a user has to authenticate before they are locked out. By default, the number is set to 10.
+   * **Login Failure Lockout Interval** --- The time in minutes in which failed login attempts are counted. If one failed login attempt is followed by the second failed attempt within this lockout interval, the failed login count starts. The user will be locked out if they reach the maximum number of failed login attempts. Set zero (0) to count failed login attempts globally. By default, it is set to 60 minutes.
+   * **Account Lockout Time** --- The time in minutes that indicates how long the user has before they are locked out of the system if they reach the maximum number of failed login attempts. Set zero (0) to disable automatic unlock. By default, it is set to 60 minutes.
+
+Configure Email Change Policy
+-----------------------------
+
+In the **Email Change Policy** section, configure the following option:
+
+   * **Enable Verification via Current Email** --- When enabled, any request to change an email address of a customer user must be authorized via a confirmation code sent to the user's existing email. When disabled, the email can be updated immediately during profile update.
+
+   Clicking the verification link redirects the user to a confirmation page. After final approval, the email change is completed and the new address becomes active.
+
+   .. image:: /user/img/system/config_commerce/customer/customer_user_update_email2.png
+      :alt: Part 2 of the changing email flow in the storefront
+
+.. note:: If the :ref:`Email Confirmation Required <sys-config--configuration--commerce--customers--customer-users>` option is enabled, an additional security step is added. A verification link is sent to the customer user's new email address. After approval from the new address, the email change is completed and the new address becomes active.
+
+        .. image:: /user/img/system/config_commerce/customer/customer_user_update_email_confirm.png
+
 .. _user-guide--customers--customer-user-password-change-policy:
 .. _configuration--guide--commerce--configuration--customer-user-password-change-policy:
 
@@ -38,12 +64,3 @@ In the **Password Change Policy** section, configure the following options:
 
     * **Enforce Password History Policy** --- By default, the system collects the last 12 previously used passwords, but you can change this number by toggling this option.
 
-Configure Login Attempts
-------------------------
-
-In the **Login Attempts** section, configure the following options:
-
-   * **Enable Failed Logins Limit** --- Defines whether a user can be locked out when the max number of login attempts is reached. By default, the option is enabled.
-   * **Max Login Attempts** --- The number of attempts within the login failure lockout interval that a user has to authenticate before they are locked out. By default, the number is set to 10.
-   * **Login Failure Lockout Interval** --- The time in minutes in which failed login attempts are counted. If one failed login attempt is followed by the second failed attempt within this lockout interval, the failed login count starts. The user will be locked out if they reach the maximum number of failed login attempts. Set zero (0) to count failed login attempts globally. By default, it is set to 60 minutes.
-   * **Account Lockout Time** --- The time in minutes that indicates how long the user has before they are locked out of the system if they reach the maximum number of failed login attempts. Set zero (0) to disable automatic unlock. By default, it is set to 60 minutes.
