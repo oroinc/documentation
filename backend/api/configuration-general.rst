@@ -34,6 +34,10 @@ or `config/config.yml` of your application.
         # The default value is 100.
         max_delete_entities: 100
 
+        # Whether absolute URLs for assets should be used in API responses.
+        # The default value is false.
+        use_absolute_urls_for_api: false
+
 To change the maximum number of entities retrieved by a request for a specific API resource, use the ``max_result`` option in `Resources/config/oro/api.yml`. For details, see
 :ref:`entities <web-api--entities-config>` and :ref:`actions <web-api--actions-config>` configuration sections.
 
