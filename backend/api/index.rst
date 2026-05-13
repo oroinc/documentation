@@ -44,6 +44,7 @@ By default, only custom entities, dictionaries, and enumerations are accessible 
    storefront
    storefront-routes
    batch-api
+   ext-id
 
 
 .. include:: /include/include-links-dev.rst

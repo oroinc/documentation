@@ -201,8 +201,8 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
         'activity' => [
             'activities' => [
                 ['Oro\Bundle\EmailBundle\Entity\Email'],
-                ['Oro\Bundle\TaskBundle\Entity\Task'],
-            ],
+                ['Oro\Bundle\TaskBundle\Entity\Task']
+            ]
         ]
 
 * **is_serialized** *boolean* - if TRUE then field data will be saved in serialized_data column without doctrine schema update.
@@ -214,6 +214,8 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 * **is_deleted** *boolean* - if true, the config entity is able to delete.
 
 * **upgradeable** *boolean* - if true, the extend config entity is able to update.
+
+* **unique_key** *array* - contains configuration of the unique keys. The format is ['keys' => [['name' => string, 'key' => [field name, ...]], ...]].
 
 * **pk_columns** *string[]* - a list of Primary Keys column name.
 
