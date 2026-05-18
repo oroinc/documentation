@@ -73,6 +73,11 @@ Collecting and processing logs are essential when troubleshooting errors. OroClo
 
 A number of logs are available from the GCP - standard component system logs, and application-specific. Application-specific logs are *app prod* and *consumer*; other logs are responsible for aggregating component-specific errors, like *naxsi-error* or *nginx-error*. However, understanding of the OroCloud deployment architecture is essential to work with the provided information efficiently.
 
+.. note:: To maintain optimal log volume and minimize unnecessary data, we recommend setting channels and log levels to ``ERROR`` during regular operations. This ensures that environments log only information related to potential issues and errors.
+
+    To prevent resource exhaustion from excessive log volume, we have introduced daily thresholds. Beyond 1 GB, non-critical application logs (``INFO``, ``NOTICE``, and ``DEBUG``) are dropped. Past 2 GB, higher-severity logs are sampled at a 1:10 ratio, and at 3 GB, all logging is temporarily suspended. In Production, any dropped logs are safely archived in an storage bucket for long-term retention and manual recovery.
+
+
 Working with Logs
 ^^^^^^^^^^^^^^^^^
 
