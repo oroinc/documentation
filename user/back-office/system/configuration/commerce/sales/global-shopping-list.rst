@@ -50,18 +50,6 @@ To set the shopping list globally:
 .. image:: /user/img/system/config_commerce/sales/saved-for-later-section.png
    :alt: The Saved for Later section on the shopping list page
 
-* **Enforce Separate Shopping List Validations For Checkout and RFQ** --- The option controls how validation issues on a shopping list are handled when a customer attempts to proceed to **Checkout** or submit a **Request for Quote (RFQ)**:
-
-    * When **enabled**, checkout and RFQ-specific validation errors are displayed in separate popups at the moment a user initiates each action. This ensures that customers can see and resolve only the issues relevant to the action they are performing. The system allows the user to start Checkout or RFQ even if the shopping list contains problematic items, but immediately requires them to fix or remove such items before proceeding. In the validation popup, customers will see only the products with errors. Depending on the issue, they can correct quantities (if the issue is fixable), remove the item from the shopping list, move the item to *Saved for Later* (if enabled), or submit an RFQ instead (when attempting to start Checkout). Some **blocking validation rules** (such as minimum or maximum order amount restrictions) will always prevent starting Checkout, even when this option is enabled.
-
-    .. image:: /user/img/system/config_commerce/sales/validation-popup-sf.png
-       :alt: Validation popup in the storefront shows the products with errors which must be resolved before proceeding to the checkout
-
-    * When **disabled**, the **Checkout** button remain disabled as long as the shopping list contains items with any validation errors (e.g., insufficient inventory). In this case, customers must manually correct or delete problematic items *before* they can begin сheckout or request a quote instead. They cannot proceed until the shopping list contents or quantities are adjusted appropriately.
-
-    .. image:: /user/img/system/config_commerce/sales/shopping-list-errors.png
-       :alt: Shopping list page with problematic items and the disabled Checkout button
-
 7. Click **Save Settings**.
 
 .. include:: /include/include-images.rst

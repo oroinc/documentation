@@ -52,7 +52,7 @@ To configure filters and sorting options globally:
 
 .. hint:: Before enabling the options, ensure to:
 
-    1. Define the options for the :ref:`inventory_status <products--product-attributes>` product attribute under the Products > Product Attributes back-office menu. Drag and drop statuses to arrange them by priority (e.g., *In Stock, Out Of Stock, Discontinued*). Products with higher-priority statuses will be displayed first. Please note that the inventory_status attribute is a system product attribute, so only a system administrator of the global organization can edit it.
+    1. Define the options for the :ref:`inventory_status <products--product-attributes>` product attribute under the Products > Product Attributes back-office menu. Drag and drop statuses to arrange them by priority (e.g., *In Stock, Out Of Stock, Discontinued*). Products with higher-priority statuses will be displayed first. Please note that the inventory_status attribute is a **system product attribute**, so only a system administrator of the **Global organization** can edit it.
 
         .. image:: /user/img/system/config_commerce/catalog/inventory-status-attribute.png
            :alt: The details page of the Inventory status product attribute

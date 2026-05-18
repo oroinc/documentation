@@ -94,7 +94,7 @@ Products, product attributes, and product families are managed per organization.
 
 If you have a multi-org application, you can create products with the same SKU and URL slug in different organizations. You can also manage the product attributes of each organization independently of other organizations in the system. It means that any product attribute modifications fulfilled within one organization do not affect the product attributes available in others.
 
-Some product attributes are global, which means that they were created in the global organization and can only be managed by its admins. You can use global attributes in other organizations but not edit them or create a new product attribute with the same name as a global attribute.
+Some product attributes are **global**, which means that they were created in the **Global organization** and can only be managed by its admins. You can use global attributes in other organizations but not edit them or create a new product attribute with the same name as a global attribute.
 
 .. _highlight-products-on-the-storefront:
 

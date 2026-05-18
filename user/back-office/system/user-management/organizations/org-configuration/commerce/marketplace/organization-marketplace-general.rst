@@ -5,7 +5,7 @@ Configure Marketplace Settings per Organization
 
 .. hint:: This section is part of the :ref:`OroMarketplace Concept Guide <concept-guide-oro-marketplace>` that provides a general understanding of the marketplace features and concepts.
 
-In OroMarketplace, you can enable seller registration (global organization only) and allow sellers to create products in their organization(s).
+In OroMarketplace, you can enable seller registration (**Global organization only**) and allow sellers to create products in their organization(s).
 
 .. note::
     You can also configure marketplace settings :ref:`globally <configuration--commerce--marketplace--seller-global>`.
