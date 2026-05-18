@@ -11,10 +11,6 @@ Logging
 Logger Configuration
 --------------------
 
-.. note:: To maintain optimal log volume and minimize unnecessary data, we recommend setting channels and log levels to ``ERROR`` during regular operations. This ensures that environments log only information related to potential issues and errors.
-
-    To prevent resource exhaustion from excessive log volume, we have introduced daily thresholds. Beyond 1 GB, non-critical application logs (``INFO``, ``NOTICE``, and ``DEBUG``) are dropped. Past 2 GB, higher-severity logs are sampled at a 1:10 ratio, and at 3 GB, all logging is temporarily suspended. In Production, any dropped logs are safely archived in an storage bucket for long-term retention and manual recovery.
-
 Out-of-the-box, in a ``prod`` environment, an application is configured to:
 
 * log all the messages up to the DEBUG level in case of an `error` or a higher-level message to the `var/logs/prod.log` file
