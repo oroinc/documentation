@@ -45,26 +45,10 @@ To set the shopping list globally:
 .. image:: /user/img/system/config_commerce/sales/show_all_lists_in_widget.png
    :alt: Illustration of the mentioned sample
 
-.. note:: The **Enable Saved For Later** option is available as of OroCommerce version 6.1.7.
-
 * **Enable Saved For Later** --- The option allows customers to temporarily set aside items on their shopping list without removing them. When enabled, users can mark any item as **Saved for Later**, which moves it to a dedicated section on the shopping list page. These items remain visible but are excluded from Checkout, Request for Quote (RFQ), total cost and quantity calculations. Customers can move items to and from the **Saved for Later** section at any time, provided they have the necessary *Edit permission* for the shopping list.
 
 .. image:: /user/img/system/config_commerce/sales/saved-for-later-section.png
    :alt: The Saved for Later section on the shopping list page
-
-.. note:: The **Enforce Separate Shopping List Validations For Checkout and RFQ** option is available as of OroCommerce version 6.1.7.
-
-* **Enforce Separate Shopping List Validations For Checkout and RFQ** --- The option controls how validation issues on a shopping list are handled when a customer attempts to proceed to **Checkout** or submit a **Request for Quote (RFQ)**:
-
-    * When **enabled**, checkout and RFQ-specific validation errors are displayed in separate popups at the moment a user initiates each action. This ensures that customers can see and resolve only the issues relevant to the action they are performing. The system allows the user to start Checkout or RFQ even if the shopping list contains problematic items, but immediately requires them to fix or remove such items before proceeding. In the validation popup, customers will see only the products with errors. Depending on the issue, they can correct quantities (if the issue is fixable), remove the item from the shopping list, move the item to *Saved for Later* (if enabled), or submit an RFQ instead (when attempting to start Checkout). Some **blocking validation rules** (such as minimum or maximum order amount restrictions) will always prevent starting Checkout, even when this option is enabled.
-
-    .. image:: /user/img/system/config_commerce/sales/validation-popup-sf.png
-       :alt: Validation popup in the storefront shows the products with errors which must be resolved before proceeding to the checkout
-
-    * When **disabled**, the **Checkout** button remain disabled as long as the shopping list contains items with any validation errors (e.g., insufficient inventory). In this case, customers must manually correct or delete problematic items *before* they can begin сheckout or request a quote instead. They cannot proceed until the shopping list contents or quantities are adjusted appropriately.
-
-    .. image:: /user/img/system/config_commerce/sales/shopping-list-errors.png
-       :alt: Shopping list page with problematic items and the disabled Checkout button
 
 7. Click **Save Settings**.
 

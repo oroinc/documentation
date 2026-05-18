@@ -3,7 +3,7 @@
 Manage Recurring Orders in the Storefront
 =========================================
 
-.. note:: This is an OroCommerce Enterprise feature, introduced in version 6.1.7.
+.. note:: Recurring Orders is only available in the OroCommerce Enterprise edition.
 
 The **Recurring Orders** page in the storefront allows customer users to view, manage, and create recurring orders based on previously submitted orders. Recurring orders help automate repeat purchases by generating new orders on a predefined schedule.
 

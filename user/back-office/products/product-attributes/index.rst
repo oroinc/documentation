@@ -12,7 +12,7 @@ A :term:`Product Attribute` is a type of a custom field in the product details. 
 
 For example, when your OroCommerce store sells TVs and T-shirts, these items share some generic attributes (e.g., name, vendor), and differ in the remaining attributes set. For example, there might be a *Screen properties* group containing *resolution*, *diagonal*, and *matrix* that should be linked to the products in the TV product family. For the T-shirts family, the linked attribute group may have color, size, material, fit, and care guidance (washing, ironing, dry cleaning, etc.).
 
-.. note:: You can manage product attributes per organization. Any changes made to product attributes within one organization do not affect the attributes of others. You can use the attributes created in the global organization in other organizations, but only a system administrator of the global organization can edit them.
+.. note:: You can manage product attributes per organization. Any changes made to product attributes within one organization do not affect the attributes of others. You can use the attributes created in the global organization in other organizations, but **only a system administrator of the Global organization can edit them**.
 
 Product attributes in OroCommerce fall into two categories: custom attributes, which you create yourself, and system (global) attributes, which are provided out-of-the box. System attributes are shared across all product families and cannot be removed. However, you can reorganize how they are grouped within a family. By default, OroCommerce includes the following system product attributes:
 

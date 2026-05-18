@@ -87,7 +87,7 @@ Each :ref:`organization <user-management-organizations>` in a multi-org Oro appl
 
 When you create a new organization, you also need to build a new web catalog as web catalogs and products are not replicated from one organization into another.
 
-The only organization that can display web catalogs and products from different organizations is called **global**. Users in the global organization, given they have  Global access levels in their role, can access and control all system data in all organizations within one instance of the application.
+The only organization that can display web catalogs and products from different organizations is called **global**. Users in the global organization, given they have Global access levels in their role, can access and control all system data in all organizations within one instance of the application.
 
 Web Catalogs and Websites
 -------------------------

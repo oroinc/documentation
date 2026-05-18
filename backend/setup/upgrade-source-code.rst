@@ -1,4 +1,4 @@
-:title: Upgrade Source Code to OroCommerce v6.1
+:title: Upgrade Source Code to OroCommerce v7.0
 
 .. index::
     single: Upgrade
