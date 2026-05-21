@@ -9,7 +9,7 @@ Manage My Profile in the Storefront
 
 Once you are logged in to the OroCommerce storefront, you can access your profile by clicking on your name in the top navigation bar, and selecting **My Profile** from the dropdown.
 
-My Profile has two sections, Account Info and Default Addresses.
+My Profile has three sections, Account Info, Sign In & Security, and Default Addresses.
 
 .. image:: /user/img/storefront/profile/MyProfilePage.png
 
@@ -18,52 +18,50 @@ My Profile has two sections, Account Info and Default Addresses.
 Account Info
 ^^^^^^^^^^^^
 
-In the **Account Info** section you can view the following details:
+In the **Account Info** section, you can view your name, role, and company information. To edit your profile details, click |Pencil-SVG| next to **Account Info**. In the editing mode, you can amend the following details:
 
-* Name
-* Email
-* Role
 * Company
-* Status
-* Password Status
-* Data protection (consents)
-
-To edit the profile, click |Pencil-SVG| next to **Account Info**.
-
-.. note:: Please note that the ability to edit your account information depends on the permissions that correspond to your role. These are defined by the administrator.
-
-In editing mode, you can amend the following details:
-
-* Customer
-* Email Address
 * Name Prefix
 * First Name
 * Middle Name
 * Last Name
 * Name Suffix
 * Birthday
-* Password
 * Data protection (accept or revoke mandatory or optional consents to process personal data)
 
 .. image:: /user/img/storefront/profile/MyProfilePageEdit.png
+
+.. note:: Please note that the ability to edit your account information depends on the permissions that correspond to your role. These are defined by the administrator.
+
+
+Sign In & Security
+^^^^^^^^^^^^^^^^^^
+
+In the **Sign In & Security** section, you can view and update your email address and password. To make changes, click |Pencil-SVG| next to the relevant field and save your updates.
+
+.. note:: Depending on the :ref:`back-office email configuration <customer-user-login--change-email>`, changing your email address may either take effect immediately after saving or require confirmation via a verification link sent to your current email address.
+
+    .. image:: /user/img/storefront/profile/email-change.png
+
 
 .. _frontstore-guide--profile-default-addresses:
 
 Default Addresses
 ^^^^^^^^^^^^^^^^^
 
-The **Default Addresses** section shows the addresses used by the signed in user. Here, the primary address is displayed by default.
+The **Default Addresses** section displays the addresses associated with the signed-in user. The primary addresses are shown by default.
 
-You can perform the following actions for each of the addresses listed here:
+For each listed address, you can perform the following actions:
 
 * Edit |Pencil-SVG|
 * Delete |Trash-SVG|
 
-To :ref:`manage default addresses in the address book <frontstore-guide--company-address>`, click **Go to Personal Addresses**.
-
-.. hint:: You can also open the address book by clicking **Address Book** in the menu on the left.
+To :ref:`manage default addresses in the address book <frontstore-guide--company-address>`, click **Go to Personal Addresses** or navigate to the **Address Book** section in the menu on the left.
 
 .. image:: /user/img/storefront/profile/MyProfileManageAddresses.png
+
+.. note::
+   Depending on the storefront settings, the address book lists may appear in the compact format with a map displayed on the right. Please be aware that a valid Google API key is required to display maps in the storefront. Please see :ref:`the back-office settings <system-configuration-integrations-google>` for more information.
 
 .. _frontstore-guide--profile-consents:
 
@@ -72,7 +70,7 @@ Data Protection
 
 .. hint:: Read more on this topic in :ref:`Data Protection and Consent Management <user-guide--consents>`.
 
-To comply with the :ref:`data protection regulations (such as CPPA, GDPR, etc.) <user-guide--consents>`, explicit consent for the application to process your personal data may be required. All applicable consents are located under **My Profile** in the **Account Info** section.
+To comply with the :ref:`data protection regulations (such as CPPA, GDPR, etc.) <user-guide--consents>`, explicit consent for the application to process your personal data may be required. All applicable consents are located under **My Profile** in the **Sign In & Security** section.
 
 Consents can be mandatory and optional:
 
@@ -89,13 +87,13 @@ The following key rules apply to consents in OroCommerce:
 
 * **Consents are informed**
 
-  You can be aware of how exactly your data is going to be processed and shared, and what marketing communications you can expect once you provide your consent. Therefore, you can view all your accepted and pending consents (and their detailed description) in your profile under **My Profile > Account Info** in the storefront.
+  You can be aware of how exactly your data is going to be processed and shared, and what marketing communications you can expect once you provide your consent. Therefore, you can view all your accepted and pending consents (and their detailed description) in your profile under **My Profile > Sign In & Security** in the storefront.
 
   .. image:: /user/img/storefront/profile/accepted-consent-profile.png
 
 * **Consents can be revoked**
 
-  If you are no longer happy with a consent, you can revoke it through your profile in the storefront when editing your **Profile Info**.
+  If you are no longer happy with a consent, you can revoke it in the storefront when editing your **Account Info** in the **My Profile** section.
 
   .. image:: /user/img/storefront/profile/revoke_consent.png
 
@@ -107,7 +105,7 @@ Accept a Consent
 You can be asked to accept consents when:
 
 * :ref:`Registering (creating and account in the OroCommerce store) <frontstore-guide--getting-started-overview-create-account>`
-* :ref:`When editing <frontstore-guide--profile-account>` your profile under **Account Info > Data Protection**
+* :ref:`When editing <frontstore-guide--profile-account>` your **Account Info** in the **My Profile** section
 * :ref:`When requesting a quote <frontstore-guide--rfq>`
 * At checkout
 
