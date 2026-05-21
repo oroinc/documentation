@@ -64,6 +64,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
 * **Similar Products Boost**" --- Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option allows you to use the attribute in the related products calculation. By default, all attributes are not used. The option works for string, many-to-one, boolean, select and multi-select attributes only.
 * **The Search Result Title** --- If set to *Yes*, the field value will be included into the search result title.
 * **Allowed MIME types** --- Limits the types of files you can attach to an entity. This applies to file attributes only. For instance, using this option, you can enable application users to upload files only in .pdf format. For this, add the *File* field to the opportunity entity, and enter *application/pdf* into the *Allowed Mime types* field. If this field is left empty, the list of :ref:`MIME types defined in the system configuration <admin-configuration-upload-settings>` is applied.
+* **Include in Smart Insights** --- If set to *yes*, this field will be considered in :ref:`OroIQ Smart Insights <concept-guide--oroiq>` to generate analytics, trends, and contextual recommendations.
 
 4. Once all the information has been provided, click **Save and Close** on the top right.
 5. On the entity page, click **Update Schema** on the top right, if the storage type for the entity field has been set to *Table Column*.

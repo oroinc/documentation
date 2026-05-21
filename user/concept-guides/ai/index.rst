@@ -1,18 +1,62 @@
+:title: AI & Automation in B2B eCommerce | OroCommerce OroIQ, Smart Agent & Smart Order
+
+.. meta::
+   :description: Discover how OroCommerce AI tools like OroIQ, Smart Agent, and Smart Order enhance B2B eCommerce with automation, data insights, and smarter workflows.
+
 .. _concept-guide--ai:
 
 AI and Automation
 =================
 
-.. note:: Please |contact our support team| to learn more about OroCommerce AI features, discuss how they can meet your business needs, and get started with implementation.
+.. note:: Please |contact our support team| to learn more about OroCommerce Enterprise AI features, discuss how they can meet your business needs, and get started with implementation.
 
-Artificial Intelligence (AI) is rapidly transforming industries, and B2B eCommerce is no exception. In today’s highly competitive market, businesses need tools that enable smarter decision-making, improve operational efficiency, and provide exceptional customer experiences. OroCommerce is at the forefront of this transformation, introducing AI-powered tools such as AI Smart Agent and AI Smart Order, tailored specifically to the complex needs of B2B eCommerce to help you enhance business operations and customer experiences.
+Artificial Intelligence (AI) is rapidly transforming industries, and B2B eCommerce is no exception. In today’s highly competitive market, businesses need tools that enable smarter decision-making, improve operational efficiency, and provide exceptional customer experiences. OroCommerce is at the forefront of this transformation, introducing AI-powered tools such as OroIQ, AI Smart Agent, and AI Smart Order, tailored specifically to the complex needs of B2B eCommerce to help enhance business operations and customer experiences.
+
+.. _concept-guide--oroiq:
+
+OroIQ
+-----
+
+OroIQ introduces a unified way to interact with business data and workflows using natural language. Serving as a centralized back-office assistant, it provides a single entry point to AI capabilities across the platform. Instead of navigating multiple screens or complex menus, you can ask questions, explore data, and perform actions directly from a conversational interface. Because OroIQ is built directly on top of the OroCommerce, it operates with full business context. It adheres to existing system logic and permission structures, ensuring that responses and actions are accurate, relevant, and secure.
+
+.. image:: /user/img/concept-guides/ai/oroiq-homepage.png
+
+Once integrated and configured via the :ref:`back-office <admin-configuration-oroiq-settings>` by the Oro team, the assistant becomes accessible via the OroIQ icon in the top-right corner of the back-office. Opening it reveals a dedicated workspace where interactions are organized into conversational threads. Each thread automatically aggregates a collection of related records alongside the dialogue, giving you immediate access to the specific customers, orders, or quotes currently being discussed.
+
+.. image:: /user/img/concept-guides/ai/oroiq-icon.png
+
+To help manage ongoing work, you can pin important conversations, search through past threads by title or content, and toggle a dark mode interface. To maintain a reliable audit trail, any thread that results in the creation of a system record is permanently preserved. These operational threads cannot be deleted, ensuring you always have the full historical context behind system actions.
+
+.. image:: /user/img/concept-guides/ai/oroiq-pins-records.png
+
+OroIQ automatically determines the appropriate mode of engagement based on the nature of your query. Depending on whether you need to analyze information or execute a task, it intelligently switches between its two primary modes: **Smart Insights** and **Smart Assistant**.
+
+Smart Insights
+^^^^^^^^^^^^^^
+
+When a request requires data analysis, OroIQ engages Smart Insights. In this mode, it translates natural language questions into database queries, dynamically generating summaries, tables, and visualizations. This removes the need to manually configure reports. You can simply ask questions like “Who are the top customers for a specific account manager?” or “Show order trends by month,” and receive structured, ready-to-use answers directly in the chat.
+
+.. image:: /user/img/concept-guides/ai/oroiq-example-query.png
+
+Smart Insights capabilities are managed through OroCommerce :ref:`entity management <admin-guide-create-entities>` at both the entity and field level using the *Include in Smart Insights* option, controlling whether the entity and its selected fields to be queried by the assistant. Sensitive information, such as passwords, is excluded by default. However, custom entities and fields can be included as needed, allowing organizations to securely tailor the assistant's analytical reach to their specific business requirements.
+
+Smart Assistant
+^^^^^^^^^^^^^^^
+
+When a request involves taking action rather than just analysing or viewing data, OroIQ transitions to the Smart Assistant. This mode allows you to execute business operations, such as creating quotes or orders, directly within the conversational interface.
+
+For instance, you can instruct the assistant to draft a new quote with a fifteen percent discount, and then create an order from it. Before making any system changes, OroIQ prepares the requested action and presents a clear summary of what it intends to create or modify. It requires explicit confirmation to proceed and once granted, it executes the task and provides a direct link to the newly created record, allowing you to open the pre-filled form and continue your work from the back-office UI.
+
+.. image:: /user/img/concept-guides/ai/oroiq-smart-assistant.png
+
+This confirmation step is a fundamental part of the OroIQ design. While it enables significant automation, it ensures that you remain in full control of all changes made to the system. Unlike standalone AI tools or generic language models, OroIQ operates strictly within the boundaries and permissions of OroCommerce. This allows it to generate reliable insights and safely execute actions without the security risks often associated with external AI systems.
 
 .. _concept-guide--ai--smart-agent:
 
-AI Smart Agent
---------------
+Smart Agent
+-----------
 
-The Oro AI Smart Agent is an innovative virtual assistant designed to enhance and simplify the B2B buying experience on OroCommerce. Seamlessly integrated into the OroCommerce Enterprise storefront UI, this AI-powered assistant allows logged-in buyers to engage with the platform using natural spoken or written language, just as they would with a sales representative.
+The Oro AI Smart Agent is an innovative virtual assistant designed to enhance and simplify the B2B buying experience in OroCommerce. Seamlessly integrated into the OroCommerce Enterprise storefront UI, this AI-powered assistant allows logged-in buyers to engage with the platform using natural spoken or written language, just as they would with a sales representative.
 
 .. image:: /user/img/concept-guides/ai/agent-storefront.png
    :alt: Illustration of an AI Agent in the OroCommerce storefront
@@ -40,8 +84,8 @@ With its intuitive design and AI-driven efficiency, the Oro AI Smart Agent trans
 
 .. _concept-guide--ai--smart-order:
 
-AI Smart Order
---------------
+Smart Order
+-----------
 
 The AI Smart Order tool modernizes and enhances the purchase order process for distributors and manufacturers, addressing inefficiencies caused by traditional methods like fax or email. In B2B commerce, many buyers still rely on these outdated processes, leading to manual data entry errors and delays. AI Smart Order eliminates these challenges by automating the capture and processing of purchase orders directly within OroCommerce, improving accuracy and operational efficiency.
 
@@ -77,7 +121,8 @@ For more information on how to set up Smart Order automation, see :ref:`Create a
 * :ref:`Integration with AI Clients: OpenAI and Vertex AI <integrations-ai-generation>`
 * :ref:`Product recommendations with AI <integrations-misc-google-retail-recommendations>`
 * :ref:`Create an Order via AI Smart Order Automation <user-guide--sales--orders--create--from-ai-smart-order>`
-* :ref:`AI Smart Order Widget <user-guide-dashboards-widgets>`
+* :ref:`Smart Order Widget <user-guide-dashboards-widgets>`
+* :ref:`OroIQ Back-Office Settings <admin-configuration-oroiq-settings>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
