@@ -14,6 +14,12 @@ docker buildx bake --progress plain --load
 
 As a result, an image and a ./_build folder will be created where the built documentation will be located.
 
+> **Troubleshooting:**
+> 
+> The build process uses the `-W` flag (treat warnings as errors) in the Dockerfile. If the build fails, you may temporarily remove the `-W` flag from the `sphinx-build` command in the Dockerfile and re-run the build to see all issues.
+>
+> After fixing the problems, restore the `-W` flag and run the build again to ensure a clean result.
+
 ## Check
 
 The image can be launched as an instance and opened in a browser.
