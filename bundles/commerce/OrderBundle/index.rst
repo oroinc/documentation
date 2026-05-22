@@ -16,6 +16,7 @@ Related Documentation
 * :ref:`Managers <previously-purchased-products-managers>`
 * :ref:`Providers <previously-purchased-products-providers>`
 * :ref:`Order PDF Documents <bundle-docs-commerce-order-pdf-documents>`
+* :ref:`Order Payment Status Webhooks <bundle-docs-commerce-order-payment-status-webhooks>`
 * :ref:`Order Edit Draft Session <bundle-docs-commerce-order-bundle-draft-session>`
 * :ref:`CLI Commands <bundle-docs-commerce-order-bundle-commands>`
 
@@ -25,6 +26,7 @@ Related Documentation
 
    previously-purchased-products
    order-pdf-documents
+   order-payment-status-webhooks
    order-edit-draft-session
    commands
 
