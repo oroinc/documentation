@@ -11,6 +11,7 @@ Features
 * **Entity Config-based**: Mark entities as webhook accessible through entity configuration
 * **API**: Full REST API for managing webhook endpoints (create, read, update, delete)
 * **Topic-based routing**: Each webhook subscribes to a single topic (e.g. ``order.created``) that combines the entity type and the event in one identifier
+* **Entity-specific subscriptions**: In addition to the general topic, a derived notification is also dispatched to ``{topic}.{entityId}`` (e.g., ``order.updated.42``), enabling per-entity-instance subscriptions
 * **Extensible topics**: Register custom topics via the ``WebhookTopicCollectEvent`` event
 * **Webhook Formats**: The ``format`` field selects a named request/response processing pipeline; custom formats can be registered and processed
 * **Oro Back-Office**: Full CRUD interface for managing webhook endpoints
@@ -435,10 +436,10 @@ How It Works
 1. **Entity Configuration**: Entities are marked as webhook accessible through entity config with the ``webhook_accessible`` flag in the ``integration`` scope
 2. **Topic Discovery**: ``WebhookConfigurationProvider`` reads entity configurations and builds ``WebhookTopic`` objects for each entity/event combination (e.g. ``order.created``, ``order.updated``, ``order.deleted``). After collecting entity-based topics it dispatches the ``oro_integration.webhook_topic_collect`` (``WebhookTopicCollectEvent``) event, allowing third-party bundles to add custom topics. The final collection is exposed via ``/api/webhooktopics``
 3. **Endpoint Registration**: Administrators create ``WebhookProducerSettings`` entities via API or UI to define notification endpoints, the topic each one subscribes to, and the **format** that governs request/response processing
-4. **Event Detection**: When a webhook-accessible entity is created, updated, or deleted, Doctrine entity listeners are triggered
-5. **Endpoint Lookup**: Active ``WebhookProducerSettings`` entities matching the topic are retrieved from the database
+4. **Event Detection**: When a webhook-accessible entity is created, updated, or deleted, Doctrine entity listeners are triggered. For updated and deleted events, two independent notifications are initiated — one for the general topic (e.g., ``order.updated``) and one for the entity-specific topic formed by appending the entity primary key to the base topic (e.g., ``order.updated.42``)
+5. **Endpoint Lookup**: Active ``WebhookProducerSettings`` entities matching the topic are retrieved from the database. This lookup is performed separately for the general topic and the entity-specific topic, so endpoints subscribed to either one receive the notification
 6. **Entity Serialization**: The entity is serialized in JSON:API format using the Oro API entity serializer via ``JsonApiFormatWebhookEventDataProvider``
-7. **Message Queuing**: A webhook notification message (including topic, event data, timestamp, message ID, and entity metadata) is sent to the message queue for async processing
+7. **Message Queuing**: For each topic (general and entity-specific), a webhook notification message (including topic, event data, timestamp, message ID, and entity metadata) is sent to the message queue for async processing
 8. **Fan-Out**: ``WebhookNotificationProcessor`` creates a child MQ job for each matching endpoint so deliveries are independent; entity metadata (``entity_class`` / ``entity_id``) is forwarded in each child message
 9. **Request Processing**: ``WebhookNotificationSender`` builds a ``WebhookRequestContext`` with the default payload, headers, and request options, then passes it to the ``WebhookRequestProcessorInterface`` registered for the webhook's format. The processor may modify any part of the context (e.g. ``ThinPayloadWebhookRequestProcessor`` strips ``attributes`` and ``relationships`` from the payload)
 10. **Signature Generation**: If a secret is configured, the final serialised payload is signed with HMAC-SHA256 and the signature is appended to the request headers. This happens after the request processor runs, so the signature always covers the final (possibly modified) payload
@@ -595,6 +596,61 @@ imports) by calling ``setEnabled(false)`` on the ``Oro\Bundle\IntegrationBundle\
     ``WebhookProducerSettings`` records matching the topic, then pushes a
     ``SendWebhookNotificationTopic`` message to the message queue. The actual HTTP delivery is
     performed asynchronously by the queue consumer via ``WebhookNotificationSender``.
+
+Entity-Specific Topic Subscriptions
+------------------------------------
+
+For every entity event notification dispatched by ``WebhookEntityListener``, the system sends two
+independent notifications in sequence:
+
+* A general notification to the base topic (e.g., ``order.updated``), which every active
+  ``WebhookProducerSettings`` record subscribed to that topic receives.
+* An entity-specific notification to a derived topic formed by appending the entity primary key to
+  the base topic (e.g., ``order.updated.42``), which only endpoints subscribed to that exact topic
+  receive.
+
+This means a subscriber can register a ``WebhookProducerSettings`` record using the entity-specific
+topic to receive notifications for a single entity instance only, without processing events for all
+entities of the same type.
+
+**Example — subscribing to updates for a single order:**
+
+.. code-block:: bash
+
+    POST /api/webhooks
+    Content-Type: application/vnd.api+json
+
+    {
+      "data": {
+        "type": "webhooks",
+        "attributes": {
+          "notificationUrl": "https://example.com/hooks/order-42-updates",
+          "enabled": true
+        },
+        "relationships": {
+          "topic": {
+            "data": {
+              "type": "webhooktopics",
+              "id": "order.updated.42"
+            }
+          },
+          "format": {
+            "data": {
+              "type": "webhookformats",
+              "id": "default"
+            }
+          }
+        }
+      }
+    }
+
+.. note::
+
+    Entity-specific topics such as ``order.updated.42`` are not returned by the
+    ``GET /api/webhooktopics`` endpoint, which only lists statically registered topics.
+    They are derived at runtime from the base topic name and the entity primary key. Use
+    the format ``{base_topic}.{entityId}`` when creating a ``WebhookProducerSettings``
+    record through the API or programmatically.
 
 Extending Webhook Topics
 ------------------------
