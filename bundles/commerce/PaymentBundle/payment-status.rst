@@ -39,5 +39,102 @@ Payment Status Calculation
 You can add more data to the payment status calculation context by creating an event listener for the ``\Oro\Bundle\PaymentBundle\Event\PaymentStatusCalculationContextCollectEvent`` event.
 
 
+.. _bundle-docs-commerce-payment-status-webhook-notifications:
+
+Payment Status Webhook Notifications
+-------------------------------------
+
+OroPaymentBundle provides ``\Oro\Bundle\PaymentBundle\Webhook\PaymentStatusWebhookNotifier`` — a
+reusable service for dispatching webhook notifications when a payment transaction completes.
+It is designed to be called from event listeners that handle the
+``\Oro\Bundle\PaymentBundle\Event\TransactionCompleteEvent`` event
+(``oro_payment.event.transaction_complete``).
+
+When invoked, the notifier assembles a payload in a JSON:API-like structure containing the entity
+type and ID, the new payment status code and its human-readable label, the transaction amount and
+type, the net amount paid, the remaining amount due, and the currency. It then dispatches two
+independent notifications: one to the provided base topic (e.g.,
+``entity.payment_status_updated``) and one to the entity-specific derived topic formed by
+appending the entity primary key (e.g., ``entity.payment_status_updated.42``). Both notifications
+carry the identical payload.
+
+**Payload structure:**
+
+.. code-block:: json
+
+    {
+      "topic": "<topic>",
+      "timestamp": 1741267200,
+      "messageId": "550e8400-e29b-41d4-a716-446655440000",
+      "eventData": {
+        "data": {
+          "type": "<entity-api-type>",
+          "id": "<entity-id>",
+          "attributes": {
+            "paymentStatus": "<status-code>",
+            "paymentStatusLabel": "<status-label>",
+            "transactionAmount": "0.00",
+            "transactionType": "<action>",
+            "amountPaid": 0.00,
+            "amountDue": 0.00,
+            "currency": "<ISO-4217-code>"
+          }
+        }
+      }
+    }
+
+**Payload attributes:**
+
+* ``paymentStatus`` — the new payment status code (e.g., ``paid``, ``partially_paid``).
+* ``paymentStatusLabel`` — the human-readable label for the payment status.
+* ``transactionAmount`` — the amount of the completed transaction.
+* ``transactionType`` — the action of the completed transaction (e.g., ``capture``, ``purchase``,
+  ``refund``).
+* ``amountPaid`` — the net amount received: the sum of all successful ``CAPTURE``, ``CHARGE``, and
+  ``PURCHASE`` transactions minus the sum of all successful ``REFUND`` transactions, rounded to
+  the currency precision and clamped to zero.
+* ``amountDue`` — the entity total minus ``amountPaid``, clamped to zero.
+* ``currency`` — the ISO 4217 currency code.
+
+To send a payment status webhook notification from a custom event listener, inject the
+``oro_payment.webhook.payment_status_notifier`` service and call its ``notify()`` method with the
+registered topic name, the completed ``PaymentTransaction``, and the entity total amount:
+
+.. code-block:: php
+
+    use Doctrine\Persistence\ManagerRegistry;
+    use Oro\Bundle\PaymentBundle\Event\TransactionCompleteEvent;
+    use Oro\Bundle\PaymentBundle\Webhook\PaymentStatusWebhookNotifier;
+
+    class MyPaymentStatusWebhookListener
+    {
+        public function __construct(
+            private readonly PaymentStatusWebhookNotifier $paymentStatusWebhookNotifier,
+            private readonly ManagerRegistry $registry
+        ) {
+        }
+
+        public function onTransactionComplete(TransactionCompleteEvent $event): void
+        {
+            $transaction = $event->getTransaction();
+            $entity = $this->registry
+                ->getRepository($transaction->getEntityClass())
+                ->find($transaction->getEntityIdentifier());
+            // ... verify entity type, check feature flags, etc.
+
+            $this->paymentStatusWebhookNotifier->notify(
+                'my_entity.payment_status_updated',
+                $transaction,
+                (float) $entity->getTotalAmount()
+            );
+        }
+    }
+
+.. seealso::
+
+    See :ref:`bundle-docs-platform-integration-bundle-webhooks` for information on configuring
+    webhook endpoints and the entity-specific topic subscription pattern.
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

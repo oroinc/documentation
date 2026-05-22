@@ -18,6 +18,7 @@ Related Documentation
 * :ref:`Order PDF Documents <bundle-docs-commerce-order-pdf-documents>`
 * :ref:`Order Edit Draft Session <bundle-docs-commerce-order-bundle-draft-session>`
 * :ref:`CLI Commands <bundle-docs-commerce-order-bundle-commands>`
+* :ref:`Order Payment Status Webhooks <bundle-docs-commerce-order-payment-status-webhooks>`
 
 .. toctree::
    :hidden:
@@ -27,6 +28,7 @@ Related Documentation
    order-pdf-documents
    order-edit-draft-session
    commands
+   order-payment-status-webhooks
 
 
 .. include:: /include/include-links-dev.rst
