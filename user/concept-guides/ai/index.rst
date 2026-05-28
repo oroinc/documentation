@@ -17,6 +17,8 @@ Artificial Intelligence (AI) is rapidly transforming industries, and B2B eCommer
 OroIQ
 -----
 
+.. note:: The OroIQ feature is available as of OroCommerce version 6.1.9.
+
 OroIQ introduces a unified way to interact with business data and workflows using natural language. Serving as a centralized back-office assistant, it provides a single entry point to AI capabilities across the platform. Instead of navigating multiple screens or complex menus, you can ask questions, explore data, and perform actions directly from a conversational interface. Because OroIQ is built directly on top of the OroCommerce, it operates with full business context. It adheres to existing system logic and permission structures, ensuring that responses and actions are accurate, relevant, and secure.
 
 .. image:: /user/img/concept-guides/ai/oroiq-homepage.png
@@ -59,7 +61,7 @@ Smart Agent
 The Oro AI Smart Agent is an innovative virtual assistant designed to enhance and simplify the B2B buying experience in OroCommerce. Seamlessly integrated into the OroCommerce Enterprise storefront UI, this AI-powered assistant allows logged-in buyers to engage with the platform using natural spoken or written language, just as they would with a sales representative.
 
 .. image:: /user/img/concept-guides/ai/agent-storefront.png
-   :alt: Illustration of an AI Agent in the OroCommerce storefront
+   :alt: Illustration of an AI Smart Agent in the OroCommerce storefront
 
 With the Oro AI Smart Agent, buyers can efficiently complete essential e-commerce tasks without requiring extensive training or technical expertise, such as:
 

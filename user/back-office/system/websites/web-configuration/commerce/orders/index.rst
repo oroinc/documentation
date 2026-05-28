@@ -6,3 +6,4 @@ Configure Order Settings per Website
 
    Order Creation <website-order-creation>
    Purchase History <website-previously-purchased>
+   Order Draft Edit Mode <website-order-draft-edit>

@@ -30,6 +30,10 @@ Learn how to configure localization options, currency and tracking, as well as u
 * :ref:`Microsoft Settings <configuration-integrations-microsoft>`
 * :ref:`CAPTCHA Settings <admin--configuration--integrations--captcha--global>`
 * :ref:`CRM and Commerce <user-guide-commerce-integration>`
+* :ref:`AI Content Generation <admin-configuration-ai-integration-settings>`
+* :ref:`AI Smart Agent <admin-configuration-ai-agent-settings>`
+* :ref:`OroIQ <admin-configuration-oroiq-settings>`
+* :ref:`AI Smart Order <admin-configuration-orders-ai-smart-order-settings>`
 * :ref:`Dotdigital Settings <admin-configuration-dotmailer-integration-settings>`
 
 

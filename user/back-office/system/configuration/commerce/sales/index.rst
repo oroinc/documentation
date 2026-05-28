@@ -8,11 +8,11 @@ Learn how to enable the quick order form, promotions, guest shopping lists, esta
 * :ref:`Quick Order Form <user-guide--system-configuration--commerce-sales--quick-order-form--global>`
 * :ref:`Promotions <sys-config--commerce--sales--promotions>`
 * :ref:`Invoices <configuration--guide--commerce--configuration--sales-invoices>`
-* :ref:`Request for Quote <configuration--guide--commerce--configuration--sales-rfq>`
 * :ref:`Checkout <user-guide--system-configuration--commerce-sales-checkout>`
 * :ref:`Recurring Orders <user-guide--system-configuration--commerce-sales-recurring-orders>`
 * :ref:`Order History (Open Orders) <configuration--guide--commerce--configuration--sales-order-history>`
 * :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping>`
+* :ref:`Request for Quote <configuration--guide--commerce--configuration--sales-rfq>`
 * :ref:`Contacts <sys--conf--commerce--sales--contacts>`
 * :ref:`Quotes <sys--conf--commerce--guest--enable--guest_quotes>`
 * :ref:`Shopping List <configuration-shopping-list>`
@@ -24,11 +24,11 @@ Learn how to enable the quick order form, promotions, guest shopping lists, esta
    Quick Order Form <guest-quick-order-global>
    Promotions <promotions-settings>
    Invoices <global-invoices>
-   Request for Quote <rfq>
    Checkout <global-checkout-config>
    Recurring Orders <global-recurring-orders>
    Order History <open-orders>
    Multiple Shipping <global-multi-shipping>
+   Request for Quote <rfq>
    Contacts <contacts>
    Quotes <guest-quote>
    Shopping List <global-shopping-list>

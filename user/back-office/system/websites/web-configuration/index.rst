@@ -27,6 +27,7 @@ More information about the options available for each of the two categories is a
 
     * :ref:`Google Settings for the Website <website-google-settings>`
     * :ref:`CAPTCHA Settings for the Website <website-configuration-captcha-settings>`
+    * :ref:`AI Smart Agent Settings for the Website <website-configuration-ai-agent-settings>`
 
   * Website
 
@@ -89,6 +90,7 @@ More information about the options available for each of the two categories is a
     * :ref:`Orders History <website-commerce--configuration--sales-order-history>`
     * :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping-website>`
     * :ref:`Quotes <sys--websites-quotes>`
+    * :ref:`Invoices <user-guide--system-configuration--commerce-sales-invoices-per-website>`
 
   * Catalog
 
@@ -118,6 +120,7 @@ More information about the options available for each of the two categories is a
 
     * :ref:`Order Creation <configuration--commerce--orders--order-creation--website>`
     * :ref:`Purchase History <sys--commerce--orders--previously-purchased--website>`
+    * :ref:`Order Draft Edit Mode <configuration--commerce--orders-draft-edit-mode--website>`
 
 .. toctree::
    :maxdepth: 1

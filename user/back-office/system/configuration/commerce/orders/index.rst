@@ -10,6 +10,7 @@ Learn how to define how open orders should be displayed in the storefront.
 * :ref:`Purchase History <sys--commerce--orders--previously-purchased--main>`
 * :ref:`Order Status Management <sys--commerce--orders--status-management>`
 * :ref:`External Order Import <system-configuration-orders-external-order-import>`
+* :ref:`Order Draft Edit Mode <system-configuration-orders-draft-edit-mode>`
 
 
 
@@ -23,4 +24,5 @@ Learn how to define how open orders should be displayed in the storefront.
    Purchase History <global-previously-purchased>
    Order Status Management <global-order-status-management>
    External Order Import <global-external-order-import>
+   Order Draft Edit Mode <global-order-draft-edit>
 

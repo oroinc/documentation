@@ -23,20 +23,24 @@ The following categories of settings are available for system configuration at o
     * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
     * :ref:`Currency <admin-configuration-currency-org>`
     * :ref:`User Login <admin-configuration-user-login-form-org>`
+    * :ref:`User Settings <admin-configuration-user-settings-org>`
     * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
 
   * Websites
 
     * :ref:`Routing Settings <organization-config-website-routing>`
+    * :ref:`Sitemap Settings <organization-config-website-sitemap>`
+
 
   * Integrations
 
     * :ref:`Google Settings <organization-google-settings>`
     * :ref:`Microsoft Settings <organization-configuration-microsoft>`
-    * :ref:`AI Content Generation <organization-ai-settings>`
-    * :ref:`AI Agent <organization-ai-agent-settings>`
-    * :ref:`AI Smart Order <organization-ai-smart-order-settings>`
     * :ref:`CAPTCHA Settings <organization-configuration-captcha>`
+    * :ref:`AI Content Generation <organization-ai-settings>`
+    * :ref:`AI Smart Agent <organization-ai-agent-settings>`
+    * :ref:`OroIQ <organization-oroiq-settings>`
+    * :ref:`AI Smart Order <organization-ai-smart-order-settings>`
 
 
 * **Commerce**
@@ -63,6 +67,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Promotions <sys--users--organization--commerce--products--new-arrivals>`
     * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products--organization>`
     * :ref:`Customer Settings <sys--users--organization--commerce--products--customer-settings>`
+    * :ref:`Product Import/Export <sys--users--organization--commerce--products--import-export>`
 
   * Sales
 
@@ -75,6 +80,9 @@ The following categories of settings are available for system configuration at o
     * :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping-org>`
     * :ref:`Quotes <sys--organization-quotes>`
     * :ref:`Promotions <sys--conf--commerce--sales--promotions-organization>`
+    * :ref:`Invoices <user-guide--system-configuration--commerce-sales-invoices-org>`
+    * :ref:`Recurring Orders <user-guide--organization-configuration--commerce-sales-recurring-orders>`
+
 
   * Orders
 
@@ -83,6 +91,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Purchase History <sys--commerce--orders--previously-purchased--org>`
     * :ref:`Order Status Management <sys--commerce--orders--status-management--org>`
     * :ref:`External Order Import <configuration--commerce--orders--external-order-import--org>`
+    * :ref:`Order Draft Edit Mode <configuration--commerce--orders-draft-edit-mode--org>`
 
 
   * Search
@@ -93,6 +102,7 @@ The following categories of settings are available for system configuration at o
   * Taxation
 
     * :ref:`Tax Calculation (Promotions) <user-guide--taxes--org--promotions>`
+    * :ref:`Shipping <org--conf--commerce--taxation--shipping-tax>`
 
   * Catalog
 

@@ -3,6 +3,8 @@
 Order Edit Draft Session
 ========================
 
+.. note:: The Order Draft Edit Mode feature is available as of OroCommerce version 6.1.9.
+
 When a back-office user opens the order edit page, the bundle keeps the original order untouched
 until the user explicitly saves. Every change — adding, modifying, or removing line items, editing
 header fields — is accumulated in a **draft copy** of the order rather than applied to the original
@@ -169,8 +171,8 @@ so that draft rows are visible alongside original rows. ``KeepDraftSessionUuidOn
 automatically injects the UUID into any URL generated for the same set of routes so that internal
 links and redirects carry the session forward without manual intervention.
 
-``OrderController`` and ``DraftSessionControllerTrait``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OrderController and DraftSessionControllerTrait
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``\Oro\Bundle\OrderBundle\Controller\OrderController``
 
@@ -261,7 +263,7 @@ order-header fields (customer, payment term, addresses, currency, pricing).
   ``OrderEvent`` — they go through dedicated AJAX controllers.
 
 Line Item Management (Draft Controllers)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Individual line item operations are handled by five dedicated AJAX controllers. All share the
 following characteristics:
@@ -295,7 +297,7 @@ following characteristics:
     the taxes and discounts breakdown as rendered HTML. Nothing is persisted.
 
 Final Save (DeleteOrderDraftOnAfterEntityFlushListener)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``\Oro\Bundle\OrderBundle\EventListener\DraftSession\DeleteOrderDraftOnAfterEntityFlushListener``
 
@@ -435,7 +437,7 @@ Customization
 -------------
 
 Adding a Custom Field Synchronizer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To synchronize an additional field (for example, a field introduced by a third-party bundle),
 implement ``\Oro\Component\DraftSession\Synchronizer\EntityDraftSynchronizerInterface`` and tag
@@ -498,7 +500,7 @@ the draft:
            - { name: oro_order.draft_session.synchronizer }
 
 Listening to Draft Lifecycle Events
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The component dispatches lifecycle events at every key point of the draft workflow. For the full
 reference see :ref:`DraftSession Component — Events <bundle-docs-platform-draft-session-events>`.
@@ -563,7 +565,7 @@ Example — performing additional initialization on a newly created order draft:
            - { name: kernel.event_listener, event: Oro\Component\DraftSession\Event\EntityDraftCreatedEvent, method: onEntityDraftCreated }
 
 Excluding Extended Fields from Automatic Synchronization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``ExtendedFieldsAwareEntityDraftSynchronizer`` automatically copies all form-enabled custom extended
 fields. If a dedicated synchronizer already handles a specific field, exclude it from the automatic
@@ -596,6 +598,14 @@ in the bundle's ``build()`` method:
            );
        }
    }
+
+**Related Topics**
+
+* :ref:`Configure Order Draft Edit Mode Settings Globally <system-configuration-orders-draft-edit-mode>`
+* :ref:`Configure Order Draft Edit Mode Settings per Organization <configuration--commerce--orders-draft-edit-mode--org>`
+* :ref:`Configure Order Draft Edit Mode Settings per Website <configuration--commerce--orders-draft-edit-mode--website>`.
+
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

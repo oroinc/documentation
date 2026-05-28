@@ -31,9 +31,9 @@ Learn how to enable and setup the integration between your Oro application and G
    CAPTCHA Settings <captcha-settings>
    CRM and Commerce <commerce-integration>
    AI Content Generation <ai-settings>
-   AI SmartAgent <ai-agent>
+   AI Smart Agent <ai-agent>
    OroIQ <oroiq-settings>
    AI Smart Order <global-ai-smart-order>
-   dotdigital Settings <dotdigital-integration-settings>
+   Dotdigital Settings <dotdigital-integration-settings>
 
 
