@@ -6825,3 +6825,16 @@ body.js-menu-open2:before {
 
 }
 
+.DocSearch.DocSearch-Button {
+    border-radius: 8px;
+    width: 38rem;
+    height: 4.6rem;
+}
+
+.DocSearch-Button-Placeholder {
+    display: none !important;
+}
+
+.DocSearch-Button-Keys {
+    /*display: none !important;*/
+}
