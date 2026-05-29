@@ -20,6 +20,24 @@ Infrastructure-related environment variable defaults are stored in the *.env-app
 * The ``ORO_MAINTENANCE_LOCK_FILE_PATH`` path to the maintenance lock file in the system.
 * The ``ORO_OAUTH_PUBLIC_KEY_PATH`` path to the OAuth public key.
 * The ``ORO_OAUTH_PRIVATE_KEY_PATH`` path to the OAuth private key.
+* The ``ORO_PERMITTED_OUTBOUND_CONNECTIONS`` environment variable defines the rules for permitted outbound connections. The rules use the following grammar:
+
+    .. code-block:: none
+
+      rules    := rule (";" rule)*
+      rule     := host [ ":" portRule ("," portRule)* ]
+      host     := exact host name (case-insensitive) or a pattern containing one or
+                more "*" wildcards, where each "*" matches one or more characters
+      portRule := single port number (e.g. "443")
+                or port range "from-to" (inclusive on both ends, e.g. "8000-8100")
+
+      Examples of valid rules:
+        "api.example.com"                     - allows any port on api.example.com
+        "api.example.com:443"                 - allows only port 443 on api.example.com
+        "api.example.com:80,443,8000-8100"    - allows port 80, 443 and the 8000-8100 range
+        "*.example.com:443;payments.acme.com" - multiple semicolon-separated rules
+
+* The ``ORO_OUTBOUND_CONNECTION_CHECK_DURATION`` environment variable defines the duration, in seconds, used to check whether an outbound connection can be established. It is used to prevent time-based attacks by introducing an artificial delay so that both successful and failed requests take the same amount of time. The default value is 5 seconds. Set it to ``null`` or ``0`` to disable the constant-time connection check.
 
 .. _book-installation-github-clone-configuration-params--default:
 
@@ -53,6 +71,8 @@ Default configuration options for the Oro application are defined in the ``confi
        oauth2_private_key: '%env(resolve:ORO_OAUTH_PRIVATE_KEY_PATH)%'
        log_path: '%env(resolve:ORO_LOG_PATH)%'
        log_stacktrace_level: '%env(resolve:ORO_LOG_STACKTRACE_LEVEL)%' # The minimum log message level for which an exception stacktrace should be logged. To disable the stacktrace logging an empty string or "none" value can be used.
+       permitted_outbound_connections: '%env(ORO_PERMITTED_OUTBOUND_CONNECTIONS)%'
+       outbound_connection_check_duration: '%env(int:ORO_OUTBOUND_CONNECTION_CHECK_DURATION)%'
 
        env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
        env(ORO_DB_URL): 'postgresql://root@127.0.0.1/b2b_dev'
@@ -79,6 +99,8 @@ Default configuration options for the Oro application are defined in the ``confi
        env(ORO_OAUTH_PRIVATE_KEY_PATH): '%kernel.project_dir%/var/oauth_private.key'
        env(ORO_LOG_PATH): "%kernel.logs_dir%/%kernel.environment%.log"
        env(ORO_LOG_STACKTRACE_LEVEL): 'error'
+       env(ORO_PERMITTED_OUTBOUND_CONNECTIONS): ''
+       env(ORO_OUTBOUND_CONNECTION_CHECK_DURATION): '5' # 5 seconds
 
 Sample Configuration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
