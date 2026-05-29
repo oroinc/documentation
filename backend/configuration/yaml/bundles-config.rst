@@ -631,6 +631,26 @@ The default configuration for extension with alias "oro_commerce_mcp":
                 # The session TTL in seconds.
                 ttl:                  3600
 
+            # The configuration of CORS requests for MCP server.
+            cors:
+
+                # The list of origins that are allowed to send CORS requests.
+                allow_origins:
+
+                    # Default:
+                    - "*"
+
+                    # Examples:
+                    # - 'https://foo.com'
+                    # - 'https://bar.com'
+
+                # The list of headers that are allowed to send by CORS requests.
+                allow_headers:        []
+
+                    # Examples:
+                    # - X-Foo
+                    # - X-Bar
+
         # MCP services discovery configuration.
         discovery:
 
