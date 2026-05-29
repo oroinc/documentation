@@ -3,6 +3,8 @@
 Configure Global OroIQ Settings
 ===============================
 
+.. note:: The OroIQ feature is available as of OroCommerce version 7.0.2.
+
 .. hint:: Please |contact our support team| to learn more about OroCommerce AI features, discuss how they can meet your business needs, and get started with implementation.
 
 :ref:`OroIQ <concept-guide--oroiq>` is an AI-powered assistant designed to help users analyze data and perform back-office operations in the OroCommerce Enterprise application using natural language. Once OroIQ assistant is installed in the Oro application, it can be enabled globally and per :ref:`organization <organization-oroiq-settings>`.

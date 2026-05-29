@@ -54,6 +54,7 @@ Learn the key options for setting up products in your Oro application, as well a
 * :ref:`Featured Products <sys--commerce--product--featured-products--main>`
 * :ref:`Promotions <configuration--guide--commerce--configuration--promotions>`
 * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products>`
+* :ref:`Seller Product Approval Workflow <system-configuration--commerce--product--seller-product-approval-workflow>`
 * :ref:`Product Collections <configuration--guide--commerce--configuration--product-collections>`
 * :ref:`Customer Settings <sys--commerce--product--customer-settings>`
 * :ref:`Product Import/Export <configuration--guide--commerce--product-import-export>`
@@ -77,11 +78,11 @@ Learn how to enable the quick order form, promotions, guest shopping lists, esta
 * :ref:`Quick Order Form <user-guide--system-configuration--commerce-sales--quick-order-form--global>`
 * :ref:`Promotions <sys-config--commerce--sales--promotions>`
 * :ref:`Invoices <configuration--guide--commerce--configuration--sales-invoices>`
-* :ref:`Request for Quote <configuration--guide--commerce--configuration--sales-rfq>`
-* :ref:`Checkout <user-guide--system-configuration--commerce-sales-checkout>`
 * :ref:`Recurring Orders <user-guide--system-configuration--commerce-sales-recurring-orders>`
+* :ref:`Checkout <user-guide--system-configuration--commerce-sales-checkout>`
 * :ref:`Order History (Open Orders) <configuration--guide--commerce--configuration--sales-order-history>`
 * :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping>`
+* :ref:`Request for Quote <configuration--guide--commerce--configuration--sales-rfq>`
 * :ref:`Contacts <sys--conf--commerce--sales--contacts>`
 * :ref:`Quotes <sys--conf--commerce--guest--enable--guest_quotes>`
 * :ref:`Shopping List <configuration-shopping-list>`
@@ -113,11 +114,12 @@ Learn how to configure and manage your company’s business details.
 :ref:`Search <configuration--guide--commerce--configuration--search>`
 ---------------------------------------------------------------------
 
+* :ref:`Search Terms <configuration--guide--commerce--configuration--search-history>`
 * :ref:`Saved Search <configuration--guide--commerce--configuration--saved-search>`
 * :ref:`Fuzzy Search <configuration--guide--commerce--configuration--fuzzy-search>`
 * :ref:`Search Synonyms <configuration--guide--commerce--search--synonyms>`
+* :ref:`Stop Words <configuration--guide--commerce--configuration--stop-words>`
 * :ref:`Customer Recommendations <system-configuration--commerce--search--customer-recommendation>`
-* :ref:`Search Terms <configuration--guide--commerce--configuration--search-history>`
 
 :ref:`Orders <configuration--guide--commerce--configuration--order>`
 --------------------------------------------------------------------
@@ -128,7 +130,6 @@ Learn how to define how open orders should be displayed in the storefront.
 * :ref:`Order Creation <configuration--commerce--orders-create>`
 * :ref:`Purchase History <sys--commerce--orders--previously-purchased--main>`
 * :ref:`Order Status Management <sys--commerce--orders--status-management>`
-* :ref:`AI Smart Order <admin-configuration-orders-ai-smart-order-settings>`
 * :ref:`External Order Import <system-configuration-orders-external-order-import>`
 
 

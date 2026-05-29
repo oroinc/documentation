@@ -322,8 +322,6 @@ To define a translation:
 
    .. image:: /user/img/system/workflows/translations_edit2.png
 
-.. You can find more information on translations in the :ref:`Manage Translations <> guide.
-
 
 Detailed Information About System Workflows
 -------------------------------------------

@@ -61,15 +61,7 @@ To create a new quote from the customer request for quote (RFQ):
 
 7. In the **Shipping Information**, configure the default shipping option pre-selected for the customer on the checkout:
 
-   .. a) In the **Shipping Methods** list, tick the boxes next to the shipping methods you would like the customer to use for this order delivery.
-
    a) In the **Shipping Methods** list, select the recommended (default) shipping method that will be pre-selected when the customer gets to the shipping configuration on the checkout.
-
-   .. .. note:: When none of the methods are selected, the customer can use any listed methods.
-
-   .. .. note:: Once you change the existing settings, the previous configuration will be saved for your information in the previously Selected Shipping Method log above the list of the shipping methods.
-
-   .. b) If necessary, select the preferred shipping method from the **Default Shipping Method** list. The customer can change the option to any other available shipping method.
 
    b) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one that is dynamically generated based on the selected shipping method.
 

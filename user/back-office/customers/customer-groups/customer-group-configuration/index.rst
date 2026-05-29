@@ -22,7 +22,7 @@ Learn how to enable and set up commerce-related features per customer group:
    :hidden:
 
    Routing <system-configuration/websites/customer-group-routing-settings>
-   AI Agent <system-configuration/integrations/customer-group-ai-agent>
+   AI Smart Agent <system-configuration/integrations/customer-group-ai-agent>
    Warehouses <commerce/inventory/customer-group-warehouse-settings>
    Search History <commerce/search/customer-group-search-terms-settings>
    Product Data Export <commerce/product/customer-group-product-customer-settings>

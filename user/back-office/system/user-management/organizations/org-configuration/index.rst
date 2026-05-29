@@ -22,20 +22,23 @@ The following categories of settings are available for system configuration at o
     * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
     * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
     * :ref:`Currency <admin-configuration-currency-org>`
+    * :ref:`User Settings <admin-configuration-user-settings-org>`
     * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
 
   * Websites
 
     * :ref:`Routing Settings <organization-config-website-routing>`
+    * :ref:`Sitemap Settings <organization-config-website-sitemap>`
 
   * Integrations
 
     * :ref:`Google Settings <organization-google-settings>`
     * :ref:`Microsoft Settings <organization-configuration-microsoft>`
-    * :ref:`AI Content Generation <organization-ai-settings>`
-    * :ref:`AI Agent <organization-ai-agent-settings>`
-    * :ref:`AI Smart Order <organization-ai-smart-order-settings>`
     * :ref:`CAPTCHA Settings <organization-configuration-captcha>`
+    * :ref:`AI Content Generation <organization-ai-settings>`
+    * :ref:`AI Smart Agent <organization-ai-agent-settings>`
+    * :ref:`AI Smart Order <organization-ai-smart-order-settings>`
+    * :ref:`OroIQ <organization-oroiq-settings>`
 
 
 * **Commerce**
@@ -48,6 +51,7 @@ The following categories of settings are available for system configuration at o
   * Customer
 
     * :ref:`Customer Users <system--user-mngm--organization--configuration--commerce--customers--customer-users>`
+    * :ref:`Customer User Login <system--user-mngm--organization--configuration--commerce--customers--customer-user-login>`
     * :ref:`Interactions <sys--conf--commerce--customer--interactions-organization>`
 
   * Design
@@ -95,9 +99,9 @@ The following categories of settings are available for system configuration at o
 
   * Catalog
 
-    * :ref:`Filters and Sorters <configuration--guide--commerce--configuration--catalog--filters-sorters--organization>`
-    * :ref:`Related Items <sys--users--organization--commerce--catalog--related-products>`
     * :ref:`Pricing <configuration--guide--commerce--configuration--catalog--pricing--organization>`
+    * :ref:`Related Items <sys--users--organization--commerce--catalog--related-products>`
+    * :ref:`Filters and Sorters <configuration--guide--commerce--configuration--catalog--filters-sorters--organization>`
 
   * Inventory
 

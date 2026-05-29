@@ -3,6 +3,8 @@
 Configure Global Customer User Login Settings
 =============================================
 
+.. note:: Customer User Login settings can be configured globally and :ref:`per organization <system--user-mngm--organization--configuration--commerce--customers--customer-user-login>`.
+
 To apply customer user login-related options in your Oro application instance:
 
 1. Navigate to **System > Configuration** in the main menu.
@@ -35,6 +37,8 @@ In the **Login Attempts** section, configure the following options:
 
 Configure Email Change Policy
 -----------------------------
+
+.. note:: Email change verification via current email is available as of OroCommerce version 7.0.2.
 
 In the **Email Change Policy** section, configure the following option:
 
