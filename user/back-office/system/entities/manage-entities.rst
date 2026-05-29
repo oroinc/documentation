@@ -82,6 +82,10 @@ To edit an entity:
 
 * **Show Restricted** — Select this checkbox if you enabled **Field Level ACL** and are going to disable editing of some fields of the entity records but still want users to review the disabled fields on the interface. Fields disabled for modifying will appear dimmed on the interface. For more information about field level ACLs, see the :ref:`Entity Fields <doc-entity-fields>` topic.
 
+* **Webhook Accessible** — Define whether an entity can be used in :ref:`webhook notifications <back-office--integrations--webhooks>`. When set to **Yes**, the entity becomes available for webhook integration. The system generates webhook topics for the entity's supported events (such as create, update, and delete), allowing administrators or external systems to subscribe to those events and receive notifications when they occur. When set to **No**, the entity is excluded from webhook processing, and no webhook topics are generated for it.
+
+* **Webhook Relations Includes** — Specify which related data should be included in the :ref:`webhook payload <back-office--integrations--webhooks>`. The field accepts relation paths in *JSON:API includes* format, which is a comma-separated list of relation paths. A relation path is a dot-separated list of relation names (e.g., ``organization,owner.groups,lineItems,shippingAddress``). When a webhook event occurs, the system serializes the entity and the specified related data into a JSON:API payload before sending the notification.
+
 * **Auditable** --- This subsection defines whether the system will log what actions are performed with the entity records and who performed them, and users with the corresponding permissions will be able to check it in the **Change History** and **Data Audit** sections of the system. Select **Yes** to enable audit of records of the entity. Select **No** to disable audit of records of the entity. The default value is **No**. For more information about the data audit, see the :ref:`Data Audit <user-guide-data-audit>` topic.
 
 .. image:: /user/img/system/entity_management/entity_change_history.png

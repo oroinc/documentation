@@ -6,4 +6,4 @@ Integrations Settings per Website
 
    Google Settings <website-google-settings>
    CAPTCHA settings <website-captcha>
-   AI Agent <website-ai-agent>
+   AI Smart Agent <website-ai-agent>

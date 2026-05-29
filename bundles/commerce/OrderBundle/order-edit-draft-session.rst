@@ -3,15 +3,48 @@
 Order Edit Draft Session
 ========================
 
-When a back-office user opens the order edit page, the bundle keeps the original order untouched
-until the user explicitly saves. Every change — adding, modifying, or removing line items, editing
-header fields — is accumulated in a **draft copy** of the order rather than applied to the original
-row. When the user saves, the draft is applied to the original order and then removed. If the user
-navigates away without saving, the draft is cleaned up on the next scheduled run.
+Order Draft Editing Principle
+-----------------------------
+
+When a back-office user opens an order for editing:
+
+* The system creates a draft copy of the order.
+* All changes are applied to the draft instead of the original order.
+* The draft stores all order modifications, including adding new line items, editing or removing the existing one, updating other order details, such as general, billing, shipping, or additional information.
+* The original order remains unchanged until a user saves the entire order.
+* Unused drafts are automatically cleaned up during the next scheduled system cleanup process.
 
 This design allows safe, incremental editing of large orders without introducing partial or
 inconsistent states. The feature is built on the
 :ref:`DraftSession component <bundle-docs-platform-draft-session>`.
+
+Edit Order Line Items
+^^^^^^^^^^^^^^^^^^^^^
+
+Each line item includes its own edit and delete icons, which enables a user to manage each line item separately. Once modified, the user can save the changes for specific line item. These changes are still stored only in the draft version of the order until the user saves the entire order.
+
+When a line item is modified, the system highlights the item in green to indicate that the line item has been changed.
+
+To improve performance when working with large orders, the system displays line items using pagination. Only a limited number of line items are shown on a single page.
+
+If changes are made to a line item that is not currently visible in the displayed list, the system shows a notification with a link to the modified line item preview so that the user can quickly navigate to it.
+
+.. image:: /user/img/system/config_commerce/order/order-draft-edit-line-item.gif
+   :alt: Editing a product line item when the feature is enabled
+
+
+Preserve Draft Changes
+^^^^^^^^^^^^^^^^^^^^^^
+
+The order draft remains available during the editing session.
+
+If the user reloads the page, closes and reopens the browser unexpectedly, or experience a browser failure, the draft remains available, and the user can continue editing later.
+
+Save Changes
+^^^^^^^^^^^^
+
+To apply all draft changes to the original order, the user must click **Save** or **Save and Close**. Once the order is saved, the system applies all draft changes to the original order, and the draft is removed automatically.
+
 
 .. _bundle-docs-commerce-order-bundle-draft-session-architecture:
 

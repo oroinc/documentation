@@ -1,7 +1,7 @@
 .. _user-guide--customer-groups--configuration--settings-ai-agent:
 
-Configure AI Agent Settings per Customer Group
-==============================================
+Configure AI Smart Agent Settings per Customer Group
+====================================================
 
 .. hint:: Please |contact our support team| to learn more about OroCommerce AI features, discuss how they can meet your business needs, and get started with implementation.
 
@@ -12,12 +12,12 @@ The :ref:`AI Smart Agent <concept-guide--ai>` is a virtual assistant designed to
 
 Once the agent is installed in the Oro application, you can enable it in the system configuration :ref:`globally <admin-configuration-ai-agent-settings>`, per :ref:`organization <organization-ai-agent-settings>`, :ref:`website <website-configuration-ai-agent-settings>`, :ref:`customer <user-guide--customer--configuration--settings--ai-agent>` and :ref:`customer group <user-guide--customer-groups--configuration--settings-ai-agent>`:
 
-To enable AI Agent per customer group:
+To enable AI Smart Agent per customer group:
 
 1. Navigate to **Customers > Customer Groups** in the main menu.
 2. For the necessary customer group, hover over the |IcMore| **More Options** menu to the right of the necessary group and click the |IcConfig| **Configuration** icon to start editing the configuration.
-3. Click **System Configuration > Integrations > AI Agent** in the menu to the left.
-4. In the **AI Agent** section, clear the **Use Website** checkbox and select the **Enable AI Agent** checkbox to enable the feature in the storefront.
+3. Click **System Configuration > Integrations > AI Smart Agent** in the menu to the left.
+4. In the **AI Smart Agent** section, clear the **Use Website** checkbox and select the **Enable AI Smart Agent** checkbox to enable the feature in the storefront.
 5. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
