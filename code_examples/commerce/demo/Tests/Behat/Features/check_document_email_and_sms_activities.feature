@@ -31,7 +31,8 @@ Feature: Check document email and sms activities
       | Message      | Sms message               |
     And click "Save"
     Then I should see "Saved successfully" flash message
-    And  I should see only following actions on "Sms message" in activity list:
+    And I scroll to "Activity Dropdown Menu"
+    And I should see only following actions on "Sms message" in activity list:
       | Add Context |
       | View Sms    |
       | Update Sms  |
@@ -60,6 +61,7 @@ Feature: Check document email and sms activities
   Scenario: Update Sms in activity list
     When I go to Acme/Demo/Documents
     And click view subject1 in grid
+    And I scroll to "Activity Dropdown Menu"
     And I click "Update Sms" on "Sms message" in activity list
     And fill form with:
       | From Contact | new_contact_email_1@gmail.com |
