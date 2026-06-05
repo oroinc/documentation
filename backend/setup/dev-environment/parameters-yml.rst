@@ -107,6 +107,9 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
 
        tracking_data_folder: '%env(ORO_TRACKING_DATA_FOLDER)%'
 
+       permitted_outbound_connections: '%env(ORO_PERMITTED_OUTBOUND_CONNECTIONS)%'
+       outbound_connection_check_duration: '%env(int:ORO_OUTBOUND_CONNECTION_CHECK_DURATION)%'
+
        # Fallback values (used if environmental variables are not set)
        env(ORO_DB_HOST): 127.0.0.1
        env(ORO_DB_PORT): null
@@ -135,6 +138,9 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
        # Website tracking data folder, default value is 'var/data/import_files/tracking'
        env(ORO_TRACKING_DATA_FOLDER): null
 
+       env(ORO_PERMITTED_OUTBOUND_CONNECTIONS): ''
+       env(ORO_OUTBOUND_CONNECTION_CHECK_DURATION): '5' # 5 seconds
+
 Environment Variables
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -146,6 +152,27 @@ The default value for the ORO_DB_HOST environment variable is provided at the en
 
 .. warning:: Environment variables are always string and are not cast automatically to integer, null, or other types. You should never pass an empty environment variable, like 'ORO_DB_HOST=' or 'ORO_DB_HOST=NULL'. Instead, it should never be available (never be set).
 
+Outbound Connections Environment Variables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* The ``ORO_PERMITTED_OUTBOUND_CONNECTIONS`` environment variable defines the rules for permitted outbound connections. The rules use the following grammar:
+
+    .. code-block:: none
+
+      rules    := rule (";" rule)*
+      rule     := host [ ":" portRule ("," portRule)* ]
+      host     := exact host name (case-insensitive) or a pattern containing one or
+                more "*" wildcards, where each "*" matches one or more characters
+      portRule := single port number (e.g. "443")
+                or port range "from-to" (inclusive on both ends, e.g. "8000-8100")
+
+      Examples of valid rules:
+        "api.example.com"                     - allows any port on api.example.com
+        "api.example.com:443"                 - allows only port 443 on api.example.com
+        "api.example.com:80,443,8000-8100"    - allows port 80, 443 and the 8000-8100 range
+        "*.example.com:443;payments.acme.com" - multiple semicolon-separated rules
+
+* The ``ORO_OUTBOUND_CONNECTION_CHECK_DURATION`` environment variable defines the duration, in seconds, used to check whether an outbound connection can be established. It is used to prevent time-based attacks by introducing an artificial delay so that both successful and failed requests take the same amount of time. The default value is 5 seconds. Set it to ``null`` or ``0`` to disable the constant-time connection check.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
