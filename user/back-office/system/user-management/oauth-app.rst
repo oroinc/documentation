@@ -74,7 +74,13 @@ You can create as many applications as you need for any of your existing organiz
 
 .. finish_oauth2
 
-.. note:: For the details on how to add an OAuth application to a selected customer user in the back-office, refer to the :ref:`Add OAuth applications to your profile <user-guide-my-profile-oauth>` and :ref:`Add OAuth applications to a selected user <user-guide-add-oauth-to-user>` topics.
+.. note::
+
+    * To create an OAuth application under **Customers > Customer Users** in the back-office, see :ref:`Add a Customer User oAuth application <user-guide-add-oauth-to-user>`.
+    * To add an OAuth application to a *customer user* directly from their page in the back-office, see :ref:`Add OAuth Applications from Customer User's Page <user-guide--customers--customer-users--oauth>`.
+    * To add an oAuth application to a user via **My User Menu** in the back-office, see :ref:`Add OAuth applications to your profile <user-guide-my-profile-oauth>`.
+    * To add an OAuth Application to a back-office user under **System > User Management > Users**, see :ref:`Add OAuth Applications to a Back-Office User <user-guide-add-oauth-to-user>`
+
 
 
 .. include:: /include/include-images.rst

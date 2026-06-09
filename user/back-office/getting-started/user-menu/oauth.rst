@@ -28,6 +28,8 @@ To add a new OAuth application in the back-office:
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations (available for the Enterprise edition only).
    * **Application Name** --- Provide a meaningful name for the application you are adding.
    * **Active** --- Select the **Active** checkbox to activate the new application.
+   * **Support all APIs** --- Select whether the client should support all available API types. If disabled, the *Supported APIs* filed appears with a list of API types for the user to select the required one.
+   * **Supported APIs** --- The field appears when the *Support all APIs* field is disabled. Select the API type that the client should support, for example JSON:API, Email Addon, SCIM, etc.
 
 4. Click **Create**.
 
@@ -49,7 +51,13 @@ You can add as many applications as you need for any of your existing organizati
 
 Use the generated Client ID and Client Secret to retrieve an access token to connect to your Oro application.
 
-.. note:: For the aggregated information on all OAuth applications created by users in the back-office, refer to the general :ref:`OAuth Applications <oauth-applications>` topic.
+.. note::
+
+    * To create an OAuth application under **Customers > Customer Users** in the back-office, see :ref:`Add a Customer User oAuth application <user-guide-add-oauth-to-user>`.
+    * To add an OAuth application to a *customer user* directly from their page in the back-office, see :ref:`Add OAuth Applications from Customer User's Page <user-guide--customers--customer-users--oauth>`.
+    * To add an OAuth application to a back-office user under **System > User Management > Users**, see :ref:`Add OAuth Applications to a Back-Office User <user-guide-add-oauth-to-user>`.
+    * To add an oAuth application under **System > User Management > OAuth Applications**, see :ref:`Configure OAuth Applications for Users in the Back-Office <oauth-applications>`.
+
 
 .. finish_user_oauth
 
