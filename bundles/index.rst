@@ -144,6 +144,7 @@ CRM Bundles
    FeatureToggleBundle <platform/FeatureToggleBundle/index>
    FilterBundle <platform/FilterBundle/index>
    FormBundle <platform/FormBundle/index>
+   FrontendCommerceMcpBundle <commerce/FrontendCommerceMcpBundle/index>
    GaufretteBundle <platform/GaufretteBundle/index>
    GridFSConfigBundle <platform/GridFSConfigBundle/index>
    ImapBundle <platform/ImapBundle/index>
