@@ -164,6 +164,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
 
    * - - :ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`
        - :ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`
+       - :ref:`FrontendCommerceMcpBundle <bundle-docs-frontend-commerce-commerce-mcp-bundle>`
        - :ref:`FrontendPdfGeneratorBundle <bundle-docs-commerce-frontend-pdf-generator-bundle>`
 
      - - :ref:`ProductBundle <bundle-docs-commerce-product-bundle>`
@@ -282,6 +283,7 @@ CRM Bundles
    FilterBundle <platform/FilterBundle/index>
    FormBundle <platform/FormBundle/index>
    FrontendBundle <commerce/FrontendBundle/index>
+   FrontendCommerceMcpBundle <commerce/FrontendCommerceMcpBundle/index>
    FrontendPdfGeneratorBundle <commerce/FrontendPdfGeneratorBundle/index>
    GaufretteBundle <platform/GaufretteBundle/index>
    GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
