@@ -130,6 +130,34 @@ Create your *behat.yml* (it is ignored by git automatically and is never committ
                 browser_name: chrome
                 base_url: "http://your-domain.local"
 
+.. _behat-env-vars:
+
+Environment Variables
+~~~~~~~~~~~~~~~~~~~~~
+
+The *behat.yml.dist* file reads connection settings from environment variables with fallback to container parameters defined in
+``OroTestFrameworkBundle/Behat/ServiceContainer/config/services.yml``. The following variables are available:
+
+``ORO_BEHAT_BASE_URL``
+   The base URL of the application under test. Used as the Mink ``base_url``.
+   Default: ``http://localhost`` (parameter ``oro_test.behat.base_url``).
+
+``ORO_SELENIUM_URL``
+   The WebDriver hub URL used by all browser sessions in the ``default`` profile (Selenium Grid or a standalone Selenium server).
+   Default: ``http://localhost:4444/wd/hub`` (parameter ``oro_test.behat.selenium_url``).
+
+``ORO_CHROMEDRIVER_URL``
+   The ChromeDriver URL used by all browser sessions in the ``chromedriver`` profile.
+   Default: ``http://localhost:9515`` (parameter ``oro_test.behat.chromedriver_url``).
+
+To override a variable for a single run, export it before invoking Behat:
+
+.. code-block:: bash
+
+   export ORO_BEHAT_BASE_URL=http://myapp.local
+   export ORO_CHROMEDRIVER_URL=http://localhost:9515
+   php bin/behat --profile=chromedriver ...
+
 Installation
 ^^^^^^^^^^^^
 
