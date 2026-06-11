@@ -29,7 +29,8 @@ use Oro\Bundle\OrganizationBundle\Entity\OrganizationInterface;
             'owner_field_name' => 'organization',
             'owner_column_name' => 'organization_id'
         ],
-        'security' => ['type' => 'ACL', 'category' => 'marketing']
+        'security' => ['type' => 'ACL', 'category' => 'marketing'],
+        'email' => ['available_in_template' => true],
     ]
 )]
 class BlogPost implements DatesAwareInterface, ExtendEntityInterface
