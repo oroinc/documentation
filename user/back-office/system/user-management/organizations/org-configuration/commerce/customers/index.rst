@@ -7,4 +7,5 @@ Configure Customer Settings per Organization
    :maxdepth: 1
 
    Customer Users <organization-customer-users>
+   Customer User Login <organization-customer-user-login>
    Interactions <organization-interactions>

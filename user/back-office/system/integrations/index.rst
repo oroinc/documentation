@@ -61,6 +61,10 @@ Check the following integrations that can be enabled/disabled and configured in 
 
   * :ref:`Embedded Forms <admin-embedded-forms>`
 
+* Webhooks
+
+  * :ref:`Webhooks <back-office--integrations--webhooks>`
+
 
 
 
@@ -79,3 +83,4 @@ Check the following integrations that can be enabled/disabled and configured in 
    Zendesk Integration <zendesk-integration>
    LDAP Integration <ldap-integration>
    Embedded Forms <embedded-forms/index>
+   Webhooks <webhooks>

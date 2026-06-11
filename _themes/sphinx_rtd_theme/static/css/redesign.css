@@ -43,8 +43,8 @@ h6 {
     margin: 0 0 13px;
 }
 p {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 22px;
     margin: 0 0 20px;
 }
 a {
@@ -162,7 +162,10 @@ a:focus {
     margin: 0;
     padding: 0;
     border: none;
-    overflow: hidden;
+    overflow: visible;
+}
+.button.copybtn{
+    top: -5px;
 }
 .rst-content pre.literal-block.last,
 .rst-content div[class*='highlight'].last {
@@ -2362,4 +2365,147 @@ section .btn-orangedark:hover {
 .rst-content table.field-list th{
     padding-top: 12px;
     padding-bottom:12px;
+}
+button.copybtn{
+    top: -6px;
+    right: 12px;
+}
+
+/*search algolia*/
+:root {
+    --docsearch-secondary-text-color: #626262 !important;
+    --docsearch-text-color:#151514 !important;
+}
+
+.DocSearch{
+    color: #151514;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-size:16px;
+    line-height: 1.4;
+}
+
+.DocSearch.DocSearch-Button{
+    border:0;
+}
+.DocSearch-SearchBar{
+
+}
+.DocSearch .DocSearch-Form{
+    height:auto;
+    padding:10px 20px;
+}
+.DocSearch .DocSearch-Container{
+    background-color: rgb(114 116 124 / 80%);
+}
+
+.DocSearch .DocSearch-Modal,
+.DocSearch .DocSearch-Hit-source{
+    /*background: #f5f5f5;*/
+    background:#fff;
+}
+
+.DocSearch .DocSearch-Form input{
+    height:50px;
+    background: #fff;
+    border: 0.5px solid #6e6e6e;
+    border-radius: 8px;
+    padding-left: 36px;
+    font-size:16px;
+}
+.DocSearch .DocSearch-Form:focus-within .DocSearch-MagnifierLabel svg {
+    color:#6E6E6E;
+}
+.DocSearch .DocSearch-LoadingIndicator svg, .DocSearch .DocSearch-MagnifierLabel svg{
+    color:#6E6E6E;
+}
+.DocSearch .DocSearch-AskAi-Return,
+.DocSearch .DocSearch-LoadingIndicator,
+.DocSearch .DocSearch-MagnifierLabel, .DocSearch .DocSearch-Clear{
+    color:#6E6E6E;
+}
+.DocSearch .DocSearch-Clear{
+    margin-bottom: 2px;
+}
+.DocSearch .DocSearch-Modal .DocSearch-MagnifierLabel{
+    position: absolute;
+    margin-left: 6px;
+}
+.DocSearch .DocSearch-AskAi-Return{
+    position: absolute;
+    margin-left: 6px;
+    right: auto;
+    margin-top: 2px;
+}
+.DocSearch .shimmer{
+    align-items:center;
+    background-image: linear-gradient(90deg, #151514 0%, #515150 20%, #828280 60%, #e0e3e8 95%);
+    padding-left: 36px;
+}
+
+.DocSearch .DocSearch-Hit[aria-selected=true] .DocSearch-Hit-action,
+.DocSearch .DocSearch-Hit[aria-selected=true] .DocSearch-Hit-icon,
+.DocSearch .DocSearch-Hit[aria-selected=true] mark, .DocSearch .DocSearch-Hit mark {
+    color:#B48C50;
+    font-style: normal;
+}
+.DocSearch .DocSearch-Hit[aria-selected=true] .DocSearch-Hit--AskAI,
+.DocSearch .DocSearch-Hit[aria-selected=true] a{
+    background: #F9F6F1;
+}
+
+.DocSearch .DocSearch-Action:hover, .DocSearch .DocSearch-AskAi-Return:hover {
+    background: transparent;
+    color: #6E6E6E;
+}
+.DocSearch .DocSearch-Hit[aria-selected=true] .DocSearch-Hit-Tree,
+.DocSearch .DocSearch-Hit[aria-selected=true] .DocSearch-Hit-text,
+.DocSearch .DocSearch-Hit[aria-selected=true] .DocSearch-Hit-title {
+    color: #151514;
+}
+.DocSearch .DocSearch-Hit-Tree, .DocSearch .DocSearch-Hit-path{
+    color: #6E6E6E;
+}
+
+.DocSearch .DocSearch-Hit-content-wrapper ul,
+.DocSearch .DocSearch-Hit-content-wrapper ol{
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+.DocSearch .DocSearch-Hit-content-wrapper ul li, .DocSearch .DocSearch-Markdown-Content ul li{
+    list-style:disc;
+    color: #151514;
+    padding-inline-start: 0;
+}
+.DocSearch .DocSearch-Hit-content-wrapper ol li, .DocSearch .DocSearch-Markdown-Content ol li{
+    list-style:decimal;
+    color: #151514;
+    padding-inline-start: 0;
+}
+.DocSearch-Clear
+.DocSearch .DocSearch-Markdown-Content li::marker{
+    color: #151514;
+}
+.DocSearch .DocSearch-Markdown-Content a{
+    color:#B48C50;
+}
+.DocSearch .DocSearch-Commands-Key,.DocSearch .DocSearch-Button-Key{
+    color: #6E6E6E;
+    background-color: #F7F7F7;
+}
+
+.DocSearch .DocSearch-Input, .DocSearch .DocSearch-Modal-heading{
+    color: #151514;
+}
+.DocSearch .DocSearch-Input::placeholder {
+    color: #6E6E6E;
+}
+.DocSearch .DocSearch-Screen-Icon, .DocSearch .DocSearch-Action, .DocSearch .DocSearch-AskAi-Return{
+    color: #6E6E6E;
+}
+.DocSearch .DocSearch-Screen-Icon svg{
+    stroke:#6E6E6E;
+}
+.DocSearch .DocSearch-Back-Icon, .DocSearch .DocSearch-Search-Icon{
+    color: #6E6E6E;
 }

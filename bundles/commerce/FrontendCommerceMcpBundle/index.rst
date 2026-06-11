@@ -1,23 +1,23 @@
-.. _bundle-docs-commerce-commerce-mcp-bundle:
+.. _bundle-docs-frontend-commerce-commerce-mcp-bundle:
 
-OroCommerceMcpBundle
-====================
+OroFrontendCommerceMcpBundle
+============================
 
 .. note:: This bundle is only available in the Enterprise edition.
 
-OroCommerceMcpBundle implements of |Model Context Protocol| using the official MCP SDK |mcp/sdk| for OroCommerce back-office.
+OroFrontendCommerceMcpBundle implements of |Model Context Protocol| using the official MCP SDK |mcp/sdk| for OroCommerce storefront.
 
 Supports MCP capabilities (tools, prompts, resources) as server via HTTP transport. Resource templates implementation ready but awaiting MCP SDK support.
 
 Install in VS Code
 ------------------
 
-First, create an :ref:`OAuth Application <oauth-applications>` with the following properties:
+First, create an :ref:`Customer User OAuth Application <customer-user-oauth-app>` with the following properties:
 
-* Application Name: the name of your application, for example `Commerce MCP Server`
+* Application Name: the name of your application, for example `Commerce Storefront MCP Server`
 * Active: `on`
 * Support all APIs: `off`
-* Supported APIs: `Commerce MCP Server`
+* Supported APIs: `Commerce Storefront MCP Server`
 * Grant Type: `Authorization Code`
 * Redirect URLs: `http://127.0.0.1:33418/` and `https://vscode.dev/redirect`
 * Confidential Client: `off`
@@ -31,22 +31,20 @@ Next, open VS Code and add the following to your host configuration (`.vscode/mc
       "servers": {
         "oro-commerce-mcp": {
           "type": "http",
-          "url": "https://yourapplication/{backend_prefix}/commerce-mcp"
+          "url": "https://yourapplication/commerce-mcp"
         }
       }
     }
 
-The `{backend_prefix}` is the prefix of your back-office (by default, it is `admin`).
-
 Install in ChatGPT
 ------------------
 
-First, create an :ref:`OAuth application <oauth-applications>` with the following properties:
+First, create an :ref:`Customer User OAuth Application <customer-user-oauth-app>` with the following properties:
 
-* Application Name: the name of your application, for example `Commerce MCP Server`
+* Application Name: the name of your application, for example `Commerce Storefront MCP Server`
 * Active: `on`
 * Support all APIs: `off`
-* Supported APIs: `Commerce MCP Server`
+* Supported APIs: `Commerce Storefront MCP Server`
 * Grant Type: `Authorization Code`
 * Redirect URLs: `https://chatgpt.com/connector_platform_oauth_redirect`
 * Confidential Client: `off` or `on`
@@ -55,7 +53,7 @@ First, create an :ref:`OAuth application <oauth-applications>` with the followin
 Next, open ChatGPT website, enable developer mode, and create MCP application with the following properties:
 
 * Name: the name of your application, for example `OroCommerce`
-* MCP Server URL: `https://yourapplication/{backend_prefix}/commerce-mcp`, where `{backend_prefix}` is the prefix of your back-office (by default, it is `admin`).
+* MCP Server URL: `https://yourapplication/commerce-mcp`.
 * Authentication: `OAuth`
 * OAuth Client ID: the Client ID of the OAuth application created on the first step
 * OAuth Client Secret: the Client Secret of the OAuth application created on the first step
@@ -66,7 +64,7 @@ Next, open ChatGPT website, enable developer mode, and create MCP application wi
 Creating API Based MCP Tools
 ----------------------------
 
-To expose API resources as MCP tools, provide information about these tools in `Resources/config/oro/api_based_mcp_tools_commerce.yml` in any bundle or `config/api_based_mcp_tools_commerce.yml` of your application, e.g.:
+To expose API resources as MCP tools, provide information about these tools in `Resources/config/oro/api_based_mcp_tools_commerce_frontend.yml` in any bundle or `config/api_based_mcp_tools_commerce_frontend.yml` of your application, e.g.:
 
 .. code-block:: yaml
 
@@ -202,11 +200,11 @@ Examples of PHP classes that implement MCP capabilities:
 Configuration
 -------------
 
-The default configuration of OroCommerceMcpBundle:
+The default configuration of OroFrontendCommerceMcpBundle:
 
 .. code-block:: yaml
 
-    oro_commerce_mcp:
+    oro_frontend_commerce_mcp:
         # The application name to be exposed to MCP clients.
         app: 'OroCommerce MCP Server'
         # The application version to be exposed to MCP clients.
@@ -255,15 +253,15 @@ The default configuration of OroCommerceMcpBundle:
         # API related configuration.
         api:
             # The API type that is used to group and protect MCP capabilities.
-            type: 'commerce_mcp'
+            type: 'frontend_commerce_mcp'
             # The human-readable API name.
-            name: 'Commerce MCP Server'
+            name: 'Commerce Storefront MCP Server'
             # Indicates whether API is storefront or back-office.
-            frontend: false
+            frontend: true
             # The request type for API that is used by MCP tools based on API.
-            request_type: [ 'rest', 'json_api', 'commerce_mcp' ]
+            request_type: [ 'rest', 'json_api', 'frontend', 'frontend_commerce_mcp' ]
             # All supported API configuration files for MCP tools based on API.
-            config_files: [ 'api_commerce_mcp.yml', 'api.yml' ]
+            config_files: [ 'api_commerce_mcp_frontend.yml', 'api_frontend.yml' ]
             # A map between API and MCP data types.
             data_types: []
 

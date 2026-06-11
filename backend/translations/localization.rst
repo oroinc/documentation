@@ -211,6 +211,22 @@ When used with the USA, such an address will be rendered like in the example bel
 
 As with other entities, the frontend provides an appropriate JavaScript formatter,  the ``orolocale/js/formatter/address`` JS module. This module is located in the ``address.js`` file in the Locale bundle and contains a ``format()`` method, which behaves exactly like the backend formatter.
 
+Updating Localization from CLI
+------------------------------
+
+Administrators can update the application's language and formatting after installation using the ``oro:localization:update`` command:
+
+.. code-block:: bash
+
+   bin/console oro:localization:update --formatting-code=<locale_code> --language=<locale_code> --env=prod
+   bin/console oro:translation:update --all --env=prod
+
+For example, to switch the application to French localization and formatting, use:
+
+.. code-block:: bash
+
+   bin/console oro:localization:update --formatting-code=fr_FR --language=fr_FR --env=prod
+   bin/console oro:translation:update --all --env=prod
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

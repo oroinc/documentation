@@ -8,33 +8,34 @@
     :license: BSD, see LICENSE for details.
 #}
 {%- if pagename != "search" and builder != "singlehtml" %}
-<div id="searchbox" class="search">
-    <form role="search" method="get" action="" data-hs-cf-bound="true">
-        <div class="field-search2 form-inline2">
-            <input type="submit" value="Search the site">
-            <div class="ep-autosuggest-container">
-                <input type="text" class="search-form" name="q" >
-                <div class="ep-autosuggest">
-                    <ul class="autosuggest-list" role="listbox"></ul>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
+<div id="searchbox" class="search"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-{% set algoliaOptions = '{hitsPerPage: 10}' %}
-{% if current_version %}
-    {% set algoliaOptions = "{ 'facetFilters': [\"version:" ~ current_version.version ~ "\"], hitsPerPage: 10 }" %}
-{% endif %}
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+{% set searchVersion = current_version.version if current_version else '7.0' %}
 <script>
     docsearch({
         appId: '71PYJZ7X87',
         apiKey: '92194359ed33b2b76a70c7f8f305a8f0',
-        indexName: 'oroinc',
-        inputSelector: '#searchbox input[type=text]',
-        algoliaOptions: {{ algoliaOptions }},
-        debug: false
+        container: '#searchbox',
+        indices: [
+            {
+                name: 'oroinc',
+                searchParameters: {
+                    facetFilters: ['version:{{searchVersion}}'],
+                    hitsPerPage: 10
+                },
+            },
+        ],
+        debug: false,
+        askAi: {
+            assistantId: 'f6ec2542-b3f7-48e4-ab91-ae97c31dab16',
+            agentStudio: true,
+            searchParameters: {
+                oroinc: {
+                    filters: 'version:{{searchVersion}}'
+                }
+            }
+        },
     });
 </script>
 

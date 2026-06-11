@@ -55,6 +55,8 @@ For entities that support custom fields and entity management:
 4. In the entity configuration form check the **Webhook Accessible** checkbox
 5. Click **Save and Close**
 
+.. note:: For more details on how to create a webhook integration from the back-office, refer to the :ref:`Configure Webhooks in the Back-Office <back-office--integrations--webhooks>` topic.
+
 Programmatically via ConfigManager
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -119,6 +121,8 @@ Via Oro Back-Office
 4. In the **Webhook relations includes** field enter a comma-separated list of relation paths
    (e.g. ``customer,lineItems``)
 5. Click **Save and Close**
+
+.. note:: For more details on how to create a webhook integration from the back-office, refer to the :ref:`Configure Webhooks in the Back-Office <back-office--integrations--webhooks>` topic.
 
 Programmatically via ConfigManager
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1251,6 +1255,13 @@ Add to your transport settings form template:
 
     {# ... other fields ... #}
     {{ form_row(form.webhook) }}
+
+
+**Related Articles**
+
+* :ref:`Configure Webhooks in the Back-Office <back-office--integrations--webhooks>`
+* :ref:`Manage Entity <doc-entity-actions-create>`
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
