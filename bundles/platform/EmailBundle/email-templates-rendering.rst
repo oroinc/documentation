@@ -5,7 +5,7 @@ Rendering an Email Template
 
 OroEmailBundle makes use of the TWIG engine to render an email template.
 
-.. note:: For security reasons, an email template is :ref:` rendered in the sandbox mode <bundle-docs-platform-email-bundle-templates-rendering-sandbox>`.
+.. note:: For security reasons, an email template is :ref:`rendered in the sandbox mode <bundle-docs-platform-email-bundle-templates-rendering-sandbox>`.
 
 Implementation Overview
 -----------------------

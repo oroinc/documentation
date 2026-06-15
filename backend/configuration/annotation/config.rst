@@ -137,6 +137,13 @@ OroDraftBundle enables you to edit and publish a version of the Draftable entity
 
 * **draftable** *boolean* - enables the "draft" functionality.
 
+``email``
+~~~~~~~~~
+
+* **available_in_template** *boolean* - if set to ``true``, this entity will be available when creating email templates. Defaults to ``false``.
+
+* **immutable** *boolean* - is used to prohibit changing the email association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
 ``entity``
 ~~~~~~~~~~
 

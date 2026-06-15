@@ -22,6 +22,7 @@ Related Documentation
    email-templates-load
    email-templates-rendering
    email-templates-rendering-sandbox
+   email-templates-security-policy
    email-templates-inheritance
    email-templates-send
    email-templates-migrations
