@@ -145,6 +145,7 @@ The default value for ``ORO_MQ_DSN`` environment variable is set in the config/c
    message-queue-topics
    message-queue-jobs
    consumer/index
+   consumption-modes
    security-context
    logging/index
    testing
