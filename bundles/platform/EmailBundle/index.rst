@@ -19,6 +19,7 @@ Related Documentation
    events
    emails
    email-templates
+   email-templates-security-policy
    email-templates-migrations
    mailboxes
    ownership

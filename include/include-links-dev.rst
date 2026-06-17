@@ -6068,3 +6068,6 @@ Links (Dev)
 
     <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/SearchBundle" target="_blank">OroSearchBundle</a>
 
+.. |OroEmailBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/EmailBundle" target="_blank">OroEmailBundle</a>

@@ -27,6 +27,7 @@ Related Documentation
 * :ref:`Get the EntityStructureDataProvider Instance <bundle-docs-platform-entity-bundle-entity-structure-data-provider>`
 * :ref:`Events <dev-entities-events>`
 * :ref:`EntitySelectSearchApiAccessor <bundle-docs-platform-entity-bundle-search-api-processor>`
+* :ref:`Twig Template Static Analysis <bundle-docs-platform-entity-bundle-twig-static-analysis>`
 
 .. toctree::
    :hidden:
@@ -34,6 +35,7 @@ Related Documentation
    entity-model
    entity-select-search-api-accessor
    entity-structure-data-provider
+   twig-template-static-analysis
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
