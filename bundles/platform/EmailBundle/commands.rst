@@ -1,3 +1,4 @@
+.. _bundle-docs-platform-email-bundle-commands:
 
 CLI Commands (EmailBundle)
 ==========================
@@ -47,14 +48,111 @@ To render an email template, use the command below. Optionally, it can send a co
 
    php bin/console oro:debug:email:template:compile
 
+oro:debug:email:template:entities
+---------------------------------
+
+To list all entity classes available when creating email templates, use the following command:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:template:entities
+
+By default, the command lists all entity classes that have ``email.available_in_template`` set to ``true`` and are available when creating email templates.
+
+To list entity classes that are **not** available when creating email templates:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:template:entities --unavailable
+
+To output a plain list (one class name per line, suitable for piping):
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:template:entities --plain
+   php bin/console oro:debug:email:template:entities --unavailable --plain
+
 oro:debug:email:variables
 -------------------------
 
-To display email template variables, use the following command:
+To display email template variables and entity field availability in email templates, use the following command:
 
 .. code-block:: bash
 
    php bin/console oro:debug:email:variables
+
+When called without any options, the command shows the system variables table. The same result can be requested explicitly:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:variables --system
+
+To show available entity variables for a specific entity:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:variables --entity-class='Oro\Bundle\UserBundle\Entity\User'
+
+To include rendered values in the output, provide an entity ID (requires ``--entity-class``):
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:variables --entity-class='Oro\Bundle\UserBundle\Entity\User' --entity-id=1
+
+To show entity variables for all configured entities at once:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:variables --all-entities
+
+To show entity fields that are **not** available in email templates for a specific entity:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:variables --entity-class='Oro\Bundle\UserBundle\Entity\User' --unavailable
+
+To show unavailable fields for all entities at once:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:variables --unavailable --all-entities
+
+To output a plain tab-separated list (entity class and field name per line, suitable for piping):
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:variables --unavailable --all-entities --plain
+
+.. note::
+   The ``--entity-id`` option cannot be combined with ``--all-entities``.
+   The ``--entity-class`` option cannot be combined with ``--system``.
+
+oro:debug:email:filters
+-----------------------
+
+To display all Twig filters allowed in email templates, use the following command:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:filters
+
+oro:debug:email:functions
+-------------------------
+
+To display all Twig functions allowed in email templates, use the following command:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:functions
+
+oro:debug:email:tags
+--------------------
+
+To display all Twig tags allowed in email templates, use the following command:
+
+.. code-block:: bash
+
+   php bin/console oro:debug:email:tags
 
 oro:email:template:export
 -------------------------
@@ -73,6 +171,24 @@ To import email templates from the directory, use the following command:
 .. code-block:: bash
 
    php bin/console oro:email:template:import
+
+oro:email:template:security-policy-check
+-----------------------------------------
+
+To check all email templates stored in the database for Twig sandbox security policy violations, use the following command:
+
+.. code-block:: bash
+
+   php bin/console oro:email:template:security-policy-check
+
+To check a specific template by name, pass the template name as an argument:
+
+.. code-block:: bash
+
+   php bin/console oro:email:template:security-policy-check <template-name>
+
+The command performs static analysis only. Some violations may appear only at runtime,
+and false positives or false negatives are possible.
 
 Commands in Use (Examples)
 --------------------------
@@ -309,4 +425,3 @@ The following command imports email templates from the specified folder:
     "authentication_code" updated
     ...
     "order_confirmation_email" updated
-

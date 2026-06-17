@@ -31,6 +31,9 @@ use Oro\Bundle\OrganizationBundle\Entity\OrganizationInterface;
  *          "security"={
  *              "type"="ACL",
  *              "category"="marketing"
+ *          },
+ *          "email"={
+ *              "available_in_template"=true
  *          }
  *      }
  * )

@@ -144,7 +144,7 @@ Contain some settings for the datagrid screen.
 
 Sets default settings for :ref:`OroEmailBundle <bundle-docs-platform-email-bundle>`.
 
-*  **available_in_template** *boolean* - if set to true, the field can be used in email templates.
+*  **available_in_template** *boolean* - if set to true, the field can be used in email templates. Defaults to ``true``.
 
 * **immutable** *boolean* - is used to prohibit changing the email association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
