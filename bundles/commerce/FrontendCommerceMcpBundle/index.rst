@@ -5,6 +5,8 @@ OroFrontendCommerceMcpBundle
 
 .. note:: This bundle is only available in the Enterprise edition.
 
+.. note:: OroFrontendCommerceMcpBundle is available as of OroCommerce version 7.0.3.
+
 OroFrontendCommerceMcpBundle implements of |Model Context Protocol| using the official MCP SDK |mcp/sdk| for OroCommerce storefront.
 
 Supports MCP capabilities (tools, prompts, resources) as server via HTTP transport. Resource templates implementation ready but awaiting MCP SDK support.

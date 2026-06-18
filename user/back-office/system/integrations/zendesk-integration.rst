@@ -6,7 +6,7 @@ Configure Zendesk Integration in the Back-Office
 
 Oro applications support out-of-the-box integration with Zendesk, enabling you to load data from your Zendesk account and process it in the Oro application.
 
-OroCommerce supports two authentication methods for Zendesk integration:
+As of version 7.0.3, OroCommerce supports two authentication methods for Zendesk integration:
 
 * **Basic** --- authenticate using a Zendesk account email and API token.
 * **OAuth** --- use OAuth 2.0 for secure, delegated authorization.
