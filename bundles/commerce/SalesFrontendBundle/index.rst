@@ -22,6 +22,7 @@ Related Documentation
 .. toctree::
    :maxdepth: 1
 
+   Application Base URLs <app-base-urls>
    Commands <commands>
    Configuration <configuration>
    CORS <cors>
