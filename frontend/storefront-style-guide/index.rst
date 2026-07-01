@@ -11,9 +11,9 @@
 Storefront Design: Style Guide
 ==============================
 
-OroCommerce 6.1 LTS has introduced brand new Golden Carbon and Refreshing Teal storefront themes that give a modern and fresh look. These themes include a fully editable homepage with configurable content templates and widgets, an improved and retina-optimized slider, product segment widgets and more. The new themes have been designed to improve accessibility and internationalization, making navigation, search, and checkout experiences better, while also ensuring optimal performance.
+OroCommerce 7.0 LTS has introduced a new **Intelligent Blue** storefront theme in addition to the *Golden Carbon* and *Refreshing Teal* themes introduced in 6.1 and 6.0. The theme includes a fully editable homepage with configurable content templates and widgets, an improved and retina-optimized slider, product segment widgets and more. The theme has been designed to improve accessibility and internationalization, making navigation, search, and checkout experiences better, while also ensuring optimal performance.
 
-We understand that every brand has its own unique corporate identity that sets it apart in the market. While OroCommerce offers options to :ref:`customize the look and feel of the new themes in the back-office <back-office-theme-configuration>`, we have compiled this style guide to assist you in customizing the current Golden Carbon theme interface to align it with your corporate identity.
+We understand that every brand has its own unique corporate identity that sets it apart in the market. While OroCommerce offers options to :ref:`customize the look and feel of the new themes in the back-office <back-office-theme-configuration>`, we have compiled this style guide to assist you in customizing the current Intelligent Blue theme interface to align it with your corporate identity.
 
 .. image:: /img/frontend/storefront-design/Storefront-Style-Guide.png
    :alt: Storefront designs
@@ -21,22 +21,23 @@ We understand that every brand has its own unique corporate identity that sets i
 Download Figma Design Files
 ---------------------------
 
-To help you create your custom Storefront theme design, we compiled two files, the |Style Guide 6.1| and |Design Mockups 6.1|. To access these files, you need a |Figma account| with a Professional, Organization, or Enterprise plan. This will allow you to connect the library file to your working design files.
+To help you create your custom Storefront theme design, we compiled two files, the |Style Guide 7.0| and |Design Mockups 7.0|. To access these files, you need a |Figma account| with a Professional, Organization, or Enterprise plan. This will allow you to connect the library file to your working design files.
 
 .. note::
 
-    These Figma files use the new |Golden Carbon theme|, which is the recommended and most actively maintained theme for OroCommerce version 6.1.
+    These Figma files use the new |Intelligent Blue theme|, which is the recommended and most actively maintained theme for OroCommerce version 7.0.
 
-    The *Refreshing Teal* theme is still available in version 6.1 and is pre-installed by default. To sew how *Refreshing Teal* looks on the storefront, please refer to the version 6.0 Figma files: |Style Guide 6.0| and |Design Mockups 6.0|.
+    The *Golden Carbon* and *Refreshing Teal* themes are still available in version 7.0. To see how they look on the storefront, please refer to the related Figma files: |Style Guide 6.1 (Golden Carbon)|, |Design Mockups 6.1 (Golden Carbon)| and |Style Guide 6.0 (Refreshing Teal)|, |Design Mockups 6.0 (Refreshing Teal)|.
 
 
-This |Style Guide 6.1| contains:
+
+This |Style Guide 7.0| contains:
 
 * **Styles** with instructions on how to use them (colors, shadows and typography). You can change the styles to fit your company identity, publish library updates to your design work Figma file, and these styles will automatically be updated in every instance on every page that uses them.
 
-* **Ready-to-go UI components**, from the simple ones (e.g., |Feather Icons|, buttons) to the compound ones (e.g., product cards) that are built with auto layouts and according to :ref:`the atomic approach <frontend--design--atomic-approach>`.
+* **Ready-to-go UI components**, from the simple ones (e.g., |Feather Icons|, buttons) to the compound ones (e.g., product cards) that are built with auto layouts and according to the :ref:`atomic approach <frontend--design--atomic-approach>`.
 
-|Design Mockups 6.1| encompass all primary screens and page components, allowing for customizable design alterations.
+|Design Mockups 7.0| encompass all primary screens and page components, allowing for customizable design alterations.
 
 .. image:: /img/frontend/storefront-design/Colors.png
    :alt: Color palette in style guide
@@ -44,22 +45,22 @@ This |Style Guide 6.1| contains:
 Customize the Library
 ^^^^^^^^^^^^^^^^^^^^^
 
-Once you have downloaded the |Style Guide 6.1| (Storefront Style Guide 6.1) and |Design Mockups 6.1| (Design Mockups 6.1) files, you can start customizing and use the provided Figma library:
+Once you have downloaded the |Style Guide 7.0| (Storefront Style Guide 7.0) and |Design Mockups 7.0| (Design Mockups 7.0) files, you can start customizing and use the provided Figma library:
 
 1. Import the downloaded Figma files into your Figma project.
 
 .. note:: Please remember that using a separate library file, which is our suggested approach, is only available if your team in Figma is on Professional, Organization or Enterprise plan.
 
-2. In the newly imported library file (Storefront Style Guide 6.1), open the Assets tab in the left panel and click on the book icon.
+2. In the newly imported library file (Storefront Style Guide 7.0), open the Assets tab in the left panel and click on the book icon.
 
 3. Find your newly imported library file name and click **Publish**; click Publish again in the window with styles.
 
-.. image:: /img/frontend/storefront-design/Customize-Library.png
+.. image:: /img/frontend/storefront-design/Publish-updates.png
    :alt: Illustration of the Figma UI with options to Publish the library file
 
 4. When your library file is successfully published, make sure it does not contain styles or elements from any missing libraries. For this, open the Assets tab in the left panel and click on the book icon again. See if under the *Libraries available in this file* it says *Includes 1 missing library*. If it does, click the chevron right > with the *Choose library* dropdown to select your newly imported library file’s name and click **Swap Library**. The *Swap default styles in instances* option should be checked.
 
-5. Open your newly imported work file (Design Mockups 6.1). In the Assets tab, click on the book icon. Under the *Libraries available in this file* find *Includes 1 missing library* (the source library which your Storefront Style Guide 6.1 file is an exact duplicate of), click the chevron right > with the *Choose library* dropdown to select your newly imported library file’s name and click **Swap Library**. The *Swap default styles in instances* should be checked. Swapping may take some time.
+5. Open your newly imported work file (Design Mockups 7.0). In the Assets tab, click on the book icon. Under the *Libraries available in this file* find *Includes 1 missing library* (the source library which your Storefront Style Guide 7.0 file is an exact duplicate of), click the chevron right > with the *Choose library* dropdown to select your newly imported library file’s name and click **Swap Library**. The *Swap default styles in instances* should be checked. Swapping may take some time.
 
 6. While still in your work file, open the Assets tab and click on the book icon again. Make sure your newly imported library is marked as **Added**, and that the file does not use elements or styles from any other libraries.
 
@@ -73,7 +74,7 @@ Apply Changes
 Once you have finished customizing the style guide and components library, please apply the changes to your work Figma file (the file with the design mockups) where this library has been added:
 
 1. Open the Assets tab in the left panel of this file (library) and click on the book icon.
-2. Find the current file (Storefront Style Guide 6.1), click **Publish changes** and then **Publish**.
+2. Find the current file (Storefront Style Guide 7.0), click **Publish changes** and then **Publish**.
 3. Open your work Figma file. If this library is toggled on in your file, click **Review unpublished changes** (the book icon in the top right corner of the Figma toolbar) and then **Update all**.
 
 .. image:: /img/frontend/storefront-design/Apply-Changes.png
@@ -125,7 +126,7 @@ The structure of the OroCommerce UI is based on the Atomic Design approach, whic
 * :ref:`Templates <principles-templates>` - help place components in the layout and demonstrate the content structure underlying the design
 * :ref:`Pages <principles-pages>` - help apply real content to templates displaying the final interface
 
-.. image:: /img/frontend/storefront-design/Principles.png
+.. image:: /img/frontend/storefront-design/Atomic-Design-Approach-img.png
    :alt: Principle of the atomic design approach
 
 .. _principles-atoms:

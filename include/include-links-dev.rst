@@ -6459,18 +6459,6 @@ Links (Dev)
 
     <a href="https://github.com/feathericons/feather" target="_blank">Feather Icons</a>
 
-.. |Figma account| raw:: html
-
-    <a href="https://www.figma.com/signup" target="_blank">Figma account</a>
-
-.. |Style Guide 6.0| raw:: html
-
-    <a href="https://static.oroinc.com/doc/storefront-style-guide-6.0.fig" target="_blank">Style Guide 6.0</a>
-
-.. |Design Mockups 6.0| raw:: html
-
-    <a href="https://static.oroinc.com/doc/design-mockups-6.0.fig" target="_blank">Design Mockups 6.0</a>
-
 .. |k6-docs| raw:: html
 
     <a href="https://grafana.com/docs/k6/latest" target="_blank">k6-docs</a>
@@ -6571,17 +6559,41 @@ Links (Dev)
 
     <a href="https://github.com/oroinc/field-sales-frontend" target="_blank">Field Sales application</a>
 
+.. |Figma account| raw:: html
+
+    <a href="https://www.figma.com/signup" target="_blank">Figma account</a>
+
+.. |Style Guide 6.0 (Refreshing Teal)| raw:: html
+
+    <a href="https://static.oroinc.com/doc/storefront-style-guide-6.0.fig" target="_blank">Style Guide 6.0 (Refreshing Teal)</a>
+
+.. |Design Mockups 6.0 (Refreshing Teal)| raw:: html
+
+    <a href="https://static.oroinc.com/doc/design-mockups-6.0.fig" target="_blank">Design Mockups 6.0 (Refreshing Teal)</a>
+
 .. |Golden Carbon theme| raw:: html
 
     <a href="https://github.com/oroinc/storefront-themes/" target="_blank">Golden Carbon theme</a>
 
-.. |Style Guide 6.1| raw:: html
+.. |Style Guide 6.1 (Golden Carbon)| raw:: html
 
-    <a href="https://static.oroinc.com/doc/Storefront_Style_Guide-6.1-Public_Files-November_2025.fig" target="_blank">Style Guide</a>
+    <a href="https://static.oroinc.com/doc/Storefront_Style_Guide-6.1-Public_Files-November_2025.fig" target="_blank">Style Guide 6.1 (Golden Carbon)</a>
 
-.. |Design Mockups 6.1| raw:: html
+.. |Design Mockups 6.1 (Golden Carbon)| raw:: html
 
-    <a href="https://static.oroinc.com/doc/Design_Mockups_6.1-November_2025.fig" target="_blank">Design Mockups</a>
+    <a href="https://static.oroinc.com/doc/Design_Mockups_6.1-November_2025.fig" target="_blank">Design Mockups 6.1 (Golden Carbon)</a>
+
+.. |Style Guide 7.0| raw:: html
+
+    <a href="https://static.oroinc.com/doc/Storefront_style_guide_7.0-Public_files.fig" target="_blank">Style Guide</a>
+
+.. |Design Mockups 7.0| raw:: html
+
+    <a href="https://static.oroinc.com/doc/Design_mockups_7.0-Public_files.fig" target="_blank">Design Mockups</a>
+
+.. |Intelligent Blue theme| raw:: html
+
+    <a href="https://github.com/oroinc/storefront-themes/tree/master/src/Oro/Bundle/IntelligentBlueThemeBundle" target="_blank">Intelligent Blue theme</a>
 
 .. |feature chart| raw:: html
 
@@ -6607,6 +6619,7 @@ Links (Dev)
 .. |JSON:API include format| raw:: html
 
    <a href="https://jsonapi.org/format/#fetching-includes" target="_blank">JSON:API include format</a>
+
 .. |application_name| raw:: html
 
    <a href="https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-APPLICATION-NAME" target="_blank">application_name</a>
