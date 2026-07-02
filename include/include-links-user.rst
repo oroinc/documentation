@@ -1045,3 +1045,11 @@ Links (User)
 .. |Customer Part Number|  raw:: html
 
    <a href="https://extensions.oroinc.com/orocommerce/extension/customer-part-number/" target="_blank">Customer Part Number</a>
+
+.. |Okta Admin Console|  raw:: html
+
+   <a href="https://login.okta.com/" target="_blank">Okta Admin Console</a>
+
+.. |Google's CMP Partner Program|  raw:: html
+
+   <a href="https://cmppartnerprogram.withgoogle.com/" target="_blank">Google's CMP Partner Program</a>
