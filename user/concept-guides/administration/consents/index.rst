@@ -101,6 +101,7 @@ Learn more on the configuration and localization of consents in OroCommerce in t
 **Related Topics**
 
 * :ref:`Data Protection in the OroCommerce Storefront <frontstore-guide--profile-consents>`
+* :ref:`Cookie Consent in OroCommerce: Guidance for Merchants <concept-guide-cookie-consent>`
 * :ref:`Declined Consents as Contact Requests <user-guide-activities-requests>`
 * :ref:`Build Reports with Accepted Consents <user-guide-reports-accepted-consents>`
 
@@ -117,6 +118,7 @@ Learn more on the configuration and localization of consents in OroCommerce in t
 .. toctree::
    :hidden:
 
+   Cookie Consent Guidance <cookie-consent>
    add-consent
    localize-consents
    accepted-consents-report
