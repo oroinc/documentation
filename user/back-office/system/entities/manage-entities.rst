@@ -82,6 +82,8 @@ To edit an entity:
 
 * **Show Restricted** — Select this checkbox if you enabled **Field Level ACL** and are going to disable editing of some fields of the entity records but still want users to review the disabled fields on the interface. Fields disabled for modifying will appear dimmed on the interface. For more information about field level ACLs, see the :ref:`Entity Fields <doc-entity-fields>` topic.
 
+* **Available in Email Templates** — (available as of OroCommerce v7.0.3) Select **Yes** to make this entity available when creating email templates.
+
 * **Webhook Accessible** — (available as of OroCommerce v7.0.2) Define whether an entity can be used in :ref:`webhook notifications <back-office--integrations--webhooks>`. When set to **Yes**, the entity becomes available for webhook integration. The system generates webhook topics for the entity's supported events (such as create, update, and delete), allowing administrators or external systems to subscribe to those events and receive notifications when they occur. When set to **No**, the entity is excluded from webhook processing, and no webhook topics are generated for it.
 
 * **Webhook Relations Includes** — (available as of OroCommerce v7.0.2) Specify which related data should be included in the :ref:`webhook payload <back-office--integrations--webhooks>`. The field accepts relation paths in *JSON:API includes* format, which is a comma-separated list of relation paths. A relation path is a dot-separated list of relation names (e.g., ``organization,owner.groups,lineItems,shippingAddress``). When a webhook event occurs, the system serializes the entity and the specified related data into a JSON:API payload before sending the notification.

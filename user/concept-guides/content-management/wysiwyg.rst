@@ -61,7 +61,7 @@ WYSIWYG enables you to do the following:
 Add Formatting and Styles to Text Block
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To add formatting such as bold, italic, and underlining to your text, you need to drag the text block, enter the required text, and left-click the block to display the menu with additional formatting options.
+To add formatting such as bold, italic, and underlining to your text, you need to drag the **Text Section** block, enter the required text, and left-click the block to display the menu with additional formatting options.
 
 .. image:: /user/img/concept-guides/content-management/format_text.png
    :alt: Display the menu with additional formatting options
@@ -130,6 +130,22 @@ If H2, H3, or any other formatting is applied to the text, then you have several
 .. image:: /user/img/concept-guides/content-management/shifting_formatted_text.png
    :alt: Shifting the formatted text using Enter and Enter+Shift
 
+Insert a Button
+^^^^^^^^^^^^^^^
+
+To add a button to your content, do the following:
+
+1. Insert the **Link** block to the canvas.
+2. Navigate to **Style Manager > Attributes**.
+3. For **Variants**, click **Button**.
+4. Configure the button settings as needed:
+
+    * Add the button URL, title, and other details.
+    * Choose the button style: *Primary, Outlined*, or *Plain*.
+    * Enable an icon if needed and select its position.
+
+.. image:: /user/img/concept-guides/content-management/insert_button.png
+   :alt: The steps you need to take to add the button to your content
 
 
 Insert Multimedia
@@ -229,14 +245,19 @@ To insert an image to your content, you need to drag the image block to the canv
 Insert Clickable Images
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To add a clickable image to your content, you must first insert the Link Block (1,2). Then, place the image block inside the link block (3,4).
+To add a clickable image to your content, do the following:
+
+1. Insert the **Link** block to the canvas.
+2. In the **Style Manager** section, enable the **Allow Nested Content** checkbox.
+3. Insert the **Image** block inside the link block.
 
 .. image:: /user/img/concept-guides/content-management/insert_clickable_image_1.png
    :alt: The steps you need to expose to add the link block to your content
 
-Click the link block again to display the **Style Manager** menu settings. In the **Settings** section, input the link for the image to direct people to the necessary website, once they click the image in the storefront.
+4. Move to the link block and open the **Style Manager** tab.
+5. In the **Attributes** section, input the URL and title for the image to direct users to the necessary website, once they click the image in the storefront.
 
-.. image:: /user/img/concept-guides/content-management/insert_clickable_image_3.png
+.. image:: /user/img/concept-guides/content-management/insert_clickable_image_2.png
    :alt: Add the link to the link block in the Settings section under the Style Manager menu
 
 
