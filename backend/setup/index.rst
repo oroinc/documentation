@@ -140,6 +140,7 @@ Application Setup and Configuration
    Upgrade Application <upgrade-to-new-version>
    Deploy Changes <deploy-the-update>
    reinstall
+   CORS Configuration <cors-configuration>
 
 
 .. include:: /include/include-links-seo.rst
