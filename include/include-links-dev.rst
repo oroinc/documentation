@@ -6623,3 +6623,7 @@ Links (Dev)
 .. |application_name| raw:: html
 
    <a href="https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-APPLICATION-NAME" target="_blank">application_name</a>
+
+.. |NelmioCorsBundle| raw:: html
+
+   <a href="https://github.com/nelmio/NelmioCorsBundle" target="_blank">NelmioCorsBundle</a>
