@@ -60,6 +60,8 @@ In the event that additional intermediate steps are required for the existing ch
 Use the extended approach to inherit the base workflow with additions. This will simplify upgrades and bring new checkout features and fixes to customization.
 If the checkout workflow requires heavy modification, then copying and pasting the base workflow definition or writing it from scratch will be the better decision.
 
+Since checkout workflows are standard Oro Workflow component workflows, all general workflow customization techniques apply equally to checkouts. For details, see :ref:`Workflow Configuration Reference <backend--workflows--config-reference>`, :ref:`Basic Workflow Configuration <backend--workflows--create>`, and :ref:`Workflow Events <backend--workflows--workflow-events>`.
+
 Checkout Workflow Metadata
 --------------------------
 
@@ -128,3 +130,70 @@ In the example above state protection is enabled for both *b2b_flow_checkout* an
 
  - ``additionally_update_state_after`` option is used to define a list of transitions after which checkout state should be force updated.
  - ``protect_transitions`` option is used to extend a list of state protected transitions. By default only transitions with ``is_checkout_continue`` frontend option are protected.
+
+Checkout Events
+---------------
+
+The checkout process triggers events at key points in the workflow lifecycle, enabling custom logic to be executed without modifying the workflow definition or core services.
+
+Since checkout workflows are standard Oro Workflow component workflows, the general :ref:`Workflow Events <backend--workflows--workflow-events>` are also applicable to checkouts and may be used alongside the checkout-specific events described in this section.
+
+
+Checkout Lifecycle Events
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+These events are dispatched by ``Oro\Bundle\CheckoutBundle\Model\CheckoutBySourceCriteriaManipulator`` and ``Oro\Bundle\CheckoutBundle\Provider\PrepareCheckoutSettingsProvider`` during the creation, search, and actualization of a checkout entity.
+
+- ``oro_checkout.create`` (``Oro\Bundle\CheckoutBundle\Event\CheckoutCreateEvent``) — fired immediately after the new ``Checkout`` entity is constructed and its source is assigned, before checkout data is actualized. The event carries the checkout entity, the source criteria array, and the checkout data array. Listeners may replace the checkout entity by returning a modified instance.
+
+- ``oro_checkout.find`` (``Oro\Bundle\CheckoutBundle\Event\CheckoutFindEvent``) — fired after the repository search for an existing checkout by source criteria is complete. The event carries the found checkout entity (which may be ``null`` if none was found), the source criteria, the customer user, the currency, and the workflow name. Listeners may substitute an alternative checkout entity.
+
+- ``oro_checkout.actualize`` (``Oro\Bundle\CheckoutBundle\Event\CheckoutActualizeEvent``) — fired after the checkout line items, currency, shipping cost, and subtotals have been recalculated. The event carries the checkout entity, the source criteria, and the checkout data. Use this event to apply additional modifications after the standard actualization logic has run.
+
+- ``oro_checkout.workflow.prepare_checkout_settings`` (``Oro\Bundle\CheckoutBundle\Event\PrepareCheckoutSettingsEvent``) — fired before the checkout start action applies settings (such as a pre-set shipping address) to the workflow item. The event carries the checkout entity and the settings array. Listeners may modify or extend the settings before they are persisted.
+
+Checkout Request and Transition Events
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+These events are dispatched by the checkout controller and the POST request handler during storefront checkout page rendering and transition processing.
+
+- ``oro_checkout.request`` (``Oro\Bundle\CheckoutBundle\Event\CheckoutRequestEvent``) — fired at the beginning of the checkout controller action, before the current workflow step is resolved. The event carries the HTTP request and the checkout entity. Listeners may set the resolved ``WorkflowStep`` on the event to override the default step resolution.
+
+- ``oro_checkout.transition_request.before`` (``Oro\Bundle\CheckoutBundle\Event\CheckoutTransitionBeforeEvent``) — fired before a continue transition is executed in response to an HTTP POST request. The event carries the current ``WorkflowItem`` and the ``Transition`` about to be executed. Use this event to perform pre-transition checks or logging.
+
+- ``oro_checkout.transition_request.after`` (``Oro\Bundle\CheckoutBundle\Event\CheckoutTransitionAfterEvent``) — fired after a continue transition has been attempted. The event carries the ``WorkflowItem``, the ``Transition``, a boolean flag indicating whether the transition succeeded, and a collection of errors. Listeners may inspect the outcome or add additional error messages.
+
+- ``oro_checkout.login_on_guest_checkout`` (``Oro\Bundle\CheckoutBundle\Event\LoginOnCheckoutEvent``) — fired when a registered customer user logs in during a guest checkout session. The event carries the checkout entity and its source. Use this event to transfer guest checkout data to the authenticated user session.
+
+Source Entity Events
+^^^^^^^^^^^^^^^^^^^^^
+
+These events are dispatched when the checkout source entity (typically a shopping list) is cleared or removed at the end of the checkout process.
+
+- ``oro_checkout.checkout_source_entity_clear`` (``Oro\Bundle\CheckoutBundle\Event\CheckoutSourceEntityClearEvent``) — fired before the line items of the checkout source entity are removed from the database. The event carries the source entity. Use this event to react to or prevent the clearing of source entity line items.
+
+- ``oro_checkout.checkout_source_entity_remove.before`` (``Oro\Bundle\CheckoutBundle\Event\CheckoutSourceEntityRemoveEvent``) — fired before the checkout source entity itself is deleted. The event carries the source entity.
+
+- ``oro_checkout.checkout_source_entity_remove.after`` (``Oro\Bundle\CheckoutBundle\Event\CheckoutSourceEntityRemoveEvent``) — fired after the checkout source entity has been deleted. The event carries the source entity reference. Use these events to synchronize external systems or clean up related data when a source entity is removed.
+
+Extendable Action and Condition Events
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+These events are triggered via the ``extendable`` action and extendable condition mechanisms during workflow transition execution. They are available to any Symfony event listener subscribed to the corresponding event name.
+
+**Extendable conditions** — evaluated during pre-condition checks; a listener may add errors to block the transition:
+
+- ``extendable_condition.start_checkout`` — evaluated when determining whether a checkout start is permitted. Event data includes the ``checkout`` entity and a ``validateOnStartCheckout`` boolean flag. This event is evaluated by the ``StartCheckout`` action group and blocks the redirect to the checkout page if any listener adds errors.
+
+- ``extendable_condition.shopping_list_start`` — evaluated when determining whether starting a checkout from a specific shopping list is permitted. Event data includes the ``checkout`` entity and the ``shoppingList`` entity. This event is evaluated once per workflow item and the result is cached for the duration of the request.
+
+**Extendable actions** — executed during transition logic; listeners may perform side effects such as sending notifications, updating external systems, or modifying workflow data:
+
+- ``extendable_action.checkout_payment_purchase_start`` — fired immediately before the payment purchase action is executed. Event data includes the ``checkout`` entity, the ``order`` entity, and the ``transactionOptions`` array. Use this event to inject additional transaction options or log the payment initiation.
+
+- ``extendable_action.checkout_payment_purchase_complete`` — fired immediately after the payment purchase action returns. Event data includes the ``checkout`` entity, the ``order`` entity, the ``transactionOptions`` array, and the ``purchaseResult``. Use this event to handle post-payment logic such as fraud checks or third-party notifications.
+
+- ``extendable_action.checkout_complete`` — fired after the checkout is marked as completed, the confirmation email is sent, and the completed data (item count, order reference, totals) is recorded on the checkout entity. Event data includes the ``checkout`` entity and the ``order`` entity. Use this event to trigger post-order integrations.
+
+- ``extendable_action.finish_checkout`` — fired at the very end of the ``place_order`` transition (multi-step checkout) and the ``purchase`` transition (single-page checkout), after all completion steps are done. Event data includes the ``order`` entity, the ``checkout`` entity, the ``responseData`` array from the payment gateway, and the customer ``email`` string. Use this event for final post-checkout processing that must occur regardless of which checkout workflow variant is active.
+
