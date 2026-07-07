@@ -14,17 +14,15 @@ Out-of-the-box, with **no external integrations enabled**, OroCommerce uses only
 
 In the storefront, the relevant strictly necessary cookies are:
 
-+------------------------------+-------------------------------------------------------------------------------+
-| Cookie                       | Purpose                                                                       |
-+==============================+===============================================================================+
-| ``OROSFID``                  | Stores the storefront session for a logged-in customer user                   |
-+------------------------------+-------------------------------------------------------------------------------+
-| ``OROSFRM``                  | Stores the "remember me" token for a customer user                            |
-+------------------------------+-------------------------------------------------------------------------------+
-| ``customer_visitor``         | Stores session data for a non-logged-in (guest) visitor                       |
-+------------------------------+-------------------------------------------------------------------------------+
-| ``_csrf`` / ``https-_csrf``  | Holds the CSRF token used to protect requests                                 |
-+------------------------------+-------------------------------------------------------------------------------+
+.. csv-table:: Strictly Necessary Cookies
+   :header: "Cookie","Purpose"
+   :widths: 30, 70
+
+   "``OROSFID``","Stores the storefront session for a logged-in customer user."
+   "``OROSFRM``","Stores the ""remember me"" token for a customer user."
+   "``customer_visitor``","Stores session data for a non-logged-in (guest) visitor."
+   "``_csrf`` / ``https-_csrf``","Holds the CSRF token used to protect requests."
+   "``OCXS``","Used by OroCloud for robot detection and prevention. This cookie is automatically set for applications hosted in OroCloud and is required to help protect the application from automated malicious traffic."
 
 The back-office equivalents (``BAPID``, ``BAPRM``, ``_csrf``) apply to admin users rather than storefront visitors.
 
