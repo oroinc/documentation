@@ -816,5 +816,7 @@ Where:
 
 .. note:: In production environments all domains are whitelisted. When you create a whitelist, it blocks sending email to any recipients, except for the ones in the whitelisted email domains.
 
+.. important:: Please note that this whitelisting will work only if you use the |basic SMTP configuration| for the emails as it intervenes directly in the mail transport agent of Oro Cloud to drop messages. If you use a custom different system (through external provider DSN or API, etc.) to manage emails, this whitelisting/blacklisting may not be sufficient.
+
 .. include:: /include/include-links-cloud.rst
    :start-after: begin
