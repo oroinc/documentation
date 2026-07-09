@@ -365,7 +365,7 @@ To register the payment method view factory and provider, append the following k
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
-      :lines: 41-53
+      :lines: 37-49
 
 Create a Factory for the Main Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
