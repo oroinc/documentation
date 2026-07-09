@@ -1022,5 +1022,7 @@ To restore it as is, run the following command in the target environment:
 
 .. note:: During dump:load, the database is always sanitized.
 
+.. important:: Please note that this whitelisting will work only if you use the |basic SMTP configuration| for the emails as it intervenes directly in the mail transport agent of Oro Cloud to drop messages. If you use a custom different system (through external provider DSN or API, etc.) to manage emails, this whitelisting/blacklisting may not be sufficient.
+
 .. include:: /include/include-links-cloud.rst
    :start-after: begin
