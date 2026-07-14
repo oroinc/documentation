@@ -20,6 +20,7 @@ OroElasticSearchBundle enables |Elasticsearch| as a :ref:`search engine <search_
    backup
    configuration
    request-builders
+   search-synonyms
    troubleshooting
    upgrade-to-es8
 
