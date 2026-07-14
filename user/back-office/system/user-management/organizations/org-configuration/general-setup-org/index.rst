@@ -11,6 +11,7 @@ Learn how to configure localization options, currency and tracking, as well and 
 * :ref:`Localization <config_guide--localization--organization-localization>`
 * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
 * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
+* :ref:`Search <organization-config-search-synonyms>`
 * :ref:`Currency <admin-configuration-currency-org>`
 * :ref:`User Login <admin-configuration-user-login-form-org>`
 * :ref:`User Settings <admin-configuration-user-settings-org>`
@@ -33,6 +34,7 @@ Learn how to configure localization options, currency and tracking, as well and 
    Localization <organization-localization>
    Display Settings <organization-display-settings>
    Email Configuration <organization-email-settings>
+   Search <organization-search>
    Currency <organization-currency>
    User Login <organization-user-login>
    User Settings <organization-user-settings>
