@@ -7,9 +7,9 @@ Application Base URLs
 
 The ``oro_sales_frontend.app_base_urls`` configuration option tells the OroCommerce back-office where the Sales Frontend application is hosted. The bundle uses this information to configure:
 
-* **CORS** - allows the Sales Frontend application to make cross-origin requests to the back-office login endpoints and the :ref:`Back-Office Web API <web-api>`.
-* **CSP** - permits the back-office login pages to be embedded in an iframe of the Sales Frontend application.
-* **Cookies** - sets ``SameSite=None``, ``Secure=true``, and ``Partitioned=true`` on the session and OAuth2 access-token cookies when the Sales Frontend application is hosted on a different origin.
+* **CORS** --- allows the Sales Frontend application to make cross-origin requests to the back-office login endpoints and the :ref:`Back-Office Web API <web-api>`.
+* **CSP** --- permits the back-office login pages to be embedded in an iframe of the Sales Frontend application.
+* **Cookies** --- sets ``SameSite=None``, ``Secure=true``, and ``Partitioned=true`` on the session and OAuth2 access-token cookies when the Sales Frontend application is hosted on a different origin.
 
 .. note:: Only absolute URLs (those containing ``://`` or starting with ``//``) trigger cross-origin configuration. Relative URLs are treated as same-origin and do not affect CORS, CSP, or cookie flags.
 

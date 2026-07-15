@@ -42,7 +42,7 @@ The `handler` - for custom handler purpose:
 
 - `string` - an alias of registered by tag `oro_form.form.handler` ``Oro\Bundle\FormBundle\Form\Handler\FormHandlerInterface`` implementation service
 - `callable` - a callback to perform handling (see FormHandlerInterface::process() for arguments)
-- ``Oro\Bundle\FormBundle\Form\Handler\FormHandlerInterface`` - an instance of the handler itself
+- ``Oro\Bundle\FormBundle\Form\Handler\FormHandlerInterface`` --- an instance of the handler itself
 - `null` - to use `default` registered under tag `oro_form.form.handler` handler service that implements interface above
 
 The `dataProvider` - for custom template data purpose:
@@ -53,7 +53,7 @@ The `dataProvider` - for custom template data purpose:
 
 - `string` - an alias of registered by tag `oro_form.form_template_data_provider` service that implements ``Oro\Bundle\FormBundle\Form\Handler\FormHandlerInterface``
 - `callable` - callback to provide data (see FormTemplateDataProviderInterface::getData() for arguments)
-- ``Oro\Bundle\FormBundle\Provider\FormTemplateDataProviderInterface`` - an instance of provider itself
+- ``Oro\Bundle\FormBundle\Provider\FormTemplateDataProviderInterface`` --- an instance of provider itself
 - `null` - to use `default` registered provider (usually it returns `['form' => FormView $instance]`)
        
 Custom TemplateDataProvider and FormHandler can be reused in different parts of platform, such as :ref:`WorkflowBundle Custom Form Configuration <backend--workflows--transition-forms>`.

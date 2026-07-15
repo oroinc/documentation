@@ -22,13 +22,13 @@ WhereRequestBuilder
 
 Builder iterates through all conditions in the **where** part of the query and passes them to the chain of part builders that are used to process specific condition operators.
 
-- **ContainsWherePartBuilder** - processes **~** (contains) and **!~** (not contains) operators. Adds |match query| for "all_text" field with nGram tokenizer or |wildcard query| for regular fields.
+- **ContainsWherePartBuilder** --- processes **~** (contains) and **!~** (not contains) operators. Adds |match query| for "all_text" field with nGram tokenizer or |wildcard query| for regular fields.
 
-- **EqualsWherePartBuilder** - processes **=** (equals) and **!=** (not equals) operators. Adds a |term query|.
+- **EqualsWherePartBuilder** --- processes **=** (equals) and **!=** (not equals) operators. Adds a |term query|.
 
-- **RangeWherePartBuilder** - processes arithmetical operators applied to numeric values: **>** (greater), **>=** (greater or equals), **<** (lower) and **<=** (lower or equals ). Adds appropriate |range query|.
+- **RangeWherePartBuilder** --- processes arithmetical operators applied to numeric values: **>** (greater), **>=** (greater or equals), **<** (lower) and **<=** (lower or equals ). Adds appropriate |range query|.
 
-- **InWherePartBuilder** - processes **in** and **!in** operators. Converts the set into several **=** or **!=** conditions that uses |term query|.
+- **InWherePartBuilder** --- processes **in** and **!in** operators. Converts the set into several **=** or **!=** conditions that uses |term query|.
 
 Each part builder receives field name, field type, condition operator, value, boolean keyword and source request and returns the altered request.
 

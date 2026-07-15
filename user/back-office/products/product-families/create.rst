@@ -19,10 +19,10 @@ Default Product Family may not be enough to cover all your needs. To create a ne
 
 3. Provide the product family details:
 
-   - **Code** -- Enter the code that would be assigned to the product family you are creating.
-   - **Label** -- Enter the label that would be assigned to the product family.
-   - **Enabled** -- Select this checkbox to be able to bind a product to the product family.
-   - **Image** -- Add an image to the product family, if necessary.
+   - **Code** --- Enter the code that would be assigned to the product family you are creating.
+   - **Label** --- Enter the label that would be assigned to the product family.
+   - **Enabled** --- Select this checkbox to be able to bind a product to the product family.
+   - **Image** --- Add an image to the product family, if necessary.
    
 4. In the **Attributes** section, link the attributes to the product family and organize them into groups as described in the sections below.
 

@@ -119,10 +119,10 @@ To create a draft of the required landing page:
 
 4. Edit the information as required and select one of the further actions:
 
-  * **Save and Close** -- saves the current draft. You can find it under the **Drafts** section of the selected landing page.
-  * **Save as new draft** -- saves the draft as a new one without affecting the current draft. For example, you are editing *Draft 2*, and instead of applying the changes to *Draft 2*, you want to save your draft as a new one and call it *Draft 3*. When saved, *Draft 2* remains unchanged, and *Draft 3* is added to the list of the landing page drafts.
-  * **Cancel** -- cancels the draft creation.
-  * **Delete** -- deletes the draft.
+  * **Save and Close** --- saves the current draft. You can find it under the **Drafts** section of the selected landing page.
+  * **Save as new draft** --- saves the draft as a new one without affecting the current draft. For example, you are editing *Draft 2*, and instead of applying the changes to *Draft 2*, you want to save your draft as a new one and call it *Draft 3*. When saved, *Draft 2* remains unchanged, and *Draft 3* is added to the list of the landing page drafts.
+  * **Cancel** --- cancels the draft creation.
+  * **Delete** --- deletes the draft.
 
 5. To view the saved drafts, navigate to the **Drafts** section of the required landing page. Click the desired draft to get to its details page. Alternatively, hover over the |IcMore| **More Actions** menu to |IcEdit| edit, |Trash-SVG| delete, |IcCopy| duplicate, or |IcPublish| publish the draft.
 

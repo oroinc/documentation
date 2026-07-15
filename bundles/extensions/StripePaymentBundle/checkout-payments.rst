@@ -11,7 +11,7 @@ Stripe Payment Element payment method is registered as a payment method for the 
 Implementation Details on Multi-Step Checkout
 ---------------------------------------------
 
-``\Oro\Bundle\StripePaymentBundle\Form\Extension\AdditionalDataOnCheckoutStepExtension`` - form type extension that adds the `additional_data` field to the Order Review step form. It stores the Stripe confirmation token needed to confirm the payment.
+``\Oro\Bundle\StripePaymentBundle\Form\Extension\AdditionalDataOnCheckoutStepExtension`` --- form type extension that adds the `additional_data` field to the Order Review step form. It stores the Stripe confirmation token needed to confirm the payment.
 
 The bundle declares the following TWIG blocks to enable the Stripe Payment Element at multi-step checkout:
 

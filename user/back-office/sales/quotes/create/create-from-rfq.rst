@@ -63,7 +63,7 @@ To create a new quote from the customer request for quote (RFQ):
 
    a) In the **Shipping Methods** list, select the recommended (default) shipping method that will be pre-selected when the customer gets to the shipping configuration on the checkout.
 
-   b) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one that is dynamically generated based on the selected shipping method.
+   b) Optionally, enter the **Overridden Shipping Cost Amount, USD** --- a custom shipping cost that will be used instead of the one that is dynamically generated based on the selected shipping method.
 
    c) To enforce using only the default Shipping method selected earlier, enable the **Shipping Method Locked** flag. When the shipping method is locked, the buyer does not see any other payment options but the default one.
 

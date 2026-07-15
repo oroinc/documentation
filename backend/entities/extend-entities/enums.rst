@@ -35,18 +35,18 @@ To load a list of options, use data fixtures, for example:
 
 |ExtendHelper| class which can be helpful when you work with option sets:
 
-* **buildEnumCode()** - Builds an option set code based on its name.
-* **generateEnumCode()** - Generates an option set code based on a field for which this option set is created.
-* **isEnumerableType()** - Checks if the passed type is one of the enumerable.
-* **isSingleEnumType()** - Checks if the passed type is 'enum', (named **Select** on UI)
-* **isMultiEnumType()** - Checks if the passed type is 'multiEnum', (named **Multi-Select** on UI)
-* **buildEnumInternalId()** - Builds an option identifier based on the option name The option internal identifier is a
+* **buildEnumCode()** --- Builds an option set code based on its name.
+* **generateEnumCode()** --- Generates an option set code based on a field for which this option set is created.
+* **isEnumerableType()** --- Checks if the passed type is one of the enumerable.
+* **isSingleEnumType()** --- Checks if the passed type is 'enum', (named **Select** on UI)
+* **isMultiEnumType()** --- Checks if the passed type is 'multiEnum', (named **Multi-Select** on UI)
+* **buildEnumInternalId()** --- Builds an option identifier based on the option name The option internal identifier is a
   32 characters length string.
-* **buildEnumOptionId()** - Builds an option identifier based on the option name and enum code. The option identifier is a
+* **buildEnumOptionId()** --- Builds an option identifier based on the option name and enum code. The option identifier is a
   100 characters length string.
-* **getEnumTranslationKey()** - Builds label names for option set related translations.
-* **buildEnumOptionTranslationKey()** - Builds enum option translation key (symfony translation).
-* **extractEnumCode()** - Extracts the enum code from the enum option identifier.
+* **getEnumTranslationKey()** --- Builds label names for option set related translations.
+* **buildEnumOptionTranslationKey()** --- Builds enum option translation key (symfony translation).
+* **extractEnumCode()** --- Extracts the enum code from the enum option identifier.
 
 As mentioned above, each option set has its own table to store available options. But translations for all options of all option sets are stored in one table. You can find more details in |EnumOptionTranslation| and |EnumOptionInterface|.
 The EnumOptionTranslation class is used to store translations. The EnumOptionInterface is the base interface for all option set entities.

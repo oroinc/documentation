@@ -46,7 +46,7 @@ To create a new user in the Oro application:
    * **Last Name** --- The last name of the user. Together with the user's first name, the last name is displayed on the interface when the user logs in.
    * **Name Suffix** --- A name suffix of the user. A name suffix is used after the user's name and provides additional information about the user.
    * **Birthday** --- Click this field and select the user's date of birth using a pop-up calendar. Alternatively, type the date in the format defined by your current :ref:`locale <doc-user-management-users-configuration-localization>`.
-   * **Avatar** -- Click **Choose File** to upload a photo of the user you are creating.
+   * **Avatar** --- Click **Choose File** to upload a photo of the user you are creating.
    * **Send An Email Invitation** --- Select this checkbox to send an email invitation to the user once the profile is created. The invitation is sent to the email address specified in the **Primary Email** field.
    * **Primary Email** --- The main email address of the user.
    * **Emails** --- Click **Add Another Email** and type an additional email address in the field that appears. You can add as many email addresses as required. To delete an email address, click **x** next to the email field you want to delete.

@@ -43,9 +43,9 @@ To create a new website in OroCommerce:
 
 5. In the **Additional** section, define the default customer user roles to be assigned to both guests and authenticated users.
 
-   * **Guest Role** - select the :ref:`customer user role <user-guide--customers--customer-user-roles>` that will be applied to all guest visitors of the current website by default. A set of :ref:`permissions and access levels <user-guide-user-management-permissions-roles>` defined for the selected role affects the way guest users manage their data in the storefront.
+   * **Guest Role** --- select the :ref:`customer user role <user-guide--customers--customer-user-roles>` that will be applied to all guest visitors of the current website by default. A set of :ref:`permissions and access levels <user-guide-user-management-permissions-roles>` defined for the selected role affects the way guest users manage their data in the storefront.
 
-   * **Default Self-Registration Role** - select the default :ref:`customer user role <user-guide--customers--customer-user-roles>` that will be applied to the users once they register an account on the website automatically. To enable this option, set the corresponding registration permission in the :ref:`website configuration <system--website--configuration--commerce--customers--customer-users>` under **Commerce > Customer > Customer Users**.
+   * **Default Self-Registration Role** --- select the default :ref:`customer user role <user-guide--customers--customer-user-roles>` that will be applied to the users once they register an account on the website automatically. To enable this option, set the corresponding registration permission in the :ref:`website configuration <system--website--configuration--commerce--customers--customer-users>` under **Commerce > Customer > Customer Users**.
 
 6. Click **Save and Close**.
 

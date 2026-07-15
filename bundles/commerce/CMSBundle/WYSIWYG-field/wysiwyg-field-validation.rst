@@ -14,8 +14,8 @@ HTML Purifier Modes
 
 Out of the box, there are two HTML Purifier modes available:
 
-**``default``** - it has only secure elements and attributes and is used in common cases;
-**``lax``** - this mode extends ``default`` mode and includes additional allowed HTML elements and attributes.
+**``default``** --- it has only secure elements and attributes and is used in common cases;
+**``lax``** --- this mode extends ``default`` mode and includes additional allowed HTML elements and attributes.
 
 Content Restrictions Modes
 --------------------------
@@ -24,11 +24,11 @@ Which of the HTML Purifier modes is applied to WYSIWYG fields depends on the ``c
 
 There are three modes with different secure levels:
 
-**secure** - on the secure level, there is no way to insert any potentially insecure content via UI by any users
+**secure** --- on the secure level, there is no way to insert any potentially insecure content via UI by any users
 
-**selective** - on the less secure level, some roles can insert the potentially insecure content via UI into specific fields of specific entities (even if a user has the edit permissions for the certain entity field, they should not be able to insert insecure content unless they also have one of the roles that are configured to allow this, and the specified entity field is in the list of the allowed entity fields).
+**selective** --- on the less secure level, some roles can insert the potentially insecure content via UI into specific fields of specific entities (even if a user has the edit permissions for the certain entity field, they should not be able to insert insecure content unless they also have one of the roles that are configured to allow this, and the specified entity field is in the list of the allowed entity fields).
 
-**unsecure** - on this level, any content can be inserted via UI by any user with the edit permissions on the WYSIWYG field.
+**unsecure** --- on this level, any content can be inserted via UI by any user with the edit permissions on the WYSIWYG field.
 
 Out-of-the-box, this option is set to ``strict.``
 

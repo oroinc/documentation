@@ -262,30 +262,30 @@ An error is represented by the |Error| class. Additionally, you can use the |Err
 -  **create(title, detail)** *static* - Creates an instance of the **Error** class.
 -  **createValidationError(title, detail)** *static* - Creates an instance of the **Error** class represents a violation of validation constraint.
 -  **createByException(exception)** *static* - Creates an instance of the **Error** class based on a given exception object.
--  **getStatusCode()** - Retrieves the HTTP status code applicable to this problem.
--  **getCode()** - Retrieves an application-specific error code.
--  **setCode(code)** - Sets an application-specific error code.
--  **getTitle()** - Retrieves a short, human-readable summary of the problem.
--  **setTitle(title)** - Sets a short, human-readable summary of the problem.
--  **getDetail()** - Retrieves a human-readable explanation specific to this occurrence of the problem.
--  **setDetail(detail)** - Sets a human-readable explanation specific to this occurrence of the problem.
--  **getSource()** - Retrieves the instance of |ErrorSource| that represents a source of this problem.
--  **setSource(source)** - Sets the instance of |ErrorSource| that represents a source of this occurrence of the problem.
--  **getInnerException()** - Retrieves an exception object that caused this occurrence of the problem.
--  **setInnerException(exception)** - Sets an exception object that caused this occurrence of the problem.
--  **trans(translator)** - Translates all attributes that are represented by the |Label| object.
+-  **getStatusCode()** --- Retrieves the HTTP status code applicable to this problem.
+-  **getCode()** --- Retrieves an application-specific error code.
+-  **setCode(code)** --- Sets an application-specific error code.
+-  **getTitle()** --- Retrieves a short, human-readable summary of the problem.
+-  **setTitle(title)** --- Sets a short, human-readable summary of the problem.
+-  **getDetail()** --- Retrieves a human-readable explanation specific to this occurrence of the problem.
+-  **setDetail(detail)** --- Sets a human-readable explanation specific to this occurrence of the problem.
+-  **getSource()** --- Retrieves the instance of |ErrorSource| that represents a source of this problem.
+-  **setSource(source)** --- Sets the instance of |ErrorSource| that represents a source of this occurrence of the problem.
+-  **getInnerException()** --- Retrieves an exception object that caused this occurrence of the problem.
+-  **setInnerException(exception)** --- Sets an exception object that caused this occurrence of the problem.
+-  **trans(translator)** --- Translates all attributes that are represented by the |Label| object.
 
 **ErrorSource** class
 
 -  **createByPropertyPath(propertyPath)** *static* - Creates an instance of the **ErrorSource** class that represents the path to a property that caused the error.
 -  **createByPointer(pointer)** *static* - Creates an instance of the **ErrorSource** class that represents a pointer to a property in the request document that caused the error.
 -  **createByParameter(parameter)** *static* - Creates an instance of the **ErrorSource** class that represents URI query parameter caused the error.
--  **getPropertyPath()** - Retrieves the path to a property that caused the error. For example, ``title`` or ``author.name``.
--  **setPropertyPath(propertyPath)** - Sets the path to a property that caused the error.
--  **getPointer()** - Retrieves a pointer to a property in the request document that caused the error. For JSON, the pointer conforms |RFC 6901|. For example, ``/data`` for a primary data object, or ``/data/attributes/title`` for a specific attribute.
--  **setPointer(pointer)** - Sets a pointer to a property in the request document that caused the error.
--  **getParameter()** - Retrieves the URI query parameter that caused the error.
--  **setParameter(parameter)** - Sets the URI query parameter that caused the error.
+-  **getPropertyPath()** --- Retrieves the path to a property that caused the error. For example, ``title`` or ``author.name``.
+-  **setPropertyPath(propertyPath)** --- Sets the path to a property that caused the error.
+-  **getPointer()** --- Retrieves a pointer to a property in the request document that caused the error. For JSON, the pointer conforms |RFC 6901|. For example, ``/data`` for a primary data object, or ``/data/attributes/title`` for a specific attribute.
+-  **setPointer(pointer)** --- Sets a pointer to a property in the request document that caused the error.
+-  **getParameter()** --- Retrieves the URI query parameter that caused the error.
+-  **setParameter(parameter)** --- Sets the URI query parameter that caused the error.
 
 Below is an illustration of throwing an exception to demonstrate how a processor informs about an error.
 

@@ -175,9 +175,9 @@ Use the ``{@inheritdoc:description}`` placeholder to get the system-wide descrip
 
 Use the ``{@request}`` tag to add documentation depending on the request type. The full signature of this tag is ``{@request:expression}some text{@/request}``. The expression can contain the following operators:
 
--  ``&`` - logical AND
--  ``|`` - logical OR
--  ``!`` - logical NOT
+-  ``&`` --- logical AND
+-  ``|`` --- logical OR
+-  ``!`` --- logical NOT
 
 For example, to add a text for the |JSON:API| request type for all requests excluding REST API, use the following expression: ``json_api&!rest``.
 

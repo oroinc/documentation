@@ -27,7 +27,7 @@ Below the configuration level, each option's configuration is divided into three
 
 .. _book-entities-configuration-options:
 
-* ``options`` - These values are used to configure additional behavior for the config field:
+* ``options`` --- These values are used to configure additional behavior for the config field:
 
   +-------------------+-------------------------------------------------------------------------+
   | Option            | Description                                                             |
@@ -46,7 +46,7 @@ Below the configuration level, each option's configuration is divided into three
   |                   | with a lower priority).                                                 |
   +-------------------+-------------------------------------------------------------------------+
 
-* ``grid`` - Configures the way the field is presented in a datagrid:
+* ``grid`` --- Configures the way the field is presented in a datagrid:
 
   +-------------------+-------------------------------------------------------------------------+
   | Option            | Description                                                             |
@@ -68,7 +68,7 @@ Below the configuration level, each option's configuration is divided into three
         To use the attribute in a grid view, it
         :ref:`needs to be indexed <book-entities-indexed-attributes>`.
 
-* ``form`` - You use these options to control how the user can configure the actual value:
+* ``form`` --- You use these options to control how the user can configure the actual value:
 
   +-------------------+-------------------------------------------------------------------------+
   | Option            | Description                                                             |

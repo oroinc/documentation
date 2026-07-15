@@ -7,9 +7,9 @@ CommerceInvoiceBundle
 
 OroCommerceInvoiceBundle extends invoice management functionality with OroCommerce features. It provides a way to view invoices in the storefront, allowing customers to access their invoices directly from their accounts. It extends the Invoice entity with additional fields:
 
-* ``customer`` - a reference to ``Customer`` entity
-* ``customerUser`` - a reference to ``CustomerUser`` entity
-* ``website`` - a reference to ``Website`` entity
+* ``customer`` --- a reference to ``Customer`` entity
+* ``customerUser`` --- a reference to ``CustomerUser`` entity
+* ``website`` --- a reference to ``Website`` entity
 
 It also configures the ``FRONTEND_USER`` frontend ownership to enables ACL functionality in the storefront.
 

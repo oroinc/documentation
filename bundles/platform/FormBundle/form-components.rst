@@ -17,15 +17,15 @@ Form Types
 Data Transformers
 -----------------
 
-* **Form / DataTransformer / ArrayToStringTransformer** - converts array to string and back;
-* **Form / DataTransformer / EntitiesToIdsTransformer** - converts entity IDs to entities and back.
-* **Form / DataTransformer / EntityToIdTransformer** - converts entity ID to entity and back.
-* **Form / DataTransformer / DurationToStringTransformer** - converts numeric duration (in seconds) to string and back.
+* **Form / DataTransformer / ArrayToStringTransformer** --- converts array to string and back;
+* **Form / DataTransformer / EntitiesToIdsTransformer** --- converts entity IDs to entities and back.
+* **Form / DataTransformer / EntityToIdTransformer** --- converts entity ID to entity and back.
+* **Form / DataTransformer / DurationToStringTransformer** --- converts numeric duration (in seconds) to string and back.
 
 Event Subscribers
 -----------------
 
-* **Form / EventListener / FixArrayToStringListener** - converts array to string on form PRE_SUBMIT event.
+* **Form / EventListener / FixArrayToStringListener** --- converts array to string on form PRE_SUBMIT event.
 
 Configuration
 -------------

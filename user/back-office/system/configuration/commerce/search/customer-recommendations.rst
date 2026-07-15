@@ -32,11 +32,11 @@ Customer Actions Boost
 
 To activate the boost, configure the following options:
 
-* **Enable Customer Actions Boost** - select the option to enable the customer action boost functionality.
-* **Product View Ratio** - set a ratio for the number of customer users who have viewed the product.
-* **Added To Shopping List Ratio** - set a ratio for the number of customer users who have added the product to a shopping list.
-* **Product Purchase Ratio** - set a ratio for the number of customer users who have purchased the product.
-* **Score Multiplier Formula** - select the most appropriate formula to calculate the score multiplier that boosts specific products. See each formula's description and detailed explanation in the :ref:`CustomerRecommendation bundle <bundles--commerce--customer-recommendation>` documentation.
+* **Enable Customer Actions Boost** --- select the option to enable the customer action boost functionality.
+* **Product View Ratio** --- set a ratio for the number of customer users who have viewed the product.
+* **Added To Shopping List Ratio** --- set a ratio for the number of customer users who have added the product to a shopping list.
+* **Product Purchase Ratio** --- set a ratio for the number of customer users who have purchased the product.
+* **Score Multiplier Formula** --- select the most appropriate formula to calculate the score multiplier that boosts specific products. See each formula's description and detailed explanation in the :ref:`CustomerRecommendation bundle <bundles--commerce--customer-recommendation>` documentation.
 
 
 Product Revenue Boost
@@ -46,9 +46,9 @@ Product revenue boost focuses on the most profitable products, boosting the ones
 
 To activate the boost, configure the following options:
 
-* **Enable Product Revenue Boost** - select the option to enable the product revenue boost functionality.
-* **Product Revenue Multiplier** - set a multiplier for the product's total revenue.
-* **Score Multiplier Formula** - select the most appropriate formula to calculate the score multiplier that boosts specific products.
+* **Enable Product Revenue Boost** --- select the option to enable the product revenue boost functionality.
+* **Product Revenue Multiplier** --- set a multiplier for the product's total revenue.
+* **Score Multiplier Formula** --- select the most appropriate formula to calculate the score multiplier that boosts specific products.
 
 See each formula's description and detailed explanation in the :ref:`CustomerRecommendation bundle <bundles--commerce--customer-recommendation>` documentation.
 
