@@ -103,22 +103,22 @@ From a file system perspective, the Oro PHP application contains a structured co
 * **config** folder - application configuration files
 * **public** folder - the web server root directory with accessible public files
 
-  * **bundles** - static assets created based on public resources of application dependencies (third-party bundles and packages)
-  * **css** - CSS files generated based on bundle Resources/config/oro/assets.yml definitions
-  * **images** - images pre-processed by Symfony Assetic and optimized for the web
-  * **js** - javascript files generated based on the source code of the application packages: routes, translations, minified files, etc.
-  * **media** - the folder for application media (images) cache generation
-  * **uploads** - writable folder for uploading user files
-  * **index.php** - the main application entry point
+  * **bundles** --- static assets created based on public resources of application dependencies (third-party bundles and packages)
+  * **css** --- CSS files generated based on bundle Resources/config/oro/assets.yml definitions
+  * **images** --- images pre-processed by Symfony Assetic and optimized for the web
+  * **js** --- javascript files generated based on the source code of the application packages: routes, translations, minified files, etc.
+  * **media** --- the folder for application media (images) cache generation
+  * **uploads** --- writable folder for uploading user files
+  * **index.php** --- the main application entry point
 
 * **src** folder - application customization PHP source code
 * **templates** folder - application customization templates
 * **translations** folder - application customization translation files
 * **var** folder - application generated files
 
-  * **data** - a local filesystem path to store private adapter files (attachments, import and export files, etc.)
-  * **cache** - framework and application cache files
-  * **logs** - application logs
+  * **data** --- a local filesystem path to store private adapter files (attachments, import and export files, etc.)
+  * **cache** --- framework and application cache files
+  * **logs** --- application logs
 
 * **vendor** folder - code of 3rd party vendors installed based on the definition of dependencies in composer.json.
 * **composer.json** file - definition of application dependencies

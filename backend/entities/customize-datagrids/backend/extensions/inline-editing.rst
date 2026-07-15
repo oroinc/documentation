@@ -112,7 +112,7 @@ Column Configuration Options
    :header: "Options name","Default value","Description"
    :widths: 15, 15, 30
 
-   "enable","-","Marks or unmarks this column as editable. The behavior depends on main inline_editing.behavior: ``enable_all`` - false will disable editing this cell. ``enable_selected`` - true will enable editing this cell."
+   "enable","-","Marks or unmarks this column as editable. The behavior depends on main inline_editing.behavior: ``enable_all`` --- false will disable editing this cell. ``enable_selected`` --- true will enable editing this cell."
    "save_api_accessor","-","Allows to override default api accessor for the whole grid. Please see :ref:`documentation for oroui/js/tools/api-accessor <bundle-docs-platform-ui-bundle-apiaccessor>` for details"
    "editor.component","-","Allows to override component used to display view and specified in ``datagrid.{grid-uid}.inline_editing.cell_editor.component``"
    "editor.component_options","{}","Specifies options to pass into the cell editor component"

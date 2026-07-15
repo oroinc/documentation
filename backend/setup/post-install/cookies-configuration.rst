@@ -7,15 +7,15 @@ Configure Cookies
 
 OroPlatform uses the following cookies:
 
-- **BAPID** - cookie that holds information about a logged-in user;
-- **BAPRM** - cookie that holds a remembered user (remember me functionality);
-- **_csrf** - cookie that holds a CSRF token.
+- **BAPID** --- cookie that holds information about a logged-in user;
+- **BAPRM** --- cookie that holds a remembered user (remember me functionality);
+- **_csrf** --- cookie that holds a CSRF token.
 
 The storefront functionality adds the following cookies:
 
-- **OROSFID**  - cookie that holds information about a logged-in customer user;
-- **OROSFRM** - cookie that holds a remembered customer user (remember me functionality);
-- **customer_visitor** - cookie that holds customer visitor data.
+- **OROSFID**  --- cookie that holds information about a logged-in customer user;
+- **OROSFRM** --- cookie that holds a remembered customer user (remember me functionality);
+- **customer_visitor** --- cookie that holds customer visitor data.
 
 All of these cookies are configured in different places.
 

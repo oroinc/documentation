@@ -38,7 +38,7 @@ From the **Actions** menu, back-office users can perform a variety of operations
 * **Suspend** — Suspends the recurring order and stops further order generation. An optional suspension reason can be provided.
 * **Resume** — Reactivates a suspended recurring order and allows order generation to continue according to the original schedule.
 * **Cancel** — Cancels the recurring order and prevents any further order generation. An optional cancellation reason can be provided.
-* **Delete** - Deleted the recurring order.
+* **Delete** --- Deleted the recurring order.
 
 Orders that have already been generated are not affected by suspending or canceling a recurring order.
 

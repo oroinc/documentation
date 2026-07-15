@@ -9,8 +9,8 @@ Stripe API introduces the minimum and maximum amount limits for each currency. T
 
 The main entry point to check if amount complies with the configured limits is ``\Oro\Bundle\StripePaymentBundle\StripeAmountValidator\GenericStripeAmountValidator``. It implements the ``\Oro\Bundle\StripePaymentBundle\StripeAmountValidator\StripeAmountValidatorInterface`` interface and provides the following methods:
 
-* ``isAboveMinimum(float $amount, string $currency)`` - checks if the given amount is above the minimum limit for the specified currency.
-* ``isBelowMaximum(float $amount, string $currency)`` - checks if the given amount is below the maximum limit for the specified currency.
+* ``isAboveMinimum(float $amount, string $currency)`` --- checks if the given amount is above the minimum limit for the specified currency.
+* ``isBelowMaximum(float $amount, string $currency)`` --- checks if the given amount is below the maximum limit for the specified currency.
 
 This validator is then used in the ``\Oro\Bundle\StripePaymentBundle\PaymentMethod\StripePaymentElement\StripePaymentElementMethod`` payment method to check if the payment method is applicable for the given amount and currency before processing the payment.
 

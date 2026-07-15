@@ -20,9 +20,9 @@ To change the shipping tax configuration for a specific website:
 
 5. In the **Shipping Tax** section, configure the options:
 
-   * **Tax Code** - Select the tax code (tax identifier) that in combination with :ref:`tax rules <tax-rules>` defines the tax rate that is applied for the shipping tax calculation.
+   * **Tax Code** --- Select the tax code (tax identifier) that in combination with :ref:`tax rules <tax-rules>` defines the tax rate that is applied for the shipping tax calculation.
 
-   * **Shipping Rates Include Tax** - Enable the checkbox to avoid charging taxes on shipping twice if the shipping rates provided by the shipping carrier(s) or entered manually in the back-office already include tax.
+   * **Shipping Rates Include Tax** --- Enable the checkbox to avoid charging taxes on shipping twice if the shipping rates provided by the shipping carrier(s) or entered manually in the back-office already include tax.
 
 6. Click **Save Settings**.
 

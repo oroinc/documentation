@@ -81,7 +81,7 @@ To unify the process of applying patches during application deployment, the main
 
 Use the following commands to work with patches:
 
-* **patch:list** - shows the list of applied patches to the current application deployment
+* **patch:list** --- shows the list of applied patches to the current application deployment
 
 .. code-block:: none
 
@@ -94,7 +94,7 @@ Use the following commands to work with patches:
 
 .. note:: Please note that the value in the ``FILE`` column is used for the `patch:revert` and `patch:view` commands as an argument.
 
-* **patch:view** - shows the content of the specified patch, requires the full path to the patch file as an argument.
+* **patch:view** --- shows the content of the specified patch, requires the full path to the patch file as an argument.
 
 .. code-block:: none
 
@@ -119,9 +119,9 @@ Use the following commands to work with patches:
     use Symfony\Component\HttpFoundation\Request;
    ✔ Ok
 
-* **patch:apply**  - applies a patch. Requires the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically applied against your codebase.
+* **patch:apply**  --- applies a patch. Requires the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically applied against your codebase.
 
-* **patch:revert** - reverts a patch, requires the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically reverted against your codebase.
+* **patch:revert** --- reverts a patch, requires the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically reverted against your codebase.
 
 Usage examples:
 

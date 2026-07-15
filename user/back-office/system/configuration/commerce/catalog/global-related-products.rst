@@ -84,7 +84,7 @@ To update the related, up-sell, or similar product settings globally:
 
 7. In the **Similar Products in Shopping Lists**, the following options are available:
 
-   * **Enable Similar Products in Shopping Lists** -- Enabling this option add a block of Similar Products to the shopping list page.
+   * **Enable Similar Products in Shopping Lists** --- Enabling this option add a block of Similar Products to the shopping list page.
    * **Maximum Items** --- A limit of similar products that are shown to a buyer on the shopping list page.
    * **Minimum Items** --- The minimum number of similar products that may be shown to the buyer on the shopping list page..
    * **Show Add Button** --- Enables a buyer to order a similar product directly from the shopping list page.

@@ -32,11 +32,11 @@ When the consumer is bound to multiple queues, the consumption mode controls the
 
 Built-in modes:
 
-* ``default`` -- Polls each queue once in round-robin order.
-* ``sequential-exhaustive`` -- Drains each queue fully before advancing to the next.
-* ``strict-priority-interleaving`` -- Drains the high-priority queue, then polls one message from each lower-priority queue in turn.
-* ``hierarchical-strict-priority-interleaving`` -- A recursive version of strict-priority-interleaving where the sub-pattern of higher-priority queues repeats until idle.
-* ``weighted-round-robin`` -- Polls each queue for up to a configured number of messages (weight) before advancing.
+* ``default`` --- Polls each queue once in round-robin order.
+* ``sequential-exhaustive`` --- Drains each queue fully before advancing to the next.
+* ``strict-priority-interleaving`` --- Drains the high-priority queue, then polls one message from each lower-priority queue in turn.
+* ``hierarchical-strict-priority-interleaving`` --- A recursive version of strict-priority-interleaving where the sub-pattern of higher-priority queues repeats until idle.
+* ``weighted-round-robin`` --- Polls each queue for up to a configured number of messages (weight) before advancing.
 
 For a detailed description of each mode, including consumption schemas, and instructions for creating custom modes, see :ref:`Consumption Modes <dev-guide-mq-consumption-modes>`.
 
@@ -46,9 +46,9 @@ Options
 
 Both commands have the following additional options:
 
-* ``--message-limit=MESSAGE-LIMIT`` - Consume messages and exit.
-* ``--time-limit=TIME-LIMIT`` - Consume messages during the given time.
-* ``--memory-limit=MEMORY-LIMIT`` - Consume messages until the process reaches the given memory limit in MB.
+* ``--message-limit=MESSAGE-LIMIT`` --- Consume messages and exit.
+* ``--time-limit=TIME-LIMIT`` --- Consume messages during the given time.
+* ``--memory-limit=MEMORY-LIMIT`` --- Consume messages until the process reaches the given memory limit in MB.
 
 The ``--memory-limit`` option is highly recommended for the normal consumer usage, especially in the production mode. If the
 option is set, the consumer checks the used memory amount after processing each message and terminates if the memory is exceeded.

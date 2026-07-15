@@ -20,8 +20,8 @@ To change the default inventory filter settings per organization:
 
 4. Customize any of the options by clearing the **Use System** box next to the following options:
 
-   * **Enable For Guests** - enable or disable the ability to show the inventory filter to unauthenticated visitors.
-   * **Inventory Filter Type** - select the type of inventory filter to display. The *Multi-Select* filter type enables users to filter by any combination of individual inventory statuses. The *Simple* type will allow to filter only by predefined inventory statuses when the filter is applied. For this type, select the statuses that will be considered as *In Stock* in the storefront in the *In Stock Statuses For Simple Filter* field below.
+   * **Enable For Guests** --- enable or disable the ability to show the inventory filter to unauthenticated visitors.
+   * **Inventory Filter Type** --- select the type of inventory filter to display. The *Multi-Select* filter type enables users to filter by any combination of individual inventory statuses. The *Simple* type will allow to filter only by predefined inventory statuses when the filter is applied. For this type, select the statuses that will be considered as *In Stock* in the storefront in the *In Stock Statuses For Simple Filter* field below.
 
 5. Click **Save Settings**.
 

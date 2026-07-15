@@ -8,13 +8,13 @@ OroChartBundle
 Main Classes
 ------------
 
-* ``Oro\Bundle\ChartBundle\Model\Data\DataInterface`` - Interface that can be passed to the chart builder as source data.
+* ``Oro\Bundle\ChartBundle\Model\Data\DataInterface`` --- Interface that can be passed to the chart builder as source data.
 
-* ``Oro\Bundle\ChartBundle\Model\ChartView`` - View representation that can be used to render a chart.
+* ``Oro\Bundle\ChartBundle\Model\ChartView`` --- View representation that can be used to render a chart.
 
-* ``Oro\Bundle\ChartBundle\Model\ChartViewBuilder`` - Builder can be used to create a view instance.
+* ``Oro\Bundle\ChartBundle\Model\ChartViewBuilder`` --- Builder can be used to create a view instance.
 
-* ``Oro\Bundle\ChartBundle\Model\ConfigProvider`` - Provide access to the oro_chart configuration.
+* ``Oro\Bundle\ChartBundle\Model\ConfigProvider`` --- Provide access to the oro_chart configuration.
 
 Use Charts
 ----------

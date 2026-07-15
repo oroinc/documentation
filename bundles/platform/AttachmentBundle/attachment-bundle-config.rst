@@ -274,23 +274,23 @@ A user can use 3 formatters for image type fields.
 
 ``image_encoded`` returns an image tag with embedded image content in the src attribute. Additional parameters:
 
-- ``alt`` - a custom alt attribute for the image tag. By default, the original file name is used.
+- ``alt`` --- a custom alt attribute for the image tag. By default, the original file name is used.
 
-- ``height`` - a custom height attribute for the image tag. There is no default value for this attribute.
+- ``height`` --- a custom height attribute for the image tag. There is no default value for this attribute.
 
 - ``width``- custom width attribute for the image tag. There is no default value for this attribute.
 
 ``image_link`` returns a link to the resized image (e.g. ``<a href='http://test.com/path/to/image.jpg'>image name</a>``). Additional parameters:
 
-- ``title`` - a custom image text value. By default, the original file name is used.
+- ``title`` --- a custom image text value. By default, the original file name is used.
 
-- ``height`` - a custom image height. By default, it is 100 px.
+- ``height`` --- a custom image height. By default, it is 100 px.
 
 - ``width``- a custom image width. By default, it is 100 px.
 
 ``image_src`` returns the url to the resized image (e.g., ``http://test.com/path/to/image.jpg``). Additional parameters:
 
-- ``height`` - a custom image height. By default, it is 100 px.
+- ``height`` --- a custom image height. By default, it is 100 px.
 
 - ``width``- a custom image width. By default, it is 100 px.
 
@@ -338,11 +338,11 @@ To configure additional libraries you need to set the following environment vari
 
 You can use 3 parameters for optimization images:
 
-- ``Image Processing (toggle)`` - feature toggle, allows to enable or disable image post processing.
+- ``Image Processing (toggle)`` --- feature toggle, allows to enable or disable image post processing.
 
-- ``JPEG Resize Quality (%)`` - values from 30 to 100, the higher the value, the better the image quality.
+- ``JPEG Resize Quality (%)`` --- values from 30 to 100, the higher the value, the better the image quality.
 
-- ``PNG Resize Quality (%)`` - 'Preserve quality' and 'Minimize file size'. Indicates how much you want to reduce the image quality.
+- ``PNG Resize Quality (%)`` --- 'Preserve quality' and 'Minimize file size'. Indicates how much you want to reduce the image quality.
 
 .. note:: Disabled image processing completely eliminates additional image processing, which means that libraries will not be used in processing, and image quality will be controlled only by extensions used in the system by default (as an example: GD).
 

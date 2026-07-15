@@ -212,8 +212,8 @@ After preparing your entity to be the owning side of an association, more config
 
 As you can see, this configuration file declares new entity config scope named ``comment`` and two attributes on the entity level in this scope (both of these attributes are applicable to the target side of the association):
 
-- **enabled** - this attribute indicates whether a comment can be added to a target entity.
-- **immutable** - this attribute can be used to prohibit changing the association state and disabling an already enabled association, and vise versa.
+- **enabled** --- this attribute indicates whether a comment can be added to a target entity.
+- **immutable** --- this attribute can be used to prohibit changing the association state and disabling an already enabled association, and vise versa.
 
 You can use both of these attributes for your own associations, and they will automatically have the same behavior. You can find the implementation of the **enabled** attribute in |AssociationChoiceType| (please note that this form type is configured to be used with this attribute). You can find the implementation of the **immutable** attribute in |AbstractConfigType|.
 

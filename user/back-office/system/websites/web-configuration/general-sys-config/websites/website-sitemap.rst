@@ -27,9 +27,9 @@ To change the default sitemap settings for the website:
 
 5. To configure which pages to include and exclude from the sitemap file, enable the following options:
 
-   * **Exclude Direct URLs Of Landing Pages** - Enable the option to include only landing pages that are assigned to particular web catalog nodes into the website's sitemap and exclude those accessed via direct URL. Enabling the option prevents landing page duplication in the sitemap file.
+   * **Exclude Direct URLs Of Landing Pages** --- Enable the option to include only landing pages that are assigned to particular web catalog nodes into the website's sitemap and exclude those accessed via direct URL. Enabling the option prevents landing page duplication in the sitemap file.
 
-   * **Include Landing Pages Not Used In Web Catalog** - Enable the option to include both assigned to web catalog nodes and unassigned landing pages into the sitemap file.
+   * **Include Landing Pages Not Used In Web Catalog** --- Enable the option to include both assigned to web catalog nodes and unassigned landing pages into the sitemap file.
 
 Possible combinations
 

@@ -7,11 +7,11 @@ The bundle makes use of the :ref:`OroPdfGeneratorBundle <bundle-docs-platform-pd
 
 ``Order PDF document manager`` is the main entry point for order PDF document management. It provides methods to check, retrieve, create, update, and delete PDF documents for orders. This manager abstracts the complexity of handling different PDF document types and provides a unified interface for order PDF document operations. It is implemented by ``\Oro\Bundle\OrderBundle\PdfDocument\Manager\OrderPdfDocumentManager`` class, which provides the following methods:
 
-* ``hasPdfDocument(Order $order, string $pdfDocumentType): bool`` - checks if the order has a ``PDF document`` of the specified ``PDF document type``.
-* ``retrievePdfDocument(Order $order, string $pdfDocumentType): ?AbstractPdfDocument`` - retrieves the ``PDF document`` of the specified ``PDF document type`` for the order if it exists, or returns ``null`` if it does not.
-* ``createPdfDocument(AbstractOrderPdfDocumentDemand $orderPdfDocumentDemand): AbstractPdfDocument`` - creates a new ``PDF document`` for the order based on the provided ``Order PDF document demand``.
-* ``updatePdfDocument(Order $order, string $pdfDocumentType): ?AbstractPdfDocument`` - updates the existing ``PDF document`` of the specified ``PDF document type`` for the order and returns it. If the order does not have such ``PDF document``, it returns ``null``.
-* ``deletePdfDocument(Order $order, string $pdfDocumentType): ?AbstractPdfDocument`` - deletes the existing ``PDF document`` of the specified ``PDF document type`` for the order and returns it. If the order does not have such ``PDF document``, it returns ``null``.
+* ``hasPdfDocument(Order $order, string $pdfDocumentType): bool`` --- checks if the order has a ``PDF document`` of the specified ``PDF document type``.
+* ``retrievePdfDocument(Order $order, string $pdfDocumentType): ?AbstractPdfDocument`` --- retrieves the ``PDF document`` of the specified ``PDF document type`` for the order if it exists, or returns ``null`` if it does not.
+* ``createPdfDocument(AbstractOrderPdfDocumentDemand $orderPdfDocumentDemand): AbstractPdfDocument`` --- creates a new ``PDF document`` for the order based on the provided ``Order PDF document demand``.
+* ``updatePdfDocument(Order $order, string $pdfDocumentType): ?AbstractPdfDocument`` --- updates the existing ``PDF document`` of the specified ``PDF document type`` for the order and returns it. If the order does not have such ``PDF document``, it returns ``null``.
+* ``deletePdfDocument(Order $order, string $pdfDocumentType): ?AbstractPdfDocument`` --- deletes the existing ``PDF document`` of the specified ``PDF document type`` for the order and returns it. If the order does not have such ``PDF document``, it returns ``null``.
 
 ``PDF document types`` available out-of-the-box are listed in the ``\Oro\Bundle\OrderBundle\PdfDocument\OrderPdfDocumentType`` class. Currently, the only available type is **order_default**. For information on how to create your own ``PDF document type``, see the :ref:`How to Create a PDF Document Type <bundle-docs-platform-pdf-generator-bundle-create-pdf-document-type>` section of the documentation.
 
@@ -53,7 +53,7 @@ Usage example:
 
 You can also generate a URL for the order PDF document in Twig templates using Twig functions:
 
-- ``oro_order_pdf_document_back_office_url`` - generates a URL for downloading the order PDF document in the back-office.
-- ``oro_order_pdf_document_storefront_url`` - generates a URL for downloading the order PDF document in the storefront.
-- ``oro_order_pdf_document_order_default_back_office_url`` - generates a URL for downloading the order PDF document of ``order_default`` **PDF document type** in the back-office.
-- ``oro_order_pdf_document_order_default_storefront_url`` - generates a URL for downloading the order PDF document of ``order_default`` **PDF document type** in the storefront.
+- ``oro_order_pdf_document_back_office_url`` --- generates a URL for downloading the order PDF document in the back-office.
+- ``oro_order_pdf_document_storefront_url`` --- generates a URL for downloading the order PDF document in the storefront.
+- ``oro_order_pdf_document_order_default_back_office_url`` --- generates a URL for downloading the order PDF document of ``order_default`` **PDF document type** in the back-office.
+- ``oro_order_pdf_document_order_default_storefront_url`` --- generates a URL for downloading the order PDF document of ``order_default`` **PDF document type** in the storefront.

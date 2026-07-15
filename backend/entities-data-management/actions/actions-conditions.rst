@@ -222,13 +222,13 @@ The "|" symbol in alias can be used to demonstrate several aliases. Note that se
 Configurable Condition
 ^^^^^^^^^^^^^^^^^^^^^^
 
-**Alias:** - the option is configurable.
+**Alias:** --- the option is configurable.
 
-**Description:** - uses Condition Assembler to assemble conditions from the passed configuration.
+**Description:** --- uses Condition Assembler to assemble conditions from the passed configuration.
 This condition is NOT intended to be used in the configuration of Action.
 But it can be used to create a condition based on the configuration in runtime.
 
-**Options:** - valid configuration of conditions.
+**Options:** --- valid configuration of conditions.
 
 **Code Example**
 

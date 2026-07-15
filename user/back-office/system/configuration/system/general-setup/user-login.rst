@@ -18,7 +18,7 @@ Configure User Login Form
 
 In the User Login Form section, configure the ability for a user to sign in to the back-office with a username and password.
 
-* **Enable Username/Password Login** - When this option is enabled, users can sign in to the back-office with a username and password, and all features related to passwords will be available. If you disable this option, password login will be turned off for all users, including you and administrators. Consequently, all password-related features will also become unavailable.
+* **Enable Username/Password Login** --- When this option is enabled, users can sign in to the back-office with a username and password, and all features related to passwords will be available. If you disable this option, password login will be turned off for all users, including you and administrators. Consequently, all password-related features will also become unavailable.
 
 .. important:: Before disabling this option, make sure that at least one external authentication method (such as Single Sign-On) is properly set up. Otherwise, you may lose access to the system.
 

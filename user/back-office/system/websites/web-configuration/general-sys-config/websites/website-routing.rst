@@ -27,11 +27,11 @@ To change the default routing settings for the website:
 
 4. In the **General** section, define the following options:
 
-   * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
+   * **URL** --- Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
 
-   * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
+   * **Secure URL** --- Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
 
-   * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
+   * **Canonical URL Type** --- this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
 
      When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
 
@@ -39,34 +39,34 @@ To change the default routing settings for the website:
 
      .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed.
 
-   * **Prefer Self-Contained Web Catalog Canonical URLs** - When this option is disabled, the canonical URLs point to the direct URLs of the underlying content types, if they are available. This option is disabled by default.
+   * **Prefer Self-Contained Web Catalog Canonical URLs** --- When this option is disabled, the canonical URLs point to the direct URLs of the underlying content types, if they are available. This option is disabled by default.
 
-   * **Canonical URL Security Type** - This option defines which value should be used as a website base URL in the canonical link in the page meta keywords. Supported options: *Insecure* and *Secure*.
+   * **Canonical URL Security Type** --- This option defines which value should be used as a website base URL in the canonical link in the page meta keywords. Supported options: *Insecure* and *Secure*.
 
      When *Insecure* is selected, the website base URL in the canonical link matches the **URL** value.
 
      When *Secure* is selected, the **Secure URL** value is used instead.
 
-   * **Web Catalog** - When you add a web catalog, it populates the main menu and sub-menus of the OroCommerce storefront. If there is no web catalog available, the structure of the master catalog is used to fill the storefront menu. Once you add a web catalog, click **Save Settings** to prompt the system to show you a detailed content tree of the selected web catalog under the **Navigation Root** field.
+   * **Web Catalog** --- When you add a web catalog, it populates the main menu and sub-menus of the OroCommerce storefront. If there is no web catalog available, the structure of the master catalog is used to fill the storefront menu. Once you add a web catalog, click **Save Settings** to prompt the system to show you a detailed content tree of the selected web catalog under the **Navigation Root** field.
 
-   * **Navigation Root** - This option is available only if a web catalog has been added. Here, you can select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
+   * **Navigation Root** --- This option is available only if a web catalog has been added. Here, you can select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
 
    .. image:: /user/img/system/websites/web_configuration/visible_content_node_website.png
       :alt: The selected sub-menu nodes that will be visible in the storefront.
 
-   * **Main Navigation Menu** - Select which :ref:`storefront menu <menu-management-concept-guide>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
+   * **Main Navigation Menu** --- Select which :ref:`storefront menu <menu-management-concept-guide>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
 
-   * **Homepage** - When no web catalog is available, you can choose any of the available landing pages as your homepage. Please note that on clean installations of Oro applications, the default homepage is blank.
+   * **Homepage** --- When no web catalog is available, you can choose any of the available landing pages as your homepage. Please note that on clean installations of Oro applications, the default homepage is blank.
 
 5. In **Website Matchers**, configure the following values to identify the visitors of your website through various tracking options:
 
    .. image:: /user/img/system/config_system/website_matchers.png
 
-   * **Cookie Value** - A unique website ID that is saved in the cookies and is later used by a website matcher to identify the website customer is on. The cookie name that is configured on the :ref:`system level <routing-website-matchers-global>` combined with the cookie value creates the unique parameter that will identify the required website.
+   * **Cookie Value** --- A unique website ID that is saved in the cookies and is later used by a website matcher to identify the website customer is on. The cookie name that is configured on the :ref:`system level <routing-website-matchers-global>` combined with the cookie value creates the unique parameter that will identify the required website.
 
-   * **ENV Variable Name** - An environment variable that is used to store the unique website ID that is later used by a website matcher to identify the website customer is on.
+   * **ENV Variable Name** --- An environment variable that is used to store the unique website ID that is later used by a website matcher to identify the website customer is on.
 
-   * **ENV Variable Value** - A unique website ID that is saved to the environment variable with the name defined in the option above.
+   * **ENV Variable Value** --- A unique website ID that is saved to the environment variable with the name defined in the option above.
 
 6. To customize any of these options:
 

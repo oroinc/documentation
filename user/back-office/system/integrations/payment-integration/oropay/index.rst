@@ -31,11 +31,11 @@ To configure the OroPay integration, follow the steps outlined below:
    .. image:: /user/img/system/integrations/oropay/create-oropay-integration.png
       :alt: Create an integration with OroPay in the back-office
 
-* **Type** - Select *Oro Pay* from the drop-down list.
-* **Name** - Provide the payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
-* **Labels** - The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the icon next to the field.
-* **Short labels** - The payment method name/label that is shown in the order details in the OroCommerce back-office and storefront after the order is submitted. To translate the label into other languages, click on the icon next to the field.
-* **Payment Provider** - Select the required payment provider from the list of preconfigured options.
+* **Type** --- Select *Oro Pay* from the drop-down list.
+* **Name** --- Provide the payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
+* **Labels** --- The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the icon next to the field.
+* **Short labels** --- The payment method name/label that is shown in the order details in the OroCommerce back-office and storefront after the order is submitted. To translate the label into other languages, click on the icon next to the field.
+* **Payment Provider** --- Select the required payment provider from the list of preconfigured options.
 * **Payment Actions** --- Select one of the options for credit cards:
 
       - *Manual (Authorize)* --- The payment gateway checks with the cardholder's issuing bank that the submitted card is valid and that there are sufficient funds to cover the transaction. The required amount is placed on hold on the card but not yet charged. When you click **Capture** in the order or invoice details, the customer is charged the given amount. Payment status changes from **Payment Authorized** to **Paid in Full**.
@@ -53,7 +53,7 @@ To configure the OroPay integration, follow the steps outlined below:
 .. Webhook URL - The URL is prefilled by system to help synchronize actions and payment transactions between Oro and Global Payments.
 
 * **Status** --- Set the status to *Active* to enable the integration.
-* **Default Owner** - A user who is responsible for this integration and manages it.
+* **Default Owner** --- A user who is responsible for this integration and manages it.
 
 .. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
 

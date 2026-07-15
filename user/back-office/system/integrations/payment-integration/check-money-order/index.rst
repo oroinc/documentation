@@ -33,7 +33,7 @@ To enable check/money order payments, complete the following steps:
 
 #. In the **Basic Integration Details** section, provide the following details:
 
-   * **Type** -- -Select *Check/Money Order* for **Type**.
+   * **Type** --- -Select *Check/Money Order* for **Type**.
    * **Name** --- The payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
    * **Label** --- The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the |IcTranslations| icon next to the field.
 

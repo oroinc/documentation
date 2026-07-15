@@ -25,7 +25,7 @@ The following payment statuses are listed in the ``\Oro\Bundle\PaymentBundle\Pay
 - **Refunded**: The payment was refunded.
 - **Refunded Partially**: The payment was partially refunded.
 
-In order to get all available payment statuses, you can use the ``\Oro\Bundle\PaymentBundle\Provider\AvailablePaymentStatusesProvider`` - it returns an array of payment statuses for the specified entity class. The result always includes the payment statuses available out-of-the-box and custom payment statuses available for the current user.
+In order to get all available payment statuses, you can use the ``\Oro\Bundle\PaymentBundle\Provider\AvailablePaymentStatusesProvider`` --- it returns an array of payment statuses for the specified entity class. The result always includes the payment statuses available out-of-the-box and custom payment statuses available for the current user.
 
 
 Payment Status Calculation
@@ -33,8 +33,8 @@ Payment Status Calculation
 
 ``PaymentStatusCalculator`` is a composite class that delegates the calculation of the payment status to a set of services implementing the ``\Oro\Bundle\PaymentBundle\PaymentStatus\Calculator\PaymentStatusCalculatorInterface`` interface. Each provider is responsible for determining if it is applicable to the current context and for providing the corresponding payment status. Each calculator class gets the entity and calculation context  - ``\Oro\Bundle\PaymentBundle\PaymentStatus\Context\PaymentStatusCalculationContext``. Out-of-the-box, the context contains the following data:
 
-- **total** - the total amount of the related entity, represented by the ``\Oro\Bundle\PricingBundle\SubtotalProcessor\Model\Subtotal``. Added by the ``\Oro\Bundle\PaymentBundle\EventListener\PaymentStatusCalculationContext\SetTotalForPaymentStatusCalculationContextListener`` listener;
-- **paymentTransactions** - an array of payment transactions associated with the related entity, represented by the ``\Oro\Bundle\PaymentBundle\Entity\PaymentTransaction`` entity. Added by the ``\Oro\Bundle\PaymentBundle\EventListener\PaymentStatusCalculationContext\SetPaymentTransactionsForPaymentStatusCalculationContextListener``.
+- **total** --- the total amount of the related entity, represented by the ``\Oro\Bundle\PricingBundle\SubtotalProcessor\Model\Subtotal``. Added by the ``\Oro\Bundle\PaymentBundle\EventListener\PaymentStatusCalculationContext\SetTotalForPaymentStatusCalculationContextListener`` listener;
+- **paymentTransactions** --- an array of payment transactions associated with the related entity, represented by the ``\Oro\Bundle\PaymentBundle\Entity\PaymentTransaction`` entity. Added by the ``\Oro\Bundle\PaymentBundle\EventListener\PaymentStatusCalculationContext\SetPaymentTransactionsForPaymentStatusCalculationContextListener``.
 
 You can add more data to the payment status calculation context by creating an event listener for the ``\Oro\Bundle\PaymentBundle\Event\PaymentStatusCalculationContextCollectEvent`` event.
 

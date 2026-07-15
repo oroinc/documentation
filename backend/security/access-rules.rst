@@ -59,15 +59,15 @@ The following types of expressions are supported:
 
 The following is a list of supported operators:
 
-- **=** - Equality;
-- **<>** - Inequality;
-- **<** - Less than;
-- **<=** - Less than or equal;
-- **\>** - Greater than;
-- **\>=** - Greater than or equal;
-- **IN** - Checks that the left operand matches any value in the list from the right operand;
-- **NIN** - Checks that the left operand does not match any value in the list from the right operand;
-- **CONTAINS** - For string fields, it checks that the left operand contains a substring from the right operand. For array fields, it checks that any value in the list from the left operand is matched any value in the list from the right operand.
+- **=** --- Equality;
+- **<>** --- Inequality;
+- **<** --- Less than;
+- **<=** --- Less than or equal;
+- **\>** --- Greater than;
+- **\>=** --- Greater than or equal;
+- **IN** --- Checks that the left operand matches any value in the list from the right operand;
+- **NIN** --- Checks that the left operand does not match any value in the list from the right operand;
+- **CONTAINS** --- For string fields, it checks that the left operand contains a substring from the right operand. For array fields, it checks that any value in the list from the left operand is matched any value in the list from the right operand.
 
 If the value of the expression on the left or right is not the expression object, it is converted to a *value expression*.
 

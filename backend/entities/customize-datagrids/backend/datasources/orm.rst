@@ -54,12 +54,12 @@ You can modify query configuration from PHP code, for example from the datagrid 
 
 In addition to query modification methods, the |OrmQueryConfiguration| contains several valuable methods:
 
-- ``getRootAlias()`` - Returns the FIRST root alias of the query.
-- ``getRootEntity($entityClassResolver = null, $lookAtExtendedEntityClassName = false)`` - Returns the FIRST root entity of the query.
-- ``findRootAlias($entityClass, $entityClassResolver = null)`` - Tries to find the root alias for the given entity.
-- ``getJoinAlias($join, $conditionType = null, $condition = null)`` - Returns an alias for the given join. If the query does not contain the specified join, its alias will be generated automatically. This might be helpful if you need to get an alias to extend the association that will be joined later.
-- ``convertAssociationJoinToSubquery($joinAlias, $columnAlias, $joinEntityClass)`` - Converts an association based join to a subquery. This can be helpful in case of performance issues with a datagrid.
-- ``convertEntityJoinToSubquery($joinAlias, $columnAlias)`` - Converts an entity based join to a subquery. This can be helpful in case of performance issues with a datagrid.
+- ``getRootAlias()`` --- Returns the FIRST root alias of the query.
+- ``getRootEntity($entityClassResolver = null, $lookAtExtendedEntityClassName = false)`` --- Returns the FIRST root entity of the query.
+- ``findRootAlias($entityClass, $entityClassResolver = null)`` --- Tries to find the root alias for the given entity.
+- ``getJoinAlias($join, $conditionType = null, $condition = null)`` --- Returns an alias for the given join. If the query does not contain the specified join, its alias will be generated automatically. This might be helpful if you need to get an alias to extend the association that will be joined later.
+- ``convertAssociationJoinToSubquery($joinAlias, $columnAlias, $joinEntityClass)`` --- Converts an association based join to a subquery. This can be helpful in case of performance issues with a datagrid.
+- ``convertEntityJoinToSubquery($joinAlias, $columnAlias)`` --- Converts an entity based join to a subquery. This can be helpful in case of performance issues with a datagrid.
 
 Example of ``convertAssociationJoinToSubquery`` usage in a datagrid listener:
 
