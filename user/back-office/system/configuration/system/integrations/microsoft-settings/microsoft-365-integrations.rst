@@ -22,8 +22,8 @@ To configure email, calendar events, and task synchronization with Microsoft 365
 
 5. In the **Calendar Synchronization** and **Tasks Synchronization** sections, define the following:
 
-   * **Sync Direction** - Data synchronization direction. It can be Oro to Microsoft, Microsoft to Oro, and Bidirectional.
-   * **Conflict Resolution** - The conflict resolution strategy that should be used if the same calendar events and tasks are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
+   * **Sync Direction** --- Data synchronization direction. It can be Oro to Microsoft, Microsoft to Oro, and Bidirectional.
+   * **Conflict Resolution** --- The conflict resolution strategy that should be used if the same calendar events and tasks are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
 
 
 .. note:: To enable and configure the email synchronization on the system level, please see the :ref:`Global Email Synchronization Settings <doc-email-configuration>` and :ref:`Global System Mailbox Synchronization Settings <admin-configuration-system-mailboxes-global>`.

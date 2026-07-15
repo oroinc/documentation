@@ -32,11 +32,11 @@ Core styles are located in |UIBundle|: *UIBundle/Resources/public/default/scss/*
 
 CSS structure has three folders, **components**, **settings**, and **variables**:
 
-1. **components** - a folder for bundle components;
+1. **components** --- a folder for bundle components;
 
-2. **settings** - a folder for @mixins, @functions, and settings for a particular theme;
+2. **settings** --- a folder for @mixins, @functions, and settings for a particular theme;
 
-3. **variables** - a folder for all configuration variables for a particular bundle.
+3. **variables** --- a folder for all configuration variables for a particular bundle.
 
 Each bundle has its own **styles.scss** that collects all variables, settings, and components styles.
 

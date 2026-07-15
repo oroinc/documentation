@@ -25,7 +25,7 @@ To change the default product collections indexation frequency:
 
 4. In the **General** section, customize the following options:
 
-   **Indexation Cron Schedule** -- Select the desired frequency from the list.
+   **Indexation Cron Schedule** --- Select the desired frequency from the list.
 
    **Mass Action Limit** --- Set the limited number of products that can be handled (added, deleted) using mass action. The option is only applicable to product collections (e.g., in web catalogs), and it does not refer to mass actions of other entities (e.g., products, customers, leads, etc). Keep in mind that this option is merely advisory, and it only notifies a user of the exceeded mass action limit. But you can force your action, going beyond the limit, if needed.
 

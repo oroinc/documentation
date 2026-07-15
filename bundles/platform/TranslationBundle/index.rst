@@ -15,7 +15,7 @@ Translation context resolver should be used to humanize translation keys and giv
 Classes Description
 ^^^^^^^^^^^^^^^^^^^
 
-* **TranslationBundle\\Extension\\TranslationContextResolverInterface** - extensions interface for resolving Translation Context by translation key.
+* **TranslationBundle\\Extension\\TranslationContextResolverInterface** --- extensions interface for resolving Translation Context by translation key.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -79,9 +79,9 @@ Form Types Description
 
   Options:
 
-  * **class** - entity class name, this option is required;
-  * **property** - class property that should be used as label, by default string representation of entity will be used;
-  * **query\_builder** - custom query builder or callback to extract entities.
+  * **class** --- entity class name, this option is required;
+  * **property** --- class property that should be used as label, by default string representation of entity will be used;
+  * **query\_builder** --- custom query builder or callback to extract entities.
 
 * **oro\_select2\_translatable\_entity**
 
@@ -90,9 +90,9 @@ Form Types Description
 Classes Description
 ^^^^^^^^^^^^^^^^^^^
 
-* **TranslationBundle\\Form\\Type\\TranslatableEntityType** - class for translatable\_entity form type, provides functionality to work with translatable entities;
+* **TranslationBundle\\Form\\Type\\TranslatableEntityType** --- class for translatable\_entity form type, provides functionality to work with translatable entities;
 
-* **TranslationBundle\\Form\\DataTransformer\\CollectionToArrayTransformer** - extends standard Doctrine transformer to support empty array as data source.
+* **TranslationBundle\\Form\\DataTransformer\\CollectionToArrayTransformer** --- extends standard Doctrine transformer to support empty array as data source.
 
 Configuration
 ^^^^^^^^^^^^^
@@ -147,8 +147,8 @@ Classes Description
 
   Methods:
 
-  * **getName** - returns text identifier of the strategy;
-  * **getLocaleFallbacks** - returns tree of locale fallbacks.
+  * **getName** --- returns text identifier of the strategy;
+  * **getLocaleFallbacks** --- returns tree of locale fallbacks.
 
 
 * ``TranslationBundle\Strategy\DefaultTranslationStrategy``
@@ -161,15 +161,15 @@ Classes Description
 
   Methods:
 
-  * **getStrategy** - returns current strategy;
-  * **setStrategy** - sets specified strategy as current;
-  * **getFallbackLocales** - returns list of allowed fallback locales for specified strategy and source locale;
-  * **getAllFallbackLocales** - returns list of all fallback locales for specified strategy.
+  * **getStrategy** --- returns current strategy;
+  * **setStrategy** --- sets specified strategy as current;
+  * **getFallbackLocales** --- returns list of allowed fallback locales for specified strategy and source locale;
+  * **getAllFallbackLocales** --- returns list of all fallback locales for specified strategy.
 
 Dependency Injection Tags
 -------------------------
 
-* **oro_translation.extension.translation_strategy** - Registers strategy for providing translation locale fallbacks. Strategy must implement |TranslationStrategyInterface|.
+* **oro_translation.extension.translation_strategy** --- Registers strategy for providing translation locale fallbacks. Strategy must implement |TranslationStrategyInterface|.
 
 **Related Documentation**
 

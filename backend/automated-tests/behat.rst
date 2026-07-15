@@ -329,8 +329,8 @@ Using Different Mocks for Different Behat Tests
 When running different Behat tests with different mocks in the behat_test environment, you can conditionally activate specific mocks based on feature tags.
 
 The feature provides two key services:
-- ``Oro\Bundle\TestFrameworkBundle\Behat\BehatFeature`` - Checks if a Behat feature tag is active
-- ``Oro\Bundle\TestFrameworkBundle\Behat\Factory\FeatureTagAwareFactory`` - Creates services based on active feature tags
+- ``Oro\Bundle\TestFrameworkBundle\Behat\BehatFeature`` --- Checks if a Behat feature tag is active
+- ``Oro\Bundle\TestFrameworkBundle\Behat\Factory\FeatureTagAwareFactory`` --- Creates services based on active feature tags
 
 How It Works
 ------------
@@ -758,10 +758,10 @@ You can use references to the entities in both inline and |alice fixtures|.
 
 The most commonly used references:
 
-* ``@admin`` - Admin user
-* ``@adminRole`` - Administrator role
-* ``@organization`` - Default organization
-* ``@business_unit`` - Default business unit
+* ``@admin`` --- Admin user
+* ``@adminRole`` --- Administrator role
+* ``@organization`` --- Default organization
+* ``@business_unit`` --- Default business unit
 
 Health Checkers
 ---------------

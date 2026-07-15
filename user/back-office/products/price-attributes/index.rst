@@ -60,13 +60,13 @@ Find the necessary price attribute in the list and click on it.
 
 The following information is available immediately:
 
-* **Price Attribute** -- The name or label of the price attribute.
+* **Price Attribute** --- The name or label of the price attribute.
 
-* **Field Name** -- The name of the field in the code/database that represents the price attribute.
+* **Field Name** --- The name of the field in the code/database that represents the price attribute.
 
-* **Currencies** -- The currencies in which this price attribute is supported.
+* **Currencies** --- The currencies in which this price attribute is supported.
 
-* **Enabled in Product Export** -- If enabled, this price attribute is used in the :ref:`storefront product listing export <frontstore-guide--navigation-product-data-export>`.
+* **Enabled in Product Export** --- If enabled, this price attribute is used in the :ref:`storefront product listing export <frontstore-guide--navigation-product-data-export>`.
 
 .. image:: /user/img/products/price_attributes/price-attribute-edit.png
    :alt: Price attribute edit page

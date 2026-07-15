@@ -22,11 +22,11 @@ To change the default global routing settings:
    .. image:: /user/img/system/config_system/routing_general.png
       :alt: Global website routing settings
 
-   * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
+   * **URL** --- Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
 
-   * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
+   * **Secure URL** --- Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
 
-   * **Create Redirects** - This option defines a strategy for creating redirects when the URL building rules change. Supported options: *Ask*, *Never*, *Always*.
+   * **Create Redirects** --- This option defines a strategy for creating redirects when the URL building rules change. Supported options: *Ask*, *Never*, *Always*.
 
      When *Ask* is selected, OroCommerce prompts to confirm redirect creation on every change.
 
@@ -34,34 +34,34 @@ To change the default global routing settings:
 
      When *Always* is selected, the redirects are created by default.
 
-   * **Web Catalog** - When you add a web catalog, it populates the main menu and sub-menus of the OroCommerce storefront. If there is no web catalog available, the structure of the master catalog is used to fill the storefront menu. Once you add a web catalog, click **Save Settings** to prompt the system to show you a detailed content tree of the selected web catalog under the **Navigation Root** field.
+   * **Web Catalog** --- When you add a web catalog, it populates the main menu and sub-menus of the OroCommerce storefront. If there is no web catalog available, the structure of the master catalog is used to fill the storefront menu. Once you add a web catalog, click **Save Settings** to prompt the system to show you a detailed content tree of the selected web catalog under the **Navigation Root** field.
 
-   * **Navigation Root** - This option is available only if a web catalog has been added. Here, you can select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
+   * **Navigation Root** --- This option is available only if a web catalog has been added. Here, you can select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
 
      .. image:: /user/img/system/config_system/visible_content_node.png
         :alt: The selected sub-menu nodes that will be visible in the storefront
 
-   * **Main Navigation Menu** - Select which :ref:`storefront menu <menu-management-concept-guide>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
+   * **Main Navigation Menu** --- Select which :ref:`storefront menu <menu-management-concept-guide>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
 
      .. image:: /user/img/system/frontend_menu/main-navigation-menu.png
         :alt: Illustration of how changing Main Navigation Menu affects the storefront
 
-  * **Homepage** - When no web catalog is available, you can choose any of the available landing pages as your homepage. Please note that on clean installations of Oro applications, the default homepage is blank.
+  * **Homepage** --- When no web catalog is available, you can choose any of the available landing pages as your homepage. Please note that on clean installations of Oro applications, the default homepage is blank.
 
 4. In the **Direct URLs** section, configure the following settings:
 
    .. image:: /user/img/system/config_system/routing_direct_url.png
       :alt: Global Direct URLs settings
 
-   * **Enable Direct URLs** - when enabled, the page URL is built using the page slug (e.g., `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g., `/product/view/4`).
+   * **Enable Direct URLs** --- when enabled, the page URL is built using the page slug (e.g., `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g., `/product/view/4`).
 
-   * **Product URL Prefix** - the prefix that is appended to the product slug in the URL.
+   * **Product URL Prefix** --- the prefix that is appended to the product slug in the URL.
 
-   * **Brand URL Prefix** - the prefix that is appended to the product brand slug in the URL.
+   * **Brand URL Prefix** --- the prefix that is appended to the product brand slug in the URL.
 
-   * **Category URL Prefix** - the prefix that is appended to the category slug in the URL.
+   * **Category URL Prefix** --- the prefix that is appended to the category slug in the URL.
 
-   * **Landing Page URL Prefix** - The prefix that is appended to the landing page slug in the URL.
+   * **Landing Page URL Prefix** --- The prefix that is appended to the landing page slug in the URL.
 
 .. _routing-website-matchers-global:
 
@@ -70,7 +70,7 @@ To change the default global routing settings:
    .. image:: /user/img/system/config_system/routing_canonical_url.png
       :alt: Global Canonical URLs settings
 
-   * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
+   * **Canonical URL Type** --- this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
 
      * When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
 
@@ -78,15 +78,15 @@ To change the default global routing settings:
 
      .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed. Switching from one setting to the other does not modify the data stored in the database, it only controls which data is used to as a canonical URL.
 
-   * **Canonical URL Security Type** - this option defines which value should be used as a website base URL in the canonical link in the page meta keywords. Supported options: *Insecure* and *Secure*.
+   * **Canonical URL Security Type** --- this option defines which value should be used as a website base URL in the canonical link in the page meta keywords. Supported options: *Insecure* and *Secure*.
 
      * When *Insecure* is selected, the website base URL in the canonical link matches the **URL** value.
 
      * When *Secure* is selected, the **Secure URL** value is used instead.
 
-   * **Use Localized Canonical URLs** - When this option is enabled, the system generates canonical URLs using the localized version of URLs slugs (if available).
+   * **Use Localized Canonical URLs** --- When this option is enabled, the system generates canonical URLs using the localized version of URLs slugs (if available).
 
-   * **Prefer Self-Contained Web Catalog Canonical URLs** - When this option is disabled, the canonical URLs point to the direct URLs of the underlying content types, if they are available. This option is enabled by default.
+   * **Prefer Self-Contained Web Catalog Canonical URLs** --- When this option is disabled, the canonical URLs point to the direct URLs of the underlying content types, if they are available. This option is enabled by default.
 
 6. In **Website Matchers**, configure the following parameters to identify the visitors of your website through various tracking options:
 
@@ -95,11 +95,11 @@ To change the default global routing settings:
 
    .. note:: The Website Matchers feature is only available in the Enterprise edition.
 
-   * **Website Matchers** - with this option, you can define the way OroCommerce will identify the website customer uses. It is recommended to select at least one option. Supported options: *ENV Variable Based*, *Cookie Based*, *URL Based*. When more than one option is selected, set the method priority in the **sort order** column to define the most reliable and trusted one.
+   * **Website Matchers** --- with this option, you can define the way OroCommerce will identify the website customer uses. It is recommended to select at least one option. Supported options: *ENV Variable Based*, *Cookie Based*, *URL Based*. When more than one option is selected, set the method priority in the **sort order** column to define the most reliable and trusted one.
 
-   * **Enable Redirect** - indicates whether the customer should be automatically redirected to the website that was identified using one of the website matching methods (e.g., user navigated to the *us-store.com* but their cookies indicate that they are visiting the *uk-store.com*).
+   * **Enable Redirect** --- indicates whether the customer should be automatically redirected to the website that was identified using one of the website matching methods (e.g., user navigated to the *us-store.com* but their cookies indicate that they are visiting the *uk-store.com*).
 
-   * **Cookie Name** - the name of the cookie that stores information about the current website in the customer's browser. To track the website, you need to set the related cookie value in the :ref:`website's configuration <sys--websites--sysconfig--websites--routing>` creating an individual parameter specific for the required website.
+   * **Cookie Name** --- the name of the cookie that stores information about the current website in the customer's browser. To track the website, you need to set the related cookie value in the :ref:`website's configuration <sys--websites--sysconfig--websites--routing>` creating an individual parameter specific for the required website.
 
 7. To customize any of these options:
 

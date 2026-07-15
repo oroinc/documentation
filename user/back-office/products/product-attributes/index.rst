@@ -109,7 +109,7 @@ Proceed to create the attribute as described below.
 
    * **File Size** --- Enter the maximum allowed file size.
    * **Allowed MIME Types** --- Select one or more allowed MIME types from the dropdown.
-   * **Use DAM** - Select whether to enable the use of the Digital Asset Manager for this field.
+   * **Use DAM** --- Select whether to enable the use of the Digital Asset Manager for this field.
    * **ACL Protected** --- Select whether to :ref:`enable ACL check <backend-security-bundle-introduction>` for attachments.
    * **File Applications** --- Select where the file loaded to this field is going to be accessible. Possible applications are default and commerce, where default means back-office and commerce means storefront. If the files or images that you want to upload through this field are going to be accessed only from back-office, then select default; if from both back-office and storefront, then select both default and commerce. Please be aware that this setting is not used when ACL Protected is set to No."
    "**Image**","
@@ -168,12 +168,12 @@ Proceed to create the attribute as described below.
 
    ","
 
-   - **Target Entity** -- Select the entity you wish to relate your current attribute to.
-   - **Bidirectional** -- Select **Yes** or **No**. If set to **Yes**, the attribute and the selected entity will be interconnected.
-   - **Related Entity Data Fields** -- Available only for the Many to Many and One to Many relations. Select those fields of the entity selected in **Target Entity** which contain information that you want to see on the master entity record edit page. These could be a couple of important details in addition to the title which gives you the most important information about the related entity record. Hold the Ctrl key to choose several fields.
-   - **Related Entity Info Title** -- Available only for the Many to Many and One to Many relations. Select the fields of the entity selected in **Target Entity** by which the users can identify the related entity record. These fields serve as a title to the related entity record on the master entity pages. Choose these fields carefully. It would be a good idea to select a related entity name or similar information. On the view page of the master entity record, these fields will appear as links to the corresponding related entity record. On the edit page of the master entity record, you will see these fields as titles of the section that contains information selected in **Related Entity Data Fields**. Hold the **Ctrl** key to choose several fields.
-   - **Related Entity Detailed** -- Available only for the Many to Many and One to Many relations. Select those fields of the entity selected in **Target Entity** which contain additional information that you want to see on the master entity record edit page. The values of the fields selected will be available in the dialog that appears when you click the title of the related entity on the master page edit page. Hold the **Ctrl** key to choose several fields.
-   - **Target Field** -- Available only for the Many to One relation. Select the field of the entity selected in **Target Entity** by which the entity records will be tied."
+   - **Target Entity** --- Select the entity you wish to relate your current attribute to.
+   - **Bidirectional** --- Select **Yes** or **No**. If set to **Yes**, the attribute and the selected entity will be interconnected.
+   - **Related Entity Data Fields** --- Available only for the Many to Many and One to Many relations. Select those fields of the entity selected in **Target Entity** which contain information that you want to see on the master entity record edit page. These could be a couple of important details in addition to the title which gives you the most important information about the related entity record. Hold the Ctrl key to choose several fields.
+   - **Related Entity Info Title** --- Available only for the Many to Many and One to Many relations. Select the fields of the entity selected in **Target Entity** by which the users can identify the related entity record. These fields serve as a title to the related entity record on the master entity pages. Choose these fields carefully. It would be a good idea to select a related entity name or similar information. On the view page of the master entity record, these fields will appear as links to the corresponding related entity record. On the edit page of the master entity record, you will see these fields as titles of the section that contains information selected in **Related Entity Data Fields**. Hold the **Ctrl** key to choose several fields.
+   - **Related Entity Detailed** --- Available only for the Many to Many and One to Many relations. Select those fields of the entity selected in **Target Entity** which contain additional information that you want to see on the master entity record edit page. The values of the fields selected will be available in the dialog that appears when you click the title of the related entity on the master page edit page. Hold the **Ctrl** key to choose several fields.
+   - **Target Field** --- Available only for the Many to One relation. Select the field of the entity selected in **Target Entity** by which the entity records will be tied."
 
 .. _products--product-attributes--create-frontend-options:
 
@@ -215,8 +215,8 @@ Proceed to create the attribute as described below.
    "**Exclude Column**","Select *No*, if you want this field available for export, or *Yes* if you wish to exclude the column."
    "**Export Fields**","If the attribute is of the relation type, this option defines which fields of the related entity record to export:
 
-   * **Identity only** -- Export only the field that serves as an identifier of the related entity record.
-   * **All** -- Export all fields of the related entity record."
+   * **Identity only** --- Export only the field that serves as an identifier of the related entity record.
+   * **All** --- Export all fields of the related entity record."
 
 5. In the **Back-Office options** section, fill in the **Other** subsection, specifying the configuration options for the product attribute view, search and use in the back-office and storefront.
 

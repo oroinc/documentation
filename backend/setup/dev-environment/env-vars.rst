@@ -151,7 +151,7 @@ For elasticsearch search engine, use the following format:
 
    ORO_SEARCH_ENGINE_DSN=elastic-search://valid_user:valid_password@127.0.0.1:9200?prefix=oro_search
 
-Note that in the above examples, ``valid_user:valid_password@`` - DSNs part can be skipped if authentication is not enabled.
+Note that in the above examples, ``valid_user:valid_password@`` --- DSNs part can be skipped if authentication is not enabled.
 
 Sessions Storage Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

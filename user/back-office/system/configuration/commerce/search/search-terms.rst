@@ -20,7 +20,7 @@ To configure the search history settings globally:
 
 3. In the **Search Term Management** section, clear the *Use Default* checkbox to enable the search term functionality.
 
-   * **Enable Search Term Management** - this functionality enables you to respond to certain search phrases with tailored actions. When a designated search term is detected, you can choose a corresponding action from a range of pre-set responses, such as automatically direct users to a predetermined page, replace the default search results, and more. Enabling this option adds a Search Term menu item to **Marketing > Search** in the back-office. By default, this option is disabled.
+   * **Enable Search Term Management** --- this functionality enables you to respond to certain search phrases with tailored actions. When a designated search term is detected, you can choose a corresponding action from a range of pre-set responses, such as automatically direct users to a predetermined page, replace the default search results, and more. Enabling this option adds a Search Term menu item to **Marketing > Search** in the back-office. By default, this option is disabled.
 
 4. In the **Search History** section, clear the *Use Default* checkbox to configure the following search history reporting options:
 

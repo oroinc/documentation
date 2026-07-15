@@ -54,15 +54,15 @@ To set up a DPD integration in OroCommerce:
    * **Label** – the shipping method name/label that is shown as a shipping option for the buyer in the OroCommerce storefront during the checkout.
      Click the **Translations** icon to provide spelling for different languages. Click the **Default Language** icon to return to the single-language view.
 
-   * **Test Mode** - Enable test mode if you are using test DPD credentials, and disable it for production access.
-   * **Cloud User ID** - Retrieve cloud user ID from DPD.
-   * **Cloud User Token** - Retrieve cloud user ID from DPD.
-   * **Shipping Services** - Select DPD Classic.
-   * **Unit of Weight** - A unit of weight for the shipping price calculation - *kilogram* or *pound*.
-   * **Rate Policy** - Select *Flat Rate* or *Table Rate*. For *Table Rate*, upload a .csv file. For *Flat Rate*, provide a flat rate price.
-   * **Label Size** - Select the size of the shipping label - PDF A4 or A6.
-   * **Label Start Position** - Select the start position of the shipping label - Upper Left or Upper Right; Lower Left or Lower Right.
-   * **Default Owner** - The **Default Owner** field is filled in with the name of the user creating the integration. You can change this value to a different user if necessary
+   * **Test Mode** --- Enable test mode if you are using test DPD credentials, and disable it for production access.
+   * **Cloud User ID** --- Retrieve cloud user ID from DPD.
+   * **Cloud User Token** --- Retrieve cloud user ID from DPD.
+   * **Shipping Services** --- Select DPD Classic.
+   * **Unit of Weight** --- A unit of weight for the shipping price calculation - *kilogram* or *pound*.
+   * **Rate Policy** --- Select *Flat Rate* or *Table Rate*. For *Table Rate*, upload a .csv file. For *Flat Rate*, provide a flat rate price.
+   * **Label Size** --- Select the size of the shipping label - PDF A4 or A6.
+   * **Label Start Position** --- Select the start position of the shipping label - Upper Left or Upper Right; Lower Left or Lower Right.
+   * **Default Owner** --- The **Default Owner** field is filled in with the name of the user creating the integration. You can change this value to a different user if necessary
 
 4. Click **Save and Close**.
 

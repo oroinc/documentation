@@ -206,9 +206,9 @@ The ``entities`` section describes the configuration of entities.
 
 *  **exclusion\_policy** *string* - Indicates the exclusion strategy to use for the entity. Possible values: ``all``, ``custom_fields`` or ``none``. By default, it is set to ``none``.
 
-   * ``none`` - exclude fields marked with the exclude flag.
-   * ``all`` - exclude all fields that are not configured explicitly.
-   * ``custom_fields`` - exclude all custom fields (fields with ``is_extend = true`` and ``owner = Custom`` in the extend scope in the entity configuration) that are not configured explicitly.
+   * ``none`` --- exclude fields marked with the exclude flag.
+   * ``all`` --- exclude all fields that are not configured explicitly.
+   * ``custom_fields`` --- exclude all custom fields (fields with ``is_extend = true`` and ``owner = Custom`` in the extend scope in the entity configuration) that are not configured explicitly.
 
 *  **max\_results** *integer* - The maximum number of entities in the result. Set ``-1`` (unlimited), zero, or positive number to set the limit. Use to set the limit for both primary and related entities. See ``max_entities`` and ``max_related_entities`` options in :ref:`General Configuration <web-api--configuration-general>` for default limits. Please note that this option affects all actions including :ref:`get_list <get-list-action>` action. Use the ``max_results`` option in the :ref:`actions <web-api--actions-config>` configuration to change the maximum number of entities that can be deleted by one request or set own limit to each action, see :ref:`How To <max-number-of-entities-to-be-deleted>`.
 
@@ -236,7 +236,7 @@ The ``entities`` section describes the configuration of entities.
 
 *  **form\_options** *array* - The form options to use for the entity in the :ref:`create <create-action>` and :ref:`update <update-action>` actions.
 
-*  **form\_event\_subscriber** - The form event subscriber(s) to use for the entity in the :ref:`create <create-action>` and :ref:`update <update-action>` actions. When the form_type option is not specified,, this event subscriber is also used for the :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions. For custom ``form_type`` this event subscriber is not used. It can be specified as a service name or an array of service names. An event subscriber service should implement the ``Symfony\Component\EventDispatcher\EventSubscriberInterface`` interface.
+*  **form\_event\_subscriber** --- The form event subscriber(s) to use for the entity in the :ref:`create <create-action>` and :ref:`update <update-action>` actions. When the form_type option is not specified,, this event subscriber is also used for the :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions. For custom ``form_type`` this event subscriber is not used. It can be specified as a service name or an array of service names. An event subscriber service should implement the ``Symfony\Component\EventDispatcher\EventSubscriberInterface`` interface.
 
 By default, the following form options are set:
 
@@ -414,7 +414,7 @@ This section describes fields by which the result data can be filtered. It conta
 
 -  **exclusion\_policy** *string*.
 
-   Can be ``all`` or ``none``. By default ``none``. Indicates which exclusion strategy to use. Possible values: ``all`` or ``none``. ``none`` - Exclude fields marked with the exclude flag. ``all`` - Exclude both marked and not marked fields.
+   Can be ``all`` or ``none``. By default ``none``. Indicates which exclusion strategy to use. Possible values: ``all`` or ``none``. ``none`` --- Exclude fields marked with the exclude flag. ``all`` --- Exclude both marked and not marked fields.
 
 -  **fields** This section describes a configuration of each field that can be used to filter the result data. Each filter can have the following properties:
 
@@ -531,14 +531,14 @@ The ``actions`` configuration section enables you to specify action-specific opt
 
 *  **form\_options** *array* - The form options to use for the entity. If ``form_type`` is not specified, the form options specified here are merged with form options defined at the entity level. If ``form_type`` is specified in the action configuration, the action form options completely replace the form options defined at the entity level.
 
-*  **form\_event\_subscriber** - The form event subscribers to use for the entity. Can be specified as a service name or array of service names. An event subscriber service should implement the ``Symfony\Component\EventDispatcher\EventSubscriberInterface`` interface. If ``form_type`` is not specified, the event subscribers specified here are merged with the event subscribers defined at the entity level. If ``form_type`` is specified in the action configuration, the action event subscribers completely replace the event subscribers defined at the entity level.
+*  **form\_event\_subscriber** --- The form event subscribers to use for the entity. Can be specified as a service name or array of service names. An event subscriber service should implement the ``Symfony\Component\EventDispatcher\EventSubscriberInterface`` interface. If ``form_type`` is not specified, the event subscribers specified here are merged with the event subscribers defined at the entity level. If ``form_type`` is specified in the action configuration, the action event subscribers completely replace the event subscribers defined at the entity level.
 
 *  **status\_codes** *array* - The possible response status codes for the action.
 
    *  **exclude** *boolean* - Indicates whether the status code should be excluded for a particular action. This property is described above in `"exclude" option <#exclude-option>`__ section.
    *  **description** *string* - A human-readable description of the status code. Used in auto-generated documentation only.
 
-*  **fields** - This section describes entity fields' configuration specific for a particular action.
+*  **fields** --- This section describes entity fields' configuration specific for a particular action.
 
    *  **exclude** *boolean* - Indicates whether the field should be excluded for a particular action. This property is described above in `"exclude" option <#exclude-option>`__ section.
    *  **property\_path** *string* - The property path to reach the fields' value. Can be used to rename the field or to access a field of the related entity. Use the ``dot`` notation to separate property names in the path, e.g. ``user.firstName``. Each property name must be equal to the name of the existing property of an entity. The ``_`` value can be used if a field value is not mapped to any property of an entity, e.g., for computed fields.
@@ -697,9 +697,9 @@ The ``subresources`` configuration section enables you to provide options for su
 
 -  **actions** *array* - The actions supported by the sub-resource. This section has the same options as :ref:`actions <web-api--actions-config>` configuration section, except the ``request_target_class`` and ``request_documentation_action`` options. These options can be used for ``update_subresource``, ``add_subresource`` and ``delete_subresource`` actions to specify a class that represents request data and an action name that should be used to get the documentation for the request data. If an option exists in both the entity actions section and the sub-resource **actions** section, the sub-resource option wins.
 
--  **filters** - The filters supported by the sub-resource. This section has the same options as :ref:`filters <filters-config>` configuration section. If an option exists in both `entity "filters" section <#filters-configuration-section>`__ and sub-resource **filters** section the sub-resource option wins.
+-  **filters** --- The filters supported by the sub-resource. This section has the same options as :ref:`filters <filters-config>` configuration section. If an option exists in both `entity "filters" section <#filters-configuration-section>`__ and sub-resource **filters** section the sub-resource option wins.
 
-- **sorters** - The sorters supported by the sub-resource. This section has the same options as the entity sorters section. If an option exists in both the entity sorters section and the sub-resource sorters section, the sub-resource option wins.
+- **sorters** --- The sorters supported by the sub-resource. This section has the same options as the entity sorters section. If an option exists in both the entity sorters section and the sub-resource sorters section, the sub-resource option wins.
 
 .. note:: A subresource is accessible via API only if its target entity is also accessible via API. However, there are several exceptions to this rule:
 

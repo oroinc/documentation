@@ -26,7 +26,7 @@ Technical Components
 
    - ``Oro\Bundle\AiContentGenerationBundle\Factory\ContentGenerationOpenAiClientFactory``
    - ``Oro\Bundle\AiContentGenerationBundle\Factory\ContentGenerationVertexAiClientFactory``
-   - ``Oro\Bundle\AiContentGenerationBundle\Factory\ContentGenerationClientFactory`` - the general factory that builds Content Generation Client based on the chosen integration in the system configuration.
+   - ``Oro\Bundle\AiContentGenerationBundle\Factory\ContentGenerationClientFactory`` --- the general factory that builds Content Generation Client based on the chosen integration in the system configuration.
 
 3. AI Content Generation clients:
 
@@ -36,12 +36,12 @@ Technical Components
 4. AI Content Generation features:
 
    - ``oro_ai_content_generation``
-   - ``Oro\Bundle\AiContentGenerationBundle\Feature\Voter\FeatureVoter`` - used to control access to AI features and to display AI Content Assistant icons for Wysiwyg and TinyMCE.
+   - ``Oro\Bundle\AiContentGenerationBundle\Feature\Voter\FeatureVoter`` --- used to control access to AI features and to display AI Content Assistant icons for Wysiwyg and TinyMCE.
 
 5. AI Content Generation tasks:
 
-   - ``Oro\Bundle\AiContentGenerationBundle\Task\TaskInterface`` - represents tasks with specific phrases or predefined content that a user can choose for generation content.
-   - ``Oro\Bundle\AiContentGenerationBundle\Task\OpenPromptTaskInterface`` - represents tasks with user predefined content.
+   - ``Oro\Bundle\AiContentGenerationBundle\Task\TaskInterface`` --- represents tasks with specific phrases or predefined content that a user can choose for generation content.
+   - ``Oro\Bundle\AiContentGenerationBundle\Task\OpenPromptTaskInterface`` --- represents tasks with user predefined content.
 
 Troubleshooting
 ---------------

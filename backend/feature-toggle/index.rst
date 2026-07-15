@@ -15,25 +15,25 @@ Features are defined in configuration files placed into `Resources/config/oro/fe
 
 Each feature consists of one required option, the label. You can configure the following sections, out-of-the-box:
 
- - ``label`` - A feature title.
- - ``description`` - A feature description.
- - ``toggle`` - A :ref:`system configuration <backend-system-configuration>` option key that is used as a feature toggle.
- - ``dependencies`` - A list of feature names that the feature depends on. The feature is enabled when all the features from this list are also enabled.
- - ``routes`` - A list of route names.
- - ``configuration`` - A list of :ref:`system configuration <backend-system-configuration>` group and field names.
- - ``workflows`` - A list of :ref:`workflow <backend--workflows--intro>` names.
- - ``processes`` - A list of :ref:`process <backend--entities-data-management--processes>` names.
- - ``operations`` - A list of :ref:`operation <bundle-docs-platform-action-bundle-operations>` names.
- - ``api_resources`` - A list of entity FQCNs that are available as API resources.
- - ``frontend_api_resources`` - A list of entity FQCNs that are available as the storefront API resources.
- - ``commands`` - A list of commands that depend on the feature. Running these commands is impossible or is not reasonable when the feature is disabled.
- - ``entities`` - A list of entity FQCNs.
- - ``dashboard_widgets`` - A list of :ref:`dashboard widget <dev-dashboards>` names.
- - ``sidebar_widgets`` - A list of :ref:`sidebar widget <bundle-docs-platform-sidebar-bundle>` names.
- - ``cron_jobs`` - A list of CRON commands that depend on the feature. These commands are not executed by the :ref:`cron <dev-guide-system-cron-jobs>` when the feature is disabled.
- - ``navigation_items`` - A list of :ref:`navigation item <doc-managing-app-menu>` names.
- - ``placeholder_items`` - A list of :ref:`placeholder item <backend-placeholders>` names.
- - ``mq_topics`` - A list of :ref:`message queue topic <dev-guide-mq-topics>` names.
+ - ``label`` --- A feature title.
+ - ``description`` --- A feature description.
+ - ``toggle`` --- A :ref:`system configuration <backend-system-configuration>` option key that is used as a feature toggle.
+ - ``dependencies`` --- A list of feature names that the feature depends on. The feature is enabled when all the features from this list are also enabled.
+ - ``routes`` --- A list of route names.
+ - ``configuration`` --- A list of :ref:`system configuration <backend-system-configuration>` group and field names.
+ - ``workflows`` --- A list of :ref:`workflow <backend--workflows--intro>` names.
+ - ``processes`` --- A list of :ref:`process <backend--entities-data-management--processes>` names.
+ - ``operations`` --- A list of :ref:`operation <bundle-docs-platform-action-bundle-operations>` names.
+ - ``api_resources`` --- A list of entity FQCNs that are available as API resources.
+ - ``frontend_api_resources`` --- A list of entity FQCNs that are available as the storefront API resources.
+ - ``commands`` --- A list of commands that depend on the feature. Running these commands is impossible or is not reasonable when the feature is disabled.
+ - ``entities`` --- A list of entity FQCNs.
+ - ``dashboard_widgets`` --- A list of :ref:`dashboard widget <dev-dashboards>` names.
+ - ``sidebar_widgets`` --- A list of :ref:`sidebar widget <bundle-docs-platform-sidebar-bundle>` names.
+ - ``cron_jobs`` --- A list of CRON commands that depend on the feature. These commands are not executed by the :ref:`cron <dev-guide-system-cron-jobs>` when the feature is disabled.
+ - ``navigation_items`` --- A list of :ref:`navigation item <doc-managing-app-menu>` names.
+ - ``placeholder_items`` --- A list of :ref:`placeholder item <backend-placeholders>` names.
+ - ``mq_topics`` --- A list of :ref:`message queue topic <dev-guide-mq-topics>` names.
 
 An example of the `features.yml` configuration:
 

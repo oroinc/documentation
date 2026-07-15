@@ -41,18 +41,18 @@ To configure the integration between Stripe and OroCommerce, follow the steps ou
    .. image:: /user/img/system/integrations/stripe/create-stripe-integration.png
       :alt: Create an integration with Stripe in the back-office
 
-   * **Type** - Select *Stripe* from the drop-down list.
-   * **Name** - Provide the payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
-   * **Labels** - The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the icon next to the field.
-   * **Short labels** - The payment method name/label that is shown in the order details in the OroCommerce back-office and storefront after the order is submitted. To translate the label into other languages, click on the icon next to the field.
-   * **Apple Pay/Google Pay Labels** - This label is used at checkout in the storefront, and in the order history and payment rules in the back-office for the optional Apple Pay/Google Pay payment method. When using Apple Pay, please make sure to upload the Apple Pay domain verification file in the configuration of the website(s) where Apple Pay will be used (see :ref:`Apple Pay Domain Verification <user-guide--system-configuration--commerce-sales-checkout-website>`). Please note that Apple Pay is a payment method exclusive to the Safari browser and Google Pay is exclusive for the Chrome browser.
+   * **Type** --- Select *Stripe* from the drop-down list.
+   * **Name** --- Provide the payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
+   * **Labels** --- The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the icon next to the field.
+   * **Short labels** --- The payment method name/label that is shown in the order details in the OroCommerce back-office and storefront after the order is submitted. To translate the label into other languages, click on the icon next to the field.
+   * **Apple Pay/Google Pay Labels** --- This label is used at checkout in the storefront, and in the order history and payment rules in the back-office for the optional Apple Pay/Google Pay payment method. When using Apple Pay, please make sure to upload the Apple Pay domain verification file in the configuration of the website(s) where Apple Pay will be used (see :ref:`Apple Pay Domain Verification <user-guide--system-configuration--commerce-sales-checkout-website>`). Please note that Apple Pay is a payment method exclusive to the Safari browser and Google Pay is exclusive for the Chrome browser.
 
      .. image:: /user/img/system/integrations/stripe/stripe-apple-google-pay.png
         :alt: ApplePay and Google Pay payment method on the checkout page in the storefront
 
-   * **API Public Key** - An identifier that helps authenticate your account. It refers to **Publishable key** on the Stripe side. You must use separate keys for the test and production environments.
-   * **API Secret Key** - A pre-shared key used to cipher payment information. It refers to **Secret key** on the Stripe side. You must use separate keys for the test and production environments.
-   * **Webhook Signing Secret** - A key that helps identify your webhook endpoints. Webhooks help synchronize actions and payment transactions between Oro and Stripe. They are used to notify the Oro application when an event happens in the Stripe account (e.g., capturing the payment).
+   * **API Public Key** --- An identifier that helps authenticate your account. It refers to **Publishable key** on the Stripe side. You must use separate keys for the test and production environments.
+   * **API Secret Key** --- A pre-shared key used to cipher payment information. It refers to **Secret key** on the Stripe side. You must use separate keys for the test and production environments.
+   * **Webhook Signing Secret** --- A key that helps identify your webhook endpoints. Webhooks help synchronize actions and payment transactions between Oro and Stripe. They are used to notify the Oro application when an event happens in the Stripe account (e.g., capturing the payment).
 
      .. hint::
 
@@ -90,7 +90,7 @@ To configure the integration between Stripe and OroCommerce, follow the steps ou
    * **Automatically Re-Authorize Every 6 Days 20 Hours** --- By default, you need to capture the reserved funds within 7 days, otherwise, the funds are released. Select the option to enable Oro to automatically re-authorize the payments placed on hold every 6 days 20 hours to prevent payment cancellation if the authorization expires. Keep in mind that expired payments can only be re-authorized once. If re-authorization fails, such payment transaction cannot be re-authorized again.
    * **Re-Authorization Errors Notification Email** --- The email address which is used to send notifications on failed re-authorization attempts.
    * **Status** --- Set the status to *Active* to enable the integration.
-   * **Default Owner** - A user who is responsible for this integration and manages it.
+   * **Default Owner** --- A user who is responsible for this integration and manages it.
 
 4. Click **Save and Close**.
 

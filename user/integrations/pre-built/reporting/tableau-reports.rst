@@ -13,9 +13,9 @@ Dashboards
 
 The Oro integration provides the ability to create a new type of dashboard in the Oro back-office with embedded Tableau components. The dashboard allows to incorporate three Tableau components and users can create a dashboard using one of the following:
 
-* **View** -- enables the seamless embedding of Tableau View components, providing users with interactive visualizations.
-* **Authoring** -- allows embedding the Tableau Authoring component and enables users to make real-time changes to the views of the Tableau dashboard
-* **Ask Data** -- allows embedding the Tableau Ask Data component, offering users to type a question in a search bar and instantly get a response.
+* **View** --- enables the seamless embedding of Tableau View components, providing users with interactive visualizations.
+* **Authoring** --- allows embedding the Tableau Authoring component and enables users to make real-time changes to the views of the Tableau dashboard
+* **Ask Data** --- allows embedding the Tableau Ask Data component, offering users to type a question in a search bar and instantly get a response.
 
 When creating a Tableau dashboard, you must provide an Embed URL that can be retrieved from the Tableau account as a **Share User Link**.
 

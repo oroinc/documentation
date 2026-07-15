@@ -105,17 +105,17 @@ Predefined Sanitizing Rules
 
 Predefined rule processors for entities:
 
-* **truncate** - builds a table truncation query. The rule has no options.
-* **truncate_cascade** - builds a table truncation query with a cascade option. The rule has no options.
+* **truncate** --- builds a table truncation query. The rule has no options.
+* **truncate_cascade** --- builds a table truncation query with a cascade option. The rule has no options.
 
 Predefined rule processors for fields:
 
-* **date** - builds a query to replace the field value with the current date. The rule can only be applied to the date field. The rule has no options.
-* **md5** - builds a query to replace a field value with its own MD5 hash, salted with a random value. The rule can only be applied to the string (text, varchar) field. The rule has the **length** option. If none is specified, then the read length of the field is used.
-* **email** - builds a query to replace the email's server name with either an MD5 hashed server name or a custom server name if specified in the application's configuration. Additionally, if the primary key value of the DB record is numeric, the query salts the mailbox name with the key. The rule can only be applied to the string (text, varchar) field. The rule has no options.
-* **set_null** - builds a query to replace a field value with a null. There are no field-type restrictions. The rule has no option.
-* **digits_mask** - builds a query to replace the field value with a **phone** number mask. The mask should look like the following: **1 (800) XXX-XXXX**. The **X** symbol in the mask will be replaced with one of the digits from the random value based on the 10000000 number. The length of the value will correspond to the number of **X** symbols in the mask. The rule can only be applied to the string (text, varchar) field. The rule has a **mask** option, as shown in the example above.
-* **generic_phone** - is a special case of a **digits_mask** rule with a predefined mask specified in the application configuration. The rule has no options.
+* **date** --- builds a query to replace the field value with the current date. The rule can only be applied to the date field. The rule has no options.
+* **md5** --- builds a query to replace a field value with its own MD5 hash, salted with a random value. The rule can only be applied to the string (text, varchar) field. The rule has the **length** option. If none is specified, then the read length of the field is used.
+* **email** --- builds a query to replace the email's server name with either an MD5 hashed server name or a custom server name if specified in the application's configuration. Additionally, if the primary key value of the DB record is numeric, the query salts the mailbox name with the key. The rule can only be applied to the string (text, varchar) field. The rule has no options.
+* **set_null** --- builds a query to replace a field value with a null. There are no field-type restrictions. The rule has no option.
+* **digits_mask** --- builds a query to replace the field value with a **phone** number mask. The mask should look like the following: **1 (800) XXX-XXXX**. The **X** symbol in the mask will be replaced with one of the digits from the random value based on the 10000000 number. The length of the value will correspond to the number of **X** symbols in the mask. The rule can only be applied to the string (text, varchar) field. The rule has a **mask** option, as shown in the example above.
+* **generic_phone** --- is a special case of a **digits_mask** rule with a predefined mask specified in the application configuration. The rule has no options.
 
 The Oro application settings example for the **email** and **generic_phone** rules:
 

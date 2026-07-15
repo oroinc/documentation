@@ -107,12 +107,12 @@ To add a category node to the menu in the OroCommerce storefront:
 
    The available options are:
 
-   * **Include, show as filter** - Used to include all the products assigned to the subcategories of the selected category and the products already assigned directly. The subcategories of the first level with at least one product will be displayed as a category filter in the OroCommerce storefront.
+   * **Include, show as filter** --- Used to include all the products assigned to the subcategories of the selected category and the products already assigned directly. The subcategories of the first level with at least one product will be displayed as a category filter in the OroCommerce storefront.
 
      .. image:: /user/img/marketing/web_catalogs/subcategory_filter_1.png
         :alt: Illustration of the Include, show as filter option
 
-   * **Do not include** - Used to include the products assigned only to the selected category. If the category has a subcategory, its product items will not be displayed.
+   * **Do not include** --- Used to include the products assigned only to the selected category. If the category has a subcategory, its product items will not be displayed.
 
 3. Select the category from the product catalog tree. To use search, start typing the category name in the box. Use **>** and **v** to expand/collapse the tree node.
 

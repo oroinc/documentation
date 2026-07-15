@@ -45,19 +45,19 @@ To create a new content widget:
 
 3. Depending on the widget type, form fields are different:
 
-   * **Contact Us Form** - Enables you to add a standard Contact Us form.
+   * **Contact Us Form** --- Enables you to add a standard Contact Us form.
 
      .. image:: /user/img/marketing/content_widgets/contact_us.png
         :alt: Contact us content widget form
 
-   * **Image Slider** - Enables you to add an image slider with multiple images, configure slider options and style each slide. To configure the image slider, you can select the number of slides to show or scroll, enable or disable autoplay and control its speed in milliseconds, select whether to display dots and/or arrows at the bottom of the image slider in the storefront, control how the slide images are positioned and scaled, and enable or disable infinite scroll. To add slides, click **Add** at the bottom of the *Slides* section. You can customize each slide by setting its sort order, URL, target window, ALT text, text alignment, header and text for the image. You can choose different image sizes based on screen size (extra large, large, medium, small).
+   * **Image Slider** --- Enables you to add an image slider with multiple images, configure slider options and style each slide. To configure the image slider, you can select the number of slides to show or scroll, enable or disable autoplay and control its speed in milliseconds, select whether to display dots and/or arrows at the bottom of the image slider in the storefront, control how the slide images are positioned and scaled, and enable or disable infinite scroll. To add slides, click **Add** at the bottom of the *Slides* section. You can customize each slide by setting its sort order, URL, target window, ALT text, text alignment, header and text for the image. You can choose different image sizes based on screen size (extra large, large, medium, small).
 
      .. image:: /user/img/marketing/content_widgets/image_slider_1.png
         :alt: Image slider content widget form
 
     |
 
-   * **Product Mini Block** - Enables you to add a block with product information with or without prices and/or the **Add to Shopping List** button.
+   * **Product Mini Block** --- Enables you to add a block with product information with or without prices and/or the **Add to Shopping List** button.
 
      .. image:: /user/img/marketing/content_widgets/mini-block.png
         :alt: A product mini block form
@@ -67,14 +67,14 @@ To create a new content widget:
 .. _content-widgets-product-segment:
 
 
-   * **Product Segment** - Enables you to add a product segment content widget to your website page. Only segments with type *Product* are listed in the **Segment** field dropdown. You can modify an existing :ref:`segment <user-guide--business-intelligence--filters-segments>` or create a new one under **Reports & Segments > Manage Segments**. You can add a label to be displayed above the list of the products, configure the max and min number of items to show, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront. Additionally, you can enable or disable autoplay and control its speed in milliseconds, select whether to display dots and/or arrows at the bottom of the product segment and on touchscreens, enable or disable infinite scroll.
+   * **Product Segment** --- Enables you to add a product segment content widget to your website page. Only segments with type *Product* are listed in the **Segment** field dropdown. You can modify an existing :ref:`segment <user-guide--business-intelligence--filters-segments>` or create a new one under **Reports & Segments > Manage Segments**. You can add a label to be displayed above the list of the products, configure the max and min number of items to show, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront. Additionally, you can enable or disable autoplay and control its speed in milliseconds, select whether to display dots and/or arrows at the bottom of the product segment and on touchscreens, enable or disable infinite scroll.
 
      .. image:: /user/img/marketing/content_widgets/product-segment.png
         :alt: A product segment form
 
     |
 
-   * **Tabbed Content** - Enables you to add content to your storefront website in a form of tabs or an accordion.
+   * **Tabbed Content** --- Enables you to add content to your storefront website in a form of tabs or an accordion.
 
      .. image:: /user/img/marketing/content_widgets/tabs-vs-accordion-new.png
         :alt: Tabbed vs Accordion view of tabbed content widget

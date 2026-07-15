@@ -98,7 +98,7 @@ We now need to :ref:`assign four roles to users <user-management-users>` and def
 
    The sales representatives have the following settings:
 
-   * **Roles** -- Sales Rep   
+   * **Roles** --- Sales Rep
    * **Organization** --- ACME Services
    * **Organization Business Units** --- One of the lower level business units: Los Angeles, Dallas, New York, Western Europe, Eastern Europe    
     

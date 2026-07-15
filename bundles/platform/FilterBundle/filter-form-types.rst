@@ -58,12 +58,12 @@ oro\_type\_filter Form Type
 
 **Options Description**
 
-* **field_type** - This option declares the type of the value child element.
-* **field_options** - Value of this option will be used as the options array for the value field.
-* **operator_choices** - Value of this option will be used as the value of the "choices" option of the type field.
-* **operator_type** - This option declares the type of type child element. By default, the velue is "choice".
-* **operator_options** - Value of this option will be used as the options array for the type field.
-* **show_filter** - If FALSE, then the filter will be hidden when it is rendered in the filter list.
+* **field_type** --- This option declares the type of the value child element.
+* **field_options** --- Value of this option will be used as the options array for the value field.
+* **operator_choices** --- Value of this option will be used as the value of the "choices" option of the type field.
+* **operator_type** --- This option declares the type of type child element. By default, the velue is "choice".
+* **operator_options** --- Value of this option will be used as the options array for the type field.
+* **show_filter** --- If FALSE, then the filter will be hidden when it is rendered in the filter list.
 
 oro\_type\_text\_filter Form Type
 ---------------------------------
@@ -136,7 +136,7 @@ oro\_type\_filter
 
 **Options**
 
-* **data\_type** - This option can be used for configuration of value field type. Can be a value of one of constants:
+* **data\_type** --- This option can be used for configuration of value field type. Can be a value of one of constants:
   ::DATA\_INTEGER or NumberFilterType::DATA\_DECIMAL.
 
 **formatter_options**
@@ -196,7 +196,7 @@ oro\_type\_number\_filter
 
 **Options**
 
-* **data\_type** - This option can be used for configuration of value field type. Can be a value of one of constants:
+* **data\_type** --- This option can be used for configuration of value field type. Can be a value of one of constants:
   NumberFilterType::DATA\_INTEGER or NumberFilterType::DATA\_DECIMAL.
 
 **formatter_options**
@@ -337,8 +337,8 @@ oro\_type\_filter
 
 **Options Description**
 
-* **widget\_options** - Value of this option will be used by javascript widget to correctly display its data. Default value of this option depend from of current application locale options.
-* **type\_values** - Value of this option will be used by javascript widget to generate valid hint of current filter value (strings like "between %start% and %end%", "before %start%", "after %end%", "not between %start%", etc)
+* **widget\_options** --- Value of this option will be used by javascript widget to correctly display its data. Default value of this option depend from of current application locale options.
+* **type\_values** --- Value of this option will be used by javascript widget to generate valid hint of current filter value (strings like "between %start% and %end%", "before %start%", "after %end%", "not between %start%", etc)
 
 .. _backend-filters-form-types-oro-type-datetime-filter:
 
@@ -399,10 +399,10 @@ oro\_type\_date\_range Form Type
 
 **Options Description**
 
-* **field\_type** - This option declares type of start and end child elements.
-* **field\_options** - Value of this option will be used as options array for start and end fields.
-* **start\_field\_options** - Value of this option will be used as options array for start field.
-* **end\_field\_options** - Value of this option will be used as options array for end field.
+* **field\_type** --- This option declares type of start and end child elements.
+* **field\_options** --- Value of this option will be used as options array for start and end fields.
+* **start\_field\_options** --- Value of this option will be used as options array for start field.
+* **end\_field\_options** --- Value of this option will be used as options array for end field.
 
 oro\_type\_datetime\_range Form Type
 ------------------------------------

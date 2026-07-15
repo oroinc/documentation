@@ -7,8 +7,8 @@ The action is a set of processors that handle a request.
 
 Each action has two required elements:
 
--  **context** -  An object that stores the input and output data and shares data between processors.
--  **main processor** - The main entry point for an action. This class is responsible for creating the context and executing all worker processors.
+-  **context** ---  An object that stores the input and output data and shares data between processors.
+-  **main processor** --- The main entry point for an action. This class is responsible for creating the context and executing all worker processors.
 
 For more details about these elements, see the `Creating a New Action`_ section.
 
@@ -1142,85 +1142,85 @@ The |Context| class is used as a superclass for the context classes of CRUD acti
 
 General methods:
 
--  **getClassName()** - Retrieves the fully-qualified class name of an entity.
--  **setClassName(className)** - Sets fully-qualified class name of an entity.
--  **getRequestHeaders()** - Retrieves the request headers.
--  **setRequestHeaders(parameterBag)** - Sets an object to use for accessing the request headers.
--  **getResponseHeaders()** - Retrieves the response headers.
--  **setResponseHeaders(parameterBag)** - Sets an object to use for accessing accessing the response headers.
--  **getResponseStatusCode()** - Retrieves the response status code.
--  **setResponseStatusCode(statusCode)** - Sets the response status code.
--  **isSuccessResponse()** - Indicates whether a result document represents a success response.
--  **getResponseDocumentBuilder()** - Retrieves the response document builder.
--  **setResponseDocumentBuilder(documentBuilder)** - Sets the response document builder.
--  **getFilters()** -  Retrieves a |list of filters| to set additional restrictions to a query used to retrieve the entity data.
--  **getFilterValues()** - Retrieves a collection of the |FilterValue| objects that contains all incoming filters.
--  **setFilterValues(accessor)** - Sets an |object| to use for accessing the incoming filters.
--  **isMasterRequest()** - Indicates whether the current action processes a master API request or is executed as part of another action.
--  **setMasterRequest(master)** - Sets a flag that indicates the current action processes a master API request or is executed as part of another action.
--  **isCorsRequest()** - Indicates whether the current request is |CORS| request.
--  **setCorsRequest(cors)** - Sets a flag indicates whether the current request is |CORS| request.
--  **isHateoasEnabled()** - Indicates whether |HATEOAS| is enabled.
--  **setHateoas(flag)** - Sets a flag indicates whether |HATEOAS| is enabled.
--  **hasQuery()** - Checks whether a query used to get the result data exists.
--  **getQuery()** - Retrieves a query used to get result data.
--  **setQuery(query)** - Sets a query used to get result data.
--  **getCriteria()** - Retrieves the |Criteria| object that sets additional restrictions to a query used to retrieve the entity data.
--  **setCriteria(criteria)** - Sets the |Criteria| object that sets additional restrictions to a query used to retrieve the result data.
--  **getAllEntities(primaryOnly = false)** - Gets all entities, primary and included ones, that are processing by an action.
--  **hasErrors()** - Checks whether any error happened when processing an action.
--  **getErrors()** - Retrieves all |errors| that occurred during the processing of an action.
--  **addError(error)** - Registers an |errors|.
--  **resetErrors()** - Removes all errors.
--  **isSoftErrorsHandling()** - Retrieves a value that indicates whether to stop the further processing or throw an exception in case of error.
--  **setSoftErrorsHandling(softErrorsHandling)** - Sets a value that indicates whether to stop the further processing or throw an exception in case of error.
--  **setProcessed(operationName)** - Marks work as done. In most cases, this method is unnecessary because it is easy to determine when work is already complete by checking the state of a context. However, if a processor performs complex work, it might be required to mark it as already done directly.
--  **clearProcessed(operationName)** - Marks work as not yet done.
--  **isProcessed(operationName)** - Checks whether work is already done.
--  **getSharedData()** - Retrieves an object used to share data between a primary action and actions executed as part of this action. Also, this object can be used to share data among different kinds of child actions.
--  **setSharedData(parameterBag)** - Sets an object used to share data.
--  **getNormalizationContext()** - Gets a context for response data normalization.
--  **getInfoRecords()** - Gets a list of records containing additional information about collections, e.g., the "has_more" flag in such a record indicates whether a collection has more records than was requested.
--  **setInfoRecords(infoRecords)** - Sets a list of records containing additional information about collections, e.g., the "has_more" flag in such a record indicates whether a collection has more records than was requested.
--  **addInfoRecord(key, value)** - Adds a record that contains an additional information about collections.
--  **addAssociationInfoRecords(propertyPath, infoRecords)** - Adds records that contain an additional information about a collection valued association.
--  **getNotResolvedIdentifiers()** - Gets all not resolved identifiers.
--  **addNotResolvedIdentifier(path, identifier)** - Adds an identifier that cannot be resolved.
--  **removeNotResolvedIdentifier(path)** - Removes an identifier that cannot be resolved.
+-  **getClassName()** --- Retrieves the fully-qualified class name of an entity.
+-  **setClassName(className)** --- Sets fully-qualified class name of an entity.
+-  **getRequestHeaders()** --- Retrieves the request headers.
+-  **setRequestHeaders(parameterBag)** --- Sets an object to use for accessing the request headers.
+-  **getResponseHeaders()** --- Retrieves the response headers.
+-  **setResponseHeaders(parameterBag)** --- Sets an object to use for accessing accessing the response headers.
+-  **getResponseStatusCode()** --- Retrieves the response status code.
+-  **setResponseStatusCode(statusCode)** --- Sets the response status code.
+-  **isSuccessResponse()** --- Indicates whether a result document represents a success response.
+-  **getResponseDocumentBuilder()** --- Retrieves the response document builder.
+-  **setResponseDocumentBuilder(documentBuilder)** --- Sets the response document builder.
+-  **getFilters()** ---  Retrieves a |list of filters| to set additional restrictions to a query used to retrieve the entity data.
+-  **getFilterValues()** --- Retrieves a collection of the |FilterValue| objects that contains all incoming filters.
+-  **setFilterValues(accessor)** --- Sets an |object| to use for accessing the incoming filters.
+-  **isMasterRequest()** --- Indicates whether the current action processes a master API request or is executed as part of another action.
+-  **setMasterRequest(master)** --- Sets a flag that indicates the current action processes a master API request or is executed as part of another action.
+-  **isCorsRequest()** --- Indicates whether the current request is |CORS| request.
+-  **setCorsRequest(cors)** --- Sets a flag indicates whether the current request is |CORS| request.
+-  **isHateoasEnabled()** --- Indicates whether |HATEOAS| is enabled.
+-  **setHateoas(flag)** --- Sets a flag indicates whether |HATEOAS| is enabled.
+-  **hasQuery()** --- Checks whether a query used to get the result data exists.
+-  **getQuery()** --- Retrieves a query used to get result data.
+-  **setQuery(query)** --- Sets a query used to get result data.
+-  **getCriteria()** --- Retrieves the |Criteria| object that sets additional restrictions to a query used to retrieve the entity data.
+-  **setCriteria(criteria)** --- Sets the |Criteria| object that sets additional restrictions to a query used to retrieve the result data.
+-  **getAllEntities(primaryOnly = false)** --- Gets all entities, primary and included ones, that are processing by an action.
+-  **hasErrors()** --- Checks whether any error happened when processing an action.
+-  **getErrors()** --- Retrieves all |errors| that occurred during the processing of an action.
+-  **addError(error)** --- Registers an |errors|.
+-  **resetErrors()** --- Removes all errors.
+-  **isSoftErrorsHandling()** --- Retrieves a value that indicates whether to stop the further processing or throw an exception in case of error.
+-  **setSoftErrorsHandling(softErrorsHandling)** --- Sets a value that indicates whether to stop the further processing or throw an exception in case of error.
+-  **setProcessed(operationName)** --- Marks work as done. In most cases, this method is unnecessary because it is easy to determine when work is already complete by checking the state of a context. However, if a processor performs complex work, it might be required to mark it as already done directly.
+-  **clearProcessed(operationName)** --- Marks work as not yet done.
+-  **isProcessed(operationName)** --- Checks whether work is already done.
+-  **getSharedData()** --- Retrieves an object used to share data between a primary action and actions executed as part of this action. Also, this object can be used to share data among different kinds of child actions.
+-  **setSharedData(parameterBag)** --- Sets an object used to share data.
+-  **getNormalizationContext()** --- Gets a context for response data normalization.
+-  **getInfoRecords()** --- Gets a list of records containing additional information about collections, e.g., the "has_more" flag in such a record indicates whether a collection has more records than was requested.
+-  **setInfoRecords(infoRecords)** --- Sets a list of records containing additional information about collections, e.g., the "has_more" flag in such a record indicates whether a collection has more records than was requested.
+-  **addInfoRecord(key, value)** --- Adds a record that contains an additional information about collections.
+-  **addAssociationInfoRecords(propertyPath, infoRecords)** --- Adds records that contain an additional information about a collection valued association.
+-  **getNotResolvedIdentifiers()** --- Gets all not resolved identifiers.
+-  **addNotResolvedIdentifier(path, identifier)** --- Adds an identifier that cannot be resolved.
+-  **removeNotResolvedIdentifier(path)** --- Removes an identifier that cannot be resolved.
 
 Entity configuration-related methods:
 
--  **getConfigExtras()** - Retrieves a list of |requests for configuration data|.
--  **setConfigExtras(extras)** - Sets a list of requests for configuration data.
--  **hasConfigExtra(extraName)** - Checks whether some configuration data is requested.
--  **getConfigExtra(extraName)** - Retrieves a request for configuration data by its name.
--  **addConfigExtra(extra)** - Adds a request for some configuration data.
--  **removeConfigExtra(extraName)** - Removes a request for some configuration data.
--  **getConfigSections()** - Retrieves names of all requested |configuration sections|.
--  **hasConfig()** - Checks whether a configuration of an entity exists.
--  **getConfig()** - Retrieves a |configuration of an entity|.
--  **setConfig(config)** - Sets a custom configuration of an entity. This method can be used to override the default configuration of an entity completely.
--  **hasConfigOfFilters(initialize)** - Checks whether an entity has a configuration of filters.
--  **getConfigOfFilters()** - Retrieves a |configuration of filters| for an entity.
--  **setConfigOfFilters(config)** - Sets a custom configuration of filters. This method can be used to override the default configuration of filters completely.
--  **hasConfigOfSorters(initialize)** - Checks whether an entity has a configuration of sorters.
--  **getConfigOfSorters()** - Retrieves a |configuration of sorters| for an entity.
--  **setConfigOfSorters(config)** - Sets a custom configuration of sorters. This method can be used to override the default configuration of sorters completely.
--  **hasConfigOf(configSection, initialize)** - Checks whether a configuration of the given section exists.
--  **getConfigOf(configSection)** - Retrieves a configuration from the given section.
--  **setConfigOf(configSection, config)** - Sets a configuration for the given section. This method can be used to override the default configuration for the given section completely.
+-  **getConfigExtras()** --- Retrieves a list of |requests for configuration data|.
+-  **setConfigExtras(extras)** --- Sets a list of requests for configuration data.
+-  **hasConfigExtra(extraName)** --- Checks whether some configuration data is requested.
+-  **getConfigExtra(extraName)** --- Retrieves a request for configuration data by its name.
+-  **addConfigExtra(extra)** --- Adds a request for some configuration data.
+-  **removeConfigExtra(extraName)** --- Removes a request for some configuration data.
+-  **getConfigSections()** --- Retrieves names of all requested |configuration sections|.
+-  **hasConfig()** --- Checks whether a configuration of an entity exists.
+-  **getConfig()** --- Retrieves a |configuration of an entity|.
+-  **setConfig(config)** --- Sets a custom configuration of an entity. This method can be used to override the default configuration of an entity completely.
+-  **hasConfigOfFilters(initialize)** --- Checks whether an entity has a configuration of filters.
+-  **getConfigOfFilters()** --- Retrieves a |configuration of filters| for an entity.
+-  **setConfigOfFilters(config)** --- Sets a custom configuration of filters. This method can be used to override the default configuration of filters completely.
+-  **hasConfigOfSorters(initialize)** --- Checks whether an entity has a configuration of sorters.
+-  **getConfigOfSorters()** --- Retrieves a |configuration of sorters| for an entity.
+-  **setConfigOfSorters(config)** --- Sets a custom configuration of sorters. This method can be used to override the default configuration of sorters completely.
+-  **hasConfigOf(configSection, initialize)** --- Checks whether a configuration of the given section exists.
+-  **getConfigOf(configSection)** --- Retrieves a configuration from the given section.
+-  **setConfigOf(configSection, config)** --- Sets a configuration for the given section. This method can be used to override the default configuration for the given section completely.
 
 Entity metadata-related methods:
 
--  **hasIdentifierFields()** - Checks whether metadata of an entity has at least one identifier field.
--  **getMetadataExtras()** - Retrieves a list of |requests for additional metadata info|.
--  **setMetadataExtras(extras)** - Sets a list of requests for additional metadata info.
--  **hasMetadataExtra()** - Checks whether some additional metadata info is requested.
--  **addMetadataExtra(extra)** - Adds a request for some additional metadata info.
--  **removeMetadataExtra(extraName)** - Removes a request for some additional metadata info.
--  **hasMetadata()** - Checks whether metadata of an entity exists.
--  **getMetadata()** - Retrieves |metadata| of an entity.
--  **setMetadata(metadata)** - Sets metadata of an entity. This method can be used to override the default metadata of an entity completely.
+-  **hasIdentifierFields()** --- Checks whether metadata of an entity has at least one identifier field.
+-  **getMetadataExtras()** --- Retrieves a list of |requests for additional metadata info|.
+-  **setMetadataExtras(extras)** --- Sets a list of requests for additional metadata info.
+-  **hasMetadataExtra()** --- Checks whether some additional metadata info is requested.
+-  **addMetadataExtra(extra)** --- Adds a request for some additional metadata info.
+-  **removeMetadataExtra(extraName)** --- Removes a request for some additional metadata info.
+-  **hasMetadata()** --- Checks whether metadata of an entity exists.
+-  **getMetadata()** --- Retrieves |metadata| of an entity.
+-  **setMetadata(metadata)** --- Sets metadata of an entity. This method can be used to override the default metadata of an entity completely.
 
 .. _web-api--subresourcecontext-class:
 
@@ -1232,33 +1232,33 @@ The |SubresourceContext| class is used as a superclass for the context classes o
 
 General methods:
 
--  **getParentClassName()** - Retrieves the fully-qualified class name of the parent entity.
--  **setParentClassName(className)** - Sets fully-qualified class name of the parent entity.
--  **getParentId()** - Retrieves an identifier of the parent entity.
--  **setParentId(parentId)** - Sets an identifier of the parent entity.
--  **getAssociationName()** - Retrieves an association name that represents a relationship.
--  **setAssociationName(associationName)** - Sets an association name that represents a relationship.
--  **isCollection()** - Indicates an association that represents the "to-many" or "to-one" relationship.
--  **setIsCollection(value)** - Sets a flag that indicates whether an association represents "to-many" or "to-one" relationship.
--  **hasParentEntity()** - Checks whether the parent entity exists in the context.
--  **getParentEntity()** - Retrieves the parent entity object.
--  **setParentEntity(parentEntity)** - Sets the parent entity object.
+-  **getParentClassName()** --- Retrieves the fully-qualified class name of the parent entity.
+-  **setParentClassName(className)** --- Sets fully-qualified class name of the parent entity.
+-  **getParentId()** --- Retrieves an identifier of the parent entity.
+-  **setParentId(parentId)** --- Sets an identifier of the parent entity.
+-  **getAssociationName()** --- Retrieves an association name that represents a relationship.
+-  **setAssociationName(associationName)** --- Sets an association name that represents a relationship.
+-  **isCollection()** --- Indicates an association that represents the "to-many" or "to-one" relationship.
+-  **setIsCollection(value)** --- Sets a flag that indicates whether an association represents "to-many" or "to-one" relationship.
+-  **hasParentEntity()** --- Checks whether the parent entity exists in the context.
+-  **getParentEntity()** --- Retrieves the parent entity object.
+-  **setParentEntity(parentEntity)** --- Sets the parent entity object.
 
 Parent entity configuration-related methods:
 
--  **getParentConfigExtras()** - Retrieves a |list of requests for configuration data| for the parent entity.
--  **setParentConfigExtras(extras)** - Sets a list of requests for configuration data for the parent entity.
--  **hasParentConfig()** - Checks whether a configuration of the parent entity exists.
--  **getParentConfig()** - Retrieves a |configuration of the parent entity|
--  **setParentConfig(config)** - Sets a custom configuration of the parent entity. This method can be used to completely override the default configuration of the parent entity.
+-  **getParentConfigExtras()** --- Retrieves a |list of requests for configuration data| for the parent entity.
+-  **setParentConfigExtras(extras)** --- Sets a list of requests for configuration data for the parent entity.
+-  **hasParentConfig()** --- Checks whether a configuration of the parent entity exists.
+-  **getParentConfig()** --- Retrieves a |configuration of the parent entity|
+-  **setParentConfig(config)** --- Sets a custom configuration of the parent entity. This method can be used to completely override the default configuration of the parent entity.
 
 Parent entity metadata-related methods:
 
--  **getParentMetadataExtras()** - Retrieves a list of |requests for additional metadata info| for the parent entity.
--  **setParentMetadataExtras(extras)** - Sets a list of requests for additional metadata info for the parent entity.
--  **hasParentMetadata()** - Checks whether metadata of the parent entity exists.
--  **getParentMetadata()** - Retrieves |metadata of the parent entity|.
--  **setParentMetadata(metadata)** - Sets metadata of the parent entity. This method can be used to override the default metadata of the parent entity completely.
+-  **getParentMetadataExtras()** --- Retrieves a list of |requests for additional metadata info| for the parent entity.
+-  **setParentMetadataExtras(extras)** --- Sets a list of requests for additional metadata info for the parent entity.
+-  **hasParentMetadata()** --- Checks whether metadata of the parent entity exists.
+-  **getParentMetadata()** --- Retrieves |metadata of the parent entity|.
+-  **setParentMetadata(metadata)** --- Sets metadata of the parent entity. This method can be used to override the default metadata of the parent entity completely.
 
 .. _web-api--actions-create:
 
@@ -1267,8 +1267,8 @@ Creating a New Action
 
 To create a new action, to create two classes:
 
--  **context** - This class represents a context in the scope of which an action is executed. An instance of this class is used to store the input and output data and share data between processors. This class must extend |ApiContext|. Depending on your needs, you can use another classes derived from |ApiContext|, for example |Context|, |SingleItemContext| or |ListContext|.
--  **main processor** - This class is the main entry point for an action and is responsible for creating an instance of the context class and executing all worker processors. This class must extend |ActionProcessor| and implement the ``createContextObject`` method. Depending on your needs, you can use other classes derived from |ActionProcessor|, for example, |NormalizeResultActionProcessor|.
+-  **context** --- This class represents a context in the scope of which an action is executed. An instance of this class is used to store the input and output data and share data between processors. This class must extend |ApiContext|. Depending on your needs, you can use another classes derived from |ApiContext|, for example |Context|, |SingleItemContext| or |ListContext|.
+-  **main processor** --- This class is the main entry point for an action and is responsible for creating an instance of the context class and executing all worker processors. This class must extend |ActionProcessor| and implement the ``createContextObject`` method. Depending on your needs, you can use other classes derived from |ActionProcessor|, for example, |NormalizeResultActionProcessor|.
 
 .. code-block:: php
 

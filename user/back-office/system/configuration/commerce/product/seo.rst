@@ -19,19 +19,19 @@ To manage these settings:
 3. To customize the option configuration, clear the **Use Default** checkbox next to the option first.
 4. The following options are available:
 
-   * **Exclude Current Page in Breadcrumbs on Product View** -- Removes the product name from the end of the breadcrumb trail on product view pages.
+   * **Exclude Current Page in Breadcrumbs on Product View** --- Removes the product name from the end of the breadcrumb trail on product view pages.
 
    |
 
    .. image:: /user/img/system/config_commerce/product/seo-breadcrumb-product-page.png
 
-   * **Exclude Current Page in Breadcrumbs on All Pages** -- Removes the category from the breadcrumb trail on all pages.
+   * **Exclude Current Page in Breadcrumbs on All Pages** --- Removes the category from the breadcrumb trail on all pages.
 
    |
 
    .. image:: /user/img/system/config_commerce/product/seo-breadcrumb-product-listing.png
 
-   * **Hides the breadcrumbs block entirely when it contains a single item** -- Hides the breadcrumbs block entirely when it contains a single item.
+   * **Hides the breadcrumbs block entirely when it contains a single item** --- Hides the breadcrumbs block entirely when it contains a single item.
 
    |
 

@@ -100,7 +100,7 @@ The benefits are the following:
 **Example of createDelayed and runDelayed Usage**
 
 The processor subscribes to ``DoBigJobTopic`` and runs a unique big
-job (the name of the job is ``DoBigJobTopic::getName()`` - the same as the topic
+job (the name of the job is ``DoBigJobTopic::getName()`` --- the same as the topic
 name so it will not be possible to run another big job at the same time).
 The processor creates a set of delayed jobs, each of them sends
 ``DoSmallJobTopic`` message.

@@ -149,11 +149,11 @@ development adopted for Oro needs.
    * Modules that fully support Chaplin architecture are placed in the ``app`` folder.
    * There are five folders inside the "app" directory, one for each module with the following roles:
 
-     * ``components`` -- page components, described in the :ref:`Page Component <frontend-architecture-page-component>` section
-     * ``controllers`` -- Chaplin controllers. Currently, ``PageController`` is the only controller in the application
-     * ``models`` -- a folder for Chaplin (Backbone) models and collections; modules inside the folder may be grouped by their functionality
-     * ``modules`` -- app modules, described in the :ref:`App Modules <frontend-architecture-app-module>` section
-     * ``views`` -- a common folder for Chaplin views and collection views; the files inside the folder are grouped by their functionality
+     * ``components`` --- page components, described in the :ref:`Page Component <frontend-architecture-page-component>` section
+     * ``controllers`` --- Chaplin controllers. Currently, ``PageController`` is the only controller in the application
+     * ``models`` --- a folder for Chaplin (Backbone) models and collections; modules inside the folder may be grouped by their functionality
+     * ``modules`` --- app modules, described in the :ref:`App Modules <frontend-architecture-app-module>` section
+     * ``views`` --- a common folder for Chaplin views and collection views; the files inside the folder are grouped by their functionality
 
    * each file name ends with a suffix that corresponds to its type (e.g., ``-view.js``, ``-model.js``, ``-component.js``)
    * names of all the files and folders can contain only lowercase alphabetic symbols with the minus (``-``) symbol as a word separator

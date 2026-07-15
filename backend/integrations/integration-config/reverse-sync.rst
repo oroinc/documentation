@@ -48,7 +48,7 @@ Processor and writer could be initialized in your bundle in **service.yaml**.
     YOUR_REVERSE_WRITER:
         class:Acme\Bundle\DemoBundle\Writer\YourReverseWriter
 
-Where ``YOUR_PROCESSOR.class`` - should implement Oro\\Bundle\\ImportExportBundle\\Processor\\ProcessorInterface
-and ``YOUR_REVERSE_WRITER.class`` - should implement Oro\\Bundle\\ImportExportBundle\\Processor\\WriterInterface
+Where ``YOUR_PROCESSOR.class`` --- should implement Oro\\Bundle\\ImportExportBundle\\Processor\\ProcessorInterface
+and ``YOUR_REVERSE_WRITER.class`` --- should implement Oro\\Bundle\\ImportExportBundle\\Processor\\WriterInterface
 
 Implementation of those classes is platform-specific, so there is no abstraction layer.

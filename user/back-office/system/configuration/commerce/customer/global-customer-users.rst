@@ -79,7 +79,7 @@ If the application was installed without demo data, the banner is disabled. Conf
      .. image:: /user/img/system/config_commerce/cookie_banner/text-language-button.png
         :alt: Text language button
 
-   * **Landing Page** - Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
+   * **Landing Page** --- Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
 
      .. image:: /user/img/system/config_commerce/cookie_banner/cookie-banner-landing-page.png
         :alt: Text language button

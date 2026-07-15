@@ -38,8 +38,8 @@ selected **block view**.
 
 It contains the following blocks:
 
--  **Customize the following blocks in twig templates** - twig block name suggestions for the selected layout block
--  **Variables** - variables sent from layout to the template
+-  **Customize the following blocks in twig templates** --- twig block name suggestions for the selected layout block
+-  **Variables** --- variables sent from layout to the template
 
 
 To disable the **Layout Tree** in the developer toolbar, navigate to
