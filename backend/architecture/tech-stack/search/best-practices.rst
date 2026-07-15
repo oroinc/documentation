@@ -99,13 +99,13 @@ How to Work with Big Data
 
 Below are recommendations for working with the search index with large amounts of data (1 million entities and more).
 
-* **Run indexation in parallel** - split the scope of the indexed entities into small chunks (1000-10000 entities) and ensure enough consumers to process them in parallel.
-* **Use Elasticsearch engine** - it is faster and performs much better than the ORM search engine in case of considerable data.
-* **Use language optimization** - if you know what languages are used in your application, then you can optimize the index structure and data according to these languages; see the list of Elasticsearch language analyzers.
-* **Keep the search index on a separate server** - this way, it will not be affected by the main relational DB load.
-* **Use Elasticseach cluster if needed** - if your index is too big to keep on one server and/or you want to balance the search index load between several servers, then you can use Elasticseach cluster.
-* **Increase RAM** - the recommended amount of RAM for the search index is half the index size or more, i.e., if you have 50GB of index data, it is recommended to have 25GB+ of RAM.
-* **Use SSD** - this type of disk provides faster read/write access than HDD and allows faster processing of parts of the search index data.
+* **Run indexation in parallel** --- split the scope of the indexed entities into small chunks (1000-10000 entities) and ensure enough consumers to process them in parallel.
+* **Use Elasticsearch engine** --- it is faster and performs much better than the ORM search engine in case of considerable data.
+* **Use language optimization** --- if you know what languages are used in your application, then you can optimize the index structure and data according to these languages; see the list of Elasticsearch language analyzers.
+* **Keep the search index on a separate server** --- this way, it will not be affected by the main relational DB load.
+* **Use Elasticseach cluster if needed** --- if your index is too big to keep on one server and/or you want to balance the search index load between several servers, then you can use Elasticseach cluster.
+* **Increase RAM** --- the recommended amount of RAM for the search index is half the index size or more, i.e., if you have 50GB of index data, it is recommended to have 25GB+ of RAM.
+* **Use SSD** --- this type of disk provides faster read/write access than HDD and allows faster processing of parts of the search index data.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

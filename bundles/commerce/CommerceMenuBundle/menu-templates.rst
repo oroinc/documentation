@@ -32,9 +32,9 @@ The rendering mechanism of menu items according to their menu templates consists
 
 ``Oro\Bundle\CommerceMenuBundle\Layout\MenuItemRenderer`` takes the layout updates found under the ``Resources/views/layouts/%THEME%/menu_template/`` and ``Resources/views/layouts/%THEME%/menu_template/%MENU_TEMPLATE_NAME%/`` directories and renders them in a separate layout context. Additionally to the common data, the menu item layout context contains the following:
 
-1. Context variable ``menu_template`` - the name of the menu template being used for rendering a menu item. Can be accessed in the layout update via `=context["menu_template"]` expression.
-2. Context variable ``menu_item_name`` - the name of the menu item being rendered. Can be accessed in the layout update via `=context["menu_item_name"]` expression.
-3. Context data variable ``menu_item`` - the menu item object (``\Knp\Menu\ItemInterface``) being rendered. Can be accessed in the layout update via `=data["menu_item"]` expression.
+1. Context variable ``menu_template`` --- the name of the menu template being used for rendering a menu item. Can be accessed in the layout update via `=context["menu_template"]` expression.
+2. Context variable ``menu_item_name`` --- the name of the menu item being rendered. Can be accessed in the layout update via `=context["menu_item_name"]` expression.
+3. Context data variable ``menu_item`` --- the menu item object (``\Knp\Menu\ItemInterface``) being rendered. Can be accessed in the layout update via `=data["menu_item"]` expression.
 
 .. note:: Having a separate layout context while rendering a menu item means that the rendering process is isolated - its layout updates are not affected by layout updates from the page layout context.
 

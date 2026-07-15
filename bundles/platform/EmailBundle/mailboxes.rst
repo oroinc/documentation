@@ -34,7 +34,7 @@ Implementation
 Entities
 ^^^^^^^^
 
-- **Mailbox** - Represents individual mailboxes. This entity implements **EmailOwnerInterface** so email addresses can be owned by it.
+- **Mailbox** --- Represents individual mailboxes. This entity implements **EmailOwnerInterface** so email addresses can be owned by it.
 
   - label (mailbox label)
   - email (mailbox email address)
@@ -43,7 +43,7 @@ Entities
   - authorizedUsers (list of users able to view mailbox emails)
   - authorizedRoles (list of roles able to view mailbox emails)
 
-- **MailboxProcessSettings** - Represents mailbox process settings. This is an entity that should be extended to represent any added process and store its settings (this entity uses single table inheritance).
+- **MailboxProcessSettings** --- Represents mailbox process settings. This is an entity that should be extended to represent any added process and store its settings (this entity uses single table inheritance).
 
   - id
   - type

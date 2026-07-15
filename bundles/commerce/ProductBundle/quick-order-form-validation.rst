@@ -10,17 +10,17 @@ Validation Architecture
 
 The validation system is built around three main interfaces:
 
-1. **ComponentProcessorInterface** - Defines the contract for component processors.
-2. **ComponentProcessorRegistry** - Manages available component processors.
-3. **QuickAddCollectionValidator** - Centralizes validation logic for quick add collections.
+1. **ComponentProcessorInterface** --- Defines the contract for component processors.
+2. **ComponentProcessorRegistry** --- Manages available component processors.
+3. **QuickAddCollectionValidator** --- Centralizes validation logic for quick add collections.
 
 Component-Specific Validation Groups
 ------------------------------------
 
 The system uses validation groups that correspond to the ``processor_name`` option from the service configuration tags:
 
-- ``oro_shopping_list_to_checkout_quick_add_processor`` - processor_name for starting checkout
-- ``oro_rfp_quick_add_processor`` - processor_name for starting RFQ
+- ``oro_shopping_list_to_checkout_quick_add_processor`` --- processor_name for starting checkout
+- ``oro_rfp_quick_add_processor`` --- processor_name for starting RFQ
 
 These names come from the ``processor_name`` option in the ``oro_product.quick_add_processor`` tag:
 

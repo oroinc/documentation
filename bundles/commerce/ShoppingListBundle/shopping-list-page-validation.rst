@@ -33,9 +33,9 @@ Two validation groups are used:
 
 The system evaluates every shopping list line item against both groups to determine its severity status:
 
-1. **Error** - defines the contract for component processors.
-2. **Warning** - only one validation group fails (the item is invalid for either Checkout or RFQ, but not both).
-3. **Valid** - both groups pass successfully.
+1. **Error** --- defines the contract for component processors.
+2. **Warning** --- only one validation group fails (the item is invalid for either Checkout or RFQ, but not both).
+3. **Valid** --- both groups pass successfully.
 
 To improve user experience, all line items in the shopping list are sorted by validation severity:
 
@@ -48,16 +48,16 @@ Validation Group Resolvers
 
 The validation groups are determined dynamically through validation group resolvers that implement ``ShoppingListValidationGroupResolverInterface``:
 
-- ``ShoppingListToCheckoutValidationGroupResolver`` - determines if checkout validation group is applicable
-- ``ShoppingListToRequestQuoteValidationGroupResolver`` - determines if RFQ validation group is applicable
+- ``ShoppingListToCheckoutValidationGroupResolver`` --- determines if checkout validation group is applicable
+- ``ShoppingListToRequestQuoteValidationGroupResolver`` --- determines if RFQ validation group is applicable
 
 The ``ShoppingListValidationGroupsProvider`` aggregates all applicable validation groups from registered resolvers.
 
 Each resolver implements three methods:
 
-- ``getType()`` - returns a unique type identifier for the resolver
-- ``isApplicable()`` - determines if the resolver should be used based on current context (ACL, feature toggles, etc.)
-- ``getValidationGroupName()`` - returns the validation group name to use
+- ``getType()`` --- returns a unique type identifier for the resolver
+- ``isApplicable()`` --- determines if the resolver should be used based on current context (ACL, feature toggles, etc.)
+- ``getValidationGroupName()`` --- returns the validation group name to use
 
 Service Configuration
 ---------------------
@@ -105,13 +105,13 @@ Handling Invalid Line Items
 
 When invalid items are detected, users can choose one of two actions:
 
-- **Save For Later & Proceed** - moves invalid items to "Saved for Later" section (requires ``saved_for_later`` feature toggle)
-- **Delete All & Proceed** - permanently removes invalid items from the shopping list
+- **Save For Later & Proceed** --- moves invalid items to "Saved for Later" section (requires ``saved_for_later`` feature toggle)
+- **Delete All & Proceed** --- permanently removes invalid items from the shopping list
 
 The action is determined by the ``action`` parameter passed to ``AjaxShoppingListErrorsModalController``:
 
-- ``save_for_later`` - saves items for later
-- ``delete`` - deletes items
+- ``save_for_later`` --- saves items for later
+- ``delete`` --- deletes items
 
 The controller automatically selects the appropriate action based on feature toggle availability.
 

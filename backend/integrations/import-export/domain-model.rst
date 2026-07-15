@@ -78,7 +78,7 @@ This class should be used to run import/export operations. It encapsulates all i
 
 **Methods:**
 
-* **executeJob(jobType, jobName, configuration)** - executes a job and returns the job result data.
+* **executeJob(jobType, jobName, configuration)** --- executes a job and returns the job result data.
 
 The *jobType* and *jobName* parameters of the executeJob method correspond to the OroBatchBundle jobs configuration.
 The *configuration* parameter is a specific configuration of a job obtained by Context. Reader, Processor, and Writer have access to Context and can also acquire their configuration from it.
@@ -190,12 +190,12 @@ The CSV file reader reads the data from a CSV file. The result of the operation 
 
 **Configuration Options**
 
-* **filePath** - path to a source file;
-* **delimiter** - a CSV delimiter symbol (default ,);
-* **enclosure** - a CSV enclosure symbol (default ");
-* **escape** - a CSV escape symbol (default \\);
-* **firstLineIsHeader** - a flag that indicates that the first line of the CSV file is a header (default true);
-* **header** - a custom header.
+* **filePath** --- path to a source file;
+* **delimiter** --- a CSV delimiter symbol (default ,);
+* **enclosure** --- a CSV enclosure symbol (default ");
+* **escape** --- a CSV escape symbol (default \\);
+* **firstLineIsHeader** --- a flag that indicates that the first line of the CSV file is a header (default true);
+* **header** --- a custom header.
 
 Entity Reader
 ^^^^^^^^^^^^^
@@ -210,9 +210,9 @@ The entity reader reads entities using Doctrine. The Oro\\Bundle\\BatchBundle\\O
 
 **Configuration Options**
 
-* **entityName** - the name or class name of the entity;
-* **queryBuilder** - an instance of custom Doctrine\\ORM\\QueryBuilder;
-* **query** - an instance of custom Doctrine\\ORM\\Query.
+* **entityName** --- the name or class name of the entity;
+* **queryBuilder** --- an instance of custom Doctrine\\ORM\\QueryBuilder;
+* **query** --- an instance of custom Doctrine\\ORM\\Query.
 
 One option is required, the options are mutually exclusive.
 
@@ -229,7 +229,7 @@ The fixture reader reads the import template data for the corresponding entity.
 
 **Configuration Options:**
 
-* **entityName** - the name or class name of the entity for which the fixture is loaded.
+* **entityName** --- the name or class name of the entity for which the fixture is loaded.
 
 Processor
 ---------
@@ -247,9 +247,9 @@ The context aware processor is an interface used to work with a context inside p
 
 **Methods:**
 
-* **setImportExportContext(context)** - a context setter;
+* **setImportExportContext(context)** --- a context setter;
 
-* **process(item)** - a process of the import/export operation. The item parameter comes from the reader, it can be an array read from a CSV file or one of the entity queries from Doctrine.
+* **process(item)** --- a process of the import/export operation. The item parameter comes from the reader, it can be an array read from a CSV file or one of the entity queries from Doctrine.
 
 Entity Name Aware Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -264,7 +264,7 @@ EntityNameAwareInterface is an interface used to work with an entity class insid
 
 **Methods:**
 
-* **setEntityName(entityName)** - an entity name setter.
+* **setEntityName(entityName)** --- an entity name setter.
 
 Entity Name Aware Processor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -279,9 +279,9 @@ EntityNameAwareProcessor is an interface used to work with an entity class insid
 
 **Methods:**
 
-* **setEntityName(entityName)** - an entity name setter;
+* **setEntityName(entityName)** --- an entity name setter;
 
-* **process(item)** - a process of the import/export operation. The item parameter comes from the reader, it can be an array read from a CSV file or one of the entity queries from Doctrine.
+* **process(item)** --- a process of the import/export operation. The item parameter comes from the reader, it can be an array read from a CSV file or one of the entity queries from Doctrine.
 
 Processor Interface
 ^^^^^^^^^^^^^^^^^^^
@@ -296,7 +296,7 @@ ProcessorInterface is an interface for a class that is processing the import/exp
 
 **Methods:**
 
-* **process(item)** - a process of the import/export operation. The item parameter comes from the reader, it can be an array read from a CSV file or one of the entity queries from Doctrine.
+* **process(item)** --- a process of the import/export operation. The item parameter comes from the reader, it can be an array read from a CSV file or one of the entity queries from Doctrine.
 
 Import Processor
 ^^^^^^^^^^^^^^^^
@@ -307,14 +307,14 @@ Oro\\Bundle\\ImportExportBundle\\Processor\\ImportProcessor
 
 **Classes:**
 
-* **Context** - manages the import configuration and its results;
-* **Serializer** - deserializes the output of Data Converter to the entity object;
-* **Data Converter** - converts the array of a reader format to the array of a serializer format;
-* **Strategy** - performs a main logic of the import with a deserialized entity (Add/Update/Replace/Delete entities).
+* **Context** --- manages the import configuration and its results;
+* **Serializer** --- deserializes the output of Data Converter to the entity object;
+* **Data Converter** --- converts the array of a reader format to the array of a serializer format;
+* **Strategy** --- performs a main logic of the import with a deserialized entity (Add/Update/Replace/Delete entities).
 
 **Options:**
 
-* **Class Name** - an imported entity class.
+* **Class Name** --- an imported entity class.
 
 Export Processor
 ^^^^^^^^^^^^^^^^
@@ -325,13 +325,13 @@ Oro\\Bundle\\ImportExportBundle\\Processor\\ExportProcessor
 
 **Classes:**
 
-* **Context** - manages the export configuration and its results;
-* **Serializer** - serializes the input entity to an array/scalar representation;
-* **Data Converter** - converts a serialized array to a required format.
+* **Context** --- manages the export configuration and its results;
+* **Serializer** --- serializes the input entity to an array/scalar representation;
+* **Data Converter** --- converts a serialized array to a required format.
 
 **Options:**
 
-* **Class Name** - an exported entity class.
+* **Class Name** --- an exported entity class.
 
 Processor Registry
 ^^^^^^^^^^^^^^^^^^
@@ -356,13 +356,13 @@ ProcessorRegistry provides a storage of all registered processors declared by th
 
 **Methods:**
 
-* **registerProcessor(ProcessorInterface, type, entityName, alias)** - registers a processor using the input parameters;
-* **unregisterProcessor(type, entityName, alias)** - unregisters the processor using the input parameters;
-* **hasProcessor(type, alias)** - checks that the processor is registered;
-* **getProcessor(type, alias)** - gets the registered processor;
-* **getProcessorsByEntity(type, entityName)** - gets the registered processor by an entity. The import can have several processors for an entity, for example, one processor for the "Add and Replace" import behavior and the other for the "Delete" import behavior;
-* **getProcessorAliasesByEntity(type, entityName)** - gets all processors aliases by a type and entity name;
-* **getProcessorEntityName(type, alias)** - gets an entity name by the processor type and alias.
+* **registerProcessor(ProcessorInterface, type, entityName, alias)** --- registers a processor using the input parameters;
+* **unregisterProcessor(type, entityName, alias)** --- unregisters the processor using the input parameters;
+* **hasProcessor(type, alias)** --- checks that the processor is registered;
+* **getProcessor(type, alias)** --- gets the registered processor;
+* **getProcessorsByEntity(type, entityName)** --- gets the registered processor by an entity. The import can have several processors for an entity, for example, one processor for the "Add and Replace" import behavior and the other for the "Delete" import behavior;
+* **getProcessorAliasesByEntity(type, entityName)** --- gets all processors aliases by a type and entity name;
+* **getProcessorEntityName(type, alias)** --- gets an entity name by the processor type and alias.
 
 Registry Delegate Processor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -377,14 +377,14 @@ RegistryDelegateProcessor uses the registry processor and configuration options 
 
 **Classes:**
 
-* **Processor Registry** - a processor storage;
-* **Context Registry** - a context storage;
-* **Step Execution** - a batch domain object representation of the step execution.
+* **Processor Registry** --- a processor storage;
+* **Context Registry** --- a context storage;
+* **Step Execution** --- a batch domain object representation of the step execution.
 
 **Options:**
 
-* **delegateType** - delegates a type (import, import_validation, export, export_template);
-* **processorAlias** - an alias of a processor in Processor Registry.
+* **delegateType** --- delegates a type (import, import_validation, export, export_template);
+* **processorAlias** --- an alias of a processor in Processor Registry.
 
 Writer
 ------
@@ -453,8 +453,8 @@ AbstractTableDataConverter is an abstract class that is responsible for headers 
 
 **Methods:**
 
-* **convertToExportFormat(exportedRecord, skipNullValues)** - converts exportedRecord to the format expected by its destination;
-* **convertToImportFormat(importedRecord, skipNullValues)** - converts importedRecord to the format which is used to deserialize the entity from the array.
+* **convertToExportFormat(exportedRecord, skipNullValues)** --- converts exportedRecord to the format expected by its destination;
+* **convertToImportFormat(importedRecord, skipNullValues)** --- converts importedRecord to the format which is used to deserialize the entity from the array.
 
 Configurable Table Data Converter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -469,17 +469,17 @@ ConfigurableTableDataConverter is a class that is responsible for the data conve
 
 **Methods:**
 
-* **convertToExportFormat(exportedRecord, skipNullValues)** - converts exportedRecord to the format expected by its destination;
-* **convertToImportFormat(importedRecord, skipNullValues)** - converts importedRecord to the format which is used to deserialize the entity from the array.
+* **convertToExportFormat(exportedRecord, skipNullValues)** --- converts exportedRecord to the format expected by its destination;
+* **convertToImportFormat(importedRecord, skipNullValues)** --- converts importedRecord to the format which is used to deserialize the entity from the array.
 
 **Classes:**
 
-* **FieldHelper** - a helper that works with the entity configuration;
-* **RelationCalculator** - a class that calculates a relation collection size.
+* **FieldHelper** --- a helper that works with the entity configuration;
+* **RelationCalculator** --- a class that calculates a relation collection size.
 
 **Options:**
 
-* **entityClass** - an entity class.
+* **entityClass** --- an entity class.
 
 Data Converter Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -494,8 +494,8 @@ DataConverterInterface is an interface for a class that is responsible for conve
 
 **Methods:**
 
-* **convertToExportFormat(exportedRecord, skipNullValues)** - converts exportedRecord to the format expected by its destination;
-* **convertToImportFormat(importedRecord, skipNullValues)** - converts importedRecord to the format which is used to deserialize the entity from the array.
+* **convertToExportFormat(exportedRecord, skipNullValues)** --- converts exportedRecord to the format expected by its destination;
+* **convertToImportFormat(importedRecord, skipNullValues)** --- converts importedRecord to the format which is used to deserialize the entity from the array.
 
 Default Data Converter
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -529,8 +529,8 @@ DefaultDataConverter is applicable in simple cases of import/export. It can conv
 
 **Methods:**
 
-* **convertToExportFormat(exportedRecord, skipNullValues)** - converts the exportedRecord array to a one-dimensional array;
-* **convertToImportFormat(importedRecord, skipNullValues)** - converts the importedRecord array to a multi-dimensional array.
+* **convertToExportFormat(exportedRecord, skipNullValues)** --- converts the exportedRecord array to a one-dimensional array;
+* **convertToImportFormat(importedRecord, skipNullValues)** --- converts the importedRecord array to a multi-dimensional array.
 
 Query Builder Aware Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -545,7 +545,7 @@ QueryBuilderAwareInterface is used to specify whether need to set query builder 
 
 **Methods:**
 
-* **setQueryBuilder(queryBuilder)** - sets a query builder to the converter.
+* **setQueryBuilder(queryBuilder)** --- sets a query builder to the converter.
 
 Relation Calculator
 ^^^^^^^^^^^^^^^^^^^
@@ -560,12 +560,12 @@ RelationCalculator is a class used to count the collections and countable items.
 
 **Methods:**
 
-* **getMaxRelatedEntities(entityName, fieldName)** - counts the entities in relations.
+* **getMaxRelatedEntities(entityName, fieldName)** --- counts the entities in relations.
 
 **Classes:**
 
-* **ManagerRegistry** - contracts covering object managers for a Doctrine persistence layer ManagerRegistry class to implement.
-* **FieldHelper** - a helper that works with the entity configuration.
+* **ManagerRegistry** --- contracts covering object managers for a Doctrine persistence layer ManagerRegistry class to implement.
+* **FieldHelper** --- a helper that works with the entity configuration.
 
 Relation Calculator Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -580,7 +580,7 @@ RelationCalculatorInterface is an interface used to count the collections and co
 
 **Methods:**
 
-* **getMaxRelatedEntities(entityName, fieldName)** - counts the entities in relations.
+* **getMaxRelatedEntities(entityName, fieldName)** --- counts the entities in relations.
 
 Template Fixture Relation Calculator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -595,12 +595,12 @@ TemplateFixtureRelationCalculator is a class used to count the collections and c
 
 **Methods:**
 
-* **getMaxRelatedEntities(entityName, fieldName)** - counts the entities in relations.
+* **getMaxRelatedEntities(entityName, fieldName)** --- counts the entities in relations.
 
 **Classes:**
 
-* **TemplateManager** - fixture storage;
-* **FieldHelper** - a helper that works with the entity configuration.
+* **TemplateManager** --- fixture storage;
+* **FieldHelper** --- a helper that works with the entity configuration.
 
 Strategy
 --------
@@ -618,7 +618,7 @@ StrategyInterface is an interface for a class that is responsible for performing
 
 **Methods:**
 
-* **process(entity)** - processes the entity with a specific logic.
+* **process(entity)** --- processes the entity with a specific logic.
 
 Import Strategy Helper
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -633,9 +633,9 @@ A helper class that is used by a specific strategy to perform some generic opera
 
 **Methods:**
 
-* **importEntity(basicEntity, importedEntity, excludedProperties)** - imports values of basicEntity to importedEntity using the Doctrine metadata;
-* **validateEntity(entity)** - gets a list of validation errors;
-* **addValidationErrors(validationErrors, ContextInterface, errorPrefix)** - adds validation errors to Context.
+* **importEntity(basicEntity, importedEntity, excludedProperties)** --- imports values of basicEntity to importedEntity using the Doctrine metadata;
+* **validateEntity(entity)** --- gets a list of validation errors;
+* **addValidationErrors(validationErrors, ContextInterface, errorPrefix)** --- adds validation errors to Context.
 
 
 Configurable Add Or Replace Strategy
@@ -650,17 +650,17 @@ The default strategy is used for the import. It updates the existing entities or
 
 **Methods:**
 
-* **process(entity)** - processes the entity with a specific logic.
+* **process(entity)** --- processes the entity with a specific logic.
 
 **Classes:**
 
-* **ContextInterface** - an execution context;
-* **ImportStrategyHelper** - a strategy helper for generic import operations;
-* **FieldHelper** - a helper that works with the entity configuration.
+* **ContextInterface** --- an execution context;
+* **ImportStrategyHelper** --- a strategy helper for generic import operations;
+* **FieldHelper** --- a helper that works with the entity configuration.
 
 **Options:**
 
-* **entityName** - an entity class.
+* **entityName** --- an entity class.
 
 Serializer
 ----------
@@ -717,8 +717,8 @@ AbstractContextModeAwareNormalizer is an abstract normalizer that manages the av
 
 **Methods:**
 
-* **normalize(object, format, context)** - a method used to convert objects to arrays;
-* **denormalize(data, class, format, context)** - a method used to convert arrays to the `class` instance.
+* **normalize(object, format, context)** --- a method used to convert objects to arrays;
+* **denormalize(data, class, format, context)** --- a method used to convert arrays to the `class` instance.
 
 Collection Normalizer
 ^^^^^^^^^^^^^^^^^^^^^
@@ -733,10 +733,10 @@ Collection normalizer.
 
 **Methods:**
 
-* **normalize(object, format, context)** - a method used to convert objects to arrays;
-* **denormalize(data, class, format, context)** - a method used to convert arrays to the `class` instance;
-* **supportsNormalization(data, format, context)** - a method used to check a normalization support;
-* **supportsDenormalization(data, format, context)** - a method used to check a denormalization support.
+* **normalize(object, format, context)** --- a method used to convert objects to arrays;
+* **denormalize(data, class, format, context)** --- a method used to convert arrays to the `class` instance;
+* **supportsNormalization(data, format, context)** --- a method used to check a normalization support;
+* **supportsDenormalization(data, format, context)** --- a method used to check a denormalization support.
 
 Configurable Entity Normalizer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -751,15 +751,15 @@ Entity normalizer manages the entity normalization and denormalization and resol
 
 **Methods:**
 
-* **normalize(object, format, context)** - a method used to convert objects to arrays;
-* **denormalize(data, class, format, context)** - a method used to convert arrays to the `class` instance;
-* **supportsNormalization(data, format, context)** - a method used to check a normalization support;
-* **supportsDenormalization(data, format, context)** - a method used to check a denormalization support;
-* **setSerializer(serializer)** - a serializer setter from SerializerAwareInterface.
+* **normalize(object, format, context)** --- a method used to convert objects to arrays;
+* **denormalize(data, class, format, context)** --- a method used to convert arrays to the `class` instance;
+* **supportsNormalization(data, format, context)** --- a method used to check a normalization support;
+* **supportsDenormalization(data, format, context)** --- a method used to check a denormalization support;
+* **setSerializer(serializer)** --- a serializer setter from SerializerAwareInterface.
 
 **Classes:**
 
-* **FieldHelper** - a helper that works with the entity configuration.
+* **FieldHelper** --- a helper that works with the entity configuration.
 
 DateTime Normalizer
 ^^^^^^^^^^^^^^^^^^^
@@ -774,10 +774,10 @@ DateTimeNormalizer is a normalizer for the DateTime objects.
 
 **Methods:**
 
-* **normalize(object, format, context)** - a method used to convert objects to arrays;
-* **denormalize(data, class, format, context)** - a method used to convert arrays to the `class` instance;
-* **supportsNormalization(data, format, context)** - a method used to check a normalization support;
-* **supportsDenormalization(data, format, context)** - a method used to check a denormalization support.
+* **normalize(object, format, context)** --- a method used to convert objects to arrays;
+* **denormalize(data, class, format, context)** --- a method used to convert arrays to the `class` instance;
+* **supportsNormalization(data, format, context)** --- a method used to check a normalization support;
+* **supportsDenormalization(data, format, context)** --- a method used to check a denormalization support.
 
 Denormalizer Interface
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -792,7 +792,7 @@ DenormalizerInterface extends `Symfony\\Component\\Serializer\\Normalizer\\Denor
 
 **Methods:**
 
-* **supportsDenormalization(data, format, context)** - a method used to check a denormalization support.
+* **supportsDenormalization(data, format, context)** --- a method used to check a denormalization support.
 
 Normalizer Interface
 ^^^^^^^^^^^^^^^^^^^^
@@ -807,7 +807,7 @@ NormalizerInterface extends `Symfony\\Component\\Serializer\\Normalizer\\Normali
 
 **Methods:**
 
-* **supportsNormalization(data, format, context)** - a method used to check a normalization support.
+* **supportsNormalization(data, format, context)** --- a method used to check a normalization support.
 
 TemplateFixture
 ---------------
@@ -827,7 +827,7 @@ TemplateFixtureInterface is an interface for the import fixtures.
 
 **Methods:**
 
-* **getData()** - returns the fixture data.
+* **getData()** --- returns the fixture data.
 
 Template Fixture Registry
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -842,9 +842,9 @@ Template for a fixtures registry.
 
 **Methods:**
 
-* **addEntityRepository(fixture)**  - adds a repository to a registry;
-* **hasEntityFixture(entityClass)** - checks whether the fixture exists for given `entityClass`;
-* **getEntityFixture(entityClass)** - returns the fixture for given `entityClass`.
+* **addEntityRepository(fixture)**  --- adds a repository to a registry;
+* **hasEntityFixture(entityClass)** --- checks whether the fixture exists for given `entityClass`;
+* **getEntityFixture(entityClass)** --- returns the fixture for given `entityClass`.
 
 Classes Diagram
 ---------------

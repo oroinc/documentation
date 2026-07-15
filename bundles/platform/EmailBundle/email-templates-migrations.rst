@@ -64,15 +64,15 @@ Email template contains metadata defined with params at the top of the template.
 
 Required parameters are:
 
-- **name** - email template machine name;
-- **subject** - email subject. Can contain entity variables, e.g., "Welcome, {{ entity.username }}".
+- **name** --- email template machine name;
+- **subject** --- email subject. Can contain entity variables, e.g., "Welcome, {{ entity.username }}".
 
 Optional parameters are:
 
-- **entityName** - class name of an entity that the email template is related to;
-- **isSystem** - flags whether the template is a system one - 1 or 0, default - 0. System templates cannot be deleted in the UI;
-- **isEditable** - flags whether the template is editable - 1 or 0, default - 0; make sense only if isSystem = 1 to allow editing content of system templates;
-- **attachments** - array of attachments, where each element is either a *file placeholder* or *base64-encoded content* of a file.
+- **entityName** --- class name of an entity that the email template is related to;
+- **isSystem** --- flags whether the template is a system one - 1 or 0, default - 0. System templates cannot be deleted in the UI;
+- **isEditable** --- flags whether the template is editable - 1 or 0, default - 0; make sense only if isSystem = 1 to allow editing content of system templates;
+- **attachments** --- array of attachments, where each element is either a *file placeholder* or *base64-encoded content* of a file.
 
 .. code-block:: twig
 

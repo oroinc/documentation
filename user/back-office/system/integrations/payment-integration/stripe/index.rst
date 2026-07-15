@@ -32,14 +32,14 @@ To start using Stripe Payment Element with the OroCommerce application:
    .. image:: /user/img/system/config_commerce/sales/stripe-integration-element.png
       :alt: Create an integration with Stripe Payment Element in the back-office
 
-   * **Type** - Select *Stripe Payment Element* from the drop-down list.
-   * **Name** - Provide the payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
-   * **API Public Key** - An identifier that helps authenticate your account. It refers to **Publishable key** on the Stripe side. You must use separate keys for the test and production environments.
-   * **API Secret Key** - A pre-shared key used to cipher payment information. It refers to **Secret key** on the Stripe side. You must use separate keys for the test and production environments.
-   * **Payment Method Name** - The name for the payment method in back-office, e.g., *Stripe Payment Element*.
-   * **Payment Method Label** - The label for the payment method in storefront, e.g., *Stripe Payment*.
-   * **Payment Method Short Label** - The short variant of the label for payment method in storefront, e.g., *Stripe*.
-   * **Create Webhook Endpoint Automatically** - If enabled, the system automatically creates and configures a Stripe webhook endpoint. This ensures real-time payment events (e.g., successful charges, refunds, or failures) are sent to your application. If you choose to create webhook manually, please provide :ref:`Webhook Signing Secret <stripe-integration-webhook-signing-secret>`.
+   * **Type** --- Select *Stripe Payment Element* from the drop-down list.
+   * **Name** --- Provide the payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
+   * **API Public Key** --- An identifier that helps authenticate your account. It refers to **Publishable key** on the Stripe side. You must use separate keys for the test and production environments.
+   * **API Secret Key** --- A pre-shared key used to cipher payment information. It refers to **Secret key** on the Stripe side. You must use separate keys for the test and production environments.
+   * **Payment Method Name** --- The name for the payment method in back-office, e.g., *Stripe Payment Element*.
+   * **Payment Method Label** --- The label for the payment method in storefront, e.g., *Stripe Payment*.
+   * **Payment Method Short Label** --- The short variant of the label for payment method in storefront, e.g., *Stripe*.
+   * **Create Webhook Endpoint Automatically** --- If enabled, the system automatically creates and configures a Stripe webhook endpoint. This ensures real-time payment events (e.g., successful charges, refunds, or failures) are sent to your application. If you choose to create webhook manually, please provide :ref:`Webhook Signing Secret <stripe-integration-webhook-signing-secret>`.
 
      .. _stripe-integration-webhook-signing-secret:
 
@@ -68,9 +68,9 @@ To start using Stripe Payment Element with the OroCommerce application:
 
      - *Automatic (Capture)* --- The payment gateway checks the card with the cardholder's issuing bank and, if everything is OK, initiates a money transfer from the card to your account. The customer is charged the given amount in full automatically.
 
-   * **User Monitoring** - Select the option to enable Stripe to fight fraud by detecting suspicious behavior. When enabled, the Stripe.js script is loaded on all storefront pages to provide real-time fraud protection.
-   * **Status** - Select whether the integration is active or inactive.
-   * **Default Owner** - A user responsible for this integration and its management.
+   * **User Monitoring** --- Select the option to enable Stripe to fight fraud by detecting suspicious behavior. When enabled, the Stripe.js script is loaded on all storefront pages to provide real-time fraud protection.
+   * **Status** --- Select whether the integration is active or inactive.
+   * **Default Owner** --- A user responsible for this integration and its management.
 
 .. note:: In the **Synchronization Settings** section, select the **Log Warnings** checkbox if you want all synchronization errors to be written into the application log.
 

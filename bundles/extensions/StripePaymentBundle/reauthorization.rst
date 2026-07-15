@@ -40,8 +40,8 @@ Re-Authorization Executor
 
 The actual re-authorization of the payment transactions is performed by the ``\Oro\Bundle\StripePaymentBundle\ReAuthorization\ReAuthorizationExecutor``. It implements the ``\Oro\Bundle\StripePaymentBundle\ReAuthorization\ReAuthorizationExecutorInterface`` interface and provides the following methods:
 
-* ``isApplicable(PaymentTransaction $paymentTransaction)`` - checks if the re-authorization is applicable for the given payment transaction.
-* ``reAuthorizeTransaction(PaymentTransaction $paymentTransaction)`` - re-authorizes the given payment transaction by calling the ``\Oro\Bundle\PaymentBundle\Method\PaymentMethodInterface::RE_AUTHORIZE`` payment action of the Stripe Payment Element payment method.
+* ``isApplicable(PaymentTransaction $paymentTransaction)`` --- checks if the re-authorization is applicable for the given payment transaction.
+* ``reAuthorizeTransaction(PaymentTransaction $paymentTransaction)`` --- re-authorizes the given payment transaction by calling the ``\Oro\Bundle\PaymentBundle\Method\PaymentMethodInterface::RE_AUTHORIZE`` payment action of the Stripe Payment Element payment method.
 
 .. note:: This executor is also used in the ``oro_stripe_payment_transaction_re_authorize`` operation that appears as a row action in the payment transactions grid. It allows you to re-authorize a single payment transaction manually in UI.
 
@@ -64,9 +64,9 @@ The re-authorization process done in the ``ReAuthorizeStripeActionExecutor`` is 
 
 Successful re-authorization of the payment transaction results in 3 new payment transactions:
 
-* ``re_authorize`` - the meta payment transaction that contains the information about the re-authorization operation, i.e. the original ``authorize`` payment transaction.
-* ``authorize`` - the new payment transaction that represents the re-authorized payment.
-* ``cancel`` - the new payment transaction that represents the cancellation of the previous ``authorize`` payment transaction.
+* ``re_authorize`` --- the meta payment transaction that contains the information about the re-authorization operation, i.e. the original ``authorize`` payment transaction.
+* ``authorize`` --- the new payment transaction that represents the re-authorized payment.
+* ``cancel`` --- the new payment transaction that represents the cancellation of the previous ``authorize`` payment transaction.
 
 .. note:: You can alter the Stripe API request parameters by creating a listener for the ``\Oro\Bundle\StripePaymentBundle\Event\StripePaymentIntentActionBeforeRequestEvent`` event.
 

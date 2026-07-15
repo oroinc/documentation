@@ -139,13 +139,13 @@ At last, you need to make the action accessible by creating a menu item:
 Key Classes
 -----------
 
-- ``Datagrid\Manager`` - responsible for preparing the grid and its configuration.
-- ``Datagrid\Builder`` - responsible for creating and configuring the datagrid object and its datasource. It contains registered datasource types and extensions, and it also performs a check for datasource availability according to ACL.
-- ``Datagrid\Datagrid`` - the main grid object, has only knowledge about the datasource object and its interaction; all further modifications of the results and metadata come from the extensions. Extension\\Acceptor - is a visitable mediator, contains all applied extensions, and provokes visits at different points of the interactions.
-- ``Extension\ExtensionVisitorInterface`` - visitor interface.
-- ``Extension\AbstractExtension`` - basic empty implementation.
-- ``Datasource\DatasourceInterface`` - link object between data and grid. Should provide results as an array of ResultRecordInterface compatible objects.
-- ``Provider\SystemAwareResolver`` - resolves specific grid YAML syntax expressions. For more information, see the :ref:`references in configuration <datagrid-references-configuration>` topic.
+- ``Datagrid\Manager`` --- responsible for preparing the grid and its configuration.
+- ``Datagrid\Builder`` --- responsible for creating and configuring the datagrid object and its datasource. It contains registered datasource types and extensions, and it also performs a check for datasource availability according to ACL.
+- ``Datagrid\Datagrid`` --- the main grid object, has only knowledge about the datasource object and its interaction; all further modifications of the results and metadata come from the extensions. Extension\\Acceptor - is a visitable mediator, contains all applied extensions, and provokes visits at different points of the interactions.
+- ``Extension\ExtensionVisitorInterface`` --- visitor interface.
+- ``Extension\AbstractExtension`` --- basic empty implementation.
+- ``Datasource\DatasourceInterface`` --- link object between data and grid. Should provide results as an array of ResultRecordInterface compatible objects.
+- ``Provider\SystemAwareResolver`` --- resolves specific grid YAML syntax expressions. For more information, see the :ref:`references in configuration <datagrid-references-configuration>` topic.
 
 .. _datagrids-customize-mixin:
 

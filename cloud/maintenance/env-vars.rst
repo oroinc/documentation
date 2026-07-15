@@ -39,7 +39,7 @@ How to Configure Environment Type Based Application
         env_vars:
           'ORO_DEPLOYMENT_TYPE': 'local'
 
-* **local** - deployment_type, which will be set to parameters.yml for your deployed application as
+* **local** --- deployment_type, which will be set to parameters.yml for your deployed application as
 
 .. code-block:: none
 

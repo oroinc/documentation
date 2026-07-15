@@ -23,19 +23,19 @@ To configure filters and sorting options per organization:
 
 5. The following configuration options are available:
 
-   * **Hide Unrelated Product Filters and Sorting Options** - removes unrelated filters and sorting options from the product collection page to display only those attributes that belong to the current product family. When a user adjusts the search to target the product with the desired attribute, but the attribute is no longer applicable, it gets removed from the filter.
+   * **Hide Unrelated Product Filters and Sorting Options** --- removes unrelated filters and sorting options from the product collection page to display only those attributes that belong to the current product family. When a user adjusts the search to target the product with the desired attribute, but the attribute is no longer applicable, it gets removed from the filter.
 
    .. image:: /user/img/system/config_commerce/catalog/hide_unrelated_product_filters.png
       :alt: The storefront product page illustrating the Hide Unrelated Product Filters and Sorting Options configuration
 
-   * **Don't Change Initial Filter State** - disables unrelated attributes within a filter. When applying a filter to the initial product data set in the storefront, all unrelated attributes remain visible but become disabled in the filter dropdown.
+   * **Don't Change Initial Filter State** --- disables unrelated attributes within a filter. When applying a filter to the initial product data set in the storefront, all unrelated attributes remain visible but become disabled in the filter dropdown.
 
    .. note:: This option affects filters in the storefront only when **Hide Unrelated Product Filters and Sorting Options** is enabled. Please ensure to enable both options for this configuration.
 
    .. image:: /user/img/system/config_commerce/catalog/dont_change_initial_filter_state.png
       :alt: The storefront product page illustrating the Don't Change Initial Filter State configuration
 
-   * **Default Filter Panel State** - controls the visibility of the filters applied to the product grids in the storefront. The filter panel can be either expanded to show all filter bars or collapsed to reduce the screen space. In this case, the collapsed filters are substituted with the text representation of all applied filters.
+   * **Default Filter Panel State** --- controls the visibility of the filters applied to the product grids in the storefront. The filter panel can be either expanded to show all filter bars or collapsed to reduce the screen space. In this case, the collapsed filters are substituted with the text representation of all applied filters.
 
    * **Filter Panel Position** --- specifies where the filter panel should be represented in the storefront, at the top or in the sidebar.
 

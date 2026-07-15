@@ -552,8 +552,8 @@ The serializer is involved both in the import and export operations. It is exten
 The serializer uses normalizers for the entities that will be imported/exported to perform converting of objects.
 
 The following requirements should be met for the normalizers to implement interfaces:
-* ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\NormalizerInterface`` - used in export.
-* ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\DenormalizerInterface`` - used in import.
+* ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\NormalizerInterface`` --- used in export.
+* ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\DenormalizerInterface`` --- used in import.
 
 Generally, you should implement both interfaces if you need to add both import and export for the entity.
 

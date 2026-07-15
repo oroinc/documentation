@@ -252,24 +252,24 @@ The response of request is the corresponding asynchronous operation created for 
 
 The response object has the following data:
 
-- **status** - The status of the asynchronous operation. Possible values: ``new``, ``running``, ``failed``, ``success``, ``cancelled``.
-- **progress** - The progress, in percentage, for the asynchronous operation.
-- **elapsedTime** - The number of seconds the asynchronous operation has been running for.
-- **entityType** - The type of an entity for which the asynchronous operation was created.
-- **createdAt** - The date and time when the asynchronous operation was created.
-- **updatedAt** - The date and time when the asynchronous operation was last updated.
-- **owner** - A user who created the asynchronous operation.
-- **organization** - An organization the asynchronous operation belongs to.
-- **summary** - The summary statistics of the asynchronous operation. This field will have data only when an asynchronous operation is finished successfully.
+- **status** --- The status of the asynchronous operation. Possible values: ``new``, ``running``, ``failed``, ``success``, ``cancelled``.
+- **progress** --- The progress, in percentage, for the asynchronous operation.
+- **elapsedTime** --- The number of seconds the asynchronous operation has been running for.
+- **entityType** --- The type of an entity for which the asynchronous operation was created.
+- **createdAt** --- The date and time when the asynchronous operation was created.
+- **updatedAt** --- The date and time when the asynchronous operation was last updated.
+- **owner** --- A user who created the asynchronous operation.
+- **organization** --- An organization the asynchronous operation belongs to.
+- **summary** --- The summary statistics of the asynchronous operation. This field will have data only when an asynchronous operation is finished successfully.
 
 The ``summary`` can have the following properties:
 
-- **aggregateTime** - The accumulated time, in milliseconds, taken by the system to accomplish the asynchronous operation.
-- **readCount** - The number of items that have been successfully read.
-- **writeCount** - The number of items that have been successfully written.
-- **errorCount** - The number of errors occurred when processing the asynchronous operation.
-- **createCount** - The number of items that have been successfully created.
-- **updateCount** - The number of items that have been successfully updated.
+- **aggregateTime** --- The accumulated time, in milliseconds, taken by the system to accomplish the asynchronous operation.
+- **readCount** --- The number of items that have been successfully read.
+- **writeCount** --- The number of items that have been successfully written.
+- **errorCount** --- The number of errors occurred when processing the asynchronous operation.
+- **createCount** --- The number of items that have been successfully created.
+- **updateCount** --- The number of items that have been successfully updated.
 
 To see updated status of job, use the following request:
 
@@ -370,15 +370,15 @@ To sse the list of errors, use the ``asyncoperations/{id}/errors`` subresource:
 
 The returned asynchronous operation errors have the following data:
 
-- **status** - The HTTP status code applicable to the problem.
-- **title** - A short, human-readable summary that describes the problem type.
-- **detail** - A human-readable explanation specific to this occurrence of the problem.
-- **source** - An object containing references to the source of the error.
+- **status** --- The HTTP status code applicable to the problem.
+- **title** --- A short, human-readable summary that describes the problem type.
+- **detail** --- A human-readable explanation specific to this occurrence of the problem.
+- **source** --- An object containing references to the source of the error.
 
 The ``source`` object can have the following properties:
 
-- **pointer** - A |JSON Pointer| to the value in the request document that caused the error, e.g., "/data/0" for a primary data object, or "/data/0/attributes/title" for a specific attribute.
-- **propertyPath** - A path to the value in the request document that caused the error. This property is returned if the pointer property cannot be computed.
+- **pointer** --- A |JSON Pointer| to the value in the request document that caused the error, e.g., "/data/0" for a primary data object, or "/data/0/attributes/title" for a specific attribute.
+- **propertyPath** --- A path to the value in the request document that caused the error. This property is returned if the pointer property cannot be computed.
 
 
 .. include:: /include/include-links-dev.rst

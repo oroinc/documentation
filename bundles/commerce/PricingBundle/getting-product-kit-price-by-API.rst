@@ -25,16 +25,16 @@ Product Kit Price API Filters
 
 The ``productkitprices`` resource requires some specific filter values:
 
-- **customer** - to get prices for an unauthorized user, use value **0**,
+- **customer** --- to get prices for an unauthorized user, use value **0**,
 - **website**
-- **product** - requires the ID of the kit product,
-- **unit** - supports only available units,
-- **quantity** - should be positive integer.
+- **product** --- requires the ID of the kit product,
+- **unit** --- supports only available units,
+- **quantity** --- should be positive integer.
 
 Additionally, depending on the product kit configuration, specifically on an **optional** field of the kit item, the ``productkitprices`` resource may require additional filters:
 
-- **kit item quantity** - should be positive integer,
-- **kit item product** - should belong to the kit item of the product kit.
+- **kit item quantity** --- should be positive integer,
+- **kit item product** --- should belong to the kit item of the product kit.
 
 These filters have the following filter keys ``filter[kitItems][1][product]`` or ``filter[kitItems][1][quantity]`` and are required for mandatory kit items of product kit.
 The ``[1]`` integer in the filter key is a kit item ID. Also, kit item product should belong to the kit item.

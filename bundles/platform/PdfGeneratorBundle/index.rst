@@ -52,8 +52,8 @@ Architecture Overview
 
 The bundle is built around 2 main concepts:
 
-* ``PDF file`` - a model that represents the actual PDF file created by a ``PDF builder``. You can use it to generate a PDF file if you do not need to store it in the database, i.e., to generate a PDF file on the fly without creating a ``PDF document`` entity.
-* ``PDF document`` - an entity that represents the PDF document created by ``PDF document operator``. It contains the  ``PDF file`` and metadata about how it was generated. You can use it to generate a ``PDF document`` that can be stored in the database, e.g., for later retrieval or download. It can be generated in instant or deferred mode depending on the use case.
+* ``PDF file`` --- a model that represents the actual PDF file created by a ``PDF builder``. You can use it to generate a PDF file if you do not need to store it in the database, i.e., to generate a PDF file on the fly without creating a ``PDF document`` entity.
+* ``PDF document`` --- an entity that represents the PDF document created by ``PDF document operator``. It contains the  ``PDF file`` and metadata about how it was generated. You can use it to generate a ``PDF document`` that can be stored in the database, e.g., for later retrieval or download. It can be generated in instant or deferred mode depending on the use case.
 
 For more details about the architecture, see :ref:`Architecture Details <bundle-docs-platform-pdf-generator-bundle-architecture>` .
 
@@ -63,7 +63,7 @@ Gotenberg PDF Engine
 
 Gotenberg engine is currently the only supported PDF engine in OroPdfGeneratorBundle. It uses the Gotenberg service to convert HTML to PDF using Chromium.
 
-Gotenberg engine is implemented by the ``\Oro\Bundle\PdfGeneratorBundle\Gotenberg\GotenbergPdfEngine`` class. In order to introduce the Gotenberg API URL as a PDF option, the bundle declares the ``PDF options configurator`` - ``\Oro\Bundle\PdfGeneratorBundle\Gotenberg\GotenbergPdfOptionsPresetConfigurator``.
+Gotenberg engine is implemented by the ``\Oro\Bundle\PdfGeneratorBundle\Gotenberg\GotenbergPdfEngine`` class. In order to introduce the Gotenberg API URL as a PDF option, the bundle declares the ``PDF options configurator`` --- ``\Oro\Bundle\PdfGeneratorBundle\Gotenberg\GotenbergPdfOptionsPresetConfigurator``.
 
 The engine is configured to use |HTML file into PDF API route of the Gotenberg service|, which means that the bundle sends the HTML content and assets via ``multipart/form-data`` HTTP request to the Gotenberg API. HTML content is rendered from Twig templates. The related assets, i.e., CSS files and images, are automatically collected during the rendering process by ``PDF template renderer``.
 

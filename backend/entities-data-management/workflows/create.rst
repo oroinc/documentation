@@ -179,8 +179,8 @@ Deactivation URL attributes:
 
 WorkflowBundle has WorkflowManager service (oro_workflow.manager) that provides methods to activate and deactivate workflows:
 
-* **activateWorkflow(workflowIdentifier)** - activate workflow by workflow name, Workflow instance, WorkflowItem instance or WorkflowDefinition instance;
-* **deactivateWorkflow(workflowIdentifier)** - deactivate workflow by workflow name, Workflow instance (same as above).
+* **activateWorkflow(workflowIdentifier)** --- activate workflow by workflow name, Workflow instance, WorkflowItem instance or WorkflowDefinition instance;
+* **deactivateWorkflow(workflowIdentifier)** --- deactivate workflow by workflow name, Workflow instance (same as above).
 
 Mutually Exclusive Workflows
 ----------------------------

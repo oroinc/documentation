@@ -32,7 +32,7 @@ To customize the default product options per website:
 
    **Upcoming Products**
 
-   **Hide Labels Past Availability Date** - When enabled, the label for the upcoming products will be removed automatically once the availability date has passed. If the option is disabled, the label will remain displayed as long as the product is marked as upcoming regardless of its availability date.
+   **Hide Labels Past Availability Date** --- When enabled, the label for the upcoming products will be removed automatically once the availability date has passed. If the option is disabled, the label will remain displayed as long as the product is marked as upcoming regardless of its availability date.
 
 4. To customize any of these options:
 

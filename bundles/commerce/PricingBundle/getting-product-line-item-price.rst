@@ -14,16 +14,16 @@ ProductLineItemPriceProvider
 
 The main entry point for getting **product line item prices** is ``\Oro\Bundle\PricingBundle\Provider\ProductLineItemPriceProvider`` (service ``oro_pricing.provider.product_line_item_price``). It provides the following methods:
 
-- **getProductLineItemsPrices** - to get **product line item prices** for the specified **product line items**, **price scope criteria** and **currency**. **Price scope criteria** and **currency**, if not specified, are detected automatically based on the current context.
-- **getProductLineItemsPricesForLineItemsHolder** - to get **product line item prices** for the specified **product line items holder** (``\Oro\Bundle\ProductBundle\Model\ProductLineItemsHolderInterface``) and **currency**. **Price scope criteria** is detected automatically based on the specified **product line items holder**. **Currency**, if not specified, is detected automatically based on the current context.
+- **getProductLineItemsPrices** --- to get **product line item prices** for the specified **product line items**, **price scope criteria** and **currency**. **Price scope criteria** and **currency**, if not specified, are detected automatically based on the current context.
+- **getProductLineItemsPricesForLineItemsHolder** --- to get **product line item prices** for the specified **product line items holder** (``\Oro\Bundle\ProductBundle\Model\ProductLineItemsHolderInterface``) and **currency**. **Price scope criteria** is detected automatically based on the specified **product line items holder**. **Currency**, if not specified, is detected automatically based on the current context.
 
 .. note::
   ``ProductLineItemPriceProvider`` implements ``\Oro\Bundle\PricingBundle\Provider\ProductLineItemPriceProviderInterface`` interface so it can be easily overridden or customized if needed.
 
 Provider returns a collection of **product line item price** objects:
 
-- ``\Oro\Bundle\PricingBundle\Model\ProductLineItemPrice\ProductLineItemPrice`` - represents a price of a **regular product line item**.
-- ``\Oro\Bundle\PricingBundle\ProductKit\ProductLineItemPrice\ProductKitLineItemPrice`` - represents a price of a **product kit line item** (i.e., that is a line item of a product kit - additionally implements ``\Oro\Bundle\ProductBundle\Model\ProductKitItemLineItemsAwareInterface``). Contains ``\Oro\Bundle\PricingBundle\ProductKit\ProductLineItemPrice\ProductKitItemLineItemPrice`` objects representing prices for its kit item line items.
+- ``\Oro\Bundle\PricingBundle\Model\ProductLineItemPrice\ProductLineItemPrice`` --- represents a price of a **regular product line item**.
+- ``\Oro\Bundle\PricingBundle\ProductKit\ProductLineItemPrice\ProductKitLineItemPrice`` --- represents a price of a **product kit line item** (i.e., that is a line item of a product kit - additionally implements ``\Oro\Bundle\ProductBundle\Model\ProductKitItemLineItemsAwareInterface``). Contains ``\Oro\Bundle\PricingBundle\ProductKit\ProductLineItemPrice\ProductKitItemLineItemPrice`` objects representing prices for its kit item line items.
 
 Examples
 --------

@@ -36,17 +36,17 @@ Each application can have a different set of widget types depending on the custo
 .. image:: /user/img/concept-guides/content-management/product_segment.png
    :alt: Illustration of the Product Segment content widget in the storefront
 
-* **Tabbed Content** - a block of content that displays information on your storefront website using tabs or an accordion format.
+* **Tabbed Content** --- a block of content that displays information on your storefront website using tabs or an accordion format.
 
 .. image:: /user/img/concept-guides/content-management/tabbed_content.png
    :alt: Illustration of the Tabbed Content widget in the storefront
 
-* **Customer Dashboard DataGrid** - a block of structured, table-style content that can be added to the customer user’s :ref:`Dashboard <storefront--dashboard>` page in the My Account section. Each block displays up to five of the latest records and provides a link to a dedicated page for full details. Displayed blocks include the information about customer user's latest orders, open quotes, checkouts, requests for quotes, and shopping lists.
+* **Customer Dashboard DataGrid** --- a block of structured, table-style content that can be added to the customer user’s :ref:`Dashboard <storefront--dashboard>` page in the My Account section. Each block displays up to five of the latest records and provides a link to a dedicated page for full details. Displayed blocks include the information about customer user's latest orders, open quotes, checkouts, requests for quotes, and shopping lists.
 
 .. image:: /user/img/concept-guides/content-management/customer-dashboard-content-widget.png
    :alt: Illustration of the Customer Dashboard DataGrid widget in the storefront
 
-* **Scorecard** - a block of key business metrics in a compact, easy-to-read format that can be added to the customer user’s :ref:`Dashboard <storefront--dashboard>` page in the My Account section. The scorecards represent the information about the total number of customer users under the current customer, the number of shopping lists, open Requests for Quote (excluding cancelled ones), and the total value of all non-cancelled orders. The scorecard is shown only if the current customer user has appropriate *View* permissions for the corresponding entity. If the customer user has *View – None* permission, the respective scorecard will not be displayed.
+* **Scorecard** --- a block of key business metrics in a compact, easy-to-read format that can be added to the customer user’s :ref:`Dashboard <storefront--dashboard>` page in the My Account section. The scorecards represent the information about the total number of customer users under the current customer, the number of shopping lists, open Requests for Quote (excluding cancelled ones), and the total value of all non-cancelled orders. The scorecard is shown only if the current customer user has appropriate *View* permissions for the corresponding entity. If the customer user has *View – None* permission, the respective scorecard will not be displayed.
 
 .. image:: /user/img/concept-guides/content-management/customer-dashboard-scorecard.png
    :alt: Illustration of the Customer Dashboard Scorecard widget in the storefront

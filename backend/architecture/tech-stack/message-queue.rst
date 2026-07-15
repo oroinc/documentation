@@ -23,30 +23,30 @@ OroMessageQueue uses *Publish/subscribe messaging*. It means that the sending ap
 Terminology
 ^^^^^^^^^^^
 
-- **Message** - An information message which contains a *message topic*  that indicates which *message processor(s)* will process it and a *message body* - an array of parameters required for the processing, for example, an entity id or a channel name. Messages are validated and sent by a *message producer* and put to the "tail" of the *message queue*.   When the message comes up to a *consumer*, its structure is validated,   then passed to a *message processor*. Messages also contain a number of additional settings (see `Message settings <#message-settings>`__).
+- **Message** --- An information message which contains a *message topic*  that indicates which *message processor(s)* will process it and a *message body* - an array of parameters required for the processing, for example, an entity id or a channel name. Messages are validated and sent by a *message producer* and put to the "tail" of the *message queue*.   When the message comes up to a *consumer*, its structure is validated,   then passed to a *message processor*. Messages also contain a number of additional settings (see `Message settings <#message-settings>`__).
 
-- **Message Queue** - A FIFO queue that holds *queue messages* until they are processed. There can be one or more queues. If we use only one queue, it is much easier. If there are several queues, it is much more difficult but more flexible sometimes.
+- **Message Queue** --- A FIFO queue that holds *queue messages* until they are processed. There can be one or more queues. If we use only one queue, it is much easier. If there are several queues, it is much more difficult but more flexible sometimes.
 
-- **Consumer** - A component that takes messages from the queue and processes them. It processes one message at a time: once one message has finished being processed, the next message follows. For each message, the consumer runs a *message processor* subscribed to the  *message topic* (if one exists). There can be more than one consumer and they can work on different servers. It can be done to increase the performance. When implementing a message processor, a developer should remember that *there can be several consumers working on different servers*.
+- **Consumer** --- A component that takes messages from the queue and processes them. It processes one message at a time: once one message has finished being processed, the next message follows. For each message, the consumer runs a *message processor* subscribed to the  *message topic* (if one exists). There can be more than one consumer and they can work on different servers. It can be done to increase the performance. When implementing a message processor, a developer should remember that *there can be several consumers working on different servers*.
 
-- **Message Processor** - Processes the queue messages (i.e., contains a code that should run when a consumer processes a message with the specified topic).
+- **Message Processor** --- Processes the queue messages (i.e., contains a code that should run when a consumer processes a message with the specified topic).
 
-- **Message Topic** - A class that contains a topic name (identifier), description, the default priority, and message body structure rules. The topic name indicates which processor should be executed for the message. One processor can subscribe to several topics.
+- **Message Topic** --- A class that contains a topic name (identifier), description, the default priority, and message body structure rules. The topic name indicates which processor should be executed for the message. One processor can subscribe to several topics.
 
-- **Job** - A message processor can process a message directly or create a job. Jobs are created in the DB and allow monitoring of the processes status, start and end time, and interrupt processes. Also, if we split a process into a set of parallel processes, jobs allow monitoring and controlling of the whole set. See details in the `Jobs <#jobs>`__ section.
+- **Job** --- A message processor can process a message directly or create a job. Jobs are created in the DB and allow monitoring of the processes status, start and end time, and interrupt processes. Also, if we split a process into a set of parallel processes, jobs allow monitoring and controlling of the whole set. See details in the `Jobs <#jobs>`__ section.
 
 Structure
 ^^^^^^^^^
 
 You can skip it if you are only going to use the component. The component is split into several layers:
 
-- **Transport** - The transport API provides a common way for programs to create, send, receive and read messages. Inspired by |Java Message Service|.
+- **Transport** --- The transport API provides a common way for programs to create, send, receive and read messages. Inspired by |Java Message Service|.
 
-- **MessageRouter** - An implementation of |RecipientList| pattern.
+- **MessageRouter** --- An implementation of |RecipientList| pattern.
 
-- **Consumption** - the layer provides tools to simplify the consumption of messages. It provides a CLI command, a queue consumer, a message processor, and ways to extend it.
+- **Consumption** --- the layer provides tools to simplify the consumption of messages. It provides a CLI command, a queue consumer, a message processor, and ways to extend it.
 
-- **Client** - provides a high level abstraction. It provides an easy-to-use abstraction for producing and processing messages. It also reduces the need to configure a broker.
+- **Client** --- provides a high level abstraction. It provides an easy-to-use abstraction for producing and processing messages. It also reduces the need to configure a broker.
 
 .. figure:: /img/backend/architecture/component_structure_diagram.png
    :alt: The Oro MessageQueue component structure
@@ -86,11 +86,11 @@ Message Processors
 Message Settings
 ^^^^^^^^^^^^^^^^
 
-- **Topic** - Refers to the term 'Message Topic' above.
-- **Body** - A string or an array with some data.
-- **Priority** - Can be ``MessagePriority::VERY_LOW``, ``MessagePriority::LOW``, ``MessagePriority::NORMAL``,``MessagePriority::HIGH``, ``MessagePriority::VERY_HIGH``. Recognizing priority is simple: there are five queues, one queue per priority. Consumers process messages from the VERY\_HIGH queue. If there are no messages in the VERY\_HIGH queue, consumers process messages from the HIGH queue, etc. Consequently, if all other queues are empty, the consumer processes messages from the VERY\_LOW queue.
-- **Expire** - The number of seconds after which the message should be removed from the queue without processing.
-- **Delay** - The number of seconds the message should be delayed for before it is sent to a queue.
+- **Topic** --- Refers to the term 'Message Topic' above.
+- **Body** --- A string or an array with some data.
+- **Priority** --- Can be ``MessagePriority::VERY_LOW``, ``MessagePriority::LOW``, ``MessagePriority::NORMAL``,``MessagePriority::HIGH``, ``MessagePriority::VERY_HIGH``. Recognizing priority is simple: there are five queues, one queue per priority. Consumers process messages from the VERY\_HIGH queue. If there are no messages in the VERY\_HIGH queue, consumers process messages from the HIGH queue, etc. Consequently, if all other queues are empty, the consumer processes messages from the VERY\_LOW queue.
+- **Expire** --- The number of seconds after which the message should be removed from the queue without processing.
+- **Delay** --- The number of seconds the message should be delayed for before it is sent to a queue.
 
 Message Processors
 ^^^^^^^^^^^^^^^^^^
