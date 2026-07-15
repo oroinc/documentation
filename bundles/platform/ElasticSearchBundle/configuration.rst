@@ -14,7 +14,7 @@ If required, you can customize the Elasticsearch client settings. For this, modi
 
 Basic parameters:
 
-* **search_engine_dsn** - An engine DSN, must be "elastic_search" for the Elasticsearch engine. For example, ``elastic-search://valid_user:valid_password@127.0.0.1:9200?prefix=oro_search``. The ``valid_user:valid_password@'`` DSN's part can be skipped if authentication is not enabled.
+* **search_engine_dsn** --- An engine DSN, must be "elastic_search" for the Elasticsearch engine. For example, ``elastic-search://valid_user:valid_password@127.0.0.1:9200?prefix=oro_search``. The ``valid_user:valid_password@'`` DSN's part can be skipped if authentication is not enabled.
 
 If you need more specific Elasticsearch configuration, see the chapters below.
 

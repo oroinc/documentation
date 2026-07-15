@@ -26,9 +26,9 @@ Overview
 
 Integration Methods:
 
-* **Hosted checkout** - When a customer in the storefront creates an order, they are redirected to a CyberSource payment form page to provide card authorization details. Any payment type supported by CyberSource is allowed.
+* **Hosted checkout** --- When a customer in the storefront creates an order, they are redirected to a CyberSource payment form page to provide card authorization details. Any payment type supported by CyberSource is allowed.
 
-* **Checkout API** - Payment is processed via an REST API call. Only debit and credit cards are allowed.
+* **Checkout API** --- Payment is processed via an REST API call. Only debit and credit cards are allowed.
 
 Hosted Checkout Method Lifecycle
 --------------------------------

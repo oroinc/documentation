@@ -31,9 +31,9 @@ Currently, Oro Stripe payment integration supports the following actions:
 Oro Stripe integration also supports webhooks events handling, which helps to handle actions
 performed from the Stripe Dashboard (cancel, capture, refund). There are only three supported events types:
 
-- **payment_intent.succeeded** -- performed when payment is captured successfully
-- **payment_intent.canceled** -- initiated when authorized payment canceled
-- **charge.refunded** -- performed when refunded some amount of captured payment
+- **payment_intent.succeeded** --- performed when payment is captured successfully
+- **payment_intent.canceled** --- initiated when authorized payment canceled
+- **charge.refunded** --- performed when refunded some amount of captured payment
 
 Configure the webhook callback URL in the Stripe Dashboard in the *Developers* section to use this functionality. Use the
 *Webhooks* menu item and click **Add Endpoint** to set a URL and select the supported events. The **Endpoint URL** format should be ``{base_url}/stripe/handle-events``. Make sure you add events described before in the section "*Select events to listen to*, as this helps reduce request numbers to the Oro application from Stripe service.

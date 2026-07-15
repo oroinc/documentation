@@ -6,8 +6,8 @@ Configuration Reference
 Channel Type Definition
 -----------------------
 
-**Channel type** - a type of the application/service to connect.
-**Channel** - an instance of the configured channel type with enabled connectors.
+**Channel type** --- a type of the application/service to connect.
+**Channel** --- an instance of the configured channel type with enabled connectors.
 
 The responsibility of a **channel** is to split transport/connectors into groups by a third party application type.
 To define you own channel type, create a class that implements ``Oro\Bundle\IntegrationBundle\Provider\ChannelInterface`` and then register it as a service with the ``oro_integration.channel`` tag with a unique ``type`` key.

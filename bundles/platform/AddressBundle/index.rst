@@ -44,15 +44,15 @@ OroAddressBundle provides several entities to work with addresses.
 Classes Description
 ^^^^^^^^^^^^^^^^^^^
 
-* **AbstractAddress** - encapsulates basic address attributes (label, street, city, country, first and last name etc.);
-* **AbstractTypedAddress** - extends AbstractAddress and adds the "primary" flag and a set of address types;
-* **Address** - a basic implementation of AbstractAddress;
-* **Country** - encapsulates country attributes (ISO2 and ISO3 codes, a name, a collection of regions);
-* **CountryTranslation** - an entity that provides translation for the Country entity;
-* **Region** - encapsulates region attributes (the "country+region" combined code, a code, a name, a country entity);
-* **RegionTranslation** - an entity that provides translation for the Region entity;
-* **AddressType** - describes an address type and includes a type name and a type label. The default types are "billing" and "shipping";
-* **AddressTypeTranslation** - an entity that provides translation for the AddressType entity.
+* **AbstractAddress** --- encapsulates basic address attributes (label, street, city, country, first and last name etc.);
+* **AbstractTypedAddress** --- extends AbstractAddress and adds the "primary" flag and a set of address types;
+* **Address** --- a basic implementation of AbstractAddress;
+* **Country** --- encapsulates country attributes (ISO2 and ISO3 codes, a name, a collection of regions);
+* **CountryTranslation** --- an entity that provides translation for the Country entity;
+* **Region** --- encapsulates region attributes (the "country+region" combined code, a code, a name, a country entity);
+* **RegionTranslation** --- an entity that provides translation for the Region entity;
+* **AddressType** --- describes an address type and includes a type name and a type label. The default types are "billing" and "shipping";
+* **AddressTypeTranslation** --- an entity that provides translation for the AddressType entity.
 
 Address Form Types
 ------------------
@@ -62,24 +62,24 @@ OroAddressBundle provides form types to render address entities by forms.
 Form Types Description
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* **oro\_address** - encapsulates form fields for the Address entity;
-* **oro\_address\_collection** - a collection of form types for address entities;
-* **oro\_country** - encapsulates form fields for the Country entity;
-* **oro\_region** - encapsulates form fields for the Region entity.
+* **oro\_address** --- encapsulates form fields for the Address entity;
+* **oro\_address\_collection** --- a collection of form types for address entities;
+* **oro\_country** --- encapsulates form fields for the Country entity;
+* **oro\_region** --- encapsulates form fields for the Region entity.
 
 Classes Description
 ^^^^^^^^^^^^^^^^^^^
 
-* **Form \ Type \ AddressType** - a base form for Address that includes form fields for the address attributes;
-* **Form \ Type \ TypedAddressType** - extends AddressType, adds functionality to work with address types;
-* **Form \ Type \ AddressType** - implementation of AbstractAddressType. The form type is "oro_address";
-* **Form \ Type\ AddressCollectionType** - provides functionality to work with address collections. The form type is "oro_address_collection";
-* **Form \ Type \ CountryType** - provides form types for the Country entity and is represented by the "oro_country" form type;
-* **Form \ Type \ RegionType** - provides form types for the Region entity. The form type is "oro_region";
-* **Form \ EventListener \ AddressCountryAndRegionSubscriber** - is responsible for processing relations between countries and regions by address forms;
-* **Form \ EventListener \ FixAddressesPrimarySubscriber** - ensures that only the newly created/updated address is specified as primary for the selected owner. If also removes the primary status for the other addresses added previously;
-* **Form \ EventListener \ FixAddressesTypesSubscriber** - ensures that only the newly created/updated address type (shipping/billing) is specified as primary for the selected owner. If also removes the primary status for the other address types added previously;
-* **Form \ Handler \ AddressHandler** - processes save for Address entity using specified form.
+* **Form \ Type \ AddressType** --- a base form for Address that includes form fields for the address attributes;
+* **Form \ Type \ TypedAddressType** --- extends AddressType, adds functionality to work with address types;
+* **Form \ Type \ AddressType** --- implementation of AbstractAddressType. The form type is "oro_address";
+* **Form \ Type\ AddressCollectionType** --- provides functionality to work with address collections. The form type is "oro_address_collection";
+* **Form \ Type \ CountryType** --- provides form types for the Country entity and is represented by the "oro_country" form type;
+* **Form \ Type \ RegionType** --- provides form types for the Region entity. The form type is "oro_region";
+* **Form \ EventListener \ AddressCountryAndRegionSubscriber** --- is responsible for processing relations between countries and regions by address forms;
+* **Form \ EventListener \ FixAddressesPrimarySubscriber** --- ensures that only the newly created/updated address is specified as primary for the selected owner. If also removes the primary status for the other addresses added previously;
+* **Form \ EventListener \ FixAddressesTypesSubscriber** --- ensures that only the newly created/updated address type (shipping/billing) is specified as primary for the selected owner. If also removes the primary status for the other address types added previously;
+* **Form \ Handler \ AddressHandler** --- processes save for Address entity using specified form.
 
 Usage
 -----
@@ -138,10 +138,10 @@ OroAddressBundle has specific validators that can be used to validate addresses 
 Classes Description
 ^^^^^^^^^^^^^^^^^^^
 
-* **Validator \ Contraints \ ContainsPrimaryValidator** - checks an address collection to ensure that it contains only one primary address;
-* **Validator \ Contraints \ ContainsPrimary** - contains an error message for ContainsPrimaryValidator;
-* **Validator \ Contraints \ UniqueAddressTypesValidator** - checks an address collection to ensure that it has no more than one address per each address type;
-* **Validator \ Contraints \ UniqueAddressTypes** - contains an error message for UniqueAddressTypesValidator.
+* **Validator \ Contraints \ ContainsPrimaryValidator** --- checks an address collection to ensure that it contains only one primary address;
+* **Validator \ Contraints \ ContainsPrimary** --- contains an error message for ContainsPrimaryValidator;
+* **Validator \ Contraints \ UniqueAddressTypesValidator** --- checks an address collection to ensure that it has no more than one address per each address type;
+* **Validator \ Contraints \ UniqueAddressTypes** --- contains an error message for UniqueAddressTypesValidator.
 
 Example of Usage
 ^^^^^^^^^^^^^^^^

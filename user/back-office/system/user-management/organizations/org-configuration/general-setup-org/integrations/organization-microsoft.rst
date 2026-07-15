@@ -22,9 +22,9 @@ To configure email, calendar events, and task synchronization with Microsoft 365
 
 6. In the **Calendar Synchronization** and **Tasks Synchronization** sections, define the following:
 
-   * **Enabled** - Indicates whether the synchronization of calendar events and tasks is enabled for the user.
-   * **Sync Direction** - Data synchronization direction. It can be Oro to Microsoft, Microsoft to Oro, and Bidirectional.
-   * **Conflict Resolution** - The conflict resolution strategy that should be used if the same calendar events and tasks are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
+   * **Enabled** --- Indicates whether the synchronization of calendar events and tasks is enabled for the user.
+   * **Sync Direction** --- Data synchronization direction. It can be Oro to Microsoft, Microsoft to Oro, and Bidirectional.
+   * **Conflict Resolution** --- The conflict resolution strategy that should be used if the same calendar events and tasks are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
 
 7. Click **Save Settings**.
 

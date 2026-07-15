@@ -10,7 +10,7 @@ By using this API, you provide the ability to change the input widget to any oth
 
 **InputWidgetManager** is used to register input widgets and create a widget for applicable inputs.
 
-**$.fn.inputWidget** - is a jQuery API for InputWidgetManager or InputWidget.
+**$.fn.inputWidget** --- is a jQuery API for InputWidgetManager or InputWidget.
 
 **Example of usage:**
 

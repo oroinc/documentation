@@ -10,17 +10,17 @@ Main Entities
 
 Entity merge consists of several related entities.
 
-- **FieldMetadata** - metadata information of field merging.
-- **EntityMetadata** - represents the list of metadata fields and entity merge metadata.
-- **FieldData** - contains an entity that was selected as source value and merge strategy mode (replace/unite).
-- **EntityData** - contains the master record that will result from the merge and the list of field data.
-- **Strategy** - strategy for entity field merge. The default strategies are unite or replace:
+- **FieldMetadata** --- metadata information of field merging.
+- **EntityMetadata** --- represents the list of metadata fields and entity merge metadata.
+- **FieldData** --- contains an entity that was selected as source value and merge strategy mode (replace/unite).
+- **EntityData** --- contains the master record that will result from the merge and the list of field data.
+- **Strategy** --- strategy for entity field merge. The default strategies are unite or replace:
 
-   - **UniteStrategy** - merges field values into the master entity. It works only with fields that are represented by a list of entities.
-   - **ReplaceStrategy** - replaces the master entity field value with the selected one.
+   - **UniteStrategy** --- merges field values into the master entity. It works only with fields that are represented by a list of entities.
+   - **ReplaceStrategy** --- replaces the master entity field value with the selected one.
 
-- **Step** - one of the merge steps. By default, there are three steps: **ValidateStep**, **MergeFieldsStep** and **RemoveEntitiesStep**.
-- **Accessor** - provides access (get value/set value) for merge fields.
+- **Step** --- one of the merge steps. By default, there are three steps: **ValidateStep**, **MergeFieldsStep** and **RemoveEntitiesStep**.
+- **Accessor** --- provides access (get value/set value) for merge fields.
 
 How It Works
 ------------

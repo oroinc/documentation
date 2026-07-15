@@ -205,7 +205,7 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 
 * **inherit** *string* - is the parent class name. You are not usually requires to specify this attribute as it is calculated automatically for regular extend and custom entities. An example of an entity where this attribute is used is EnumValue.
 
-* **pending_changes** - when a user changes something that requires schema update, this change is not applied to the configuration, but is stored into "pending_changes" as changeset. The format of changeset is ['scope' => ['field' => ['oldValue', 'newValue'], ...], ...].
+* **pending_changes** --- when a user changes something that requires schema update, this change is not applied to the configuration, but is stored into "pending_changes" as changeset. The format of changeset is ['scope' => ['field' => ['oldValue', 'newValue'], ...], ...].
 
     Let's assume that a user has an active activity email and changes it to a task. In this case, the value of pending changes would be the following:
 

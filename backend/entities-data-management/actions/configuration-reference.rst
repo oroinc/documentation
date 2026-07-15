@@ -72,55 +72,55 @@ The root element of the configuration is *operations*. The operations are define
 
 A single operation configuration has the following properties:
 
-* **name** - *string* - An operation should have a unique name in the scope of all application.
+* **name** --- *string* - An operation should have a unique name in the scope of all application.
 
-* **extends** - *string* - An operation name that is used by configuration as a basis for the current operation.
+* **extends** --- *string* - An operation name that is used by configuration as a basis for the current operation.
 
-* **label** - *string* - This value is shown in the UI.
+* **label** --- *string* - This value is shown in the UI.
 
-* **substitute_operation** - *string* - The name of the operation that can be replaced (e.g., substituted) by the current one.
+* **substitute_operation** --- *string* - The name of the operation that can be replaced (e.g., substituted) by the current one.
 
-* **enabled** - *boolean* - A flag that defines whether this operation is enabled. Disabled operations are used in applications.
+* **enabled** --- *boolean* - A flag that defines whether this operation is enabled. Disabled operations are used in applications.
 
-* **page_reload** - *boolean* - By default, it is set to *true*. A flag that defines whether this operation should reload the page after execution. It applies when redirect url or datagrid is not specified inside the *actions* block.
+* **page_reload** --- *boolean* - By default, it is set to *true*. A flag that defines whether this operation should reload the page after execution. It applies when redirect url or datagrid is not specified inside the *actions* block.
 
-* **entities** - *array* - An array of entity class names. Operation button is shown on the view/edit pages of the entities.
+* **entities** --- *array* - An array of entity class names. Operation button is shown on the view/edit pages of the entities.
 
-* **for_all_entities** - *boolean* - The boolean flag that determines whether the current operation matches the selected entities if any.
+* **for_all_entities** --- *boolean* - The boolean flag that determines whether the current operation matches the selected entities if any.
 
-* **exclude_entities** - *array* - The list of entities that should be excluded from matching against current operation.
+* **exclude_entities** --- *array* - The list of entities that should be excluded from matching against current operation.
 
-* **routes** - *array* - The operation button displayed on the pages where the route is mentioned.
+* **routes** --- *array* - The operation button displayed on the pages where the route is mentioned.
 
-* **groups** - *array* - Defines an array of group names to use with the current operation and behaves the same way as operation tagging. It is the easiest way to select the required group of operations for custom approaches.
+* **groups** --- *array* - Defines an array of group names to use with the current operation and behaves the same way as operation tagging. It is the easiest way to select the required group of operations for custom approaches.
 
-* **datagrids** - *array* - The operation icon displayed as a datagrid-action in the listed datagrids.
+* **datagrids** --- *array* - The operation icon displayed as a datagrid-action in the listed datagrids.
 
-* **for_all_datagrids** - *boolean* - The flag that determines whether the current operation matches all the selected datagrids, if any.
+* **for_all_datagrids** --- *boolean* - The flag that determines whether the current operation matches all the selected datagrids, if any.
 
-* **exclude_datagrids** - *array* - Defines a list of datagrid names which should be excluded from matching against the current operation.
+* **exclude_datagrids** --- *array* - Defines a list of datagrid names which should be excluded from matching against the current operation.
 
-* **order** - *integer* - The parameter that specifies the display order of operation buttons.
+* **order** --- *integer* - The parameter that specifies the display order of operation buttons.
 
-* **acl_resource** - *string* - The operation button is shown only if a user has the expected permissions.
+* **acl_resource** --- *string* - The operation button is shown only if a user has the expected permissions.
 
-* **frontend_options** - Contains configuration for Frontend Options.
+* **frontend_options** --- Contains configuration for Frontend Options.
 
-* **preactions** - Contains configuration for actions which are performed before preconditions.
+* **preactions** --- Contains configuration for actions which are performed before preconditions.
 
-* **preconditions** - Contains configuration for Preconditions.
+* **preconditions** --- Contains configuration for Preconditions.
 
-* **attributes** - Contains configuration for Attributes.
+* **attributes** --- Contains configuration for Attributes.
 
-* **datagrid_options** - Contains configuration for Datagrid Options.
+* **datagrid_options** --- Contains configuration for Datagrid Options.
 
-* **form_options** - Contains configuration for Transitions.
+* **form_options** --- Contains configuration for Transitions.
 
-* **form_init** - Contains configuration for Form Init Actions.
+* **form_init** --- Contains configuration for Form Init Actions.
 
-* **conditions** - Contains configuration for Conditions.
+* **conditions** --- Contains configuration for Conditions.
 
-* **actions** - Contains configuration for Actions.
+* **actions** --- Contains configuration for Actions.
 
 Example
 ^^^^^^^
@@ -171,19 +171,19 @@ Button Options enable to change an operation button style, override a button tem
 
 Button Options configuration has the following options:
 
-* **icon** - *string* - CSS class the operation button icon.
+* **icon** --- *string* - CSS class the operation button icon.
 
-* **class** - *string* - CSS class applied to the operation button.
+* **class** --- *string* - CSS class applied to the operation button.
 
-* **group** - *string* - Name of operation button menu. The operation button is part of a dropdown buttons menu with a label (specified group). All operations within the same group are shown in a dropdown button html menu.
+* **group** --- *string* - Name of operation button menu. The operation button is part of a dropdown buttons menu with a label (specified group). All operations within the same group are shown in a dropdown button html menu.
 
-* **template** - *string* - This option provides the possibility to override the button template. Should be extended from `@OroAction/Operation/button.html.twig`.
+* **template** --- *string* - This option provides the possibility to override the button template. Should be extended from `@OroAction/Operation/button.html.twig`.
 
-* **data** - *array* - This option provides possibility to add data-attributes to the button tag or dynamic attributes for datagrid action.
+* **data** --- *array* - This option provides possibility to add data-attributes to the button tag or dynamic attributes for datagrid action.
 
-* **page_component_module** - *string* - Name of js-component module for the operation-button (attribute *data-page-component-module*).
+* **page_component_module** --- *string* - Name of js-component module for the operation-button (attribute *data-page-component-module*).
 
-* **page_component_options** - *array* - List of options of js-component module for the operation-button (attribute *data-page-component-options*).
+* **page_component_options** --- *array* - List of options of js-component module for the operation-button (attribute *data-page-component-options*).
 
 Example
 ^^^^^^^
@@ -202,17 +202,17 @@ Frontend Options enable you to override an operation dialog, page template, or t
 
 Frontend Options configuration has the following options:
 
-* **template** - *string* - You can set custom operation dialog template. Should be extended from `@OroAction/Operation/form.html.twig`.
+* **template** --- *string* - You can set custom operation dialog template. Should be extended from `@OroAction/Operation/form.html.twig`.
 
-* **title** - *string* - Custom title of operation dialog window.
+* **title** --- *string* - Custom title of operation dialog window.
 
-* **title_parameters** - *array* - Parameter for replacing placeholders from the title. The operation data can be used.
+* **title_parameters** --- *array* - Parameter for replacing placeholders from the title. The operation data can be used.
 
-* **options** - *array* - Parameters related to widget component with the following options: *allowMaximize*, *allowMinimize*, *dblclick*, *maximizedHeightDecreaseBy*, *width*, etc.
+* **options** --- *array* - Parameters related to widget component with the following options: *allowMaximize*, *allowMinimize*, *dblclick*, *maximizedHeightDecreaseBy*, *width*, etc.
 
-* **confirmation** - *string* - You can show a confirmation message before starting the operation execution. Translate constant should be available for JS and placed in `jsmessages.*.yml`.
+* **confirmation** --- *string* - You can show a confirmation message before starting the operation execution. Translate constant should be available for JS and placed in `jsmessages.*.yml`.
 
-* **show_dialog** - *boolean* - By default, this value is `true`. It means that during the operation execution a modal dialog with a form is displayed if the form parameters are set. Otherwise a separate page (like an entity update page) with a form is displayed instead.
+* **show_dialog** --- *boolean* - By default, this value is `true`. It means that during the operation execution a modal dialog with a form is displayed if the form parameters are set. Otherwise a separate page (like an entity update page) with a form is displayed instead.
 
 Example
 ^^^^^^^
@@ -231,28 +231,28 @@ The operation defines configuration of attributes. The operation can manipulate 
 
 Single attribute can be described with the following configuration:
 
-* **unique name** - Attributes should have a unique name in scope of Operation that they belong to. Form configuration references
+* **unique name** --- Attributes should have a unique name in scope of Operation that they belong to. Form configuration references
     attributes by this value.
 
-* **type** - *string* - Type of attribute. The following types are supported:
+* **type** --- *string* - Type of attribute. The following types are supported:
 
   * **boolean**
-  * **bool** - *alias for boolean*
+  * **bool** --- *alias for boolean*
   * **integer**
-  * **int** - *alias for integer*
+  * **int** --- *alias for integer*
   * **float**
   * **string**
-  * **array** - Elements of array should be scalars or objects that support serialization/deserialization.
-  * **object** - Object should support serialization/deserialization, the "class" option is required for this type.
-  * **entity** - Doctrine entity, the "class" option is required, and it must be a Doctrine manageable class.
+  * **array** --- Elements of array should be scalars or objects that support serialization/deserialization.
+  * **object** --- Object should support serialization/deserialization, the "class" option is required for this type.
+  * **entity** --- Doctrine entity, the "class" option is required, and it must be a Doctrine manageable class.
 
-* **label** - *string* - Label can be shown in the UI.
+* **label** --- *string* - Label can be shown in the UI.
 
-* **property_path** - *string* - Used to work with attribute value by reference and specifies path to data storage. If property path is specified then all other attribute properties except name are optional. They can be automatically determined based on the last element (field) of the property path.
+* **property_path** --- *string* - Used to work with attribute value by reference and specifies path to data storage. If property path is specified then all other attribute properties except name are optional. They can be automatically determined based on the last element (field) of the property path.
 
-* **options** - Options of an attribute. Currently the following options are supported:
+* **options** --- Options of an attribute. Currently the following options are supported:
 
-  * **class** - *string* - Fully qualified class name. Enabled only when typing either entity or object.
+  * **class** --- *string* - Fully qualified class name. Enabled only when typing either entity or object.
 
 .. note:: Attribute configuration does not contain any information about how to render the attribute on step forms, it is the responsibility of "Form Options".
 
@@ -273,11 +273,11 @@ Datagrid options enable to define options of datagrid mass operation. They provi
 
 Single datagrid options can be described with the following configuration:
 
-* **mass_action_provider** - *string* - Service name. This service must be marked with the `oro_action.datagrid.mass_action_provider` tag. Also it must implement Oro\\Bundle\\ActionBundle\\Datagrid\\Provider\\MassActionProviderInterface. The "getActions" method of this provider must return array of mass action configurations.
+* **mass_action_provider** --- *string* - Service name. This service must be marked with the `oro_action.datagrid.mass_action_provider` tag. Also it must implement Oro\\Bundle\\ActionBundle\\Datagrid\\Provider\\MassActionProviderInterface. The "getActions" method of this provider must return array of mass action configurations.
 
-* **mass_action** - *array* - Mass action configuration. See the datagrid documentation.
+* **mass_action** --- *array* - Mass action configuration. See the datagrid documentation.
 
-* **data** - *array* - This option provides possibility to add static attributes to datagrid action. See the datagrid documentation.
+* **data** --- *array* - This option provides possibility to add static attributes to datagrid action. See the datagrid documentation.
 
 .. note:: Keep in mind that only one parameter, either "mass_action_provider" or "mass_action", can be used.
 
@@ -298,9 +298,9 @@ These options are passed to form type of operation. They contain options for for
 
 Single form configuration is described with the following configuration:
 
-* **attribute_fields** - *array* - List of attributes with their options. All attributes specified in this configuration must be included in the attribute configuration.
+* **attribute_fields** --- *array* - List of attributes with their options. All attributes specified in this configuration must be included in the attribute configuration.
 
-* **attribute_default_values** - *array* - List of default values for attributes. These values are shown in the operation form once it is loaded.
+* **attribute_default_values** --- *array* - List of default values for attributes. These values are shown in the operation form once it is loaded.
 
 Example
 ^^^^^^^
@@ -315,9 +315,9 @@ Example
 Preconditions and Conditions Configuration
 ------------------------------------------
 
-* **preconditions** - Configuration of preconditions that must be satisfied to enable the operation button displaying.
+* **preconditions** --- Configuration of preconditions that must be satisfied to enable the operation button displaying.
 
-* **conditions** - Configuration of Conditions that must be satisfied to enable the operation.
+* **conditions** --- Configuration of Conditions that must be satisfied to enable the operation.
 
 It declares a tree structure of conditions that are applied on the Action Data to check if the Operation could be performed. Single condition configuration contains alias, a unique name of a condition, and options.
 
@@ -344,11 +344,11 @@ Example
 Preactions, Form Init Actions and Actions Configuration
 -------------------------------------------------------
 
-* **preactions** - Configuration of preactions that can be performed before preconditions, conditions, form init actions, and actions. It can be used to prepare some data in Action Data that will be used in the preconditions validation.
+* **preactions** --- Configuration of preactions that can be performed before preconditions, conditions, form init actions, and actions. It can be used to prepare some data in Action Data that will be used in the preconditions validation.
 
-* **form_init** - Configuration of Form Init Actions that can be performed in Action Data before conditions and actions. One of the possible init operations usage scenario is to fill attributes with default values which will be used in operation form if any.
+* **form_init** --- Configuration of Form Init Actions that can be performed in Action Data before conditions and actions. One of the possible init operations usage scenario is to fill attributes with default values which will be used in operation form if any.
 
-* **actions** - Configuration of actions that must be performed after all previous steps are completed. This is the main operation step that must contain operation logic. It will be performed only after conditions are qualified.
+* **actions** --- Configuration of actions that must be performed after all previous steps are completed. This is the main operation step that must contain operation logic. It will be performed only after conditions are qualified.
 
 Similarly to conditions, the alias of action starts from the `@` symbol and must refer to registered actions. For example, the `@assign_value` refers to the action which set specified value to attribute in Action Data.
 

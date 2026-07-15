@@ -12,8 +12,8 @@ To create your own formatter, create a new service and tag it with the `oro_form
 
 This tag has the following attributes:
 
-* **formatter** - The formatter name. It is mandatory attribute.
-* **data_type** - The data type name for which the formatter should be used by default.
+* **formatter** --- The formatter name. It is mandatory attribute.
+* **data_type** --- The data type name for which the formatter should be used by default.
 
 Example:
   

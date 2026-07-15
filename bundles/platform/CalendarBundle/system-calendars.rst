@@ -17,10 +17,10 @@ By default, both organization and system-wide calendars are enabled, but you can
 
 The possible values of this option:
 
-- **true** - both organization and system-wide calendars are enabled
-- **false** - both organization and system-wide calendars are disabled
-- **organization** - only organization wide calendars are enabled
-- **system** - only system-wide calendars are enabled
+- **true** --- both organization and system-wide calendars are enabled
+- **false** --- both organization and system-wide calendars are disabled
+- **organization** --- only organization wide calendars are enabled
+- **system** --- only system-wide calendars are enabled
 
 Implementation
 --------------

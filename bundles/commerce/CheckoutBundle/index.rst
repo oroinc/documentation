@@ -7,8 +7,8 @@ OroCheckoutBundle
 
 Checkout workflows provided by this bundle are:
 
-- **b2b_flow_checkout** - multi-step page checkout
-- **b2b_flow_checkout_single_page** - single page checkout
+- **b2b_flow_checkout** --- multi-step page checkout
+- **b2b_flow_checkout_single_page** --- single page checkout
 
 .. toctree::
    :hidden:

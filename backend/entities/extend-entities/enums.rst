@@ -38,15 +38,15 @@ to the class name of an entity responsible for storing all options of this optio
 such entities are generated automatically by the OroPlatform and you should not use the class name directly.
 There are also other functions in the |ExtendHelper| class which can be helpful when you work with option sets:
 
-* **buildEnumCode()** - Builds an option set code based on its name.
-* **generateEnumCode()** - Generates an option set code based on a field for which this option set is created.
-* **buildEnumValueId()** - Builds an option identifier based on the option name. The option identifier is a
+* **buildEnumCode()** --- Builds an option set code based on its name.
+* **generateEnumCode()** --- Generates an option set code based on a field for which this option set is created.
+* **buildEnumValueId()** --- Builds an option identifier based on the option name. The option identifier is a
   32 characters length string.
-* **buildEnumValueClassName()** - Builds the class name of an entity responsible for storing all options of the option set
+* **buildEnumValueClassName()** --- Builds the class name of an entity responsible for storing all options of the option set
   by the option set code.
-* **getMultiEnumSnapshotFieldName()** - Builds the name of a field that is used to store a snapshot of selected values
+* **getMultiEnumSnapshotFieldName()** --- Builds the name of a field that is used to store a snapshot of selected values
   for option sets that allows to select several options. We use this data to avoid GROUP BY clause.
-* **getEnumTranslationKey()** - Builds label names for option set related translations.
+* **getEnumTranslationKey()** --- Builds label names for option set related translations.
 
 As mentioned above, each option set has its own table to store available options. But translations for all options of all option sets are stored in one table. You can find more details in |EnumValueTranslation| and |AbstractEnumValue|.
 The EnumValueTranslation class is used to store translations. The AbstractEnumValue is the base class for all option set entities.

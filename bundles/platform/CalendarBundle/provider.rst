@@ -23,8 +23,8 @@ To add a calendar provider, create a class implements |CalendarProviderInterface
 
 As mentioned below, your provider must implement |CalendarProviderInterface| which contains only two methods:
 
-- **getCalendarDefaultValues** - This method returns default values of a calendar properties, such as calendar name, permissions, widget options, etc.
-- **getCalendarEvents** - This method returns a list of calendar events.
+- **getCalendarDefaultValues** --- This method returns default values of a calendar properties, such as calendar name, permissions, widget options, etc.
+- **getCalendarEvents** --- This method returns a list of calendar events.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -29,7 +29,7 @@ Use the generated credentials to access your Oro Devbox application:
 
 * **Site Address** --- a link to your Oro Devbox application.
 * **Developer user** --- a username used to log into the devbox application.
-* **Developer password** - a password used to log into the devbox application.
+* **Developer password** --- a password used to log into the devbox application.
 
 Also, you can access the VM instance using SSH by clicking SSH and selecting the required option from the dropdown.
 

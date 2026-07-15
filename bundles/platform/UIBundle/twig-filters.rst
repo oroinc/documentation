@@ -145,9 +145,9 @@ In this example, `channelSectionBlocks` can be empty and in this case it should 
 
 You can also use the following options to tune **oro_sort_by** filter:
 
- - **property** - The path of the property by which the array should be sorted. It can be just the property name or any valid expression supported by |Symfony PropertyAccess Component|. The default value of this option is **priority**.
- - **reverse** - Indicates whether the sorting should be performed in reverse order. The default value of this option is **false**.
- - **sorting-type** - The sorting type. You can use **number**, **string** or **string-case**. The **string-case** means that case-insensitive string comparison should be used. The default value of this option is **number**.
+ - **property** --- The path of the property by which the array should be sorted. It can be just the property name or any valid expression supported by |Symfony PropertyAccess Component|. The default value of this option is **priority**.
+ - **reverse** --- Indicates whether the sorting should be performed in reverse order. The default value of this option is **false**.
+ - **sorting-type** --- The sorting type. You can use **number**, **string** or **string-case**. The **string-case** means that case-insensitive string comparison should be used. The default value of this option is **number**.
 
 The following example shows how you can sort array by `name` property using case-insensitive comparison:
 

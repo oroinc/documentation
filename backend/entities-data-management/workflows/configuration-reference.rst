@@ -300,49 +300,49 @@ The root element of the configuration is *workflows*. Workflows can be defined u
 
 A single workflow configuration has the following properties:
 
-* **name** - *string* - A workflow should have a unique name in the scope of all applications. As workflow configuration does not support merging two workflows with the same name, this will lead to throwing an exception during configuration loading.
+* **name** --- *string* - A workflow should have a unique name in the scope of all applications. As workflow configuration does not support merging two workflows with the same name, this will lead to throwing an exception during configuration loading.
 
 * **label** (translation file field) - *Translatable*: `oro.workflow.{workflow_name}.label`. This value will be shown in the UI.
 
-* **entity** - *string* - The class name of workflow a related entity.
+* **entity** --- *string* - The class name of workflow a related entity.
 
    .. note:: An entity must either be extended or custom, or it must have fields to contain the workflow item and step.
 
-* **entity_attribute** - *string* - The name of the attribute used to store a related entity.
+* **entity_attribute** --- *string* - The name of the attribute used to store a related entity.
 
-* **is_system** - *boolean* - The flag that defines whether this definition is a system one. System definition cannot be edited or removed. All definitions loaded from the .yml files are automatically marked as system.
+* **is_system** --- *boolean* - The flag that defines whether this definition is a system one. System definition cannot be edited or removed. All definitions loaded from the .yml files are automatically marked as system.
 
-* **start_step** - *string* - The name of the start step. If a workflow has a start transition, then `start_step` is optional, otherwise, it is required.
+* **start_step** --- *string* - The name of the start step. If a workflow has a start transition, then `start_step` is optional, otherwise, it is required.
 
-* **steps_display_ordered** - *boolean* - If this flag is true, then the workflow step widget will show all steps according to their order (including not passed) on the entity view page, otherwise, the widget will show only the passed steps.
+* **steps_display_ordered** --- *boolean* - If this flag is true, then the workflow step widget will show all steps according to their order (including not passed) on the entity view page, otherwise, the widget will show only the passed steps.
 
-* **attributes** - Contains configuration for attributes.
+* **attributes** --- Contains configuration for attributes.
 
-* **steps** - Contains configuration for steps.
+* **steps** --- Contains configuration for steps.
 
-* **transitions** - Contains configuration for transitions.
+* **transitions** --- Contains configuration for transitions.
 
-* **transition_definitions** - Contains configuration for transition definitions.
+* **transition_definitions** --- Contains configuration for transition definitions.
 
-* **priority** - an integer value of the current workflow dominance level in part of automatically performed tasks (ordering, exclusiveness). It is recommended to use high-degree integer values to give scope for 3rd party integrators.
+* **priority** --- an integer value of the current workflow dominance level in part of automatically performed tasks (ordering, exclusiveness). It is recommended to use high-degree integer values to give scope for 3rd party integrators.
 
-* **exclusive_active_groups** - a list of group names for which the current workflow should be active exclusively.
+* **exclusive_active_groups** --- a list of group names for which the current workflow should be active exclusively.
 
-* **exclusive_record_groups** - a list of group names for which the current workflow cannot be performed together with other workflows with one of the specified groups. E.g., no concurrent transitions are possible among workflows in the same `exclusive_record_group`.
+* **exclusive_record_groups** --- a list of group names for which the current workflow cannot be performed together with other workflows with one of the specified groups. E.g., no concurrent transitions are possible among workflows in the same `exclusive_record_group`.
 
-* **entity_restrictions** - Contains configuration for workflow restrictions.
+* **entity_restrictions** --- Contains configuration for workflow restrictions.
 
-* **defaults** - node for default workflow configuration values that can be changed in UI later.
+* **defaults** --- node for default workflow configuration values that can be changed in UI later.
 
-* **active** - determines if the workflow should be active right after the first load of configuration.
+* **active** --- determines if the workflow should be active right after the first load of configuration.
 
-* **applications** - a list of web application names for which the workflow should be available (default: all applications match)
+* **applications** --- a list of web application names for which the workflow should be available (default: all applications match)
 
-* **scopes** - a list of scopes configurations used for filtering workflow by scopes
+* **scopes** --- a list of scopes configurations used for filtering workflow by scopes
 
-* **datagrids** - a list of datagrid names on whose rows currently available transitions should be displayed as buttons.
+* **datagrids** --- a list of datagrid names on whose rows currently available transitions should be displayed as buttons.
 
-* **disable_operations** - an array of operation names (as keys) and related entities for which the operation should be disabled. See :ref:`Operations <bundle-docs-platform-action-bundle-operations>` for more details.
+* **disable_operations** --- an array of operation names (as keys) and related entities for which the operation should be disabled. See :ref:`Operations <bundle-docs-platform-action-bundle-operations>` for more details.
 
 **Example**
 
@@ -389,33 +389,33 @@ not mapped by any attribute or mismatched with the attribute type is restricted.
 
 A single attribute can be described with the following configuration:
 
-* **unique name** - Workflow attributes should have a unique name in the scope of the Workflow that they belong to. Step configuration references attributes by this value.
-* **type** - *string* - Type of an attribute. The following types are supported:
+* **unique name** --- Workflow attributes should have a unique name in the scope of the Workflow that they belong to. Step configuration references attributes by this value.
+* **type** --- *string* - Type of an attribute. The following types are supported:
 
   * **boolean**
-  * **bool** - *alias for boolean*
+  * **bool** --- *alias for boolean*
   * **integer**
-  * **int** - *alias for integer*
+  * **int** --- *alias for integer*
   * **float**
   * **string**
-  * **array** - elements of an array should be scalars or objects that support serialize/deserialize
-  * **object** - object should support serialize/deserialize, option "class" is required for this type
-  * **entity** - Doctrine entity, option "class" is required and it must be a Doctrine manageable class
+  * **array** --- elements of an array should be scalars or objects that support serialize/deserialize
+  * **object** --- object should support serialize/deserialize, option "class" is required for this type
+  * **entity** --- Doctrine entity, option "class" is required and it must be a Doctrine manageable class
 
-* **default** - Default value of an attribute. This value should correspond to the attribute type.
+* **default** --- Default value of an attribute. This value should correspond to the attribute type.
 
 * **label** (translation file field) - *translatable*: `oro.workflow.{workflow_name}.attribute.{attribute_name}.label` . The label can be shown in the UI
-* **entity_acl** - Defines an ACL for the specific entity stored in this attribute.
+* **entity_acl** --- Defines an ACL for the specific entity stored in this attribute.
 
-  * **update** - *boolean* - Can entity be updated. The default value is true.
-  * **delete** - *boolean* - Can entity be deleted. The default value is true.
+  * **update** --- *boolean* - Can entity be updated. The default value is true.
+  * **delete** --- *boolean* - Can entity be deleted. The default value is true.
 
-* **property_path** - *string* - Used to work with attribute value by reference and specifies the path to data storage. If the property path is specified, then all other attribute properties except the name are optional - they can be automatically guessed based on the last element (field) of the property path.
-* **options** - Options of an attribute. Currently, the following options are supported:
+* **property_path** --- *string* - Used to work with attribute value by reference and specifies the path to data storage. If the property path is specified, then all other attribute properties except the name are optional - they can be automatically guessed based on the last element (field) of the property path.
+* **options** --- Options of an attribute. Currently, the following options are supported:
 
-  * **class** - *string* - Fully qualified class name. Allowed only when type either entity or object.
-  * **multiple** - *boolean* - Indicates whether several entities are supported. Allowed only when type is entity.
-  * **virtual** - *boolean* - Such attribute will not be saved in the database and available only on the current transition. The default value is false.
+  * **class** --- *string* - Fully qualified class name. Allowed only when type either entity or object.
+  * **multiple** --- *boolean* - Indicates whether several entities are supported. Allowed only when type is entity.
+  * **virtual** --- *boolean* - Such attribute will not be saved in the database and available only on the current transition. The default value is false.
 
 .. note:: Attribute configuration does not contain any information about how to render attributes on step forms, it is the responsibility of "Steps configuration". This makes it possible to render one attribute in different ways on steps.
 
@@ -540,32 +540,32 @@ When a Workflow Item is created, it can manipulate its own data (Workflow Data) 
 
 A single variable can be described with the following configuration:
 
-* **unique name** - Workflow variables should have a unique name in the scope of the Workflow that they belong to. Transition definitions reference variables by this value.
-* **type** - *string* - Types of variables. The following types are supported:
+* **unique name** --- Workflow variables should have a unique name in the scope of the Workflow that they belong to. Transition definitions reference variables by this value.
+* **type** --- *string* - Types of variables. The following types are supported:
 
   * **boolean**
-  * **bool** - *alias for boolean*
+  * **bool** --- *alias for boolean*
   * **integer**
-  * **int** -  *alias for integer*
+  * **int** ---  *alias for integer*
   * **float**
   * **string**
-  * **array** - elements of an array should be scalars or objects that support serialize/deserialize
-  * **object** - object should support serialize/deserialize, option "class" is required for this type
-  * **entity** - Doctrine entity, option "class" is required and it must be a Doctrine manageable class
+  * **array** --- elements of an array should be scalars or objects that support serialize/deserialize
+  * **object** --- object should support serialize/deserialize, option "class" is required for this type
+  * **entity** --- Doctrine entity, option "class" is required and it must be a Doctrine manageable class
 
-* **entity_acl** - Defines an ACL for the specific entity stored in this attribute.
+* **entity_acl** --- Defines an ACL for the specific entity stored in this attribute.
 
-  * **update** - *boolean* - Can entity be updated. The default value is true.
-  * **delete** - *boolean* - Can entity be deleted. The default value is true.
+  * **update** --- *boolean* - Can entity be updated. The default value is true.
+  * **delete** --- *boolean* - Can entity be deleted. The default value is true.
 
-* **property_path** - *string* - Used to work with variable value by reference and specifies the path to data storage. If the property path is specified, then all other attribute properties except the name are optional - they can be automatically guessed based on the last element (field) of the property path.
-* **label** - *translatable*: `oro.workflow.{workflow_name}.variable.{variable_name}.label`. The label can be shown in the UI.
-* **options** - Options of a variable. Currently, the following options are supported:
+* **property_path** --- *string* - Used to work with variable value by reference and specifies the path to data storage. If the property path is specified, then all other attribute properties except the name are optional - they can be automatically guessed based on the last element (field) of the property path.
+* **label** --- *translatable*: `oro.workflow.{workflow_name}.variable.{variable_name}.label`. The label can be shown in the UI.
+* **options** --- Options of a variable. Currently, the following options are supported:
 
-  * **class** - *string* - Fully qualified class name. Allowed only when type is object.
-  * **form_options** - *array* - Options defined here are passed to the `WorkflowVariablesType` form type. Browse class *Oro\\Bundle\\WorkflowBundle\\Form\\Type\\WorkflowVariablesType* for more details. Constraints may be set to workflow configuration form with the `constraints` option. All Symfony form constraints are supported.
-  * **multiple** - *boolean* - Indicates whether several entities are supported. Allowed only when type is entity.
-  * **identifier** - *string* - Applies to entities only. Class identifier specifies the identity field which will be used to query for the desired entity, in case a default entity needs to be loaded upon workflow assembling. Not specifying it will read the identifier field names from the entity's metadata. Please note that it is not necessary to use a primary key, any **unique** key is a supporter, as long as it is not a composite key.
+  * **class** --- *string* - Fully qualified class name. Allowed only when type is object.
+  * **form_options** --- *array* - Options defined here are passed to the `WorkflowVariablesType` form type. Browse class *Oro\\Bundle\\WorkflowBundle\\Form\\Type\\WorkflowVariablesType* for more details. Constraints may be set to workflow configuration form with the `constraints` option. All Symfony form constraints are supported.
+  * **multiple** --- *boolean* - Indicates whether several entities are supported. Allowed only when type is entity.
+  * **identifier** --- *string* - Applies to entities only. Class identifier specifies the identity field which will be used to query for the desired entity, in case a default entity needs to be loaded upon workflow assembling. Not specifying it will read the identifier field names from the entity's metadata. Please note that it is not necessary to use a primary key, any **unique** key is a supporter, as long as it is not a composite key.
 
 .. important::
     Unlike attributes, variable configuration does contain information about how to render variables in the configuration form, with the `form_options` node under `options`. Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\VariableAssembler* for more details.
@@ -612,16 +612,16 @@ via form options). The step can be connected with attributes via form options. O
 
 Summarizing all the above, a step has the following configuration:
 
-* **name** - *string* - A step must have a unique name in the scope of the Workflow
+* **name** --- *string* - A step must have a unique name in the scope of the Workflow
 * **label** (translation file field) - *Translatable*: `oro.workflow.{workflow_name}.step.{step_name}.label` . The label of step can be shown in UI if Workflow has type wizard
-* **order** - *integer* - This value is used in the wizard page to sort steps in UI.
-* **is_final** - *boolean* - If true, then the step will be counted as the workflow final step.
-* **entity_acl** - Defines an ACL for an entity related to the specified attribute when the workflow is in this step.
+* **order** --- *integer* - This value is used in the wizard page to sort steps in UI.
+* **is_final** --- *boolean* - If true, then the step will be counted as the workflow final step.
+* **entity_acl** --- Defines an ACL for an entity related to the specified attribute when the workflow is in this step.
 
-    * **update** - *boolean* - Allows entity be updated. The default value is true.
-    * **delete** - *boolean* - Allows entity be deleted. The default value is true.
+    * **update** --- *boolean* - Allows entity be updated. The default value is true.
+    * **delete** --- *boolean* - Allows entity be deleted. The default value is true.
 
-* **allowed_transitions** - An optional list of allowed transitions. If no transitions are allowed, it is the same as the `is_final option` set to `true`.
+* **allowed_transitions** --- An optional list of allowed transitions. If no transitions are allowed, it is the same as the `is_final option` set to `true`.
 
 **Example**
 
@@ -653,31 +653,31 @@ Transitions change the current step of the Workflow Item when it is performed. I
 
 Transition configuration has the following options:
 
-* **unique name** - *string* - A transition must have a unique name in the scope of the Workflow. Step configuration references transitions by this value.
+* **unique name** --- *string* - A transition must have a unique name in the scope of the Workflow. Step configuration references transitions by this value.
 * **label** (translation file field) - *Translatable*: `oro.workflow.{workflow_name}.transition.{transition_name}.label`. The label of transition will be shown in the UI.
 * **button_label** (translation file field) - *Translatable*: `oro.workflow.{workflow_name}.transition.{transition_name}.button_label`. Used to define the text of a transition button. A `label` will be used if not defined.
 * **button_title** (translation file field) - *Translatable*: `oro.workflow.{workflow_name}.transition.{transition_name}.button_title`. Used to define the text of button hint (button hover). A `button_label` will be used if not defined.
-* **step_to** - *string* - Next step name. This is a reference to the step that will be set to Workflow Item after the transition is performed.
-* **transition_definition** - A reference to Transition Definition configuration.
-* **is_start** - *boolean* - If true, this transition can start a new workflow. At least one start transition is required if the workflow does not have the `start_step` attribute.
-* **is_hidden** - *boolean* - Indicates that this transition must be hidden in the frontend.
-* **is_unavailable_hidden** - *boolean* - Indicates that this transition must be hidden in the frontend when the transition is not allowed.
-* **acl_resource** - *string* - ACL resource name that will be checked while checking that transition execution is allowed.
-* **acl_message** - *string* - Message that will be sown in case `acl_resource` is not granted.
+* **step_to** --- *string* - Next step name. This is a reference to the step that will be set to Workflow Item after the transition is performed.
+* **transition_definition** --- A reference to Transition Definition configuration.
+* **is_start** --- *boolean* - If true, this transition can start a new workflow. At least one start transition is required if the workflow does not have the `start_step` attribute.
+* **is_hidden** --- *boolean* - Indicates that this transition must be hidden in the frontend.
+* **is_unavailable_hidden** --- *boolean* - Indicates that this transition must be hidden in the frontend when the transition is not allowed.
+* **acl_resource** --- *string* - ACL resource name that will be checked while checking that transition execution is allowed.
+* **acl_message** --- *string* - Message that will be sown in case `acl_resource` is not granted.
 * **message** (translation file field) - *Translatable*: `oro.workflow.{workflow_name}.transition.{transition_name}.warning_message`. Notification message that will be shown at frontend before transition execution. This field can be filled only in the translation file.
-* **message_parameters** - *array* - List of parameters for translating value from option `message`.
-* **init_routes** - *array* - List of routes where the transition button will be  displayed. It is required to start a workflow from entities not directly related to that workflow.
-* **init_entities** - *array* - List of entities where the transition button will be displayed. It is required to start a workflow from entities not directly related to that workflow.
-* **init_datagrids** - *array* - List of datagrid names for whose rows the transition button should be displayed. It is required to start a workflow from entities not directly related to that workflow.
-* **init_context_attribute** - *string* - Name of the attribute which contains init context: routeName, entityId, entityClass, referrer, group. Default value - `init_context`
-* **display_type** - *string* - Frontend transition form display type. Possible options are: dialog and page. Display type "page" requires "form_options" to be set.
-* **destination_page** - *string* - (optional) Parameter used only when `display_type` equals `page`. The specified value will be converted to url by entity configuration (see action `@resolve_destination_page`). In case the `@redirect` action is used in the `actions` of the transition definition, the effect from that option will be ignored. Allowed values: `name` or `index` (`index`  will be converted to `name`), `view` or `~`. Default value `~`.
-* **page_template** - *string* - Custom transition template for transition pages. Should be extended from @OroWorkflow/Workflow/transitionForm.html.twig.
-* **dialog_template** - *string* - Custom transition template for transition dialogs. Should be extended from @OroWorkflow/Widget/widget/transitionForm.html.twig.
-* **frontend_options** - Can have such frontend options as **class** (a CSS class applied to transition button), **icon** (CSS class of icon of transition button).
-* **form_options** - These options will be passed to the form type of transition, they can contain options for form types of attributes that will be shown when the user clicks the transition button. See more at :ref:`Transition Forms <backend--workflows--transition-forms>`.
-* **transition_definition** - *string* - Name of associated transition definition.
-* **triggers** - Contains configuration for Workflow Transition Triggers.
+* **message_parameters** --- *array* - List of parameters for translating value from option `message`.
+* **init_routes** --- *array* - List of routes where the transition button will be  displayed. It is required to start a workflow from entities not directly related to that workflow.
+* **init_entities** --- *array* - List of entities where the transition button will be displayed. It is required to start a workflow from entities not directly related to that workflow.
+* **init_datagrids** --- *array* - List of datagrid names for whose rows the transition button should be displayed. It is required to start a workflow from entities not directly related to that workflow.
+* **init_context_attribute** --- *string* - Name of the attribute which contains init context: routeName, entityId, entityClass, referrer, group. Default value - `init_context`
+* **display_type** --- *string* - Frontend transition form display type. Possible options are: dialog and page. Display type "page" requires "form_options" to be set.
+* **destination_page** --- *string* - (optional) Parameter used only when `display_type` equals `page`. The specified value will be converted to url by entity configuration (see action `@resolve_destination_page`). In case the `@redirect` action is used in the `actions` of the transition definition, the effect from that option will be ignored. Allowed values: `name` or `index` (`index`  will be converted to `name`), `view` or `~`. Default value `~`.
+* **page_template** --- *string* - Custom transition template for transition pages. Should be extended from @OroWorkflow/Workflow/transitionForm.html.twig.
+* **dialog_template** --- *string* - Custom transition template for transition dialogs. Should be extended from @OroWorkflow/Widget/widget/transitionForm.html.twig.
+* **frontend_options** --- Can have such frontend options as **class** (a CSS class applied to transition button), **icon** (CSS class of icon of transition button).
+* **form_options** --- These options will be passed to the form type of transition, they can contain options for form types of attributes that will be shown when the user clicks the transition button. See more at :ref:`Transition Forms <backend--workflows--transition-forms>`.
+* **transition_definition** --- *string* - Name of associated transition definition.
+* **triggers** --- Contains configuration for Workflow Transition Triggers.
 
 To configure transitions, define the following:
 
@@ -768,10 +768,10 @@ Transition Definition is used by transition to check conditions and perform acti
 
 The transition definition configuration has the following options.
 
-* **preactions** - Configuration of Pre-Actions that must be performed before Pre-Conditions check.
-* **preconditions** - Configuration of Pre-Conditions that must be satisfied to allow displaying the transition button.
-* **conditions** - Configuration of Conditions that must be satisfied to allow performing an action.
-* **actions** - Configuration of Actions that are performed after conditions are successfully qualified.
+* **preactions** --- Configuration of Pre-Actions that must be performed before Pre-Conditions check.
+* **preconditions** --- Configuration of Pre-Conditions that must be satisfied to allow displaying the transition button.
+* **conditions** --- Configuration of Conditions that must be satisfied to allow performing an action.
+* **actions** --- Configuration of Actions that are performed after conditions are successfully qualified.
 
 **Example**
 
@@ -835,11 +835,11 @@ Event Trigger
 
 Event trigger configuration has the next options.
 
-* **entity_class** - Class of entity that can trigger the transition.
-* **event** - The type of the event, can have the following values: `create`, `update`, `delete`.
-* **field** - Only for `update` event - field name that should be updated to handle trigger.
-* **queued** - [boolean, default = true] Handle trigger in the queue (if `true`), or in real time (if `false`)
-* **require** - String of Symfony Language Expression that should much to handle the trigger. The following aliases in context are available:
+* **entity_class** --- Class of entity that can trigger the transition.
+* **event** --- The type of the event, can have the following values: `create`, `update`, `delete`.
+* **field** --- Only for `update` event - field name that should be updated to handle trigger.
+* **queued** --- [boolean, default = true] Handle trigger in the queue (if `true`), or in real time (if `false`)
+* **require** --- String of Symfony Language Expression that should much to handle the trigger. The following aliases in context are available:
 
   * `entity` - Entity object that dispatches an event
   * `prevEntity` - `entity` copy with fields state before update (like the 'old' in lifecycle `changeset`)
@@ -847,7 +847,7 @@ Event trigger configuration has the next options.
   * `wd` - Workflow Definition object
   * `wi` - Workflow Item object
 
-* **relation** - Property path to `mainEntity` relative to `entity` if they are different.
+* **relation** --- Property path to `mainEntity` relative to `entity` if they are different.
 
 **Example**
 
@@ -874,9 +874,9 @@ Cron Trigger
 
 Cron trigger configuration has the following options.
 
-* **cron** - Cron definition.
-* **queue** - [boolean, default = true] Handle trigger in the queue (if `true`), or in real time (if `false`)
-* **filter** - String of Symfony Language Expression that should much to handle the trigger. The following aliases are available:
+* **cron** --- Cron definition.
+* **queue** --- [boolean, default = true] Handle trigger in the queue (if `true`), or in real time (if `false`)
+* **filter** --- String of Symfony Language Expression that should much to handle the trigger. The following aliases are available:
 
   * `e` - Entity
   * `wd` - Workflow Definition
@@ -992,17 +992,17 @@ on the attributes' grids via inline editing,  via API, or performing an import.
 
 Single entity restriction can be described with the following configuration:
 
-* **unique name** - *string* - A restriction must have a unique name in the scope of the Workflow.
-* **attribute** - *string* - This is a reference to the workflow attribute (attribute must be of type 'entity').
-* **field** - *string* - Field name of attribute class for which restriction will be applied.
-* **mode** - *enum* - Restriction mode. Allowed values for this option are 'full', 'disallow', and 'allow'. The default value is 'full'
+* **unique name** --- *string* - A restriction must have a unique name in the scope of the Workflow.
+* **attribute** --- *string* - This is a reference to the workflow attribute (attribute must be of type 'entity').
+* **field** --- *string* - Field name of attribute class for which restriction will be applied.
+* **mode** --- *enum* - Restriction mode. Allowed values for this option are 'full', 'disallow', and 'allow'. The default value is 'full'
 
   - 'full' mode means that the field will be completely disabled for editing. This is the default value for this option.
   - 'disallow' mode does not permit to filling field with values listed in the 'values' option.
   - 'allow' mode does not permit to filling field with values except listed in the 'values' option.
 
-* **values** - *array* - Optional list of field values that will be used for restriction with 'allow' and 'disallow' modes.
-* **step** - *string* - This is reference to workflow step. The restriction will be applied only when the workflow is in this step. If no step is provided, restriction will be applied for attribute creation.
+* **values** --- *array* - Optional list of field values that will be used for restriction with 'allow' and 'disallow' modes.
+* **step** --- *string* - This is reference to workflow step. The restriction will be applied only when the workflow is in this step. If no step is provided, restriction will be applied for attribute creation.
 
 **Example**
 

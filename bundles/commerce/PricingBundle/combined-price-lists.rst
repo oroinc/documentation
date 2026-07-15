@@ -32,9 +32,9 @@ Once at least one of these jobs is finished, the `CombinedPriceListPostProcessin
 
 The rebuild of the combined price list is done by the two merge strategies, which should be accessed via `CombinedPriceListsBuilderFacade`. `CombinedPriceListsBuilderFacade` provides a clean interface for the comprehensive rebuilding of the combined price lists process.
 
-- **rebuild** - runs a rebuild for the passed CPL with an optionally passed list of products.
-- **processAssignments** - triggers ProcessEvent with information about the CPL and assignment instructions.
-- **triggerProductIndexation** - triggers a product indexation request for all websites relevant for the given CPL.
+- **rebuild** --- runs a rebuild for the passed CPL with an optionally passed list of products.
+- **processAssignments** --- triggers ProcessEvent with information about the CPL and assignment instructions.
+- **triggerProductIndexation** --- triggers a product indexation request for all websites relevant for the given CPL.
 
 Combined Prices Assignment Logic
 --------------------------------

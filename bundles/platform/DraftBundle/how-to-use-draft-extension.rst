@@ -35,7 +35,7 @@ Example:
 .. note::
     Keep your extension priorities in mind. If two extensions have one area of ​​responsibility, then the higher priority extension will apply. All other extensions will be ignored.
 
-**context** - use context parameter to control the expansion workflow. In the process, you will find *actions* that use the extension only at the draft creation stage and do not use it during the draft publication.
+**context** --- use context parameter to control the expansion workflow. In the process, you will find *actions* that use the extension only at the draft creation stage and do not use it during the draft publication.
 
 Default actions:
 

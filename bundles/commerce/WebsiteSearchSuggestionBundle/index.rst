@@ -12,13 +12,13 @@ Entities
 
 This bundle contains the following new entities:
 
-- **WebsiteSearchSuggestionBundle:Suggestion** -- represents a suggestion phrase for the product autocomplete functionality. When creating or updating a product, autocomplete can suggest products based on their sku or name fields.
-- **WebsiteSearchSuggestionBundle:ProductSuggestion** -- represents a relation between a product and a suggestion phrase. Many products can reference the same suggestion.
+- **WebsiteSearchSuggestionBundle:Suggestion** --- represents a suggestion phrase for the product autocomplete functionality. When creating or updating a product, autocomplete can suggest products based on their sku or name fields.
+- **WebsiteSearchSuggestionBundle:ProductSuggestion** --- represents a relation between a product and a suggestion phrase. Many products can reference the same suggestion.
 
 **Repositories**
 
-- **SuggestionRepository** - this repository is responsible for inserting suggestions into the database while avoiding duplicates
-- **ProductSuggestionRepository** - this repository handles the insertion of relations between a suggestion and a product into the database. 
+- **SuggestionRepository** --- this repository is responsible for inserting suggestions into the database while avoiding duplicates
+- **ProductSuggestionRepository** --- this repository handles the insertion of relations between a suggestion and a product into the database.
 
 Configuration
 -------------
@@ -51,29 +51,29 @@ During a product search autocomplete, one additional suggestion search query is 
 
 **Listeners**
 
-- **ProductSuggestionIndexerListener** - adds suggestions data to the website search index by localization.
-- **AddSuggestToProductAutocompleteListener** - listens to the ProcessAutocompleteDataEvent event and is responsible for suggestion autocomplete search query.
-- **ProductSuggestionRestrictIndexListener** - adds limits to the search index for product suggestions by an organization and localizations in which they are located.
-- **SuggestionIndexationListener** - reacts to suggestion deletion and generation to provide suggestion ids for search engine indexation
+- **ProductSuggestionIndexerListener** --- adds suggestions data to the website search index by localization.
+- **AddSuggestToProductAutocompleteListener** --- listens to the ProcessAutocompleteDataEvent event and is responsible for suggestion autocomplete search query.
+- **ProductSuggestionRestrictIndexListener** --- adds limits to the search index for product suggestions by an organization and localizations in which they are located.
+- **SuggestionIndexationListener** --- reacts to suggestion deletion and generation to provide suggestion ids for search engine indexation
 
 **RequestBuilder**
 
-- **ProductsSuggestsRequestBuilder** - adds two boosts for prefix query and words_count phrases for suggestion autocomplete requests.
+- **ProductsSuggestsRequestBuilder** --- adds two boosts for prefix query and words_count phrases for suggestion autocomplete requests.
   * prefix query means that phrase that starts from the search string should be higher.
   * words_count means that phrases with fewer words should be higher.
 
 **Repository**
 
-- **ProductSuggestionRepository** - contains the autocomplete suggestions search query.
+- **ProductSuggestionRepository** --- contains the autocomplete suggestions search query.
 
 Suggestions Generation
 ^^^^^^^^^^^^^^^^^^^^^^
 
 **Listeners**
 
-- **CreateProductSuggestionListener** - responsible for collecting product ids on onFlush event for `Product`
+- **CreateProductSuggestionListener** --- responsible for collecting product ids on onFlush event for `Product`
   and `ProductName` entities and sending them to the message queue.
-- **WebsiteSearchSuggestionFeatureToggleListener** - is responsible for sending messages to MQ to generate suggestions the moment the feature is enabled in the configuration.
+- **WebsiteSearchSuggestionFeatureToggleListener** --- is responsible for sending messages to MQ to generate suggestions the moment the feature is enabled in the configuration.
 
 **Commands**
 
@@ -81,21 +81,21 @@ Command **oro:website-search-suggestions:generate** initiates the suggestion gen
 
 **Async Processors**
 
-- **GenerateSuggestionsProcessor** - is responsible for collecting product IDs from organizations, which are then sent to **GenerateSuggestionPhrasesProcessor**
-- **GenerateSuggestionsProcessor** - is responsible for generating phrases for the provided products  which are then sent to processor **PersistSuggestionPhrasesProcessor**
-- **PersistSuggestionPhrasesProcessor** - is responsible for persisting phrases to the database, and then sending suggestion IDs with products to **PersistSuggestionProductRelationProcessor**
-- **PersistSuggestionProductRelationProcessor** - is responsible for persisting the relation between a product and  a suggestion to the database
+- **GenerateSuggestionsProcessor** --- is responsible for collecting product IDs from organizations, which are then sent to **GenerateSuggestionPhrasesProcessor**
+- **GenerateSuggestionsProcessor** --- is responsible for generating phrases for the provided products  which are then sent to processor **PersistSuggestionPhrasesProcessor**
+- **PersistSuggestionPhrasesProcessor** --- is responsible for persisting phrases to the database, and then sending suggestion IDs with products to **PersistSuggestionProductRelationProcessor**
+- **PersistSuggestionProductRelationProcessor** --- is responsible for persisting the relation between a product and  a suggestion to the database
 
 **Persisters**
 
-- **SuggestionPersister** - is responsible for persisting suggestions to the database
-- **ProductSuggestionPersister** - is responsible for persisting the relation between a suggestion and a product to the database
+- **SuggestionPersister** --- is responsible for persisting suggestions to the database
+- **ProductSuggestionPersister** --- is responsible for persisting the relation between a suggestion and a product to the database
 
 **Providers**
 
-- **ProductsProvider** - provides a method for getting available product ids, SKUs, names.
-- **SuggestionProvider** - provides a method for getting suggestion phrases for each localization from sku and product names for the provided product ids.
-- **PhraseSplitter** - is responsible for splitting SKU and names of a product into suggestion phrases. It cleans phrases from garbage symbols. The suggestion cannot have more than 4 words in a phrase.
+- **ProductsProvider** --- provides a method for getting available product ids, SKUs, names.
+- **SuggestionProvider** --- provides a method for getting suggestion phrases for each localization from sku and product names for the provided product ids.
+- **PhraseSplitter** --- is responsible for splitting SKU and names of a product into suggestion phrases. It cleans phrases from garbage symbols. The suggestion cannot have more than 4 words in a phrase.
 
   For example, below are results for the phrase "Client, Credit Card":
 
@@ -108,8 +108,8 @@ Command **oro:website-search-suggestions:generate** initiates the suggestion gen
 
 **Events**
 
-- **SuggestionPersistEvent** - gives the ability to modify persisted suggestions
-- **ProductSuggestionPersistEvent** - gives the ability to modify persisted product suggestions
+- **SuggestionPersistEvent** --- gives the ability to modify persisted suggestions
+- **ProductSuggestionPersistEvent** --- gives the ability to modify persisted product suggestions
 
 Suggestions Removal
 ^^^^^^^^^^^^^^^^^^^
@@ -122,12 +122,12 @@ Command **oro:cron:website-search-suggestions:clean-up** finds and initiates the
 
 **Async Processors**
 
-- **DeleteOrphanSuggestionsProcessor** - is responsible for finding suggestion ids without products and sending these ids to processor **DeleteOrphanSuggestionsChunkProcessor**
-- **DeleteOrphanSuggestionsChunkProcessor** - is responsible for removing suggestions by the provided ids
+- **DeleteOrphanSuggestionsProcessor** --- is responsible for finding suggestion ids without products and sending these ids to processor **DeleteOrphanSuggestionsChunkProcessor**
+- **DeleteOrphanSuggestionsChunkProcessor** --- is responsible for removing suggestions by the provided ids
 
 **Events**
 
-- **SuggestionDeleteEvent** - gives the ability to react to deleted suggestions
+- **SuggestionDeleteEvent** --- gives the ability to react to deleted suggestions
 
 
 .. include:: /include/include-links-dev.rst

@@ -66,12 +66,12 @@ Configure New Arrivals Globally
 
 3. In the **New Arrivals** section provide the following information:
 
-   * **Product Segment** -- Select the segment that will include the items to be featured in the **New Arrivals** block.
+   * **Product Segment** --- Select the segment that will include the items to be featured in the **New Arrivals** block.
 
     .. note:: If *Choose Segment* is selected, the **New Arrivals** block disappears from the homepage.
 
-   * **Maximum Items** -- Set the maximum number of items that the block should contain. By default, the number is set to 4 items.
-   * **Minimum Items** -- Set the minimum number of items that the block should contain. By default, the number is set to 3 items.
+   * **Maximum Items** --- Set the maximum number of items that the block should contain. By default, the number is set to 4 items.
+   * **Minimum Items** --- Set the minimum number of items that the block should contain. By default, the number is set to 3 items.
 
    .. note:: The block will be hidden if the number of items in the segment used for the block is less than the set value. For instance, if the set minimum number is 3 and the number of items in the segment is 2, you will not be able to see the block unless you add more items to the segment, or change the minimum value.
 

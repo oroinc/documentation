@@ -251,9 +251,9 @@ We may not know other scope criteria available for this type. The scope manager 
 
 where:
 
-* **customer_id** - is a parameter provided in the context
-* **website_id** - is not provided, but it is required based on the scope type
-* **customer_group_id** - should be missing (NULL) in the scope, as it does not participate in the scope type.
+* **customer_id** --- is a parameter provided in the context
+* **website_id** --- is not provided, but it is required based on the scope type
+* **customer_group_id** --- should be missing (NULL) in the scope, as it does not participate in the scope type.
 
 The resulting scopes delivered to the scope consumer by the scope manager are:
 

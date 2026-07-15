@@ -11,31 +11,31 @@ The **placeholder** defined by a unique name and ordered items (templates and ac
 The **placeholder item** defined by a unique name and ``template`` or ``action`` to render.
 
 The placeholder item can have the following optional properties:
-    -  **template** or **action** - A path to the TWIG template or controller action that is used to render the item.
-    -  **applicable** - A boolean condition that indicates whether the item must be rendered or not.
-    -  **acl** - The ACL resource(s). Can be a string or array of strings. It can be used to restrict access to the item. If several ACL resources
+    -  **template** or **action** --- A path to the TWIG template or controller action that is used to render the item.
+    -  **applicable** --- A boolean condition that indicates whether the item must be rendered or not.
+    -  **acl** --- The ACL resource(s). Can be a string or array of strings. It can be used to restrict access to the item. If several ACL resources
        are provided, all of them must grant access for the item to receive the access.
-    -  **data** - Additional data to be passed to TWIG template or controller.
+    -  **data** --- Additional data to be passed to TWIG template or controller.
 
 Each property can be a constant or an expression.
 
 The following expressions are supported:
-    -  **%parameter%** - gets a parameter from the DI container
-    -  **:math:`parameter`** - gets a parameter from the context
-    -  **AcmeClass::MY_CONST** - gets a constant
-    -  **AcmeClass::myMethod** - calls the static method without parameters
-    -  **AcmeClass::myMethod()** - calls the static method without
+    -  **%parameter%** --- gets a parameter from the DI container
+    -  **:math:`parameter`** --- gets a parameter from the context
+    -  **AcmeClass::MY_CONST** --- gets a constant
+    -  **AcmeClass::myMethod** --- calls the static method without parameters
+    -  **AcmeClass::myMethod()** --- calls the static method without
        parameters
-    -  **AcmeClass::myMethod(\ :math:`param1`, %param2%)** - calls the
+    -  **AcmeClass::myMethod(\ :math:`param1`, %param2%)** --- calls the
        static method with parameters
-    -  **@service->myMethod** - calls service’s method without parameters
-    -  **@service->myMethod()** - calls service’s method without parameters
-    -  **@service->myMethod(:math:`param1`, %param2%)** - calls service’s
+    -  **@service->myMethod** --- calls service’s method without parameters
+    -  **@service->myMethod()** --- calls service’s method without parameters
+    -  **@service->myMethod(:math:`param1`, %param2%)** --- calls service’s
        method with parameters
-    -  **@service** - gets the instance of a service
+    -  **@service** --- gets the instance of a service
 
 Also, it is possible to use parameters inside expressions, for example:
-    -  **%acme.class_name%::myMethod()** - calls the static method without
+    -  **%acme.class_name%::myMethod()** --- calls the static method without
        parameters
     -  **Hello :math:`user_name`**
 

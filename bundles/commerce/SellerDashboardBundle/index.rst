@@ -24,7 +24,7 @@ Features
 Configuration
 -------------
 
-**Important** - this configuration is available only via ``config.yml/app.yml``. It is not exposed via system configuration.
+**Important** --- this configuration is available only via ``config.yml/app.yml``. It is not exposed via system configuration.
 
 * ``oro_seller_dashboard.order_count_status_criteria`` - only orders with selected statuses will be calculated in the "Orders Count" and "Orders Revenue" widgets
 * ``oro_seller_dashboard.top_selling_status_criteria`` - only orders with selected statuses will be calculated in the "Top Selling Items" widgets

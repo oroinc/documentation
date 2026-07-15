@@ -27,9 +27,9 @@ You can update the product watermark settings, enable image preview and configur
 
 6. In the **Product Image Watermark** section, the following options are available:
 
-   * **File** -- The image file with the watermark on a transparent background.
-   * **Size** -- The size of the watermark in percentage compared to the whole image.
-   * **Position** -- The watermark position on the image (e.g, top left, top, top right, left, right, center, bottom left, bottom, and bottom right).
+   * **File** --- The image file with the watermark on a transparent background.
+   * **Size** --- The size of the watermark in percentage compared to the whole image.
+   * **Position** --- The watermark position on the image (e.g, top left, top, top right, left, right, center, bottom left, bottom, and bottom right).
 
 7. In the **Image Gallery Options** section, the following options are available:
 

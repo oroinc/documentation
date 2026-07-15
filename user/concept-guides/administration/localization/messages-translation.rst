@@ -11,7 +11,7 @@ Use the following filters to narrow down the search and locate the element's key
 
 * **Languages** --- The language in which the label was created.
 * **Translated Value** --- [Label Name] or its part.
-* **English Translation** -- Not available. Please note that when a system element is created under a non-English localization, the English translation is absent.
+* **English Translation** --- Not available. Please note that when a system element is created under a non-English localization, the English translation is absent.
 * **Key** --- All keys for system elements, labels, or messages end with a *label*. For example, *oro.email.created.label*.
 * **Domain** --- messages
 
