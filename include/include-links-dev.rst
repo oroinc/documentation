@@ -6531,3 +6531,19 @@ Links (Dev)
 .. |application_name| raw:: html
 
    <a href="https://www.postgresql.org/docs/current/runtime-config-logging.html#GUC-APPLICATION-NAME" target="_blank">application_name</a>
+
+.. |NelmioCorsBundle| raw:: html
+
+   <a href="https://github.com/nelmio/NelmioCorsBundle" target="_blank">NelmioCorsBundle</a>
+
+.. |CONTRIBUTING.md| raw:: html
+
+   <a href="https://github.com/oroinc/documentation/blob/master/CONTRIBUTING.md" target="_blank">CONTRIBUTING.md</a>
+
+.. |STYLE-GUIDE.md| raw:: html
+
+   <a href="https://github.com/oroinc/documentation/blob/master/STYLE-GUIDE.md" target="_blank">STYLE-GUIDE.md</a>
+
+.. |RST-SYNTAX.md| raw:: html
+
+   <a href="https://github.com/oroinc/documentation/blob/master/RST-SYNTAX.md" target="_blank">RST-SYNTAX.md</a>
