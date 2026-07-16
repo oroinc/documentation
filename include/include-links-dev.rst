@@ -6612,3 +6612,15 @@ Links (Dev)
 .. |NelmioCorsBundle| raw:: html
 
    <a href="https://github.com/nelmio/NelmioCorsBundle" target="_blank">NelmioCorsBundle</a>
+
+.. |CONTRIBUTING.md| raw:: html
+
+   <a href="https://github.com/oroinc/documentation/blob/master/CONTRIBUTING.md" target="_blank">CONTRIBUTING.md</a>
+
+.. |STYLE-GUIDE.md| raw:: html
+
+   <a href="https://github.com/oroinc/documentation/blob/master/STYLE-GUIDE.md" target="_blank">STYLE-GUIDE.md</a>
+
+.. |RST-SYNTAX.md| raw:: html
+
+   <a href="https://github.com/oroinc/documentation/blob/master/RST-SYNTAX.md" target="_blank">RST-SYNTAX.md</a>
