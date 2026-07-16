@@ -263,7 +263,7 @@ This request does the following:
 
 All included resources in а request must be connected to the primary resource and this must be explicitly specified
 in the request. You can specify the connection in both ways, from the primary resource to the included resource,
-and vise versa. The following examples are equivalent:
+and vice versa. The following examples are equivalent:
 
 .. code-block:: json
 
