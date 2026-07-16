@@ -1,9 +1,9 @@
 .. _setup-dev-env-docker-symfony_ubuntu:
 
-Set up Environment for OroPlatform Based Application on Ubuntu 24.04
+Set up Environment for OroPlatform Based Application on Ubuntu 26.04
 ====================================================================
 
-This guide demonstrates how to set up :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Ubuntu 24.04 LTS.
+This guide demonstrates how to set up :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Ubuntu 26.04 LTS.
 
 Environment Setup
 -----------------
@@ -12,8 +12,6 @@ Environment Setup
 
    .. code-block:: none
 
-      sudo apt install software-properties-common
-      sudo add-apt-repository -y ppa:ondrej/php
       sudo apt update
       sudo apt -y install php8.5 php8.5-fpm php8.5-cli php8.5-pdo php8.5-mysqlnd php8.5-xml php8.5-soap php8.5-gd php8.5-zip php8.5-intl php8.5-mbstring php8.5-curl php8.5-bcmath php8.5-ldap php8.5-pgsql
 
