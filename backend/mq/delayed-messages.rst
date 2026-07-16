@@ -48,13 +48,13 @@ Run ``php bin/console config:dump oro_message_queue`` command to see message que
             # Redelivery message extension configuration.
             redelivery:
 
-                # If redelivery enabled than new copied message will be published
-                # to message broker and old one will be REJECTED when error
+                # If redelivery is enabled than new copied message will be published
+                # to the message broker, and the old one will be REJECTED when error
                 # was occurred during message processing.
                 enabled:              true
 
-                # Time through which message will be re-published to the broker,
-                # old one will be REJECTED immediately.
+                # Time through which the message will be re-published to the broker,
+                # the old one will be REJECTED immediately.
                 delay_time:           10
 
 Example how to change redelivery delay time:

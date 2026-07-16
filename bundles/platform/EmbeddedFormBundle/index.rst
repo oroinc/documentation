@@ -11,7 +11,7 @@ This bundle has the following configuration options:
 
     oro_embedded_form:
         # The name of the hidden field that should be used to pass the session id to third party site.
-        # This allows to use the embedded form even if a web browser blocks third-party cookies.
+        # This allows using the embedded form even if a web browser blocks third-party cookies.
         session_id_field_name: _embedded_form_sid
         # The number of seconds the CSRF token should live for.
         csrf_token_lifetime: 3600
