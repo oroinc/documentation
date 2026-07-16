@@ -133,7 +133,7 @@ Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, 
 FieldAwareFilterInterface Interface
 -----------------------------------
 
-Filters that are applied to a field and need to know the field name. must implement the |FieldAwareFilterInterface| interface.
+Filters that are applied to a field and need to know the field name. Must implement the |FieldAwareFilterInterface| interface.
 
 Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |StringComparisonFilter|, |ExtendedAssociationFilter|, |NestedAssociationFilter|, |PrimaryFieldFilter| and |AssociationCompositeIdentifierFilter|.
 
