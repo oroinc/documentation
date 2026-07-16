@@ -50,6 +50,7 @@ If you select one of the provider-specific integrations (**OpenID Connect**, **G
     * **User** — The login button is displayed on the back-office login page.
     * **Customer User** — The login button is displayed on the storefront login page.
 
+* **Website** --- Available only when the *Customer Pro bundle* is installed and *Customer User* is selected in the *Apply to* field. Determines the storefront website on which the button is displayed.
 * **Label** --- The label displayed on the SSO login button.
 * **Button Background Color** --- The background color of the SSO login button. If no color is specified, the default system background color is used.
 * **Button Icon** --- The icon displayed on the login button in the back-office. The icon is shown only when *User* is selected in the *Apply to* field.
