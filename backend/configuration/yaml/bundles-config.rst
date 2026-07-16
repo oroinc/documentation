@@ -16,7 +16,7 @@ To display the actual configuration values used in your application, run the fol
    php bin/console debug:config -eprod [alias]
 
 oro_api
-_______
+-------
 
 The default configuration for extension with alias "oro_api":
 
@@ -412,7 +412,7 @@ The default configuration for extension with alias "oro_api":
                 name:                 ~
 
 oro_asset
-_________
+---------
 
 The default configuration for extension with alias "oro_asset":
 
@@ -449,7 +449,7 @@ The default configuration for extension with alias "oro_asset":
             https:                false
 
 oro_attachment
-______________
+--------------
 
 The default configuration for extension with alias "oro_attachment":
 
@@ -480,7 +480,7 @@ The default configuration for extension with alias "oro_attachment":
             load_attachments_batch_size: 10000
 
 oro_batch
-_________
+---------
 
 The default configuration for extension with alias "oro_batch":
 
@@ -495,7 +495,7 @@ The default configuration for extension with alias "oro_batch":
         cleanup_interval:     '1 week' # Example: '1 month'
 
 oro_cms
-_______
+-------
 
 The default configuration for extension with alias "oro_cms":
 
@@ -524,7 +524,7 @@ The default configuration for extension with alias "oro_cms":
                     \Entity:              []
 
 oro_calendar
-____________
+------------
 
 The default configuration for extension with alias "oro_calendar":
 
@@ -542,7 +542,7 @@ The default configuration for extension with alias "oro_calendar":
         enabled_system_calendar: system
 
 oro_commerce_mcp
-________________
+----------------
 
 The default configuration for extension with alias "oro_commerce_mcp":
 
@@ -556,12 +556,21 @@ The default configuration for extension with alias "oro_commerce_mcp":
         # The application version to be exposed to MCP clients.
         version:              ~ # Required
 
-        # Instructions in Markdown format describing MCP server purpose and usage context (for LLMs).
+        # Instructions in Markdown format describing the MCP server's purpose and usage context (for LLMs).
         # The instructions should start with a top-level section name, for example:
         # # Critical Rules
         #
         # If several bundles provide instructions with the same top-level sections, their contents will be merged.
         instructions:         null
+
+        # Markdown files containing additional MCP server instructions associated with specific API request type expressions.
+        additional_instructions:
+
+            # Example:
+            # @AcmeMcpBundle/Resources/doc/mcp/instructions.md: ['json_api&acme']
+
+            # Prototype
+            name:                 []
 
         # The maximum number of items returned per MCP list request.
         pagination_limit:     50
@@ -610,6 +619,28 @@ The default configuration for extension with alias "oro_commerce_mcp":
                     # - X-Foo
                     # - X-Bar
 
+            # Additional HTTP endpoints that can be used to tune MCP server behaviour.
+            additional_endpoints:
+
+                # Example:
+                # acme: { path: /mcp-acme, request_type: [acme] }
+
+                # Prototype
+                name:
+                    path:                 ~ # Required
+                    request_type:         [] # Required
+
+            # Additional HTTP request headers that can be used to tune MCP server behaviour.
+            additional_headers:
+
+                # Example:
+                # X-Integration-Name:  { value: acme, request_type: [acme] }
+
+                # Prototype
+                name:
+                    value:                ~ # Required
+                    request_type:         [] # Required
+
         # MCP services discovery configuration.
         discovery:
 
@@ -628,6 +659,9 @@ The default configuration for extension with alias "oro_commerce_mcp":
                 # The list of directories (relative to the base path) to exclude from the scan.
                 exclude_dirs:         []
 
+                # The API request type expression to which the discovery path applies.
+                request_type:         ~
+
         # API related configuration.
         api:                  # Required
 
@@ -640,20 +674,23 @@ The default configuration for extension with alias "oro_commerce_mcp":
             # Indicates whether API is storefront or back-office.
             frontend:             false
 
-            # The request type for API that is used by MCP tools based on API.
+            # The request type for API that is used by API-based MCP tools.
             request_type:         []
 
-            # All supported API configuration files for MCP tools based on API.
+            # All supported API configuration files for API-based MCP tools.
             config_files:         []
 
             # A map between API and MCP data types.
             data_types:
 
+                # Example:
+                # text:                string
+
                 # Prototype
                 name:                 ~
 
 oro_contact
-___________
+-----------
 
 The default configuration for extension with alias "oro_contact":
 
@@ -667,7 +704,7 @@ The default configuration for extension with alias "oro_contact":
             linked_in:            'http://www.linkedin.com/in/%%username%%'
 
 oro_customer
-____________
+------------
 
 The default configuration for extension with alias "oro_customer":
 
@@ -698,7 +735,7 @@ The default configuration for extension with alias "oro_customer":
 
 
 oro_email
-_________
+---------
 
 The default configuration for extension with alias "oro_email":
 
@@ -715,7 +752,7 @@ The default configuration for extension with alias "oro_email":
             max_emails_display:   4
 
 oro_embedded_form
-_________________
+-----------------
 
 The default configuration for extension with alias "oro_embedded_form":
 
@@ -723,7 +760,7 @@ The default configuration for extension with alias "oro_embedded_form":
 
     oro_embedded_form:
 
-        # The name of the hidden field that should be used to pass the session id to third party site. This allows to use the embedded form even if a web browser blocks third-party cookies.
+        # The name of the hidden field that should be used to pass the session id to third party site. This allows using the embedded form even if a web browser blocks third-party cookies.
         session_id_field_name: _embedded_form_sid
 
         # The number of seconds the CSRF token should live for.
@@ -733,7 +770,7 @@ The default configuration for extension with alias "oro_embedded_form":
         csrf_token_cache_service_id: ~
 
 oro_entity
-__________
+----------
 
 The default configuration for extension with alias "oro_entity":
 
@@ -755,7 +792,7 @@ The default configuration for extension with alias "oro_entity":
         default_query_cache_lifetime: null
 
 oro_entity_extend
-_________________
+-----------------
 
 The default configuration for extension with alias "oro_entity_extend":
 
@@ -765,7 +802,7 @@ The default configuration for extension with alias "oro_entity_extend":
         backup:               '%kernel.project_dir%/var/backup'
 
 oro_featuretoggle
-_________________
+-----------------
 
 The default configuration for extension with alias "oro_featuretoggle":
 
@@ -777,7 +814,7 @@ The default configuration for extension with alias "oro_featuretoggle":
         allow_if_equal_granted_denied: true
 
 oro_form
-________
+--------
 
 The default configuration for extension with alias "oro_form":
 
@@ -838,7 +875,7 @@ The default configuration for extension with alias "oro_form":
                         hasClosingTag:        true
 
 oro_frontend
-____________
+------------
 
 The default configuration for extension with alias "oro_frontend":
 
@@ -896,8 +933,156 @@ The default configuration for extension with alias "oro_frontend":
                     - X-Foo
                     - X-Bar
 
+oro_frontend_commerce_mcp
+-------------------------
+
+The default configuration for extension with alias "oro_frontend_commerce_mcp":
+
+.. code-block:: yaml
+
+    oro_frontend_commerce_mcp:
+
+        # The application name to be exposed to MCP clients.
+        app:                  ~ # Required
+
+        # The application version to be exposed to MCP clients.
+        version:              ~ # Required
+
+        # Instructions in Markdown format describing the MCP server's purpose and usage context (for LLMs).
+        # The instructions should start with a top-level section name, for example:
+        # # Critical Rules
+        #
+        # If several bundles provide instructions with the same top-level sections, their contents will be merged.
+        instructions:         null
+
+        # Markdown files containing additional MCP server instructions associated with specific API request type expressions.
+        additional_instructions:
+
+            # Example:
+            # @AcmeMcpBundle/Resources/doc/mcp/instructions.md: ['json_api&acme']
+
+            # Prototype
+            name:                 []
+
+        # The maximum number of items returned per MCP list request.
+        pagination_limit:     50
+
+        # MCP HTTP transport configuration.
+        http:                 # Required
+
+            # MCP HTTP endpoint path.
+            path:                 ~ # Required
+
+            # The authorization server scopes required for accessing MCP server.
+            scopes:               [] # Required
+
+            # MCP session store configuration.
+            session:
+
+                # The session store type.
+                store:                file # One of "cache"; "memory"; "file"
+
+                # The prefix for cache store.
+                cache_prefix:         ~
+
+                # The directory for file store.
+                directory:            ~
+
+                # The session TTL in seconds.
+                ttl:                  3600
+
+            # The configuration of CORS requests for MCP server.
+            cors:
+
+                # The list of origins that are allowed to send CORS requests.
+                allow_origins:
+
+                    # Default:
+                    - "*"
+
+                    # Examples:
+                    # - 'https://foo.com'
+                    # - 'https://bar.com'
+
+                # The list of headers that are allowed to send by CORS requests.
+                allow_headers:        []
+
+                    # Examples:
+                    # - X-Foo
+                    # - X-Bar
+
+            # Additional HTTP endpoints that can be used to tune MCP server behaviour.
+            additional_endpoints:
+
+                # Example:
+                # acme: { path: /mcp-acme, request_type: [acme] }
+
+                # Prototype
+                name:
+                    path:                 ~ # Required
+                    request_type:         [] # Required
+
+            # Additional HTTP request headers that can be used to tune MCP server behaviour.
+            additional_headers:
+
+                # Example:
+                # X-Integration-Name:  { value: acme, request_type: [acme] }
+
+                # Prototype
+                name:
+                    value:                ~ # Required
+                    request_type:         [] # Required
+
+        # MCP services discovery configuration.
+        discovery:
+
+            # Example:
+            # - { base_path: Acme\Bundle\McpBundle\AcmeMcpBundle, scan_dirs: [Mcp] }
+
+            # Prototype
+            -
+
+                # The base path for scanning directories. Also can be PHP class.
+                base_path:            ~
+
+                # The list of directories (relative to the base path) to scan.
+                scan_dirs:            [] # Required
+
+                # The list of directories (relative to the base path) to exclude from the scan.
+                exclude_dirs:         []
+
+                # The API request type expression to which the discovery path applies.
+                request_type:         ~
+
+        # API related configuration.
+        api:                  # Required
+
+            # The API type that is used to group and protect MCP capabilities.
+            type:                 ~ # Required
+
+            # The human-readable API name.
+            name:                 ~ # Required
+
+            # Indicates whether API is storefront or back-office.
+            frontend:             false
+
+            # The request type for API that is used by API-based MCP tools.
+            request_type:         []
+
+            # All supported API configuration files for API-based MCP tools.
+            config_files:         []
+
+            # A map between API and MCP data types.
+            data_types:
+
+                # Example:
+                # text:                string
+
+                # Prototype
+                name:                 ~
+
 oro_gaufrette
-_____________
+-------------
 
 The default configuration for extension with alias "oro_gaufrette":
 
@@ -906,11 +1091,11 @@ The default configuration for extension with alias "oro_gaufrette":
     oro_gaufrette:
         stream_wrapper:
 
-            # The name of read-only Gaufrette protocol. By default it is "{gaufrette protocol name}-readonly".
+            # The name of read-only Gaufrette protocol. By default, it is "{gaufrette protocol name}-readonly".
             readonly_protocol:    null
 
 oro_google_tag_manager
-______________________
+----------------------
 
 The default configuration for extension with alias "oro_google_tag_manager":
 
@@ -923,7 +1108,7 @@ The default configuration for extension with alias "oro_google_tag_manager":
             batch_size:           30
 
 oro_health_check
-________________
+----------------
 
 The default configuration for extension with alias "oro_health_check":
 
@@ -938,7 +1123,7 @@ The default configuration for extension with alias "oro_health_check":
             ttl:                      900
 
 oro_help
-________
+--------
 
 The default configuration for extension with alias "oro_help":
 
@@ -952,7 +1137,7 @@ The default configuration for extension with alias "oro_help":
             link:                 ~
 
 oro_layout
-__________
+----------
 
 The default configuration for extension with alias "oro_layout":
 
@@ -977,14 +1162,14 @@ The default configuration for extension with alias "oro_layout":
                     # Example:
                     - '@My/Layout/blocks.html.twig'
 
-        # Enable layout debug mode. Allows to switch theme using request parameter _theme.
+        # Enable layout debug mode. Allows switching the theme using the request parameter _theme.
         debug:                '%kernel.debug%'
 
         # The identifier of the theme that should be used by default
         active_theme:         ~
 
 oro_locale
-__________
+----------
 
 The default configuration for extension with alias "oro_locale":
 
@@ -995,7 +1180,7 @@ The default configuration for extension with alias "oro_locale":
         language:             en
 
 oro_maintenance
-_______________
+---------------
 
 The default configuration for extension with alias "oro_maintenance":
 
@@ -1019,7 +1204,7 @@ The default configuration for extension with alias "oro_maintenance":
             exception_message:    'Service Temporarily Unavailable'
 
 oro_message_queue
-_________________
+-----------------
 
 The default configuration for extension with alias "oro_message_queue":
 
@@ -1058,13 +1243,13 @@ The default configuration for extension with alias "oro_message_queue":
             # Redelivery message extension configuration.
             redelivery:
 
-                # If redelivery enabled than new copied message will be published
-                # to message broker and old one will be REJECTED when error
-                # was occurred during message processing.
+                # If redelivery is enabled than new copied message will be published
+                # to the message broker, and the old one will be REJECTED when an error
+                # occurred during message processing.
                 enabled:              true
 
-                # Time through which message will be re-published to the broker,
-                # old one will be REJECTED immediately.
+                # Time through which the message will be re-published to the broker,
+                # the old one will be REJECTED immediately.
                 delay_time:           10
 
         # A list of services that must not be removed from the container once the message is processed.
@@ -1134,7 +1319,7 @@ The default configuration for extension with alias "oro_message_queue":
                 job_name:             ~
 
 oro_microsoft_sync
-__________________
+------------------
 
 The default configuration for extension with alias "oro_microsoft_sync":
 
@@ -1152,7 +1337,7 @@ The default configuration for extension with alias "oro_microsoft_sync":
             deleted_entities_driver: oro_microsoft_sync.storage_driver.dbal
 
 oro_multi_host
-______________
+--------------
 
 The default configuration for extension with alias "oro_multi_host":
 
@@ -1188,7 +1373,7 @@ The default configuration for extension with alias "oro_multi_host":
         operation_lifetime:   180
 
 oro_navigation
-______________
+--------------
 
 The default configuration for extension with alias "oro_navigation":
 
@@ -1200,7 +1385,7 @@ The default configuration for extension with alias "oro_navigation":
         js_routing_filename_prefix: ''
 
 oro_notification
-________________
+----------------
 
 The default configuration for extension with alias "oro_notification":
 
@@ -1212,7 +1397,7 @@ The default configuration for extension with alias "oro_notification":
         events:               []
 
 oro_oauth2_server
-_________________
+-----------------
 
 The default configuration for extension with alias "oro_oauth2_server":
 
@@ -1293,7 +1478,7 @@ The default configuration for extension with alias "oro_oauth2_server":
                     name:                 ~
 
 oro_organization_pro
-____________________
+--------------------
 
 The default configuration for extension with alias "oro_organization_pro":
 
@@ -1314,7 +1499,7 @@ The default configuration for extension with alias "oro_organization_pro":
             disabled_organization_types: []
 
 oro_paypal
-__________
+----------
 
 The default configuration for extension with alias "oro_paypal":
 
@@ -1324,7 +1509,7 @@ The default configuration for extension with alias "oro_paypal":
         allowed_ips:          []
 
 oro_report
-__________
+----------
 
 The default configuration for extension with alias "oro_report":
 
@@ -1343,7 +1528,7 @@ The default configuration for extension with alias "oro_report":
                 - acme_report_
 
 oro_search
-__________
+----------
 
 The default configuration for extension with alias "oro_search":
 
@@ -1357,7 +1542,7 @@ The default configuration for extension with alias "oro_search":
         item_container_template: '@OroSearch/Datagrid/itemContainer.html.twig'
 
 oro_security
-____________
+------------
 
 The default configuration for extension with alias "oro_security":
 
@@ -1371,7 +1556,7 @@ The default configuration for extension with alias "oro_security":
         login_target_path_excludes: []
 
 oro_task
-________
+--------
 
 The default configuration for extension with alias "oro_task":
 
@@ -1383,7 +1568,7 @@ The default configuration for extension with alias "oro_task":
         my_tasks_in_calendar: true
 
 oro_theme
-_________
+---------
 
 The default configuration for extension with alias "oro_theme":
 
@@ -1404,7 +1589,7 @@ The default configuration for extension with alias "oro_theme":
         active_theme:         ~
 
 oro_translation
-_______________
+---------------
 
 The default configuration for extension with alias "oro_translation":
 
@@ -1446,7 +1631,7 @@ The default configuration for extension with alias "oro_translation":
 .. _yaml-bundles-configuration-reset-password:
 
 oro_user
-________
+--------
 
 The default configuration for extension with alias "oro_user":
 
@@ -1469,7 +1654,7 @@ The default configuration for extension with alias "oro_user":
                 show_default:         ~
 
 oro_user_pro
-____________
+------------
 
 The default configuration for extension with alias "oro_user_pro":
 
@@ -1481,7 +1666,7 @@ The default configuration for extension with alias "oro_user_pro":
         auto_deactivate_emails_delay: 1440
 
 oro_website_search
-__________________
+------------------
 
 The default configuration for extension with alias "oro_website_search":
 
