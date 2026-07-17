@@ -245,7 +245,7 @@ The variable overrides the corresponding ``oro_message_queue.consumer.receive_ti
 Message Queue Consumption Mode
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can select the consumption mode that determines the order in which a consumer bound to multiple queues visits them with the following environment variable:
+You can use the following environment variable to select the consumption mode, which determines the order in which a consumer visits multiple queues.
 
 .. code:: bash
 
