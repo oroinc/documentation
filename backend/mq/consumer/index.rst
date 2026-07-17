@@ -40,6 +40,23 @@ Built-in modes:
 
 For a detailed description of each mode, including consumption schemas, and instructions for creating custom modes, see :ref:`Consumption Modes <dev-guide-mq-consumption-modes>`.
 
+Receive Timeout
+---------------
+
+The consumer receive timeout control how long the consumer waits on each bound queue and how long it sleeps when a queue yields no message. The option accepts a fractional (sub-second) value in seconds:
+
+.. code-block:: yaml
+
+   oro_message_queue:
+       consumer:
+           receive_timeout: 1.0  # The maximum time in seconds to wait for a message from a single queue per receive cycle
+
+The ``receive_timeout`` option defines the maximum time a consumer waits to receive a message from a single bound queue during one receive cycle before it stops waiting and moves on (to the next queue, according to the selected consumption mode). Its default value is 1.0 second. The value is taken from the ``ORO_MQ_CONSUMER_RECEIVE_TIMEOUT`` environment variable, with a fallback to the ``oro_message_queue.consumer_receive_timeout_default`` container parameter (which defaults to 1.0).
+
+When a consumer is bound to multiple queues, a large ``receive_timeout`` makes the consumer wait up to that long on an empty queue before switching to the next one. Lowering the value (for example to 0.1) reduces the waiting time on empty queues, so the consumer switches between queues faster and picks up work from busy queues sooner. See :ref:`Consumption Modes <dev-guide-mq-consumption-modes>` for how queues are traversed. The trade-off is that a very low value increases how often the consumer polls each queue (more frequent transport or database checks), so pick a value that balances switching latency against polling overhead.
+
+.. note::
+        For the DBAL transport the per-poll sleep is bounded by the time remaining until the receive timeout, so the DBAL ``polling_interval`` option does not impose a de-facto minimum receive timeout. A smaller ``receive_timeout`` therefore takes effect even when ``polling_interval`` is larger. Within a receive cycle the queue is still polled every ``polling_interval`` (the DBAL ``polling_interval`` transport option is unchanged).
 
 Options
 -------
@@ -137,6 +154,3 @@ message would likely be processed by ``\Oro\Component\MessageQueue\Client\NoopMe
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
-
-
-
