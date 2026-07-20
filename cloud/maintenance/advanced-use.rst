@@ -760,8 +760,8 @@ The following variables are available for locations with the `php` type:
 * `GEOIP2_COUNTRY_CODE`, example value: `US` for USA
 * `GEOIP2_SUBDIVISION_ISO_CODE`, example value: `OH` for Ohio, US state
 
-Profiling Application Console Commands via Blackfire
-----------------------------------------------------
+Profiling the Application via Blackfire
+---------------------------------------
 
 The configuration option enables you to configure Blackfire.
 
@@ -774,11 +774,13 @@ The configuration option enables you to configure Blackfire.
    * `log_level` — Blackfire agent log verbosity.
    * `log_path` — a path to the log file location.
 
+After configuring Blackfire, you can profile both application web requests and console commands.
 
-You can then profile the application console commands via the configured Blackfire:
+To profile application web requests from your browser, follow the |Blackfire documentation|.
+
+To profile application console commands, use the configured Blackfire CLI:
 
 .. code-block:: none
-
 
     orocloud-cli app:console [command] --blackfire-enable --blackfire-client-id [client-id] --blackfire-client-token [client-token] [--blackfire-env env] [--blackfire-samples count]
 
