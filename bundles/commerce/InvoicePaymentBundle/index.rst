@@ -47,14 +47,14 @@ Invoice Payment Executor
 
 The main entry point to perform a payment for an invoice is the ``\Oro\Bundle\InvoicePaymentBundle\Payment\InvoicePaymentExecutor`` that implements the ``\Oro\Bundle\InvoicePaymentBundle\Payment\InvoicePaymentExecutorInterface`` and provides the following methods:
 
-* ``purchase(InvoicePaymentModel $invoicePaymentModel)`` - to perform a payment for an invoice
+* ``purchase(InvoicePaymentModel $invoicePaymentModel)`` --- to perform a payment for an invoice
 
 It expects the ``\Oro\Bundle\InvoicePaymentBundle\Payment\Model\InvoicePaymentModel`` model that contains the following fields:
 
-* ``paymentContext`` - an instance of ``\Oro\Bundle\PaymentBundle\Context\PaymentContextInterface`` that contains the payment context created from an invoice entity
-* ``paymentMethod`` - an instance of ``\Oro\Bundle\PaymentBundle\Method\PaymentMethodInterface`` that represents the payment method to be used for the invoice payment
-* ``paymentMethodData`` - an array of data that is required by the payment method to perform the payment, e.g., payment token, payment details, etc.
-* ``paymentTransactionOptions`` - an array of additional options for payment transaction processing, e.g., success/failure URLs, transaction metadata, etc.
+* ``paymentContext`` --- an instance of ``\Oro\Bundle\PaymentBundle\Context\PaymentContextInterface`` that contains the payment context created from an invoice entity
+* ``paymentMethod`` --- an instance of ``\Oro\Bundle\PaymentBundle\Method\PaymentMethodInterface`` that represents the payment method to be used for the invoice payment
+* ``paymentMethodData`` --- an array of data that is required by the payment method to perform the payment, e.g., payment token, payment details, etc.
+* ``paymentTransactionOptions`` --- an array of additional options for payment transaction processing, e.g., success/failure URLs, transaction metadata, etc.
 
 Out-of-the-box, the model is used by the ``\Oro\Bundle\InvoicePaymentBundle\Form\Frontend\Type\InvoicePaymentType`` form responsible for collecting the required data on the invoice payment page.
 
@@ -66,10 +66,10 @@ Invoice Payment Status
 
 Invoice payment status indicates whether an invoice is pending payment, fully paid, or in another state. To accurately determine the payment status of an invoice, use the `\Oro\Bundle\InvoicePaymentBundle\Provider\InvoicePaymentStatusChecker`. By default, it considers invoices with the following statuses as paid:
 
-* ``full`` - Paid in full
-* ``authorized`` - Authorized
-* ``refunded`` - Refunded
-* ``partially_refunded`` - Partially refunded
+* ``full`` --- Paid in full
+* ``authorized`` --- Authorized
+* ``refunded`` --- Refunded
+* ``partially_refunded`` --- Partially refunded
 
 
 Invoice Payment Status Webhook Notifications

@@ -17,6 +17,150 @@ The list of these variables is provided on the Email Template edit page of the a
 
 Also, additional Twig functions, filters, and tags are registered and allowed to be used in Email Templates. You can find the complete list of these functions, filters, and tags by searching classes inherited from |AbstractTwigSandboxConfigurationPass|. You can also check out the topic on :ref:`Email <user-guide-email-template>`.
 
+Configuring Entity and Field Availability
+-----------------------------------------
+
+Whether an entity and its fields appear as available variables in email templates is controlled by the
+``email`` entity configuration scope. Both settings default to ``false``, so developers must explicitly
+opt in to expose an entity or its individual fields.
+
+Entity-level: ``email.available_in_template``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An entity must have ``available_in_template`` set to ``true`` in the ``email`` scope for it to appear
+in the entity selector when creating or editing an email template. Without this setting, the entity
+cannot be chosen as the template's associated entity.
+
+Set the default value via the ``#[Config]`` attribute on the entity class (see
+:ref:`#[Config] <attribute-config>`):
+
+.. code-block:: php
+
+   use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
+
+   #[Config(
+       defaultValues: [
+           'email' => ['available_in_template' => true]
+       ]
+   )]
+   class MyEntity
+   {
+       // ...
+   }
+
+Field-level: ``email.available_in_template``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Each field that should be available in an email template should have the ``available_in_template`` set to ``true`` in the
+``email`` scope for it to be exposed as a template variable. Fields for which the flag is not set (or is ``false``) are excluded from the variable list.
+
+Set the default value via the ``#[ConfigField]`` attribute on the property (see :ref:`#[ConfigField] email scope <annotation-config-field-email>`):
+
+.. code-block:: php
+
+   use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField;
+
+   class MyEntity
+   {
+       #[ConfigField(
+           defaultValues: [
+               'email' => ['available_in_template' => true]
+           ]
+       )]
+       private string $name;
+   }
+
+Both flags can also be toggled in the back-office via the Entity Management UI.
+
+Enabling via Migrations
+^^^^^^^^^^^^^^^^^^^^^^^
+
+You can also set ``available_in_template`` flags via migrations. This is especially useful when you need to enable the flag on an entity you don't control, or for an extended field.
+
+When creating a new extended field, pass the ``email`` scope options directly in the field creation
+call. The following example adds a multi-file relation and marks it as available in email templates:
+
+.. code-block:: php
+
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareInterface;
+   use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareTrait;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+
+   class AddDocumentsField implements Migration, AttachmentExtensionAwareInterface
+   {
+       use AttachmentExtensionAwareTrait;
+
+       #[\Override]
+       public function up(Schema $schema, QueryBag $queries): void
+       {
+           $this->attachmentExtension->addMultiFileRelation(
+               $schema,
+               'acme_my_entity',
+               'documents',
+               [
+                   'email'  => ['available_in_template' => true],
+                   'extend' => ['is_extend' => true, 'owner' => ExtendScope::OWNER_CUSTOM],
+               ]
+           );
+       }
+   }
+
+When enabling the flag on an existing field without structural schema changes, use
+``UpdateEntityConfigFieldValueQuery`` as a post-query in a migration:
+
+.. code-block:: php
+
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityConfigBundle\Migration\UpdateEntityConfigFieldValueQuery;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+
+   class EnableDocumentsFieldInEmailTemplates implements Migration
+   {
+       #[\Override]
+       public function up(Schema $schema, QueryBag $queries): void
+       {
+           $queries->addPostQuery(
+               new UpdateEntityConfigFieldValueQuery(
+                   \Acme\Bundle\MyBundle\Entity\MyEntity::class,
+                   'documents',
+                   'email',
+                   'available_in_template',
+                   true
+               )
+           );
+       }
+   }
+
+When enabling the entity-level ``available_in_template`` flag on an existing entity, use
+``UpdateEntityConfigEntityValueQuery`` instead:
+
+.. code-block:: php
+
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityConfigBundle\M0igration\UpdateEntityConfigEntityValueQuery;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+
+   class EnableMyEntityInEmailTemplates implements Migration
+   {
+       #[\Override]
+       public function up(Schema $schema, QueryBag $queries): void
+       {
+           $queries->addPostQuery(
+               new UpdateEntityConfigEntityValueQuery(
+                   \Acme\Bundle\MyBundle\Entity\MyEntity::class,
+                   'email',
+                   'available_in_template',
+                   true
+               )
+           );
+       }
+   }
+
 Extend Available Data in Email Templates
 ----------------------------------------
 
@@ -213,6 +357,10 @@ An example:
 
 
 Once you complete these steps, the "some_function" Twig function becomes available in Email templates.
+
+For information on how email templates are validated against the sandbox security policy before saving,
+and how disallowed accesses are handled gracefully at render time, see
+:ref:`Email Template Security Policy Checking <bundle-docs-platform-email-bundle-templates-security-policy>`.
 
 .. include:: /include/include-links-dev.rst
     :start-after: begin

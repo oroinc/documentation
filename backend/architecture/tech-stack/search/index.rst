@@ -65,10 +65,10 @@ The standard index type (sometimes called the default index type or backend inde
 
 The standard index type triggers the following events:
 
-* **oro_search.mapping_config** - during the mapping collection process, used to alter mapping information;
-* **oro_search.prepare_entity_map** - during the indexation process, triggered for each entity, used to change data stored inside the index;
-* **oro_search.before_search** - before the search request, used to change search request before its execution;
-* **oro_search.prepare_result_item** - after the extraction of documents from the search index, used to populate additional information (entity objects, URLs, etc.).
+* **oro_search.mapping_config** --- during the mapping collection process, used to alter mapping information;
+* **oro_search.prepare_entity_map** --- during the indexation process, triggered for each entity, used to change data stored inside the index;
+* **oro_search.before_search** --- before the search request, used to change search request before its execution;
+* **oro_search.prepare_result_item** --- after the extraction of documents from the search index, used to populate additional information (entity objects, URLs, etc.).
 
 The standard index type performs indexation on an entity level, triggering each entity's indexation process. Search field values can be calculated automatically based on the defined search mapping. Each search document contains one all-text field value calculated automatically as a concatenation of all text entity field values. Each field might have several values. In this case, it will be represented as an array, and comparison operations will iterate over all of them. During the reindexation, the entities being reindexed are not available for search.
 
@@ -90,14 +90,14 @@ Each entity is represented by one alias with an optional search placeholder (e.g
 
 Website index type triggers the following events:
 
-* **oro_website_search.reindexation_request** - triggers the reindexation process for the specified scope of entities;
-* **oro_website_search.event.website_search_mapping.configuration** - during the mapping collection process, used to alter mapping information;
-* **oro_website_search.event.collect_context** - before the indexation, used to collect context which will be used during the indexation;
-* **oro_website_search.event.restrict_index_entity** - during the indexation for all entities, used to decrease the number of entities that have to be indexed;
-* **oro_website_search.event.restrict_index_entity.<alias>** - during the indexation for the specific entity, used to decrease amount of specific entities that has to be indexed (pay attention that <alias> is a standard entity alias, not search entity alias);
-* **oro_website_search.event.index_entity** - during the indexation for all entities, used to collect data to put into the search index;
-* **oro_website_search.event.index_entity.<alias>** - during the indexation for the specific entity, used to collect data for a specific entity to put into search index (pay attention that <alias> is a standard entity alias, not search entity alias);
-* **oro_website_search.before_search** - before the search request, used to change the request before its execution.
+* **oro_website_search.reindexation_request** --- triggers the reindexation process for the specified scope of entities;
+* **oro_website_search.event.website_search_mapping.configuration** --- during the mapping collection process, used to alter mapping information;
+* **oro_website_search.event.collect_context** --- before the indexation, used to collect context which will be used during the indexation;
+* **oro_website_search.event.restrict_index_entity** --- during the indexation for all entities, used to decrease the number of entities that have to be indexed;
+* **oro_website_search.event.restrict_index_entity.<alias>** --- during the indexation for the specific entity, used to decrease amount of specific entities that has to be indexed (pay attention that <alias> is a standard entity alias, not search entity alias);
+* **oro_website_search.event.index_entity** --- during the indexation for all entities, used to collect data to put into the search index;
+* **oro_website_search.event.index_entity.<alias>** --- during the indexation for the specific entity, used to collect data for a specific entity to put into search index (pay attention that <alias> is a standard entity alias, not search entity alias);
+* **oro_website_search.before_search** --- before the search request, used to change the request before its execution.
 
 Website index type performs reindexation on an entity batch level, triggering the indexation process for a batch of entities (default batch size is 100). Search field values must be calculated and set manually in a listener to the ``oro_website_search.event.index_entity event``. Each search document contains all-text fields for each available localization (all_text_LOCALIZATION_ID) and one all-text field that includes values from all localizations, and values are calculated automatically based on a flag set during the indexation (i.e., a developer may specify what exact values should be in all-text field value). Each field without a placeholder must have only one value. During reindexation, entities being reindexed are available with the old (outdated) data.
 
@@ -351,15 +351,15 @@ Both standard and website search index types have synchronous and asynchronous i
 
 **Standard search indexer**
 
-* **standard asynchronous indexer** - ``Oro\\Bundle\\SearchBundle\\Async\\Indexer``, service ID is ``oro_search.async.indexer``. The indexer is used to redirect indexation request to message queue.
-* **standard synchronous ORM indexer** - ``Oro\\Bundle\\SearchBundle\\Engine\\OrmIndexer``, service ID is ``oro_search.search.engine.indexer``.
-* **standard synchronous Elasticsearch** - ``Oro\\Bundle\\ElasticSearchBundle\\Engine\\ElasticSearchIndexer``, service ID is ``oro_search.search.engine.indexer``.
+* **standard asynchronous indexer** --- ``Oro\\Bundle\\SearchBundle\\Async\\Indexer``, service ID is ``oro_search.async.indexer``. The indexer is used to redirect indexation request to message queue.
+* **standard synchronous ORM indexer** --- ``Oro\\Bundle\\SearchBundle\\Engine\\OrmIndexer``, service ID is ``oro_search.search.engine.indexer``.
+* **standard synchronous Elasticsearch** --- ``Oro\\Bundle\\ElasticSearchBundle\\Engine\\ElasticSearchIndexer``, service ID is ``oro_search.search.engine.indexer``.
 
 **Website search indexer**
 
-* **website asynchronous indexer** - ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer``, service ID is ``oro_website_search.async.indexer``. The indexer is used to redirect indexation request to message queue.
-* **website ORM indexer** - ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\OrmIndexer``, service ID is ``oro_website_search.indexer``.
-* **website Elasticsearch indexer** - ``Oro\\Bundle\\WebsiteElasticSearchBundle\\Engine\\ElasticSearchIndexer``, service ID is ``oro_website_search.indexer``.
+* **website asynchronous indexer** --- ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer``, service ID is ``oro_website_search.async.indexer``. The indexer is used to redirect indexation request to message queue.
+* **website ORM indexer** --- ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\OrmIndexer``, service ID is ``oro_website_search.indexer``.
+* **website Elasticsearch indexer** --- ``Oro\\Bundle\\WebsiteElasticSearchBundle\\Engine\\ElasticSearchIndexer``, service ID is ``oro_website_search.indexer``.
 
 All these indexers accept entities of an entity class that has to be reindexed.
 

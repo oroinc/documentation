@@ -23,9 +23,9 @@ A special `@run_action_group` action is designed to run a group of actions as a 
 
   * *Operations* contain the following *actions*: **Preactions** (`preactions`), the **Form Init** actions (`form_init`), and **Actions** themselves with the functions of Action Component. The difference is that `preactions` are executed before the operation button rendering, though the `form_init` actions are executed before the form display. Actions can be used to perform any operations with data in their context (called Action Data) or other entities.
 
-  * **Definition** - part of *Operation* or *ActionGroup* that contains the configuration of the component itself and describes its behavior.
+  * **Definition** --- part of *Operation* or *ActionGroup* that contains the configuration of the component itself and describes its behavior.
 
-* **Attribute** - an entity that represents a value (mostly in *Operation*) and is used to render a field value in a step of a form. The attribute knows about its type (string, object, entity, etc.) and additional options. The attribute contains a name and label as additional parameters.
+* **Attribute** --- an entity that represents a value (mostly in *Operation*) and is used to render a field value in a step of a form. The attribute knows about its type (string, object, entity, etc.) and additional options. The attribute contains a name and label as additional parameters.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

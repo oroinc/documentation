@@ -151,7 +151,7 @@ For elasticsearch search engine, use the following format:
 
    ORO_SEARCH_ENGINE_DSN=elastic-search://valid_user:valid_password@127.0.0.1:9200?prefix=oro_search
 
-Note that in the above examples, ``valid_user:valid_password@`` - DSNs part can be skipped if authentication is not enabled.
+Note that in the above examples, ``valid_user:valid_password@`` --- DSNs part can be skipped if authentication is not enabled.
 
 Sessions Storage Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -226,6 +226,33 @@ You can now use the ``ORO_MQ_DSN`` environment variable:
    ORO_MQ_DSN=amqp://guest:guest@localhost:5672/%2Fmaster
 
 When configuring a virtual host (vhost), it's important to note that the vhost must be URL encoded. If no vhost is provided, the default value of ``/`` will be used. As an example, if the vhost is ``/master``, the corresponding url encoded vhost value is ``%2Fmaster``, and if the vhost is ``master``, the url encoded value is ``master``.
+
+Message Queue Consumer Timeouts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can tune the message queue consumer timeouts with the following environment variables:
+
+.. code:: bash
+
+   ORO_MQ_CONSUMER_RECEIVE_TIMEOUT=1.0
+   ORO_MQ_CONSUMER_IDLE_TIMEOUT=0.1
+
+``ORO_MQ_CONSUMER_RECEIVE_TIMEOUT`` sets the maximum time in seconds a consumer waits to receive a message from a single bound queue per receive cycle before moving on to the next queue. The default value is 1.0 second.
+
+``ORO_MQ_CONSUMER_IDLE_TIMEOUT`` sets the time in seconds the consumer sleeps when no message was received from a queue before proceeding to the next cycle. The default value is 0.1 second.
+
+Both variables override the corresponding ``oro_message_queue.consumer.receive_timeout`` and ``oro_message_queue.consumer.idle_timeout`` configuration options.
+
+Message Queue Consumption Mode
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can use the following environment variable to select the consumption mode, which determines the order in which a consumer visits multiple queues.
+
+.. code:: bash
+
+   ORO_MQ_CONSUMPTION_MODE=default
+
+``ORO_MQ_CONSUMPTION_MODE`` sets the consumption mode used when a consumer is bound to more than one queue. It is an alternative to the ``--mode`` CLI option of the consume commands. The default value is ``default`` (round-robin). For the list of available modes, see :ref:`Consumption Modes <dev-guide-mq-consumption-modes>`.
 
 MongoDB Connection
 ~~~~~~~~~~~~~~~~~~

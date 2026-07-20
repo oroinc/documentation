@@ -395,7 +395,7 @@ X Frame Header Configuration
 
 * **header_x_frame: true** — is the default value of the flag, configured in the Webserver configuration section. In this case, OroCloud WAF adds the “X-Frame-Options: SAMEORIGIN” header when responding to the initial request. It makes it impossible to embed any OroCommerce site into iFrame at any site except itself to fulfill security requirements.
 
-* **header_x_frame_app_control: true** - Ignore the “X-Frame-Options” header and allow the application to decide if the header is required. It can be configured in the Webserver or Domain configuration section. Configuration in the domain section takes priority over the webserver section.
+* **header_x_frame_app_control: true** --- Ignore the “X-Frame-Options” header and allow the application to decide if the header is required. It can be configured in the Webserver or Domain configuration section. Configuration in the domain section takes priority over the webserver section.
 
 Some business cases require embedding the OroCloud site into the iFrame at other sites, in which case you must set the value to “false”: ``header_x_frame: false``.
 This prevents WAF from sending the “X-Frame-Options” header, which allows embedding into any iFrame.
@@ -762,8 +762,8 @@ The following variables are available for locations with the `php` type:
 * `GEOIP2_COUNTRY_CODE`, example value: `US` for USA
 * `GEOIP2_SUBDIVISION_ISO_CODE`, example value: `OH` for Ohio, US state
 
-Profiling Application Console Commands via Blackfire
-----------------------------------------------------
+Profiling the Application via Blackfire
+---------------------------------------
 
 The configuration option enables you to configure Blackfire.
 
@@ -776,11 +776,13 @@ The configuration option enables you to configure Blackfire.
    * `log_level` — Blackfire agent log verbosity.
    * `log_path` — a path to the log file location.
 
+After configuring Blackfire, you can profile both application web requests and console commands.
 
-You can then profile the application console commands via the configured Blackfire:
+To profile application web requests from your browser, follow the |Blackfire documentation|.
+
+To profile application console commands, use the configured Blackfire CLI:
 
 .. code-block:: none
-
 
     orocloud-cli app:console [command] --blackfire-enable --blackfire-client-id [client-id] --blackfire-client-token [client-token] [--blackfire-env env] [--blackfire-samples count]
 
@@ -815,6 +817,8 @@ Where:
 * **whitelist** is an array of whitelisted mail domains
 
 .. note:: In production environments all domains are whitelisted. When you create a whitelist, it blocks sending email to any recipients, except for the ones in the whitelisted email domains.
+
+.. important:: Please note that this whitelisting will work only if you use the |basic SMTP configuration| for the emails as it intervenes directly in the mail transport agent of Oro Cloud to drop messages. If you use a custom different system (through external provider DSN or API, etc.) to manage emails, this whitelisting/blacklisting may not be sufficient.
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin

@@ -13,9 +13,9 @@ The bundle introduces the ``\Oro\Bundle\PaymentBundle\Entity\PaymentTransaction`
 
 OroPaymentBundle also provides the operations to manage payments in the back-office:
 
-- **oro_payment_transaction_capture** - captures an authorized payment transaction;
-- **oro_payment_transaction_cancel** - cancels an authorized payment transaction;
-- **oro_payment_transaction_refund** - refunds a payment transaction.
+- **oro_payment_transaction_capture** --- captures an authorized payment transaction;
+- **oro_payment_transaction_cancel** --- cancels an authorized payment transaction;
+- **oro_payment_transaction_refund** --- refunds a payment transaction.
 
 .. toctree::
    :maxdepth: 1

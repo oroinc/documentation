@@ -19,10 +19,10 @@ To get a correct price for a product, make sure you take into account the follow
 
 These parameters are organized by four DTO models to make working with them easier:
 
-- ``\Oro\Bundle\PricingBundle\Model\ProductPriceScopeCriteria`` - **price scope criteria model** encapsulating website, customer, and additional context (for example, Order, Shopping List, etc.).
-- ``\Oro\Bundle\PricingBundle\Model\ProductPriceCriteria`` - **product price criteria model** for simple products encapsulating product, product unit, quantity, and currency.
-- ``\Oro\Bundle\PricingBundle\ProductKit\ProductPriceCriteria\ProductKitPriceCriteria`` - **product kit price criteria model** for product kits that extends ``ProductPriceCriteria`` by adding the ability to encapsulate price criteria for the products of underlying product kit items.
-- ``\Oro\Bundle\PricingBundle\ProductKit\ProductPriceCriteria\ProductKitItemPriceCriteria`` - **product kit item price criteria model** for product kit items that extends ``ProductPriceCriteria`` by adding the ability to specify the related product kit item.
+- ``\Oro\Bundle\PricingBundle\Model\ProductPriceScopeCriteria`` --- **price scope criteria model** encapsulating website, customer, and additional context (for example, Order, Shopping List, etc.).
+- ``\Oro\Bundle\PricingBundle\Model\ProductPriceCriteria`` --- **product price criteria model** for simple products encapsulating product, product unit, quantity, and currency.
+- ``\Oro\Bundle\PricingBundle\ProductKit\ProductPriceCriteria\ProductKitPriceCriteria`` --- **product kit price criteria model** for product kits that extends ``ProductPriceCriteria`` by adding the ability to encapsulate price criteria for the products of underlying product kit items.
+- ``\Oro\Bundle\PricingBundle\ProductKit\ProductPriceCriteria\ProductKitItemPriceCriteria`` --- **product kit item price criteria model** for product kit items that extends ``ProductPriceCriteria`` by adding the ability to specify the related product kit item.
 
 The lowest level of getting a product price is directly through :ref:`price storage <bundle-docs-commerce-pricing-bundle-price-storage>`. However, it is not recommended until you know what exactly you want to achieve by working directly with it. Instead, it would be sufficient to use `ProductPriceProvider` in most cases.
 
@@ -31,9 +31,9 @@ Product Price Provider
 
 The main entry point for getting a price for a product is ``\Oro\Bundle\PricingBundle\Provider\ProductPriceProvider`` (service ``oro_pricing.provider.product_price``) that returns product prices taking into account the **price scope criteria** (website, customer). `ProductPriceProvider` consists of the following methods:
 
-- **getPricesByScopeCriteriaAndProducts** - to get all product prices for the specified products, product units, and currencies, considering **price scope criteria**. In other words, it can return the prices for multiple product units, currencies, and quantity tiers.
-- **getMatchedPrices** - to get prices for the specified **product price criteria** taking into account **price scope criteria**. In other words, it returns the prices matching the desired quantity, product unit, and currency.
-- **getMatchedProductPrices** - to get product prices for the specified **product price criteria** taking into account **price scope criteria**. In other words, it returns the prices matching the desired quantity, product unit, and currency. The only difference to the previous method is that it returns a collection of `ProductPriceInterface` objects instead of ``\Oro\Bundle\CurrencyBundle\Entity\Price``.
+- **getPricesByScopeCriteriaAndProducts** --- to get all product prices for the specified products, product units, and currencies, considering **price scope criteria**. In other words, it can return the prices for multiple product units, currencies, and quantity tiers.
+- **getMatchedPrices** --- to get prices for the specified **product price criteria** taking into account **price scope criteria**. In other words, it returns the prices matching the desired quantity, product unit, and currency.
+- **getMatchedProductPrices** --- to get product prices for the specified **product price criteria** taking into account **price scope criteria**. In other words, it returns the prices matching the desired quantity, product unit, and currency. The only difference to the previous method is that it returns a collection of `ProductPriceInterface` objects instead of ``\Oro\Bundle\CurrencyBundle\Entity\Price``.
 
 To get product prices, pass to `ProductPriceProvider` the preliminarily prepared **price scope criteria** and **product price criteria** (for the prices matching desired product unit, quantity, and currency).
 
@@ -56,10 +56,10 @@ Product Price Criteria
 
 The main entry point for creating a **product price criteria** is ``\Oro\Bundle\PricingBundle\Model\ProductPriceCriteriaFactory``. It provides multiple methods:
 
-- **create** - to create manually a **product price criteria**.
-- **buildFromProduct** - to start building a **product price criteria** via builder. You will get a builder suitable for the product you pass, i.e., ``\Oro\Bundle\PricingBundle\Model\ProductPriceCriteriaBuilder\ProductPriceCriteriaBuilderInterface`` for a simple or configurable product, and ``\Oro\Bundle\PricingBundle\ProductKit\ProductPriceCriteria\Builder\ProductKitPriceCriteriaBuilderInterface`` for a product kit.
-- **createFromProductLineItem** - to create a **product price criteria** from a **product line item**, i.e. any instance of a ``\Oro\Bundle\ProductBundle\Model\ProductLineItemInterface``. Creates a ``\Oro\Bundle\PricingBundle\Model\ProductPriceCriteria`` for a regular **product line item** and ``\Oro\Bundle\PricingBundle\ProductKit\ProductPriceCriteria\ProductKitPriceCriteria`` for a **product kit line item** (i.e., that is a line item of a product kit that additionally implements ``\Oro\Bundle\ProductBundle\Model\ProductKitItemLineItemsAwareInterface``).
-- **createListFromProductLineItems** - to create a list of **product price criteria** objects from a collection of **product line item** objects, i.e., instances of a ``\Oro\Bundle\ProductBundle\Model\ProductLineItemInterface``.
+- **create** --- to create manually a **product price criteria**.
+- **buildFromProduct** --- to start building a **product price criteria** via builder. You will get a builder suitable for the product you pass, i.e., ``\Oro\Bundle\PricingBundle\Model\ProductPriceCriteriaBuilder\ProductPriceCriteriaBuilderInterface`` for a simple or configurable product, and ``\Oro\Bundle\PricingBundle\ProductKit\ProductPriceCriteria\Builder\ProductKitPriceCriteriaBuilderInterface`` for a product kit.
+- **createFromProductLineItem** --- to create a **product price criteria** from a **product line item**, i.e. any instance of a ``\Oro\Bundle\ProductBundle\Model\ProductLineItemInterface``. Creates a ``\Oro\Bundle\PricingBundle\Model\ProductPriceCriteria`` for a regular **product line item** and ``\Oro\Bundle\PricingBundle\ProductKit\ProductPriceCriteria\ProductKitPriceCriteria`` for a **product kit line item** (i.e., that is a line item of a product kit that additionally implements ``\Oro\Bundle\ProductBundle\Model\ProductKitItemLineItemsAwareInterface``).
+- **createListFromProductLineItems** --- to create a list of **product price criteria** objects from a collection of **product line item** objects, i.e., instances of a ``\Oro\Bundle\ProductBundle\Model\ProductLineItemInterface``.
 
 .. note::
 		 ``ProductPriceCriteriaFactory`` implements ``\Oro\Bundle\PricingBundle\Model\ProductPriceCriteriaFactoryInterface`` interface that you can override or customize, if necessary.

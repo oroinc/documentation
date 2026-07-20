@@ -15,9 +15,9 @@ To create a lead manually:
    * **Lead Name** --- The name used to refer to a lead in the system.
    * **Status** --- Three statuses are available for a lead:
 
-     - **New** - a newly created lead.
-     - **Qualified** - a lead is recognized as valid as a result of the initial analysis (e.g., an interested person or organization behind the lead).
-     - **Disqualified** - a lead is recognized as invalid as a result of the initial analysis, e.g., no person or organization was found behind the lead). 
+     - **New** --- a newly created lead.
+     - **Qualified** --- a lead is recognized as valid as a result of the initial analysis (e.g., an interested person or organization behind the lead).
+     - **Disqualified** --- a lead is recognized as invalid as a result of the initial analysis, e.g., no person or organization was found behind the lead). 
 
    The rest of the fields are optional.
 

@@ -49,13 +49,13 @@ To create a webhook from the back-office:
 .. image:: /user/img/system/integrations/webhooks/webhook-integration.png
    :alt: Webhook integration settings in the back-office
 
-* **Owner** - A user who created the webhook.
-* **Enabled** - Indicates whether the webhook is active.
-* **Notification URL** - Enter the endpoint URL provided by the external system that will receive webhook notifications. OroCommerce sends webhook requests to this URL whenever the selected event occurs.
-* **Secret** - Provide a secret key used to sign webhook payloads. The receiving system can use this secret to verify that the notification originated from OroCommerce and that the payload was not modified during transmission.
-* **Topic** - Select the webhook event that triggers the notification. The list contains topics generated from entities with **Webhook Accessible** enabled (for example, for the **Order** entity, the topics are: ``order.created``, ``order.updated``, ``order.deleted``). A notification is sent only when the selected event occurs.
-* **Payload Format** - Select the payload format used for this webhook. Available formats: **Default JSON:API** that sends a complete payload following the JSON:API specification, and **Thin Payload** that sends a simplified payload containing less data. Choose the format that matches the requirements of the receiving system.
-* **Verify SSL** - Determines whether the application validates the SSL certificate of the notification URL. When enabled, the SSL certificate is verified before the notification is sent. Recommended for production environments. When disabled, SSL verification is skipped. This option may be useful during development or testing when a valid certificate is not available.
+* **Owner** --- A user who created the webhook.
+* **Enabled** --- Indicates whether the webhook is active.
+* **Notification URL** --- Enter the endpoint URL provided by the external system that will receive webhook notifications. OroCommerce sends webhook requests to this URL whenever the selected event occurs.
+* **Secret** --- Provide a secret key used to sign webhook payloads. The receiving system can use this secret to verify that the notification originated from OroCommerce and that the payload was not modified during transmission.
+* **Topic** --- Select the webhook event that triggers the notification. The list contains topics generated from entities with **Webhook Accessible** enabled (for example, for the **Order** entity, the topics are: ``order.created``, ``order.updated``, ``order.deleted``). A notification is sent only when the selected event occurs.
+* **Payload Format** --- Select the payload format used for this webhook. Available formats: **Default JSON:API** that sends a complete payload following the JSON:API specification, and **Thin Payload** that sends a simplified payload containing less data. Choose the format that matches the requirements of the receiving system.
+* **Verify SSL** --- Determines whether the application validates the SSL certificate of the notification URL. When enabled, the SSL certificate is verified before the notification is sent. Recommended for production environments. When disabled, SSL verification is skipped. This option may be useful during development or testing when a valid certificate is not available.
 
 3. Click **Save and Close**. The webhook becomes active immediately and starts sending notifications whenever the selected event occurs.
 

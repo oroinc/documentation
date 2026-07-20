@@ -39,5 +39,7 @@ Back-Office Web API
 
 Other CORS settings of the :ref:`Back-Office Web API <web-api>` remain unchanged.
 
+.. note:: When ``app_base_urls`` is configured via the ``ORO_SALES_FRONTEND_APP_BASE_URLS`` environment variable, the back-office API CORS origins are registered at **runtime** on the first request by ``AddSalesFrontendOriginsToApiCorsListener``. See :ref:`Application Base URLs <bundle-docs-commerce-sales-frontend-bundle-app-base-urls>` for details.
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -86,9 +86,9 @@ Roles and Responsibilities
 
 Page Shield’s effectiveness relies on a clear separation of duties between Cloudflare, Oro, and the client:
 
-* **Cloudflare** - delivers the Page Shield technology.
-* **OroCloud** - manages Page Shield configuration, sets CSP headers, controls dashboard access, and alerts notifications preferences.
-* **Client** - maintains inventory justification records, receives alerts, and manages approvals for script additions, changes, and removals.
+* **Cloudflare** --- delivers the Page Shield technology.
+* **OroCloud** --- manages Page Shield configuration, sets CSP headers, controls dashboard access, and alerts notifications preferences.
+* **Client** --- maintains inventory justification records, receives alerts, and manages approvals for script additions, changes, and removals.
 
 Enabling Page Shield for the Project
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -35,10 +35,10 @@ Calendar Context Menu is based on knplabs/knp-menu (see |KnpMenuBundle|). You ca
 
 You can define the following attributes:
 
-- **Label** - is the name of action.
-- **Position** - specifies the order in context menu.
-- **Module** - is a path to the JavaScript module. It handles an item action.
-- **Template** - is the name of an item template. Example of an item template:
+- **Label** --- is the name of action.
+- **Position** --- specifies the order in context menu.
+- **Module** --- is a path to the JavaScript module. It handles an item action.
+- **Template** --- is the name of an item template. Example of an item template:
 
   .. code-block:: twig
 
@@ -56,11 +56,11 @@ In the template, provide the ``<li{{ oro_menu.attributes(itemAttributes) }}>`` t
 
 **Module** receives the following values from **options** into **initialize**:
 
-- **el** - context menu item.
-- **model** - a |Backbone model| represents a calendar connection .
-- **collection** - a |Backbone collection|.
-- **colorManager** - |manager|.
-- **connectionsView** - a Backbone view represents a |calendar items list|.
+- **el** --- context menu item.
+- **model** --- a |Backbone model| represents a calendar connection .
+- **collection** --- a |Backbone collection|.
+- **colorManager** --- |manager|.
+- **connectionsView** --- a Backbone view represents a |calendar items list|.
 
 In the JavaScript module, you can use the default method **execute**. This method is called when a user clicks on your item menu, for example:
 

@@ -23,8 +23,8 @@ You can control the way product inventory is displayed for your buyers in the st
 
 6. In the **Inventory Filter**, you can allow storefront users to filter products by the Inventory statuses, while allowing administrators to prevent revealing unwanted inventory details:
 
-   * **Enable For Guests** - enable or disable the ability to show the inventory filter to unauthenticated visitors.
-   * **Inventory Filter Type** - select the type of inventory filter to display. The *Multi-Select* filter type enables users to filter by any combination of individual inventory statuses. The *Simple* type will allow to filter only by predefined inventory statuses when the filter is applied. For this type, select the statuses that will be considered as *In Stock* in the storefront in the *In Stock Statuses For Simple Filter* field below.
+   * **Enable For Guests** --- enable or disable the ability to show the inventory filter to unauthenticated visitors.
+   * **Inventory Filter Type** --- select the type of inventory filter to display. The *Multi-Select* filter type enables users to filter by any combination of individual inventory statuses. The *Simple* type will allow to filter only by predefined inventory statuses when the filter is applied. For this type, select the statuses that will be considered as *In Stock* in the storefront in the *In Stock Statuses For Simple Filter* field below.
 
    .. hint:: This configuration is also available on the :ref:`organization <inventory-allowed-statuses-org>` and :ref:`global <configuration--guide--commerce--configuration--inventory--allowed-statuses>` levels.
 

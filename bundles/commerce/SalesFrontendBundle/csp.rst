@@ -19,13 +19,17 @@ CSP is configured by ``\Oro\Bundle\SalesFrontendBundle\EventListener\Kernel\SetC
 
 * frame-ancestors ``self``
 
-The allowed frame ancestors (i.e., the Sales Frontend application hosts) are configured automatically as per the ``oro_sales_frontend.app_base_urls`` bundle configuration setting. Example of the CSP header that would be sent to browser when the Sales Frontend host is `https://example.com`:
+The allowed frame ancestors (i.e., the Sales Frontend application hosts) are resolved at runtime from the ``oro_sales_frontend.app_base_urls`` bundle configuration setting by ``SalesFrontendAllowedOriginsProvider``. Example of the CSP header that would be sent to browser when the Sales Frontend host is `https://example.com`:
 
 .. code-block:: text
 
     Content-Security-Policy: frame-ancestors 'self' https://example.com
 
 .. note:: As per the W3C |CSP| document, the ``frame-ancestors`` directive replaces the ``X-Frame-Options`` header.
+
+.. seealso::
+
+     For details on configuring ``app_base_urls`` including the runtime env-var approach, see :ref:`Application Base URLs <bundle-docs-commerce-sales-frontend-bundle-app-base-urls>`.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

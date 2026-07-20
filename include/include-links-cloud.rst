@@ -266,3 +266,12 @@ Links (Cloud)
 .. |ASN| raw:: html
 
    <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)" target="_blank">ASN</a>
+
+.. |basic SMTP configuration| raw:: html
+
+   <a href="https://doc.oroinc.com/user/back-office/system/configuration/system/general-setup/global-email/#admin-configuration-email-configuration-global" target="_blank">basic SMTP configuration</a>
+
+.. |Blackfire documentation| raw:: html
+
+   <a href="https://blackfire.io/docs/introduction" target="_blank">Blackfire documentation</a>
+

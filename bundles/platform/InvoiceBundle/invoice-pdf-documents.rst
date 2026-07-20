@@ -7,11 +7,11 @@ The bundle makes use of the :ref:`OroPdfGeneratorBundle <bundle-docs-platform-pd
 
 ``Invoice PDF document manager`` is the main entry point for invoice PDF document management. It provides methods to check, retrieve, create, update, and delete PDF documents for invoices. This manager abstracts the complexity of handling different PDF document types and provides a unified interface for invoice PDF document operations. It is implemented by ``\Oro\Bundle\InvoiceBundle\PdfDocument\Manager\InvoicePdfDocumentManager`` class, which provides the following methods:
 
-* ``hasPdfDocument(Invoice $invoice, string $pdfDocumentType): bool`` - checks if the invoice has a ``PDF document`` of the specified ``PDF document type``.
-* ``retrievePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` - retrieves the ``PDF document`` of the specified ``PDF document type`` for the invoice if it exists, or returns ``null`` if it does not.
-* ``createPdfDocument(AbstractInvoicePdfDocumentDemand $invoicePdfDocumentDemand): AbstractPdfDocument`` - creates a new ``PDF document`` for the invoice based on the provided ``Invoice PDF document demand``.
-* ``updatePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` - updates the existing ``PDF document`` of the specified ``PDF document type`` for the invoice and returns it. If the invoice does not have such ``PDF document``, it returns ``null``.
-* ``deletePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` - deletes the existing ``PDF document`` of the specified ``PDF document type`` for the invoice and returns it. If the invoice does not have such ``PDF document``, it returns ``null``.
+* ``hasPdfDocument(Invoice $invoice, string $pdfDocumentType): bool`` --- checks if the invoice has a ``PDF document`` of the specified ``PDF document type``.
+* ``retrievePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` --- retrieves the ``PDF document`` of the specified ``PDF document type`` for the invoice if it exists, or returns ``null`` if it does not.
+* ``createPdfDocument(AbstractInvoicePdfDocumentDemand $invoicePdfDocumentDemand): AbstractPdfDocument`` --- creates a new ``PDF document`` for the invoice based on the provided ``Invoice PDF document demand``.
+* ``updatePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` --- updates the existing ``PDF document`` of the specified ``PDF document type`` for the invoice and returns it. If the invoice does not have such ``PDF document``, it returns ``null``.
+* ``deletePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` --- deletes the existing ``PDF document`` of the specified ``PDF document type`` for the invoice and returns it. If the invoice does not have such ``PDF document``, it returns ``null``.
 
 ``PDF document types`` available out-of-the-box are listed in the ``\Oro\Bundle\InvoiceBundle\PdfDocument\InvoicePdfDocumentType`` class. The only currently available type is **invoice_default**. For information on how to create your own ``PDF document type``, see the :ref:`How to Create a PDF Document Type <bundle-docs-platform-pdf-generator-bundle-create-pdf-document-type>` section of the documentation.
 

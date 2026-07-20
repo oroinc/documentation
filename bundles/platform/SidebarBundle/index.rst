@@ -52,16 +52,16 @@ Configure a Sidebar Widget in YAML
 Define the default data for your widget in the `widget.yml` file in
 ``/Resources/public/sidebar_widget/widget_name/widget.yml``. This file can contain the following item settings:
 
-* **title** - the title text of your widget
-* **iconClass** - the css icon class from `Font Awesome` icons. When this property is set, then **icon** setting is ignored
-* **icon** - the path to the icon image of your widget in the assets folder
-* **dialogIcon** - the path to the icon shown on widget add dialog
-* **isNew** - defines whether to show the  "New" label next to the title
-* **cssClass** - the css class for the container of your widget
-* **module** - alias of the path to your widget in the asset folder, which should be declared in the `require.yml` file
-* **placement** - possible placement for your widget. Available positions: `right`, `left`, `both`
-* **description** - the description shown on widget add dialog. The description should be translatable, translation  should be placed into the `jsmessages.[language_code].yml` file
-* **settings** - custom settings of your widget
+* **title** --- the title text of your widget
+* **iconClass** --- the css icon class from `Font Awesome` icons. When this property is set, then **icon** setting is ignored
+* **icon** --- the path to the icon image of your widget in the assets folder
+* **dialogIcon** --- the path to the icon shown on widget add dialog
+* **isNew** --- defines whether to show the  "New" label next to the title
+* **cssClass** --- the css class for the container of your widget
+* **module** --- alias of the path to your widget in the asset folder, which should be declared in the `require.yml` file
+* **placement** --- possible placement for your widget. Available positions: `right`, `left`, `both`
+* **description** --- the description shown on widget add dialog. The description should be translatable, translation  should be placed into the `jsmessages.[language_code].yml` file
+* **settings** --- custom settings of your widget
 
 Example:
 

@@ -48,7 +48,7 @@ Standard search index provides the following CLI commands (:ref:`here are exampl
 
 Website search index provides the following command (:ref:`here are examples of working with this command <website-search-bundle-console-commands>`):
 
-* **oro:website-search:reindex** - rebuilds the storefront search index and allows reindexing all entities, or only entities of a specific entity class, or entities for a specific website, or specific entities by their identifiers; indexation can be synchronous (default behavior) or asynchronous.
+* **oro:website-search:reindex** --- rebuilds the storefront search index and allows reindexing all entities, or only entities of a specific entity class, or entities for a specific website, or specific entities by their identifiers; indexation can be synchronous (default behavior) or asynchronous.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

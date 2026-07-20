@@ -15,11 +15,11 @@ The website search index is mostly event based. The reindexation is triggered us
 
 This class contains the following parameters that specify the scope of the entities that have to be reindexed:
 
-* **$websitesIds** - list of website identifiers that should take part in the reindexation. When no IDs are provided, reindex affects all websites.
-* **$classesNames** - list of entity class names that have to be reindexed. When no classes are provided, all entities from the search index are reindexed;
-* **$ids** - list of entity identifiers that has to be reindexed. When no IDs are provided, all entities of the specified classes are reindexed;
+* **$websitesIds** --- list of website identifiers that should take part in the reindexation. When no IDs are provided, reindex affects all websites.
+* **$classesNames** --- list of entity class names that have to be reindexed. When no classes are provided, all entities from the search index are reindexed;
+* **$ids** --- list of entity identifiers that has to be reindexed. When no IDs are provided, all entities of the specified classes are reindexed;
 * **$scheduled** (default `true`) - boolean flag that defines whether reindexation has to be scheduled (asynchronous) or immediate (synchronous).
-* **$fieldGroups** - list of entity groups that needs to be reindexed. Data in the index is split into groups, and it is possible to reindex only particular groups(s) to reduce the load on the application and engine. This approach is called partial indexation. Partial indexation is a good option both for synchronous and asynchronous indexation when you need to update one, or multiple field groups. Supported field groups are: main, collection_sort_order, image, category_sort_order, visibility, pricing, order, customer_recommendation_action, customer_recommendation_revenue, inventory (multiple values allowed).
+* **$fieldGroups** --- list of entity groups that needs to be reindexed. Data in the index is split into groups, and it is possible to reindex only particular groups(s) to reduce the load on the application and engine. This approach is called partial indexation. Partial indexation is a good option both for synchronous and asynchronous indexation when you need to update one, or multiple field groups. Supported field groups are: main, collection_sort_order, image, category_sort_order, visibility, pricing, order, customer_recommendation_action, customer_recommendation_revenue, inventory (multiple values allowed).
 
 
 For example:

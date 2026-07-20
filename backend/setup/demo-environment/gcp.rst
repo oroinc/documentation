@@ -33,7 +33,7 @@ Use the generated credentials to access your Oro application:
 * **Site Address** --- a link to your Oro application storefront (only for OroCommerce).
 * **Admin URL** --- a link to your Oro application back-office.
 * **Admin user** --- a username used to log into the admin panel (back-office).
-* **Admin password** - a password used to log into the admin panel (back-office).
+* **Admin password** --- a password used to log into the admin panel (back-office).
 
 Also, you can access the VM instance using SSH by clicking SSH and selecting the required option from the dropdown.
 

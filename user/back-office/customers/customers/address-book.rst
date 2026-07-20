@@ -61,13 +61,13 @@ Please be aware that a valid Google API key is required to display maps in the s
 Manage an Address
 -----------------
 
-* **Mark address as primary** - To mark the address as primary, click |IcEdit| on the right top of the address background, check the **Primary** box and click **Save**. The primary label will move to the updated address.
+* **Mark address as primary** --- To mark the address as primary, click |IcEdit| on the right top of the address background, check the **Primary** box and click **Save**. The primary label will move to the updated address.
 
 .. note:: Delete is disabled for the primary address. To delete the address marked as primary, you must first move the primary label to a different address.
 
-* **Edit an address** - To edit an address, click |IcEdit| on the top right of the address background, update the address details, and click **Save**.
+* **Edit an address** --- To edit an address, click |IcEdit| on the top right of the address background, update the address details, and click **Save**.
 
-* **Delete an address** - Delete an address by clicking |Trash-SVG| next to it.
+* **Delete an address** --- Delete an address by clicking |Trash-SVG| next to it.
 
 .. finish
 

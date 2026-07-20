@@ -177,9 +177,9 @@ The following criteria define an event is classified under Disaster Recovery on 
 
 In the event of a disaster, the OroCloud team takes the following disaster recovery objectives:
 
-* **Recovery Point Objective** - The instance is restored from the last daily backup.
-* **Minimal Recovery Time** - It takes at least 60 minutes to restore service availability after the disaster recovery has been approved.
-* **Maximum Recovery Time** - The recovery time depends on the backup volume and the complexity of the integration.
+* **Recovery Point Objective** --- The instance is restored from the last daily backup.
+* **Minimal Recovery Time** --- It takes at least 60 minutes to restore service availability after the disaster recovery has been approved.
+* **Maximum Recovery Time** --- The recovery time depends on the backup volume and the complexity of the integration.
 
 Disaster Recovery Principles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

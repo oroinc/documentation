@@ -16,12 +16,12 @@ Each mentioned checkout method requires a different source entity to provide ini
 
 Checkout workflows fire the following events to check whether a checkout can be started:
 
-- **extendable_condition.shopping_list_start** - to check if a checkout can be started from a shopping list
-- **extendable_condition.start_checkout** - to check if a checkout can be started from another source
+- **extendable_condition.shopping_list_start** --- to check if a checkout can be started from a shopping list
+- **extendable_condition.start_checkout** --- to check if a checkout can be started from another source
 
 Out-of-the-box, ``\Oro\Bundle\CheckoutBundle\EventListener\ValidateCheckoutOnStartEventListener`` listens to both of these events and delegates validation to Symfony Validator with different validation group sequence that varies on the source entity used to start a checkout from:
 
-- **Default** - the default validation group
+- **Default** --- the default validation group
 - checkout_start%from_alias% - a variable validation group with placeholder `%from_alias%` that is automatically replaced by the entity alias of a source entity, i.e., `checkout_start_from_shoppinglist`, `checkout_start_from_quote` or `checkout_start_from_order`
 
 .. note:: ``\Oro\Bundle\CheckoutBundle\EventListener\ValidateCheckoutOnStartEventListener`` has the `setValidationGroups` method that allows to customize the validation groups applied during validation

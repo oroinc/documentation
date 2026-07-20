@@ -75,6 +75,7 @@ Once the landing page with the consent description is added to a web catalog nod
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 * :ref:`Build Reports with Accepted Consents <user-guide-reports>`
 * :ref:`Add a Cookie Banner to the Website <bundle-docs-commerce-cookie-consent-bundle>`
+* :ref:`Cookie Consent in OroCommerce: Guidance for Merchants <concept-guide-cookie-consent>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

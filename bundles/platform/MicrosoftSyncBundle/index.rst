@@ -17,11 +17,11 @@ CLI Command to Check Sync Status
 Use ``oro:microsoft-sync:status`` command to check the status of synchronizations with Microsoft 365.
 This command shows the list of all supported synchronizations, as well as the following information for each synchronization:
 
-* **Resource Type** - Synchronization type.
-* **Enabled** - Indicates whether the synchronization is enabled.
-* **In Progress** - Indicates whether the synchronization is currently running.
-* **Last Sync At** - The date and time when synchronization was last performed.
-* **Next Sync At** - The date and time when synchronization happens next.
+* **Resource Type** --- Synchronization type.
+* **Enabled** --- Indicates whether the synchronization is enabled.
+* **In Progress** --- Indicates whether the synchronization is currently running.
+* **Last Sync At** --- The date and time when synchronization was last performed.
+* **Next Sync At** --- The date and time when synchronization happens next.
 
 .. code-block:: none
 

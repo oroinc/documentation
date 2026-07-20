@@ -135,6 +135,13 @@ OroDraftBundle enables you to edit and publish a version of the Draftable entity
 
 * **draftable** *boolean* - enables the "draft" functionality.
 
+``email``
+~~~~~~~~~
+
+* **available_in_template** *boolean* - if set to ``true``, this entity will be available when creating email templates. Defaults to ``false``.
+
+* **immutable** *boolean* - is used to prohibit changing the email association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
 ``entity``
 ~~~~~~~~~~
 
@@ -185,14 +192,14 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 
 * **owner** *string* - can have the following values:
 
-   - ``ExtendScope::OWNER_CUSTOM`` - The property is user-defined, and the core system should handle how the property appears in grids, forms, etc. (if not configured otherwise).
-   - ``ExtendScope::OWNER_SYSTEM`` - Nothing is rendered automatically, and you must explicitly specify how to show the property in different parts of the system (grids, forms, views, etc.).
+   - ``ExtendScope::OWNER_CUSTOM`` --- The property is user-defined, and the core system should handle how the property appears in grids, forms, etc. (if not configured otherwise).
+   - ``ExtendScope::OWNER_SYSTEM`` --- Nothing is rendered automatically, and you must explicitly specify how to show the property in different parts of the system (grids, forms, views, etc.).
 
 * **table** *string* - is the table name for a custom entity. This is optional attribute. If it is not specified, the table name is generated automatically.
 
 * **inherit** *string* - is the parent class name. You are not usually requires to specify this attribute as it is calculated automatically for regular extend and custom entities. An example of an entity where this attribute is used is EnumOption.
 
-* **pending_changes** - when a user changes something that requires schema update, this change is not applied to the configuration, but is stored into "pending_changes" as changeset. The format of changeset is ['scope' => ['field' => ['oldValue', 'newValue'], ...], ...].
+* **pending_changes** --- when a user changes something that requires schema update, this change is not applied to the configuration, but is stored into "pending_changes" as changeset. The format of changeset is ['scope' => ['field' => ['oldValue', 'newValue'], ...], ...].
 
     Let's assume that a user has an active activity email and changes it to a task. In this case, the value of pending changes would be the following:
 

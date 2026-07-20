@@ -64,7 +64,7 @@ Next, open ChatGPT website, enable developer mode, and create MCP application wi
 Creating API Based MCP Tools
 ----------------------------
 
-To expose API resources as MCP tools, provide information about these tools in `Resources/config/oro/api_based_mcp_tools_commerce_frontend.yml` in any bundle or `config/api_based_mcp_tools_commerce_frontend.yml` of your application, e.g.:
+To expose API resources as MCP tools, provide information about these tools in `Resources/config/oro/frontend_commerce_mcp_api_based_tools.yml` in any bundle or `config/frontend_commerce_mcp_api_based_tools.yml` of your application, e.g.:
 
 .. code-block:: yaml
 
@@ -100,16 +100,149 @@ The complete configuration options available in this configuration file are:
                 # The list of required filters for the MCP tool.
                 required_filters:     []
 
+To restrict the list of fields returned by API-based MCP tools, use `Resources/config/oro/frontend_commerce_mcp_default_fields.yml` in any bundle or `config/frontend_commerce_mcp_default_fields.yml` of your application, e.g.:
+
+.. code-block:: yaml
+
+    default_fields:
+        Oro\Bundle\OrderBundle\Entity\Order:
+            - poNumber
+            - currency
+            - totalValue
+            - lineItems
+
+To configure API resources, use `Resources/config/oro/api_frontend_commerce_mcp.yml` in any bundle or `config/api_frontend_commerce_mcp.yml` of your application.
+
+:ref:`The API request type aspect <api-request-type>` for the API-based MCP tools is ``frontend_commerce_mcp``.
+
+Plain Format for API Based MCP Tools
+------------------------------------
+
+By default, request and response data for MCP tools conform to the |JSON:API specification|, but it is possible to switch the MCP server to work with a simpler format, which could be named "plain". For example, here are the request data in both formats:
+
+.. code-block:: json
+   :caption: JSON:API format
+
+    {
+      "data": {
+        "type": "orders"
+        "attributes": {
+          "currency": "USD"
+        },
+        "relationships": {
+          "customer": {
+            "data": {"type": "customers", "id": "5"}
+          },
+          "lineItems": {
+            "data": [
+              {"type": "orderlineitems", "id": "line1"}
+            ]
+          }
+        }
+      },
+      "included": [
+        {
+          "type": "orderlineitems",
+          "id": "line1",
+          "attributes": {
+            "productSku": "0RT28",
+            "quantity": 11,
+            "price": "75.99"
+          },
+          "relationships": {
+            "productUnit": {
+              "data": {"type": "productunits", "id": "item"}
+            }
+          }
+        }
+      ]
+    }
+
+.. code-block:: json
+   :caption: Plain format
+
+    {
+      "type": "orders"
+      "order_currency": "USD",
+      "order_customer": {"type": "customers", "customer_id": "5"},
+      "order_lineItems": [
+        {
+          "type": "orderlineitems"
+          "orderlineitem_productSku": "0RT28",
+          "orderlineitem_quantity": 11,
+          "orderlineitem_price": "75.99",
+          "orderlineitem_productUnitCode": "item"
+        }
+      ]
+    }
+
+To switch to the plain format, use the ``https://yourapplication/commerce-mcp-plain`` MCP server URL instead of the ``https://yourapplication/commerce-mcp``.
+
+To configure the plain format, use `Resources/config/oro/frontend_commerce_mcp_plain_json_api.yml` in any bundle or `config/frontend_commerce_mcp_plain_json_api.yml` of your application, e.g.:
+
+.. code-block:: yaml
+
+    plain_json_api:
+        Oro\Bundle\OrderBundle\Entity\Order:
+            fields:
+                lineItems:
+                    expand: true
+
+The complete configuration options available in this configuration file are:
+
+.. code-block:: yaml
+
+    plain_json_api:
+
+        # Prototype
+        entity_class:
+
+            # The exclusion strategy to be used for the entity.
+            exclusion_policy:     ~ # One of "all"; "none"
+
+            # The prefix for field names when a field value is an object or an array of objects.
+            field_name_prefix:    ~
+
+            fields:
+
+                # Prototype
+                field_name:
+
+                    # Indicates whether a field should be excluded from MCP.
+                    exclude:              ~
+
+                    # Indicates whether a relationship to another entity should be expanded in MCP.
+                    expand:               ~
+
+                    exclusion_policy:     ~
+                    field_name_prefix:    ~
+                    fields:
+                        # Prototype
+                        field_name:
+                            exclude:              ~
+                            expand:               ~
+                            exclusion_policy:     ~
+                            field_name_prefix:    ~
+                            fields:
+                                # Prototype
+                                field_name:
+                                    exclude:              ~
+                                    expand:               ~
+
+To configure API resources that should be applicable only to the plain format, use `Resources/config/oro/api_frontend_commerce_mcp_plain.yml` in any bundle or `config/api_frontend_commerce_mcp_plain.yml` of your application.
+
+:ref:`The API request type aspect <api-request-type>` for the API-based MCP tools in the plain format is ``frontend_commerce_mcp_plain``.
+
 Creating MCP Capabilities
 -------------------------
 
 MCP capabilities are automatically discovered using PHP attributes, such as `McpTool`, `McpPrompt`, `McpResource` and `McpResourceTemplate`.
-The only one thing you need to do is configure directories where PHP classes with these attributes will be located.
+The only thing you need to do is configure the directories where PHP classes with these attributes will be located.
 It can be done via `Resources/config/oro/app.yml` in any bundle or `config/config.yml` of your application, e.g.:
 
 .. code-block:: yaml
 
-    oro_mcp:
+    oro_frontend_commerce_mcp:
         discovery:
             - { base_path: 'Acme\Bundle\CommerceMcpBundle\AcmeCommerceMcpBundle', scan_dirs: ['Mcp'] }
 
@@ -186,7 +319,7 @@ Examples of PHP classes that implement MCP capabilities:
 
 .. note::
     If your PHP class that implements MCP capabilities depends on other services in the dependency injection container,
-    register it as a service in the `Resources/config/services.yml` file and tag it with ``oro_commerce_mcp.service``, e.g.:
+    register it as a service in the `Resources/config/services.yml` file and tag it with ``oro_frontend_commerce_mcp.service``, e.g.:
 
     .. code-block:: yaml
 
@@ -195,7 +328,7 @@ Examples of PHP classes that implement MCP capabilities:
             arguments:
                 - '@some_service'
             tags:
-                - { name: oro_commerce_mcp.service }
+                - { name: oro_frontend_commerce_mcp.service }
 
 Configuration
 -------------
@@ -209,12 +342,16 @@ The default configuration of OroFrontendCommerceMcpBundle:
         app: 'OroCommerce MCP Server'
         # The application version to be exposed to MCP clients.
         version: '0.1'
-        # Instructions in Markdown format describing MCP server purpose and usage context (for LLMs).
+        # Instructions in Markdown format describing the MCP server's purpose and usage context (for LLMs).
         # The instructions should start with a top-level section name, for example:
         # # Critical Rules
         #
         # If several bundles provide instructions with the same top-level sections, their contents will be merged.
         instructions: null
+        # Markdown files containing additional MCP server instructions associated with specific API request type expressions.
+        # Example: { '@AcmeMcpBundle/Resources/doc/mcp_frontend/instructions.md': [ 'json_api&acme' ] }
+        additional_instructions:
+            '@OroFrontendCommerceMcpBundle/Resources/doc/mcp/frontend_commerce_mcp_plain_instructions.md': [ 'frontend_commerce_mcp_plain' ]
         # The maximum number of items returned per MCP list request.
         pagination_limit: 50
         # MCP HTTP transport configuration.
@@ -241,15 +378,32 @@ The default configuration of OroFrontendCommerceMcpBundle:
                 # The list of headers that are allowed to send by CORS requests.
                 # Example: [ 'X-Foo', 'X-Bar' ]
                 allow_headers: []
+            # Additional HTTP endpoints that can be used to tune MCP server behaviour.
+            # Example:
+            #    'acme': { path: '/commerce-mcp-acme', request_type: [ 'acme' ] }
+            # The "path" is an endpoint path.
+            # The "request_type" contains additional API request type aspects that are applied when a request is sent to this endpoint.
+            additional_endpoints:
+                plain:
+                    path: /commerce-mcp-plain
+                    request_type: [ 'frontend_commerce_mcp_plain' ]
+            # Additional HTTP request headers that can be used to tune MCP server behaviour.
+            # Example:
+            #    'X-Integration-Name': { value: 'acme', request_type: [ 'acme' ] }
+            # The "value" is a header value.
+            # The "request_type" contains additional API request type aspects that are applied when this header is present in a request.
+            additional_headers: {}
         # MCP services discovery configuration.
         # Example:
-        #     discovery:
-        #         - { base_path: 'Acme\Bundle\McpBundle\AcmeMcpBundle', scan_dirs: ['Mcp'], exclude_dirs: ['Excluded'] }
+        #    - { base_path: 'Acme\Bundle\McpBundle\AcmeMcpBundle', scan_dirs: ['Mcp'], exclude_dirs: ['Excluded'] }
+        #    - { base_path: 'Acme\Bundle\McpBundle\AcmeMcpBundle', scan_dirs: ['AnotherMcp'], request_type: 'json_api&another' }
         # The "base_path" can be a path for scanning directories or a PHP class located in a root directory to be scanned.
         # The "scan_dirs" is the list of directories (relative to the base path) to scan.
         # The "exclude_dirs" is optional and it is the list of directories (relative to the base path) to exclude from the scan.
+        # The "request_type" is optional and it is the API request type expression to which the discovery path applies.
         discovery:
-            - { base_path: 'Oro\Component\Mcp\Api\JsonApi\JsonApiBasedTools', scan_dirs: [ 'CommonTools' ] }
+            - { base_path: 'Oro\Component\Mcp\Api\JsonApi\JsonApiBasedTools', scan_dirs: [ 'CommonTools' ], request_type: 'json_api&default' }
+            - { base_path: 'Oro\Component\Mcp\Api\JsonApi\JsonApiBasedTools', scan_dirs: [ 'CommonTools/Search' ], request_type: 'frontend_commerce_mcp_plain' }
         # API related configuration.
         api:
             # The API type that is used to group and protect MCP capabilities.
@@ -258,12 +412,25 @@ The default configuration of OroFrontendCommerceMcpBundle:
             name: 'Commerce Storefront MCP Server'
             # Indicates whether API is storefront or back-office.
             frontend: true
-            # The request type for API that is used by MCP tools based on API.
+            # The request type for API that is used by API-based MCP tools.
             request_type: [ 'rest', 'json_api', 'frontend', 'frontend_commerce_mcp' ]
-            # All supported API configuration files for MCP tools based on API.
-            config_files: [ 'api_commerce_mcp_frontend.yml', 'api_frontend.yml' ]
+            # All supported API configuration files for API-based MCP tools.
+            config_files: [ 'api_frontend_commerce_mcp.yml', 'api_frontend.yml' ]
             # A map between API and MCP data types.
+            # Example: { 'text': 'string' }
             data_types: []
+
+Dependency Injection Tags
+-------------------------
+
+* **oro_frontend_commerce_mcp.service** - Registers a service that implements MCP server capabilities, such as tools, prompts, resources, and resource templates.
+* **oro_frontend_commerce_mcp.loader** - Allows adding a new loader for providing definitions of MCP server capabilities, such as tools, prompts, resources, and resource templates. Must implement ``Mcp\Capability\Registry\Loader\LoaderInterface``. The ``requestType`` DIC tag attribute can be used to specify the expression that determines when the loader is applicable, for example ``json_api&acme``.
+* **oro_frontend_commerce_mcp.instructions_provider** - Allows adding a new provider for MCP server instructions. Must implement ``Oro\Component\Mcp\Server\Provider\InstructionsProviderInterface``. The ``requestType`` DIC tag attribute can be used to specify the expression that determines when the provider is applicable, for example ``json_api&acme``.
+* **oro_frontend_commerce_mcp.api_tool_schema_processor** - Allows adding a new processor for processing input and output schemas for API-based MCP tools. Must implement ``Oro\Component\Mcp\Api\ApiBasedToolSchemaProcessorInterface``. The ``requestType`` DIC tag attribute can be used to specify the expression that determines when the processor is applicable, for example ``json_api&acme``.
+* **oro_frontend_commerce_mcp.api_tool_data_processor** - Allows adding a new processor for processing request and response data for API-based MCP tools. Must implement ``Oro\Component\Mcp\Api\ApiBasedToolDataProcessorInterface``. The ``requestType`` DIC tag attribute can be used to specify the expression that determines when the processor is applicable, for example ``json_api&acme``.
+* **oro_frontend_commerce_mcp.build_server_middleware** - Allows adding a new middleware to be run before MCP server is built. Must implement ``Oro\Component\Mcp\Server\Builder\MiddlewareInterface``.
+* **oro_frontend_commerce_mcp.http_request_middleware** - Allows adding a new middleware to be run before MCP HTTP requests are processed. Must implement ``Psr\Http\Server\MiddlewareInterface``.
+* **oro_frontend_commerce_mcp.api_request_type_modifier** - Allows adding a new modifier for the request type used by API-based MCP tools. Must implement ``Oro\Component\Mcp\Api\RequestTypeModifier\ApiRequestTypeModifierInterface``.
 
 
 .. include:: /include/include-links-dev.rst

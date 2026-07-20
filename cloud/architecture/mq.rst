@@ -16,11 +16,11 @@ Your customized application can use message processing for many other reasons, a
 
 Message processing operates with the following entities:
 
-* **Message** -- the minimal piece of data processed by a consumer. Consists of the topic and the body. Message topic is used by the message processor to decide how to process a message and the message body consists of data that must be processed.
+* **Message** --- the minimal piece of data processed by a consumer. Consists of the topic and the body. Message topic is used by the message processor to decide how to process a message and the message body consists of data that must be processed.
 
-* **Message Queue** -- the queue that holds messages until they are processed. Oro uses FIFO queue which means that the oldest messages are processed first while the newest must wait until older messages are processed and leave the queue.
+* **Message Queue** --- the queue that holds messages until they are processed. Oro uses FIFO queue which means that the oldest messages are processed first while the newest must wait until older messages are processed and leave the queue.
 
-* **Consumer** -- a component which takes messages from the queue and process it one by one. Consumer processes one message at a time. It creates a specific processing job depending on the message topic.
+* **Consumer** --- a component which takes messages from the queue and process it one by one. Consumer processes one message at a time. It creates a specific processing job depending on the message topic.
 
 OroCommerce uses RabbitMQ as a message broker which is a server responsible for managing message queues and transferring messages to the consumers. In OroCloud, consumers are hosted at the dedicated job servers and each message queue is processed by 4 consumers at each job server in order to provide high availability.
 

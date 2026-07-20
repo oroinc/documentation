@@ -25,10 +25,10 @@ ConfigExtraInterface
 
 The |ConfigExtraInterface| has the following methods:
 
-- **getName** - Returns a string which is used as unique identifier of configuration data.
-- **getCacheKeyPart** - Returns a string to add to a cache key used by the |configuration provider|. In most cases, this method returns the same value as the ``getName`` method. However, more complicated extras can build the cache key part based on other properties, e.g., |MaxRelatedEntitiesConfigExtra|.
-- **configureContext** - Adds additional values into the |ConfigContext|. For example, the mentioned above |MaxRelatedEntitiesConfigExtra| adds the maximum number of related entities into the context of the :ref:`get_config <get-config-action>` action, and this value is used by the |SetMaxRelatedEntities| processor to make necessary modifications to the configuration.
-- **isPropagable** - Indicates whether this config extra should be used when a configuration of related entities is built. For example,  |DescriptionsConfigExtra| is propagable; as a result, field value data transformers will be returned for the main entity and all related entities.
+- **getName** --- Returns a string which is used as unique identifier of configuration data.
+- **getCacheKeyPart** --- Returns a string to add to a cache key used by the |configuration provider|. In most cases, this method returns the same value as the ``getName`` method. However, more complicated extras can build the cache key part based on other properties, e.g., |MaxRelatedEntitiesConfigExtra|.
+- **configureContext** --- Adds additional values into the |ConfigContext|. For example, the mentioned above |MaxRelatedEntitiesConfigExtra| adds the maximum number of related entities into the context of the :ref:`get_config <get-config-action>` action, and this value is used by the |SetMaxRelatedEntities| processor to make necessary modifications to the configuration.
+- **isPropagable** --- Indicates whether this config extra should be used when a configuration of related entities is built. For example,  |DescriptionsConfigExtra| is propagable; as a result, field value data transformers will be returned for the main entity and all related entities.
 
 .. _web-api--configuration-extra-configextrasectioninterface:
 
@@ -37,7 +37,7 @@ ConfigExtraSectionInterface
 
 The |ConfigExtraSectionInterface| extends |ConfigExtraInterface| and has one additional method:
 
--  **getConfigType** - Returns the configuration type that should be loaded into the corresponding section. The |ConfigLoaderFactory| uses the return value of this method to find the appropriate loader.
+-  **getConfigType** --- Returns the configuration type that should be loaded into the corresponding section. The |ConfigLoaderFactory| uses the return value of this method to find the appropriate loader.
 
 There is a list of existing configuration extras that implement this interface:
 

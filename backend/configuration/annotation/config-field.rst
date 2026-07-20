@@ -45,7 +45,7 @@ This example sets the ``auditable`` option from the ``dataaudit`` scope to ``tru
 
 *  **acl_protected** *boolean* - indicates whether acl check should be applied when loading or displaying attachments.
 
-*  **file_applications** - the list of all allowed file applications. Supported value: ``default``.
+*  **file_applications** --- the list of all allowed file applications. Supported value: ``default``.
 
 *  **use_dam** *boolean* - indicates whether to use DAM (Digital Asset Management) to upload a file. OroDigitalAssetBundle bundle provides the Digital Asset Management (DAM) functionality and CRUD for digital assets. It can be enabled for fields of type File and Image  in the back-office UI both via the entity management and field configuration.
 
@@ -140,7 +140,7 @@ Contain some settings for the datagrid screen.
 
 Sets default settings for :ref:`OroEmailBundle <bundle-docs-platform-email-bundle>`.
 
-*  **available_in_template** *boolean* - if set to true, the field can be used in email templates.
+*  **available_in_template** *boolean* - if set to true, the field can be used in email templates. Defaults to ``false``.
 
 * **immutable** *boolean* - is used to prohibit changing the email association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
@@ -194,7 +194,7 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 
 * **without_default** *boolean* - indicates whether a relation has default value or not. Applicable only to many-to-many or one-to-many relations. If not specified or FALSE, the relation has the default value.
 
-* **cascade** - The names of persistence operations to cascade on the relation. Possible values are: 'persist', 'remove', 'detach', 'merge', 'refresh', 'all'. Note that the 'detach' operation for many-to-one and one-to-many relations is applied by default and this cannot be changed through the configuration. This attribute is applicable to any type of relations. See Doctrine's documentation for more details.
+* **cascade** --- The names of persistence operations to cascade on the relation. Possible values are: 'persist', 'remove', 'detach', 'merge', 'refresh', 'all'. Note that the 'detach' operation for many-to-one and one-to-many relations is applied by default and this cannot be changed through the configuration. This attribute is applicable to any type of relations. See Doctrine's documentation for more details.
 
 * **bidirectional** *boolean* - a relation feature parameter, check Doctrine's documentation for more details.
 
@@ -303,28 +303,28 @@ Settings of :ref:`entity merge <dev-entities-merge>`.
 
 * **readonly** *boolean* - turn the field into read-only during merge.
 
-* **merge_modes** - Mode of merge with values replace and unite, which can be an array or a single mode:
+* **merge_modes** --- Mode of merge with values replace and unite, which can be an array or a single mode:
 
   * replace - replaces one value with a selected value;
   * unite - merges all values into one (applicable to collections and lists).
 
 * **is_collection** *boolean* - a flag for a collection of fields. This fields supports unite mode by default.
 
-* **cast_method** - options for rendering field value in the UI. Method is used to cast value to a string (applicable only to values that are objects).
+* **cast_method** --- options for rendering field value in the UI. Method is used to cast value to a string (applicable only to values that are objects).
 
 * **template** *string* - a template can be used to render the value of a field.
 
-* **setter** - a method for setting a value to an entity.
+* **setter** --- a method for setting a value to an entity.
 
-* **getter** - a method for getting a value to an entity.
+* **getter** --- a method for getting a value to an entity.
 
-* **inverse_display** - can be used to see merge form for this field for an entity on the other side of relation. Let's consider an example where the Call entity with a field referenced to Account uses ManyToOne unidirectional relation. As Account does not have access to a collection of calls the only possible place to configure calls merging for account is this field in the Call entity.
+* **inverse_display** --- can be used to see merge form for this field for an entity on the other side of relation. Let's consider an example where the Call entity with a field referenced to Account uses ManyToOne unidirectional relation. As Account does not have access to a collection of calls the only possible place to configure calls merging for account is this field in the Call entity.
 
-* **inverse_merge_modes** - the same as merge_mode but is used for the relation entity.
+* **inverse_merge_modes** --- the same as merge_mode but is used for the relation entity.
 
 * **inverse_label** *string* - the same as label but used for the relation entity.
 
-* **inverse_cast_method** - the same as cast_method but used for the relation entity.
+* **inverse_cast_method** --- the same as cast_method but used for the relation entity.
 
 * **render_number_style** *string* - a localization number type. Default localisation handler support: decimal, currency, percent, default_style, scientific, ordinal, duration, spellout.
 
@@ -334,7 +334,7 @@ Settings of :ref:`entity merge <dev-entities-merge>`.
 
 * **render_datetime_pattern** *string* - a date/time pattern. Example: 'm/d/Y'.
 
-* **autoescape** - controls escaping of the value when rendered in the Merge table. Use 'false' to disable escaping for the field (i.e., RichText) or set the Twig 'escape' method to enable: 'html' (or true), 'html_attr', 'css', 'js', 'url'.
+* **autoescape** --- controls escaping of the value when rendered in the Merge table. Use 'false' to disable escaping for the field (i.e., RichText) or set the Twig 'escape' method to enable: 'html' (or true), 'html_attr', 'css', 'js', 'url'.
 
 * **immutable** *boolean* - is used to prohibit changing the merge association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
@@ -354,7 +354,7 @@ As currency functionality is represented by three fields (from entity side) we h
 ``organization``
 ~~~~~~~~~~~~~~~~
 
-* **applicable** -  is used to specify for which organizations custom field will be visible. On the field edit page, it is represented with form type ``oro_type_choice_organization_type``, which provides a selector for organizations (regardless of whether it is activated or not) defined in the application so that a user can select a specific organization(s) or "ALL" organizations.
+* **applicable** ---  is used to specify for which organizations custom field will be visible. On the field edit page, it is represented with form type ``oro_type_choice_organization_type``, which provides a selector for organizations (regardless of whether it is activated or not) defined in the application so that a user can select a specific organization(s) or "ALL" organizations.
 
 * **immutable** *boolean* - is used to prohibit changing the applicable association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
