@@ -17,12 +17,12 @@ These promotional tools help encourage new leads, motivate returning customers, 
 Discount Types
 --------------
 
-It is important to select the right discount metrics to reach your sales goals and benefit your business. Offering discounts can drive more sales volume to your business, attract new customers, and help them choose your services over competitors.
+Select discount metrics that support your sales goals and business strategy. Discounts can increase sales volume, attract new customers, and encourage customers to choose your services over those of your competitors.
 
 OroCommerce offers :ref:`four promotion options <user-guide--marketing--promotions--create>` to suit the needs of any business. B2B sellers can configure promotions by:
 
 .. image:: /user/img/concept-guides/promotions/discount-types.png
-   :alt: Discount type dropdown
+   :alt: Discount type drop-down
 
 * **Order**
 
@@ -42,7 +42,7 @@ OroCommerce offers :ref:`four promotion options <user-guide--marketing--promotio
 
 These four discounts can be represented by a fixed amount or a certain percent.
 
-.. hint:: With some developer assistance, implementers can add any custom business-specific promotion types, in addition to the four types that come out-of-the-box.
+.. hint:: With some developer assistance, implementers can add any custom business-specific promotion types, in addition to the four types that come out of the box.
 
 Conditions
 ----------
@@ -60,7 +60,7 @@ Conditions with restrictions allow you to evaluate customers and orders by parti
 Coupons
 -------
 
-Like promotions, :ref:`coupons <user-guide--marketing--promotions--coupons>` are an effective marketing tool. Because coupon codes are easy to track, you can measure the success of coupon-tagged promotions more precisely than couponless campaigns.
+Like promotions, :ref:`coupons <user-guide--marketing--promotions--coupons>` are an effective marketing tool. Because you can track coupon codes, you can measure the success of coupon-tagged promotions more precisely than couponless campaigns.
 
 You can use coupons to:
 

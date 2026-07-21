@@ -5,7 +5,7 @@ WYSIWYG Editor
 
 The :term:`WYSIWYG <WYSIWYG (What You See Is What You Get)>` editor feature is implemented by Oro applications to help you control the content of your HTML-like web pages within your website. It is an HTML page builder that helps you create a complex and attractive content with cutting-edge default and third-party widgets, embedded videos and pictures without any coding knowledge. Preview functions enable you to optimize the page for mobile and desktop formats before you publish.
 
-The WYSIWYG editor integrates the |GrapesJS| framework out-of-the-box. The framework provides multiple advanced capabilities for creating dynamic templates and HTML structures.
+The WYSIWYG editor integrates the |GrapesJS| framework out of the box. The framework provides multiple advanced capabilities for creating dynamic templates and HTML structures.
 
 .. image:: /user/img/getting_started/wysiwyg/wysiwyg_editor_example.png
    :alt: An example of the wysiwyg editor
@@ -68,7 +68,7 @@ To add formatting such as bold, italic, and underlining to your text, you need t
 
 Click the necessary option to (from left to right):
 
-* Apply the heading (H1, H2, normal text, etc) by selecting the required one from the dropdown list
+* Apply the heading (H1, H2, normal text, etc) by selecting the required one from the drop-down list
 * Add **bold** formatting to your text
 * Add *italic* formatting to your text
 * Underline the text
@@ -159,14 +159,14 @@ To embed YouTube or Vimeo URLs to your content, you need to drag the **Video** b
 Insert Multimedia Preserving the Required Aspect Ratio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There are some cases when a video on a mobile device or a responsive page doesn't fit the layout or appears with unrelated bars. To fix it, you need to configure the settings of such multimedia, image, or map, maintaining their correct scale and size.
+There are some cases when a video on a mobile device or a responsive page does not fit the layout or appears with unrelated bars. To fix it, you need to configure the settings of such multimedia, image, or map, maintaining their correct scale and size.
 
 There are several options to embed some multimedia into the WYSIWYG editor, preserving the required proportions (aspect ratios).
 
 **Option 1**
 
 1. Drag the video, image, or map block to the canvas.
-2. Click **</>** Source Code on the top menu above the canvas to open the HTML editor.
+2. Click **</>** Source Code at the top menu above the canvas to open the HTML editor.
 3. Find the video block and wrap it in a <div> container.
 4. Save it by clicking **Apply Changes** in the popup bottom corner.
 
@@ -197,7 +197,7 @@ There are several options to embed some multimedia into the WYSIWYG editor, pres
 **Option 2**
 
 1. Drag the video, image, or map block to the canvas.
-2. Click **</>** Source Code on the top menu above the canvas to open the HTML editor.
+2. Click **</>** Source Code at the top menu above the canvas to open the HTML editor.
 3. Find the video block and wrap it in a <div> container with the `aspect-ratio` class, as follows:
 
 .. code-block:: html
@@ -445,7 +445,7 @@ To insert a piece of HTML code anywhere on the web page:
 If you are inserting a table, you can edit it in two ways:
 
 * through the HTML code dialog (**</>**);
-* by merging (|IcObjectGroup|) the code into your web page content to adjust it via UI. Be aware that merging the table is an irreversible action that doesn't allow you to undo the merging. Refer to the :ref:`Add a table <wysiwyg-add-tables>` section for more details on how to manage tables via UI.
+* by merging (|IcObjectGroup|) the code into your web page content to adjust it via UI. Be aware that merging the table is an irreversible action that does not allow you to undo the merging. Refer to the :ref:`Add a table <wysiwyg-add-tables>` section for more details on how to manage tables via UI.
 
 .. image:: /user/img/concept-guides/content-management/edit-HTML-table.png
    :alt: Illustrating the two ways of table editing

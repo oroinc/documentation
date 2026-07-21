@@ -58,15 +58,15 @@ Next, upload contacts from the Oro application into our newly created list in Do
 1. Go back to the Oro application.
 2. Navigate to **System > Manage Integrations**.
 3. Select your Dotdigital integration.
-4. Click **Schedule Sync** in the top right corner.
+4. Click **Schedule Sync** in the top-right corner.
 
 You can map contacts from the Oro marketing list into your Dotdigital list the following way:
 
 1. Navigate to **Marketing > Marketing Lists** and select the list you want to use.
-2. Click **Connect to dotdigital** in the top right corner.
+2. Click **Connect to dotdigital** in the top-right corner.
 
    .. image:: /user/img/marketing/marketing/dotdigital/connect_dotdigital_button.png
-      :alt: Click Connect to Dotdigital in the top right corner
+      :alt: Click Connect to Dotdigital in the top-right corner
 
 3. A pop-up form will emerge with the following fields to be defined:
 
@@ -75,13 +75,13 @@ You can map contacts from the Oro marketing list into your Dotdigital list the f
    * **Create New Entities** --- This checkbox controls whether new entities can be created. If a contact is found in a list but no email match in the application is found, a new entity will be created in the application based on the mapping setup. A new entity will be created only if **two way sync** mapping is configured for each of the entity's required fields.
 
    .. image:: /user/img/marketing/marketing/dotdigital/connect_dotdigital_address_book.png
-      :alt: Selecting the necessary list from the dropdown of the popup dialog box
+      :alt: Selecting the necessary list from the drop-down of the popup dialog box
 
 4. As soon as the connection is saved, contacts from the marketing list are automatically exported from Oro to Dotdigital. Since then, data synchronization (import and export) between Oro and Dotdigital are performed automatically every 4 minutes.
 
    .. note:: One marketing list can only be connected to one Dotdigital list and vice versa. Therefore, each connected Oro marketing list will be represented as a list in Dotdigital. Also, note that you can connect only marketing lists with email fields.
 
-5. Once you have connected your marketing list, you will notice a **dotdigital button** appear at the top (instead of **Connect to dotdigital**) with the following actions in the dropdown:
+5. Once you have connected your marketing list, you will notice a **dotdigital button** appear at the top (instead of **Connect to dotdigital**) with the following actions in the drop-down :
 
    * **Synchronize** --- Start sync between the marketing list and the Dotdigital list manually.
    * **Refresh Data Fields** --- Manually mark all updated marketing lists to ensure data fields data is up to date in Dotdigital after the next synchronization.
@@ -89,7 +89,7 @@ You can map contacts from the Oro marketing list into your Dotdigital list the f
    * **Disconnect** --- Disconnect the list from the segment.
 
    .. image:: /user/img/marketing/marketing/dotdigital/dotdigital_connected_new.png
-      :alt: The actions available in the dropdown list under the Dotdigital button
+      :alt: The actions available in the drop-down list under the Dotdigital button
 
 6. At this point, if you go back to Dotdigital, you will be able to see the data from your Oro application (subscribers’ first and last names and contact details) synced into your Dotdigital list.
 
@@ -119,7 +119,7 @@ We have configured the integration between Oro and Dotdigital and created a mail
 
 5. Personalization is available for two fields: **Subject Line** and **Friendly From Name**.
 
-    It is possible to prefix the recipient’s name with the data stored in the Oro application. You can do this by clicking on the icon above the field (as shown in the screenshot) and selecting the personalization option that suits you best from the dropdown menu.
+    It is possible to prefix the recipient’s name with the data stored in the Oro application. You can do this by clicking on the icon above the field (as shown in the screenshot) and selecting the personalization option that suits you best from the drop-down menu.
 
     .. image:: /user/img/marketing/marketing/dotdigital/dotdigital_create_campaign.png
        :alt: Highlight the icons to be clicked to prefix the recipient’s name with the data stored in the Oro application
@@ -141,7 +141,7 @@ We have configured the integration between Oro and Dotdigital and created a mail
 Check Statistics for Your Campaign
 ----------------------------------
 
-To check the statistics for your campaign on the Dotdigital side, navigate to **Reporting > Campaign Reports** on the top right.
+To check the statistics for your campaign on the Dotdigital side, navigate to **Reporting > Campaign Reports** at the top right.
 
 Receive Campaign Statistics on the Oro Side
 -------------------------------------------

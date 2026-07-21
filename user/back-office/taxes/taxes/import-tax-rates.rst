@@ -23,7 +23,7 @@ To import a bulk of tax information:
 
 1. In the main menu, navigate to **Taxes > Taxes**. The tax list opens.
 
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 
 3. **Prepare data for import**: Create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.
 

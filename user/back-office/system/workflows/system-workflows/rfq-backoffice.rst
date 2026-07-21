@@ -131,7 +131,7 @@ As an illustration, let us go through a sample flow to see RFQ Management Flow i
 
 .. image:: /user/img/system/workflows/rfq/backoffice/rfq_management_flow_4.png
 
-.. note:: It is possible to create a quote or an order straight from the RFQ page by clicking on the corresponding buttons in the top right corner of the page.
+.. note:: It is possible to create a quote or an order straight from the RFQ page by clicking on the corresponding buttons in the top-right corner of the page.
 
 3. More information has been provided, the sales person marks the RFQ processed and creates a quote straight from the RFQ view page.
    

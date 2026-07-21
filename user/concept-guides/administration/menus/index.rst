@@ -10,7 +10,7 @@ A navigation menu of an e-commerce website has a lot in common with the shelving
 .. image:: /user/img/concept-guides/menus/oro2_1.jpg
    :alt: Illustrate navigation principles of any website
 
-Catering to the needs of your business, OroCommerce offers a useful solution to build the menu of your choice. The application provides several pre-configured menu items out-of-the-box that you can customize to fit your criteria. With the storefront and back-office menu functionality, you can personalize and optimize your site navigation for the convenient usage by customers in the storefront and administrators in the back-office.
+Catering to the needs of your business, OroCommerce offers a useful solution to build the menu of your choice. The application provides several pre-configured menu items out of the box that you can customize to fit your criteria. With the storefront and back-office menu functionality, you can personalize and optimize your site navigation for the convenient usage by customers in the storefront and administrators in the back-office.
 
 .. note:: Currently, Storefront Menus include menu items for both **Refreshing Teal** and **version 5.1 and below** to support all versions of OroCommerce.
 
@@ -210,7 +210,7 @@ Back-Office Menu Components
 Application_menu
 ^^^^^^^^^^^^^^^^
 
-**Application_menu** (navigation bar) is the main menu of the back-office in the Oro application. It resides on the top of every application page, and you can use it to navigate through the Oro application. Subject to configuration, it may be displayed horizontally or vertically. The way it is displayed is customized in the system configuration in the **Navigation Bar** section of **Display Settings** and can be configured on four levels: :ref:`globally <configuration--general-setup--display-settings>`, :ref:`per organization <configuration--general-setup--display-settings--organization>`, :ref:`per website <display-settings--website>`, and :ref:`per user <doc-my-user-configuration-display>`.
+**Application_menu** (navigation bar) is the main menu of the back-office in the Oro application. It resides at the top of every application page, and you can use it to navigate through the Oro application. Subject to configuration, it may be displayed horizontally or vertically. The way it is displayed is customized in the system configuration in the **Navigation Bar** section of **Display Settings** and can be configured on four levels: :ref:`globally <configuration--general-setup--display-settings>`, :ref:`per organization <configuration--general-setup--display-settings--organization>`, :ref:`per website <display-settings--website>`, and :ref:`per user <doc-my-user-configuration-display>`.
 
 .. image:: /user/img/concept-guides/menus/application_menu_sample.png
    :alt: Illustrate the left and top positions of the application menu and where to configure them
@@ -237,7 +237,7 @@ To access other shortcuts, click **See the full list** to see a complete list of
 Usermenu
 ^^^^^^^^
 
-**Usermenu** is the personal menu of the logged-in user in the back-office. A user can access their profile configuration, emails, tasks, and events via **usermenu** by clicking on their name on the top right of the application.
+**Usermenu** is the personal menu of the logged-in user in the back-office. A user can access their profile configuration, emails, tasks, and events via **usermenu** by clicking on their name at the top right of the application.
 
 .. image:: /user/img/concept-guides/menus/usermenu_sample.png
    :alt: A sample of the usermenu in the back-office

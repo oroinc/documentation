@@ -4,9 +4,9 @@ HTTP Header Specifics
 =====================
 
 As mentioned in the :ref:`Client Requirements <web-services-api--client-requirements>`
-and :ref:`Authentication <web-services-api--authentication>` sections, to perform
-an JSON:API request successfully, it is important to provide the correct **Accept**, **Content-Type**
-and **Authentication** parameters, e.g.,:
+and :ref:`Authentication <web-services-api--authentication>` sections, provide the correct **Accept**, **Content-Type**
+and **Authentication** parameters to perform
+an JSON:API request successfully, e.g.,:
 
 .. code-block:: http
 

@@ -11,7 +11,7 @@ To help you create your custom Storefront theme design, we compiled two files, t
 
     These Figma files use the new |Intelligent Blue theme|, which is the recommended and most actively maintained theme for OroCommerce version 7.0.
 
-    The *Golden Carbon* and *Refreshing Teal* themes are still available in version 7.0. To see how they look on the storefront, please refer to the related Figma files: |Style Guide 6.1 (Golden Carbon)|, |Design Mockups 6.1 (Golden Carbon)| and |Style Guide 6.0 (Refreshing Teal)|, |Design Mockups 6.0 (Refreshing Teal)|.
+    The *Golden Carbon* and *Refreshing Teal* themes are still available in version 7.0. To see how they look in the storefront, please refer to the related Figma files: |Style Guide 6.1 (Golden Carbon)|, |Design Mockups 6.1 (Golden Carbon)| and |Style Guide 6.0 (Refreshing Teal)|, |Design Mockups 6.0 (Refreshing Teal)|.
 
 
 This |Style Guide 7.0| contains:

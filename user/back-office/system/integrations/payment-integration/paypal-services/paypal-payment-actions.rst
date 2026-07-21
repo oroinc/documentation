@@ -10,7 +10,7 @@ Payment action parameters are configured per payment method. Available options a
 * Authorize
 * Authorize and Charge
 
-In **Payment Action**, you select the strategy for the payment processing on the checkout.
+In **Payment Action**, you select the strategy for the payment processing at checkout.
 
 .. Validation, authorization and payment capture transactions may be sent after payment information entry and upon the order submission.
 

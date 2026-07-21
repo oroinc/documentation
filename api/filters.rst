@@ -84,7 +84,7 @@ The API enables you to use several types of filters. Filter types are briefly de
 |         | filter[id]=5..7                 |                                                                             |
 |         |                                 | May accept several values separated by comma. In such case,                 |
 |         |                                 | they will be considered connected by the logical **OR** operator,           |
-|         |                                 | e.g. **filter[id]=5,7** represents the following expression:                |
+|         |                                 | e.g., **filter[id]=5,7** represents the following expression:               |
 |         |                                 | **id = 5 OR id = 7**.                                                       |
 |         |                                 |                                                                             |
 |         |                                 | May accept a data range. The syntax is "from_value..to_value".              |
@@ -252,7 +252,7 @@ are not allowed by default and should be enabled by a developer who creates API 
 | **not_ends_with**   | Not ends with a text   | | GET /api/users?filter[id][not_ends_with]=test HTTP/1.1   |
 +---------------------+------------------------+------------------------------------------------------------+
 | **empty**           | Empty or is null,      | | GET /api/users?filter[id][empty]=yes HTTP/1.1            |
-|                     | e.g. an empty string   | | GET /api/users?filter[id][empty]=no HTTP/1.1             |
+|                     | e.g., an empty string  | | GET /api/users?filter[id][empty]=no HTTP/1.1             |
 |                     | or null, an empty      |                                                            |
 |                     | array or null          |                                                            |
 +---------------------+------------------------+------------------------------------------------------------+
@@ -315,7 +315,7 @@ All included resources will be represented in **included** section at the end of
 
 .. important::
 
-    Please note, in case of using **fields** filter for the main resource (e.g. users), it must contain
+    Please note, in case of using **fields** filter for the main resource (e.g., users), it must contain
     the field(s) used in the **include** filter.
 
 **Example of Including Related Resources Information**

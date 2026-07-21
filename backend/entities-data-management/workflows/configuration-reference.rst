@@ -274,7 +274,7 @@ Imports With Conditions
 
 The ``import_condition`` option lets you import resources or workflows when certain conditions are met. If this option is available, the expression is checked early in the import process. If the conditions aren't met, the import is ignored.
 
-``import_condition`` uses Expression Language syntax like the Symfony DI component. It also has the ``parameter_or_null`` function, which works like ``parameter`` but returns ``null`` if the parameter doesn't exist.
+``import_condition`` uses Expression Language syntax like the Symfony DI component. It also has the ``parameter_or_null`` function, which works like ``parameter`` but returns ``null`` if the parameter does not exist.
 
 .. code-block:: yaml
 
@@ -835,7 +835,7 @@ The transition definition configuration has the following options.
                             - '@not_blank': [$conversation_result]
                             - '@not_blank': [$conversation_comment]
                             - '@not_blank': [$conversation_successful]
-                    # Create PhoneConversation and set it's properties
+                    # Create PhoneConversation and set its properties
                     # Pass data from workflow to conversation
                     actions:
                         - '@create_entity': # create PhoneConversation

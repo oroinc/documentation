@@ -30,7 +30,7 @@ To create a new credit card payment profile:
    * **Expiration Date** --- Provide the expiration date for the card you are attaching to the account.
    * **CVV** --- Provide the verification number displayed at the back of the card.
    * **Address** --- Provide billing address details (organization, phone and fax fields are optional).
-   * **Set as Default** --- Select the checkbox to mark the current credit card as default. The default credit card is displayed on the top of the payment method dropdown list during checkout.
+   * **Set as Default** --- Select the checkbox to mark the current credit card as default. The default credit card is displayed at the top of the payment method drop-down list during checkout.
 
 3. Click **Save**.
 
@@ -88,7 +88,7 @@ To create a new back account profile:
    * **Name** --- Provide the name for the bank account.
    * **Bank Account** --- Provide bank account details, such as the routing number, the account number, the bank name.
    * **Address** --- Provide address details (organization, phone and fax fields are optional).
-   * **Set as Default** --- Select the checkbox to mark the current bank account as default. The default bank account is displayed on the top of the payment method dropdown list during checkout.
+   * **Set as Default** --- Select the checkbox to mark the current bank account as default. The default bank account is displayed at the top of the payment method drop-down list during checkout.
 
 3. Click **Save**.
 

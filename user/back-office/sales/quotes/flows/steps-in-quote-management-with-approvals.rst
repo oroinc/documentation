@@ -15,7 +15,7 @@ When Quote Management with Approvals is enabled, the quote status may be one of 
 
 * Approved --- the quote has been approved by an authorized person.
 
-* Not Approved -- the authorized person declined the quote.
+* Not Approved --- the authorized person declined the quote.
 
 * Sent to Customer --- the quote is sent to the customer.
 

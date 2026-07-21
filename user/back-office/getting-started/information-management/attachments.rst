@@ -23,7 +23,7 @@ How to Add Attachments
 To add an attachment to a record:
 
 1. Navigate to the page of the selected record.
-2. Click **Add Attachment** under the **More Actions** menu on the top right of the page.
+2. Click **Add Attachment** under the **More Actions** menu at the top right of the page.
 
    .. image:: /user/img/getting_started/records/add_attachment.png
       :alt: Click Add Attachment under the More Actions menu

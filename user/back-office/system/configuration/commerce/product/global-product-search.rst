@@ -23,9 +23,9 @@ To configure the product search settings globally:
 
 4. In the **Product Fulltext Search** section, configure the following options:
 
-   * **Number of Products in Search Autocomplete** --- Maximum number of products shown in the storefront autocomplete dropdown.
+   * **Number of Products in Search Autocomplete** --- Maximum number of products shown in the storefront autocomplete drop-down.
 
-   * **Number of Categories in Search Autocomplete** --- Maximum number of categories shown in the storefront autocomplete dropdown.
+   * **Number of Categories in Search Autocomplete** --- Maximum number of categories shown in the storefront autocomplete drop-down.
 
      .. image:: /user/img/concept-guides/search/storefront-autocomplete.png
         :alt: Illustration of 4 products and 2 categories in the autocomplete search field

@@ -197,7 +197,7 @@ to extend this data. An example of the locale_data.yml file:
 Time Zone
 ---------
 
-All dates in application are stored in UTC time zone. When dates are displayed on the UI they are formatted via date/time
+All dates in application are stored in UTC time zone. When dates are displayed in the UI they are formatted via date/time
 formatter. This formatter uses time zone setting from Locale Settings to display date times with respect of time zone.
 
 See the |List of available timezones in PHP|.

@@ -19,7 +19,7 @@ To configure the main navigation menu per customer:
 3. Select **System Configuration > Websites > Routing** in the menu to the left.
 4. In the General section, clear the **Use Customer Group** checkbox and configure the following option:
 
-   * **Main Navigation Menu** --- Use the dropdown to select which storefront menu will represent the main menu in the storefront.
+   * **Main Navigation Menu** --- Use the drop-down to select which storefront menu will represent the main menu in the storefront.
 
 5. Click **Save Settings**.
 

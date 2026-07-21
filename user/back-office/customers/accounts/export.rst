@@ -7,7 +7,7 @@ Export Accounts
 To export account details in a .csv file:
 
 1. Navigate to **Customers > Accounts** in the main menu.
-2. To export information on all accounts, click **Export** on the top right.
+2. To export information on all accounts, click **Export** at the top right.
 3. Once the export is complete, you will receive an email to download the .csv file.
 
    .. image:: /user/img/customers/accounts/sample_exported_account.png

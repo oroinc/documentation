@@ -22,7 +22,7 @@ You can adjust the following settings for the forecast widget:
 
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** checkbox and provide a new name.
 * **Business unit** --- select the business unit to present statistics for.
-* **Role** --- select the user’s role (e.g. a sales manager, an administrator, a leads development rep, etc.) to see the statistics for.
+* **Role** --- select the user’s role (e.g., a sales manager, an administrator, a leads development rep, etc.) to see the statistics for.
 * **Owner** --- select the owner for the widget to see statistics for a particular user.
 * **Date range** --- time for which the widget details are displayed.
 * **Compare with previous period** --- tick this option if you wish to compare statistics for the current and the previous periods and see it displayed in the dashboard widget.

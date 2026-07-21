@@ -101,7 +101,7 @@ To fallback to a new entity field, you need to create a new fallback provider, e
 Extend the parent ``oro_entity.fallback.provider.abstract_provider`` service, inject some dependencies, and tag it with
 `oro_entity.fallback_provider` as tag name, and `systemConfig` as id (this id will go into the #[ConfigField] `fallbackList` configuration as fallback name.
 The provider will then need to implement `getFallbackHolderEntity`, which defines how to access the parent fallback entity, `getFallbackLabel`, which is used for translating the fallback name,
-and optionally, the function `isFallbackSupported`, which can add some conditions on whether the fallback should appear as an option on the UI for a specific instance.
+and optionally, the function `isFallbackSupported`, which can add some conditions on whether the fallback should appear as an option in the UI for a specific instance.
 
 Next, render the field in the main object's class type by embedding the |EntityFieldFallbackValueType| in the main form type:
 
@@ -109,8 +109,8 @@ Next, render the field in the main object's class type by embedding the |EntityF
 
     $builder->add('someFieldName', EntityFieldFallbackValueType::class);
 
-This type defines three fields: `scalarValue` (which will hold the entity's own value if no fallback is wanted), `useFallback` (checkbox for the UI to select/deselect fallback possibility) and `fallback` (which by default will render a dropdown with the fallback list and which will map to the fallback field of |EntityFieldFallbackValue| holding the fallback ID (like `systemConfig`).
-The options and types of those three fields can be overridden with `value_options`, `fallback_options`, `use_fallback_options`, `value_type` and `fallback_type`. Internally, the submitted own value will be saved in `scalarValue`, if it is scalar, or `arrayValue`, if it's an array.
+This type defines three fields: `scalarValue` (which will hold the entity's own value if no fallback is wanted), `useFallback` (checkbox for the UI to select/deselect fallback possibility) and `fallback` (which by default will render a drop-down with the fallback list and which will map to the fallback field of |EntityFieldFallbackValue| holding the fallback ID (like `systemConfig`).
+The options and types of those three fields can be overridden with `value_options`, `fallback_options`, `use_fallback_options`, `value_type` and `fallback_type`. Internally, the submitted own value will be saved in `scalarValue`, if it is scalar, or `arrayValue`, if it is an array.
 
 Examples
 --------

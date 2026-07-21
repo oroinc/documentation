@@ -13,7 +13,7 @@ Start a New Conversation
 To start a new conversation in the storefront:
 
 1. Navigate to **Profiles & Addresses > Conversations** in the menu
-2. Click **Create Conversation** on the top right.
+2. Click **Create Conversation** at the top right.
 
 .. image:: /user/img/storefront/conversation/new_conversation.png
    :alt: Show the New Conversation button under the Conversations menu
@@ -44,7 +44,7 @@ You can view the existing conversations from the following pages in your Oro app
   .. image:: /user/img/storefront/conversation/ConversationViewPage.png
      :alt: The actions available for conversations on the view conversation page
 
-* From the page of a related record under the dropdown of the **Questions** button.
+* From the page of a related record under the drop-down of the **Questions** button.
 
   .. image:: /user/img/storefront/conversation/ConversationRelatedRecord.png
      :alt: The actions available for conversations on the page of a related record

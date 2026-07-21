@@ -227,7 +227,7 @@ The methods are the following:
 
 * ``getIdentifier`` --- Provides a unique identifier of the shipping method in the scope of the Oro application.
 * ``getName`` --- Returns the shipping method's name that appears on the shipping rule edit page.
-* ``getLabel`` --- Returns the shipping method's label that appears on the shipping method step on checkout. It can also be a Symfony translated message.
+* ``getLabel`` --- Returns the shipping method's label that appears on the shipping method step at checkout. It can also be a Symfony translated message.
 * ``getIcon`` --- Returns the icon that appears on the shipping rule edit page.
 * ``isEnabled`` --- Defines, whether the integration of the shipping method is enabled by default.
 * ``isGrouped`` --- Defines how shipping method's types appear in the shipping method configuration on the user interface. If set to ``true``, the types appear in the table where each line contains the **Active** checkbox that enables users to enable individual shipping method types for a particular shipping method configuration.

@@ -50,7 +50,7 @@ Developer Documentation is intended for developers and contains information abou
    <p>Community Guide instructs on how to contribute to the Oro application development, documentation, and translations. It also explains the philosophy of Oro releases and helps users join Oro community and support teams.</p>
 
 ..
-  Use above links or the search bar on the top right to navigate the documentation and discover how to:
+  Use above links or the search bar at the top right to navigate the documentation and discover how to:
 
   * Configure the proper development or production environment for Oro applications
   * Install the application and upgrade it to a new version

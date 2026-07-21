@@ -11,7 +11,7 @@ The manager allows to set an arbitrary payment status using the ``setPaymentStat
 
 When the payment status is changed, the ``\Oro\Bundle\PaymentBundle\Event\PaymentStatusUpdatedEvent`` event is dispatched. You can create an event listener for this event to perform additional actions when the payment status is updated.
 
-The following payment statuses are listed in the ``\Oro\Bundle\PaymentBundle\PaymentStatus\PaymentStatuses`` and available out-of-the-box:
+The following payment statuses are listed in the ``\Oro\Bundle\PaymentBundle\PaymentStatus\PaymentStatuses`` and available out of the box:
 
 - **Paid in Full**: The related entity is fully paid.
 - **Partially Paid**: The related entity is partially paid.
@@ -25,7 +25,7 @@ The following payment statuses are listed in the ``\Oro\Bundle\PaymentBundle\Pay
 - **Refunded**: The payment was refunded.
 - **Refunded Partially**: The payment was partially refunded.
 
-In order to get all available payment statuses, you can use the ``\Oro\Bundle\PaymentBundle\Provider\AvailablePaymentStatusesProvider`` --- it returns an array of payment statuses for the specified entity class. The result always includes the payment statuses available out-of-the-box and custom payment statuses available for the current user.
+In order to get all available payment statuses, you can use the ``\Oro\Bundle\PaymentBundle\Provider\AvailablePaymentStatusesProvider`` --- it returns an array of payment statuses for the specified entity class. The result always includes the payment statuses available out of the box and custom payment statuses available for the current user.
 
 
 Payment Status Calculation

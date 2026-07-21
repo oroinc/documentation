@@ -68,7 +68,7 @@ Restore a Database Dump
 
 1. Locally and from OroCloud
 
-    .. hint:: Postgres superuser (sudo -u postgres) is used here to make sure there are no permission issues. If you don't have access to sudo or prefer running the commands as a different user, use ``psql -U username``.
+    .. hint:: Postgres superuser (sudo -u postgres) is used here to make sure there are no permission issues. If you do not have access to sudo or prefer running the commands as a different user, use ``psql -U username``.
 
     .. code-block:: none
 
@@ -99,7 +99,7 @@ Restore a Database Dump
        # commerce-crm-ee_pgsql_1 - docker container of your DB
        # oro_db_user - oro database user
        # oro_db - oro database
-       # Recreate containers in order to kill all the active db sessions
+       # Recreate containers in order to stop all the active db sessions
        docker stop commerce-crm-ee_pgsql_1
        docker start commerce-crm-ee_pgsql_1
 
@@ -117,7 +117,7 @@ Restore a Database Dump
 
        # oro_db_user - oro database user
        # oro_db - oro database
-       # Recreate containers in order to kill all the active db sessions
+       # Recreate containers in order to stop all the active db sessions
        docker compose stop pgsql # or docker compose down
        docker compose up -d
 

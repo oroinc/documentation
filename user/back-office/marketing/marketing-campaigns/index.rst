@@ -18,14 +18,14 @@ To create a new marketing campaign:
 
 1. Navigate to **Marketing > Campaigns** in the main menu.
 
-2. Click **Create Campaign** in the top right corner to get to the *Create Campaign* page.
+2. Click **Create Campaign** in the top-right corner to get to the *Create Campaign* page.
 
    .. image:: /user/img/marketing/marketing/create_marketing_campaign_form.png
       :alt: The Create Campaign page
 
 3. In the **General** section, provide the following information:
 
-   * **Owner** --- Limits the list of users that can manage the campaign to users, whose roles allow managing campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
+   * **Owner** --- Limits the list of users that can manage the campaign to users, whose roles allow managing campaigns of the owner (e.g., the owner, members of the same business unit, system administrator, etc.).
 
    * **Name** --- The name is used to refer to the campaign in the system.
 
@@ -48,7 +48,7 @@ To create a new marketing campaign:
 .. image:: /user/img/marketing/marketing/create_marketing_campaign.png
    :alt: Creating a new marketing campaign
 
-4. Once you finish configuring the marketing campaign, click **Save and Close** in the top right corner of the page.
+4. Once you finish configuring the marketing campaign, click **Save and Close** in the top-right corner of the page.
 
 .. _user-guide-marketing-campaigns-view-page:
 

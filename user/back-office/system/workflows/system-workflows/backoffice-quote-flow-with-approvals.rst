@@ -4,7 +4,7 @@
 Configure Backoffice Quote Flow with Approvals in the Back-Office
 =================================================================
 
-Backoffice Quote Flow with Approvals (BQFA) is a :ref:`system <user-guide--system--workflow-management-system-custom>` workflow that defines a sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a quote can go through as a deal progresses, including the steps where a sales person might have to get approval from the authorized person (e.g. their manager) before sending the quote with updated prices to the buyer.
+Backoffice Quote Flow with Approvals (BQFA) is a :ref:`system <user-guide--system--workflow-management-system-custom>` workflow that defines a sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a quote can go through as a deal progresses, including the steps where a sales person might have to get approval from the authorized person (e.g., their manager) before sending the quote with updated prices to the buyer.
 
 .. note::  The difference between the simple quote workflow and the one with approval is covered in the :ref:`Understanding Quote Workflows <system--workflows--quote--understanding>` section.
 
@@ -61,13 +61,13 @@ To enable quote approval for users with the particular role (e.g., for all sales
 
 2. Click the necessary role (e.g., *Sales Manager*) to open it.
 
-2. Start editing the role by clicking **Edit** on the top right.
+2. Start editing the role by clicking **Edit** at the top right.
 
 3. Click **Quotes** to get to the permissions and capabilities related to quotes management.
 
 4. In the capabilities list, select the **Review and approve quotes** checkbox.
 
-5. Click **Save And Close** on the top right.
+5. Click **Save And Close** at the top right.
 
 .. important:: Note that users with the permission to review and approve a quote do not need to (and thus cannot) perform the **Send for Review** workflow transition. They can send any quote (either created by them or by someone else) directly to the customer.
 
@@ -89,11 +89,11 @@ If the option is disabled, do the following to enable it:
 
    The workflow details are shown.
 
-3. Click **Configuration** on the top right.
+3. Click **Configuration** at the top right.
 
 4. Select the **Price Override Requires Approval** checkbox.
 
-5. Click **Save And Close** on the top right.
+5. Click **Save And Close** at the top right.
 
 .. _doc--workflows--backoffice-quote-flow-with-approvals--steps:
 
@@ -112,7 +112,7 @@ Quote status may be one of the following:
 
 * Approved --- the quote has been approved by an authorized person.
 
-* Not Approved -- the authorized person declined the quote.
+* Not Approved --- the authorized person declined the quote.
 
 * Sent to Customer --- the quote is sent to the customer.
 

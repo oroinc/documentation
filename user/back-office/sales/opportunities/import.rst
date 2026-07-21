@@ -8,7 +8,7 @@ Import an Opportunity
 You can import the bulk details of updated or processed opportunity information in the .csv format following the steps described below:
 
 1. In the main menu, navigate to |menu|.
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 3. In the **Import** dialog, click **Choose File**, select the .csv file you prepared, and then click **Import File**.
 
 .. note: Ensure your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, you may render the content of the file improperly.

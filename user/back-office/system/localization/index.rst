@@ -12,7 +12,7 @@ Manage Localizations, Languages, and Translations in the Back-Office
 
 :term:`Localization` is the process of translating and adapting a product for a specific country or region. Oro application allows a user to customize the format of date and time, numeric, percent, and monetary values as well as the format of names and addresses.
 
-Oro application supports localization and provides decent out-of-the-box translation coverage for the most used languages. With out-of-the-box integration to CrowdIn service, Oro applications have live access to the most recent updates from the Oro team and community.
+Oro application supports localization and provides decent built-in translation coverage for the most used languages. With the built-in integration to CrowdIn service, Oro applications have live access to the most recent updates from the Oro team and community.
 
 See :ref:`How to Contribute to Translations <doc--community--ui-translations>` for more information about the translation process.
 

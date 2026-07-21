@@ -9,7 +9,7 @@ At the end of the day, any e-commerce website's success is measured by the numbe
 
 OroCommerce provides an advanced built-in checkout functionality that helps you configure your website's checkout page customizing the default settings to suit your preferred checkout process. You can include or exclude the steps in the native checkout process chain and adapt the checkout content displayed in the storefront to your business requirements. You can also customize the checkout workflow to add new steps and transitions, such as requesting a senior manager's approval before submitting the order.
 
-Let's get closer to the specifics of the checkout feature offered by Oro out-of-the-box.
+Let's get closer to the specifics of the checkout feature offered by Oro out of the box.
 
 Checkout Initiation
 -------------------
@@ -122,7 +122,7 @@ A guest checkout provides unregistered users with several options:
 Checkout in Use
 ---------------
 
-OroCommerce has designed a clear-cut and intuitive checkout functionality aimed to satisfy any business needs. However, you can always optimize and customize the out-of-the-box settings to fully cover the necessary marketing requirements.
+OroCommerce has designed a clear-cut and intuitive checkout functionality aimed to satisfy any business needs. However, you can always optimize and customize the built-in settings to fully cover the necessary marketing requirements.
 
 On top of what is provided by default, you can also add your own code customization:
 

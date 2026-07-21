@@ -384,7 +384,7 @@ Configure an Extended Many-To-One Association
 For information about this type of associations,
 see the :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>` topic.
 
-Depending on the current entity configuration, each association resource (e.g. attachment) can be assigned to one of the resources (e.g. user, account, contact) that support such associations.
+Depending on the current entity configuration, each association resource (e.g., attachment) can be assigned to one of the resources (e.g., user, account, contact) that support such associations.
 
 By default, there is no possibility to retrieve targets of such associations. To make targets available for retrieving, enable this in `Resources/config/oro/api.yml`:
 
@@ -412,7 +412,7 @@ Configure an Extended Many-To-Many Association
 For information about this type of associations,
 see the :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>` topic.
 
-Depending on the current entity configuration, each association resource (e.g. call) can be assigned to several resources (e.g. user, account, contact) that support such associations.
+Depending on the current entity configuration, each association resource (e.g., call) can be assigned to several resources (e.g., user, account, contact) that support such associations.
 
 By default, there is no possibility to retrieve targets of such associations. To make targets available for retrieving, enable this in `Resources/config/oro/api.yml`, for instance:
 
@@ -440,7 +440,7 @@ Configure an Extended Multiple Many-To-One Association
 For information about this type of associations,
 see the :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>` topic.
 
-Depending on the current entity configuration, each association resource (e.g. call) can be assigned to several resources (e.g. user, account, contact) that support such associations. However, in case of multiple many-to-one association, a resource can be associated with only one other resource of each type. For example, a call can be associated only with one user, one account, etc.
+Depending on the current entity configuration, each association resource (e.g., call) can be assigned to several resources (e.g., user, account, contact) that support such associations. However, in case of multiple many-to-one association, a resource can be associated with only one other resource of each type. For example, a call can be associated only with one user, one account, etc.
 
 By default, there is no possibility to retrieve targets of such associations. To make targets available for retrieving, enable this in `Resources/config/oro/api.yml`, for instance:
 
@@ -992,7 +992,7 @@ Imagine that you want to provide an API resource for the current authenticated u
 * `Add a Custom Route`_
 * `Add a Custom Controller`_
 * create a model inherited from an User entity and expose it as a separate API resource
-* reserve some word, e.g. **mine**, as an predefined identifier of the current authenticated user
+* reserve some word, e.g., **mine**, as an predefined identifier of the current authenticated user
 
 The last approach is simplest to implement and more preferred in the most cases, because it gives a possibility
 to use such identifier in a resource path, filters and request data.

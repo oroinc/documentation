@@ -11,7 +11,7 @@ To configure your current storefront theme:
 
 1. Navigate to **System > Theme Configurations** in the main menu.
 2. There is a list of storefront themes configured by a developer for your website. By default, there is a new 6.1 Refreshing Teal theme, but there can also be your backup themes from the previous versions of OroCommerce.
-3. You can create a new configuration of the existing theme by clicking **Create Theme Configuration** on the top right or edit any existing theme configuration by clicking |IcEdit| to the right of the theme.
+3. You can create a new configuration of the existing theme by clicking **Create Theme Configuration** at the top right or edit any existing theme configuration by clicking |IcEdit| to the right of the theme.
 
   .. image:: /user/img/system/theme-configuration/theme-configuration-list.png
      :alt: The list of existing theme configurations
@@ -46,27 +46,27 @@ To configure your current storefront theme:
    .. image:: /user/img/system/theme-configuration/volume-chart.png
       :alt: Illustrating the enabled Purchase Volume Chart on the customer user`s Dashboard page
 
-* **Customer Dashboard Content Widget (1-6)** --- Select a :ref:`datagrid content widget <content-widgets--dashboard-datagrid-widget>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to six content widgets. Only the widgets of the **Customer Dashboard DataGrid** type are displayed in the dropdown list. Each widget presents up to five of the latest records in a grid format, with an option to view all other records on a dedicated page.
+* **Customer Dashboard Content Widget (1-6)** --- Select a :ref:`datagrid content widget <content-widgets--dashboard-datagrid-widget>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to six content widgets. Only the widgets of the **Customer Dashboard DataGrid** type are displayed in the drop-down list. Each widget presents up to five of the latest records in a grid format, with an option to view all other records on a dedicated page.
 
    .. image:: /user/img/system/theme-configuration/customer-dashboard-content-widgets.png
       :alt: Illustrating the selected 5 content widgets on the customer user’s Dashboard page
 
-* **Recommended Products (1-2)** --- Select a :ref:`product segment content widget <content-widgets-user-guide>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to two content widgets. Only the widgets of the **Product Segment** type are displayed in the dropdown list. This widget highlights specific product segments for the customer user.
+* **Recommended Products (1-2)** --- Select a :ref:`product segment content widget <content-widgets-user-guide>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to two content widgets. Only the widgets of the **Product Segment** type are displayed in the drop-down list. This widget highlights specific product segments for the customer user.
 
    .. image:: /user/img/system/theme-configuration/recommended-products-widgets.png
       :alt: Illustrating the selected 5 content widgets on the customer user’s Dashboard page
 
-* **Promotional Content Block (1-2)** --- Select a :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` from the dropdown list to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to two content blocks. This section can include important information such as news, blog posts, or other relevant content.
+* **Promotional Content Block (1-2)** --- Select a :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` from the drop-down list to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to two content blocks. This section can include important information such as news, blog posts, or other relevant content.
 
    .. image:: /user/img/system/theme-configuration/dashboard-promotional-block.png
       :alt: Illustrating the selected 5 content widgets on the customer user’s Dashboard page
 
-* **Customer Dashboard Scorecard (1-4)** --- Select a :ref:`scorecard content widget <content-widgets--dashboard-scorecard-widget>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to four content widgets. Only the widgets of the **Scorecard** type are displayed in the dropdown list. The scorecards represent the information about the total number of customer users under the current customer, the number of shopping lists, open Requests for Quote (excluding cancelled ones), and the total value of all non-cancelled orders.
+* **Customer Dashboard Scorecard (1-4)** --- Select a :ref:`scorecard content widget <content-widgets--dashboard-scorecard-widget>` from the list of predefined widgets to display on the customer user’s :ref:`Dashboard <storefront--dashboard>` page. You can select up to four content widgets. Only the widgets of the **Scorecard** type are displayed in the drop-down list. The scorecards represent the information about the total number of customer users under the current customer, the number of shopping lists, open Requests for Quote (excluding cancelled ones), and the total value of all non-cancelled orders.
 
     .. image:: /user/img/system/theme-configuration/scorecard.png
        :alt: Illustration of the Scorecard widget in the storefront
 
-* **Promotional Content** --- Select a :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` from the dropdown list to display it at the top of the storefront header.
+* **Promotional Content** --- Select a :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` from the drop-down list to display it at the top of the storefront header.
 
     .. image:: /user/img/system/theme-configuration/promotional-content.png
        :alt: Promotional content configuration and representation in the storefront header
@@ -91,9 +91,9 @@ To configure your current storefront theme:
     .. image:: /user/img/system/theme-configuration/language-currency-switchers.png
        :alt: Two representations of language and currency switchers in the storefront
 
-* **Standalone Main Menu** --- Enable the setting to let the main menu be rendered separately and to provide easy access to its top level items on the devices with sufficient screen width. On smaller screens the main menu will be placed inside the "hamburger" menu.
+* **Standalone Main Menu** --- Enable the setting to let the main menu be rendered separately and to provide access to its top level items on the devices with sufficient screen width. On smaller screens the main menu will be placed inside the "hamburger" menu.
 
-* **Search on Smaller Screens** --- Select the way the search is going to be represented on devices with small screens. The search input can either be rendered in its own row to provide easy access to global search (*standalone*), or in line with the shopping list item (*integrated*).
+* **Search on Smaller Screens** --- Select the way the search is going to be represented on devices with small screens. The search input can either be rendered in its own row to provide access to global search (*standalone*), or in line with the shopping list item (*integrated*).
 
     .. image:: /user/img/system/theme-configuration/search-on-small-screens.png
        :alt: Two representations of search on small screens in the storefront
@@ -147,7 +147,7 @@ To configure your current storefront theme:
 
        To control whether to hide or disable product attributes within filters, refer to the :ref:`filters and sorting settings <configuration--guide--commerce--configuration--catalog--filters-sorters>` documentation.
 
-* **Contact Us Form** --- Select a :ref:`contact us content widget <content-widgets-user-guide>` from the dropdown list of predefined widgets to display on the Contact Us page. Only the widgets of the **Contact Us Form** type are displayed in the dropdown list.
+* **Contact Us Form** --- Select a :ref:`contact us content widget <content-widgets-user-guide>` from the drop-down list of predefined widgets to display on the Contact Us page. Only the widgets of the **Contact Us Form** type are displayed in the drop-down list.
 
    .. image:: /user/img/system/theme-configuration/contact-us-form-widget.png
       :alt: Illustrating the selected contact us widget on the Contact Us page

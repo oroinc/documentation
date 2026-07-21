@@ -8,7 +8,7 @@ The following article describes how to replace placeholder images in your custom
 This topic assumes that you have previously created a custom application, a bundle, and a storefront theme, as described in the :ref:`Storefront Customization <storefront_customization_guide>` topic.
 
 .. note::
-    This tutorial is suitable for both cases, when you have created your own custom storefront theme, and when you need to change an out-of-the-box one. However, creating your own theme is recommended as it enables to manage your storefront appearance easily.
+    This tutorial is suitable for both cases, when you have created your own custom storefront theme, and when you need to change the default one. However, creating your own theme is recommended as it enables you to manage your storefront appearance effectively.
 
 Replace a Placeholder
 ---------------------

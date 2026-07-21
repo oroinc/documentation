@@ -7,7 +7,7 @@ Purpose of Legacy Theme Detection
 ---------------------------------
 
 Adding new functionality to an existing theme can accidentally break views or other features of the legacy (old) theme.
-To avoid such issues, it is important to identify whether the current theme is a legacy theme or inherits from it. This allows you to apply changes conditionally, ensuring that backward compatibility is maintained and that the expected behavior of the old theme is preserved.
+To avoid such issues, you need to determine whether the current theme is a legacy theme or inherits from it. This allows you to apply changes conditionally, ensuring that backward compatibility is maintained and that the expected behavior of the old theme is preserved.
 
 How to use ``OldThemeProvider`` to Detect Legacy Theme:
 

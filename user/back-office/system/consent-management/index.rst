@@ -17,7 +17,7 @@ Create Consents
 To create a :term:`consent <Consent>` in OroCommerce:
 
 1. Navigate to **System > Consent Management** in the main menu.
-2. Click **Create Consent** on the top right.
+2. Click **Create Consent** at the top right.
 
    .. image:: /user/img/system/consents/create_new_consent.png
       :class: with-border

@@ -488,7 +488,7 @@ The standard index type automatically adds owner and organization fields to all 
 Website Index Type
 ^^^^^^^^^^^^^^^^^^
 
-The website index type doesn't have common ACL protection like the standard index type. Instead, each entity can be protected by custom-specific conditions. For example, the visibility of a Product entity to a customer user is affected by a product status, product inventory status, and product visibility settings on a customer, customer group, and website levels.
+The website index type does not have common ACL protection like the standard index type. Instead, each entity can be protected by custom-specific conditions. For example, the visibility of a Product entity to a customer user is affected by a product status, product inventory status, and product visibility settings on a customer, customer group, and website levels.
 
 Scalability
 -----------

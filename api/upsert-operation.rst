@@ -15,7 +15,7 @@ via a single API request. It is called an "upsert" operation and it works the fo
 
 The upsert criteria is specified in the |JSON:API: Meta Section| section using an "upsert" option. To match a resource
 by the resource identifier the "upsert" option should have ``true`` or ``["id"]`` value. To match a resource by other
-field(s), this (these) field(s) should be specified in the "upsert" option value, e.g. ``["field1", "field2"]``.
+field(s), this (these) field(s) should be specified in the "upsert" option value, e.g., ``["field1", "field2"]``.
 
 The upsert operation can be supported by POST and/or PATCH |JSON:API| requests. With the POST request,
 you can match a resource by the resource identifier or by some other field(s). With the PATCH request,

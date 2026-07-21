@@ -83,7 +83,7 @@ To configure the user provisioning via |Okta provisioning service| and allow imp
    .. image:: /user/img/system/config_system/okta_oauth_app.png
       :alt: Creating an Okta OAuth app page
 
-3. Copied **Client ID** and **Client secret**. For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you leave a page with the created application information, so make sure you save it somewhere safe so you can access it later.
+3. Copied **Client ID** and **Client secret**. For security reasons, the Client Secret is displayed only once, immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you leave a page with the created application information, so make sure you save it somewhere safe so you can access it later.
 
    .. image:: /user/img/system/config_system/okta_client_id_secret.png
       :alt: Client Id and Client Secret details of the Okta OAuth app
@@ -223,7 +223,7 @@ To configure the user provisioning via |Microsoft Entra provisioning service|, m
 
 2. Created **Client Credentials** OAuth application as described in the :ref:`Create an OAuth Application <oauth-applications>` topic.
 
-3. Copied **Client ID** and **Client secret**. For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you leave a page with the created application information, so make sure you save it somewhere safe so you can access it later.
+3. Copied **Client ID** and **Client secret**. For security reasons, the Client Secret is displayed only once, immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you leave a page with the created application information, so make sure you save it somewhere safe so you can access it later.
 
     .. image:: /user/img/system/user_management/oauth/client_creds_app.png
 

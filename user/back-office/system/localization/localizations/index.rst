@@ -11,7 +11,7 @@ Configure Localizations in the Back-Office
 
 Localization helps to bind the language and locale-specific formatting for smooth localization of the Oro system elements and messages visible to the user.
 
-To enable easy inheritance from the parent or similar language, localizations may form groups organized as an ancestors tree, for example:
+To enable inheritance from the parent or similar language, localizations may form groups organized as an ancestors tree, for example:
 
 * English
 
@@ -62,7 +62,7 @@ Hover over the |IcMore| **More Options** menu to the right of the necessary loca
 Create a New Localization
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a new localization with a specific configuration by clicking **Create Localization** in the top right.
+Create a new localization with a specific configuration by clicking **Create Localization** on the top right.
 
 .. image:: /user/img/system/localization/localizations_create.png
    :alt: Crete a new localization page
@@ -80,7 +80,7 @@ Create a new localization with a specific configuration by clicking **Create Loc
 
 5. Select the parent localization from the available list. If no relations are set, the current localization inherits the English translation equivalents by default.
 
-6. Click **Save** in the top right.
+6. Click **Save** on the top right.
 
 Once the localization is configured, you need to enable it in the system configuration menu. Proceed to the :ref:`Localization Settings <localization--localization>` section and follow the steps described in the guide.
 

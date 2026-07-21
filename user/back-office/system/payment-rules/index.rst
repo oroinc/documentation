@@ -46,7 +46,7 @@ To create a payment rule:
       .. image:: /user/img/system/payment_rules/create_payment_rule.png
          :class: with-border
 
-   #) Specify the destination (e.g. select a Country, or select a country and state; for the most granularity you may provide a distinct list of postal codes to apply the payment rule for.
+   #) Specify the destination (e.g., select a Country, or select a country and state; for the most granularity you may provide a distinct list of postal codes to apply the payment rule for.
 
 #. In the **Expression** section, specify the expression that describes the conditions when this payment rule should be applied. For example, *account = 1*.
 
@@ -100,7 +100,7 @@ To enable a payment rule:
 
 To enable several shipping rules at the same time:
 
-1. Select the checkboxes on the left of the corresponding rows. The selected payment rules will be highlighted in yellow.
+1. Select the checkboxes to the left of the corresponding rows. The selected payment rules will be highlighted in yellow.
 
 2. Click |IcMore| on the far right of table header.
 
@@ -120,7 +120,7 @@ You can use filters on the payment rules list page to find the required records 
 
 2. To apply a filter, click on its button in the bar, and specify your query in the control that appears.
 
-   .. note:: Filter controls might look different depending on the type of data you are going to filter, e.g. textual, numeric, a date or an option set.
+   .. note:: Filter controls might look different depending on the type of data you are going to filter, e.g., textual, numeric, a date or an option set.
 
    .. image:: /user/img/system/payment_rules/filter_payment_rule_2.png
       :class: with-border

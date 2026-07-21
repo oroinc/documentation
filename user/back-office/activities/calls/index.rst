@@ -19,9 +19,9 @@ Log Calls
 
 You can log a call in the following ways:
 
-* Under **Activities > Calls** by clicking the **Log Call** button on the top right.
+* Under **Activities > Calls** by clicking the **Log Call** button at the top right.
 
-* On the page of a record under the **More Actions** menu on the top right.
+* On the page of a record under the **More Actions** menu at the top right.
 
 * By clicking the |IcCall| **Log Call** icon that appears next to the provided phone number throughout the system when you hover over it.
 

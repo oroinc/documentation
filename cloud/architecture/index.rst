@@ -13,7 +13,7 @@ Architecture
 IaaS Platforms
 ^^^^^^^^^^^^^^
 
-OroCloud supports two IaaS platforms – |Google Cloud Platform (GCP)| and |Oracle Cloud Infrastructure (OCI)| out-of-the-box. Both these platforms have similar approaches to support high availability and disaster recovery using many data centers located all around the globe. To organize IaaS resources for a particular OroCloud environment, the resources are grouped into a |GCP project| or |OCI tenancy|. Within a single project or tenancy, resources are optimized for data transmission and communication within the same |region| and provide redundancy for high availability with redundant resources distributed among multiple zones.
+OroCloud supports two IaaS platforms – |Google Cloud Platform (GCP)| and |Oracle Cloud Infrastructure (OCI)| out of the box. Both these platforms have similar approaches to support high availability and disaster recovery using many data centers located all around the globe. To organize IaaS resources for a particular OroCloud environment, the resources are grouped into a |GCP project| or |OCI tenancy|. Within a single project or tenancy, resources are optimized for data transmission and communication within the same |region| and provide redundancy for high availability with redundant resources distributed among multiple zones.
 
 IaaS Data Centers
 ~~~~~~~~~~~~~~~~~
@@ -78,7 +78,7 @@ Key details for an OroCommerce instance protected by Cloudflare:
 
 Cloudflare is available both for GCP and OCI-hosted environments.
 
-Oro customers can also choose to utilize alternative CDN providers. Please contact Oro Support to check if your CDN is compatible with the Oro application.
+Oro customers can also choose to use alternative CDN providers. Please contact Oro Support to check if your CDN is compatible with the Oro application.
 
 
 Web Node
@@ -89,7 +89,7 @@ Inbound traffic is balanced between the web nodes. This enables on-demand scalin
 Search Index
 ~~~~~~~~~~~~
 
-To speed up the search, Oro application data is indexed according to the application configurations and stored in the search index. As a search index provider, OroCloud instances use ElasticSearch which provides cluster architecture out-of-the-box as well as the ability to add more nodes to clusters to spread the load and enhance reliability. For more information, see the |Life Inside the Cluster| documentation.
+To speed up the search, Oro application data is indexed according to the application configurations and stored in the search index. As a search index provider, OroCloud instances use ElasticSearch which provides cluster architecture out of the box as well as the ability to add more nodes to clusters to spread the load and enhance reliability. For more information, see the |Life Inside the Cluster| documentation.
 
 Database
 ~~~~~~~~
@@ -99,7 +99,7 @@ Oro application data is stored in the PostgreSQL relational database. Each envir
 Job / Message Queue
 ~~~~~~~~~~~~~~~~~~~
 
-Oro application uses RabbitMQ as a message queue broker to enable asynchronous processing for heavy jobs. RabbitMQ is highly scalable and supports cluster architecture out-of-the-box. RabbitMQ brokers tolerate the failure of individual nodes. Nodes can be initiated and stopped at will, as long as they can contact a cluster member node known at the time of shutdown. See |RabbitMQ Clustering| for more information.
+Oro application uses RabbitMQ as a message queue broker to enable asynchronous processing for heavy jobs. RabbitMQ is highly scalable and supports cluster architecture out of the box. RabbitMQ brokers tolerate the failure of individual nodes. Nodes can be initiated and stopped at will, as long as they can contact a cluster member node known at the time of shutdown. See |RabbitMQ Clustering| for more information.
 
 To process queued messages, Oro application uses a proprietary consumer service. It runs as a daemon and handles all the jobs (messages) registered within a message queue.
 

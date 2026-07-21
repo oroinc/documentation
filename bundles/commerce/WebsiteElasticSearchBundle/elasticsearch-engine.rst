@@ -179,7 +179,7 @@ Search
 ------
 
 The Elasticsearch provides high quality search capabilities with relevant search results and speedy response.
-Elasticsearch is a document-based storage that is fast and easy to scale, but does not support execution of the relation-based queries.
+Elasticsearch is a document-based storage that is fast and scalable, but does not support execution of the relation-based queries.
 
 The WebsiteElasticSearchBundle reuses functionality from ElasticSearchBundle and thus uses the same approach to build request: it converts the `Oro\\Bundle\\SearchBundle\\Query\\Query` object to the request data using request builders. Each of the builders implements `Oro\\Bundle\\ElasticSearchBundle\\RequestBuilder\\RequestBuilderInterface` and converts some part of the object to an appropriate part of the Elasticsearch query.
 

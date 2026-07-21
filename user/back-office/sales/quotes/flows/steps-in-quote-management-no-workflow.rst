@@ -27,7 +27,7 @@ To notify a customer that their quote is prepared:
 
 1. In the main menu, navigate to **Sales > Quotes**.
 #. Choose the quote in the list and click it. The quote details page opens.
-#. Click |IcSortDesc| next to **Notify Customer** on the top right of the page, and then click **Notify By Email**.
+#. Click |IcSortDesc| next to **Notify Customer** at the top right of the page, and then click **Notify By Email**.
 #. In the **Notify By Email** dialog that appears, review the email draft. If required, add additional recipients to the **To**, **CC**, or **BCC** fields, or make other changes. The email body may be adjusted to be more personalized.
 
    .. image:: /user/img/sales/quotes/quotes_notifycustomer2.png
@@ -79,7 +79,7 @@ To indicate that the quote's validity period is over from the quote details page
 
 1. In the main menu, navigate to **Sales > Quotes**.
 #. Choose the quote in the list and click it. The quote details page opens.
-#. Click the **Expire Quote** button on the top right of the page.
+#. Click the **Expire Quote** button at the top right of the page.
 #. In the confirmation dialog, click **Mark as Expired**.
 
 The quote is now marked as *Expired*:
@@ -100,13 +100,13 @@ To indicate that the quote's validity period is over from the quote details page
 
 1. In the main menu, navigate to **Sales > Quotes**.
 #. Choose the quote in the list and click it. The quote details page opens.
-#. Click **Edit** on the top right of the page:
+#. Click **Edit** at the top right of the page:
 
    .. image:: /user/img/sales/quotes/quotes_edit1.png
       :alt: Click the Edit button on the quote edit page
 
 #. Update the **Quote General Information**, **Line Items**, **Shipping Address**, or **Shipping Information** sections. See :ref:`Create a Quote <user-guide--quotes--create>` section for detailed information on the available options.
-#. Click **Save** on the top right of the page.
+#. Click **Save** at the top right of the page.
 
 The quote is updated.
 

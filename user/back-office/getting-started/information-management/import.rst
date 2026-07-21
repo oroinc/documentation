@@ -11,7 +11,7 @@ To import a bulk of records:
 
 1. In the main menu, navigate to |menu|. The |item| list opens.
 
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 
 3. In the **Import** dialog, click **Choose File**, select the .csv file you prepared, and then click **Import File**.
 

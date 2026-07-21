@@ -35,7 +35,7 @@ If you have a lot of records, they may not all fit on one data page. In this cas
 
 You can navigate between pages using the **<** (previous page) and **>** (next page) buttons. To open a particular page, type its number in the field that displays the current page and press **Enter**.
 
-To change the number of records displayed per page, click the **View Per Page** drop-down list on the top right of the table, and select the required number of items per page.
+To change the number of records displayed per page, click the **View Per Page** drop-down list at the top right of the table, and select the required number of items per page.
 
 .. _doc-grids-actions-refresh:
 .. _doc-grids-actions-export:
@@ -110,7 +110,7 @@ The controls available for fields depend on the field type.
    For text fields that can take any value, you can enter search words (or part of the word) and select from the list in front of it whether the values that you select must contain these search phrase at any position or does not contain it at all, must start with it, end with it, etc.
 
    .. image:: /user/img/getting_started/navigation/grid_filters_define.png
-      :alt: Available values in the contains dropdown
+      :alt: Available values in the contains drop-down
 
    For conditions like 'Is Any Of' and 'Is Not Any Of,' enter search words separated by the comma.
 
@@ -125,7 +125,7 @@ The controls available for fields depend on the field type.
    In addition to selecting a strict calendar date, you can use variables that enable you to specify relative values, such as 'today,' 'start of the month,' etc.
 
    .. image:: /user/img/getting_started/navigation/grids_filters_apply2-2.png
-      :alt: Variables that enable to specify relative values such as ‘today,’ ‘start of the month,’ etc
+      :alt: Variables that enable specifying relative values such as ‘today,’ ‘start of the month,’ etc
 
    Also, specify the condition of how to form your desired time range, whether it starts from the day and time that you specified, lies between set dates, etc.
 

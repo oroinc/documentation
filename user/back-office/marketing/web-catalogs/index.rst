@@ -11,7 +11,7 @@ With the OroCommerce web catalog and content tree, you can organize the target w
 
 The web catalog content nodes may be of the following types:
 
-* **System page** --- one of the standard eCommerce website pages (e.g. sign in, user profile, open orders, etc).
+* **System page** --- one of the standard eCommerce website pages (e.g., sign in, user profile, open orders, etc).
 * **Product** --- direct link to :ref:`product <user-guide--products--products>` details.
 * **Product Collection** --- a dynamically generated group of products that are stored as a data segment.
 * **Category** --- a category of the :ref:`master catalog <user-guide--products--master-catalog>`.

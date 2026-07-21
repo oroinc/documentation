@@ -48,8 +48,8 @@ To configure email settings per organization:
 
 5. Under **SMTP Settings**, configure the SMTP protocol that allows sending email messages. Click **Check SMTP Connection** once you provide the following details:
 
-     * *Host* --- SMTP Host name, e.g. smtp.gmail.com
-     * *Port* --- SMTP Port number, e.g. 465
+     * *Host* --- SMTP Host name, e.g., smtp.gmail.com
+     * *Port* --- SMTP Port number, e.g., 465
      * *Encryption* --- Encryption type: None, SSL or TLS
      * *Username* --- Your email address
      * *Password* --- The password for your email address
@@ -85,12 +85,12 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
 6. In the **Synchronization Settings**, configure your IMAP/SMTP connection:
 
    * *Enable IMAP* --- Select the checkbox to enable retrieving email messages
-   * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
-   * *IMAP Port* --- Provide the IMAP Port, e.g. 993
+   * *IMAP Host* --- Provide the IMAP Host, e.g., imap.gmail.com
+   * *IMAP Port* --- Provide the IMAP Port, e.g., 993
    * *Encryption* --- Select the encryption type, SSL or TLS
    * *Enable SMPT* --- Select the checkbox to enable sending messages
-   * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
-   * *SMTP Port* --- Provide the SMTP port, e.g. 587
+   * *SMTP Host* --- Provide the SMTP host, e.g., smtp.gmail.com
+   * *SMTP Port* --- Provide the SMTP port, e.g., 587
    * *Encryption* --- Select the encryption type, SSL or TLS
    * *User* --- Provide your email address
    * *Password* --- Provide your password
@@ -117,14 +117,14 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
 
    * *Status (Active/Inactive)* --- Only rules with active statuses are applied
    * *Name* --- Select the name for the rule to be used within the system.
-   * *Conditions* --- Define the rules according to which the rule will be applied. In the first selector, choose the field for which the condition is to be set: Body, From, Cc, Bcc. In the second selector, choose the conditions (e.g. contains, does not contain, is equal to, starts with, etc.). In the field besides the selectors, define the values where required. Click the + or **+Add** button to add another condition for the rule. Click the x button to remove the condition. All conditions are summed up (AND operator).
+   * *Conditions* --- Define the rules according to which the rule will be applied. In the first selector, choose the field for which the condition is to be set: Body, From, Cc, Bcc. In the second selector, choose the conditions (e.g., contains, does not contain, is equal to, starts with, etc.). In the field besides the selectors, define the values where required. Click the + or **+Add** button to add another condition for the rule. Click the x button to remove the condition. All conditions are summed up (AND operator).
    * *Response Template* --- Choose an :ref:`email template <user-guide-email-template>` for auto-response.
    * *Type* --- Choose if you want to use html or plain text for the email. 
    * *Translations* --- If you have more than one language configured in the system, select the necessary translation.  
    * *Email Template* --- Enter the subject and content of your email.   
    * *Save Response As Email Template* --- Checking the box automatically saves the current email as a template.  
 
-   Click **Add** on the bottom to save the rule.
+   Click **Add** at the bottom to save the rule.
 
    .. image:: /user/img/system/config_system/ar_rule.png
       :alt: Sample autoresponse rule form

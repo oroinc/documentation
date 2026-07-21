@@ -14,7 +14,7 @@ Procedure
 Example
 -------
 
-The example below illustrates how to configure message re-delivery with limited attempts. You can use this flow both with the out-of-the-box configuration, and with :ref:`Multiple Queue Dividing <op-structure--mq--rabbitmq--configure>`.
+The example below illustrates how to configure message re-delivery with limited attempts. You can use this flow both with the default configuration, and with :ref:`Multiple Queue Dividing <op-structure--mq--rabbitmq--configure>`.
 Use the commands provided by the :ref:`RabbitMQ management plugin <op-structure--mq--rabbit-command-lines>`.
 
 Create oro.unprocessed Queue

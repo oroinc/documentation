@@ -289,7 +289,7 @@ OroAttachmentBundle provides the following TWIG functions for images and files:
 - *oro_image_view* - to get a rendered view of an image. Uses ``@OroAttachment/Twig/image.html.twig`` under-the-hood.
 - *oro_resized_picture_sources* - to get a collection of sources (URLs) to the resized image represented by the specified file. Should be used in a <picture> tag.
 - *oro_filtered_picture_sources* - to get a collection of sources (URLs) to the resized image represented by the specified file, with the LiipImagine filter applied. Should be used in a <picture> tag.
-- *oro_file_title* - to get a title (e.g. original filename) for the specified file. Uses ``Oro\Bundle\AttachmentBundle\Provider\FileTitleProviderInterface`` under-the-hood.
+- *oro_file_title* - to get a title (e.g., original filename) for the specified file. Uses ``Oro\Bundle\AttachmentBundle\Provider\FileTitleProviderInterface`` under-the-hood.
 
 See ``Oro\Bundle\AttachmentBundle\Twig\FileExtension`` for more information on functions arguments.
 

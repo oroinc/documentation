@@ -72,10 +72,10 @@ The sorters setting should be placed under the `sorters` tree node.
                 disable_default_sorting: true|false # When set to true, no default sorting will be applied
 
                 disable_not_selected_option: true|false(default) # If enabled (true) it will hide `not_selected`
-                    (Please select) option from sorting dropdown.
+                    (Please select) option from sorting drop-down
                     Consider enabling it will work only if there is `default` sorting option available and
                     `disable_default_sorting` is not true.
-                    In other words `not_selected` will always appear in select dropdown (even if
+                    In other words `not_selected` will always appear in select drop-down (even if
                     disable_not_selected_option set to true) in such cases:
                     1. If a customer already selected 'not_selected' option earlier.
                     2. If the 'default' option is empty or not defined

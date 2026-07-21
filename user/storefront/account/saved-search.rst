@@ -10,7 +10,7 @@ Keep in mind that search result notifications have a :ref:`limit preconfigured i
 To save a search result:
 
 1. Use the search bar to look for a product name, SKU, keyword, etc.
-2. When the search results are displayed, click **Save This Search** on the top right.
+2. When the search results are displayed, click **Save This Search** at the top right.
 
    .. image:: /user/img/storefront/navigation/saved-search.png
       :alt: Saved search icon in the Filters panel

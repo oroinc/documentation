@@ -28,7 +28,7 @@ For instance, one content block, named *Company Address*, can have the following
 
 Depending on the restrictions that you configure for each content block variant, the related content is shown.
 
-One of the benefits of using content blocks is the easy way to allocate them within the landing page once they are created. You just drag and drop the block into the required place, moving it with the cursor, if needed. If you are not satisfied with it, delete it and take a new one.
+One of the benefits of using content blocks is that you can allocate them within the landing page once they are created. You just drag and drop the block into the required place, moving it with the cursor, if needed. If you are not satisfied with it, delete it and take a new one.
 
 .. image:: /user/img/concept-guides/content-management/add_content_block.png
    :alt: A sample of the Terms and Conditions landing page

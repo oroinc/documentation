@@ -7,7 +7,7 @@ Link a Tax Code to a Product
 
 To link a tax code to a product:
 
-#. Navigate to the necessary product (e.g. click **Products > Products** in the main menu, filter products to find the one you need).
+#. Navigate to the necessary product (e.g., click **Products > Products** in the main menu, filter products to find the one you need).
 
 #. Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
 

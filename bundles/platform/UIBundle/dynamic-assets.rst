@@ -4,7 +4,7 @@ Dynamic Assets
 ==============
 
 Dynamic assets allow you to update assets during the application lifecycle, for example when an administrator configures your website.
-In such cases, the asset cache must be properly invalidated. Symfony does not provide this feature out-of-the-box, but the |Asset Component| can be extended to support it.
+In such cases, the asset cache must be properly invalidated. Symfony does not provide this feature out of the box, but the |Asset Component| can be extended to support it.
 
 The following example demonstrates how to add dynamic versioning for any asset package.
 

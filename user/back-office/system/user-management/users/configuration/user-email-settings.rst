@@ -22,7 +22,7 @@ To configure email settings per user:
 
    .. important:: To change *your own* email configuration settings:
 
-                  1. Click on your username on the top right.
+                  1. Click on your username at the top right.
                   2. Click **My Configuration**.
                   3. Follow the steps described below.
 
@@ -57,12 +57,12 @@ On the **Email Configuration** page, define options applied to all the emails in
    * **Account Type: Other**:
 
      * *Enable IMAP* --- Select the checkbox to enable retrieving email messages
-     * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
-     * *IMAP Port* --- Provide the IMAP Port, e.g. 993
+     * *IMAP Host* --- Provide the IMAP Host, e.g., imap.gmail.com
+     * *IMAP Port* --- Provide the IMAP Port, e.g., 993
      * *Encryption* --- Select the encryption type, SSL or TLS.
      * *Enable SMTP* --- Select the checkbox to enable sending messages
-     * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
-     * *SMTP Port* --- Provide the SMTP port, e.g. 587
+     * *SMTP Host* --- Provide the SMTP host, e.g., smtp.gmail.com
+     * *SMTP Port* --- Provide the SMTP port, e.g., 587
      * *Encryption* --- Select the encryption type, SSL or TLS.
      * *User* --- Provide your email address
      * *Password* --- Provide your password
@@ -97,7 +97,7 @@ On the **Email Configuration** page, define options applied to all the emails in
      .. image:: /user/img/system/config_system/non_threaded_email_activities.png
         :alt: A sample of an email with the non-threaded option selected
  
-4. **Reply** --- Define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the dropdown. The settings can be changed to have **Reply all** displayed at the top.
+4. **Reply** --- Define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the drop-down  The settings can be changed to have **Reply all** displayed at the top.
 
 5. Click **Save Settings**.
 

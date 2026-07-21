@@ -746,7 +746,7 @@ routerEnabled
 
 type: ``boolean`` default: ``true``
 
-When set to `false` datagrid will not keep its state (e.g. filtering and/or sorting parameters) in the URL.
+When set to `false` datagrid will not keep its state (e.g., filtering and/or sorting parameters) in the URL.
 
 .. code-block:: yaml
 
@@ -990,10 +990,10 @@ The sorters setting should be placed under the `sorters` tree node.
                 disable_default_sorting: true|false # When set to true, no default sorting will be applied
 
                 disable_not_selected_option: true|false(default) # If enabled (true) it will hide `not_selected`
-                    (Please select) option from sorting dropdown.
+                    (Please select) option from sorting drop-down
                     Consider enabling it will work only if there is `default` sorting option available and
                     `disable_default_sorting` is not true.
-                    In other words `not_selected` will always appear in select dropdown (even if
+                    In other words `not_selected` will always appear in select drop-down (even if
                     disable_not_selected_option set to true) in such cases:
                     1. If a customer already selected 'not_selected' option earlier.
                     2. If the 'default' option is empty or not defined
@@ -1071,10 +1071,10 @@ disable_not_selected_option
 type: ``boolean`` default: ``false``
 
 If enabled (true) it will hide `not_selected`
-(Please select) option from sorting dropdown.
+(Please select) option from sorting drop-down
 Consider enabling it will work only if there is `default` sorting option available and
 `disable_default_sorting` is not true.
-In other words `not_selected` will always appear in select dropdown (even if
+In other words `not_selected` will always appear in select drop-down (even if
 disable_not_selected_option set to true) in such cases:
 1. If a customer already selected 'not_selected' option earlier.
 2. If the 'default' option is empty or not defined
@@ -1112,7 +1112,7 @@ grid parameter as a parameter to the query builder by listing at with this optio
                             - u.group = :group_id
                 bind_parameters:
                     # Get parameter "group_id" from datagrid
-                    # and set it's value to "group_id" parameter in datasource query
+                    # and set its value to "group_id" parameter in datasource query
                     - group_id
 
 The full format for declaring parameters binding is also available:
@@ -1502,7 +1502,7 @@ Optional. Allows to rename incoming parameters, which came into send() function,
 query_parameter_names
 ^^^^^^^^^^^^^^^^^^^^^
 
-Optional. Array of parameter names to put into query string (e.g. `?<parameter-name>=<value>&<parameter-name>=<value>`). (The reason of adding this argument is that FOSRestBundle doesn’t provides acceptable query parameters for client usage, so it is required to specify list of them).
+Optional. Array of parameter names to put into query string (e.g., `?<parameter-name>=<value>&<parameter-name>=<value>`). (The reason of adding this argument is that FOSRestBundle doesn’t provides acceptable query parameters for client usage, so it is required to specify list of them).
 
 See for more information :ref:`Inline Editing <customize-datagrid-extensions-inline-editing>`.
 Please see :ref:`documentation <bundle-docs-platform-ui-bundle-apiaccessor>` for ``oroui/js/tools/api-accessor``"

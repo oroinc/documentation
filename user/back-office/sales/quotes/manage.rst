@@ -33,7 +33,7 @@ To edit a quote:
 
 #. Update the **Quote General Information**, **Line Items**, **Shipping Address**, **Shipping Information** sections, or add any relevant documents under **Customer Documents**. See :ref:`Create a Quote <quote--create-from-scratch>` topic for detailed information on the available options.
 
-#. Click **Save** on the top right of the page.
+#. Click **Save** at the top right of the page.
 
 The quote is updated.
 
@@ -53,13 +53,13 @@ To edit a quote:
 
 1. In the main menu, navigate to **Sales > Quotes**.
 #. Choose the quote in the list and click it. The quote details page opens.
-#. Click **Edit** on the top right of the page:
+#. Click **Edit** at the top right of the page:
 
    .. image:: /user/img/sales/quotes/quotes_edit1.png
       :alt: Click the Edit button on the quote edit page
 
 #. Update the **Quote General Information**, **Line Items**, **Shipping Address**, **Shipping Information**, or **Customer Documents** sections. See :ref:`Create a Quote <quote--create-from-scratch>` topic for detailed information on the available options.
-#. Click **Save** on the top right of the page.
+#. Click **Save** at the top right of the page.
 
 The quote is updated.
 
@@ -99,7 +99,7 @@ Delete a Quote from the Quote View Page
 
 1. In the main menu, navigate to **Sales > Quotes**. The quote list opens.
 2. Click the quote that you need to delete. The page with quote details opens.
-3. Click **Delete** on the top right of the page.
+3. Click **Delete** at the top right of the page.
 
    .. image:: /user/img/sales/quotes/quotes_delete1.png
       :alt: Click the Delete button on the quote view page

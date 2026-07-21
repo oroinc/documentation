@@ -10,7 +10,7 @@ Tables (Grids)
 
 Views in the form of tables can be considered the most commonly used UI elements in Oro applications. They are interactive, as they not only display data about specific store records but contain links to these records’ pages. Views are also configurable – so you can adjust the appearance and contents of the tables to your taste and needs.
 
-Such tables represent aggregated views of data and store records, making it easy to locate and manage records, with every grid page functionally tailored to the type of information it represents.
+Such tables represent aggregated views of data and store records, enabling you to locate and manage records, with every grid page functionally tailored to the type of information it represents.
 
 .. image:: /user/img/storefront/navigation/GridSample.png
 
@@ -91,7 +91,7 @@ Tables can be viewed, saved as new ones, shared, renamed, set as default and del
 Action Buttons
 --------------
 
-Action buttons are on the right of the view page. They enable you to perform a number of actions with records. The set of such buttons varies depending on the type of the view opened.
+Action buttons are to the right of the view page. They enable you to perform a number of actions with records. The set of such buttons varies depending on the type of the view opened.
 
 .. image:: /user/img/storefront/navigation/GridActionButtons.png
 
@@ -125,11 +125,11 @@ The following actions are available for filters:
 
 .. note:: Note that not all filters may be visible by default.
 
-2. To apply a filter, click on its button in the bar and select the required option from the dropdown list.
+2. To apply a filter, click on its button in the bar and select the required option from the drop-down list.
 
    .. image:: /user/img/storefront/navigation/FiltersSelect.png
 
-.. note:: The dropdown list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the dropdown list or remain visible but disabled :ref:`depending on the website configuration <configuration--guide--commerce--configuration--catalog--filters-sorters>` when no items matching selected attributes in filters were found.
+.. note:: The drop-down list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the drop-down list or remain visible but disabled :ref:`depending on the website configuration <configuration--guide--commerce--configuration--catalog--filters-sorters>` when no items matching selected attributes in filters were found.
 
    The appearance of filter controls may vary based on the type of data being filtered, such as text, numbers, dates, or options. Applied filters are displayed under the filter controls.
 
@@ -194,7 +194,7 @@ Customer users can save search queries, return to these saved search queries lat
 To save a search result:
 
 1. Use the search bar to look for a product name, SKU, keyword, etc.
-2. When the search results are displayed, click the **Save This Search** icon on the top right.
+2. When the search results are displayed, click the **Save This Search** icon at the top right.
 3. Select the checkboxes for *New Product* and/or *Inventory Status* if you want to receive notifications.
 4. Click **Save**. Your search query is now saved under **My Account > Saved Search**.
 
@@ -210,7 +210,7 @@ Registered customer users can export products, their prices, and price tiers int
 
 To download a product data .csv file:
 
-1. Click on the download icon on the top right of the product grid.
+1. Click on the download icon at the top right of the product grid.
 
    .. image:: /user/img/storefront/navigation/export.png
       :alt: Export product data from the storefront product collection page

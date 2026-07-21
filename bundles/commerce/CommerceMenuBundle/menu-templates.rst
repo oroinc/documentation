@@ -15,12 +15,12 @@ Available menu templates are collected from ``theme.yml`` configuration files ac
     config:
         menu_templates:
             custom_flat:
-                label: 'Custom Flat' # Label to use in Menu Template dropdown in the menu item form on the menu management page.
+                label: 'Custom Flat' # Label to use in Menu Template drop-down in the menu item form on the menu management page.
             custom_tree:
                 label: 'Custom Tree'
                 template: 'custom_tree_1' # Optional setting that specifies the directory where the menu template layout updates are located. Fallbacks to menu template key if not set, i.e. "custom_tree".
 
-Although a Menu Template can be specified for each storefront menu item, out-of-the-box only top-level items of the :ref:`main navigation menu <bundle-docs-commerce-commerce-menu-bundle-main-navigation>`, as the most demanded, make use of menu templates. Usually storefront theme developers judge whether they require menu templates in other menus. 
+Although a Menu Template can be specified for each storefront menu item, out of the box only top-level items of the :ref:`main navigation menu <bundle-docs-commerce-commerce-menu-bundle-main-navigation>`, as the most demanded, make use of menu templates. Usually storefront theme developers judge whether they require menu templates in other menus.
 
 Menu Item Renderer
 ------------------

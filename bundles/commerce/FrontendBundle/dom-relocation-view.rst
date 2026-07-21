@@ -4,7 +4,7 @@ Dom Relocation Global View
 ==========================
 
 Dom Relocation View is used when you need to move a dom element from one container to another on browser window resize or on scroll.
-For example, move a menu list from the top bar to the hamburger menu dropdown in cases when you cannot do this using сss @media queries
+For example, move a menu list from the top bar to the hamburger menu drop-down in cases when you cannot do this using сss @media queries
 or move an element from the main content to the sticky top bar on scroll.
 
 How to Use `data-dom-relocation-options` **on browser window resize**

@@ -43,10 +43,10 @@ To add an address to the address book:
 
 2. Click **Save** once you have filled all the fields.
 
-   The address and the map showing the address location is displayed on the right of the address.
+   The address and the map showing the address location is displayed to the right of the address.
 
    .. image:: /user/img/customers/customers/acc_address_saved.png
-      :alt: The address and the map are shown on the right of the address
+      :alt: The address and the map are shown to the right of the address
 
 View an Address on the Map
 --------------------------
@@ -65,7 +65,7 @@ Manage an Address
 
 .. note:: Delete is disabled for the primary address. To delete the address marked as primary, you must first move the primary label to a different address.
 
-* **Edit an address** --- To edit an address, click |IcEdit| on the top right of the address background, update the address details, and click **Save**.
+* **Edit an address** --- To edit an address, click |IcEdit| at the top right of the address background, update the address details, and click **Save**.
 
 * **Delete an address** --- Delete an address by clicking |Trash-SVG| next to it.
 

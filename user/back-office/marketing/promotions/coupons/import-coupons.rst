@@ -21,7 +21,7 @@ To import a bulk of coupons:
 
 1. In the main menu, navigate to **Marketing > Promotions > Coupons**.
 
-2. Click **Import File** on the top right of the page.
+2. Click **Import File** at the top right of the page.
 
 3. **Prepare data for import**: Create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.
 

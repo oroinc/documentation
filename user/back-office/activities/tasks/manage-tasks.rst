@@ -77,7 +77,7 @@ From My Calendar
 
 You can also view, edit, or delete a task from the My Calendar page and the Today’s Calendar widget.
 
-1. Navigate to My User on the top right of the page.
+1. Navigate to My User at the top right of the page.
 2. Click **My Calendar**.
 3. Click on a specific task in the calendar.
 4. On the task information card, select the necessary action.

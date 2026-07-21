@@ -7,7 +7,7 @@ Overview
 --------
 
 Nowadays Oro uses **ES6** modularity approach as best practices.
-However since a build of JS gets made with webpack other types of modules are supported as well (e.g. **AMD**, **CommonJS**).
+However since a build of JS gets made with webpack other types of modules are supported as well (e.g., **AMD**, **CommonJS**).
 
 .. note::
     Since OroPlatform uses ES6 only starting from 4v a lot of legacy **AMD** modules are still present in the code.

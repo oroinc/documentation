@@ -16,7 +16,7 @@ In the All Promotions grid, you can click any promotion to view its details, hov
    .. image:: /user/img/marketing/promotions/PromotionsGridNew.png
       :alt: The page of all promotions available in the system
 
-2. To create a new promotion, click **Create Promotion** in the top right corner.
+2. To create a new promotion, click **Create Promotion** in the top-right corner.
 
 3. In the **General** section, complete the following fields:
 
@@ -43,7 +43,7 @@ In the All Promotions grid, you can click any promotion to view its details, hov
       * *Buy X Get Y (Same Product)* --- The price of certain quantity of the line items (up to Y) may be discounted when they are ordered in bulk (more than X), or
       * *Shipping* ---  The discount applies to shipping.
 
-   b) In the **Type** list, select whether the discount type should be represented by a fixed amount (e.g. - 10USD) or a certain percent (5%) off the item price.
+   b) In the **Type** list, select whether the discount type should be represented by a fixed amount (e.g., - 10USD) or a certain percent (5%) off the item price.
 
       .. note:: Please note that when a fixed discount is used, the promotion applies to the order in the selected currency only.
 
@@ -80,7 +80,7 @@ In the All Promotions grid, you can click any promotion to view its details, hov
 
    c) **Advanced Filter** --- Add a product via a :ref:`filter <user-guide-getting-started-filters>` to limit the product list and include only the necessary products. Advanced filter is hidden by default. Click **Preview Results** to check whether the products found via the filter match your criteria, or to exclude unnecessary items from the list.
 
-      .. note:: You may use filter on the top of the dialog to limit the scope of the products and make it fit into the visible area.
+      .. note:: You may use filter at the top of the dialog to limit the scope of the products and make it fit into the visible area.
 
 
 Discount Options for Order Line Item
@@ -95,7 +95,7 @@ For the line items discount, provide the following information:
 .. image:: /user/img/marketing/promotions/LineItems.png
    :alt: The illustration of the discount options for order line items
 
-* **Unit of Quantity** --- Select the necessary unit type from the list (e.g. each, item, set.). Note that the discount will only apply to the product with a specified unit type.
+* **Unit of Quantity** --- Select the necessary unit type from the list (e.g., each, item, set.). Note that the discount will only apply to the product with a specified unit type.
 
 * **Apply Discount to** --- Select whether to apply discount to each of the items on sale or for the line items total.
 
@@ -119,7 +119,7 @@ For the Buy X Get Y (Same Product) discount, provide the following information:
 
 * **Buy X Quantity** --- Enter the quantity of X products the customer needs to purchase to be eligible for the discount.
 * **Get Y Quantity** --- Enter the quantity of Y products which the customer will get a discount for when purchases a number of X products.
-* **Unit of Quantity** --- Select the necessary unit type from the list (e.g. each, item, set). Note that the discount will only apply to the product with the specified unit type.
+* **Unit of Quantity** --- Select the necessary unit type from the list (e.g., each, item, set). Note that the discount will only apply to the product with the specified unit type.
 * **Apply Discount to** --- Select one of the options, *Each Y Item Separately* (the discount will apply to Y items only) or *X+Y Total* (the discount will apply to the total of X and Y items).
 
   For instance, if:

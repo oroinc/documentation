@@ -36,7 +36,7 @@ Sales reps can not only view buyer order-related activities but also assist in f
 Once a customer or their assigned sales rep place an order, OroCommerce immediately updates the :ref:`inventory <user-guide--inventory>` in the :ref:`warehouse(s) <user-guide--inventory--warehouse--create>` and synchronizes product quantities. All items in orders are linked to the products' respective warehouses, which is extremely helpful, especially if the business has more than one warehouse to store their goods (applicable to OroCommerce Enterprise Edition).
 
 .. hint::
-    OroCommerce Community Edition comes with one :ref:`warehouse <user-guide--inventory--warehouse--create>` out-of-the-box. Creating multiple warehouses is an Enterprise edition feature.
+    OroCommerce Community Edition comes with one :ref:`warehouse <user-guide--inventory--warehouse--create>` out of the box. Creating multiple warehouses is an Enterprise edition feature.
 
 .. image:: /user/img/concept-guides/orders/front-flow.png
    :alt: Order management flow
@@ -94,7 +94,7 @@ Sales reps can create orders on behalf of the customer in multiple ways in their
 
 * :ref:`A new order created for customers in the back-office <user-guide--sales--orders--create>`
 
-  While many customers use the online store to create orders, they can also come from other avenues such as phone calls, emails, contact us requests, or other sales channels. An Oro application makes it easy to create an order for customers in the back-office. When creating or editing an order, you can add new customers or new customer users on the go, configure shipping options, add discounts, and more.
+  While many customers use the online store to create orders, they can also come from other avenues such as phone calls, emails, contact us requests, or other sales channels. An Oro application enables creating an order for customers in the back-office. When creating or editing an order, you can add new customers or new customer users on the go, configure shipping options, add discounts, and more.
 
   .. image:: /user/img/sales/orders/orders_create_general.png
 
@@ -151,7 +151,7 @@ Shipping Tracking
 When a customer user submits an order, they provide the shipping address and, optionally, the **Do Not Ship Later Than** date. Based on this information and selected shipping method, buyers can see the shipping cost estimate. Once a sales rep adds the shipping service and a tracking number to the order, the buyer can track the delivery (if this option is provided by the shipping company).
 
 .. hint::
-     Check out a Concept Guide topic  on :ref:`Shipping Configuration <user-guide--shipping>` and all shipping integrations available out-of-the-box.
+     Check out a Concept Guide topic  on :ref:`Shipping Configuration <user-guide--shipping>` and all shipping integrations available out of the box.
 
 .. image:: /user/img/sales/orders/ShippingTrackingOrders.png
 
@@ -208,7 +208,7 @@ There are several types of payment transactions that can be displayed on the ord
 Order-Based Reports
 -------------------
 
-Analytics and reporting show you precisely what is going on in your business, which makes them crucial to any online retailer. Extracting and examining data correctly enables them to make well-informed decisions around a number of things, like relevant product assortment and performance, stock ordering, promotions, and so on. OroCommerce provides you with an out-of-the-box reporting engine to help generate the right reports for your online store using the data from orders and order line items.
+Analytics and reporting show you precisely what is going on in your business, which makes them crucial to any online retailer. Extracting and examining data correctly enables them to make well-informed decisions around a number of things, like relevant product assortment and performance, stock ordering, promotions, and so on. OroCommerce provides you with a built-in reporting engine to help generate the right reports for your online store using the data from orders and order line items.
 
 As an illustration, we are going to generate a sales per product report to see how many times products have been purchased. This kind of report helps identify the best (and worst) selling products so that you can determine a suitable plan of action. If a product is selling well, for example, you could consider ordering more of it, and if a product is not in demand, then you would want to know sooner rather than later and run promotions before the season ends.
 
@@ -224,7 +224,7 @@ The generated report shows the products' sku and name and the number of times th
 .. image:: /user/img/concept-guides/orders/product-performance-report-grid.png
    :alt: Product performance report grid
 
-.. hint:: Check out a User Guide topic on :ref:`Reports <user-guide-reports>` for more information on the available out-of-the-box reports and how to build the custom ones.
+.. hint:: Check out a User Guide topic on :ref:`Reports <user-guide-reports>` for more information on the available built-in reports and how to build the custom ones.
 
 
 .. admonition:: Business Tip
