@@ -98,7 +98,7 @@ import can be performed without it. To do so, start the import command in no int
 
 .. hint::
 
-    This trick can be very useful if you need to perform import on regular basis (e.g. by cron using external source).
+    This trick can be very useful if you need to perform import on regular basis (e.g., by cron using external source).
 
 
 Disable Optional Listeners

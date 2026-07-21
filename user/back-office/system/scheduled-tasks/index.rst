@@ -12,7 +12,7 @@ Time-Based Command Execution
 
 Some recurring tasks should be executed on schedule, for example, IMAP synchronization or sending email campaigns to customers). Usually, the operating system should be configured to execute a script to perform these tasks.
 
-With Oro, you can use the |OroCronBundle|, which makes it easy to run Symfony Console commands through :ref:`cronjobs <dev-guide-system-cron-jobs>` (on UNIX-based operating systems) or Windows task scheduler.
+With Oro, you can use the |OroCronBundle|, which runs Symfony Console commands through :ref:`cronjobs <dev-guide-system-cron-jobs>` (on UNIX-based operating systems) or Windows task scheduler.
 
 Oro applications provide an admin UI page for admin users that displays all scheduled cron commands.
 

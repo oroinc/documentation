@@ -60,7 +60,7 @@ From the Quick Order Form
 
 To create an RFQ from the quick order form:
 
-1. Click on the **Quick Order** widget in the top navigation bar.
+1. Click on the **Quick Order** widget on the top navigation bar.
 
    .. image:: /user/img/storefront/rfq/GuestQuickOrderButton.png
 

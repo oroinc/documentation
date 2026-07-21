@@ -5,7 +5,7 @@ AWS Cloud Platform
 
 The |Amazon Machine Image (AMI)| with |oro_app_name| is listed on the |Amazon Web Services Marketplace|. With its help, you can effortlessly and quickly set up an instance with a working |oro_app_name| application on the |Amazon EC2| platform, as described in detail further in this article.
 
-Deploying a single EC2 instance is helpful when reviewing Oro application features or using the out-of-the-box uncustomized application version for low and medium-traffic websites.
+Deploying a single EC2 instance is helpful when reviewing Oro application features or using the default uncustomized application version for low and medium-traffic websites.
 
 Every AMI (Amazon Machine Image) contains an installed Oro Application along with the LEMP stack:
 
@@ -62,7 +62,7 @@ Installation Steps
 
    .. image:: /img/backend/setup/aws/step_7.png
 
-9. Click **Launch** on the bottom right. Select an existing public or private key pair for secure SSH access to your instance or create a new key pair.
+9. Click **Launch** at the bottom right. Select an existing public or private key pair for secure SSH access to your instance or create a new key pair.
 
    .. image:: /img/backend/setup/aws/select_a_key_pair.png
 
@@ -74,7 +74,7 @@ Installation Steps
 
    .. image:: /img/backend/setup/aws/launch_status.png
 
-12. Click **View Instances** on the bottom right to access the **Instances** page with a list of your launched EC2 instances and the information on their
+12. Click **View Instances** at the bottom right to access the **Instances** page with a list of your launched EC2 instances and the information on their
 state and status.
 
 13. Click on the required instance from the list to view its description at the bottom. You can see detailed information about the selected instance below the launched instances list.

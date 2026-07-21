@@ -29,4 +29,4 @@ Sometimes, a flash message can contain links to other pages.
    :alt: An example of a flash message with a link
    :width: 60%
 
-Flash messages appear on the top of the screen for several seconds and then disappear.
+Flash messages appear at the top of the screen for several seconds and then disappear.

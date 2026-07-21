@@ -13,7 +13,7 @@ Create a Promotion
 As coupons must be linked to promotions, the first step is to create a new promotion:
 
 1. Navigate to **Marketing > Promotions > Promotions** in the main menu.
-2. Click **Coupons Actions > Create Promotion** on the top right.
+2. Click **Coupons Actions > Create Promotion** at the top right.
 3. In the form that opens, specify the discount details and items, making sure that the **Triggered by** field is set to *Coupons and Conditions*.
    The sample promotion is called **Spring Sale**, and the discount options are 20% off all orders.
 
@@ -42,7 +42,7 @@ Now that the promotion has been created and coupons generated, we can add a coup
 
 1. Navigate to **Sales > Orders** in the main menu.
 2. Select the relevant order and click on it once to open.
-3. Click **Add Coupon Code** on the top right of the order page.
+3. Click **Add Coupon Code** at the top right of the order page.
 4. Select the coupon from the list, click **Add** and then  **Apply**.
 5. The coupon for 20% off is now applied to the order.
 

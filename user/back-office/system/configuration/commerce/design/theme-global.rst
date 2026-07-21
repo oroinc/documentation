@@ -5,7 +5,7 @@ Configure Global Theme Settings
 
 In your Oro application, you can control and customize the storefront look and feel.
 
-.. hint:: Theme is configurable on three levels -- globally, :ref:`per organization <configuration--commerce--design--theme--theme-settings--organization>` and :ref:`website <configuration--commerce--design--theme--theme-settings--website>`.
+.. hint:: Theme is configurable on three levels: globally, :ref:`per organization <configuration--commerce--design--theme--theme-settings--organization>` and :ref:`website <configuration--commerce--design--theme--theme-settings--website>`.
 
 You can set the following theme-related options that apply globally by default:
 
@@ -23,7 +23,7 @@ To configure the storefront theme options globally:
 
 3. In the **Theme Settings** section, configure the following options:
 
-   * **Theme** --- select the storefront theme from the list. For more details on how to customize a theme from the dropdown list, refer to the :ref:`theme configuration <back-office-theme-configuration>` topic.
+   * **Theme** --- select the storefront theme from the list. For more details on how to customize a theme from the drop-down list, refer to the :ref:`theme configuration <back-office-theme-configuration>` topic.
 
    * **Product Image Placeholder** --- select the image file that will appear on the product listing and product view pages for the products that have no associated images to avoid a blank image page.
 

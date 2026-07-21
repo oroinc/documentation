@@ -100,6 +100,6 @@ Collects values from DOM elements and converts them to string format like EUR100
 multiCurrencyEditorView.getCurrencyData() ⇒ `Array`
 ---------------------------------------------------
 
-Prepares array of objects that presents select options in dropdown
+Prepares array of objects that presents select options in drop-down
 
 **Kind**: instance method of MultiCurrencyEditorView

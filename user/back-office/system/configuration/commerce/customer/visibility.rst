@@ -6,7 +6,7 @@ Configure Global Visibility (Product and Category) Settings
 
 .. begin
 
-By default, all categories are visible. However, an administrator can control the default visibility settings (e.g. visible or hidden) for products and product categories for customer users.
+By default, all categories are visible. However, an administrator can control the default visibility settings (e.g., visible or hidden) for products and product categories for customer users.
 
 To change the default product and category visibility settings:
 

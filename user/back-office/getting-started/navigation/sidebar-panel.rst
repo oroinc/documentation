@@ -77,7 +77,7 @@ You can:
 Default Sidebar Widgets
 -----------------------
 
-This section describes three sidebar widgets available in the Oro application out-of-the-box.
+This section describes three sidebar widgets available in the Oro application out of the box.
 
 .. note:: You can find more information on dashboard widgets in the corresponding :ref:`Dashboard Widgets topic <user-guide--business-intelligence--dashboards>`.
 
@@ -123,7 +123,7 @@ Sticky notes are a great way to keep reminders and memos. You can keep them orga
 
 Click the |IcSettings| to change the content of a note.
 
-You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some notes and keep others visible (such as those due today). You can quickly delete the note when you don't need it anymore.
+You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some notes and keep others visible (such as those due today). You can quickly delete the note when you do not need it anymore.
 
 Task List Sidebar Widget
 ^^^^^^^^^^^^^^^^^^^^^^^^

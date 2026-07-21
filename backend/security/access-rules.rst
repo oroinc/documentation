@@ -113,8 +113,8 @@ This example applies the access rule to all ACL-protected ORM queries with the *
 
 The `oro_security.access_rule` tag options that can be used for any access rule:
 
-- `type` - the query type, e.g. `ORM`.
-- `permission` - the ACL permission, e.g. `VIEW`.
+- `type` - the query type, e.g., `ORM`.
+- `permission` - the ACL permission, e.g., `VIEW`.
 - `entityClass` - the FQCN of an entity.
 - `loggedUserClass` - the FQCN of a logged-in user.
 

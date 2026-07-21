@@ -8,7 +8,7 @@ Import Master Catalog Categories Information
 To import the bulk details of updated or processed master catalog categories information in the .csv format, follow the steps below.
 
 1. In the main menu, navigate to **Products > Master Catalog**.
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 3. In the **Import** dialog, click **Choose File** and select the .csv file you have prepared.
 
 .. note:: Ensure your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.

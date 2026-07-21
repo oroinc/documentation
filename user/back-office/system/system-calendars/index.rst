@@ -43,7 +43,7 @@ Add Events to a System Calendar
 You can add event to system calendars in two ways:
 
 * From the page of the :ref:`system calendar <user-guide-activities-events-add-system-calendar>` under **System > System Calendars**.
-* From :ref:`My Calendar <user-guide-activities-events-add-my-calendar>` under your user name on the top right.
+* From :ref:`My Calendar <user-guide-activities-events-add-my-calendar>` under your user name at the top right.
 
 You can find detailed information on adding calendar events to user calendars in the :ref:`Calendar Events <doc-activities-events-actions-add>` topic.
 

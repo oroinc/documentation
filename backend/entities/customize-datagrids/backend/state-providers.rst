@@ -15,7 +15,7 @@ Later, a datagrid state became used in the backend, e.g., for sorters and adjust
 
 State providers return the state which is actual at the moment of a call. This means that if it is called in the datagrid extension's `processConfigs()` method, it will only return the state for that particular moment. In other extensions and listeners, states can differ if the datagrid configuration has been changed.
 
-OroDatagridBundle provides two datagrid state providers out-of-the-box:
+OroDatagridBundle provides two datagrid state providers out of the box:
 
 - ``oro_datagrid.provider.state.columns`` (``Oro\Bundle\DataGridBundle\Provider\State\ColumnsStateProvider``)
 - ``oro_datagrid.provider.state.sorters`` (``Oro\Bundle\DataGridBundle\Provider\State\SortersStateProvider``)

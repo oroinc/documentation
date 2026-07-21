@@ -23,7 +23,7 @@ Create a Case
 To create a new case:
 
 1. Navigate to **Activities > Cases** in the main menu.
-2. Click **Create Case** on the top right of the page.
+2. Click **Create Case** at the top right of the page.
 3. Provide the following information:
 
    .. csv-table::
@@ -47,7 +47,7 @@ To create a new case:
      "**Related Contact**","Define a :term:`contact record <Contact>` related to the case (optional)."
      "**Related Account**","Define an :term:`account record <Account>` related to the case (optional)."
 
-4. Click **Save** on the top right.
+4. Click **Save** at the top right.
 
 .. _user-guide-activities-cases-edit:
 

@@ -51,8 +51,7 @@ During the integration between OroCommerce and Stripe, multiple types of data ar
 
 **3D Secure Authentication (Optional)**: If 3D Secure authentication is enabled, OroCommerce sends relevant transaction data to Stripe to initiate the authentication process when required, providing an extra layer of security for certain payments.
 
-It is important to note that the exact data exchanged and the level of integration can vary depending on the configuration settings and the customization implemented within OroCommerce.
-
+.. note:: The data exchanged and the integration level depend on the OroCommerce configuration and implemented customizations.
 
 Exchanged Fields
 ----------------
@@ -87,7 +86,7 @@ Both OroCommerce and Stripe prioritize the security of transactions and employ v
 
 OroCommerce Security Measures:
 
-1. **Data Encryption:** OroCommerce utilizes industry-standard encryption protocols such as SSL/TLS (Secure Sockets Layer/Transport Layer Security) to encrypt communication between the user's browser and the platform, ensuring that sensitive information remains protected during transmission.
+1. **Data Encryption:** OroCommerce uses industry-standard encryption protocols such as SSL/TLS (Secure Sockets Layer/Transport Layer Security) to encrypt communication between the user's browser and the platform, ensuring that sensitive information remains protected during transmission.
 
 2. **Payment Card Industry (PCI) Compliance:** OroCommerce adheres to the PCI Data Security Standard (PCI DSS) requirements, which involve implementing stringent security practices to protect cardholder data. This includes maintaining a secure network, regularly monitoring and testing systems, and implementing strong access control measures.
 

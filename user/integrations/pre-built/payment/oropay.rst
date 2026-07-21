@@ -7,7 +7,7 @@ Integration with OroPay Payment Service
 
 :ref:`OroPay <user-guide--payment--oropay>` is a payment solution integrated into OroCommerce, designed specifically for B2B transactions. Unlike typical consumer-focused payment tools, OroPay addresses the unique needs of B2B organizations, such as large orders, recurring invoices, and complex account structures. It combines eCommerce, ERP, and payment workflows into one natural process.
 
-OroPay is developed with Global Payments, a top company in financial technology, and offers strong reliability and compliance features. It is built directly into the OroCommerce platform, meaning it doesn't work as a separate product. This integration removes the need for external portals or third-party services, which helps lower operational costs. As a result, businesses gain a single, trustworthy source for their financial data, making operations easier and data more accurate.
+OroPay is developed with Global Payments, a top company in financial technology, and offers strong reliability and compliance features. It is built directly into the OroCommerce platform, meaning it does not work as a separate product. This integration removes the need for external portals or third-party services, which helps lower operational costs. As a result, businesses gain a single, trustworthy source for their financial data, making operations easier and data more accurate.
 
 .. important:: Before using OroPay, please contact the :ref:`OroCloud team <cloud_support>` to have OroPay provisioned in your cloud environment.
 
@@ -38,7 +38,7 @@ When a payment is initiated, OroPay exchanges transactional and contextual infor
 
 **Order Information:** Details about the products or services being purchased, including item names, quantities, prices, and any applicable taxes or discounts.
 
-It is important to note that the exact data exchanged and the level of integration can vary depending on the configuration settings and the customization implemented within OroCommerce.
+.. note:: The data exchanged and the integration level depend on the OroCommerce configuration and implemented customizations.
 
 Data Security
 -------------

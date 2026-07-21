@@ -19,7 +19,7 @@ The SEO settings can be configured globally, :ref:`per organization <sys--conf--
 
    * **Disable Product Microdata Without Price** --- Select the option to disable Schema.org Microdata for the products without prices. All products that do not have assigned prices contain the Schema.org Microdata markup with a product schema without price information. Some search crawlers (e.g., Google) consider these products invalid and can exclude them from the search index. To prevent products without prices from being blocked by search crawlers, it is recommended to disable the Schema.org Microdata, unless you have an alternative custom solution (e.g., reviews or aggregated ratings system) in place.
 
-  * **Used Product Description Field** --- The setting enables you to control which product field to be used for the Schema.org description property. Select the required description type from the dropdown. Available options are *Simplified [Long] Description*, *SEO Meta Description*, and *Simplified Short Description*.
+  * **Used Product Description Field** --- The setting enables you to control which product field to be used for the Schema.org description property. Select the required description type from the drop-down. Available options are *Simplified [Long] Description*, *SEO Meta Description*, and *Simplified Short Description*.
 
 4. Click **Save Settings**.
 

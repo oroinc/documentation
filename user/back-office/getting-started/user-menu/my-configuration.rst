@@ -7,10 +7,10 @@ In this section, you can personalize the configuration of your Oro application. 
 
 To reach the **My Configuration** page:
 
-1. Click on your user name on the top right of the application page.
+1. Click on your user name at the top right of the application page.
 2. Click **My Configuration**.
 
-.. important:: User-level configuration settings can fall back to organization settings. For this, select the **Use Organization** checkbox next to the selected option. To go back to the default user-level settings, click **Reset** on the top right.
+.. important:: User-level configuration settings can fall back to organization settings. For this, select the **Use Organization** checkbox next to the selected option. To go back to the default user-level settings, click **Reset** at the top right.
 
 Two categories of settings are available for configuration at the user level:
 
@@ -49,7 +49,7 @@ In the Localization section, you can configure the following localization and ma
 
      Otherwise, the *Primary Location* formatting is applied.
 
-   * **Timezone** --- Defines the timezone to be applied for all the time settings defined in the instance. If the time-zone is changed, all the time settings (e.g. due dates of :ref:`tasks <doc-activities-tasks>`), time of reminders, etc. change correspondingly. The default value is(UTC -08:00) America/Los Angeles.
+   * **Timezone** --- Defines the timezone to be applied for all the time settings defined in the instance. If the time-zone is changed, all the time settings (e.g., due dates of :ref:`tasks <doc-activities-tasks>`), time of reminders, etc. change correspondingly. The default value is(UTC -08:00) America/Los Angeles.
 
 2. In the **Map Settings**, select the **Temperature Unit** and **Wind Speed Unit** to display the weather on the map. The default values are Fahrenheit and miles per hour (MPH).
 
@@ -106,8 +106,8 @@ In the Display section, you can configure the following display options:
 
 6. In the **Sidebar Settings** section, enable or disable the left and/or right sidebar to keep your sticky notes and task lists:
 
-   * **Enable Left Sidebar** --- Select **Yes** to enable the user to see and utilize the left sidebar.
-   * **Enable Right Sidebar** --- Select **Yes** to enable the user to see and utilize the right sidebar.
+   * **Enable Left Sidebar** --- Select **Yes** to enable the user to see and use the left sidebar.
+   * **Enable Right Sidebar** --- Select **Yes** to enable the user to see and use the right sidebar.
 
 7. In the **Reports Settings** section, configure the following settings:
 
@@ -155,12 +155,12 @@ On the **Email Configuration** page, define the email-related options.
    * **Account Type: Other**:
 
      * *Enable IMAP* --- Select the checkbox to enable retrieving email messages
-     * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
-     * *IMAP Port* --- Provide the IMAP Port, e.g. 993
+     * *IMAP Host* --- Provide the IMAP Host, e.g., imap.gmail.com
+     * *IMAP Port* --- Provide the IMAP Port, e.g., 993
      * *Encryption* --- Select the encryption type, SSL or TLS.
      * *Enable SMTP* --- Select the checkbox to enable sending messages
-     * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
-     * *SMTP Port* --- Provide the SMTP port, e.g. 587
+     * *SMTP Host* --- Provide the SMTP host, e.g., smtp.gmail.com
+     * *SMTP Port* --- Provide the SMTP port, e.g., 587
      * *Encryption* --- Select the encryption type, SSL or TLS.
      * *User* --- Provide your email address
      * *Password* --- Provide your password
@@ -193,7 +193,7 @@ On the **Email Configuration** page, define the email-related options.
    .. image:: /user/img/system/config_system/non_threaded_email_activities.png
       :alt: A sample of an email with the non-threaded option selected
 
-4. **Reply** --- Define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the dropdown. The settings can be changed to have **Reply all** displayed at the top.
+4. **Reply** --- Define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the drop-down  The settings can be changed to have **Reply all** displayed at the top.
 
 
 Update Contact Information

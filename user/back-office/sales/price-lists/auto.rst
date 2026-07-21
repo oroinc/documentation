@@ -91,7 +91,7 @@ In the **Price Calculation Rule** section, you can define how product prices are
 .. image:: /user/img/sales/pricelist/price-calculation-rules-section.png
    :alt: The Price Calculation Rules section
 
-1. In the **Price for Quantity**, enter the quantity, select a product unit, and the currency to which the rule will be applied. The list of currencies displayed in the dropdown depends on the :ref:`allowed currencies <sys--config--sysconfig--general-setup--currency>` enabled in the system configuration.
+1. In the **Price for Quantity**, enter the quantity, select a product unit, and the currency to which the rule will be applied. The list of currencies displayed in the drop-down depends on the :ref:`allowed currencies <sys--config--sysconfig--general-setup--currency>` enabled in the system configuration.
 
 2. In the **Calculate As** field, insert a price formula into the text area with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free. To view available properties used in filtering expressions, see the `Filtering Expression Syntax`_ topic below.
 
@@ -374,7 +374,7 @@ You wish to set a discounted price for all products in the default price list (I
 Example 7. Price Depends on the Custom Property
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Suppose your customer’s marketing department needs a price list with all products of yellow color where the price is increased by 10% to prepare for the ‘go yellow’ promo next month and balance the prices in the default price list that are scheduled to drop down.
+Suppose your customer’s marketing department needs a price list with all products of yellow color where the price is increased by 10% to prepare for the ‘go yellow’ promo next month and balance the prices in the default price list that are scheduled to dropdown.
 
 You ensured that the product entity has the ‘color’ attribute as a prerequisite. It was not there originally, but you added it as a custom property.
 
@@ -462,12 +462,12 @@ The filtering expression for the product assignment rule and the price calculati
 
 .. note::
     + To keep the filter behavior predictable, OroCommerce enforces the following limitation in regards to using relations in the filtering criteria: you can only use parameters residing on the “one” side of the “one-to-many” relation (including the custom ones).
-    + When using relation, the id is assumed and may be omitted (e.g. “product.category == 1” expression means the same as “product.category.id == 1”).
+    + When using relation, the id is assumed and may be omitted (e.g., “product.category == 1” expression means the same as “product.category.id == 1”).
     + Any product, price, and category entity attribute is accessible by field name.
 
-2. **Operators:** +, -,  *,  / , %, ** , ==, ===, !=, !==, <, >, <=, >=, matches (string) (e.g. matches 't-shirt'; you can also use the following wildcards in the string: % --- replaces any number of symbols, _ --- any single symbol, e.g., matches ' t_shirt' returns both 't-shirt' and 't shirt') and, or, not, ~ (concatenation), in, not in, and .. (range).
+2. **Operators:** +, -,  *,  / , %, ** , ==, ===, !=, !==, <, >, <=, >=, matches (string) (e.g., matches 't-shirt'; you can also use the following wildcards in the string: % --- replaces any number of symbols, _ --- any single symbol, e.g., matches ' t_shirt' returns both 't-shirt' and 't shirt') and, or, not, ~ (concatenation), in, not in, and .. (range).
 
-3. **Literals:** You can use strings (e.g. *'hello'*), numbers (e.g. *345*), arrays (e.g. *[7, 8, 9]* ), hashes (e.g. *{ property_name: 'property_value' }*), *true*, *false* and *null*.
+3. **Literals:** You can use strings (e.g., *'hello'*), numbers (e.g., *345*), arrays (e.g., *[7, 8, 9]* ), hashes (e.g., *{ property_name: 'property_value' }*), *true*, *false* and *null*.
 
 Developer Notice
 ^^^^^^^^^^^^^^^^

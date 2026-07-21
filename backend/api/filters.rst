@@ -260,7 +260,7 @@ The |QueryExpressionVisitor| is used to walk a graph of DQL expressions from the
 Query Expressions
 -----------------
 
-The following query expressions are implemented out-of-the-box:
+The following query expressions are implemented out of the box:
 
 
 .. csv-table::

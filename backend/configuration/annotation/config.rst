@@ -43,9 +43,9 @@ This parameter sets default settings for OroActivityBundle. This bundle helps cl
 
 * **acl** *string* - is used to check whether this type of activity is available in the current security context.
 
-* **action_button_widget** *string* - is the widget name of the activity action used to render a button. This widget should be defined in placeholders.yml. This attribute can be defined for the activity entity. Please note that an activity should provide both action_link_widget and action_link_widget, because actions can be rendered both as a button as a dropdown menu.
+* **action_button_widget** *string* - is the widget name of the activity action used to render a button. This widget should be defined in placeholders.yml. This attribute can be defined for the activity entity. Please note that an activity should provide both action_link_widget and action_link_widget, because actions can be rendered both as a button as a drop-down menu.
 
-* **action_link_widget** *string* - is the widget name of the activity action used to render a link in the dropdown menu. This widget should be defined in placeholders.yml. This attribute can be defined for the activity entity. Please note that an activity should provide both action_link_widget and action_link_widget, because actions can be rendered as a button as a dropdown menu.
+* **action_link_widget** *string* - is the widget name of the activity action used to render a link in the drop-down menu. This widget should be defined in placeholders.yml. This attribute can be defined for the activity entity. Please note that an activity should provide both action_link_widget and action_link_widget, because actions can be rendered as a button as a drop-down menu.
 
 * **activities** *string[]* - is the list of activities' class names that can be assigned to the entity.
 
@@ -66,7 +66,7 @@ This parameter sets default settings for OroActivityBundle. This bundle helps cl
     ]
 
 
-* **priority** *integer* - can be used to change the order of this type of activity on the UI.
+* **priority** *integer* - can be used to change the order of this type of activity in the UI.
 
 * **immutable** *boolean or array* - is used to prohibit changing the activity state (regardless of whether it is enabled or not) for the entity. If TRUE, then activity state cannot be changed. It can also be an array with the list of class names of activities whose state cannot be changed.
 

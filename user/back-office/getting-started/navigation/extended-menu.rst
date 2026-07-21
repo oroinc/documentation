@@ -22,7 +22,7 @@ Favorites
 
 The links to all the pages that you have marked as "favorites" are displayed in the Favorites section to make it easier to return to the same page repeatedly.
 
-To add a page to the favorites list, click the star-shaped *Mark as favorite* icon in the top right corner of the page.
+To add a page to the favorites list, click the star-shaped *Mark as favorite* icon in the top-right corner of the page.
 
 The icon will turn yellow, and a link to the page will appear in the **Favorites** menu.
 

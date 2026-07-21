@@ -8,7 +8,7 @@ Configure Single Page Checkout Workflow in the Back-Office
 Overview
 --------
 
-In your Oro application, you can control the way the checkout is displayed to customers in the storefront. By default, each checkout step is displayed on a new page. However, by activating the Single Page Checkout workflow in the back-office, you can make all steps fit one page. This will make the checkout process easier and quicker for customers, since they will be able to see how far along in the checkout they are, and how many fields are left to complete it.
+In your Oro application, you can control the way the checkout is displayed to customers in the storefront. By default, each checkout step is displayed on a new page. However, by activating the Single Page Checkout workflow in the back-office, you can make all steps fit one page. This will make the checkout process easier and quicker for customers, since they will be able to see how far along at checkout they are, and how many fields are left to complete it.
 
 .. image:: /user/img/system/workflows/single_page_checkout/SampleFlow.png
    :alt: Illustration of single page checkout in the storefront
@@ -31,8 +31,8 @@ To reach the Single Page Checkout workflow:
 
    On the Single Page Checkout workflow page, you can perform the following actions:
 
-   * Activate --- Click |IcActivate| **Activate** on the top right of the page to activate the workflow.
-   * Deactivate (if the workflow is active) -- click |IcDeactivate| **Deactivate** on the top right of the page to deactivate the workflow.
+   * Activate --- Click |IcActivate| **Activate** at the top right of the page to activate the workflow.
+   * Deactivate (if the workflow is active) --- click |IcDeactivate| **Deactivate** at the top right of the page to deactivate the workflow.
 
 For more information managing workflows, see the :ref:`Workflow Management topic <user-guide--system--workflow-management>`.
 
@@ -52,7 +52,7 @@ As an illustration let us go through the sample flow to see the Single Page Chec
    * Shipping Information
    * Order Summary (including *Agreements*)
 
-   .. important:: Keep in mind that for the Agreements section to be displayed in the checkout, you need to :ref:`add the necessary consents to the list of enabled consents <admin--guide--commerce--configuration--customers--consents--enable--globally>` in the system configuration.
+   .. important:: Keep in mind that for the Agreements section to be displayed at checkout, you need to :ref:`add the necessary consents to the list of enabled consents <admin--guide--commerce--configuration--customers--consents--enable--globally>` in the system configuration.
 
    .. image:: /user/img/system/workflows/single_page_checkout/SampleFlow2.png
       :alt: Illustration of single page checkout in the storefront
@@ -72,7 +72,7 @@ As an illustration let us go through the sample flow to see the Single Page Chec
    * Select whether the shopping list should be deleted after submitting the order, or saved.
    * Accept all mandatory consents to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
 
-6. Submit the order by clicking **Submit Order** on the top left of the page.
+6. Submit the order by clicking **Submit Order** at the top left of the page.
 7. Receive an email confirmation with order details.
 
 

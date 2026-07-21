@@ -19,13 +19,13 @@ Import Product Attributes
 
      "field_money","money","label_value","description_value","marketinglist.entity_config.","yes","header_value",12,"no","mimetypes_value"
 
-.. note:: Keep in mind that multi-select attribute type doesn't support the sorting option, so make sure to set this option to "0" or "No" when preparing the corresponding file for importing.
+.. note:: Keep in mind that multi-select attribute type does not support the sorting option, so make sure to set this option to "0" or "No" when preparing the corresponding file for importing.
 
 To import a bulk of product attributes:
 
 1. In the main menu, navigate to **Products > Product Attributes**.
 
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 
 .. hint:: You may receive the following warning message which notifies you about the limits for the number of attributes that can be imported, which can effect the future export of entities.
 

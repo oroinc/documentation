@@ -67,7 +67,7 @@ If you are struggling to resolve an issue with the existing documentation, and y
 Comment on Your Request
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You can get back to any of your created requests via the **Requests** menu on the top right. Click the menu and select the required option, either **Created by me** or **All**.
+You can get back to any of your created requests via the **Requests** menu at the top right. Click the menu and select the required option, either **Created by me** or **All**.
 
 .. image:: /cloud/img/cloud/request-menu.png
    :alt: Available options under the Request menu
@@ -84,7 +84,7 @@ Once the group is created, and one of the grouped accounts proceeds to the ticke
 Mark the Ticket as Resolved
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once the support team has provided you with a solution, please mark the ticket as resolved by clicking the **Resolved** link on the top right of the ticket details.
+Once the support team has provided you with a solution, please mark the ticket as resolved by clicking the **Resolved** link at the top right of the ticket details.
 
 Support Request Priorities
 --------------------------
@@ -144,7 +144,7 @@ The following checklist provides the typical activities that you need to perform
    "**SFTP set up**", "SFTP access to your OroCloud environment. Read more at :ref:`Connect to the OroCloud Environment via SFTP <sftp-access>`", "Preferable login(s), IPs to be whitelisted","1-2"
    "**Back-office URL configuration**", "URL configuration for accessing OroCommerce back-office on your OroCloud environment. **NOTE**: This :ref:`configuration can be set up <orocloud-maintenance-advanced-use-application-config>` in the orocloud.yaml file without the Oro support team", "Required URL for backend","1-2"
    "**Database migration**", "Migration of your PostgreSQL database to your OroCloud environment.", "PostgreSQL Database. Be aware that the codebase must match the database structure","2-4"
-   "**Installation of non-out-of-the-box (OOTB) software (MuleSoft, etc.)**", "Installation of third-party software that is not included in OroCommerce out-of-the-box", "Provide a business case of how this software is going to be used and interact with OroCommerce","Requires investigation"
+   "**Installation of non-default (OOTB) software (MuleSoft, etc.)**", "Installation of third-party software that is not included in OroCommerce out of the box", "Provide a business case of how this software is going to be used and interact with OroCommerce","Requires investigation"
    "**Email domains whitelisting (for staging environments only)**", "Whitelisting trusted domains approved for sending you emails. See :ref:`Mail Settings <orocloud-maintenance-advanced-use-mail-settings>` for more information on how to configure it", "List of approved email domains","1-2"
    "**Obtaining SSL certificate/wildcard**", "Provision of an SSL certificate for your domain to keep sensitive information encrypted. As there are three options for setting up a domain name and SSL certificate for hosted environments, please review the available :ref:`in a dedicated topic <ssl-certificate>`", "Required information depends on the selected option","2-3"
    "**DNS configuration**", "Configuration of DNS server to point your domain name to your IP address. **NOTE**: This configuration can be set up in the orocloud.yaml file without the Oro support team", "--","2-3"

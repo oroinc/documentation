@@ -18,7 +18,7 @@ To create a contact group:
 3. Define the general details and the list of contacts for the group:
 
    * **Owner** --- Limits the list of users who can manage the contact group to the users whose :ref:`roles <user-guide-user-management-permissions>` allow managing contact groups of the owner (e.g., the owner, members of the same business unit, system administrator, etc.).
-   * **Label** --- The name used to refer to the contact group on the interface.
+   * **Label** --- The name used to refer to the contact group in the interface.
   
 4. Select/clear the **HAS GROUP**  checkbox, to assign/unassign a contact to the contact group.
 

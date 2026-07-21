@@ -40,7 +40,7 @@ To add a new translation and start using it for localization:
 
 1. Click **Add Language** at the top right corner.
 2. Select the target language from the available list in the popup dialog. Start typing the language name in the blank field to narrow down the choices.
-3. Click **Add Language** in the bottom right of the dialog.
+3. Click **Add Language** at the bottom right of the dialog.
 
 .. image:: /user/img/system/localization/languages_add.png
 

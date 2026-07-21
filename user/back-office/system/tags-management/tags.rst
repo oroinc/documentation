@@ -58,7 +58,7 @@ From the Grid Page
 
 2. Click |Pencil-SVG| edit next to the selected entity record.
 
-3. Start typing in the tag name. If it does not yet exist in the system, (New Tag) will appear next to it in the drop down.
+3. Start typing in the tag name. If it does not yet exist in the system, (New Tag) will appear next to it in the drop-down.
 
    .. image:: /user/img/system/tags_management/new-tag.png
 

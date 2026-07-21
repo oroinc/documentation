@@ -66,8 +66,8 @@ To open display settings:
 8. In the **Sidebar Settings** section, enable or disable the left and/or right sidebar to keep your sticky notes
 and task lists:
 
-   * **Enable Left Sidebar** --- Select **Yes** to enable the user to see and utilize the left sidebar.
-   * **Enable Right Sidebar** --- Select **Yes** to enable the user to see and utilize the right sidebar.
+   * **Enable Left Sidebar** --- Select **Yes** to enable the user to see and use the left sidebar.
+   * **Enable Right Sidebar** --- Select **Yes** to enable the user to see and use the right sidebar.
 
 9. In the **Tag Settings** section, specify the taxonomy colors available in the system.
 

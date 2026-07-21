@@ -94,7 +94,7 @@ Custom Form Layout
 The layout engine from  OroLayoutBundle should be used to customize the form layout.
 Embedded forms use the `embedded_form` layout theme, and layout update files should be placed in the ``src\Resources\OroEmbeddedFormBundle\layouts\embedded_default`` directory.
 
-Layout update files can be placed in a subdirectory corresponding to a route name (e.g. `oro_embedded_form_submit`, `oro_embedded_form_success`) if it needs to be applied to a specific action only.
+Layout update files can be placed in a subdirectory corresponding to a route name (e.g., `oro_embedded_form_submit`, `oro_embedded_form_success`) if it needs to be applied to a specific action only.
 Please, refer to the :ref:`LayoutBundle <bundle-docs-platform-layout-bundle>` documentation for more information.
 
 Let's consider an example when we need to move the email field before the first name field on the embedded form:

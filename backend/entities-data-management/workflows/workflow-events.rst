@@ -259,7 +259,7 @@ This event is triggered when workflow attributes form is initialized
 Extending Workflow Configuration
 --------------------------------
 
-Sometimes, it's necessary to change the workflow configuration itself. This can be done using Workflow Definition Builder extensions. These extensions are called during the configuration-building process when loading workflow definitions. To create a new extension service, it must implement the ``WorkflowDefinitionBuilderExtensionInterface`` and be tagged with the ``oro.workflow.definition_builder.extension`` tag.
+Sometimes, it is necessary to change the workflow configuration itself. This can be done using Workflow Definition Builder extensions. These extensions are called during the configuration-building process when loading workflow definitions. To create a new extension service, it must implement the ``WorkflowDefinitionBuilderExtensionInterface`` and be tagged with the ``oro.workflow.definition_builder.extension`` tag.
 
 Let's create an example where a new attribute is added to the workflow and used at the transition form.
 

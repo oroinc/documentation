@@ -44,7 +44,7 @@ Extending a native application allows you to leverage existing features and func
 Import/Export-Based
 ^^^^^^^^^^^^^^^^^^^
 
-The Import/Export-based approach allows you to integrate third-party systems based on the file-exchange pattern. It makes integrating systems with different technologies and data formats easier. You only need to know a little about each system: the export format, import format, and data transformation logic. Import-export integration is typically easy to set up and maintain, which makes it accessible to non-Oro developers. You can also schedule imports and exports to automate data transfer.
+The Import/Export-based approach allows you to integrate third-party systems based on the file-exchange pattern. It makes integrating systems with different technologies and data formats easier. You only need to know a little about each system: the export format, import format, and data transformation logic. Import-export integrations can be configured and maintained by developers who are not familiar with OroCommerce. You can also schedule imports and exports to automate data transfer.
 
 .. hint::  **Things to Consider:**
 

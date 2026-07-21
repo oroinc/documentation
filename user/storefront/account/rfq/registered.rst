@@ -11,8 +11,8 @@ On the All Requests for Quote Page
 ----------------------------------
 
 1. Navigate to the :ref:`my account menu <frontstore-guide--navigation-user-menu>`.
-2. Click **Request for Quote** in the dropdown.
-3. Click **+New Quote** on the right of the page.
+2. Click **Request for Quote** in the drop-down
+3. Click **+New Quote** to the right of the page.
 
    .. image:: /user/img/storefront/rfq/CreateRFQ1.png
 
@@ -44,7 +44,7 @@ In the Request a Quote section, provide:
 
 In the Products section:
 
-* Select a product from the dropdown, or click |CompactList-SVG| to see a complete list of products.
+* Select a product from the drop-down , or click |CompactList-SVG| to see a complete list of products.
 * Enter the number of items/sets.
 * Click **Add Another Line** to provide additional quantities and price.
 * Give the target price.
@@ -63,7 +63,7 @@ In the Data Protection section, you may be required to accept mandatory consents
 From Quick Order Form
 ---------------------
 
-Registered users can also request a quote via the quick order widget in the top navigation bar. In the :ref:`quick order page <frontstore-guide--orders-quick-order>`, click **Get Quote** at the bottom of the page.
+Registered users can also request a quote via the quick order widget on the top navigation bar. In the :ref:`quick order page <frontstore-guide--orders-quick-order>`, click **Get Quote** at the bottom of the page.
 
 .. image:: /user/img/storefront/rfq/rfq-from-quick-order.png
 

@@ -24,7 +24,7 @@ To edit an entity:
 
 * **Icon** --- Select the icon from the list that will denote all entity records.
 
-* **Label** --- Type the label used to refer to the entity on the interface. The label must be at least 2 symbols long. Make sure that labels are unique and avoid duplicating them as this makes distinguishing between labels on the interface impossible.
+* **Label** --- Type the label used to refer to the entity in the interface. The label must be at least 2 symbols long. Make sure that labels are unique and avoid duplicating them as this makes distinguishing between labels in the interface impossible.
 
 * **Plural Label** --- Type the plural form of the label. It is used in titles of the menu items and grids related to the entity. The plural label must be at least 2 symbols long.
 
@@ -40,15 +40,15 @@ To edit an entity:
 
 * **Activities** --- Defines which activities users can add from the page of an entity record. When you add an activity from the entity record page, the entity record appears as a context for this activity. For more information about the activities, see the :ref:`Activities <user-guide-activities>` topic.
 
-    * **Calls** --- Select this checkbox to enable :ref:`logging calls <doc-activities-calls>` from the page of an entity record. Calls are logged via the **More actions** dropdown and are displayed in the **Activity** section on the page of an entity record.
-    * **Tasks** --- Select this checkbox to enable :ref:`adding tasks <doc-activities-tasks-actions-add-detailed>` from the page of an entity record. Tasks are added via the **More actions** dropdown and are displayed in the **Activity** section on the page of an entity record.
-    * **Conversations** --- Select this checkbox to enable starting conversation from the page of an entity record. To use the :ref:`conversation feature <configuration--guide--commerce--configuration--interactions>`, enable it in the system configuration first. Conversations can then be started via the **More actions** dropdown and are displayed in the **Activity** section on the page of an entity record.
+    * **Calls** --- Select this checkbox to enable :ref:`logging calls <doc-activities-calls>` from the page of an entity record. Calls are logged via the **More actions** drop-down and are displayed in the **Activity** section on the page of an entity record.
+    * **Tasks** --- Select this checkbox to enable :ref:`adding tasks <doc-activities-tasks-actions-add-detailed>` from the page of an entity record. Tasks are added via the **More actions** drop-down and are displayed in the **Activity** section on the page of an entity record.
+    * **Conversations** --- Select this checkbox to enable starting conversation from the page of an entity record. To use the :ref:`conversation feature <configuration--guide--commerce--configuration--interactions>`, enable it in the system configuration first. Conversations can then be started via the **More actions** drop-down and are displayed in the **Activity** section on the page of an entity record.
     * **Emails** --- Select this checkbox to enable :ref:`sending emails <user-guide-using-emails>` from the page of an entity record.
-    * **Notes** --- Select this checkbox to enable :ref:`adding notes <user-guide-add-note>` to an entity record. Notes are added via the **More actions** dropdown and are displayed in the **Activity** section on the page of an entity record.
+    * **Notes** --- Select this checkbox to enable :ref:`adding notes <user-guide-add-note>` to an entity record. Notes are added via the **More actions** drop-down and are displayed in the **Activity** section on the page of an entity record.
     * **Calendar Events** --- Select this checkbox to enable :ref:`adding calendar events <doc-activities-events>` from the page of an entity record.
 
     .. image:: /user/img/system/entity_management/more-actions-activities.png
-       :alt: The activities become available in the More actions dropdown of an entity record if they are enabled in the Communication & Collaboration section
+       :alt: The activities become available in the More actions drop-down of an entity record if they are enabled in the Communication & Collaboration section
 
 * **Enable Comments** --- Defines whether it is possible to leave comments on entity records. Select **Yes** from the list to enable adding comments to entity records. Select **No** from the list to restrict adding comments to entity records. The default value is **No**. Comments are displayed in the corresponding section on the page of an entity record. For more information on comments, see the topic on :ref:`Adding Comments <user-guide-activities-comments>`.
 
@@ -80,7 +80,7 @@ To edit an entity:
 
 * **Field Level ACL** — Select this checkbox to define that permissions can be set on individual fields of this entity. For more information about field level ACLs, see the :ref:`Entity Fields <doc-entity-fields>` topic.
 
-* **Show Restricted** — Select this checkbox if you enabled **Field Level ACL** and are going to disable editing of some fields of the entity records but still want users to review the disabled fields on the interface. Fields disabled for modifying will appear dimmed on the interface. For more information about field level ACLs, see the :ref:`Entity Fields <doc-entity-fields>` topic.
+* **Show Restricted** — Select this checkbox if you enabled **Field Level ACL** and are going to disable editing of some fields of the entity records but still want users to review the disabled fields in the interface. Fields disabled for modifying will appear dimmed in the interface. For more information about field level ACLs, see the :ref:`Entity Fields <doc-entity-fields>` topic.
 
 * **Webhook Accessible** — Define whether an entity can be used in :ref:`webhook notifications <back-office--integrations--webhooks>`. When set to **Yes**, the entity becomes available for webhook integration. The system generates webhook topics for the entity's supported events (such as create, update, and delete), allowing administrators or external systems to subscribe to those events and receive notifications when they occur. When set to **No**, the entity is excluded from webhook processing, and no webhook topics are generated for it.
 
@@ -110,7 +110,7 @@ To edit an entity:
 
 * **Include in Smart Insights** --- When set to *Yes*, this entity will be considered in :ref:`OroIQ Smart Insights <concept-guide--oroiq>` to generate analytics, trends, and contextual recommendations.
 
-7. Click **Save and Close** on the top right.
+7. Click **Save and Close** at the top right.
 
 8. Once you saved the entity, you must :ref:`update the schema <admin-guide-update-schema>` to apply the changes.
 
@@ -139,7 +139,7 @@ For example, by default you can create two contacts with the same information:
 
 *Jane Roe, born 1985-01-15, \sales@example.com*
 
-The system assigns them different IDs and treats them as different records, but they look the same on the interface and actually represent the same person.
+The system assigns them different IDs and treats them as different records, but they look the same in the interface and actually represent the same person.
 
 Now imagine that before adding contacts you have defined two sets of unique keys:
 
@@ -170,7 +170,7 @@ To manage unique keys:
 4. On the **Unique Keys** page, click **+Add**.
 5. Specify the required information:
    
-   * **Name** --- The set name on the interface. It is used just for reference.
+   * **Name** --- The set name in the interface. It is used just for reference.
    * **Key** --- The fields that will be included in this set. Hold the CTRL key to select several fields.
 
 6. If you need to add another set, repeat steps 4–5.

@@ -59,7 +59,7 @@ Step 1: Agreements
 
 At the Agreements step, you are required to accept all mandatory :ref:`consents <system-consent-management>` to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
 
-.. important:: Keep in mind that for the Agreements section to be displayed in the checkout, you need to :ref:`add the necessary consents to the list of enabled consents <admin--guide--commerce--configuration--customers--consents--enable--globally>` in the system configuration.
+.. important:: Keep in mind that for the Agreements section to be displayed at checkout, you need to :ref:`add the necessary consents to the list of enabled consents <admin--guide--commerce--configuration--customers--consents--enable--globally>` in the system configuration.
 
 
 .. image:: /user/img/system/workflows/checkout_with_consents/storefront_step_agreements.png

@@ -13,7 +13,7 @@ From the Product List
 1. In the main menu, navigate to **Products > Products**. The product list opens.
 2. Choose the product you want to modify, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcEdit| **Edit** icon.
 #. Change the product settings as required. For the description of the fields, see :ref:`Create a Product <doc--products--actions--create>` action description.
-#. Click **Save and Close** on the top right of the page.
+#. Click **Save and Close** at the top right of the page.
 
 Inline Editing
 ^^^^^^^^^^^^^^
@@ -47,9 +47,9 @@ From the Product Details
 
    The product view page opens.
 
-3. Click **Edit** on the top right of the page.
+3. Click **Edit** at the top right of the page.
 #. Change the product settings as required. For the description of the fields, see :ref:`Create a Product <doc--products--actions--create>` action description.
-#. Click **Save and Close** on the top right of the page.
+#. Click **Save and Close** at the top right of the page.
 
 
 .. include:: /include/include-images.rst

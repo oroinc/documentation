@@ -10,7 +10,7 @@ Cron
 
 More often than not, it is essential to run regular time-based background jobs in business applications. These jobs can be maintenance tasks, such as checking for updates or synchronizing data between integrated systems, and business-related tasks, such as generating reports, sending emails, or making timely-based shifts in tasks determined by your business process flows.
 
-The nature and algorithms of these timely-based tasks can be diverse and complicated, and the obvious way of implementing these jobs is to create specific program components.
+The nature and algorithms of these timely-based tasks can be diverse and complicated, and a good way of implementing these jobs is to create specific program components.
 
 Therefore, to strengthen the task to create and schedule such components, OroPlatform provides the :ref:`OroCronBundle <bundle-docs-platform-cron-bundle>` . With its help, it is considerably easier to run Symfony Console commands through cronjobs (on UNIX-based operating systems) or the Windows task scheduler.
 

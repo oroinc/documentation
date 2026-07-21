@@ -147,7 +147,7 @@ recommended to configure a supervisor to run the WebSocket server and ensure its
 For example, you can install |Supervisord| and configure it to run the WebSocket server with following configuration instructions:
 
 .. code-block:: none
-   :caption: Supervisord configuration file, e.g. /etc/supervisord.conf
+   :caption: Supervisord configuration file, e.g., /etc/supervisord.conf
 
     [program:oro_web_socket]
     command=php ./bin/console gos:websocket:server --env=prod

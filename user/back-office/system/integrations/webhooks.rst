@@ -44,7 +44,7 @@ After enabling webhook access for the required entity, create a webhook notifica
 To create a webhook from the back-office:
 
 1. Navigate to **System > Integrations > Webhooks** in the main menu.
-2. Click **Create Webhook** on the top right and provide the required information.
+2. Click **Create Webhook** at the top right and provide the required information.
 
 .. image:: /user/img/system/integrations/webhooks/webhook-integration.png
    :alt: Webhook integration settings in the back-office

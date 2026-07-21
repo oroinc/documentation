@@ -57,8 +57,8 @@ In the Display section, you can configure the following display options for a pa
 
 10. In the **Sidebar Settings** section, enable or disable the left and/or right sidebar to keep your sticky notes and task lists:
 
-   * **Enable Left Sidebar** --- Select **Yes** to enable the user to see and utilize the left sidebar.
-   * **Enable Right Sidebar** --- Select **Yes** to enable the user to see and utilize the right sidebar.
+   * **Enable Left Sidebar** --- Select **Yes** to enable the user to see and use the left sidebar.
+   * **Enable Right Sidebar** --- Select **Yes** to enable the user to see and use the right sidebar.
 
 11. In the **Reports Settings** section, configure the following settings:
 

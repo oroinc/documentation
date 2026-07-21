@@ -106,7 +106,7 @@ Glossary
       A metric that helps understand the :term:`Customer`. It predicts the potential benefit that the selling organization can obtain from a relationship with the customer in the long-term perspective. Lifetime sales value measures the total amount of money received from the customer based on orders placed and registered in the Oro application. When calculating a lifetime sales value, OroCommerce takes into account an average order amount, purchase frequency, and an average retention period.
 
    Payment Term
-      A Payment Term describes the conditions under which a seller will complete a sale (e.g. the period allowed to a buyer to pay off the amount due).
+      A Payment Term describes the conditions under which a seller will complete a sale (e.g., the period allowed to a buyer to pay off the amount due).
 
    Stock keeping unit (SKU)
       An SKU is a machine readable identifier of a product or service that helps inventory an item.
@@ -121,7 +121,7 @@ Glossary
       RFQs are used by sales representatives to assist customers and meet their needs through negotiations on a better price, more convenient quantities of products, or additional services. Once a customer submits a request for quotes in the Oro storefront, it immediately becomes available in the Oro back-office.
 
    Quote
-      A quote is used to negotiate with the customer (e.g. offer better price, more convenient quantities and additional services). A quote may be created in response to a customer request for quote, or as a result of the direct communication with the customer. Once the customer is happy with the offer in the quote and is ready to proceed with their order, they accept the quote.
+      A quote is used to negotiate with the customer (e.g., offer better price, more convenient quantities and additional services). A quote may be created in response to a customer request for quote, or as a result of the direct communication with the customer. Once the customer is happy with the offer in the quote and is ready to proceed with their order, they accept the quote.
 
    Shopping List
       Shopping lists are similar to shopping carts in most online stores. However, shopping lists have additional features. These include the ability to manage multiple shopping lists simultaneously, request quotes from a shopping list, submit orders from a shopping list, create as many shopping lists as needed, via the back-office, you can access any shopping list created in the Oro storefront.
@@ -197,7 +197,7 @@ Glossary
        * If you buy from 20 to 49 items, the price per item is lowered further to $40.49, and so on
 
    WYSIWYG (What You See Is What You Get)
-      The editor that enables to edit the content of a landing page, product page, and any other HTML-like web page, embed codes, media files, and widgets, and preview the results in the editor's framework directly.
+      The editor that enables you to edit the content of a landing page, product page, and any other HTML-like web page, embed codes, media files, and widgets, and preview the results in the editor's framework directly.
 
    Marketplace
       OroMarketplace is an open-source comprehensive solution for marketplaces with built-in OroCommerce Enterprise.

@@ -30,7 +30,7 @@ The following multiple grid views are available for opportunities:
 
 Open Opportunities grid is the default view.
 
-To change the grid view, click on the arrow icon on the right of **Open Opportunities** header and select the preferred grid view from the dropdown, as shown in the screenshot below.
+To change the grid view, click on the arrow icon to the right of **Open Opportunities** header and select the preferred grid view from the drop-down, as shown in the screenshot below.
 
 .. image:: /user/img/sales/opportunities/opp_grid.jpg
    :alt: Multiple grid views

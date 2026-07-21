@@ -14,7 +14,7 @@ oro:website-search:reindex
 
 This command performs reindexation of entities to be included in the storefront search index. It has optional parameters that allows reindexing specific type of entities and/or website.
 
-Reindexation might take long time for a big volume of data, so it would be good idea to run it scheduled (e.g. once a day).
+Reindexation might take long time for a big volume of data, so it would be good idea to run it scheduled (e.g., once a day).
 
 To reindex all entities, use the following command:
 

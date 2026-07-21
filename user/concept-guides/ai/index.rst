@@ -72,7 +72,7 @@ The Smart Agent also supports multi-website environments. Responses, product dat
 
 Once integrated by the Oro team and configured via the :ref:`back-office <admin-configuration-ai-agent-settings>`, any logged-in buyer can access the Oro AI Smart Agent by clicking its icon in the storefront. The agent interface includes three sections:
 
-* **Threads** – Saves previous inquiries for easy reference.
+* **Threads** – Saves previous inquiries for reference.
 * **Suggestions** – Displays example questions and prompts to guide users.
 * **Chat** – Enables real-time interaction through messaging.
 

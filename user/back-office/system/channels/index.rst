@@ -22,7 +22,7 @@ To create a channel:
 
 1. Navigate to **System > Channels** in the main menu.
  
-2. Click **Create Channel** on the top right.
+2. Click **Create Channel** at the top right.
 
 3. In the **General** section, specify the following channel details:
 

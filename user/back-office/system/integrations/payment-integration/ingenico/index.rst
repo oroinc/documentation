@@ -16,7 +16,7 @@ Configure Integration Settings in the Back-Office
 To configure the integration between Ingenico and OroCommerce, follow the steps outlined below:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu of the OroCommerce back-office
-2. Click **Create Integration** on the top right.
+2. Click **Create Integration** at the top right.
 3. Provide the following information in the form:
 
    .. image:: /user/img/system/integrations/ingenico/integration.png

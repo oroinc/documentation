@@ -111,7 +111,7 @@ Datagrid Widget
 ---------------
 
 Datagrid widget provide ability to render datagrid by name as widget.
-When datagrid is rendered inside widget it's rowClickAction will be disabled and replaced with dummy action. This action will trigger `grid-row-select` event on widget instance with data parameter of next structure:
+When datagrid is rendered inside widget, its rowClickAction will be disabled and replaced with dummy action. This action will trigger `grid-row-select` event on widget instance with data parameter of next structure:
 
 .. code-block:: javascript
 
@@ -143,7 +143,7 @@ Usage example:
     </div>
 
 
-Create js module with the handler definition ``your/row-selection/handler`` as shown in example below, don't forget to add this module to the list of `dynamic-imports` in `jsmodules.yml`
+Create js module with the handler definition ``your/row-selection/handler`` as shown in example below, do not forget to add this module to the list of `dynamic-imports` in `jsmodules.yml`
 
 .. code-block:: javascript
 

@@ -10,7 +10,7 @@ Currency configuration helps you:
 * Set the base currency.
 * Specify the conversion rate to and from the base currency.
 * Define the order used when the currencies are displayed to the storefront and back-office users.
-* Toggle between the currency display formats (currency code, e.g. USD, and currency symbol, e.g. $).
+* Toggle between the currency display formats (currency code, e.g., USD, and currency symbol, e.g., $).
 
 .. hint::
     Currency configuration is available on three levels, globally, :ref:`per organization <admin-configuration-currency-org>` and :ref:`per website <sys--websites--sysconfig--currency>`.
@@ -28,7 +28,7 @@ Multiple currency functionality in the Oro application is a useful tool for comp
 
 Currency configuration allows to:
 
-- Create and manage the list of currencies that will be available for selection in multi-currency fields (e.g. opportunity budget).
+- Create and manage the list of currencies that will be available for selection in multi-currency fields (e.g., opportunity budget).
 - Designate one currency as base.
 
 Think of a US-based business that is shipping certain goods to the UK. Its base currency is US dollars, which means that this is the currency that its business’s turnover is usually in. The contract between the US and the UK companies, however, is to be signed in British pounds for the total value of £20 000. When creating a new opportunity for the mentioned contract, a sales manager of the US company would need to add the **Budget Amount** in pounds rather than dollars.
@@ -71,7 +71,7 @@ The following sections are available within the **Currency** tab:
 |                        |                                                                                                                 |
 +------------------------+-----------------------------------------------------------------------------------------------------------------+
 | **Display format**     | This setting controls how the currencies will be displayed within the system, as a 3-letter ISO code            |
-|                        | (e.g. GBP) or as the currency symbol (e.g. £).                                                                  |
+|                        | (e.g., GBP) or as the currency symbol (e.g., £).                                                                |
 |                        |                                                                                                                 |
 |                        | To customize the **Display Format**:                                                                            |
 |                        |                                                                                                                 |
@@ -98,14 +98,14 @@ The information about the allowed currencies options is grouped in the following
 | **Base**               | A flag helps you to select the base currency.                                                               |
 |                        | Base currency is used by default to display totals, budgets, and amounts.                                   |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
-| **Currency Name**      | International name of the currency that follows ISO 4217 standard (e.g. US dollar).                         |
+| **Currency Name**      | International name of the currency that follows ISO 4217 standard (e.g., US dollar).                        |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
-| **Currency Code**      | International currency code that follows ISO 4217 standard (e.g. USD).                                      |
+| **Currency Code**      | International currency code that follows ISO 4217 standard (e.g., USD).                                     |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
-| **Currency Symbol**    | Graphical symbol that is used to denote a currency (e.g. $).                                                |
+| **Currency Symbol**    | Graphical symbol that is used to denote a currency (e.g., $).                                               |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 | **Rate From**          | The conversion rate from the selected currency to the base currency. Used to calculate transaction amounts  |
-|                        | (e.g. opportunity budget) in the base currency if they were entered in other currencies.                    |
+|                        | (e.g., opportunity budget) in the base currency if they were entered in other currencies.                   |
 |                        | Maximum precision is 10 digits.                                                                             |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 | **Rate To**            | The conversion rate from the base currency to the selected currency. Used to calculate new exchange rates   |
@@ -133,7 +133,7 @@ In the example below, the base currency is British pounds but the budget of the 
 
 When you close a deal (determined by opportunity status), the exchange rate for it becomes locked and will no longer take rate changes into account.
 
-Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work in the base currency irrespective of the currency that the deals were made in.
+Dashboard widgets with monetary values (e.g., Forecast) and monetary metrics work in the base currency irrespective of the currency that the deals were made in.
 
 .. image:: /user/img/system/config_system/widgets_base_currency.png
    :alt: Sample of dashboard widgets that provide metrics in US
@@ -150,7 +150,7 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
    a) Select the currency from the **Allowed Currencies** list and click **Add** next to it.
 
       .. image:: /user/img/system/config_system/currency_add.png
-         :alt: Selecting the currency from the dropdown list
+         :alt: Selecting the currency from the drop-down list
 
       The currency is appended to the top of the list.
 
@@ -165,7 +165,7 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
 
 5. To change the currency sort order, click and hold the |IcReorder| **Sort** icon, and drag the currency up or down the list.
 
-6. To roll back any changes to the currency settings, click **Reset** on the top right.
+6. To roll back any changes to the currency settings, click **Reset** at the top right.
 
 7. Click **Save Settings**.
 

@@ -19,8 +19,8 @@ To create an opportunity from a Commerce customer view page, ensure you have the
 
 1. Navigate to **Customers** in the main menu, and click **Commerce Customers**.
 #. Select your customer and open their view page.
-#. Click **More Actions** in the top right corner.
-#. Click **Create Opportunity** in the drop down.
+#. Click **More Actions** in the top-right corner.
+#. Click **Create Opportunity** in the drop-down.
 #. A **Create Opportunity form** will open with an **Account** field pre-filled in with your selected Commerce customer.
 
    .. image:: /user/img/sales/opportunities/commerce_customer_create_opp.jpg
@@ -38,7 +38,7 @@ To create an opportunity directly from an account view page:
 
 1. Navigate to **Customers > Accounts** in the main menu.
 2. Click on the required account in the grid.
-#. Navigate to **More Actions** in the top right corner.
+#. Navigate to **More Actions** in the top-right corner.
 #. Select **Create Opportunity** from the list.
 #. A **Create Opportunity form** will open with an **Account** field already filled in with your selected account.
 
@@ -79,7 +79,7 @@ As soon as a lead is ready to be qualified, you can convert it into an opportuni
    * **Contact** --- The person on the customer side who is directly related to the opportunity.
    * **Status** --- A stage in the process of a sale. **Open**, **Closed Won**, and **Closed Lost** are non-deletable system statuses. An admin can add and customize other statuses in the system configuration settings.
    * **Probability** --- The perceived probability of an opportunity being successfully closed. Probability is related to **Status**. For each status, a certain percentage of probability is pre-configured automatically. You can configure percentage for each status in the :ref:`system configuration <sys--configuration--crm--sales-pipeline--opportunities>`.
-   * **Budget Amount** --- Budget amount is the discussed potential deal value. For the Oro Application Enterprise Edition, you can select the currency of the deal. The currencies available in the dropdown will depend on your system configuration. You can find more on multi-currency functionality further below this guide.
+   * **Budget Amount** --- Budget amount is the discussed potential deal value. For the Oro Application Enterprise Edition, you can select the currency of the deal. The currencies available in the drop-down will depend on your system configuration. You can find more on multi-currency functionality further below this guide.
    * **Expected Close Date** --- Expected close date of the deal.
    * **Close Revenue** --- The amount actually received as the result of the deal. For example, if the predicted budget was $10 000, but the result of the deal was $500 lower than the budget amount, the close revenue would constitute $9 500.
    * **Close Reason** --- The reason for closing the deal, e.g., won, outsold, canceled, etc.
@@ -87,7 +87,7 @@ As soon as a lead is ready to be qualified, you can convert it into an opportuni
    * **Proposed Solution** --- Enter your offers and/or solutions for the customer if any were proposed.
    * **Additional comments** --- Enter additional comments if necessary.
 
-#. Provide the details in the **New Contact Information** section. Since the lead has fulfilled its purpose and is no longer required, a new contact will be created based on lead data entered in this form. It is possible to enter multiple phones, emails, and addresses for an opportunity. You can choose which phone, email, or address is primary. You can also delete the entered phone, email, or address by clicking X on the right of the corresponding fields.
+#. Provide the details in the **New Contact Information** section. Since the lead has fulfilled its purpose and is no longer required, a new contact will be created based on lead data entered in this form. It is possible to enter multiple phones, emails, and addresses for an opportunity. You can choose which phone, email, or address is primary. You can also delete the entered phone, email, or address by clicking X to the right of the corresponding fields.
 
    .. note:: Within the opportunity grid, only one phone, email, and address are displayed even if multiple phones, emails, and addresses are added.
 
@@ -104,7 +104,7 @@ Create an Opportunity Manually
 To create an opportunity manually:
 
 1. Navigate to **Sales > Opportunities** in the main menu.
-#. Click **Create Opportunity** in the top right corner.
+#. Click **Create Opportunity** in the top-right corner.
 #. Provide the following information:
 
    .. image:: /user/img/sales/opportunities/create_opp_new.jpg
@@ -123,11 +123,11 @@ To create an opportunity manually:
 
 
     .. image:: /user/img/sales/opportunities/status.jpg
-       :alt: Opportunity status dropdown
+       :alt: Opportunity status drop-down
 
   * **Probability** --- The perceived probability of an opportunity being successfully closed. Probability is related to **Status**. For each status, a certain percentage of probability is pre-configured automatically. You can configure percentage for each status in the :ref:`system configuration <sys--configuration--crm--sales-pipeline--opportunities>`.
 
-  * **Budget Amount** ---  A budget amount is the discussed potential deal value. For the Oro application Enterprise Edition, you can select the currency of the deal. The currencies available in the dropdown will depend on your system configuration. You can find more on multi-currency functionality further below this guide.
+  * **Budget Amount** ---  A budget amount is the discussed potential deal value. For the Oro application Enterprise Edition, you can select the currency of the deal. The currencies available in the drop-down will depend on your system configuration. You can find more on multi-currency functionality further below this guide.
   * **Expected Close Date** --- The deal's expected close date.
   * **Close Revenue** --- The amount actually received as the result of the deal. For example, if the predicted budget was $10 000, but the result of the deal was $500 lower than the budget amount, the close revenue would constitute $9 500.
   * **CLose Reason** --- The reason for closing the deal, e.g., won, outsold, canceled, etc.

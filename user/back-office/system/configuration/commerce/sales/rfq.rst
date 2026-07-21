@@ -11,7 +11,7 @@ Configure Global Request for Quote Settings
 
 On the RFQ configuration page, you can enable RFQ feature for the back-office and storefront, control RFQ Notification options and Guest RFQs.
 
-The rfq settings can be configured on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales--rfq--organization>`, and :ref:`per website <sys--conf--commerce--sales--rfq-notifications--website>`. Please note that website settings override organization, organization settings override system settings.
+The rfq settings can be configured on three levels: globally, :ref:`per organization <user-guide--system-configuration--commerce-sales--rfq--organization>`, and :ref:`per website <sys--conf--commerce--sales--rfq-notifications--website>`. Please note that website settings override organization, organization settings override system settings.
 
 To configure the request for quote settings globally:
 

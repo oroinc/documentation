@@ -32,7 +32,7 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout1.png
 
-2. Navigate to **Shopping List** on the top right of the page, and click **Checkout**.
+2. Navigate to **Shopping List** at the top right of the page, and click **Checkout**.
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout2.png
 

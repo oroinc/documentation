@@ -47,7 +47,7 @@ Synthetic Type
 ^^^^^^^^^^^^^^
 
 This menu update modifies or creates a new menu item if it does not already exist. Menu items affected by these menu updates are marked with the ``Oro\Bundle\NavigationBundle\Entity\MenuUpdateInterface::IS_SYNTHETIC`` extra option. Menu update is treated as `synthetic` if the `synthetic` field is set to `true`.
-A `synthetic` menu update is created when a user either submits the form, moves the menu item, or toggles the menu item display of an already existing menu item that can become `synthetic` in the back-office menu management UI. The ability of a menu item to produce a `synthetic` menu update can be controlled by a propagator, which is a class that implements the ``Oro\Bundle\NavigationBundle\MenuUpdate\Propagator\ToMenuUpdate\MenuItemToMenuUpdatePropagatorInterface`` interface. This type is not used out-of-the-box in OroPlatform.
+A `synthetic` menu update is created when a user either submits the form, moves the menu item, or toggles the menu item display of an already existing menu item that can become `synthetic` in the back-office menu management UI. The ability of a menu item to produce a `synthetic` menu update can be controlled by a propagator, which is a class that implements the ``Oro\Bundle\NavigationBundle\MenuUpdate\Propagator\ToMenuUpdate\MenuItemToMenuUpdatePropagatorInterface`` interface. This type is not used out of the box in OroPlatform.
 
 Unlike the `system` menu update, the `synthetic` one can create a new menu item if the target one is missing, and in contrast to the `custom` menu update, the `synthetic` one can be created only from a `system` menu item (e.g., by moving the menu item or toggling the menu item display using Show / Hide buttons in the back-office menu management UI).
 
@@ -61,7 +61,7 @@ After all menu updates are applied, the menu builder dispatches the ``Oro\Bundle
 Menu Update Applier
 -------------------
 
-``Oro\Bundle\NavigationBundle\MenuUpdate\Applier\MenuUpdateApplier`` is responsible for applying a specific Menu Update to menu: create, update or move a specific menu item. The responsibility of applying other data (e.g. title, description, etc.) is delegated to the propagator  ``Oro\Bundle\NavigationBundle\MenuUpdate\Propagator\ToMenuItem\CompositePropagator``.
+``Oro\Bundle\NavigationBundle\MenuUpdate\Applier\MenuUpdateApplier`` is responsible for applying a specific Menu Update to menu: create, update or move a specific menu item. The responsibility of applying other data (e.g., title, description, etc.) is delegated to the propagator  ``Oro\Bundle\NavigationBundle\MenuUpdate\Propagator\ToMenuItem\CompositePropagator``.
 
 ``MenuUpdateApplier`` stores the following details of the menu update in context object ``Oro\Bundle\NavigationBundle\MenuUpdate\Applier\Model\MenuUpdateApplierContext``:
 

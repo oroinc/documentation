@@ -172,9 +172,9 @@ To configure Redis connections, including types, instead of:
        redis_dsn_session:       'redis://127.0.0.1:6379/0'
        redis_dsn_cache:         'redis://127.0.0.1:6380/0'
        redis_dsn_doctrine:      'redis://127.0.0.1:6380/1'
-       redis_dsn_session_type:  'standalone' #optional, current configuration is applied if it's not set
-       redis_dsn_cache_type:    'standalone' #optional, current configuration is applied if it's not set
-       redis_dsn_doctrine_type: 'standalone' #optional, current configuration is applied if it's not set
+       redis_dsn_session_type:  'standalone' #optional, current configuration is applied if it is not set
+       redis_dsn_cache_type:    'standalone' #optional, current configuration is applied if it is not set
+       redis_dsn_doctrine_type: 'standalone' #optional, current configuration is applied if it is not set
 
 Use:
 
@@ -185,7 +185,7 @@ Use:
    ORO_REDIS_DOCTRINE_DSN=redis://127.0.0.1:6379/2
    ORO_REDIS_LAYOUT_DSN=redis://127.0.0.1:6379/3
 
-When configuring a Redis Sentinel or Cluster connection, it's important to use the correct DSN format.
+When configuring a Redis Sentinel or Cluster connection, use the correct DSN format.
 
 For Sentinel connections, use the following format:
 
@@ -225,7 +225,7 @@ You can now use the ``ORO_MQ_DSN`` environment variable:
 
    ORO_MQ_DSN=amqp://guest:guest@localhost:5672/%2Fmaster
 
-When configuring a virtual host (vhost), it's important to note that the vhost must be URL encoded. If no vhost is provided, the default value of ``/`` will be used. As an example, if the vhost is ``/master``, the corresponding url encoded vhost value is ``%2Fmaster``, and if the vhost is ``master``, the url encoded value is ``master``.
+When configuring a virtual host (vhost), ensure that the vhost is URL encoded. If no vhost is provided, the default value of ``/`` will be used. As an example, if the vhost is ``/master``, the corresponding url encoded vhost value is ``%2Fmaster``, and if the vhost is ``master``, the url encoded value is ``master``.
 
 Message Queue Consumer Timeouts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

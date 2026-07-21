@@ -12,7 +12,7 @@ The process of purchasing through PayPal Payments Pro or Payflow Gateway include
 
 For this IP check to work, the bundle has to be able to resolve the IP address from the request that is coming from a PayPal server. This is usually the case in the production environment when you have your server exposed to the internet.
 
-To test the payments on the developer machine, you can use some kind of tunneling service, for example |Ngrok|. However, there can be some issues with the tunneling services. They tend to put the original request IP address in the header (e.g., `X-Forwarded-For`), and Symfony doesn't resolve this address as client IP by default.
+To test the payments on the developer machine, you can use some kind of tunneling service, for example |Ngrok|. However, there can be some issues with the tunneling services. They tend to put the original request IP address in the header (e.g., `X-Forwarded-For`), and Symfony does not resolve this address as client IP by default.
 
 Luckily, there is a way for Symfony to do that by enabling trusted proxies. For the detailed explanation, refer to |How to Configure Symfony to Work behind a Load Balancer or a Reverse Proxy|.
 

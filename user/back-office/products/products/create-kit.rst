@@ -13,7 +13,7 @@ To create a new product kit:
 
 1. Navigate to **Products > Products** in the main menu.
 2. Click **Create Product**.
-3. Select the **Kit** product type from the dropdown.
+3. Select the **Kit** product type from the drop-down.
 
    .. image:: /user/img/products/products/kits/product-type-kit.png
       :alt: Selection of the kit product type

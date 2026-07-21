@@ -71,7 +71,7 @@ To create a new order from the back-office:
    .. image:: /user/img/sales/orders/order-customer-documents.png
       :alt: Illustration of the documents uploaded via back-office on the customer side in the storefront
 
-11. To save the order, click **Save** on the top right of the page.
+11. To save the order, click **Save** at the top right of the page.
 
 .. hint::
 
@@ -94,10 +94,10 @@ To create an order from a shopping list:
 
 1. Navigate to **Sales > Shopping lists** in the main menu.
 2. Open the selected shopping list from the grid.
-3. Click **Create Order** in the top right corner of the page.
+3. Click **Create Order** in the top-right corner of the page.
 
    .. image:: /user/img/sales/orders/CreateOrderFormSL.png
-      :alt: Click the Create Order button on the top right
+      :alt: Click the Create Order button at the top right
       :class: with-border
 
 4. The Create Order form opens, prepopulated with the information from the shopping list:
@@ -125,10 +125,10 @@ To create an order based on a request for a quote (RFQ):
 
 1. Navigate to **Sales > Requests for Quote** in the main menu.
 2. Open the selected RFQ from the grid.
-3. Click **Create Order** in the top right corner of the RFQ page.
+3. Click **Create Order** in the top-right corner of the RFQ page.
 
    .. image:: /user/img/sales/orders/CreateOrderFromRFQ.png
-      :alt: Click Create Order on the top right
+      :alt: Click Create Order at the top right
       :class: with-border
 
 The Create Order form opens prefilled with the information from the RFQ:
@@ -163,7 +163,7 @@ Before using AI Smart Order Automation, make sure that:
 
 .. image:: /user/img/concept-guides/ai/convert-to-draft-order.png
 
-When the Smart Order functionality is configured and a mailbox is set up, any incoming emails sent by buyers to the designated inbox with purchase order attachments are automatically processed. The system scans the attachments and, upon successful conversion, sends a confirmation email to the same address. This email includes a link to the newly created draft order. To view your inbox, navigate to **Your Name > My Emails** in the top right corner of the back-office.
+When the Smart Order functionality is configured and a mailbox is set up, any incoming emails sent by buyers to the designated inbox with purchase order attachments are automatically processed. The system scans the attachments and, upon successful conversion, sends a confirmation email to the same address. This email includes a link to the newly created draft order. To view your inbox, navigate to **Your Name > My Emails** in the top-right corner of the back-office.
 
 .. image:: /user/img/concept-guides/ai/so-automation-steps.png
 

@@ -12,7 +12,7 @@ To enable or disable a user in the Oro application:
 1. Navigate to **System > User Management > Users**.
 2. In record table, click on the name of the selected user to open their page.
 
-3. On page of the selected user, click |IcActivate| **Enable User**/ |IcBan| **Disable User** on the top right.
+3. On page of the selected user, click |IcActivate| **Enable User**/ |IcBan| **Disable User** at the top right.
 
    .. image:: /user/img/system/user_management/user_enable.png
 
@@ -48,7 +48,7 @@ To activate a user:
 
 1. Navigate to **System > User Management > Users** in the main menu.
 2. Click on the selected user once to open their page.
-3. On the user page, click the **Activate** on the top right.
+3. On the user page, click the **Activate** at the top right.
 
    .. image:: /user/img/system/user_management/user_activate.png
 
@@ -70,7 +70,7 @@ To delete a user from the system:
 
 3. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
 
-   .. note:: Alternatively, you can delete a user from their user page by clicking the **Delete** on the top right.
+   .. note:: Alternatively, you can delete a user from their user page by clicking the **Delete** at the top right.
 
    .. image:: /user/img/system/user_management/user_page_delete.png
 
@@ -86,7 +86,7 @@ You can export all user records into a .csv file. The exported file will contain
 To export user records:
 
 1. Navigate to **System > User Management > Users**.
-2. On the page of all users, click **Export** on the top right.
+2. On the page of all users, click **Export** at the top right.
 3. When the export job finishes, you will receive a notification to your primary email address.
 
    .. image:: /user/img/system/user_management/users_grid_export.png
@@ -102,7 +102,7 @@ You can change the password for a specific user on their profile page in the **M
 
 1. Navigate to **System > User Management > Users**.
 2. On the page of all users, click on the selected user to open their page.
-3. On the user page, click **More Actions** on the top right.
+3. On the user page, click **More Actions** at the top right.
 4. Click |IcChangePassword| **Change Password** to open a new dialog and provide a new password. Alternatively, you can click the **Suggest Password** link to generate a secure random password. To see / hide  the entered password, click the |IcShow| **Show**/|IcHide| **Hide** icon next to the **New password** field. Once a new password is provided, a reset password email is sent to this user.
 
      .. image:: /user/img/system/user_management/user_change_password.png
@@ -166,7 +166,7 @@ To add a new OAuth application in the back-office:
 
 1. Navigate to **System > User Management > Users** in the main menu.
 2. Click on a user name that you want to add an OAuth application to.
-3. In the **OAuth Applications** section, click **Add Application** on the top right and provide the following details in the pop-up dialog:
+3. In the **OAuth Applications** section, click **Add Application** at the top right and provide the following details in the pop-up dialog:
 
    .. image:: /user/img/getting_started/user_menu/oauth/oauth_tab.png
       :alt: Add an oauth application
@@ -179,14 +179,14 @@ To add a new OAuth application in the back-office:
 
 4. Click **Create**.
 
-A corresponding notification is sent to the user's primary email address, the owner of the OAuth application. You can change the default recipient, localization, or email contents if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
+A corresponding notification is sent to the user's primary email address, the owner of the OAuth application. You can change the default recipient, localization, or email contents if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out of the box in the system configuration.
 
 Once the application is created, you are provided with a Client ID and a Client Secret. Click on the |IcCopy| icon to copy the credentials to the clipboard.
 
 .. image:: /user/img/getting_started/user_menu/oauth/oauth_credentials.png
    :alt: OAuth credentials
 
-.. important:: For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe to access it later.
+.. important:: For security reasons, the Client Secret is displayed only once, immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe to access it later.
 
 You can add as many applications as you need for any of your existing organizations. All added applications are displayed in the grid, and you can filter them by name, organization, and status.
 

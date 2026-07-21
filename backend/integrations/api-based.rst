@@ -134,7 +134,7 @@ In the next step, we will use the OroApiClient prepared beforehand to create a w
    if __name__ == '__main__':
        sync_customers()
 
-To transfer data between different systems using middleware, you can choose the programming language of your choice and utilize pre-existing workflow automation frameworks to construct the integration. This example emphasizes flexibility, allowing you to accomplish your goals efficiently and effectively.
+To transfer data between different systems using middleware, you can choose the programming language of your choice and use pre-existing workflow automation frameworks to construct the integration. This example emphasizes flexibility, allowing you to accomplish your goals efficiently and effectively.
 
 Related Articles
 ----------------

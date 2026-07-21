@@ -61,18 +61,18 @@ The process of merging is described in detail in the :ref:`Merging Accounts <use
 Save Updated Records
 --------------------
 
-To save the record, you have created or updated, click one of the options in the Save menu on the top right:
+To save the record, you have created or updated, click one of the options in the Save menu at the top right:
 
 1. **Save** --- Save the changes but remain on the same page. Use this option to make more changes to the record configuration.
 2. **Save and Close** --- Save the changes and close the page. Once saved and closed, you are redirected to the record page.
 3. **Save and New** --- Save the changes for the record you are creating/updating, and create/update another one straight away.
 
-.. note:: To discard the changes, click **Cancel** on the top right.
+.. note:: To discard the changes, click **Cancel** at the top right.
 
 Review Record History
 ---------------------
 
-You can review the history of a specific record if you have the corresponding permissions. Click on the **Change History** link on the top right of the record page to open the dialog window. If the record has been modified, you will see who, how, and when updated it.
+You can review the history of a specific record if you have the corresponding permissions. Click on the **Change History** link at the top right of the record page to open the dialog window. If the record has been modified, you will see who, how, and when updated it.
 
 .. image:: /user/img/getting_started/records/grids/view_history.png
    :alt: Open the dialog window by clicking on the change history link
@@ -86,7 +86,7 @@ Share Records
 
 Sharing records is convenient when you need assistance from other system users who might have no access to the related record. For example, suppose there is a task related to an opportunity that a person from a marketing team should perform. Still, the marketing associates have no access to the opportunity records. In that case, the sales manager can share the record with a specific user (or group of users).
 
-To share a record, click **Share** on the top right of the record page and enter the user's name to share the record with in the corresponding **Share with** field. You can also click the list icon to select such user(s).
+To share a record, click **Share** at the top right of the record page and enter the user's name to share the record with in the corresponding **Share with** field. You can also click the list icon to select such user(s).
 
 .. toctree::
    :hidden:

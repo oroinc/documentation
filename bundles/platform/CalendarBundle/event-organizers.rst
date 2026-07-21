@@ -12,7 +12,7 @@ Each CalendarEvent object should have information about its owner. This data is 
 
 * ``organizerDisplayName`` --- defines the name that shows in the UI. If not set, the value is copied from the current user's email.
 
-* ``organizerUserId`` --- is organizer email was matched with the system user email, his user profile will be linked.
+* ``organizerUserId`` --- links the organizer to the corresponding user profile if the organizer email matches a system user email.
 
 Keep in mind that once set, these fields cannot be changed.
 

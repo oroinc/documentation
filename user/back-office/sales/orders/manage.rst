@@ -41,7 +41,7 @@ The following information about orders is available:
 
 .. hint::
 
-   To manage the columns displayed within the grid, click |IcConfig| on the right of the grid and select the information you wish to be displayed.
+   To manage the columns displayed within the grid, click |IcConfig| to the right of the grid and select the information you wish to be displayed.
 
    To handle the significant volume of data, use the page switcher, increase the 'view per page' value, or use |IcFilter| filters to narrow down the list to the needed information.
 
@@ -55,7 +55,7 @@ At the top right, you can see the name of the view. The views are defined by def
 To change the view, click the drop-down next to the view name and select the required view.
 
 .. image:: /user/img/sales/orders/orders_views.png
-   :alt: Required view options available in the dropdown next to the view name
+   :alt: Required view options available in the drop-down next to the view name
 
 You can also create and save new views for future use.
 
@@ -69,13 +69,13 @@ To edit an order:
 #. Navigate to **Sales > Orders** in the main menu.
 #. Choose an order in the list, hover over the |IcMore| **More Options** menu to the right of the item, and click |IcEdit| to start editing its details.
 
-   Alternatively, click the order to open its details. On the order details page, click the **Edit** button on the top right.
+   Alternatively, click the order to open its details. On the order details page, click the **Edit** button at the top right.
 
 #. Update the required information. See :ref:`Create an Order from Scratch <user-guide--sales--orders--create>` and :ref:`Manage Promotions in Orders <user-guide--sales--orders--promotions>` topics for detailed information on the available options.
 
    If the order contains :ref:`product kit(s) <products--products--create-product-kit>`, you can add items that qualify for it to the order.
 
-#. Click **Save** on the top right of the page.
+#. Click **Save** at the top right of the page.
 
 .. _user-guide--sales--orders--reorder:
 
@@ -89,11 +89,11 @@ To re-order an existing order:
 #. Navigate to **Sales > Orders** in the main menu.
 #. Choose an order in the list, hover over the |IcMore| **More Options** menu to the right of the item, and click **Re-order** to start a new order from the existing one.
 
-   Alternatively, click the order to open its details. On the order details page, click the **Re-order** button on the top right.
+   Alternatively, click the order to open its details. On the order details page, click the **Re-order** button at the top right.
 
 #. Update the required information. See :ref:`Create an Order from Scratch <user-guide--sales--orders--create>` and :ref:`Manage Promotions in Orders <user-guide--sales--orders--promotions>` topics for detailed information on the available options.
 
-#. Click **Save** on the top right of the page.
+#. Click **Save** at the top right of the page.
 
 Schedule a Recurring Order
 --------------------------
@@ -138,7 +138,7 @@ Delete an Order from the Order View Page
 
 1. In the main menu, navigate to **Sales > Orders**. The order list opens.
 2. Click the order that you need to delete. The order view page opens.
-3. Click **Delete** on the top right.
+3. Click **Delete** at the top right.
 4. In the confirmation dialog, click **Yes, Delete**.
 
 .. _doc--orders--actions--delete--multiple:

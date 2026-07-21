@@ -28,9 +28,9 @@ To configure storefront fuzzy search settings:
    * **Enable Fuzzy Search** --- enables fuzzy search in the appropriate area. This option is disabled by default.
    * **Error Tolerance** --- sets how many errors in each word the application ignores. Possible values are:
 
-     * One Error (default) -- one error per word is tolerated
-     * Two errors -- two errors per word are tolerated
-     * Request based -- tolerance depends on the length of the word. One error for short words (up to 5 characters) and two errors for long words (6+ characters).
+     * One Error (default) --- one error per word is tolerated
+     * Two errors --- two errors per word are tolerated
+     * Request based --- tolerance depends on the length of the word. One error for short words (up to 5 characters) and two errors for long words (6+ characters).
 
    * **Tolerance Starts From** --- sets a threshold for error-tolerant search usage. The default value is *4*, which means that the application uses the exact match search for words with 1-3 characters and an error-tolerant search for words with 4+ characters.
    * **Tolerance Exclusions** --- allows setting regular expression for words that must not use error-tolerant search; the exact match search is used instead. This option is beneficial for SKUs, manufacturer IDs, and other identifiers that may have similar values and lead to false-positive results when the error-tolerant search is used.

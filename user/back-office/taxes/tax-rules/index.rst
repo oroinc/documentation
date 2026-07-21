@@ -41,7 +41,7 @@ To view tax rule details:
    .. image:: /user/img/taxes/tax_rules_view.png
       :alt: View the tax rule details
 
-You can |IcEdit| **Edit** or |Trash-SVG| **Delete** the tax rule by clicking the required button on the top right.
+You can |IcEdit| **Edit** or |Trash-SVG| **Delete** the tax rule by clicking the required button at the top right.
 
 .. _tax-rules-edit:
 

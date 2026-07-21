@@ -17,7 +17,7 @@ At the organization level, it is possible only to remove unnecessary currencies,
 To be able to manage currencies and change the rates:
 
 -  Navigate to **System > User Management > Organizations**.
--  Select your organization and click **Configuration** in the top right corner.
+-  Select your organization and click **Configuration** in the top-right corner.
 -  In the left menu, click **General Setup > Currency**.
 -  Unlock the currency grid by clearing the **Use System** checkbox.
 -  Enter the numbers in the corresponding field of the **Rate From/To** columns.

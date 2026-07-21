@@ -13,7 +13,7 @@ To create a guest quote from the received RFQ:
 
 1. Navigate to **Sales > Requests for Quotes** in the main menu.
 2. Click on the required RFQ to open its page.
-3. Click **Create Quote** on the top right.
+3. Click **Create Quote** at the top right.
 
    .. image::/user/img/storefront/quotes/create_quote_from_rfq_guest.png
       :alt: Create a new quote from an RFQ
@@ -24,7 +24,7 @@ To create a guest quote from the received RFQ:
    .. image:: /user/img/sales/quotes/quote_linked_to_rfq.png
       :alt: Request field in the quote information section
 
-6. If the Back-Office Quote with Approvals is activated, click **Send to Customer** on the top right. Otherwise, click **Notify Customer** to send them an email.
+6. If the Back-Office Quote with Approvals is activated, click **Send to Customer** at the top right. Otherwise, click **Notify Customer** to send them an email.
 
    In the displayed form, the template to be applied is by default set to *quote_email_link_guest*, and the link to the guest quote is provided in the text body.
 

@@ -17,7 +17,7 @@ To configure email settings per website:
 
 4. The following options are available:
 
-   * **Sender Email** --- The **From** address which the recipients will see, e.g. no-reply@example.com
+   * **Sender Email** --- The **From** address which the recipients will see, e.g., no-reply@example.com
    * **Sender Name** --- The sender name displayed to recipients.
 
   Clear the **Use Organization** checkbox to change the default options, and provide new values.

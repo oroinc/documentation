@@ -138,7 +138,7 @@ Using Logger
 Message
 -------
 
-Log message should contain a short description of the action that happened. The data that define action context (e.g. who triggered the action, what the execution result was, etc.) should be placed in context variables (second parameter in LoggerInterface methods).
+Log message should contain a short description of the action that happened. The data that define action context (e.g., who triggered the action, what the execution result was, etc.) should be placed in context variables (second parameter in LoggerInterface methods).
 
 Do not use sprintf() to add variables to the message. Use placeholders instead and put variables into the context. This way, the message stays readable for both human and machine.
 
@@ -177,14 +177,14 @@ Use LogLevel::ALERT when the situation calls for an immediate action. For exampl
 Critical
 ^^^^^^^^
 
-Use LogLevel::CRITICAL to register any critical conditions. For example, you can log a critical message when the application component became unavailable, or when you are handling an unexpected exception that should not be displayed to a user (e.g. 500 Internal server error).
+Use LogLevel::CRITICAL to register any critical conditions. For example, you can log a critical message when the application component became unavailable, or when you are handling an unexpected exception that should not be displayed to a user (e.g., 500 Internal server error).
 
 Error
 ^^^^^
 
 Use LogLevel::ERROR for logging runtime errors that do not require immediate action but should typically be logged and monitored for a further investigation. Potential triggers for logging an error are the following:
 
-* An expected or scheduled operation was not executed (e.g. a batch action that failed before processing any records; external API is not responding; external API response is unexpected and cannot be handled by the system).
+* An expected or scheduled operation was not executed (e.g., a batch action that failed before processing any records; external API is not responding; external API response is unexpected and cannot be handled by the system).
 * An unexpected exception occurred but did not lead to unwanted messages shown to the user (like 500 Internal server error).
 
 Warning
@@ -192,7 +192,7 @@ Warning
 
 Use LogLevel::WARNING to capture disturbing situations that are not errors:
 
-* Incomplete operation processing (e.g. only a portion of the batch was processed).
+* Incomplete operation processing (e.g., only a portion of the batch was processed).
 * Expected or handled exceptions that record a non-optimal or inefficient operation, for example:
 
   * Deprecated API is used.

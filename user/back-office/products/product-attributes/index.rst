@@ -14,7 +14,7 @@ For example, when your OroCommerce store sells TVs and T-shirts, these items sha
 
 .. note:: You can manage product attributes per organization. Any changes made to product attributes within one organization do not affect the attributes of others. You can use the attributes created in the global organization in other organizations, but **only a system administrator of the Global organization can edit them**.
 
-Product attributes in OroCommerce fall into two categories: custom attributes, which you create yourself, and system (global) attributes, which are provided out-of-the box. System attributes are shared across all product families and cannot be removed. However, you can reorganize how they are grouped within a family. By default, OroCommerce includes the following system product attributes:
+Product attributes in OroCommerce fall into two categories: custom attributes, which you create yourself, and system (global) attributes, which are provided out of the box. System attributes are shared across all product families and cannot be removed. However, you can reorganize how they are grouped within a family. By default, OroCommerce includes the following system product attributes:
 
 .. image:: /user/img/products/product_attributes/ProductAttributes_oob.png
    :alt: The list of the default system product attributes
@@ -106,7 +106,7 @@ Proceed to create the attribute as described below.
    "**File**","
 
    * **File Size** --- Enter the maximum allowed file size.
-   * **Allowed MIME Types** --- Select one or more allowed MIME types from the dropdown.
+   * **Allowed MIME Types** --- Select one or more allowed MIME types from the drop-down.
    * **Use DAM** --- Select whether to enable the use of the Digital Asset Manager for this field.
    * **ACL Protected** --- Select whether to :ref:`enable ACL check <backend-security-bundle-introduction>` for attachments.
    * **File Applications** --- Select where the file loaded to this field is going to be accessible. Possible applications are default and commerce, where default means back-office and commerce means storefront. If the files or images that you want to upload through this field are going to be accessed only from back-office, then select default; if from both back-office and storefront, then select both default and commerce. Please be aware that this setting is not used when ACL Protected is set to No."
@@ -115,7 +115,7 @@ Proceed to create the attribute as described below.
    * **File Size** --- Enter the maximum allowed file size.
    * **Thumbnail Width** --- Enter the width in pixels.
    * **Thumbnail Height** --- Enter thumbnail height in pixels.
-   * **Allowed MIME Types** --- Select one or more allowed MIME types from the dropdown.
+   * **Allowed MIME Types** --- Select one or more allowed MIME types from the drop-down
    * **Use DAM** --- Select whether to enable the use of the Digital Asset Manager for this field.
    * **ACL Protected** --- Select whether to enable ACL check for attachments.
    * **File Applications** --- Select where the image loaded to this field is going to be accessible. Possible applications are default and commerce, where default means back-office and commerce means storefront. If the files or images that you want to upload through this field are going to be accessed only from back-office, then select default; if from both back-office and storefront, then select both default and commerce. Please be aware that this setting is not used when ACL Protected is set to No."
@@ -134,7 +134,7 @@ Proceed to create the attribute as described below.
    "**Multiple Files**","
 
    * **File Size** --- Enter the maximum allowed file size.
-   * **Allowed MIME Types** --- Select one or more allowed MIME types from the dropdown.
+   * **Allowed MIME Types** --- Select one or more allowed MIME types from the drop-down
    * **Maximum Number of Files** --- Enter the maximum number of files allowed to be uploaded.
    * **Use DAM** --- Select whether to enable the use of the Digital Asset Manager for this field.
    * **ACL Protected** --- Select whether to enable ACL check for attachments.
@@ -144,7 +144,7 @@ Proceed to create the attribute as described below.
    * **File Size** --- Enter the maximum allowed file size.
    * **Thumbnail Width** --- Enter the width in pixels.
    * **Thumbnail Height** --- Enter thumbnail height in pixels.
-   * **Allowed MIME Types** --- Select one or more allowed MIME types from the dropdown.
+   * **Allowed MIME Types** --- Select one or more allowed MIME types from the drop-down
    * **Maximum Number of Files** --- Enter the maximum number of images allowed to be uploaded.
    * **Use DAM** --- Select whether to enable the use of the Digital Asset Manager for this field.
    * **ACL Protected** --- Select whether to enable ACL check for attachments.
@@ -243,7 +243,7 @@ Proceed to create the attribute as described below.
    * By default, *Yes and Display* is selected which makes the product attribute available and visible in the grid.
    * The *Yes and do not display* option means that the product attribute is hidden by default, but the visibility may be toggled in the grid settings.
    * The *Yes as Mandatory* option adds it permanently to all grid views and disables visibility toggle.
-   * *No* -- The product attribute visibility and appearance order cannot be toggled in the grid settings"
+   * *No* --- The product attribute visibility and appearance order cannot be toggled in the grid settings"
    "**Show Grid Filter**","Select *Yes* to display the filter for the product attribute on the user interface."
    "**Grid Order**","Defines the order of the product attributes in the product grid. The product attributes with a smaller value of the grid order number will be displayed before the attributes with a bigger value."
    "**Show On View**","Select *Yes* if you wish to have this product attribute displayed on the product view page."

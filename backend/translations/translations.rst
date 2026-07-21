@@ -20,7 +20,7 @@ Standard Symfony Translator
     :header: "Pros", "Cons"
     :widths: 15,15
 
-    "Does not require additional implementation and can be used in Symfony framework out-of-the-box.", "Cannot be applied to translate dynamic content in the application."
+    "Does not require additional implementation and can be used in Symfony framework out of the box.", "Cannot be applied to translate dynamic content in the application."
 
 The application you are developing is highly likely to contain some static content that is independent of any dynamic
 application data, is always displayed in the same place, and never changes. Examples of such content are labels of field
@@ -251,8 +251,8 @@ LocalizedFallbackValue Entity from OroLocaleBundle
     :widths: 15,15
 
     " * The translatable fields can be translated for each `Localization` available in the application.
-     * It is easy to provide values for the `Localizations` in the entity form without changing the actual UI language.", "
-     * Translated values cannot be used in the datagrids for filtering and sorting out-of-the-box.
+     * You can provide values for the `Localizations` in the entity form without changing the actual UI language.", "
+     * Translated values cannot be used in the datagrids for filtering and sorting out of the box.
      * Additional implementation is required to render translated values for the actual `Localization`."
 
 UI language is incorporated into the localization entity. You can have several localizations in the application with the

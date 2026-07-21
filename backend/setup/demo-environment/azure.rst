@@ -15,7 +15,7 @@ To deploy the solution, follow the steps below:
 1. Navigate to |Azure Marketplace| and search for OroCommerce VM in the search bar.
 
    .. image:: /img/backend/setup/azure/search.png
-      :alt: OroCRM VM or OroCommerce VM in Azure Marketplace search dropdown
+      :alt: OroCRM VM or OroCommerce VM in Azure Marketplace search drop-down
 
 2. Once you select the application type to deploy, click **GET IT NOW** under the application logo on your left.
 3. In the pop-up dialog, select the software plan with demo data. This provides all the necessary information for you to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master, and web catalogs.

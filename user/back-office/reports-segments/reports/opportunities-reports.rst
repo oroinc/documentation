@@ -6,7 +6,7 @@
 Opportunities Reports
 =====================
 
-There are three out-of-the-box :ref:`reports for opportunities <user-guide-opportunities-reports>`:
+There are three built-in :ref:`reports for opportunities <user-guide-opportunities-reports>`:
 
 * :ref:`Opportunities By Status <user-guide-opportunities-reports--opportunities-by-status>`
 * :ref:`Won Opportunities By Period <user-guide-opportunities-reports--won-opportunities-by-period>`

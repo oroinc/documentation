@@ -16,7 +16,7 @@ Create a Seller Registration Request
 To create a new seller registration request:
 
 1. Navigate to **Sales > Seller Registration Requests** in the back-office.
-2. Click **Create Seller Registration Request** on the top right.
+2. Click **Create Seller Registration Request** at the top right.
 
 .. image:: /user/img/sales/seller-registration-requests/create-seller-registration-request.png
    :alt: Create a new seller registration request button

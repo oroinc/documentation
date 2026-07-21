@@ -167,7 +167,7 @@ The substitution happens when the `substitute_operation` parameter is defined, a
 Button Options Configuration
 ----------------------------
 
-Button Options enable to change an operation button style, override a button template and add some data attributes.
+Button Options enable changing an operation button style, override a button template and add some data attributes.
 
 Button Options configuration has the following options:
 
@@ -175,7 +175,7 @@ Button Options configuration has the following options:
 
 * **class** --- *string* - CSS class applied to the operation button.
 
-* **group** --- *string* - Name of operation button menu. The operation button is part of a dropdown buttons menu with a label (specified group). All operations within the same group are shown in a dropdown button html menu.
+* **group** --- *string* - Name of operation button menu. The operation button is part of a drop-down buttons menu with a label (specified group). All operations within the same group are shown in a drop-down button html menu.
 
 * **template** --- *string* - This option provides the possibility to override the button template. Should be extended from `@OroAction/Operation/button.html.twig`.
 
@@ -269,7 +269,7 @@ Example
 Datagrid Options Configuration
 ------------------------------
 
-Datagrid options enable to define options of datagrid mass operation. They provide two ways to set mass operation configuration: using service which returns array of mas operation configuration or set the inline configuration of mass operation.
+Datagrid options enable defining options of datagrid mass operation. They provide two ways to set mass operation configuration: using service which returns array of mas operation configuration or set the inline configuration of mass operation.
 
 Single datagrid options can be described with the following configuration:
 

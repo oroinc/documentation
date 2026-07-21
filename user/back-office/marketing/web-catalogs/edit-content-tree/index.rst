@@ -7,10 +7,10 @@ To edit a web catalog content tree:
 
 #. Navigate to **Marketing > Web Catalogs** in the main menu.
 #. Click on the web catalog to open its details.
-#. Click |IcEditContentTree| **Edit Content Tree** on the top right of the page.
+#. Click |IcEditContentTree| **Edit Content Tree** at the top right of the page.
 
    .. image:: /user/img/marketing/web_catalogs/EditContentTree.png
-      :alt: Clicking Edit Content Tree on the top right of the page
+      :alt: Clicking Edit Content Tree at the top right of the page
 
 #. On the page that opens, fill in the details of the **homepage node** of the web catalog as described in the :ref:`Set Up the Homepage, First Level Menu, and Sub Menus <user-guide--marketing--web-catalog--root-node>` section.
 
@@ -24,7 +24,7 @@ To edit a web catalog content tree:
 Once the main menu nodes are saved, create **sub-menu content nodes**. These will be shown as the second level of the main menu in the OroCommerce storefront:
 
 #) Ensure that the appropriate main menu node is selected in the content node structure to the left.
-#) Click **Create Content Node** on the top right of the page.
+#) Click **Create Content Node** at the top right of the page.
 
    .. image:: /user/img/marketing/web_catalogs/CreateNestedNode.png
       :alt: Two steps to create a content node
@@ -34,11 +34,11 @@ Once the main menu nodes are saved, create **sub-menu content nodes**. These wil
 
 #) Set up the sub-menu node as described in the :ref:`Set Up the Homepage, First Level Menu, and Sub Menus <user-guide--marketing--web-catalog--root-node>` section.
 
-#) Click **Save** on the top right of the page.
+#) Click **Save** at the top right of the page.
 
 This way, you can set up as many sub-menu nodes as you need.
 
-.. note:: You can drag the existing content nodes to a different position within the content tree on the left of the page, as illustrated below:
+.. note:: You can drag the existing content nodes to a different position within the content tree to the left of the page, as illustrated below:
 
 .. image:: /user/img/marketing/web_catalogs/DragDropNode.png
    :alt: Dragging the existing content nodes between sub-menu nodes

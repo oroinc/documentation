@@ -203,7 +203,7 @@ To add a new dashboard defined in the dashboards.yml file (as described above) t
             );
 
             $dashboard
-                // if user doesn't have active dashboard this one will be used
+                // if user does not have active dashboard this one will be used
                 ->setIsDefault(true)
 
                 // dashboard label

@@ -8,7 +8,7 @@ Configure Workflows in the Back-Office
 
 In Oro, a :term:`workflow <Workflow>` is a business process that involves multiple user interactions or sequential phases. It may trigger other workflows and change the status of the items involved in a business process.
 
-In the storefront, workflows organize and direct users’ work (e.g., during the checkout), making them follow particular steps in a pre-defined order (e.g. provide shipping address, then select shipping method from the options supported for the destination), or preventing them from performing actions that either contradict or conflict with the logical steps of a process (e.g., a customer may not be able to submit an order without their manager's approval).
+In the storefront, workflows organize and direct users’ work (e.g., during the checkout), making them follow particular steps in a pre-defined order (e.g., provide shipping address, then select shipping method from the options supported for the destination), or preventing them from performing actions that either contradict or conflict with the logical steps of a process (e.g., a customer may not be able to submit an order without their manager's approval).
 
 In the Oro back-office, workflows help users follow standard procedures that may be of a non-linear nature with alternating flow that depends on the available information, related items status, connectivity with integrated solutions, etc.
 
@@ -30,7 +30,7 @@ Create a Workflow
 To create a workflow for an entity:
 
 1. In the main menu, navigate to **System > Workflows**.
-2. Click **Create Workflow** on the top right of the page.
+2. Click **Create Workflow** at the top right of the page.
 3. Specify the details of your workflow in the **General** section.
 
    .. image:: /user/img/system/workflows/4_create_wfpng.png
@@ -74,9 +74,9 @@ To create a workflow for an entity:
    - **Add a transition** (clicking the **+ Add Transition** button at the top of the chart opens the **Add Transition** dialog).
    - **Add a step** (clicking the **+ Add Step** button at the top of the chart opens the **Add Step** dialog).
    - **Autosort** (clicking the **Auto Sort** button at the top of the chart automatically shapes your chart).
-   - **Rearrange the chart** for clearer workflow view (drag-and-drop transitions and steps in the chart as required, or click the |IcExpand| **Expand** button in the top right corner of the chart).
-   - **Zoom in/out** (click the |IcSearchPlus| **Zoom In** / |IcSearchMinus| **Zoom Out** button in the top right corner of the chart to zoom the chart in/out, or select zoom percent from the list).
-   - **Show transition labels** (select this checkbox in the top left corner of the chart to display transition labels in the chart).
+   - **Rearrange the chart** for clearer workflow view (drag-and-drop transitions and steps in the chart as required, or click the |IcExpand| **Expand** button in the top-right corner of the chart).
+   - **Zoom in/out** (click the |IcSearchPlus| **Zoom In** / |IcSearchMinus| **Zoom Out** button in the top-right corner of the chart to zoom the chart in/out, or select zoom percent from the list).
+   - **Show transition labels** (select this checkbox in the top-left corner of the chart to display transition labels in the chart).
    - **Drag transitions from one step to another** (point to one of four corners of the step box, and when the cursor changes shape to the hand, click the corner and drag an arrow to another step).
    - **Undo/Redo changes** (click the |IcReply| **Undo** / |IcShare| **Redo** button at the top of the cart to revert or restore changes made to the chart).
    - **Edit/Clone/Delete** a step/transition (point to the step/transition button, and when the |IcCaretDown| arrow appears, click it, and then click the |IcEdit| **Edit** / |IcClone| **Clone** / |Trash-SVG| **Delete** icon.
@@ -118,7 +118,7 @@ Add a Transition
 
 To add a transition to a workflow:
 
-1. Click **Add Transition** on the top right of the chart.
+1. Click **Add Transition** at the top right of the chart.
 
    .. image:: /user/img/system/workflows/10_add_transition.png
 
@@ -141,7 +141,7 @@ To add a transition to a workflow:
 
    .. image:: /user/img/system/workflows/11_add_transition_form.png
 
-   .. important:: Self-transitions do not change steps in workflows (e.g. it can be a transition that launches an Edit form of a record within the same step)."
+   .. important:: Self-transitions do not change steps in workflows (e.g., it can be a transition that launches an Edit form of a record within the same step)."
 
 3. Click the **Attributes** tab, and define the following fields:
 
@@ -183,7 +183,7 @@ To set a workflow configuration parameters:
 
 1. In the main menu, navigate to **System > Workflows**.
 2. On the workflow list, click the required workflow.
-3. If the workflow has configuration parameters, you can see the **Configuration** button on the top right of the workflow view page. Click this button.
+3. If the workflow has configuration parameters, you can see the **Configuration** button at the top right of the workflow view page. Click this button.
 
    .. image:: /user/img/system/workflows/workflow_set_config_param.png
 
@@ -202,8 +202,8 @@ Visualization of Sample Workflow
 
 Once the workflow has been configured and saved, you can see how it is visualized for the records:
 
-- Transition buttons will be displayed on the top right of the entity record page.
-- All the steps will be located on the top right of the entity record page within the workflow widget.
+- Transition buttons will be displayed at the top right of the entity record page.
+- All the steps will be located at the top right of the entity record page within the workflow widget.
 
 The sample Opportunity Support Flow has been saved and activated.
 
@@ -242,7 +242,7 @@ It is possible to have multiple active workflows for the same record. If you hav
 
 .. image:: /user/img/system/workflows/24_multiple_wfs.png
 
-Workflow group can be expanded / collapsed, if necessary, by clicking the **+** **Expand** / **-** **Collapse** icon on the left of the workflow group, as illustrated below:
+Workflow group can be expanded / collapsed, if necessary, by clicking the **+** **Expand** / **-** **Collapse** icon to the left of the workflow group, as illustrated below:
 
 .. image:: /user/img/system/workflows/25_collapse_flow.png
 

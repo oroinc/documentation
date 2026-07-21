@@ -50,7 +50,7 @@ The command output is similar to the following:
 
 If the list is longer than one page, use the optional *page* parameter to switch between pages (e.g., *page=2*).
 
-By default, the command returns 25 backup records per page. To modify the number of records per page, use the optional *per-page* parameter (e.g. *per-page=50*).
+By default, the command returns 25 backup records per page. To modify the number of records per page, use the optional *per-page* parameter (e.g., *per-page=50*).
 
 Restore Everything
 ^^^^^^^^^^^^^^^^^^

@@ -6,9 +6,9 @@
 Create PDF Options Preset
 =========================
 
-``PDF options preset`` is a string that denotes a set of options to be stored in the ``PDF options`` DTO. The list of presets available out-of-the-box is defined in the ``\Oro\Bundle\PdfGeneratorBundle\PdfOptionsPreset\PdfOptionsPreset`` class. Currently, the only available preset is **default**. For more details, see the :ref:`Architecture Details <bundle-docs-platform-pdf-generator-bundle-architecture>` section of the documentation.
+``PDF options preset`` is a string that denotes a set of options to be stored in the ``PDF options`` DTO. The list of presets available out of the box is defined in the ``\Oro\Bundle\PdfGeneratorBundle\PdfOptionsPreset\PdfOptionsPreset`` class. Currently, the only available preset is **default**. For more details, see the :ref:`Architecture Details <bundle-docs-platform-pdf-generator-bundle-architecture>` section of the documentation.
 
-``PDF options`` is a DTO that contains options for generating a PDF file, which will be passed to the PDF engine. It is implemented by the ``\Oro\Bundle\PdfGeneratorBundle\PdfOptions\PdfOptions`` class out-of-the-box. The ``PDF options`` may include parameters, such as page size, margins, engine-specific settings like API URL, binary path, etc.
+``PDF options`` is a DTO that contains options for generating a PDF file, which will be passed to the PDF engine. It is implemented by the ``\Oro\Bundle\PdfGeneratorBundle\PdfOptions\PdfOptions`` class out of the box. The ``PDF options`` may include parameters, such as page size, margins, engine-specific settings like API URL, binary path, etc.
 
 ``PDF options`` DTO is configured by the ``PDF options configurator`` that uses ``\Symfony\Component\OptionsResolver\OptionsResolver``. These options are resolved in the ``PDF builder`` before being passed to the configured ``PDF engine``.
 

@@ -46,7 +46,7 @@ Configure Integration on the Oro Side
 
 1. Log into your Oro application and navigate to **System > Integrations > Manage Integrations**.
 
-2. Click **Create Integration** in the top right corner.
+2. Click **Create Integration** in the top-right corner.
 
    .. image:: /user/img/system/integrations/mailchimp/mailchimp_create_integration.png
 
@@ -89,7 +89,7 @@ In order to sync your integration:
 
 2. Select your newly created integration.
 
-3. Click **Schedule Sync** in the top right corner.
+3. Click **Schedule Sync** in the top-right corner.
 
    .. image:: /user/img/system/integrations/mailchimp/o_manage_integrations_orocrm_schedule_sync.png
 
