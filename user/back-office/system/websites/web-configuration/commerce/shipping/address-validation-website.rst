@@ -14,10 +14,10 @@ When a customer user enters a new address, the system validates it through an ex
 .. image:: /user/img/system/config_commerce/shipping/address-validation-2-suggestions.png
    :alt: Address Validation popup dialog with 2 suggestions to the entered address in the storefront and back-office
 
-* **More than 3 suggestions**: The original address and a *suggested address* radio button are displayed, while all suggested addresses appear in a dropdown. The first suggested address is pre-selected. The changes are highlighted in the storefront and underlined in the back-office.
+* **More than 3 suggestions**: The original address and a *suggested address* radio button are displayed, while all suggested addresses appear in a drop-down  The first suggested address is pre-selected. The changes are highlighted in the storefront and underlined in the back-office.
 
 .. image:: /user/img/system/config_commerce/shipping/address-validation-suggestions-dropdown.png
-   :alt: Address Validation popup dialog with suggestions to the entered address appear in a dropdown in the storefront and back-office
+   :alt: Address Validation popup dialog with suggestions to the entered address appear in a drop-down in the storefront and back-office
 
 * **Update or save an adjusted shipping or billing address**: Users also have the possibility to update or save an adjusted address. In the validation popup, alongside address suggestions, the **Update Address** or **Save Address** options may be available. **Update Address** allows the system to automatically apply the corrected address throughout the system where it is used. **Save Address** allows to save the adjusted address as a new address in the system.
 

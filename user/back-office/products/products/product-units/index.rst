@@ -132,7 +132,7 @@ Use Units in Promotions
 
 Two types of promotions, *Order Line Items* and *Buy X Get Y (Same Product)* require a unit of quantity added to the promotion setup. To ensure that the promotion is going to be successfully triggered, the units of products added to the promotion must correspond to the units of quantity selected for the products. The promotion that offers you to buy 10 *pairs* of contact lenses and get 1 *pair* for free will not be triggered if the products (contact lenses) added to the promotion are sold as *each* or *set*.
 
-.. note:: A *pair* here is used for illustration purposes, this unit does not come out-of-the-box.
+.. note:: A *pair* here is used for illustration purposes, this unit does not come out of the box.
 
 Suppose the product added to the promotion has more than one product unit. In that case, the promotion will be triggered if, in the storefront, the customer user selects the product unit defined in the promotion's conditions. For instance, if contact lenses are sold both in *each* and *pair* but the promotion is configured to be triggered for *pairs*, then no discount will be provided for customers who add the same product to the shopping list in *each*.
 

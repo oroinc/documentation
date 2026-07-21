@@ -100,7 +100,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 Enterprise Edition Software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Enterprise edition is built to support better scale and performance. It is compatible with additional software configuration that enables to achieve these goals.
+Enterprise edition is built to support better scale and performance. It is compatible with additional software configuration that enables achieving these goals.
 
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |

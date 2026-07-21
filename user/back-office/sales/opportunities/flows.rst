@@ -18,7 +18,7 @@ Opportunity Management Flow
 
 To ensure data consistency and reasoned opportunity management by a sales manager, you can activate Opportunity Management Flow under **System > Workflows**.
 
-This can be done from the **Workflows** page by selecting Opportunity Management Flow and clicking **Activate** on the top right, or via the grid **More Actions** icons.
+This can be done from the **Workflows** page by selecting Opportunity Management Flow and clicking **Activate** at the top right, or via the grid **More Actions** icons.
 
 .. image:: /user/img/sales/opportunities/activate_opp_flow.png
    :alt: Opportunity management flow view page
@@ -46,7 +46,7 @@ You can set Opportunity Status and Probability manually before starting Opportun
 Manage Multiple Workflows
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Workflows are expandable and can be collapsed, if necessary, by clicking **+** on the left of the workflow as illustrated below:
+Workflows are expandable and can be collapsed, if necessary, by clicking **+** to the left of the workflow as illustrated below:
 
 .. image:: /user/img/sales/opportunities/collapse_flow.jpg
    :alt: Illustrate the expanded Opportunity Management and Opportunity Support flows
@@ -120,11 +120,11 @@ To close an opportunity as Lost:
 OroCommerce Opportunity Flow (Create a Quote from an Opportunity)
 -----------------------------------------------------------------
 
-OroCommerce Opportunity Flow enables sales reps to create |quotes| directly from the opportunity page. All quotes created within a specific opportunity are displayed in the corresponding section of its  page. The sales rep can manage quotes from this table in the same way they can manage them from the quotes table (e.g. edit or delete).
+OroCommerce Opportunity Flow enables sales reps to create |quotes| directly from the opportunity page. All quotes created within a specific opportunity are displayed in the corresponding section of its  page. The sales rep can manage quotes from this table in the same way they can manage them from the quotes table (e.g., edit or delete).
 
 .. note:: Creating a quote from the opportunity page is only available if the opportunity is related to a Commerce customer. Otherwise, the workflow will behave exactly like the standard Opportunity Management flow (for standard flow, see the `Manage Opportunity Workflow`_ section of the guide).
 
-When OroCommerce Opportunity flow is activated in **System > Workflows**, and an opportunity is related to a Commerce customer, the **Create Quote** button appears on the top right of the opportunity page.
+When OroCommerce Opportunity flow is activated in **System > Workflows**, and an opportunity is related to a Commerce customer, the **Create Quote** button appears at the top right of the opportunity page.
 
 .. note:: Creating a quote from the opportunity page is only available for **open** opportunities, i.e., not closed or lost.
 

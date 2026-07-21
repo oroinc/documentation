@@ -140,7 +140,7 @@ The sanitize functionality comes with the following pre-defined field rule proce
 Custom Sanitizing Rule Processor
 --------------------------------
 
-If it's necessary to define repeating actions in relation to sanitizing actions, the custom sanitizing rule processors can be implemented instead of writing raw SQL queries.
+If it is necessary to define repeating actions in relation to sanitizing actions, the custom sanitizing rule processors can be implemented instead of writing raw SQL queries.
 
 Custom Entity Sanitizing Rule Processor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

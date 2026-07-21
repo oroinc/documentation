@@ -18,7 +18,7 @@ Supported Features
 
 * **Payment Management:** The platform often supports various payment methods.
 
-* **Advanced Search and Navigation:** Enhanced search and navigation features make it easy for buyers to find products from various sellers efficiently.
+* **Advanced Search and Navigation:** Enhanced search and navigation features enables buyers to find products from various sellers more efficiently.
 
 * **Customization and Branding:** Businesses can often customize the look and feel of their marketplace, branding it to match their unique identity.
 

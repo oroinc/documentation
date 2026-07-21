@@ -27,10 +27,10 @@ To configure filters and sorting options globally:
     .. image:: /user/img/system/config_commerce/catalog/hide_unrelated_product_filters.png
        :alt: The storefront product page illustrating the Hide Unrelated Product Filters and Sorting Options configuration
 
-   * **Don't Change Initial Filter State** --- disables unrelated attributes within a filter instead of removing it. When applying a filter to the initial product data set in the storefront, all unrelated attributes remain visible but become disabled in the filter dropdown (available only in the OroCommerce Enterprise edition). This option affects filters in the storefront only when **Hide Unrelated Product Filters and Sorting Options** is enabled. Please ensure to enable both options for this configuration.
+   * **Do not Change Initial Filter State** --- disables unrelated attributes within a filter instead of removing it. When applying a filter to the initial product data set in the storefront, all unrelated attributes remain visible but become disabled in the filter drop-down (available only in the OroCommerce Enterprise edition). This option affects filters in the storefront only when **Hide Unrelated Product Filters and Sorting Options** is enabled. Please ensure to enable both options for this configuration.
 
     .. image:: /user/img/system/config_commerce/catalog/dont_change_initial_filter_state.png
-       :alt: The storefront product page illustrating the Don't Change Initial Filter State configuration
+       :alt: The storefront product page illustrating the Do not Change Initial Filter State configuration
 
     .. note:: If a multi-attribute product has only one attribute, the filter is not displayed for it in the storefront.
 

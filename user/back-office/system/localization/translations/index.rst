@@ -31,9 +31,9 @@ The following information about the translations is available in the All Transla
 | TRANSLATED VALUE    | The translation value of the text item to the target language.                                                                 |
 +---------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | KEY                 | A coded text string that identifies the text system element and is used to find its translation to the target language         |
-|                     | (e.g. oro.ui.updated_at) in Oro applications.                                                                                  |
+|                     | (e.g., oro.ui.updated_at) in Oro applications.                                                                                 |
 +---------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| DOMAIN              | The logical affiliation to a particular functionality that organises linguistic sources by domain (e.g. security, entities     |
+| DOMAIN              | The logical affiliation to a particular functionality that organises linguistic sources by domain (e.g., security, entities    |
 |                     | jsmessages, maintenance, install, workflows, messages, validators, HWIOAuthBundle).                                            |
 +---------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | CONTEXT             | The detailed location of the translated functional component (e.g., Workflow "Checkout" -> Name).                              |
@@ -74,9 +74,9 @@ Reset Custom Translations to the Default Ones
 
 To remove one or more custom translations and roll back to the default translation downloaded from the Crowdin service, click |Bdropdown| in the left corner of the list header. Confirm the removal by clicking the **Reset** button.
 
-* The **All** option enables to select all the translations available under this section.
-* The **All visible** option enables to select only the translations visible on the page you are currently viewing.
-* The **None** option enables to deselect all the translations which were selected previously.
+* The **All** option enables you to select all the translations available under this section.
+* The **All visible** option enables you to select only the translations visible on the page you are currently viewing.
+* The **None** option enables you to deselect all the translations which were selected previously.
 
 Hover over the |IcMore| **More Options** menu at the end of the list header and click |IcRefresh| **Reset** to delete multiple custom translations at a time.
 

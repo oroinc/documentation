@@ -111,7 +111,7 @@ Usually, organizations are needed when their real-world counterparts have their 
 the telecom in the example above, different organizations could represent offices in each state. Another good
 example for several organizations would be a franchisor with several franchisees - the best way to represent each
 in the Oro application is a separate organization. Even a freelance entrepreneur working with several different businesses
-from his computer will benefit from using a separate organization to represent each of them in the Oro application.
+from their computer will benefit from using a separate organization to represent each of them in the Oro application.
 
 Subject to the work done in the company, some users may have access to several organizations (work with multiple organizations) or to all records across all organizations that are available to them
 (work from the global organization). This is described below.
@@ -141,7 +141,7 @@ When adding a new organization, remember to update the :ref:`organization's conf
 Switching Between Organizations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The name of an organization you are currently working with is displayed in the top left corner of the screen. If you have access to multiple organizations, you will see a note with your current organization on your first login.
+The name of an organization you are currently working with is displayed in the top-left corner of the screen. If you have access to multiple organizations, you will see a note with your current organization on your first login.
 
 Click the selector to see a list of organizations you have access to. Your current organization will be displayed in
 bold. If the global organization exists, it will be shown at the top of the list and shifted left.

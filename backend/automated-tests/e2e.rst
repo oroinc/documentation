@@ -247,7 +247,7 @@ Self-Healing
 This feature looks like a set of extensions that can be applied to certain types of test steps, and if a test fails, we try to fix it automatically.
 
 Currently, there are several healers:
-    1. Reload Page Healer - fixes steps that look for an element on the page and don't find it (used to fix some random crashes)
+    1. Reload Page Healer - fixes steps that look for an element on the page and do not find it (used to fix some random crashes)
     2. OpenAI Healer - experimental (must be enabled manually) - tries to offer a fix for the test step, but does not change it.
 
 To enable OpenAI Healer, you need to configure the extension in "behat.yml":

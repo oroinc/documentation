@@ -13,7 +13,7 @@ The bundle makes use of the :ref:`OroPdfGeneratorBundle <bundle-docs-platform-pd
 * ``updatePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` --- updates the existing ``PDF document`` of the specified ``PDF document type`` for the invoice and returns it. If the invoice does not have such ``PDF document``, it returns ``null``.
 * ``deletePdfDocument(Invoice $invoice, string $pdfDocumentType): ?AbstractPdfDocument`` --- deletes the existing ``PDF document`` of the specified ``PDF document type`` for the invoice and returns it. If the invoice does not have such ``PDF document``, it returns ``null``.
 
-``PDF document types`` available out-of-the-box are listed in the ``\Oro\Bundle\InvoiceBundle\PdfDocument\InvoicePdfDocumentType`` class. The only currently available type is **invoice_default**. For information on how to create your own ``PDF document type``, see the :ref:`How to Create a PDF Document Type <bundle-docs-platform-pdf-generator-bundle-create-pdf-document-type>` section of the documentation.
+``PDF document types`` available out of the box are listed in the ``\Oro\Bundle\InvoiceBundle\PdfDocument\InvoicePdfDocumentType`` class. The only currently available type is **invoice_default**. For information on how to create your own ``PDF document type``, see the :ref:`How to Create a PDF Document Type <bundle-docs-platform-pdf-generator-bundle-create-pdf-document-type>` section of the documentation.
 
 Invoice PDF Document Template
 -----------------------------

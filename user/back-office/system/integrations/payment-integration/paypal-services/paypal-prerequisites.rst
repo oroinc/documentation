@@ -88,7 +88,7 @@ To enable these features:
 
 #. Log into the |https://manager.paypal.com/|:
 
-   a) Enter the partner name (e.g. PayPal) and PayPal Payflow Gateway account login and password.
+   a) Enter the partner name (e.g., PayPal) and PayPal Payflow Gateway account login and password.
 
    #) Click **Log In**. For the first log on, PayPal prompts you to type in answers for security question. Remember it for further authentication during the following logins.
 

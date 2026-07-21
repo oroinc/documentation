@@ -21,7 +21,7 @@ The integration between OroCommerce and Authorize.Net supports the following key
 
 3. **Refunds and Voiding:** OroCommerce supports the seamless processing of refunds and voiding transactions through Authorize.Net, providing a hassle-free experience to both customers and merchants in case of order cancellations or returns.
 
-4. **Tokenization:** For enhanced security and to streamline the checkout process for returning customers, OroCommerce utilizes Authorize.Net's tokenization service. This service replaces sensitive payment data with a unique token, reducing the risk of data exposure.
+4. **Tokenization:** For enhanced security and to streamline the checkout process for returning customers, OroCommerce uses Authorize.Net's tokenization service. This service replaces sensitive payment data with a unique token, reducing the risk of data exposure.
 
 5. **Customer Payment Profiles Integration:** CIM integration allows merchants to securely store customer payment data, including credit card numbers, billing addresses, and shipping information, on Authorize.Net's servers; the merchant is issued a unique identifier called a Customer Profile ID, which represents the stored customer data. OroCommerce customer users can save and manage up to 10 payment profiles for future orders in their OroCommerce storefront account.
 

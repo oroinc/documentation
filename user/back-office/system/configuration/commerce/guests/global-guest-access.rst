@@ -30,7 +30,7 @@ To manage guest access globally:
 .. image:: /user/img/system/config_commerce/guests/GuestAccessSysConfig.png
    :alt: Guest access system configuration
 
-2. Clear the **Use Default** check box to manage website access settings.
+2. Clear the **Use Default** checkbox to manage website access settings.
 3. To enable guest access to the storefront, select the **Enable Guest Access** checkbox.
 4. To disable guest access globally, clear the **Enable Guest Access** checkbox.
 

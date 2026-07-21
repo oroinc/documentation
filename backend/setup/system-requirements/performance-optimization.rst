@@ -133,7 +133,7 @@ and caching to work. Ensure these modules are enabled in Apache configuration.
 
    .. note:: Apache configuration is usually located at ``/etc/apache2/httpd.conf``.
 
-   The out-of-the-box configuration for the compression in the ``.htaccess`` file is following:
+   The default configuration for the compression in the ``.htaccess`` file is following:
 
    .. code-block:: none
 
@@ -165,7 +165,7 @@ and caching to work. Ensure these modules are enabled in Apache configuration.
 
       LoadModule headers_module libexec/apache2/mod_headers.so
 
-   The out-of-the-box configuration for caching in the ``.htaccess`` file is the following:
+   The default configuration for caching in the ``.htaccess`` file is the following:
 
    .. code-block::xml
 

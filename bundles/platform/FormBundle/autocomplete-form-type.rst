@@ -174,7 +174,7 @@ Next, declare this module name in the configuration of JS modules:
 **configs.selection_template_twig**
 
 The name of the Twig template that contains the |underscore.js| template.
-This template will be used in dropdown list to render each result row.
+This template will be used in drop-down list to render each result row.
 Example of template:
 
 .. code-block:: bash
@@ -188,7 +188,7 @@ The difference from "selection_template_twig" is that it will be used to render 
 
 **configs.placeholder**
 
-A string that will be displayed when field doesn't have a value.
+A string that will be displayed when field does not have a value.
 
 **configs.allowClear**
 
@@ -257,7 +257,7 @@ Each tag "oro_form.autocomplete.search_handler" can contain attribute "acl_resou
 that should be granted to user that performs autocomplete request. This feature works only if you use the default implementation
 of the autocomplete search action ``Oro\Bundle\FormBundle\Controller\AutocompleteController::searchAction``.
 
-If you use custom "configs.route_name" option it's on your own to check user permissions.
+If you use custom "configs.route_name" option, ensure to check user permissions.
 
 Iteraction of Server and Javascript
 -----------------------------------

@@ -12,7 +12,7 @@ When you sign into your OroCommerce account, you can view and manage your person
 
 .. image:: /user/img/storefront/profile/my_account_menu.png
 
-To reach the menu details, click **Account** in the user menu on the top left of the page.
+To reach the menu details, click **Account** in the user menu at the top left of the page.
 
 Your account menu has the following sections:
 

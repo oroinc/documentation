@@ -25,7 +25,7 @@ To enable PayPal Payflow Gateway or PayPal Payment Pro payments:
 
    * **Label** --- The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the |IcTranslations| icon next to the field.
 
-     .. note:: It doesn't have to include the payment processor name if you want to hide it from the buyers. For example, you can enter 'Credit Card Payments' if you have a single payment method configured for processing credit cards.
+     .. note:: It does not have to include the payment processor name if you want to hide it from the buyers. For example, you can enter 'Credit Card Payments' if you have a single payment method configured for processing credit cards.
 
    * **Short label** --- The payment method name/label that is shown in the order details in the OroCommerce back-office and storefront after the order is submitted. To translate the label into other languages, click on the |IcTranslations| icon next to the field.
    * **Allowed Credit Card Types** --- Select one or more items from the list of the credit card types. Supported types are *Visa, Mastercard, Discover, American Express*. Press and hold the **Ctrl** or **Shift** key and click on the items to select multiple card types.
@@ -51,7 +51,7 @@ To enable PayPal Payflow Gateway or PayPal Payment Pro payments:
    * **Use Proxy** --- When enabled, any request to the PayPal will be routed through the proxy server using Proxy Host and Proxy Port values provided in the following parameters.
    * **Proxy Host** –-- The host name or the IP address of the proxy server that routes the requests to and from OroCommerce.
    * **Proxy Port** –-- The port that is used by the proxy server that routes the requests to and from OroCommerce.
-   * **Enable SSL Verification** --- When enabled, OroCommerce validates the PayPal certificate in the responses from the PayPal API to secure from the man-in-the-middle attack. If the certificate is not valid, the response is ignored and payment processing fails. It is recommended to keep this option enabled for production and most test deployments. You might need to disable the SSL verification for OroCommerce internal tests with no real PayPal integration (e.g. when you are testing checkout workflow customization).
+   * **Enable SSL Verification** --- When enabled, OroCommerce validates the PayPal certificate in the responses from the PayPal API to secure from the man-in-the-middle attack. If the certificate is not valid, the response is ignored and payment processing fails. It is recommended to keep this option enabled for production and most test deployments. You might need to disable the SSL verification for OroCommerce internal tests with no real PayPal integration (e.g., when you are testing checkout workflow customization).
 
 #. In the **Express Checkout** section, provide the name, label, short label and select the :ref:`payment action <user-guide--payment--configuration--payment-method-integration--payment-actions>`.
 

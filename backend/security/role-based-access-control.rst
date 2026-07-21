@@ -7,7 +7,7 @@ Symfony has a built-in security capability to easily filter URL patterns by user
 
 The order of this list really matters, as Symfony will return the first entry for which the current request URL, method, ip, etc., matches.
 
-As this list can be extended by bundles, it's important to be aware of the final order the list is going to have.
+As this list can be extended by bundles, it is important to be aware of the final order the list is going to have.
 
 Because of this, in Oro, you cannot put the access_control rules in the ``security`` configuration extension, but you must put them in the ``oro_security`` context (in the same format).
 

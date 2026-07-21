@@ -16,7 +16,7 @@ Endpoint URL
 ------------
 
 The Batch API data should be sent via the ``PATCH`` HTTP method to the ``/api/{entity}`` endpoint.
-Where the ``{entity}`` is an entity type, e.g. ``/api/accounts``.
+Where the ``{entity}`` is an entity type, e.g., ``/api/accounts``.
 
 Input Data Format
 -----------------

@@ -130,7 +130,7 @@ Supposing you need to disable the default `DELETE` operation for your new `MyEnt
         DELETE:
             exclude_entities: ['MyEntity']
 
-The operation merges a special additional condition to the default operation during the configuration compilation so that the default `DELETE` operation doesn't match your entity and is not displayed as well.
+The operation merges a special additional condition to the default operation during the configuration compilation so that the default `DELETE` operation does not match your entity and is not displayed as well.
 
 Can I disable default operation for my datagrid?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

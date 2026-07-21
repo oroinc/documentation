@@ -43,7 +43,7 @@ Data Exchange
    "**Orders Data Synchronization**","
    * **From Oro to ERP**: Complete information about the order, its line items, and custom attributes are sent from OroCommerce to the ERP system.
    * **From ERP to Oro**: Information about shipping tracking numbers is sent back to OroCommerce after creating parcel labels in an external system."
-   "**Custom Data**","OroCommerce's flexible architecture allows for quick and easy setup of additional data synchronization."
+   "**Custom Data**","OroCommerce's flexible architecture allows for quick setup of additional data synchronization."
 
 .. image:: /user/img/integrations/sage-diagram.png
    :alt: Sage data sync diagram

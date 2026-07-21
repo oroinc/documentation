@@ -68,7 +68,7 @@ To create a new quote from scratch:
 
       .. image Notes
 
-      .. note:: To delete any quote line, click **Delete** on the right of the line item information group.
+      .. note:: To delete any quote line, click **Delete** to the right of the line item information group.
 
       .. image Delete?
 
@@ -85,7 +85,7 @@ To create a new quote from scratch:
    .. image:: /user/img/sales/quotes/CreateQioteShipping.png
       :alt: Shipping options under the Shipping Information section of the quote
 
-   a) In the **Shipping Method** list, select the recommended (default) shipping method that will be pre-selected when the customer gets to the shipping configuration on the checkout.
+   a) In the **Shipping Method** list, select the recommended (default) shipping method that will be pre-selected when the customer gets to the shipping configuration at checkout.
 
    .. .. note:: When none of the methods are selected, the customer can use any listed methods.
 

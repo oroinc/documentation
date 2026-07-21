@@ -1407,7 +1407,7 @@ The default configuration for extension with alias "oro_multi_host":
             # Prototype
             name:
 
-                # The maximum number of seconds that the driver can wait till an operation status is changed by a server that processes the operation.
+                # The maximum number of seconds that the driver can wait until an operation status is changed by a server that processes the operation.
                 timeout:              60
 
         # The number of days multi-host operations are stored in the system.

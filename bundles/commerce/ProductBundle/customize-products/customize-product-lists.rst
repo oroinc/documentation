@@ -19,7 +19,7 @@ To be able to customize which data should be loaded, this builder dispatches the
 * class |BuildResultProductListEvent|, event name: ``oro_product.product_list.build_result.PRODUCT_LIST_TYPE``.
 
 ``PRODUCT_LIST_TYPE`` here is a unique string that identifies each type of product list.
-The following product list types are available out-of-the-box:
+The following product list types are available out of the box:
 
 * ``new_arrivals`` for the list of :ref:`new arrivals products <sys--commerce--product--new-arrivals>`.
 * ``featured_products`` for the list of :ref:`featured products <sys--commerce--product--featured-products>`.

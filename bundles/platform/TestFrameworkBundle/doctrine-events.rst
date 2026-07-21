@@ -35,7 +35,7 @@ Use the following code to subscribe to this event:
          */
         public function onAfterTestTransactionRollback(ConnectionEventArgs $args)
         {
-            // do something (e.g. clear some caches)....
+            // do something (e.g., clear some caches)....
         }
     }
 

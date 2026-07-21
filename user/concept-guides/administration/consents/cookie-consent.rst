@@ -3,7 +3,7 @@
 Cookie Consent in OroCommerce: Guidance for Merchants
 =====================================================
 
-This document explains how OroCommerce handles cookies out-of-the-box, how additional tracking, marketing, and analytics cookies are typically introduced into a storefront, and what options merchants have for collecting and managing visitor cookie consent.
+This document explains how OroCommerce handles cookies out of the box, how additional tracking, marketing, and analytics cookies are typically introduced into a storefront, and what options merchants have for collecting and managing visitor cookie consent.
 
 .. important:: This is general implementation guidance, not legal advice. Whether a given setup meets your obligations under GDPR, the ePrivacy Directive, UK GDPR/PECR, U.S. state privacy laws such as the CCPA/CPRA and VCDPA, Brazilian LGPD, or similar privacy, electronic communications, and online tracking laws depends on your business, your audience's location, and the specific third-party services you use. Consult your legal/privacy team to confirm your consent approach before going live.
 

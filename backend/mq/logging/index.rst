@@ -129,7 +129,7 @@ Example of Fingers Crossed Handler Configuration
 
 To log into all environments, add the following code to ``config.yml``. To log only in ``prod``, add the code to ``config_prod.yml``:
 
-.. note:: Out of the box, the Fingers Crossed Handler is already enabled, and you don't have to configure it manually.
+.. note:: Out of the box, the Fingers Crossed Handler is already enabled, and you do not have to configure it manually.
 
 .. code-block:: yaml
    :caption: config/config_prod.yml

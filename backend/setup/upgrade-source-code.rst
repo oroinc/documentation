@@ -186,8 +186,8 @@ Overview & Estimates
 
 You can use the ``oro/upgrade-toolkit`` package to automatically migrate a significant portion of the PHP code.
 
-It is important to note that the tool handles most PHP changes but does not upgrade Twig, JS, or SCSS.
-However, you can skip the frontend assets upgrade if you've used the theme dump as described earlier.
+The tool handles most PHP changes but does not upgrade Twig, JS, or SCSS.
+However, you can skip the frontend assets upgrade if you have used the theme dump as described earlier.
 Back-office customization and changes to YAML files should be processed manually.
 
 The major update to the YAML configuration involves

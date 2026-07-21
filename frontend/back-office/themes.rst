@@ -29,7 +29,7 @@ Alternatively, you can :ref:`customize an existing theme <book-themes-overriding
 Application-Specific Themes
 ---------------------------
 
-Customizing the layout of your Platform application is as easy as defining your custom theme in
+Customizing the layout of your Platform application is similar to defining your custom theme in
 your application's configuration using the ``oro_theme`` option:
 
 .. code-block:: yaml

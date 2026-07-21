@@ -50,9 +50,9 @@ Submit Your Translations
 
    Alternatively, use the |OroCommerce project| link to open the project.
 
-#. Select the target language (e.g. Korean).
+#. Select the target language (e.g., Korean).
 
-   Translations are stored in yaml files organized by bundles (e.g. OroAlternativeCheckoutBundle, OroCatalogBundle) and by groups (e.g. messages, jsmessages).
+   Translations are stored in yaml files organized by bundles (e.g., OroAlternativeCheckoutBundle, OroCatalogBundle) and by groups (e.g., messages, jsmessages).
 
 #. Select the yaml file with the translations you would like to contribute to.
 
@@ -60,7 +60,7 @@ Submit Your Translations
 
 After you have submitted the translation, it will be queued for proofreading. Other translators can vote for it.
 
-When the translation is approved, it is marked with a green check mark and moved to the end of the list on the translation page. Approved translations are merged (published) to the Oro application translations once a day and become available in Oro application in the language settings (to open the language settings, in the main menu, navigate to **System > Configuration > Language Settings**).
+When the translation is approved, it is marked with a check mark and moved to the end of the list on the translation page. Approved translations are merged (published) to the Oro application translations once a day and become available in Oro application in the language settings (to open the language settings, in the main menu, navigate to **System > Configuration > Language Settings**).
 
 .. _translations-language-settings:
 
@@ -69,7 +69,7 @@ Update Translation in Oro Application
 
 1. Navigate to the **System > Localization > Languages** in the main menu.
 
-2. If your target language is not listed, click **Add Language** at the top right corner. Select the target language from the available list in the popup dialog. Click **Add Language** in the bottom right of the dialog.
+2. If your target language is not listed, click **Add Language** at the top right corner. Select the target language from the available list in the popup dialog. Click **Add Language** at the bottom right of the dialog.
 
 3. Import the system elements translation from the |Crowdin| project by clicking the |IcCloudDownload| icon at the end of the row and then **Install** in the popup form. The import is available if the status in the **Updates** column is set to **Can be installed** signifying that the corresponding translation has been provided on the Crowdin website.
 

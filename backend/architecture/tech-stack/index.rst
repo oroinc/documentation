@@ -12,8 +12,8 @@ Client Side
 
 A **client**, whether a web browser or a third-party application connected via :ref:`the API <web-services-api>`, requests the Oro application server-side to get the application content or JSON response. Information received in response from the server-side may be used:
 
-* By the web browser -- to render or update the web page shown to the end user.
-* By the third party application -- trigger actions in the Oro applications or other integrated systems to launch data synchronization.
+* By the web browser --- to render or update the web page shown to the end user.
+* By the third party application --- trigger actions in the Oro applications or other integrated systems to launch data synchronization.
 
 Web Browser
 ^^^^^^^^^^^

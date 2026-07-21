@@ -321,7 +321,7 @@ Alternatively, you can open a stylesheet link in a new tab of a Browser, click "
 
 There are two cases when the error can appear:
 
-1. You exited the ``oro:assets:build`` command with <kbd>control</kbd> + <kbd>z</kbd> and `node` process hanged up. To fix, kill the `node` process manually.
+1. You exited the ``oro:assets:build`` command with <kbd>control</kbd> + <kbd>z</kbd> and `node` process hanged up. To fix, stop the `node` process manually.
 2. The port is busy with a different process. To fix, change the :ref:`port configuration in config/config.yml <port>`.
 
 

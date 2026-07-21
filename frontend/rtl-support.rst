@@ -30,7 +30,7 @@ Layout and back-office themes configuration have the ``rtl_support`` option that
 Out-of-the-box, the ``Default`` layout theme and ``Oro`` back-office theme have RTL support enabled.
 
 However, not all declared style inputs need to be processed with RTLCSS processor.
-Often, third-party libraries support RTL out-of-the-box and their styles already account for text direction (``[dir="rtl"]``).
+Often, third-party libraries support RTL out of the box and their styles already account for text direction (``[dir="rtl"]``).
 
 The following is an allowlist of style inputs (`auto_rtl_inputs`) that have to be processed.
 

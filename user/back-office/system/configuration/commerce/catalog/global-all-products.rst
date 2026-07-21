@@ -37,4 +37,4 @@ Enable All Products Page Globally
       :alt: All Products global configuration settings
 
 3. In the **All Products** section, select the **Enable All Products Page** checkbox.
-4. Click **Save Settings** on the top right of the page.
+4. Click **Save Settings** at the top right of the page.

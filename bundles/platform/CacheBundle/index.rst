@@ -50,7 +50,7 @@ Caching Static Configuration
 ----------------------------
 
 A static configuration is defined in the configuration files and does not depend on the application data.
-Usually such configuration is loaded from configuration files located in different bundles, e.g. from
+Usually such configuration is loaded from configuration files located in different bundles, e.g., from
 `Resources/config/oro/my_config.yml` files that can be located in any bundle.
 There are several possible ways to store the collected configuration to avoid loading and merging it
 on each request:
@@ -278,7 +278,7 @@ Default Cache Implementation
 There are two abstract services you can use as a parent for your cache services. Default implementations is
 following:
 
-For services based on ``oro.data.cache`` the: |ChainAdapter| with |ArrayAdapter| on the top of |FilesystemAdapter|
+For services based on ``oro.data.cache`` the: |ChainAdapter| with |ArrayAdapter| at the top of |FilesystemAdapter|
 
 For services based on ``oro.data.cache.without_memory_cache`` the |ChainAdapter| is not used.
 

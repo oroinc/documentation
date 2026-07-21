@@ -11,7 +11,7 @@ It is recommended to manage payment methods through integrations. Therefore, to 
 - Implement an integration for a payment method
 - Implement a payment method itself
 
-As an example, let us implement a collect on delivery (cash on delivery, COD) payment option. This is a simple method that does not utilize external services (like credit card payment interfaces) and requires just the minimum set of options to operate. Thus, at the end of the topic, you will have the understanding of what steps are necessary to add a workable payment method and the basic template that you can further extend when the need arises.
+As an example, let us implement a collect on delivery (cash on delivery, COD) payment option. This is a simple method that does not use external services (like credit card payment interfaces) and requires just the minimum set of options to operate. Thus, at the end of the topic, you will have the understanding of what steps are necessary to add a workable payment method and the basic template that you can further extend when the need arises.
 
 Create a Bundle
 ---------------

@@ -15,7 +15,7 @@ Create Taxonomy
 ---------------
 
 1. Navigate to **System > Tag Management > Taxonomies** in the main menu.
-2. Click **Create Taxonomy** in the top right corner.
+2. Click **Create Taxonomy** in the top-right corner.
 3. Define the following fields:
 
    * **Owner** --- Limits the list of users who can manage the taxonomic unit.

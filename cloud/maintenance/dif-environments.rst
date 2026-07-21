@@ -12,7 +12,7 @@ For example, assuming HTTP Basic Auth should be enabled only for the application
 Environment Type Approach
 -------------------------
 
-The maintenance agent is merging three different yaml files to load it's configuration:
+The maintenance agent is merging three different yaml files to load its configuration:
 
 
    .. code-block:: none

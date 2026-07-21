@@ -106,7 +106,7 @@ Configuration
                             - '@not_blank': [$conversation_result]
                             - '@not_blank': [$conversation_comment]
                             - '@not_blank': [$conversation_successful]
-                    # Create PhoneConversation and set it's properties
+                    # Create PhoneConversation and set its properties
                     # Pass data from workflow to conversation
                     actions:
                         - '@create_entity': # create PhoneConversation

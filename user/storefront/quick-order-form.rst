@@ -7,7 +7,7 @@ Manage Quick Order Form in the Storefront
 
 The quick order form allows customers to work on large orders efficiently by searching by product SKUs and names or by importing their purchase lists into the system. Customers can work on multiple orders simultaneously and easily switch between different shopping carts or start new orders at any time. Availability of the Quick Order feature is :ref:`configured in the back-office <user-guide--system-configuration--commerce-sales--quick-order-form>` for registered and guest users.
 
-To create an order using a quick order form, click **Quick Order** on the top right. You can fill in the form either by providing the details of the order manually, copying and pasting the SKU and quantity, or uploading a file with order details.
+To create an order using a quick order form, click **Quick Order** at the top right. You can fill in the form either by providing the details of the order manually, copying and pasting the SKU and quantity, or uploading a file with order details.
 
 Input Order Details Manually
 ----------------------------
@@ -17,7 +17,7 @@ Input Order Details Manually
 2. You can also search the product by name, in which case, you need to select it from the suggestions list when the product appears there.
 
    .. image:: /user/img/storefront/orders/QuickOrderFormSKU.png
-      :alt: Selecting a product from the suggestion dropdown list as you start typing a product name
+      :alt: Selecting a product from the suggestion drop-down list as you start typing a product name
 
 3. Click **+Add More Rows** to provide details for more than five items.
 

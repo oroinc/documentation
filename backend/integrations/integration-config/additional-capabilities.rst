@@ -5,12 +5,10 @@ Additional Capabilities
 
 **Save Service Data Between Synchronizations**
 
-If connector of your integration requires to store some data between imports, status entity could be used for this purposes.
-That's might be useful for example when integration supports multiple modes(update/initial import) and need to store
-date of last synchronization or another example if your connector supports renew download it's useful to store current state.
+If an integration connector needs to store data between imports, use the status entity.
+For example, you can store the date of the last synchronization, the current download state, or data required to support multiple import modes, such as update or initial imports.
 
-To use this feature your connector class should extends ``Oro\Bundle\IntegrationBundle\Provider\AbstractConnector``,
-and then methods ``addStatusData`` and ``getStatusData`` will be available.
+To use this feature, extend your connector class from ``Oro\Bundle\IntegrationBundle\Provider\AbstractConnector``. Then, the ``addStatusData`` and ``getStatusData`` methods will be available.
 
 **Example:**
 

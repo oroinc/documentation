@@ -12,10 +12,10 @@ For instance, one toy company with three toy shops can be set up as the main org
 To create a new business unit:
 
 1. Navigate to **System > User Management > Business Units** in the main menu.
-2. Click **Create Business Unit** on the top right.
+2. Click **Create Business Unit** at the top right.
 3. In the **General** section, provide the following information:
 
-   * **Name** --- The name used to refer to the business unit on the interface. This is the only mandatory field.
+   * **Name** --- The name used to refer to the business unit in the interface. This is the only mandatory field.
    * **Parent Business Unit** --- The business unit to which this business unit belongs (a level higher in the administrative hierarchy).
    * **Phone** --- The phone number specified for the business unit record.
    * **Website** --- The website specified for the business unit record.

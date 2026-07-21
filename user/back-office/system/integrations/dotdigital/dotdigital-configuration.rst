@@ -43,7 +43,7 @@ Create Integration on the Oro Application Side
      :header: "Field", "Description"
      :widths: 10, 30
    
-     "**Type**","Select Dotdigital from the list of integrations available in the dropdown."
+     "**Type**","Select Dotdigital from the list of integrations available in the drop-down."
      "**Name**","Enter the integration name to refer to within the system."
      "**Username**","Enter an API user name from your Dotdigital **Manage users** page."
      "**Password**","Enter the password you set for your API user on the Dotdigital side. Click **Check connection**. **Connection Successful** message indicates that connection to Dotdigital has been established."

@@ -52,7 +52,7 @@ To create a new segment:
 
       a) Choose a field from the drop-down in the **Column** section.
 
-      #) Type in a label to refer to the field in the segment report on the interface. The field label is used by default. Customize it if necessary.
+      #) Type in a label to refer to the field in the segment report in the interface. The field label is used by default. Customize it if necessary.
 
       #) Define the sorting order for at least one column in the segment to sort the resulting data set by the field value.
 

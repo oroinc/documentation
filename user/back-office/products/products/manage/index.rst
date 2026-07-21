@@ -25,9 +25,9 @@ The following information about products is available in the product list.
    "TAX CODE","The code that helps identify what taxes to apply to the product."
 
 
-* To control the product information displayed in the list, click |IcSettings| **Settings** on the top right of the list, and in the dialog that appears, select which column to display.
+* To control the product information displayed in the list, click |IcSettings| **Settings** at the top right of the list, and in the dialog that appears, select which column to display.
 
-* To filter product information by value, click |IcFilter| **Filter** on the top right of the list, and in the filter section that appears, select the required values.
+* To filter product information by value, click |IcFilter| **Filter** at the top right of the list, and in the filter section that appears, select the required values.
 
 * To display pricing information related only to a particular price list, select the price list from the **Price List** list in the left panel, or click |IcBars| next to it to select the price list using the dialog.
 
@@ -50,7 +50,7 @@ Core Product Management
 
 You can perform the following actions for a specific product from the grid:
 
-* :ref:`Create a product <doc--products--actions--create>` by clicking the corresponding button on the top right.
+* :ref:`Create a product <doc--products--actions--create>` by clicking the corresponding button at the top right.
 
 * :ref:`Export <export-products>` and :ref:`import <import-products>` the necessary product information.
 

@@ -52,7 +52,7 @@ Search Engine
 
 **Class:** Oro\\Bundle\\ElasticSearchBundle\\Engine\\ElasticSearch
 
-Search engine implements AbstractEngine interface. The SearchBundle uses search engine to handle search-related operations, and the search engine uses an index agent as a proxy to call the search-index-related operations (e.g. to get the index name or to request index recreation).
+Search engine implements AbstractEngine interface. The SearchBundle uses search engine to handle search-related operations, and the search engine uses an index agent as a proxy to call the search-index-related operations (e.g., to get the index name or to request index recreation).
 
 To perform *save* and *delete* operations, search engine uses |Elasticsearch bulk API|.
 Deletion performs as is using `delete` operation, save uses `index` operation to override existing data. This is done to clean the traces of old values that have no matching new values to overwrite them.

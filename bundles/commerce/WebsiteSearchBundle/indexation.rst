@@ -26,7 +26,7 @@ For example:
 
 * `$websitesIds = [], $classesNames = ['Oro\\Bundle\\ProductBundle\\Entity\\Product'], $ids = [1,2,3], $scheduled = false`
 
-  This combination of parameter values requests immediate reindex of the products with IDs 1, 2 and 3 for all websites (e.g. when the prices for products with IDs 1, 2, and 3 were updated).
+  This combination of parameter values requests immediate reindex of the products with IDs 1, 2 and 3 for all websites (e.g., when the prices for products with IDs 1, 2, and 3 were updated).
 
 * `$websitesIds = [2], $classesNames = [], $ids = [], $scheduled = true` - whole search index scope (all entities)
 
@@ -93,7 +93,7 @@ Collect Dependent Entity Classes
 
 **Class:** `Oro\\Bundle\\WebsiteSearchBundle\\Event\\CollectDependentClassesEvent`
 
-The event collects the list of all entity classes which have to take part in the indexation. Apart from the main entity class, the list may include other entities, e.g. indexation of customers might require
+The event collects the list of all entity classes which have to take part in the indexation. Apart from the main entity class, the list may include other entities, e.g., indexation of customers might require
 indexation of orders.
 
 Collect Context
@@ -286,7 +286,7 @@ Service declaration for such listener might look like the following example:
 
 This listener has two dependencies: a `AbstractWebsiteLocalizationProvider` (usually represented by the `oro_website.provider.website_localization` service) and a `WebsiteContextManager` (usually represented by the `oro_website_search.manager.website_context_manager` service). The listener uses the `oro_website_search.event.index_entity.product` event name, and the `product` suffix means that this listener is called only for the product indexation. To call a method for all entities, use the event without suffix (`oro_website_search.event.index_entity`).
 
-First, indexation method extracts website ID from the context. If the website is not found (e.g. it was removed or became not accessible), indexation stops. Otherwise, the method gets the list of products from the event and the list of localizations for the current website. Finally, the required data is extracted from entities and is added to the event.
+First, indexation method extracts website ID from the context. If the website is not found (e.g., it was removed or became not accessible), indexation stops. Otherwise, the method gets the list of products from the event and the list of localizations for the current website. Finally, the required data is extracted from entities and is added to the event.
 
 To add plain data without a placeholder, handle the event by calling the `addField` method. Pass the following information: identifier of the entity (required), field name (required), field value (required) and whether this value should appear in `all_text` fields (optional, default `false`).
 

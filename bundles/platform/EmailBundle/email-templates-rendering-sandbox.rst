@@ -74,7 +74,7 @@ Both flags can also be toggled in the back-office via the Entity Management UI.
 Enabling via Migrations
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You can also set ``available_in_template`` flags via migrations. This is especially useful when you need to enable the flag on an entity you don't control, or for an extended field.
+You can also set ``available_in_template`` flags via migrations. This is especially useful when you need to enable the flag on an entity you do not control, or for an extended field.
 
 When creating a new extended field, pass the ``email`` scope options directly in the field creation
 call. The following example adds a multi-file relation and marks it as available in email templates:

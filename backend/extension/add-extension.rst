@@ -41,7 +41,7 @@ Adding an Extension
 -------------------
 
 To be able to add an extension you have to be logged in to the Oro Extensions Store website. The Add Extension page
-can be reached via the user menu in the top right corner of the page or via link on the My Marketplace page.
+can be reached via the user menu in the top-right corner of the page or via link on the My Marketplace page.
 
 First thing you have to do is to choose an extension type: paid or free.
 Free extensions also require the repository URL. Then click Next to proceed to the second step of adding an extension.

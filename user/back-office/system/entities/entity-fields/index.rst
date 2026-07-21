@@ -13,7 +13,7 @@ To create a custom entity field:
 
 1. Navigate to **System > Entities > Entities Management** in the main menu.
 2. On the **All Entities** page, click the required entity to open its page. 
-3. On the entity page, click **Create Field**  on the top right.
+3. On the entity page, click **Create Field**  at the top right.
 
 .. image:: /user/img/system/entity_management/create-field.png
    :alt: Highlighting the Create field button

@@ -7,7 +7,7 @@ Web catalogs are a powerful content management tool that enables sellers to crea
 
 Visually, a web catalog represents the main navigation bar of the storefront website. It enables buyers to browse the product catalog, click on products to view details, and add them to shopping lists before ultimately buying them. Under the hood, OroCommerce sellers can not only build new catalogs from scratch but also modify default catalogs, customizing and enriching them with new menu items for various localizations, customers, or customer groups.
 
-Sellers can add new pages to existing catalogs or create all new catalogs. They may want to change out catalogs seasonally or create a catalog for a VIP promotion or sale and redirect particular customers to the promotional page. With restrictions, it is easy to ensure that only specific customers can access these personalized pages.
+Sellers can add new pages to existing catalogs or create all new catalogs. They may want to change out catalogs seasonally or create a catalog for a VIP promotion or sale and redirect particular customers to the promotional page. With restrictions, sellers can ensure that only specific customers can access these personalized pages.
 
 
 .. admonition:: Business Tip
@@ -54,12 +54,12 @@ Each of these nodes can have more child categories:
 
 Every child node must be populated with :ref:`content variants <user-guide--marketing--web-catalog--content-variant>`. **Content variants** are the types of pages that you add to the content node. These pages can be of the following types:
 
-* :ref:`System page <user-guide--marketing--web-catalog--content-variant-system-page>` --  one of many standard pre-designed pages for the OroCommerce storefront(Sign In page, Open Orders page, Request a Quote page, etc.)
-* :ref:`Product page <user-guide--marketing--web-catalog--content-variant-product-page>` -- a direct link to product details
-* :ref:`All Products page <user-guide--marketing--web-catalog>` -- a collection of all products usually added for smaller catalogs with no more than a few hundred products
-* :ref:`Category page <user-guide--marketing--web-catalog--content-variant-category>` -- a direct link to products from a master catalog category
-* :ref:`Product Collection page <user-guide--marketing--web-catalog--content-variant-product-collection>` -- a dynamic collection of products that you filtered/selected manually or in bulk to be displayed for this page
-* :ref:`Landing page <user-guide--marketing--web-catalog--content-variant-landing page>` -- a direct link to a custom content page
+* :ref:`System page <user-guide--marketing--web-catalog--content-variant-system-page>` ---  one of many standard pre-designed pages for the OroCommerce storefront(Sign In page, Open Orders page, Request a Quote page, etc.)
+* :ref:`Product page <user-guide--marketing--web-catalog--content-variant-product-page>` --- a direct link to product details
+* :ref:`All Products page <user-guide--marketing--web-catalog>` --- a collection of all products usually added for smaller catalogs with no more than a few hundred products
+* :ref:`Category page <user-guide--marketing--web-catalog--content-variant-category>` --- a direct link to products from a master catalog category
+* :ref:`Product Collection page <user-guide--marketing--web-catalog--content-variant-product-collection>` --- a dynamic collection of products that you filtered/selected manually or in bulk to be displayed for this page
+* :ref:`Landing page <user-guide--marketing--web-catalog--content-variant-landing page>` --- a direct link to a custom content page
 * **Resource Library** --- if you download a |Resource Library Extension|, you can add media content, such as news, banners, product review videos, safety specifications, etc.
 
 .. hint:: It is possible to add a custom content page and link it as a content variant, but this requires some customization effort.

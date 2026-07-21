@@ -39,6 +39,8 @@ The fuzzy search options are the following:
 Important Notes
 ---------------
 
-The error-tolerant search is not an automatic correction. It tries to find similar results for the passed request phrase word by word. It is important to remember that the error-tolerant search can lead to several false-positive results.
+The error-tolerant search is not an automatic correction. It tries to find similar results for the passed request phrase word by word.
+
+.. note:: The error-tolerant search can lead to several false-positive results.
 
 The error-tolerant search changes only how the request is built, not the index mapping, structure, or content. The search is performed against the tokens stored in the Elasticsearch index. So, it behaves differently for the default, language-optimized, and custom index configurations.

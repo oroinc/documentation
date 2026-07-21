@@ -35,7 +35,7 @@ The validation logic is encapsulated in the ``\Oro\Bundle\ShoppingListBundle\Pro
 
 It provides three main public methods:
 1. `getInvalidLineItemsIds` - returns a sorted array of line item IDs, with errors first, followed by warnings.
-2. `getInvalidLineItemsIdsBySeverity` - returns line item IDs grouped by severity, e.g. ['errors' => [...], 'warnings' => [...]].
+2. `getInvalidLineItemsIdsBySeverity` - returns line item IDs grouped by severity, e.g., ['errors' => [...], 'warnings' => [...]].
 3. `getInvalidItemsViolations` - returns detailed validation results grouped by severity, including messages and sub-item data.
 
 Two validation groups are used:

@@ -28,7 +28,7 @@ To use this approach, add a new custom decimal field to the required entity and 
 
 For example, to add a value to the Business Unit entity:
 
-1. Add a custom decimal field ( e.g. ``buSearchRelevance`` (``precision=8``, ``scale=2``)) via the entity management in the UI or via the migration in code.
+1. Add a custom decimal field ( e.g., ``buSearchRelevance`` (``precision=8``, ``scale=2``)) via the entity management in the UI or via the migration in code.
 2. Map this field to the ``relevance_weight`` field via the appropriate configuration in the ``Resources/config/oro/search.yml`` file. The file can be created in any bundle.
 
 The illustration for this example is below:

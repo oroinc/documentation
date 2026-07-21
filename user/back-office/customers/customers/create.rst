@@ -39,7 +39,7 @@ To create a new customer:
 
 #. When OroCommerce is deployed with InfinitePay payments support, the customer's VAT Id shall be captured for creditworthiness verification. VAT Id should be valid, and the billing address should match the one provided for the VAT registration. These are prerequisites to enable payments via :ref:`InfinitePay <user-guide--payment--prerequisites--infinitepay>` for the customer users.
 
-#. Click **Save** in the top right.
+#. Click **Save** on the top right.
 
 .. note:: Keep in mind that customers with at least one successful registered checkout cannot be deleted from the system.
 

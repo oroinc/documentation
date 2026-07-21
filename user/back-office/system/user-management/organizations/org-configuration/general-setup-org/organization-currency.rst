@@ -40,7 +40,7 @@ The following sections become available within the **Currency** tab:
 |                        |                                                                                                             |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 | **Display format**     | This setting controls how the currencies will be displayed within the system, as a 3-letter ISO code        |
-|                        | (e.g. GBP) or as the currency symbol (e.g. £).                                                              |
+|                        | (e.g., GBP) or as the currency symbol (e.g., £).                                                            |
 |                        |                                                                                                             |
 |                        | To customize the **Display Format**:                                                                        |
 |                        |                                                                                                             |
@@ -66,14 +66,14 @@ The information about the allowed currencies options is grouped in the following
 | **Base**               | A flag helps you to select the base currency.                                                               |
 |                        | Base currency is used by default to display totals, budgets, and amounts.                                   |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
-| **Currency Name**      | International name of the currency that follows ISO 4217 standard (e.g. US dollar).                         |
+| **Currency Name**      | International name of the currency that follows ISO 4217 standard (e.g., US dollar).                        |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
-| **Currency Code**      | International currency code that follows ISO 4217 standard (e.g. USD).                                      |
+| **Currency Code**      | International currency code that follows ISO 4217 standard (e.g., USD).                                     |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
-| **Currency Symbol**    | Graphical symbol that is used to denote a currency (e.g. $).                                                |
+| **Currency Symbol**    | Graphical symbol that is used to denote a currency (e.g., $).                                               |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 | **Rate From**          | The conversion rate from the selected currency to the base currency. Used to calculate transaction amounts  |
-|                        | (e.g. opportunity budget) in the base currency if they were entered in other currencies.                    |
+|                        | (e.g., opportunity budget) in the base currency if they were entered in other currencies.                   |
 |                        | Maximum precision is 10 digits.                                                                             |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 | **Rate To**            | The conversion rate from the base currency to the selected currency. Used to calculate new exchange rates   |
@@ -101,7 +101,7 @@ In the example below, the base currency is British pounds but the budget of the 
 
 When you close a deal (determined by opportunity status), the exchange rate for it becomes locked and will no longer take rate changes into account.
 
-Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work in the base currency irrespective of the currency that the deals were made in.
+Dashboard widgets with monetary values (e.g., Forecast) and monetary metrics work in the base currency irrespective of the currency that the deals were made in.
 
 .. image:: /user/img/system/config_system/widgets_base_currency.png
    :alt: Sample of dashboard widgets that provide metrics in US
@@ -132,7 +132,7 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
 
 5. To change the currency sort order, click and hold the |IcReorder| **Sort** icon, and drag the currency up or down the list.
 
-6. To roll back any changes to the currency settings, click **Reset** on the top right.
+6. To roll back any changes to the currency settings, click **Reset** at the top right.
 
 7. Click **Save Settings**.
 

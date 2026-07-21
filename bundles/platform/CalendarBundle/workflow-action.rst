@@ -18,7 +18,7 @@ Create Calendar Event Action
 - guests - list of guests, array of object User;
 - start - DateTime start of event (required);
 - end - DateTime end of event (default +1 hour);
-- duration - event duration e.g. "30 minutes" or "1 hour" (default +1 hour)
+- duration - event duration e.g., "30 minutes" or "1 hour" (default +1 hour)
 - attribute - attribute that will contain entity instance;
 - reminders - array of Reminders for CalendarEvent:
 

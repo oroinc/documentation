@@ -43,7 +43,7 @@ Unauthenticated users will have an option to either log in or sign up for an acc
 Product Catalog (Main Menu)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The main navigation menu can either be rendered separately to provide easy access to its top level items on the devices with sufficient screen width, or it can be combined with other navigational elements in the "hamburger" menu. This is configured in the back-office :ref:`theme configuration <back-office-theme-configuration>` settings.
+The main navigation menu can either be rendered separately to provide access to its top level items on the devices with sufficient screen width, or it can be combined with other navigational elements in the "hamburger" menu. This is configured in the back-office :ref:`theme configuration <back-office-theme-configuration>` settings.
 
 .. image:: /user/img/storefront/navigation/GeneralLayoutMainMenu.png
 

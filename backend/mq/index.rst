@@ -43,11 +43,11 @@ DBAL Transport
 DBAL Broker
 ^^^^^^^^^^^
 
-The DBAL broker is implemented by the |OroMessageQueueBundle|. It is part of OroPlatform which means that this broker is available in all Oro applications out-of-the-box.
+The DBAL broker is implemented by the |OroMessageQueueBundle|. It is part of OroPlatform which means that this broker is available in all Oro applications out of the box.
 
 For message storage, like the message queue, the DBAL broker uses application database tables.
 
-Advantages of this broker are an easy installation and configuration, and out-of-the-box availability in every Oro application.
+Advantages of this broker include minimal setup and configuration requirements and default availability in every Oro application.
 
 However, since RDBMS is not designed to work as a message queue, the DBAL broker type has some limitations:
 

@@ -11,7 +11,7 @@ Files that the theme consists of are :ref:`layout updates <dev-doc-frontend-layo
 
 Out-of-the-box, OroCommerce comes with :ref:`one(default) theme: default <dev-doc-frontend-layouts-theming>`.
 
-We recommend creating your own theme if you want to customize an out-of-the-box OroCommerce storefront. To create your own theme, you have to choose the default theme as the parent for your own.
+We recommend creating your own theme if you want to customize your default OroCommerce storefront. To create your own theme, you have to choose the default theme as the parent for your own.
 
 You can customize the core theme, but creating your own theme will enable you to switch to the core theme with a few clicks conveniently.
 
@@ -78,7 +78,7 @@ The **allowed options in the theme configuration** file are the following:
 +---------------------+------------------------------+---------------------+----------+
 | `pdf_document`      | Defines paths to Twig        | no                  | yes      |
 |                     | templates used to generate   |                     |          |
-|                     | PDF documents (e.g. invoice) |                     |          |
+|                     | PDF documents (e.g., invoice)|                     |          |
 +---------------------+------------------------------+---------------------+----------+
 | `fonts`             | Defines fonts for theme      | no                  | no       |
 +---------------------+------------------------------+---------------------+----------+
@@ -117,7 +117,7 @@ The **allowed options in the theme configuration** file are the following:
                             checked: 'path/to/image/checked.png'
                             unchecked: 'path/to/image/unchecked.png'
 
-The `pdf_document` option allows developers to override PDF templates per document type (e.g. `invoice_default`) within the theme, making it easier to customize branding and layout for downloadable documents.
+The `pdf_document` option allows developers to override PDF templates per document type (e.g., `invoice_default`) within the theme, making it easier to customize branding and layout for downloadable documents.
 
 .. seealso::
     :ref:`theme configuration <dev-doc-frontend-theme-configuration>` reference for more detailed information.
@@ -198,7 +198,7 @@ Built-in OroCommerce Themes
 
 Out-of-the-box, the OroCommerce application comes with one predefined default storefront theme.
 
-* **The Refreshing Teal theme** is a fully featured **default** theme that provides the complete look and feel for the OroCommerce storefront UI out-of-the-box. Also this theme is aimed to be *base for any* :ref:`customizations <storefront_customization_guide>`.
+* **The Refreshing Teal theme** is a fully featured **default** theme that provides the complete look and feel for the OroCommerce storefront UI out of the box. Also this theme is aimed to be *base for any* :ref:`customizations <storefront_customization_guide>`.
 
 Make the Theme Option Inherited
 -------------------------------

@@ -44,10 +44,10 @@ To ensure that your REST API resources work properly, cover them with |functiona
    "getResponseData","Converts the given response to an array that can be used to compare it with a response received from the server. The given response can be a path to a file that contains the response data or an array with the response data. If the response is a file name, the file should be located in the ``responses`` directory next to the PHP file that contains the test."
    "getResponseErrors","Extracts the list of errors from the JSON:API response. For details, see |JSON:API specification|."
    "updateResponseContent","Replaces all values in the given expected response content with the corresponding value from the actual response content when the key of an element is equal to the given key and the value of this element is equal to the given placeholder. If the first parameter is a file name, the file should be located in the ``responses`` directory next to the PHP file that contains the test."
-   "getApiBaseUrl","Returns the base URL for all REST API requests, e.g. ``http://localhost/api``."
+   "getApiBaseUrl","Returns the base URL for all REST API requests, e.g., ``http://localhost/api``."
    "appendEntityConfig","Appends a configuration of an entity. This method is helpful when you create a general functionality and need to test it for different configurations without creating a test entity for each of them. Please note that the configuration is restored after each test, and thus, you do not need to do it manually."
 
-.. note:: By default, HATEOAS is disabled in functional tests, although it is enabled by default in production and API Sandbox. It was done to avoid cluttering up the tests with HATEOAS links. In case you want to enable HATEOAS for your test, use HTTP_HATEOAS server parameter, e.g. ``$this->cget(['entity' => 'products'], [], ['HTTP_HATEOAS' => true])``.
+.. note:: By default, HATEOAS is disabled in functional tests, although it is enabled by default in production and API Sandbox. It was done to avoid cluttering up the tests with HATEOAS links. In case you want to enable HATEOAS for your test, use HTTP_HATEOAS server parameter, e.g., ``$this->cget(['entity' => 'products'], [], ['HTTP_HATEOAS' => true])``.
 
 .. _api-batch-api:
 

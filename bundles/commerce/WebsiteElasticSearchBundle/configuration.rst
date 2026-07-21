@@ -47,7 +47,7 @@ Like in the ElasticSearchBundle, in the WebsiteElasticSearchBundle you can speci
 Disabled Environment Checks
 ---------------------------
 
-Similar to ElasticSearchBundle, you may disable system requirements check and index status check to eliminate all queries to system level routes. These checks don't affect application performance as they are used only during the application installation of full reindexation.
+Similar to ElasticSearchBundle, you may disable system requirements check and index status check to eliminate all queries to system level routes. These checks do not affect application performance as they are used only during the application installation of full reindexation.
 
 Here is how these flags may be configured.
 

@@ -10,7 +10,7 @@ Concept Guides introduce you to the business logic behind comprehensive Oro appl
 
 Complementary to the how-to approach of the Back-office section of the documentation, Concept Guides give you context and references to other how-to articles in the documentation.
 
-.. note:: When browsing documentation, be on the lookout for the |Extension| icon on the top right. It indicates whether the features require extension installation.
+.. note:: When browsing documentation, be on the lookout for the |Extension| icon at the top right. It indicates whether the features require extension installation.
 
 .. admonition:: Business Tip
 

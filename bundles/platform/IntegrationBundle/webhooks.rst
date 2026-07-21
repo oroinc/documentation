@@ -12,7 +12,7 @@ Features
 
 * **Entity Config-based**: Mark entities as webhook accessible through entity configuration
 * **API**: Full REST API for managing webhook endpoints (create, read, update, delete)
-* **Topic-based routing**: Each webhook subscribes to a single topic (e.g. ``order.created``) that combines the entity type and the event in one identifier
+* **Topic-based routing**: Each webhook subscribes to a single topic (e.g., ``order.created``) that combines the entity type and the event in one identifier
 * **Entity-specific subscriptions**: In addition to the general topic, a derived notification is also dispatched to ``{topic}.{entityId}`` (e.g., ``order.updated.42``), enabling per-entity-instance subscriptions
 * **Extensible topics**: Register custom topics via the ``WebhookTopicCollectEvent`` event
 * **Webhook Formats**: The ``format`` field selects a named request/response processing pipeline; custom formats can be registered and processed
@@ -87,7 +87,7 @@ Including Relations in the Webhook Payload
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By default, the webhook payload contains only the direct attributes of the changed entity, serialized
-as a JSON:API ``GET`` response. To embed related resources (e.g. the order's customer or line items)
+as a JSON:API ``GET`` response. To embed related resources (e.g., the order's customer or line items)
 in the ``included`` array of the payload, set the ``webhook_relations_includes`` entity config option
 to a comma-separated list of relation names in |JSON:API include format|.
 
@@ -121,7 +121,7 @@ Via Oro Back-Office
 2. Find and click on your entity
 3. Click **Edit** button
 4. In the **Webhook relations includes** field enter a comma-separated list of relation paths
-   (e.g. ``customer,lineItems``)
+   (e.g., ``customer,lineItems``)
 5. Click **Save and Close**
 
 .. note:: For more details on how to create a webhook integration from the back-office, refer to the :ref:`Configure Webhooks in the Back-Office <back-office--integrations--webhooks>` topic.
@@ -329,8 +329,8 @@ Create a New Webhook
 2. Fill in the form:
 
    * **Notification URL** (required): Enter the webhook endpoint URL
-   * **Topic** (required): Select from the dropdown of available topics
-   * **Format** (required): Select the webhook format from the dropdown; the format controls how the outgoing request is built and the payload is structured (see `Webhook Formats`_)
+   * **Topic** (required): Select from the drop-down of available topics
+   * **Format** (required): Select the webhook format from the drop-down ; the format controls how the outgoing request is built and the payload is structured (see `Webhook Formats`_)
    * **Secret** (optional): Enter a secret key for HMAC-SHA256 signature generation
    * **Enabled** (default: checked): Toggle to enable/disable the webhook
    * **Verify SSL** (default: checked): Whether to verify the TLS certificate of the notification URL
@@ -389,7 +389,7 @@ The ``format`` field on ``WebhookProducerSettings`` is **required** and selects 
 pipeline that controls how the outgoing HTTP request is assembled and how the response is handled.
 
 Available formats are registered via ``WebhookFormatProvider`` (see `Registering Custom Webhook Formats`_).
-The dropdown in the back-office and the ``format`` relationship in the API both use the format key
+The drop-down in the back-office and the ``format`` relationship in the API both use the format key
 returned by the provider.
 
 When a webhook notification is dispatched, the sender:
@@ -440,14 +440,14 @@ How It Works
 ------------
 
 1. **Entity Configuration**: Entities are marked as webhook accessible through entity config with the ``webhook_accessible`` flag in the ``integration`` scope
-2. **Topic Discovery**: ``WebhookConfigurationProvider`` reads entity configurations and builds ``WebhookTopic`` objects for each entity/event combination (e.g. ``order.created``, ``order.updated``, ``order.deleted``). After collecting entity-based topics it dispatches the ``oro_integration.webhook_topic_collect`` (``WebhookTopicCollectEvent``) event, allowing third-party bundles to add custom topics. The final collection is exposed via ``/api/webhooktopics``
+2. **Topic Discovery**: ``WebhookConfigurationProvider`` reads entity configurations and builds ``WebhookTopic`` objects for each entity/event combination (e.g., ``order.created``, ``order.updated``, ``order.deleted``). After collecting entity-based topics it dispatches the ``oro_integration.webhook_topic_collect`` (``WebhookTopicCollectEvent``) event, allowing third-party bundles to add custom topics. The final collection is exposed via ``/api/webhooktopics``
 3. **Endpoint Registration**: Administrators create ``WebhookProducerSettings`` entities via API or UI to define notification endpoints, the topic each one subscribes to, and the **format** that governs request/response processing
 4. **Event Detection**: When a webhook-accessible entity is created, updated, or deleted, Doctrine entity listeners are triggered. For updated and deleted events, two independent notifications are initiated — one for the general topic (e.g., ``order.updated``) and one for the entity-specific topic formed by appending the entity primary key to the base topic (e.g., ``order.updated.42``)
 5. **Endpoint Lookup**: Active ``WebhookProducerSettings`` entities matching the topic are retrieved from the database. This lookup is performed separately for the general topic and the entity-specific topic, so endpoints subscribed to either one receive the notification
 6. **Entity Serialization**: The entity is serialized in JSON:API format using the Oro API entity serializer via ``JsonApiFormatWebhookEventDataProvider``
 7. **Message Queuing**: For each topic (general and entity-specific), a webhook notification message (including topic, event data, timestamp, message ID, and entity metadata) is sent to the message queue for async processing
 8. **Fan-Out**: ``WebhookNotificationProcessor`` creates a child MQ job for each matching endpoint so deliveries are independent; entity metadata (``entity_class`` / ``entity_id``) is forwarded in each child message
-9. **Request Processing**: ``WebhookNotificationSender`` builds a ``WebhookRequestContext`` with the default payload, headers, and request options, then passes it to the ``WebhookRequestProcessorInterface`` registered for the webhook's format. The processor may modify any part of the context (e.g. ``ThinPayloadWebhookRequestProcessor`` strips ``attributes`` and ``relationships`` from the payload)
+9. **Request Processing**: ``WebhookNotificationSender`` builds a ``WebhookRequestContext`` with the default payload, headers, and request options, then passes it to the ``WebhookRequestProcessorInterface`` registered for the webhook's format. The processor may modify any part of the context (e.g., ``ThinPayloadWebhookRequestProcessor`` strips ``attributes`` and ``relationships`` from the payload)
 10. **Signature Generation**: If a secret is configured, the final serialised payload is signed with HMAC-SHA256 and the signature is appended to the request headers. This happens after the request processor runs, so the signature always covers the final (possibly modified) payload
 11. **HTTP Delivery**: The (potentially modified) context is used to send a POST request to the endpoint URL
 12. **Response Processing**: The response is passed through a ``WebhookResponseProcessor`` chain -- ``SuccessWebhookResponseProcessor`` (2xx), ``HttpGoneWebhookResponseProcessor`` (410 — permanently removes the endpoint), ``RetryableErrorWebhookResponseProcessor`` (429/5xx — triggers MQ redelivery), ``FallbackWebhookResponseProcessor`` (all other errors)
@@ -496,10 +496,10 @@ business-logic service.
 Two methods are available:
 
 * ``sendEntityEventNotification(string $topic, object $entity)``: Use this when you have a Doctrine-managed entity. The notifier serializes it via the Oro API
-    serializer before queuing. The ``$topic`` is the combined topic name, e.g. ``order.created``.
+    serializer before queuing. The ``$topic`` is the combined topic name, e.g., ``order.created``.
 
 * ``sendNotification(string $topic, array $eventData)``: Use this when you have already prepared the payload array, or when the data does not correspond
-    to a single entity (e.g. aggregated data, external data).
+    to a single entity (e.g., aggregated data, external data).
 
 Both methods are no-ops when no active ``WebhookProducerSettings`` records match the given topic,
 so it is safe to call them unconditionally in hot paths.
@@ -708,7 +708,7 @@ Register it as a tagged service:
 
 After registering the listener, the new topic will:
 
-* Appear in the **Topic** dropdown of the **Add Webhook** back-office form.
+* Appear in the **Topic** drop-down of the **Add Webhook** back-office form.
 * Be returned by the ``GET /api/webhooktopics`` endpoint.
 
 .. note::
@@ -724,7 +724,7 @@ Each webhook format consists of:
 
 * A **key** (string) stored in ``WebhookProducerSettings.format`` and used to look up the
   associated ``WebhookRequestProcessorInterface`` service.
-* A **label** displayed in the **Webhook Format** dropdown in the back-office.
+* A **label** displayed in the **Webhook Format** drop-down in the back-office.
 * A **``WebhookRequestProcessorInterface`` implementation** called during delivery to modify
   the ``WebhookRequestContext`` (payload, headers, HTTP method, request options) before the
   HTTP request is sent.
@@ -762,7 +762,7 @@ Create a compiler pass:
 Remember to register the compiler pass in your bundle class.
 
 The label value (``'acme.integration.webhook.custom_format.label'``) is a translation key that
-will be passed through the translator when displayed in the back-office dropdown.
+will be passed through the translator when displayed in the back-office drop-down
 
 Step 2: Implement and Register the Request Processor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -851,7 +851,7 @@ format key as the ``format`` attribute:
 
 After registration the new format will:
 
-* Appear in the **Webhook Format** dropdown in the back-office and be accepted by the ``format``
+* Appear in the **Webhook Format** drop-down in the back-office and be accepted by the ``format``
   relationship in the REST API.
 * Be used as the request-processing pipeline whenever a ``WebhookProducerSettings`` record
   with ``format: my_custom_format`` is dispatched.
@@ -907,7 +907,7 @@ The following processors are registered by default, evaluated in priority order:
 
 * ``RetryableErrorWebhookResponseProcessor``
 
-    **Handles:** Status codes the configured retry strategy marks as retryable (e.g. 429, 5xx).
+    **Handles:** Status codes the configured retry strategy marks as retryable (e.g., 429, 5xx).
 
     **Behaviour:** Logs a warning; when ``$throwExceptionOnError`` is ``true``, throws
     ``RetryableWebhookDeliveryException`` (triggers MQ redelivery with a delay).

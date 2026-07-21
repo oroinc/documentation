@@ -62,7 +62,7 @@ To create an order from an RFQ:
 
 1. Navigate to **Sales > Request for Quotes** in the main menu.
 2. Find the required RFQ and click on it.
-3. Click **Create an Order** on the top right.
+3. Click **Create an Order** at the top right.
 
 .. note:: You can find more information on how to create an order from an RFQ, add additional products, add offers specifically for the customer, edit or add shipping and billing information, calculate shipping options, add discounts, and more in the relevant :ref:`Create an Order from an RFQ <user-guide--sales--orders--create--from-rfq>` topic.
 
@@ -81,11 +81,11 @@ To edit an RFQ:
 
 1. Navigate to **Sales > Request for Quotes** in the main menu.
 2. Find the required RFQ and click on it.
-3. Click **Edit** on the top right of the page.
+3. Click **Edit** at the top right of the page.
 4. Check the fields required in the **General** section and modify the information, if necessary.
 5. Add notes and assignees.
 6. Adjust target prices and quantity and add additional products.
-7. Click **Save and Close** on the top right to save all the changes made.
+7. Click **Save and Close** at the top right to save all the changes made.
 
 .. _user-guide--sales--requests-for-quote--steps-and-transitions:
 

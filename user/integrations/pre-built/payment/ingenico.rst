@@ -20,7 +20,7 @@ The integration between OroCommerce and Ingenico supports the following key serv
 
 2. **Payment Authorization and Capture:** OroCommerce facilitates the authorization of payments through Ingenico. The payment can be captured immediately or later during order fulfillment, depending on the merchant's requirements.
 
-3. **Tokenization:** For enhanced security and to streamline the checkout process for returning customers, OroCommerce utilizes Ingenico's tokenization service. This service replaces sensitive payment data with a unique token, reducing the risk of data exposure.
+3. **Tokenization:** For enhanced security and to streamline the checkout process for returning customers, OroCommerce uses Ingenico's tokenization service. This service replaces sensitive payment data with a unique token, reducing the risk of data exposure.
 
 5. **Customer Payment Profiles Storage:** The integration allows merchants to securely store customer payment data, including credit card numbers, billing addresses, and shipping information on Ingenico's servers. OroCommerce customer users can save their payment profiles for future orders in their OroCommerce storefront account.
 
@@ -40,8 +40,7 @@ During the integration between OroCommerce and Ingenico, multiple types of data 
 
 **Transaction Status:** Information on the payment transaction status, whether approved or declined.
 
-It is important to note that the exact data exchanged and the level of integration can vary depending on the configuration settings and the customization implemented within OroCommerce.
-
+.. note:: The data exchanged and the integration level depend on the OroCommerce configuration and implemented customizations.
 
 Exchanged Fields
 ----------------
@@ -75,7 +74,7 @@ Both OroCommerce and Ingenico prioritize the security of transactions and employ
 
 **OroCommerce Security Measures:**
 
-1. **Data Encryption:** OroCommerce utilizes industry-standard encryption protocols such as SSL/TLS (Secure Sockets Layer/Transport Layer Security) to encrypt communication between the user's browser and the platform, ensuring that sensitive information remains protected during transmission.
+1. **Data Encryption:** OroCommerce uses industry-standard encryption protocols such as SSL/TLS (Secure Sockets Layer/Transport Layer Security) to encrypt communication between the user's browser and the platform, ensuring that sensitive information remains protected during transmission.
 
 2. **Payment Card Industry (PCI) Compliance:** OroCommerce adheres to the PCI Data Security Standard (PCI DSS) requirements, which involve implementing stringent security practices to protect cardholder data. This includes maintaining a secure network, regularly monitoring and testing systems, and implementing strong access control measures.
 

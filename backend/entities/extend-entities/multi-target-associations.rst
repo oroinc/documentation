@@ -83,7 +83,7 @@ The pros and cons of both approaches:
     - Associations provide a common and well-tested approach in the OroPlatform to add relationships between entities
       when types of target entities are unknown on the design stage or when you need unified access to relationships
       with different entities.
-    - It is easy to add other types of owners from any external bundle or even an administrator using the entity
+    - You can add other types of owners from any external bundle or even an administrator using the entity
       management UI.
 
   * Cons:

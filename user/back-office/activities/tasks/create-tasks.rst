@@ -18,7 +18,7 @@ Add a New Task Manually
 To add a task  manually:
 
 1. Navigate to **Activities > Tasks** in the main menu.
-2. Click **Create Task** on the top right.
+2. Click **Create Task** at the top right.
 3. On the **Create Task** page, fill in the required information:
 
    * **Subject** — The name that summarizes what the task is about.
@@ -62,7 +62,7 @@ You can create a task from a user profile and automatically assign it to the use
 To create a task from a user profile:
 
 1. Open the profile of the user to whom you want to assign a task.
-2. Click **More Actions** on the top right of the page and then click **Assign Task**.
+2. Click **More Actions** at the top right of the page and then click **Assign Task**.
 
    .. image:: /user/img/activities/activities_tasks_actions_add_userpage1.png
       :alt: Creating a task from a user profile
@@ -81,7 +81,7 @@ Add a Task from the Page of a Related Record
 
 To create a task when viewing the related record (e.g., opportunity, account, etc.):
 
-1. On the page of a related record, click **More Actions > Add Task** on the top right of the page.
+1. On the page of a related record, click **More Actions > Add Task** at the top right of the page.
 
    .. image:: /user/img/activities/tasks_actions_add_related0.png
       :alt: Creating a task from the related record's page

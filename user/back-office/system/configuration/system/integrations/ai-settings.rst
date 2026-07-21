@@ -14,7 +14,7 @@ Once the :ref:`integration with the chosen AI client <user-guide-ai-integrations
 .. image:: /user/img/system/config_system/ai-global-settings.png
    :alt: Global AI configuration settings
 
-4. Select the AI client of choice from the dropdown next to **AI Generator**. The selected AI client will be used to generate content throughout the application. Please make sure you have enough credits in your AI Generator account to be able to use it.
+4. Select the AI client of choice from the drop-down next to **AI Generator**. The selected AI client will be used to generate content throughout the application. Please make sure you have enough credits in your AI Generator account to be able to use it.
 
    Be aware that data from your website will be used by a third party to generate content.
 

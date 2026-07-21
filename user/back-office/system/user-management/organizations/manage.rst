@@ -15,8 +15,8 @@ To open the page of a specific organization:
     .. image:: /user/img/system/user_management/organization_page_details.png
        :alt: Organization details page
 
-   * To open :ref:`organization configuration settings <doc-organization-configuration>`, click |IcConfig| **Configuration** on the top right.
-   * To edit the :ref:`back-office menu <doc-config-menus>` for this organization, click |IcConfig| **Edit Menu** on the top right.
+   * To open :ref:`organization configuration settings <doc-organization-configuration>`, click |IcConfig| **Configuration** at the top right.
+   * To edit the :ref:`back-office menu <doc-config-menus>` for this organization, click |IcConfig| **Edit Menu** at the top right.
    * To edit the :ref:`storefront menu <backend-frontend-menus>` for this organization in OroCommerce, click |IcConfig|  **Edit Storefront Menu**.
    * To update organization details, such as it name or access level, click |IcEdit| **Edit**.
    * To view who updated organization details, click the **Change History** link.

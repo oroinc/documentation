@@ -16,7 +16,7 @@ To export the necessary records (e.g., customer information) in a .csv format:
    .. image:: /user/img/getting_started/records/export_1.png
       :alt: Highlight the Export button on the record's details page
 
-2. Click **Export** on the top right.
+2. Click **Export** at the top right.
 
 .. hint:: You may receive the following warning message, which notifies you about the limits for the number of columns that can be exported. Such warning can be displayed on the listing page of any exportable entity.
 

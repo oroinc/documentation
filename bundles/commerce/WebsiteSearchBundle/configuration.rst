@@ -38,7 +38,7 @@ To add an entity to a search engine, provide the following information in system
 * entity alias - it is used in search engine queries to specify which entities have to be selected from the index.
 * a list of entity fields that should be included in the search index, with their types. Supported types are `text`, `integer`, `decimal` and `datetime`. This configuration is used to define the storage structure for the search index, that is necessary for the search speed optimization. You can specify an optional "fulltext" option to define whether the text field should have a full-text search index.
 
-You can use placeholders in mapping configuration (e.g. LOCALIZTION_ID in the example below). Placeholders are dynamically substituted with the values based on the current environment (e.g., current website, localization, language). Use placeholders to get the identifier of the related entities.
+You can use placeholders in mapping configuration (e.g., LOCALIZTION_ID in the example below). Placeholders are dynamically substituted with the values based on the current environment (e.g., current website, localization, language). Use placeholders to get the identifier of the related entities.
 
 The search query should use placeholders and the search index contains resolved values,  i.e. placeholders are already substituted with identifiers.
 
@@ -68,15 +68,15 @@ This example shows configuration for the `Oro\\Bundle\\ProductBundle\\Entity\\Pr
 In the field configuration, we've defined `sku`, `names_LOCALIZATION_ID` and `status` fields.
 The `sku` is a plain text field that is stored for every entity.
 The `names_LOCALIZATION_ID` is also a text value, but this value is localized
-(i.e. differs for every language) and uses `LOCALIZATION_ID` placeholder to map the localized values in storage (e.g. `names_1` for localization[1],  and `names_2` for localization[2]).
+(i.e. differs for every language) and uses `LOCALIZATION_ID` placeholder to map the localized values in storage (e.g., `names_1` for localization[1],  and `names_2` for localization[2]).
 The `status` is a text field, for which the option "fulltext" is specified, indicating that the text field does not have a full-text search index.
 
 Engine Configuration
 --------------------
 
-WebsiteSearchBundle helps you build and plug in any search engine. The :ref:`ORM search engine <bundle-docs-commerce-website-search-bundle-orm>` is presented out of the box. It can be used as an example to build other engines. Each engine can have its own configuration, and WebsiteSearchBundle provides an easy way to handle it.
+WebsiteSearchBundle helps you build and plug in any search engine. The :ref:`ORM search engine <bundle-docs-commerce-website-search-bundle-orm>` is available out of the box and can serve as a reference implementation for other search engines. Each engine can have its own configuration. WebsiteSearchBundle provides configuration management for engine-specific settings.
 
-As it already was mentioned, bundle provides two options to configure search engine - `engine` and `engine_parameters`.
+The bundle provides two search engine configuration options: `engine` and `engine_parameters`.
 `engine_parameters` is just an array with no specific format, so any configuration can be passed there - it might include connection credentials, storage configuration, security settings and other engine specific parameters.
 
 Bundle configuration options are converted to DI container parameters - `oro_website_search.engine` and `oro_website_search.engine_parameters` respectively. These parameters can be injected into engine service to handle search properly.

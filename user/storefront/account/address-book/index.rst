@@ -8,7 +8,7 @@ The following information covers the **Address Book** section of the **Account**
 
 .. begin
 
-To open the address book, click **Address Book** under **My Profile** in the top navigation bar.
+To open the address book, click **Address Book** under **My Profile** on the top navigation bar.
 
 The address book has two sections:
 
@@ -28,7 +28,7 @@ Manage Company Addresses
 
 To create a new company address:
 
-1. Click **+New Company Address** on the top right of the **All Company Addresses** list.
+1. Click **+New Company Address** at the top right of the **All Company Addresses** list.
 
    .. image:: /user/img/storefront/profile/MyProfileNewCompanyAddress.png
 
@@ -76,7 +76,7 @@ Manage My Addresses
 
 To create a new personal address:
 
-1. Click **+New Address** on the top right of the **All My Addresses** list.
+1. Click **+New Address** at the top right of the **All My Addresses** list.
 
    .. image:: /user/img/storefront/profile/MyProfileMyAddress.png
 

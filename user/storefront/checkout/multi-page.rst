@@ -52,11 +52,11 @@ Navigate through Multi Page Checkout in the Storefront
 
   .. important:: Check SKUs, quantities, price, subtotal, shipping and total cost.
 
-  If not all of the items are visible, click **Show Less Items** on the bottom right of the item list.
+  If not all of the items are visible, click **Show Less Items** at the bottom right of the item list.
 
   .. tip::
 
-     You can edit the order content if required. To do this, click |Pencil-SVG| on the top right of the item list. The shopping list page will open. Make the required changes and then click **Checkout**. You will be redirected back to the order you have been submitting.
+     You can edit the order content if required. To do this, click |Pencil-SVG| at the top right of the item list. The shopping list page will open. Make the required changes and then click **Checkout**. You will be redirected back to the order you have been submitting.
 
 2. If required, provide additional order options:
 
@@ -72,7 +72,7 @@ Navigate through Multi Page Checkout in the Storefront
 
 .. tip::
 
-   Until you have submitted the order, you can return back and edit any step using the step list on the left of the page:
+   Until you have submitted the order, you can return back and edit any step using the step list to the left of the page:
 
    * Click the step that you want to return to. In this case, *all the changes made at the later steps will be lost*.
 

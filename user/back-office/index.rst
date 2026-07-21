@@ -12,7 +12,7 @@ Back-office is a primary management tool in Oro applications that allows manager
 
 Back-office places a great emphasis on an intuitive UI to help organize data, streamline typical back-office workflows, and enable maximum transparency for managers. In line with this approach, the back-office documentation section **mirrors the structure of the application UI** to enable quicker orientation in the content.
 
-When browsing documentation, be on the lookout for the |Extension| application icon on the top right. It indicates whether features require extension installation.
+When browsing documentation, be on the lookout for the |Extension| application icon at the top right. It indicates whether features require extension installation.
 
 .. raw:: html
 

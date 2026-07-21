@@ -3,7 +3,7 @@
 Manage Widgets in the Back-Office
 =================================
 
-Oro applications come with a number of out-of-the-box widgets that can simplify the day-to-day sales, marketing and communication activities. These can be broken down into three categories:
+Oro applications come with a number of default widgets that can simplify the day-to-day sales, marketing and communication activities. These can be broken down into three categories:
 
 .. csv-table::
    :header: "Widgets for Sales and Marketing", "Widgets for Communication", "Universal Widgets"
@@ -75,7 +75,7 @@ To configure a widget, click |IcSettings| **Configure** in the widget header and
 
 * **Widget title** --- the name displayed on the dashboard.
 * **Business unit** --- Select the business unit to display the statistics for.
-* **Role** --- Select the role of the used for which you would like to see the statistics (e.g. a sales manager, an administrator, a leads development rep, etc.).
+* **Role** --- Select the role of the used for which you would like to see the statistics (e.g., a sales manager, an administrator, a leads development rep, etc.).
 * **Owner** --- Select the owner for the widget to see statistics for a particular user.
 * **Date range** --- The time period for which the widget details are displayed.
 * **Compare with previous period** --- Select this option if you wish to compare statistics for the current and the previous periods and have it displayed in the dashboard widget.

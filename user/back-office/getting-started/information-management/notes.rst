@@ -19,7 +19,7 @@ You can see a short demo on |how to add notes| or keep reading the guidance belo
 
 To add a note to a record:
 
-1. Click **Add Note** under the **More Actions** menu on the top right on the page of the selected record.
+1. Click **Add Note** under the **More Actions** menu at the top right on the page of the selected record.
 
    .. image:: /user/img/getting_started/records/AddNotetoRecord.png
       :alt: Click Add Note under the More Actions menu of the opportunity record

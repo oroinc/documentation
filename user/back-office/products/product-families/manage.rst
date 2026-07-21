@@ -16,7 +16,7 @@ From the product families page, you can:
 - Filter existing product families
 - Manage product family grid settings (|IcView| **View** or |IcEdit| **Edit** product family details by clicking the required icon at the end of a product family row)
 
-Additionally, you can edit the details of a product family on the product families details page by clicking |IcEdit| **Edit** on the top right of its page.
+Additionally, you can edit the details of a product family on the product families details page by clicking |IcEdit| **Edit** at the top right of its page.
 
 You can delete a product family if it was created within your organization and your :ref:`user role <user-guide-user-management-permissions>` has the necessary permissions. Product families created in other organizations cannot be deleted unless you are operating from the :ref:`global organization <user-management-organizations>` and your role has the appropriate permission to perform this action. Note that system product family(ies) cannot be deleted under any circumstances.
 
@@ -33,7 +33,7 @@ To edit a product family:
 1. Navigate to **Products > Product Families** in the main menu.
 2. Choose the required product family from the list, click the |IcMore| **More Options** menu at the end of the corresponding row, and click the |IcEdit| **Edit** icon.
 3. Update the necessary information.
-4. Click **Save** on the top right of the page.
+4. Click **Save** at the top right of the page.
 
 Add a New Product Attribute Group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -82,10 +82,10 @@ Delete a Product Attribute from the Attribute Group
 Delete a Product Attribute Group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Click |Trash-SVG| on the top right of the group area.
+1. Click |Trash-SVG| at the top right of the group area.
 
    .. image:: /user/img/products/product_families/ProductAttributeRemoveGroup.png
-      :alt: Click delete on the top right of the group area
+      :alt: Click delete at the top right of the group area
 
    If the group contains any system attributes, the confirmation dialog appears. Once confirmed, the group is deleted, and the system attributes are automatically moved to the default group.
 

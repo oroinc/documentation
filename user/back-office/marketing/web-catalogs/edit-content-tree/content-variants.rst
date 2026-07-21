@@ -72,7 +72,7 @@ Once the All Products page has been enabled in the system configuration :ref:`gl
      :alt: Click the content tree icon in the more options menu of the Default Web Catalog
 
 3. In the **Content Nodes** menu on the left, click on the node to select the one you want to add the All Products page to.
-4. Click **Create Content Node** on the top right of the page.
+4. Click **Create Content Node** at the top right of the page.
 5. Complete the required fields to :ref:`configure the web catalog node <user-guide--marketing--web-catalog--content-node>`.
 6. In the **Content Variants** section, make sure to add the All Products as the system page. To do this:
 
@@ -85,7 +85,7 @@ Once the All Products page has been enabled in the system configuration :ref:`gl
 
    .. note:: See :ref:`Content Variants <user-guide--marketing--web-catalog--content-variant>` topic for more information on using content variants. See :ref:`System Page <user-guide--marketing--web-catalog--content-variant-system-page>` topic for more information on this content variant type.
 
-7. Once all the details have been provided, click **Save** on the top right of the page.
+7. Once all the details have been provided, click **Save** at the top right of the page.
 
 .. finish_all_products
 
@@ -210,7 +210,7 @@ Product Collection is a filter-based segment that helps you display a custom and
 
    Tick the Selected box to the left of the necessary products, and click **Add**.
 
-   .. note:: You can use the filter on the top of the dialog to limit the scope of the products and make them fit into the visible area.
+   .. note:: You can use the filter at the top of the dialog to limit the scope of the products and make them fit into the visible area.
 
    .. image:: /user/img/marketing/web_catalogs/ExcludeItemsFromProductCollection.png
       :alt: Select the necessary products manually
@@ -244,7 +244,7 @@ The first content variant added to the node is marked as the default variant.
 
 When adding more content variants, they have a dedicated restrictions section next to the content variant details. These restrictions will limit the use of this content variant only to specific cases; the default option is used in any other case.
 
-Select the radio on the top left of its type to set up a newly added content variant as default.
+Select the radio at the top left of its type to set up a newly added content variant as default.
 
 .. image:: /user/img/marketing/web_catalogs/change_default_variant.png
    :alt: Select the content variant to make it the default one

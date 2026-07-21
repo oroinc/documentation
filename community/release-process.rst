@@ -37,7 +37,7 @@ Version Numbering
 
 OroCommerce uses MAJOR.MINOR.PATCH version numbering scheme:
 
-- **Major** version releases are reserved for significant backward incompatible architecture and technology changes, e.g. a switch to a new version of the Symfony framework.
+- **Major** version releases are reserved for significant backward incompatible architecture and technology changes, e.g., a switch to a new version of the Symfony framework.
 - **Minor** version releases introduce new features and provide a clear migration path in case of relatively small backward incompatible architectural and technology changes.
 - **Patch** version releases usually do not contain any backward incompatible changes, unless explicitly stated otherwise in the release notes.
 

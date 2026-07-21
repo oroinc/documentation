@@ -113,7 +113,7 @@ Configure UI for an Activity Button
 
 To add an activity button to the view page of the entity with the assigned activity:
 
-1. Create two TWIG templates responsible for rendering the button and the link in the dropdown menu. Please note that you should provide both templates because an action can be rendered either as a button or a link depending on the number of actions, UI theme, device (desktop/mobile), etc.
+1. Create two TWIG templates responsible for rendering the button and the link in the drop-down menu. Please note that you should provide both templates because an action can be rendered either as a button or a link depending on the number of actions, UI theme, device (desktop/mobile), etc.
 
 Here is an example of TWIG templates:
 

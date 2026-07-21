@@ -28,8 +28,8 @@ Infrastructure-related environment variable defaults are stored in the *.env-app
       rule     := host [ ":" portRule ("," portRule)* ]
       host     := exact host name (case-insensitive) or a pattern containing one or
                 more "*" wildcards, where each "*" matches one or more characters
-      portRule := single port number (e.g. "443")
-                or port range "from-to" (inclusive on both ends, e.g. "8000-8100")
+      portRule := single port number (e.g., "443")
+                or port range "from-to" (inclusive on both ends, e.g., "8000-8100")
 
       Examples of valid rules:
         "api.example.com"                     - allows any port on api.example.com

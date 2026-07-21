@@ -81,7 +81,7 @@ To create a new customer user:
 
    .. important:: At least one role must be assigned if the **Enabled** checkbox is selected. Disabled customer users can be saved without roles, but you will need to assign roles to them later before enabling them.
 
-#. Click **Save** on the top right.
+#. Click **Save** at the top right.
 
 .. _user-guide--customers--customer-users--consents:
 
@@ -129,7 +129,7 @@ To impersonate a customer user from the customer user grid, hover over the |IcMo
 .. image:: /user/img/customers/customer_user_roles/impersonate-customer-user-grid-icon.png
    :alt: Impersonating a customer user from the customer user grid
 
-Click |IcImpersonation| **Log in as a User** on the top right to impersonate a customer user from the customer user view page.
+Click |IcImpersonation| **Log in as a User** at the top right to impersonate a customer user from the customer user view page.
 
 .. image:: /user/img/system/user_management/user-impersonation-button.png
    :alt: Impersonating a customer user from the customer user view page
@@ -214,7 +214,7 @@ To add a new OAuth application for a customer user in the back-office:
 
 4. Click **Create**.
 
-A corresponding notification is sent to the user's primary email address, the owner of the OAuth application. You can change the default recipient, localization, or email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
+A corresponding notification is sent to the user's primary email address, the owner of the OAuth application. You can change the default recipient, localization, or email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out of the box in the system configuration.
 
 Once the application is created, you are provided with a Client ID and a Client Secret. Click on the |IcCopy| icon to copy the credentials to the clipboard.
 

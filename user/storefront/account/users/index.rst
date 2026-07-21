@@ -7,7 +7,7 @@ This section provides information on how you can manage your organization users 
 
 The storefront user, role and permissions provide users with access to data and the ability to perform tasks based on their business responsibilities and the company guidelines. The ability to do this is crucial for both the buyer and the seller, as it helps support the various operations of their businesses. OroCommerce comes out of the box with the capabilities to allow buyers and sellers to specify the exact roles and permissions each user requires in order to do their job as efficiently as possible, eliminate mistakes and save money.
 
-You can access the list of storefront users in the menu under your profile name in the top navigation bar.
+You can access the list of storefront users in the menu under your profile name on the top navigation bar.
 
 .. image:: /user/img/storefront/users_roles/Users.png
    :alt: Navigation path to the Users section
@@ -51,7 +51,7 @@ The page has two sections:
 Create a New User
 -----------------
 
-To create a new user, click **+Create User** on the top right of the page, next to the view table name.
+To create a new user, click **+Create User** at the top right of the page, next to the view table name.
 
 A form will emerge with the following data to provide:
 

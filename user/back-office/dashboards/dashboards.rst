@@ -27,7 +27,7 @@ To create a dashboard:
 
 If the system have more than one dashboard type, you can select the required type via the **Dashboard type** select box. The default type of dashboards is built from and called widgets.
 
-4. Click **Save and Close** on the top right.
+4. Click **Save and Close** at the top right.
 
 
 Switch Between Dashboards

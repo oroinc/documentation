@@ -61,7 +61,7 @@ Out-of-the-box, ``\Oro\Bundle\EmailBundle\EmailTemplateCandidates\DatabaseEmailT
 Email Template Loaders
 ----------------------
 
-Email template loaders are responsible for loading email templates from different sources, such as, a database (out-of-the-box) or a filesystem. Email template loaders implement ``\Oro\Bundle\EmailBundle\Twig\EmailTemplateLoader\EmailTemplateLoaderInterface`` which extends ``\Twig\Loader\LoaderInterface`` with the `getEmailTemplate` method.
+Email template loaders are responsible for loading email templates from different sources, such as, a database (out of the box) or a filesystem. Email template loaders implement ``\Oro\Bundle\EmailBundle\Twig\EmailTemplateLoader\EmailTemplateLoaderInterface`` which extends ``\Twig\Loader\LoaderInterface`` with the `getEmailTemplate` method.
 
 The main email template loader is ``\Oro\Bundle\EmailBundle\Twig\EmailTemplateLoader\EmailTemplateChainLoader`` which calls inner loaders collected by the service container tag `oro_email.twig.email_template_loader`. Out-of-the-box, ``\Oro\Bundle\EmailBundle\Twig\EmailTemplateLoader\DatabaseEmailTemplateLoader`` loads the email templates  from the database with the `@db` namespace (i.e., provided by ``\Oro\Bundle\EmailBundle\EmailTemplateCandidates\DatabaseEmailTemplateCandidatesProvider``).
 

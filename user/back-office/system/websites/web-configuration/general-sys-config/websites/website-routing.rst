@@ -33,9 +33,9 @@ To change the default routing settings for the website:
 
    * **Canonical URL Type** --- this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
 
-     When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
+     When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g., `/product/view/4`).
 
-     When *Direct URL* is selected, the page URL is built using the page title (e.g. `/500-watt-work-light`).
+     When *Direct URL* is selected, the page URL is built using the page title (e.g., `/500-watt-work-light`).
 
      .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed.
 

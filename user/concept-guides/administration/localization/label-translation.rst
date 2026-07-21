@@ -16,7 +16,7 @@ To translate a product attribute option from English into the required language,
    .. note:: Make sure you have created the corresponding localization in the **System > Localization > Localizations** menu to make them available in the list.
 
 3. Click **Save Settings**.
-4. Navigate to your user configuration by clicking on your user name on the top right of the page and clicking **My Configuration**.
+4. Navigate to your user configuration by clicking on your user name at the top right of the page and clicking **My Configuration**.
 
    .. image:: /user/img/system/localization/labels/user_config_menu.png
       :alt: User configuration menu

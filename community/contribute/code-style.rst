@@ -24,7 +24,7 @@ Use |PHPDoc| approach to commenting your code.
 
 **Class DocBlock**
 
-It is **required** to add or update a DocBlock for every class you modify or produce. Include any information that helps clarify non-obvious behavior or conditions.
+It is **required** to add or update a DocBlock for every class you modify or produce. Include any information that helps clarify unclear behavior or conditions.
 
 **Method DocBlock**
 

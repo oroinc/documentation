@@ -5,7 +5,7 @@ Manage Sales Territories in the Back-Office
 
 .. note:: Sales Territories are only available in the Enterprise edition.
 
-A :term:`sales territory <Sales Territories>` is the customer group or geographical area for which an individual salesperson or a sales team holds responsibility. Territories can be based on various factors such as geography, industry, product line, expected revenue, etc. Territory Management is a system by which customer accounts are grouped based on a defined set of criteria. This makes for easy sharing of customer accounts among sales teams in your company. In the simplest scenario, you can assign tasks based on geographical territory relation, where a sales rep A can be responsible for country A, and a sales rep B can be responsible for country B.
+A :term:`sales territory <Sales Territories>` is the customer group or geographical area for which an individual salesperson or a sales team holds responsibility. Territories can be based on various factors such as geography, industry, product line, expected revenue, etc. Territory Management is a system by which customer accounts are grouped based on a defined set of criteria. This simplifies sharing of customer accounts among sales teams in your company. In the simplest scenario, you can assign tasks based on geographical territory relation, where a sales rep A can be responsible for country A, and a sales rep B can be responsible for country B.
 
 The sales territory management is available for leads, opportunities, and customers.
 

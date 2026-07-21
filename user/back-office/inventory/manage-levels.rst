@@ -32,7 +32,7 @@ To manage quantities for a single product in multiple warehouses (multi-warehous
 
 1. In the main menu, navigate to **Products > Products**. The product list opens.
 2. Click the product that you want to manage the inventory for. The product view page opens.
-3. Click **More Actions** on the top right and then click **Manage Inventory**.
+3. Click **More Actions** at the top right and then click **Manage Inventory**.
 
    .. image:: /user/img/inventory/manage_inventory_product_page.png
       :alt: The steps you need to take to update the product quantities per warehouse

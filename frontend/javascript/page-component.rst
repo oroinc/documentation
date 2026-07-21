@@ -29,7 +29,7 @@ To define PageComponent for a block define several data-attributes for the HTML 
 How It Works
 ------------
 
-`PageController` loads a page, triggering `'page:update'` event. Global views (`PageRegionView`) have updated their contents. And once it is done — each `PageRegionView` executes `initLayout` method for it's layout element (in common case it's the view element). Inside this method, the view excutes `'layout:init'` handler, that initializes system UI-controls (such as ScrollSpy, ToolTips, PopOvers and other), after that invokes `initPageComponents` method, that initializes components defined in HTML. This method:
+`PageController` loads a page, triggering `'page:update'` event. Global views (`PageRegionView`) have updated their contents. And once it is done — each `PageRegionView` executes `initLayout` method for its layout element (in common case it is the view element). Inside this method, the view executes `'layout:init'` handler, that initializes system UI-controls (such as ScrollSpy, ToolTips, PopOvers and other), after that invokes `initPageComponents` method, that initializes components defined in HTML. This method:
 
 - collects all elements with proper data-attributes.
 - loads defined modules of PageComponents.
@@ -97,12 +97,12 @@ An instance of BaseComponent has several methods:
 Function as a Component
 -----------------------
 
-For some trivial cases writing the entire component as extension from `BaseComponent` is redundant. This is definitely the case if you don't need to:
+For simple use cases, extending `BaseComponent` is redundant. This approach is typically unnecessary when you do not need to:
 
 - dispose this component (the result is self-disposable), or
 - extend the component for other cases.
 
-In this case it's better to define a function that accepts options and performs the initialization:
+In these cases, define a function that accepts options and performs the initialization.
 
 .. code-block:: javascript
 
@@ -117,7 +117,7 @@ Initialize Components on DOM Events
 
 You can postpone initialization for some components until a specific DOM event occurs to improve page performance.
 
-You can do this for components that do not change the UI ( i.e., have no visual impact on a page), for example, when an initially hidden popup/dropdown has initialized.
+You can do this for components that do not change the UI ( i.e., have no visual impact on a page), for example, when an initially hidden popup/drop-down has initialized.
 
 For that purpose, the component's DOM-element or its container has to have an additional attribute ``data-page-component-init-on`` defined. A value is an event name or a comma-separated list of events.
 

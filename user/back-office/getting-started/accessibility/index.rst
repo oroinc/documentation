@@ -10,12 +10,12 @@ Customers and employees with visual, hearing, or other impairments can take adva
 Keyboard-Optimized Navigation
 -----------------------------
 
-Not everyone can use a mouse to browse the website, so we provided a logical and intuitive keyboard navigation order. You can navigate across the storefront without a mouse by using your keyboard. To activate keyboard-assistive navigation, press the **Tab** key. You may see a **Skip to Main Content** button at the top of the screen. Use the Tab key to navigate forward and backward between elements; selected elements are easy to identify as they are outlined with a border.
+Not everyone can use a mouse to browse the website, so we provided a logical and intuitive keyboard navigation order. You can navigate across the storefront without a mouse by using your keyboard. To activate keyboard-assistive navigation, press the **Tab** key. You may see a **Skip to Main Content** button at the top of the screen. Use the Tab key to navigate forward and backward between elements; selected elements are outlined with a border.
 
 .. image:: /user/img/concept-guides/accessibility/skip-to-main-content.png
    :alt: Button Skip to Main Content that appears when you click TAB for the first time and initiate assistive keyboard navigation
 
-Watch for visual focus indicators: you can use the Tab key for elements that light up in blue and the arrow keys for elements that are highlighted in yellow. You can open menus and dropdown elements using Enter, Space or down-arrow keys, and close menus, dropdowns, and popups with the Esc key.
+Watch for visual focus indicators: you can use the Tab key for elements that light up in blue and the arrow keys for elements that are highlighted in yellow. You can open menus and drop-down elements using Enter, Space or down-arrow keys, and close menus, drop-down s, and popups with the Esc key.
 
 .. image:: /user/img/concept-guides/accessibility/blue-tab_yellow-arrows.png
    :alt: Blue for tab element vs yellow for arrows
@@ -57,7 +57,7 @@ You can use CTRL + / CTRL - to control the webpage size. We made sure that our d
 Search Autocomplete
 -------------------
 
-OroCommerce storefront supports search autocomplete, or predictable search, making it easier for users to enter text by generating predictions based on the first letters they type in. Our search autocomplete feature shows up-to-date product information, such as SKU, name, price, and inventory status. A system administrator can even :ref:`configure the number of products <configuration--guide--commerce--configuration--product-search>` to display in the search result dropdown via the back-office.
+OroCommerce storefront supports search autocomplete, or predictable search, making it easier for users to enter text by generating predictions based on the first letters they type in. Our search autocomplete feature shows up-to-date product information, such as SKU, name, price, and inventory status. A system administrator can even :ref:`configure the number of products <configuration--guide--commerce--configuration--product-search>` to display in the search result drop-down via the back-office.
 
 .. image:: /user/img/concept-guides/accessibility/autocomplete.gif
    :alt: Illustration of predictable search in the storefront

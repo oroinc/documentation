@@ -59,7 +59,7 @@ These integration points could be used under different circumstances using vario
 Integration Examples
 --------------------
 
-Let's examine a real-life E-commerce application example and see how to utilize OroCommerce integration points.
+Let's examine a real-life E-commerce application example and see how to use OroCommerce integration points.
 
 Acme's E-commerce application requires integrations with the following systems to achieve their goals.
 
@@ -72,7 +72,7 @@ Acme's E-commerce application requires integrations with the following systems t
    OroCommerce has SAP integration that interacts with ERP using SFTP as temporary data storage. SAP pushes customers, products, categories, price lists, and inventory data to OroCommerce SFTP once a day, and then OroCommerce periodically reads and imports all these files. OroCommerce writes information about submitted orders to SFTP immediately after submission, and then SAP periodically pulls and imports order files."
    "Payment gateway: Stripe","Integrations","Acme is using the Stripe payment gateway to collect payments from their customers.
 
-   OroCommerce has Stipe integration that adds the Stripe payment gateway to the checkout. A customer can pick this payment gateway, enter the necessary information (e.g. credit card data), and then OroCommerce authorizes or captures necessary funds and creates a payment transaction."
+   OroCommerce has Stipe integration that adds the Stripe payment gateway to the checkout. A customer can pick this payment gateway, enter the necessary information (e.g., credit card data), and then OroCommerce authorizes or captures necessary funds and creates a payment transaction."
    "Shipping service: FedEx","Integrations","Acme is using the FedEx shipping provider to calculate shipping costs during checkout.
 
    OroCommerce has FexEx integration that adds the FexEx shipping services to the checkout. A customer can select this shipping service, and then OroCommerce adds the calculated shipping cost to the order total."

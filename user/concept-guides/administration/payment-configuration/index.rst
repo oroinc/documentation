@@ -30,7 +30,7 @@ OroCommerce works with the following payment methods:
 
 * :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term-config>`
 
-  Payment term is a set of conditions required for the sale to be completed, e.g. the period that is allowed to a buyer to pay off the amount due. Payment terms may also include cash in advance requirement, cash collection on delivery, a deferred payment period of 10/20/30 days, etc. Payment terms are configured per customer to help them use the payment conditions guaranteed by their contract with your company. This integration does not require registration with third-party services.
+  Payment term is a set of conditions required for the sale to be completed, e.g., the period that is allowed to a buyer to pay off the amount due. Payment terms may also include cash in advance requirement, cash collection on delivery, a deferred payment period of 10/20/30 days, etc. Payment terms are configured per customer to help them use the payment conditions guaranteed by their contract with your company. This integration does not require registration with third-party services.
 
 * :ref:`OroPay <user-guide--payment--oropay>`
 
@@ -56,7 +56,7 @@ OroCommerce works with the following payment methods:
 
 .. CyberSource is a payment gateway solution that allows merchants to safely accept and effectively process payments.
 
-.. hint:: The default OroCommerce application includes the following payment methods out-of-the-box: Check/Money Order, Payment Terms, and PayPal Payflow Gateway/PayPal Payment Pro. Check out |OroCommerce's Extensions Store| to download other payment extensions that you can pair with your OroCommerce applications.
+.. hint:: The default OroCommerce application includes the following payment methods out of the box: Check/Money Order, Payment Terms, and PayPal Payflow Gateway/PayPal Payment Pro. Check out |OroCommerce's Extensions Store| to download other payment extensions that you can pair with your OroCommerce applications.
 
 * :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`
 

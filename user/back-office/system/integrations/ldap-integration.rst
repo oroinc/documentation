@@ -28,7 +28,7 @@ Create LDAP Integration
 To set up an integration with LDAP:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
-2. Click **Create Integration** on the top right.
+2. Click **Create Integration** at the top right.
 3. On the **Create Integration** page, select the *LDAP* integration type.
 4. In the **General Settings**, provide the following details:
   

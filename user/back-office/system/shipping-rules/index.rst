@@ -26,16 +26,16 @@ Shipping Rules Overview
 
 .. begin-shipping-rules-overview
 
-On the checkout, when a customer user provides the shipping address, the OroCommerce evaluates shipping rules one by one following the Shipping Rules Sort Order. The matching shipping rule may enable one or more shipping method(s) in the shipping options on the checkout and set the shipping service fee components that are used in shipping cost calculation.
+On the checkout, when a customer user provides the shipping address, the OroCommerce evaluates shipping rules one by one following the Shipping Rules Sort Order. The matching shipping rule may enable one or more shipping method(s) in the shipping options at checkout and set the shipping service fee components that are used in shipping cost calculation.
 
-To decide whether the shipping rule fits the order or not, OroCommerce uses the shipping destination and the shipping rule condition defined with the :ref:`expression <payment-shipping-expression-lang>`. The condition may rely on the customer order context. When a shipping rule destination and condition matches the order details (e.g. customer, ordered products and the environment), the shipping rule enables its shipping options and shipping fee components.
+To decide whether the shipping rule fits the order or not, OroCommerce uses the shipping destination and the shipping rule condition defined with the :ref:`expression <payment-shipping-expression-lang>`. The condition may rely on the customer order context. When a shipping rule destination and condition matches the order details (e.g., customer, ordered products and the environment), the shipping rule enables its shipping options and shipping fee components.
 
 .. _doc--shipping-rules--overview--stop-further-processing:
 
 Stop Further Rule Processing Mode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When the OroCommerce gets to the shipping rule with the enabled **Stop Further Rule Processing** flag, the remaining rules are not taken into account and their shipping methods are not shown as the shipping options on the checkout. This is helpful when you would like to enforce the recommended shipping method for any location or other conditions it is technically applicable (e.g. use local shipping vendor for all addresses they handle or use the specific shipping vendor that has a VIP SLA with the particular customer). It is recommended to put this type of rules to the top (e.g. setting their sort order to 1).
+When the OroCommerce gets to the shipping rule with the enabled **Stop Further Rule Processing** flag, the remaining rules are not taken into account and their shipping methods are not shown as the shipping options at checkout. This is helpful when you would like to enforce the recommended shipping method for any location or other conditions it is technically applicable (e.g., use local shipping vendor for all addresses they handle or use the specific shipping vendor that has a VIP SLA with the particular customer). It is recommended to put this type of rules to the top (e.g., setting their sort order to 1).
 
 
 .. _doc--shipping-rules--overview--shipping-methods-overlap:
@@ -97,7 +97,7 @@ To create a shipping rule:
 
    .. image:: /user/img/system/shipping_rules/shipping_rule_list.png
 
-#. Click **Create Shipping Rule** on the top right. The shipping rule create page opens.
+#. Click **Create Shipping Rule** at the top right. The shipping rule create page opens.
 
 #. In the **General Information** section, provide the following information:
 
@@ -188,7 +188,7 @@ For the :term:`flat rate <Flat Rate>` shipping method, provide the following inf
  * **Handling fee**—An additional cost for order processing charged by your company.
  * **Type**—The way a shipping price is calculated for the order. Supported options:
 
-   - **Per Item**—A shipping price for an order is calculated by multiplying product line item quantities (e.g., 5 cups of coffee, 10 napkins, and 5 cookies give us total of 20 items) and flat rate price (e.g. 1$). Finally, we add a handling fee (e.g. 10$) on top of the resulting amount. The shipping cost for this order is 20*1$+10$=30$
+   - **Per Item**—A shipping price for an order is calculated by multiplying product line item quantities (e.g., 5 cups of coffee, 10 napkins, and 5 cookies give us total of 20 items) and flat rate price (e.g., 1$). Finally, we add a handling fee (e.g., 10$) on top of the resulting amount. The shipping cost for this order is 20*1$+10$=30$
    - **Per Order**—A shipping price for an order is calculated as a sum of the specified price and handling fee. For example, if you have specified *$1* for **Price** and *$10* for **Handling fee**, then the shipping price for each order is $1+$10=$11
 
 For example:
@@ -276,7 +276,7 @@ To enable a shipping rule:
 
 To enable several shipping rules at the same time:
 
-1. Select the checkboxes on the left of the corresponding rows. The selected shipping rules will be highlighted in yellow.
+1. Select the checkboxes to the left of the corresponding rows. The selected shipping rules will be highlighted in yellow.
 
 2. Click |IcMore| on the far right of table header.
 
@@ -295,7 +295,7 @@ You can use filters on the shipping rules list page to find the required records
 
 2. To apply a filter, click on its button in the bar, and specify your query in the control that appears.
 
-   .. note:: Filter controls might look different depending on the type of data you are going to filter, e.g. textual, numeric, a date or an option set.
+   .. note:: Filter controls might look different depending on the type of data you are going to filter, e.g., textual, numeric, a date or an option set.
 
    .. image:: /user/img/system/shipping_rules/SRFilterButton.png
 

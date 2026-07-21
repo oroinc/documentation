@@ -58,7 +58,7 @@ Export Product Information
 To export the product information or price attribute data in a .csv format:
 
 1. In the main menu, navigate to **Products > Products**.
-2. Click **Export Products**, **Export Filtered Products**, **Export Related Products**, or **Export Price Attribute Data** on the top right.
+2. Click **Export Products**, **Export Filtered Products**, **Export Related Products**, or **Export Price Attribute Data** at the top right.
 
 .. hint:: Keep in mind that after clicking **Export**, you may receive the following warning message which notifies you about the limits for the number of columns that can be exported. Such warning can be displayed on the listing page of any exportable entity.
 

@@ -23,7 +23,7 @@ Recommendations that may help you:
 
 **Do Not Create Jobs If:**
 
--  There is an easy fast-executing action such as status changing etc.
+-  There is a fast-executing action such as status changing etc.
 -  The action looks like an event listener.
 
 **Create jobs if:**

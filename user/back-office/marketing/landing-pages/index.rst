@@ -10,7 +10,7 @@ Manage Landing Pages in the Back-Office
 .. image:: /user/img/marketing/landing_pages/LandingPagesSample.png
    :alt: A sample of a landing page
 
-While there are a number of default editable landing pages out-of-the-box (e.g., homepage, accessibility, about, etc.), you can also create your own from scratch.
+While there are a number of default editable landing pages out of the box (e.g., homepage, accessibility, about, etc.), you can also create your own from scratch.
 
 .. _user-guide--landing-pages-create:
 
@@ -47,7 +47,7 @@ To create a new landing page:
 
    Meta keywords are comma-separated words and phrases that describe the content in the most precise and relevant way that helps find the page via the search engines (e.g., Google, Yahoo, Bing, etc.)
 
-#. Once you have completed editing the new landing page details, click **Save** on the top right of the page.
+#. Once you have completed editing the new landing page details, click **Save** at the top right of the page.
 
 The new landing page is created and is available by the following URL:
 
@@ -74,7 +74,7 @@ To manage landing pages, navigate to **Marketing > Landing Pages** in the main m
 
 Here, you can perform the following actions:
 
- * Create a new landing page by clicking **Create Landing Page** on the top right.
+ * Create a new landing page by clicking **Create Landing Page** at the top right.
 
  * Bulk delete landing pages: In a bulk select to the top left, select one of the following options: All, All Visible, None. On the top right of the list (grid), click bulk |IcMore| **More Options** menu and click the |Trash-SVG| to remove all selected landing pages.
 
@@ -93,9 +93,9 @@ To view the landing page details:
 
 #. Find the line with the necessary landing page and click on it. You can preview the landing page's detailed information.
 
-#. Click |IcEdit| **Edit** on the top right of the page to update the landing page title and content, edit meta information, and change slug prototypes and their translation.
+#. Click |IcEdit| **Edit** at the top right of the page to update the landing page title and content, edit meta information, and change slug prototypes and their translation.
 
-#. Click **Save** on the top right of the page.
+#. Click **Save** at the top right of the page.
 
 #. Click **Save as draft** to save the landing page as a draft. Find all the related drafts under the **Drafts** section of the landing page.
 
@@ -110,7 +110,7 @@ To create a draft of the required landing page:
 
 1. Navigate to **Marketing > Landing Pages** and click on the selected landing page.
 
-2. Click |IcCopy| **Create draft** on the top right.
+2. Click |IcCopy| **Create draft** at the top right.
 
 3. An action confirmation popup displays the fields to be copied from the selected landing page to its draft (e.g., content, titles, metaTitles, metaDescriptions, metaKeywords). Click **Yes** to proceed and edit the draft.
 
@@ -131,7 +131,7 @@ To create a draft of the required landing page:
 
 |
 
-6. To publish the draft, click |IcPublish| **Publish draft** on the top right of the draft's details page. Once the action is confirmed, the draft is published, substituting the original landing page. The drafts previously created for this landing page remain unchanged under the **Drafts** section.
+6. To publish the draft, click |IcPublish| **Publish draft** at the top right of the draft's details page. Once the action is confirmed, the draft is published, substituting the original landing page. The drafts previously created for this landing page remain unchanged under the **Drafts** section.
 
 
 .. include:: /include/include-images.rst

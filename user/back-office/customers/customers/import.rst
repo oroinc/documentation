@@ -8,7 +8,7 @@ Import Customers
 You can import the bulk details of updated or processed customer information in the .csv format:
 
 1. In the main menu, navigate to |menu|.
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 3. In the **Import** dialog, click **Choose File** under the required tab, *Customer* or *Customer Addresses*, depending on what data you are importing. Select the .csv file you prepared, and then click **Import File**.
 
 .. note: Ensure your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.

@@ -4,7 +4,7 @@ Export Contacts
 To export account details in a .csv file:
 
 1. Navigate to **Customers > Contacts** in the main menu.
-2. To export information on all contacts, click **Export** on the top right.
+2. To export information on all contacts, click **Export** at the top right.
 3. Once the export is complete, you will receive an email to download the .csv file.
 
 .. note:: Keep in mind that by clicking **Export** you download all contact records regardless of the filters applied to the grid. To export only filtered records, use the **Export Grid** functionality.

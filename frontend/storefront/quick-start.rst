@@ -59,7 +59,7 @@ Then, include the following content in the file to register the bundle:
 Step 3: Create a New Demo Theme
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now that the bundle is registered, it's time to define a new theme inside it. Themes in OroPlatform are described using a ``theme.yml`` file placed within a specific layout directory structure.
+Once the bundle is registered, define a new theme inside it. Themes in OroPlatform are described using a ``theme.yml`` file placed within a specific layout directory structure.
 
 Start by creating the required directories and the theme configuration file:
 
@@ -99,7 +99,7 @@ Clear and warm cache:
 To configure your new storefront theme in the back-office:
 
 1. Navigate to **System > Theme Configurations** in the main menu.
-2. You can create a new configuration of the existing theme by clicking **Create Theme Configuration** on the top right.
+2. You can create a new configuration of the existing theme by clicking **Create Theme Configuration** at the top right.
 
   .. image:: /user/img/system/theme-configuration/theme-configuration-list.png
      :alt: The list of existing theme configurations

@@ -21,7 +21,7 @@ To enable and prioritize warehouses per website:
 4. In the **Enabled Warehouses**, add as many warehouses as you require to enable them:
 
      a) If necessary, click **+Add Warehouse**.
-     b) Select the warehouse name in the *Choose a Warehouse* dropdown.
+     b) Select the warehouse name in the *Choose a Warehouse* drop-down
      c) Drag and drop the warehouses using the vertical arrows icon.
         Products will be ordered and shipped from the higher priority warehouses first.
 

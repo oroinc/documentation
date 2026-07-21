@@ -21,13 +21,13 @@ Create Users in Oro
 To create a new user in the Oro application:
 
 1. Navigate to **System > User Management > Users** in the main menu.
-2. On the **All Users** page, click **Create User** on the top right.
+2. On the **All Users** page, click **Create User** at the top right.
 
    .. image:: /user/img/system/user_management/user_create_general.png
 
 3. In the **General** section, provide the following information:
 
-   .. note:: Fields with a red asterisk are mandatory.
+   .. note:: Fields with an asterisk are mandatory.
 
    * **Owner** --- Select a business unit from the list. The owner of the user record represents a business unit whose members can manage the record subject to the :ref:`access and permission settings <user-guide-user-management-permissions>`.
 
@@ -41,9 +41,9 @@ To create a new user in the Oro application:
 
    * **Re-enter Password** --- Provide the password again to confirm it.
    * **Name Prefix** --- A name prefix used in front of the user's name.
-   * **First Name** --- The first name of the user displayed on the interface when the user logs in.
+   * **First Name** --- The first name of the user displayed in the interface when the user logs in.
    * **Middle Name** --- The middle name of the user.
-   * **Last Name** --- The last name of the user. Together with the user's first name, the last name is displayed on the interface when the user logs in.
+   * **Last Name** --- The last name of the user. Together with the user's first name, the last name is displayed in the interface when the user logs in.
    * **Name Suffix** --- A name suffix of the user. A name suffix is used after the user's name and provides additional information about the user.
    * **Birthday** --- Click this field and select the user's date of birth using a pop-up calendar. Alternatively, type the date in the format defined by your current :ref:`locale <doc-user-management-users-configuration-localization>`.
    * **Avatar** --- Click **Choose File** to upload a photo of the user you are creating.
@@ -86,7 +86,7 @@ To create a new user in the Oro application:
 Once the user is created, it becomes available in the table of all users under **System > User Management > Users**:
 
 1. To view details of a specific user, click on the user name in the table to open their page.
-2. To edit details of a specific user, click |IcEdit| in the ellipsis menu at the end of the row of the selected user. Alternatively, open the page of the user and click **Edit** on the top right.
+2. To edit details of a specific user, click |IcEdit| in the ellipsis menu at the end of the row of the selected user. Alternatively, open the page of the user and click **Edit** at the top right.
 
    .. image:: /user/img/system/user_management/user_edit.png
 

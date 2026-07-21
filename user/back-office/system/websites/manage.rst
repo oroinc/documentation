@@ -99,7 +99,7 @@ To customize a storefront menu for the website:
 
    * Drag-and-drop menu items to rearrange them.
 
-   * Create new items and dividers if necessary by clicking **Create Menu Item** or **Create Divider** (in the button group on the top right of the page).
+   * Create new items and dividers if necessary by clicking **Create Menu Item** or **Create Divider** (in the button group at the top right of the page).
 
    * Click on the menu item to edit its details.
 
