@@ -25,7 +25,7 @@ From the grid, you can perform the following actions for system workflows:
 Available System Workflows
 --------------------------
 
-The following system workflows are provided out-of-the-box in the Oro application:
+The following system workflows are provided out of the box in the Oro application:
 
 * :ref:`Checkout <system--workflows--checkout-workflow>`
 

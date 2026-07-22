@@ -20,7 +20,7 @@ Deploy the Solution
    .. image:: /img/backend/setup/gcp/oro_solution_settings.png
       :alt: The details page of the Oro solution settings
 
-4. When complete, click **Deploy** on the bottom left to launch the deployment process. Once the deployment is finished, you should see the following information:
+4. When complete, click **Deploy** at the bottom left to launch the deployment process. Once the deployment is finished, you should see the following information:
 
    .. image:: /img/backend/setup/gcp/deployed_oro_solution.png
       :alt: The details page of the deployed Oro solution
@@ -35,7 +35,7 @@ Use the generated credentials to access your Oro application:
 * **Admin user** --- a username used to log into the admin panel (back-office).
 * **Admin password** --- a password used to log into the admin panel (back-office).
 
-Also, you can access the VM instance using SSH by clicking SSH and selecting the required option from the dropdown.
+Also, you can access the VM instance using SSH by clicking SSH and selecting the required option from the drop-down
 
 .. image:: /img/backend/setup/gcp/oro_solution_via_ssh.png
    :alt: Access the Oro application using SSH

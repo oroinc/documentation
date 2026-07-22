@@ -124,7 +124,7 @@ Some options may also be omitted as they are added automatically:
 
 * The `--working-dir (-d)` option will be ignored because it is added automatically during the `deploy` | `upgrade` command.
 * The `--no-interaction (-n)` option will be ignored because it is added automatically during the `deploy` | `upgrade` command.
-* The `-v|vv|vvv, --verbose` option will be used (if specified) with a higher priority than the same option in the `deploy` | `upgrade` command, e.g. ``orocloud-cli deploy -vv``.
+* The `-v|vv|vvv, --verbose` option will be used (if specified) with a higher priority than the same option in the `deploy` | `upgrade` command, e.g., ``orocloud-cli deploy -vv``.
 
 **[Deprecated] after_composer_install_commands**
 
@@ -344,7 +344,7 @@ Examples, applicable both for `redirects_map` values and those which are listed 
     orocloud_options:
       webserver:
         redirects_map:
-          # Simple examples that don't involve using special characters other than `/`.
+          # Simple examples that do not involve using special characters other than `/`.
           /us: /us/
           /gb: /gb/
           /news/new_event: https://corpsite.com/events/newest

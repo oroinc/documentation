@@ -181,7 +181,7 @@ Dead Letter
 
 If an error has occurred during message processing or no matching queue can be found for the message, it can be republished to the Dead Letter Exchange instead of getting silently dropped.
 
-It can be used as an alternative to Delayed Message Exchange which comes out-of-the-box.
+It can be used as an alternative to Delayed Message Exchange which comes out of the box.
 
 *Example:*
 

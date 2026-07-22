@@ -37,12 +37,12 @@ To create such field:
 
 10. Click **Save and Close**.
 
-11. On the page that opens, click **Update Schema** on the top right.
+11. On the page that opens, click **Update Schema** at the top right.
 
 To check whether the field has been added to the Customer entity:
 
 1. Navigate to **Customers > Customers** in the main menu. 
-2. Click **Create Customer** on the top right.
+2. Click **Create Customer** at the top right.
 3. In the **Additional** section, click **+Add** next to *Referral*.
 
 .. image:: /user/img/system/entity_management/customer_page_referral_entity.png
@@ -70,12 +70,12 @@ To create such field for the opportunity entity:
    :alt: Settings available in the general information section when creating a new field for an entity
 
 6. Click **Save**.
-7. On the page that opens, click **Update Schema** on the top right.
+7. On the page that opens, click **Update Schema** at the top right.
 
 To check whether the field has been added to the Opportunity entity:
 
 1. Navigate to **Sales > Opportunities** in the main menu.
-2. Click **Create Opportunity** on the top right.
+2. Click **Create Opportunity** at the top right.
 3. In the **Additional** section, select the required business unit from the list.
 
 .. image:: /user/img/system/entity_management/example_new_field_bu_on_opportunity_page.png

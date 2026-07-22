@@ -25,18 +25,18 @@ You can find the search bar:
 .. image:: /user/img/concept-guides/search/search-bar-back-office.png
    :alt: Search bar in the back-office
 
-To find a record through the search bar, start typing the search key into the text field and select the most relevant suggestion from the dropdown list.
+To find a record through the search bar, start typing the search key into the text field and select the most relevant suggestion from the drop-down list.
 		
 Several out-of-the-box functions enhance the effectiveness and speed of the search functionality. 
 
 **Storefront-specific**
 
-* :ref:`Global Search Boost <products--product-attributes--create-frontend-options>` - The feature works with the searchable product attributes only. It is available in the OroCommerce Enterprise edition. It influences the relevancy ranking of your search results in the storefront and helps pull the necessary attribute to the top of the search result list. By default, the boost for SKU is set to 5, for names to 3, meaning that the searchable word is first searched among SKUs, then names, etc. The bigger the number, the higher the relevancy. With Search Boost, you can configure any search behavior required for your business, which allows you to have better control over search results.
+* :ref:`Global Search Boost <products--product-attributes--create-frontend-options>` - The feature works with the searchable product attributes only. It is available in the OroCommerce Enterprise edition. It controls the relevancy ranking of your search results in the storefront and helps pull the necessary attribute to the top of the search result list. By default, the boost for SKU is set to 5, for names to 3, meaning that the searchable word is first searched among SKUs, then names, etc. The bigger the number, the higher the relevancy. With Search Boost, you can configure any search behavior required for your business, which allows you to have better control over search results.
 
 .. image:: /user/img/concept-guides/search/global-search-boost.png
    :alt: Global search boost in action
 
-* :ref:`Search Autocomplete <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates predictions based on searches that you start to type. It shows up-to-date product information, such as SKU, name, price, and inventory status. You can set the number of products and product categories to be displayed in the storefront search result dropdown on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
+* :ref:`Search Autocomplete <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates predictions based on searches that you start to type. It shows up-to-date product information, such as SKU, name, price, and inventory status. You can set the number of products and product categories to be displayed in the storefront search result drop-down on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
 
 .. image:: /user/img/concept-guides/search/storefront-autocomplete.png
    :alt: Search autocomplete illustration

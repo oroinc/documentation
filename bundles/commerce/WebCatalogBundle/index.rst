@@ -10,7 +10,7 @@ OroWebCatalogBundle
 Create a Content Variant
 ------------------------
 
-There are 5 content variant types registered out-of-the-box:
+There are 5 content variant types registered out of the box:
 
 - System page
 - Landing page
@@ -147,7 +147,7 @@ In our case it can be `new RouteData('frontend_blog_post_view', ['id' => $post->
     }
 
 `ContentVariantTypeContentVariantTypeRegistry` is used to collect all content variant types.
-To render `Add Content Variant` dropdown button with all available content variants, `WebCatalogExtension` twig extension is used.
+To render `Add Content Variant` drop-down button with all available content variants, `WebCatalogExtension` twig extension is used.
 
 Define form widget in template and list all needed fields for rendering. An example for `ProductPageContentVariantType` and its `ProductPageVariantType` form is
 

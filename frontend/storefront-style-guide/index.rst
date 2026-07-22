@@ -27,7 +27,7 @@ To help you create your custom Storefront theme design, we compiled two files, t
 
     These Figma files use the new |Intelligent Blue theme|, which is the recommended and most actively maintained theme for OroCommerce version 7.0.
 
-    The *Golden Carbon* and *Refreshing Teal* themes are still available in version 7.0. To see how they look on the storefront, please refer to the related Figma files: |Style Guide 6.1 (Golden Carbon)|, |Design Mockups 6.1 (Golden Carbon)| and |Style Guide 6.0 (Refreshing Teal)|, |Design Mockups 6.0 (Refreshing Teal)|.
+    The *Golden Carbon* and *Refreshing Teal* themes are still available in version 7.0. To see how they look in the storefront, please refer to the related Figma files: |Style Guide 6.1 (Golden Carbon)|, |Design Mockups 6.1 (Golden Carbon)| and |Style Guide 6.0 (Refreshing Teal)|, |Design Mockups 6.0 (Refreshing Teal)|.
 
 
 
@@ -58,9 +58,9 @@ Once you have downloaded the |Style Guide 7.0| (Storefront Style Guide 7.0) and 
 .. image:: /img/frontend/storefront-design/Publish-updates.png
    :alt: Illustration of the Figma UI with options to Publish the library file
 
-4. When your library file is successfully published, make sure it does not contain styles or elements from any missing libraries. For this, open the Assets tab in the left panel and click on the book icon again. See if under the *Libraries available in this file* it says *Includes 1 missing library*. If it does, click the chevron right > with the *Choose library* dropdown to select your newly imported library file’s name and click **Swap Library**. The *Swap default styles in instances* option should be checked.
+4. When your library file is successfully published, make sure it does not contain styles or elements from any missing libraries. For this, open the Assets tab in the left panel and click on the book icon again. See if under the *Libraries available in this file* it says *Includes 1 missing library*. If it does, click the chevron right > with the *Choose library* drop-down to select your newly imported library file’s name and click **Swap Library**. The *Swap default styles in instances* option should be checked.
 
-5. Open your newly imported work file (Design Mockups 7.0). In the Assets tab, click on the book icon. Under the *Libraries available in this file* find *Includes 1 missing library* (the source library which your Storefront Style Guide 7.0 file is an exact duplicate of), click the chevron right > with the *Choose library* dropdown to select your newly imported library file’s name and click **Swap Library**. The *Swap default styles in instances* should be checked. Swapping may take some time.
+5. Open your newly imported work file (Design Mockups 7.0). In the Assets tab, click on the book icon. Under the *Libraries available in this file* find *Includes 1 missing library* (the source library which your Storefront Style Guide 7.0 file is an exact duplicate of), click the chevron right > with the *Choose library* drop-down to select your newly imported library file’s name and click **Swap Library**. The *Swap default styles in instances* should be checked. Swapping may take some time.
 
 6. While still in your work file, open the Assets tab and click on the book icon again. Make sure your newly imported library is marked as **Added**, and that the file does not use elements or styles from any other libraries.
 
@@ -75,7 +75,7 @@ Once you have finished customizing the style guide and components library, pleas
 
 1. Open the Assets tab in the left panel of this file (library) and click on the book icon.
 2. Find the current file (Storefront Style Guide 7.0), click **Publish changes** and then **Publish**.
-3. Open your work Figma file. If this library is toggled on in your file, click **Review unpublished changes** (the book icon in the top right corner of the Figma toolbar) and then **Update all**.
+3. Open your work Figma file. If this library is toggled on in your file, click **Review unpublished changes** (the book icon in the top-right corner of the Figma toolbar) and then **Update all**.
 
 .. image:: /img/frontend/storefront-design/Apply-Changes.png
    :alt: Illustration of the Figma UI with options to Update the file
@@ -121,7 +121,7 @@ Atomic Design Approach
 The structure of the OroCommerce UI is based on the Atomic Design approach, which means that all functional elements consist of:
 
 * :ref:`Atoms <principles-atoms>` - the smallest elements that cannot be separated and that serve as elementary blocks of the interface (colors, typography, buttons, icons, etc.)
-* :ref:`Molecules <principles-molecules>` - groups of atoms that form relatively simple functional interface elements (pop-up, button with dropdown, navigation menu)
+* :ref:`Molecules <principles-molecules>` - groups of atoms that form relatively simple functional interface elements (pop-up, button with drop-down , navigation menu)
 * :ref:`Organisms <principles-organisms>` - groups of molecules that form the relatively complex parts of the interface (header, footer, sidebar)
 * :ref:`Templates <principles-templates>` - help place components in the layout and demonstrate the content structure underlying the design
 * :ref:`Pages <principles-pages>` - help apply real content to templates displaying the final interface
@@ -136,7 +136,7 @@ Atoms
 
 Atoms are fundamental building blocks of a user interface. They are comprised of basic HTML elements such as buttons, inputs, headers, etc. and cannot be separated without losing their functionality. Each atom has its own unique properties.
 
-For instance, a button atom has properties such as background color, form, title color, size, and font. By modifying these properties, you can alter the overall style of the interface where the atom is utilized.
+For instance, a button atom has properties such as background color, form, title color, size, and font. By modifying these properties, you can alter the overall style of the interface where the atom is used.
 
 Atoms provide a foundation for all basic styles. Therefore, they can serve as a valuable reference material while designing and implementing a user interface in OroCommerce.
 

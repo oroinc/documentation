@@ -7,7 +7,7 @@ Due to the continuous WebSocket connection between the Oro application server an
 
 .. note:: A user can receive this message only if another user makes a change. No notification is received if the same user made changes in a new browser tab, window, or on another device.
 
-It works out-of-the-box with content types (entities) delivered in Oro applications. 
+It works out of the box with content types (entities) delivered in Oro applications.
 
 If you want your custom entities to have this functionality, refer to the sections below.
 

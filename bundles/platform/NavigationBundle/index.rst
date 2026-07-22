@@ -119,7 +119,7 @@ There are two possible options to change the merge strategy of the tree node:
 - **move** (default) - the node with the same name will be removed and replaced in the tree. Node children will be merged with the found node children
 - **replace** --- the node with same name and children will be removed and replaced in the tree with current node definition
 
-Configuration builder reads all navigation.yml and merges it into one menu configuration. Therefore, you can add or replace any menu item from his bundles and prioritize the loading and rewriting of the menu configuration options via sorting bundles in AppKernel.php.
+Configuration builder reads all navigation.yml and merges it into one menu configuration. Therefore, you can add or replace any menu item from this bundles and prioritize the loading and rewriting of the menu configuration options via sorting bundles in AppKernel.php.
 
 .. important::
       Do not use duplicated item keys in the menu tree; these keys must be unique.

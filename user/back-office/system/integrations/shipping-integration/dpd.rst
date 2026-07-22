@@ -15,12 +15,12 @@ Dynamic Parcel Distribution, known as DPD, is one of the world’s leading parce
 
 The DPD tools integrated into your shipping solutions include:
 
-* Parcel label printing used to easy and quickly create parcel labels
+* Parcel label printing used to quickly create parcel labels
 * Parcel tracking used to check the order’s shipping status
 * Pickup parcel-shop finder allowing to locate a customer’s most preferred pickup spots
 * Postcode rules enabling to arrange parcel shipments with the regard of territory-specific holidays and other events that may affect deliveries
 
-DPD Integration comes out-of-the-box with your OroCommerce solution.
+DPD Integration comes out of the box with your OroCommerce solution.
 
 This section describes the steps that are necessary to expose FedEx as a shipping method in OroCommerce orders and quotes.
 

@@ -115,7 +115,7 @@ Deploy Production and Publish on the Internal Marketplace
 .. image:: /user/img/activities/connector-outlook/new-registration.png
    :alt: Highlighting the New registration button on the App registrations page
 
-3. Fill in the app name, choose a supported account type, and select the **Single-page application (SPA)** option from the dropdown menu under **Redirect URI**. Click **Register**.
+3. Fill in the app name, choose a supported account type, and select the **Single-page application (SPA)** option from the drop-down menu under **Redirect URI**. Click **Register**.
 
 .. image:: /user/img/activities/connector-outlook/registration-details.png
    :alt: Highlighting the fields a user needs to fill when creating a new registration

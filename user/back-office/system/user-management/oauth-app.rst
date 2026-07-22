@@ -34,7 +34,7 @@ Create an Application
 To create a new OAuth application in the back-office:
 
 1. Navigate to **System > User Management > OAuth Applications** in the main menu.
-2. Click **Create OAuth Application** on the top right of the screen.
+2. Click **Create OAuth Application** at the top right of the screen.
 3. Provide the following details on the page that opens:
 
    .. image:: /user/img/system/user_management/oauth/oauth_app_create.png
@@ -52,13 +52,13 @@ To create a new OAuth application in the back-office:
 
 4. Click **Save and Close**.
 
-A corresponding notification is sent to the primary email address of the user, the owner of oauth application. You can change the default recipient, localization, or an email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
+A corresponding notification is sent to the primary email address of the user, the owner of oauth application. You can change the default recipient, localization, or an email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out of the box in the system configuration.
 
 Once the application is created, you are provided with a Client ID and a Client Secret. Click on the |IcCopy| icon to copy the credentials to the clipboard.
 
 .. image:: /user/img/getting_started/user_menu/oauth/oauth_credentials1.png
 
-.. important:: For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe so you can access it later.
+.. important:: For security reasons, the Client Secret is displayed only once, immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe so you can access it later.
 
 Use the generated Client ID and Client Secret to retrieve an access token to connect to your Oro application.
 

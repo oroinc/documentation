@@ -3,7 +3,7 @@ Topics and Handlers
 
 WebSocket server works under Web Application Messaging Protocol (WAMP) intended to provide developers with
 the facilities they need to handle messaging between components, i.e., backend and frontend. WebSocket server in Oro
-application utilizes Publish & Subscribe (PubSub) pattern, where one component subscribes to a topic, and another component
+application uses Publish & Subscribe (PubSub) pattern, where one component subscribes to a topic, and another component
 publishes to this topic. WebSocket server router distributes events to all subscribers by calling topic handlers.
 
 Hence, if one wants to define a topic, he should declare a route for it and create a topic handler.

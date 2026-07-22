@@ -117,7 +117,7 @@ Below are the security measures OroCloud uses. For more information, please see 
    "Encryption","The only way to connect to the instances is through the SSH using public key authentication. The only protocol to access the application from the web is HTTPS. Data at rest is encrypted to ensure data protection."
    "Data protection","DB dumps can be created and downloaded with sanitized data only. Sanitization removes all private and secure information from DB and replaces it with random values. The infrastructure fulfills all data protection requirements for PCI DSS and SOC2 standards."
    "Stability","Web application firewall (WAF) protects the application from a large number of requests, i.e. from DoS/DDoS attacks."
-   "Logging","The infrastructure provides restricted access to the application logs. Storing policies prevent the logging of secure or private information, e.g. credentials."
+   "Logging","The infrastructure provides restricted access to the application logs. Storing policies prevent the logging of secure or private information, e.g., credentials."
    "Backups","All application backups are encrypted and protected from direct access."
 
 Support

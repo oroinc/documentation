@@ -48,7 +48,7 @@ Entity Level Configuration
             entity:
                 items:
                     # Options for rendering entity as string in the UI.
-                    # If these options are empty __toString will be used (if it's available).
+                    # If these options are empty __toString will be used (if it is available).
                     #
                     # Method of entity to cast object to string
                     cast_method: ~
@@ -109,7 +109,7 @@ Fields Level Configuration
                     getter: ~
                     # Can be used if you want to be see merge form for this field for entity on other side of relation,
                     # For example there is a Call entity with field referenced to Account using ManyToOne unidirectional relation.
-                    # As Account doesn't have access to collection of calls the only possible place to configure calls merging
+                    # As Account does not have access to collection of calls the only possible place to configure calls merging
                     # for account is this field in Call entity
                     inverse_display: ~
                     # Same as merge_modes but used for relation entity

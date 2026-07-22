@@ -34,7 +34,7 @@ The payment method supports the following payment actions:
 * ``refund`` --- the payment is refunded.
 * ``re_authorize`` --- the payment is re-authorized after it was previously authorized but not captured.
 
-Under the hood, the ``\Oro\Bundle\StripePaymentBundle\PaymentMethod\StripePaymentElement\StripePaymentElementMethod`` payment method delegates the payment actions to the ``\Oro\Bundle\StripePaymentBundle\StripePaymentIntent\Executor\StripePaymentIntentActionExecutorComposite`` executor, which in its turn passes the execution to the appropriate action executor, e.g. based on the payment action type.
+Under the hood, the ``\Oro\Bundle\StripePaymentBundle\PaymentMethod\StripePaymentElement\StripePaymentElementMethod`` payment method delegates the payment actions to the ``\Oro\Bundle\StripePaymentBundle\StripePaymentIntent\Executor\StripePaymentIntentActionExecutorComposite`` executor, which in its turn passes the execution to the appropriate action executor, e.g., based on the payment action type.
 
 
 Capture Method
@@ -51,9 +51,9 @@ Please be aware that the capture method setting is effective only for Stripe pay
 Stripe API Client
 -----------------
 
-The communication with the Stripe API is performed using the ``\Oro\Bundle\StripePaymentBundle\StripeClient\LoggingStripeClient``, which decorates the official Stripe PHP SDK to add the logging functionality. You can get the request and response logs being made during the runtime using the ``getRequestLogs(?string $scope = null)`` and ``getResponseLogs(?string $scope = null)`` methods. You can additionally filter the logs by the scope, which is a string that can be used to group the logs by a specific context, e.g. by the payment action type.
+The communication with the Stripe API is performed using the ``\Oro\Bundle\StripePaymentBundle\StripeClient\LoggingStripeClient``, which decorates the official Stripe PHP SDK to add the logging functionality. You can get the request and response logs being made during the runtime using the ``getRequestLogs(?string $scope = null)`` and ``getResponseLogs(?string $scope = null)`` methods. You can additionally filter the logs by the scope, which is a string that can be used to group the logs by a specific context, e.g., by the payment action type.
 
-The client is created by ``\Oro\Bundle\StripePaymentBundle\StripeClient\StripeClientFactory`` that expects the ``StripeClientConfigInterface $stripeConfig`` to take the API key and other configuration parameters required for the client creation. Out of the the box, the only implementation of the ``StripeClientConfigInterface`` is ``\Oro\Bundle\StripePaymentBundle\Entity\StripePaymentElementSettings`` that contains the configuration from the Stripe Payment Element integration settings.
+The client is created by ``\Oro\Bundle\StripePaymentBundle\StripeClient\StripeClientFactory`` that expects the ``StripeClientConfigInterface $stripeConfig`` to take the API key and other configuration parameters required for the client creation. Out of the box, the only implementation of the ``StripeClientConfigInterface`` is ``\Oro\Bundle\StripePaymentBundle\Entity\StripePaymentElementSettings`` that contains the configuration from the Stripe Payment Element integration settings.
 
 .. note:: The effective Stripe API version used by Stripe Payment Element payment method is `2025-03-31.basil` and is defined in the service container parameter ``oro_stripe_payment.payment_method.stripe_payment_element.stripe_api_version``. Stripe Script version is correspondingly set to `basil` and is defined in the service container parameter ``oro_stripe_payment.payment_method.stripe_payment_element.stripe_script_version``.
 

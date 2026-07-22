@@ -31,7 +31,7 @@ Then such resource would also contain the corresponding note in the API Sandbox.
 Implementation Details
 ----------------------
 
-Unlike the regular create or update action, the `validate` meta flag forces a database transaction rollback in the ``\Oro\Bundle\ApiBundle\Processor\CustomizeFormData\FlushDataHandler``. Keep in mind that the rollback also prevents asynchronous operations (e.g., those triggered by a message in MQ), including search reindexing, sending emails, etc. However, it cannot instantly reverse actions that have already been completed during the processing of an API request (for example, if a file is deleted in one of the API processors). Therefore, if you enable validation on an entity, you need to ensure that no irreversible operations are being carried out during the creation and update actions for that entity. If there are, it is important to either delay or make these operations asynchronous where possible.
+Unlike the regular create or update action, the `validate` meta flag forces a database transaction rollback in the ``\Oro\Bundle\ApiBundle\Processor\CustomizeFormData\FlushDataHandler``. Keep in mind that the rollback also prevents asynchronous operations (e.g., those triggered by a message in MQ), including search reindexing, sending emails, etc. However, it cannot instantly reverse actions that have already been completed during the processing of an API request (for example, if a file is deleted in one of the API processors). Therefore, if you enable validation on an entity, you need to ensure that no irreversible operations are being carried out during the creation and update actions for that entity. If there are, then either delay or make these operations asynchronous where possible.
 
 Examples
 --------

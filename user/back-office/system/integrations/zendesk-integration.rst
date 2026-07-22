@@ -85,7 +85,7 @@ Create a New Integration
 To create an integration with Zendesk:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
-2. Click **Create Integration** on the top right.
+2. Click **Create Integration** at the top right.
 3. On the **Create Integration** page, set the integration type to **Zendesk**.
 4. In the **General** section, define the following mandatory details:
 
@@ -189,7 +189,7 @@ To start the synchronization manually:
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
 2. For the integration with Zendesk, hover over the |IcMore| **More Options** menu to the right and click |BSchedule| to schedule sync.
 
-.. note:: Alternatively, open the integration details page and click **Schedule Sync** on the top right. 
+.. note:: Alternatively, open the integration details page and click **Schedule Sync** at the top right.
 
 3. Wait for data to synchronize. Click the **Check progress** link to see the synchronization status.
 

@@ -7,7 +7,7 @@ Working in a competitive B2B environment often drives online stores to raise the
 
 An :ref:`RFQ <user-guide--sales--requests-for-quote>`, or a request for a quote, is usually submitted by customers who are looking to get a better price than the one listed on the website. Through RFQ, they can ask sales representatives for specific quantities of products and bargain for the best prices, while sales reps can use :ref:`quotes <user-guide--sales--quotes>` to respond to the submitted RFQ with detailed pricing and payment terms. When all parties agree on the prices and conditions, quotes are converted into orders in just one click.
 
-As OroCommerce is a dedicated B2B eCommerce platform, it is specifically designed to meet both the buyer and seller's needs. OroCommerce provides a robust out-of-the-box RFQ and Quote functionality tool with flexible customization capabilities that you can adjust to fit any business goals.
+As OroCommerce is a dedicated B2B eCommerce platform, it is specifically designed to meet both the buyer and seller's needs. OroCommerce provides a robust built-in RFQ and Quote functionality tool with flexible customization capabilities that you can adjust to fit any business goals.
 
 Here are some of the many benefits you get when running an RFQ and quote-friendly store:
 
@@ -17,7 +17,7 @@ Here are some of the many benefits you get when running an RFQ and quote-friendl
 * Sending personalized quotes to buyers
 * Converting RFQs to quotes and quotes to orders in one click, and more
 
-Let's dive deeper into the specifics and functionality of the built-in RFQ and quote management tool that OroCommerce provides out-of-the-box.
+Let's dive deeper into the specifics and functionality of the built-in RFQ and quote management tool that OroCommerce provides out of the box.
 
 RFQ: Customer's Request and Price Offer
 ---------------------------------------

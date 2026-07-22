@@ -23,7 +23,7 @@ To enable this feature globally:
 4. In the **AI Smart Order** section, select the checkbox next to *Enable AI Smart Order* to enable the feature.
 5. Select the **Enable Async Processing** checkbox to process purchase orders asynchronously via the message queue, improving performance and accuracy for large or complex orders.
 6. Information for the **Smart Order API Key** and **Smart Order URL** fields is provided by the Oro Team upon request during the setup of the Smart Order microservice.
-7. If you have a |Customer Part Number| extension installed, select the **Use CPN in Smart Order** check box to allow customer part numbers to be used and managed for line items during :ref:`smart order draft creation <user-guide-dashboards-widgets>`. Please make sure that the **Customer Part Number** :ref:`feature is enabled <sys--commerce--product--customer-settings>` under **System > Commerce > Product > Customer Settings**.
+7. If you have a |Customer Part Number| extension installed, select the **Use CPN in Smart Order** checkbox to allow customer part numbers to be used and managed for line items during :ref:`smart order draft creation <user-guide-dashboards-widgets>`. Please make sure that the **Customer Part Number** :ref:`feature is enabled <sys--commerce--product--customer-settings>` under **System > Commerce > Product > Customer Settings**.
 
 8. Click **Save Settings**.
 

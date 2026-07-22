@@ -7,7 +7,7 @@ A post-processor is a data transformer that converts a field value to a format s
 Post-processors are used only in the :ref:`get <get-action>`, :ref:`get_list <get-list-action>` and
 :ref:`get_subresource <get-subresource-action>` actions.
 
-The following table shows all post processors provided out-of-the-box:
+The following table shows all post processors provided out of the box:
 
 .. csv-table::
    :header: "Name","Description","Options"

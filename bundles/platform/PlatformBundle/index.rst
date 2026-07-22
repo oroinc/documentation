@@ -8,7 +8,7 @@ OroPlatformBundle
 Lazy Services
 -------------
 
-Lazy service is a service that is used all over the system wrapped inside a lazy loading proxy. It allows initializing such services not during injection but when it is requested for the first time. Symfony provides the functionality to use |lazy services| out-of-the-box.
+Lazy service is a service that is used all over the system wrapped inside a lazy loading proxy. It allows initializing such services not during injection but when it is requested for the first time. Symfony provides the functionality to use |lazy services| out of the box.
 
 In your own bundles, services must be marked as lazy in service declaration by adding an additional key "lazy" that is set to true.
 

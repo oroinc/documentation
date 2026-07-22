@@ -24,11 +24,11 @@ OroCommerce comes with a number of essential features that enhance inventory man
 
 **4. Forecasting trends and customer demands**
 
-The number of product items you ship and keep in stock tells you about purchasing and seasonal trends, as well as dynamic customer demands. With OroCommerce out-of-the-box inventory management system, you can get the necessary data insights to build custom :ref:`reports <user-guide-reports>` to have a closer look at your existing stock, the most frequently ordered items, category performance, or how customer needs are changing. Vendors can use the reports to forecast procurements more precisely.
+The number of product items you ship and keep in stock tells you about purchasing and seasonal trends, as well as dynamic customer demands. With OroCommerce built-in inventory management system, you can get the necessary data insights to build custom :ref:`reports <user-guide-reports>` to have a closer look at your existing stock, the most frequently ordered items, category performance, or how customer needs are changing. Vendors can use the reports to forecast procurements more precisely.
 
 **5. Supporting third-party inventory solutions**
 
-OroCommerce provides a robust data structure to handle inventory management that would suit many companies well. However, it is not a dedicated inventory and storage tracking solution. For some companies, it can be enough. But if your business requires more advanced functionality, on top of what you get out-of-the-box, you may need to install a full-featured inventory and warehouse management software. OroCommerce is compatible with many fully-featured WMS and inventory solutions that you can have seamlessly integrated via our powerful API (for example, |Marello ERP|).
+OroCommerce provides a robust data structure to handle inventory management that would suit many companies well. However, it is not a dedicated inventory and storage tracking solution. For some companies, it can be enough. But if your business requires more advanced functionality, on top of what you get out of the box, you may need to install a full-featured inventory and warehouse management software. OroCommerce is compatible with many fully-featured WMS and inventory solutions that you can have seamlessly integrated via our powerful API (for example, |Marello ERP|).
 
 Once you decide which system to use, reflect your choice in the product inventory options configuration by enabling or disabling the full OroCommerce inventory management functionality.
 

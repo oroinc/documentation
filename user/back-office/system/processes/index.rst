@@ -18,7 +18,7 @@ To view the processes, navigate to **System > Processes** in the main menu.
 The All Processes grid contains the following details:
 
   * **NAME** --- Defines the process available in the system.
-  * **RELATED ENTITY** --- Entity which records are influenced by the process.
+  * **RELATED ENTITY** --- Entity which records are affected by the process.
   * **EXECUTION ORDER** --- Priority of the process execution. The smaller is the number, the higher is the priority. If several processes have been triggered simultaneously, the processes with a higher priority are executed first.
   * **ENABLED** --- If set to *Yes*, the process will be executed.
   * **CREATED AT** --- Date and time when the process was added to the system.

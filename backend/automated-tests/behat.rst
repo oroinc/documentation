@@ -62,7 +62,7 @@ This section summarizes the limitations and agreements important for shared test
 
       And I open User Index page
 
-  **Don't**:
+  **Do not**:
 
   .. code-block:: gherkin
 
@@ -901,7 +901,7 @@ After you restart the computer, all the data and the database structure get lost
 
 To prepare for auto-recovery using a startup script:
 
-1. Create a postgresql_copy_tmpfs.sh in the bin directory (e.g. /usr/local/bin):
+1. Create a postgresql_copy_tmpfs.sh in the bin directory (e.g., /usr/local/bin):
 
     .. code-block:: none
 
@@ -1072,7 +1072,7 @@ Type the following command in your console:
     $ php bin/behat -dl -s OroUserBundle | grep "grid"
     OroUserBundle | Then /^I see that grid has scrollable header$/
     OroUserBundle | Then /^I see that grid header is sticky$/
-    OroUserBundle | When /^I don't select any record from "(?P<gridName>[^"]+)"$/
+    OroUserBundle | When /^I do not select any record from "(?P<gridName>[^"]+)"$/
     OroUserBundle | Then I edit first record from grid:
     OroUserBundle | Then /^(?:|I )should see following grid:$/
     OroUserBundle | Then /^(?:|I )should see following "(?P<gridName>[^"]+)" grid:$/

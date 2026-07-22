@@ -60,7 +60,7 @@ In OroCommerce, products can be of three types, simple, configurable and kits. T
 
 Unlike a simple product, **a configurable product** is an item available in multiple variations. Customers configure the product in terms of its color, size or any other applicable parameters according to buying needs. Buyers in the storefront choose from the options provided to ‘configure’ a product according to their needs.
 
-However, in the back-office, configurable products are more sophisticated. A configurable product is known as a single parent product uniting multiple product variants. These product variants are assigned unique SKUs for easy inventory tracking, have their own inventory and price settings, and are generally treated as separate products in product information management (PIM) UIs. As the configurable product and all of its variants share the same set of attributes, they share the product family.
+However, in the back-office, configurable products are more sophisticated. A configurable product is known as a single parent product uniting multiple product variants. These product variants are assigned unique SKUs for better inventory tracking, have their own inventory and price settings, and are generally treated as separate products in product information management (PIM) UIs. As the configurable product and all of its variants share the same set of attributes, they share the product family.
 
 .. image:: /user/img/concept-guides/products/SampleConfigSimpleGrid.png
    :alt: Both configurable and simple products are illustrated in the products grid

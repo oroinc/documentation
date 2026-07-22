@@ -11,7 +11,7 @@ As an illustration, we are creating a report to collect statistics on buyers who
 #. Click **Create Report** at the top right of the page.
 #. In the **General** section, provide the following mandatory information:
  
-   * **Name** --- A name that is used to refer to the report on the interface. It is recommended to create a name that indicates the information the report presents.
+   * **Name** --- A name that is used to refer to the report in the interface. It is recommended to create a name that indicates the information the report presents.
    * **Entity** --- Select **Customer User** to collect data on the buyers who accepted the consent to receive emails.
    * **Report Type** --- Select *Table*.
 
@@ -30,7 +30,7 @@ As an illustration, we are creating a report to collect statistics on buyers who
    .. .. image:: /user/img/system/consents/accepted_consents_report.png
       :alt: An example of a report with accepted consents
 
-#. Click **Save and Close** on the top right of the page.
+#. Click **Save and Close** at the top right of the page.
 
 Once saved, the newly created report appears on the page of all reports:
 

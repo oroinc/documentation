@@ -166,7 +166,7 @@ Application
 
 * **Manage Passwords** --- Enables a user to change passwords of other users. See the :ref:`User Management <user-management-users>` section for more information.
 
-  .. hint:: This capability does not influence a user's ability to edit their own password from the **My User** page.
+  .. hint:: This capability does not control a user's ability to edit their own password from the **My User** page.
 
   .. image:: /user/img/system/user_management/manage_passwords.png
 
@@ -214,12 +214,12 @@ Entity
 
 * **Access Entity Management** --- Enables a user to access entity management section under **System > Entities > Entity Management** in the main menu. Many entities in |oro_application| can be configured from the interface, as described in the :ref:`Entity Management topic <doc-entities>` and :ref:`Entity Fields <doc-entity-fields>` topics.
 * **Merge Entities** --- Enables users to :ref:`merge <doc-grids-actions-records-merge>` several records of the same entity.
-* **Search** --- Enables users to :ref:`search <user-guide-getting-started-search>` for specific records within the application. The setting does not influence the user's ability to :ref:`search by tag <user-guide-getting-started-search-tag>`.
-* **Export Entity Records** --- Enables users to export entity records. When the capability is enabled, the **Export** button appears on the top right of the page with the table of selected records.
+* **Search** --- Enables users to :ref:`search <user-guide-getting-started-search>` for specific records within the application. The setting does not control the user's ability to :ref:`search by tag <user-guide-getting-started-search-tag>`.
+* **Export Entity Records** --- Enables users to export entity records. When the capability is enabled, the **Export** button appears at the top right of the page with the table of selected records.
 
   .. image:: /user/img/system/user_management/export_data.png
 
-* **Import Entity Records** --- Enables users to import records from a file to |oro_application|. When the capability is enabled, the **Import File** button appears on the top right of the page with the table of selected records.
+* **Import Entity Records** --- Enables users to import records from a file to |oro_application|. When the capability is enabled, the **Import File** button appears at the top right of the page with the table of selected records.
 
   .. image:: /user/img/system/user_management/import_data.png
 

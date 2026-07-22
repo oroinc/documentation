@@ -34,7 +34,7 @@ Create Coupons
 To create a new coupon:
 
 1. Navigate to **Marketing > Promotions > Coupons** in the main menu.
-2. Click **Coupons Actions > Create Coupon** on the top right.
+2. Click **Coupons Actions > Create Coupon** at the top right.
 
    .. image:: /user/img/marketing/coupons/FindCoupon.png
       :alt: The steps you need to perform to get to the coupon creation page
@@ -62,7 +62,7 @@ Generate Coupons
 To generate new coupons:
 
 1. Navigate to  **Marketing > Promotions > Coupons** in the main menu.
-2. Click **Coupons Actions > Generate Multiple Coupons** on the top right.
+2. Click **Coupons Actions > Generate Multiple Coupons** at the top right.
 
    .. image:: /user/img/marketing/coupons/GenerateCoupons.png
       :alt: Multiple coupons generation page
@@ -101,13 +101,13 @@ The page contains the list of all available coupons in your Oro application. Fro
 .. image:: /user/img/marketing/coupons/ActionsCoupons.png
    :alt: The page of all coupons available in the system
 
-1. Create a new coupon: Click **Coupons Actions > Create Promotion** on the top right.
-2. Generate coupons: Click **Coupons Actions > Generate Multiple Coupons** on the top right.
-3. Export coupons: Click  **Export** on the top right.
-4. Import coupons: Click  **Import** on the top right.
+1. Create a new coupon: Click **Coupons Actions > Create Promotion** at the top right.
+2. Generate coupons: Click **Coupons Actions > Generate Multiple Coupons** at the top right.
+3. Export coupons: Click  **Export** at the top right.
+4. Import coupons: Click  **Import** at the top right.
 5. View coupon details: Click on the item from the list to open its details page.
 6. Hover over the |IcMore| **More Options** menu to the right of the necessary coupon and select either to |IcView| **View**, |IcEdit| **Edit**, or |Trash-SVG| **Delete** the existing coupons from the system.
-7. Mass edit or mass delete coupons: Select the checkboxes on the left of the corresponding rows. Click |IcMore| on the far right of the table header. Click |IcEdit| **Edit** to edit, or |Trash-SVG| **Delete** to delete the selected coupons.
+7. Mass edit or mass delete coupons: Select the checkboxes to the left of the corresponding rows. Click |IcMore| on the far right of the table header. Click |IcEdit| **Edit** to edit, or |Trash-SVG| **Delete** to delete the selected coupons.
 
    .. image:: /user/img/marketing/coupons/MassActionsCoupons.png
       :alt: The illustration of a mass action

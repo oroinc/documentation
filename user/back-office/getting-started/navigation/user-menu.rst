@@ -7,6 +7,6 @@ On the right side of the screen, under your username, you will find the User Men
 access your user profile, calendar, mailbox, and task list. It is also used to log out of the system.
 
 .. image:: /user/img/getting_started/navigation/user_menu_new.png
-   :alt: User menu dropdown
+   :alt: User menu drop-down
 
 See the :ref:`User Menu <user-guide-intro-log-in-edit-profile>` section for detailed information on the available actions.

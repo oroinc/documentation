@@ -51,7 +51,7 @@ To simplify creation of entity fields, you can import a .csv file with a list of
 
 1. Navigate to **System > Entities > Entity Management**.
 2. In the grid on the **All Entities** page, click the required entity.
-3. On the page of the entity, click **Import File** on the top right.
+3. On the page of the entity, click **Import File** at the top right.
 
    .. image:: /user/img/system/entity_management/entity_import_dialog.png
       :alt: A popup dialog that opens when clicking the import file button

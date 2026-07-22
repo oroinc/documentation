@@ -3,8 +3,7 @@
 Differences to Common Symfony Applications
 ==========================================
 
-Starting your first project using OroPlatform will be easy if you're familiar with building Symfony applications from scratch. However,
-there are some differences you need to understand to develop your application efficiently.
+If you have experience building Symfony applications from scratch, many OroPlatform concepts will be familiar. However, OroPlatform introduces additional concepts and conventions that you should understand before developing your application.
 
 This article will give you a short overview of how OroPlatform differs from typical Symfony applications. Each section will link to other resources where you can learn more about a particular feature.
 

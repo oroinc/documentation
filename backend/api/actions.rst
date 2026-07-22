@@ -12,7 +12,7 @@ Each action has two required elements:
 
 For more details about these elements, see the `Creating a New Action`_ section.
 
-The following table shows all actions provided out-of-the-box:
+The following table shows all actions provided out of the box:
 
 +-----------------------------------------------------------+----------------------------------------------------------------------------------------+
 | Action Name                                               | Description                                                                            |
@@ -906,7 +906,7 @@ The main processor class: |ConfigProcessor|.
 
 Existing worker processors: |processors.get_config.yml|. Run ``php bin/console oro:api:debug get_config`` to see the list of processors.
 
-Additionally, |ConfigProvider| was created to make usage of this action as easy as possible.
+Additionally, |ConfigProvider| was created to simplify the use of this action.
 
 Example:
 
@@ -929,7 +929,7 @@ The main processor class: |MetadataProcessor|.
 
 Existing worker processors: |processors.get_metadata.yml|. Run ``php bin/console oro:api:debug get_metadata`` to see the list of processors.
 
-Additionally, |MetadataProvider| was created to make usage of this action as easy as possible.
+Additionally, |MetadataProvider| was created to simplify the use of this action.
 
 Example:
 
@@ -952,7 +952,7 @@ The main processor class: |NormalizeValueProcessor|.
 
 Existing worker processors: |processors.normalize_value.yml|. Run ``php bin/console oro:api:debug normalize_value`` to see the list of processors.
 
-Additionally, |ValueNormalizer| and |ValueNormalizerUtil| were created to make usage of this action as easy as possible.
+Additionally, |ValueNormalizer| and |ValueNormalizerUtil| were created to simplify the use of this action.
 
 Example:
 
@@ -977,7 +977,7 @@ The main processor class: |CollectResourcesProcessor|.
 
 Existing worker processors:|processors.collect_resources.yml|. Run ``php bin/console oro:api:debug collect_resources`` to see the list of processors.
 
-Additionally, |ResourcesProvider| was created to make it as easy as possible to use this action.
+Additionally, |ResourcesProvider| was created to simplify the use of this action.
 
 Example:
 
@@ -1012,7 +1012,7 @@ The main processor class: |CollectSubresourcesProcessor|.
 
 Existing worker processors: |processors.collect_subresources.yml|. Run ``php bin/console oro:api:debug collect_subresources`` to see the list of processors.
 
-Additionally, |SubresourcesProvider| was created to make usage of this action as easy as possible.
+Additionally, |SubresourcesProvider| was created to simplify the use of this action.
 
 Example:
 
@@ -1175,7 +1175,7 @@ General methods:
 -  **resetErrors()** --- Removes all errors.
 -  **isSoftErrorsHandling()** --- Retrieves a value that indicates whether to stop the further processing or throw an exception in case of error.
 -  **setSoftErrorsHandling(softErrorsHandling)** --- Sets a value that indicates whether to stop the further processing or throw an exception in case of error.
--  **setProcessed(operationName)** --- Marks work as done. In most cases, this method is unnecessary because it is easy to determine when work is already complete by checking the state of a context. However, if a processor performs complex work, it might be required to mark it as already done directly.
+-  **setProcessed(operationName)** --- Marks work as done. In most cases, this method is unnecessary because you can determine when work is already complete by checking the state of a context. However, if a processor performs complex work, it might be required to mark it as already done directly.
 -  **clearProcessed(operationName)** --- Marks work as not yet done.
 -  **isProcessed(operationName)** --- Checks whether work is already done.
 -  **getSharedData()** --- Retrieves an object used to share data between a primary action and actions executed as part of this action. Also, this object can be used to share data among different kinds of child actions.

@@ -25,7 +25,7 @@ Configuration Syntax
                             - u.group = :group_id
                 bind_parameters:
                     # Get parameter "group_id" from datagrid
-                    # and set it's value to "group_id" parameter in datasource query
+                    # and set its value to "group_id" parameter in datasource query
                     - group_id
 
 
@@ -47,7 +47,7 @@ Suppose the name of the parameters in the grid does not match the query. In that
                             - u.group = :group_id
                 bind_parameters:
                     # Get parameter "groupId" from datagrid
-                    # and set it's value to "group_id" parameter in datasource query
+                    # and set its value to "group_id" parameter in datasource query
                     group_id: groupId
 
 

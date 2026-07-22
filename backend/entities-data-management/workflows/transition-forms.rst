@@ -8,7 +8,7 @@ Configuration
 
 Sometimes the data available in the system is not enough to progress the workflow automatically by clicking one button. Therefore, users have to provide additional data in UI forms to be able to proceed (from several fields to complex entities).
 
-Workflow transitions can be configured to handle custom data provided by a user by displaying a form on the UI before a transition commit happens.
+Workflow transitions can be configured to handle custom data provided by a user by displaying a form in the UI before a transition commit happens.
 Examples below illustrate the common ways to configure transition forms.
 
 Simple Example

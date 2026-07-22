@@ -152,7 +152,7 @@ You can also ask symfony to restart the message consumer when changes happen in 
 
    symfony run -d --watch=src php bin/console oro:message-queue:consume -vv
 
-.. note:: You can kill Symfony server processes with command ``killall <PID>``, you can get PID  from the ``symfony server:status`` output.
+.. note:: You can stop Symfony server processes with command ``killall <PID>``, you can get PID from the ``symfony server:status`` output.
 
 Check Symfony Server Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -14,13 +14,13 @@ Add an Application
 
 To add a new OAuth application in the back-office:
 
-1. Click on your user name on the top right of the screen.
+1. Click on your user name at the top right of the screen.
 2. Click **My User**.
 
    .. image:: /user/img/getting_started/user_menu/oauth/my_user.png
       :alt: Profile menu
 
-3. In the **OAuth Applications** section, click **Add Application** on the top right and provide the following details in the pop-up dialog:
+3. In the **OAuth Applications** section, click **Add Application** at the top right and provide the following details in the pop-up dialog:
 
    .. image:: /user/img/getting_started/user_menu/oauth/oauth_tab.png
       :alt: Add an oauth application
@@ -33,14 +33,14 @@ To add a new OAuth application in the back-office:
 
 4. Click **Create**.
 
-A corresponding notification is sent to the user's primary email address, the owner of the oauth application. You can change the default recipient, localization, or an email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
+A corresponding notification is sent to the user's primary email address, the owner of the oauth application. You can change the default recipient, localization, or an email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out of the box in the system configuration.
 
 Once the application is created, you are provided with a Client ID and a Client Secret. Click on the |IcCopy| icon to copy the credentials to the clipboard.
 
 .. image:: /user/img/getting_started/user_menu/oauth/oauth_credentials.png
    :alt: OAuth credentials
 
-.. important:: For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe to access it later.
+.. important:: For security reasons, the Client Secret is displayed only once, immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe to access it later.
 
 You can add as many applications as you need for any of your existing organizations. All added applications are displayed in the grid; you can filter them by name, organization, and status.
 

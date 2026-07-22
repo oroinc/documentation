@@ -19,6 +19,6 @@ Export Prices from the Price List
 To export the prices in a .csv format:
 
 1. In the main menu, navigate to **Sales > Price Lists** and click the necessary price list to open its details.
-2. Click **Export** on the top right.
+2. Click **Export** at the top right.
 3. Once the export is complete, you will receive an email to download the .csv file.
 

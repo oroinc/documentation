@@ -81,8 +81,8 @@ Used `ExpressionEditorUtil` and `typeahead` widget to provide autocomplete and v
 
 Except options that the view passes to ExpressionEditUtil, it has own ones:
 
--  `delay` - sets latency of appearing autocomplete's dropdown or validation after user makes changes
--  `dataSource` - object containing html of data source widgets (e.g. Select2 components), where keys are names
+-  `delay` - sets latency of appearing autocomplete's drop-down or validation after user makes changes
+-  `dataSource` - object containing html of data source widgets (e.g., Select2 components), where keys are names
    of entities that use this data source to specify particular instance of entity. A widget will be rendered when you type
    or choose appropriate entity name. E.g. when option is
 

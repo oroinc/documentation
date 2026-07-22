@@ -11,7 +11,7 @@ A shopping list page on a storefront is a controller action templated by :ref:`l
 Datagrid Frontend Rendering
 ---------------------------
 
-Due to the high requirements for performance, **shopping list line items datagrid** skips the backend rendering of cells and utilizes frontend rendering instead. For example:
+Due to the high requirements for performance, **shopping list line items datagrid** skips the backend rendering of cells and uses frontend rendering instead. For example:
 
 .. code-block:: yaml
     :caption: config/oro/datagrids.yml

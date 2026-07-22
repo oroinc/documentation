@@ -34,7 +34,7 @@ Several practical tools and actions are available on your user profile page, fro
 
 3. **Edit your user profile.**
 
-   To update your profile details, click **Edit** on the top right of the page. You can update your credentials, change the password, upload a new avatar, and update email details on the edit page.
+   To update your profile details, click **Edit** at the top right of the page. You can update your credentials, change the password, upload a new avatar, and update email details on the edit page.
 
 4. **Perform actions available under the More Actions menu**:
 
@@ -76,7 +76,7 @@ You can change your password to the Oro application in 3 ways:
 
 **To change your password when editing your user profile:**
 
-1. Click on your user name on the top right of the screen.
+1. Click on your user name at the top right of the screen.
 2. Click **My User**.
 3. On the page of your profile, click **Edit**.
 4. In the **Password** section, provide the following information:
@@ -89,7 +89,7 @@ You can change your password to the Oro application in 3 ways:
 
 **To change your password via the More Actions menu:**
 
-1. Click on your user name on the top right of the screen.
+1. Click on your user name at the top right of the screen.
 2. Click **My User**.
 3. On your profile page, click **More Actions > Change Password**.
 
@@ -104,7 +104,7 @@ You can change your password to the Oro application in 3 ways:
 
 Only administrators can reset passwords.
 
-1. Click on your user name on the top right of the screen.
+1. Click on your user name at the top right of the screen.
 2. Click **My User**.
 3. On your profile page, click **More Actions > Reset Password**.
 4. In the dialog box, click **Reset**. The password reset link will be sent to your (admin) primary email address.

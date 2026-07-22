@@ -14,7 +14,7 @@ To create a contact reason:
    .. image:: /user/img/system/contact_reasons/all_contact_reasons.png
       :alt: The list of available reasons
 
-3. Click **Create Contact Reason** on the top right.
+3. Click **Create Contact Reason** at the top right.
 
 4. Give the reason a meaningful name.
 
@@ -27,15 +27,15 @@ To create a contact reason:
 
 7. Now you can edit the existing contact reasons or delete the unnecessary ones if necessary by clicking the |IcEdit| or |Trash-SVG| icons respectively at the end of the selected reason's row.
 
-Once saved, the reason appears in the dropdown list of the corresponding section of the *Contact Us* form in the storefront.
+Once saved, the reason appears in the drop-down list of the corresponding section of the *Contact Us* form in the storefront.
 
 .. image:: /user/img/system/contact_reasons/select_reasons_storefront.png
-   :alt: Select a contact reason from the dropdown list in the storefront
+   :alt: Select a contact reason from the drop-down list in the storefront
 
 When a customer submits the form selecting a certain reason, the relevant request is created in the **Contact Request** module under the **Activities** main menu. The request contains the **Contact Reason** field that helps you identify a possible issue the customer is concerned about.
 
 .. image:: /user/img/system/contact_reasons/contact_request_page.png
-   :alt: Select a contact reason from the dropdown list in the storefront
+   :alt: Select a contact reason from the drop-down list in the storefront
 
 You can also assign a contact reason to a contact request manually by selecting the appropriate category when creating or editing a contact request.
 

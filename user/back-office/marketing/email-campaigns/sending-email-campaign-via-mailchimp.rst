@@ -3,7 +3,7 @@
 Send an Email Campaign via Mailchimp
 ====================================
 
-Oro applications support an out-of-the-box integration with Mailchimp, enabling you to:
+Oro applications support a default integration with Mailchimp, enabling you to:
 
 * Map the Marketing Lists as segments in Mailchimp and keep them synchronized.
 * Use existing segments in Mailchimp and import them to the Oro application.
@@ -49,12 +49,12 @@ To create an audience on the Mailchimp side:
 
 1. Login to your Mailchimp account.
 #. Click **Audience** in the menu above.
-#. In the **Manage Audience** dropdown, select **View audiences**.
+#. In the **Manage Audience** drop-down, select **View audiences**.
 
    .. image:: /user/img/marketing/marketing/mailchimp/mc_create_audience.png
-      :alt: In the Manage Audience dropdown, select to view audiences
+      :alt: In the Manage Audience drop-down , select to view audiences
 
-#. Click **Create Audience** on the top right and then **Create Audience** in the popup.
+#. Click **Create Audience** at the top right and then **Create Audience** in the popup.
 
    .. image:: /user/img/marketing/marketing/mailchimp/create_audience.png
       :alt: Create a new audience in Mailchimp
@@ -93,7 +93,7 @@ To map contents of the Oro application marketing list to use a segment of the **
 
 1. Navigate to **Marketing > Marketing Lists** in the main menu.
 #. Click on the required marketing list to open its details page.
-#. Click **Connect to Mailchimp** in the top right corner.
+#. Click **Connect to Mailchimp** in the top-right corner.
 #. Provide **Mailchimp Segment Name**.
 #. Select **Mailchimp Integration**.
 #. Select **Mailchimp Subscribers List**, the audience that you have created.
@@ -102,7 +102,7 @@ To map contents of the Oro application marketing list to use a segment of the **
    .. image:: /user/img/marketing/marketing/mailchimp/o_select_mc_subscribers_list2.png
       :alt: Map contents of an Oro marketing list to use a segment of the subscribers' list in Mailchimp
 
-Once you are connected, the Mailchimp button is displayed at the top with the following actions in the dropdown:
+Once you are connected, the Mailchimp button is displayed at the top with the following actions in the drop-down :
 
 * **Synchronize** --- Start sync manually
 * **Connection Settings** --- Change connection or integration for the current marketing list in the Oro application
@@ -131,7 +131,7 @@ marketing list, you can create and send an email campaign in Mailchimp:
 
 1. Log into your Mailchimp account.
 #. Click **Campaigns** in the main menu.
-#. Click **Create Campaign** on the top right.
+#. Click **Create Campaign** at the top right.
 
    .. image:: /user/img/marketing/marketing/mailchimp/mc_create_campaign.png
       :alt: Create and send campaign on the Mailchimp side
@@ -162,7 +162,7 @@ Once you selected the campaign type, provide the following information for the c
 
 1. **To** --- Click **Add Recipients** to select the list segment for the email campaign.
 
-   * **Audience** --- Select your marketing list from the dropdown.
+   * **Audience** --- Select your marketing list from the drop-down
 
    * **Segment or Tag** --- Select the marketing list segment or the related tag that you created previously.
    
@@ -193,7 +193,7 @@ create your own.
 5. In the **Settings and Tracking** you can add the options relevant to your campaign (e.g., track opens, track clicks, etc). If you
 wish to promote your email in social media, select **Connect to Twitter** or **Connect to Facebook**.
 
-6. Review campaign details and click **Send** on the top right.
+6. Review campaign details and click **Send** at the top right.
    
    .. image:: /user/img/marketing/marketing/mailchimp/review_campaign_content.png
       :alt: Review campaign details before sending

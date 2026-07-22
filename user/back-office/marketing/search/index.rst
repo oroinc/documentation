@@ -27,36 +27,36 @@ Create a Search Term
 
 To create a new search term:
 
-1. Navigate to **Marketing > Search > Search Terms** in the main menu and click **Create Search Term** on the top right.
+1. Navigate to **Marketing > Search > Search Terms** in the main menu and click **Create Search Term** at the top right.
 2. Provide the following information in the **General** section:
 
    * **Owner** --- The name of the business units whose users can manage the current search term.
    * **Phrases** --- One or more search terms for which you want to trigger a specific action.
    * **Partial Match** --- You can choose to trigger an action based on a fragment of the phrase(s) you specified in the field above (e.g., "tag" can trigger an action for "medical tag"). Please note that this is not a fuzzy search option, and deviation in spelling will prevent the action from being triggered.
 
-3. In the **Action** section, choose what action you want to trigger for a search term in the **Action** dropdown: *Show search results page* or *Redirect to a different page*. The information to provide next will depend on the selected action.
+3. In the **Action** section, choose what action you want to trigger for a search term in the **Action** drop-down: *Show search results page* or *Redirect to a different page*. The information to provide next will depend on the selected action.
 
    a) For the **Show search results page** action:
 
       * **Search Results > Product Collection**:
 
-        * *Product Collection* -- Choose a segment for the product collection.
-        * *Additional Content Block* --  Optionally, you can add a content block in addition to the product collection segment.
+        * *Product Collection* --- Choose a segment for the product collection.
+        * *Additional Content Block* ---  Optionally, you can add a content block in addition to the product collection segment.
 
       * **Search Results > Original Search Results**:
 
-        * *Additional Content Block* --  Optionally, you can add a content block to the search results page.
+        * *Additional Content Block* ---  Optionally, you can add a content block to the search results page.
 
    .. image:: /user/img/marketing/search/search-term-search-results.png
 
-   b) For the **Redirect to a different page** action, select what to display to users instead of the specified search term(s) in the **Target Type** dropdown:
+   b) For the **Redirect to a different page** action, select what to display to users instead of the specified search term(s) in the **Target Type** drop-down:
 
-      * *Content Node* -- specify the :ref:`web catalog <user-guide--web-catalog>` from which you want to choose the content node and the :ref:`content node <user-guide--marketing--web-catalog--content-variant>` itself.
-      * *Product* -- select a specific product from the *Product* field dropdown
-      * *Category* -- select a master catalog category from the list in the *Category* field.
-      * *Landing Page* -- select a specific landing page from the *Page* field dropdown.
-      * *System Page* -- select a specific system page from the *System Page* field dropdown.
-      * *URI* -- specify a web address of the page or resource to which you want to redirect the user. This option supports URIs that include filters in the address (for example, when you use filters in the OroCommerce storefront to narrow down search results).
+      * *Content Node* --- specify the :ref:`web catalog <user-guide--web-catalog>` from which you want to choose the content node and the :ref:`content node <user-guide--marketing--web-catalog--content-variant>` itself.
+      * *Product* --- select a specific product from the *Product* field drop-down
+      * *Category* --- select a master catalog category from the list in the *Category* field.
+      * *Landing Page* --- select a specific landing page from the *Page* field drop-down.
+      * *System Page* --- select a specific system page from the *System Page* field drop-down.
+      * *URI* --- specify a web address of the page or resource to which you want to redirect the user. This option supports URIs that include filters in the address (for example, when you use filters in the OroCommerce storefront to narrow down search results).
 
      All target types, except URI, support the **301 Redirect** option. When enabled, this means that instead of forwarding users internally to a different page retaining the original URL, users will be redirected to a page with a new URL.
 
@@ -74,7 +74,7 @@ To create a new search term:
 
 .. _user-guide-search-search-history:
 
-5. Click **Save** on the top right.
+5. Click **Save** at the top right.
 
 You can view the list of all created search terms in the Search Terms :ref:`grid <user-guide-data-management-basics>`.
 

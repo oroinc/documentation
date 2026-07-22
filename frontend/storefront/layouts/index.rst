@@ -319,7 +319,7 @@ Keep in mind that data that you put in the layout context is configuration (or s
 
 As an example, let us assume that you need to build a layout for a Product Details page of the OroCommerce application.
 All product pages should be similar (e.g., have the same menu placement, form fields, etc.), except for the product name and description.
-Let us also assume that you have an option that specifies that a menu should be rendered either on the top or on the left of the page.
+Let us also assume that you have an option that specifies that a menu should be rendered either at the top or to the left of the page.
 
 In this case, it would be reasonable to put the menu position option in the layout context.
 However, it is not recommended to put the product object in the layout context.
@@ -327,7 +327,7 @@ The reason for it is that it will not be possible to reuse the same layout for d
 
 Sharing dynamic data, like a product object, is described in the `Layout Data Providers`_ section.
 
-If there are several types of products, and their details pages (e.g. groceries, stationary, and toys) are supposed to differ significantly,
+If there are several types of products, and their details pages (e.g., groceries, stationary, and toys) are supposed to differ significantly,
 it would be reasonable to put the product type in the layout context.
 
 Types of Data in the Context

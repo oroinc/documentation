@@ -46,7 +46,7 @@ Here is an example of such a class:
 
 You can edit email templates in a specified folder. New changes will be applied to the database after the migration is executed. To make things even easier, implement  ``Oro\Bundle\MigrationBundle\Fixture\VersionedFixtureInterface`` so for new updates, it will be enough to increment the version as well as add a new hash to the array. There may be any number of such hashes which guaranty corresponding versions will be updated to actual one.
 
-.. note:: Email template file name must match the email template name, e.g. ``some_email_template_name_1.html.twig`` for ``some_email_template_name_1``.
+.. note:: Email template file name must match the email template name, e.g., ``some_email_template_name_1.html.twig`` for ``some_email_template_name_1``.
 
 Email Template Format
 ---------------------

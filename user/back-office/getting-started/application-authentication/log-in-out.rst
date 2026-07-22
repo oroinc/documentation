@@ -9,7 +9,7 @@ If you are not currently logged into the Oro application, the **Login** page ope
 
 1. On the **Login** page, enter your Oro credentials: username and password.
 
-   .. important:: Typically, you receive your credentials directly from an administrator, or they are automatically sent to the email address specified in your Oro application profile upon the profile creation. Oro application can be set up to accept your existing corporate username and password. This is possible if your organization utilizes LDAP to share them across multiple applications. Please check with your system administrator to see if this is the case.
+   .. important:: Typically, you receive your credentials directly from an administrator, or they are automatically sent to the email address specified in your Oro application profile upon the profile creation. Oro application can be set up to accept your existing corporate username and password. This is possible if your organization uses LDAP to share them across multiple applications. Please check with your system administrator to see if this is the case.
 
 2. If you want to be automatically registered the next time you open the Oro application from this device, select the **Remember me on this computer** checkbox.
 3. Click **Log In**.
@@ -46,7 +46,7 @@ You can log in using your Gmail account if Google Single Sign-On is enabled for 
 Log Out
 -------
 
-To log out of the Oro application, click **Logout** in the user menu on the top right of the page.
+To log out of the Oro application, click **Logout** in the user menu at the top right of the page.
 
 .. image:: /user/img/getting_started/app_authentication/logout.png
    :alt: The logout button in the user menu

@@ -5,7 +5,7 @@ Manage Email Campaigns in the Back-Office
 
 With the email campaigns in the Oro application, you can send an email with birthday wishes and a special offer to all of your loyal customers born in June or deliver a compliment to every customer who has purchased from you since April.
 
-Before you start using Email campaigns, prepare your contact sources (e.g. a :ref:`marketing list <user-guide-marketing-lists>`) and create an :ref:`Email Template <user-guide-email-template>`.
+Before you start using Email campaigns, prepare your contact sources (e.g., a :ref:`marketing list <user-guide-marketing-lists>`) and create an :ref:`Email Template <user-guide-email-template>`.
 
 After that, you can easily set up an Email Campaign, within which all the contacts on the list will
 receive personalized emails.
@@ -22,7 +22,7 @@ To create a new email campaign:
 
 #. Navigate to **Marketing > Email Campaigns** in the main menu.
 
-#. Click **Create Email Campaign** in the top right corner to get to the *Create Email Campaign* page.
+#. Click **Create Email Campaign** in the top-right corner to get to the *Create Email Campaign* page.
 
 #. In the *General* section, provide the following information:
 
@@ -61,9 +61,9 @@ To create a new email campaign:
 
      .. note:: You can only see the templates assigned to no entity or the same entity as the marketing list.
 
-     .. important::  Keep in mind that the ability to view and add email templates from the dropdown list depends on specific roles and permissions defined in the system configuration. For example, with the User permissions, you can view and add the templates created by you exclusively. The Business Unit permissions give access to the email templates created by any user who belongs to the same business unit as you. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide."
+     .. important::  Keep in mind that the ability to view and add email templates from the drop-down list depends on specific roles and permissions defined in the system configuration. For example, with the User permissions, you can view and add the templates created by you exclusively. The Business Unit permissions give access to the email templates created by any user who belongs to the same business unit as you. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide."
 
-#. Once you finish configuring the marketing campaign, click **Save and Close** in the top right corner of the page.
+#. Once you finish configuring the marketing campaign, click **Save and Close** in the top-right corner of the page.
 
    .. image:: /user/img/marketing/marketing/email_campaign_send.png
       :alt: View the Create Email Campaign page

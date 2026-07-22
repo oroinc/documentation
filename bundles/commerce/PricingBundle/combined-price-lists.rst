@@ -135,7 +135,7 @@ Step 1
 Step Two
 ^^^^^^^^
 
-Here, combined prices are created for the requested CPLs and products (if any). This is done by `SingleCplProcessor` executed in multiple threads. When each of the CPLs is ready, it will be assigned to entities listed in the Assignment Information if this information was passed. This step also adds product indexation requests which will be processed later by `CombinedPriceListPostProcessingStepsProcessor`. When Assignment Information is provided, CPL update events are triggered (out-of-the-box, this event is listened to by subtotal listeners, which mark saved totals as stale).
+Here, combined prices are created for the requested CPLs and products (if any). This is done by `SingleCplProcessor` executed in multiple threads. When each of the CPLs is ready, it will be assigned to entities listed in the Assignment Information if this information was passed. This step also adds product indexation requests which will be processed later by `CombinedPriceListPostProcessingStepsProcessor`. When Assignment Information is provided, CPL update events are triggered (out of the box, this event is listened to by subtotal listeners, which mark saved totals as stale).
 
 .. note:: Please note that this step may produce a significant load on the DB if a significant number of CPLs are planned for the rebuild. The expected execution time varies from minutes to hours.
 

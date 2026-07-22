@@ -8,7 +8,7 @@ In OroCommerce, :term:`shopping lists <Shopping List>` are much more than a list
 
 .. _frontstore-guide--shopping-lists-create:
 
-You can reach shopping lists under the account menu in the top navigation bar or in the shopping list widget in the top right corner.
+You can reach shopping lists under the account menu on the top navigation bar or in the shopping list widget in the top-right corner.
 
 .. image:: /user/img/storefront/shopping_lists/shopping_lists_location.png
    :alt: Two locations of the shopping lists

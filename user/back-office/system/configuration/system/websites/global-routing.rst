@@ -8,7 +8,7 @@ Global routing configuration includes the following information:
 
 * Global website URL when reached using secure (https) and insecure (http) connection
 * Options that impact the way metadata for the search engine is generated
-* Meaningful URL (e.g. `/product/view/4` vs `/500-watt-work-light`)
+* Meaningful URL (e.g., `/product/view/4` vs `/500-watt-work-light`)
 
 .. note::
     The website routing settings can be configured globally, per :ref:`organization <organization-config-website-routing>`, per :ref:`website <sys--websites--sysconfig--websites--routing>`, :ref:`customer group <user-guide--customer-groups--configuration--settings--routing>` and :ref:`customer <user-guide--customer--configuration--settings--routing>`.
@@ -66,9 +66,9 @@ To change the default global routing settings:
 
    * **Canonical URL Type** --- this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
 
-     * When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
+     * When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g., `/product/view/4`).
 
-     * When *Direct URL* is selected, the page URL is built using the page slug (e.g. `/500-watt-work-light`).
+     * When *Direct URL* is selected, the page URL is built using the page slug (e.g., `/500-watt-work-light`).
 
      .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed. Switching from one setting to the other does not modify the data stored in the database, it only controls which data is used to as a canonical URL.
 

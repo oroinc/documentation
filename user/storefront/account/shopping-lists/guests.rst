@@ -20,7 +20,7 @@ By default, only one shopping list is available for unregistered users:
 
 2.  To add more items to the existing list, or change the quantity of the items that are already on the list, click **Update Shopping List** next to the product.
 
-    Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top right corner of the store page, and click *View Details*.
+    Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top-right corner of the store page, and click *View Details*.
 
     In the *Quantity* field, change the quantity of the product.
 
@@ -28,7 +28,7 @@ By default, only one shopping list is available for unregistered users:
 
      .. image:: /user/img/storefront/shopping_lists/shopping_list_dropdown_2.png
 
-     Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top right corner of the store page, and click *View Details*.
+     Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top-right corner of the store page, and click *View Details*.
 
      Next to the product, click |Trash-SVG| to remove it.
 

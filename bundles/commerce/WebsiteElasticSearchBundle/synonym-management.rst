@@ -22,7 +22,7 @@ You can add synonyms via Marketing > Synonyms manually or via the import. In bot
 
 * **Websites**  --- the websites where you want to use the synonym;
 
-* **Entities** --- the entities you want to use the synonym. This field is hidden out-of-the-box because there is only one available entity (Product);
+* **Entities** --- the entities you want to use the synonym. This field is hidden out of the box because there is only one available entity (Product);
 
 * **Synonyms**  ---  the actual synonym words.
 

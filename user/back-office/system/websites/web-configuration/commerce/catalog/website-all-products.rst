@@ -34,7 +34,7 @@ Enable All Products Page per Website
 
 4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 5. In the **All Products** section, select the **Enable All Products Page** checkbox.
-6. Click **Save Settings** on the top right of the page.
+6. Click **Save Settings** at the top right of the page.
 
 
 .. include:: /include/include-images.rst

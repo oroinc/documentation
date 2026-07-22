@@ -41,8 +41,8 @@ To create a new marketing list:
 
       "**Name**","A name used to refer to the marketing list in the system."
       "**Include Previously Contacted Members**","The option is helpful when you change the filter conditions of the marketing list. The contacts that were on the list before the condition update, might not meet the new rules. So, if you enable the checkbox, the marketing list would include both new records (based on new rules) and the ones that were contacted in the past (based on previous conditions)."
-      "**Entity**","Choose an entity from the dropdown. Only entities with contact details (email or phone number) are available. Records of the chosen entity and entities related to it will be used to create the list of contacts."
-      "**Type**","Chose the list type from the dropdown:
+      "**Entity**","Choose an entity from the drop-down. Only entities with contact details (email or phone number) are available. Records of the chosen entity and entities related to it will be used to create the list of contacts."
+      "**Type**","Chose the list type from the drop-down :
 
       - **Dynamic** lists are updated as soon as any changes have occurred in the system.
 
@@ -80,7 +80,7 @@ To create a new marketing list:
 
    You can |Trash-SVG| delete, |IcEdit| edit, or |IcReorder| change the column position by clicking the corresponding icon.
 
-#. Once you finish configuring the marketing list, click **Save and Close** in the top right corner.
+#. Once you finish configuring the marketing list, click **Save and Close** in the top-right corner.
 
 Now, you can use contacts from your marketing lists to run dedicated campaigns.
 
@@ -160,7 +160,7 @@ To share the marketing list with other Oro application users:
 
 #. Click on the marketing list to preview its contents.
 
-#. Click **Share** in the top right corner to open the **Sharing Settings**.
+#. Click **Share** in the top-right corner to open the **Sharing Settings**.
 
 #. Type in the user name next to the *Share with* text, or search for the necessary user. Next, click |IcBars|, find the required person, select the checkbox next to their name, and click **Add**.
 

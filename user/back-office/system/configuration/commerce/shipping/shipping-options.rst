@@ -44,7 +44,7 @@ To change these shipping options:
 3. To customize any of these options:
 
      a) Clear the **Use Default** box next to the option.
-     b) Select/deselect the option by holding *Ctrl* and clicking on the value (e.g. pound).
+     b) Select/deselect the option by holding *Ctrl* and clicking on the value (e.g., pound).
 
 4. Click **Save**.
 

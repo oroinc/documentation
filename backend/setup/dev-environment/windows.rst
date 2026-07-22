@@ -25,10 +25,10 @@ Environment Setup
    .. image:: /img/backend/setup/wsl/logged-in-ubuntu.png
       :alt: An example of terminal messages displayed once you log into ubuntu
 
-   To switch to Ubuntu on your Windows Powershell, click on the dropdown next to the **+** tab and select Ubuntu from the list.
+   To switch to Ubuntu on your Windows Powershell, click on the drop-down next to the **+** tab and select Ubuntu from the list.
 
    .. image:: /img/backend/setup/wsl/powershell-ubuntu-dropdown-list.png
-      :alt: Ubuntu option in the Powershell dropdown
+      :alt: Ubuntu option in the Powershell drop-down
 
    To avoid switching to Ubuntu manually every time, you can set up your Windows Powershell to run Ubuntu by default on startup. For this, navigate to your Windows settings > Startup and change the **Default Profile** to *Ubuntu*, as illustrated in the screenshot below:
 

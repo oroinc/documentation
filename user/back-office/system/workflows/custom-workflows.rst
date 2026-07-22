@@ -3,7 +3,7 @@
 Manage Custom Workflows in the Back-Office
 ==========================================
 
-Workflows created on the UI from scratch are custom workflows.
+Workflows created in the UI from scratch are custom workflows.
 Navigate to **System > Workflows** in the main menu to reach the page with all custom and system workflows.
 You can perform the following actions for them:
 

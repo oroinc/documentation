@@ -13,7 +13,7 @@ For example, one company can run three different stores under a franchise licens
 
 .. note:: In the Oro application, you can have only one global organization. Users in the global organization, given they have the **Global** access levels in their role, can access and control all system data in all organizations within one instance of the application.
 
-If you have access to more than one organization, you can switch between them using the selector on the top left.
+If you have access to more than one organization, you can switch between them using the selector at the top left.
 
 .. image:: /user/img/system/user_management/organization_selector.png
    :alt: Organization switcher

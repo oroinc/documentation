@@ -5,7 +5,7 @@ Attributes Boost
 
 .. note:: This feature is only available in the Enterprise edition and if Elasticsearch is used as the search engine.
 
-Attribute boosting enables you to influence the relevancy ranking of the search results by the value of the attributes.
+Attribute boosting enables you to control the relevancy ranking of the search results by the value of the attributes.
 
 For example, if one product has a word 'ball' in its name and another word has the same word in the description,
 the first product will have a higher relevancy ranking if a user searches by the 'ball' query.

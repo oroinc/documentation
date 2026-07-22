@@ -47,7 +47,7 @@ To view all warehouses, navigate to **Inventory > Warehouses** in the main menu.
 
 You can perform the following actions here:
 
-* Create a warehouse: Click the button on the top right.
+* Create a warehouse: Click the button at the top right.
 * **View Warehouse details**: Click on the warehouse to open its details page.
 * **Edit Warehouse details**: Click |IcEdit| at the end of the row to start editing the selected warehouse details. You might need to click the |IcMore| **More Options** menu at the end of the row to reach the |IcEdit| icon.
 * **Delete a Warehouse**: Click the |IcMore| **More Options** menu at the end of the row, and then click the |Trash-SVG| **Delete** icon.

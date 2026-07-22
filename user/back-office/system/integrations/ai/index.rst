@@ -30,7 +30,7 @@ Create Integration with OpenAI
 To create an integration with OpenAI as the AI content generator of choice:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
-2. Click **Create Integration** on the top right and provide the following information:
+2. Click **Create Integration** at the top right and provide the following information:
 
    .. csv-table::
       :widths: 10, 30
@@ -55,7 +55,7 @@ Create Integration with Vertex AI
 To create and integration with Vertex AI as the AI content generator of choice:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
-2. Click **Create Integration** on the top right and provide the following information.
+2. Click **Create Integration** at the top right and provide the following information.
 
    .. csv-table::
       :widths: 10, 30

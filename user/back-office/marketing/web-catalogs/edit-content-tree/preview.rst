@@ -16,12 +16,12 @@ To start previewing a selected node, follow the steps outlined below:
 
 2. Navigate to the required web catalog details page under **Marketing > Web Catalogs** and click |IcEditContentTree| **Edit Content Tree** in the more options menu of the related web catalog.
 
-3. Select the content node to preview and click |IcPreview| **Preview** on the top right.
+3. Select the content node to preview and click |IcPreview| **Preview** at the top right.
 
    .. image:: /user/img/marketing/web_catalogs/web_catalog_preview.png
-      :alt: Clicking Preview on the top right of the Lighting  Products content node
+      :alt: Clicking Preview at the top right of the Lighting  Products content node
 
-4. The storefront page of the related content node opens in the preview mode in a new tab. The mode allows you to browse other pages as well. The configuration panel on the top of the page enables you to switch between websites, localizations, customer groups, and customers to ensure that the page is displayed correctly, based on different restriction scopes.
+4. The storefront page of the related content node opens in the preview mode in a new tab. The mode allows you to browse other pages as well. The configuration panel at the top of the page enables you to switch between websites, localizations, customer groups, and customers to ensure that the page is displayed correctly, based on different restriction scopes.
 
    .. image:: /user/img/marketing/web_catalogs/preview_mode.png
       :alt: Configuration panel in the storefront

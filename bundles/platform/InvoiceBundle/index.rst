@@ -25,7 +25,7 @@ Each invoice gets a unique invoice number generated automatically when an invoic
 Invoice Internal Status
 -----------------------
 
-Invoice entity has the ``internalStatus`` enum field that represents the internal status of the invoice. The statuses available out-of-the-box are listed in the ``\Oro\Bundle\InvoiceBundle\Entity\Invoice`` class. You can manage the invoice internal status using ``\Oro\Bundle\InvoiceBundle\Manager\InvoiceInternalStatusManager`` manager.
+Invoice entity has the ``internalStatus`` enum field that represents the internal status of the invoice. The statuses available out of the box are listed in the ``\Oro\Bundle\InvoiceBundle\Entity\Invoice`` class. You can manage the invoice internal status using ``\Oro\Bundle\InvoiceBundle\Manager\InvoiceInternalStatusManager`` manager.
 
 Sending an Invoice to a Customer
 --------------------------------

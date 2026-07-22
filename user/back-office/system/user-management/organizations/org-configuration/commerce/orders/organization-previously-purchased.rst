@@ -19,7 +19,7 @@ Configure Purchase History Settings per Organization
 
    * *Display Products Purchased Within (Days)* --- The period of 90 days is set by default. To change it, clear the **Use System** checkbox and enter the number of days that the purchase history should cover.
 
-5. Click **Save Settings** on the top right of the page.
+5. Click **Save Settings** at the top right of the page.
 
 .. finish
 

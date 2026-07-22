@@ -76,7 +76,7 @@ On top of deployment and configuration processes described in this topic, you ma
 * Configuring basic authentication for your OroCloud instance
 * Configuring your back-office URL
 * Migrating your database
-* Installing software that does not come out-of-the-box
+* Installing software that does not come out of the box
 * Whitelisting email domains (for staging environments)
 * Granting access to application logs
 * Configuring Message Queue

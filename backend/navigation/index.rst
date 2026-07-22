@@ -82,7 +82,7 @@ First, you need to decide to which tree the items should be added. The Oro appli
 
 ``usermenu``
 
-    The menu that pops up when the user clicks on their username in the top right corner of the
+    The menu that pops up when the user clicks on their username in the top-right corner of the
     screen.
 
 ``shortcuts``

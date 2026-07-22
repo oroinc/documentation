@@ -8,7 +8,7 @@ Create an Organization in the Back-Office
 You can create a new organization from within a global organization of the Enterprise edition the Oro application:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
-2. Click **Create Organization** on the top right.
+2. Click **Create Organization** at the top right.
 
    .. image:: /user/img/system/user_management/create_organization_page.png
       :alt: Create organization page
@@ -23,7 +23,7 @@ You can create a new organization from within a global organization of the Enter
 
      In :ref:`OroMarketplace <concept-guide-oro-marketplace>`, you can create an organization of type **Marketplace Seller**, which set restrictions as to what functionality marketplace vendors can have access to.
 
-   * **Name** --- The name used to refer to the organization on the interface.
+   * **Name** --- The name used to refer to the organization in the interface.
    * **Description** --- Short description of the organization record.
 
 4. In the **Users** section, select the **HAS ORGANIZATION** checkbox next to the required users to add them to the organization you are creating.

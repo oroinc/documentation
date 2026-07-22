@@ -8,14 +8,14 @@ A user group is a set of users for convenience consolidated by one or more param
 To create a user group:
 
 1. Navigate to **System > User Management > Groups** in the main menu.
-2. Click **Create Group** on the top right.
+2. Click **Create Group** at the top right.
 
    .. image:: /user/img/system/user_management/user_group_create.png
 
 3. In the **General** section, provide the following information:
 
    * **Owner** --- The group owner represents a business unit whose members can manage the group subject to the :ref:`access and permission settings <user-guide-user-management-permissions>`.
-   * **Name** --- The name used to refer to the user group on the interface.
+   * **Name** --- The name used to refer to the user group in the interface.
 
 4. In the **Users** section, select the **Has Group** checkbox next to the required users to add them to the group you are creating.
 

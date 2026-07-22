@@ -123,7 +123,7 @@ The two events being dispatched are:
 Action Executor Helper
 ^^^^^^^^^^^^^^^^^^^^^^
 
-When considering moving an action group to PHP, its logic may depend on existing actions and conditions that can't simply be called from PHP because of their tight coupling to the action/expression component architecture and execution context. To simplify this transition, the ``Oro\Bundle\ActionBundle\Model\ActionExecutor`` helper has been added. It simplifies the execution of existing actions, action groups, and evaluation of expression conditions by providing the following methods:
+When considering moving an action group to PHP, its logic may depend on existing actions and conditions that cannot be called from PHP because of their tight coupling to the action/expression component architecture and execution context. To simplify this transition, the ``Oro\Bundle\ActionBundle\Model\ActionExecutor`` helper has been added. It simplifies the execution of existing actions, action groups, and evaluation of expression conditions by providing the following methods:
 
 .. code-block:: php
 

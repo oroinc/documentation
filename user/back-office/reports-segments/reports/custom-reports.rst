@@ -24,7 +24,7 @@ The following fields are mandatory, and **must** be defined for a report:
   :header: "Field","Description"
   :widths: 10, 30
 
-  "**Name**","A name that is used to refer to the report on the interface.
+  "**Name**","A name that is used to refer to the report in the interface.
 
   It is recommended to create a name that indicates the information the report presents."
   "**Entity**","A target :term:`entity <Entity>` of the report. Its data will be used to generate the report.
@@ -304,7 +304,7 @@ Export a Report
 
    * To export a custom report, navigate to **Reports & Segments > Manage Reports** in the main menu and click the required report.
 
-   * To export a system report, navigate to **Reports & Segments > Reports** in the main menu and further to the required report (e.g. **Reports & Segments > Reports > Accounts > Life Time**).
+   * To export a system report, navigate to **Reports & Segments > Reports** in the main menu and further to the required report (e.g., **Reports & Segments > Reports > Accounts > Life Time**).
 
 2. On the report page, click the **Export Grid** button in the upper-left corner and then click **CSV** or **XLSX** to export the report to the file of the corresponding format.
 

@@ -8,7 +8,7 @@ Pre-defined system reports are located under **Reports & Segments > Reports** in
 .. image:: /user/img/reports/system_reports_1.png
    :alt: Illustrate the location of the Reports & Segments main menu and all included submenus
 
-The following system reports are available out-of-the-box at the Oro application:
+The following system reports are available out of the box at the Oro application:
 
 .. toctree::
    :maxdepth: 1

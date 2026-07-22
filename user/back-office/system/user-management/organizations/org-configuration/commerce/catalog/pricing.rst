@@ -18,7 +18,7 @@ With standard CPL pricing, you can change **Price Calculation Precision In Price
 
 1. In the Pricing Rounding section, clear the **Use System** checkbox next to Price Calculation Precision In Price Lists.
 2. Provide the precision number.
-3. Click **Save Settings** on the top right.
+3. Click **Save Settings** at the top right.
 
 With Flat Pricing
 -----------------
@@ -32,4 +32,4 @@ To add a price list to the default price lists:
 
 1. Clear the **Use System** checkbox next to the option.
 2. Click **+ Add Price List** and select the price list in the newly added line. After you start typing the price list name, the list of suggestions that match your entry appears. Press **Enter** or click the suggested value to add the price list.
-3. Click **Save Settings** on the top right.
+3. Click **Save Settings** at the top right.

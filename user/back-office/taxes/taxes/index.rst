@@ -32,7 +32,7 @@ To view tax rate details:
 
 #. Find the line with the necessary tax rate and click on it to open its details page.
 
-You can |IcEdit| **Edit** or |Trash-SVG| **Delete** the tax rate by clicking the required button on the top right.
+You can |IcEdit| **Edit** or |Trash-SVG| **Delete** the tax rate by clicking the required button at the top right.
 
 Edit a Tax Rate
 ^^^^^^^^^^^^^^^

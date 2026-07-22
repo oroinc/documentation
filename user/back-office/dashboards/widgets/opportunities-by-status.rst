@@ -23,10 +23,10 @@ You can adjust the following settings for the opportunities by status widget:
 
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** checkbox and provide a new name.
 * **Business unit** --- select the business unit to present statistics for.
-* **Role** --- select the user’s role (e.g. a sales manager, an administrator, a leads development rep, etc.) to see statistics for.
+* **Role** --- select the user’s role (e.g., a sales manager, an administrator, a leads development rep, etc.) to see statistics for.
 * **Owner** --- select the owner for the widget to see statistics for a particular user.
 * **Date Range** --- the time for which the widget details are displayed.
-* **Excluded Statuses** --- select what status the widget should not display (e.g. Closed Won).
+* **Excluded Statuses** --- select what status the widget should not display (e.g., Closed Won).
 * **Display data** --- choose which data to display on the chart. The *count* shows the number of opportunities in a particular status, and *amount* displays their total budget.
 * **Territories** --- if sales |territory| are enabled in your system, you can view opportunities filtered within one or several specific territories.
 

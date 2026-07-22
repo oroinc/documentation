@@ -49,7 +49,7 @@ The following actions are available for a lead on the lead view page:
 
    .. note:: You can disqualify a lead in three ways:
 
-              1. By clicking on the red **Disqualify** button on the lead view page.
+              1. By clicking on the **Disqualify** button on the lead view page.
 
               2. By changing its status to Disqualified in the edit lead form.
 
@@ -74,7 +74,7 @@ You can also edit the address details of a lead, as illustrated in the screensho
 
 .. admonition:: Business Tip
 
-   Want to unlock eCommerce opportunities to drive |digital transformation in manufacturing|? Make sure to check out our guide on the topic.
+   Want to unlock eCommerce opportunities to drive |digital transformation in manufacturing|? Make sure to check out our guide at the topic.
 
 
 .. include:: /include/include-links-seo.rst

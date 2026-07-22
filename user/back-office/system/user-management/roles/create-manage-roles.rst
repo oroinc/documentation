@@ -12,7 +12,7 @@ Create a Role
 To create a new role in:
 
 1. Navigate to **System > User Management > Roles** in the main menu.    
-2. Click **Create Role** on the top right.
+2. Click **Create Role** at the top right.
 3. In the **General** section, provide the role name. 
 
    .. image:: /user/img/system/user_management/create_new_role_from_scratch.png
@@ -64,7 +64,7 @@ You can create a role by cloning the existing one:
  
    .. image:: /user/img/system/user_management/clone_role_from_grid.png
 
-   Alternatively, you can clone the role from the page of the selected role by clicking |IcClone| **Clone** on the top right.
+   Alternatively, you can clone the role from the page of the selected role by clicking |IcClone| **Clone** at the top right.
 
    .. image:: /user/img/system/user_management/clone_role_from_role_page.png
 
@@ -84,7 +84,7 @@ To edit an existing role:
 
    .. image:: /user/img/system/user_management/edit_role.png
 
-   Alternatively, you can edit the role from the page of the selected role by clicking |IcEdit| **Edit** on the top right.
+   Alternatively, you can edit the role from the page of the selected role by clicking |IcEdit| **Edit** at the top right.
 
    .. image:: /user/img/system/user_management/edit_role_from_role_page.png
 
@@ -104,7 +104,7 @@ To delete an existing role:
 
    .. image:: /user/img/system/user_management/delete_role.png
    
-   Alternatively, you can edit the role from the page of the selected role by clicking |Trash-SVG| **Delete** on the top right.
+   Alternatively, you can edit the role from the page of the selected role by clicking |Trash-SVG| **Delete** at the top right.
 
    .. image:: /user/img/system/user_management/delete_role_from_page.png
 

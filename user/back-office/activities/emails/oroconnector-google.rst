@@ -204,12 +204,12 @@ Deploy Production and Publish on the Internal Marketplace
 2. Click **Deploy > New deployment** next to the project name.
 
 .. image:: /user/img/activities/connector-gmail/new-deployment.png
-   :alt: Clicking the New Deployment button in the Deploy dropdown
+   :alt: Clicking the New Deployment button in the Deploy drop-down
 
 3. Select **Add-on** as the deployment configuration type.
 
 .. image:: /user/img/activities/connector-gmail/selecting-addon.png
-   :alt: Selecting **Add-on** in the configuration dropdown
+   :alt: Selecting **Add-on** in the configuration drop-down
 
 4. Fill in the description.
 5. Click **Deploy** to complete the deployment.

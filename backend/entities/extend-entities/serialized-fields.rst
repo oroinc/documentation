@@ -29,7 +29,7 @@ Not supported features:
 
 The Serialized Fields bundle adds a new field called Storage Type within New field creation page where you need to choose one of the two storage types:
 
-- The `Table Column` option enables to create custom field as usual;
+- The `Table Column` option enables you to create custom field as usual;
 - The `Serialized field` option means that you can avoid schema update and start to use this field immediately. Keep in mind that in this case field types are limited to the following:
 
    - BigInt

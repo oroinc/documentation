@@ -25,7 +25,7 @@ To create a new web catalog:
 
 #. Fill in **Name** and **Description** for the web catalog you are creating.
 
-#. Click **Save** on the top right of the page.
+#. Click **Save** at the top right of the page.
 
 .. note:: Now you are ready to organize catalog content into the desired structure that will define the navigation and menu look and feel in the OroCommerce storefront. For this, follow the steps described in the :ref:`Edit Web Catalog Content Tree <user-guide--web-catalog-edit-content-tree>` guide.
 

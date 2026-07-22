@@ -13,7 +13,7 @@ Indexed data is stored by entities, i.e. each indexed entity has its own set of 
 
 The following data types are supported in search: `text`, `integer`, `decimal` and `datetime`. One of these types is assigned to every mapped field. This speeds up the search based on the type of the field.
 
-For a global search by the entity, special fields of `all_text_*` type store concatenated text value (e.g. name, description and SEO data). More than one special field may exist for the entity in the index, depending on the placeholders used. Typically, `all_text_*` fields contain localized values; there is a field for every enabled localization and the global field `all_text` that contains data for all localizations.
+For a global search by the entity, special fields of `all_text_*` type store concatenated text value (e.g., name, description and SEO data). More than one special field may exist for the entity in the index, depending on the placeholders used. Typically, `all_text_*` fields contain localized values; there is a field for every enabled localization and the global field `all_text` that contains data for all localizations.
 
 Plain Data Structure
 --------------------
@@ -92,7 +92,7 @@ So, after the new fields are added, the sample data becomes the following:
         max_price_3_EUR: 1100.00
     }
 
-Now, you can sort the data using the `ORDER BY min_price_PRICE_LIST_ID_CURRENCY ASC` and `ORDER BY max_price_PRICE_LIST_ID_CURRENCY DESC` in the query to get the products sorted by the minimum price in the provided currency (e.g. EUR) listed in the specified price list (e.g. 1). Note: PRICE_LIST_ID and CURRENCY are placeholders and should remain so. Website search substitutes them with actual values from the scope.
+Now, you can sort the data using the `ORDER BY min_price_PRICE_LIST_ID_CURRENCY ASC` and `ORDER BY max_price_PRICE_LIST_ID_CURRENCY DESC` in the query to get the products sorted by the minimum price in the provided currency (e.g., EUR) listed in the specified price list (e.g., 1). Note: PRICE_LIST_ID and CURRENCY are placeholders and should remain so. Website search substitutes them with actual values from the scope.
 
 Furthermore, to ensure that there is at least one product price in the specific currency (in any price list), you can add a special field (flag) to indicate that the price in this currency exists:
 
@@ -126,7 +126,7 @@ Website Scope
 
 Website search support indexing multiple websites, as every website is an autonomous selling tool with its own search index.
 
-Throughout the bundle, the `WEBSITE_ID` placeholder (e.g. in the entity alias) helps build unique alias name and set unique storage scope for each website. For example, an alias for product entity may be `oro_product_WEBSITE_ID`. During the reindexation, each product is saved in several scopes (one per website), and the scopes are named  `oro_product_1`, `oro_product_2`, etc.
+Throughout the bundle, the `WEBSITE_ID` placeholder (e.g., in the entity alias) helps build unique alias name and set unique storage scope for each website. For example, an alias for product entity may be `oro_product_WEBSITE_ID`. During the reindexation, each product is saved in several scopes (one per website), and the scopes are named  `oro_product_1`, `oro_product_2`, etc.
 
 Using this approach, the website search engine automatically gets information about the website the search request came for and knows how to reindex product for all websites when necessary. 
 
@@ -135,13 +135,13 @@ The `WEBSITE_ID` placeholder is automatically substituted with a website current
 Localized Data
 --------------
 
-Website scope is quite useful when you need to isolate scopes of data for every website, but sometimes you need several variants of the same field (e.g. localized values, like product name and description when several languages are enabled for the website).
+Website scope is quite useful when you need to isolate scopes of data for every website, but sometimes you need several variants of the same field (e.g., localized values, like product name and description when several languages are enabled for the website).
 
-Website search bundle provides several parametrized values out-of-the-box:
+Website search bundle provides several parametrized values out of the box:
 
 * `LOCALIZATION_ID` - a special placeholder for multiple localization support in a scope of a website. Similar to the `WEBSITE_ID`, the `LOCALIZATION_ID` helps you store several values for the same entity and simplify using them.
 
-* `all_text_LOCALIZATION_ID` - a placeholder for a concatenated information related to the entity per localization. Each entity has dedicated fields that store these data (e.g. `all_text_1`, `all_text_2`).
+* `all_text_LOCALIZATION_ID` - a placeholder for a concatenated information related to the entity per localization. Each entity has dedicated fields that store these data (e.g., `all_text_1`, `all_text_2`).
 
 Every new localized field increases the size of the search index and slows down the reindexation. For large volumes of information, real-time updates might be processed with a significant delay. To optimize the process, it is recommended to review the search index data and remove the fields that are not used. Also, moving search index to a separate storage on a separate server might be a good idea.
 

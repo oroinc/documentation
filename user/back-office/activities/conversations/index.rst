@@ -12,12 +12,12 @@ Each conversation consists of a set of messages that can be exchanged by back-of
 Start a New Conversation
 ------------------------
 
-To start a new conversation in the back-office, navigate to **Activities > Conversations** in the menu and click **Create Conversation** on the top right.
+To start a new conversation in the back-office, navigate to **Activities > Conversations** in the menu and click **Create Conversation** at the top right.
 
 .. image:: /user/img/activities/conversation-list.png
    :alt: A list of all conversations available in the system
 
-You can also click **Start Conversation** on the view page of a supported record under the **More Actions** menu on the top right. Supported records are:
+You can also click **Start Conversation** on the view page of a supported record under the **More Actions** menu at the top right. Supported records are:
 
 * Order
 * Request for Quote
@@ -26,7 +26,7 @@ You can also click **Start Conversation** on the view page of a supported record
 .. image:: /user/img/activities/activities-conversations.png
    :alt: Start Conversation button in the More Actions menu
 
-Additionally, you can start a conversation from the page of your own conversations under your user name on the top right. For this, click **My Conversations** to be redirected to the page of conversations that you initiated or are involved in.
+Additionally, you can start a conversation from the page of your own conversations under your user name at the top right. For this, click **My Conversations** to be redirected to the page of conversations that you initiated or are involved in.
 
 After you click **Start Conversation**, provide the following information:
 
@@ -44,7 +44,7 @@ When a conversation is created, it is automatically set to status *Active*, as c
 To create a message in a new or existing conversation:
 
 1. Click on the **Activity** tab on the view page of a supported record.
-2. Click **Add Message** on the top right of the conversation view page.
+2. Click **Add Message** at the top right of the conversation view page.
 3. Provide your message in the text box and define who the message is from. You can choose other users other than yourself to be the sender of the message, if they have view user and customer user permissions.
 4. Click **Save**.
 

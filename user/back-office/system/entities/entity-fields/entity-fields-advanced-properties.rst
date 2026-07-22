@@ -9,8 +9,8 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
 
 1. In the **General Information** section, provide:
 
-* **Label** --- Type a label that will be used for referring to the field on the interface. By default, the label is the same as **Name**.
-* **Description** --- Type a short but meaningful description that will appear as a field tooltip on the interface.
+* **Label** --- Type a label that will be used for referring to the field in the interface. By default, the label is the same as **Name**.
+* **Description** --- Type a short but meaningful description that will appear as a field tooltip in the interface.
 * **Field Type-related Properties** --- Depending on the entity type selected when defining the :ref:`basic properties <admin-guide-create-entity-fields-basic>` for the entity field you are creating, additional :ref:`type-related options <admin-guide-create-entity-fields-type-related>` appear in the **General Information** section once you click **Continue**.
 
 2. In the **Import and Export** section, specify the following information:
@@ -38,7 +38,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
    * By default, *Yes and Display* is selected which makes the field available and visible in the grid.
    * The *Yes and do not display* option means that the field is hidden by default, but the visibility may be toggled in the grid settings.
    * The *Yes as Mandatory* option adds the field permanently to all grid views and disables visibility toggle.
-   * *No* -- The field visibility and appearance order cannot be toggled in the grid settings.
+   * *No* --- The field visibility and appearance order cannot be toggled in the grid settings.
 
 * **Show Grid Filter** --- Not available for :ref:`serialized fields <book-entities-extended-entities-serialized-fields>`. If set to *Yes*, a corresponding filter will be added to :ref:`grid filters <doc-grids-actions-filters>` by default.
 * **Grid Order** --- Defines the order of the field in the grid. The field with a smaller value of the grid order number will be displayed before the field with a bigger value.
@@ -66,8 +66,8 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
 * **Allowed MIME types** --- Limits the types of files you can attach to an entity. This applies to file attributes only. For instance, using this option, you can enable application users to upload files only in .pdf format. For this, add the *File* field to the opportunity entity, and enter *application/pdf* into the *Allowed Mime types* field. If this field is left empty, the list of :ref:`MIME types defined in the system configuration <admin-configuration-upload-settings>` is applied.
 * **Include in Smart Insights** --- If set to *yes*, this field will be considered in :ref:`OroIQ Smart Insights <concept-guide--oroiq>` to generate analytics, trends, and contextual recommendations.
 
-4. Once all the information has been provided, click **Save and Close** on the top right.
-5. On the entity page, click **Update Schema** on the top right, if the storage type for the entity field has been set to *Table Column*.
+4. Once all the information has been provided, click **Save and Close** at the top right.
+5. On the entity page, click **Update Schema** at the top right, if the storage type for the entity field has been set to *Table Column*.
 
 .. important:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
 

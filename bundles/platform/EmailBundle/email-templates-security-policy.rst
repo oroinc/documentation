@@ -28,7 +28,7 @@ The following classes form the security policy checking subsystem:
 
 ``Oro\Bundle\EmailBundle\Twig\SecurityPolicy\Violation\EmailTemplateSecurityPolicyViolationInterface``
    Extends ``SecurityPolicyViolationInterface`` with a ``getTemplateField()`` method that identifies
-   which email template field (e.g. ``subject`` or ``content``) contained the violation. Concrete
+   which email template field (e.g., ``subject`` or ``content``) contained the violation. Concrete
    subtypes exist for each violation kind: tag, filter, function, property, and method.
 
 ``Oro\Bundle\EmailBundle\Validator\Constraints\EmailTemplateSecurityPolicy``

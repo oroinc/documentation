@@ -37,7 +37,7 @@ To import a bulk of product information:
 
 1. In the main menu, navigate to **Products > Products**. The product list opens.
 
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 
 3. **Prepare data for import**: Create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.
 
@@ -114,7 +114,7 @@ To import a bulk of product images:
 
 1. In the main menu, navigate to **Products > Products**. The product list opens.
 
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 
 3. In the **Import** dialog, select the **Product Images** tab.
 
@@ -154,7 +154,7 @@ The **Import Related Products** option enables you to import SKUs of related pro
 To import a bulk of related products:
 
 1. In the main menu, navigate to **Products > Products**. The product list opens.
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 3. In the **Import** dialog, select the **Related Products** tab.
 4. Click **Choose File** and select the .csv file you prepared.
 
@@ -190,7 +190,7 @@ To import a bulk of product price attributes:
 
 1. In the main menu, navigate to **Products > Products**. The product list opens.
 
-2. Click **Import File** on the top right.
+2. Click **Import File** at the top right.
 
 3. In the **Import** dialog, select the **Price Attributes Data** tab.
 

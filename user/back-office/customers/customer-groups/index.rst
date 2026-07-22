@@ -47,7 +47,7 @@ To create a new customer group:
 
 #. In the **Price Lists** section, add the price lists and configure the fallback option, as described in the :ref:`Price List Management for a Customer Group <user-guide--customers--customer-groups--pricelist>` section.
 
-#. Click **Save** in the top right corner.
+#. Click **Save** in the top-right corner.
 
 .. _user-guide--customers--customer-groups--pricelist:
 
