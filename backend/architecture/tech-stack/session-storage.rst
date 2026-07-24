@@ -10,9 +10,11 @@ for more details.
 Session Locking Impact on Application Availability
 --------------------------------------------------
 
-The Oro application needs to use shared session storage in any distributed environment (more than one web node). |Redis| is one of the best-supported options with high performance. By default, |session data is locked| to avoid race conditions, and |SncRedisBundle|, used in Oro to store sessions in Redis, is not an exception.
+The Oro application requires shared session storage in any distributed environment (more than one web node). By default, |session data is locked| to prevent race conditions and ensure data consistency.
 
-Such behavior works fine for consecutive requests flow (classic web browsing) but creates many issues for the scenarios where multiple parallel requests are executed within the same session. In the B2B world, a widespread use case is to run real-time price and inventory checks of the products against a back-end ERP application, and in many cases, ERP may respond slowly. To minimize the impact of ERP response time on user experience, such requests are typically executed in parallel using AJAX. This solution can have a critical impact on application availability in production because requests will be hitting session lock and will be queued. In case of multiple concurrent users on the website generating dozens of such AJAX requests, ERP availability and performance will directly impact Oro application availability. In case of slow ERP response, it will cause requests queue overflow.
+This works well for consecutive requests (classic web browsing), but causes problems when multiple parallel requests run within the same session. A common B2B case is real-time price and inventory checks against a back-end ERP, which may respond slowly. To keep these checks from blocking the interface, they typically run in parallel over AJAX.
+
+In production, this can critically affect availability: each parallel request hits the session lock and queues behind the others. With many concurrent users generating dozens of such requests, ERP performance directly limits Oro availability --- and a slow ERP can overflow the request queue.
 
 There are a few options to overcome availability issues for this kind of scenario:
 
