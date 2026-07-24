@@ -53,7 +53,7 @@ The situation changes as soon as you add third-party services. These typically i
 
    For configuration details, see :ref:`Configure Google Tag Manager Integration in the Back-Office <gtm-ga-4-integration>`.
 
-2. **By inserting third-party JavaScript directly into the storefront** (not through GTM). This means placing the JS snippet or markup supplied by a marketing/analytics/ad platform directly into the frontend, for example through theme/template customization or a content block.
+2. **By inserting third-party JavaScript directly into the storefront** (not through GTM). This means placing the JS snippet or markup supplied by a marketing/analytics/ad platform directly into the frontend through theme/template customization. The supported ways of doing this are described in :ref:`How to Add Third-Party Scripts to Storefront Pages <frontend--how-to-add-third-party-scripts-to-storefront>`.
 
 In both cases, the moment you introduce these services you are adding **non-essential cookies**, which in many jurisdictions require **prior, informed, opt-in consent** before they may be set. The default notice-and-acknowledge banner is generally **not** sufficient on its own for this scenario, because it neither captures granular consent nor gates the scripts on it. You will need one of the approaches below.
 
@@ -89,7 +89,7 @@ If you are not using GTM, a specialized CMP is still the recommended approach. T
 C. Native OroCommerce or Custom Banner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As an alternative, you can extend the built-in OroCommerce native banner, or build your own custom one, to collect consent for additional cookie categories and use that signal to control which third-party scripts are embedded. In this approach you customize the banner to present category choices and add the logic so that a given third-party script is loaded only when its category has been accepted.
+As an alternative, you can extend the built-in OroCommerce native banner, or build your own custom one, to collect consent for additional cookie categories and use that signal to control which third-party scripts are embedded. In this approach you customize the banner to present category choices and add the logic so that a given third-party script is loaded only when its category has been accepted. For implementation details and code examples, see :ref:`How to Customize the Cookie Consent Banner <frontend--how-to-customize-cookie-consent-banner>` and :ref:`How to Add Third-Party Scripts to Storefront Pages <frontend--how-to-add-third-party-scripts-to-storefront>`.
 
 Consider this option when:
 
