@@ -42,12 +42,12 @@ extensions = [
     'builders.orohtml-dev',
     'ext.orotoc',
     'ext.assets-timestamp',
-    'ext.sitemap',
-    # Disable generating of sitemapindex.xml
-#    'ext.sitemap-index',
     'ext.redirects',
-    'sphinx_copybutton'
+    'sphinx_copybutton',
+    'sphinx_sitemap',
+    'ext.orositemap'
 ]
+
 
 spelling_lang='en_US'
 spelling_word_list_filename='spelling_wordlist.txt'
@@ -392,3 +392,8 @@ smv_outputdir_format = '{config.release}'
 # Generate sitemap.xml file only for current version (see ext.sitemap),
 # otherwise it will be generated for all versions of the documentation
 oro_sitemap_build_only_for_current = True
+
+# sitemap settings
+# remove lang prefix (/en/)
+# Default: '{lang}{version}{link}'
+sitemap_url_scheme='{version}{link}'
