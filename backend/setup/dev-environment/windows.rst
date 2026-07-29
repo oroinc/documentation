@@ -8,9 +8,27 @@ This guide demonstrates how to set up :ref:`Docker and Symfony Server developmen
 Environment Setup
 -----------------
 
-1. Install |Ubuntu 20.04 LTS from the Microsoft Store| to use with WSL 2. Alternatively, you can install it with a WSL command ``wsl --install -d Ubuntu``, followed by ``wsl --set-version Ubuntu 2``
+1. Install |a supported Ubuntu LTS release| for WSL 2. Run the following command from Windows PowerShell or Windows Terminal:
 
-2. Install |Windows Terminal|. It is not required to use a Windows Terminal/Powershell but we recommend using it as it comes with the built-in WSL integration. Please make sure that you run your windows terminal as an administrator. You may be prompted to reboot your PC after installation.
+   .. code-block:: powershell
+
+      wsl --install -d Ubuntu
+
+   To verify that the distribution is using WSL 2, run:
+
+   .. code-block:: powershell
+
+      wsl --list --verbose
+
+   If the Ubuntu distribution is using WSL 1, upgrade it to WSL 2 by running:
+
+   .. code-block:: powershell
+
+      wsl --set-version <distribution-name> 2
+
+   Replace ``<distribution-name>`` with the name of your installed distribution as shown by ``wsl --list --verbose``.
+
+2. Install |Windows Terminal|. While not required, we recommend using it as it comes with the built-in WSL integration. Run Windows Terminal as an administrator. You may be prompted to reboot your PC after installation.
 
    .. image:: /img/backend/setup/wsl/terminal-successfull-installation.png
       :alt: An example of a successful installation of Windows Terminal
@@ -20,7 +38,7 @@ Environment Setup
    .. image:: /img/backend/setup/wsl/terminal-error.png
       :alt: An example of an error during terminal installation
 
-   Once rebooted, create a new NIX username and password to log into Ubuntu.
+   Once rebooted, create a new UNIX username and password to log into Ubuntu.
 
    .. image:: /img/backend/setup/wsl/logged-in-ubuntu.png
       :alt: An example of terminal messages displayed once you log into ubuntu
@@ -28,9 +46,9 @@ Environment Setup
    To switch to Ubuntu on your Windows Powershell, click on the drop-down next to the **+** tab and select Ubuntu from the list.
 
    .. image:: /img/backend/setup/wsl/powershell-ubuntu-dropdown-list.png
-      :alt: Ubuntu option in the Powershell drop-down
+      :alt: Ubuntu option in the PowerShell drop-down
 
-   To avoid switching to Ubuntu manually every time, you can set up your Windows Powershell to run Ubuntu by default on startup. For this, navigate to your Windows settings > Startup and change the **Default Profile** to *Ubuntu*, as illustrated in the screenshot below:
+   To avoid switching to Ubuntu manually every time, you can set up your Windows PowerShell to run Ubuntu by default on startup. For this, navigate to your Windows settings > Startup and change the **Default Profile** to *Ubuntu*, as illustrated in the screenshot below:
 
    .. image:: /img/backend/setup/wsl/ubuntu-on-powershell.png
       :alt: Change default terminal profile to Ubuntu
@@ -40,23 +58,23 @@ Environment Setup
    .. image:: /img/backend/setup/wsl/switch-to-linux-filesystem.png
       :alt: An example of switching to the Linux file system
 
-3. Install |Docker Desktop for Windows|. During installation, make sure that the checkbox for *Install required Windows components for WSL 2* is selected. Reboot your PC once the installation is finished.
+3. Install |Docker Desktop for Windows|. After the installation is complete, open Docker Desktop and verify that **Settings > General > Use the WSL 2 based engine** is enabled. Reboot your PC if prompted during the installation.
 
    .. image:: /img/backend/setup/wsl/docker-installation-wsl2.png
-      :alt: Checkbox for *Install required Windows components for WSL 2* is selected
+      :alt: Docker Desktop installation
 
-4. Enable |Docker Desktop WSL 2 backend| for the Ubuntu 20.04 LTS distribution that you installed at step 1.
+4. Enable |Docker Desktop WSL 2 backend| for the Ubuntu distribution that you installed in step 1.
 
    * In the **General Settings** of the Docker application, make sure that *Use the WSL 2 based engine* option is selected.
-   * In the **Resources > WSL Integration** settings, enable option *Ubuntu*. Apply all changes and restart Docker.
+   * In **Resources > WSL Integration**, enable WSL integration for the Ubuntu distribution and restart Docker Desktop.
 
    .. image:: /img/backend/setup/wsl/docker-wsl2-config.png
       :alt: Configure WSL 2 on the docker side
 
 
-5. Log into Ubuntu 20.04 LTS using Windows Terminal. All the below commands will be executed in it.
+5. Log into the Ubuntu distribution using Windows Terminal. Run all remaining commands in the Ubuntu terminal unless instructed otherwise.
 
-6. Install php 8.5 with all required extensions to Ubuntu 20.04 LTS:
+6. Install PHP 8.5 and the required extensions in Ubuntu:
 
    .. hint::  It is recommended to run all commands one by one to make sure they exit successfully and avoid missing potential warnings. If you have unreliable connection leading to command failure, please rerun it.
 
@@ -90,6 +108,8 @@ Environment Setup
 
         npm install -g pnpm@latest-10
 
+   .. note:: If the installation fails because of insufficient permissions, rerun the command with ``sudo``.
+
 10. Install Composer:
 
    .. code-block:: none
@@ -104,7 +124,7 @@ Environment Setup
 
        sudo apt -y install libnss3-tools
        wget https://get.symfony.com/cli/installer -O - | bash
-       echo 'PATH="$HOME/.symfony/bin:$PATH"' >> ~/.bashrc
+       echo 'export PATH="$HOME/.symfony5/bin:$PATH"' >> ~/.bashrc
        source ~/.bashrc
        symfony server:ca:install
 
@@ -122,14 +142,32 @@ Environment Setup
        :alt: Importing certificate to Chrome
 
 
-12. Configure the network. WSL 2 changes the way networking is configured compared to WSL 1. You need to enable proxy of traffic to permit the traffic through the Windows firewall.
+12. Configure the network. WSL 2 changes the way networking is configured compared to WSL 1. You must enable traffic proxying to permit traffic through the Windows firewall.
 
-    Run in Ubuntu ``ip addr | grep eth0`` to see the IP address of the WSL 2 virtual machine.
+    Before you continue, open **PowerShell** as an administrator. Right-click **PowerShell** and select **Run as administrator**, or run the following command from a terminal to launch an elevated PowerShell window:
+
+    .. code-block:: powershell
+
+       Start-Process powershell -Verb RunAs
+
+    Approve the User Account Control (UAC) prompt when prompted. The ``netsh interface portproxy`` and ``netsh advfirewall`` commands require administrator privileges.
+
+    Run the following command in Ubuntu to obtain the IP address of the WSL 2 virtual machine:
+
+    .. code-block:: bash
+
+       ip addr | grep eth0
 
     .. image:: /img/backend/setup/wsl/ip-addr-ubuntu.png
        :alt: IP address of WSL 2 virtual machine
 
-    Map WSL 2 port to the internal host ``netsh interface portproxy add v4tov4 listenport=8000 listenaddress=0.0.0.0 connectport=8000 connectaddress=172.22.33.170``.
+    Map the WSL 2 port to the internal host:
+
+    .. code-block:: powershell
+
+       netsh interface portproxy add v4tov4 listenport=8000 listenaddress=0.0.0.0 connectport=8000 connectaddress=172.22.33.170
+
+    .. note:: The IP address assigned to the WSL 2 virtual machine can change after Windows or WSL restarts. If the forwarded port stops working, obtain the current IP address again and update the ``connectaddress`` value in the ``netsh interface portproxy`` command.
 
     Configure Windows Defender Firewall, as illustrated below:
 
