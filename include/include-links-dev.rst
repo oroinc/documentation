@@ -5070,9 +5070,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/7.0/src/Oro/Bundle/EntityBundle/Provider/AbstractEntityClassNameProvider.php" target="_blank">abstract provider</a>
 
-.. |Ubuntu 20.04 LTS from the Microsoft Store| raw:: html
+.. |a supported Ubuntu LTS release| raw:: html
 
-   <a href="https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71" target="_blank">Ubuntu 20.04 LTS from the Microsoft Store</a>
+   <a href="https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-US&gl=US" target="_blank">a supported Ubuntu LTS release</a>
 
 .. |Docker Desktop for Windows| raw:: html
 
