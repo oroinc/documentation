@@ -50,7 +50,7 @@ Feature: Crud document
     And I click "Cancel"
 
   Scenario: Edit Document
-    When I click "Edit" on row "Document" in grid
+    When I click "Edit Document"
     And I fill form with:
       | Subject             | Document update         |
       | Description         | Description update      |
