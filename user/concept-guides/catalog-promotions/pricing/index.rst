@@ -115,10 +115,70 @@ Based on the price lists priority that you have set for Customer A, the lumen he
 
 **Merge Allowed** is a price list configuration setting that defines whether the system should combine price tiers of the same product from multiple price lists.
 
+The price lists in the chain are always processed in the priority order, and the Merge Allowed flag controls how each price list contributes prices for a particular product:
+
+* When **Merge Allowed is enabled** for a price list, its prices fill the product price tiers (quantity, unit, and currency combinations) that have not been filled by the higher priority price lists yet.
+* When **Merge Allowed is disabled** for a price list, its prices are used *exclusively*: they are taken only when the product has received no prices from the higher priority price lists at all. Once such prices are applied, the product is closed for merging, and none of the lower priority price lists can add the missing price tiers for it, even when Merge Allowed is enabled for them.
+
+The Merge Allowed flag is applied per product, so the same price list chain may produce merged tiers for one product and exclusive tiers for another.
+
+**Merge Allowed Is Enabled for All Price Lists**
+
 If we enable the Merge Allowed option for all price lists available for the Customer A, we combine them all together, allowing the system to fill the empty price tiers for the lumen headlamp from other price lists in the priority order. The price will then be displayed as follows, where the first four price tiers for *1 through 99* items are taken from the *Customer A PL* which has the highest priority. As the *Customer A PL* does not define the price for 100+ items, the system then searches for the relevant price in the second priority price list, the *Stock Clearance PL*. It does not specify the required price either. Only the third priority price list, the *Spring Sale 2020 Pl*, has the required price for 100+ items which is taken by the system to display in the storefront.
 
 .. image:: /user/img/concept-guides/prices/merge_by_priority_example3.png
    :alt: View all prices per tier for the lumen headlamp provided that Merge Allowed is enabled for all three price lists
+
+**Merge Allowed Is Enabled for the First Price List and Disabled for the Second One**
+
+Let's now keep only two price lists in the chain, with the *Customer A PL* having a higher priority than the *Spring Sale 2020 PL*, and disable the Merge Allowed option for the *Spring Sale 2020 PL*:
+
+.. csv-table::
+   :header: "**Priority**","**Price List**","**Merge Allowed**"
+
+   "1","Customer A PL","Yes"
+   "2","Spring Sale 2020 PL","No"
+
+The *Customer A PL* is processed first and provides the prices for the *1+*, *10+*, *20+*, and *50+* quantity tiers. When the system reaches the *Spring Sale 2020 PL*, the lumen headlamp already has prices coming from the higher priority price list. Since merging is not allowed for the *Spring Sale 2020 PL*, its prices are skipped entirely, and the empty *100+* tier remains unfilled:
+
+.. csv-table::
+   :header: "**Quantity Tier**","**Customer A PL (merge: yes)**","**Spring Sale 2020 PL (merge: no)**","**Resulting Price**"
+
+   "1+ items","$85","$90","**$85**"
+   "10+ items","$82.45","$87.30","**$82.45**"
+   "20+ items","$77.05","$83.70","**$77.05**"
+   "50+ items","$74.80","$76.56","**$74.80**"
+   "100+ items","--","$73.95","**--**"
+
+However, if some product is listed in the *Spring Sale 2020 PL* but is missing from the *Customer A PL*, it gets all its price tiers from the *Spring Sale 2020 PL*, as no higher priority price list provides prices for it.
+
+**Merge Allowed Is Disabled for the First Price List and Enabled for the Second One**
+
+Now let's invert the flags: the higher priority *Customer A PL* does not allow merging, while the *Spring Sale 2020 PL* does:
+
+.. csv-table::
+   :header: "**Priority**","**Price List**","**Merge Allowed**"
+
+   "1","Customer A PL","No"
+   "2","Spring Sale 2020 PL","Yes"
+
+The *Customer A PL* is processed first. As the lumen headlamp has no prices yet, the price list provides its four price tiers, but because merging is not allowed, the product is closed for any further merging. Although the *Spring Sale 2020 PL* allows merging and defines the price for the *100+* tier, this price is not added, and the customer sees only the tiers from the *Customer A PL*:
+
+.. csv-table::
+   :header: "**Quantity Tier**","**Customer A PL (merge: no)**","**Spring Sale 2020 PL (merge: yes)**","**Resulting Price**"
+
+   "1+ items","$85","$90","**$85**"
+   "10+ items","$82.45","$87.30","**$82.45**"
+   "20+ items","$77.05","$83.70","**$77.05**"
+   "50+ items","$74.80","$76.56","**$74.80**"
+   "100+ items","--","$73.95","**--**"
+
+In this configuration, the result for the lumen headlamp is the same as in the previous example, but the behavior differs for other products and longer chains:
+
+* A product missing from the *Customer A PL* still receives all its tiers from the *Spring Sale 2020 PL*.
+* If a third, lower priority price list with the enabled Merge Allowed option is added to the chain, it can fill the missing *100+* tier in the *Merge Allowed enabled/disabled* configuration (the first example), because the tiers provided by a price list with enabled merging remain open for merging. In the *Merge Allowed disabled/enabled* configuration (the second example), the product remains closed for merging, and the third price list cannot add any tiers to it.
+
+Use a price list with the disabled Merge Allowed option when its prices represent a complete, self-contained offer (for example, contract prices) that must never be extended with the tiers from other price lists.
 
 Price Lists
 -----------

@@ -25,7 +25,11 @@ Related Documentation
    price-list-sharding
    optimize-index-and-price-calculation
    combined-price-lists
+   flat-pricing-storage
    price-storage
+   price-rule-expression-language
+   pricing-and-search
+   pricing-mq-flows
    pricing-strategy
    Commands <commands>
 
