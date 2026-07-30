@@ -145,6 +145,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
        - :ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`
        - :ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`
        - :ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`
+       - :ref:`CustomerPartNumberBundle <bundle-docs-commerce-customer-part-number-bundle>`
 
      - - :ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`
        - :ref:`InvoicePaymentBundle <bundle-docs-commerce-invoice-payment-bundle>`
@@ -261,6 +262,7 @@ CRM Bundles
    CronBundle <platform/CronBundle/index>
    CurrencyBundle <platform/CurrencyBundle/index>
    CustomerBundle <commerce/CustomerBundle/index>
+   CustomerPartNumberBundle <commerce/CustomerPartNumberBundle/index>
    CustomerRecommendationBundle <commerce/CustomerRecommendationBundle/index>
    DashboardBundle <platform/DashboardBundle/index>
    DataAuditBundle <platform/DataAuditBundle/index>
