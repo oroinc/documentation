@@ -1,3 +1,5 @@
+.. _bundle-docs-commerce-pricing-bundle-combined-price-lists:
+
 Combined Price List
 ===================
 
@@ -120,6 +122,8 @@ Build Flow for Combined Prices
 ------------------------------
 
 Let's summarize the Combined Price Lists build flow and its distribution in time.
+
+.. note:: For the exact message queue topic names, the message filters that collapse the rebuild requests, and the complete producer-to-consumer message paths of this flow, see :ref:`Pricing Message Queue Flows <bundle-docs-commerce-pricing-bundle-mq-flows>`.
 
 Step 1
 ^^^^^^
