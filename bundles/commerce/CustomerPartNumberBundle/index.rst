@@ -60,6 +60,21 @@ or any back-office functionality.
   ``oro_customer_part_number`` feature for the resolved scope, but only on storefront requests (detected via
   ``FrontendHelper::isFrontendRequest()``). Back-office requests are never affected by this voter.
 
+Back-Office Management
+----------------------
+
+Alongside the storefront, part numbers can be viewed and created from the back-office. They are managed by
+``Controller\CustomerPartNumberController`` and reached through the ``customer_part_numbers_list`` menu item,
+added under the ``products_tab`` of the main application menu.
+
+* Listing - the ``customer-part-numbers-grid`` datagrid lists existing part numbers with the part number,
+  product SKU, product name, customer name, and creation date columns, all sortable and filterable.
+* Creation - the ``Form\Type\CustomerPartNumberType`` form creates a part number from a product, a customer, and
+  the part number value, and requires the ``oro_customer_part_number_create`` ACL.
+* Per-customer shortcut - the Customer view page links to the same listing, pre-filtered by that customer, from
+  its "More actions" dropdown. Contributed by ``oro_customer_part_number.widget_provider.customer_view_actions``
+  in the ``activity`` view action group (the group whose label renders as "More actions").
+
 Legacy OroLab Bundle Coexistence
 --------------------------------
 
@@ -135,7 +150,7 @@ Customization Points
 
 * Feature toggle: disable ``oro_customer_part_number`` to turn off the whole bundle in one step.
 * Change which characters are allowed in a part number: override the
-  ``oro_customer_part_number.part_number.regex_pattern`` DI parameter (default ``/^[^^"&'<>]+$/``).
+  ``oro_customer_part_number.part_number.forbidden_characters`` DI parameter (default ``^ " & ' < >``).
 * Reuse the ``customer_part_number_orm`` datagrid filter type in any grid with an ORM datasource related to
   ``Product``.
 * Read part number data in a custom layout update via the ``oro_customer_part_number_provider``.
