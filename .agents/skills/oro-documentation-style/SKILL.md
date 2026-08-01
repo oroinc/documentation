@@ -7,13 +7,14 @@ description: Write and review Oro product documentation following the Oro Docume
 
 Use this skill when creating, updating, or reviewing Oro product documentation.
 
-The authoritative standards live in three reference documents in this repository.
+The authoritative standards live in four reference documents in this repository.
 Read the ones relevant to your task **in full** before you start — do not rely on
 this summary alone, and do not restate their rules from memory:
 
-- **[CONTRIBUTING.md](../../../CONTRIBUTING.md)** — repository structure, topic organization, file naming, `toctree`, build workflow.
+- **[CONTRIBUTING.md](../../../CONTRIBUTING.md)** — repository structure, topic organization, file naming, `toctree`, contribution workflow.
 - **[STYLE-GUIDE.md](../../../STYLE-GUIDE.md)** — writing style, terminology, UI formatting, capitalization, screenshots, headings.
-- **[RST-SYNTAX.md](../../../RST-SYNTAX.md)** — reStructuredText directives, tables, images, internal/external links.
+- **[RST-SYNTAX.md](../../../RST-SYNTAX.md)** — reStructuredText directives, tables, images, internal/external links, build-error troubleshooting.
+- **[BUILD.md](../../../BUILD.md)** — Docker and local builds, and the isolated per-file syntax check for verifying edits quickly.
 
 These documents are the single source of truth. If this file disagrees with a
 reference document, follow the reference document.

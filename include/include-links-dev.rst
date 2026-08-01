@@ -6647,3 +6647,7 @@ Links (Dev)
 .. |RST-SYNTAX.md| raw:: html
 
    <a href="https://github.com/oroinc/documentation/blob/master/RST-SYNTAX.md" target="_blank">RST-SYNTAX.md</a>
+
+.. |BUILD.md| raw:: html
+
+   <a href="https://github.com/oroinc/documentation/blob/master/BUILD.md" target="_blank">BUILD.md</a>
