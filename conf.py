@@ -97,7 +97,7 @@ release = ''
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # exclude_patterns = ['_build', 'completeReference/overview', 'sphinx', '_themes', 'backend', 'bundles', 'cloud', 'community', 'developer', 'frontend', 'user']
-exclude_patterns = ['_build', 'completeReference/overview', 'sphinx', '_themes', '.venv']
+exclude_patterns = ['_build', 'completeReference/overview', 'sphinx', '_themes', '_assets', '.venv']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -383,7 +383,7 @@ redirects_file = 'redirects.txt'
 # I have used this workaround https://github.com/Holzhaus/sphinx-multiversion/issues/47#issuecomment-1520562048 
 smv_tag_whitelist = 'a^'
 # By default will set to None. We need to owerwrite this in CLI parameters
-smv_branch_whitelist = r'^(maintenance/5.1|maintenance/6.0|maintenance/6.1|master)$'
+smv_branch_whitelist = r'^(maintenance/5.1|maintenance/6.0|maintenance/6.1|maintenance/7.0|master)$'
 #smv_branch_whitelist = r'^(stage/5.0|stage/5.1|stage/6.0|stage/master)$'
 smv_remote_whitelist = r'^(origin)$'
 # Get release name as dir name. For current version release must be set to '' (empty string)
