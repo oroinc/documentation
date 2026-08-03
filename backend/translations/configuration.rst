@@ -4,7 +4,7 @@ Translation Configuration
 Debug Translator
 ----------------
 
-Debug translator enables you to check and debug translations in the UI. To enable it, set option `debug_translator` to `true` in the config.yml file:
+The debug translator lets you check and debug translations in the UI. To enable it, set the `debug_translator` option to `true` in the config.yml file:
 
 .. code-block:: yaml
 
@@ -12,7 +12,7 @@ Debug translator enables you to check and debug translations in the UI. To enabl
         debug_translator: true
 
 
-Additionally, refresh the backend and browser cache. All translated strings will then be wrapped into brackets, and untranslated strings will be wrapped into exclamation marks with dashes. Frontend translations have suffix "JS" to distinguish them from backend translations.
+Then refresh the backend and browser cache. Oro now wraps translated strings in brackets and untranslated strings in exclamation marks with dashes. Frontend translations carry the suffix "JS" to distinguish them from backend translations.
 
 .. code-block:: none
 
@@ -26,7 +26,11 @@ Additionally, refresh the backend and browser cache. All translated strings will
 Debug JS Translations
 ---------------------
 
-Debugging JS translations allows to turn off on fly JS translations generation, it can slightly boost performance on slow hardware configurations and make the application more stable on Windows. If `kernel.debug` is set to `false`, the value of debugging JS translations is ignored. To turn off JS translations generation, set option `js_translation.debug` to `false` in the config.yml file:
+Debugging JS translations lets you turn off JS translation generation on the fly. This can slightly boost performance on slow hardware and make the application more stable on Windows.
+
+If `kernel.debug` is set to `false`, the debugging JS translations value is ignored.
+
+To turn off JS translation generation, set the `js_translation.debug` option to `false` in the config.yml file:
 
 .. code-block:: yaml
 
@@ -35,13 +39,13 @@ Debugging JS translations allows to turn off on fly JS translations generation, 
             debug: false
 
 
-If you turned off JS translations generation, do it manually by executing the command below, which dumps translations for use in JavaScript:
+If you turned off JS translation generation, dump the translations manually by running the command below, which prepares them for use in JavaScript:
 
 .. code-block:: none
 
     php bin/console oro:translation:dump
 
-The ``--locale`` option can be used to dump translations only for the specified locales:
+Use the ``--locale`` option to dump translations only for specific locales:
 
 .. code-block:: none
 

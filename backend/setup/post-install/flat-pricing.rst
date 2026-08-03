@@ -3,9 +3,11 @@
 Enable Flat Pricing
 ===================
 
-Out-of-the-box, OroCommerce comes with a :ref:`Combined Price List (CPL) <user-guide--pricing>` functionality developed to fit the needs of large complex B2B businesses, equipped with multiple price lists, pricing strategies, price fallbacks, and price merges. However, if you operate a small-scale business or use a separate third-party system, such as an ERP, to generate and manage prices outside of OroCommerce, you can switch from the default CPL pricing to simpler flat pricing. This is usually done as part of application post-install configuration activities by a system administrator.
+Out of the box, OroCommerce uses :ref:`Combined Price List (CPL) <user-guide--pricing>` pricing, built for large, complex B2B businesses with multiple price lists, pricing strategies, price fallbacks, and price merges.
 
-If flat pricing is configured for the whole application, prices are fetched directly from the price lists without complex pricing strategies and merges. Unlike CPL configuration, which is available on global and website levels, flat pricing configuration is available on global, organization, and website levels.
+If you operate a small-scale business, or use a separate third-party system such as an ERP to generate and manage prices outside of OroCommerce, you can switch from the default CPL pricing to simpler flat pricing. A system administrator usually does this as part of post-install configuration.
+
+With flat pricing enabled for the whole application, prices are fetched directly from the price lists, without complex pricing strategies or merges. You can configure CPL on the global and website levels; flat pricing adds the organization level as well.
 
 Switch from Combined Pricing Storage to Flat
 --------------------------------------------
@@ -16,11 +18,11 @@ To switch from the default CPL pricing to simple flat pricing, run the following
 
    php "bin/console" oro:price-lists:switch-pricing-storage flat --env=prod
 
-Although it is recommended to set up flat pricing following application installation and before populating the application with data, it is also possible to switch from the native CPL to flat pricing in the production environment. However, in this case, **you will lose data**, so please keep this in mind when performing the switch.
+Set up flat pricing after installation and before populating the application with data. You can also switch from CPL to flat pricing in the production environment, but in that case **you will lose data**, so keep this in mind before you switch.
 
-Also, be aware that flat price list storage allows no more than one price list association per record. All other price list associations to websites, customer groups, and customers except for the very first price list associated with a record will be removed. So if you had ten associations with the record, nine would be removed.
+Flat price list storage also allows no more than one price list association per record. It keeps only the first price list associated with a record; all other associations to websites, customer groups, and customers are removed. For example, if a record had ten associations, nine would be removed.
 
-As soon as you switch from combined to flat pricing storage, make sure you update the website search index with the new prices:
+After you switch from combined to flat pricing storage, update the website search index with the new prices:
 
 .. code-block:: php
 

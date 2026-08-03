@@ -40,7 +40,7 @@ Oro\\Bundle\\ImportExportBundle\\Async\\Export\\PreExportMessageProcessor
 
 Processes messages sent to Oro\\Bundle\\ImportExportBundle\\Async\\Topic\\PreExportTopic.
 
-Responsible for creating messages and generating a list of records for export, which will be used in a child job. Responsible for executing the primary export job.
+Creates messages and generates a list of records for export for use in a child job. Executes the primary export job.
 
 **Class**
 
@@ -74,7 +74,7 @@ Oro\\Bundle\\ImportExportBundle\\Job\\JobExecutor
 
 **Description:**
 
-This class should be used to run import/export operations. It encapsulates all interactions with OroBatchBundle and is responsible for all job processing details in OroBatchBundle. It also supports the jobs transactional execution and handles exceptions and errors. As a result of the execution, the import/export operation returns the job result data.
+Use this class to run import/export operations. It encapsulates all interactions with OroBatchBundle and handles the job processing details there. It also supports transactional job execution and handles exceptions and errors. The import/export operation returns the job result data.
 
 **Methods:**
 
@@ -112,7 +112,7 @@ Oro\\Bundle\\ImportExportBundle\\Job\\JobResult
 
 **Description:**
 
-The JobResult parameter encapsulates the results of the import/export execution. Upon import/export execution, the JobResult data is returned. It contains detailed information about the import/export execution status, such as an operation success status, an execution context, failure exceptions, and a job code.
+The JobResult parameter encapsulates the results of the import/export execution and is returned once it completes. It contains detailed information about the execution status, such as an operation success status, an execution context, failure exceptions, and a job code.
 
 Context
 -------
@@ -126,7 +126,7 @@ Oro\\Bundle\\ImportExportBundle\\Context\\ContextInterface
 
 **Description:**
 
-The context interface provides an interface for accessing different kinds of data and is shared during the import/export operation processing.
+The context interface provides access to different kinds of data and is shared throughout the import/export operation processing.
 
 The following data are available to access:
 
@@ -161,7 +161,7 @@ Oro\\Bundle\\ImportExportBundle\\Context\\ContextRegistry
 
 **Description:**
 
-ContextRegistry is a storage which gets a specific instance of the context based on Oro\\Bundle\\BatchBundle\\Entity\\StepExecution and provides the interface to get a single instance context using Oro\\Bundle\\BatchBundle\\Entity\\StepExecution.
+ContextRegistry is a storage that returns a single context instance for a given Oro\\Bundle\\BatchBundle\\Entity\\StepExecution.
 
 Reader
 ------
@@ -175,7 +175,7 @@ Oro\\Bundle\\ImportExportBundle\\Reader\\ReaderInterface
 
 **Description:**
 
-The reader interface is a class interface that is responsible for reading the data from some source. It is extended from the OroBatchBundle reader.
+The reader interface is responsible for reading data from a source. It extends the OroBatchBundle reader.
 
 CSV File Reader
 ^^^^^^^^^^^^^^^
@@ -206,7 +206,7 @@ Oro\\Bundle\\ImportExportBundle\\Reader\\EntityReader
 
 **Description:**
 
-The entity reader reads entities using Doctrine. The Oro\\Bundle\\BatchBundle\\ORM\\Query\\BufferedIdentityQueryResultIterator action is used to perform the reading which loads the data partially using internal batch and allows handling a large amount of data without memory lack errors.
+The entity reader reads entities using Doctrine. It performs the reading with Oro\\Bundle\\BatchBundle\\ORM\\Query\\BufferedIdentityQueryResultIterator, which loads the data in batches and handles large amounts of data without running out of memory.
 
 **Configuration Options**
 
@@ -340,7 +340,7 @@ Processor Registry
 
 Oro\\Bundle\\ImportExportBundle\\Processor\\ProcessorRegistry
 
-ProcessorRegistry provides a storage of all registered processors declared by the client bundles. A specific processor of an entity extends the basic one (Import Processor or Export Processor) and contains its own components (Serializer, Data Converter, Strategy). Such processor should be registered in DIC with the following tag:
+ProcessorRegistry stores all registered processors declared by the client bundles. A specific processor of an entity extends the basic one (Import Processor or Export Processor) and contains its own components (Serializer, Data Converter, Strategy). Register such a processor in DIC with the following tag:
 
 .. code-block:: yaml
 
@@ -398,7 +398,7 @@ Oro\\Bundle\\ImportExportBundle\\Writer\\WriterInterface
 
 **Description:**
 
-WriterInterface is an interface for a class that is responsible for recording the data to its destination place. It is triggered at the end of a query process chain, after Reader and Processor complete their operations.
+WriterInterface is an interface for a class that records data to its destination. It is triggered at the end of a query process chain, after Reader and Processor complete their operations.
 
 Csv File Writer
 ^^^^^^^^^^^^^^^
@@ -420,7 +420,7 @@ Oro\\Bundle\\ImportExportBundle\\Writer\\EntityWriter
 
 **Description:**
 
-EntityWriter is used in the import job. It persists and flushes the Doctrine entities enabling to perform the operations  with large amount of data without memory limit errors.
+EntityWriter is used in the import job. It persists and flushes the Doctrine entities, enabling operations with large amounts of data without memory limit errors.
 
 **Warning**
 
@@ -449,7 +449,7 @@ Oro\\Bundle\\ImportExportBundle\\Converter\\AbstractTableDataConverter
 
 **Description:**
 
-AbstractTableDataConverter is an abstract class that is responsible for headers and conversion rules. It is extended and used in more complex use cases when you need to provide human-readable names of headers in the import/export files. The rules for AbstractTableDataConverter are configured to enable the corresponding data converting to the import/export formats. See Oro\\Bundle\\ContactBundle\\ImportExport\\Converter\\ContactDataConverter as an example of the usage of this class.
+AbstractTableDataConverter is an abstract class responsible for headers and conversion rules. Extend it in more complex cases when you need human-readable header names in the import/export files. Configure its rules to convert data to the import/export formats. See Oro\\Bundle\\ContactBundle\\ImportExport\\Converter\\ContactDataConverter for an example of its usage.
 
 **Methods:**
 
@@ -506,7 +506,7 @@ Oro\\Bundle\\ImportExportBundle\\Converter\\DefaultDataConverter
 
 **Description:**
 
-DefaultDataConverter is applicable in simple cases of import/export. It can convert the data between two representations: one dimensional vs multi-dimensional arrays. It uses the ":" delimiter in keys to be converted between these two formats.
+DefaultDataConverter applies to simple import/export cases. It converts data between two representations---one-dimensional and multi-dimensional arrays---using the ":" delimiter in keys to convert between the two formats.
 
 **Example of formats:**
 
@@ -541,7 +541,7 @@ Oro\\Bundle\\ImportExportBundle\\Converter\\QueryBuilderAwareInterface
 
 **Description:**
 
-QueryBuilderAwareInterface is used to specify whether need to set query builder to the converter to perform additional adjustments.
+QueryBuilderAwareInterface specifies whether a query builder must be set on the converter to perform additional adjustments.
 
 **Methods:**
 
@@ -685,7 +685,7 @@ Oro\\Bundle\\ImportExportBundle\\Serializer\\Serializer
 
 **Description:**
 
-Serializer is a class extended from a standard Symfony's serializer and used instead of it to perform serialization/deserialization. It has its own normalizers/denormalizers that are added using the following tags in the DI configuration:
+Serializer extends the standard Symfony serializer and replaces it to perform serialization/deserialization. It has its own normalizers/denormalizers, added using the following tags in the DI configuration:
 
 .. code-block:: yaml
 
@@ -697,7 +697,7 @@ Serializer is a class extended from a standard Symfony's serializer and used ins
                 - { name: oro_importexport.normalizer }
 
 
-Each entity that you want to export/import should be supported by the import/export serializer. It means that you should add normalizers/denormalizers that are responsible for converting your entity to the array/scalar representation (normalization during serialization), and vice versa, converting the array to the entity object representation (denormalization during deserialization).
+Each entity you want to export/import must be supported by the import/export serializer. This means adding normalizers/denormalizers that convert your entity to the array/scalar representation (normalization during serialization) and, vice versa, convert the array back to the entity object representation (denormalization during deserialization).
 
 Normalizer
 ^^^^^^^^^^

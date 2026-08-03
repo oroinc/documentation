@@ -5,7 +5,7 @@ Entity Structure Data Provider
 
 Namespace: ``Oro\Bundle\EntityBundle\Provider\EntityStructureDataProvider``
 
-It provides data of all configurable entities. Collects the following data (see ``Oro\Bundle\EntityBundle\Model\EntityStructure``):
+This provider supplies data for all configurable entities. It collects the following (see ``Oro\Bundle\EntityBundle\Model\EntityStructure``):
 
 - Entity aliases
 - Entity labels (translated)
@@ -21,7 +21,7 @@ For every field, the following information is provided:
 - type of relation (`oneToMany`, `manyToMany` and so on)
 - options (for example ``[configurable: true, auditable: false]``).
 
-This data can be returned by API.
+The API can return this data.
 
-This data can be extended or modified using an event (see :ref:`Entity Structure Options Event <dev-entities-events>`).
+You can extend or modify this data through an event (see :ref:`Entity Structure Options Event <dev-entities-events>`).
 

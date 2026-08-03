@@ -7,7 +7,7 @@ The action is a set of processors that handle a request.
 
 Each action has two required elements:
 
--  **context** ---  An object that stores the input and output data and shares data between processors.
+-  **context** --- An object that stores the input and output data and shares data between processors.
 -  **main processor** --- The main entry point for an action. This class is responsible for creating the context and executing all worker processors.
 
 For more details about these elements, see the `Creating a New Action`_ section.
@@ -231,9 +231,11 @@ delete_list Action
 
 This action deletes a list of entities.
 
-The entities list is built based on input filters. You must specify at least one filter, otherwise, you will get an error.
+This action builds the entity list from input filters. You must specify at least one filter; otherwise, you get an error.
 
-By default, the maximum number of entities that can be deleted by one request is 100, see the ``max_delete_entities`` option in :ref:`General Configuration <web-api--configuration-general>`. This limit minimizes the impact on the server. You can change this limit for an entity in `Resources/config/oro/api.yml` but test it carefully as a higher limit can significantly impact the server. See an example of changing the default limit in the :ref:`How To <max-number-of-entities-to-be-deleted>` topic.
+By default, one request can delete a maximum of 100 entities --- see the ``max_delete_entities`` option in :ref:`General Configuration <web-api--configuration-general>`. This limit minimizes the impact on the server.
+
+You can change the limit for an entity in `Resources/config/oro/api.yml`, but test it carefully, as a higher limit can significantly impact the server. For an example, see the :ref:`How To <max-number-of-entities-to-be-deleted>` topic.
 
 The route name for REST API: ``oro_rest_api_list``.
 
@@ -366,9 +368,8 @@ update_list Action
 
 This action is intended to create or update the list of entities of the same type.
 
-The action works as an asynchronous operation. The result of this action is the initial status of the created
-asynchronous operation and the ``Content-Location`` response header that contains an URL of API resource
-of this operation.
+This action runs as an asynchronous operation. Its result is the initial status of the created asynchronous
+operation, plus a ``Content-Location`` response header that contains the URL of the operation's API resource.
 
 The action is disabled by default.
 See :ref:`Batch API documentation <web-api--batch-api--enable>` for details on enabling it for an API resource.
@@ -424,7 +425,7 @@ The context class: |GetSubresourceContext|. Also see `SubresourceContext <#subre
 
 The main processor class: |GetSubresourceProcessor|.
 
-Existing worker processors: |processors.get_subresource.yml|,  |processors.shared.yml|. Run ``php bin/console oro:api:debug get_subresource`` to display the list of processors.
+Existing worker processors: |processors.get_subresource.yml|, |processors.shared.yml|. Run ``php bin/console oro:api:debug get_subresource`` to display the list of processors.
 
 This action has the following processor groups:
 
@@ -455,7 +456,11 @@ See the ``handleGetSubresource`` method of |RequestActionHandler| as an example.
 update_subresource Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Updates an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors. Use the :ref:`request_target_class <subresources-config>` configuration option when request data are different from response data. Use the :ref:`request_documentation_action <subresources-config>` configuration option when the request data documentation is different from the response data documentation.
+Updates an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs.
+
+This action has no default implementation, so you must add your own processors --- at least one that builds a form builder for your sub-resource. See |BuildFormBuilder| and |BuildCollectionFormBuilder| for examples.
+
+Use the :ref:`request_target_class <subresources-config>` configuration option when the request data differs from the response data. Use the :ref:`request_documentation_action <subresources-config>` configuration option when the request data documentation differs from the response data documentation.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
@@ -510,7 +515,11 @@ Below is an example of registering a processor to build a form builder:
 add_subresource Action
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Adds an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors. Use the :ref:`request_target_class <subresources-config>` configuration option when request data are different from response data. Use the :ref:`request_documentation_action <subresources-config>` configuration option when the request data documentation is different from the response data documentation.
+Adds an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs.
+
+This action has no default implementation, so you must add your own processors --- at least one that builds a form builder for your sub-resource. See |BuildFormBuilder| and |BuildCollectionFormBuilder| for examples.
+
+Use the :ref:`request_target_class <subresources-config>` configuration option when the request data differs from the response data. Use the :ref:`request_documentation_action <subresources-config>` configuration option when the request data documentation differs from the response data documentation.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
@@ -565,7 +574,11 @@ Below is an example of registering a processor to build a form builder:
 delete_subresource Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Deletes an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at BuildFormBuilder and BuildCollectionFormBuilder as examples of such processors. Use the :ref:`request_target_class <subresources-config>` configuration option when request data are different from response data. Use the :ref:`request_documentation_action <subresources-config>` configuration option when the request data documentation is different from the response data documentation.
+Deletes an entity or entities (depending on the association type) connected to an entity to which the sub-resource belongs.
+
+This action has no default implementation, so you must add your own processors --- at least one that builds a form builder for your sub-resource. See BuildFormBuilder and BuildCollectionFormBuilder for examples.
+
+Use the :ref:`request_target_class <subresources-config>` configuration option when the request data differs from the response data. Use the :ref:`request_documentation_action <subresources-config>` configuration option when the request data documentation differs from the response data documentation.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
@@ -756,7 +769,7 @@ The HTTP method for REST API: ``POST``.
 
 The context class: |AddRelationshipContext|. See the `SubresourceContext <#subresourcecontext-class>`__ class for more details.
 
-The main processor class:  |AddRelationshipProcessor|.
+The main processor class: |AddRelationshipProcessor|.
 
 Existing worker processors: |processors.delete_relationship.yml|, |processors.shared.yml|. Run ``php bin/console oro:api:debug delete_relationship`` to display the list of processors.
 
@@ -792,7 +805,7 @@ options Action
 
 This action retrieves the communication options for a resource. For more details, see the |OPTIONS| section of the HTTP specification.
 
-This action is also intended |CORS preflight requests| for REST API. For more details, see the :ref:`CORS Configuration <api-cors-config>` section.
+This action also handles |CORS preflight requests| for the REST API. For more details, see the :ref:`CORS Configuration <api-cors-config>` section.
 
 The HTTP method for REST API: ``OPTIONS``.
 
@@ -800,7 +813,7 @@ The context class: |OptionsContext|.
 
 The main processor class: |OptionsProcessor|.
 
-Existing worker processors: |processors.options.yml|, |processors.shared.yml|. Run php ``bin/console oro:api:debug options`` to list the processors.
+Existing worker processors: |processors.options.yml|, |processors.shared.yml|. Run ``php bin/console oro:api:debug options`` to list the processors.
 
 This action has the following processor groups:
 
@@ -832,7 +845,11 @@ The main processor class: |CustomizeLoadedDataProcessor|.
 
 An example of a processor used to modify the loaded data is |ComputePrimaryField| or :ref:`Add a Computed Field <add-computed-field>`. Run ``php bin/console oro:api:debug customize_loaded_data`` to display other processors registered in this action.
 
-The ``collection`` tag attribute can be used for processors of this action to process all primary entities in `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions or all entities in ``to-many`` associations for `get <#get-action>`__, `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions. An example of a case when using this attribute can be helpful if you want to execute one SQL query for all entities in a collection to get additional data instead of executing a separate SQL query for each entity in a collection. The default value the ``collection`` tag attribute is ``false``. An example of a processor that should be executed to a whole collection:
+You can use the ``collection`` tag attribute on processors of this action to process all primary entities in the `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions, or all entities in ``to-many`` associations for the `get <#get-action>`__, `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions.
+
+This attribute is helpful when you want to run one SQL query for all entities in a collection to get additional data, instead of running a separate query for each entity.
+
+The default value of the ``collection`` tag attribute is ``false``. Here is an example of a processor that runs against a whole collection:
 
 .. code-block:: yaml
 
@@ -975,7 +992,7 @@ The context class: |CollectResourcesContext|.
 
 The main processor class: |CollectResourcesProcessor|.
 
-Existing worker processors:|processors.collect_resources.yml|. Run ``php bin/console oro:api:debug collect_resources`` to see the list of processors.
+Existing worker processors: |processors.collect_resources.yml|. Run ``php bin/console oro:api:debug collect_resources`` to see the list of processors.
 
 Additionally, |ResourcesProvider| was created to simplify the use of this action.
 
@@ -1082,7 +1099,7 @@ The context class: |BatchUpdateContext|.
 
 The main processor class: |BatchUpdateProcessor|.
 
-Existing worker processors:|processors.batch_update.yml|. Run ``php bin/console oro:api:debug batch_update`` to see the list of processors.
+Existing worker processors: |processors.batch_update.yml|. Run ``php bin/console oro:api:debug batch_update`` to see the list of processors.
 
 This action has the following processor groups:
 
@@ -1115,7 +1132,7 @@ The context class: |BatchUpdateItemContext|.
 
 The main processor class: |BatchUpdateItemProcessor|.
 
-Existing worker processors:|processors.batch_update_item.yml|. Run ``php bin/console oro:api:debug batch_update_item`` to see the list of processors.
+Existing worker processors: |processors.batch_update_item.yml|. Run ``php bin/console oro:api:debug batch_update_item`` to see the list of processors.
 
 This action has the following processor groups:
 
@@ -1148,13 +1165,13 @@ General methods:
 -  **getRequestHeaders()** --- Retrieves the request headers.
 -  **setRequestHeaders(parameterBag)** --- Sets an object to use for accessing the request headers.
 -  **getResponseHeaders()** --- Retrieves the response headers.
--  **setResponseHeaders(parameterBag)** --- Sets an object to use for accessing accessing the response headers.
+-  **setResponseHeaders(parameterBag)** --- Sets an object to use for accessing the response headers.
 -  **getResponseStatusCode()** --- Retrieves the response status code.
 -  **setResponseStatusCode(statusCode)** --- Sets the response status code.
 -  **isSuccessResponse()** --- Indicates whether a result document represents a success response.
 -  **getResponseDocumentBuilder()** --- Retrieves the response document builder.
 -  **setResponseDocumentBuilder(documentBuilder)** --- Sets the response document builder.
--  **getFilters()** ---  Retrieves a |list of filters| to set additional restrictions to a query used to retrieve the entity data.
+-  **getFilters()** --- Retrieves a |list of filters| to set additional restrictions to a query used to retrieve the entity data.
 -  **getFilterValues()** --- Retrieves a collection of the |FilterValue| objects that contains all incoming filters.
 -  **setFilterValues(accessor)** --- Sets an |object| to use for accessing the incoming filters.
 -  **isMainRequest()** --- Indicates whether the current action processes a main API request or is executed as part of another action.
@@ -1266,7 +1283,7 @@ Parent entity metadata-related methods:
 Creating a New Action
 ---------------------
 
-To create a new action, to create two classes:
+To create a new action, create two classes:
 
 -  **context** --- This class represents a context in the scope of which an action is executed. An instance of this class is used to store the input and output data and share data between processors. This class must extend |ApiContext|. Depending on your needs, you can use another classes derived from |ApiContext|, for example |Context|, |SingleItemContext| or |ListContext|.
 -  **main processor** --- This class is the main entry point for an action and is responsible for creating an instance of the context class and executing all worker processors. This class must extend |ActionProcessor| and implement the ``createContextObject`` method. Depending on your needs, you can use other classes derived from |ActionProcessor|, for example, |NormalizeResultActionProcessor|.

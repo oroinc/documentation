@@ -3,7 +3,7 @@
 AWS Cloud Platform
 ==================
 
-The |Amazon Machine Image (AMI)| with |oro_app_name| is listed on the |Amazon Web Services Marketplace|. With its help, you can effortlessly and quickly set up an instance with a working |oro_app_name| application on the |Amazon EC2| platform, as described in detail further in this article.
+The |Amazon Machine Image (AMI)| with |oro_app_name| is listed on the |Amazon Web Services Marketplace|. It lets you quickly set up an instance with a working |oro_app_name| application on the |Amazon EC2| platform, as described in this article.
 
 Deploying a single EC2 instance is helpful when reviewing Oro application features or using the default uncustomized application version for low and medium-traffic websites.
 
@@ -30,13 +30,13 @@ Installation Steps
 
 1. Sign in to the |AWS Management Console|.
 
-2. Open the  |EC2 Dashboard| page (the item **Services -> EC2** in the top menu). The EC2 Dashboard enables you to observe and control all information related to your AWS EC2 instances.
+2. Open the |EC2 Dashboard| page (the item **Services -> EC2** in the top menu). The EC2 Dashboard lets you view and manage all information about your AWS EC2 instances.
 
 3. Click **Launch Instance** to start the first step of the multi-step EC2 instance launching wizard.
 
    .. image:: /img/backend/setup/aws/EC2_dashboardh.png
 
-4. To select the source for the AMI to run on the EC2 instance, click **AWS Marketplace** in the panel to the left. Select the source for the Amazon Machine Image that will be run on the EC2 instance.
+4. To select the source for the AMI to run on the EC2 instance, click **AWS Marketplace** in the panel to the left.
 
    .. image:: /img/backend/setup/aws/choose_an_ami.png
 
@@ -58,7 +58,7 @@ Installation Steps
 
    .. note:: You can choose a different type of the EC2 cloud but make sure that it meets the Oro application :ref:`System Requirements <system-requirements>`.
 
-   Clicking **Review and Launch**  redirects you to the final installation step. Steps 3 to 6 are skipped as they contain preconfigured default values. Should you need to change the default values, return to Steps 3 to 6.
+   Clicking **Review and Launch** takes you to the final installation step. Steps 3 to 6 are skipped because they contain preconfigured default values. To change these values, return to Steps 3 to 6.
 
    .. image:: /img/backend/setup/aws/step_7.png
 
@@ -68,7 +68,7 @@ Installation Steps
 
 10. Click **Create a new key pair**, provide its name in the field, and click **Download Key Pair**.
 
-.. warning::  Store the downloaded .pem private key file in a secure and accessible location. If you lose the file, you will not be able to log into your EC2 instance using SSH.
+.. warning:: Store the downloaded .pem private key file in a secure and accessible location. If you lose the file, you will not be able to log into your EC2 instance using SSH.
 
 11. Click **Launch Instances** to open the **Launch Status** page where you can access the usage instructions, the software management page and other helpful resources.
 
@@ -77,7 +77,7 @@ Installation Steps
 12. Click **View Instances** at the bottom right to access the **Instances** page with a list of your launched EC2 instances and the information on their
 state and status.
 
-13. Click on the required instance from the list to view its description at the bottom. You can see detailed information about the selected instance below the launched instances list.
+13. Click the required instance in the list to view its detailed description below the list.
 
    .. image:: /img/backend/setup/aws/launching_instance.png
 

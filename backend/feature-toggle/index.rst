@@ -99,8 +99,9 @@ An example of the `features.yml` configuration:
 Add New Options to Feature Configuration
 ----------------------------------------
 
-Feature configuration may be extended with new configuration options. To add a new configuration option, you need to add a feature configuration that implements ConfigurationExtensionInterface and register it with the `oro_feature.config_extension` tag.
-For example, there are some Acme processors which should be configured with the `acme_processor` option.
+To add a new configuration option, add a feature configuration that implements ConfigurationExtensionInterface and register it with the `oro_feature.config_extension` tag.
+
+For example, some Acme processors should be configured with the `acme_processor` option.
 
 Configuration extension:
 
@@ -140,12 +141,13 @@ Extension registration:
 Check Feature State
 -------------------
 
-Feature state is determined by `FeatureChecker`. There are proxy classes that expose a feature check functionality to layout updates, operations, workflows, processes, and twig.
+`FeatureChecker` determines the feature state. Proxy classes expose the feature check functionality to layout updates, operations, workflows, processes, and twig.
 
-Feature state is resolved by `isFeatureEnabled($featureName, $scopeIdentifier = null)`
+`isFeatureEnabled($featureName, $scopeIdentifier = null)` resolves the feature state.
 
-Feature resource types are nodes of feature configuration (routes, workflows, configuration, processes, operations, API resources, etc.), resources are their values. Resource is disabled if it is included into at least one disabled feature.
-Resource state is resolved by `public function isResourceEnabled($resource, $resourceType, $scopeIdentifier = null)`
+Feature resource types are nodes of feature configuration (routes, workflows, configuration, processes, operations, API resources, etc.); resources are their values. A resource is disabled if it is included in at least one disabled feature.
+
+`public function isResourceEnabled($resource, $resourceType, $scopeIdentifier = null)` resolves the resource state.
 
 Layout Updates
 ^^^^^^^^^^^^^^
@@ -203,13 +205,11 @@ Twig
 Include a Service Into a Feature
 --------------------------------
 
-Any service that requires a feature functionality, needs to implement the `FeatureToggleableInterface` interface.
-All checks are done by developer.
+Any service that requires feature functionality must implement the `FeatureToggleableInterface` interface. The developer performs all checks.
 
-OroFeatureToggleBundle provides helper functionality to inject a feature checker and a feature name into services marked with the `oro_featuretogle.feature` tag.
-`FeatureCheckerHolderTrait` contains implementation of methods from `FeatureToggleableInterface`.
+OroFeatureToggleBundle provides helper functionality to inject a feature checker and a feature name into services marked with the `oro_featuretogle.feature` tag. `FeatureCheckerHolderTrait` implements the methods from `FeatureToggleableInterface`.
 
-Some extensions can extend the form, and we need to include this extension functionality into a feature. In this case, `FeatureChecker` should be injected into service, and feature availability should be checked where needed.
+Some extensions extend the form, and you may need to include this extension functionality in a feature. In this case, inject `FeatureChecker` into the service and check feature availability where needed.
 
 
 Extension:
@@ -269,14 +269,14 @@ Extension registration:
 Check Feature State with a Feature Voter
 ----------------------------------------
 
-Feature state is checked by feature voters. All voters are called each time you use the `isFeatureEnabled()` or `isResourceEnabled()` method on the feature checker.
-The feature checker makes the decision based on the configured strategy defined in the system configuration or per feature, which can be: affirmative, consensus, or unanimous.
+Feature voters check the feature state. Every voter is called each time you use the `isFeatureEnabled()` or `isResourceEnabled()` method on the feature checker.
 
-By default, `ConfigVoter` is registered to check features availability.
-It checks the feature state based on the value of a toggle option defined in the features.yml configuration.
+The feature checker makes the decision based on the configured strategy, defined in the system configuration or per feature: affirmative, consensus, or unanimous.
+
+By default, `ConfigVoter` is registered to check feature availability. It checks the feature state based on the value of a toggle option defined in the features.yml configuration.
 
 A custom voter needs to implement ``Oro\Bundle\FeatureToggleBundle\Checker\Voter\VoterInterface``.
-Imagine that we have the state checker that returns decision based on a feature name and a scope identifier.
+Imagine a state checker that returns a decision based on a feature name and a scope identifier.
 The feature is enabled for the valid state and disabled for the invalid state. In other cases, do not vote.
 
 Such voter looks as follows:
@@ -364,7 +364,11 @@ or in feature definition
 Use Checker for Commands
 ------------------------
 
-Commands launched as subcommands cannot be skipped globally. To avoid running such commands, add an implementation of FeatureCheckerAwareInterface to your parent command, import FeatureCheckerHolderTrait (via `use FeatureCheckerHolderTrait;`), and check the feature status via featureChecker that is automatically injected into your command.
+Commands launched as subcommands cannot be skipped globally. To avoid running such commands:
+
+* Add an implementation of FeatureCheckerAwareInterface to your parent command.
+* Import FeatureCheckerHolderTrait (via `use FeatureCheckerHolderTrait;`).
+* Check the feature status via featureChecker, which is automatically injected into your command.
 
 .. code-block:: php
 

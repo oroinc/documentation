@@ -34,7 +34,7 @@ Environment Setup
 
         npm install -g pnpm@latest-10
 
-5. If you are going to use an Enterprise Edition of the application, install the mongodb php extension:
+5. If you plan to use the Enterprise Edition, install the mongodb php extension:
 
    .. code-block:: none
 
@@ -54,7 +54,7 @@ Environment Setup
       brew install symfony-cli
       symfony local:server:ca:install
 
-8. Restart the terminal and web browser to get them ready.
+8. Restart the terminal and web browser.
 
 What's Next
 -----------

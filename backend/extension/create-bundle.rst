@@ -11,11 +11,11 @@ Create a Bundle
 Create a Bundle Manually
 ------------------------
 
-First you need to specify name and namespace of your bundle. Symfony framework already has
-|best practices for bundle structure and bundle name| and we recommend to follow these practices and use them.
+First, specify the name and namespace of your bundle. The Symfony framework already provides
+|best practices for bundle structure and bundle name|, and we recommend following them.
 
-Let us assume that we want to create the AcmeDemoBundle and put it under the namespace ``Acme\Bundle\DemoBundle``
-in the ``/src`` directory. We need to create the corresponding directory structure and the bundle file with the following content:
+Suppose you want to create the AcmeDemoBundle under the namespace ``Acme\Bundle\DemoBundle``
+in the ``/src`` directory. Create the corresponding directory structure and the bundle file with the following content:
 
 .. oro_integrity_check:: 60007b7c5dc2549192f5138c7861f5a16a193b3e
 
@@ -24,12 +24,12 @@ in the ``/src`` directory. We need to create the corresponding directory structu
        :language: php
        :lines: 4-6, 11-14, 28
 
-Basically, it is a regular Symfony bundle. The only difference is in the way it will be enabled (see chapter `Enable a Bundle`_).
+This is a regular Symfony bundle. The only difference is how you enable it (see `Enable a Bundle`_).
 
 Create a Bundle Service Container Extension
 -------------------------------------------
 
-For a load configuration files you need to create Service Container Extension. See |Symfony Configuration Files|
+To load configuration files, create a Service Container Extension. See |Symfony Configuration Files|
 
 .. oro_integrity_check:: 04414a05c934f584d038f4791e3ccd8c4db19876
 
@@ -38,7 +38,7 @@ For a load configuration files you need to create Service Container Extension. S
        :language: php
        :lines: 4-20, 28-29
 
-Create basic ``Resources/config/services.yml`` for define service parameters. See |Symfony Service Parameters|
+Create a basic ``Resources/config/services.yml`` to define service parameters. See |Symfony Service Parameters|
 
 .. code-block:: yaml
   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
@@ -86,7 +86,7 @@ Create basic ``Resources/config/services.yml`` for define service parameters. Se
 Enable a Bundle
 ---------------
 
-Now you have all the required files to enable the new bundle. To enable the bundle:
+You now have all the files required to enable the new bundle. To enable it:
 
 #. Create a Resources/config/oro/bundles.yml file with the following content:
 
@@ -120,7 +120,7 @@ Now you have all the required files to enable the new bundle. To enable the bund
 
        Replace `grep` argument with your bundle's proper name
 
-#. When your bundle is registered and active, the following output (or a similar one) will be displayed in the console after running the command:
+#. When your bundle is registered and active, the command displays output similar to the following:
 
    .. code-block:: none
 

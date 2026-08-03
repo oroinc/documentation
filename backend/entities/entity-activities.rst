@@ -6,9 +6,9 @@ Entity Activities
 Enable Activity Association Using Migrations
 --------------------------------------------
 
-Usually, an administrator provides a predefined set of associations between the activity entity and other entities. If necessary, you can also create this association type using ref:`migrations <backend-entities-migrations>`.
+Usually, an administrator provides a predefined set of associations between the activity entity and other entities. If necessary, you can also create this association type using :ref:`migrations <backend-entities-migrations>`.
 
-The following example illustrates how to do it:
+For example:
 
 .. oro_integrity_check:: b7078f4c44ebf2c13028fb26aa10872456d33763
 
@@ -31,9 +31,9 @@ You can add the following activities to other entities:
 - Calendar event
 - Notes
 
-Visualization of the Activity list is defined as a widget block. It shows activities related to the entity record currently being viewed in a single list, with the ability to filter it by activity type (*multiselect*) and date (*daterange* filter).
+The activity list appears as a widget block. It shows all activities related to the entity record you are viewing in a single list, and you can filter it by activity type (*multiselect*) and date (*daterange* filter).
 
-Each activity row shows basic information: the activity type, who and when created and updated it. You can also access the full activity record with the help of the "expand" action. By default, it displays 10 records sorted by the Update date in descending order. You can change the limitation and sorting in the UI :ref:`via system configuration <bundle-docs-platform-activity-list-bundle-configuration>`.
+Each activity row shows basic information: the activity type, who created and updated it, and when. Use the "expand" action to open the full activity record. By default, the widget displays 10 records sorted by the Update date in descending order. You can change the sorting and limit in the UI :ref:`via system configuration <bundle-docs-platform-activity-list-bundle-configuration>`.
 
 The widget is currently displayed in the *Activities* placeholder block on the view page of an entity.
 
@@ -88,7 +88,7 @@ You can change sorting and limitation in the UI under **System > Configuration >
 Configure Permissions
 ---------------------
 
-Each activity entity must contain a provider (for example, *EmailActivityListProvider*) with the implemented *ActivityListProviderInterface* interface. The *ActivityList::getActivityOwners* method returns one or many ActivityOwner entities connected to their activity list entity.
+Each activity entity must contain a provider (for example, *EmailActivityListProvider*) that implements the *ActivityListProviderInterface* interface. The *ActivityList::getActivityOwners* method returns one or many ActivityOwner entities connected to their activity list entity.
 
 .. _bundle-docs-platform-activity-list-bundle-filter:
 
@@ -97,7 +97,7 @@ Filter Activities in Segments
 
 ActivityListBundle extends OroSegmentBundle with the Activity filter type.
 
-This filter can be used to filter records if they:
+Use this filter to select records that:
 
 * have an activity with a value in the field (e.g., a Contact who has an activity "Email" where the subject of the email contains the text "Re:")
 * do not have an activity with a value in the field (e.g., Contact who does not have activity "Email" where the subject of the email contains text "Meeting")

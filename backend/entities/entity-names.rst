@@ -6,19 +6,19 @@ Entity Name Resolver and Providers
 Entity Name Resolver
 --------------------
 
-The |Entity Name Resolver| service has been introduced to make the configuring of entity name formatting more flexible.
+The |Entity Name Resolver| service makes configuring entity name formatting more flexible.
 
 It provides two functions for getting the entity name:
 
 - string *public* *getName*(object *entity*[, string *format*, string *locale*])
 
-You can use this method to get a text representation of an entity formatted according to the format notation passed (e.g., "full", "short", etc.). If the format is not specified, the default one is used.
+Use this method to get a text representation of an entity, formatted according to the format passed (for example, "full" or "short"). If you omit the format, the default one is used.
 
 You can pass the *locale* parameter to format the text representation using a specific locale:
 
 - string *public* *getNameDQL*(string *className*, string *alias*[, string *format*, string *locale*])
 
-This method helps get a DQL expression that can be used to get a text representation of the given type of entities formatted according to the format notation passed (e.g., "full", "short", etc.). If the format is not specified, the default one is used.
+This method returns a DQL expression for getting a text representation of the given type of entities, formatted according to the format passed (for example, "full" or "short"). If you omit the format, the default one is used.
 
 You can pass the *locale* parameter to get a text representation using a specific locale.
 
@@ -42,13 +42,13 @@ You can configure the available entity formats in the `entity_name_formats` sect
                 fallback: short
             short: ~
 
-Note that it is possible to specify the fallback format for the entity that will be used when no providers do not implement the given format.
+You can specify a fallback format for the entity, used when no provider implements the given format.
 
 Entity Name Providers
 ---------------------
 
-The Entity Name Resolver does not know how to get the entity name by itself but instead, it expects to have a collection of Entity Name Providers that will do the job.
-The first provider that can return a reliable result wins. The rest of the providers will not be asked.
+The Entity Name Resolver does not resolve entity names by itself. Instead, it relies on a collection of Entity Name Providers to do the job.
+The first provider that returns a reliable result wins; the rest are not asked.
 
 To create an Entity Name Provider, you should implement the |EntityNameProviderInterface|:
 
@@ -90,7 +90,7 @@ To create an Entity Name Provider, you should implement the |EntityNameProviderI
         }
     }
 
-If the provider cannot return a reliable result, FALSE should be returned to keep looking for the other providers in the chain.
+If the provider cannot return a reliable result, it should return FALSE so the resolver keeps checking the other providers in the chain.
 
 Entity name providers are registered in the DI container by the `oro_entity.name_provider` tag:
 
@@ -104,7 +104,7 @@ Entity name providers are registered in the DI container by the `oro_entity.name
         tags:
             - { name: oro_entity.name_provider, priority: -100 }
 
-You can specify the priority to move the provider up or down the provider's chain. The bigger the priority number is, the earlier the provider will be executed. The priority value is optional and defaults to 0.
+You can specify the priority to move the provider up or down the chain. The bigger the priority number, the earlier the provider runs. The priority is optional and defaults to 0.
 
 In simple cases, you can configure fields that should be used to get an entity name via ``oro_entity.entity_name_representation`` in `Resources/config/oro/app.yml` in any bundle or `config/config.yml` of your application, for example:
 
@@ -118,9 +118,9 @@ In simple cases, you can configure fields that should be used to get an entity n
 
 **Default behavior**
 
-The bundled provider ``Oro\Bundle\EntityBundle\Provider\EntityNameProvider`` will resolve entity titles by trying to find appropriate fields in the entity. For the 'short' format, it tries to use one string field from the list 'firstName', 'name', 'title', and 'subject' (in that order). For 'full,' it will use a space-delimited concatenation of all non-serialized string fields. If some fields are found, but the resulting title is empty (i.e., the value of the fields is null), it will return the entity id.
+The bundled provider ``Oro\Bundle\EntityBundle\Provider\EntityNameProvider`` resolves entity titles by finding appropriate fields in the entity. For the 'short' format, it uses the first available string field from 'firstName', 'name', 'title', and 'subject' (in that order). For 'full', it uses a space-delimited concatenation of all non-serialized string fields. If fields are found but the resulting title is empty (that is, the field values are null), it returns the entity id.
 
-If no appropriate fields are available (e.g., the entity does not have any string fields), then another provider ``Oro\Bundle\EntityBundle\Provider\FallbackEntityNameProvider`` will try to construct a title in the form of 'Item #1' from the entity identifier, and `oro.entity.item` translation key.
+If no appropriate fields are available (for example, the entity has no string fields), another provider ``Oro\Bundle\EntityBundle\Provider\FallbackEntityNameProvider`` constructs a title like 'Item #1' from the entity identifier and the `oro.entity.item` translation key.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

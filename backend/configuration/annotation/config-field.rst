@@ -5,7 +5,7 @@
 #[ConfigField]
 ==============
 
-This attribute is used to configure default values for properties of configurable entity classes.
+This attribute configures default values for properties of configurable entity classes.
 
 Arguments
 ---------
@@ -47,7 +47,7 @@ This example sets the ``auditable`` option from the ``dataaudit`` scope to ``tru
 
 *  **file_applications** --- the list of all allowed file applications. Supported value: ``default``.
 
-*  **use_dam** *boolean* - indicates whether to use DAM (Digital Asset Management) to upload a file. OroDigitalAssetBundle bundle provides the Digital Asset Management (DAM) functionality and CRUD for digital assets. It can be enabled for fields of type File and Image  in the back-office UI both via the entity management and field configuration.
+*  **use_dam** *boolean* - indicates whether to use DAM (Digital Asset Management) to upload a file. OroDigitalAssetBundle bundle provides the Digital Asset Management (DAM) functionality and CRUD for digital assets. It can be enabled for fields of type File and Image in the back-office UI both via the entity management and field configuration.
 
 *  **maxsize** *integer* - sets the max size of an uploaded file in megabytes.
 
@@ -87,7 +87,7 @@ Attribute fields have a dedicated CRUD and field types, similarly to the extend 
 
 *  **organization_id** *integer* - defines the id of a specific organization.
 
-*  **search_boost** *integer* -  enables you to control the relevancy ranking of the search results by the value of the attributes.
+*  **search_boost** *integer* - enables you to control the relevancy ranking of the search results by the value of the attributes.
 
 * **immutable** *boolean* - is used to prohibit changing the attribute association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
@@ -110,7 +110,7 @@ Add a property of an entity to the changelog.
 ``datagrid``
 ~~~~~~~~~~~~
 
-Contain some settings for the datagrid screen.
+Contains settings for the datagrid screen.
 
 *  **is_visible** *boolean* - if set to true, the field is displayed as the datagrid column.
 
@@ -126,7 +126,7 @@ Contain some settings for the datagrid screen.
 ``draft``
 ~~~~~~~~~
 
-:ref:`OroDraftBundle <draft-bundle--use-draft>` enables you too edit and publish a version of a draftable entity record that requires more work to be finished.
+:ref:`OroDraftBundle <draft-bundle--use-draft>` enables you to edit and publish a version of a draftable entity record that requires more work to be finished.
 
 *  **draftable** *boolean* - defines whether field can involved in the draft operation.
 
@@ -150,7 +150,7 @@ Sets default settings for :ref:`OroEmailBundle <bundle-docs-platform-email-bundl
 ``entity``
 ~~~~~~~~~~
 
-Contain settings for the entity UI.
+Contains settings for the entity UI.
 
 *  **label** *string* - enables you to change the label of the field.
 
@@ -190,7 +190,7 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 
 * **is_extend** *boolean* - switches to the 'extend' functionality.
 
-* **is_serialized** *boolean* - if set to true, the field data is saved in  the serialized_data column without doctrine schema update.
+* **is_serialized** *boolean* - if set to true, the field data is saved in the serialized_data column without doctrine schema update.
 
 * **without_default** *boolean* - indicates whether a relation has default value or not. Applicable only to many-to-many or one-to-many relations. If not specified or FALSE, the relation has the default value.
 
@@ -246,7 +246,7 @@ The attribute specifies a custom form type for the field.
 
 * **form_type** or **type** *string* - form type for a specific field. Example: ``Oro\Bundle\FormBundle\Form\Type\OroPercentType``.
 
-* **form_options** *boolean* - form options for a specific field. For more information, see |Symfony Form Type Options| .
+* **form_options** *boolean* - form options for a specific field. For more information, see |Symfony Form Type Options|.
 
 * **immutable** *boolean* - is used to prohibit changing the form association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
@@ -342,7 +342,9 @@ Settings of :ref:`entity merge <dev-entities-merge>`.
 ``multicurrency``
 ~~~~~~~~~~~~~~~~~
 
-As currency functionality is represented by three fields (from entity side) we have to hide such fields from permissions configuration page and add only one that will affect all of them. Adds virtual field into permissions list, the name of such field will be taken from `target` property. Walks through fields with defined `target` in `multicurrency` scope and makes changes in FieldSecurityMetadata sets `alias` to `target` and `isHidden` to TRUE. The field with defined `virtual_field` in `multicurrency` scope is used to retrieve the label to be used for virtual field mentioned above.
+As currency functionality is represented by three fields (from entity side) we have to hide such fields from permissions configuration page and add only one that will affect all of them.
+
+Adds virtual field into permissions list, the name of such field will be taken from `target` property. Walks through fields with defined `target` in `multicurrency` scope and makes changes in FieldSecurityMetadata sets `alias` to `target` and `isHidden` to TRUE. The field with defined `virtual_field` in `multicurrency` scope is used to retrieve the label to be used for virtual field mentioned above.
 
 * **target** *string* - The name of virtual field.
 
@@ -354,7 +356,7 @@ As currency functionality is represented by three fields (from entity side) we h
 ``organization``
 ~~~~~~~~~~~~~~~~
 
-* **applicable** ---  is used to specify for which organizations custom field will be visible. On the field edit page, it is represented with form type ``oro_type_choice_organization_type``, which provides a selector for organizations (regardless of whether it is activated or not) defined in the application so that a user can select a specific organization(s) or "ALL" organizations.
+* **applicable** --- is used to specify for which organizations custom field will be visible. On the field edit page, it is represented with form type ``oro_type_choice_organization_type``, which provides a selector for organizations (regardless of whether it is activated or not) defined in the application so that a user can select a specific organization(s) or "ALL" organizations.
 
 * **immutable** *boolean* - is used to prohibit changing the applicable association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
@@ -362,7 +364,7 @@ As currency functionality is represented by three fields (from entity side) we h
 ``search``
 ~~~~~~~~~~
 
-Attributes that using to set up :ref:`search <user-guide-getting-started-search>` functionality.
+Attributes used to set up :ref:`search <user-guide-getting-started-search>` functionality.
 
 * **searchable** *boolean* - Indicates what custom field could be searchable.
 
@@ -373,7 +375,7 @@ Attributes that using to set up :ref:`search <user-guide-getting-started-search>
 ``security``
 ~~~~~~~~~~~~
 
-Attributes that using to set up :ref:`security <backend-security-bundle-intro>` functionality.
+Attributes used to set up :ref:`security <backend-security-bundle-intro>` functionality.
 
 * **permissions** *string* - The following permissions are supported for fields: VIEW, EDIT.
 
@@ -383,7 +385,7 @@ Attributes that using to set up :ref:`security <backend-security-bundle-intro>` 
 ``view``
 ~~~~~~~~
 
-Attributes that using to set up Entity View Page`.
+Attributes used to set up the Entity View Page.
 
 * **is_displayable** *boolean* - Show on view.
 

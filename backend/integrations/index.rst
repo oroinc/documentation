@@ -26,25 +26,31 @@ Choose the model of transferring data to build your integration flow:
 Comparison of Integration Approaches
 ------------------------------------
 
-The selection of the integration approach relies on the particular needs of the integrated systems, along with factors including capacity of data, real-time needs, and available technical knowledge.
+The right integration approach depends on the needs of the integrated systems and on factors such as data capacity, real-time needs, and available technical knowledge.
 
 .. _dev-integrations--integrationbundle-based:
 
 OroIntegrationBundle-Based
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This approach provides a means to achieve seamless integration with third-party systems. This is the only way to integrate payment and shipping methods.
+This approach integrates seamlessly with third-party systems. It is the only way to integrate payment and shipping methods.
 
-Native application extensions provide a seamless user experience, as they are integrated directly into the existing application. Integration can be fully configured and controlled within the Oro application's user interface. In many cases, you can achieve real-time interactions and data synchronization. This integration can also handle system events internally and immediately initiate data synchronization upon occurrence.
+Because native extensions are built directly into the existing application, they provide a seamless user experience. You configure and control the integration entirely within the Oro application's user interface.
 
-Extending a native application allows you to leverage existing features and functionalities and helps you benefit from the security features and user access control.
+In many cases, you can achieve real-time interactions and data synchronization. The integration can also handle system events internally and start data synchronization as soon as they occur.
+
+Extending a native application lets you reuse existing features and functionality and benefit from the built-in security features and user access control.
 
 .. hint:: **Things to Consider**: Developing native extensions can be time-consuming and may require specialized knowledge. Regular updates and maintenance are necessary to keep the extension aligned with the application's updates.
 
 Import/Export-Based
 ^^^^^^^^^^^^^^^^^^^
 
-The Import/Export-based approach allows you to integrate third-party systems based on the file-exchange pattern. It makes integrating systems with different technologies and data formats easier. You only need to know a little about each system: the export format, import format, and data transformation logic. Import-export integrations can be configured and maintained by developers who are not familiar with OroCommerce. You can also schedule imports and exports to automate data transfer.
+The Import/Export-based approach integrates third-party systems using the file-exchange pattern. This makes it easier to integrate systems with different technologies and data formats.
+
+You only need to know a little about each system: the export format, import format, and data transformation logic. As a result, developers who are not familiar with OroCommerce can configure and maintain import-export integrations.
+
+You can also schedule imports and exports to automate data transfer.
 
 .. hint::  **Things to Consider:**
 
@@ -58,11 +64,11 @@ The Import/Export-based approach allows you to integrate third-party systems bas
 API-Based
 ^^^^^^^^^
 
-API-based integrations are comparable to import/export based ones regarding data exchange, making it more straightforward to integrate systems with varying technologies and data formats. Extensive knowledge of each system is not required as long as you are familiar with the API standard and data structure.
+For data exchange, API-based integrations are comparable to import/export ones and make it more straightforward to integrate systems with varying technologies and data formats. You do not need extensive knowledge of each system, only familiarity with the API standard and data structure.
 
-When using an API, developers can choose a middleware approach. This simplifies the integration of different systems, protocols, and technologies by offering a smooth interface for application communication. This helps facilitate inter-application communication and enables the coordination and exchange of data. Middleware can also distribute workloads and horizontally scale applications to handle increased data amounts.
+With an API, developers can choose a middleware approach. Middleware simplifies the integration of different systems, protocols, and technologies by offering a smooth interface for application communication. It coordinates and exchanges data between applications, and it can distribute workloads and scale applications horizontally to handle larger data amounts.
 
-APIs typically follow industry-standard formats, making data exchange between systems consistent and reliable, and they support authentication and authorization mechanisms, ensuring secure data transfer. As your systems grow, API-based integrations are often scalable, accommodating increased data volume and system complexity.
+APIs typically follow industry-standard formats, which makes data exchange between systems consistent and reliable. They also support authentication and authorization mechanisms for secure data transfer. API-based integrations are often scalable, so they accommodate increased data volume and system complexity as your systems grow.
 
 .. hint:: **Things to Consider:**
 

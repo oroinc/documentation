@@ -37,12 +37,11 @@ Run Action Group `@run_action_group`.
             entity_id: $.user.id
 
 
-This configuration executes configured **action group** with the `acme_demo_action_group` name and parameters displayed under the `parameters_mapping` section.
-After the execution of **action group**, processed ActionData (e.g., context) is returned and assigned to the `$.result` attribute of the caller context.
-And `$.result_entity_id` acquires the value of `$.demo_new_attribute` from the Action Group's context.
+This configuration executes the **action group** named `acme_demo_action_group` with the parameters listed under the `parameters_mapping` section.
 
-Please note that all parameters must pass validation and be accessible under the root node of ActionData in the action_group execution body.
-E.g., `$.entity_class` and `$.entity_id` respectively to their names. See the :ref:`Action Groups <bundle-docs-platform-action-bundle-action-groups>` documentation for more details.
+After the **action group** runs, it returns the processed ActionData (e.g., context), which is assigned to the `$.result` attribute of the caller context. `$.result_entity_id` then takes the value of `$.demo_new_attribute` from the Action Group's context.
+
+All parameters must pass validation and be accessible under the root node of ActionData in the action_group execution body---for example, `$.entity_class` and `$.entity_id`, matching their names. See the :ref:`Action Groups <bundle-docs-platform-action-bundle-action-groups>` documentation for more details.
 
 Format Name
 ^^^^^^^^^^^
@@ -217,7 +216,7 @@ To add a custom condition, add a service to DIC with the "oro_action.condition" 
             tags:
                 - { name: oro_action.condition, alias: blank|empty }
 
-The "|" symbol in alias can be used to demonstrate several aliases. Note that service class must implement Oro\\Component\\ConfigExpression\\ExpressionInterface.
+Use the "|" symbol in the alias to specify several aliases. The service class must implement Oro\\Component\\ConfigExpression\\ExpressionInterface.
 
 Configurable Condition
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -225,8 +224,7 @@ Configurable Condition
 **Alias:** --- the option is configurable.
 
 **Description:** --- uses Condition Assembler to assemble conditions from the passed configuration.
-This condition is NOT intended to be used in the configuration of Action.
-But it can be used to create a condition based on the configuration in runtime.
+This condition is NOT intended for use in the configuration of Action, but you can use it to create a condition based on the configuration at runtime.
 
 **Options:** --- valid configuration of conditions.
 

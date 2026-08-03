@@ -6,13 +6,13 @@
 Accelerate Import
 =================
 
-This article contains several recommendation about import process acceleration, explained below.
+This article offers several recommendations for accelerating the import process.
 
 Make Sure Xdebug is Disabled
 ----------------------------
 
-Xdebug is a very useful debug tool for PHP, but at the same time it adds lots of overhead, especially for heavy and long
-operations. Xdebug status can be checked with ``php -m`` command:
+Xdebug is a useful PHP debug tool, but it adds a lot of overhead, especially for heavy, long-running
+operations. Check its status with the ``php -m`` command:
 
 .. code-block:: none
 
@@ -24,16 +24,15 @@ operations. Xdebug status can be checked with ``php -m`` command:
     # xdebug is disabled (no result)
     $ php -m | grep xdebug
 
-To disable it, a developer has to remove or comment inclusion of Xdebug library (usually this should be done in
-php.ini).
+To disable it, remove or comment out the Xdebug library inclusion (usually in php.ini).
 
 
 Run Import Operation from the Command Line
 ------------------------------------------
 
-Import from the UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
-or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:file``
-that allows to import records from the specified file.
+Import from the UI works well for a relatively small amount of data (up to 1000 entities). To import thousands
+or millions of entities, use the command line instead. OroPlatform provides the ``oro:import:file`` CLI command,
+which imports records from a specified file.
 
 .. code-block:: none
 
@@ -73,8 +72,8 @@ Here is a small example of its usage:
 Perform Import in the Prod Environment
 --------------------------------------
 
-The default environment for CLI is dev. In dev environment the application stores lots of data generally not required for real-life usage.
-Therefore, it is recommended to run import in prod environment so it would finish much faster. To do so you should add
+The default CLI environment is dev, which stores lots of data not required for real-life usage.
+Run the import in the prod environment instead, so it finishes much faster. To do so, add
 the ``--env=prod`` option to your import command:
 
 .. code-block:: none
@@ -86,9 +85,9 @@ the ``--env=prod`` option to your import command:
 Skip Import File Validation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-During regular import operation, the validation process is performed twice: first, during the validation itself and then
-before saving imported entities (invalid entities will not be saved to the DB). Initial validation can be skipped and
-import can be performed without it. To do so, start the import command in no interaction mode with the ``--no-interaction`` option:
+A regular import validates data twice: first during validation itself, then
+before saving imported entities (invalid entities are not saved to the DB). You can skip the initial validation and
+import without it. To do so, run the import command in no-interaction mode with the ``--no-interaction`` option:
 
 .. code-block:: none
 
@@ -104,8 +103,8 @@ import can be performed without it. To do so, start the import command in no int
 Disable Optional Listeners
 --------------------------
 
-With OroPlatform you can disable some event listeners for the command execution. The ``oro:platform:optional-listeners``
-command shows the list of all such listeners:
+OroPlatform lets you disable some event listeners during command execution. The ``oro:platform:optional-listeners``
+command lists all such listeners:
 
 .. code-block:: none
 
@@ -117,8 +116,8 @@ command shows the list of all such listeners:
       > oro_search.index_listener
       > oro_workflow.listener.event_trigger_collector
 
-To disable these listeners the ``--disabled-listeners`` option can be used. Also this option can receive value "all" -
-it will disable all optional listeners. Here is an example:
+To disable these listeners, use the ``--disabled-listeners`` option. Pass the value "all" to disable all optional
+listeners. Here is an example:
 
 .. code-block:: none
 
@@ -127,22 +126,22 @@ it will disable all optional listeners. Here is an example:
 
 .. caution::
 
-    Remember that disabling listeners actually disables part of the backend functionality, so before using it
-    make sure this part is not required. E.g., if the ``oro_search.index_listener`` listener is disabled, then
-    imported entities will not be found by the search engine (however, this may be fixed by manual search reindex
-    using the ``oro:search:reindex`` command, which rebuilds the search index).
+    Disabling a listener disables part of the backend functionality, so make sure that part is not required
+    before you use it. For example, if you disable the ``oro_search.index_listener`` listener, the search engine
+    will not find imported entities. You can fix this with a manual reindex using the ``oro:search:reindex``
+    command, which rebuilds the search index.
 
 
 Write Custom Import Strategy
 ----------------------------
 
 OroPlatform provides ``Oro\Bundle\ImportExportBundle\Strategy\Import\ConfigurableAddOrReplaceStrategy``
-to be used as the default one. This strategy automatically handles field types, relations etc.
-However, all this functionality significantly slows down the import process and might perform
-operations and requests that are not required for some specific cases.
+as the default strategy. It automatically handles field types, relations, and so on.
+However, this functionality significantly slows down the import and may perform
+operations and requests that some specific cases do not require.
 
-To solve this issue, a developer can implement a custom strategy to perform required actions only.
-The following example shows services that should be created to add a new import strategy:
+To solve this, implement a custom strategy that performs only the required actions.
+The following example shows the services to create for a new import strategy:
 
 .. code-block:: none
 
