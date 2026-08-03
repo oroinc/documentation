@@ -18,11 +18,10 @@ To deploy the solution, follow the steps below:
       :alt: OroCRM VM or OroCommerce VM in Azure Marketplace search drop-down
 
 2. Once you select the application type to deploy, click **GET IT NOW** under the application logo on your left.
-3. In the pop-up dialog, select the software plan with demo data. This provides all the necessary information for you to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master, and web catalogs.
+3. In the pop-up dialog, select the software plan with demo data. This plan includes everything you need to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master, and web catalogs.
 4. Click **Continue**.
 
-   You are redirected to Azure Portal to complete the installation.
-   At this point, you are asked to log into Azure Portal if you have not already done so.
+   Azure Portal opens so you can complete the installation. Log into Azure Portal if you have not already done so.
 
 5. Once again, select the type of application to deploy.
 
@@ -44,7 +43,7 @@ To deploy the solution, follow the steps below:
    * *Region* - Choose your region, e.g., (US) East US
    * *Virtual Machine Name* - Provide a virtual machine name.
 
-     Virtual machines in Azure have two distinct names: a virtual machine name used as the Azure resource identifier and the guest hostname. When you create a VM in the portal, the same name is used for both the virtual machine and host names. You cannot change the virtual machine name after the VM is created. You can change the hostname when you log into the virtual machine.
+     Virtual machines in Azure have two distinct names: a virtual machine name used as the Azure resource identifier, and the guest hostname. When you create a VM in the portal, it uses the same name for both. You cannot change the virtual machine name after you create the VM, but you can change the hostname when you log into the virtual machine.
 
    * *Username* - Provide a username for the virtual machine.
    * *Authentication type* - Choose whether to use a password or SSH public key for authentication.
@@ -113,9 +112,9 @@ For the demo application to work correctly, you need to configure the applicatio
 
 5. Copy and paste the DNS into the address bar of a new browser window and press Enter.
 
-   The storefront should now be displayed if you have deployed the OroCommerce application.
+   If you deployed the OroCommerce application, the storefront is now displayed.
 
-   .. note:: Due to |Azure blocking port 25|, we recommend configuring SMTP settings once you install the application if you would like to send messages from the Oro application you have deployed.
+   .. note:: Because of |Azure blocking port 25|, we recommend configuring SMTP settings after installation if you want to send messages from the Oro application you deployed.
 
 
 

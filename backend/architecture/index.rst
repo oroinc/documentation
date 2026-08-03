@@ -16,7 +16,7 @@ Oro application is a PHP web application that uses the Symfony framework. It pro
 * **Runs on any OS**, although Linux is recommended. See :ref:`system requirements <system-requirements>` for more information.
 * **Scalable** --- Oro application can be easily scaled up and down to meet your company needs (message queue, indexes, search).
 * **Extendable** --- Oro application can be extended via the packages from the |Oro Extensions Store| designed by Oro, Oro partners, or the Oro community. Also, you can design your own packages to implement additional functionality.
-* **Customizable** --- The Oro application inherits most of the development techniques enabled by the Symfony framework and extends them. It helps quickly customize the Oro application for any business needs.
+* **Customizable** --- The Oro application inherits and extends most of the development techniques the Symfony framework enables. This lets you quickly customize it for any business needs.
 
 With these default benefits, developers can focus on implementing their unique business logic and build Oro-based applications in less time.
 

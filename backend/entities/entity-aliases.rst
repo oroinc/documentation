@@ -3,11 +3,11 @@
 Entity Aliases
 ==============
 
-|Entity aliases| were introduced to provide a simple way of referring to entities.
+|Entity aliases| provide a simple way to refer to entities.
 
-The usages for entity aliases can be numerous, but they come in handy when specifying entities in the API, removing the need to use bulky FQCNs.
+Entity aliases have many uses. They are especially handy for specifying entities in the API, removing the need for bulky FQCNs.
 
-You can use entity aliases with the help of |EntityAliasResolver|, which provides necessary functions for obtaining aliases for given class names and visa versa.
+To use entity aliases, rely on |EntityAliasResolver|, which provides functions for obtaining aliases from given class names and vice versa.
 
 Define Entity Aliases
 ---------------------
@@ -26,8 +26,8 @@ The generation rules are the following:
 
 - Hidden entities are ignored.
 
-It is possible, however, to define custom rules for entity aliases in the ``Resources/config/oro/entity.yml`` configuration file.
-This can help avoid naming conflicts or make entity aliases more readable or user-friendly.
+However, you can define custom rules for entity aliases in the ``Resources/config/oro/entity.yml`` configuration file.
+Custom rules help avoid naming conflicts or make entity aliases more readable and user-friendly.
 
 You can explicitly define aliases for a specific entity in the ``entity_aliases`` section of ``Resources/config/oro/entity.yml``:
 
@@ -53,7 +53,7 @@ Entity Alias Provider
 
 When you need more complicated rules for creating entity aliases that cannot be configured via the ``Resources/config/oro/entity.yml`` file, create an entity alias provider.
 
-For this, you need to implement the |EntityAliasProviderInterface| interface in your provider class:
+To do this, implement the |EntityAliasProviderInterface| interface in your provider class:
 
 .. code-block:: php
 
@@ -124,7 +124,7 @@ The output example:
 Suggestions for Naming Aliases
 ------------------------------
 
-To solve the conflict situations when the auto-generated entity alias is already in use, follow the naming rules described below:
+When an auto-generated entity alias is already in use, follow these naming rules to resolve the conflict:
 
 - For Oro entities, in most cases, it is sufficient to prepend the short class name with the bundle name, e.g., ``Oro\Bundle\SalesBundle\Entity\Customer`` = ``salescustomer``.
 

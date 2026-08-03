@@ -6,13 +6,13 @@ Events
 Events List
 -----------
 
-Datagrids in Oro applications are highly customizable. It is possible to modify an existing grid to fetch more data than initially defined in the grid configuration.
-To provide extendability points, ``build`` and ``result`` events have been introduced.
+Datagrids in Oro applications are highly customizable. For example, you can modify an existing grid to fetch more data than its configuration initially defines.
+The ``build`` and ``result`` events provide these extendability points.
 
 Build Events
 ------------
 
-Build events are dispatched by the ``Builder`` class right before and immediately after processing the configuration and building datasource. They are helpful in case you need to modify the datagrid or a query configuration.
+The ``Builder`` class dispatches build events right before and immediately after it processes the configuration and builds the datasource. Use them to modify the datagrid or a query configuration.
 
 Four events are dispatched during the build process:
 
@@ -24,15 +24,15 @@ Four events are dispatched during the build process:
 BuildBefore Events
 ^^^^^^^^^^^^^^^^^^
 
-By listening to these events, you can add new elements to the grid configuration or modify the already existing configuration in your event listener.
-You can use the generic ``build.before`` event to listen to all or specific datagrids, which will be called only for the given datagrid - ``build.before.DATAGRID_NAME``.
+In your event listener, add new elements to the grid configuration or modify the existing configuration.
+Use the generic ``build.before`` event to listen to all datagrids, or ``build.before.DATAGRID_NAME`` to listen to a specific one.
 
 The ``BuildBefore`` event class has access to the |DatagridConfiguration| instance.
 
 .. hint::
         Please note that at this point datasource has not been initialized yet, therefore calling ``$event->getDatagrid()->getDatasource()`` returns ``null``.
 
-As an illustration, let's add one more column to a specific datagrid. For this, create an event listener and modify the existing configuration in the following way:
+For example, to add one more column to a specific datagrid, create an event listener and modify the existing configuration:
 
 .. code-block:: php
 
@@ -55,7 +55,7 @@ As an illustration, let's add one more column to a specific datagrid. For this, 
     }
 
 
-Once the listener is created, register it in `services.yml`:
+Once the listener is created, register it in ``services.yml``:
 
 .. code-block:: yaml
 
@@ -74,15 +74,13 @@ Once the listener is created, register it in `services.yml`:
 BuildAfter Events
 ^^^^^^^^^^^^^^^^^
 
-You can modify the datasource or even the whole datagrid instance by listening to these events. However, the most common case for
-this event is to modify the query (add additional joins, selects, the ``where`` conditions, etc.).
+These events let you modify the datasource or even the whole datagrid instance. Most commonly, you use them to modify the query (add joins, selects, the ``where`` conditions, and so on).
 
-You can use a generic ``build.after`` event for listening to all or specific datagrids, which will be called
-only for a given datagrid - ``build.after.DATAGRID_NAME``.
+Use the generic ``build.after`` event to listen to all datagrids, or ``build.after.DATAGRID_NAME`` to listen to a specific one.
 
 The ``BuildAfter`` event class has access to |Datagrid| instance.
 
-For example, let us filter the datagrid by a particular value from the request params. For this, create an event listener and modify the query builder, as illustrated below:
+For example, to filter the datagrid by a particular value from the request params, create an event listener and modify the query builder:
 
 .. code-block:: php
 
@@ -145,10 +143,10 @@ Once the listener is created, register it in ``services.yml``:
 Result Events
 -------------
 
-Result events are type-specific, which means that ``datasource`` is responsible for dispatching them.
-Listening to these events is useful both when you need to access a query (e.g., ORM, search) and modify the results.
+Result events are type-specific, so the ``datasource`` dispatches them.
+Listen to these events when you need to access a query (e.g., ORM, search) or modify the results.
 
-As an example, have a look at the |OrmDatasource|. In the ``getResult()`` method it dispatches 4 main and 2 additional events:
+For example, the |OrmDatasource| dispatches 4 main and 2 additional events in its ``getResult()`` method:
 
 * Additional - Class ``OrmResultBeforeQuery``, event name: ``oro_datagrid.orm_datasource.result.before_query``
 * Additional - Class ``OrmResultBeforeQuery``, event name: ``oro_datagrid.orm_datasource.result.before_query.DATAGRID_NAME``
@@ -157,15 +155,15 @@ As an example, have a look at the |OrmDatasource|. In the ``getResult()`` method
 * Main - Class ``OrmResultAfter``, event name: ``oro_datagrid.orm_datasource.result.after``
 * Main - Class ``OrmResultAfter``, event name: ``oro_datagrid.orm_datasource.result.after.DATAGRID_NAME``
 
-The first four events are mostly used to access a query at different stages, while the last two are used to modify the results.
+The first four events mostly access a query at different stages, while the last two modify the results.
 
 Remember to dispatch result events when creating your own :ref:`custom datasource type <customize--datagrids-datasource-custom-types>`.
 
 ResultBefore Events
 ^^^^^^^^^^^^^^^^^^^
 
-The purpose of these events is to have the ability to access datagrid or a query instance before the datasource starts building the results.
-You can use generic ``result.before`` event for listening to all or specific datagrids, which will be called only for a given datagrid - ``result.before.DATAGRID_NAME``.
+These events access the datagrid or a query instance before the datasource starts building the results.
+Use the generic ``result.before`` event to listen to all datagrids, or ``result.before.DATAGRID_NAME`` to listen to a specific one.
 
 **Use Cases**
 
@@ -174,12 +172,11 @@ You can use generic ``result.before`` event for listening to all or specific dat
 ResultAfter Events
 ^^^^^^^^^^^^^^^^^^
 
-The purpose of these events is to have ability to modify data after the rows were fetched from the ``datasource``.
-You can use generic ``result.after`` event for listening to all or specific datagrids, which will be called
-only for a given datagrid - ``result.after.DATAGRID_NAME``.
+These events modify data after the rows are fetched from the ``datasource``.
+Use the generic ``result.after`` event to listen to all datagrids, or ``result.after.DATAGRID_NAME`` to listen to a specific one.
 
-For instance, if you have complex data that is hard to process with the standard datagrid configuration using YML files,
-you can create an event listener and fetch the data once the rows are fetched from the ``datasource``.
+For example, if you have complex data that is hard to process with the standard datagrid configuration in YML files,
+create an event listener and fetch the data once the rows are fetched from the ``datasource``.
 
 .. code-block:: php
 

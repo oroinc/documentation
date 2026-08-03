@@ -4,7 +4,7 @@
 Search Index
 ============
 
-The search index component is responsible for interaction with a different search engine and the search index storage inside it.
+The search index component handles interaction with a different search engine and the search index storage inside it.
 
 In the Oro application, the search engine can:
 
@@ -27,9 +27,9 @@ In this section, you will learn about the following concepts related to the sear
 Main Concepts
 -------------
 
-|Search engine| is the specialized software that provides the ability to store data, index data, and perform a quick and relevant search. The biggest difference between a search engine and a conventional data storage is that the search engine performs a search significantly faster and can do an |overall full-text search| in addition to searching by the specific area. Examples of search engines - |Elasticsearch|, |Lucene|, |Solr|. To use an analogy to relational databases, the search engine is similar to Database Management System (DBMS).
+|Search engine| is specialized software that can store data, index data, and perform a quick and relevant search. Compared to conventional data storage, a search engine searches significantly faster and can run an |overall full-text search| in addition to searching by a specific area. Examples of search engines: |Elasticsearch|, |Lucene|, |Solr|. To use an analogy to relational databases, the search engine is similar to a Database Management System (DBMS).
 
-* **Search index** (sometimes referred to as just index) is actual storage where the specific scope of search data is stored. One search engine may work with several indexes. The search index is structured, i.e., it provides the ability to organize data in complex multilevel structures; the minimum level required to work with the Oro application is two. A search index can validate the data type of the data stored inside. A search index is document-based storage where each document represents one specific entity from the main relational database. A search index can be considered a specialized reflection of the main relational database. To use an analogy to relational databases, the search index is similar to a database (DB).
+* **Search index** (sometimes called just index) is the actual storage for a specific scope of search data. One search engine may work with several indexes. A search index is structured: it can organize data in complex multilevel structures, and the Oro application requires a minimum of two levels. It can validate the data type of the data stored inside. A search index is document-based storage where each document represents one specific entity from the main relational database, so it can be considered a specialized reflection of that database. To use an analogy to relational databases, the search index is similar to a database (DB).
 * **Entity alias** is a text representation of an entity name stored inside the specific search index. Entity alias represents the first level of the search index structure. To use an analogy to relational databases, an entity alias is similar to a table name.
 * **Entity field** is a text representation of an entity property name assigned to a specific entity alias. Entity alias represents the second level of the search index structure. Entity field has assigned data type (text, integer, decimal, datetime), and search engine uses this information to validate data stored inside the index. To use an analogy to relational databases, entity field is similar to a column name.
 * **Entity field value** is an actual value of an entity property assigned to a specific entity field. To use an analogy to relational databases, entity field value is similar to a value of a column.
@@ -51,7 +51,7 @@ Oro applications use two types of indexes (standard and website) that use standa
 Common Interfaces
 ^^^^^^^^^^^^^^^^^
 
-Standard interfaces are used in all index types to provide a high-level abstraction for functionality that works with any type of search index (e.g., datagrids).
+All index types use standard interfaces to provide a high-level abstraction for functionality that works with any type of search index (e.g., datagrids).
 
 * **Search engine interface** ``Oro\\Bundle\\SearchBundle\\Engine\\EngineInterface`` is used to perform search requests to a search index.
 * **Search indexer interface** ``Oro\\Bundle\\SearchBundle\\Engine\\IndexerInterface`` is used for indexation, i.e., to change state of a search index (save data, remove data, reset index).
@@ -80,11 +80,11 @@ Website Index Type
 
 .. note:: The main logic of this index type is stored inside the :ref:`OroWebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>` in the commerce package.
 
-The website index type (sometimes called the frontend index type) is used only in the OroCommerce application. The main purpose of the website search is to provide the customer with the ability to use search functionality at the application frontend. Website search should be used only at frontend because of its nature - the data is stored by websites (i.e., each website has its own scope in the storage) and some frontend-specific values (like localization) are necessary for the frontend search use cases - e.g., user should have a possibility to search data only using one specific localization.
+The website index type (sometimes called the frontend index type) is used only in the OroCommerce application. Its main purpose is to give customers search functionality on the application frontend. Website search should be used only on the frontend because of its nature: the data is stored by websites (each website has its own scope in the storage), and some frontend-specific values (like localization) are necessary for frontend search use cases; for example, a user should be able to search data using only one specific localization.
 
-Data for the website search index is collected and stored by websites and entity types. It means that each entity for each website has its own scope in the storage, and as a consequence, these scopes are independent and can be handled separately. For example, a developer might ask to reindex only specific entity for a specific website, and this change does not affect any other entity at the specified website or any other website data.
+Data for the website search index is collected and stored by websites and entity types. This means each entity for each website has its own scope in the storage, so these scopes are independent and can be handled separately. For example, a developer might reindex only a specific entity for a specific website without affecting any other entity at that website or any other website's data.
 
-Engine data collection is event based, so any bundle can mix its own information to search index. As a consequence, some entities in the index might contain information that is not related directly, but is still valuable to search by related areas.
+Engine data collection is event based, so any bundle can add its own information to the search index. As a result, some entities in the index might contain information that is not directly related but is still valuable for searching by related areas.
 
 Each entity is represented by one alias with an optional search placeholder (e.g., oro_product_WEBSITE_IT), so each website might have its own entity alias (e.g., oro_product_1 and oro_product_2). Entity fields might also contain search placeholders (e.g., name_LOCALIZATION_ID), so each field might have several values depending on the provided placeholders (e.g., name_1, name_2, and name_3).
 
@@ -119,9 +119,9 @@ WebsiteSearchBundle VS SearchBundle
 
 The main difference between SearchBundle and WebsiteSearchBundle is the way index is stored. The website (frontend) index storage is separated from the platform index storage and may be moved to a separate server and thus may be properly scaled.
 
-Next important difference is in the information they control. The platform index handles the backend information (e.g., back-office), and the website index contains information about the frontend (e.g., storefront). As a consequence, platform index is usually smaller and the search and indexation speed is well balanced, while frontend index trades off the indexation speed for a faster search.
+The next important difference is the information they control. The platform index handles the backend information (e.g., back-office), and the website index contains information about the frontend (e.g., storefront). As a consequence, the platform index is usually smaller and its search and indexation speed is well balanced, while the frontend index trades off indexation speed for faster search.
 
-Though indexation might be a little slower comparing to backend index, frontend index is more flexible in terms of extendability. It is event based, and there are several events that allow to customize different parts of search and indexation.
+Though indexation might be a little slower than the backend index, the frontend index is more flexible in terms of extendability. It is event based, with several events that let you customize different parts of search and indexation.
 
 Supported Search Engines
 ------------------------
@@ -129,9 +129,11 @@ Supported Search Engines
 ORM Search
 ^^^^^^^^^^
 
-:ref:`ORM search engine <orm_search_engine>` does not use actual document-based storage. Instead, using the EAV model, it emulates such storage inside the application's relational database. As a consequence, the performance of the ORM engine is not very good, and because of that, it is recommended only for small applications - with a couple of thousands of entities.
-ORM search engine uses a separate Entity Manager and connection called "search". This way, search requests can be processed independently from the default DB connection.
-ORM search engine for standard index type is implemented at the OroSearchBundle at platform package, for website index type - at the OroWebsiteSearchBundle at commerce package.
+:ref:`ORM search engine <orm_search_engine>` does not use actual document-based storage. Instead, it emulates such storage inside the application's relational database using the EAV model. As a result, the ORM engine's performance is not very good, so it is recommended only for small applications, with a couple of thousand entities.
+
+The ORM search engine uses a separate Entity Manager and a connection called "search", so search requests can be processed independently from the default DB connection.
+
+The ORM search engine for the standard index type is implemented in the OroSearchBundle in the platform package; for the website index type, in the OroWebsiteSearchBundle in the commerce package.
 
 See detailed information about the implementation of ORM search engine in the :ref:`Manage Search in Oro Applications (ORM) <search_index_db_from_md>` topic.
 
@@ -142,8 +144,10 @@ Elasticsearch Search
 
 .. note:: The Elasticsearch feature is only available in the Enterprise edition.
 
-Elasticsearch search engine requires credentials to connect to the actual index. Credentials include optional WWW-auth parameters and SSH connection support.
-Elasticsearch search engine for standard index type is implemented in OroElasticSearchBundle in the platform-enterprise package. For website index type, it is implemented in OroWebsiteElasticSearchBundle in the commerce-enterprise package.
+The Elasticsearch search engine requires credentials to connect to the actual index. Credentials include optional WWW-auth parameters and SSH connection support.
+
+The Elasticsearch search engine for the standard index type is implemented in OroElasticSearchBundle in the platform-enterprise package. For the website index type, it is implemented in OroWebsiteElasticSearchBundle in the commerce-enterprise package.
+
 The current implementation supports only Elasticsearch 2.* versions.
 
 See detailed information about the :ref:`implementation of ElasticSearch engine in Oro applications <elastic-search>`.
@@ -154,7 +158,8 @@ Data Structure
 General Information
 ^^^^^^^^^^^^^^^^^^^
 
-Search index stores documents grouped by entity alias. Each document contains scalar fields with values. One of the fields is an all-text field used to perform the overall search. Data from the related entities can also be stored, but in this case, it has to be denormalized to a simple structure.
+The search index stores documents grouped by entity alias. Each document contains scalar fields with values. One field is an all-text field used to perform the overall search. Data from related entities can also be stored, but it must be denormalized to a simple structure.
+
 There are four supported entity field value data types:
 
 * text
@@ -167,8 +172,9 @@ There are four supported entity field value data types:
 ORM Search
 ^^^^^^^^^^
 
-ORM search engine stores data using the |EAV model| to store attributes. One primary entity and four related entities are used to store data for each of the supported field data types.
-One primary entity contains the key information about the document, such as the entity class, entity ID, entity alias, default title, and flag that indicates whether the entity was changed and createdAt/updatedAt. All four related entities have a similar structure, as they store the name of the entity field and the actual entity field value. The following diagram illustrates this structure:
+The ORM search engine stores attributes using the |EAV model|. One primary entity and four related entities store data for each supported field data type.
+
+The primary entity contains the key information about the document, such as the entity class, entity ID, entity alias, default title, a flag that indicates whether the entity was changed, and createdAt/updatedAt. All four related entities have a similar structure: they store the name of the entity field and the actual entity field value. The following diagram illustrates this structure:
 
 .. image:: /img/backend/architecture/op_structure_search_orm.png
 
@@ -214,7 +220,7 @@ Pay attention to the following facts:
 
 *Example of Website Index Type Document*
 
-Here is example of the document from the website index type under oro_product_WEBSITE_ID (WEBSITE_ID = 1) entity alias.
+Here is an example of the document from the website index type under oro_product_WEBSITE_ID (WEBSITE_ID = 1) entity alias.
 
 .. code-block:: none
 
@@ -284,7 +290,7 @@ Keep in mind that:
 Search Request
 --------------
 
-A developer has to build a query for the search index to perform a search request. There are two representations of search query - string representation and object representation.
+To perform a search request, a developer builds a query for the search index. A search query has two representations: string and object.
 
 String Representation
 ^^^^^^^^^^^^^^^^^^^^^
@@ -294,9 +300,12 @@ The string representation is similar to a standard SQL query. This string may co
 Object Representation
 ^^^^^^^^^^^^^^^^^^^^^
 
-Object representation has two levels - low and high.
-**Low-level object** (Oro\\Bundle\\SearchBundle\\Query\\Query, sometimes called a search query builder) represents a query and has parts similar to the string representation (select, where, etc.). The low-level query is not aware of a specific search engine. All search engines use it as the main query representation. The low-level object is, in fact, a |Data transfer object|.
-**High-level object** (implementation of Oro\\Bundle\\SearchBundle\\Query\\SearchQueryInterface) is used to hide search engine specific logic from a developer. It embeds low-level objects and proxies most of the calls. High-level objects are created by the query factory (implementation of Oro\\Bundle\\SearchBundle\\Query\\Factory\\QueryFactoryInterface). Each index type has its own implementation of the high-level object, encapsulating how this query must be executed and its own implementation of the query factory responsible for creating a high-level object. The high-level object is a |Facade|.
+Object representation has two levels: low and high.
+
+**Low-level object** (Oro\\Bundle\\SearchBundle\\Query\\Query, sometimes called a search query builder) represents a query and has parts similar to the string representation (select, where, etc.). It is not aware of a specific search engine, and all search engines use it as the main query representation. In fact, the low-level object is a |Data transfer object|.
+
+**High-level object** (implementation of Oro\\Bundle\\SearchBundle\\Query\\SearchQueryInterface) hides search-engine-specific logic from the developer. It embeds low-level objects and proxies most of the calls. The query factory (implementation of Oro\\Bundle\\SearchBundle\\Query\\Factory\\QueryFactoryInterface) creates high-level objects. Each index type has its own high-level object implementation, which encapsulates how the query must be executed, and its own query factory implementation responsible for creating the high-level object. The high-level object is a |Facade|.
+
 The following diagram demonstrates the connection between the low-level object, the high-level object, the query factory, and the search engine:
 
 .. image:: /img/backend/architecture/op_structure_search_index_object_representation.png
@@ -319,7 +328,7 @@ All these engines accept low-level query and execution context as an argument an
 Indexation Process
 ------------------
 
-OroCommerce provides two types of data synchronization: *scheduled (asynchronous)* and *immediate (synchronous)*. Scheduled synchronization is suitable for entities whose changes are not critical, and they can be applied with the acceptable delay period, or there are tons of heavy data that need to be indexed separately to avoid affecting the website performance. Immediate or synchronous data indexation involves immediate updates to the index as soon as the underlying data changes, such as inventory, or payment updates.
+OroCommerce provides two types of data synchronization: *scheduled (asynchronous)* and *immediate (synchronous)*. Scheduled synchronization suits entities whose changes are not critical and can be applied after an acceptable delay, or large volumes of heavy data that must be indexed separately to avoid affecting website performance. Immediate (synchronous) indexation updates the index as soon as the underlying data changes, such as inventory or payment updates.
 
 Asynchronous Indexation
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -332,12 +341,12 @@ Every time an entity represented by a document in a search index is changed, a n
 
 Remember that parallel indexation is possible only if several message queue consumers are running; each consumer can run indexation. The higher the number of consumers running, the more indexations can be performed in parallel. All automatically triggered reindexations are processed asynchronously.
 
-Default asynchronous indexer is implemented in the ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer`` class and is accessible via the `oro_website_search.async.indexer` service. To trigger asynchronous indexation, you should trigger ReindexationRequestEvent event and set the **$Scheduled** parameter to ``true``.
+The default asynchronous indexer is implemented in the ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer`` class and is accessible via the `oro_website_search.async.indexer` service. To trigger asynchronous indexation, trigger the ReindexationRequestEvent and set the **$Scheduled** parameter to ``true``.
 
 Synchronous Indexation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Although asynchronous processing is very convenient for a user, sometimes it might be required to track the process manually and ensure that indexation is finished right away. In this case, synchronous indexation should be used instead of asynchronous. The advantage of this approach is that indexation happens right now without any delay. The disadvantage is that it might be slower, and UX is worse than in the case of asynchronous indexations.
+Although asynchronous processing is convenient for users, you sometimes need to track the process manually and ensure indexation finishes right away. In this case, use synchronous indexation instead. The advantage is that indexation happens immediately, without any delay. The disadvantage is that it might be slower, with worse UX than asynchronous indexation.
 
 Triggering Reindexation
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -380,7 +389,7 @@ The granulizer does the following:
 From the CLI
 ~~~~~~~~~~~~
 
-Both standard and website index types automatically trigger the reindexation process when entity data or related configuration is changed. Reindexation can take a lot of time for a significant amount of data, so running it by schedule (e.g., once a day) is recommended.
+Both standard and website index types automatically trigger the reindexation process when entity data or related configuration is changed. Reindexation can take a lot of time for a significant amount of data, so we recommend running it on a schedule (e.g., once a day).
 
 **Synchronously**
 
@@ -424,7 +433,7 @@ Website search index command:
 Partial Indexation
 ^^^^^^^^^^^^^^^^^^
 
-Partial indexation is a feature that reduces the load on the engine by updating the index partially. The index is divided into groups  (``$fieldGroups``), each group includes specific fields that should be used in the update process. Partial indexation is a good option both for synchronous and asynchronous indexation when you need to update one, or multiple field groups without affecting others (e.g., product prices).
+Partial indexation reduces the load on the engine by updating the index partially. The index is divided into groups (``$fieldGroups``), and each group includes specific fields to use in the update process. Partial indexation is a good option for both synchronous and asynchronous indexation when you need to update one or multiple field groups without affecting others (e.g., product prices).
 
 Supported field groups are: main, collection_sort_order, image, category_sort_order, visibility, pricing, order, customer_recommendation_action, customer_recommendation_revenue, inventory (multiple values allowed).
 
@@ -435,7 +444,7 @@ Supported field groups are: main, collection_sort_order, image, category_sort_or
 Schedule or Skip Reindexation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When you execute ``oro:platform:update`` command as part of update process, it performs full reindexation of all the affected entities in the foreground.
+When you run the ``oro:platform:update`` command as part of the update process, it performs full reindexation of all affected entities in the foreground.
 
 To avoid this, you can use the ``--schedule-search-reindexation`` and ``--skip-search-reindexation`` options that were added to the ``oro:platform:update`` command by the SearchBundle and were extended by the WebsiteSearchBundle to also affect the Website search index:
 
@@ -450,9 +459,9 @@ This option allows to completely skip reindexation during the update process.
 Force Reindexation
 ^^^^^^^^^^^^^^^^^^
 
-If, after customizations, upgrades, and code modifications, the ElasticSearch index structure remains unchanged or only new fields are added, it is sufficient to initiate the indexing process only.
+If, after customizations, upgrades, and code modifications, the ElasticSearch index structure remains unchanged or only gains new fields, you only need to initiate the indexing process.
 
-If the changes affect the ElasticSearch index structure (ElasticSearch mapping), you must recreate index and force full indexation. The ES index must be filled with new data from scratch to save them into a new index structure.
+If the changes affect the ElasticSearch index structure (ElasticSearch mapping), you must recreate the index and force full indexation. The ES index must be filled with new data from scratch to save it into the new index structure.
 
 For that, you need to:
 
@@ -496,13 +505,14 @@ Scalability
 ORM Search
 ^^^^^^^^^^
 
-ORM search engine uses DBMS as the main storage, and its scalability depends on the scalability of DBMS. For example, PostgreSQL supports |several clustering solutions| so that the ORM search index can be scaled together with the main relational DB.
-There is another solution. As long as the ORM search engine uses its own connection and its own entity manager, all search-related tables can be moved to a separate DB at the remote server. In this case, the application administrator has to override the configuration for the connection called search and refer to this remote server.
+The ORM search engine uses a DBMS as the main storage, so its scalability depends on the scalability of the DBMS. For example, PostgreSQL supports |several clustering solutions|, so the ORM search index can be scaled together with the main relational DB.
+
+Another solution is available. Because the ORM search engine uses its own connection and its own entity manager, you can move all search-related tables to a separate DB on a remote server. In this case, the application administrator overrides the configuration for the connection called search and points it to the remote server.
 
 Elasticsearch Search
 ^^^^^^^^^^^^^^^^^^^^
 
-Elasticsearch search engine is horizontally scalable out of the box - it can be organized as an |Elasticsearch cluster| with several nodes inside it. The application administrator can specify how many |Elasticsearch shards| index will consist of (i.e., how many parts it will be split into); the default number of shards is 5. Then, depending on the number of nodes at the cluster, the search engine can move shards to different nodes and, consequently, allow to perform |distributed search|.
+The Elasticsearch search engine is horizontally scalable out of the box: it can be organized as an |Elasticsearch cluster| with several nodes. The application administrator can specify how many |Elasticsearch shards| the index consists of (how many parts it is split into); the default number of shards is 5. Then, depending on the number of nodes in the cluster, the search engine can move shards to different nodes to perform |distributed search|.
 
 Unavailability Handling
 -----------------------
@@ -510,26 +520,30 @@ Unavailability Handling
 General Information
 ^^^^^^^^^^^^^^^^^^^
 
-The search index does not provide any additional logic to recognize that the index is not available. Not availability is processed on a storage level only.
+The search index does not provide any additional logic to recognize that the index is unavailable. Unavailability is processed at the storage level only.
 
 ORM Search
 ^^^^^^^^^^
 
-ORM search engine uses DBMS as the main storage, and the ability to handle the unavilable state of storage depends on how it is organized in the used DBMS. |PostgreSQL support replication|, which can be used to manage such situation.
+The ORM search engine uses a DBMS as the main storage, so handling the unavailable state of storage depends on how the DBMS is organized. |PostgreSQL support replication|, which can be used to manage such a situation.
+
 If you have a search index in a separate DB, you can organize replication exclusively for this DB.
 
 Elasticsearch Search
 ^^^^^^^^^^^^^^^^^^^^
 
-Elasticsearch search engine support replications as well. The application administrator can specify how many |Elasticsearch replicas| index should have; the default number of replicas is 1. After that, the Elasticsearch cluster will create an appropriate number of replica shards and distribute them over the available nodes.
-For example, by default index is created with 5 shards and 1 replica. This means that Elasticsearch will create 10 shards: 5 primary shards and 5 replica shards.
+The Elasticsearch search engine supports replication as well. The application administrator can specify how many |Elasticsearch replicas| the index should have; the default number of replicas is 1. The Elasticsearch cluster then creates the appropriate number of replica shards and distributes them over the available nodes.
+
+For example, by default the index is created with 5 shards and 1 replica. This means Elasticsearch creates 10 shards: 5 primary shards and 5 replica shards.
 
 Logging
 -------
 
-Logging is an essential part of any component, and the search component is no exception. Both standard and website search indexes in the dev mode log all requests to search index storage (DB or Elasticsearch); in the prod mode, only exceptions are logged. In the case of the prod mode, all exceptions are also sent to the emails specified in system configurations in the System Configuration > General setup > Application settings > Error logs notification section.
+In the dev mode, both standard and website search indexes log all requests to search index storage (DB or Elasticsearch); in the prod mode, only exceptions are logged. In the prod mode, all exceptions are also sent to the emails specified in the **System Configuration > General setup > Application settings > Error logs notification** section of the system configuration.
+
 The standard search index can also log all search queries to the database table oro_search_query (the entity name is ``Oro\Bundle\SearchBundle\Entity\Query``); by default, this logging is turned off.
-Elasticsearch engine impelementations uses their own Monolog logger channels - oro_elastic_search for standard index type and oro_website_elastic_search for website index type.
+
+Elasticsearch engine implementations use their own Monolog logger channels: oro_elastic_search for the standard index type and oro_website_elastic_search for the website index type.
 
 Use Cases
 ---------
@@ -537,7 +551,7 @@ Use Cases
 Datagrids
 ^^^^^^^^^
 
-There is a special datagrid search datasource that works with the search index. Search datasource works with the high-level search query object, supporting both index types. Datagrids based on this datasource use :ref:`configuration similar to ORM configuration <db-search--configuration--datagrid>` - developer can specify shown columns, filters, sorters, properties and actions.
+A special datagrid search datasource works with the search index. It works with the high-level search query object and supports both index types. Datagrids based on this datasource use :ref:`configuration similar to ORM configuration <db-search--configuration--datagrid>`: a developer can specify shown columns, filters, sorters, properties, and actions.
 
 Implemented search datagrids:
 
@@ -547,12 +561,12 @@ Implemented search datagrids:
 Autocomplete
 ^^^^^^^^^^^^
 
-Autocomplete form types, by default, use the standard search index type to find entities and show them to the user (see ``Oro\Bundle\FormBundle\Autocomplete\SearchHandler``). They do not use either a string or an object query representation directly. Instead, it uses the indexer from the standard search index, which uses the low-level query object inside.
+Autocomplete form types, by default, use the standard search index type to find entities and show them to the user (see ``Oro\Bundle\FormBundle\Autocomplete\SearchHandler``). They do not use a string or an object query representation directly. Instead, they use the indexer from the standard search index, which uses the low-level query object inside.
 
 Search APIs
 ^^^^^^^^^^^
 
-The standard search index provides API resources that can be used to work with this search index.
+The standard search index provides API resources for working with it.
 
 :ref:`Simple search API <simple_search>` accepts:
 

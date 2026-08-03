@@ -9,10 +9,9 @@ This guide explains how to deploy changes for Oro applications.
 
 .. hint:: The instructions below will help you update a self-hosted application instance. If your application is hosted on OroCloud, follow the OroCloud guide to run the automated |Upgrade|.
 
-.. warning::  Ensure that you have the recent database and source code dump to roll back changes in case of errors before processing the upgrade
+.. warning::  Before starting the upgrade, make sure you have a recent database and source code dump so you can roll back if errors occur.
 
-An absolute path to the directory where an application is installed will be used in the guide and will
-be referred to as **<application-root-folder>** further in this topic.
+This guide refers to the absolute path of the directory where the application is installed as **<application-root-folder>**.
 
 .. note:: We highly recommend running all the commands in this guide from the same user the web server runs (e.g., **nginx** or **www-data**).
 
@@ -54,7 +53,7 @@ To retrieve a new version and upgrade your Oro application instance:
 
 6. Create backups of your database and source code.
 
-7. Check out the new code version from the release tag of your custom application git repository or deploy the latest version from an archive provided by the developer with the new code version.
+7. Check out the new code version from the release tag of your custom application git repository, or deploy the latest version from an archive provided by the developer.
 
 8. Remove old caches.
 
@@ -120,8 +119,8 @@ To retrieve a new version and upgrade your Oro application instance:
 
     .. note::
 
-       If PHP bytecode cache tools (e.g., opcache) are used, PHP-FPM (or Apache web server) should be restarted
-       after the uprgade to flush cached bytecode from the previous installation.
+       If you use PHP bytecode cache tools (e.g., opcache), restart PHP-FPM (or the Apache web server)
+       after the upgrade to flush cached bytecode from the previous installation.
 
 **See Also**
 

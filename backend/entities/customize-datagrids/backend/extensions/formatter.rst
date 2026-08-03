@@ -3,8 +3,9 @@
 Formatter Extension
 ===================
 
-This extension does not affect the datasource and is applied after the result set is fetched by the datagrid and provides changes using formatters described in the config.
-This extension is also responsible for passing column configuration to the view layer.
+This extension does not affect the datasource. It runs after the datagrid fetches the result set and applies the formatters described in the config.
+
+It also passes column configuration to the view layer.
 
 Formatters
 ----------
@@ -61,7 +62,7 @@ Twig
         template: string # required, template name
         context: [] # optional, should not contain reserved keys(record, value)
 
-Represents twig template formatted field.
+Represents a field formatted with a Twig template.
 
 Translatable
 ^^^^^^^^^^^^
@@ -74,7 +75,7 @@ Translatable
         domain: string #optional
         locale: string #optional
 
-Used when the field should be translated by Symfony translator.
+Translates the field with the Symfony translator.
 
 Callback
 ^^^^^^^^
@@ -87,8 +88,8 @@ Callback
 
 Used when field should be formatted using a callback, see :ref:`Reference in YAML Configuration <datagrid-references-configuration>` for more information.
 
-The whole node configuration is passed to the callback method as the ``$node`` argument.
-Therefore, if you need to pass some arguments to the callback method, you can add any parameter to the grid config, e.g.:
+The callback method receives the whole node configuration as the ``$node`` argument.
+To pass extra arguments to the callback method, add any parameter to the grid config, e.g.:
 
 .. code-block:: yaml
 
@@ -143,7 +144,7 @@ Used to format numbers using ``Oro\Bundle\LocaleBundle\Formatter\NumberFormatter
 
 Example:
 
-We would like to format currency, but the currency code should be retrieved from the current row.
+Format currency where the currency code comes from the current row.
 
 .. code-block:: yaml
 

@@ -21,7 +21,7 @@ Mastering the application menu is a two-step process:
 #. :ref:`Create the new navigation items <book-navigation-create-menu-item>`
 #. :ref:`Compose trees of navigation items <book-navigation-compose-tree>`
 
-The |OroNavigationBundle| automatically processes a YAML configuration file which is named ``navigation.yml`` when it is placed in the ``Resources/config/oro`` directory of a registered bundle. The menu configuration needs to be placed under the ``menu_config`` tree.
+The |OroNavigationBundle| automatically processes the ``navigation.yml`` file placed in the ``Resources/config/oro`` directory of a registered bundle. Place the menu configuration under the ``menu_config`` tree.
 
 .. _book-navigation-create-menu-item:
 
@@ -51,14 +51,14 @@ The example above defines three menu items:
 
 * Both the ``blog_categories`` and the ``blog_index`` items reference an existing route. Thus, when the user clicks one of these items, they will get to a page rendered by the controller responsible for the configured route.
 
-As you can see, the menu item labels will be translated by default. Hence you can use arbitrary labels here, as long as they can be translated by configured ``translator`` service. You can change the translation domain using the ``translateDomain`` option (by default, the translator's default domain will be used).
+The menu item labels are translated by default, so you can use any label the configured ``translator`` service can translate. To change the translation domain, use the ``translateDomain`` option; otherwise the translator's default domain applies.
 
 .. _book-navigation-compose-tree:
 
 Organize the Navigation Trees
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The next step is composing a tree of the menu items you created. These trees are build under the ``tree`` key:
+The next step is composing a tree of the menu items you created. Build these trees under the ``tree`` key:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
@@ -74,7 +74,7 @@ The next step is composing a tree of the menu items you created. These trees are
                                     blog_categories: ~
                                     blog_index: ~
 
-First, you need to decide to which tree the items should be added. The Oro applications come with three predefined menus to which you can add new items:
+First, decide which tree to add the items to. Oro applications come with three predefined menus you can add new items to:
 
 ``application_menu``
 
@@ -88,10 +88,10 @@ First, you need to decide to which tree the items should be added. The Oro appli
 ``shortcuts``
     The shortcut bar above the main application menu.
 
-In the example above, you can also see that you can add menu items to already existing subtrees.
-With the given configuration, the blog menu will appear under the application menu's existing *System* tab.
+The example above also shows that you can add menu items to existing subtrees.
+With this configuration, the blog menu appears under the application menu's existing *System* tab.
 
-If you wanted to create a dedicated blog tab instead, you would have to configure your items as child items of the ``application_menu`` entry like this:
+To create a dedicated blog tab instead, configure your items as child items of the ``application_menu`` entry:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
@@ -109,7 +109,7 @@ If you wanted to create a dedicated blog tab instead, you would have to configur
 Breadcrumbs
 -----------
 
-The breadcrumb provider's goal is to show breadcrumbs based on a specific menu defined in `navigation.yml`. You can get the breadcrumbs through any existing |menu alias|. The menu can be created and used for the breadcrumbs' structure only.
+The breadcrumb provider shows breadcrumbs based on a specific menu defined in `navigation.yml`. You can get the breadcrumbs through any existing |menu alias|, and you can create a menu used only for the breadcrumbs' structure.
 
 Breadcrumb Provider
 ~~~~~~~~~~~~~~~~~~~
@@ -135,7 +135,7 @@ To use the breadcrumb provider, create a layout update with a predefined **bread
 Breadcrumbs Block Type
 ~~~~~~~~~~~~~~~~~~~~~~
 
-You can avoid using the breadcrumb provider. For that, create a layout update with the predefined **breadcrumbs** block type and the **breadcrumbs** option:
+You can skip the breadcrumb provider. Instead, create a layout update with the predefined **breadcrumbs** block type and the **breadcrumbs** option:
 
 .. code-block:: yaml
    :caption: WebCatalogBundle/Resources/views/layouts/default/oro_product_frontend_product_index/product_index.yml
@@ -152,12 +152,12 @@ You can avoid using the breadcrumb provider. For that, create a layout update wi
                             breadcrumbs: '=data["category_breadcrumbs"].getItems()'
 
 
-After the breadcrumbs block type rendering, you should see menu labels separated by slashes. All breadcrumb items can be clickable except the last one representing the current page.
+After the breadcrumbs block type renders, you see menu labels separated by slashes. All breadcrumb items can be clickable except the last one, which represents the current page.
 
 Titles
 ------
 
-:ref:`OroNavigationBundle <bundle-docs-platform-navigation-bundle>` helps manage page titles for all routes and supports title translation. Root titles can be defined in the navigation.yml file:
+:ref:`OroNavigationBundle <bundle-docs-platform-navigation-bundle>` helps manage page titles for all routes and supports title translation. Define root titles in the navigation.yml file:
 
 .. code-block:: yaml
 
@@ -167,7 +167,7 @@ Titles
         route_name_3: "Static title"
 
 
-The title can be defined with an attribute together with route attribute:
+You can define the title with an attribute alongside the route attribute:
 
 .. code-block:: none
 

@@ -3,13 +3,13 @@
 HTTP Security Response Headers
 ==============================
 
-HTTP security headers are essential components of web security that help protect websites and their users from various online threats and vulnerabilities. These headers are sent by web servers along with HTTP responses to instruct browsers on how to handle certain aspects of the web page.
+HTTP security headers help protect websites and their users from online threats and vulnerabilities. Web servers send these headers with HTTP responses to instruct browsers on how to handle certain aspects of the web page.
 
 NelmioSecurityBundle
 --------------------
 
 The |NelmioSecurityBundle| provides additional security features for your Symfony application.
-This bundle allows to define the following security headers:
+This bundle lets you define the following security headers:
 
 * Content-Security-Policy (CSP) - Defines a set of rules that control which resources (e.g., scripts, stylesheets, images) a web page is allowed to load.
 
@@ -26,7 +26,7 @@ This bundle allows to define the following security headers:
 OroSecurityBundle
 -----------------
 
-In addition to a wide range of security headers supported by the NelmioSecurityBundle, OroSecurityBundle provides ability to set the |Permissions-Policy| header.
+In addition to the wide range of security headers supported by the NelmioSecurityBundle, OroSecurityBundle lets you set the |Permissions-Policy| header.
 
 .. code-block:: yaml
    :caption: config/config.yml

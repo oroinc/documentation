@@ -5,7 +5,7 @@ Technology Stack
 
 .. begin_client_side
 
-Like any **web application**, Oro application follows a |client - server architecture| to deliver the web content prepared by the server-side stack to the client-side and deliver the response. Oro applications rely on the number of embedded, integrated, and distributed technologies explained below.
+Like any **web application**, the Oro application follows a |client - server architecture|: the server-side stack prepares the web content and delivers the response to the client. Oro applications rely on a number of embedded, integrated, and distributed technologies, explained below.
 
 Client Side
 -----------
@@ -27,7 +27,7 @@ Oro applications support the following web browsers:
 
 Out of the box, Oro Applications are mobile-friendly due to the responsive and adaptive UI.
 
-In addition to the HTTP connections, Oro applications establish WebSocket connections between web browsers and the  server side for real-time communication (e.g., status notifications, alerts, etc.)
+In addition to HTTP connections, Oro applications establish WebSocket connections between web browsers and the server side for real-time communication (for example, status notifications and alerts).
 
 API Client
 ^^^^^^^^^^
@@ -101,7 +101,11 @@ store that can be accessed from subsequent requests. For implementation details,
 Message Queue
 ^^^^^^^^^^^^^
 
-Oro application uses **Message Queue** to enable asynchronous processing for the heavy jobs that, when executed immediately, may cause performance degradation. For example, reindexation of a large volume of data, creation of large bulks of items, etc. is usually handled via MQ consumers. To process the queued messages, Oro application uses a proprietary consumer service. It is running as a daemon and handles all the asynchronous jobs (messages) registered within a Message Queue. Consumer service is scalable and can run as a parallel processes and/or on multiple servers to handle a large volume of asynchronous processes. Number of processes required depends on the server capacity. To guarantee the acceptable response time and address spikes in the server-side workload, you can scale the message processing by adding more consumer services on demand.
+The Oro application uses the **Message Queue** to process heavy jobs asynchronously, since running them immediately may degrade performance. Reindexing large volumes of data, creating large bulks of items, and similar jobs are usually handled by MQ consumers.
+
+To process queued messages, the Oro application uses a proprietary consumer service. It runs as a daemon and handles all asynchronous jobs (messages) registered in a Message Queue.
+
+The consumer service is scalable: it can run as parallel processes and/or on multiple servers to handle a large volume of asynchronous processes. The number of processes required depends on server capacity. To keep response times acceptable and absorb spikes in the server-side workload, you can scale message processing by adding more consumer services on demand.
 
 Supported MQ solutions:
 
@@ -170,10 +174,12 @@ It is implemented using |Redis Cache Adapter| and :ref:`OroRedisConfigBundle <bu
 Notes on Deployment Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For a compact and resource-efficient deployment, all systems and elements of the Oro application may be hosted on a single physical or virtual server instance.
-For scalable high-load deployments:
-Multiple instances of Oro application may be hosted on their dedicated web servers, where the load balancer directs client requests to the necessary web server.
-All systems and elements of the Oro application may be hosted on their own dedicated server and could be scaled separately.
+For a compact, resource-efficient deployment, all systems and elements of the Oro application can be hosted on a single physical or virtual server instance.
+
+For scalable, high-load deployments:
+
+* Multiple instances of the Oro application can run on their own dedicated web servers, with a load balancer directing client requests to the appropriate server.
+* Each system and element of the Oro application can be hosted on its own dedicated server and scaled separately.
 
 **Next step**: :ref:`Oro PHP Application Structure <architecture-oro-php-application-structure>`
 

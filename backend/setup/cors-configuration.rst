@@ -11,7 +11,7 @@ In Oro applications, CORS configuration may be required when APIs, OAuth endpoin
 
 This guide provides an overview of all available CORS configuration options and links to detailed documentation for each use case.
 
-The following table summarizes where CORS settings are configured for different types of endpoints:
+The following table shows where to configure CORS settings for each endpoint type:
 
 .. csv-table::
    :header: "Endpoint Type", "Configuration"
@@ -77,7 +77,7 @@ For additional information, see :ref:`Storefront API configuration <web-api--sto
 Configure CORS for OpenAPI Specifications
 -----------------------------------------
 
-When publishing OpenAPI specifications for use by external tools and applications, CORS can be configured separately from API resource access.
+When you publish OpenAPI specifications for external tools and applications, you can configure CORS separately from API resource access.
 
 Example:
 
@@ -100,7 +100,7 @@ For detailed configuration instructions, see :ref:`Configure CORS for Published 
 Configure CORS for Back-Office MCP Endpoints
 --------------------------------------------
 
-Back-office Model Context Protocol (MCP) endpoint CORS settings can be configured using the ``oro_commerce_mcp.http.cors`` configuration section.
+Use the ``oro_commerce_mcp.http.cors`` configuration section to configure CORS for back-office Model Context Protocol (MCP) endpoints.
 
 Example:
 
@@ -124,9 +124,9 @@ For detailed information about MCP configuration options, see :ref:`CommerceMcpB
 Configure CORS for Storefront MCP Endpoints
 -------------------------------------------
 
-Storefront MCP servers can be accessed by external applications and AI clients. When an MCP client is hosted on a different origin than the Oro application, CORS configuration may be required.
+External applications and AI clients can access storefront MCP servers. CORS configuration may be required when an MCP client is hosted on a different origin than the Oro application.
 
-Storefront MCP endpoint CORS settings can be configured using the ``oro_frontend_commerce_mcp.http.cors`` configuration section:
+Use the ``oro_frontend_commerce_mcp.http.cors`` configuration section to configure CORS for storefront MCP endpoints:
 
 .. code-block:: yaml
 
@@ -160,7 +160,7 @@ To allow cross-origin requests, configure the allowed frontend application URLs 
        app_base_urls:
            - 'https://example.com'
 
-The configured URLs are used to determine the allowed origins for cross-origin requests to authentication-related endpoints.
+These URLs determine the allowed origins for cross-origin requests to authentication-related endpoints.
 
 For detailed information about the automatically configured endpoints, allowed methods, headers, credentials, and other CORS settings, see :ref:`SalesFrontendBundle: CORS <bundle-docs-commerce-sales-frontend-bundle-cors>`.
 
