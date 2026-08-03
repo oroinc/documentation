@@ -21,9 +21,9 @@ To configure **MIME types** per organization:
 
 6. Add any MIME type by writing the required file or image format in the text box.
 
-7. In the **File Names** section, you can control whether to use original file names. By default, the setting is enabled.
+7. In the **File Names** section, you can control whether to use original file names. By default, the setting is enabled. The **File Names** settings can be configured :ref:`globally <admin-configuration-upload-settings>`, per organization and :ref:`per website <upload-settings--website>`.
 
-   .. hint:: The **File Names** settings can be configured :ref:`globally <admin-configuration-upload-settings>`, per organization and :ref:`per website <upload-settings--website>`.
+   .. warning:: Changing this setting only affects the global upload limit. It does not override a lower limit configured on an individual entity field. If a File, Image, Multiple Files, or Multiple Images type attribute has its own File Size value, that value still applies and can block uploads even after you raise this global setting. For example, out of the box, the *Product Image* attribute has its own 10 MB limit. See :ref:`Manage Product Attributes in the Back-Office <products--product-attributes--type-based-details>` for how to check or change per-attribute file size limits.
 
    **Enable Original File Names** --- When enabled, the original file name is appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") are replaced with "-" (dash).
 
