@@ -192,6 +192,27 @@ Override Docker Compose Configuration Locally
 You can use ``docker-compose.override.yml`` file to override Docker
 Compose configuration locally. By default, the file is in ``.gitignore``.
 
+For example, to run PostgreSQL 18 instead of the version shipped with the
+application, put the following in ``docker-compose.override.yml``:
+
+.. code-block:: yaml
+
+   services:
+     pgsql:
+       image: postgres:18.3-alpine
+       volumes: !override
+         - postgres_18:/var/lib/postgresql
+         - ./config/uuid-ossp.sql:/docker-entrypoint-initdb.d/uuid-ossp.sql:ro
+   volumes:
+     postgres_18: {}
+
+.. note:: Use a volume name that differs from the one in ``docker-compose.yml``.
+          Data directories are not interchangeable between major PostgreSQL versions.
+
+.. note:: Switching the version starts from an empty database — the application has to be
+          installed again. The previous volume is kept intact, so removing the override
+          file brings the original database back.
+
 .. note:: For an enterprise application, you first have to update the parameters.yml file to start working with the application services.
 
 Run Application Services
