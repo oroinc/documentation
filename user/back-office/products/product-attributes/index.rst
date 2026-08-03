@@ -77,6 +77,8 @@ To create an attribute:
 
 4. Click **Continue** to load the next page.
 
+.. _products--product-attributes--type-based-details:
+
 Step 2: Provide Type-Based Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -105,7 +107,7 @@ Proceed to create the attribute as described below.
    * **Scale** --- Maximum number of digits to the right of a decimal point. For example, 15,252 has a scale of 3 and 1.12 has a scale of 2."
    "**File**","
 
-   * **File Size** --- Enter the maximum allowed file size.
+   * **File Size** --- Enter the maximum allowed file size. This value is capped by, and independent from, the :ref:`global upload setting <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-globally>`.
    * **Allowed MIME Types** --- Select one or more allowed MIME types from the drop-down.
    * **Use DAM** --- Select whether to enable the use of the Digital Asset Manager for this field.
    * **ACL Protected** --- Select whether to :ref:`enable ACL check <backend-security-bundle-introduction>` for attachments.

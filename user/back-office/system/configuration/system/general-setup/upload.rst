@@ -20,6 +20,8 @@ To configure the upload settings globally:
 
 3.In the **File Size Settings** section, clear the **Use Default** checkbox and provide the maximum file size (in MB) that is allowed to be uploaded to the application.
 
+  .. warning:: Changing this setting only affects the global upload limit. It does not override a lower limit configured on an individual entity field. If a File, Image, Multiple Files, or Multiple Images type attribute has its own File Size value, that value still applies and can block uploads even after you raise this global setting. For example, out of the box, the *Product Image* attribute has its own 10 MB limit. See :ref:`Manage Product Attributes in the Back-Office <products--product-attributes--type-based-details>` for how to check or change per-attribute file size limits.
+
 4. In the **MIME types** section, select a set of mime types that will be supported for the file and image attachments in the system. **MIME types** are Multipurpose Internet Mail Extension types which help identify the types of the attachments and, thus, limit the possibility of uploading the documents of inappropriate extensions.
 
 5. Add any MIME type by writing the required file or image format in the text box.
