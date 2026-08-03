@@ -10,15 +10,14 @@ Entities
 
 A custom permission model consists of 2 related entities.
 
-* **Permission**-is the primary entity that contains information about specific permission. It contains essential information, like the permission name, label, groups, the list of PermissionEntities to which the permission can be applied, and the list of PermissionEntities that cannot use this permission.
+* **Permission** --- the primary entity for a specific permission. It stores the permission name, label, groups, the list of PermissionEntities the permission can be applied to, and the list of PermissionEntities that cannot use it.
 
-* **PermissionEntity** stores the entity class names to use with the permission entity.
+* **PermissionEntity** --- stores the entity class names used with the permission.
 
 Configuration
 -------------
 
-All custom permissions are described in the ``permissions.yml`` configuration file inside a corresponding bundle. Currently, it is only
-possible to add permission globally for some groups (applications); all required groups should be listed manually. So for every application, the required permissions should be added\\updated by creating a corresponding ``permissions.yml`` file.
+Define all custom permissions in the ``permissions.yml`` configuration file inside the corresponding bundle. You can only add a permission globally for specific groups (applications), so list all required groups manually. For every application, add or update the required permissions by creating a corresponding ``permissions.yml`` file.
 
 An example of a simple permission configuration:
 

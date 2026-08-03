@@ -51,10 +51,10 @@ To create a new processor, create a class that implements |ProcessorInterface| a
 Please note that:
 
 *  The name of a processor usually starts with a verb, and the ``Processor`` suffix is not used.
-*  The ``priority`` attribute is used to control the order in which processors are executed. The higher the priority, the earlier a processor is executed. The default value is 0. The possible range is from -255 to 255. But for some types of processors, the range can be different. For details, see the documentation of the |ChainProcessor| component. If several processors have the same priority, the order they are executed is unpredictable.
+*  The ``priority`` attribute controls the order in which processors are executed. The higher the priority, the earlier a processor is executed. The default value is 0, and the range is from -255 to 255, though it can differ for some types of processors. For details, see the documentation of the |ChainProcessor| component. If several processors have the same priority, their execution order is unpredictable.
 *  Each processor should check whether its work is already done because there may be a processor with a higher priority that does the same thing in a different way. For example, such processors can be created for customization purposes.
 * Prefer `Processor Conditions`_ over a conditional logic inside a processor to avoid loading unnecessary processors.
-*  As you can create API resources for any type of object (not only ORM entities), it is always a good idea to check whether a processor applies to ORM entities. This check is swift and helps avoid possible logic issues and performance impact. Please use the ``oro_api.doctrine_helper`` service to get an instance of |Api DoctrineHelper|, as this class is optimized for use in the API stack.
+*  Because you can create API resources for any type of object, not only ORM entities, always check whether a processor applies to ORM entities. This check is fast and helps avoid logic issues and performance impact. Use the ``oro_api.doctrine_helper`` service to get an instance of |Api DoctrineHelper|, as this class is optimized for use in the API stack.
 
 An example:
 
@@ -94,9 +94,7 @@ For example, a simple condition is used to filter processors by the action:
 
 In this case, the ``acme.api.do_something`` is executed only in the scope of the get action and is skipped for other actions.
 
-Conditions provide a simple way to specify which processors are required to accomplish a work. Pay attention that the dependency injection container does not load processors that do not fit the conditions. Use conditions to create a fast API.
-
-This allows building conditions based on any attribute from the context.
+Conditions are a simple way to specify which processors are required to accomplish a task. The dependency injection container does not load processors that do not fit the conditions, so use conditions to build a fast API. You can build them on any attribute from the context.
 
 Condition types depend on the registered |Applicable Checkers|. By default, the following checkers are registered:
 
@@ -254,8 +252,10 @@ Please note that to validate input data for :ref:`create <create-action>` and :r
                                 # add Symfony\Component\Validator\Constraints\Email validation constraint
                                 - Email: ~
 
-If an error occurs in a processor, the main execution flow is interrupted, and the control is passed to a group of processors called **normalize\_result**. This is true for all types of errors. But there are some exceptions to this rule for the errors that occur in any processor of the **normalize\_result** group. The execution flow is interrupted only if any of these processors raises an exception. However, these processors can safely add new errors into the
-:ref:`context <web-api--context-class>`, and the execution of the next processors will not be interrupted. For implementation details, see |RequestActionProcessor|.
+If an error occurs in a processor, the main execution flow is interrupted and control passes to a group of processors called **normalize\_result**. This applies to all types of errors.
+
+Errors that occur within a processor of the **normalize\_result** group itself are the exception. Here the execution flow is interrupted only if a processor raises an exception. These processors can safely add new errors into the
+:ref:`context <web-api--context-class>` without interrupting the next processors. For implementation details, see |RequestActionProcessor|.
 
 An error is represented by the |Error| class. Additionally, you can use the |ErrorSource| class to specify a source of an error, e.g., the name of a URI parameter or the path to a property in the data. These classes have the following methods:
 
@@ -289,7 +289,7 @@ An error is represented by the |Error| class. Additionally, you can use the |Err
 -  **getParameter()** --- Retrieves the URI query parameter that caused the error.
 -  **setParameter(parameter)** --- Sets the URI query parameter that caused the error.
 
-Below is an illustration of throwing an exception to demonstrate how a processor informs about an error.
+The example below shows how a processor informs about an error by throwing an exception.
 
 .. code-block:: php
 
@@ -361,7 +361,7 @@ Below is an illustration of throwing an exception to demonstrate how a processor
         }
     }
 
-For security errors, throw ``Symfony\Component\Security\Core\Exception\AccessDeniedException``). The raised exception will be converted to the **Error** object automatically by |NormalizeResultActionProcessor|. The services called exception text extractors automatically fill the meaningful properties of the error objects (like HTTP status code, title, and description) based on the underlying exception object. The default implementation of such extractor is |ExceptionTextExtractor|. To add a new extractor, create a class that implements |ExceptionTextExtractorInterface| and tag it with the ``oro.api.exception_text_extractor`` in the dependency injection container.
+For security errors, throw ``Symfony\Component\Security\Core\Exception\AccessDeniedException``. |NormalizeResultActionProcessor| automatically converts the raised exception to the **Error** object. Services called exception text extractors then fill the meaningful properties of the error objects (like HTTP status code, title, and description) based on the underlying exception object. The default implementation of such an extractor is |ExceptionTextExtractor|. To add a new extractor, create a class that implements |ExceptionTextExtractorInterface| and tag it with ``oro.api.exception_text_extractor`` in the dependency injection container.
 
 Another way to add an **Error** object to the context is helpful for validation errors as it allows you to add several errors:
 

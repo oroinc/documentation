@@ -3,7 +3,7 @@
 Query Builder
 =============
 
-To perform search queries, you need to use the query builder => ``\Oro\Bundle\SearchBundle\Query\Query``.
+To perform search queries, use the query builder ``\Oro\Bundle\SearchBundle\Query\Query``.
 
 Example:
 
@@ -24,17 +24,19 @@ The syntax of Query builder is close to Doctrine 2.
     $query = (new Query())
             ->select('fieldvalue as name')
 
-**NOTE**: If you do not want to overwrite the existing fields, use the *addSelect()* method. \* **from()** --- takes an array or string of entity aliases to search from. If the argument was ``*``, then the search will be performed for all entities.
+**NOTE**: If you do not want to overwrite the existing fields, use the *addSelect()* method.
 
--  **andWhere()**, **orWhere()** --- functions set AND WHERE and OR WHERE functions in search request.
+-  **from()** --- takes an array or string of entity aliases to search from. If the argument is ``*``, the search will be performed for all entities.
 
-   -  First argument - field name to search from. It can be set to ``*`` for searching by all fields.
-   -  Second argument - operators ``<``, ``>``, ``=``, ``!=``, etc. This parameter will be ignored if the first argument is for the text field.
-   -  Third argument - value to search
-   -  Fourth argument - field type.
+-  **andWhere()**, **orWhere()** --- set the AND WHERE and OR WHERE conditions in the search request.
+
+   -  First argument --- field name to search from. It can be set to ``*`` for searching by all fields.
+   -  Second argument --- operators ``<``, ``>``, ``=``, ``!=``, etc. This parameter will be ignored if the first argument is for the text field.
+   -  Third argument --- value to search
+   -  Fourth argument --- field type.
 
 -  **setFirstResult()** --- set the first result offset
 
 -  **setMaxResults()** --- set max results of records in result.
 
-As the result of the query, ``Oro\Bundle\SearchBundle\Query\Result`` will be returned with the information about the search query and result items.
+The query returns ``Oro\Bundle\SearchBundle\Query\Result``, which contains information about the search query and result items.

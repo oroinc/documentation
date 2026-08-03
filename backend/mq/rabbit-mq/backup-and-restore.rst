@@ -3,13 +3,13 @@
 Backup and Restore
 ==================
 
-This section provides recommendations on how to back up and restore the message queue when working with Oro applications. For more information on how to back up and restore RabbitMQ, see the related |documentation on RabbitMQ website|.
+This section provides recommendations on backing up and restoring the message queue in Oro applications. For more details, see the related |documentation on RabbitMQ website|.
 
 
 Backup
 ------
 
-RabbitMQ backups are JSON representation of your broker's metadata which includes users, vhosts, queues, exchanges, and bindings.
+A RabbitMQ backup is a JSON representation of your broker's metadata: users, vhosts, queues, exchanges, and bindings.
 
 Backup Procedure
 ^^^^^^^^^^^^^^^^
@@ -34,7 +34,7 @@ Use the ``export`` command provided by the :ref:`RabbitMQ management plugin <op-
 Backing Up Messages
 ^^^^^^^^^^^^^^^^^^^
 
-**Stop all consumers** to back up messages. Messages' data is stored in the |node's data directory|. Here, the nodes are collected in the ``msg_stores/vhosts`` subdirectory which has other directories created per vhost.
+**Stop all consumers** to back up messages. Message data is stored in the |node's data directory|, under the ``msg_stores/vhosts`` subdirectory, which holds a directory per vhost.
 
 The only way to back up messages is to **copy ``msg_stores`` messages data directory**.
 
@@ -50,7 +50,7 @@ The only way to back up messages is to **copy ``msg_stores`` messages data direc
 Restore
 -------
 
-For messages to be restored, the broker should have all the definitions already in place. Message data for unknown vhosts and queues will not be loaded and can be deleted by the node. 
+Before restoring messages, the broker must already have all the definitions in place. The node does not load message data for unknown vhosts and queues, and it may delete such data.
 
 Restore Procedure
 ^^^^^^^^^^^^^^^^^

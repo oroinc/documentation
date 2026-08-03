@@ -13,11 +13,11 @@ OroPlatform uses the following cookies:
 
 The storefront functionality adds the following cookies:
 
-- **OROSFID**  - cookie that holds information about a logged-in customer user;
+- **OROSFID** - cookie that holds information about a logged-in customer user;
 - **OROSFRM** --- cookie that holds a remembered customer user (remember me functionality);
 - **customer_visitor** --- cookie that holds customer visitor data.
 
-All of these cookies are configured in different places.
+Each of these cookies is configured in a different place.
 
 .. note::
     If your OroCommerce application is hosted in OroCloud, an additional **OCXS** cookie is set by the OroCloud platform. This cookie is used for robot detection and prevention and is independent of the cookie configuration described on this page.

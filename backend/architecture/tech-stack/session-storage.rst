@@ -3,9 +3,7 @@
 Session Storage
 ===============
 
-By default, the Oro application is configured to store |sessions| in files. If multiple servers serve your application, you must use a database to make sessions work across different servers. The recommended database
-for best performance is |Redis|. See :ref:`Configure Redis Servers <bundle-docs-platform-redis-bundle--configure-servers>`
-for more details.
+By default, the Oro application stores |sessions| in files. When more than one server serves your application, you must use a shared database so sessions work across servers. |Redis| is the recommended database for best performance. See :ref:`Configure Redis Servers <bundle-docs-platform-redis-bundle--configure-servers>` for details.
 
 Session Locking Impact on Application Availability
 --------------------------------------------------
@@ -16,13 +14,13 @@ This works well for consecutive requests (classic web browsing), but causes prob
 
 In production, this can critically affect availability: each parallel request hits the session lock and queues behind the others. With many concurrent users generating dozens of such requests, ERP performance directly limits Oro availability --- and a slow ERP can overflow the request queue.
 
-There are a few options to overcome availability issues for this kind of scenario:
+You can overcome these availability issues in a few ways:
 
 * **snc_redis.session.locking** parameter can be set to **false** to disable session lock. This approach is not recommended as it may cause session data race condition.
 
-* Use stateless endpoint without session initialization. Such an approach has a significant downside as it will allow accessing data without authentication stored in the session.
+* Use a stateless endpoint without session initialization. This has a significant downside: it allows access to data without the authentication stored in the session.
 
-* Close the session before accessing any 3rd party system (recommended approach):
+* Close the session before accessing any third-party system (recommended approach):
 
   .. code-block:: php
 

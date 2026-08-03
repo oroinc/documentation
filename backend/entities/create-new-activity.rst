@@ -25,7 +25,7 @@ Use this class as the superclass for your entity. To include the entity in the `
        :language: php
        :lines: 17, 26, 31, 50-52, 59-62, 65-67, 72, 174
 
-Your entity is now recognized as the activity entity. To make sure that the activity is displayed correctly, you need to configure its UI.
+Your entity is now recognized as the activity entity. To display the activity correctly, configure its UI.
 
 .. _backend-make-entity-activities-working-with-activity-associations:
 
@@ -33,7 +33,7 @@ Working with Activity Associations
 ----------------------------------
 
 Activity associations are represented by :ref:`multiple many-to-many <book-entities-extended-entities-multi-target-associations-types>` associations.
-It is quite a complex type of associations, and to help work with activities, use the |ActivityManager| class.
+This is a complex association type, so use the |ActivityManager| class to work with activities.
 
 This class provides the following functionality:
 
@@ -113,7 +113,7 @@ Configure UI for an Activity Button
 
 To add an activity button to the view page of the entity with the assigned activity:
 
-1. Create two TWIG templates responsible for rendering the button and the link in the dropdown menu. Please note that you should provide both templates because an action can be rendered either as a button or a link depending on the number of actions, UI theme, device (desktop/mobile), etc.
+1. Create two TWIG templates responsible for rendering the button and the link in the dropdown menu. Provide both templates, because an action can be rendered either as a button or a link depending on the number of actions, UI theme, device (desktop/mobile), etc.
 
 Here is an example of TWIG templates:
 
@@ -195,7 +195,7 @@ Have a look at the following example of sms configuration in *datagrids.yml*:
        :lines: 1, 512, 515, 517-520
 
 
-This configuration creates a column named `contexts` and tries to detect the activity class name automatically. If, for some reason, it fails, you can specify an FQCN in the `entity_name` option.
+This configuration creates a column named `contexts` and tries to detect the activity class name automatically. If detection fails, specify an FQCN in the `entity_name` option.
 
 If you wish to configure the column, add a section with the name specified in the `column_name` option:
 
@@ -243,7 +243,7 @@ To add a new entity to be displayed within a widget, register a service that imp
        :language: yaml
        :lines: 2, 80-88
 
-This will add your provider class into providers (**ActivityListChainProvider**) that will be invoked to fetch data ordering by priority (added in service definition). Priority is helpful for future implementations or overriding existing providers in third-party bundles.
+This adds your provider class to the providers (**ActivityListChainProvider**), which are invoked to fetch data in priority order (set in the service definition). Priority is helpful for future implementations or for overriding existing providers in third-party bundles.
 
 Each activity entity has its own row template for the UI component. Although you can place it anywhere, make sure its path is returned in the Provider via the getTemplate() method. For instance:
 
@@ -336,7 +336,7 @@ Register the created controller.
        :language: yaml
        :lines: 1-18
 
-This API handler is the implementation of REST API.
+This API handler implements the REST API.
 
 .. oro_integrity_check:: 06d4c6c7ced3a7c27c902cda3907440ec51898b1
 

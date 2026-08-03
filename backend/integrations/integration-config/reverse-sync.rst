@@ -3,17 +3,19 @@
 Reverse Synchronization
 =======================
 
-For integration that requires synchronization in both sides, there is a possibility to declare export process on connector level.
-Your connector should implement ``Oro\Bundle\IntegrationBundle\Provider\TwoWaySyncConnectorInterface`` to expose the job name
-that will make export.
+Some integrations require synchronization in both directions. To support this, you can declare an export process at the connector level.
+Your connector must implement ``Oro\Bundle\IntegrationBundle\Provider\TwoWaySyncConnectorInterface`` to expose the name of the job
+that performs the export.
 
 Export Job Definition
 ---------------------
 
-The definition of the export job is similar to import. It is an additional job for ``Oro\Bundle\BatchBundle``
-that should be added to ``batch_job.yml``. A job might be declared with multiple steps, but a good practice is to use one connector for one entity.
-In order to read a entity from the database, there is additional reader placed in OroIntegrationBundle ``oro_integration.reader.entity.by_id``,
-it takes the ``EntityReaderById::ID_FILTER`` option from the context object(``ContextInterface``) for the matching entity to read.
+The export job is defined much like an import job. It is an additional job for ``Oro\Bundle\BatchBundle`` that you add to ``batch_job.yml``.
+
+A job can declare multiple steps, but as a good practice, use one connector per entity.
+
+To read an entity from the database, use the reader ``oro_integration.reader.entity.by_id`` provided by OroIntegrationBundle.
+It reads the matching entity using the ``EntityReaderById::ID_FILTER`` option from the context object (``ContextInterface``).
 
 .. note:: For now only non-composite identifiers are supported.
 
@@ -36,7 +38,7 @@ it takes the ``EntityReaderById::ID_FILTER`` option from the context object(``Co
                 parameters: ~
             # .... another steps
 
-Processor and writer could be initialized in your bundle in **service.yaml**.
+You can initialize the processor and writer in your bundle in **service.yaml**.
 
 **Example:**
 

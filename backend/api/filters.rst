@@ -5,7 +5,7 @@ Filters
 
 This chapter provides information on the existing filters and illustrates how to create new filters.
 
-Filters are used to limit a set of data or request additional information returned by the API.
+Filters limit a set of data or request additional information returned by the API.
 
 Filters for fields that have a database index are enabled automatically. Filters by all other fields should be
 :ref:`enabled explicitly <filters-config>`.
@@ -31,7 +31,7 @@ All supported comparison types are listed in the following table:
    "gt","`>`","Checks whether a field value is greater than a filter value. Supports numeric, date, and time fields."
    "gte","`>=`","Checks whether a field value is greater than or equal to a filter value. Supports numeric, date, and time fields."
    "exists","`*`","For fields and not collection valued associations, it checks whether a field value is not `null` (if a filter value is `true`) or a field value is `null` (if a filter value is `false`). For collection valued associations, it checks whether a collection is not empty (if a filter value is `true`) or empty (if a filter value is `false`)."
-   "neq_or_null","`!*`","For fields and not collection valued associations checks whether a field value is not equal to a filter value, or is `null`. For collection valued associations, it  checks whether a collection does not contain any filter values or is empty."
+   "neq_or_null","`!*`","For fields and not collection valued associations checks whether a field value is not equal to a filter value, or is `null`. For collection valued associations, it checks whether a collection does not contain any filter values or is empty."
    "contains","`~`","For string fields, it checks whether a field value contains a filter value. The `LIKE '%value%'` comparison is used. For collection valued associations, it checks whether a collection contains all of the filter values."
    "not_contains","`!~`","For string fields, it checks that a field value does not contain a filter value. The `NOT LIKE '%value%'` comparison is used. For collection valued associations, it checks that a collection does not contain all of the filter values."
    "starts_with","`^`","Checks whether a field value starts with a filter value. The `LIKE 'value%'` comparison is used. Supports only string fields."
@@ -102,7 +102,7 @@ A list of filters that should be configured explicitly using the :ref:`type <fil
    "searchAggregation","`=`","|SearchAggregationFilter|"
 
 You can also run the `php var/console debug:config oro_api` command to view all the existing filters
-in the  `filters` section and all the existing operators for filters in the `filter_operators` section.
+in the `filters` section and all the existing operators for filters in the `filter_operators` section.
 
 .. _web-api--filterinterface:
 
@@ -111,7 +111,7 @@ FilterInterface Interface
 
 All filters must implement the |FilterInterface| interface.
 
-Consider checking out the following classes before implementing your own filters, as each of them may serve as a good base class for your own filters:
+Consider the following classes before implementing your own filters, as each can serve as a good base class:
 
 * :ref:`StandaloneFilter <standalonefilter-base-class>`
 * :ref:`StandaloneFilterWithDefaultValue <standalonefilterwithdefaultvalue-base-class>`,
@@ -132,7 +132,7 @@ Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, 
 FieldAwareFilterInterface Interface
 -----------------------------------
 
-Filters that are applied to a field and need to know the field name. must implement the |FieldAwareFilterInterface| interface.
+Filters that are applied to a field and need to know the field name must implement the |FieldAwareFilterInterface| interface.
 
 Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |ExtendedAssociationFilter|, |PrimaryFieldFilter| and |AssociationCompositeIdentifierFilter|.
 
@@ -223,7 +223,7 @@ StandaloneFilterWithDefaultValue Base Class
 The |StandaloneFilterWithDefaultValue| is the base class for filters
 that you can use independently of other filters and have a predefined default value.
 
-Examples of such filters are |PageNumberFilter|, |PageSizeFilter|  and |SortFilter|.
+Examples of such filters are |PageNumberFilter|, |PageSizeFilter| and |SortFilter|.
 
 Criteria Class
 --------------
@@ -246,8 +246,8 @@ and `oro_api.query.require_joins_decision_maker` and `oro_api.query.optimize_joi
 QueryExpressionVisitor Class
 ----------------------------
 
-The |QueryExpressionVisitor| is used to walk a graph of DQL expressions from the Criteria object and turns them into a query. This class is similar to
-|Doctrine QueryExpressionVisitor|, but allows adding new types of expressions easily and helps to build subquery-based expressions.
+The |QueryExpressionVisitor| walks a graph of DQL expressions from the Criteria object and turns them into a query. It is similar to
+|Doctrine QueryExpressionVisitor|, but makes it easy to add new types of expressions and to build subquery-based expressions.
 
 .. _web-api--query-expressions:
 
@@ -313,7 +313,7 @@ To configure your filter for an API resource, use the :ref:`type <filters-config
 Other Classes
 -------------
 
-Consider checking out the list of other classes below, as they can provide insight on how data filtering works:
+Consider the classes below, as they provide insight into how data filtering works:
 
 * |FilterNames| - contains names of predefined filters for a specific request type.
 * |FilterNamesRegistry| - a container for names of predefined filters for all registered request types.

@@ -3,7 +3,7 @@
 Doctrine Field Types
 ====================
 
-Some entities have fields with data that are money or percentages, so we have added new field types with these values.
+Some entity fields hold money or percentage data, so we added field types for these values.
 
 The **money** field type allows storing money data. It is an alias for the decimal (19,4) type.
 
@@ -18,7 +18,7 @@ You can use this field type:
      */
     protected $taxAmount;
 
-The **percent** field type allows storing percent data. It is an alias to float type.
+The **percent** field type allows storing percent data. It is an alias for the float type.
 
 You can use this field type:
 
@@ -31,7 +31,9 @@ You can use this field type:
      */
     protected $percentField;
 
-These two data types are available in extended fields. You can create new fields with these types. Additionally, on view and edit pages and in grids, these fields will be automatically formatted with currency or percent formatters.
+Both data types are available in extended fields, so you can create new fields with them.
+
+On view and edit pages and in grids, these fields are automatically formatted with currency or percent formatters.
 
 In the grid, for percent data type, a generated percent filter applies automatically.
 

@@ -1,11 +1,11 @@
 Customize CRUD Pages
 --------------------
 
-OroCommerce equips users and developers with powerful UIs that they can use to manage both simple and complex data entities, including all entity attributes (fields) and relations. As a developer, you can enable standard CRUD pages for a new entity, and with the same ease, you can add more fields to any of the entities you have created before. Add new entity properties, create a migration script and modify the templates if necessary.
+OroCommerce provides powerful UIs for managing both simple and complex data entities, including all entity attributes (fields) and relations. As a developer, you can enable standard CRUD pages for a new entity, and just as easily add more fields to entities you created earlier: add new entity properties, create a migration script, and modify the templates if necessary.
 
 But what if you need to add a few more fields to one of the OroCommerce built-in entities or to an entity that somebody else's extension has created?
 
-Editing the OroCommerce source code or the code for third-party extensions is never a good idea. In this article, we will show you how to customize the CRUD pages of the existing entities with the custom code in your own bundle.
+Editing the OroCommerce source code or third-party extension code is never a good idea. This article shows how to customize the CRUD pages of existing entities with custom code in your own bundle.
 
 .. note:: CRUD stands for Create, Read, Update and Delete operations. They are commonly accompanied by some listing or navigation that allows retrieving, sorting, and filtering multiple records at once. In the context of OroCommerce, the data management UIs for the above operations are represented by the following pages:
 
@@ -24,16 +24,16 @@ For example, let's add a new text field to the product edit and view screens fro
 Prerequisites
 ^^^^^^^^^^^^^
 
-Before writing code, create a new bundle in your application. If you are not familiar with the bundle creation process yet,  check :ref:`how to create a new bundle in your Oro application <how-to-create-new-bundle>`. If you have already created a bundle for your app customizations, you are good to go and can reuse it in other tutorials as well.
+Before writing code, create a new bundle in your application. If you are not familiar with the bundle creation process yet, check :ref:`how to create a new bundle in your Oro application <how-to-create-new-bundle>`. If you already created a bundle for your app customizations, reuse it here and in other tutorials.
 
 Custom Data Entity
 ~~~~~~~~~~~~~~~~~~
 
-First, create a new entity to store custom data. It is still possible to create new product entity fields from your custom bundle, but we will show how you can add some data stored elsewhere (it can also be calculated on the fly or submitted to an external web service for storage).
+First, create a new entity to store custom data. You can still create new product entity fields from your custom bundle, but here we show how to add data stored elsewhere (it can also be calculated on the fly or submitted to an external web service for storage).
 
 .. note:: See the :ref:`How to Create Entities <create-entities>` article to learn more.
 
-Let's also make the entity compliant with the |ProductHolderInterface|, so it will be possible to reuse it in other places (e.g., reports). Besides the product reference, our entity will have only one text field to store our data. You can add multiple fields and use other data types according to your requirement:
+Let's also make the entity compliant with the |ProductHolderInterface|, so you can reuse it elsewhere (for example, in reports). Besides the product reference, our entity has only one text field to store our data. You can add multiple fields and use other data types as needed:
 
 .. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Entity/ProductOptions.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Entity/ProductOptions.php
@@ -44,11 +44,11 @@ Let's also make the entity compliant with the |ProductHolderInterface|, so it wi
 Installation And Migrations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You must create the installation and migration scripts if you plan to distribute your custom bundle or deploy it later to another application or machine. The installation script should create the required database structures during application installation, and the migration scripts will be used to update your module in the application to a specific version.
+Create the installation and migration scripts if you plan to distribute your custom bundle or deploy it later to another application or machine. The installation script creates the required database structures during application installation, and the migration scripts update your module to a specific version.
 
 .. note:: More information about migrations is available in the :ref:`OroMigrationBundle <backend-entities-migrations>` documentation.
 
-We will have only one version of our custom bundle in this blog post, so the installation and migration code will look similar.
+This blog post has only one version of our custom bundle, so the installation and migration code look similar.
 
 Installation:
 
@@ -65,7 +65,7 @@ Migration:
 Form Types
 ^^^^^^^^^^
 
-To customize the new product field, implement a corresponding form type to be used in the main form on the product create and edit pages:
+To customize the new product field, implement a corresponding form type for the main form on the product create and edit pages:
 
 .. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Form/Type/ProductOptionsType.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Form/Type/ProductOptionsType.php
@@ -73,9 +73,9 @@ To customize the new product field, implement a corresponding form type to be us
     :lines: 1-9, 13-
 
 
-The setDataClass method is used here to provide more flexibility while allowing for the reuse of this form type. Using it like this is optional.
+The setDataClass method adds flexibility and lets you reuse this form type. Using it this way is optional.
 
-Once you have your new form type, it should be registered in the service container to be recognizable by Symfony's form factory:
+Once you have your new form type, register it in the service container so Symfony's form factory can recognize it:
 
 
 .. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Resources/config/form_types.yml
@@ -87,7 +87,7 @@ Once you have your new form type, it should be registered in the service contain
 Form Type Extension
 ^^^^^^^^^^^^^^^^^^^
 
-Any integrations between different form types within OroCommerce can use form type extension to tie the form types together. In our case, we need to list the following form events:
+Integrations between different form types within OroCommerce can use a form type extension to tie the form types together. In our case, we listen for the following form events:
 
  * **FormEvents::POST_SET_DATA** – used to assign values to the form from our custom entity object;
  * **FormEvents::POST_SUBMIT** – used to convert, validate and persist our custom values.

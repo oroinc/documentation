@@ -12,17 +12,17 @@ from the Oro Extensions Store, whereas paid extensions must be purchased from th
 Package Preparation
 -------------------
 
-Before you add an extension to the Oro Extensions Store you have to prepare the package and upload it to some repository.
+Before you add an extension to the Oro Extensions Store, prepare the package and upload it to a repository.
 
-Paid extensions can be published anywhere. Their publishers are fully responsible for proper packaging, distribution
+You can publish paid extensions anywhere. Their publishers are fully responsible for packaging, distribution,
 and payment processing.
 
-All free extensions can be published on any publicly available git repository (GitHub, BitBucket, etc.).
-We strongly recommend to publish all releases with tags – this will allow our packagist application
-to pick up release notes, version history and contents of the ``readme.md`` file.
+You can publish free extensions on any publicly available git repository (GitHub, BitBucket, etc.).
+We strongly recommend publishing all releases with tags – this lets our packagist application
+pick up release notes, version history, and the contents of the ``readme.md`` file.
 
-Every package must contain a ``composer.json`` file in the root catalogue. This file in turn must contain
-information about the application, its author and distribution license, as shown in the example below:
+Every package must contain a ``composer.json`` file in the root catalogue. This file must contain
+information about the application, its author, and distribution license, as shown below:
 
 .. code-block:: json
 
@@ -40,11 +40,11 @@ We only accept extensions under OSL-3 or MIT licenses.
 Adding an Extension
 -------------------
 
-To be able to add an extension you have to be logged in to the Oro Extensions Store website. The Add Extension page
-can be reached via the user menu in the top right corner of the page or via link on the My Marketplace page.
+To add an extension, you must be logged in to the Oro Extensions Store website. You can reach the Add Extension page
+via the user menu in the top right corner or via the link on the My Marketplace page.
 
-First thing you have to do is to choose an extension type: paid or free.
-Free extensions also require the repository URL. Then click Next to proceed to the second step of adding an extension.
+First, choose an extension type: paid or free.
+Free extensions also require the repository URL. Then click Next to proceed to the second step.
 
 
 Paid Extensions
@@ -87,9 +87,9 @@ to contain more detailed information about the application and its releases.
 Free Extensions
 ---------------
 
-If an extension package has been properly created according to our specification,
-most of extension information attributes will be automatically processed
-by our Packagist application and taken from GitHub, though you will still be able to edit them if you want to.
+If you create the extension package according to our specification,
+our Packagist application automatically processes most extension information attributes
+and takes them from GitHub. You can still edit them if you want.
 Here is the list of fields and their sources:
 
 * **Extension Key** – taken from name in the composer.json file
@@ -98,13 +98,13 @@ Here is the list of fields and their sources:
 * **Release Notes** – taken from GitHub Release Notes (if tags are used)
 * **Previous Versions** – taken from version history on GitHub (if tags are used)
 
-This means you will only have to specify the *Extension Name*, choose a *default image*,
+This means you only have to specify the *Extension Name*, choose a *default image*,
 and specify *categories*.
 
-After you have published the application it will appear on the My Marketplace page in Pending status.
-The status will be changed shortly after our administrator reviews the extension and allows it to the Oro Extensions Store.
-Note that admin review is necessary only for the initial publication; all subsequent changes
-will not require admin approbation and will be published immediately.
+After you publish the application, it appears on the My Marketplace page in Pending status.
+The status changes shortly after our administrator reviews the extension and allows it into the Oro Extensions Store.
+Admin review is necessary only for the initial publication; all subsequent changes
+are published immediately without admin approval.
 
 
 .. include:: /include/include-links-dev.rst

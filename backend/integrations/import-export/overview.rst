@@ -19,13 +19,13 @@ Each component is independent, with its own area of responsibility.
 
 First, a step uses the reader to read the data from the source and passes it to the processor.
 
-Then data is routed to the Processor. The processor can consist of three data manipulation layers: Data Converter, Serializer, and Strategy. In the processor, the data received from the reader is passed to the data converter, where it is transformed into a format that can be used by the serializer. The serializer converts the data into a format suitable for the writer. In addition, data processed by the serializer can be prepared for the writer by the strategy, for example, the strategy can be used to resolve entity relationships or to handle data conflicts.
+Then the data is routed to the Processor, which can consist of three data manipulation layers: Data Converter, Serializer, and Strategy. The data converter transforms the data from the reader into a format the serializer can use. The serializer then converts it into a format suitable for the writer. Finally, the strategy can prepare the data for the writer --- for example, to resolve entity relationships or handle data conflicts.
 
 .. image:: /img/backend/integrations/import-export/import-processor-diagram.svg
    :align: center
    :alt: Import Processor
 
-In the final third stage, the Step passes the processed and write-ready data to the Writer.
+In the final stage, the Step passes the processed, write-ready data to the Writer.
 
 Key Components
 --------------
@@ -41,7 +41,7 @@ The reader reads the data from a source. In terms of import, it can be a CSV fil
 Processor
 ~~~~~~~~~
 
-The processor is at the forefront of the job execution. The main logic of the specific job is concentrated here. The import processor converts array data to the entity object. The export processor does the opposite, it converts the entity object into an array representation.
+The processor is at the forefront of job execution and holds the main logic of the specific job. The import processor converts array data to the entity object. The export processor does the opposite: it converts the entity object into an array representation.
 
 Writer
 ~~~~~~
@@ -51,7 +51,7 @@ The writer is responsible for saving the results at a specific destination. In t
 Data Converter
 ~~~~~~~~~~~~~~
 
-The data converter converts the data from data structure returned by the reader to a format applicable for the serializer.
+The data converter converts the data from the structure returned by the reader into a format applicable for the serializer.
 
 Serializer
 ~~~~~~~~~~
@@ -66,8 +66,9 @@ The strategy namespace contains a strategy helper with generic import entities a
 TemplateFixture
 ~~~~~~~~~~~~~~~
 
-When implementing import/export, it is very important that the data follows the expected format to give the user an example of how the data should look. For this purpose, the TemplateFixture has been introduced. This fixture is used to represent an exportable record that is used to create a downloadable data template.
-The TemplateFixture namespace contains a fixture functionality template. TemplateFixtureInterface is an interface used to create fixtures. TemplateManager is a storage for the template fixtures import.
+When implementing import/export, the data must follow the expected format so users have an example of how it should look. The TemplateFixture serves this purpose: it represents an exportable record used to create a downloadable data template.
+
+The TemplateFixture namespace contains a fixture functionality template. TemplateFixtureInterface is the interface used to create fixtures. TemplateManager stores the template fixtures for import.
 
 Batch Bundle Job Components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -75,9 +76,9 @@ Batch Bundle Job Components
 Job
 ~~~
 
-OroImportExportBundle uses OroBatchBundle to organize the execution of the import/export operations.
-OroBatchBundle implements a job which is configured with execution context and is run by a client.
-The job is abstract by itself, it does not know specific details of what happens during its execution.
+OroImportExportBundle uses OroBatchBundle to organize the execution of import/export operations.
+OroBatchBundle implements a job that is configured with an execution context and run by a client.
+The job is abstract: it does not know the specific details of what happens during its execution.
 
 Step
 ~~~~
@@ -87,12 +88,12 @@ Stores step elements (reader, processor and writer), responsible for Step Execut
 Step Executor
 ~~~~~~~~~~~~~
 
-Step executor is responsible for data flow. In the step executor, the data returned from the reader is passed to the processor. Then the processed data can be accumulated and finally passed to the writer.
+The step executor is responsible for data flow. It passes the data returned from the reader to the processor, then accumulates the processed data and passes it to the writer.
 
 OroBatchBundle Configuration
 ----------------------------
 
-This configuration is used by OroBatchBundle and encapsulates three jobs for importing the entity from a CSV file, validating the imported data and exporting the entity to a CSV file.
+OroBatchBundle uses this configuration. It encapsulates three jobs: importing the entity from a CSV file, validating the imported data, and exporting the entity to a CSV file.
 
 .. code-block:: php
 
@@ -132,10 +133,10 @@ This configuration is used by OroBatchBundle and encapsulates three jobs for imp
 Supported Formats
 -----------------
 
-Out-of-the-box Import/Export is bundled with Readers that support CSV and XLSx file formats, and can also read data from Doctrine entities.
-There are writer implementations that support CSV and XLSx file formats, Doctrine entities, and direct writing to DB with InsertFromSelectWriter.
+Out of the box, Import/Export includes readers that support CSV and XLSx file formats and can also read data from Doctrine entities.
+Writer implementations support CSV and XLSx file formats, Doctrine entities, and direct writing to the DB with InsertFromSelectWriter.
 
 Dependencies
 ------------
 
-As was mentioned previously, OroBatchBundle is a major dependency of this bundle. OroBatchBundle is used to execute the import/export batch operations. But when a client bundle uses OroImportExportBundle, it does not depend directly on any classes, interfaces, or configuration files of OroBatchBundle. OroImportExportBundle provides its own interfaces and domain models for the client bundle to interact with. From the client bundle's perspective, it is not necessary to create any job configurations to support the import/export of an entity.
+OroBatchBundle is a major dependency of this bundle and executes the import/export batch operations. However, a client bundle that uses OroImportExportBundle does not depend directly on any of OroBatchBundle's classes, interfaces, or configuration files. Instead, OroImportExportBundle provides its own interfaces and domain models for the client bundle to interact with. From the client bundle's perspective, there is no need to create any job configurations to support the import/export of an entity.

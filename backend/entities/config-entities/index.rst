@@ -3,14 +3,16 @@
 Configure Entities
 ==================
 
-So far, Doctrine offers a wide range of functionality to map your entities to the database, save your data, and retrieve them from the database. However, in an application based on the OroPlatform, you usually want to control how entities are presented to the user. OroPlatform includes the |EntityConfigBundle| that makes it easy to configure additional metadata of your entities, as well as the fields of your entities. For example, you can now configure icons and labels used when showing an entity in the UI, or you can set up access levels to control how entities can be viewed and modified.
+So far, Doctrine offers a wide range of functionality to map your entities to the database, save your data, and retrieve it. However, in an application based on the OroPlatform, you usually want to control how entities are presented to the user.
+
+OroPlatform includes |EntityConfigBundle|, which lets you configure additional metadata for your entities and their fields. For example, you can configure the icons and labels shown for an entity in the UI, or set up access levels that control how entities are viewed and modified.
 
 Configure Entities and Their Fields
 -----------------------------------
 
-Entities will not be configurable by default. They must be tagged as configurable entities to let the system apply entity config options to them:
+Entities are not configurable by default. Tag them as configurable so the system can apply entity config options:
 
-* The @Config annotation is used to enable entity-level configuration for an entity.
+* The @Config annotation enables entity-level configuration.
 * Use the @ConfigField annotation to enable config options for selected fields.
 
 .. tip::
@@ -52,7 +54,7 @@ You can also change the default value of each configurable option using the ``de
 The ``@ConfigField`` Annotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Similar to the ``@Config`` annotation for entities, you can use the ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField`` annotation to make properties of an entity configurable. Default values can be changed the same way as for the entity level:
+Similar to the ``@Config`` annotation for entities, you can use the ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField`` annotation to make properties of an entity configurable. You can change default values the same way as at the entity level:
 
 .. oro_integrity_check:: a83cb02ddc60cfa23be7f9c166484d8987bfb87d
 
@@ -73,7 +75,7 @@ To update configurable entities, use the following:
 
    php bin/console oro:entity-config:update
 
-Execute this command only in the 'dev' mode when a new configuration attribute or the whole configuration scope is added.
+Run this command only in 'dev' mode, when a new configuration attribute or the whole configuration scope is added.
 
 Clearing Up Cache
 ^^^^^^^^^^^^^^^^^
@@ -102,7 +104,7 @@ To warm up the entity config cache, use the ``oro:entity-config:cache:warmup`` c
 Debugging Configuration Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To get a different type of configuration data, add/remove/update configuration of entities, use the ``oro:entity-config:debug`` command. To see all available options, run this command with the ``--help`` option.
+Use the ``oro:entity-config:debug`` command to get different types of configuration data and to add, remove, or update entity configuration. To see all available options, run it with the ``--help`` option.
 
 The example shows all configuration data for the User entity:
 

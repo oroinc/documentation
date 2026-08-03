@@ -5,13 +5,13 @@ Debugging Behat Tests
 
 Debugging behat tests is sometimes necessary for:
 
-- Identifying Test Failures. Debugging allows you to pinpoint the exact cause of test failures. By examining failing tests, you can determine whether the issue lies in the application code or the test scenario itself.
+- Identifying Test Failures. It pinpoints the exact cause of a failure and shows whether the issue lies in the application code or the test scenario itself.
 
-- Verifying Test Logic. Behat tests are written in a high-level language that mirrors user behavior. Debugging helps verify that the test logic accurately represents the desired user actions and expected outcomes.
+- Verifying Test Logic. Behat tests are written in a high-level language that mirrors user behavior. Debugging confirms that the test logic accurately represents the desired user actions and expected outcomes.
 
-- Handling Dynamic Elements. Modern web applications often contain dynamic elements such as AJAX-based content or dynamically generated IDs. Debugging allows you to inspect these elements during test execution and ensure that your tests interact with the correct elements.
+- Handling Dynamic Elements. Modern web applications often contain dynamic elements such as AJAX-based content or dynamically generated IDs. Debugging lets you inspect these elements during test execution and confirm that your tests interact with the correct ones.
 
-- Troubleshooting Environment Issues. Debugging can help identify environmental factors that impact test execution, such as server configuration, network connectivity, or compatibility issues with third-party dependencies.
+- Troubleshooting Environment Issues. Debugging can identify environmental factors that affect test execution, such as server configuration, network connectivity, or compatibility issues with third-party dependencies.
 
 How to Debug Behat Tests
 ------------------------
@@ -19,8 +19,8 @@ How to Debug Behat Tests
 Enable Very Verbose Output
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can increase the output verbosity to see more details on what's going on by adding the ``-v``, ``-vv``, or ``-vvv`` option to ``php bin/behat``.
-This enables verbose, very verbose, or very very verbose output accordingly.
+To see more detail, increase the output verbosity by adding the ``-v``, ``-vv``, or ``-vvv`` option to ``php bin/behat``.
+These enable verbose, very verbose, or very very verbose output respectively.
 
 - ``-v, --verbose[=VERBOSE]`` -- Increase verbosity of exceptions.
 
@@ -31,22 +31,22 @@ This enables verbose, very verbose, or very very verbose output accordingly.
 Review Error Messages
 ^^^^^^^^^^^^^^^^^^^^^
 
-When a test fails, Behat provides error messages that can give you insights into the cause of failure. Analysis of error messages, stack traces, and exception details can help identify specific issues in your test scenarios or application code.
+When a test fails, Behat provides error messages that reveal the cause. Analyzing these messages, stack traces, and exception details helps identify specific issues in your test scenarios or application code.
 
 Isolate the Problem
 ^^^^^^^^^^^^^^^^^^^
 
-If you encounter a failing test, reproduce the issue in isolation. Simplify the scenario or remove unnecessary steps to identify the specific step or condition causing the failure. This approach helps narrow down the problem and focus your debugging efforts.
+When a test fails, reproduce the issue in isolation. Simplify the scenario or remove unnecessary steps to find the specific step or condition causing the failure. This narrows down the problem and focuses your debugging efforts.
 
 Logging and Dumping Variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Behat supports logging and variable dumping during test execution. By strategically adding logging statements or using built-in functions like ``dump()``, you can inspect the values of variables, objects, or page elements at specific points in your test scenarios. This technique helps you understand the state of the application during test execution.
+Behat supports logging and variable dumping during test execution. Add logging statements or use built-in functions like ``dump()`` to inspect the values of variables, objects, or page elements at specific points in your scenarios. This helps you understand the state of the application while the test runs.
 
 Interactive Debugging
 ^^^^^^^^^^^^^^^^^^^^^
 
-Behat can integrate with debugging tools like Xdebug or Zend Debugger. By configuring your environment and IDE appropriately, you can set breakpoints within your test code and step through it line by line. This method allows for real-time inspection of variables, execution flow, and overall test behavior.
+Behat integrates with debugging tools like Xdebug or Zend Debugger. Once you configure your environment and IDE, you can set breakpoints in your test code and step through it line by line. This lets you inspect variables, execution flow, and overall test behavior in real time.
 
 An example of setting up a debugging environment:
 
@@ -56,7 +56,7 @@ An example of setting up a debugging environment:
 Running a Group of Behat Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can also run a group of tests. For this purpose, mark them with the right tag (for example, @failed-behat-test) and run the test with it.
+You can also run a group of tests. Mark them with a tag (for example, @failed-behat-test) and run Behat with that tag.
 
 .. image:: /img/backend/tests/behat_configuration_with_tag.png
     :alt: Behat configuration with tag
@@ -64,13 +64,13 @@ You can also run a group of tests. For this purpose, mark them with the right ta
 Taking Screenshots
 ^^^^^^^^^^^^^^^^^^
 
-To see the browser page state at the exact moment, you can capture a screenshot during the execution of a Behat scenario use the following step:
+To see the browser page state at a given moment, capture a screenshot during a Behat scenario with the following step:
 
 .. code-block:: gherkin
 
   And I take screenshot
 
-This step allows you to capture a snapshot of the current page.
+This step captures a snapshot of the current page.
 
 .. code-block:: gherkin
 
@@ -93,7 +93,7 @@ This step allows you to capture a snapshot of the current page.
     Then I should see "User saved" flash message # Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext::iShouldSeeFlashMessage()
 
 
-You can take screenshots in other Contexts steps for more precise results by using the ``ScreenshotTrait`` and calling the ``ScreenshotTrait::takeScreenshot`` method.
+For more precise results, take screenshots in other Contexts steps by using the ``ScreenshotTrait`` and calling its ``ScreenshotTrait::takeScreenshot`` method.
 
 .. code-block:: gherkin
 
@@ -118,19 +118,19 @@ You can take screenshots in other Contexts steps for more precise results by usi
 Stop the Execution of the Behat Script at a Required Place
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To stop the behat script at some point (e.g., you have some steps that are not implemented and you click through them manually, then continue the behat, or you need to see the position of the element on the page), you can use a step ``I wait for action``.
+To stop the Behat script at a certain point, use the ``I wait for action`` step. This helps when you have steps that are not implemented and want to click through them manually before continuing, or when you need to see the position of an element on the page.
 
   .. code-block:: gherkin
 
      And I wait for action
 
-In the console where the test is running, the message "Press [RETURN] to continue..." will appear.
-After performing the necessary actions, the behat script continues to run.
-Run tests only locally and for debugging purposes.
+The console running the test displays the message "Press [RETURN] to continue...".
+After you perform the necessary actions, the Behat script resumes.
+Run these tests only locally, for debugging purposes.
 
-Debugging behat tests is an essential skill for ensuring the reliability and effectiveness of your BDD test suite.
+Debugging Behat tests is an essential skill for ensuring the reliability and effectiveness of your BDD test suite.
 
-.. hint:: The screenshots created during failed Behat tests include the cursor the last position mouse when moving the mouse around, except for situations when there are alerts on the page. This helps identify where the failure occurred, making it quicker to take corrective action.
+.. hint:: Screenshots taken during failed Behat tests include the last cursor position from moving the mouse, except when there are alerts on the page. This helps identify where the failure occurred, so you can take corrective action more quickly.
 
     .. image:: /img/backend/tests/cursor_position_at_failed_behat_tests.png
         :alt: Cursor position at failed behat tests

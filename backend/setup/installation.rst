@@ -6,7 +6,7 @@
 Installation
 ============
 
-The topic provides the details on how to install Oro applications via the command-line interface provided that the necessary environment is already installed.
+This topic explains how to install Oro applications from the command line, assuming the required environment is already in place.
 
 .. note:: For environment installation guidelines, see :ref:`Development Environment <doc--dev-env-best-practices>`.
 
@@ -17,7 +17,7 @@ Get Application Source Code
 
 There are eight base applications to choose from.
 
-Create your new Oro application project with the composer by running one of the commands below, depending on the base application you want to install:
+Create your Oro application project with Composer by running the command for the base application you want to install:
 
 .. code-block:: none
 
@@ -42,7 +42,7 @@ Create your new Oro application project with the composer by running one of the 
 
 .. hint:: Version ``5.1.0`` is an example. Please replace it with the version you want to download.
 
-This command creates a new directory called `my_project_name/` that contains an empty project. An absolute path to the directory will be used in the following steps and will be referred to as **<application-root-folder>** further in this topic.
+This command creates a new directory, `my_project_name/`, that contains an empty project. Later steps refer to the absolute path of this directory as **<application-root-folder>**.
 
 .. note::
         Alternatively, you can download and unpack the archive with the application source code or use git instead of the composer. Please, refer to the dedicated article :ref:`Get the Oro Application Source Code <installation--get-files>` for more details.
@@ -65,18 +65,18 @@ For more information on these parameters, see |OroSyncBundle documentation|.
 Configure File Storages
 -----------------------
 
-By default, an application will be installed with local file systems as :ref:`File Storages <backend-file-storage>` with predefined system paths.
+By default, the application installs local file systems as :ref:`File Storages <backend-file-storage>` with predefined system paths.
 
-To change this configuration, please follow the :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>` to learn how you can change this configuration.
+To change this configuration, follow the :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>` guide.
 
 Configure Application For Media Storage as a Sub-Folder
 -------------------------------------------------------
 
-The application's default `public/media` folder can have many files.
+The application's default `public/media` folder can hold many files.
 
-To make better use of the disk space, you can move files to an external storage or use another volume or directory as file storage. See :ref:`File Storages <backend-file-storage>` and :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>` topics to learn how to switch to the external storage.
+To use disk space more efficiently, move files to external storage or use another volume or directory as file storage. See the :ref:`File Storages <backend-file-storage>` and :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>` topics to learn how to switch to external storage.
 
-If the customizer decides to use another volume or directory as file storage, they can do it in two ways:
+You can use another volume or directory as file storage in two ways:
 
 - with a symlink
 - by binding one directory path (the folder outside your web root) to another
@@ -114,7 +114,7 @@ Follow the on-screen instructions in the console.
 Set Up File Permissions
 -----------------------
 
-Below application directories must be writable both by the web server and the command line user:
+The following application directories must be writable by both the web server and the command-line user:
 
 * var/sessions
 * var/cache
@@ -156,9 +156,9 @@ The required background processes are the following:
 * **message queue consumer** --- Performs resource-consuming tasks in the background.
 * **web socket server** --- Manages real-time messages between the application server and the user's browser.
 
-It is crucial to keep these two background processes running. To maintain their constant availability, using |Supervisord| or another supervising tool is recommended.
+You must keep these two background processes running. To keep them constantly available, use |Supervisord| or another supervising tool.
 
-To configure Supervisord, use your root privileges.
+Configure Supervisord with root privileges.
 
 Configure the Supervisor
 ~~~~~~~~~~~~~~~~~~~~~~~~

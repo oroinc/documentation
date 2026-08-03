@@ -3,10 +3,9 @@
 Selected Fields Providers
 =========================
 
-The selected fields providers must implement interface ``Oro\Bundle\DataGridBundle\Provider\SelectedFields\SelectedFieldsProviderInterface``.
-Selected fields provider returns an array of field names which must be present in the select statement of the datasource
-query according to the given datagrid configuration and parameters. In other words, depending on the datagrid configuration
-and parameters (request- and user-specific), it must return the fields needed to be displayed/processed for the datagrid to be rendered correctly.
+A selected fields provider must implement the ``Oro\Bundle\DataGridBundle\Provider\SelectedFields\SelectedFieldsProviderInterface`` interface.
+
+Based on the given datagrid configuration and parameters (request- and user-specific), it returns an array of field names that must be present in the select statement of the datasource query. In other words, it returns the fields needed to display or process the datagrid so it renders correctly.
 
 Keep in mind that the word `field` here does not mean an `entity field` or `extended field`, but rather a field that must be present in the select statement of a query.
 
@@ -20,7 +19,9 @@ These providers are collected in the ``oro_datagrid.provider.selected_fields`` (
 How to Use
 ----------
 
-Selected fields providers enable fetching field names which must be present in the datasource query of the datagrid. This data can be used in datagrid extensions which modify the datagrid configuration, add new columns, sorters, etc. The purpose is **to detect whether it is necessary to add a certain field or join the datasource query, as not every
+Selected fields providers fetch the field names that must be present in the datagrid's datasource query. Datagrid extensions can use this data when they modify the datagrid configuration, add new columns or sorters, and so on.
+
+The purpose is **to detect whether it is necessary to add a certain field or join the datasource query, as not every
 field added to the query is actually displayed to the end user. This can significantly help improve the performance of datagrids that
 work with tables with many records.**
 
@@ -44,7 +45,7 @@ Example:
 Fields Required by Columns
 --------------------------
 
-The ``Oro\Bundle\DataGridBundle\Provider\SelectedFields\SelectedFieldsFromColumnsProvider``  provider is declared as
+The ``Oro\Bundle\DataGridBundle\Provider\SelectedFields\SelectedFieldsFromColumnsProvider`` provider is declared as
 the ``oro_datagrid.provider.selected_fields.columns`` service. It returns fields (used in renderable columns) that must be present in the select statement of the datasource query.
 
 It uses ``Oro\Bundle\DataGridBundle\Provider\State\ColumnsStateProvider`` to fetch the current state of columns, then collects ``data_name`` configuration options from columns which are currently ``renderable`` (visible).

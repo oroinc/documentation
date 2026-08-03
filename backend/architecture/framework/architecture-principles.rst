@@ -23,11 +23,11 @@ For more information on Symfony, its purpose and benefits, see the following art
 * |7 Good Reasons to Use Symfony Framework for Your Project|
 * |Why Symfony? Seven Facts|
 
-Using Symfony allows web applications to avoid the development of low-level components responsible for the application's organization and focus on developing a functionality specific to a particular web application.
+Using Symfony lets web applications skip building the low-level components responsible for the application's organization and focus instead on functionality specific to a particular web application.
 
-Oro applications have a lot in common with regular Symfony applications based on the 3rd version of the framework. So, if you are not familiar with Symfony yet - start your acquaintance with the Oro application from the *Getting Started* and *Guides* sections of the official |Symfony documentation|.
+Oro applications have a lot in common with regular Symfony applications based on the 3rd version of the framework. If you are new to Symfony, start with the *Getting Started* and *Guides* sections of the official |Symfony documentation|.
 
-Many Symfony features substantially impacted the architecture of all Oro applications. Some are listed below with the description of how they were adjusted for Oro applications compared to other Symfony-based applications.
+Many Symfony features substantially shaped the architecture of all Oro applications. The sections below list some of them and describe how Oro adjusted each one compared to other Symfony-based applications.
 
 .. _dev-guide-application-web-framework-symfony-http-request-application-flow:
 
@@ -66,7 +66,7 @@ Inversion of Control Principle
 
 The |Inversion of Control principle| is widely used in the architecture of Oro applications to loosen the coupling between classes and objects, facilitate extensibility and eliminate code duplication.
 
-The principle is embodied in the | Symfony's Service container| and the |Dependency Injection Component| used to create and manage all objects and organize their interaction in Oro applications.
+The principle is embodied in the |Symfony's Service container| and the |Dependency Injection Component| used to create and manage all objects and organize their interaction in Oro applications.
 
 .. _dev-guide-application-web-framework-symfony-bundle-system:
 
@@ -82,7 +82,7 @@ At the beginning of Oro applications' development, there were certain constraint
 
 As a workaround, we changed the bundle registration system in Oro applications so that the bundles acquired the option of auto-registration in the application without needing to modify any of the application files.
 
-For the bundle to be registered and enabled in Oro applications, it is sufficient to mention the bundle in its  *Resources/config/oro/bundles.yml* file. You can activate any bundle in the application by putting its primary class name in the *Resources/config/oro/bundles.yml* of your bundle (keep in mind, though, that you must physically install the bundle with the help of Composer).
+To register and enable a bundle in Oro applications, add its primary class name to your bundle's *Resources/config/oro/bundles.yml* file. Keep in mind that you must still physically install the bundle with Composer.
 
 .. code-block:: yaml
     :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/bundles.yml
@@ -213,11 +213,9 @@ To see all Oro applications console commands, run the following command in the c
 List of Symfony Components Used in Oro Applications
 ---------------------------------------------------
 
-Symfony is a *set of program components* and a *web framework*. Components represent separate independent parts
-of the functionality used to perform typical web programming tasks, while the framework is a functionality responsible for organizing the interaction of these independent components in a web application.
+Symfony is both a *set of program components* and a *web framework*. The components are separate, independent parts that perform typical web programming tasks; the framework organizes how these components interact in a web application.
 
-Description of Symfony's contribution to the Oro applications architecture would not be complete without
-mentioning Symfony components that are actively used in the development of Oro applications:
+This description of Symfony's contribution to Oro architecture would be incomplete without the Symfony components actively used to develop Oro applications:
 
 - |Asset Component|
 - |Console Component|

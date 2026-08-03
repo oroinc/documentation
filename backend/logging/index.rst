@@ -32,7 +32,7 @@ Oro applications use Monolog integration with the Symfony framework with a few a
 Logging Strategy: What to Log
 -----------------------------
 
-Let us assume that in your logging strategy, you are building a diagnostics toolkit that will give you enough information for the worst case scenario. You will be able to diagnose a non-reproducible problem after it has happened. You will know the state of the critical services and you will be able to spot when a critical component or an integration went down and got unresponsive. You will know where exactly in the process you got a failure and what context and data the system was handling at the time.
+Treat your logging strategy as a diagnostics toolkit built for the worst-case scenario: diagnosing a problem that cannot be reproduced, after it has already happened. Good logs let you see the state of critical services, spot when a critical component or integration goes down and becomes unresponsive, and pinpoint where a failure occurred --- along with the context and data the system was handling at the time.
 
 To be on the safe side, log the following:
 
@@ -51,7 +51,7 @@ To be on the safe side, log the following:
 Basics
 ------
 
-Use Monolog logger that implements the PSR-3 LoggerInterface, de facto logging standard defined in the php-fig/log package. For an overview, please, check out logging in Symfony where we borrowed this example:
+Use the Monolog logger, which implements the PSR-3 LoggerInterface --- the de facto logging standard defined in the php-fig/log package. For an overview, see logging in Symfony, where this example comes from:
 
 .. code-block:: php
 
@@ -303,9 +303,9 @@ Handling exceptions without logging is incorrect:
 Enable Logger Only on Dev Environment
 -------------------------------------
 
-Usually it can be necessary for services that log with INFO and above levels and include logger, as the dependency will affect production performance.
+This is usually necessary for services that log at INFO level and above and inject the logger, because that dependency affects production performance.
 
-You should add the logger in the Decorator of the service and replace the original one with it in the container at CompilerPass based on the environment variable and logger availability. For example, check "Symfony\Component\Translation\LoggingTranslator" that replaces the original "Symfony\Component\Translation\Translator" in "Symfony\Bundle\FrameworkBundle\DependencyInjection\Compiler\LoggingTranslatorPass" based on the container parameter.
+Add the logger in a decorator of the service and replace the original one with it in the container through a CompilerPass, based on the environment variable and logger availability. For example, check "Symfony\Component\Translation\LoggingTranslator" that replaces the original "Symfony\Component\Translation\Translator" in "Symfony\Bundle\FrameworkBundle\DependencyInjection\Compiler\LoggingTranslatorPass" based on the container parameter.
 
 Log Traceability
 ----------------

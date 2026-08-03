@@ -3,13 +3,13 @@
 Option Enum Set Fields
 ======================
 
-The option set, also named as the enum, is a special type of a field which allows to choose one or more options
-from a predefined set of options. The OroPlatform provides two different data types for these purposes:
+The option set, also called an enum, is a special field type that lets you choose one or more options
+from a predefined set. OroPlatform provides two data types for this:
 
 * ``enum`` (named **Select** on UI) - only one option can be selected
 * ``multiEnum`` (named **Multi-Select** on UI) - several options can be selected
 
-The option sets are quite complex. Both the ``enum`` and ``multiEnum`` types are based on regular |Doctrine associations|. The main difference between them is that the ``enum`` type is based on |many-to-one association|, while the ``multiEnum`` type is based on |many-to-many association|.
+Option sets are quite complex. Both the ``enum`` and ``multiEnum`` types are based on regular |Doctrine associations|. They differ in the association they use: the ``enum`` type relies on |many-to-one association|, while the ``multiEnum`` type relies on |many-to-many association|.
 
 To add the option set field to an entity, you can use |ExtendExtension|.
 
@@ -21,9 +21,9 @@ The following example illustrates how to do it:
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_3/AddEnumFieldOroUser.php
        :language: php
 
-Please mind the enum code parameter. Each option set should have code and be unique system-wide,
-and with length of no more than 21 characters (due to dynamic name generation and prefix).
-The same principle applies to the field name. In the case above, it should be less than 27 symbols.
+Note the enum code parameter. Each option set needs a code that is unique system-wide
+and no more than 21 characters long (due to dynamic name generation and prefix).
+The same principle applies to the field name --- in the case above, it should be less than 27 symbols.
 
 To load a list of options, use data fixtures, for example:
 
@@ -51,17 +51,17 @@ There are also other functions in the |ExtendHelper| class which can be helpful 
 As mentioned above, each option set has its own table to store available options. But translations for all options of all option sets are stored in one table. You can find more details in |EnumValueTranslation| and |AbstractEnumValue|.
 The EnumValueTranslation class is used to store translations. The AbstractEnumValue is the base class for all option set entities.
 
-If for some reason you create system option sets and you have to render them manually, the following components can be helpful:
+If you create system option sets and need to render them manually, the following components can be helpful:
 
-* |TWIG extension (Enum)| to sort and translate options. It can be used the following way:
+* |TWIG extension (Enum)| to sort and translate options. Use it like this:
   ``optionIds|sort_enum(enumCode)``, ``optionId|trans_enum(enumCode)``.
 
-* Symfony form types that can be used to build forms contain option set fields: |EnumChoiceType| and |EnumSelectType|.
+* Symfony form types you can use to build forms that contain option set fields: |EnumChoiceType| and |EnumSelectType|.
 
 * Grid filters: |EnumFilter| and |MultiEnumFilter|. Check out how to use these filters in `datagrids.yml`. You can learn
   how to configure datagrid formatters for option sets in |ExtendColumnOptionsGuesser|.
 
-  Please take in account that this class passes the class name as the option set identifier, but you can also use the enum code.
+  Note that this class passes the class name as the option set identifier, but you can also use the enum code.
 
 
 .. include:: /include/include-links-dev.rst

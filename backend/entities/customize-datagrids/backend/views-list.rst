@@ -3,7 +3,7 @@
 Datagrid Views List
 ===================
 
-Provides the ability to add a list of grid views. Adds filters and sorters from the grid view to the parameters' filters.
+Adds a list of grid views, and applies the grid view's filters and sorters to the parameters' filters.
 
 To write your own view list, create a class that extends the ``Oro\Bundle\DataGridBundle\Extension\GridViews\AbstractViewsList``
 class. Here is an example:
@@ -23,7 +23,7 @@ Add the service definition to ``services.yml``:
        :language: yaml
        :lines: 2, 106-110
 
-You can add the view list to the datagrid in the `datagrids.yml` file for a specified datagrid under the `view-list` node.
+Add the view list to a datagrid in the `datagrids.yml` file, under the `view-list` node.
 
 .. oro_integrity_check:: 18b05c6eeee9ded2308428e4146501132e27b546
 

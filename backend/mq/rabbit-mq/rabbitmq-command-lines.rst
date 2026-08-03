@@ -19,7 +19,7 @@ Rabbitmqctl is the original CLI tool that comes with RabbitMQ and does not requi
 rabbitmqadmin
 -------------
 
-Rabbitmqadmin is part of |RabbitMQ Management Plugin| that can perform same actions that the Web-based UI does.
+Rabbitmqadmin is part of the |RabbitMQ Management Plugin| and can perform the same actions as the Web-based UI.
 
 rabbitmq-plugins
 ----------------
@@ -30,7 +30,7 @@ Command Line Installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To use ``rabbitmqadmin`` as a command line tool, navigate to *http://{hostname}:15672/cli/rabbitmqadmin* and download it.
-UNIX-like operating system users need to copy ``rabbitmqadmin`` to a directory in ``PATH``, e.g., ``/usr/local/bin``. For more information, see the |RabbitMQ documentation3|.
+On UNIX-like operating systems, copy ``rabbitmqadmin`` to a directory in ``PATH``, e.g., ``/usr/local/bin``. For more information, see the |RabbitMQ documentation3|.
 
 For more information, see the following external resources:
 

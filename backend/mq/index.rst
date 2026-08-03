@@ -12,13 +12,13 @@ Message Queue
 Concepts
 --------
 
-Message queues provide an asynchronous communications protocol, meaning
-that the sender and the receiver of the message do not need to interact
-with the message queue at the same time. Messages placed onto the queue
-are stored until the recipient retrieves them. A message does not have
-information about previous and next messages.
+Message queues provide an asynchronous communications protocol: the
+sender and the receiver of the message do not need to interact with the
+message queue at the same time. Messages placed onto the queue are stored
+until the recipient retrieves them. A message has no information about the
+previous and next messages.
 
-Therefore, a message queues should be used if:
+Therefore, use a message queue if:
 
 -  A process can be executed asynchronously.
 -  A process does not affect user experience.
@@ -43,17 +43,17 @@ DBAL Transport
 DBAL Broker
 ^^^^^^^^^^^
 
-The DBAL broker is implemented by the |OroMessageQueueBundle|. It is part of OroPlatform which means that this broker is available in all Oro applications out-of-the-box.
+The |OroMessageQueueBundle| implements the DBAL broker. Because the bundle is part of OroPlatform, this broker is available in all Oro applications out-of-the-box.
 
-For message storage, like the message queue, the DBAL broker uses application database tables.
+The DBAL broker uses application database tables for message storage.
 
-Advantages of this broker are an easy installation and configuration, and out-of-the-box availability in every Oro application.
+This broker requires minimal setup and configuration and is available by default in every Oro application.
 
 However, since RDBMS is not designed to work as a message queue, the DBAL broker type has some limitations:
 
-* There is no way to use event-driven model and listen to new inserts into DB. We use a polling model to ask the DB if it has new messages. We run such queries ones per second by default which means that every consumer receives only one message per second. Use the *polling_interval* option to change this value but keep in mind that low interval values may cause DB load.
+* You cannot use an event-driven model to listen for new inserts into the DB. Instead, the DBAL broker polls the DB for new messages. By default it runs this query once per second, so each consumer receives only one message per second. Use the *polling_interval* option to change this value, but keep in mind that low values may cause DB load.
 
-* When the consumer receives a message, it updates a DB record with a unique identifier so that a different consumer could not receive this message. Once the job is done and the message is acknowledged, the consumer removes this record from the DB. This is a success story but errors can happen.  For instance, when a fatal error informs that the consumer is dead and the message is locked and remains in the DB. To handle such cases, RedeliverOrphanMessagesExtension periodically searches for messages which are consumed but not acknowledged and redelivers these messages.
+* When the consumer receives a message, it updates a DB record with a unique identifier so no other consumer can receive it. Once the job is done and the message is acknowledged, the consumer removes this record from the DB. This is the best case, but errors can happen. For instance, a fatal error can end the consumer process, leaving the message locked and stuck in the DB. To handle such cases, RedeliverOrphanMessagesExtension periodically searches for messages that are consumed but not acknowledged and redelivers them.
 
 
 .. _op-structure--mq--mq-bundle--dbal:
@@ -83,11 +83,11 @@ Limitations
 
 As RDBMS are not designed to work as message queue, the implementation has several limitations.
 
--  There is no way to use event-driven model and listen for new inserts into the DB. We use polling model to ask the DB if it has new messages. We run
-   such queries once per second by default, and it means that every consumer receives only one message per second. Use ``polling_interval`` option
-   to change this value, but low interval values may cause DB load.
+-  You cannot use an event-driven model to listen for new inserts into the DB. Instead, the DBAL broker polls the DB for new messages. By default it
+   runs this query once per second, so every consumer receives only one message per second. Use the ``polling_interval`` option
+   to change this value, but low values may cause DB load.
 
--  When the consumer receives a message, it updates the DB record with a unique identifier, so any other consumer cannot receive this message. After the job is done and the message is acknowledged, the consumer removes this record from the DB. This is the best case scenario, however, exceptions may occur. For instance, if a fatal error happens, the message consumer process may finish with blocking message still remaining in the DB. For such cases, the ``RedeliverOrphanMessagesExtension`` is used. It periodically searches for the messages which are consumed but not acknowledged, and then redelivers them.
+-  When the consumer receives a message, it updates the DB record with a unique identifier so no other consumer can receive it. After the job is done and the message is acknowledged, the consumer removes this record from the DB. This is the best case, but exceptions may occur. For instance, a fatal error can end the message consumer process while a blocking message remains in the DB. To handle such cases, the ``RedeliverOrphanMessagesExtension`` periodically searches for messages that are consumed but not acknowledged and redelivers them.
 
 
 AMQP Transport (RabbitMQ)
@@ -100,28 +100,28 @@ The RabbitMQ broker comes with Enterprise Editions of Oro applications.
 
 |RabbitMQ| is one of the most popular Message Queue brokers that supports many features and messaging protocols.
 
-The integration with RabbitMQ in Oro applications is implemented based on the |AMQP| protocol and supports most of its features that are actively used in Oro applications, including:
+Oro's RabbitMQ integration is built on the |AMQP| protocol and supports most AMQP features actively used in Oro applications, including:
 
 * Multiple Queues
 * Separate Consumer pools for different queues
 * Routing of messages from Exchange to the different queues based on Message Topic, Message Headers, etc.
 
-The main drawback of the RabbitMQ broker is that it can be relatively complicated to set up and configure, as opposed to the DBAL broker.
+The main drawback of the RabbitMQ broker is that it is more complicated to set up and configure than the DBAL broker.
 
 
 AMQP (RabbitMQ) Transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-RabbitMQ provides better and faster messages delivery as opposed to DBAL.
-It is recommended to use RabbitMQ, if possible.
+RabbitMQ delivers messages better and faster than DBAL.
+Use RabbitMQ when possible.
 
 Options
 ~~~~~~~
 
-The application reads config settings (a user named
-guest with the default password of guest, granted full access to the /
-virtual host) from the ``ORO_MQ_DSN`` environment variable. The format is as follow ``amqp://guest:guest@localhost:5672``.
-The default value for ``ORO_MQ_DSN`` environment variable is set in the config/config.yml file:
+The application reads the config settings from the ``ORO_MQ_DSN``
+environment variable (a user named guest with the default password guest,
+granted full access to the / virtual host). The format is as follows: ``amqp://guest:guest@localhost:5672``.
+The default value for the ``ORO_MQ_DSN`` environment variable is set in the config/config.yml file:
 
 .. code-block:: yaml
    :caption: config/config.yml

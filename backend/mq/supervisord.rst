@@ -1,15 +1,14 @@
 Supervisord
 ===========
 
-As you read before consumers can normally interrupt the message
-procession by many reasons. In the all cases above the interrupted
-consumer should be re-run. So you must keep running
-``oro:message-queue:consume`` command and to do this best we advise you
-to delegate this responsibility to
-|Supervisord|. With next program
-configuration supervisord keeps running four simultaneous instances of
-``oro:message-queue:consume`` command and cares about relaunch if
-instance has dead by any reason.
+As described earlier, consumers can interrupt message processing for many
+reasons, and in every case you must re-run the interrupted consumer. To keep
+the ``oro:message-queue:consume`` command running, we recommend delegating
+this responsibility to |Supervisord|.
+
+With the following program configuration, supervisord runs four simultaneous
+instances of the ``oro:message-queue:consume`` command and relaunches any
+instance that dies for any reason.
 
 .. code-block:: ini
 
