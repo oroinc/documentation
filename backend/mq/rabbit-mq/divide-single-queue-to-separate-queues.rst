@@ -3,7 +3,7 @@
 Divide Queue to Separate Queues
 ===============================
 
-There are a couple of cases when you need to move messages from one queue to another using **routing key**, for example:
+You may need to move messages from one queue to another using the **routing key**, for example:
 
 * When configuring **multiple queue**. If all your messages are stored in a single queue (like ``oro.default``), you may want to configure more than one queue and split all your messages.
 * When setting up **backup restore**. You may need to exclude messages after the backup (like email notifications, 3rd party application updates, etc.)
@@ -48,21 +48,21 @@ Create the `oro.temporary` queue on your host with `durable=true` and `x-max-pri
 Relocate Messages to Temporary Queue
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Declare the `oro.temporary` exchange with the `fanout` type to be able to move messages to `oro.temporary` with the original **routing_key**.
+Declare the `oro.temporary` exchange with the `fanout` type so you can move messages to `oro.temporary` with the original **routing_key**.
 
 .. code-block:: none
 
    rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name="oro.temporary" type="fanout" durable=true
 
-Bind the `oro.temporary` exchange with the `oro.temporary` queue. All message from this exchange will be transferred to the `oro.default` queue.
+Bind the `oro.temporary` exchange with the `oro.temporary` queue. All messages from this exchange will be transferred to the `oro.default` queue.
 
 .. code-block:: none
 
    rabbitmqadmin declare binding --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    source="oro.temporary" destination="oro.temporary" destination_type=queue
 
-Create Dynamic Shovel to relocate all message from the `oro.default` to the `oro.temporary` queue.
+Create a Dynamic Shovel to relocate all messages from the `oro.default` queue to the `oro.temporary` queue.
 
 .. code-block:: none
 
@@ -77,7 +77,7 @@ Check if all messages are relocated.
 
    rabbitmqctl shovel_status | grep "temporary-queue"
 
-Shovel will be removed automatically if you specify the `src-delete-after=queue-length` option.
+The Shovel is removed automatically if you specify the `src-delete-after=queue-length` option.
 
 Remove the `oro.temporary` exchange.
 
@@ -89,7 +89,7 @@ Remove the `oro.temporary` exchange.
 Configure Alternate Exchange
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Declare the `oro.temporary.alternate` exchange with the `fanout` type to be able to move messages to the `oro.default` queue that does not contain the **routing_key** described in the binding mask.
+Declare the `oro.temporary.alternate` exchange with the `fanout` type so you can move messages to the `oro.default` queue that do not contain the **routing_key** described in the binding mask.
 
 .. code-block:: none
 
@@ -99,7 +99,7 @@ Declare the `oro.temporary.alternate` exchange with the `fanout` type to be able
 Configure Dividing Exchange
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Declare the `oro.temporary.divide` exchange with the `topic` type to be able to move messages to separate queues by **routing_key**. Specify the `alternate-exchange=oro.temporary.alternate` option that marks the `oro.temporary.alternate` exchange as a **alternate exchange** for the `oro.temporary.divide` exchange.
+Declare the `oro.temporary.divide` exchange with the `topic` type so you can move messages to separate queues by **routing_key**. Specify the `alternate-exchange=oro.temporary.alternate` option that marks the `oro.temporary.alternate` exchange as an **alternate exchange** for the `oro.temporary.divide` exchange.
 
 .. code-block:: none
 
@@ -134,7 +134,7 @@ Bind the `oro.temporary.alternate` exchange with the `oro.default` queue. All me
    rabbitmqadmin declare binding --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    source="oro.temporary.alternate" destination="oro.default" destination_type=queue
 
-Bind the `oro.temporary.divide` exchange with the `oro.email` queue by `routing_key=oro.email.#`
+Bind the `oro.temporary.divide` exchange with the `oro.email` queue by `routing_key=oro.email.#`.
 
 .. code-block:: none
 
@@ -142,7 +142,7 @@ Bind the `oro.temporary.divide` exchange with the `oro.email` queue by `routing_
    source="oro.temporary.divide" destination="oro.email" destination_type=queue \
    routing_key="oro.email.#"
 
-Bind the `oro.temporary.divide` exchange with the `oro.notification` queue by `routing_key=oro.notification.#`
+Bind the `oro.temporary.divide` exchange with the `oro.notification` queue by `routing_key=oro.notification.#`.
 
 .. code-block:: none
 

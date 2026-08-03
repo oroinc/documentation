@@ -7,20 +7,20 @@ In Enterprise editions, data from the ACL-protected entities with the User, Busi
 
 You can view an entity only from the organization where it was created. You can view data from all organizations only in the Global organization when the access level to the View permission is set to Global.
 
-A global view entity is helpful for cases when data created in one organization should be available from other non-global organizations. For example, when the administrator wants to create a predefined list of brands for products from other organizations.
+A global view entity helps when data created in one organization should be available from other non-global organizations. For example, the administrator can create a predefined list of brands for products from other organizations.
 
 If the entity is marked as a Global view, data created in the global organization will be available in non-global organizations along with
 the data created in this organization.
 
-In the datagrids for such entities, a new column called ``Organization`` is added displaying the name of the current organization if the entity was created within it and the string ``System-wide`` if the entity was created in the global organization.
+In the datagrids for such entities, a new ``Organization`` column shows the name of the current organization if the entity was created there, or ``System-wide`` if it was created in the global organization.
 
 You can only view a global view entity from a non-global organization. It cannot be edited, deleted, or shared.
 
 Configuring an Entity as a Global View
 --------------------------------------
 
-To see the data created from the global organization in a non-global organization for an ACL-protected entity, configure the chosen entity with the ``global_view`` parameter of the ``ownership`` scope in the
-``defaultValues`` section of the ``#[Config]`` attribute, as illustrated below:
+To make an ACL-protected entity's data from the global organization visible in a non-global organization, configure the entity with the ``global_view`` parameter of the ``ownership`` scope in the
+``defaultValues`` section of the ``#[Config]`` attribute, as shown below:
 
 .. code-block:: php
 

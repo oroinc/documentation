@@ -10,7 +10,9 @@ Console security context listener
 
 **Class**: Oro\\Bundle\\SecurityBundle\\EventListener\\ConsoleContextListener
 
-This listener allows passing the current user and organization to the console command so that command services can get this user and organization from a security context. By default, the security context token in the console is empty - so, to save the user and organization listener, it creates an instance of ConsoleToken and sets it to the security context.
+This listener passes the current user and organization to a console command so that command services can read them from the security context.
+
+By default, the console security context token is empty. To store the user and organization, the listener creates a ConsoleToken instance and sets it in the security context.
 
 The listener uses the following options:
 

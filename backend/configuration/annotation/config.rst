@@ -30,7 +30,7 @@ Configures default values for particular config options on a per property basis:
 
 This example sets the ``auditable`` option from the ``dataaudit`` scope to ``true`` for the ``User`` class.
 
-You can use``immutable`` on any settings. This attribute can be used to prohibit changing the association state.
+You can use ``immutable`` on any setting to prohibit changing the association state.
 
 ``activity``
 ~~~~~~~~~~~~
@@ -39,7 +39,7 @@ This parameter sets default settings for OroActivityBundle. This bundle helps cl
 
 * **show_on_page** *integer* - is used to change a page, which will display the "activity list" and activity buttons. Can be used as bitmask. Possible values are in ``\Oro\Bundle\ActivityBundle\EntityConfig\ActivityScope::VIEW_PAGE``.
 
-* **route** *string* - is the route name for the controller that can be used to render the list of this type of activities. This controller must have $entityClass and $entityId. Parameters to pass the target entity. This attribute must be defined for each activity entity (an entity included in the 'activity' group, see 'grouping' scope).
+* **route** *string* - is the route name for the controller that can be used to render the list of this type of activities. This controller must have $entityClass and $entityId parameters to pass the target entity. This attribute must be defined for each activity entity (an entity included in the 'activity' group, see 'grouping' scope).
 
 * **acl** *string* - is used to check whether this type of activity is available in the current security context.
 
@@ -83,7 +83,7 @@ You can configure this attribute when you use |AttachmentProvider|.
 
 * **auto_link_attachments** *boolean* - if TRUE, then Email Attachments are saved to the Attachment Entity.
 
-* **immutable** *boolean* - can be used to prohibit changing the attachment association state (regardless of whether it is enabled or not) for the entity. If TRUE than the current state cannot be changed.
+* **immutable** *boolean* - can be used to prohibit changing the attachment association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
 ``attribute``
 ~~~~~~~~~~~~~
@@ -111,16 +111,16 @@ Provides customer configuration, such as registered customer classes, entity lab
 ``dataaudit``
 ~~~~~~~~~~~~~
 
-The parameter use OroDataAuditBundle to provide changelogs for your entities. Read more about :ref:`Data Audit <entities-data-management-data-audit>` bundle.
+The parameter uses OroDataAuditBundle to provide changelogs for your entities. Read more about :ref:`Data Audit <entities-data-management-data-audit>` bundle.
 
 * **auditable** *boolean* - enables dataaudit for this entity. If it is not specified or set to false, you can enable audit in the UI.
 
-* **immutable** *boolean* - this attribute can be used to prohibit changing the auditable state (no matter whether it is enabled or not) for the entity. If TRUE than the current state cannot be changed.
+* **immutable** *boolean* - this attribute can be used to prohibit changing the auditable state (no matter whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
 ``dictionary``
 ~~~~~~~~~~~~~~
 
-Dictionary entities are responsible for storing a predefined set of values of a certain type and their translations. They values within a dictionary can have a priority or some other data. More information is available in the :ref:`Dictionaries <dev-entities-dictionaries>` topic.
+Dictionary entities store a predefined set of values of a certain type and their translations. The values within a dictionary can have a priority or some other data. More information is available in the :ref:`Dictionaries <dev-entities-dictionaries>` topic.
 
 * **virtual_fields** *string[]* - specifies the list of fields for which the virtual fields can be created. If it is not specified, the virtual fields are created for all fields, except for the identifier ones.
 
@@ -149,7 +149,7 @@ OroDraftBundle enables you to edit and publish a version of the Draftable entity
 
 This attribute configures UI params of the entity.
 
-* **icon** *string* - sets the icon in the admin area. For more information, see |Font Awesome| documentation .
+* **icon** *string* - sets the icon in the admin area. For more information, see |Font Awesome| documentation.
 
 * **entity_alias** *string* - stores an alias generated for an entity and helps to resolve duplicate aliases.
 
@@ -170,7 +170,7 @@ This attribute configures UI params of the entity.
 ``enum``
 ~~~~~~~~
 
-This attribute is only used for `Enum parameters`. For more information, see :ref:`Option Set Fields <book-entities-extended-entities-enums>` .
+This attribute is only used for `Enum parameters`. For more information, see :ref:`Option Set Fields <book-entities-extended-entities-enums>`.
 
 * **code** *string* - a unique identifier of this enum.
 
@@ -199,7 +199,7 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 
 * **table** *string* - is the table name for a custom entity. This is optional attribute. If it is not specified, the table name is generated automatically.
 
-* **inherit** *string* - is the parent class name. You are not usually requires to specify this attribute as it is calculated automatically for regular extend and custom entities. An example of an entity where this attribute is used is EnumValue.
+* **inherit** *string* - is the parent class name. You are not usually required to specify this attribute, as it is calculated automatically for regular extend and custom entities. An example of an entity where this attribute is used is EnumValue.
 
 * **pending_changes** --- when a user changes something that requires schema update, this change is not applied to the configuration, but is stored into "pending_changes" as changeset. The format of changeset is ['scope' => ['field' => ['oldValue', 'newValue'], ...], ...].
 
@@ -237,7 +237,7 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 ``form``
 ~~~~~~~~
 
-This attribute configures :ref:`Custom Form Type for Fields <book-entities-extended-entities-custom-form-type-for-fields>` .
+This attribute configures :ref:`Custom Form Type for Fields <book-entities-extended-entities-custom-form-type-for-fields>`.
 
 * **form_type** *string* - form type for a specific entity.
 
@@ -287,7 +287,7 @@ Example:
 ``ownership``
 ~~~~~~~~~~~~~
 
-The attribute set owner of the entity. For more information, see :ref:`Access Levels and Ownership <backend-security-bundle-example>` and :ref:`Configuring Permissions for Entities <backend-security-bundle-configure-entities>`.
+The attribute sets the owner of the entity. For more information, see :ref:`Access Levels and Ownership <backend-security-bundle-example>` and :ref:`Configuring Permissions for Entities <backend-security-bundle-configure-entities>`.
 
 * **owner_type** *string* - can have the following status:
 
@@ -346,7 +346,7 @@ Other possible attributes for security: **group**, **share_grid**, **field_acl_e
 
 Data sharding allows to improve OroCommerce operation and accelerate database performance when handling big volumes of data. For more information, see :ref:`Configure Price List Sharding <admin-price-list-sharding>`.
 
-* **discrimination_field** *string* - is the name of the sharding field. Example:  "priceList".
+* **discrimination_field** *string* - is the name of the sharding field. Example: "priceList".
 
 ``search``
 ~~~~~~~~~~~~~

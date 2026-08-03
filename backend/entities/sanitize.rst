@@ -3,9 +3,9 @@
 Data Sanitization
 =================
 
-Data sanitization is necessary in cases where sensitive data is not intended to be exposed when it is distributed to environments other than the live one, in particular, the developer's one.
+Data sanitization keeps sensitive data from being exposed when a database is distributed to environments other than the live one, such as a developer's environment.
 
-The sanitization mechanism enables developers to define sanitization rules or raw SQL queries for entities and their fields, allowing those elements to be dumped as ready-to-use SQL queries. These queries are intended for use with database copies that can be distributed to potentially insecure environments.
+The sanitization mechanism lets developers define sanitization rules or raw SQL queries for entities and their fields, then dump those definitions as ready-to-use SQL queries. Run these queries against database copies before distributing them to potentially insecure environments.
 
 .. note:: The supported SQL syntax is for PostgreSQL only. The PostgreSQL server will validate the generated SQL queries for syntax errors. No semantic analysis is performed, so the column and table names specified in raw SQL queries are their authors' responsibility.
 
@@ -18,9 +18,9 @@ To get a list of sanitizing SQL queries, run the following command:
 
    php bin/console oro:sanitize:dump-sql
 
-In this case, SQLs are output to the console.
+This outputs the SQL queries to the console.
 
-Dump can be made directly to a file by specifying it as a command argument:
+To dump directly to a file, pass the file path as a command argument:
 
 .. code-block:: bash
 
@@ -34,24 +34,24 @@ The generated dump will look as follows both in the file and in the console:
         :language: none
         :lines: 1-
 
-This particular example is aimed to truncate the **acme_blog_post** table, then reduce the number of records in **acme_demo_question**, **acme_demo_sms**, and then hide the dates information that should not be exposed. The example contains only a few queries that follow the sanitizing configuration specified in the `Sanitizing Rules Defined in Files`_  and  `Sanitizing Rules Defined in the Entity Configuration`_ topics below.
+This example truncates the **acme_blog_post** table, reduces the number of records in **acme_demo_question** and **acme_demo_sms**, and hides date information that should not be exposed. It contains only a few queries, which follow the sanitizing configuration described in the `Sanitizing Rules Defined in Files`_ and `Sanitizing Rules Defined in the Entity Configuration`_ topics below.
 
-The generated full list of SQL queries will also include queries built on configurations defined in the core bundles of the Oro application.
+The full generated list of SQL queries also includes queries built from configurations defined in the core bundles of the Oro application.
 
-.. note:: If there are any syntax errors in the resulting SQL queries, the customer will be notified. The queries, however, will not be included in the file, even if such file is specified,  but will be output to the console with an indication of invalid queries.
+.. note:: If the resulting SQL queries contain syntax errors, the customer is notified. Such queries are not written to the file, even if a file is specified; instead, they are output to the console and marked as invalid.
 
 .. note:: If there are any errors in the rule configuration caused by incorrect field or entity names, or if a rule is assigned to a field that it cannot process, then the console output will identify the issues and prevent any queries from being executed.
 
 Sanitizing Rule Sources
 -----------------------
 
-There are two source options to specify sanitizing rules.
+You can specify sanitizing rules from two sources.
 
-The first option is to store the rule configuration in the **santize.yml** files, which are placed in **Resources/config/oro** by convention. The :ref:`bundleless <dev-backend-architecture-bundle-less-structure>` approach is also supported for this case. If a rule configuration refers to a specific entity or field, the data from the last file read takes precedence over any previous files.
+The first option stores the rule configuration in **sanitize.yml** files, placed in **Resources/config/oro** by convention. The :ref:`bundleless <dev-backend-architecture-bundle-less-structure>` approach is also supported here. When several files configure the same entity or field, the last file read takes precedence.
 
-The second option is to store the rule configuration within the entity and its field configuration in a dedicated scope. This approach is more complicated to maintain, but it ensures that the sanitized configuration is `fixed`. The configuration set in this way has priority over the one read from a file.
+The second option stores the rule configuration within the entity and its field configuration, in a dedicated scope. This approach is harder to maintain, but it ensures the sanitized configuration is `fixed`. It also takes priority over configuration read from a file.
 
-The file-based approach is easier to maintain and is preferable in most cases. This is the only option if the database table isn't bound to the entity.
+The file-based approach is easier to maintain and is preferable in most cases. It is also the only option when the database table is not bound to an entity.
 
 Sanitizing Rules Defined in Files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -63,15 +63,15 @@ Sanitizing Rules Defined in Files
         :language: yaml
         :lines: 1-
 
-The **raw_sqls** node under the **oro_sanitize** node lists sanitizing SQL queries without binding them to any entity or field.
+The **raw_sqls** node under the **oro_sanitize** node lists sanitizing SQL queries that are not bound to any entity or field.
 
-Items keyed by entity class or table name go under the **entity** node. Each item can have its own **raw_sqls** items, rule definition, and the **fields** section. Such an item can also have only one string value that defines the sanitizing rule. This case is suggested as having a **rule** value set. Note that at least one of the **raw_sqls**, **rule**, or **fields** values must be set.
+Items keyed by entity class or table name go under the **entity** node. Each item can have its own **raw_sqls** items, rule definition, and **fields** section. An item can also be a single string value that defines the sanitizing rule, which is equivalent to setting a **rule** value. At least one of **raw_sqls**, **rule**, or **fields** must be set.
 
-The **fields** items are keyed with the field or column name. The inner of the field element is almost identical to that of the entity element. It has **raw_sqls** elements and a rule definition. Also, as an entity item, it can only have a string value that defines the sanitizing rule. This case is suggested as having a **rule** value set. At least one of the **raw_sqls**, **rule** values must be set.
+The **fields** items are keyed by field or column name. A field element is almost identical to an entity element: it has **raw_sqls** items and a rule definition, and it can also be a single string value that defines the sanitizing rule (equivalent to setting a **rule** value). At least one of **raw_sqls** or **rule** must be set.
 
-The **rule** values are checked against the list of registered rule processors both for entities and fields.
+The **rule** values are checked against the list of registered rule processors, for both entities and fields.
 
-.. note:: If the **rule** or **raw_sqls** configurations for an entity or a field appear in a file while it has already been read from another file, then the new configuration will overwrite the old one.
+.. note:: If a file sets the **rule** or **raw_sqls** configuration for an entity or field that another file has already configured, the new configuration overwrites the old one.
 
 Sanitizing Rules Defined in the Entity Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -87,7 +87,7 @@ Example of adding sanitizing rules to the entity configuration via migration:
         :language: php
         :lines: 1-
 
-This example covers cases where new ordinary and serialized fields are created with sanitizing configuration, and where an existing field is assigned with sanitizing configuration. In cases where the rule requires additional setup, the **rule_options** can also be added. Please note that when updating an existing field, a separate **UpdateEntityConfigFieldValueQuery** instance is required for each configuration value that needs to be updated.
+This example covers creating new ordinary and serialized fields with a sanitizing configuration, and assigning a sanitizing configuration to an existing field. When a rule requires additional setup, add the **rule_options** as well. Note that when updating an existing field, each configuration value you update requires a separate **UpdateEntityConfigFieldValueQuery** instance.
 
 Example of adding sanitizing rules to a newly created entity using a config annotation:
 
@@ -129,7 +129,7 @@ The Oro application settings example for the **email** and **generic_phone** rul
 Guessing Field Sanitizing Rules
 -------------------------------
 
-If no sanitizing rule is directly specified for a field, the rule processor's guessing mechanism tries to find one.
+If a field has no sanitizing rule specified directly, the rule processor's guessing mechanism tries to find one.
 
 The sanitize functionality comes with the following pre-defined field rule processor guessers:
 
@@ -140,7 +140,7 @@ The sanitize functionality comes with the following pre-defined field rule proce
 Custom Sanitizing Rule Processor
 --------------------------------
 
-If it's necessary to define repeating actions in relation to sanitizing actions, the custom sanitizing rule processors can be implemented instead of writing raw SQL queries.
+When sanitizing involves repeating actions, you can implement a custom sanitizing rule processor instead of writing raw SQL queries.
 
 Custom Entity Sanitizing Rule Processor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -165,15 +165,15 @@ The sanitizing rule implementation:
         :language: php
         :lines: 1-
 
-An entity sanitizing rule processor must provide an implementation of the following routines:
+An entity sanitizing rule processor must implement the following routines:
 
-* It must supply the name of the processor. This is the responsibility of the **getProcessorName** static method.
-* It must return valid SQL queries for an entity. This is the responsibility of the **getSqls** methods.
+* **getProcessorName** (static method) --- supplies the name of the processor.
+* **getSqls** --- returns valid SQL queries for an entity.
 
 Custom Field Sanitizing Rule Processor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An example of a field rule sanitizing processor is to implement a simple string reverse action.
+An example of a field rule sanitizing processor is a simple string reverse action.
 
 To define a custom rule processor, add a service that implements **Oro\\Bundle\\SanitizeBundle\\RuleProcessor\\Field\\ProcessorInterface** and has the **oro_sanitize.field_rule.processor** tag:
 
@@ -184,7 +184,7 @@ To define a custom rule processor, add a service that implements **Oro\\Bundle\\
         :language: yaml
         :lines: 2, 119-123
 
-To simplify the definition of a sanitizing rule processor service, the parent abstract definition **oro_sanitize.field_rule.generic_processor** has been prepared. It proposes a common provision for dependency injection.
+To simplify defining a sanitizing rule processor service, use the parent abstract definition **oro_sanitize.field_rule.generic_processor**, which provides a common setup for dependency injection.
 
 The sanitizing rule implementation:
 
@@ -195,16 +195,16 @@ The sanitizing rule implementation:
         :language: php
         :lines: 1-
 
-A field sanitizing rule processor must provide an implementation of the following routines:
+A field sanitizing rule processor must implement the following routines:
 
-* It must supply the name of the processor. This is the responsibility of the **getProcessorName** static method.
-* It must return information about incompatibilities. This is the responsibility of the **getIncompatibilityMessages** method.
-* It must prepare a valid SQL update part for the serialized field. This is the responsibility of the **prepareSerialisedFieldUpdate** method.
-* It must return valid SQL queries for scalar fields. This is the responsibility of the **getSqls** methods.
+* **getProcessorName** (static method) --- supplies the name of the processor.
+* **getIncompatibilityMessages** --- returns information about incompatibilities.
+* **prepareSerialisedFieldUpdate** --- prepares a valid SQL update part for the serialized field.
+* **getSqls** --- returns valid SQL queries for scalar fields.
 
-From the above example, the **prepareSerialisedFieldUpdate** method is wrapped by the **SerializeFieldCheckerTrait** trait method. The trait method performs additional validation to check whether the field being processed is serialized or not. However, this extra validation is unnecessary and is just an additional protection against any misuse of a field rule processor.
+In the example above, the **SerializeFieldCheckerTrait** trait method wraps the **prepareSerialisedFieldUpdate** method. The trait method adds validation to check whether the processed field is serialized. This extra validation is not required; it only guards against misuse of a field rule processor.
 
-It is also possible to reconfigure existing field rule processors using a dedicated wrapping component. Such processors can be defined in the following way:
+You can also reconfigure existing field rule processors using a dedicated wrapping component. Define such processors as follows:
 
 .. oro_integrity_check:: a4e722ef1b06e4775b47e43b0f213c2b37563434
 
@@ -215,4 +215,4 @@ It is also possible to reconfigure existing field rule processors using a dedica
 
 This example defines the toll-free phone-like random number generator.
 
-It's important to name the wrapping processor in the **processor_name** tag's property instead of calling the unsuggested **getProcessorName** method.
+Be sure to name the wrapping processor in the **processor_name** tag property instead of calling the discouraged **getProcessorName** method.

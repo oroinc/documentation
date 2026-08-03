@@ -5,15 +5,15 @@
 Pager Extension
 ===============
 
-This extension provides pagination and is responsible for passing the "pager" settings to the view layer.
-Only paging for ORM datasource is currently implemented. It is always enabled for ORM datasource.
+This extension provides pagination and passes the "pager" settings to the view layer.
+Paging is currently implemented only for the ORM datasource, where it is always enabled.
 
 One Page Pagination
 -------------------
 
-This feature allows rendering all grid content on one page (up to 1000 rows).
+This feature renders all grid content on a single page (up to 1000 rows).
 
-To activate this feature, use option "onePage":
+To activate it, use the "onePage" option:
 
 .. code-block:: none
 

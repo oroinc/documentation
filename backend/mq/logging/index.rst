@@ -3,16 +3,16 @@
 Logging, Error Handling and Debugging
 =====================================
 
-In the process of consuming message queue, you may encounter unexpected errors.
-Below is the list of key highlights of how to handle errors, work with logs and check unplanned issues happened during message processing.
+While consuming a message queue, you may encounter unexpected errors.
+This page highlights how to handle errors, work with logs, and investigate unplanned issues that occur during message processing.
 
 
 Logs, Output, and Verbosity
 ---------------------------
 
-Message Queue Consumer uses |MonologBundle| to output Logs.
-To output message with any of logging levels/priorities, you should inject **LoggerInterface** in your *processor* and log errors the same way as it is described in |Logging with Monolog Symfony doc|.
-Consumer console command has different |verbosity levels| that determine the messages displayed in the output.
+Message Queue Consumer uses |MonologBundle| to output logs.
+To log a message at any level or priority, inject **LoggerInterface** into your *processor* and log errors as described in |Logging with Monolog Symfony doc|.
+The consumer console command has different |verbosity levels| that determine which messages appear in the output.
 
 .. csv-table::
   :header: "Console option", "Output Errors"
@@ -24,8 +24,8 @@ Consumer console command has different |verbosity levels| that determine the mes
   "``-vv``","``LogLevel::INFO`` and higher"
   "``-vvv``","``LogLevel::DEBUG`` and higher"
 
-All the ``LogLevel::ERROR`` logs and higher also will be printed to the ``prod.log`` file.
-You can change minimal log level that should be printed to the ``prod.log`` file using the ``oro:logger:level`` command which temporarily changes the configured logging level.
+``LogLevel::ERROR`` and higher are also printed to the ``prod.log`` file.
+To change the minimum log level printed to ``prod.log``, use the ``oro:logger:level`` command, which temporarily changes the configured logging level.
 For more details, see the :ref:`Temporarily Decrease Log Level <bundle-docs-platform-logger-bundle>` documentation.
 
 .. note:: Keep in mind that ``prod.log`` is just an example. Your log file name may differ depending on your Monolog handlers configuration.
@@ -38,10 +38,10 @@ Sometimes, it is necessary to add your own data to log extra data. For more deta
 Handlers
 ^^^^^^^^
 
-Consumer output is based on |Monolog|, so it supports a stack of handlers that can be used to write the log entries to different locations (e.g., files, database, Slack, etc).
-See more information in the |related Symfony documentation|.
+Consumer output is based on |Monolog|, so it supports a stack of handlers that write log entries to different locations (for example, files, a database, or Slack).
+For more information, see the |related Symfony documentation|.
 
-It is useful when your production is configured with the real-time log service such as |Google Stackdriver|. Read more in the :ref:`How to write logs to Stackdriver <dev-guide-mq-stackdriver>`.
+Handlers are useful when your production environment uses a real-time log service such as |Google Stackdriver|. Read more in the :ref:`How to write logs to Stackdriver <dev-guide-mq-stackdriver>`.
 
 Formatters
 ^^^^^^^^^^
@@ -53,7 +53,7 @@ If your production is configured with a real-time log service (|ELK Stack|), rea
 Console Messages Output
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Message Queue Consumer provides |ConsoleHandler| that listens to console events and writes log messages to the console output depending on the console verbosity. It uses a |ConsoleFormatter| to format the record before logging it. Record format pattern is described below:
+Message Queue Consumer provides |ConsoleHandler| that listens to console events and writes log messages to the console output depending on the console verbosity. It uses a |ConsoleFormatter| to format the record before logging it. The record format pattern is shown below:
 
 .. code-block:: php
 
@@ -91,7 +91,7 @@ Consumer Interruption
 Friendly Consumer Interruption
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Sometimes, during the consuming and processing messages, it is necessary to interrupt consumer to avoid such cases as **not actual cached data**, **maintenance mode** or **memory leaks**. Also, it is better to limit messages or processing time during **debugging** or any other reason when the consumer should be stopped. Below is a list of friendly consumer interruption:
+Sometimes you need to interrupt the consumer while it consumes and processes messages, for example to avoid **not actual cached data**, **maintenance mode**, or **memory leaks**. You may also want to limit the messages or processing time during **debugging**, or for any other reason to stop the consumer. Below is a list of friendly consumer interruptions:
 
 .. csv-table::
   :header: "Output", "Description"
@@ -105,7 +105,7 @@ Sometimes, during the consuming and processing messages, it is necessary to inte
   "``app.WARNING: Consuming interrupted. Queue: ""oro.default"", reason: The cache was invalidated.``","Schema was updated, and cache was cleared"
   "``app.WARNING: Consuming interrupted. Queue: ""oro.default"", reason: The Maintenance mode has been deactivated.``","Maintenance mode was turned off"
 
-The normal interruption occurs only after processing a message. If an event was fired during a message processing, a consumer completes the message processing and interrupts after the processing is done.
+Normal interruption occurs only after a message is processed. If an event fires during message processing, the consumer finishes processing the message and then interrupts.
 
 Unfriendly Consumer Interruption
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -118,9 +118,9 @@ If the consumer is interrupted abruptly, check the prod.log file. It should cont
     app.ERROR: Consuming interrupted, reason: Something went wrong.
 
 
-The **full exception stack trace** will be printed in the console output.
+The **full exception stack trace** is printed in the console output.
 
-To find out the reason for consumer interruption, use the Fingers Crossed Handler in the monolog configuration. It collects all logs in the buffer depending on the configured log level and prints them to prod.log if an error occurs (the error is triggered by the ``console.error`` event).
+To find the reason for the interruption, use the Fingers Crossed Handler in the monolog configuration. It buffers all logs at the configured log level and prints them to prod.log when an error occurs (triggered by the ``console.error`` event).
 
 .. note:: All logs buffer collected before the error occurred will be erased before receiving the related message. The message will contain the logs record.
 
@@ -188,14 +188,14 @@ Declare service:
 Errors and Crashes
 ------------------
 
-When the application is working, and consumer is configured, you may encounter some unforeseen errors.
-A few examples of common errors that may occur in the course of your application's daily operations are listed below:
+When the application is running and the consumer is configured, you may encounter unforeseen errors.
+Some common errors that may occur during your application's daily operations:
 
 * Database related errors (connection errors, accessing errors, query errors, data errors)
 * File system errors (permission errors, no disk space errors)
 * Third-party integrations errors
 
-If one listed error occurs, processor will return **REQUEUE**, and message will be redelivered.
+If one of these errors occurs, the processor returns **REQUEUE** and the message is redelivered.
 
 Error Reporting Level
 ---------------------
@@ -207,7 +207,7 @@ The error reporting level can be changed through customization:
 Profiling
 ---------
 
-Below is a list of key variables that were added to **extra** and will be shown in the output.
+Below is a list of key variables added to **extra** and shown in the output.
 
 .. csv-table::
   :header: "Variable", "Description"

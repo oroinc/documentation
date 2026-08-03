@@ -4,7 +4,7 @@
 Set Up Development Environment for OroPlatform Based Application
 ================================================================
 
-Please follow the steps outlined in the sections below to set up the development environment for Oro application customization tasks.
+Follow the steps in the sections below to set up the development environment for Oro application customization tasks.
 
 .. admonition:: Business Tip
 
@@ -18,11 +18,11 @@ Meet the Hardware and OS Requirements
 
 * **Operating System**
 
-  The recommended OS for Oro applications is Oracle Linux. However, it is possible to set up the development environment on any Linux, Mac, or Windows with WSL2.
+  The recommended OS for Oro applications is Oracle Linux. However, you can set up the development environment on any Linux, Mac, or Windows with WSL2.
 
 * **Disk Drive**
 
-  A solid-state drive (SSD) is recommended. As the Oro application uses many files (vendors, cache), an SSD speeds up everyday development operations much faster than an HDD.
+  A solid-state drive (SSD) is recommended. Because the Oro application uses many files (vendors, cache), an SSD makes everyday development operations much faster than an HDD.
 
 * **Available RAM**
 
@@ -76,7 +76,7 @@ Create a Custom Application
 
    Use the |Github guide on forking a repo| as an illustration of how to fork the Oro application repository.
 
-   .. note:: Pay attention to the |Keep your fork synced| section of this Github guide. You have to set the original Oro application repository as the remote upstream in order to be able to pull improvements and fixes from the original Oro application.
+   .. note:: Pay attention to the |Keep your fork synced| section of this Github guide. Set the original Oro application repository as the remote upstream so you can pull improvements and fixes from it.
 
 2. (optional) Change the **README.md** file in your repo to describe your application.
 
@@ -86,7 +86,7 @@ Create a Custom Application
 
     * **src**: the main folder for your customization code
     * **templates**: the folder for template files
-    * **config**: folder the folder for config files
+    * **config**: the folder for config files
     * **translations**: the folder for translation files
     * **README.MD**: the file for the description of your custom application
     * **composer.json**: the file which you can change if you want to |make a package| from your custom application
@@ -124,7 +124,7 @@ By default, this command shows only errors, but you can increase the verbosity t
 
    php bin/console oro:check-requirements -vv
 
-The command will return 0 on exit if all application requirements are met and 1 if some of the requirements are not fulfilled.
+The command exits with 0 if all application requirements are met, or 1 if some are not.
 
 .. _dev-guide-development-practice-setup-dev-env-install-app:
 
@@ -143,9 +143,9 @@ When the environment is set up, follow the instructions in the :ref:`Installatio
 Create a Custom Bundle
 ----------------------
 
-All OroPlatform-based applications have unique features that facilitate smooth development routines, like autoregistration of bundles and configuration files, for example.
+All OroPlatform-based applications have features that streamline development routines, such as autoregistration of bundles and configuration files.
 
-However, these features assume that all application code is **organized in bundles**. For this reason, you have to create your own bundle for your custom code to perform customization tasks.
+However, these features assume that all application code is **organized in bundles**. For this reason, you must create your own bundle for your custom code to perform customization tasks.
 
 Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` cookbook article to create a bundle in your custom application.
 

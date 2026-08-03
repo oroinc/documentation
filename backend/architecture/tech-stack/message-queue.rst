@@ -8,7 +8,7 @@ The OroMessageQueue bundle integrates the OroMessageQueue component. It adds an 
 
 The MessageQueue component incorporates a message queue in your application via different transports. It contains several layers.
 
-The lowest layer is called Transport and provides an abstraction of the transport protocol. The Consumption layer provides tools to consume messages, such as the CLI command, signal handling, logging, and extensions. It works on top of the transport layer.
+The lowest layer, Transport, abstracts the transport protocol. On top of it, the Consumption layer provides tools to consume messages, such as the CLI command, signal handling, logging, and extensions.
 
 The Client layer provides the ability to start producing/consuming messages with as little configuration as possible.
 
@@ -18,35 +18,35 @@ Structure
 Publish/Subscribe Messaging
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-OroMessageQueue uses *Publish/subscribe messaging*. It means that the sending application publishes (sends) a message with a specific *topic* and a *consumer* finds a subscriber(s) for the topic. Publish/subscribe messaging allows decoupling of the information provider from the consumers of that information. The sending and receiving applications do not need to know anything about each other for the information to be sent and received.
+OroMessageQueue uses *Publish/subscribe messaging*: the sending application publishes (sends) a message with a specific *topic*, and a *consumer* finds the subscriber(s) for that topic. This decouples the information provider from its consumers, so the sending and receiving applications do not need to know anything about each other.
 
 Terminology
 ^^^^^^^^^^^
 
-- **Message** --- An information message which contains a *message topic*  that indicates which *message processor(s)* will process it and a *message body* - an array of parameters required for the processing, for example, an entity id or a channel name. Messages are validated and sent by a *message producer* and put to the "tail" of the *message queue*.   When the message comes up to a *consumer*, its structure is validated,   then passed to a *message processor*. Messages also contain a number of additional settings (see `Message settings <#message-settings>`__).
+- **Message** --- An information message that contains a *message topic*, which indicates the *message processor(s)* that will process it, and a *message body* --- an array of parameters required for processing, for example, an entity id or a channel name. A *message producer* validates and sends messages, placing them at the "tail" of the *message queue*. When a message reaches a *consumer*, its structure is validated and then passed to a *message processor*. Messages also contain additional settings (see `Message settings <#message-settings>`__).
 
-- **Message Queue** --- A FIFO queue that holds *queue messages* until they are processed. There can be one or more queues. If we use only one queue, it is much easier. If there are several queues, it is much more difficult but more flexible sometimes.
+- **Message Queue** --- A FIFO queue that holds *queue messages* until they are processed. There can be one or more queues. A single queue is simpler; several queues are more complex but sometimes more flexible.
 
-- **Consumer** --- A component that takes messages from the queue and processes them. It processes one message at a time: once one message has finished being processed, the next message follows. For each message, the consumer runs a *message processor* subscribed to the  *message topic* (if one exists). There can be more than one consumer and they can work on different servers. It can be done to increase the performance. When implementing a message processor, a developer should remember that *there can be several consumers working on different servers*.
+- **Consumer** --- A component that takes messages from the queue and processes them one at a time: once a message finishes processing, the next one follows. For each message, the consumer runs a *message processor* subscribed to the *message topic* (if one exists). There can be several consumers, and they can run on different servers to increase performance. When implementing a message processor, remember that *there can be several consumers working on different servers*.
 
 - **Message Processor** --- Processes the queue messages (i.e., contains a code that should run when a consumer processes a message with the specified topic).
 
 - **Message Topic** --- A class that contains a topic name (identifier), description, the default priority, and message body structure rules. The topic name indicates which processor should be executed for the message. One processor can subscribe to several topics.
 
-- **Job** --- A message processor can process a message directly or create a job. Jobs are created in the DB and allow monitoring of the processes status, start and end time, and interrupt processes. Also, if we split a process into a set of parallel processes, jobs allow monitoring and controlling of the whole set. See details in the `Jobs <#jobs>`__ section.
+- **Job** --- A message processor can process a message directly or create a job. Jobs are stored in the DB and let you monitor a process's status, start time, and end time, and interrupt it. If you split a process into a set of parallel processes, jobs let you monitor and control the whole set. See the `Jobs <#jobs>`__ section for details.
 
 Structure
 ^^^^^^^^^
 
-You can skip it if you are only going to use the component. The component is split into several layers:
+Skip this section if you are only going to use the component. The component is split into several layers:
 
 - **Transport** --- The transport API provides a common way for programs to create, send, receive and read messages. Inspired by |Java Message Service|.
 
 - **MessageRouter** --- An implementation of |RecipientList| pattern.
 
-- **Consumption** --- the layer provides tools to simplify the consumption of messages. It provides a CLI command, a queue consumer, a message processor, and ways to extend it.
+- **Consumption** --- Provides tools to simplify message consumption: a CLI command, a queue consumer, a message processor, and ways to extend them.
 
-- **Client** --- provides a high level abstraction. It provides an easy-to-use abstraction for producing and processing messages. It also reduces the need to configure a broker.
+- **Client** --- Provides a high-level, easy-to-use abstraction for producing and processing messages. It also reduces the need to configure a broker.
 
 .. figure:: /img/backend/architecture/component_structure_diagram.png
    :alt: The Oro MessageQueue component structure
@@ -56,8 +56,8 @@ You can skip it if you are only going to use the component. The component is spl
 Flow
 ^^^^
 
-It takes the message and multiplies it for every queue where the message should be sent. Next, it forwards each message to the message queue
-driver, which then sends a message using a transport message producer.
+It takes the message and copies it for every queue the message should be sent to. It then forwards each message to the message queue
+driver, which sends it using a transport message producer.
 
 .. figure:: /img/backend/architecture/message_flow_diagram.png
    :alt: The message flow
@@ -76,9 +76,9 @@ Key Classes
 
 - |MessageProducer| - The client's message producer that sends messages
 - |MessageProcessorInterface| - Each class that does the job has to implement this interface
-- |TopicSubscriberInterface| - Kind of EventSubscriberInterface. It allows you to keep a processing code and topics it is subscribed to in one place.
+- |TopicSubscriberInterface| - Similar to EventSubscriberInterface. It lets you keep the processing code and the topics it subscribes to in one place.
 - |ConsumeMessagesCommand| - A command you use to consume messages.
-- |QueueConsumer| - A class that works inside the command and watches out for a new message, and once it gets it, it passes it to the message processor.
+- |QueueConsumer| - A class that runs inside the command, watches for a new message, and passes it to the message processor once it arrives.
 
 Message Processors
 ------------------
@@ -88,7 +88,7 @@ Message Settings
 
 - **Topic** --- Refers to the term 'Message Topic' above.
 - **Body** --- A string or an array with some data.
-- **Priority** --- Can be ``MessagePriority::VERY_LOW``, ``MessagePriority::LOW``, ``MessagePriority::NORMAL``,``MessagePriority::HIGH``, ``MessagePriority::VERY_HIGH``. Recognizing priority is simple: there are five queues, one queue per priority. Consumers process messages from the VERY\_HIGH queue. If there are no messages in the VERY\_HIGH queue, consumers process messages from the HIGH queue, etc. Consequently, if all other queues are empty, the consumer processes messages from the VERY\_LOW queue.
+- **Priority** --- Can be ``MessagePriority::VERY_LOW``, ``MessagePriority::LOW``, ``MessagePriority::NORMAL``, ``MessagePriority::HIGH``, ``MessagePriority::VERY_HIGH``. Recognizing priority is simple: there are five queues, one queue per priority. Consumers process messages from the VERY\_HIGH queue. If there are no messages in the VERY\_HIGH queue, consumers process messages from the HIGH queue, etc. Consequently, if all other queues are empty, the consumer processes messages from the VERY\_LOW queue.
 - **Expire** --- The number of seconds after which the message should be removed from the queue without processing.
 - **Delay** --- The number of seconds the message should be delayed for before it is sent to a queue.
 
@@ -131,7 +131,7 @@ It means that the message was not processed and is removed from the queue becaus
 1. A consumer processes a message (runs the ``process`` method of the
    message processor).
 2. The ``process`` method returns ``self::REQUEUE``.
-3. The consumer puts the message (i.e.,  a copy of the message) to the end of the queue setting the ``redelivery`` flag to true.
+3. The consumer puts the message (i.e., a copy of the message) to the end of the queue setting the ``redelivery`` flag to true.
 4. The consumer continues message processing (the requeued message is at the end of the queue).
 5. When the turn of the requeued message comes, the ``RedeliveryMessageExtension`` works and sets a delay for the requeued message.
 6. The time set in the delay passes, and the message is processed again.
@@ -141,7 +141,7 @@ It means that the message was not processed and is removed from the queue becaus
 1. A consumer processes a message (runs ``process`` method of the message processor).
 2. An exception is thrown inside the ``process`` method.
 3. The consumer logs the exception and puts the message (i.e., a copy of the message) to the end of the queue setting the ``redelivery`` flag to true. Then the consumer fails with the exception.
-4. The consumer should be re-run at this stage. It can be done manually or automatically with |Supervisord|. Manual re-run is preferred for development as developers should review the exceptions thrown on the message processing. An automatic re-run is preferred for regression testing or prod.
+4. The consumer needs to be re-run at this stage, either manually or automatically with |Supervisord|. A manual re-run is preferred for development, since developers should review the exceptions thrown during message processing. An automatic re-run is preferred for regression testing or prod.
 5. The consumer continues message processing (the failing message is at the end of the queue).
 6. When the turn of the failing message comes, the ``RedeliveryMessageExtension`` works and sets a delay for the failing message.
 7. After the delay time passes, the message is processed again and the consumer can fail again.
@@ -159,12 +159,12 @@ Usually, the message flow looks the following way:
 
    Simple Message Flow
 
-However, the flow becomes more complicated if more than one processor subscribes to the same topic. The client's message producer sends a message to a router message processor. It takes the message and searches for current recipients that are interested in such message. Next, it sends a copy of the message to all of them. Each target message processor takes its copy of the message and processes it.
+However, the flow becomes more complicated if more than one processor subscribes to the same topic. The client's message producer sends a message to a router message processor. The router finds the current recipients interested in that message and sends each of them a copy. Each target message processor then takes its copy of the message and processes it.
 
 Simple Way to Run Several Processes in Parallel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let us imagine that we want to run two processes in parallel. In this case, we can create Processor B with the first process and Processor C with the second process. We can then create Processor A, inject Message Producer into it and send messages to Processor B and Processor C. The messages are put in the queue, and when their turn comes, the consumers run processes B and C. That could be done in parallel.
+Suppose we want to run two processes in parallel. We create Processor B for the first process and Processor C for the second. We then create Processor A, inject the Message Producer into it, and send messages to Processor B and Processor C. The messages are put in the queue, and when their turn comes, the consumers run processes B and C --- possibly in parallel.
 
 .. figure:: /img/backend/architecture/simple_parallel_processes_running.png
    :alt: Simple Parallel Process Running Flow
@@ -274,9 +274,9 @@ Code example:
             return self::ACK;
         }
 
-The processor in the example accepts an array of some entity ids and sends a message ``DoSomethingWithEntity`` to each id. The messages are put in the message queue and will be processed when their turn comes. It could be done in parallel if several consumers are running.
+The processor in this example accepts an array of entity ids and sends a ``DoSomethingWithEntity`` message for each id. The messages are put in the message queue and processed when their turn comes --- in parallel if several consumers are running.
 
-The approach is simple and works perfectly well, although it has a few flaws.
+This approach is simple and works well, but it has a few flaws.
 
 - We do not have a way to **monitor** the **status** of processes except for reading log files. In the example above, we do not know how many entities are being processed and how many are still in the queue. We also do not know how many entities were processed successfully and how many received errors during the processing.
 
@@ -432,7 +432,7 @@ Overall, there can be three cases:
 
 -  The processor received a message with an entity id. The entity was found. The process method of the processor changed the entity status and returned self::ACK.
 
--  The processor received a message with an entity id. The entity was not found. This is possible if the entity was deleted when the message was in the queue (i.e. ,after it was sent but before it was processed). This is expected behavior, but the processor rejects the message because the entity does not exist and will not appear later. Please note that we use an error logging level.
+-  The processor received a message with an entity id. The entity was not found. This is possible if the entity was deleted while the message was in the queue (i.e., after it was sent but before it was processed). This is expected behavior, but the processor rejects the message because the entity does not exist and will not appear later. Note that we use an error logging level.
 
 - The processor received a message with an empty entity id. This is unexpected behavior. There are bugs in the code that sent the message. We also reject the message but use critical logging to inform that user intervention is required.
 

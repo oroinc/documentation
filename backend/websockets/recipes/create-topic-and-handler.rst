@@ -3,13 +3,13 @@
 Create a Topic and a Handler for Publishing and Subscribing
 ===========================================================
 
-As discussed in the section on :ref:`WebSockets Architecture <dev-guide-system-websockets-architecture>`, all messages in WebSocket communications in Oro applications are published in a particular topic. Clients can subscribe to messages in the topics that they are interested in.
+As discussed in the section on :ref:`WebSockets Architecture <dev-guide-system-websockets-architecture>`, all WebSocket messages in Oro applications are published to a particular topic. Clients subscribe to the topics they are interested in.
 
-It is called a PubSub pattern, and it is part of the architecture of the Web Application Message Protocol subprotocol of the WebSockets protocol. It is aimed at providing a standard to coordinate real-time messaging between program components in loosely-coupled architectures based on microservices.
+This is the PubSub pattern, part of the Web Application Message Protocol subprotocol of the WebSockets protocol. It provides a standard for coordinating real-time messaging between program components in loosely-coupled, microservice-based architectures.
 
 OroSyncBundle provides a router as part of the WebSocket server that receives messages for topics from publishers and distributes the messages to subscribed clients.
 
-If you decided to create a new topic for WebSocket messages in the Oro application, you have to perform two main tasks:
+To create a new topic for WebSocket messages in the Oro application, perform two main tasks:
 
 * Declare topic with its route.
 * Create one or more handlers to serve events related to this topic.
@@ -17,7 +17,7 @@ If you decided to create a new topic for WebSocket messages in the Oro applicati
 Declare Topic and Its Routing
 -----------------------------
 
-In order to declare a route for the topic, create a **websocket_routing.yml** file in the **Resources/config/oro** directory of your bundle. Fill it in with the following contents:
+To declare a route for the topic, create a **websocket_routing.yml** file in the **Resources/config/oro** directory of your bundle, with the following contents:
 
 .. code-block:: yaml
 
@@ -42,7 +42,7 @@ You can declare parameterized routes as well, e.g.,:
             organization_id:
                 pattern: '\d+'
 
-You will be able to get parameters using **getAttributes()** from *WampRequest* **$request** argument in your topic handler. You can find more information about routing in the documentation of
+You can get parameters using **getAttributes()** from the *WampRequest* **$request** argument in your topic handler. You can find more information about routing in the documentation of
 |GosWebSocketBundle|.
 
 Create and Declare Topic Handlers
@@ -54,7 +54,7 @@ Topic handler is called by the WebSocket server router whenever one of the follo
 * Client has unsubscribed
 * Client has published a message
 
-Each topic handler, according to its logic, decides what to do with the occurred event. For example, in **onSubscribe()**, we can decide whether to allow subscription, and in **onPublish()**, we can broadcast the given message either to all subscribers or just to a restricted list.
+Each topic handler decides what to do with the event based on its logic. For example, in **onSubscribe()**, we can decide whether to allow subscription, and in **onPublish()**, we can broadcast the given message either to all subscribers or just to a restricted list.
 
 Topic handler must implement *Gos\\Bundle\\WebSocketBundle\\Topic\\TopicInterface* and be declared as a service with the **gos_web_socket.topic** tag, e.g.,:
 
@@ -77,7 +77,7 @@ OroSyncBundle provides an abstract class *Oro\\Bundle\\SyncBundle\\Topic\\Abstra
 * **Oro\\Bundle\\SyncBundle\\Topic\\BroadcastTopic** broadcasts every published message to all subscribers. It is required for simple topics like oro_sync.maintenance which just informs about maintenance mode activation.
 * **Oro\\Bundle\\SyncBundle\\Topic\\SecuredTopic** checks if a client is allowed to subscribe to the topic. It broadcasts every published message to all subscribers. It is required for topics like oro_email.event which informs users about new emails.
 
-Therefore, if your topic handler is not intended to contain complex logic, you can use existing handlers, e.g.,:
+Therefore, if your topic handler does not need complex logic, you can use the existing handlers, e.g.,:
 
 .. code-block:: twig
 

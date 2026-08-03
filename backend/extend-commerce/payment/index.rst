@@ -3,12 +3,14 @@ Create Payment Method Integrations
 
 This topic describes how to add a custom payment method to your OroCommerce-based store.
 
-It is recommended to manage payment methods through integrations. Therefore, to create a new payment method:
+We recommend managing payment methods through integrations. To create a new payment method:
 
 - Implement an integration for a payment method
 - Implement a payment method itself
 
-As an example, let us implement a collect on delivery (cash on delivery, COD) payment option. This is a simple method that does not utilize external services (like credit card payment interfaces) and requires just the minimum set of options to operate. Thus, at the end of the topic, you will have the understanding of what steps are necessary to add a workable payment method and the basic template that you can further extend when the need arises.
+As an example, let us implement a collect on delivery (cash on delivery, COD) payment option. This simple method does not utilize external services (like credit card payment interfaces) and needs only the minimum set of options to operate.
+
+By the end of the topic, you will understand the steps required to add a workable payment method and have a basic template that you can extend later.
 
 Create a Bundle
 ---------------
@@ -25,13 +27,13 @@ First, create and enable the CollectOnDeliveryBundle bundle for your payment met
 
 2. To enable the bundle, create Resources/config/oro/bundles.yml in the same directory, with the following content:
 
-.. oro_integrity_check:: 82511b34e6e9d172964f913576e8bfe9ec490dd8
+.. oro_integrity_check:: 8553e6d9704bb5e5a47d60a10817196c460c733b
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/oro/bundles.yml
        :language: yaml
 
 
-   .. hint:: To fully enable a bundle, you need to regenerate the application cache. However, to save time, you can do it after creation of the payment integration.
+   .. hint:: To fully enable a bundle, regenerate the application cache. To save time, you can do this after creating the payment integration.
 
 
 .. tip::
@@ -51,7 +53,7 @@ Define an entity to store the configuration settings of the payment method in th
        :language: php
 
 
-As you can see from the code above, the only two necessary parameters are defined for our collect on delivery payment method: ``labels`` and ``shortLabels``.
+The code above defines the only two parameters our collect on delivery payment method needs: ``labels`` and ``shortLabels``.
 
 .. important::
    When naming DB columns, make sure that the name does not exceed 31 symbols. Pay attention to the acme_coll_on_deliv_short_label name in the following extract:
@@ -67,7 +69,7 @@ As you can see from the code above, the only two necessary parameters are define
 Create a Repository That Returns the Payment Method Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The repository returns on request the configuration settings stored by the entity that you created in the previous step. To add the repository, create <bundle_root>/Entity/Repository/CollectOnDeliverySettingsRepository.php:
+The repository returns the configuration settings stored by the entity you created in the previous step. To add the repository, create <bundle_root>/Entity/Repository/CollectOnDeliverySettingsRepository.php:
 
 .. oro_integrity_check:: 787efc2cd7ee15a312062e756dead80fe1616dd6
 
@@ -79,7 +81,7 @@ The repository returns on request the configuration settings stored by the entit
 Create a User Interface Form for the Payment Method Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When you add an integration via the user interface of the back-office, a form that contains the integration settings appears. In this step, implement the form. To do this, create <bundle_root>/Form/Type/CollectOnDeliverySettingsType.php:
+When you add an integration in the back-office user interface, a form with the integration settings appears. Implement that form now. To do this, create <bundle_root>/Form/Type/CollectOnDeliverySettingsType.php:
 
 .. oro_integrity_check:: 35dfe7b6b71ba9f3769c75c2822c6905333f2583
 
@@ -96,7 +98,7 @@ To start using a service container for your bundle, first create the configurati
 Set up Services with DependencyInjection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/CollectOnDeliveryExtension.php with the following content:
+To set up services, load your configuration file (services.yml) with the DependencyInjection component. To do this, create <bundle_root>/DependencyInjection/CollectOnDeliveryExtension.php with the following content:
 
 .. oro_integrity_check:: 715fd7729c8bf9a67d0964301338b05c8edffb07
 
@@ -108,7 +110,7 @@ To set up services, load your configuration file (services.yml) using the Depend
 Add Translations for the Form Texts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To present the information on the user interface in the user-friendly way, add translations for the payment method settings' names. To do this, create <bundle_root>/Resources/translations/messages.en.yml:
+To present the information in the user interface in a user-friendly way, add translations for the payment method settings' names. To do this, create <bundle_root>/Resources/translations/messages.en.yml:
 
 .. oro_integrity_check:: 417eb36e259f5877eeefb79fca86e9636af16bd9
 
@@ -121,7 +123,7 @@ To present the information on the user interface in the user-friendly way, add t
 Create the Integration Channel Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When you select the type of the integration on the user interface, you will see the name and the icon that you define in this step. To implement a channel type, create <bundle_root>/Integration/CollectOnDeliveryChannelType.php:
+When you select the integration type in the user interface, you see the name and icon that you define in this step. To implement a channel type, create <bundle_root>/Integration/CollectOnDeliveryChannelType.php:
 
 .. oro_integrity_check:: e9508bc51de6cc13c4e4e6553e41ddd27eccba2c
 
@@ -148,7 +150,7 @@ To make sure that the icon is accessible for the web interface, check if it appe
 Create the Integration Transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A transport is generally responsible for how the data is obtained from the external system. While the Collect On Delivery method does not interact with external systems, you still need to define a transport and implement all methods of the TransportInterface for the integration to work properly. To add a transport, create <bundle_root>/Integration/CollectOnDeliveryTransport.php:
+A transport is generally responsible for obtaining data from the external system. The Collect On Delivery method does not interact with external systems, but you still need to define a transport and implement all methods of the TransportInterface for the integration to work properly. To add a transport, create <bundle_root>/Integration/CollectOnDeliveryTransport.php:
 
 .. oro_integrity_check:: df71597905b6ba908430c12cb073f950a3d3be60
 
@@ -173,7 +175,7 @@ To register the channel type and transport, append the following key-values to <
 Add Translations for the Channel Type and Transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The channel type and, in general, transport labels also appear on the user interface (you will not see the transport label for Collect On Delivery). Provide translations for them by appending the <bundle_root>/Resources/translations/messages.en.yml. Now, the messages.en.yml content must look as follows:
+The channel type and transport labels also appear in the user interface (you will not see the transport label for Collect On Delivery). Provide translations for them by appending to <bundle_root>/Resources/translations/messages.en.yml. The messages.en.yml content must now look as follows:
 
 .. oro_integrity_check:: 78a3b6d66b645c81a453332b7aa6cee382ca1ddd
 
@@ -185,7 +187,7 @@ The channel type and, in general, transport labels also appear on the user inter
 Add an Installer
 ^^^^^^^^^^^^^^^^
 
-An installer ensures that upon the application installation, the database will contain the entity that you defined within your bundle.
+An installer ensures that when the application is installed, the database contains the entity you defined in your bundle.
 
 Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic to apply the changes without migration and generate an installer file based on the current schema of the DB.
 
@@ -209,7 +211,7 @@ Check That the Integration is Created Successfully
 
    .. note::
 
-      If you are working in production environment, you have to use the ``--env=prod`` parameter  with the command.
+      If you are working in production environment, you have to use the ``--env=prod`` parameter with the command.
 
 2. Open the user interface and check that the changes have applied and you can add an integration of the Collect On Delivery type.
 
@@ -248,7 +250,7 @@ Configuration Factory Class
 Create a Provider for the Payment Method Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A configuration provider accepts and integration id and returns settings based on it.
+A configuration provider accepts an integration id and returns settings based on it.
 
 
 To add a payment method configuration provider, in the directory <bundle_root>/PaymentMethod/Config/Provider/ create interface CollectOnDeliveryConfigProviderInterface.php and the class CollectOnDeliveryConfigProvider.php that implements this interface:
@@ -421,7 +423,7 @@ Class
          :lines: 57-60
 
 
-   This is where you define which transaction types are associated with the payment method. To keep it simple, for Collect On Delivery a single transaction is defined. Thus, it will work the following way: when a user submits an order, the "purchase" transaction takes place, and the order status becomes "purchased".
+   Here you define which transaction types are associated with the payment method. To keep it simple, Collect On Delivery defines a single transaction: when a user submits an order, the "purchase" transaction takes place and the order status becomes "purchased".
 
    Check |PaymentMethodInterface| for more information on other predefined transactions.
 
@@ -441,7 +443,9 @@ To register the payment method main factory and provider, append the following k
 Define the Payment Method's Layouts for the Storefront
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Layouts provide the html template for the payment method blocks that users see when doing the checkout in the storefront. There are two different blocks: one that users see during selection of the payment method, and the other that they see when reviewing the order. You need to define templates for each of these blocks.
+Layouts provide the html template for the payment method blocks that users see during checkout in the storefront.
+
+There are two blocks: one that users see when selecting the payment method, and one they see when reviewing the order. Define a template for each block.
 
 For this, in the directory <bundle_root>/Resources/views/layouts/default/imports/, create templates for the payment method selection checkout step:
 
@@ -461,7 +465,7 @@ layout.html.twig for the Payment Method Selection
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_options/layout.html.twig
      :language: html
 
-Note that the custom message to appear in the block is defined. Do not forget to add translations in the messages.en.yml for any custom text that you add.
+Note that the custom message to appear in the block is defined. Remember to add translations in messages.en.yml for any custom text that you add.
 
 layout.html for the Payment Method Selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -490,7 +494,7 @@ layout.html for the Order Review
 Define a Translation for the Custom Message
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In step, you have added a custom message to the payment method block. Define a translation for it in the messages.en.yml which now should look like the following:
+Earlier, you added a custom message to the payment method block. Define a translation for it in messages.en.yml, which should now look as follows:
 
 .. oro_integrity_check:: 78a3b6d66b645c81a453332b7aa6cee382ca1ddd
 

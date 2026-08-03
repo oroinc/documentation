@@ -9,15 +9,15 @@ The |OroDataAuditBundle| leverages the Loggable |Doctrine extension1|
 Entity Configuration
 --------------------
 
-DataAudit can only be enabled for Configurable entities. To add a property of an entity to the changelog, enable the audit for the entity itself and specify some fields you want to be logged. To achieve this, use the ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config`` and ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField`` attributes for the entity.
+DataAudit can only be enabled for Configurable entities. To add an entity property to the changelog, enable the audit on the entity itself and specify the fields to log. Use the ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config`` and ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField`` attributes on the entity.
 
 .. caution::
 
-    Note that this annotation will be read-only on installation. On platform updates, this annotation will be read and only saved in the configuration for new entities or for entities that were not Configurable before or have not been changed via the configuration UI.
+    This annotation is read-only on installation. On platform updates, it is read, but saved to the configuration only for new entities, entities that were not Configurable before, or entities not changed via the configuration UI.
 
 .. note::
 
-    An audit can be enabled/disabled per an entire entity or for separate fields in the UI under *System* / *Entities* / *EntityManagement* (attribute  *Auditable*).
+    You can enable or disable an audit for an entire entity or for individual fields in the UI under *System* / *Entities* / *EntityManagement* (attribute *Auditable*).
 
 Example of attribute configuration:
 
@@ -28,7 +28,7 @@ Example of attribute configuration:
         :language: php
         :lines: 1-61, 136
 
-Every time a product's price is modified, the changes are logged in the database. The logging manager not only stores the data being modified but also logs a set of related information:
+Every time a product's price changes, the change is logged in the database. The logging manager stores the modified data along with a set of related information:
 
 * The action corresponding to the operation performed by the Doctrine ORM (one of *create*, *update* and *delete*);
 
@@ -40,14 +40,16 @@ Every time a product's price is modified, the changes are logged in the database
 
 * A string representation of the modified entity. If the entity class implements a ``__toString()`` method, the return value of this method is used. Otherwise, the class name is used.
 
-Each entity object gets its own history. Therefore, changesets get version numbers starting with 1. Each time a new changeset is created, a new version number is created by incrementing the highest existing version number for a particular entity by one.
+Each entity object gets its own history, so changesets are numbered starting from 1. Each new changeset increments the entity's highest existing version number by one.
 
 Additional Fields
 -----------------
 
-You can store additional fields in every entry of the audit log. There are no requirements for the type of data. If the object is passed to an array, it is properly sanitized and converted to the supported format. To clarify the need for additional fields, see the example below:
+You can store additional fields in every audit log entry, with no restrictions on the data type. If the object is passed to an array, it is sanitized and converted to the supported format. The following example shows when additional fields are useful:
 
-Suppose you create an extension that integrates Oro application with an external System A. This integration synchronizes Question entities between systems. However, the identifier of the Question entity is different in Oro application (**id**) and System A (**subject**). System A tracks changes in Oro application calling API audit endpoint and matches Questions on its side by subject, so it will be helpful to attach this field to every response (for example, when a Question is removed). To make it happen, one can use "additional fields". The entity must implement *AuditAdditionalFieldsInterface*.
+Suppose you create an extension that integrates Oro application with an external System A, synchronizing Question entities between the two. The Question identifier differs between them: **id** in Oro application and **subject** in System A.
+
+System A tracks changes in Oro application by calling the API audit endpoint and matches Questions on its side by subject, so attaching that field to every response is helpful (for example, when a Question is removed). To do this, use "additional fields". The entity must implement *AuditAdditionalFieldsInterface*.
 
 In our example, it can look like this:
 
@@ -63,15 +65,15 @@ Segment
 
 DataAuditBundle extends OroSegmentBundle by a new filter type "Data audit".
 
-* This filter can be used to filter records based on if they
+* Use this filter to select records that:
 
-  * had field changed to value (e.g., Contact who changed job position to "Director")
-  * had field changed to value in a period of time (e.g., Contact who changed job position to "Director" within last week)
+  * had a field changed to a value (e.g., Contact who changed job position to "Director")
+  * had a field changed to a value in a period of time (e.g., Contact who changed job position to "Director" within last week)
 
-* Following conditions have to be fulfilled to be able to filter by a specific field
+* To filter by a specific field, these conditions must be met:
 
-  * entity has to be auditable
-  * field has to be auditable
+  * the entity has to be auditable
+  * the field has to be auditable
 
 .. _bundle-docs-platform--data-audit--add-new-types:
 
@@ -104,12 +106,12 @@ To make sure your column is displayed correctly in the grids (segments, reports)
 Browsing the Change History
 ---------------------------
 
-The DataAuditBundle ships with a controller that gives you access to the history of particular entities through your web browser. By default, the route path of the controller is ``/audit/history/{entity}/{id}/{_format}``. For example, if you want to view the history of the product with id 5, use the route path ``/audit/history/product/5``. The bundle will try HTML by default if you do not specify a format. You can override the path by providing your own definition for a route with id ``oro_dataaudit_history``.
+The DataAuditBundle ships with a controller that gives you access to a particular entity's history through your web browser. By default, the controller's route path is ``/audit/history/{entity}/{id}/{_format}``. For example, to view the history of the product with id 5, use ``/audit/history/product/5``. If you do not specify a format, the bundle defaults to HTML. To override the path, provide your own definition for a route with id ``oro_dataaudit_history``.
 
 API
 ---
 
-Along with browsing the audit history with your web browser, you can also access the data stored via an API, which provides methods to receive your stored results via REST API.
+Besides browsing the audit history in your web browser, you can also access the stored data through an API, which provides methods to retrieve your results via REST API.
 
 Both variants provide methods to retrieve:
 
@@ -138,7 +140,7 @@ Route                  Path                                      Use case
 ``oro_api_get_audit``  /api/rest/{version}/audits/{id}.{_format} Retrieve an audit log entry
 ====================== ========================================= ==============================
 
-Currently, JSON is the only supported format the API controller will choose if you omit it. Use the ``latest`` value to access the most recent version of the API. Currently, this is equivalent to ``v1``, the only available version.
+JSON is the only supported format, and the API controller uses it when you omit the format. Use the ``latest`` value to access the most recent version of the API; this currently equals ``v1``, the only available version.
 
 
 .. include:: /include/include-links-dev.rst

@@ -14,7 +14,7 @@ The information below summarizes concepts and tools essential for understanding 
 * **OroElementFactory** creates elements in contexts.
 * |SymfonyExtension| provides integration with Symfony and Mink driver for Symfony application.
 * **Oro\\Bundle\\TestFrameworkBundle\\Behat\\ServiceContainer\\OroTestFrameworkExtension** provides integration with Oro BAP based applications.
-* **Selenium2Driver** Selenium2Driver provides a bridge for the WebDriver's wire protocol.
+* **Selenium2Driver** provides a bridge for the WebDriver's wire protocol.
 * |ChromeDriver| is an open-source tool for automated testing of web apps across many browsers. It provides capabilities for navigating web pages, user input, JavaScript execution, and more.
 
 .. _behat-conventions:
@@ -78,7 +78,7 @@ This section summarizes the limitations and agreements important for shared test
   - Minimized routine development actions (e.g., you do not have to load fixtures for every scenario; instead, you reuse the available outcomes of the previous scenarios).
   - Easy handling of the application states that are difficult to emulate with data fixtures only (e.g., when adding new entity fields in the UI).
 
-  By coupling scenarios, the ease of debugging and bug localization get sacrificed. It is challenging to debug UI features and the scenarios that happen after several preliminary scenarios. The longer the line, the harder it is to isolate the issue. Once the issue occurs, you have to spend additional time localizing it and identifying the root cause (e.g., the delete scenario may malfunction vs. the delete scenario may fail due to the issues in the preliminary scenario, for example, create). The most critical actions/scenarios usually precede the less critical ones.
+  Coupling scenarios sacrifices the ease of debugging and bug localization. UI features and scenarios that run after several preliminary scenarios are challenging to debug, and the longer the line, the harder it is to isolate the issue. Once an issue occurs, you have to spend additional time localizing it and identifying the root cause (e.g., the delete scenario may malfunction vs. the delete scenario may fail due to issues in a preliminary scenario, such as create). The most critical actions/scenarios usually precede the less critical ones.
 
 - **Use semantic yml fixtures**
 
@@ -175,7 +175,7 @@ Install dev dependencies using the following command:
 Application Initial State
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Oro application's initial state is when the application enters after installation without demo data. Scenarios that test features should rely on this state and create any data necessary for additional verifications. Data may be created by the scenario steps or as :ref:`fixtures <behat-fixtures>`.
+The Oro application's initial state is the state it enters after installation without demo data. Scenarios that test features should rely on this state and create any data necessary for additional verifications. Data may be created by the scenario steps or as :ref:`fixtures <behat-fixtures>`.
 
 Install the application without demo data in production mode using the following command:
 
@@ -228,7 +228,7 @@ Run Tests
 
 Before you begin, familiarize yourself with behat arguments and options. Run ``php bin/behat --help`` for a detailed description.
 
-When the Oro application is installed without demo data and is running, and the ChromeDriver is running, you can start running the behat tests by feature from the root of the application. You can use one of the following commands.
+When the Oro application is installed without demo data and running, and ChromeDriver is running, you can run the behat tests by feature from the root of the application, using one of the following commands.
 
 Run the feature test scenario:
 
@@ -257,7 +257,7 @@ Every bundle has its dedicated test suite that can be run separately:
 Running Consumers
 ~~~~~~~~~~~~~~~~~
 
-To run multiple consumers during behat tests, you can use the ``--consumers`` option in ``php bin/behat``, which applies an integer argument, for example:
+To run multiple consumers during behat tests, use the ``--consumers`` option in ``php bin/behat`` with an integer argument, for example:
 
 .. code-block:: none
 
@@ -293,7 +293,7 @@ Application container can be used by the injected Kernel in your Context after y
         }
     }
 
-Moreover, you can inject into the behat context dependencies from either behat or application containers by declaring it as a service in ``services.yml`` located beside the ``behat.yml``:
+You can also inject dependencies from either the behat or application container into the behat context by declaring it as a service in ``services.yml`` located beside the ``behat.yml``:
 
 .. code-block:: yaml
     :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
@@ -469,7 +469,7 @@ Every isolator must implement the ``Oro\Bundle\TestFrameworkBundle\Behat\Isolati
 Disable Feature Isolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can disable feature isolation by adding the ``--skip-isolators`` option to the bin/behat console command. As a result, the Behat no longer takes notice of the database, cache, and other layers' isolation. This means the application state is not restored to the initial state, and the result is preserved after the test.
+You can disable feature isolation by adding the ``--skip-isolators`` option to the bin/behat console command. Behat then stops isolating the database, cache, and other layers. As a result, the application state is not restored to the initial state, and the result is preserved after the test.
 
 .. _behat-disable-message-consumer:
 
@@ -532,7 +532,7 @@ where:
 Mapping Form Fields
 ^^^^^^^^^^^^^^^^^^^
 
-By default, tests use the |named field selector| to map form fields. Name field selector searched for the field by its id, name, label, or placeholder. You are free to use any selector for form fields mapping or wrap an element into the particular behat element.
+By default, tests use the |named field selector| to map form fields. The named field selector searches for the field by its id, name, label, or placeholder. You are free to use any selector for form field mapping or wrap an element into a particular behat element.
 
 .. code-block:: yaml
 

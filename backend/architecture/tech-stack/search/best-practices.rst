@@ -6,16 +6,18 @@ Best Practices
 Use Data Denormalization
 ------------------------
 
-The search index is document-based storage that does not support relations. Instead, you can denormalize them and store related information at the main entity level. This way, you can increase search speed.
+The search index is document-based storage and does not support relations. Instead, denormalize the related data and store it at the main entity level. This increases search speed.
 
 For example, if the Product entity is related to the Brand entity, then the Product document in the search index can store some brand information (ID, label, etc.), which might require an effective and fast search.
 
 Isolate Search Index Interaction Inside Search Repositories
 -----------------------------------------------------------
 
-Every time you want to request custom information from the search index, make sure you get it via the search repository. The search repository provides a storage abstraction layer (similar to the Doctrine entity repositories), so the business logic is aware of the repository but not the search index structure.
+Always request custom information from the search index through the search repository. The search repository provides a storage abstraction layer (similar to the Doctrine entity repositories), so the business logic is aware of the repository but not the search index structure.
 
-If you want to create a repository, create a new class extended from the appropriate search repository class (``Oro\Bundle\SearchBundle\Query\SearchRepository`` for standard index type or ``Oro\Bundle\WebsiteSearchBundle\Query\WebsiteSearchRepository`` for website index type). Next, declare it as a service, add custom methods, and inject it into the required business logic service. Search repositories work with high-level search query object representations. You can optionally pass an entity name, as well. In this case, queries will be, by default, executed only for a specific entity.
+To create a repository, extend the appropriate search repository class (``Oro\Bundle\SearchBundle\Query\SearchRepository`` for the standard index type or ``Oro\Bundle\WebsiteSearchBundle\Query\WebsiteSearchRepository`` for the website index type). Then declare it as a service, add custom methods, and inject it into the required business logic service.
+
+Search repositories work with high-level search query object representations. You can optionally pass an entity name; queries then execute only for that entity by default.
 
 Here is an example of the search repository for the standard index type and its definition:
 
@@ -58,12 +60,12 @@ If you need to perform a search request, encapsulate it in the repository.
 
 If you need to trigger reindexation, remember that most of the data is reindexed automatically; if you need to do manual reindexation, you can usually do it on a higher level, e.g., trigger an event at the website index type.
 
-If, for some reason, you still have to work directly with the search engine or search indexer - please, encapsulate all your logic inside the intermediate storage layer service (similar to the search repository) and use it at the business logic layer. This way, the business logic will be aware of storage but not the search index's structure.
+If you still have to work directly with the search engine or search indexer, encapsulate all your logic inside an intermediate storage layer service (similar to the search repository) and use it at the business logic layer. This way, the business logic is aware of storage but not the search index's structure.
 
 Debugging
 ---------
 
-If you need to debug some search requests/indexations, but do not know an entry point, then you can set a breakpoint in the appropriate engine/indexer (or all engines/indexers). This way, after you catch the breakpoint, you will be able to track the whole stack trace. The most commonly used method for a search engine is **search**; the most commonly used methods for a search indexer are **save and delete**.
+To debug search requests or indexations when you do not know an entry point, set a breakpoint in the appropriate engine/indexer (or all engines/indexers). After you catch the breakpoint, you can track the whole stack trace. The most commonly used method for a search engine is **search**; the most commonly used methods for a search indexer are **save and delete**.
 
 Most of the indexations happen asynchronously. To debug real indexation, set the breakpoint at the appropriate indexer, run the message queue consumer in debug mode to catch the breakpoint, and then trigger asynchronous indexation.
 
@@ -103,7 +105,7 @@ Below are recommendations for working with the search index with large amounts o
 * **Use Elasticsearch engine** --- it is faster and performs much better than the ORM search engine in case of considerable data.
 * **Use language optimization** --- if you know what languages are used in your application, then you can optimize the index structure and data according to these languages; see the list of Elasticsearch language analyzers.
 * **Keep the search index on a separate server** --- this way, it will not be affected by the main relational DB load.
-* **Use Elasticseach cluster if needed** --- if your index is too big to keep on one server and/or you want to balance the search index load between several servers, then you can use Elasticseach cluster.
+* **Use Elasticsearch cluster if needed** --- if your index is too big to keep on one server and/or you want to balance the search index load between several servers, then you can use Elasticsearch cluster.
 * **Increase RAM** --- the recommended amount of RAM for the search index is half the index size or more, i.e., if you have 50GB of index data, it is recommended to have 25GB+ of RAM.
 * **Use SSD** --- this type of disk provides faster read/write access than HDD and allows faster processing of parts of the search index data.
 

@@ -13,9 +13,9 @@ Initialize a PostgreSQL Database Cluster
 Enable Password Protected PostgreSQL Authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By default, PostgreSQL is configured to use `ident` authentication.
+By default, PostgreSQL uses `ident` authentication.
 
-To use the password-based authentication instead, replace the `ident` with the `md5` in the `pg_hba.conf` file.
+To use password-based authentication instead, replace `ident` with `md5` in the `pg_hba.conf` file.
 
 Open the file */var/lib/pgsql/data/pg_hba.conf* and change the following strings:
 
@@ -34,7 +34,7 @@ to match these ones:
 Change the Password for the *postgres* User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To set the password for the *postgres* user to the new secure one, run the following commands:
+To set a new secure password for the *postgres* user, run the following commands:
 
 .. code-block:: bash
 
@@ -48,7 +48,7 @@ To set the password for the *postgres* user to the new secure one, run the follo
 Create a Database for the Oro Application
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To create the `oro` database that will be used by the Oro application, run the following commands:
+To create the `oro` database for the Oro application, run the following commands:
 
 .. code-block:: bash
 

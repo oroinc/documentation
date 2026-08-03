@@ -4,7 +4,9 @@
 Workflow Events
 ===============
 
-The platform provides several events that are triggered at various points in the workflow lifecycle. These events allow developers to hook into the workflow execution process and execute custom logic at specific points in the workflow. This is particularly useful for adding additional business logic, sending notifications, or updating external systems based on workflow activity. Special guard events can be used to prevent the transition from being executed or displayed.
+The platform triggers several events at various points in the workflow lifecycle. These events let you hook into workflow execution and run custom logic at specific points --- for example, to add business logic, send notifications, or update external systems based on workflow activity.
+
+Special guard events can prevent a transition from being executed or displayed.
 
 Available Events
 ----------------
@@ -83,7 +85,7 @@ The two events being dispatched are:
 oro_workflow.enter
 ^^^^^^^^^^^^^^^^^^
 
-This event is triggered right before the entity is entering the new step.
+This event is triggered right before the entity enters the new step.
 
 The three events being dispatched are:
 
@@ -94,7 +96,7 @@ The three events being dispatched are:
 oro_workflow.entered
 ^^^^^^^^^^^^^^^^^^^^
 
-This event is triggered right after the entity is entered the new step.
+This event is triggered right after the entity has entered the new step.
 
 The three events being dispatched are:
 
@@ -105,7 +107,7 @@ The three events being dispatched are:
 oro_workflow.transition.assemble
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This event is fired just before the transition model is assembled. It allows to hook into the transition build process and modify transition options.
+This event fires just before the transition model is assembled. It lets you hook into the transition build process and modify transition options.
 
 For example, it can be used to add a form to the transition based on some conditions.
 
@@ -195,9 +197,9 @@ Here is an example of how to enable logging every time an "opportunity_flow" wor
 Guard Events
 ------------
 
-There are 4 events that may be used to disable transition: ``oro_workflow.pre_announce``, ``oro_workflow.announce``, ``oro_workflow.pre_guard`` and ``oro_workflow.guard``. *Announce* events may be used to hide the transition button when *guard* events are used to prevent transition execution.
+Four events can disable a transition: ``oro_workflow.pre_announce``, ``oro_workflow.announce``, ``oro_workflow.pre_guard`` and ``oro_workflow.guard``. Use *announce* events to hide the transition button and *guard* events to prevent transition execution.
 
-.. note:: Please note that precondition checks (and announce events) are performed before transition button rendering and during condition checks before execution, so disabling transition availability in the announce event listener will also disable transition execution.
+.. note:: Precondition checks (and announce events) run before transition button rendering and again during condition checks before execution. As a result, disabling transition availability in the announce event listener also disables transition execution.
 
 Let's review an example of the "Close As Won" transition being blocked when the Budget Amount is less than 100.
 
@@ -236,7 +238,7 @@ Let's review an example of the "Close As Won" transition being blocked when the 
 Form Events
 -----------
 
-In addition to workflow events there is a set of form specific events that are triggered on workflow attributes form pre-set data.
+In addition to workflow events, the platform triggers a set of form-specific events on the workflow attributes form pre-set data.
 
 oro_workflow.transition_form_init
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -259,7 +261,9 @@ This event is triggered when workflow attributes form is initialized
 Extending Workflow Configuration
 --------------------------------
 
-Sometimes, it's necessary to change the workflow configuration itself. This can be done using Workflow Definition Builder extensions. These extensions are called during the configuration-building process when loading workflow definitions. To create a new extension service, it must implement the ``WorkflowDefinitionBuilderExtensionInterface`` and be tagged with the ``oro.workflow.definition_builder.extension`` tag.
+Sometimes you need to change the workflow configuration itself. Use Workflow Definition Builder extensions for this. The platform calls these extensions during the configuration-building process when loading workflow definitions.
+
+To create a new extension service, implement the ``WorkflowDefinitionBuilderExtensionInterface`` and tag it with the ``oro.workflow.definition_builder.extension`` tag.
 
 Let's create an example where a new attribute is added to the workflow and used at the transition form.
 

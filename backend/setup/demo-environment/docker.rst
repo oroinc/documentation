@@ -31,8 +31,8 @@ Run Application
 
 2. Run application containers
 
-   The configuration is entirely predefined, and you can only change the name of the domain where the application will be located.
-   By default, it is `oro.demo`. If you need to change the domain, create the `.env` file with content `ORO_APP_DOMAIN=my-custom-domain.demo`.
+   The configuration is entirely predefined; the only thing you can change is the application's domain.
+   The default is `oro.demo`. To change it, create a `.env` file with the content `ORO_APP_DOMAIN=my-custom-domain.demo`.
 
    Run init service
 
@@ -79,12 +79,18 @@ Run Application
 
 4. Open the application in a browser: ``http://oro.demo``.
 
-   To access the back-office, use `admin` as both login and password. To access the storefront, use the credentials of the predefined demo user roles. To log in as a buyer, use `BrandaJSanborn@example.org` both as your login and password. To log in as a manager, use `AmandaRCole@example.org` both as your login and password.
+   - To access the back-office, use `admin` as both login and password.
+
+   - To access the storefront, use the credentials of the predefined demo user roles:
+
+     - To log in as a buyer, use `BrandaJSanborn@example.org` both as your login and password.
+
+     - To log in as a manager, use `AmandaRCole@example.org` both as your login and password.
 
 Access the Mail Catcher
 -----------------------
 
-|Smtp service| is additionally launched so you can send emails from the application. It receives all mail and has a web interface that enables you to view it and perform the required actions. The web interface for the mail catcher is available at the address http://oro.demo/mailcatcher.
+|Smtp service| is additionally launched so you can send emails from the application. It receives all mail and provides a web interface for viewing it and performing the required actions. The mail catcher web interface is available at http://oro.demo/mailcatcher.
 
 Stop the Application
 --------------------
@@ -101,7 +107,7 @@ If you deployed the application before, pull up fresh images with `docker-compos
 About This Project
 ------------------
 
-This repository provides a Docker Compose configuration file (compose.yaml) and demonstrates how to run different applications and required services in containers.Oro Inc. provides images with applications Community Edition in public Docker Hub.
+This repository provides a Docker Compose configuration file (compose.yaml) and demonstrates how to run different applications and required services in containers.Oro Inc. provides Community Edition application images on public Docker Hub.
 
 .. important:: This deployment is NOT intended for a production environment.
 
@@ -112,8 +118,8 @@ This repository provides a Docker Compose configuration file (compose.yaml) and 
 * OroPlatform Community Edition: |docker.io/oroinc/platform-application|
 * OroCommerce Community Edition for Germany: |docker.io/oroinc/commerce-crm-application-de|
 
-One image is used to run containers in several roles: web server, php-fpm, consumer, WebSocket server, and cron service.
-All these services must be running, and the PostgreSQL database must be prepared for a full-fledged application.
+One image runs containers in several roles: web server, php-fpm, consumer, WebSocket server, and cron service.
+A full-fledged application requires all these services running and the PostgreSQL database prepared.
 
 
 .. admonition:: Business Tip

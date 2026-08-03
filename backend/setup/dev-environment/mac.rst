@@ -50,7 +50,7 @@ Environment Setup
       source ~/.bash_profile
       symfony local:server:ca:install
 
-7. Restart the terminal and web browser to get them ready.
+7. Restart the terminal and web browser.
 
 What's Next
 -----------

@@ -71,6 +71,8 @@ The complete configuration options available in the `Resources/config/oro/organi
 
 You can also see this information by running the ``php bin/console oro:organization-type:config:dump-reference`` command.
 
-There are two strategies to handle features, ``exclude_list`` and ``include_list``.
-The ``exclude_list`` strategy is used by default, granting access to all features not specified in the lists of enabled and disabled features.
-The ``include_list`` strategy denies access to all features not specified in the lists of enabled and disabled features.
+Two strategies handle features: ``exclude_list`` and ``include_list``.
+
+``exclude_list`` is the default. It grants access to all features except those listed in the enabled and disabled features.
+
+``include_list`` denies access to all features except those listed in the enabled and disabled features.
