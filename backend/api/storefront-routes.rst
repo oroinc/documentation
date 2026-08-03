@@ -3,19 +3,19 @@
 Storefront Routes
 =================
 
-Storefront API has an API resource ``routes`` that returns the information about the storefront URLs.
-This information includes a resource type and the relative URL of an API resource that you can use to get the data.
+Storefront API has an API resource ``routes`` that returns information about the storefront URLs.
+This information includes a resource type and the relative URL of an API resource you can use to get the data.
 
 Two types of resolvers are used to provide this information:
 
  - the resource type resolver, that is represented by |ResourceTypeResolverInterface|;
  - the API URL resolver that is represented by |ResourceApiUrlResolverInterface|.
 
-The resource type resolvers should be registered in the service container with a tag ``oro_frontend.api.resource_type_resolver``,
-and optionally, the ``routeName`` tag attribute can be used to specify the route for which the resolver is applicable.
+Register the resource type resolvers in the service container with the ``oro_frontend.api.resource_type_resolver`` tag.
+Optionally, use the ``routeName`` tag attribute to specify the route the resolver applies to.
 
-The API URL resolvers should be registered in the service container with a tag ``oro_frontend.api.resource_api_url_resolver``,
-and optionally, the ``routeName`` tag attribute can be used to specify the route for which the resolver is applicable.
+Register the API URL resolvers in the service container with the ``oro_frontend.api.resource_api_url_resolver`` tag.
+Optionally, use the ``routeName`` tag attribute to specify the route the resolver applies to.
 
 An example of resolvers registration in the `services_api.yml` file:
 

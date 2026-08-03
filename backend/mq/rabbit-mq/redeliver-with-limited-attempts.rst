@@ -20,7 +20,7 @@ Use the commands provided by the :ref:`RabbitMQ management plugin <op-structure-
 Create oro.unprocessed Queue
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create an ``oro.unprocessed`` queue that should act as a storage with messages that failed more than the maximum available attempts.
+Create an ``oro.unprocessed`` queue to store messages that failed more than the maximum available attempts.
 
 .. code-block:: none
 
@@ -30,7 +30,7 @@ Create an ``oro.unprocessed`` queue that should act as a storage with messages t
 Re-Declare oro.default.delayed Exchange
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Re-declare the ``oro.default.delayed`` exchange to make sure that it is declared and does not have any additional bindings.
+Re-declare the ``oro.default.delayed`` exchange to make sure it is declared and has no additional bindings.
 
 .. code-block:: none
 
@@ -44,7 +44,7 @@ Re-declare the ``oro.default.delayed`` exchange to make sure that it is declared
 Declare oro.redelivery.control Exchange
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After a delay timeout, when re-delivered messages pass to ``oro.default.delayed`` exchange, the exchange is routed to the ``oro.redelivery.control`` that checks the number of redelivered attempts.
+After a delay timeout, re-delivered messages pass to the ``oro.default.delayed`` exchange, which routes them to ``oro.redelivery.control`` to check the number of redelivered attempts.
 
 .. code-block:: none
 
@@ -58,7 +58,7 @@ After a delay timeout, when re-delivered messages pass to ``oro.default.delayed`
 Configure Count of Re-Delivery Attempts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Set the maximum number of message re-delivery attempts. There are 5 in the example below. 
+Set the maximum number of message re-delivery attempts. The example below uses 5.
 
 .. code-block:: none
 
@@ -71,13 +71,13 @@ What Next?
 
 From time to time, collect metrics on how many messages there are in the ``oro.unprocessed`` queue.
 If the number of messages grows, check the application logs and fix the problem manually.
-When a problem is fixed, route the  messages using the |RabbitMQ Shovel Plugin| back to the ``oro.default`` exchange.
+Once you fix a problem, route the messages back to the ``oro.default`` exchange using the |RabbitMQ Shovel Plugin|.
 
 Possible Problems
 -----------------
 
-If the current configuration was applied to an application that had been in production for some time,
-some of messages can contain headers with ``oro-redeliver-count`` more that **5**.
+If you applied the current configuration to an application that had been in production for some time,
+some messages can contain headers with ``oro-redeliver-count`` more than **5**.
 In this case, manually check the message redelivery count:
 
 .. code-block:: none

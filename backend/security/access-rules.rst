@@ -3,21 +3,20 @@
 Access Rules
 ============
 
-Symfony security system allows checking access to an existing object by the Authorization Checker's `isGranted` method.
+The Symfony security system lets you check access to an existing object with the Authorization Checker's `isGranted` method.
 
 You can also check access to queries, such as Doctrine ORM query or Search query.
 
 Protect ORM Queries
 -------------------
 
-To protect ORM queries, an |AclHelper| was implemented. With its help, when you call the `apply` method of the ACL helper with ORM Query Builder or ORM Query, the |AccessRuleWalker| is used
-to process the query. This walker modifies the query's AST following the restrictions imposed by access rules.
+To protect ORM queries, use the |AclHelper|. When you call its `apply` method with an ORM Query Builder or ORM Query, the |AccessRuleWalker| processes the query. This walker modifies the query's AST to enforce the restrictions imposed by access rules.
 
 An access rule is a class that implements the |AccessRuleInterface| interface.
 
 Each access rule modifies expressions of the |Criteria object|.
 
-You can change the behavior of access rules and AccessRuleWalker with additional options that you can set as the third parameter of the `apply` method.
+You can change the behavior of access rules and the AccessRuleWalker with additional options, set as the third parameter of the `apply` method.
 
 The options that can change the behavior of AccessRuleWalker:
 
@@ -31,7 +30,7 @@ The options that can change the behavior of access rules:
 - **aclParentClass** --- Contains the parent class name of the current joined entity. This option is used together with the check owner option.
 - **aclParentField** --- Contains the field name by which the current entity is joined. This option is used together with the check owner option.
 - **availableOwnerEnable** --- Enables the |AvailableOwnerAccessRule|. The default value is `false`.
-- **availableOwnerTargetEntityClass**  --- The target class name whose access level should be used for the check in |AvailableOwnerAccessRule|.
+- **availableOwnerTargetEntityClass** --- The target class name whose access level should be used for the check in |AvailableOwnerAccessRule|.
 - **availableOwnerCurrentOwner** --- The owner's ID that should be available even if the ACL check denies access.
 
 To find all possible options, see classes that implement |AccessRuleInterface|.
@@ -119,16 +118,16 @@ The `oro_security.access_rule` tag options that can be used for any access rule:
 - `loggedUserClass` - the FQCN of a logged-in user.
 
 .. note::
-    You can use The`oro_security.access_rule` tag with options specific to a particular access rule. Using options for the `oro_security.access_rule` tag is preferable to implementing logic in the `isApplicable()` method because it allows not to initialize a rule service if it is not applicable. The `isApplicable()` method is intended for complex logic that cannot be achieved via the tag options.
+    You can also use the `oro_security.access_rule` tag with options specific to a particular access rule. Prefer tag options over logic in the `isApplicable()` method, because they let you avoid initializing a rule service when it does not apply. Use the `isApplicable()` method only for complex logic that the tag options cannot express.
 
-To add additional options you need to create a class that implements |AccessRuleOptionMatcherInterface| and decorate the service `oro_security.access_rule_option_matcher`.
+To add additional options, create a class that implements |AccessRuleOptionMatcherInterface| and decorate the `oro_security.access_rule_option_matcher` service.
 
 Access Rules Visitor
 --------------------
 
 If you want to apply access rule expressions to your type of query, use a class that extends an abstract |Visitor|.
 
-For example,|AstVisitor| converts access rule expressions to Doctrine AST conditions.
+For example, |AstVisitor| converts access rule expressions to Doctrine AST conditions.
 
 Check |AccessRuleWalker| for details on how to use this visitor.
 

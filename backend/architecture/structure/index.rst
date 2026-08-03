@@ -8,7 +8,7 @@ Application Structure
 Source Code Repositories
 ------------------------
 
-Source code of the Community Editions of OroPlatform, OroCRM, and OroCommerce applications is open and is available for contribution and collaboration on GitHub in the |OroInc| organization.
+Source code of the Community Editions of OroPlatform, OroCRM, and OroCommerce applications is open and available for contribution and collaboration on GitHub in the |OroInc| organization.
 
 The repositories in the OroInc organization may vary by type and contain the source code of the projects of various scales:
 
@@ -22,15 +22,23 @@ You can use any Oro application and packages in the following modes:
 * Oro application or Oro package source code may be used as a base for a custom application. Clone the Oro application repository, fork it, or download the source code as an archive and customize and extend the code as necessary.
 * Oro packages may be embedded as ready-to-use features into any application. Create your own application from scratch and add Oro packages as composer dependencies. Read more about composer dependency manager in the `Distribution Model`_ section below.
 
-An **application** repository stores a complete solution created to automate activities for the business domain (e.g., customer relationship management, B2B commerce, marketing automation, etc.) Oro application provides a set of features and delivers many benefits to the end user. Besides the source code that implements business logic for the application features, Oro application repositories contain minimal configuration and initialization scripts for installing and running the Oro application in the dev, test, or prod environment.
+An **application** repository stores a complete solution created to automate activities for the business domain (e.g., customer relationship management, B2B commerce, marketing automation, etc.). An Oro application provides a set of features and delivers many benefits to the end user.
+
+Besides the source code that implements business logic for the application features, an Oro application repository contains minimal configuration and initialization scripts for installing and running the application in the dev, test, or prod environment.
 
 Sample applications: |OroCRM|, |OroCommerce|, |OroPlatform|.
 
-A **package** repository contains a module that groups a set of ready-to-use features, usually those related to a particular business subdomain, and may be included in any Oro application. To enable an Oro package in the Oro application, add it as a dependency/prerequisite before you start the Oro application installation. As long as the Oro application uses the Symfony framework, packages may contain |Bundles|.
+A **package** repository contains a module that groups a set of ready-to-use features, usually those related to a particular business subdomain, and may be included in any Oro application.
+
+To enable an Oro package in an Oro application, add it as a dependency/prerequisite before you start the application installation.
+
+Since the Oro application uses the Symfony framework, packages may contain |Bundles|.
 
 For example, the |Marketing| package is, by default, enabled in Oro applications.
 
-A **component** repository contains the source code of the reusable development module that enables a set of commonly used functions that you can use as third-party libraries without the Oro application. Rather than a complete business feature, the Oro component can handle generic functionality that is not bound to the business domain. Component repositories are typically published as read-only subtree distributions of independent package bundles or components.
+A **component** repository contains the source code of a reusable development module. It provides a set of commonly used functions that you can use as third-party libraries without the Oro application.
+
+Rather than a complete business feature, an Oro component handles generic functionality that is not bound to the business domain. Component repositories are typically published as read-only subtree distributions of independent package bundles or components.
 
 Sample component: |OroMessageQueueBundle|
 
@@ -39,7 +47,7 @@ You can find a complete list of OroInc public repositories at |https://github.co
 Distribution Model
 ------------------
 
-Oro application uses |composer| as an application-level dependency manager. It is widely used and popular in the PHP development community.
+Oro application uses |composer| as an application-level dependency manager. Composer is widely used in the PHP development community.
 
 With composer, you can manage dependencies by editing the composer.json file (see |composer.json| sample and |composer documentation| for more information).
 
@@ -128,14 +136,16 @@ From a file system perspective, the Oro PHP application contains a structured co
 Oro Package File System Structure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A package contains reusable code for Oro applications. During the Oro application installation, the package code is installed in the application's vendor folder. It should not be modified by customization as it is overwritten with the original version upon the system upgrade. The source code of the package includes:
+A package contains reusable code for Oro applications. During installation, the package code is placed in the application's vendor folder. Do not modify it through customization, because the system upgrade overwrites it with the original version.
+
+The source code of the package includes:
 
 * composer.json file with package metadata that includes package definition and dependencies.
 * LICENSE - license information
 * README.md file with a detailed description of the package
 * Folders with the source code organized into implementing package functionality. The package source code can be organized differently and typically defines one or more Bundle, Bridge and/or Component.
 
-We recommend to include additional files, like:
+We recommend including additional files, such as:
 
 * UPGRADE.md - information about upgrading from the old version of the package to the new one
 * CHANGELOG.md - list of changes made in the package since the previous version
@@ -148,8 +158,7 @@ File System Permissions
 * Default owner is any non www-data user.
 * Default owner group is www-data.
 
-In OroCommerce, web requests and CLI scripts must get readonly access to sources with a limited write access to a
-set of folders using specific user www-data (bundled with Nginx and Apache). 
+In OroCommerce, web requests and CLI scripts run as the www-data user (bundled with Nginx and Apache), which must get readonly access to sources and limited write access to a set of folders.
 
 To prepare application sources and pre-built assets, use orodeployer user:
 

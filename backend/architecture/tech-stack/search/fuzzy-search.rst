@@ -5,11 +5,11 @@ Fuzzy Search
 
 .. important:: The feature is available for the Enterprise edition only.
 
-This feature enables the use of error-tolerant (fuzzy) search in search index requests to Elasticsearch. It works only with the Elasticsearch search engine.
+This feature enables error-tolerant (fuzzy) search in search index requests. It works only with the Elasticsearch search engine.
 
-It is assumed that the first character of every word in a request is correct. So, the application does not try to change the first character to fix an error.
+The application assumes that the first character of every word in a request is correct, so it does not try to change the first character to fix an error.
 
-The exact match has higher relevancy compared to the results with errors. It means that results that match the request word by word are at the top of the result set, while those with errors are at the bottom.
+Exact matches have higher relevancy than results with errors. Results that match the request word by word appear at the top of the result set, while those with errors appear at the bottom.
 
 The error-tolerant search is applied only to the *contains* and *not contains* operators.
 
@@ -43,4 +43,4 @@ The error-tolerant search is not an automatic correction. It tries to find simil
 
 .. note:: The error-tolerant search can lead to several false-positive results.
 
-The error-tolerant search changes only how the request is built, not the index mapping, structure, or content. The search is performed against the tokens stored in the Elasticsearch index. So, it behaves differently for the default, language-optimized, and custom index configurations.
+The error-tolerant search changes only how the request is built, not the index mapping, structure, or content. It runs against the tokens stored in the Elasticsearch index, so it behaves differently for the default, language-optimized, and custom index configurations.

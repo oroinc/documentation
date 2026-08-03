@@ -3,12 +3,12 @@
 Action Extension
 ================
 
-This extension is responsible for configuring actions for the datagrid. You can easily add action types and then place the configuration for actions under the ``actions`` node.
+This extension configures actions for the datagrid. Add action types and place their configuration under the ``actions`` node.
 
 Actions
 -------
 
-`type` is a required option for the action configuration. You can control action access by adding the ``acl_resource`` node to each action (this parameter is optional).
+`type` is a required option for the action configuration. To control access to an action, add the optional ``acl_resource`` node to it.
 
 Ajax
 ^^^^

@@ -13,7 +13,7 @@ For each entity, you can configure as many workflows as required.
 
 **Translations**
 
-To correctly display the user interface text concerning workflow process (button labels, page names, etc.), you need to specify `translations` for it.
+To correctly display the user interface text for a workflow (button labels, page names, etc.), specify `translations` for it.
 
 Create translation files as:
 
@@ -21,11 +21,11 @@ Create translation files as:
 
 where `{lang_code}` is a two-letter language code, e.g., `workflows.en.yml`.
 
-You need to create such file for each language that you will use.
+Create one such file for each language you use.
 
 .. tip::
 
-    To simplify creation of the translation file, you can first create a workflow configuration, and then dump all related translation keys to the `workflows.{lang_code}.yml`.   For example, if you create workflow 'my_workflow':
+    To simplify creation of the translation file, you can first create a workflow configuration, and then dump all related translation keys to the `workflows.{lang_code}.yml`. For example, if you create workflow 'my_workflow':
 
     `bin/console oro:workflow:translations:dump my_workflow --locale=en > src/Acme/Bundle/DemoBundle/Resources/translations/workflows.en.yml`
 
@@ -51,7 +51,7 @@ For each workflow key, the corresponding value is the array of the workflow sett
 - An entity that the workflow is applicable to.
 - The initial step that is attained upon initializing the workflow.
 
-In the following example, you can find the configuration of the **Phone Call** workflow. This workflow defines the process of making a call to a customer:
+The following example configures the **Phone Call** workflow, which defines the process of making a call to a customer:
 
 .. code-block:: yaml
     :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml
@@ -88,7 +88,7 @@ Define the user-interface workflow name:
 Clone a Workflow
 ----------------
 
-It is not recommended to modify a system workflow but you can clone it and modify the clone. To clone the workflow, create a dump of its configuration and translation files, adjust them, and load into the system:
+Avoid modifying a system workflow. Instead, clone it and modify the clone. To clone a workflow, dump its configuration and translation files, adjust them, and load them into the system:
 
 1. Dump the workflow configuration.
 
@@ -98,11 +98,11 @@ It is not recommended to modify a system workflow but you can clone it and modif
 
         php bin/console oro:debug:workflow:definitions b2b_flow_alternative_checkout > /home/oro/commerce-application/src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml
 
-    where /Acme/Bundle/DemoBundle is a path to the bundle you want to create a workflow for and command ``oro:debug:workflow:definitions`` displays current workflow definitions registered in the application.
+    where /Acme/Bundle/DemoBundle is the path to the bundle you want to create a workflow for. The ``oro:debug:workflow:definitions`` command displays the current workflow definitions registered in the application.
 
     The copy of the initial file will be created in the destination directory.
 
-2. Dump the workflow translations. Translation contain labels for workflow steps, transitions, etc., thus it is necessary to clone them too.
+2. Dump the workflow translations. Translations contain labels for workflow steps, transitions, and so on, so you must clone them too.
 
     .. code-block:: none
 
@@ -137,18 +137,18 @@ It is not recommended to modify a system workflow but you can clone it and modif
 Toggle Workflow Enable/Disable
 ------------------------------
 
-By default, all new workflows are created in inactive state. It means that there are no steps and transitions on an entity view page. Multiple workflows for each entity can be active at the same time. Activation of a workflow can be performed in several ways.
+By default, all new workflows are created in an inactive state, so no steps and transitions appear on an entity view page. Multiple workflows for each entity can be active at the same time. You can activate a workflow in several ways.
 
 **User Interface**
 
-User can activate workflow through UI in the workflow datagrid which is available in the back-office main menu under "System > Workflows".
-Here, each workflow can be activated either using row actions "Activate" and "Deactivate", or from the workflow view page using appropriate buttons.
+You can activate a workflow through the UI in the workflow datagrid, available in the back-office main menu under **System > Workflows**.
+Activate each workflow using the row actions **Activate** and **Deactivate**, or from the workflow view page using the appropriate buttons.
 
 **Configuration**
 
-Developer can add workflow configuration into a corresponding workflow YAML config in sub-node `active` of node `defaults`.
-This approach can be used if there is a need to automatically activate workflow on application installation.
-Here is example of such configuration:
+A developer can set the `active` sub-node of the `defaults` node in the workflow's YAML config.
+Use this approach when you need to automatically activate a workflow on application installation.
+For example:
 
 .. code-block:: yaml
 
@@ -163,7 +163,7 @@ Here is example of such configuration:
 
 *REST API*
 
-WorkflowBundle provides REST API that allows to activate or deactivate a workflow.
+WorkflowBundle provides a REST API to activate or deactivate a workflow.
 
 Activation URL attributes:
 
@@ -177,7 +177,7 @@ Deactivation URL attributes:
 
 *Workflow Manager*
 
-WorkflowBundle has WorkflowManager service (oro_workflow.manager) that provides methods to activate and deactivate workflows:
+WorkflowBundle has a WorkflowManager service (oro_workflow.manager) with methods to activate and deactivate workflows:
 
 * **activateWorkflow(workflowIdentifier)** --- activate workflow by workflow name, Workflow instance, WorkflowItem instance or WorkflowDefinition instance;
 * **deactivateWorkflow(workflowIdentifier)** --- deactivate workflow by workflow name, Workflow instance (same as above).
@@ -185,51 +185,48 @@ WorkflowBundle has WorkflowManager service (oro_workflow.manager) that provides 
 Mutually Exclusive Workflows
 ----------------------------
 
-In some cases, an application can be configured with several workflows that are mutually exclusive on different levels.
-For example, with default package, we have the standard workflow that somehow does not cover business logic that client might need.
-So we can implement another workflow for the same related entity and that two workflows are conflicting with each other by data or logic operations.
-For that cases, we bring new approach for developers to configure their workflows on mutually exclusive manner.
-There are two levels of exclusiveness at this moment: *activation level* and *record level*.
+An application can be configured with several workflows that are mutually exclusive on different levels.
+For example, the standard workflow in the default package might not cover the business logic a client needs.
+You can then implement another workflow for the same related entity, so the two workflows conflict by data or logic operations.
+For such cases, developers can configure their workflows in a mutually exclusive manner.
+There are two levels of exclusiveness: *activation level* and *record level*.
 
 **Activation level exclusiveness - exclusive_active_groups**
 
-If your custom workflow represents a replacement flow for some already existent workflows, you can provide a possibility
-to secure your customization by ensuring that only one of them can be activated in the system at a time.
+If your custom workflow replaces existing workflows, you can secure your customization by ensuring that only one of them is active in the system at a time.
 
-This can be performed by defining *common exclusive activation group* for both workflows.
-That can be done in workflow configuration node called `exclusive_active_groups`.
+To do this, define a *common exclusive activation group* for both workflows in the workflow configuration node called `exclusive_active_groups`.
 
-Let's use `basic_sales_flow` and `my_shop_sales_flow` workflows as an example, assuming that they both use the same related entity (e.g., Order) and `my_shop_sales_flow` is a complete replacement for another one. In this scenario, our task is to prevent administrators from enabling both of them at the same time. To do this, we can provide a common group in workflows
-configurations under the `exclusive_active_groups` node and call it 'sales'. Now, when an administrator attempts to activate one of these two groups, there will be an additional check for group
-conflicts and a warning if the other workflow in the group 'sales' is already active. This ensures that two workflows are never active simultaneously.
+For example, consider the `basic_sales_flow` and `my_shop_sales_flow` workflows, assuming they both use the same related entity (e.g., Order) and `my_shop_sales_flow` completely replaces the other. Here, the task is to prevent administrators from enabling both at the same time. To do this, give both workflows a common group named 'sales' under the `exclusive_active_groups` node. Now, when an administrator attempts to activate one of them, the system runs an additional check for group conflicts and warns if the other workflow in the 'sales' group is already active. This ensures that the two workflows are never active simultaneously.
 
 **Record level exclusiveness - exclusive_record_groups**
 
-Another level of exclusiveness is a record level. It provides a possibility to have several active workflows at the same time with one limitation - only one workflow can be started for a related entity within the same *exclusive record group*. So that if you have workflows that can bring different ways to reach the goal of common business process around same entity (*but* not both at once), you may configure that workflow with the same group in `exclusive_record_groups` in their configurations.
+The other level of exclusiveness is the record level. It lets several workflows be active at the same time, with one limitation: only one workflow can be started for a related entity within the same *exclusive record group*. So, if you have workflows that offer different ways to reach the goal of a common business process around the same entity (*but* not both at once), configure them with the same group in `exclusive_record_groups` in their configurations.
 
-So, when **no** workflows are performed for an entity in the same exclusive record group, there is a possibility to launch starting transitions from any of them.
-But, when one of that workflows has started, you cannot perform any actions from the other workflow (and start it, either).
-That is a ramification of a business process that can be reached by the `exclusive_record_group` in workflows configuration.
+When **no** workflows are running for an entity in the same exclusive record group, you can launch starting transitions from any of them.
+But once one of these workflows has started, you cannot perform any actions from the other workflow or start it.
+This is the business process outcome that the `exclusive_record_group` in workflows configuration provides.
 
 
 **Priority Case**
 
-Let's say, you have two exclusive workflows at the level of a single record and both of them have automated start transitions (e.g., automatically perform start transition when a new instance of their common related entity is created). In this case, you can configure the `priority` flag in the workflow configurations. So when a new record of the related entity is created,
-workflows are processed by that priority flag and the second one from same exclusive record group does not perform its start transition, if another workflow record from the same exclusive group is already present. For example, `first_workflow` and `second_workflow`. When we need to process `second_workflow` workflow before `first_workflow`, we can determine its priority level higher than of the other one. Then, when new `SomeEntity` entity is persisted, the system will perform `second_workflow` workflow start transition first. Additionally, if the start transition of the dominant workflow did not meet its conditions to start, then the second workflow has a chance to start its flow as well.
+Suppose you have two workflows that are exclusive at the record level, and both have automated start transitions (for example, they perform the start transition automatically when a new instance of their common related entity is created). In this case, configure the `priority` flag in the workflow configurations. When a new record of the related entity is created, the workflows are processed by that priority flag, and the second workflow from the same exclusive record group does not perform its start transition if another workflow record from the same exclusive group is already present.
+
+For example, take `first_workflow` and `second_workflow`. To process `second_workflow` before `first_workflow`, set its priority higher than the other one. Then, when a new `SomeEntity` entity is persisted, the system performs the `second_workflow` start transition first. Additionally, if the dominant workflow's start transition does not meet its conditions to start, the second workflow still has a chance to start its flow.
 
 Initial Transitions
 -------------------
 
-To provide the ability to start a workflow from an *unrelated entity*, use **initial transitions**. It is a special type of transition configuration that allows us to use transition as an initiative (as it comes from the name) for new workflow instance (workflow item) creation. The main difference from the *start transitions* is that *init transition* can be invoked from almost any part of an application with indirect relation to the main workflow entity or without it (if we can fill all the necessary data of the main entity).
+To start a workflow from an *unrelated entity*, use **initial transitions**. This special type of transition configuration uses a transition as the initiative (as the name suggests) for creating a new workflow instance (workflow item). Unlike *start transitions*, an *init transition* can be invoked from almost any part of an application, with only an indirect relation to the main workflow entity or none at all (as long as you can fill in all the necessary data of the main entity).
 
-Distinctive configuration features of *init transitions* are special nodes `init_entities`, `init_routes`, `init_datagrids` in transition configuration together with `is_start: true`.
+The distinctive configuration features of *init transitions* are the special nodes `init_entities`, `init_routes`, and `init_datagrids` in the transition configuration, together with `is_start: true`.
 
 For more details see :ref:`configuration reference <backend--workflows--config-reference>` section.
 
 Disable Operations
 ------------------
 
-Some workflows can be used to expand an existing configuration and replace the old (primitive) behavior. Usually a simple custom behavior in Oro-based applications is managed through operations, and when you create a more advanced way to manage the business logic trough a specific workflow configuration, you might need to disable those operations. It can be done trough the `disable_operations` configuration node:
+Some workflows expand an existing configuration and replace the old (primitive) behavior. Oro-based applications usually manage simple custom behavior through operations. When you create a more advanced way to manage the business logic through a specific workflow configuration, you might need to disable those operations. Use the `disable_operations` configuration node:
 
 .. code-block:: yaml
 
@@ -248,7 +245,7 @@ Some workflows can be used to expand an existing configuration and replace the o
 Filter by Scopes
 ----------------
 
-If a :ref:`scope configuration <dev-scopes>` is provided for a workflow, the Oro application uses only the workflows selected by filtering all available workflows using scopes defined for `worflow_definition` scope type.
+If a :ref:`scope configuration <dev-scopes>` is provided for a workflow, the Oro application filters all available workflows by the scopes defined for the `workflow_definition` scope type and uses only the selected ones.
 
 Example of scope configuration:
 

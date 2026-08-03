@@ -5,11 +5,12 @@ Access Entities Configuration
 =============================
 
 Now that you know how to define additional configuration options and use them in your own
-entities, you will usually want to access the configured values. The main entry point to access the
-configuration is the provider service for the particular scope, which has to be retrieved from the
-service container. For example, if you want to work with your newly created ``auditable`` option,
-you will have to use the ``oro_entity_config.provider.acme_demo`` service (the ``auditable`` option
-was defined in the ``acme_demo`` scope):
+entities, you will usually want to access the configured values. The main entry point is the
+provider service for the particular scope, which you retrieve from the service container.
+
+For example, to work with your newly created ``auditable`` option, use the
+``oro_entity_config.provider.acme_demo`` service (the ``auditable`` option was defined in the
+``acme_demo`` scope):
 
 .. code-block:: php
 
@@ -18,9 +19,9 @@ was defined in the ``acme_demo`` scope):
     $container = ...;
     $acmeDemoProvider = $container->get('oro_entity_config.provider.acme_demo');
 
-Then you need to fetch the configuration in this scope for a particular entity or entity field
+Then fetch the configuration in this scope for a particular entity or entity field
 using the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider::getConfig`` method. The
-configuration for such a configurable object (an entity or a field) is represented by an instance
+configuration for such a configurable object (an entity or a field) is an instance
 of the ``Oro\Bundle\EntityConfigBundle\Config\ConfigInterface``:
 
 ``get()``
@@ -47,9 +48,9 @@ of the ``Oro\Bundle\EntityConfigBundle\Config\ConfigInterface``:
 ``setValues()``
     Replaces values for the given options with some given values.
 
-Please note that it is not enough to modify configuration values in the provider. You also need to
-force your changes by calling the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider::flush``
-method afterwards:
+Modifying configuration values in the provider is not enough. You must also force your changes
+afterwards by calling the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider::flush``
+method:
 
 .. code-block:: php
 

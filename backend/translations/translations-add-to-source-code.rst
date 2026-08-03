@@ -8,7 +8,9 @@ As described in |Symfony Translation Files|, these files are located in the `Res
 
 These translations are compiled in the :ref:`Symfony translation catalogs <dev-translation--symfony-translator>`, which are sets of PHP files. As a result, these files are cached by |OPcache|, so getting these translations is fairly quick.
 
-You can download translations for other languages from :ref:`Crowdin <doc--community--ui-translations>` or added manually in the :ref:`Back-Office <localization--translations--config>`. These translations are loaded from the database to the application cache, and getting them is slower than from the Symfony translation catalogs. To minimize performance issues, consider adding them to the source code, as described below:
+You can download translations for other languages from :ref:`Crowdin <doc--community--ui-translations>` or add them manually in the :ref:`Back-Office <localization--translations--config>`. These translations load from the database into the application cache, which is slower than reading them from the Symfony translation catalogs.
+
+To minimize performance issues, add them to the source code as described below:
 
 1. Use :ref:`oro:translation:dump-files <oro-translation-dump-files-command>` to dump translations to the `translations` directory of the application.
 
@@ -18,7 +20,7 @@ You can download translations for other languages from :ref:`Crowdin <doc--commu
 
 To rebuild Symfony translation catalogs with new translations and remove them from the database, use the ``oro:platform:update`` command.
 
-Please take into account that languages loaded from the dumped files will be disabled from management via Crowdin in the UI and the data should be managed by a developer.
+Note that languages loaded from the dumped files can no longer be managed via Crowdin in the UI; a developer must manage their data instead.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

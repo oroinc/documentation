@@ -1,60 +1,38 @@
 Managing Application Configuration with .env-app Files and Real Environment Variables in Oro
 ============================================================================================
 
-The following guide provides instructions on how to migrate from using a
-``config/parameters.yml`` file to using environment variables or a
-``.env-app`` file in an Oro application.
+This guide explains how to migrate an Oro application from a
+``config/parameters.yml`` file to environment variables or a
+``.env-app`` file.
 
-You can find more examples of DSNs in the ``.env-app`` file at the
-application root folder or the corresponding documentation sections.
+You can find more DSN examples in the ``.env-app`` file at the
+application root folder or in the corresponding documentation sections.
 
 Managing Application Configuration with .env-app Files
 ------------------------------------------------------
 
-In an Oro application, the configuration of the environment variables
-can be managed through the use of ``.env-app`` files. These files are
-used to define default values for the environment variables that are
-needed by the application.
+In an Oro application, you can manage environment variable configuration
+through ``.env-app`` files. These files define default values for the
+environment variables the application needs.
 
-There are four types of ``.env-app`` files that can be used:
+You can use four types of ``.env-app`` files:
 
-``.env-app``: This file contains the default values for the environment
-variables needed by the app. ``.env-app.local``: This file is an
-uncommitted file with local overrides. It is intended for local
-development and should not be committed to version control.
-``.env-app.$ORO_ENV``: This file contains committed environment-specific
-defaults. For example, ``.env-app.prod`` would contain the default
-values for the environment variables needed by the app in a production
-environment. ``.env-app.$ORO_ENV.local``: This file is an uncommitted
-environment-specific overrides. It is intended for local development and
-should not be committed to version control. It’s important to note that
-real environment variables take precedence over the ``.env-app`` files.
+-  ``.env-app`` --- Default values for the environment variables the app needs.
+-  ``.env-app.local`` --- Uncommitted local overrides. Intended for local development; do not commit to version control.
+-  ``.env-app.$ORO_ENV`` --- Committed environment-specific defaults. For example, ``.env-app.prod`` holds the defaults for a production environment.
+-  ``.env-app.$ORO_ENV.local`` --- Uncommitted environment-specific overrides. Intended for local development; do not commit to version control.
 
-It’s also important to note that you should not define production
-secrets any committed files. Instead, it’s recommended to use
+Real environment variables take precedence over the ``.env-app`` files.
+
+Do not define production secrets in any committed files. Instead, use
 environment variables for infrastructure configuration. To compile
-``.env-app`` files for production use, you can run the command
-``composer dump-env prod``.
+``.env-app`` files for production, run ``composer dump-env prod``.
 
-It’s important to note that the file name used in this guide is
-``.env-app``, as opposed to the commonly used ``.env`` file. This is
-because the ``.env`` file is commonly used by dev ops teams and other
-services for managing environment variables, and it’s important to not
-confuse the two files or accidentally add the wrong file to version
-control. By using the ``.env-app`` file specifically for the Oro
-application, it clearly differentiates the configuration for the
-application and avoids any potential conflicts with other services using
-a ``.env`` file. It also helps to keep the application’s configuration
-separate and easily manageable.
-
-In summary, the ``.env-app`` files provide a way to manage the
-configuration of environment variables in an Oro application. They allow
-for default values to be set and for local and environment-specific
-overrides to be made. It’s important to use real environment variables
-instead of committing sensitive information to these files and it’s
-recommended to use the ``composer dump-env`` command to compile the
-files for production use. Using these files allows for a more organized
-and flexible way to manage the configuration of an Oro application.
+This guide uses the file name ``.env-app`` rather than the commonly used
+``.env`` file. DevOps teams and other services often use ``.env`` to
+manage environment variables, so a dedicated ``.env-app`` file prevents
+confusion, avoids adding the wrong file to version control, and keeps the
+Oro application's configuration separate and easy to manage.
 
 Migration from ``config/parameters.yml`` to Environment Variables or ``.env-app``
 ---------------------------------------------------------------------------------
@@ -201,8 +179,8 @@ For Cluster connections, use the following format:
 
 Note that in the above examples, the password and dbindex values are optional and should be replaced with the appropriate values for your configuration. Additionally, in cluster example you can add multiple hosts.
 
-And to enable the possibility of setting Redis connection configurations
-from environment variables, run the following command:
+To allow setting Redis connection configurations from environment
+variables, run the following command:
 
 .. code:: bash
 
@@ -269,8 +247,8 @@ Use:
    ORO_MONGODB_DSN_PUBLIC=mongodb://127.0.0.1:27017/media
    ORO_MONGODB_DSN_PRIVATE=mongodb://127.0.0.1:27017/private
 
-And to enable the possibility of setting MongoDB connection
-configurations from environment variables, run the following command:
+To allow setting MongoDB connection configurations from environment
+variables, run the following command:
 
 .. code:: bash
 
@@ -314,9 +292,9 @@ For example:
 Deployment Type
 ~~~~~~~~~~~~~~~
 
-The deployment_type parameter has been removed. Instead, you should use
-custom Symfony application environments. You can set the Symfony
-application environment using the ORO_ENV environment variable:
+The deployment_type parameter has been removed. Use custom Symfony
+application environments instead. Set the Symfony application environment
+with the ORO_ENV environment variable:
 
 .. code:: bash
 

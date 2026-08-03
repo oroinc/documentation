@@ -14,20 +14,20 @@ Create Schema Migration
 Create Database Dump
 ^^^^^^^^^^^^^^^^^^^^
 
-It is required to create a database dump before any database changes.
+Create a database dump before making any database changes.
 
 Synchronize Code with the Database
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After you have modeled your entities, you need to update the database schema. To update the schema, use the ``doctrine:schema:update command``. Use the ``--dump-sql`` option first to make sure that Doctrine makes the expected changes:
+After you have modeled your entities, update the database schema with the ``doctrine:schema:update`` command. Use the ``--dump-sql`` option first to make sure Doctrine makes the expected changes:
 
 .. .. code-block:: none
 
 ..    php bin/console doctrine:schema:update --dump-sql
 
-Double-check the configured mapping information and rerun the command if the command displays unexpected information.
+If the command displays unexpected information, double-check the configured mapping and rerun it.
 
-When everything is displayed as expected, update the database schema by passing the ``--force`` option:
+When the output is as expected, update the database schema by passing the ``--force`` option:
 
 .. code-block:: none
 
@@ -63,7 +63,7 @@ Generate an Installer
 Generate an Installer for a Bundle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When you have implemented new entities, ensure that the entities are added to the database on installing the application. For this, you need to create an installer :ref:`migration <backend-entities-migrations>`. You can do it manually, however, it is more convenient to use a database dump as a template.
+When you have implemented new entities, ensure they are added to the database when the application is installed. To do this, create an installer :ref:`migration <backend-entities-migrations>`. You can create it manually, but using a database dump as a template is more convenient.
 
 To create an installer for AcmeDemoBundle:
 
@@ -112,7 +112,7 @@ This command supports the following additional options:
 - **bundle** --- The bundle name for which the migration is generated
 - **migration-version** --- Migration version number. This option sets the value returned by the `getMigrationVersion` method of the generated installation file.
 
-Each bundle can have an **installation** file. This migration file replaces running multiple migration files. Install migration class must implement the |Installation| interface and the `up` and `getMigrationVersion` methods. The `getMigrationVersion` method must return the max migration version number that this installation file replaces.
+Each bundle can have an **installation** file, a single migration that replaces running multiple migration files. The install migration class must implement the |Installation| interface and the `up` and `getMigrationVersion` methods. The `getMigrationVersion` method must return the maximum migration version number that this installation file replaces.
 
 When an install migration file is found during the install process (when you install the system from scratch), it is loaded first, followed by the migration files with versions greater than the version returned by the `getMigrationVersion` method.
 
@@ -137,7 +137,9 @@ Migration files should be located in the ``Migrations\Schema\version_number`` fo
 Each migration class must implement the |Migration| interface and the `up` method. This method receives a current database structure in the `schema` and `queries` parameters, adding additional queries.
 
 With the `schema` parameter, you can create or update the database structure without fear of compatibility between database engines.
-You can use the' queries' parameter if you want to execute additional SQL queries before or after applying a schema modification. This parameter represents a |query bag| and allows adding additional queries, which will be executed before (`addPreQuery` method) or after (`addQuery` or `addPostQuery` method). A query can be a string or an instance of a class that implements |MigrationQuery| interface. There are several ready-to-use implementations of this interface:
+Use the `queries` parameter to execute additional SQL queries before or after applying a schema modification. This parameter is a |query bag| that lets you add queries to run before (`addPreQuery` method) or after (`addQuery` or `addPostQuery` method) the modification.
+
+A query can be a string or an instance of a class that implements the |MigrationQuery| interface. Several ready-to-use implementations are available:
 
  - |SqlMigrationQuery| - represents one or more SQL queries
  - |ParametrizedSqlMigrationQuery| - similar to the previous class, but each query can have its own parameters.
@@ -208,7 +210,7 @@ Examples of Database Structure Migrations
 Extensions for Database Structure Migrations
 --------------------------------------------
 
-You cannot always use standard Doctrine methods to modify the database structure. For example, ``Schema::renameTable`` does not work because it drops an existing table and then creates a new one. To help you manage such a case and enable you to add additional functionality to any migration, use the extensions mechanism. The following example illustrates how |RenameExtension| can be used:
+You cannot always use standard Doctrine methods to modify the database structure. For example, ``Schema::renameTable`` does not work because it drops an existing table and then creates a new one. To handle such cases and add functionality to any migration, use the extensions mechanism. The following example shows how to use |RenameExtension|:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_2/TestRenameTable.php
@@ -236,7 +238,7 @@ You cannot always use standard Doctrine methods to modify the database structure
        }
     }
 
-As you can see from the example above, your migration class should implement |RenameExtensionAwareInterface| and `setRenameExtension` method in order to use the |RenameExtension|.
+To use the |RenameExtension|, your migration class should implement |RenameExtensionAwareInterface| and the `setRenameExtension` method.
 
 Another example below illustrates how to use database-specific features in migration:
 
@@ -310,7 +312,7 @@ Here is a list of available extensions:
 
 * |RenameExtension| - Allows to rename an extended table or an extended column without losing data.
 
-* |DataStorageExtension|- Used ito exchange data between different migrations.
+* |DataStorageExtension| - Used to exchange data between different migrations.
 
 * |ScopeExtension| - Adds association between the target table and the scope table.
 
@@ -344,7 +346,7 @@ To create your own extension:
             }
         }
 
-2. Create `*AwareInterface` in the same namespace. It is important that the interface name is ``{ExtensionClass}AwareInterface`` and the set method is ``set{ExtensionClass}({ExtensionClass} ${extensionName})``.    For example:
+2. Create `*AwareInterface` in the same namespace. It is important that the interface name is ``{ExtensionClass}AwareInterface`` and the set method is ``set{ExtensionClass}({ExtensionClass} ${extensionName})``. For example:
 
    .. code-block:: php
       :caption: src/Acme/Bundle/DemoBundle/Migrations/Extension/MyExtensionAwareInterface.php

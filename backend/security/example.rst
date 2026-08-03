@@ -3,7 +3,7 @@
 Access Levels and Ownership (Example)
 =====================================
 
-The following sections provide some insight into how the ACL checks work. Suppose there are two organizations, *Main Organization* and *Second Organization*. The *Main Organization* contains the *Main Business Unit*, *Second Organization* contains *Second Business Unit*. *Child Business Unit* is a subordinate of *Second Business Unit*. Additionally, the following users have been created:
+The following sections show how the ACL checks work. Suppose there are two organizations, *Main Organization* and *Second Organization*. *Main Organization* contains the *Main Business Unit*, and *Second Organization* contains *Second Business Unit*. *Child Business Unit* is a subordinate of *Second Business Unit*. The following users have been created:
 
 +--------+-------------------------+--------------------------+------------------------+
 | User   | Created in Organization | Created in Business Unit | Assigned to            |
@@ -39,7 +39,7 @@ Mark        Account I          Account J
 
 .. image:: /img/backend/security/user-ownership.png
 
-The users can now access the accounts depending on the organization context they login into as
+Users can now access the accounts depending on the organization context they log in to, as
 described below:
 
 John

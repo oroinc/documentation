@@ -31,7 +31,7 @@ To add board appearance on a grid:
 
      * ``save_api_accessor`` for column transition option (check :ref:`documentation <bundle-docs-platform-ui-bundle-apiaccessor>`)
      * ``save_api_accessor`` for default transition (check ``default_transition`` configuration option below)
-     * ``save_api_accessor`` for inline editing (check this :ref:`article <customize-datagrid-extensions-inline-editing>`
+     * ``save_api_accessor`` for inline editing (check this :ref:`article <customize-datagrid-extensions-inline-editing>`)
 
 Datagrid Configuration Details
 ------------------------------
@@ -63,7 +63,7 @@ Datagrid Configuration Details
 
 - acl_resource (Optional): Enabled Acl resource checks whether board items transitions are allowed. If no permission is granted to a user, they see the board in read only mode.
 
-- processor (Optional): Specified the name of the board processor. `default` processor is used by default.
+- processor (Optional): Specifies the name of the board processor. The `default` processor is used by default.
 
 - default_transition (Optional): Section to specify configuration for the transition, e.g., update property when cards are dragged and dropped from one column to another.
 

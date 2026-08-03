@@ -3,7 +3,12 @@
 Common Checkout Customization Methods
 =====================================
 
-This document provides details on the most common checkout workflow customizations. To customize the checkout process, you can follow two methods. The first method requires modifying the configuration and logic of an existing checkout. The second method involves creating a new checkout workflow with a custom name and then making all the necessary customizations based on that custom name. For the examples provided, let us assume that we have extended a multistep checkout workflow and named the new workflow `acme_demo_checkout`.
+This document covers the most common checkout workflow customizations. You can customize the checkout process in two ways:
+
+- Modify the configuration and logic of an existing checkout.
+- Create a new checkout workflow with a custom name, then base all customizations on that name.
+
+The examples below assume we have extended a multistep checkout workflow and named the new workflow `acme_demo_checkout`.
 
 .. oro_integrity_check:: e590962369da68ce06c78a1759e479da3491d27a
 
@@ -15,8 +20,8 @@ This document provides details on the most common checkout workflow customizatio
 Transfer Custom Data from Shopping List to Order with Checkout
 --------------------------------------------------------------
 
-The most common checkout change is the addition of new attributes and their display on the checkout form.
-As an illustration, let us add the ``external_po_number`` field to the Shopping List and transfer it to the Order:
+The most common checkout change is adding new attributes and displaying them on the checkout form.
+As an example, we add the ``external_po_number`` field to the Shopping List and transfer it to the Order:
 
 1. Add an extendable field ``external_po_number`` to the Shopping List, Checkout and Order entities with migration.
 
@@ -53,7 +58,7 @@ As an illustration, let us add the ``external_po_number`` field to the Shopping 
 
 3. Transfer the ``external_po_number`` value from the Shopping List to the Checkout.
 
-    To transfer the data from the source object to the checkout during the checkout start decorate an action group ``Oro\Bundle\CheckoutBundle\Workflow\ActionGroup\StartShoppingListCheckout`` that is responsible for the start logic:
+    To transfer the data from the source object to the checkout at checkout start, decorate the ``Oro\Bundle\CheckoutBundle\Workflow\ActionGroup\StartShoppingListCheckout`` action group, which is responsible for the start logic:
 
    .. oro_integrity_check:: f532db6aac5703eba7cf5e453f7c5d95d4589e0d
 
@@ -122,7 +127,7 @@ This scenario covers the following aspects:
 
 1. Define a new workflow with additional step ``manager_approval``. To reach this step, modify the configuration of the ``place_order`` transition by adding the ``conditional_steps_to`` option and rewriting the ``transition_service``.
 
-2. After this change, if the *external_po_number* field starts with the *EXT-* prefix, buyers without the *acme_demo_checkout_approve* ACL permission cannot proceed with the checkout and are redirected to the *manager_approval* step. Only users with manager permissions will be able to complete orders in this workflow. Managers will also have the ability to place such orders directly from the Order Review step without restrictions.
+2. After this change, if the *external_po_number* field starts with the *EXT-* prefix, buyers without the *acme_demo_checkout_approve* ACL permission cannot proceed with the checkout and are redirected to the *manager_approval* step. Only users with manager permissions can complete orders in this workflow. Managers can also place such orders directly from the Order Review step without restrictions.
 
    .. oro_integrity_check:: 2f64c5679dd5e12d26309f5b091d1fc9209464f1
 
@@ -158,7 +163,7 @@ This scenario covers the following aspects:
 Block Checkout Transition Availability or Execution
 ---------------------------------------------------
 
-To limit the availability and execution of the transition, use workflow guard events, such as ``oro_workflow.pre_announce``, ``oro_workflow.announce``, ``oro_workflow.pre_guard`` and ``oro_workflow.guard``. Thr ``pre_announce`` and ``pre_guard`` events are executed before any transition logic, while  the ``announce`` and ``guard`` are executed immediately after. The ``*announce`` events serve to limit transition availability, whereas the ``*guard`` events are used to limit execution.
+To limit the availability and execution of a transition, use workflow guard events, such as ``oro_workflow.pre_announce``, ``oro_workflow.announce``, ``oro_workflow.pre_guard`` and ``oro_workflow.guard``. The ``pre_announce`` and ``pre_guard`` events run before any transition logic, while the ``announce`` and ``guard`` events run immediately after. The ``*announce`` events limit transition availability, and the ``*guard`` events limit execution.
 
 The example below illustrates a scenario where customer users belonging to the Guest customer group are not allowed to place orders if the total amount is less than 100 USD. Here, the limit should apply only to ``acme_demo_checkout``.
 
@@ -178,15 +183,15 @@ The example below illustrates a scenario where customer users belonging to the G
 Import Workflow Configuration Conditionally
 -------------------------------------------
 
-Workflow bundle provides different ways to organize workflow configuration. Workflow configuration can be split into separate parts and added to the workflow configuration using the ``imports`` directive.
+The workflow bundle provides different ways to organize workflow configuration. You can split it into separate parts and combine them using the ``imports`` directive.
 
 .. note::
     Consider following the advice below when organizing the checkout workflow configuration:
 
-    * For complex workflows, use imports and to separate different parts of the configuration, such as steps and transitions.
+    * For complex workflows, use imports to separate different parts of the configuration, such as steps and transitions.
     * For simple workflows with a limited number of changes, keep all configurations in one place.
 
-While developing a workflow, you may find it necessary to switch to a new implementation of transition logic, such as when migrating to service-based transitions. To solve this and retain the option to easily revert to the old implementation, you can import different versions of the transition configuration by including an ``import_condition`` expression. Another potential use for this feature is to load workflow configuration only when a specific 3rd party package is available.
+While developing a workflow, you may need to switch to a new implementation of transition logic, for example when migrating to service-based transitions. To do this while keeping the option to easily revert to the old implementation, import different versions of the transition configuration with an ``import_condition`` expression. You can also use this feature to load workflow configuration only when a specific 3rd party package is available.
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml
@@ -209,11 +214,11 @@ Choose Storage for Additional Checkout Data
 
 When working with checkouts, you have three storage options for additional data: **Checkout Entity**, **Workflow Data**, and **Workflow Result**.
 
-The **Checkout Entity** is a suitable storage option for any data useful for the entire checkout workflow or any logic that may use the Checkout entity outside the workflow. Opting for this method means you must add entity migration and execute the update process. This operation requires a DB schema update for non-extend fields and may require downtime.
+The **Checkout Entity** suits any data useful across the entire checkout workflow, or any logic that may use the Checkout entity outside the workflow. This method requires an entity migration and running the update process. For non-extend fields, it requires a DB schema update and may require downtime.
 
-On the other hand, data can be stored in the WorkflowData when the workflow attribute is configured. This storage is easier to set up and only requires reloading the workflow definition. It is a good option when data is needed in the checkout workflow itself or is specific to that workflow. For instance, if an additional checkout workflow is initiated for a customer group that requires approval, the approval information is specific to that particular checkout with approval workflow and should be stored in the WorkflowData.
+Alternatively, you can store data in the WorkflowData by configuring a workflow attribute. This storage is easier to set up and only requires reloading the workflow definition. It is a good option when the data is needed in the checkout workflow itself or is specific to that workflow. For instance, if an additional checkout workflow starts for a customer group that requires approval, the approval information is specific to that checkout with approval workflow and belongs in the WorkflowData.
 
-There is a third possible place to store workflow data at runtime, the Workflow Result. In YAML-based checkouts, it is used to store variable values for a transition. It can be used to transfer non-persistent data in the WorkflowItem across various logic parts that have access to the WorkflowItem.
+A third place to store workflow data at runtime is the Workflow Result. In YAML-based checkouts, it stores variable values for a transition. Use it to transfer non-persistent data in the WorkflowItem across the various logic parts that have access to the WorkflowItem.
 
 .. warning::
     The data stored in the Workflow Result is not persisted and is only available during the execution of the workflow.
@@ -221,7 +226,7 @@ There is a third possible place to store workflow data at runtime, the Workflow 
 Access the WorkflowItem by the Given Workflow Entity
 ----------------------------------------------------
 
-As illustrated in the examples above, sometimes only the workflow entity is available. In cases when the data is stored in the WorkflowItem, retrieve it from the available workflow entity first. For this, use the ``oro_workflow.manager`` service. For example, to work with data stored in the WorkflowItem, you can modify the ``FinishCheckoutEventListener`` as follows:
+As the examples above show, sometimes only the workflow entity is available. When the data is stored in the WorkflowItem, first retrieve it from the workflow entity using the ``oro_workflow.manager`` service. For example, to work with data stored in the WorkflowItem, modify the ``FinishCheckoutEventListener`` as follows:
 
 .. oro_integrity_check:: dfa85cb64f45494981f56a88dd4633397b874ac2
 

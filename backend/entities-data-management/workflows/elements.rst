@@ -24,13 +24,13 @@ To add a custom condition, add a service to DIC with tag `oro_action.condition`,
                 - { name: oro_action.condition, alias: blank|empty }
 
 
-Symbol "|" in alias can be used to have several aliases. Please keep in mind that service class must implement `Oro\\Component\\ConfigExpression\\ExpressionInterface`.
+Use the "|" symbol in the alias to define several aliases. The service class must implement `Oro\\Component\\ConfigExpression\\ExpressionInterface`.
 
 Configurable Condition
 ^^^^^^^^^^^^^^^^^^^^^^
 
 * **Alias:** configurable
-* **Description:** Uses Condition Assembler to assemble conditions from passed configuration. This condition is NOT intended to be used in the configuration of Workflow but it can be used to create a condition based on the configuration in runtime.
+* **Description:** Uses Condition Assembler to assemble conditions from the passed configuration. Do NOT use this condition in workflow configuration; instead, use it to create a condition from configuration at runtime.
 * **Options:**
 
   * Valid configuration of conditions.
@@ -75,16 +75,16 @@ To add a custom action, add a service to DIC with tag `oro_action.action`, as il
                 - { name: oro_action.action, alias: close_workflow }
 
 
-Symbol "|" in alias can be used to have several aliases. Please keep in mind that the service class must implement `Oro\\Component\\Action\Action\\ActionInterface`.
+Use the "|" symbol in the alias to define several aliases. The service class must implement `Oro\\Component\\Action\Action\\ActionInterface`.
 
 Configuration Syntax
 ^^^^^^^^^^^^^^^^^^^^
 
-Each action can be optionally configured with a condition. It allows to implement more sufficient logic in the definitions of transitions. If a condition is not satisfied, the action will not be executed.
+You can optionally configure each action with a condition to implement more sufficient logic in transition definitions. If the condition is not satisfied, the action does not execute.
 
-If flag `break_on_failure` is specified, the action throws an exception on error; otherwise it logs error using a standard logger.
+If the `break_on_failure` flag is specified, the action throws an exception on error; otherwise it logs the error using a standard logger.
 
-Syntax examples are provided below:
+The following are syntax examples:
 
 **Full Configuration Example**
 

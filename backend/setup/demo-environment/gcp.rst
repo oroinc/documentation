@@ -3,7 +3,11 @@
 Google Cloud Platform
 =====================
 
-Google Cloud Platform enables you to deploy your Oro application instance in one click without manually configuring the software and settings. OroCommerce VM images comes with demo data and provides all the necessary information for you to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master, and web catalogs. You can also explore the storefront using one of the pre-configured demo user roles. Sign in either as a guest user, a buyer (use *BrandaJSanborn@example.org* as your login and password), or a manager (use *AmandaRCole@example.org* as your login and password).
+Google Cloud Platform deploys your Oro application instance in one click, with no manual software or settings configuration.
+
+OroCommerce VM images come with demo data so you can test the application right away. This includes a preconfigured list of customers, products, submitted orders, quotes, the structured master, and web catalogs.
+
+You can also explore the storefront using one of the pre-configured demo user roles. Sign in as a guest user, as a buyer (use *BrandaJSanborn@example.org* as both login and password), or as a manager (use *AmandaRCole@example.org* as both login and password).
 
 Deploy the Solution
 -------------------
@@ -15,7 +19,7 @@ Deploy the Solution
 
 2. Click **Launch**.
 
-3. The Oro solution deployment page displays the default settings (e.g., name, zone, machine type, boot disk type, networking interfaces, etc.). You can accept or customize them if necessary.
+3. The Oro solution deployment page displays the default settings (e.g., name, zone, machine type, boot disk type, networking interfaces, etc.). Accept them or customize them as needed.
 
    .. image:: /img/backend/setup/gcp/oro_solution_settings.png
       :alt: The details page of the Oro solution settings
@@ -35,12 +39,12 @@ Use the generated credentials to access your Oro application:
 * **Admin user** --- a username used to log into the admin panel (back-office).
 * **Admin password** --- a password used to log into the admin panel (back-office).
 
-Also, you can access the VM instance using SSH by clicking SSH and selecting the required option from the drop-down
+You can also access the VM instance over SSH by clicking SSH and selecting the option you need from the drop-down.
 
 .. image:: /img/backend/setup/gcp/oro_solution_via_ssh.png
    :alt: Access the Oro application using SSH
 
-You can delete the deployment by clicking **Delete** on the upper left, next to the solution name. Resources created by this deployment, including VM instances, disks, and firewalls will be deleted as well.
+You can delete the deployment by clicking **Delete** on the upper left, next to the solution name. This also deletes the resources it created, including VM instances, disks, and firewalls.
 
 .. image:: /img/backend/setup/gcp/oro_solution_delete.png
    :alt: Delete the deployment

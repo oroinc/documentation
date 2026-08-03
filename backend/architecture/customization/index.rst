@@ -4,7 +4,7 @@
 Application Customization
 =========================
 
-When a company acquires a new tool, it would more likely than not require a degree of customization. Oro applications are highly customizable, and you can adapt them to fit your existing business processes.
+A new tool almost always requires some customization. Oro applications are highly customizable, and you can adapt them to fit your existing business processes.
 
 * **Enable control over the custom data flow to and from the Oro application**
   *Example:* A product catalog for the B2B storefront is populated with the existing ERP system's data and the Oro application's purchase statistics fuels the ERP reporting engine.
@@ -35,7 +35,7 @@ When a company acquires a new tool, it would more likely than not require a degr
   * Adjust website style to the brand identity (colors, fonts, etc.)
   * Change templates of email notifications (add corporate headers, footers, etc.)
 
-The following sections introduce the recommended ways of adjusting and customizing the Oro application specifically for your needs.
+The following sections introduce the recommended ways to adjust and customize the Oro application for your needs.
 
 Customize the Source Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -49,7 +49,7 @@ In addition to existing extensions, you can create your own customization of the
 Prepare for Source Code Customization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before you begin customizing your Oro application, follow the guidance provided in the :ref:`Custom Application <dev-guide-application-web-framework>` topic to set up your custom application repository for the version control, and install the Oro application from your custom repository.
+Before you begin, follow the :ref:`Custom Application <dev-guide-application-web-framework>` topic to set up your custom application repository for version control, then install the Oro application from your custom repository.
 
 Running the application in development mode (via the ``http://<oro-application-base-url>/index_dev.php/`` link) helps you debug and test your customization steps.
 
@@ -60,7 +60,7 @@ Implement the Customization
 
 Use the src directory in the root of your Oro application as a working directory for your custom project.
 
-Create a new bundle to put all your custom code and updated configuration files. To customize your Oro application source code and adjust your Oro application behavior, use the methods described in the sections below.
+Create a new bundle to hold all your custom code and updated configuration files. To customize the source code and adjust the Oro application behavior, use the methods described in the sections below.
 
 .. note:: Methods originating from the Symfony framework are marked with the *[Symfony]* prefix, while Oro-specific methods are labeled with the *[Oro]* prefix. Oro-specific methods significantly speed up the development process, like the dynamic modification of the content created at the vendor level and quick definition of the new workflows, configuration options, and navigation sets. Generic PHP-enabled methods are marked with the *[PHP]* prefix.
 
@@ -201,7 +201,7 @@ Once your customization is ready, you can publish it in a dedicated repository t
 Customize via UI
 ^^^^^^^^^^^^^^^^
 
-For data model and business process customization, Oro applications provide the entity and workflow management tools in the web UI (e.g., OroCommerce back-office). You can use these tools for quick updates of the existing data structure, for example, to add a new field to the existing entity data, change the value options, etc.) and enable fast prototyping, for example, for A/B testing of new business process automation.
+For data model and business process customization, Oro applications provide the entity and workflow management tools in the web UI (e.g., OroCommerce back-office). You can use these tools for quick updates of the existing data structure (for example, to add a new field to the existing entity data or change the value options) and for fast prototyping (for example, A/B testing of new business process automation).
 
 .. warning:: Results of the customization via UI are stored in the database. Porting such customization from staging to the production environment happens on the database level using data migration. Compared to programmatic customization, customization via UI lacks versioning and portability. Please consider using the source code level customization to keep the upgrade process simple.
 

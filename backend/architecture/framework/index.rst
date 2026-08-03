@@ -3,8 +3,8 @@
 Application Framework
 =====================
 
-**Application Framework** functionality is part of **OroPlatform** that determines the structure of the Oro application (code
-organization, file structure, application flow routine) and the way of interaction between independent components in the application.
+**Application Framework** functionality is part of **OroPlatform**. It determines the structure of the Oro application (code
+organization, file structure, application flow routine) and how the application's independent components interact.
 
 In this section, you'll find a description of the main principles for organizing your adjustments to Oro applications.
 
@@ -75,7 +75,7 @@ Create and Publish an Extension
 
 If you are ready to publish your adjustment in the Oro application for free or paid usage of community members, see the
 :ref:`How to Add an Extension to the OroPlatform Extensions Store <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
-article for the details on how to do this.
+article.
 
 .. admonition:: Business Tip
 

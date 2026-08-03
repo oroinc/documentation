@@ -3,10 +3,10 @@
 Serialized Fields
 =================
 
-OroPlatform provides the ability to create custom entities or custom fields for extended entities.
-This package provides a possibility to avoid schema update when you create custom fields.
+OroPlatform lets you create custom entities or custom fields for extended entities.
+Serialized fields let you add custom fields without a schema update.
 
-However, these fields have some restrictions. Their data is stored in the `serialized_data` column as a serialized array but the `serialized_data` field is hidden from the UI on entity config page.
+These fields have some restrictions, however. Their data is stored in the `serialized_data` column as a serialized array, and this column is hidden from the UI on the entity config page.
 
 .. admonition:: Serialized Enum Fields
 
@@ -24,13 +24,13 @@ Not supported features:
 
 .. admonition:: Serialized Fields Access
 
-    Serialized fields are available as public class properties and handled by magic __get and __set methods in the entity. There are, therefore, no getters and setters for these fields.
+    Serialized fields are exposed as public class properties, handled by the entity's magic __get and __set methods. They therefore have no getters or setters.
 
 
-The Serialized Fields bundle adds a new field called Storage Type within New field creation page where you need to choose one of the two storage types:
+The Serialized Fields bundle adds a **Storage Type** field to the new field creation page, where you choose one of two storage types:
 
-- The `Table Column` option enables you to create custom field as usual;
-- The `Serialized field` option means that you can avoid schema update and start to use this field immediately. Keep in mind that in this case field types are limited to the following:
+- The `Table Column` option creates a custom field as usual.
+- The `Serialized field` option lets you avoid the schema update and use the field immediately. In this case, field types are limited to the following:
 
    - BigInt
    - Boolean
@@ -59,7 +59,7 @@ To create a serialized field via migration, use |SerializedFieldsExtension|. For
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_4/AddSerializedFieldMigration.php
        :language: php
 
-Serialized files support the same set of config options as other :ref:`configurable fields <backend-configuration-annotation-config-field>`.
+Serialized fields support the same set of config options as other :ref:`configurable fields <backend-configuration-annotation-config-field>`.
 
 
 .. admonition:: Business Tip

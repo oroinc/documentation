@@ -3,22 +3,30 @@
 Operations (Actions)
 ====================
 
-*Operations* provide the possibility to assign any interaction with a user by specifying:
+*Operations* let you assign any interaction with a user by specifying:
 
  - Entity classes
  - Routes
  - Datagrids
 
-Every active *operation* shows a button or a link on the corresponding page. The button is displayed only if all the described preconditions are met. For the *operation* button or link to be displayed, the `preconditions` section should evaluate to `true`. After a user clicks on the button or link, the *operation* will be performed only if the `conditions` section evaluates to `true`. Also, if the operation has a form dialog configuration, then a modal dialog with fields appears when clicking the button.
+Every active *operation* shows a button or a link on the corresponding page. The button or link appears only when the `preconditions` section evaluates to `true`.
 
-Each *operation* relates to an entity type (consists of a full class name) or\\and a route of the page where the operations should be displayed or\\and a datagrid. Before the page loading, ActionBundle chooses *operations* with a corresponding page entity|route. Then these *operations* are checked against the preconditions. If all the preconditions are met - the operation's button is displayed.
-After clicking the button, all the performed operations (and underlined actions) are executed, provided that all the preconditions of *operation* and conditions of *actions* are met.
+After a user clicks the button or link, the *operation* runs only if the `conditions` section evaluates to `true`.
+
+If the operation has a form dialog configuration, a modal dialog with fields appears when the user clicks the button.
+
+Each *operation* relates to an entity type (a full class name) or\\and a route of the page where the operations should be displayed or\\and a datagrid.
+
+Before the page loads, ActionBundle selects the *operations* that match the page entity or route, then checks them against their preconditions. If all preconditions are met, the operation's button is displayed.
+
+After the user clicks the button, all the performed operations (and underlined actions) run, provided the preconditions of the *operation* and the conditions of the *actions* are met.
 
 Operation Configuration
 -----------------------
 
-All operations can be described in the ``actions.yml`` configuration file under the corresponding bundle in the `config/oro` resource directory.
-Below is an example of a simple operation configuration that performs an execution logic with the MyEntity entity.
+You can describe all operations in the ``actions.yml`` configuration file under the corresponding bundle in the `config/oro` resource directory.
+
+The example below shows a simple operation configuration that runs execution logic with the MyEntity entity.
 
 .. oro_integrity_check:: b2be0a9d4c3b964079173bed30eb4460c5be11ac
 
@@ -27,9 +35,15 @@ Below is an example of a simple operation configuration that performs an executi
         :language: yaml
         :lines: 26, 40-126
 
-This configuration describes the operation that relates to the ``Question`` entity. The button with the "adme.demo.myentity.operations.myentity_operation" label is displayed on the view page (acme_demo_myentity_view) of this entity (in case the 'updatedAt' field > new DateTime('now')). If the `expired` property of the entity = false, then clicking the button triggers the "assign_value" action that sets the 'expired' field to `true`. If `form_options` are specified, then the form dialog with attributes fields is displayed when clicking the button. The actions run only on the submit form.
+This configuration describes an operation that relates to the ``Question`` entity. The button labeled "adme.demo.myentity.operations.myentity_operation" appears on the entity's view page (acme_demo_myentity_view) when the 'updatedAt' field > new DateTime('now').
 
-Instead of adding the operation logic to the configuration file, it can be placed in a separate service that implements the ``OperationServiceInterface``. This interface has 3 methods: ``isPreConditionAllowed``, ``isConditionAllowed`` and ``execute``. If the operation service is used, it should be set in the operation configuration with the ``service`` parameter. In this case, ``preactions``, ``preconditions``, ``conditions`` and ``action`` are not allowed to be used and their logic must be moved to an appropriate method of the operation service.
+If the entity's `expired` property = false, clicking the button triggers the "assign_value" action, which sets the 'expired' field to `true`.
+
+If `form_options` are specified, the form dialog with attributes fields appears when the user clicks the button. The actions run only on form submit.
+
+Instead of adding the operation logic to the configuration file, you can place it in a separate service that implements ``OperationServiceInterface``. This interface has three methods: ``isPreConditionAllowed``, ``isConditionAllowed``, and ``execute``.
+
+To use an operation service, set it in the operation configuration with the ``service`` parameter. In this case, you cannot use ``preactions``, ``preconditions``, ``conditions``, and ``action``; move their logic to the appropriate method of the operation service.
 
 .. code-block:: yaml
     :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
@@ -45,7 +59,7 @@ Instead of adding the operation logic to the configuration file, it can be place
 Operation Events
 ----------------
 
-The platform provides several events that are triggered at various points in the operation lifecycle. These events allow developers to hook into the execution process and execute custom logic at specific points in the operation. This is particularly useful for adding additional business logic, sending notifications, or updating external systems based on operation activity. Special guard events can be used to prevent the operation from being executed or displayed.
+The platform triggers several events at various points in the operation lifecycle. These events let developers hook into the execution process and run custom logic at specific points, which is useful for adding business logic, sending notifications, or updating external systems based on operation activity. Special guard events can prevent an operation from being executed or displayed.
 
 **Available Events**
 
@@ -107,7 +121,7 @@ Execute a command to validate all operations configurations:
 Default Operations
 ------------------
 
-**Oro Action Bundle** defines several system-wide default operations for a common purpose. Those are basic CRUD-called operations for entities:
+**Oro Action Bundle** defines several system-wide default operations. These are basic CRUD operations for entities:
 
 - `UPDATE` - operation for an entity editing that uses a route from the `routeUpdate` option of the entity configuration.
 - `DELETE` - operation for an entity deletion that uses a route from the `routeName` option of the entity configuration.
@@ -122,7 +136,7 @@ Questions and Answers
 How to disable a CRUD default operation for my Bundle?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Supposing you need to disable the default `DELETE` operation for your new `MyEntity` entity. Here is the case which describes the solution. You can do this in `actions.yml` under your bundle configuration resources directory:
+Suppose you need to disable the default `DELETE` operation for your new `MyEntity` entity. Do this in `actions.yml` under your bundle configuration resources directory:
 
 .. code-block:: yaml
 
@@ -130,7 +144,7 @@ Supposing you need to disable the default `DELETE` operation for your new `MyEnt
         DELETE:
             exclude_entities: ['MyEntity']
 
-The operation merges a special additional condition to the default operation during the configuration compilation so that the default `DELETE` operation does not match your entity and is not displayed as well.
+During configuration compilation, this merges an additional condition into the default operation so that the default `DELETE` operation no longer matches your entity and is not displayed.
 
 Can I disable default operation for my datagrid?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -149,9 +163,13 @@ Yes. There are two ways to do that:
             action_configuration:
                 some_default_common_operation: false
 
-`some_default_common_operation` is not displayed at `your_datagrid_name` grid anymore. However, action_configuration can accept callable as a value, so sometimes the options are occupied by service callback. If it is so, we can use a different approach.
+`some_default_common_operation` is no longer displayed at the `your_datagrid_name` grid. However, action_configuration can accept a callable as a value, so a service callback sometimes occupies the option. In that case, use a different approach.
 
-2. Disable the operation for custom datagrid using the `exclude_datagrids` option in the operation definition. So you can specify the name of the datagrid that should be excluded from the *operation* matching. If another bundle defines your operation, you can use the *merge* behavior of operation configuration and add an additional property value under your bundle configuration. For example, the operation that should not be displayed for the `product_view` datagrid is the default `DELETE` operation from `OroActionBundle`. You can exclude your grid from matching adding the following options to ``<YourBundle>/Resources/config/oro/actions.yml`` for the backend datagrid and to ``<YourBundle>/Resources/views/layouts/<theme>/config/datagrids.yml`` for the frontend datagrid.
+2. Disable the operation for a custom datagrid using the `exclude_datagrids` option in the operation definition. This lets you specify the name of the datagrid to exclude from *operation* matching.
+
+   If another bundle defines your operation, use the *merge* behavior of operation configuration to add a property value under your bundle configuration.
+
+   For example, suppose you want to hide the default `DELETE` operation from `OroActionBundle` for the `product_view` datagrid. Exclude your grid from matching by adding the following options to ``<YourBundle>/Resources/config/oro/actions.yml`` for the backend datagrid and to ``<YourBundle>/Resources/views/layouts/<theme>/config/datagrids.yml`` for the frontend datagrid.
 
 .. code-block:: none
 
@@ -160,12 +178,12 @@ Yes. There are two ways to do that:
             exclude_datagrids:
                 - product_view
 
-You can always use other ways to define, reuse, or customize the operation definition. Along with basic merge, the `replace`, `extend`, and `substitute_operation` options become helpful in different cases.
+You can define, reuse, or customize the operation definition in other ways too. Along with basic merge, the `replace`, `extend`, and `substitute_operation` options help in different cases.
 
 How can I modify CRUD default operation for my Bundle?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you need to customize a default or any other operation, you should change its `label` as follows:
+To customize a default or any other operation, change its `label` as follows:
 
 .. code-block:: none
 
@@ -177,15 +195,16 @@ If you need to customize a default or any other operation, you should change its
             entities: ['MyEntity']                  # replacement will occur only if this operation will be matched by entity
             for_all_entities: false                 # overriding extended property for `entities` field matching only
 
-Here is a custom modification made through a substitution mechanism when the operation mentioned in the `substitute_operation` field is replaced by the current one.
-Additionally, you can limit the application of the modification only to the entities mentioned in the `entities` field. If you need to replace the operation fully instead of copying the extended version, the `extends` field can be omitted, and the custom body should be defined.
+This example uses the substitution mechanism: the operation named in the `substitute_operation` field is replaced by the current one.
+
+You can also limit the modification to the entities named in the `entities` field. To replace the operation fully instead of copying the extended version, omit the `extends` field and define the custom body.
 
 See the :ref:`substitution <bundle-docs-platform-action-bundle-operation-substitution>` section in the :ref:`configuration documentation <bundle-docs-platform-action-bundle-configuration-reference>` for more details.
 
 Operation Diagram
 -----------------
 
-The following diagram shows operation processes logic in graphical representation:
+The following diagram shows the logic of operation processes:
 
 .. image:: /img/bundles/ActionBundle/operation.png
    :alt: Operation Diagram
