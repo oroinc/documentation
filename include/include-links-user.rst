@@ -1077,3 +1077,8 @@ Links (User)
 .. |Google's CMP Partner Program|  raw:: html
 
    <a href="https://cmppartnerprogram.withgoogle.com/" target="_blank">Google's CMP Partner Program</a>
+
+.. |Global Payments|  raw:: html
+
+   <a href="https://www.globalpayments.com/" target="_blank">Global Payments</a>
+
