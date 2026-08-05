@@ -34,7 +34,7 @@ OroCommerce works with the following payment methods:
 
 * :ref:`OroPay <user-guide--payment--oropay>`
 
-  OroPay is OroCommerce’s integrated payment feature, created in partnership with Global Payments. It allows customers to pay invoices and complete checkout transactions using credit cards or ACH, all within the platform. Integrated with both the invoice portal and checkout, OroPay connects payment processing with existing ERP and commerce systems. This integration helps reduce manual work, improve accuracy, and provide better visibility into payment status.
+  OroPay is the payment service built into OroCommerce, delivered together with Global Payments. It lets customers pay invoices and complete checkout using credit cards or ACH, without leaving the platform. OroPay connects payment processing with your existing checkout and invoice data, reducing manual reconciliation and giving better visibility into payment status. This integration requires an approved merchant account with Global Payments, which Oro provisions into your cloud environment. See :ref:`Integration with OroPay Payment Service <pre-built-integrations-payment-oropay>` for an overview of how it works and what to expect when setting it up.
 
 * :ref:`PayPal Payment Services <user-guide--payment--payment-providers-overview--paypal>`
 
