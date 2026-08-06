@@ -5,9 +5,9 @@ Installation in Sub-Folder
 
 .. hint:: This section is part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides a general understanding of the multiple-website configuration concept in Oro applications.
 
-In OroCommerce, websites may be exposed via different domains or reside in the sub-folders of the same domain (e.g., the two websites that target the United States and the United Kingdom may be available at the *https://us-store.com* and *https://uk-store.com* respectively, or they may be reachable via *https://store.com/us* and *https://store.com/uk*).
+In OroCommerce, websites can be exposed on separate domains or hosted in sub-folders of the same domain. For example, the sites that target the United States and the United Kingdom may be available at *https://us-store.com* and *https://uk-store.com* respectively, or at *https://store.com/us* and *https://store.com/uk*.
 
-For the websites with dedicated domains, you may use the default OroCommerce installation, where all websites are installed into the web folder of the OroCommerce instance. However, you can move or copy the website to the sub-directory to support the websites with the shared domain (e.g., *https://store.com/us* and *https://store.com/uk*).
+Websites with dedicated domains can use the default OroCommerce installation, where all websites are installed into the web folder of the OroCommerce instance. To support websites that share a domain (e.g., *https://store.com/us* and *https://store.com/uk*), move or copy the website into a sub-directory instead.
 
 To prepare files for the website located in the sub-directory (e.g., /uk), do the following:
 

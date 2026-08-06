@@ -3,15 +3,15 @@
 Mode Extension
 ==============
 
-This extension provides the ability to work with the grid in different modes. There are two supported modes:
+This extension lets you work with the grid in different modes. Two modes are supported:
 
-- **server** (default) - all manipulations with data are performed on the backend side; the grid receives data via AJAX requests.
-- **client** --- all manipulations with data are performed on the frontend side; no AJAX requests required. The client mode does not currently support filters.
+- **server** (default) --- the backend performs all data manipulations, and the grid receives data via AJAX requests.
+- **client** --- the frontend performs all data manipulations, with no AJAX requests required. Client mode does not currently support filters.
 
 Configuration example
 ---------------------
 
-This grid will be rendered and processed in the client mode:
+Oro renders and processes this grid in client mode:
 
 .. code-block:: none
 

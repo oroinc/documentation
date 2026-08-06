@@ -24,3 +24,7 @@ _build/
 .sphinx_cache/
 *.doctree
 
+# Local Python environment used for builds outside Docker
+.venv/
+__pycache__/
+

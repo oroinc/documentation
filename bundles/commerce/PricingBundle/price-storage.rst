@@ -4,7 +4,7 @@ Price Storage
 =============
 
 The Pricing bundle enables you to separate price handling from the storage. Out of the box, the bundle is distributed
-with a Combined Price Lists ORM based storage. Depending on the chosen storage model, you may implement your own logic for storing and fetching pricing. To set up your own price storage, `ProductPriceStorageInterface` must be implemented.
+with two ORM based storages: :ref:`Combined Price Lists <bundle-docs-commerce-pricing-bundle-combined-price-lists>` (default) and :ref:`Flat Price Lists <bundle-docs-commerce-pricing-bundle-flat-pricing-storage>`. Depending on the chosen storage model, you may implement your own logic for storing and fetching pricing. To set up your own price storage, `ProductPriceStorageInterface` must be implemented.
 
 ProductPriceStorageInterface
 ----------------------------
@@ -124,6 +124,13 @@ Service definition example:
         arguments:
             - '@oro_entity.doctrine_helper'
 
+
+Search Indexation for a Custom Storage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Replacing the price storage affects only the way prices are fetched. Product prices in the website search index (used for the price filtering and sorting in the storefront) are still populated by the storage-specific indexation listeners of the ``oro_website_search.event.index_entity.product`` event: `WebsiteSearchProductPriceIndexerListener` for the combined storage and `WebsiteSearchProductPriceFlatIndexerListener` for the flat storage.
+
+When your custom storage serves prices from a different source, register a custom indexation listener that indexes the minimal prices from your storage into the ``minimal_price`` placeholder fields, disable the default listener, and dispatch the reindexation requests with the ``pricing`` field group whenever the prices in your storage change. See :ref:`Pricing and Search Index <bundle-docs-commerce-pricing-bundle-search>` for the details on the indexation listeners and reindexation triggers.
 
 Disable Oro Pricing
 ^^^^^^^^^^^^^^^^^^^

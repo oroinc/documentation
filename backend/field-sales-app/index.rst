@@ -10,12 +10,14 @@ OroCommerce Field Sales Application Setup and Configuration
 
 .. note:: Please |contact our support team| to learn more about the Field Sales Application and its implementation.
 
-This guide outlines steps required to set up the OroCommerce :ref:`Field Sales application <concept-guide--field-sales-app>` in a development environment. The Field Sales application is a headless Progressive Web Application (PWA) built with React and powered by OroCommerce backend APIs. It is designed to help sales representatives operate in offline or low-connectivity environments by offering capabilities such as order entry, visit tracking, and digital catalog browsing.
+This guide describes how to set up the OroCommerce :ref:`Field Sales application <concept-guide--field-sales-app>` in a development environment.
+
+The Field Sales application is a headless Progressive Web Application (PWA) built with React and powered by OroCommerce backend APIs. It helps sales representatives work in offline or low-connectivity environments, offering capabilities such as order entry, visit tracking, and digital catalog browsing.
 
 System Requirements
 -------------------
 
-Two components are required to run the Field Sales application: an instance of the OroCommerce Enterprise application and the Field Sales application itself. You must ensure that your environment meets the system requirements for both components.
+The Field Sales application requires two components: an OroCommerce Enterprise instance and the Field Sales application itself. Make sure your environment meets the system requirements for both.
 
 .. hint:: If you are not installing the |Sales Frontend Extension| on your OroCommerce instance and prefer to use an already prepared OroCommerce instance (e.g., hosted on Oro Cloud), you can skip the section about the OroCommerce Enterprise system requirements.
 
@@ -101,7 +103,7 @@ Create a file named `.env.development.local` in the root directory of the Field 
 
    cp .env .env.development.local
 
-If you run you OroCommerce Enterprise instance locally and the Field Sales application is installed under a subpath of the OroCommerce Enterprise public directory (e.g., `/sales-frontend`), it should include the following content:
+If you run your OroCommerce Enterprise instance locally and the Field Sales application is installed under a subpath of the OroCommerce Enterprise public directory (e.g., `/sales-frontend`), it should include the following content:
 
 .. code-block:: none
 
@@ -113,7 +115,7 @@ If you run you OroCommerce Enterprise instance locally and the Field Sales appli
     VITE_CHECK_TOKEN_URL="/admin/sales-frontend/oauth2/check-token"
     VITE_REFRESH_TOKEN_URL="/admin/sales-frontend/oauth2/refresh-token"
 
-If you OroCommerce instance runs on a separate domain or hosted in the Oro Cloud, specify the absolute URLs for the OroCommerce Enterprise instance:
+If your OroCommerce instance runs on a separate domain or is hosted in the Oro Cloud, specify the absolute URLs for the OroCommerce Enterprise instance:
 
 .. code-block:: none
 
@@ -144,7 +146,7 @@ Installation and Operation
 
    pnpm run build
 
-This will build the application source code in the specified `BUILD_DIR` (default is `dist`). Make sure you have the web server configured to serve the files from this directory.
+This builds the application source code in the specified `BUILD_DIR` (default is `dist`). Make sure your web server is configured to serve the files from this directory.
 
 Linking the Build to OroCommerce
 --------------------------------

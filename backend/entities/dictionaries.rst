@@ -3,7 +3,7 @@
 Dictionaries
 ============
 
-Dictionary entities are responsible for storing a predefined set of values of a particular type and their translations. The values within a dictionary can have a priority or some other data.
+Dictionary entities store a predefined set of values of a particular type, along with their translations. Values within a dictionary can also have a priority or other data.
 
 Automatic Creation of REST API for Dictionaries
 -----------------------------------------------
@@ -23,7 +23,7 @@ REST API resources are created automatically for the following types of dictiona
 
 **Creating a custom dictionary type**
 
-If you have a group of entities that can be classified as a dictionary but are not included in the ``dictionary`` group in the entity configuration, and you need to have its entities added to the dictionary REST API, you need to do two things.
+You may have a group of entities that qualify as a dictionary but are not part of the ``dictionary`` group in the entity configuration. To add their entities to the dictionary REST API, do two things.
 
 1. Create a dictionary value list provider implementing the |DictionaryValueListProviderInterface| interface.
 
@@ -36,9 +36,9 @@ If you have a group of entities that can be classified as a dictionary but are n
         :language: yaml
         :lines: 1-3, 71-78
 
-.. note:: Please note that you can specify the priority for the dictionary value list provider. The bigger the priority number is, the earlier the provider will be executed.
+.. note:: You can specify a priority for the dictionary value list provider. The higher the priority number, the earlier the provider runs.
 
-If more than one dictionary value list provider supports the same type of dictionary, only the one with the greater priority will be executed. The priority value is optional and defaults to 0.
+If more than one dictionary value list provider supports the same type of dictionary, only the one with the greater priority runs. The priority value is optional and defaults to 0.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

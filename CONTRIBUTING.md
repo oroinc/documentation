@@ -2,28 +2,29 @@
 
 Thank you for contributing to the Oro documentation.
 
-Documentation source files are maintained in the Oro documentation repository.
+The documentation source files are maintained in the [Oro documentation repository](https://github.com/oroinc/documentation/).
 
 This guide explains the documentation repository structure, topic organization, file naming conventions, and workflow for creating and updating documentation.
 
-For writing conventions and formatting rules, see:
+For writing conventions, formatting rules, and build instructions, see:
 
 - [STYLE-GUIDE.md](STYLE-GUIDE.md) — writing style, terminology, UI formatting, screenshots, capitalization, links, and editorial conventions.
 - [RST-SYNTAX.md](RST-SYNTAX.md) — reStructuredText syntax, directives, metadata, images, tables, notes, references, and other markup used throughout the documentation.
+- [BUILD.md](BUILD.md) — Docker and local builds, multi-version and Markdown output, and a fast syntax check of individual files.
 
 
 ## Before You Begin
 
-Before submitting documentation changes:
+Complete the following steps:
 
 1. Make sure you have access to the documentation repository.
 2. Fork the repository.
 3. Clone your fork locally.
-4. Review this guide, [STYLE-GUIDE.md](STYLE-GUIDE.md), and [RST-SYNTAX.md](RST-SYNTAX.md).
+4. Review this guide, [STYLE-GUIDE.md](STYLE-GUIDE.md), [RST-SYNTAX.md](RST-SYNTAX.md), and [BUILD.md](BUILD.md).
 
 The use of the documentation is subject to the [CC-BY-NC-SA 4.0](LICENSE) license.
 
-Before submitting documentation changes in a pull request, sign the [Contributor License Agreement (CLA)](https://oroinc.com/b2b-ecommerce/contributor-license-agreement/). The CLA must be signed for any code or documentation changes to be accepted.
+Sign the [Contributor License Agreement (CLA)](https://oroinc.com/b2b-ecommerce/contributor-license-agreement/) before you submit a pull request. The CLA must be signed for any code or documentation changes to be accepted.
 
 
 ## Documentation Structure and Topic Organization
@@ -34,7 +35,7 @@ Sections of the same level reside in the same folder, which simplifies navigatio
 
 Example file structure:
 
-```
+```text
 user/
 ├── index.rst
 ├── back-office/
@@ -51,7 +52,7 @@ backend/
 ├── index.rst
 ├── integration/
 │   ├── email.rst
-│   └── LDAP.rst
+│   └── ldap.rst
 └── api/
     ├── firewall-authenticators.rst
     └── request-types.rst
@@ -75,11 +76,11 @@ Follow these recommendations when naming new documentation files:
 
   Example:
 
-  ```
+  ```text
   user-management-permissions-organization.rst
   ```
 
-- Use lowercase letters and Arabic numbers only.
+- Use lowercase letters and Arabic numerals only.
 - Separate multiple words with a dash (`-`), not an underscore (`_`).
 - Avoid special symbols (`/`, `$`, `#`, etc.).
 - Save documentation source files with the `.rst` extension.
@@ -88,15 +89,15 @@ Examples:
 
 Recommended:
 
-```
+```text
 file-naming-conventions.rst
 payment-rules.rst
 customer-groups.rst
 ```
 
-Avoid:
+Not recommended:
 
-```
+```text
 File_Naming_Conventions.rst
 payment_rules.rst
 payment-rules!.rst
@@ -149,36 +150,30 @@ For better navigation, create an `index.rst` file in the new folder with an over
 Then add the new folder index to the appropriate location in the documentation hierarchy.
 
 
-## Building Documentation
+## Build Documentation
 
 Build and test the documentation before submitting a pull request to make sure you have not accidentally introduced layout or formatting issues.
 
-- Set up a local build environment by installing Docker.
-- Run the following command from the documentation repository:
+To build the full documentation, install Docker and run the following command from the documentation repository:
 
 ```bash
 docker bake --load
 ```
 
-By default, this command builds only the current branch.
+For multi-version builds, Markdown output, local builds without Docker, and a fast syntax check of individual files, see [BUILD.md](BUILD.md).
 
-To build documentation as it appears on the website, including version selection in the index, set the appropriate `MAINTENANCE_BRANCHES` variable.
-
-To generate documentation in Markdown format instead of HTML, set:
-
-```bash
-BUILDER="markdown"
-```
 
 ## Submit Documentation Updates
 
-Once you are ready, create a pull request in the Oro documentation repository with changes from your forked repository.
+When your changes are ready, create a pull request in the Oro documentation repository with changes from your forked repository.
 
 Before submitting:
 
 - Review your changes.
 - Build and test the documentation.
 - Check that links and references work correctly.
-- Ensure your changes follow the [STYLE-GUIDE.md](STYLE-GUIDE.md).
+- Make sure your changes follow [STYLE-GUIDE.md](STYLE-GUIDE.md).
+
+If your pull request contains more than one commit, keep the history linear and give each commit a clear, descriptive message that explains what it changes. Rebase your branch on the base branch instead of merging the base branch into it, and squash intermediate commits such as "fix" or "review comments" into the commit they belong to.
 
 After documentation review, your changes will be merged into the Oro documentation and published on the documentation website.

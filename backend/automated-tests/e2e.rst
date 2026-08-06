@@ -1,10 +1,13 @@
 End-to-End Testing with Behat
 =============================
 
-With Behat framework, you can write human-readable stories describing your application's behavior. These stories might be auto-tested against your application.
-We transform user actions into steps and expected outcomes to test the application. Scenario steps simulate user interaction with the application through the Google Chrome browser so that you can modify the application state.
+With the Behat framework, you can write human-readable stories that describe your application's behavior and then test them automatically against the application.
 
-You can organize dependent scenarios into features. The features are isolated by default to avoid data collisions and dependencies between features when they are running one by one. For example, the database and cache directories are dumped before running the feature tests; they are restored once the feature tests are executed. This means that when we run Behat tests, they are connected to services used by the application, such as the database, cache, message broker, and so on, and can interact with them, bypassing the application. As a result, these tests are rather integration than end-to-end.
+Behat turns user actions into steps and expected outcomes to test the application. Scenario steps simulate user interaction through the Google Chrome browser, so they can modify the application state.
+
+You can organize dependent scenarios into features. Features are isolated by default to avoid data collisions and dependencies between features when they run one by one. For example, the database and cache directories are dumped before the feature tests run and restored once the tests finish.
+
+Because of this isolation, Behat tests connect to the services the application uses --- database, cache, message broker, and so on --- and interact with them directly, bypassing the application. This makes them integration tests rather than end-to-end tests.
 
 You can disable features isolation with the ``--skip-isolation`` option of the bin/behat console command. When isolation is disabled, tests interact only with the application by simulating a user through the browser. In this case, services are not touched, and tests become more black-box and, as a result, **end-to-end**.
 
@@ -16,7 +19,9 @@ There are two main cases when end-to-end tests are helpful:
 Remote Application Testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can test your development, staging, or production environment remotely with the disabled isolation to ensure crucial features work as expected after deployment. When testing the production application, consider the artifacts and side effects of the tests because, with disabled isolators, tests change the application state permanently. As a consequence, you should never operate real users' data. For example, to mitigate the effects of running automated scenarios, you can create separate users explicitly for tests.
+With isolation disabled, you can test your development, staging, or production environment remotely to ensure crucial features work as expected after deployment.
+
+When testing the production application, consider the artifacts and side effects of the tests: with isolators disabled, tests change the application state permanently. Never operate on real users' data. To mitigate the effects of running automated scenarios, create separate users explicitly for tests.
 
 To test the external application, change the ``base_url`` option in the behat.yml file to the remote one. As many isolators do not support remote application testing, you can test external applications only with the skip-isolators option.
 
@@ -90,7 +95,7 @@ You can find Behat features provided by Oro that cover most application features
 Running Tests with Data Fixtures
 --------------------------------
 
-To test a feature, you often need different data loaded (users to log in, products with prices to add to the shopping list, etc.). Loading all the required data with behat steps might take a while and is often unnecessary. You can load data directly to the database with fixtures before running tests to speed up such scenarios. This requires the database connection from the application instance that runs tests to the tested one.
+To test a feature, you often need different data loaded (users to log in, products with prices to add to the shopping list, etc.). Loading all the required data with behat steps can take a while and is often unnecessary. To speed up such scenarios, load the data directly into the database with fixtures before running the tests. This requires a database connection from the application instance that runs the tests to the tested one.
 
 .. note:: Your local application source code must match the code of the tested application. Otherwise, you may face issues with the data load.
 
@@ -141,7 +146,7 @@ To test a feature, you may need to use sensitive data like credentials which sho
               username: admin
               password: s3crEtPas$
 
-2. Modify your scenario with variables in format `<Secret:variable.path>``.
+2. Modify your scenario with variables in the ``<Secret:variable.path>`` format.
 
    .. code-block:: gherkin
 
@@ -177,11 +182,11 @@ To configure predefined integrations, you can use one of the built-in scenarios.
 Running the Test in `Watch` Mode
 ---------------------------------
 
-The Watch mode allows you to save time on correcting errors and writing with behat tests.
+The Watch mode saves you time when correcting errors and writing behat tests.
 
-If the test was run with '--watch' option, it will stop every time there is an error in any step or at the end, when the last step is performed (this will simplify the process of writing the test in realtime)
-After stopping in the console, we can correct the error and continue the test from the required step (you can start from the failed step or from any other step to the failed step if necessary)
-If the error is not fixed correctly or the test fails at another step, the test will stop again (this process is cyclical and will continue until the test is completed or interrupted).
+- With the '--watch' option, the test stops every time there is an error in any step, and again at the end when the last step runs. This simplifies writing the test in real time.
+- After the test stops in the console, correct the error and continue from the step you need (from the failed step, or from any other step up to the failed step if necessary).
+- If the error is not fixed correctly or the test fails at another step, the test stops again. This cycle continues until the test completes or you interrupt it.
 
 To run the test in the `Watch` mode, you need to add the `--watch` option to the command:
 
@@ -244,7 +249,7 @@ You can choose several options:
 Self-Healing
 ------------
 
-This feature looks like a set of extensions that can be applied to certain types of test steps, and if a test fails, we try to fix it automatically.
+Self-Healing is a set of extensions applied to certain types of test steps. If a test fails, they try to fix it automatically.
 
 Currently, there are several healers:
     1. Reload Page Healer - fixes steps that look for an element on the page and do not find it (used to fix some random crashes)
@@ -271,7 +276,7 @@ You can also add your own Healer. For this, you need:
            tags:
                - { name: oro_test.behat.healer, priority: 50 }
 
-The work process of the healer can be seen in the process of performing the behat test, for example:
+You can see the healer at work while the behat test runs, for example:
 
    .. code-block:: none
 

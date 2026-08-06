@@ -5074,9 +5074,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/AbstractEntityClassNameProvider.php" target="_blank">abstract provider</a>
 
-.. |Ubuntu 20.04 LTS from the Microsoft Store| raw:: html
+.. |a supported Ubuntu LTS release| raw:: html
 
-   <a href="https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71" target="_blank">Ubuntu 20.04 LTS from the Microsoft Store</a>
+   <a href="https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-US&gl=US" target="_blank">a supported Ubuntu LTS release</a>
 
 .. |Docker Desktop for Windows| raw:: html
 
@@ -6063,6 +6063,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/CustomerBundle" target="_blank">OroCustomerBundle</a>
 
+.. |OroCustomerPartNumberBundle| raw:: html
+
+   <a href="https://github.com/oroinc/customer-part-number/" target="_blank">OroCustomerPartNumberBundle</a>
+
 .. |OroFrontendBundle| raw:: html
 
    <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/" target="_blank">OroFrontendBundle</a>
@@ -6643,3 +6647,7 @@ Links (Dev)
 .. |RST-SYNTAX.md| raw:: html
 
    <a href="https://github.com/oroinc/documentation/blob/master/RST-SYNTAX.md" target="_blank">RST-SYNTAX.md</a>
+
+.. |BUILD.md| raw:: html
+
+   <a href="https://github.com/oroinc/documentation/blob/master/BUILD.md" target="_blank">BUILD.md</a>

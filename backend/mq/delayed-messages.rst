@@ -3,10 +3,9 @@
 Delaying Messages
 =================
 
-Delaying a message is a way to send messages to a broker and process them after a certain period (e.g., in 10 seconds).
-To delay a message, publish it with the property ``delay`` which takes an integer representing the number of milliseconds the message should be delayed by.
-Use the ``Oro\Component\MessageQueue\Client\Message::setDelay`` method to do it.
-Once the delay expires, the message can be consumed.
+Delaying a message lets you send it to a broker and process it after a set period (for example, in 10 seconds).
+
+To delay a message, publish it with the ``delay`` property, which takes an integer representing the number of milliseconds to delay the message by. Set it with the ``Oro\Component\MessageQueue\Client\Message::setDelay`` method. Once the delay expires, the message can be consumed.
 
 Example:
 
@@ -21,17 +20,13 @@ Example:
 Redelivery Process
 ------------------
 
-To make sure that a message is delivered even if the messaging system fails, the messaging system implements **Guaranteed Delivery**.
-This way the message is not lost even if the messaging system crashes.
+To make sure a message is delivered even if the messaging system crashes, the system implements **Guaranteed Delivery**, so the message is never lost.
 
-The message processor can return a **REQUEUE** result, is which case the message is returned to the message broker on top of the stack.
-The same behavior can be reached if an error occurs during message processing.
+The message processor can return a **REQUEUE** result, in which case the message is returned to the message broker on top of the stack. An error during message processing produces the same behavior.
 
-To prevent blocking of the consumer (for example, if the message crashes each time with an error in the loop), delayed redelivery process is implemented and enabled by default.
+To prevent blocking the consumer (for example, if a message crashes each time with an error in the loop), a delayed redelivery process is implemented and enabled by default.
 
-``Oro\Bundle\MessageQueueBundle\Consumption\Extension\RedeliveryMessageExtension`` is responsible for this logic.
-It copies data from redelivered message, creates a new one with copied data, sets `delay` (by default `10 seconds`) and sends it to the message broker.
-After that, the old message is **REJECTED**.
+``Oro\Bundle\MessageQueueBundle\Consumption\Extension\RedeliveryMessageExtension`` handles this logic. It copies the data from the redelivered message into a new one, sets its `delay` (`10 seconds` by default), and sends it to the message broker. The old message is then **REJECTED**.
 
 Redelivery Message Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

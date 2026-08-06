@@ -46,7 +46,7 @@ Datagrid emits DOM events on its $el element:
 Datagrid Render
 ---------------
 
-Datagrid provide twig macros for datagrid render.
+The datagrid provides Twig macros for rendering.
 
 Usage example:
 
@@ -56,7 +56,7 @@ Usage example:
    {{ dataGrid.renderGrid(name, params, renderParams) }}
 
 
-`renderParams` provide ability to configure grid view.
+`renderParams` lets you configure the grid view.
 
 Usage example:
 
@@ -81,7 +81,7 @@ Usage example:
 Datagrid Settings Manager
 -------------------------
 
-Datagrid Settings allows to:
+Datagrid Settings lets you:
 
 - show/hide a column or filters
 - change the order of columns
@@ -94,7 +94,7 @@ Datagrid Settings operates with columns' attributes:
 - `required` if `true` the column/filters cannot be hidden (but can be ordered)
 - `manageable` if `false` the column does not appear in Datagrid Settings (generally is used for system columns such as `actions` or `selectRow`)
 
-There is the option that allows to turn off Datagrid Settings over `datagrids.yml` configuration. Keep in mind that the backend datagrid is configured in the ``/config/oro/datagrids.yml`` file, while the frontend datagrid is configured in the ``/views/layouts/<theme>/config/datagrids.yml`` file within the configuration directory of your bundle.
+You can turn off Datagrid Settings in the `datagrids.yml` configuration. Keep in mind that the backend datagrid is configured in the ``/config/oro/datagrids.yml`` file, while the frontend datagrid is configured in the ``/views/layouts/<theme>/config/datagrids.yml`` file within the configuration directory of your bundle.
 
 .. code-block:: yaml
 
@@ -110,8 +110,9 @@ There is the option that allows to turn off Datagrid Settings over `datagrids.ym
 Datagrid Widget
 ---------------
 
-Datagrid widget provide ability to render datagrid by name as widget.
-When datagrid is rendered inside widget, its rowClickAction will be disabled and replaced with dummy action. This action will trigger `grid-row-select` event on widget instance with data parameter of next structure:
+The datagrid widget lets you render a datagrid by name as a widget.
+
+When a datagrid is rendered inside a widget, its rowClickAction is disabled and replaced with a dummy action. This action triggers a `grid-row-select` event on the widget instance, with a data parameter of the following structure:
 
 .. code-block:: javascript
 
@@ -143,7 +144,7 @@ Usage example:
     </div>
 
 
-Create js module with the handler definition ``your/row-selection/handler`` as shown in example below, do not forget to add this module to the list of `dynamic-imports` in `jsmodules.yml`
+Create a JS module with the handler definition ``your/row-selection/handler`` as shown in the example below. Do not forget to add this module to the list of `dynamic-imports` in `jsmodules.yml`.
 
 .. code-block:: javascript
 
@@ -164,7 +165,7 @@ Create js module with the handler definition ``your/row-selection/handler`` as s
 Grid Customization Through Layouts
 ----------------------------------
 
-Grid can become customizable through option `split_to_cells` of `datagrid` block type in the layout configuration file:
+You can make a grid customizable through the `split_to_cells` option of the `datagrid` block type in the layout configuration file:
 
 .. code-block:: yaml
 
@@ -177,7 +178,7 @@ Grid can become customizable through option `split_to_cells` of `datagrid` block
 
 .. note:: By default, grid builds without layouts blocks (`split_to_cells: false`)
 
-According to `split_to_cells` option layout tree of the grid will have hierarchy like this:
+With the `split_to_cells` option, the grid's layout tree has a hierarchy like this:
 
 .. code-block:: none
 
@@ -201,8 +202,11 @@ According to `split_to_cells` option layout tree of the grid will have hierarchy
                 account_users_cell_confirmed_value
 
 
-Where `account_users` is the main block, which corresponds to block `id` of `datagrid` type.
-Block `account_users` contains two other blocks: `account_users_header_row` and `account_users_row`. First responds to the table header, second - table row. In `account_users_header_row` we can see `<block_id>_cell_<column1...N>` blocks which corresponds to  `<th>...</th>` HTML structure. Columns `column1` ... `columnN` were taken from `datagrids.yml` config file:
+Here `account_users` is the main block, which corresponds to the block `id` of the `datagrid` type.
+
+Block `account_users` contains two other blocks: `account_users_header_row` and `account_users_row`. The first corresponds to the table header, the second to the table row.
+
+In `account_users_header_row`, the `<block_id>_cell_<column1...N>` blocks correspond to the `<th>...</th>` HTML structure. Columns `column1` ... `columnN` come from the `datagrids.yml` config file:
 
 .. code-block:: yaml
 
@@ -223,14 +227,14 @@ Block `account_users` contains two other blocks: `account_users_header_row` and 
             type:      boolean
             data_name: accountUser.confirmed
 
-Block `account_users_row` consists of `<block_id>_<column1...N>` which corresponds to `<td>...</td>`. Leaf blocks `<block_id>_cell_<column1...N>_value` holds cell value for row value.
+Block `account_users_row` consists of `<block_id>_<column1...N>` blocks, which correspond to `<td>...</td>`. The leaf blocks `<block_id>_cell_<column1...N>_value` hold the cell value for the row value.
 
-Just after grid was divided into cells we can manipulate its blocks.
+Once the grid is divided into cells, you can manipulate its blocks.
 
 .. note::
     Good choice to investigate grid structure is :ref:`Layout Developer Toolbar <dev-doc-frontend-layouts-debugging>`.
 
-For example, we want to hide column `email` from `frontend-account-account-user-grid`. Just remove appropriate header and row columns:
+For example, to hide the column `email` from `frontend-account-account-user-grid`, remove the appropriate header and row columns:
 
 .. code-block:: yaml
 
@@ -241,7 +245,7 @@ For example, we want to hide column `email` from `frontend-account-account-user-
         id: account_users_cell_email
 
 
-In another case, suppose we want make `bold` content of column `firstName`. In `layout.yml.twig` you should create template like this:
+In another case, suppose we want to make the content of column `firstName` `bold`. In `layout.yml.twig`, create a template like this:
 
 .. code-block:: twig
 
@@ -280,9 +284,9 @@ Basic settings for layout grid
         frontend-some-grid:
     ...
 
-As we see in `layout.yml`, we need to extend generic layout block first. Later defined in `OroDataGridBundle` (`imports` directive used). Also we should to specify `optionName` with `grid_name` and `optionValue` with grid identifier value defined in `datagrids.yml`.
+As shown in `layout.yml`, we first need to extend the generic layout block, which is defined in `OroDataGridBundle` (using the `imports` directive). We should also specify `optionName` as `grid_name` and `optionValue` as the grid identifier value defined in `datagrids.yml`.
 
-If we open generic layout block for `base` theme (``base/imports/datagrid/layout.yml``) we could see other related with datagrid block: `datagrid_toolbar`:
+If we open the generic layout block for the `base` theme (``base/imports/datagrid/layout.yml``), we can see another block related to the datagrid: `datagrid_toolbar`:
 
 .. code-block:: yaml
 
@@ -302,12 +306,12 @@ If we open generic layout block for `base` theme (``base/imports/datagrid/layout
                         __datagrid: ~
 
 
-This block is responsible for rendering grid toolbar, and it consists of different blocks like page_size, pagination, sorting, etc. which also customisable using layouts.
+This block renders the grid toolbar. It consists of different blocks like page_size, pagination, sorting, etc., which are also customizable using layouts.
 
 Layout Grid Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Through layout directives like `visible` , `@move`, `@setOption`, etc. we can configure grid settings and params on layout level.
+Layout directives like `visible`, `@move`, `@setOption`, etc. let us configure grid settings and params at the layout level.
 
 For example, we can set block visibility based on some logic using Symfony expression language:
 
@@ -324,7 +328,7 @@ For example, we can set block visibility based on some logic using Symfony expre
                     visible: '=data["feature"].isFeatureEnabled("product_feature")'
 
 
-In ``DataGridBundle/Layout/Block/Type/DatagridType.php`` defined additional parameters used for grid rendering:
+``DataGridBundle/Layout/Block/Type/DatagridType.php`` defines additional parameters used for grid rendering:
 
 .. code-block:: php
 
@@ -332,19 +336,20 @@ In ``DataGridBundle/Layout/Block/Type/DatagridType.php`` defined additional para
     'grid_render_parameters' => [],
     'split_to_cells' => false,
 
-Using `split_to_cells` parameter we can manipulate grid layout on more detailed level - table cells. How to use this param described in :ref:`Grid customization through 'split to cells' option <backend-entities-filters-grid-extension>`.
-Other params defined in Twig macros `renderGrid` (``DataGridBundle/Resources/views/macros.html.twig``):
+The `split_to_cells` parameter lets us manipulate the grid layout at a more detailed level --- table cells. Its usage is described in :ref:`Grid customization through 'split to cells' option <backend-entities-filters-grid-extension>`.
+
+The other params are defined in the Twig macro `renderGrid` (``DataGridBundle/Resources/views/macros.html.twig``):
 
 - `grid_parameters` - parameters need to be passed to grid request
 - `grid_render_parameters` - render parameters need to be set for grid rendering
 
-Suppose we need to change some parameters that affects grid layouts on **Account > Quotes** frontend page.
+Suppose we need to change some parameters that affect grid layouts on the **Account > Quotes** frontend page.
 
-Using :ref:`Layout Developer Toolbar <dev-doc-frontend-layouts-debugging>` in developer mode we can quickly find out grid layout identifiers: `quotes_datagrid` and `quotes_datagrid_toolbar`. On `Build Block` view we can see `grid_name` parameter: `frontend-quotes-grid`.
+Using the :ref:`Layout Developer Toolbar <dev-doc-frontend-layouts-debugging>` in developer mode, we can quickly find the grid layout identifiers: `quotes_datagrid` and `quotes_datagrid_toolbar`. In the `Build Block` view, we can see the `grid_name` parameter: `frontend-quotes-grid`.
 
-Lets change some options for this grid layout.
+Let's change some options for this grid layout.
 
-In ``SaleBundle/Resources/views/layouts/default/imports/oro_sale_quote_grid/layout.yml`` we can specify css class that will be used for grid rendering:
+In ``SaleBundle/Resources/views/layouts/default/imports/oro_sale_quote_grid/layout.yml``, we can specify a CSS class used for grid rendering:
 
 .. code-block:: yaml
 
@@ -354,9 +359,9 @@ In ``SaleBundle/Resources/views/layouts/default/imports/oro_sale_quote_grid/layo
         optionValue:
             cssClass: 'some-css-class'
 
-If we inspect HTML page with grid we see that class atrribute was added to div element: `class="some-css-class"`
+If we inspect the HTML page with the grid, we see that a class attribute was added to the div element: `class="some-css-class"`
 
-In order to pass some extra param to grid request lets specify for example `web_catalog_id` context param:
+To pass an extra param to the grid request, let's specify, for example, the `web_catalog_id` context param:
 
 .. code-block:: yaml
 
@@ -366,7 +371,7 @@ In order to pass some extra param to grid request lets specify for example `web_
         optionValue:
             web_catalog_id: '=context["web_catalog_id"]'
 
-If we make some actions with grid like sorting, we see that additional request attribute `web_catalog_id` was added:
+If we perform some actions with the grid, like sorting, we see that the additional request attribute `web_catalog_id` was added:
 
 .. code-block:: none
 
@@ -379,7 +384,7 @@ If we make some actions with grid like sorting, we see that additional request a
     ...
 
 
-Suppose we want to modify datagrid toolbar. Lets hide block with page size:
+Suppose we want to modify the datagrid toolbar. Let's hide the block with page size:
 
 .. code-block:: none
 
@@ -388,7 +393,7 @@ Suppose we want to modify datagrid toolbar. Lets hide block with page size:
         optionName: visible
         optionValue: false
 
-After refresh page `Page size` will be hidden.
+After refreshing the page, `Page size` will be hidden.
 
 **Related Articles**
 

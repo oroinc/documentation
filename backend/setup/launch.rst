@@ -1,24 +1,24 @@
 Launch
 ======
 
-When development is complete, and it is time to go live, a clear plan for a release procedure is essential for the process to go down smoothly.
+When development is complete and it is time to go live, a clear release plan is essential for a smooth process.
 
-As going live is not a matter of just "flipping the switch", we have compiled a go-live plan to help you avoid the typical issues you might face in the process and introduce you to some of our best practices.
+Going live is not a matter of just "flipping the switch". We have compiled a go-live plan to help you avoid typical issues and share some of our best practices.
 
 The recommendations provided below are applicable when launching the application for the first time and updating a project that is already live.
 
 Development
 -----------
 
-When you are at the development stage, several things must be considered months before the release.
+At the development stage, consider several things months before the release.
 
 **Compile your launch plan at the initial stage of development**
 
-Planning helps you uncover the hidden scope of work and ensure you have captured all necessary items and factors in time. Think about actions that must be done before, during, and right after the launch. At this point, a comprehensive plan that defines each team member's deadlines, roles, and responsibilities is a must to keep the project on track. Some work can be done concurrently with the development and ultimately save time in the future.
+Planning helps you uncover the hidden scope of work and capture all necessary items in time. Think about the actions needed before, during, and right after the launch. A comprehensive plan that defines each team member's deadlines, roles, and responsibilities is a must to keep the project on track. You can do some work concurrently with development to save time later.
 
 **Use a staging environment**
 
-We recommend using a staging environment equivalent to the production environment to test the exact steps in the deployment plan you will use in the production. It includes similar hardware, configurations, architecture, services, catalog size, customer number, etc. Run as many tests as possible to ensure there are no blocking issues in the application.
+We recommend a staging environment equivalent to production, so you can test the exact deployment steps you will use in production. Match it to production in hardware, configurations, architecture, services, catalog size, customer number, etc. Run as many tests as possible to ensure there are no blocking issues in the application.
 
 .. hint::
           Remember to limit emails sent from the staging and other environments you use in the development. You want to avoid sending emails to real mailboxes.
@@ -26,7 +26,7 @@ We recommend using a staging environment equivalent to the production environmen
           If you use a copy of the production database, we strongly recommend replacing sensitive information with dummy placeholders to increase security and avoid data leaks.
           If your application runs on |OroCloud|, it will be helpful to know that it has a tool that copies the production database and replaces sensitive information with meaningless text. Contact Oro Customers Support to request a copy of your production database for the staging environment.
 
-Staging environments mirror production, which means that if errors occur, you get a heads-up that it would likely cause similar errors in your production environment. It's important to note, however, that the absence of issues in your local environment does not guarantee the same in the production.
+Because staging mirrors production, errors there warn you of errors likely to occur in production. Note, however, that the absence of issues in your local environment does not guarantee the same in production.
 
 
 .. hint::
@@ -36,7 +36,7 @@ Staging environments mirror production, which means that if errors occur, you ge
 
 **Prepare content early**
 
-There is a variety of content in your web application that you need to have ready before the launch, particularly when the application has a customer-facing side (storefront). You can prepare the majority of content even when your application is not yet ready.
+Your web application contains a variety of content that you need ready before launch, particularly when it has a customer-facing side (storefront). You can prepare most of this content even before the application is ready.
 
 Start writing content pages and email templates, designing ad pages and blocks, constructing the menu and catalog structure, and adding product data. If you use integrations to import content, such as products or catalogs, ensure all the required information, including SEO-related attributes, is in place.
 
@@ -44,15 +44,15 @@ Keeping the content ready enables you to check whether it fits properly when all
 
 **Tune search configuration**
 
-To make sure the application search allows users to find information (e.g., products and services) effectively, think about what typical search queries could be. It helps to fine-tune the search engine (update the list of searchable fields and prioritize them, define the list of stop words, filters, sorters, etc.).
+To help users find information (e.g., products and services) effectively, think about typical search queries. Use them to fine-tune the search engine: update and prioritize the list of searchable fields, define the list of stop words, filters, sorters, etc.
 
 **Define user roles and responsibilities**
 
-Think about the users of your application and their responsibilities. Define all necessary user roles that should be allowed access only to the data that is essential for their work requirements. It is applicable for back-office users as well as for storefront (customer) users.
+Think about the users of your application and their responsibilities. Define all necessary user roles, granting each role access only to the data essential for its work. This applies to back-office users as well as storefront (customer) users.
 
 **Use HTTPS**
 
-We recommend using HTTPS for your project and all connections to the third-party services implemented in your application. Secure communication increases your data protection and overall security. If third-party services do not allow it, you have enough time before the launch to implement or request the support of the HTTPS protocol for them.
+We recommend HTTPS for your project and for all connections to third-party services in your application. Secure communication improves data protection and overall security. If a third-party service does not support HTTPS, you have enough time before launch to implement it or request support for it.
 
 **Decide on SEO strategy**
 
@@ -61,9 +61,9 @@ Decide what happens to the URLs that are already indexed by search engines from 
 Pre-Launch
 ----------
 
-When development, configuration, and testing are complete, consider starting to gear up for the launch. Before going live, prepare your production environment and ensure it is ready for traffic once you open the website to your customers.
+When development, configuration, and testing are complete, start gearing up for the launch. Before going live, prepare your production environment and ensure it is ready for traffic once you open the website to your customers.
 
-First, create/deploy a new environment, set up a project, and configure both as production. Alternatively, you can convert your staging environment to production. Remember that the staging is configured for development, so you must review its configuration carefully and update it according to the production needs. The benefit of such an approach is that data entered during development becomes available on the new instance, so you do not need to spend time entering it again.
+First, create/deploy a new environment, set up a project, and configure both as production. Alternatively, convert your staging environment to production. Because staging is configured for development, review its configuration carefully and update it for production needs. This approach makes data entered during development available on the new instance, so you do not need to enter it again.
 
 .. important::
 
@@ -72,13 +72,13 @@ First, create/deploy a new environment, set up a project, and configure both as 
 
 **Buy SSL certificates and configure SPF records**
 
-Define production domains and buy necessary SSL certificates in advance, so it runs smoothly during the launch.
+Define production domains and buy the necessary SSL certificates in advance so the launch runs smoothly.
 
 Remember to configure SPF records for email anti-spam control to make sure emails from your application are not dropped to the Spam folder and ignored by users.
 
 **Ensure the environment resource configuration is ready for the estimated load**
 
-To avoid any downtimes and ensure optimal application performance, estimate the expected amount of requests to your application along with the volume of data and media files. Using this information, check the resource configuration of each node of the production environment and update it accordingly.
+To avoid downtime and ensure optimal performance, estimate the expected number of requests to your application, along with the volume of data and media files. Use this information to check the resource configuration of each node of the production environment and update it accordingly.
 
 **Ensure Message Queue is configured for optimal performance**
 
@@ -94,7 +94,7 @@ You should also run a security/penetration test against your application to ensu
 
 **Prepare a Rollback Plan**
 
-Prepare for any scenarios, good or bad. Clearly outlined steps on how to revert changes and get the application back to a functioning state enable you to simplify and speed up the roll-back.
+Prepare for any scenario, good or bad. Clearly outlined steps for reverting changes and restoring the application to a functioning state simplify and speed up the roll-back.
 
 If you are updating a project that has already gone live, make sure you have taken a snapshot of the production instance before deployment.
 

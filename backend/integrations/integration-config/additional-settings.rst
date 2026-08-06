@@ -3,14 +3,14 @@
 Additional Serializable Fields
 ==============================
 
-Integration entity contains two additional serializable fields that allow developers to store platform specific
-settings there. Those fields are **synchronization settings** and **mapping settings**. They could be retrieved using
-getters ``getSynchronizationSettings()`` and ``getMappingSettings()`` respectively.
+The Integration entity contains two additional serializable fields where developers can store platform-specific
+settings: **synchronization settings** and **mapping settings**. Retrieve them with the getters
+``getSynchronizationSettings()`` and ``getMappingSettings()`` respectively.
 
 .. note:: doctrine2 will not update object type fields if values were changed by reference, due to this getters return **cloned** objects.
 
-In order to allow putting configuration fields into integration creation form the ``integrations.yml`` config file type was added.
-The root node should be ``integrations`` and the form configuration should be placed under the ``form`` node.
+To let you add configuration fields to the integration creation form, the ``integrations.yml`` config file type was added.
+Use ``integrations`` as the root node and place the form configuration under the ``form`` node.
 
 **Example**
 
@@ -28,4 +28,4 @@ The root node should be ``integrations`` and the form configuration should be pl
                     applicable: [some_integration_type]  # on which integration types this setting should be shown
 
 This configuration will be resolved by ``SystemAwareResolver`` so any node can contain DI service calls or constants.
-For example, if you want to bring dynamic behavior to the ``applicable`` node you can put service call there, ``$channelType$`` will be in the resolver context. In this case, string ``applicable: @some.service->methodOfService($channelType$)`` will invoke function ``methodOfService`` in the class registered in the DI as ``some.service``.
+For example, to add dynamic behavior to the ``applicable`` node, put a service call there; ``$channelType$`` is available in the resolver context. The string ``applicable: @some.service->methodOfService($channelType$)`` then invokes the function ``methodOfService`` in the class registered in DI as ``some.service``.
