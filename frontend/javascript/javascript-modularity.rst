@@ -80,18 +80,18 @@ It takes care of downloading and evaluating the external script at runtime.
 .. code-block:: javascript
 
     import scriptjs from 'scriptjs';
-    import BaseView from 'oroui/jsbase/view';
+    import BaseView from 'oroui/js/app/views/base/view';
 
     const MyView = BaseView.extend({
         initialize() {
             scriptjs('foo.js', () => {
                 // foo.js is ready;
 
-                this.doShomething();
+                this.doSomething();
             })
         },
 
-        doShomething() {
+        doSomething() {
             /* do something */
         }
     });
