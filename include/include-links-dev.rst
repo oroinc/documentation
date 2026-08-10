@@ -103,6 +103,10 @@ Links (Dev)
 
    <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>
 
+.. |Google Consent Mode documentation| raw:: html
+
+   <a href="https://developers.google.com/tag-platform/security/guides/consent" target="_blank">Google Consent Mode documentation</a>
+
 .. |Microsoft Edge| raw:: html
 
    <a href="https://www.microsoft.com/en-us/edge?form=MA13FJ" target="_blank">Microsoft Edge</a>
