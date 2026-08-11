@@ -11,7 +11,9 @@ OroOAuth2ServerBundle
 |OroOAuth2ServerBundle| provides OAuth 2.0 authorization and resource server capabilities implemented
 on top of |thephpleague/oauth2-server| library.
 
-Currently, Authorization Code (with PKCE extention), Client Credentials and Password grants are implemented.
+Currently, Authorization Code (with PKCE extension), Client Credentials and Password grants are implemented. The
+bundle also provides the custom Session Transfer grant that exchanges an OAuth access token for a short-lived,
+one-time token used to create an authenticated browser session.
 
 See |OAuth 2.0 Server Authorization Code Grant| and |OAuth 2.0 Authorization Code Grant| for details of
 Authorization Code grant.
@@ -48,6 +50,9 @@ The default configuration of OroOAuth2ServerBundle is illustrated below:
 
             # Determines if the authorization code grant is enabled.
             enable_auth_code: true
+
+            # The lifetime in seconds of a Session Transfer Token.
+            session_transfer_token_lifetime: 60
 
             # The full path to the private key file that is used to sign JWT tokens.
             private_key: '%kernel.project_dir%/var/oauth_private.key'
@@ -148,6 +153,7 @@ Related Documentation
 .. toctree::
    :maxdepth: 1
 
+   Session Transfer <session-transfer>
    Commands <commands>
 
 .. include:: /include/include-links-dev.rst

@@ -42,6 +42,9 @@ To create a new OAuth application in the back-office:
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations (available for the Enterprise edition only).
    * **Application Name** --- Provide a meaningful name for the application you are adding.
    * **Active** --- Select the **Active** checkbox to activate the new application.
+   * **Enable Session Transfer** --- Allow the application to exchange an access token issued to it for a short-lived,
+     one-time token that creates a browser session. Enable this option only for trusted applications. See
+     :ref:`Session Transfer <bundle-docs-platform-oauth2-server-bundle--session-transfer>` for integration details.
    * **Support all APIs** --- Select whether the client should support all available API types. If disabled, the *Supported APIs* filed appears with a list of API types for the user to select the required one.
    * **Supported APIs** --- The field appears when the *Support all APIs* field is disabled. Select the API type that the client should support, for example JSON:API, Email Addon, SCIM, etc.
    * **Grant Type** --- Select the grant type to apply to the new application. Currently, the available grant types are *Authorization Code*, *Client Credentials*, and *Password*. The |Authorization Code Grant| type is used by confidential and public clients to exchange an authorization code for an access token, the |OAuth Client Credentials Grant| type is used for machine-to-machine authentication (e.g., in a cron job that performs maintenance tasks over an API) and |OAuth Password Grant| is used by trusted first-party clients to exchange the credentials (username and password) for an access token.
@@ -91,4 +94,3 @@ You can create as many applications as you need for any of your existing organiz
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
-
