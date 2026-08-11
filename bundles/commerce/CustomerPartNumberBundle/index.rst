@@ -75,6 +75,68 @@ added under the ``products_tab`` of the main application menu.
   its "More actions" dropdown. Contributed by ``oro_customer_part_number.widget_provider.customer_view_actions``
   in the ``activity`` view action group (the group whose label renders as "More actions").
 
+Import and Export
+-----------------
+
+Part numbers are imported from and exported to CSV in the back-office, on top of ImportExportBundle.
+``ImportExport\Configuration\CustomerPartNumberImportExportConfigurationProvider`` (the
+``oro_customer_part_number`` configuration alias) declares both, and the listing page renders the buttons from it.
+
+The import and the export do not share one column set:
+
+* The import reads **Part Number** and **Product SKU**, which are the only two columns of the import template.
+  **Customer Id** is recognized but is not a part of the template (see below), and any other column of the file is
+  ignored.
+* The export writes **Part Number**, **Product SKU**, **Customer Id**, and **Customer Name**, following the
+  ``importexport`` entity configuration of ``Entity\CustomerPartNumber`` and the identity fields of the related
+  entities.
+
+Column titles are the translated entity field labels in both directions, so they follow the locale of the user
+running the operation.
+
+Import
+^^^^^^
+
+Part numbers are always imported for one customer, which is selected in the import dialog and is never taken from
+the file:
+
+* ``Form\Extension\ImportTypeCustomerExtension`` adds the **Customer** field to the dialog.
+* ``EventListener\ImportCustomerOptionRequestListener`` copies the selected customer into the request import
+  options, from where the import chain passes it to every chunk context as the ``customerId`` option.
+* ``ImportExport\DataConverter\CustomerPartNumberDataConverter`` drops the customer id column of the file and
+  substitutes that option instead. An exported file can therefore only be imported back for the customer it was
+  exported for. The column is intentionally left out of the import template, since the file must never drive the customer.
+
+``ImportExport\Strategy\CustomerPartNumberImportAddStrategy`` strategy drives both the **Add** and **Replace** import modes:
+
+* **Add** - imports the part numbers as they are written in the file. A part number the customer already has for
+  the same product is skipped silently.
+* **Replace** - the same as above, but preceded by the removal of the part numbers the customer has for the products
+  listed in the file. Part numbers for products that the file does not list are not affected, and part numbers of
+  other customers are never affected.
+
+The removal runs once from ``ImportExport\EventListener\BeforeImportChunksListener``, before the file is split into
+chunks.
+``ImportExport\Handler\ExistingCustomerPartNumbersRemoveHandler`` streams the file through
+``ImportExport\Reader\CustomerPartNumberImportFileReader``, ``ImportExport\Provider\ProductIdsBySkusProvider``, and
+``ImportExport\Manager\CustomerPartNumberRemover``, so that a file of any size is processed in batches. The remover
+deletes with a bulk query, which bypasses the Doctrine listener that schedules the product search reindex, so it
+requests the reindex itself.
+
+Removal is authorized separately from the import itself: it requires the ``DELETE`` permission on the entity and a
+customer of the organization of the user who started the import. Without that permission, the **Replace** strategy
+is not offered in the dialog.
+
+.. note:: Import validation runs the same checks as the import but never deletes anything, so validating the
+   **Replace** strategy reports the same result as validating **Add**.
+
+Export
+^^^^^^
+
+* The export runs the bundle's own ``customer_part_number_export_to_csv`` batch job, which reads through
+  ``FilteredEntityReader``, so it exports the rows matching the filters currently applied to the
+  ``customer-part-numbers-grid``.
+
 Legacy OroLab Bundle Coexistence
 --------------------------------
 
@@ -118,10 +180,13 @@ WebsiteSearchBundle) with no common extension point.
 Data Fetch: ORM vs. Search Index
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Search-backed surfaces (storefront product search grids) never query ``oro_customer_part_number`` directly.
-  At index time, ``WebsiteSearchEventListener`` writes two per-customer fields onto the product's search
-  document: a multi-value fulltext field for matching, and a JSON-encoded field for retrieving the full list
-  (the multi-value field cannot be read back as a list).
+* Search-backed surfaces never query ``oro_customer_part_number`` directly. At index time,
+  ``WebsiteSearchEventListener`` writes two per-customer fields: a multi-value field of lowercased part numbers
+  for matching, and a JSON-encoded field of part numbers as entered for retrieving the full list.
+* Matching is case-insensitive on every engine: both ``CustomerPartNumbersSearchQueryModifier`` (search term)
+  and ``Filter\CustomerPartNumberSearchFilter`` (grid filter value) lowercase before querying.
+* Neither field is added to the shared ``all_text_*`` fields. The query condition targets the per-customer
+  field instead, via the ``CUSTOMER_ID`` placeholder.
 * Every other surface - product view page, shopping list, checkout line items - reads live rows through
   ``Provider\CustomerPartNumbersProvider``.
 * Effect: ORM-backed surfaces are always current. Search-backed surfaces reflect part numbers only as of the
@@ -153,6 +218,11 @@ Customization Points
   ``oro_customer_part_number.part_number.forbidden_characters`` DI parameter (default ``^ " & ' < >``).
 * Reuse the ``customer_part_number_orm`` datagrid filter type in any grid with an ORM datasource related to
   ``Product``.
+* Tune the batch sizes of the **Replace** import removal: the
+  ``oro_customer_part_number.importexport.product_ids_by_skus_batch_size`` and
+  ``oro_customer_part_number.importexport.customer_part_number_remove_batch_size`` DI parameters control how many
+  product SKUs are resolved to product ids (default ``500``), and how many products have their part numbers removed
+  (default ``1000``), per query.
 * Read part number data in a custom layout update via the ``oro_customer_part_number_provider``.
 
 Related Documentation
