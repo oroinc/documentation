@@ -19,7 +19,8 @@ Generates private and public RSA keys required for proper work of the OAuth2 ser
 oro:cron:oauth-server:cleanup
 -----------------------------
 
-Removes outdated OAuth 2.0 access tokens, refresh tokens and auth codes. It also removes OAuth 2.0 applications that belong to removed users. Runs daily at midnight via cron.
+Removes outdated OAuth 2.0 access tokens, refresh tokens, auth codes, and expired Session Transfer Tokens. It also
+removes OAuth 2.0 applications that belong to removed users. Runs daily at midnight via cron.
 
 .. code-block:: bash
 

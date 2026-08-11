@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1260" viewBox="0 0 1440 1260" role="img" aria-labelledby="title description">
+  <title id="title">Session Transfer flow</title>
+  <desc id="description">A sequence diagram showing how an OAuth client exchanges an access token for a one-time Session Transfer Token, opens the returned URL in a browser, and creates an authenticated Oro session.</desc>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="190%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset dx="5" dy="5" result="offsetBlur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.35"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 L 3 6 Z" fill="#222222"/>
+    </marker>
+    <marker id="open-arrow" markerWidth="12" markerHeight="12" refX="2" refY="6" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 12 0 L 0 6 L 12 12" fill="none" stroke="#222222" stroke-width="2"/>
+    </marker>
+    <style>
+      .participant { fill: #e2e2f0; stroke: #666666; stroke-width: 1.5; filter: url(#shadow); }
+      .participant-text { fill: #111111; font-family: Arial, Helvetica, sans-serif; font-size: 24px; text-anchor: middle; }
+      .lifeline { stroke: #555555; stroke-width: 1.2; stroke-dasharray: 8 8; }
+      .phase-line { fill: #4f9bc5; stroke: #181818; stroke-width: 2; filter: url(#shadow); }
+      .phase-label { fill: #337ab7; stroke: #181818; stroke-width: 2; filter: url(#shadow); }
+      .phase-text { fill: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 23px; font-weight: 700; letter-spacing: 1px; }
+      .message { fill: #111111; font-family: Arial, Helvetica, sans-serif; font-size: 21px; }
+      .message-small { fill: #111111; font-family: "Courier New", monospace; font-size: 18px; }
+      .step { font-weight: 700; }
+      .sensitive { fill: #e3312d; font-family: "Courier New", monospace; font-size: 18px; font-style: italic; }
+      .arrow { fill: none; stroke: #222222; stroke-width: 2.5; marker-end: url(#arrow); }
+      .return-arrow { fill: none; stroke: #222222; stroke-width: 2.5; stroke-dasharray: 4 4; marker-start: url(#open-arrow); }
+      .activation { fill: #6096df; stroke: #181818; stroke-width: 1.2; filter: url(#shadow); }
+      .note { fill: #d9edf7; stroke: #b4dce8; stroke-width: 1.4; filter: url(#shadow); }
+      .note-fold { fill: #ffffff; stroke: #b4dce8; stroke-width: 1.2; }
+      .note-text { fill: #111111; font-family: Arial, Helvetica, sans-serif; font-size: 20px; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="1260" fill="#ffffff"/>
+
+  <!-- Participants -->
+  <g>
+    <rect class="participant" x="42" y="24" width="230" height="68" rx="5"/>
+    <text class="participant-text" x="157" y="52">
+      <tspan x="157">Trusted OAuth</tspan>
+      <tspan x="157" dy="28">Client</tspan>
+    </text>
+
+    <rect class="participant" x="387" y="24" width="270" height="68" rx="5"/>
+    <text class="participant-text" x="522" y="52">
+      <tspan x="522">Oro Authorization</tspan>
+      <tspan x="522" dy="28">Server</tspan>
+    </text>
+
+    <rect class="participant" x="793" y="24" width="190" height="68" rx="5"/>
+    <text class="participant-text" x="888" y="66">Browser</text>
+
+    <rect class="participant" x="1123" y="24" width="260" height="68" rx="5"/>
+    <text class="participant-text" x="1253" y="52">
+      <tspan x="1253">Oro</tspan>
+      <tspan x="1253" dy="28">Application</tspan>
+    </text>
+
+    <line class="lifeline" x1="157" y1="92" x2="157" y2="1174"/>
+    <line class="lifeline" x1="522" y1="92" x2="522" y2="1174"/>
+    <line class="lifeline" x1="888" y1="92" x2="888" y2="1174"/>
+    <line class="lifeline" x1="1253" y1="92" x2="1253" y2="1174"/>
+  </g>
+
+  <!-- Initial state -->
+  <g>
+    <path class="note" d="M 24 119 H 346 L 368 141 V 201 H 24 Z"/>
+    <path class="note-fold" d="M 346 119 V 141 H 368 Z"/>
+    <text class="note-text" x="40" y="149">
+      <tspan x="40">The client already has a valid</tspan>
+      <tspan x="40" dy="27">OAuth access token.</tspan>
+    </text>
+  </g>
+
+  <!-- Phase 1 -->
+  <g>
+    <rect class="phase-line" x="18" y="230" width="1404" height="8"/>
+    <rect class="phase-label" x="697" y="209" width="725" height="49"/>
+    <text class="phase-text" x="716" y="241">Exchange the access token for a Session Transfer Token</text>
+  </g>
+
+  <g>
+    <text class="message" x="178" y="294"><tspan class="step">1)</tspan> POST /oauth2-token</text>
+    <text class="message-small" x="178" y="322">grant_type=<tspan class="sensitive">session_transfer</tspan></text>
+    <text class="message-small" x="178" y="348">subject_token=<tspan class="sensitive">access_token</tspan>, client_id, route</text>
+    <line class="arrow" x1="157" y1="365" x2="510" y2="365"/>
+
+    <rect class="activation" x="516" y="365" width="12" height="235"/>
+
+    <path class="note" d="M 551 392 H 948 L 970 414 V 486 H 551 Z"/>
+    <path class="note-fold" d="M 948 392 V 414 H 970 Z"/>
+    <text class="note-text" x="570" y="423">
+      <tspan class="step">2)</tspan><tspan> Validate the application, access token,</tspan>
+      <tspan x="601" dy="27">session subject, and target route.</tspan>
+      <tspan class="step" x="570" dy="34">3)</tspan><tspan> Create a short-lived, one-time token.</tspan>
+    </text>
+
+    <text class="message" x="178" y="528"><tspan class="step">4)</tspan> Return SessionTransfer response</text>
+    <text class="message-small" x="178" y="555">access_token=<tspan class="sensitive">transfer_token</tspan>, expires_in</text>
+    <line class="return-arrow" x1="163" y1="575" x2="516" y2="575"/>
+  </g>
+
+  <!-- Phase 2 -->
+  <g>
+    <rect class="phase-line" x="18" y="625" width="1404" height="8"/>
+    <rect class="phase-label" x="780" y="604" width="642" height="49"/>
+    <text class="phase-text" x="801" y="636">Open an authenticated Oro browser session</text>
+  </g>
+
+  <g>
+    <text class="message" x="178" y="690"><tspan class="step">5)</tspan> Open consume URL on target site</text>
+    <line class="arrow" x1="157" y1="712" x2="876" y2="712"/>
+
+    <text class="message" x="912" y="750"><tspan class="step">6)</tspan> GET /oauth2/session-transfer/consume</text>
+    <text class="message-small" x="912" y="776">token=<tspan class="sensitive">transfer_token</tspan></text>
+    <line class="arrow" x1="888" y1="793" x2="1241" y2="793"/>
+
+    <rect class="activation" x="1247" y="793" width="12" height="176"/>
+
+    <path class="note" d="M 800 813 H 1215 L 1237 835 V 900 H 800 Z"/>
+    <path class="note-fold" d="M 1215 813 V 835 H 1237 Z"/>
+    <text class="note-text" x="820" y="844">
+      <tspan class="step">7)</tspan><tspan> Atomically consume the token,</tspan>
+      <tspan x="851" dy="27">resolve the user, and create a session.</tspan>
+    </text>
+
+    <text class="message" x="912" y="918"><tspan class="step">8)</tspan> 303 See Other + Set-Cookie</text>
+    <text class="message-small" x="912" y="944">Location: <tspan class="sensitive">target_route</tspan></text>
+    <line class="return-arrow" x1="894" y1="968" x2="1247" y2="968"/>
+
+    <path class="note" d="M 104 1000 H 472 L 494 1022 V 1082 H 104 Z"/>
+    <path class="note-fold" d="M 472 1000 V 1022 H 494 Z"/>
+    <text class="note-text" x="124" y="1032">
+      <tspan x="124">A consumed or expired Session Transfer</tspan>
+      <tspan x="124" dy="27">Token cannot be reused.</tspan>
+    </text>
+
+    <text class="message" x="912" y="1022"><tspan class="step">9)</tspan> GET target route</text>
+    <line class="arrow" x1="888" y1="1044" x2="1241" y2="1044"/>
+    <rect class="activation" x="1247" y="1044" width="12" height="75"/>
+
+    <text class="message" x="912" y="1102"><tspan class="step">10)</tspan> Return authenticated page</text>
+    <line class="return-arrow" x1="894" y1="1124" x2="1247" y2="1124"/>
+  </g>
+
+  <!-- Repeated participant boxes -->
+  <g>
+    <rect class="participant" x="42" y="1174" width="230" height="68" rx="5"/>
+    <text class="participant-text" x="157" y="1202">
+      <tspan x="157">Trusted OAuth</tspan>
+      <tspan x="157" dy="28">Client</tspan>
+    </text>
+
+    <rect class="participant" x="387" y="1174" width="270" height="68" rx="5"/>
+    <text class="participant-text" x="522" y="1202">
+      <tspan x="522">Oro Authorization</tspan>
+      <tspan x="522" dy="28">Server</tspan>
+    </text>
+
+    <rect class="participant" x="793" y="1174" width="190" height="68" rx="5"/>
+    <text class="participant-text" x="888" y="1216">Browser</text>
+
+    <rect class="participant" x="1123" y="1174" width="260" height="68" rx="5"/>
+    <text class="participant-text" x="1253" y="1202">
+      <tspan x="1253">Oro</tspan>
+      <tspan x="1253" dy="28">Application</tspan>
+    </text>
+  </g>
+</svg>
