@@ -25,7 +25,7 @@ You can overcome these availability issues in a few ways:
       public function myAction(Request $request)
       {
           $session = $request->getSession();
-          if (null !== $session && $session->isStarted()) {
+          if ($session->isStarted()) {
               $session->save();
           }
 
