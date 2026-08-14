@@ -6651,3 +6651,12 @@ Links (Dev)
 .. |BUILD.md| raw:: html
 
    <a href="https://github.com/oroinc/documentation/blob/master/BUILD.md" target="_blank">BUILD.md</a>
+
+.. |Visual Studio Code| raw:: html
+
+   <a href="https://code.visualstudio.com/docs/agents/overview" target="_blank">Visual Studio Code</a>
+
+.. |ChatGPT| raw:: html
+
+   <a href="https://developers.openai.com/api/docs/guides/developer-mode" target="_blank">ChatGPT</a>
+
