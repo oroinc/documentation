@@ -137,6 +137,47 @@ Export
   ``FilteredEntityReader``, so it exports the rows matching the filters currently applied to the
   ``customer-part-numbers-grid``.
 
+Back-Office Order Pages
+-----------------------
+
+Part numbers of the order customer are also shown while an order is processed in the back-office: under the
+product name of a line item on the order create, update, and view pages, in the product autocomplete and the
+product select datagrid those pages use, and in the order PDF document.
+
+Two rules apply across all of these elements:
+
+* The customer always comes from the order that is being worked on, never from the logged-in user. On the order create
+  page the order does not exist in the database yet, so ``Provider\OrderCustomerProvider`` takes the customer
+  from the order draft of the current draft session. A customer ID that arrives in a request is resolved by
+  ``Handler\CustomerIdParameterHandler`` into a customer that the current user is allowed to view. If it cannot be resolved, nothing is rendered.
+* The part numbers are added under two generic keys - ``productAdditionalAttributes`` for the datagrid
+  records and the PDF document payload, and ``details`` for the autocomplete rows. The templates that render them
+  know nothing about customer part numbers, so another bundle can add its own attribute the same way.
+
+Showing part numbers in a product field is opt-in:
+``Form\Extension\CustomerPartNumberProductSelectTypeExtension`` adds the ``customer_part_numbers_customer``
+option to ``ProductSelectType``, and only when it holds a customer does the field search by that customer's part
+numbers and show them. ``Form\Extension\CustomerPartNumberOrderLineItemDraftTypeExtension`` sets the option for
+the line item form of the order create and update pages, where the part numbers are rendered under the product
+field through the ``oro_order_line_item_draft_product_after`` placeholder. That form is re-rendered when the
+customer of the order changes.
+
+Each remaining surface has its own listener:
+
+* ``order-line-items-edit-grid`` of the order create and update pages -
+  ``EventListener\Datagrid\OrderLineItemsEditGridCustomerPartNumberListener``.
+* ``order-line-items-grid`` of the order view page -
+  ``EventListener\Datagrid\OrderLineItemsViewGridCustomerPartNumberListener``, which also adds the line item
+  product id to the grid query, because that grid does not select it otherwise.
+* ``products-select-grid`` - ``EventListener\Datagrid\ProductSelectGridCustomerPartNumberListener``, which also
+  adds the ``customer_part_number_orm`` filter to the grid.
+* Product autocomplete - ``Autocomplete\CustomerPartNumbersSearchHandlerDecorator`` adds the part numbers to the
+  rows, and ``EventListener\Search\ProductAutocompleteCustomerPartNumberListener`` makes it match products by
+  part numbers in addition to the SKU and the name.
+* Order PDF document - ``EventListener\PdfDocument\AddCustomerPartNumbersToPdfDocumentPayloadListener``, on
+  ``BeforePdfDocumentGeneratedEvent``. A PDF document is generated outside of a user request, for example by a
+  message queue consumer, which is why the customer has to come from the order.
+
 Legacy OroLab Bundle Coexistence
 --------------------------------
 
@@ -167,10 +208,10 @@ following mechanisms keep the two bundles from conflicting:
 Storefront, Search, and Datagrid Integration
 --------------------------------------------
 
-Customer part numbers surface in three places:
+In the storefront, customer part numbers surface in three places:
 
 * The storefront product view page - a container injected into the product view layout.
-* Shopping list, checkout, and order line item grids.
+* Storefront shopping list, checkout, and order line item grids.
 * Storefront product search - an indexed, filterable, autocomplete-aware field on ``Product``.
 
 Each surface has its own listener or layout data provider. There is no shared abstraction, because the grids
@@ -187,8 +228,8 @@ Data Fetch: ORM vs. Search Index
   and ``Filter\CustomerPartNumberSearchFilter`` (grid filter value) lowercase before querying.
 * Neither field is added to the shared ``all_text_*`` fields. The query condition targets the per-customer
   field instead, via the ``CUSTOMER_ID`` placeholder.
-* Every other surface - product view page, shopping list, checkout line items - reads live rows through
-  ``Provider\CustomerPartNumbersProvider``.
+* Every other surface - product view page, shopping list, checkout line items, and every back-office order
+  page - reads live rows through ``Provider\CustomerPartNumbersProvider``.
 * Effect: ORM-backed surfaces are always current. Search-backed surfaces reflect part numbers only as of the
   last reindex. ``ScheduleProductSearchEventListener`` reindexes a product as soon as its part numbers change.
 
@@ -197,7 +238,7 @@ Rendering: Server vs. Client
 
 Within the ORM-backed grids, rendering also splits, by column type:
 
-* Order line items grid - a Twig-rendered ``html`` column.
+* Storefront order line items grid - a Twig-rendered ``html`` column.
   ``ProductAdditionalAttributesCustomerPartNumbersListener`` mutates the ORM result record; an existing Twig
   template turns it into HTML.
 * Shopping list and checkout line item grids - a ``row_array`` column consumed by a browser-side Underscore.js
@@ -217,7 +258,10 @@ Customization Points
 * Change which characters are allowed in a part number: override the
   ``oro_customer_part_number.part_number.forbidden_characters`` DI parameter (default ``^ " & ' < >``).
 * Reuse the ``customer_part_number_orm`` datagrid filter type in any grid with an ORM datasource related to
-  ``Product``.
+  ``Product``. Set its ``customer_id`` option to filter by the part numbers of a particular customer instead of
+  the customer of the logged-in customer user.
+* Show and search part numbers in a custom product select field: set the ``customer_part_numbers_customer``
+  option of ``ProductSelectType`` to the customer whose part numbers the field works with.
 * Tune the batch sizes of the **Replace** import removal: the
   ``oro_customer_part_number.importexport.product_ids_by_skus_batch_size`` and
   ``oro_customer_part_number.importexport.customer_part_number_remove_batch_size`` DI parameters control how many
