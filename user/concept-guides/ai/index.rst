@@ -17,7 +17,7 @@ Artificial Intelligence (AI) is rapidly transforming industries, and B2B eCommer
 OroIQ
 -----
 
-OroIQ introduces a unified way to interact with business data and workflows using natural language. Serving as a centralized back-office assistant, it provides a single entry point to AI capabilities across the platform. Instead of navigating multiple screens or complex menus, you can ask questions, explore data, and perform actions directly from a conversational interface. Because OroIQ is built directly on top of the OroCommerce, it operates with full business context. It adheres to existing system logic and permission structures, ensuring that responses and actions are accurate, relevant, and secure.
+OroIQ introduces a unified way to interact with business data and workflows using natural language. Serving as a centralized back-office assistant, it provides a single entry point to AI capabilities across the platform. Instead of navigating multiple screens or complex menus, you can ask questions, explore data, and perform actions directly from a conversational interface. Because OroIQ is built directly on top of OroCommerce, it operates with full business context. It adheres to existing system logic and permission structures, ensuring that responses and actions are accurate, relevant, and secure.
 
 .. image:: /user/img/concept-guides/ai/oroiq-homepage.png
 
@@ -43,7 +43,7 @@ Smart Insights capabilities are managed through OroCommerce :ref:`entity managem
 Smart Assistant
 ^^^^^^^^^^^^^^^
 
-When a request involves taking action rather than just analysing or viewing data, OroIQ transitions to the Smart Assistant. This mode allows you to execute business operations, such as creating quotes or orders, directly within the conversational interface.
+When a request involves taking action rather than just analyzing or viewing data, OroIQ transitions to the Smart Assistant. This mode allows you to execute business operations, such as creating quotes or orders, directly within the conversational interface.
 
 For instance, you can instruct the assistant to draft a new quote with a fifteen percent discount, and then create an order from it. Before making any system changes, OroIQ prepares the requested action and presents a clear summary of what it intends to create or modify. It requires explicit confirmation to proceed and once granted, it executes the task and provides a direct link to the newly created record, allowing you to open the pre-filled form and continue your work from the back-office UI.
 
@@ -113,7 +113,18 @@ For more information on how to set up Smart Order automation, see :ref:`Create a
 
 .. image:: /user/img/concept-guides/ai/so-illustration.png
 
+.. _concept-guide--ai--mcp:
 
+Model Context Protocol (MCP)
+----------------------------
+
+The Oro AI capabilities are built on the Model Context Protocol (MCP), an open standard that defines how AI assistants connect to the tools and data they act on. Instead of relying on a fixed, hardcoded set of capabilities, the Oro AI microservices, such as OroIQ and the AI Smart Agent, discover the operations they can perform directly from OroCommerce, where each operation is exposed as an MCP tool.
+
+Because these tools are defined and managed within OroCommerce, you can customize which operations the AI is allowed to perform directly from the platform, tailoring the assistant to your business processes. For example, you can control whether the AI can find products, check inventory, create orders, or manage shopping lists, and expose additional operations built on top of the OroCommerce API as new MCP tools.
+
+This keeps the AI aligned with OroCommerce business logic and permission structures, while allowing its capabilities to be extended or restricted without changing the underlying AI microservices. OroCommerce provides MCP servers for both the back-office and the storefront, which can also be connected to external MCP-compatible clients.
+
+For configuration details, see the developer documentation for the :ref:`OroCommerceMcpBundle <bundle-docs-commerce-commerce-mcp-bundle>` and :ref:`OroFrontendCommerceMcpBundle <bundle-docs-frontend-commerce-commerce-mcp-bundle>`.
 
 **Related Articles:**
 
@@ -123,6 +134,8 @@ For more information on how to set up Smart Order automation, see :ref:`Create a
 * :ref:`Create an Order via AI Smart Order Automation <user-guide--sales--orders--create--from-ai-smart-order>`
 * :ref:`Smart Order Widget <user-guide-dashboards-widgets>`
 * :ref:`OroIQ Back-Office Settings <admin-configuration-oroiq-settings>`
+* :ref:`OroCommerceMcpBundle <bundle-docs-commerce-commerce-mcp-bundle>`
+* :ref:`OroFrontendCommerceMcpBundle <bundle-docs-frontend-commerce-commerce-mcp-bundle>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

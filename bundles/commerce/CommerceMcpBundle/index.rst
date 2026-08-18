@@ -109,6 +109,37 @@ Connect ChatGPT
 5. Enter the **OAuth Client ID** and **OAuth Client Secret** from the OAuth application that you created.
 6. Save the MCP application.
 
+Connect Claude
+^^^^^^^^^^^^^^
+
+.. important:: Connecting a custom MCP server in Claude requires the Claude CLI (Claude Code). Verify that Claude CLI is installed before you continue.
+
+Create an OAuth application for Claude with the following settings:
+
+.. csv-table::
+   :header: "**Field**","**Value**"
+
+   "Application Name","A descriptive name, for example ``Commerce MCP Server``"
+   "Active","On"
+   "Support all APIs","Off"
+   "Supported APIs","``Commerce MCP Server``"
+   "Grant Type","``Authorization Code``"
+   "Redirect URLs","``http://localhost:8090/callback``"
+   "Confidential Client","Off"
+   "Skip User Consent","On or off, depending on whether you want the login consent screen"
+
+Once the OAuth application is saved, copy the generated **Client ID**.
+
+To add the OroCommerce MCP server to Claude, run the following command in the Claude CLI:
+
+.. code-block:: bash
+
+    claude mcp add --transport http --scope user --callback-port 8090 --client-id Your_CLIENT_ID oro-commerce-mcp https://yourapplication/{backend_prefix}/commerce-mcp
+
+Replace ``Your_CLIENT_ID`` with the Client ID from your OAuth application, and ``{backend_prefix}`` with your back-office URL prefix. By default, it is ``admin``.
+
+.. note:: The callback port in the command (``8090``) must match the port used in the OAuth application's redirect URL.
+
 Configure API-Based Tools
 -------------------------
 
