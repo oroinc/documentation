@@ -161,6 +161,9 @@ On the **Email Configuration** page, define the email-related options.
      * *User* --- Provide your email address
      * *Password* --- Provide your password
 
+     .. note::
+        List of outbound connections may be restricted by your application environment. If the connection cannot be established, contact your system administrator.
+
      Click **Check Connection/Retrieve Folders**. After successful connection, a list of folders will be loaded. Check the folders that you wish to be synchronized (e.g., Inbox).
 
      As an example, we have synchronized a Gmail mailbox with your Oro application, having previously turned on **access for less secure apps**. More details on how to synchronize your Gmail and turn on access for less secured apps can be found in the |Use IMAP to check Gmail| and |Less secure apps & your Google Account| topics.
