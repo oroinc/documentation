@@ -194,6 +194,8 @@ In the Email Configuration section, you can configure the following email-relate
 | Password                          | Enter the password to a user's mailbox.                                                                                                                                                  |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. note:: List of outbound connections may be restricted by your application environment. If the connection cannot be established, contact your system administrator.
+
 Click **Check Connection/Retrieve Folders** to check whether the specified synchronization settings are correct and to retrieve the current folder structure of the user's remote mailbox.
 
 **Email Threads**

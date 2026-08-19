@@ -67,6 +67,8 @@ To configure email settings globally:
      * *Username* --- Your email address
      * *Password* --- The password for your email address
 
+   .. note:: List of outbound connections may be restricted by your application environment. If the connection cannot be established, contact your system administrator.
+
   * **HTML in templates** --- Enable or disable HTML Purifier. Disabling HTML Purifier allows to paste any HTML code into a template or an email body editor without tag stripping.
 
   * **Notification Rules** --- Defines the rules that will be applied by default to a notification generated in the application. You can define the **Sender Email** and **Sender Name** to be used.
