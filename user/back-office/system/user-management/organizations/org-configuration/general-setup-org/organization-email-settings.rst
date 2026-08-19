@@ -54,6 +54,9 @@ To configure email settings per organization:
      * *Username* --- Your email address
      * *Password* --- The password for your email address
 
+   .. note:: List of outbound connections may be restricted by your application environment. If the connection cannot be established, contact your system administrator.
+
+
 6. Under **HTML in templates**, configure the following:
    
      * **Enable HTML Purifier** --- Enable or disable HTML Purifier. Disabling HTML Purifier allows you to paste any HTML code into a template or an email body editor without tag stripping.
@@ -94,6 +97,8 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
    * *Encryption* --- Select the encryption type, SSL or TLS
    * *User* --- Provide your email address
    * *Password* --- Provide your password
+
+   .. note:: List of outbound connections may be restricted by your application environment. If the connection cannot be established, contact your system administrator.
 
 7. Click **Check Connection/Retrieve Folders**. After a successful connection, a list of available folders is displayed. Select the checkboxes next to the folders you wish to synchronize.
 
