@@ -56,7 +56,9 @@ To set up an integration with LDAP:
      
      If you want to assign users to multiple business units, 
      this can be done after the synchronization is complete. Another option is to create separate integrations for every default business unit."
-   
+
+   .. note:: List of outbound connections may be restricted by your application environment. If the connection cannot be established, contact your system administrator.
+
    Optionally, provide the following values, if they are required by the target LDAP server:
    
    .. csv-table::
