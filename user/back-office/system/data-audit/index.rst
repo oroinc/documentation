@@ -4,12 +4,40 @@
 Configure Data Audit in the Back-Office
 =======================================
 
-Data Audit enables you to see the full history of changes made to any entity and its fields that have been marked as *auditable*, and create out-of-the-box reports based on these changes.
+Data Audit shows the full history of changes made to an entity and its fields, provided the entity and the fields are marked as **auditable**. Data Audit also enables you to see the changes made to any configuration setting at any of the six levels: system (global), organization, website, customer group, customer, and user (My Configuration). You can also build reports based on these changes.
+
+.. image:: /user/img/system/data_audit/all-audits.png
+   :alt: Data audit grid under System > Data Audit
+
+All changes made to auditable entities, their fields, and configuration settings appear under **System > Data Audit** in the back-office main menu. You can filter this table by the criteria you need. You can also save the filtered view for future reference.
+
+The report grid contains the following columns:
+
+.. csv-table::
+  :header: "Name","Description"
+  :widths: 10, 30
+
+  "ACTION","The kind of change made to the record: created, updated, or removed.
+
+    * **Create** --- The record received a value for the first time. Before this change, the record used its default value.
+    * **Update** --- An existing custom value was replaced with another custom value.
+    * **Remove** --- The record was reset to its default or parent value."
+  "VERSION","The sequential number of the change made to the specific record."
+  "ENTITY TYPE","The type of the entity to which the entity record belongs. For configuration settings, the type shows the configuration level at which the change occurred, for example *Configuration: System*, *Configuration: Website*, or *Configuration: User*, etc. "
+  "ENTITY NAME","The name of the specific record that changed."
+  "ENTITY ID","The ID of the entity to which the record belongs."
+  "DATA","For **entities and entity fields**, DATA displays the details of the change made to the entity. For **configuration settings**, DATA displays the location of the changed setting, followed by its old and new values. The location is shown as a path, for example *Commerce › Product › Promotions › New Arrivals › Maximum Items*."
+  "AUTHOR","The name and email address of the user who made the change."
+  "ORGANIZATION","Organization in which the change was made."
+  "LOGGED AT","The date and time when the event was logged."
+
+Use filters to find the required audit record. Use the **Data** filter to search a match in the name of the changed entity or setting (within old and new values) or its location.
+
 
 Mark an Entity as Auditable
 ---------------------------
 
-Marking a particular entity as auditable defines whether the system logs the actions performed to this entity and who performed these actions.
+Marking an entity as *auditable* tells the system to log every change made to the entity, together with the name of the user who made the change.
 
 To mark an entity as auditable:
 
@@ -18,31 +46,24 @@ To mark an entity as auditable:
 
    .. hint:: To save time looking for the entity, use filters at the top of the record table.
 
-   .. image:: /img/backend/architecture/select_entity_for_data_audit.png
+   .. image:: /user/img/system/data_audit/select_entity_for_data_audit.png
       :alt: Select an entity to edit
 
 3. In the **Other** section, set the *Auditable* field to **Yes**.
 
-   .. image:: /img/backend/architecture/auditable_field.png
+   .. image:: /user/img/system/data_audit/auditable_field.png
       :alt: Setting the Auditable field of the entity to Yes
 
    .. hint:: For more information on entities, see the :ref:`Create an Entity <doc-entity-actions-create>` topic.
 
 4. Click **Save and Close**.
 
-View Entity Change History
---------------------------
+Mark an Entity Field as Auditable
+---------------------------------
 
-You can monitor changes to auditable entities on their view and edit pages by clicking on the **Change History** link at the top right.
+Marking an entity as auditable does not automatically track its fields. For instance, if the **newArrival** entity field of the *Product* entity has the *Auditable* field set to **No**, then no changes made to this field are going to be tracked.
 
-The history includes the author and the time of the change, and the difference between the previous and the new version.
-
-.. image:: /img/backend/architecture/changed_history.png
-   :alt: Changed history of the customer entity
-
-Make sure that the entity field of the entity are also marked as auditable if you want to track the history of its changes. For instance, if the *newArrival* entity field of the *Product* entity has the *Auditable* field set to *No*, then no changes made to this field are going to be tracked.
-
-.. image:: /img/backend/architecture/entity_fields_auditable.png
+.. image:: /user/img/system/data_audit/entity_fields_auditable.png
    :alt: Auditable column for entity fields
 
 To set an entity field as *Auditable*:
@@ -50,13 +71,50 @@ To set an entity field as *Auditable*:
 1. Open its edit page.
 2. In the **Back-Office options** section, select **Yes** from the drop-down list for the *Auditable* field.
 
-   .. image:: /img/backend/architecture/set_entity_field_to_auditable.png
+   .. image:: /user/img/system/data_audit/set_entity_field_to_auditable.png
       :alt: Set an entity field as auditable
 
-   For instance, once we made the *newArrival* field as auditable, any changes to this field have become traceable, as illustrated in the screenshot below:
+For instance, once you made the *newArrival* field as auditable, any changes to this field have become traceable, as illustrated in the screenshot below:
 
-   .. image:: /img/backend/architecture/change_history_for_product.png
+   .. image:: /user/img/system/data_audit/change_history_for_product.png
       :alt: Change history of a product
+
+View Entity Change History
+--------------------------
+
+You can review the change history of an auditable entity on its view or edit page. Click **Change History** in the top-right corner of the page to open it.
+
+The history includes the author and the time of the change, and the difference between the previous and the new values.
+
+.. image:: /user/img/system/data_audit/changed_history.png
+   :alt: Changed history of the customer entity
+
+Make sure that both the entity and entity fields are marked as **Auditable** if you want to track the history of its changes.
+
+View Configuration Settings Changes
+-----------------------------------
+
+Data Audit also tracks changes to configuration settings, not only to entities. This tracking works automatically for every setting, so you do not need to mark individual settings as *auditable*.
+
+The application can store configuration settings at up to six levels: system (global), organization, website, customer group, customer, and user (My Configuration).
+
+Whenever someone changes a configuration setting at any of these levels, the application creates an audit record for that change. You can find this record on the same **System > Data Audit** page that lists entity changes.
+
+.. image:: /user/img/system/data_audit/all-audits-config-settings.png
+   :alt: Configuration settings changes audit grid under System > Data Audit
+
+If a single save changes several settings at once, the application creates one audit record for all of them. When the record mixes different kinds of change, for example one setting was created and another was updated, the application labels the entire record as **Update**.
+
+.. image:: /user/img/system/data_audit/multiple-config-settings.png
+   :alt: Configuration settings changes audit grid with multiple settings changes in one record
+
+Use the **Data** filter to find a match in the name of the changed setting or its location, for example *User Login* or *always_require*.
+
+.. important:: If a setting stores **sensitive information**, such as a password or a client secret, the application does not display its value in the audit record. Instead, the record shows ``***``. You can still see who changed the setting and when they changed it.
+
+.. image:: /user/img/system/data_audit/all-audits-sensitive-info.png
+   :alt: Audit grid displaying changes to settings with sensitive information via ***
+
 
 Create a Data Audit Report
 ---------------------------
@@ -96,31 +154,6 @@ As an illustration, we are going to create a report of products that have been d
 
     .. image:: /img/backend/architecture/data_audit_report_generated.png
        :alt: Data audit report generated
-
-View Changes of Auditable Entities
-----------------------------------
-
-All changes made to auditable entities and fields are logged into the system and saved under **System > Data Audit**. You can filter the table by required parameters and save the filtered page for future reference.
-
- .. image:: /img/backend/architecture/data_audit_grid.png
-    :alt: Data audit grid under System > Data Audit
-
-The report grid contains the following columns:
-
-.. csv-table::
-  :header: "Name","Description"
-  :widths: 10, 30
-
-  "ACTION","Defines the action that has been performed with the :term:`record`. You can see if the record has been
-  created, updated or removed."
-  "VERSION","Corresponds to the consecutive number of changes performed with the specific record."
-  "ENTITY TYPE","Type of the :term:`entity` to which the record belongs."
-  "ENTITY NAME","Name of the specific record tracked."
-  "ENTITY ID","ID of the entity to which the record belongs."
-  "DATA","Details of the change."
-  "AUTHOR","Name and email of the :term:`user` that has performed the change."
-  "ORGANIZATION",":term:`Organization`, within which the change has been performed."
-  "LOGGED AT","Date and time when the event was logged."
 
 Audit of Login Attempts
 -----------------------
