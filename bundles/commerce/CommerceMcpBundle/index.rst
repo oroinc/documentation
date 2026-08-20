@@ -355,6 +355,9 @@ The complete configuration options available in this configuration file are:
                     # Indicates whether a relationship to another entity should be expanded in MCP.
                     expand:               ~
 
+                    # API actions to which the field configuration is applied.
+                    actions:              ~
+
                     exclusion_policy:     ~
                     field_name_prefix:    ~
                     fields:
@@ -362,6 +365,7 @@ The complete configuration options available in this configuration file are:
                         field_name:
                             exclude:              ~
                             expand:               ~
+                            actions:              ~
                             exclusion_policy:     ~
                             field_name_prefix:    ~
                             fields:
@@ -369,6 +373,7 @@ The complete configuration options available in this configuration file are:
                                 field_name:
                                     exclude:              ~
                                     expand:               ~
+                                    actions:              ~
 
 
 :ref:`The API request type aspect <api-request-type>` for the API-based MCP tools in the plain format is ``commerce_mcp_plain``.
