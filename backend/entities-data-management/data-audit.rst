@@ -3,8 +3,8 @@
 Data Audit
 ==========
 
-The |OroDataAuditBundle| leverages the Loggable |Doctrine extension1|
-(|StofDoctrineExtension|) to provide changelogs for your entities.
+The |OroDataAuditBundle| uses the Loggable |Doctrine extension1|
+(|StofDoctrineExtension|) to record changelogs for your entities.
 
 Entity Configuration
 --------------------
@@ -103,6 +103,132 @@ To see the auditable option in the entity configuration, make sure your field ty
 
 To make sure your column is displayed correctly in the grids (segments, reports), create a new column options guesser with tag **oro_datagrid.column_options_guesser** and set **frontend_type property**.
 
+.. _entities-data-management-data-audit--configuration:
+
+Configuration Change Audit
+--------------------------
+
+The |OroDataAuditBundle| also records system configuration changes, in addition to entity changes. Whenever a configuration setting is changed at any level (e.g., system (global), organization, website, customer group, customer, or user (**My Configuration**)), the bundle creates an audit entry. The audit entry appears in the same **System > Data Audit** grid that shows entity changes. Administrators therefore have a single, filterable trail of who changed which setting, when, and how.
+
+This is controlled by the ``data_audit`` feature (enabled by default) and requires no per-field opt-in: every setting of every configuration level is covered.
+
+.. note::
+
+    Only the changes made on behalf of a user are recorded. A setting can be written without a security token, for example, by the ``oro:config:update`` command, a cron job, a scheduler, or a data fixture. Such a setting has no author to attribute the change to, so the audit does not record it.
+
+    When a user runs a command with the ``--current-user`` option, the command runs on behalf of that user. Any changes made by the command are recorded with that user as the author.
+
+How It Works
+^^^^^^^^^^^^
+
+The bundle listens to the ``oro_config.update_after`` event. For every changed setting, the bundle publishes a message to a dedicated message queue topic (``oro.data_audit.config_changed``). The ``ConfigChangeAuditProcessor`` processes this message asynchronously and writes the audit record. A running message consumer (``oro:message-queue:consume``) is required to process the message, consistent with the entity audit pipeline. The acting user, organization, impersonation, and the configuration level are resolved at the time of change, while the security token is still available. The bundle carries this information in the message, so the audit record stays accurate even though this record is written later.
+
+Configuration Levels
+^^^^^^^^^^^^^^^^^^^^
+
+Each configuration level is represented by its own **Entity Type**, so the levels are distinct and you can filter them independently:
+
+* ``global`` --- **Configuration: System**
+* ``organization`` --- **Configuration: Organization**
+* ``website`` --- **Configuration: Website**
+* ``customer`` --- **Configuration: Customer**
+* ``customer_group`` --- **Configuration: Customer Group**
+* ``user`` (**My Configuration**) --- **Configuration: User**
+
+The **Entity Type** grid filter accepts several values at once. You can therefore show multiple levels together, or show a level together with regular entities.
+
+The levels are the configuration scopes of the application. Which levels exist depends on the installed packages. For example, the commerce levels are absent in a CRM-only installation.
+
+.. _entities-data-management-data-audit--configuration-level:
+
+Levels of a New Configuration Scope
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A bundle that adds a configuration scope registers a scope manager with the ``oro_config.scope`` tag. Such a bundle gets its audit level for free, because the audit derives everything it needs from the scope name:
+
+* the entity type stored in the record. This is the studly-cased scope name followed by ``Configuration``, in the ``Oro\Bundle\ConfigBundle`` namespace
+* the system configuration tree, ``<scope>_configuration``
+* the label, ``oro.dataaudit.config.type.<scope>``. If this translation key has no translation, the audit falls back to a name derived from the level.
+
+Declaring the entity whose ID the scope carries is the only requirement. The audit record shows this entity's name as the name of what was configured:
+
+
+.. code-block:: yaml
+    :caption: Resources/config/oro/app.yml
+
+    oro_data_audit:
+        configuration_level_entities:
+            website: Oro\Bundle\WebsiteBundle\Entity\Website
+
+The key is the scope name used in the ``oro_config.scope`` tag. Declaring a scope that the application does not have is a configuration error, and this error fails the container build.
+
+The global scope has no entity and declares nothing, so its records are named ``Global``. When a level declares no entity, its records are named after the scope and the id instead, for example ``Website #3``.
+
+The name of the declared entity comes from the entity name resolver. When no entity name provider is available for that entity, the record uses a generic name, such as ``Item #3`` for it. To display a meaningful entity name at that scope level, provide a corresponding entity name provider.
+
+A bundle can replace a scope manager and thereby change what the scope ID refers to. For example, the Enterprise edition replaces the scope for the user scope, so the ID becomes the ID of a user within an organization. The bundle also declares the entity of that scope, overriding the declaration of the bundle that originally contributed the scope.
+
+Data Column
+^^^^^^^^^^^
+
+The **Data** column shows the human-readable location of the setting together with the old and new values. The location is the setting's breadcrumb in the configuration tree, ending with the setting label, for example ``Commerce › Product › Promotions › New Arrivals › Maximum Items``. The generic **System Configuration** root of the tree is omitted, as it carries no locating information.
+
+Only the stable configuration key is stored. The breadcrumb is resolved when the record is displayed. The displayed breadcrumb therefore always reflects the current translations and the language of the user who views the grid. As a result, changing a translation never desynchronizes the recorded history.
+
+Action
+^^^^^^
+
+The audit action reflects the configuration value's lifecycle:
+
+* **Create** --- The setting received an explicit value for the first time. Before this change, the setting used the default or inherited value. The audit records only the new value. It does not record the previous default.
+* **Remove** --- The setting was reset to use the default or the parent scope. The audit records only the value that was removed. It does not record the value the setting fell back to.
+* **Update** --- An existing explicit value was replaced with another one.
+
+One save produces one audit entry that lists every setting it changed. When such an entry mixes several kinds of change, its action is **Update**, while the recorded values of each setting still follow the rules above.
+
+Inherited Values
+^^^^^^^^^^^^^^^^
+
+A setting either takes the value of its parent scope or has a value of its own. The configuration form controls this with a checkbox named after the level it inherits from, for example **Use default**, **Use Organization** or **Use Customer Group**. Clearing this checkbox stops the setting from following the parent scope, and selecting it again makes the setting follow the parent scope once more. Both are configuration changes on their own, even when the value stays exactly the same. For example, a user can pick their own language and stop following the language of their organization without changing the language itself.
+
+The audit records such a change like any other change of the setting, and the action tells what happened: **Create** when the setting received a value of its own, and **Remove** when the setting went back to the inherited value. The recorded values follow the rules of these actions described above, so a **Create** shows the value the setting has from now on, and a **Remove** shows the value the setting no longer stores.
+
+Saving a setting with the same value it already has does not create a change and is not recorded. The same applies to settings that already inherit their values from the parent scope. A configuration form submits all displayed fields, not only the fields that the user changed.
+
+Value Types
+^^^^^^^^^^^
+
+Every value is stored with its real data type: a boolean is stored and displayed as a boolean (rather than ``1`` / ``0``), an integer as an integer, a decimal as a float, and a multiple-value setting as an array. All other types are stored as text.
+
+.. _entities-data-management-data-audit--configuration-secrets:
+
+Secret Settings
+^^^^^^^^^^^^^^^
+
+The audit does not record the value of a setting that holds a secret. The audit shows ``***`` instead. The entry still shows who changed the setting and when, without disclosing the value.
+
+The audit recognizes a setting as a secret by the form type used to edit the setting. Every setting rendered as a password field hides its value in the configuration form, so the audit hides it as well. This covers Symfony ``PasswordType`` and every type built on it, such as ``OroEncodedPlaceholderPasswordType``, and requires no declaration. A setting is covered as soon as it is rendered as a password.
+
+.. note::
+
+    A credential that is not rendered as a password field, for example a token in a plain text field, is recorded like any other value, in the same way the configuration form displays it.
+
+Searching and Filtering
+^^^^^^^^^^^^^^^^^^^^^^^
+
+In addition to the **Entity Type** filter described above, the audit grid provides a **Data** filter. This filter searches within the changed data using a *contains* condition. The **Data** filter matches:
+
+* The changed field key, such as ``oro_product.new_arrivals_max_items``, or an entity field name.
+* Any part of the displayed breadcrumb of a configuration setting. For example, searching for ``Promotions`` finds every audited setting of that group, and searching for ``Maximum Items`` finds the setting itself.
+* The label of an audited entity field. For example, searching for ``Primary Email`` finds the change of ``User::email``.
+* The old and the new value of text values.
+
+Both the breadcrumb and the entity field label are resolved from the current translations, so the search always works with the names in the language the user sees.
+
+.. note::
+
+    Values stored with a non-text type (boolean, integer, float, array) are not matched by value. Such a change can be found by its name.
+
 Browsing the Change History
 ---------------------------
 
@@ -127,7 +253,7 @@ the list of log entries.
     The audit log entry id is not related to any of the entities being watched.
 
 REST API
-~~~~~~~~
+^^^^^^^^
 
 The two REST API endpoints are controlled by the ``oro_api_get_audit`` and
 ``oro_api_get_audits`` routes:
