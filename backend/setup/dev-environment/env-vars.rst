@@ -206,7 +206,9 @@ You can now use the ``ORO_MQ_DSN`` environment variable:
 When configuring a virtual host (vhost), ensure that the vhost is URL encoded. If no vhost is provided, the default value of ``/`` will be used. As an example, if the vhost is ``/master``, the corresponding url encoded vhost value is ``%2Fmaster``, and if the vhost is ``master``, the url encoded value is ``master``.
 
 Message Queue Consumer Timeouts
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: The configurable consumer ``receive_timeout`` option is available as of OroCommerce version 7.0.4.
 
 You can tune the message queue consumer timeout with the following environment variable:
 
@@ -219,7 +221,9 @@ You can tune the message queue consumer timeout with the following environment v
 The variable overrides the corresponding ``oro_message_queue.consumer.receive_timeout`` configuration option.
 
 Message Queue Consumption Mode
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: Consumption modes are available as of OroCommerce version 7.0.4.
 
 You can use the following environment variable to select the consumption mode, which determines the order in which a consumer visits multiple queues.
 
