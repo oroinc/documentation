@@ -640,6 +640,16 @@ The default configuration for extension with alias "oro_commerce_mcp":
                 # The session TTL in seconds.
                 ttl:                  3600
 
+            # The list of DNS rebinding protection hosts (without port). By default, the protection is entirely disabled. Set an array of hostnames to restrict access to the specified hosts, or null to allow access from localhost only.
+            allowed_hosts:
+
+                # Default:
+                - "*"
+
+                # Examples:
+                # - foo.com
+                # - bar.com
+
             # The configuration of CORS requests for MCP server.
             cors:
 
@@ -653,12 +663,22 @@ The default configuration for extension with alias "oro_commerce_mcp":
                     # - 'https://foo.com'
                     # - 'https://bar.com'
 
+                # Indicates whether CORS request can include user credentials.
+                allow_credentials:    false
+
                 # The list of headers that are allowed to send by CORS requests.
                 allow_headers:        []
 
                     # Examples:
                     # - X-Foo
                     # - X-Bar
+
+                # The list of headers that can be exposed by CORS responses.
+                expose_headers:
+
+                    # Examples:
+                    - X-Foo
+                    - X-Bar
 
             # Additional HTTP endpoints that can be used to tune MCP server behaviour.
             additional_endpoints:
@@ -675,12 +695,10 @@ The default configuration for extension with alias "oro_commerce_mcp":
             additional_headers:
 
                 # Example:
-                # X-Integration-Name:  { value: acme, request_type: [acme] }
+                # X-Integration-Name:  [{ value: acme, request_type: [acme] }]
 
                 # Prototype
-                name:
-                    value:                ~ # Required
-                    request_type:         [] # Required
+                name:                 []
 
         # MCP services discovery configuration.
         discovery:
@@ -1032,6 +1050,16 @@ The default configuration for extension with alias "oro_frontend_commerce_mcp":
                 # The session TTL in seconds.
                 ttl:                  3600
 
+            # The list of DNS rebinding protection hosts (without port). By default, the protection is entirely disabled. Set an array of hostnames to restrict access to the specified hosts, or null to allow access from localhost only.
+            allowed_hosts:
+
+                # Default:
+                - "*"
+
+                # Examples:
+                # - foo.com
+                # - bar.com
+
             # The configuration of CORS requests for MCP server.
             cors:
 
@@ -1045,12 +1073,22 @@ The default configuration for extension with alias "oro_frontend_commerce_mcp":
                     # - 'https://foo.com'
                     # - 'https://bar.com'
 
+                # Indicates whether CORS request can include user credentials.
+                allow_credentials:    false
+
                 # The list of headers that are allowed to send by CORS requests.
                 allow_headers:        []
 
                     # Examples:
                     # - X-Foo
                     # - X-Bar
+
+                # The list of headers that can be exposed by CORS responses.
+                expose_headers:
+
+                    # Examples:
+                    - X-Foo
+                    - X-Bar
 
             # Additional HTTP endpoints that can be used to tune MCP server behaviour.
             additional_endpoints:
@@ -1067,12 +1105,10 @@ The default configuration for extension with alias "oro_frontend_commerce_mcp":
             additional_headers:
 
                 # Example:
-                # X-Integration-Name:  { value: acme, request_type: [acme] }
+                # X-Integration-Name:  [{ value: acme, request_type: [acme] }]
 
                 # Prototype
-                name:
-                    value:                ~ # Required
-                    request_type:         [] # Required
+                name:                 []
 
         # MCP services discovery configuration.
         discovery:
