@@ -3,6 +3,8 @@
 Back-Office Search Synonyms
 ===========================
 
+.. note:: The back-office search synonyms feature is available as of OroCommerce version 6.0.11.
+
 The back-office Elasticsearch engine supports configurable search synonyms, so abbreviated and spelled-out forms resolve to the same matches
 (for example, ``123 Main St`` ≡ ``123 Main Street``, ``118 NE Dr`` ≡ ``118 Northeast Drive``, ``NC`` ≡ ``North Carolina``).
 

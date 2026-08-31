@@ -5,6 +5,8 @@ Configure Back-Office Search Settings per Organization
 
 .. important:: The feature is available for the Enterprise edition only.
 
+.. note:: The back-office search synonyms feature is available as of OroCommerce version 6.0.11.
+
 Search synonyms allow Elasticsearch to treat different forms of the same term as equivalent during searches. For example, searches for St can return results containing Street, and NC can match North Carolina. Synonym groups are configured by developers and cannot be created or managed from the back-office.
 
 To enable search synonyms for an organization:
