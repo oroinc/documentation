@@ -9,6 +9,8 @@ OroCommerceMcpBundle implements of |Model Context Protocol| using the official M
 
 Supports MCP capabilities (tools, prompts, resources) as server via HTTP transport. Resource templates implementation ready but awaiting MCP SDK support.
 
+.. note:: Ensures that CORS and DNS rebinding protection are configured before exposing a public MCP server. Use `cors` and `allowed_hosts` configuration options to configure them.
+
 Install in VS Code
 ------------------
 
@@ -377,14 +379,25 @@ The default configuration of OroCommerceMcpBundle:
                 directory: '%kernel.cache_dir%/commerce_mcp_sessions'
                 # The session TTL in seconds.
                 ttl: 3600
+            # The list of DNS rebinding protection hosts (without port).
+            # By default, the protection is entirely disabled.
+            # Set an array of hostnames to restrict access to the specified hosts,
+            # or null to allow access from localhost only.
+            # Example: [ 'foo.com', 'bar.com' ]
+            allowed_hosts: [ '*' ]
             # The configuration of CORS requests for MCP server.
             cors:
                 # The list of origins that are allowed to send CORS requests.
                 # Example: [ 'https://foo.com', 'https://bar.com' ]
                 allow_origins: [ '*' ]
+                # Indicates whether CORS request can include user credentials.
+                allow_credentials: false
                 # The list of headers that are allowed to send by CORS requests.
                 # Example: [ 'X-Foo', 'X-Bar' ]
                 allow_headers: []
+                # The list of headers that can be exposed by CORS responses.
+                # Example: [ 'X-Foo', 'X-Bar' ]
+                expose_headers: []
             # Additional HTTP endpoints that can be used to tune MCP server behaviour.
             # Example:
             #    'acme': { path: '/commerce-mcp-acme', request_type: [ 'acme' ] }
@@ -396,7 +409,7 @@ The default configuration of OroCommerceMcpBundle:
                     request_type: [ 'commerce_mcp_plain' ]
             # Additional HTTP request headers that can be used to tune MCP server behaviour.
             # Example:
-            #    'X-Integration-Name': { value: 'acme', request_type: [ 'acme' ] }
+            #    'X-Integration-Name': [ { value: 'acme', request_type: [ 'acme' ] } ]
             # The "value" is a header value.
             # The "request_type" contains additional API request type aspects that are applied when this header is present in a request.
             additional_headers: {}
