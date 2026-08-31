@@ -3,6 +3,8 @@
 Consumption Modes
 =================
 
+.. note:: Consumption modes are available as of OroCommerce version 6.1.10.
+
 Consumption modes determine the order in which multiple queues are visited by the message consumer during a consumption cycle. When a consumer is bound to more than one queue, the consumption mode controls which queue is polled next. Different modes offer different trade-offs between fairness, priority handling, throughput, and starvation avoidance.
 
 The consumption mode is selected via the ``--mode`` CLI option or the ``ORO_MQ_CONSUMPTION_MODE`` environment variable. The default mode is ``default``.

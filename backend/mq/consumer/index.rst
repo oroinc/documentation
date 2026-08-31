@@ -28,6 +28,8 @@ to consume from and a message processor service. For example:
 Consumption Modes
 -----------------
 
+.. note:: Consumption modes are available as of OroCommerce version 6.1.10.
+
 When the consumer is bound to multiple queues, the consumption mode controls the order in which queues are polled. The mode is selected with the ``--mode`` option. The default mode is ``default``.
 
 Built-in modes:
@@ -42,6 +44,9 @@ For a detailed description of each mode, including consumption schemas, and inst
 
 Receive Timeout
 ---------------
+
+.. note:: The configurable consumer ``receive_timeout`` option is available as of OroCommerce version 6.1.10.
+
 
 The consumer's ``receive_timeout`` option controls how long the consumer waits for messages when no messages are available. It accepts a fractional (sub-second) value in seconds:
 
