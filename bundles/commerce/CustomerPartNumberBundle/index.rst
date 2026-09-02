@@ -178,6 +178,68 @@ Each remaining surface has its own listener:
   ``BeforePdfDocumentGeneratedEvent``. A PDF document is generated outside of a user request, for example by a
   message queue consumer, which is why the customer has to come from the order.
 
+Back-Office API
+^^^^^^^^^^^^^^^
+
+``Resources/config/oro/api.yml`` exposes the entity as the ``customerpartnumbers`` back-office API resource with
+the ``get``, ``get_list``, ``create``, ``delete``, and ``delete_list`` actions.
+
+* No ``update`` action --- a part number is changed by delete and create, as everywhere else in the bundle.
+  This also excludes the relationship change actions, so ``product`` and ``customer`` are read only.
+* ``organization`` --- not a part of the resource, ``Api\Processor\SetOrganizationFromCustomer`` takes it from
+  the customer on create. The platform would otherwise use the organization of the current user, which can
+  differ from the organization of the customer.
+* ``partNumber`` and ``createdAt`` --- filterable and sortable, but neither of them is filterable and sortable by default. The
+  ``partNumber`` filter is case-insensitive, matching the unique validation constraint, the datagrid filter and
+  the search index.
+
+Feature Toggle in the API
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The resource is deliberately **not** listed in the ``api_resources`` section of
+``Resources/config/oro/features.yml``: that section makes the resource unavailable, and an unavailable action
+breaks the whole MCP tool set, which is built from the enabled API actions at start-up.
+
+Instead the resource stays registered, and ``Api\Processor\ThrowNotFoundWhenFeatureDisabled`` answers 404 with
+the ``The Customer Part Numbers feature is disabled.`` message for every action of the resource. The
+``get_subresource`` and ``get_relationship`` actions are matched by ``parentClass`` rather than by ``class``, so
+that the product and the customer are hidden together with the part number itself.
+
+The same response is used for every action on purpose: an empty collection would state that the customer has no
+part numbers, a 403 would read as a missing permission, and a silent no-op would confirm a write that never
+happened.
+
+Back-Office MCP Tools
+^^^^^^^^^^^^^^^^^^^^^
+
+``Resources/config/oro/commerce_mcp_api_based_tools.yml`` exposes the back-office API resource to the
+OroCommerce MCP server as five tools:
+
+.. csv-table::
+   :header: "**Action**","**Tool Name**"
+
+   "``get_list``","``get_customer_part_numbers``"
+   "``get_count``","``get_customer_part_number_count``"
+   "``get``","``get_customer_part_number``"
+   "``create``","``create_customer_part_number``"
+   "``delete``","``delete_customer_part_number``"
+
+The tools are declared in this bundle rather than in ``OroCommerceMcpBundle``, which does not depend on it: a tool
+configured for an entity that has no API resource makes the whole MCP tool set fail to load, so an installation
+with the MCP server but without this bundle would end up with a broken server.
+
+There is no ``update`` tool, because the API resource has no ``update`` action.
+
+The plain format has no counterpart of the JSON:API ``include`` parameter, so
+``Resources/config/oro/commerce_mcp_plain_json_api.yml`` expands the product and the customer in the plain
+responses. Without it a part number is returned with bare identifiers, and neither MCP server exposes a tool for
+products to resolve them with.
+
+The same gap works against the ``create`` tool from the other side: an AI application has no reliable way to turn
+a product SKU into the identifier the tool needs. ``search_entity`` runs the product text search, which does not
+guarantee an exact match on a SKU, and the ``sku`` filter of the ``products`` resource is not reachable without a
+product tool. Until such a tool exists, an AI application has to be given the product identifier.
+
 Legacy OroLab Bundle Coexistence
 --------------------------------
 
@@ -208,15 +270,50 @@ following mechanisms keep the two bundles from conflicting:
 Storefront, Search, and Datagrid Integration
 --------------------------------------------
 
-In the storefront, customer part numbers surface in three places:
+In the storefront, customer part numbers surface in four places:
 
 * The storefront product view page - a container injected into the product view layout.
 * Storefront shopping list, checkout, and order line item grids.
 * Storefront product search - an indexed, filterable, autocomplete-aware field on ``Product``.
+* The storefront API - the ``customerPartNumbers`` field of the ``products`` resource, see below.
 
 Each surface has its own listener or layout data provider. There is no shared abstraction, because the grids
 and layouts belong to several different bundles (ShoppingListBundle, OrderBundle, ProductBundle,
 WebsiteSearchBundle) with no common extension point.
+
+Storefront API
+^^^^^^^^^^^^^^
+
+``Resources/config/oro/api_frontend.yml`` exposes the same entity as the ``customerpartnumbers`` storefront API
+resource with the ``get``, ``get_list``, ``create``, and ``delete`` actions. A part number is always created for
+the customer of the current customer user, the customer is not accepted from the request.
+
+The same file adds the ``customerPartNumbers`` field to the ``products`` resource, filled by
+``Api\Processor\ComputeProductCustomerPartNumbers``. The field is a part of the product schema regardless of the
+feature state: it resolves to an empty list when the feature is disabled for the current customer and for a
+request made by a non-authenticated visitor, who has no customer to take the part numbers of.
+
+Storefront MCP Tools
+^^^^^^^^^^^^^^^^^^^^
+
+``Resources/config/oro/frontend_commerce_mcp_api_based_tools.yml`` exposes the storefront API resource to the
+OroCommerce Storefront MCP server as the same five tools under the same names. The two servers keep their own
+tool sets, which is why the names do not clash.
+
+The descriptions differ from the back-office ones, because the storefront scope is not symmetric: the entity is
+owned by its customer, so the tools return the part numbers of the customer of the current user **and of its
+sub-customers**, while a new part number is always created for the customer of the current user, never for a
+sub-customer. A customer passed in a create request is ignored by ``Api\Processor\SetCustomer``, and the field
+is not marked as read-only in the generated tool schema, which is why the description says so explicitly.
+
+``Resources/config/oro/frontend_commerce_mcp_plain_json_api.yml`` expands only the product in the plain
+responses. The customer is left as an identifier, as it is for the storefront orders, and the ``get_customer``
+tool of the same server resolves it. The product lookup gap described for the back-office tools applies here as
+well, and the storefront product search additionally follows the product visibility of the current customer.
+
+Both storefront settings apply to the tools. ``Feature\Voter\CustomerPartNumberStorefrontVoter`` turns the
+feature off for storefront requests when the storefront visibility is off, and the MCP endpoint is a storefront
+request, so the tools answer with the same disabled message as for the feature toggle itself.
 
 Data Fetch: ORM vs. Search Index
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
