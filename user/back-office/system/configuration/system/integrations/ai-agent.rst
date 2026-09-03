@@ -10,7 +10,14 @@ The :ref:`AI Smart Agent <concept-guide--ai>` is a virtual assistant designed to
 .. image:: /user/img/system/config_system/ai-agent-config.png
    :alt: AI Smart Agent global config and illustration on the AI Smart Agent chat in the storefront
 
-Once the agent is installed in the Oro application, you can enable it in the system configuration globally, per :ref:`organization <organization-ai-agent-settings>`, :ref:`website <website-configuration-ai-agent-settings>`, :ref:`customer <user-guide--customer--configuration--settings--ai-agent>` and :ref:`customer group <user-guide--customer-groups--configuration--settings-ai-agent>`:
+Once the agent is installed in the Oro application, you can enable it in the system configuration globally, per :ref:`organization <organization-ai-agent-settings>`, :ref:`website <website-configuration-ai-agent-settings>`, :ref:`customer <user-guide--customer--configuration--settings--ai-agent>` and :ref:`customer group <user-guide--customer-groups--configuration--settings-ai-agent>`.
+
+.. important:: Select the :ref:`Enable Storefront API <admin-configuration-application>` option under **System Configuration > General Setup > Application Settings > Web API** first. The AI Smart Agent depends on this API to function.
+
+       .. image:: /user/img/system/config_system/enable-storefront-api.png
+          :alt: The Enable Storefront API feature under system configuration
+
+To enable AI Smart Agent globally, do the following:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. In the menu to the left, click **System Configuration > Integrations > AI Smart Agent**.
@@ -22,6 +29,7 @@ Once the agent is installed in the Oro application, you can enable it in the sys
 .. comment: was advised that Debug Enabled option will be removed, so not including it.
 
 4. Click **Save Settings**.
+
 
 
 .. include:: /include/include-links-user.rst

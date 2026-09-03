@@ -7,6 +7,13 @@ Configure Global OroIQ Settings
 
 :ref:`OroIQ <concept-guide--oroiq>` is an AI-powered assistant designed to help users analyze data and perform back-office operations in the OroCommerce Enterprise application using natural language. Once OroIQ assistant is installed in the Oro application, it can be enabled globally and per :ref:`organization <organization-oroiq-settings>`.
 
+.. important:: Select the :ref:`Enable API <admin-configuration-application>` option under **System Configuration > General Setup > Application Settings > Web API** first. OroIQ depends on this API to function.
+
+       .. image:: /user/img/system/config_system/enable-api.png
+          :alt: The Enable API feature under system configuration
+
+To enable OroIQ globally, do the following:
+
 .. image:: /user/img/concept-guides/ai/oroiq-icon.png
 
 1. Navigate to **System > Configuration** in the main menu.
