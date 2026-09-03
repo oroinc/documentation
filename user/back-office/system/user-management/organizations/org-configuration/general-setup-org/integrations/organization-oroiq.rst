@@ -7,7 +7,14 @@ Configure OroIQ Settings per Organization
 
 .. hint:: Please |contact our support team| to learn more about OroCommerce AI features, discuss how they can meet your business needs, and get started with implementation.
 
-:ref:`OroIQ <concept-guide--oroiq>` is an AI-powered assistant designed to help users analyze data and perform back-office operations in the OroCommerce Enterprise application using natural language. Once the OroIQ assistant is installed in the Oro application, it can be enabled :ref:`globally <admin-configuration-oroiq-settings>` and per organization:
+:ref:`OroIQ <concept-guide--oroiq>` is an AI-powered assistant designed to help users analyze data and perform back-office operations in the OroCommerce Enterprise application using natural language. Once the OroIQ assistant is installed in the Oro application, it can be enabled :ref:`globally <admin-configuration-oroiq-settings>` and per organization.
+
+.. important:: Select the :ref:`Enable API <admin-configuration-application-org>` option under **System Configuration > General Setup > Application Settings > Web API** first. OroIQ depends on this API to function.
+
+       .. image:: /user/img/system/config_system/enable-api-org.png
+          :alt: The Enable API feature under system configuration on the organization level
+
+To enable OroIQ per organization, do the following:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu at the end of the row and click |IcConfig| to start editing the configuration.
