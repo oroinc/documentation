@@ -10,7 +10,12 @@ The :ref:`AI Smart Agent <concept-guide--ai>` is a virtual assistant designed to
 .. image:: /user/img/system/websites/web_configuration/ai-config-web.png
    :alt: AI Smart Agent configuration settings on the website level
 
-Once the agent is installed in the Oro application, you can enable it in the system configuration :ref:`globally <admin-configuration-ai-agent-settings>`, per :ref:`organization <organization-ai-agent-settings>`, website, :ref:`customer <user-guide--customer--configuration--settings--ai-agent>` and :ref:`customer group <user-guide--customer-groups--configuration--settings-ai-agent>`:
+Once the agent is installed in the Oro application, you can enable it in the system configuration :ref:`globally <admin-configuration-ai-agent-settings>`, per :ref:`organization <organization-ai-agent-settings>`, website, :ref:`customer <user-guide--customer--configuration--settings--ai-agent>` and :ref:`customer group <user-guide--customer-groups--configuration--settings-ai-agent>`.
+
+.. important:: Select the :ref:`Enable Storefront API <admin-configuration-application-website>` option under **System Configuration > General Setup > Application Settings > Web API** first. The AI Smart Agent depends on this API to function.
+
+       .. image:: /user/img/system/config_system/enable-storefront-api-website.png
+          :alt: The Enable Storefront API feature under system configuration on the website level
 
 To enable AI Smart Agent per website:
 

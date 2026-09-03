@@ -7,7 +7,14 @@ Configure AI Agent Settings per Organization
 
 The :ref:`AI Smart Agent <concept-guide--ai>` is a virtual assistant designed to simplify and enhance the B2B buying experience in the OroCommerce Enterprise application. It uses natural spoken or written language input to enable buyers to perform a variety of ecommerce-related activities via the OroCommerce storefront.
 
-Once the agent is installed in the Oro application, you can enable it in the system configuration :ref:`globally <admin-configuration-ai-agent-settings>`, per organization, :ref:`website <website-configuration-ai-agent-settings>`, :ref:`customer <user-guide--customer--configuration--settings--ai-agent>` and :ref:`customer group <user-guide--customer-groups--configuration--settings-ai-agent>`:
+Once the agent is installed in the Oro application, you can enable it in the system configuration :ref:`globally <admin-configuration-ai-agent-settings>`, per organization, :ref:`website <website-configuration-ai-agent-settings>`, :ref:`customer <user-guide--customer--configuration--settings--ai-agent>` and :ref:`customer group <user-guide--customer-groups--configuration--settings-ai-agent>`.
+
+.. important:: Select the :ref:`Enable Storefront API <admin-configuration-application-org>` option under **System Configuration > General Setup > Application Settings > Web API** first. The AI Smart Agent depends on this API to function.
+
+       .. image:: /user/img/system/config_system/enable-storefront-api-org.png
+          :alt: The Enable Storefront API feature under system configuration on the organization level
+
+To enable AI Smart Agent per organization, do the following:
 
 .. image:: /user/img/system/user_management/org_configuration/ai/ai-agent-org-settings.png
    :alt: AI Smart Agent configuration options page on the organization configuration level
