@@ -13,6 +13,8 @@ Using OpenID Connect allows users to authenticate once with a trusted identity p
 
 .. note:: Only the systems that return the **email** field in the ID token are supported. This field is required to map an Oro **User** or **Customer User** to the corresponding external account.
 
+.. important:: Logging out of Oro does not terminate the corresponding session at the identity provider (Single Logout is not supported). Users remain signed in to the third-party IdP after logging out of the storefront or back-office.
+
 OpenID Integration Types
 ------------------------
 
