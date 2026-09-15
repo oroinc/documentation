@@ -6663,3 +6663,7 @@ Links (Dev)
 .. |OroMomentum program page| raw:: html
 
     <a href="https://hive.oroinc.com/orocommerce-momentum/" target="_blank">OroMomentum program page</a>
+
+.. |How to Add/Remove Environment Variables| raw:: html
+
+    <a href="https://doc.oroinc.com/cloud/maintenance/env-vars/#how-to-add-remove-environment-variables" target="_blank">How to Add/Remove Environment Variables</a>
