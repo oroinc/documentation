@@ -1,3 +1,5 @@
+.. _bundle-docs-platform-message-queue-bundle-commands:
+
 CLI Commands (MessageQueueBundle)
 =================================
 
@@ -155,6 +157,8 @@ CLI Examples
    # Long notation with weight and mode
    php bin/console oro:message-queue:transport:consume --queue="name=oro.default,weight=5" --queue=oro.system --mode=weighted-round-robin
 
+.. _bundle-docs-platform-message-queue-bundle-commands-env-var:
+
 Environment Variables
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -186,6 +190,9 @@ is equivalent to:
 .. code-block:: none
 
    php bin/console oro:message-queue:transport:consume --queue="name=oro.index,processor=oro_search.async.index_entity_processor" --queue=oro.default
+
+.. note::
+        In Oro Cloud, these environment variables can be defined via the ``orocloud.yaml`` configuration (``orocloud_options.application.env_vars``). See |How to Add/Remove Environment Variables| for the exact syntax.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
