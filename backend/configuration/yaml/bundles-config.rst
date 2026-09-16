@@ -628,8 +628,8 @@ The default configuration for extension with alias "oro_commerce_mcp":
             # MCP session store configuration.
             session:
 
-                # The session store type.
-                store:                file # One of "cache"; "memory"; "file"
+                # Session store type. "cache" uses oro.data.cache (shared via Redis if configured), "file" is single-server local, "memory" is request-scoped; (unusable under PHP-FPM).
+                store:                cache # One of "cache"; "memory"; "file"
 
                 # The prefix for cache store.
                 cache_prefix:         ~
@@ -1038,8 +1038,8 @@ The default configuration for extension with alias "oro_frontend_commerce_mcp":
             # MCP session store configuration.
             session:
 
-                # The session store type.
-                store:                file # One of "cache"; "memory"; "file"
+                # Session store type. "cache" uses oro.data.cache (shared via Redis if configured), "file" is single-server local, "memory" is request-scoped; (unusable under PHP-FPM).
+                store:                cache # One of "cache"; "memory"; "file"
 
                 # The prefix for cache store.
                 cache_prefix:         ~

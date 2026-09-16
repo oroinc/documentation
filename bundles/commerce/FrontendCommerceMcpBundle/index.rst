@@ -371,8 +371,8 @@ The default configuration of OroFrontendCommerceMcpBundle:
             scopes: [ 'mcp:commerce' ]
             # MCP session store configuration.
             session:
-                # The session store type. Can be one of "file", "cache" or "memory"
-                store: 'file'
+                # The session store type. Can be one of "cache" (shared via Redis), "file" (local to one server) or "memory".
+                store: 'cache'
                 # The prefix for cache store.
                 cache_prefix: 'commerce_mcp_'
                 # The directory for file store.
