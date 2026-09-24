@@ -70,7 +70,8 @@ Set the default value via the ``#[ConfigField]`` attribute on the property (see 
        private string $name;
    }
 
-Both flags can also be toggled in the back-office via the Entity Management UI.
+Both flags can also be toggled in the back-office via the Entity Management UI, unless the field config is marked
+``immutable``.
 
 Enabling via Migrations
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -160,6 +161,35 @@ When enabling the entity-level ``available_in_template`` flag on an existing ent
            );
        }
    }
+
+Handling Denied Attributes at Render Time
+-----------------------------------------
+
+A property or a method that the rendering sandbox does not allow does not break the email. Rendering continues and the
+denied attribute resolves to ``null``, so the rest of the template is still delivered. The violation is logged as an
+error on the ``oro_email`` channel by ``Oro\Bundle\EmailBundle\EventListener\EmailTemplateSecurityPolicyViolationListener``.
+
+To resolve a denied attribute to something else - a placeholder, a masked value, or the real value under a rule of your
+own - listen to ``Oro\Bundle\EmailBundle\Event\EmailTemplateSecurityPolicyViolationEvent``.
+
+Per-Record Authorization at Render Time
+---------------------------------------
+
+Besides the allowlist, the rendering sandbox authorizes every object a render walks to against the ``VIEW``
+permission of the current user. The check is performed by ``Oro\Bundle\EmailBundle\Twig\EmailTemplateEntityAccessChecker``.
+
+So ``{{ entity.owner.email }}`` renders the email address only when the current user is allowed to view that owner
+record. The rule applies at any relation depth, and to every object the template reaches, not only to the root
+entity.
+
+The check is skipped, and the attribute resolves as before, when:
+
+* the value is not an object;
+* the object is not a manageable Doctrine entity;
+* the entity has not been persisted yet, so it carries no ACL identity;
+* the render holds no security token, which means it is performed by the application itself rather than on behalf of
+  a user. A cron job, a message queue consumer, a CLI command and an anonymous storefront request all render this
+  way and read every allowlisted attribute, so notification emails are not affected by this rule.
 
 Extend Available Data in Email Templates
 ----------------------------------------
