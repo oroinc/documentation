@@ -11,6 +11,8 @@
 Session Transfer
 ================
 
+.. note:: The Session Transfer OAuth grant is available as of OroCommerce version 6.1.11.
+
 Session Transfer is a custom OAuth grant that enables a trusted OAuth application to open an authenticated Oro
 browser session. The application exchanges an existing OAuth access token for a short-lived, one-time Session Transfer
 Token and directs the browser to the Session Transfer endpoint on the target Oro site.
