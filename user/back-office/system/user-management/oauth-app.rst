@@ -42,8 +42,7 @@ To create a new OAuth application in the back-office:
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations (available for the Enterprise edition only).
    * **Application Name** --- Provide a meaningful name for the application you are adding.
    * **Active** --- Select the **Active** checkbox to activate the new application.
-   * **Enable Session Transfer** --- Allow the application to exchange an access token issued to it for a short-lived,
-     one-time token that creates a browser session. Enable this option only for trusted applications. See
+   * **Enable Session Transfer** --- (available as of OroCommerce v7.0.5) Allow the application to exchange an access token issued to it for a short-lived, one-time token that creates a browser session. Enable this option only for trusted applications. See
      :ref:`Session Transfer <bundle-docs-platform-oauth2-server-bundle--session-transfer>` for integration details.
    * **Support all APIs** --- Select whether the client should support all available API types. If disabled, the *Supported APIs* filed appears with a list of API types for the user to select the required one.
    * **Supported APIs** --- The field appears when the *Support all APIs* field is disabled. Select the API type that the client should support, for example JSON:API, Email Addon, SCIM, etc.

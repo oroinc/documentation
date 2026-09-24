@@ -11,9 +11,12 @@ OroOAuth2ServerBundle
 |OroOAuth2ServerBundle| provides OAuth 2.0 authorization and resource server capabilities implemented
 on top of |thephpleague/oauth2-server| library.
 
-Currently, Authorization Code (with PKCE extension), Client Credentials and Password grants are implemented. The
-bundle also provides the custom Session Transfer grant that exchanges an OAuth access token for a short-lived,
+Currently, Authorization Code (with PKCE extension), Client Credentials and Password grants are implemented.
+
+The bundle also provides the custom Session Transfer grant that exchanges an OAuth access token for a short-lived,
 one-time token used to create an authenticated browser session.
+
+.. note:: The Session Transfer OAuth grant is available as of OroCommerce version 7.0.5.
 
 See |OAuth 2.0 Server Authorization Code Grant| and |OAuth 2.0 Authorization Code Grant| for details of
 Authorization Code grant.
