@@ -69,7 +69,8 @@ Set the default value via the ``#[ConfigField]`` attribute on the property (see 
        private string $name;
    }
 
-Both flags can also be toggled in the back-office via the Entity Management UI.
+Both flags can also be toggled in the back-office via the Entity Management UI, unless the field config is marked
+``immutable``.
 
 Enabling via Migrations
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -159,6 +160,70 @@ When enabling the entity-level ``available_in_template`` flag on an existing ent
            );
        }
    }
+
+Handling Denied Attributes at Render Time
+-----------------------------------------
+
+A denied property or method does not break the email: the attribute resolves to ``null`` and the rest of the
+template is delivered. ``Oro\Bundle\EmailBundle\EventListener\EmailTemplateSecurityPolicyViolationListener``
+logs the violation on the ``oro_email`` channel.
+
+To resolve a denied attribute to another value, listen to
+``Oro\Bundle\EmailBundle\Event\EmailTemplateSecurityPolicyViolationEvent`` and call ``setValue()``. The event
+carries the denied object, the attribute name and the Twig context.
+
+.. warning:: The context carries the email template parameters, including the password reset confirmation token.
+   Never log or forward it.
+
+Substituting a Value From an Email Template Parameter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+``Oro\Bundle\EmailBundle\EventListener\EmailTemplateAttributeSubstitutionListener`` resolves a denied attribute
+from an email template parameter. Register one service per attribute, in the bundle that owns the entity:
+
+.. code-block:: yaml
+
+    services:
+        acme.event_listener.sample_token_email_template:
+            class: Oro\Bundle\EmailBundle\EventListener\EmailTemplateAttributeSubstitutionListener
+            arguments:
+                - Acme\Bundle\AcmeBundle\Entity\SampleEntity
+                - 'sampleToken'
+                - !php/const Acme\Bundle\AcmeBundle\Mailer\Processor::SAMPLE_TOKEN_TEMPLATE_PARAM
+            tags:
+                - { name: kernel.event_listener, event: Oro\Bundle\EmailBundle\Event\EmailTemplateSecurityPolicyViolationEvent, method: onSecurityPolicyViolation }
+                - { name: oro_email.email_template_substitutable_attribute }
+
+The declared entity class covers its descendants. A render that passes no such parameter - a preview, a compilation,
+or custom sending code - leaves the attribute resolving to ``null``.
+
+A template that reads the attribute is still reported by the email template security policy check, because the
+attribute itself remains unavailable. The ``oro_email.email_template_substitutable_attribute`` tag makes the reported
+message name the email template parameter, so the author is told what to read instead:
+
+.. code-block:: none
+
+    The template in Content field (English (United States)) accesses a disallowed property "sampleToken" on "entity"
+    variable. Use the "sampleToken" variable instead.
+
+This is how the password reset confirmation token and the customer user email change verification code work. The
+templates Oro ships read the parameter directly, as ``{{ confirmationToken|default('N_A') }}``; the substitution
+keeps a customised copy of one of them rendering until it is updated.
+
+Per-Record Authorization at Render Time
+---------------------------------------
+
+``Oro\Bundle\EmailBundle\Twig\EmailTemplateEntityAccessChecker`` authorizes every object a render walks to
+against the ``VIEW`` permission of the current user, at any relation depth. So ``{{ entity.owner.email }}`` renders
+only when the current user may view that owner record.
+
+The check is skipped when:
+
+* the value is not an object;
+* the object is not a manageable Doctrine entity;
+* the entity is not persisted yet, so it carries no ACL identity;
+* the render holds no security token. A cron job, a message queue consumer, a CLI command and an anonymous
+  storefront request render this way, so notification emails are not affected.
 
 Extend Available Data in Email Templates
 ----------------------------------------
