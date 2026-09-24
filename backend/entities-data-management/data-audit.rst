@@ -121,7 +121,7 @@ This is controlled by the ``data_audit`` feature (enabled by default) and requir
 How It Works
 ^^^^^^^^^^^^
 
-The bundle listens to the ``oro_config.update_after`` event. For every changed setting, the bundle publishes a message to a dedicated message queue topic (``oro.data_audit.config_changed``). The ``ConfigChangeAuditProcessor`` processes this message asynchronously and writes the audit record. A running message consumer (``oro:message-queue:consume``) is required to process the message, consistent with the entity audit pipeline. The acting user, organization, impersonation, and the configuration level are resolved at the time of change, while the security token is still available. The bundle carries this information in the message, so the audit record stays accurate even though this record is written later.
+The bundle listens to the ``oro_config.update_after`` event. For every changed setting, the bundle hands an entry to the ``AuditEntryRecorder`` service, which publishes a message to the ``oro.data_audit.audit_entry`` topic. The ``AuditEntryProcessor`` processes this message asynchronously and writes the audit record. A running message consumer (``oro:message-queue:consume``) is required to process the message, consistent with the entity audit pipeline. The acting user, organization, impersonation, and the configuration level are resolved at the time of change, while the security token is still available. The bundle carries this information in the message, so the audit record stays accurate even though this record is written later.
 
 Configuration Levels
 ^^^^^^^^^^^^^^^^^^^^
@@ -228,6 +228,42 @@ Both the breadcrumb and the entity field label are resolved from the current tra
 .. note::
 
     Values stored with a non-text type (boolean, integer, float, array) are not matched by value. Such a change can be found by its name.
+
+.. _entities-data-management-data-audit--menu:
+
+Menu Change Audit
+-----------------
+
+The bundle also records the changes that an administrator makes to the back-office menus and the storefront menus of OroCommerce.
+
+Each changed menu item is recorded separately. The ``entity type`` of the record is the level at which the menu was customized. The fields of the record are the properties of the item that changed.
+
+One action can also affect other menu items. Data Audit records these related changes as well. For example:
+
+* When you hide a menu item, Data Audit also records the child items that become hidden.
+* When you delete a menu item, Data Audit also records its child items because they are moved to the top level of the menu.
+
+Data Audit records all menu changes from a single action under one audit transaction.
+
+Like the configuration audit, menu audit is controlled by the ``data_audit`` feature. You do not need to enable auditing separately for individual fields.
+
+``MenuUpdateChangeCollector`` collects menu changes when menu updates are saved. ``MenuUpdateAuditListener`` then records these changes once for each action performed by a user in the back-office.
+
+Changes made automatically by the application are not recorded. For example, Data Audit does not record menu items created or updated by a web catalog node, a data fixture, or a migration.
+
+A bundle can also enable auditing for its own menu type. To do this, it registers the same menu audit services for its menu update entity and scope type. For example, OroCommerceMenuBundle uses this approach for storefront menus. Menu levels do not need to be declared separately. They are taken from the scope criteria registered for the corresponding scope type.
+
+Data Audit also records all data that belongs to a menu item, including localized titles and descriptions, files, and collections. This related data is read from the Doctrine metadata of the menu item. As a result, if a menu adds its own relation, Data Audit can record it without additional changes to DataAuditBundle. The name of a related entity is provided by its ``Oro\Bundle\EntityBundle\Provider\EntityNameProviderInterface``.
+
+The change history of a menu item is shown on the menu item page through the ``menu_change_history_link`` placeholder. ``Oro\Bundle\DataAuditBundle\Provider\MenuAuditObjectProviderInterface`` is registered with the ``oro_dataaudit.menu_audit_object`` tag and defines the object under which a menu item is recorded. A bundle that adds auditing for its own menu type should register its own provider the same way it registers the rest of the menu audit services.
+
+
+Audit of Changes That Are Not Entity Changes
+--------------------------------------------
+
+``Oro\Bundle\DataAuditBundle\Service\AuditEntryRecorder`` records changes that do not belong to an auditable entity, as the configuration audit and the menu audit do. If the recorded object class of such an entry is not an application entity, an implementation of ``Oro\Bundle\DataAuditBundle\Provider\AuditTypeInterface`` registered with the ``oro_dataaudit.audit_type`` tag defines how the audit grid displays the type and its fields.
+
+A domain that is recorded per level uses ``Oro\Bundle\DataAuditBundle\Provider\LevelAuditType``. In this case, you do not need to create a custom implementation.
 
 Browsing the Change History
 ---------------------------
