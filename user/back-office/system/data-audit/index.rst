@@ -4,12 +4,22 @@
 Configure Data Audit in the Back-Office
 =======================================
 
-Data Audit shows the full history of changes made to an entity and its fields, provided the entity and the fields are marked as **auditable**. Data Audit also enables you to see the changes made to any configuration setting at any of the six levels: system (global), organization, website, customer group, customer, and user (My Configuration). You can also build reports based on these changes.
+Data Audit shows the full history of changes made to an entity and its fields (e.g., *Customers*, *Products*, etc.), provided the entity and the fields are marked as :ref:`auditable <data-audit-mark-as-auditable>`.
+
+Data Audit also shows changes made to any configuration setting at any of the six levels: system (global), organization, website, customer group, customer, and user (My Configuration). See `View Configuration Settings Changes`_ for details.
+
+Data Audit also tracks changes made to the back-office and storefront menus at any of the five levels: system (global), organization, website, customer group, and customer. See `View Menu Changes`_ for details.
+
+.. image:: /user/img/system/data_audit/change-history-option.png
+   :alt: Change History option on the Company A and commerce_top_nav_refreshing_teal storefront menu pages
+
+
+You can also build reports based on these changes. See `Create a Data Audit Report`_ for details.
+
+All changes made to auditable entities, their fields, configuration settings, and menus appear under **System > Data Audit** in the back-office main menu. You can filter this table by the criteria you need. You can also save the filtered view for future reference.
 
 .. image:: /user/img/system/data_audit/all-audits.png
    :alt: Data audit grid under System > Data Audit
-
-All changes made to auditable entities, their fields, and configuration settings appear under **System > Data Audit** in the back-office main menu. You can filter this table by the criteria you need. You can also save the filtered view for future reference.
 
 The report grid contains the following columns:
 
@@ -23,16 +33,18 @@ The report grid contains the following columns:
     * **Update** --- An existing custom value was replaced with another custom value.
     * **Remove** --- The record was reset to its default or parent value."
   "VERSION","The sequential number of the change made to the specific record."
-  "ENTITY TYPE","The type of the entity to which the entity record belongs. For configuration settings, the type shows the configuration level at which the change occurred, for example *Configuration: System*, *Configuration: Website*, or *Configuration: User*, etc. "
+  "ENTITY TYPE","The type of the entity to which the entity record belongs. For configuration settings, the type shows the configuration level at which the change occurred, for example *Configuration: System*, *Configuration: Website*, or *Configuration: User*, etc. For menus, the type shows the level at which the menu was customized, for example *Back-Office Menu: Global* or *Storefront Menu: Website*. "
+  "ENTITY IDENTIFIER","The ID of the entity to which the record belongs."
   "ENTITY NAME","The name of the specific record that changed."
-  "ENTITY ID","The ID of the entity to which the record belongs."
-  "DATA","For **entities and entity fields**, DATA displays the details of the change made to the entity. For **configuration settings**, DATA displays the location of the changed setting, followed by its old and new values. The location is shown as a path, for example *Commerce › Product › Promotions › New Arrivals › Maximum Items*."
+  "DATA","For **entities and entity fields**, DATA displays the details of the change made to the entity. For **configuration settings**, DATA displays the location of the changed setting, followed by its old and new values. The location is shown as a path, for example *Commerce › Product › Promotions › New Arrivals › Maximum Items*. For **menus**, DATA displays the properties of the changed menu item, with their old and new values."
   "AUTHOR","The name and email address of the user who made the change."
+  "IMPERSONATION","Shows who made the change while impersonating another user. If the change occurred during an impersonation session, the column shows the IP address and the impersonation token."
   "ORGANIZATION","Organization in which the change was made."
   "LOGGED AT","The date and time when the event was logged."
 
 Use filters to find the required audit record. Use the **Data** filter to search a match in the name of the changed entity or setting (within old and new values) or its location.
 
+.. _data-audit-mark-as-auditable:
 
 Mark an Entity as Auditable
 ---------------------------
@@ -116,8 +128,39 @@ Use the **Data** filter to find a match in the name of the changed setting or it
    :alt: Audit grid displaying changes to settings with sensitive information via ***
 
 
+View Menu Changes
+-----------------
+
+.. note:: The ability to audit changes to back-office and storefront menus is available as of OroCommerce version 6.0.12.
+
+Data Audit also tracks the changes made to the back-office menus under **System > Menus** and to the storefront menus under **System > Storefront Menus**. This tracking works automatically for every menu item, so you do not need to mark individual menu item as *auditable*. Every level at which a menu can be customized is a separate entity type, so you can filter the levels independently:
+
+* for back-office menu: *Back-Office Menu: Global*, *Back-Office Menu: Organization*, and *Back-Office Menu: User*;
+* for storefront menu: *Storefront Menu: Global*, *Storefront Menu: Organization*, *Storefront Menu: Website*, *Storefront Menu: Customer Group*, and *Storefront Menu: Customer*.
+
+Whenever someone changes a menu item at any of these levels, the application creates an audit record for that change. You can find this record on the same **System > Data Audit** page that lists entity changes.
+
+Every change creates one record for each changed menu item:
+
+* **ENTITY NAME** shows the menu and the item, for example, *frontend_menu / Personal Address*.
+* **ENTITY IDENTIFIER** identifies the item within its menu and the level at which the item was customized.
+* **DATA** shows the changed properties with their old and new values.
+
+One action can also affect other child menu items. Data Audit records these related changes as well. For example:
+
+* When you hide a menu item, Data Audit also records the child items that become hidden.
+* When you delete a menu item, Data Audit also records its child items because deleting the parent item moves its child items to the top level of the menu.
+
+Data Audit records all changes from a single action under one transaction.
+
+To view the history of a single menu item, open the item in **System > Menus** or **System > Storefront Menus**, and click **Change History**.
+
+.. image:: /user/img/system/data_audit/menu-change-history.png
+   :alt: Changed history of the back-office and storefront menu entities
+
+
 Create a Data Audit Report
----------------------------
+--------------------------
 
 You can create reports based on the changes that have taken place in auditable entities.
 
