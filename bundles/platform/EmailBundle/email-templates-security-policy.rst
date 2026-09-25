@@ -52,19 +52,26 @@ The following classes form the security policy checking subsystem:
    ``variableTypes`` map (variable name to FQCN). Listeners add extra variable type entries to improve
    the accuracy of the static analysis for templates that rely on variables beyond the root entity.
 
+``Oro\Bundle\EmailBundle\Provider\SubstitutableEmailTemplateAttributeProvider``
+   Holds the attributes declared with the ``oro_email.email_template_substitutable_attribute`` tag, along with the
+   email template parameter each one is resolved from at render time. ``EmailTemplateSecurityPolicyValidator`` asks it
+   for that parameter, so that the violation it reports names the variable the template should read instead. See
+   :ref:`Email Templates Rendering Sandbox <bundle-docs-platform-email-bundle-templates-rendering-sandbox>`.
+
 ``Oro\Bundle\EmailBundle\Twig\SafeGetAttributeNodeExtension``
-   Twig extension registered on the sandboxed email template environment. Its sole purpose is to register
-   ``SafeGetAttrNodeVisitor`` so that every attribute access node in the compiled template is replaced
-   with the safe variant at compile time.
+   Twig extension registered on the sandboxed email template environment. Installs the node visitors that replace
+   every attribute access and every string coercion with a safe variant, and carries the event dispatcher those
+   nodes report a violation through.
 
 ``Oro\Bundle\EmailBundle\Twig\NodeVisitor\SafeGetAttrNodeVisitor``
    AST node visitor (priority 1, runs after ``GetAttrNodeVisitor``). Replaces every ``GetAttrNode``
    instance in the compiled template AST with a ``SafeGetAttrNode``.
 
 ``Oro\Bundle\EmailBundle\Twig\Node\SafeGetAttrNode``
-   Overrides the ``attribute()`` method of ``GetAttrNode``. Instead of propagating
-   ``SecurityNotAllowedMethodError`` or ``SecurityNotAllowedPropertyError``, it returns ``null``
-   and logs the error at the ``error`` level via the ``oro_email`` Monolog channel.
+   Overrides the ``onSecurityError()`` hook of ``GetAttrNode``. Instead of propagating
+   ``SecurityNotAllowedMethodError`` or ``SecurityNotAllowedPropertyError``, a denied access dispatches
+   ``EmailTemplateSecurityPolicyViolationEvent`` and resolves to the value a listener substituted, or to ``null``
+   when no listener did. Logging a violation is left to a listener of that event.
 
 Validating Email Templates
 --------------------------
@@ -141,16 +148,18 @@ the sandbox policy — for example because the policy changed after the template
 an edge case was not caught by static analysis. To prevent such accesses from breaking the rendering
 pipeline, the sandboxed email template Twig environment registers ``SafeGetAttributeNodeExtension``.
 
-This extension installs ``SafeGetAttrNodeVisitor``, which rewrites every ``GetAttrNode`` in the
-compiled template AST to a ``SafeGetAttrNode`` at compile time. When the sandbox denies access at
-runtime, ``SafeGetAttrNode`` catches the ``SecurityNotAllowedMethodError`` or
-``SecurityNotAllowedPropertyError`` exception, logs the error at the ``error`` level via the
-``oro_email`` Monolog channel, and returns ``null`` instead of propagating the exception. For
-``is-defined`` tests on denied attributes, it returns ``false``.
+This extension installs ``SafeGetAttrNodeVisitor`` and ``SafeCheckToStringNodeVisitor``, which rewrite every
+``GetAttrNode`` and every ``CheckToStringNode`` in the compiled template AST to their safe variants at compile time.
+When the sandbox denies access at runtime, the safe node dispatches
+``EmailTemplateSecurityPolicyViolationEvent`` instead of propagating the
+``SecurityNotAllowedMethodError`` or ``SecurityNotAllowedPropertyError`` exception.
 
 The net effect is that a template containing an access violation renders with an empty value for the
-offending expression rather than failing entirely. This is intentional — it maintains delivery of
+offending expression rather than failing entirely. This is intentional: it maintains delivery of
 the email while producing a diagnostic log entry that operators can monitor.
+
+To substitute a value for a denied access, see
+:ref:`Email Templates Rendering Sandbox <bundle-docs-platform-email-bundle-templates-rendering-sandbox>`.
 
 Console Command
 ---------------
