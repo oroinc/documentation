@@ -251,6 +251,43 @@ Use:
    ORO_MONGODB_DSN_PUBLIC=mongodb://127.0.0.1:27017/media
    ORO_MONGODB_DSN_PRIVATE=mongodb://127.0.0.1:27017/private
 
+Each value is a complete MongoDB connection string. The database name follows the host list, and
+the URI options follow the database name. The connection string supports the URI options, for
+example ``replicaSet``, ``authSource``, and ``tls``, and the ``mongodb+srv`` scheme.
+
+The connection string contains the credentials of the MongoDB user, so provide it through the
+secret mechanism of the deployment and rotate it as any other credential.
+
+The connection string must meet the following requirements:
+
+- The scheme is ``mongodb`` or ``mongodb+srv``, in lower case.
+- The database name follows the host list and precedes the URI options.
+- The database name does not contain a control character, a space, or any of the ``"``, ``$``,
+  ``.``, ``/``, and ``\`` characters.
+- The reserved characters in the username and the password are percent-encoded.
+
+The following example configures a connection over TLS:
+
+.. code:: bash
+
+   ORO_MONGODB_DSN_PUBLIC='mongodb://user:password@host1:27017/media?tls=true&tlsCAFile=/etc/pki/ca.crt'
+   ORO_MONGODB_DSN_PRIVATE='mongodb://user:password@host1:27017/private?tls=true&tlsCAFile=/etc/pki/ca.crt'
+
+The following example configures a connection to a seed list:
+
+.. code:: bash
+
+   ORO_MONGODB_DSN_PUBLIC=mongodb+srv://user:password@cluster0.example.com/media
+   ORO_MONGODB_DSN_PRIVATE=mongodb+srv://user:password@cluster0.example.com/private
+
+The ``ORO_MONGODB_SERVER`` variable is a short form of the two variables above. The application adds
+``/media`` and ``/private`` to its value. Use this variable only when the connection string ends with
+the host list, that is, when it contains no trailing slash and no URI options. In all other cases,
+set ``ORO_MONGODB_DSN_PUBLIC`` and ``ORO_MONGODB_DSN_PRIVATE`` directly.
+
+For the same connection string in the ``parameters.yml`` file, see
+:ref:`File System Adapters Configuration with parameters.yml <backend-file-storage-adapters-configuration-with-parameters.yml>`.
+
 To allow setting MongoDB connection configurations from environment
 variables, run the following command:
 

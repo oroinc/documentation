@@ -69,11 +69,14 @@ or the `config/config.yml` file of your application:
 In this example, the ``oro_gridfs`` adapter configuration includes the ``mongodb_gridfs_dsn`` parameter, which holds the MongoDB DSN string. The format of this string is the following:
 ``[protocol]://[username]:[password]@[host]:[port]/[database]``, where:
 
-- **protocol** is `mongodb`
+- **protocol** is ``mongodb`` or ``mongodb+srv``
 - **username** is the username that has access to the MongoDB database
 - **password** is the user's password
 - **host** is the hostname or IP address of the MongoDB server
 - **database** is the MongoDB database name that should be used as GridGS storage
+
+The string can also contain the URI options that follow the database name, for example
+``mongodb://127.0.0.1:27017/media?replicaSet=rs0&tls=true``.
 
 .. _backend-file-storage-adapters-configuration-with-parameters.yml:
 
