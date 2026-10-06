@@ -13,6 +13,7 @@ Learn how to enable and set up commerce-related features per customer:
 * **Commerce**
 
   * :ref:`Search (Search Terms) <user-guide--customers--search--settings>`
+  * :ref:`Customer Users <user-guide--customers--customer-users--settings>`
   * :ref:`Product (Customer Settings) <user-guide--customers--customer-settings>`
   * :ref:`Sales (Checkout, Recurring Orders and Invoices) <user-guide--customers--sales--settings>`
   * :ref:`Inventory <user-guide--customers--inventory-settings>`
@@ -27,3 +28,4 @@ Learn how to enable and set up commerce-related features per customer:
    Search History <commerce/search/customer-search-settings>
    Product Data Export <commerce/product/customer-product-settings>
    Sales <commerce/sales/index>
+   Customer <commerce/customer/index>

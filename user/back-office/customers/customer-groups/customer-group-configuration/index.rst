@@ -13,10 +13,10 @@ Learn how to enable and set up commerce-related features per customer group:
 * **Commerce**
 
   * :ref:`Search (Search Terms) <user-guide--customer-groups--configuration--settings--search>`
+  * :ref:`Customer Users <user-guide--customer-groups--customer-users--settings>`
   * :ref:`Product (Customer Settings) <user-guide--customer-groups--customer-settings>`
   * :ref:`Sales (Checkout, Recurring Orders & Invoices) <user-guide--customer-group---sales--settings>`
-  * :ref:`Inventory <user-guide--customers--customer-group--inventory-settings>`  
-
+  * :ref:`Inventory <user-guide--customers--customer-group--inventory-settings>`
 
 .. toctree::
    :maxdepth: 1
@@ -28,3 +28,4 @@ Learn how to enable and set up commerce-related features per customer group:
    Search History <commerce/search/customer-group-search-terms-settings>
    Product Data Export <commerce/product/customer-group-product-customer-settings>
    Sales <commerce/sales/index>
+   Customer <commerce/customer/index>

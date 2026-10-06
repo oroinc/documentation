@@ -13,6 +13,8 @@ In the main menu, navigate to **Customers > Customer Users** for customer manage
 In the Customer Users section, you can:
 
 * View, edit, and create new customer users.
+* :ref:`Invite people to create their own customer user profiles
+  <user-guide--customers--customer-user-invitations>`.
 * Select their roles in OroCommerce to define their level of permissions and access to the actions and data in the OroCommerce storefront.
 * Manage customer user information (name, birthday, billing and shipping address, phone number, etc).
 * View requests for quotes, quotes, sales orders, and shopping lists created by the customer user.
@@ -258,5 +260,6 @@ Use the generated Client ID and Client Secret to retrieve an access token to con
 
 .. toctree::
 
+   Customer User Invitations <invitations>
    export
    import
