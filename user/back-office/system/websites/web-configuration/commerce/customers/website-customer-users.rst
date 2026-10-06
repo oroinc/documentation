@@ -41,7 +41,11 @@ To change the default customer user configuration settings for a website:
 
    * **Landing Page** --- Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
 
-8. Click **Save Settings**.
+8. In the **Customer User Invitations** section, configure the following option:
+
+   * **Enable Customer User Invitations** --- Enables/disables :ref:`customer user invitations <user-guide--customers--customer-user-invitations>` in the back-office and the storefront. When invitations are disabled, the invitation pages and actions are hidden. Enabled by default. You can configure this option :ref:`globally <sys-config--configuration--commerce--customers--customer-users>` and per :ref:`organization <system--user-mngm--organization--configuration--commerce--customers--customer-users>`, website, :ref:`customer group <user-guide--customer-groups--customer-users--settings>`, and :ref:`customer <user-guide--customers--customer-users--settings>`. A setting configured at a more specific level overrides the inherited setting.
+
+9. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin

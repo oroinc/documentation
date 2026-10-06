@@ -76,7 +76,11 @@ If the application was installed without demo data, the banner is disabled. Conf
      .. image:: /user/img/system/config_commerce/cookie_banner/cookie-banner-landing-page.png
         :alt: Text language button
 
-9. Click **Save Settings**.
+9. In the **Customer User Invitations** section, configure the following option:
+
+   * **Enable Customer User Invitations** --- Enables/disables :ref:`customer user invitations <user-guide--customers--customer-user-invitations>` in the back-office and the storefront. When invitations are disabled, the invitation pages and actions are hidden. Enabled by default. You can configure this option globally and per :ref:`organization <system--user-mngm--organization--configuration--commerce--customers--customer-users>`, :ref:`website <system--website--configuration--commerce--customers--customer-users>`, :ref:`customer group <user-guide--customer-groups--customer-users--settings>`, and :ref:`customer <user-guide--customers--customer-users--settings>`. A setting configured at a more specific level overrides the inherited setting.
+
+10. Click **Save Settings**.
 
 
 .. include:: /include/include-links-dev.rst

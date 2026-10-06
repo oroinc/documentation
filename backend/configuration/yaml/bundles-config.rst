@@ -772,6 +772,8 @@ The default configuration for extension with alias "oro_customer":
     oro_customer:
         reset:
             ttl:                  86400
+        invitation:
+            ttl:                  86400
         visitor_session:
             cookie_secure:        auto # One of true; false; "auto"
             cookie_httponly:      true
