@@ -6660,6 +6660,10 @@ Links (Dev)
 
    <a href="https://developers.openai.com/api/docs/guides/developer-mode" target="_blank">ChatGPT</a>
 
+.. |Claude| raw:: html
+
+   <a href="https://claude.com/docs" target="_blank">Claude</a>
+
 .. |OroMomentum program page| raw:: html
 
     <a href="https://hive.oroinc.com/orocommerce-momentum/" target="_blank">OroMomentum program page</a>

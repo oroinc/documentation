@@ -5,7 +5,7 @@ OroCommerceMcpBundle
 
 .. note:: OroCommerceMcpBundle is available in the Enterprise edition only.
 
-Use ``OroCommerceMcpBundle`` to connect AI applications, such as |Visual Studio Code| or |ChatGPT|, to the OroCommerce back-office.
+Use ``OroCommerceMcpBundle`` to connect AI applications, such as |Visual Studio Code|, |ChatGPT|, or |Claude| to the OroCommerce back-office.
 
 ``OroCommerceMcpBundle`` adds a |Model Context Protocol| (MCP) server to the OroCommerce back-office by using the official MCP software development kit (SDK) |mcp/sdk|. The bundle makes OroCommerce data and actions available to AI applications as MCP tools through an HTTP endpoint. An AI application can connect to the server, view the available tools, select the tool that matches the user’s request, and use it to read or update OroCommerce data.
 
@@ -20,7 +20,7 @@ MCP is an open standard protocol that enables AI applications to connect to exte
 
 In an OroCommerce integration, the main components are:
 
-* **MCP host** --- An AI application, such as **Visual Studio Code** or **ChatGPT**, that a user interacts with directly. The host creates one MCP client for each MCP server it connects to, and its language model decides which tool, prompt, or resource to use for a given request.
+* **MCP host** --- An AI application, such as **Visual Studio Code**, **ChatGPT**, or **Claude** that a user interacts with directly. The host creates one MCP client for each MCP server it connects to, and its language model decides which tool, prompt, or resource to use for a given request.
 * **MCP client** --- The component that the MCP host creates to maintain a dedicated connection to one MCP server. In an OroCommerce integration, the host creates an MCP client to connect to the OroCommerce MCP server.
 * **MCP server** --- The part of ``OroCommerceMcpBundle`` that receives requests from an MCP client and returns the requested information or operation result through an HTTP connection.
 * **Tools** --- Actions that the AI application can ask OroCommerce to perform through its MCP client, such as getting a list of orders, creating a customer, or updating an order. Most tools provided by the bundle map directly to an OroCommerce API resource and action.
@@ -47,41 +47,35 @@ The OroCommerce MCP server uses OAuth 2.0 Authorization Code authentication.
 
 To connect an AI application to OroCommerce:
 
-1. Create a separate OAuth application for each AI application in the back-office.
+1. Create a separate :ref:`OAuth application <oauth-applications>` for each AI application in the back-office.
 2. Configure the AI application with the MCP server URL. AI applications that support OAuth server metadata, such as Visual Studio Code, discover the authentication settings automatically. For AI applications that do not support this metadata, provide the OAuth Client ID and Client Secret manually.
 
 The OAuth application setup is the same for every AI application. Only the redirect URL and a few application-specific fields differ.
 
-Create the OAuth Application
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To create a new :ref:`OAuth application <oauth-applications>` in Oro:
-
-1. Navigate to **System > User Management > OAuth Applications** in the back-office.
-2. Click **Create OAuth Application**.
-3. Enter a descriptive name, for example, ``Commerce MCP Server``.
-4. Select **Active**.
-5. Clear **Support all APIs**.
-6. In **Supported APIs**, select **Commerce MCP Server**.
-7. Set **Grant Type** to **Authorization Code**.
-8. Add the redirect URL required by your AI application.
-
-.. csv-table::
-   :header: "**AI Application**","**Redirect URL**"
-
-   "Visual Studio Code","``http://127.0.0.1:33418/`` and ``https://vscode.dev/redirect``"
-   "ChatGPT","``https://chatgpt.com/connector_platform_oauth_redirect``"
-
-9. Clear **Confidential Client** (e.g., for VS code) unless your AI application requires a confidential OAuth application.
-10. Toggle **Skip User Consent** to enable or skip user login consent screen.
-11. Click **Save and Close**. Create a new OAuth application with the following settings:
-
-Once saved, the system will generate the **Client ID** and **Client Secret** for the OAuth application. Copy both values, because you need them when you configure the AI application.
 
 Connect Visual Studio Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. In your VS Code project, create or open the ``.vscode/mcp.json`` file.
+Create an OAuth application for Visual Studio Code:
+
+1. Navigate to **System > User Management > OAuth Applications** in the OroCommerce back-office.
+2. Create an OAuth application with the following settings:
+
+.. csv-table::
+   :header: "**Field**","**Value**"
+
+   "Application Name","A descriptive name, for example ``Commerce MCP Server``"
+   "Active","On"
+   "Support all APIs","Off"
+   "Supported APIs","``Commerce MCP Server``"
+   "Grant Type","``Authorization Code``"
+   "Redirect URLs","``http://127.0.0.1:33418/`` and ``https://vscode.dev/redirect``"
+   "Confidential Client","Off"
+   "Skip User Consent","On or off, depending on whether you want the login consent screen"
+
+In your VS Code project:
+
+1. Create or open the ``.vscode/mcp.json`` file.
 2. Add an entry for the OroCommerce MCP server:
 
 .. code-block:: json
@@ -103,11 +97,33 @@ Connect ChatGPT
 
 .. important:: Connecting a custom MCP application in ChatGPT requires a ChatGPT plan that supports developer mode connectors. Verify your plan before you continue.
 
-1. In ChatGPT, open developer mode and create a new MCP application.
+Create an OAuth application for ChatGPT:
+
+1. Navigate to **System > User Management > OAuth Applications** in the OroCommerce back-office.
+2. Create an OAuth application with the following settings:
+
+.. csv-table::
+   :header: "**Field**","**Value**"
+
+   "Application Name","A descriptive name, for example ``Commerce MCP Server``"
+   "Active","On"
+   "Support all APIs","Off"
+   "Supported APIs","``Commerce MCP Server``"
+   "Grant Type","``Authorization Code``"
+   "Redirect URLs","``https://chatgpt.com/connector_platform_oauth_redirect``"
+   "Confidential Client","On or off"
+   "Skip User Consent","On or off, depending on whether you want the login consent screen"
+
+3. Once saved, the system will generate the **Client ID** and **Client Secret** for the OAuth application. Copy both values, because you need them when you configure the AI application.
+
+
+In your ChatGPT application:
+
+1. Open developer mode and create a new MCP application.
 2. Enter a **Name**, for example, ``OroCommerce``.
 3. Set **MCP Server URL** to ```https://yourapplication/{backend_prefix}/commerce-mcp``, where ``{backend_prefix}`` is the prefix of your back-office (by default, it is ``admin``).
 4. Set **Authentication** to **OAuth**.
-5. Enter the **OAuth Client ID** and **OAuth Client Secret** from the OAuth application that you created.
+5. Enter the **OAuth Client ID** and **OAuth Client Secret** from the OAuth application that you created in Step 1.
 6. Save the MCP application.
 
 Connect Claude
@@ -115,7 +131,10 @@ Connect Claude
 
 .. important:: Connecting a custom MCP server in Claude requires the Claude CLI (Claude Code). Verify that Claude CLI is installed before you continue.
 
-Create an OAuth application for Claude with the following settings:
+Create an OAuth application for Claude:
+
+1. Navigate to **System > User Management > OAuth Applications** in the OroCommerce back-office.
+2. Create an OAuth application with the following settings:
 
 .. csv-table::
    :header: "**Field**","**Value**"
@@ -129,15 +148,16 @@ Create an OAuth application for Claude with the following settings:
    "Confidential Client","Off"
    "Skip User Consent","On or off, depending on whether you want the login consent screen"
 
-Once the OAuth application is saved, copy the generated **Client ID**.
+3. Once saved, the system will generate the **Client ID** and **Client Secret** for the OAuth application. Copy both values, because you need them when you configure the AI application.
 
-To add the OroCommerce MCP server to Claude, run the following command in the Claude CLI:
+
+4. In the Claude CLI, run the following command:
 
 .. code-block:: bash
 
     claude mcp add --transport http --scope user --callback-port 8090 --client-id Your_CLIENT_ID oro-commerce-mcp https://yourapplication/{backend_prefix}/commerce-mcp
 
-Replace ``Your_CLIENT_ID`` with the Client ID from your OAuth application, and ``{backend_prefix}`` with your back-office URL prefix. By default, it is ``admin``.
+5. Replace ``Your_CLIENT_ID`` with the Client ID from your OAuth application, and ``{backend_prefix}`` with your back-office URL prefix. By default, it is ``admin``.
 
 .. note:: The callback port in the command (``8090``) must match the port used in the OAuth application's redirect URL.
 
@@ -171,7 +191,58 @@ The following tables list the tools grouped by entity with the related descripti
    "Order","``update``","``update_order``","Updates an order. The updated order is returned in the response"
    "OrderLineItem","``create``","``add_order_line_item``","Adds a line item to an existing order. The added line item is returned in the response"
    "OrderLineItem","``delete``","``remove_order_line_item``","Removes a line item from an existing order"
-
+   "Brand","``get_list``","``get_brands``","Gets the list of brands"
+   "Brand","``get_count``","``get_brand_count``","Gets the number of brands"
+   "Brand","``get``","``get_brand``","Gets a brand by ID"
+   "Category","``get_list``","``get_categories``","Gets the list of categories"
+   "Category","``get_count``","``get_category_count``","Gets the number of categories"
+   "Category","``get``","``get_category``","Gets a category by ID"
+   "CustomerGroup","``get_list``","``get_customer_groups``","Gets the list of customer groups"
+   "CustomerGroup","``get_count``","``get_customer_group_count``","Gets the number of customer groups"
+   "CustomerGroup","``get``","``get_customer_group``","Gets a customer group by ID"
+   "EV_Prod_Inventory_Status","``get_list``","``get_product_inventory_statuses``","Gets the list of product inventory statuses"
+   "EV_Prod_Inventory_Status","``get_count``","``get_product_inventory_status_count``","Gets the number of product inventory statuses"
+   "EV_Prod_Inventory_Status","``get``","``get_product_inventory_status``","Gets a product inventory status by ID"
+   "EV_Order_Internal_Status","``get_list``","``get_order_internal_statuses``","Gets the list of order internal statuses"
+   "EV_Order_Internal_Status","``get_count``","``get_order_internal_status_count``","Gets the number of order internal statuses"
+   "EV_Order_Internal_Status","``get``","``get_order_internal_status``","Gets an order internal status by ID"
+   "EV_Quote_Customer_Status","``get_list``","``get_quote_customer_statuses``","Gets the list of quote customer statuses"
+   "EV_Quote_Customer_Status","``get_count``","``get_quote_customer_status_count``","Gets the number of quote customer statuses"
+   "EV_Quote_Customer_Status","``get``","``get_quote_customer_status``","Gets a quote customer status by ID"
+   "EV_Quote_Internal_Status","``get_list``","``get_quote_internal_statuses``","Gets the list of quote internal statuses"
+   "EV_Quote_Internal_Status","``get_count``","``get_quote_internal_status_count``","Gets the number of quote internal statuses"
+   "EV_Quote_Internal_Status","``get``","``get_quote_internal_status``","Gets a quote internal status by ID"
+   "EV_Rfp_Customer_Status","``get_list``","``get_rfp_customer_statuses``","Gets the list of Request for Quote customer statuses"
+   "EV_Rfp_Customer_Status","``get_count``","``get_rfp_customer_status_count``","Gets the number of Request for Quote customer statuses"
+   "EV_Rfp_Customer_Status","``get``","``get_rfp_customer_status``","Gets a Request for Quote customer status by ID"
+   "EV_Rfp_Internal_Status","``get_list``","``get_rfp_internal_statuses``","Gets the list of Request for Quote internal statuses"
+   "EV_Rfp_Internal_Status","``get_count``","``get_rfp_internal_status_count``","Gets the number of Request for Quote internal statuses"
+   "EV_Rfp_Internal_Status","``get``","``get_rfp_internal_status``","Gets a Request for Quote internal status by ID"
+   "PaymentTerm","``get_list``","``get_payment_terms``","Gets the list of payment terms"
+   "PaymentTerm","``get_count``","``get_payment_term_count``","Gets the number of payment terms"
+   "PaymentTerm","``get``","``get_payment_term``","Gets a payment term by ID"
+   "ProductUnit","``get_list``","``get_product_units``","Gets the list of product units"
+   "ProductUnit","``get_count``","``get_product_unit_count``","Gets the number of product units"
+   "ProductUnit","``get``","``get_product_unit``","Gets a product unit by ID"
+   "Request","``get_list``","``get_rfqs``","Gets the list of requests for quote"
+   "Request","``get_count``","``get_rfq_count``","Gets the number of requests for quote"
+   "Request","``get``","``get_rfq``","Gets a request for quote by ID"
+   "Quote","``get_list``","``get_quotes``","Gets the list of quotes"
+   "Quote","``get_count``","``get_quote_count``","Gets the number of quotes"
+   "Quote","``get``","``get_quote``","Gets a quote by ID"
+   "Quote","``create``","``create_quote``","Creates a new quote. The created quote is returned in the response"
+   "Product","``get_list``","``get_products``","Gets the list of products"
+   "Product","``get_count``","``get_product_count``","Gets the number of products"
+   "Product","``get``","``get_product``","Gets a product by ID"
+   "ProductPrice","``get_list``","``get_product_prices``","Gets the list of product prices. This tool requires the ``priceList`` filter."
+   "ProductPrice","``get_count``","``get_product_price_count``","Gets the number of product prices. This tool requires the ``priceList`` filter."
+   "ProductPrice","``get``","``get_product_price``","Gets a product price by ID. The ID uses the ``GUID-priceListId`` format. Use the value of the ``id`` field that the ``get_product_prices`` tool returns."
+   "CustomerAddress","``get_list``","``get_customer_addresses``","Gets the list of customer addresses"
+   "CustomerAddress","``get_count``","``get_customer_address_count``","Gets the number of customer addresses"
+   "CustomerAddress","``get``","``get_customer_address``","Gets a customer address by ID"
+   "User","``get_list``","``get_users``","Gets the list of users"
+   "User","``get_count``","``get_user_count``","Gets the number of users"
+   "User","``get``","``get_user``","Gets a user by ID"
 
 Create Custom API-Based Tools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
