@@ -108,6 +108,8 @@ To make sure your column is displayed correctly in the grids (segments, reports)
 Configuration Change Audit
 --------------------------
 
+.. note:: The ability to audit changes to system configuration settings is available as of OroCommerce version 7.0.5.
+
 The |OroDataAuditBundle| also records system configuration changes, in addition to entity changes. Whenever a configuration setting is changed at any level (e.g., system (global), organization, website, customer group, customer, or user (**My Configuration**)), the bundle creates an audit entry. The audit entry appears in the same **System > Data Audit** grid that shows entity changes. Administrators therefore have a single, filterable trail of who changed which setting, when, and how.
 
 This is controlled by the ``data_audit`` feature (enabled by default) and requires no per-field opt-in: every setting of every configuration level is covered.
