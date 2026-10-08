@@ -123,6 +123,11 @@ Use the following commands to work with patches:
 
 * **patch:apply**  --- applies a patch. Requires the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically applied against your codebase.
 
+  .. important::
+
+      * ``patch:apply`` supports only patches that modify existing files. Patches that add new files cannot be applied.
+      * Some changes only take effect after an additional build step. For example, JavaScript files are compiled into assets, so patching a JS source file has no visible effect until the assets are rebuilt. After applying such a patch, run the corresponding operation (e.g., an assets rebuild) to propagate the change.
+
 * **patch:revert** --- reverts a patch, requires the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically reverted against your codebase.
 
 Usage examples:
