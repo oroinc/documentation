@@ -38,6 +38,8 @@ To change the default customer user configuration settings globally:
 
    * **Customer User Email Enumeration Protection** --- Typically, when a user attempts to register an account with an email that already exists in the system, an email address uniqueness validation message is displayed indicating that the email is already in use. With this option enabled, the validation message will no longer appear for duplicate emails. Instead, an email notification will be sent to the existing customer user, informing them of the registration attempt using their email. Enabling the feature helps enhance security and prevent fraudulent activities with known emails.
 
+    * **Enable Just-In-Time (JIT) provisioning** --- (available as of OroCommerce v7.0.3) Enable automatic registration of customer users whose email domains match a list of approved domains, without a manual invitation or approval. Enable the feature globally in the system configuration, and then override the :ref:`settings for each customer <user-guide--customers--customer-users--settings>`, adding a list of approved domains.
+
 5. In the **Customer Visitor** section, configure the options for the anonymous users:
 
    .. image:: /user/img/system/config_commerce/customer/global-customer-user-settings2.png
