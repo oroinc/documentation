@@ -89,5 +89,32 @@ Obtain the IP address from an environment variable:
 
     server_ip_address: '%env(SERVER_IP_ADDRESS)%'
 
+Configuration for TLS Connections
+---------------------------------
+
+Use the ``rediss`` scheme for a connection over TLS. For a private certificate authority, add the ``ssl[cafile]``
+option. The TLS settings apply to all the hosts of the DSN. For Sentinel, they also apply to the primary and replica
+nodes that the sentinels return.
+
+The following parameters connect to Redis over TLS with a private certificate authority:
+
+.. code-block:: yaml
+
+    session_handler_dsn:  'rediss://127.0.0.1:6379/0?ssl[cafile]=/etc/pki/oro/ca.pem'
+    redis_dsn_cache:      'rediss://127.0.0.1:26379?dbindex=1&redis_sentinel=lru_cache_mon&ssl[cafile]=/etc/pki/oro/ca.pem'
+    redis_dsn_doctrine:   'rediss://127.0.0.1:6379?host[127.0.0.1:6380]&dbindex=2&cluster=predis&ssl[cafile]=/etc/pki/oro/ca.pem'
+    redis_dsn_layout:     'rediss://127.0.0.1:6379/3?ssl[cafile]=/etc/pki/oro/ca.pem'
+
+Without the ``ssl[cafile]`` option, the application verifies the certificate of Redis with the trust store of the
+operating system. This is correct for a certificate from a public certificate authority, for example, the
+certificate of Amazon ElastiCache.
+
+A sentinel usually returns the IP addresses of the nodes. The application then verifies the certificate of a node
+against its IP address. Thus, add the IP addresses of the nodes to their certificates, configure the sentinels to
+return host names, or add the ``ssl[peer_name]`` option with the name in the certificates.
+
+See :ref:`Secure (TLS) Connections <backend--setup--env-vars--tls-connections>` for all the options and for the
+examples with environment variables.
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

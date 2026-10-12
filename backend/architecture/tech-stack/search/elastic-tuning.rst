@@ -91,34 +91,116 @@ The same can be done for the storefront (website) index:
         :lines: 51-52, 56-94
 
 
+.. _search--tuning-elastic--tls:
+
 Custom SSL Configuration
 ------------------------
 
-OroCommerce 5.1 supports Elasticsearch >=9.2, <10.0 and does not have external parameters or environment variables
-to set up an SSL connection. However, you can still set these options manually via the application configuration in
-config.yml or app.yml, for both the standard and website search indices:
+To connect to Elasticsearch over HTTPS, use the ``https`` scheme in the ``ORO_SEARCH_ENGINE_DSN`` and
+``ORO_WEBSITE_SEARCH_ENGINE_DSN`` environment variables. For a private certificate authority or a client
+certificate, add the ``ssl[...]`` options to the DSN. See
+:ref:`Secure (TLS) Connections <backend--setup--env-vars--tls-connections>`.
+
+You can also set the TLS options in the application configuration, in ``config.yml`` or ``app.yml``. The standard
+index and the website index have separate options. For the standard index, add the following options:
 
 .. code-block:: yaml
-
 
     oro_search:
         engine_parameters:
             client:
                 sslVerification: true
-                sslCert: ...
-                sslKey: ...
-                caBundle: ...
+                sslVerifyHost: true
+                caBundle: '/etc/pki/oro/ca.pem'
+                sslCert: '/etc/pki/oro/client.pem'
+                sslKey: '/etc/pki/oro/client.key'
+                sslPassphrase: '%env(ORO_SEARCH_SSL_PASSPHRASE)%'
+
+For the website index, add the following options:
 
 .. code-block:: yaml
-
 
     oro_website_search:
         engine_parameters:
             client:
                 sslVerification: true
-                sslCert: ...
-                sslKey: ...
-                caBundle: ...
+                sslVerifyHost: true
+                caBundle: '/etc/pki/oro/ca.pem'
+                sslCert: '/etc/pki/oro/client.pem'
+                sslKey: '/etc/pki/oro/client.key'
+                sslPassphrase: '%env(ORO_SEARCH_SSL_PASSPHRASE)%'
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 25 50
+
+   * - Option
+     - DSN option
+     - Description
+   * - ``sslVerification``
+     - ``ssl[verify_peer]``
+     - ``false`` turns off the verification of the server certificate and of the host name.
+   * - ``sslVerifyHost``
+     - ``ssl[verify_peer_name]``
+     - ``false`` turns off only the verification of the host name.
+   * - ``caBundle``
+     - ``ssl[cafile]``
+     - The path to the CA certificate or the CA bundle.
+   * - ``sslCert``
+     - ``ssl[local_cert]``
+     - The path to the client certificate.
+   * - ``sslKey``
+     - ``ssl[local_pk]``
+     - The path to the private key of the client certificate.
+   * - ``sslPassphrase``
+     - ``ssl[passphrase]``
+     - The passphrase of the client certificate or of its private key.
+
+Keep the passphrase in an environment variable or in a secret store. Do not put it in a configuration file.
+
+For the hosts in the configuration, set the credentials in the ``http_username`` and ``http_password`` options, for
+example, ``http_password: '%env(ORO_SEARCH_PASSWORD)%'``. Do not write the credentials in the URL of a host. The
+messages of connection errors show the URL, and the application writes these messages to the log. The
+``http_username`` and ``http_password`` options apply to all the hosts.
+
+The application gives the TLS options, the credentials, and the ``httpClientOptions`` option to its own Symfony HTTP
+client. Set the other options of this client, such as a proxy or a timeout, in the ``httpClientOptions`` option.
+These options are the options of the Symfony HTTP client. An option of another HTTP client, such as the Guzzle option
+``connect_timeout``, causes an error.
+
+For a client with TLS options, credentials, or ``httpClientOptions``, the ``setHttpClient``, ``setAsyncHttpClient``,
+and ``setHttpClientOptions`` calls on the ``oro_elasticsearch.client.builder`` and
+``oro_website_elastic_search.client.builder`` services have no effect. Thus, you cannot use your own HTTP client, such
+as a client with retries, for such a client.
+
+The ``setSSLVerification`` and ``setCABundle`` calls on these builder services still apply when the configuration
+and the DSN do not set the same option. The ``sslVerification`` and ``sslVerifyHost`` options both replace
+``setSSLVerification``. For example, ``setSSLVerification(false)`` turns off the verification for a DSN that sets only
+``ssl[cafile]``, but not for a DSN that sets ``ssl[verify_peer_name]=0``. The options in ``httpClientOptions`` do not
+replace these calls.
+
+With the ``setSSLCert`` or ``setSSLKey`` call on these builder services, every request of such a client fails, also
+when the configuration or the DSN sets the ``sslCert`` and ``sslKey`` options. Remove these calls and use the
+``sslCert``, ``sslKey``, and ``sslPassphrase`` options instead.
+
+The option names can also use underscores, for example, ``ssl_verification``. A DSN option replaces the same option of
+the configuration.
+
+The DSN host also replaces the ``hosts`` option. To set the hosts in the configuration, use a DSN without a host, for
+example, ``ORO_SEARCH_ENGINE_DSN=elastic-search:?prefix=oro_search``. Specify each host with its scheme, for example,
+``https://es.example.internal:9200``.
+
+The TLS options of the configuration do not turn on HTTPS. To turn on HTTPS, use the ``https`` scheme in the DSN or in
+the configured hosts. With a plain scheme in the DSN and in the hosts, the connection is not encrypted.
+
+With a DSN without a host and with the ``https`` scheme, for example,
+``ORO_SEARCH_ENGINE_DSN=https:?prefix=oro_search``, a configured host without a scheme gets the ``https`` scheme.
+When the DSN has the ``https`` scheme or ``ssl[...]`` options, a configured host with another scheme causes an
+error. With the ``https`` scheme or ``ssl[...]`` options, a DSN without a host and a configuration without hosts also
+cause an error.
+
+The DSN accepts only the ``ssl[...]`` options in the table above. Another option causes an error. For other settings
+of the HTTP client, use the ``httpClientOptions`` option, for example, ``httpClientOptions: { timeout: 10 }``.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
