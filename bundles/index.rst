@@ -187,7 +187,7 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
    * - **A-D**
      - **G-M**
-     - **P-S**
+     - **O-S**
 
    * - - :ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`
        - :ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`
@@ -199,7 +199,8 @@ Documentation that relates to extensions' bundles is collected below. You can do
        - :ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`
        - :ref:`MakerBundle <bundle-docs-extensions-maker>`
 
-     - - :ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`
+     - - :ref:`OrderRecognitionBundle <bundle-docs-extensions-order-recognition>`
+       - :ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`
        - :ref:`StorefrontAgentBundle <bundle-docs-extensions-storefront-agent-bundle-commands>`
        - :ref:`StripePaymentBundle <bundle-docs-extensions-stripe-payment-bundle>`
 
@@ -310,6 +311,7 @@ CRM Bundles
    NotificationBundle <platform/NotificationBundle/index>
    OAuth2ServerBundle <platform/OAuth2ServerBundle/index>
    OrderBundle <commerce/OrderBundle/index>
+   OrderRecognitionBundle <extensions/OrderRecognitionBundle/index>
    OidcBundle <platform/OidcBundle/index>
    OrganizationBundle <platform/OrganizationBundle/index>
    PaymentBundle <commerce/PaymentBundle/index>

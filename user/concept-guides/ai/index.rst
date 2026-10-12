@@ -98,6 +98,8 @@ Using advanced recognition technology, AI Smart Order adapts to any purchase ord
 
 The AI Smart Order functionality is accessible through a dashboard widget and mailbox automation, making purchase order management even more efficient.
 
+For developers, the :ref:`OroOrderRecognitionBundle <bundle-docs-extensions-order-recognition>` documentation describes how the recognized data becomes a draft order and how to customize that process.
+
 Smart Order Widget
 ^^^^^^^^^^^^^^^^^^
 
@@ -124,6 +126,7 @@ For more information on how to set up Smart Order automation, see :ref:`Create a
 * :ref:`Product recommendations with AI <integrations-misc-google-retail-recommendations>`
 * :ref:`Create an Order via AI Smart Order Automation <user-guide--sales--orders--create--from-ai-smart-order>`
 * :ref:`Smart Order Widget <user-guide-dashboards-widgets>`
+* :ref:`OroOrderRecognitionBundle <bundle-docs-extensions-order-recognition>`
 * :ref:`OroIQ Back-Office Settings <admin-configuration-oroiq-settings>`
 
 .. include:: /include/include-links-user.rst
