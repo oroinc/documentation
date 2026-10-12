@@ -29,5 +29,7 @@ To enable this feature globally:
 
 .. hint:: You can also enable Smart Order :ref:`per organization <organization-ai-smart-order-settings>`.
 
+For the configuration keys, environment variables, and customization points on the bundle side, see :ref:`OroOrderRecognitionBundle <bundle-docs-extensions-order-recognition>` in the developer documentation.
+
 .. include:: /include/include-links-user.rst
    :start-after: begin

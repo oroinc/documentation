@@ -23,6 +23,8 @@ Once the widget is added to the dashboard, you can upload a file of an image of 
      .. image:: /user/img/concept-guides/ai/async.png
         :scale: 50%
 
+For the message queue topics, the processors, and the notifications behind the asynchronous processing, see :ref:`Asynchronous Processing <bundle-docs-extensions-order-recognition-async>` in the developer documentation.
+
 Any draft created using the AI smart order feature includes a preview of the original uploaded document. You can turn this preview on or off using the Display/Hide Preview button. When the preview is displayed, you can zoom in and out using the controls above the image and move it horizontally by holding the Ctrl (or Command) key while dragging it.
 
 Once you manually amend the fields that require your attention, click the checkbox near the field to confirm your changes, and then **Save and Close** to close the order edit page. The order will now be available under **Sales > Orders** in the main menu.
