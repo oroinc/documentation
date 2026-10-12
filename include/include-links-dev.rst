@@ -6555,3 +6555,7 @@ Links (Dev)
 .. |BUILD.md| raw:: html
 
    <a href="https://github.com/oroinc/documentation/blob/master/BUILD.md" target="_blank">BUILD.md</a>
+
+.. |SSL context options| raw:: html
+
+    <a href="https://www.php.net/manual/en/context.ssl.php" target="_blank">SSL context options</a>

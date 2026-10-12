@@ -131,6 +131,10 @@ For elasticsearch search engine, use the following format:
 
 Note that in the above examples, ``valid_user:valid_password@`` --- DSNs part can be skipped if authentication is not enabled.
 
+For a connection over HTTPS, use the ``https`` scheme, for example,
+``ORO_SEARCH_ENGINE_DSN=https://valid_user:valid_password@es.example.com:9200?prefix=oro_search``. See
+:ref:`Secure (TLS) Connections <backend--setup--env-vars--tls-connections>`.
+
 Sessions Storage Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -179,6 +183,9 @@ For Cluster connections, use the following format:
 
 Note that in the above examples, the password and dbindex values are optional and should be replaced with the appropriate values for your configuration. Additionally, in cluster example you can add multiple hosts.
 
+For a connection over TLS, use the ``rediss`` scheme. See
+:ref:`Secure (TLS) Connections <backend--setup--env-vars--tls-connections>`.
+
 To allow setting Redis connection configurations from environment
 variables, run the following command:
 
@@ -204,6 +211,211 @@ You can now use the ``ORO_MQ_DSN`` environment variable:
    ORO_MQ_DSN=amqp://guest:guest@localhost:5672/%2Fmaster
 
 When configuring a virtual host (vhost), it's important to note that the vhost must be URL encoded. If no vhost is provided, the default value of ``/`` will be used. As an example, if the vhost is ``/master``, the corresponding url encoded vhost value is ``%2Fmaster``, and if the vhost is ``master``, the url encoded value is ``master``.
+
+For a connection over TLS, use the ``amqps`` scheme, for example,
+``ORO_MQ_DSN=amqps://guest:guest@rabbitmq.example.com:5671/%2Fmaster``. See
+:ref:`Secure (TLS) Connections <backend--setup--env-vars--tls-connections>`.
+
+.. _backend--setup--env-vars--tls-connections:
+
+Secure (TLS) Connections
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The application can connect to Redis, RabbitMQ, and Elasticsearch over TLS. The scheme of the DSN turns TLS on. The
+other parts of the DSN do not change.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 15 40 15 15 15
+
+   * - Service
+     - Environment variables
+     - Plain scheme
+     - TLS scheme
+     - Default port
+   * - Redis
+     - ``ORO_SESSION_DSN``, ``ORO_REDIS_CACHE_DSN``, ``ORO_REDIS_DOCTRINE_DSN``, ``ORO_REDIS_LAYOUT_DSN``
+     - ``redis://``
+     - ``rediss://``
+     - 6379
+   * - RabbitMQ
+     - ``ORO_MQ_DSN``
+     - ``amqp://``
+     - ``amqps://``
+     - 5672 for ``amqp://``, 5671 for ``amqps://``
+   * - Elasticsearch
+     - ``ORO_SEARCH_ENGINE_DSN``, ``ORO_WEBSITE_SEARCH_ENGINE_DSN``
+     - ``elastic-search://``, ``http://``
+     - ``https://``
+     - 80 for ``http://``, 443 for ``https://``
+
+Elasticsearch listens on port 9200 by default. If your Elasticsearch server uses this port, specify the port in the
+DSN.
+
+Certificate Verification
+""""""""""""""""""""""""
+
+The application verifies the certificate of the server and the host name of the server. You can turn off these
+checks only with an option.
+
+* A certificate from a public certificate authority (CA) needs no option. Managed cloud services usually have such
+  certificates. The application uses the trust store of the operating system. Redis and RabbitMQ use the CA bundle
+  of OpenSSL. Elasticsearch uses the CA bundle of curl. Make sure that the image of the application contains the CA
+  certificates of the operating system, for example, the ``ca-certificates`` package.
+* A certificate from a private or self-signed certificate authority needs the ``ssl[cafile]`` option. Set this
+  option to the path of the CA certificate in PEM format.
+
+TLS Options
+"""""""""""
+
+Add the options to the query string of the DSN. The names of the options are the names of the PHP
+|SSL context options|.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 45 30
+
+   * - Option
+     - Description
+     - Services
+   * - ``ssl[cafile]``
+     - The path to the CA certificate or the CA bundle that verifies the server certificate.
+     - Redis, RabbitMQ, Elasticsearch
+   * - ``ssl[capath]``
+     - The path to a directory with CA certificates.
+     - Redis, RabbitMQ
+   * - ``ssl[verify_peer]``
+     - ``0`` turns off the verification of the server certificate. Use this value only for testing.
+
+       For Redis and RabbitMQ, the application still verifies the host name. To turn off this verification too,
+       set ``ssl[verify_peer_name]`` to ``0``. For Elasticsearch, ``0`` also turns off the verification of the host
+       name.
+     - Redis, RabbitMQ, Elasticsearch
+   * - ``ssl[verify_peer_name]``
+     - ``0`` turns off the verification of the host name. Use this value only for testing.
+     - Redis, RabbitMQ, Elasticsearch
+   * - ``ssl[peer_name]``
+     - The host name that the server certificate must contain, if it is not the host of the DSN.
+     - Redis, RabbitMQ
+   * - ``ssl[local_cert]``
+     - The path to the client certificate, if the server requires one (mutual TLS).
+     - Redis, RabbitMQ, Elasticsearch
+   * - ``ssl[local_pk]``
+     - The path to the private key of the client certificate.
+     - Redis, RabbitMQ, Elasticsearch
+   * - ``ssl[passphrase]``
+     - The passphrase of the client certificate or of its private key.
+     - Redis, RabbitMQ, Elasticsearch
+
+Redis and RabbitMQ also accept the other PHP SSL context options. Elasticsearch accepts only the options in the table.
+Another option causes an error.
+
+The boolean options, such as ``ssl[verify_peer]``, ``ssl[verify_peer_name]``, and ``ssl[allow_self_signed]``,
+accept ``1``, ``0``, ``true``, ``false``, ``yes``, ``no``, ``on``, and ``off``. Another value causes an error, also
+with the plain ``redis://`` scheme. The ``ssl[security_level]``, ``ssl[verify_depth]``, and ``ssl[crypto_method]``
+options accept only a number. The largest value of ``ssl[security_level]`` is ``5``.
+
+To set the lowest TLS version, use the ``ssl[min_proto_version]`` option, for example, ``ssl[min_proto_version]=32``
+for TLS 1.2. The ``ssl[min_proto_version]`` and ``ssl[max_proto_version]`` options accept only these values: ``8``
+(TLS 1.0), ``16`` (TLS 1.1), ``32`` (TLS 1.2), and ``64`` (TLS 1.3). The ``ssl[crypto_method]`` option has no effect
+for Redis, because its client library sets its own value. For RabbitMQ, the ``ssl[crypto_method]`` option limits the
+TLS versions. To set the TLS versions for all the services, use the ``ssl[min_proto_version]`` and
+``ssl[max_proto_version]`` options.
+
+.. warning:: Do not turn off the verification in production. Without it, the application cannot detect a server that
+             pretends to be Redis, RabbitMQ, or Elasticsearch.
+
+The TLS options need the TLS scheme:
+
+* For RabbitMQ, the TLS options with a plain scheme cause an error.
+* For Elasticsearch, the TLS options with a plain scheme and a host in the DSN cause an error. For a DSN without a
+  host, the scheme of the configured hosts turns on TLS. See :ref:`Custom SSL Configuration
+  <search--tuning-elastic--tls>`.
+* For Redis, the plain ``redis://`` scheme ignores the TLS options that have a correct value. Always use
+  ``rediss://`` for TLS.
+* ``ssl=1`` does not turn on TLS. For Redis, PHP shows a warning, and the application ignores the parameter. For
+  RabbitMQ and Elasticsearch, it causes an error. Use the ``rediss://``, ``amqps://``, or ``https://`` scheme.
+
+Encode the reserved characters in the username, in the password, and in the values of the options, such as
+``ssl[passphrase]``. For example, encode ``@`` as ``%40`` and ``:`` as ``%3A``. An ``@`` that is not encoded can make
+the application read a part of a secret as the host. In a shell, put the DSN in quotes, because it contains the ``&``,
+``[``, and ``]`` characters.
+
+PHP adds the arguments of functions to the stack trace of an error. These arguments can contain the passwords of the
+DSNs. In production, set ``zend.exception_ignore_args = On`` in ``php.ini``. This is the value in ``php.ini-production``.
+
+Some applications build the DSNs from the short ``ORO_REDIS_URL`` and ``ORO_SEARCH_URL`` variables. These variables
+contain the scheme, the credentials, the host, and the port, but not the options of the DSN. To turn on TLS, change the
+scheme in these variables, for example, ``ORO_REDIS_URL=rediss://redis.example.com:6379``. To add TLS options, set
+the full DSN variables from the table above.
+
+Example: Managed Services with Public Certificates (AWS)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+This example uses Amazon ElastiCache for Redis with encryption in transit, Amazon MQ for RabbitMQ, and Elastic Cloud
+for Elasticsearch. The certificates of these services come from public certificate authorities. Thus, the DSNs have
+no TLS options.
+
+.. code-block:: bash
+
+   # ElastiCache for Redis (primary endpoint, AUTH token)
+   ORO_SESSION_DSN='rediss://:auth-token@master.oro-cache.abc123.use1.cache.amazonaws.com:6379/0'
+   ORO_REDIS_CACHE_DSN='rediss://:auth-token@master.oro-cache.abc123.use1.cache.amazonaws.com:6379/1'
+   ORO_REDIS_DOCTRINE_DSN='rediss://:auth-token@master.oro-cache.abc123.use1.cache.amazonaws.com:6379/2'
+   ORO_REDIS_LAYOUT_DSN='rediss://:auth-token@master.oro-cache.abc123.use1.cache.amazonaws.com:6379/3'
+
+   # Amazon MQ for RabbitMQ
+   ORO_MQ_DSN='amqps://oro:mq-password@b-1a2b3c4d-5e6f-7a8b-9c0d.mq.us-east-1.amazonaws.com:5671/%2F'
+
+   # Elastic Cloud
+   ORO_SEARCH_ENGINE_DSN='https://elastic:es-password@oro.es.us-east-1.aws.elastic-cloud.com:443?prefix=oro_search'
+   ORO_WEBSITE_SEARCH_ENGINE_DSN='https://elastic:es-password@oro.es.us-east-1.aws.elastic-cloud.com:443?prefix=oro_website_search'
+
+.. note:: The ``cluster`` option of the Redis DSN configures one primary node and replica nodes. It does not configure
+          the Redis Cluster protocol. The cluster mode of ElastiCache supports only the database ``0``, but the DSNs
+          above use four databases. Thus, use an ElastiCache replication group with the cluster mode disabled.
+          Connect to its primary endpoint.
+
+.. note:: Amazon OpenSearch Service is not Elasticsearch. The application supports Elasticsearch, for example,
+          Elastic Cloud or an Elasticsearch cluster that you manage.
+
+Example: Services with a Private Certificate Authority
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: bash
+
+   ORO_SESSION_DSN='rediss://:password@redis.example.internal:6379/0?ssl[cafile]=/etc/pki/oro/ca.pem'
+   ORO_REDIS_CACHE_DSN='rediss://:password@redis.example.internal:6379/1?ssl[cafile]=/etc/pki/oro/ca.pem'
+   ORO_REDIS_DOCTRINE_DSN='rediss://:password@redis.example.internal:6379/2?ssl[cafile]=/etc/pki/oro/ca.pem'
+   ORO_REDIS_LAYOUT_DSN='rediss://:password@redis.example.internal:6379/3?ssl[cafile]=/etc/pki/oro/ca.pem'
+   ORO_MQ_DSN='amqps://oro:password@rabbitmq.example.internal:5671/%2F?ssl[cafile]=/etc/pki/oro/ca.pem'
+   ORO_SEARCH_ENGINE_DSN='https://elastic:password@es.example.internal:9200?prefix=oro_search&ssl[cafile]=/etc/pki/oro/ca.pem'
+   ORO_WEBSITE_SEARCH_ENGINE_DSN='https://elastic:password@es.example.internal:9200?prefix=oro_website_search&ssl[cafile]=/etc/pki/oro/ca.pem'
+
+Example: Redis Sentinel
+"""""""""""""""""""""""
+
+The TLS settings apply to the sentinels. They also apply to the primary node and to the replica nodes that the
+sentinels return.
+
+.. code-block:: bash
+
+   ORO_REDIS_CACHE_DSN='rediss://sentinel.example.internal:26379?redis_sentinel=oro_cache&dbindex=1&ssl[cafile]=/etc/pki/oro/ca.pem'
+
+A sentinel usually returns the IP addresses of the nodes. The application then verifies the certificate of a node
+against its IP address. Use one of these solutions:
+
+* Add the IP addresses of the nodes to their certificates.
+* Configure the sentinels to return host names (``sentinel announce-hostnames yes`` and
+  ``sentinel resolve-hostnames yes``).
+* Add the ``ssl[peer_name]`` option with the name in the certificates of the nodes.
+
+Example: Client Certificate (Mutual TLS)
+""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: bash
+
+   ORO_MQ_DSN='amqps://oro:password@rabbitmq.example.internal:5671/%2F?ssl[cafile]=/etc/pki/oro/ca.pem&ssl[local_cert]=/etc/pki/oro/client.pem&ssl[local_pk]=/etc/pki/oro/client.key'
 
 Message Queue Consumer Timeouts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -352,3 +564,6 @@ The following parameters are read from environment variables as before:
 
 These parameters should be configured in the environment variables, such
 as ``ORO_SECRET``, ``ORO_MAILER_DSN`` and ``ORO_TRACKING_DATA_FOLDER``.
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
