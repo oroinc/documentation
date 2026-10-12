@@ -6653,6 +6653,10 @@ Links (Dev)
 
     <a href="https://hive.oroinc.com/orocommerce-momentum/" target="_blank">OroMomentum program page</a>
 
+.. |SSL context options| raw:: html
+
+    <a href="https://www.php.net/manual/en/context.ssl.php" target="_blank">SSL context options</a>
+
 .. |How to Add/Remove Environment Variables| raw:: html
 
     <a href="https://doc.oroinc.com/cloud/maintenance/env-vars/#how-to-add-remove-environment-variables" target="_blank">How to Add/Remove Environment Variables</a>
