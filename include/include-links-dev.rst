@@ -6547,6 +6547,14 @@ Links (Dev)
 
     <a href="https://github.com/oroinc/orocommerce-stripe" target="_blank">OroStripePaymentBundle</a>
 
+.. |OroOrderRecognitionBundle| raw:: html
+
+    <a href="https://github.com/oroinc/ai-smart-order" target="_blank">OroOrderRecognitionBundle</a>
+
+.. |OroEntityRecognitionBundle| raw:: html
+
+    <a href="https://github.com/oroinc/ai-smart-order" target="_blank">OroEntityRecognitionBundle</a>
+
 .. |Special Cases| raw:: html
 
     <a href="https://docs.stripe.com/currencies#special-cases" target="_blank">Special Cases</a>
