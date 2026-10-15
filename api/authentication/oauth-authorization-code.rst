@@ -199,5 +199,34 @@ Here is an example of how to send the access token as a body parameter:
 
 .. note:: Access tokens for back-office and storefront API are not interchangeable. If you attempt to request data for the storefront API with a token generated for the back-office application, access will be denied.
 
+Log the User Out
+----------------
+
+The client application can end the session that the user opened on the authorization server during the log in.
+
+The OAuth application must have the *Enable Logout* option and at least one URL in *Post-Logout URLs*.
+
+For a storefront application, the client application redirects the user to the ``https://yourapplication/oauth2-token/logout`` URL.
+
+For a back-office application, the client application redirects the user to the ``https://yourapplication/{backend_prefix}/oauth2-token/logout`` URL.
+
+The request must have the following parameters in the query string:
+
+   * `client_id` with the client identifier
+   * `post_logout_redirect_uri` with one of the post-logout URLs of the OAuth application. The *Redirect URLs* of the application are not accepted.
+
+**Example**
+
+.. code-block:: http
+
+
+    GET /oauth2-token/logout?client_id=your_client_identifier&post_logout_redirect_uri=https://your_post_logout_uri.com HTTP/1.1
+
+The authorization server ends the session of the user and redirects the user to the `post_logout_redirect_uri`. If the user has no session, the authorization server only redirects the user.
+
+If the request is not valid, the authorization server returns the ``400 Bad Request`` response and does not end the session.
+
+The authorization server metadata of each application type gives the logout URL in the `end_session_endpoint` field.
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

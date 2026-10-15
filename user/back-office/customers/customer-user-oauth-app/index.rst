@@ -42,6 +42,8 @@ To create a new OAuth application for a customer user in the back-office:
    * **Redirect URLs** --- The field appears when selecting *Authorization Code* as a grant type. The list of URLs to which it is allowed to redirect the user back to.
    * **Confidential Client** --- The field appears when selecting *Authorization Code* as a grant type. Indicates whether the client is a confidential or a public. For confidential client, client secret is safely stored on the client side and must be used for authorization. Requests without client secret are accepted with PKCE if this option is not selected.
    * **Skip User Consent** --- The field appears when selecting *Authorization Code* as a grant type. Use this option for first party applications to skip user login consent screen.
+   * **Enable Logout** --- The field appears when selecting *Authorization Code* as a grant type. Allow the application to log the customer user out of the storefront and to redirect the user to one of the *Post-Logout URLs* after that. Logout is disabled by default.
+   * **Post-Logout URLs** --- The field appears when selecting *Authorization Code* as a grant type. The list of URLs to which it is allowed to redirect the user after logout. At least one URL is required when *Enable Logout* is selected.
 
 4. Click **Save and Close**.
 
