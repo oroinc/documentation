@@ -51,3 +51,10 @@ If the upgrade has failed before running the `oro:platform:update` and the `appl
 If the upgrade failed after or during the `oro:platform:update` execution, the changes in the application database have already been applied. Run the necessary restore operation:
 
 * `backup:restore` to recover both database and the application code, generating new caches. The command restores the application backup without media files from the specified backup time point. Media files can only be restored via a request to Support.
+
+
+My deployment or upgrade fails with a lock timeout. What should I do?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This usually happens when a previous ``orocloud-cli`` operation was interrupted before it finished, for example, because it was run outside the ``screen`` session and the SSH connection dropped. The interrupted operation leaves the maintenance agent locked, so the next operation waits for the lock to be released and eventually fails with a timeout.
+Contact the OroCloud Support team to check the environment and release the lock. To prevent this, always run ``orocloud-cli`` commands inside the ``screen`` session that starts automatically when you connect via SSH. See :ref:`Connect to the OroCloud Environment via SSH <orocloud-maintenance-connect-via-ssh>`.

@@ -141,6 +141,8 @@ As an example:
 
 .. note:: When the currently running command is finished or stopped with a warning or a notice, the maintenance agent is automatically unlocked.
 
+.. note:: If a running command is interrupted, for example, because the SSH connection dropped while it was running outside the ``screen`` session, the maintenance agent may remain locked. To avoid this, run ``orocloud-cli`` commands inside the ``screen`` session. See :ref:`Connect to the OroCloud Environment via SSH <orocloud-maintenance-connect-via-ssh>` and the :ref:`FAQ <orocloud-maintenance-faq>` section.
+
 Deploy
 ------
 
