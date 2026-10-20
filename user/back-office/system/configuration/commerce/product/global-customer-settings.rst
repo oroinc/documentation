@@ -1,15 +1,20 @@
 .. _sys--commerce--product--customer-settings:
 
-Configure Global Customer Settings for Product Data Export
-==========================================================
+Configure Global Customer Settings
+==================================
 
-You can control whether to allow registered customer users to export products, their prices, and price tiers into a .csv file from the storefront product collection and search results pages. You can configure these settings globally, per :ref:`organization <sys--users--organization--commerce--products--customer-settings>`, :ref:`website <sys--websites--commerce--products--customer-settings>`, :ref:`customer group <user-guide--customer-groups--customer-settings>`, and :ref:`customer <user-guide--customers--customer-settings>`.
+The **Customer Settings** configuration page brings together several settings that apply to storefront customers and how they can obtain product information. This section covers two groups of settings available here:
 
-.. hint::
-    In addition to configuring product grid export on the above mentioned configuration levels, you can mark "simple" fields of a product as :ref:`Exportable <admin-guide-create-entity-fields-advanced>`. You can also :ref:`mark a price attribute as Enabled in Product Export <user-guide--products--price-attributes-manage>`. Exportable setting is available for all "simple" fields (scalar values and select/multi-select enums) of the product entity. Export is not allowed for relations, other complex fields ("WYSIWYG", attachments, etc.) and entityfallback-type fields. Please note that product name is always included in the export.
+* **Product Data Export** --- Controls whether registered customer users can export products, their prices, and price tiers into a .csv file from the storefront product collection and search results pages.
 
-.. image:: /user/img/storefront/navigation/export.png
+  .. image:: /user/img/storefront/navigation/export.png
    :alt: Export product data from the storefront product collection page
+
+* **Customer Part Number** --- Controls whether :ref:`customer part numbers <back-office-customer-part-numbers>` are enabled for your application, and whether they are displayed to customers in the storefront.
+
+  .. image:: /user/img/products/cpn/cpn-storefront-product-page.png
+
+You can configure these settings globally, per :ref:`organization <sys--users--organization--commerce--products--customer-settings>`, :ref:`website <sys--websites--commerce--products--customer-settings>`, :ref:`customer group <user-guide--customer-groups--customer-settings>`, and :ref:`customer <user-guide--customers--customer-settings>`.
 
 To configure these settings globally:
 
@@ -27,7 +32,11 @@ To configure these settings globally:
    * **Include Product Prices** --- Enable this option to add product prices to the exported product data file. Data will be displayed only for the primary unit, minimum quantity and the currency currently selected in the storefront.
    * **Include Price Tiers** --- Enable this option to include price tiers to the exported product data file, if available. If product units have no price, they will be omitted in the exported file.
 
-4. If you have a |Customer Part Number| extension installed, enable it here under **Customer Part Number** to allow customers to manage CPN per product.
+4. In the **Customer Part Number** section, enable the following options as needed:
+
+   * **Enable Customer Part Numbers** --- Enable this option to turn on :ref:`customer part numbers <back-office-customer-part-numbers>` for your instance. Once enabled, the **Customer Part Numbers** menu item becomes available under **Products** in the back-office, and back-office users can look up products by a customer's part number when building an order. Enabling this feature does not automatically reindex existing products. Customer part numbers created after enabling the feature are indexed automatically. Part numbers that already existed beforehand will not appear in search or storefront listings until you manually reindex products.
+   * **Display Customer Part Numbers In The Storefront** --- Enable this option to let customers view their own part numbers in the storefront (e.g., on the product listing, search results, and product details pages), as well as create, delete, and filter by them. This option has no effect on its own unless option **Enable Customer Part Numbers** is enabled.
+
 5. Click **Save Settings**.
 
 .. include:: /include/include-links-user.rst

@@ -217,6 +217,43 @@ To download a product data .csv file:
 
 2. Check your inbox for instructions on how to download the file.
 
+.. _frontstore-guide-customer-part-numbers:
+
+Customer Part Numbers
+---------------------
+
+A customer part number (CPN) is your own internal reference number for a product: for example, the SKU from your own purchasing system. If your organization uses customer part numbers, you can search and filter for products using your own part numbers instead of our SKUs, view them as you browse the store, and add or remove your own part numbers for a product directly from its product details page.
+
+.. note::
+
+   This feature is only available if it has been :ref:`enabled for your organization <sys--commerce--product--customer-settings>` by the store administrator, and only for products you have (or add) a part number for.
+
+Your customer part numbers are private to your organization: only signed-in users of your company can see or search by them. They are never visible to guests or to other customers.
+
+**Searching and Filtering by Customer Part Number**
+
+Your customer part numbers work as a searchable and filterable product attribute, the same way SKU does.
+
+.. image:: /user/img/storefront/navigation/customer-part-number-filtering.png
+
+**Viewing on Product Listings and Search Results**
+
+When browsing product listing pages or viewing search results, any product you have a customer part number for displays that number (**CPN**) directly under its SKU.
+
+.. image:: /user/img/storefront/navigation/customer-part-number-listing.png
+   :alt: A product listing entry showing the SKU and the customer part number (CPN) beneath it
+
+Products you do not have a customer part number for show only the standard SKU, as usual.
+
+**Managing on the Product Details Page**
+
+To add, view, or remove your customer part numbers for a specific product, go to the product's details page and find the **Customer Part Number** section. Any part numbers already saved for this product are listed as removable tags.
+
+.. image:: /user/img/storefront/navigation/customer-part-number-pdp.png
+   :alt: The Customer Part Number section on the product details page, showing an existing part number and an input field to add a new one
+
+To add a new part number, type it into the field and click **Add**. To remove an existing part number, click the **x** next to it. Your changes are saved immediately and reflected the next time this product appears in a listing or search result for you.
+
 .. _frontstore-guide--navigation-product-price:
 
 Product Price

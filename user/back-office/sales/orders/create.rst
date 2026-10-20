@@ -32,6 +32,14 @@ To create a new order from the back-office:
 4. In the **Line Items** section, provide the following information:
 
    a) **Product**: Add products to the order by clicking **+Add Product**. Use the drop-down to select a product. Alternatively, begin typing in the name of the product to narrow down your search. To see a list of all the products, click |IcBars|.
+
+      .. note::
+
+         If the customer selected in the **General** section above has :ref:`customer part numbers <back-office-customer-part-numbers>` defined, each matching product in the drop-down also shows that customer's part number (CPN) under its name and SKU, and you can type the customer's part number instead of the SKU or product name to find it. Customer part numbers are specific to the selected customer, so **select the customer first**. Until a customer is selected, the Product field only searches by SKU and name.
+
+         .. image:: /user/img/products/cpn/orders_create_lineitems_cpn.png
+            :alt: The product drop-down displaying each product's customer part number (CPN) under its SKU and name
+
    b) **Quantity**: Enter product quantity.
    c) **Warehouse**: Choose a warehouse from the drop-down, or click |IcBars| to see a list of all warehouses.
    d) **Price**: Enter the price for the product, or click |IcBars| to select the price from the list.
