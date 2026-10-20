@@ -6063,10 +6063,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/CustomerBundle" target="_blank">OroCustomerBundle</a>
 
-.. |OroCustomerPartNumberBundle| raw:: html
-
-   <a href="https://github.com/oroinc/customer-part-number/" target="_blank">OroCustomerPartNumberBundle</a>
-
 .. |OroFrontendBundle| raw:: html
 
    <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/" target="_blank">OroFrontendBundle</a>

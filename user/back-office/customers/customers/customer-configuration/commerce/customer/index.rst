@@ -18,15 +18,15 @@ To configure customer user settings per customer:
 
 4. In the **Customer Users Registration** section, configure the following options:
 
-   * **Enable Just-In-Time (JIT) provisioning** --- Enable the feature for the customer. The feature automatically approves registration and single sign-on (SSO) requests from users whose email domains match the approved domains. The system assigns the default roles to these users and does not require a manual invitation. When you enable the feature, the **Approved Domains** and **Default Roles** options become available. The setting is available only when JIT provisioning is enabled in the :ref:`system configuration <sys-config--configuration--commerce--customers--customer-users>`.
+* **Enable Just-In-Time (JIT) provisioning** --- Enable the feature for the customer. The feature automatically approves registration and single sign-on (SSO) requests from users whose email domains match the approved domains. The system assigns the default roles to these users and does not require a manual invitation. When you enable the feature, the **Approved Domains** and **Default Roles** options become available. The setting is available only when JIT provisioning is enabled in the :ref:`system configuration <sys-config--configuration--commerce--customers--customer-users>`.
 
-   * **Approved Domains** --- Specify the email domains whose customer users the system registers automatically. Registration and single sign-on (SSO) requests from these domains are approved without manual review. Requests from all other domains are blocked.
+* **Approved Domains** --- Specify the email domains whose customer users the system registers automatically. Registration and single sign-on (SSO) requests from these domains are approved without manual review. Requests from all other domains are blocked.
 
-   * **Default Roles** --- Select the customer user roles that the system assigns to every newly provisioned customer user.
+* **Default Roles** --- Select the customer user roles that the system assigns to every newly provisioned customer user.
 
 5. In the **Customer User Invitations** section, clear the **Use Customer Group** checkbox and configure the following option:
 
-   * **Enable Customer User Invitations** --- Enables/disables :ref:`customer user invitations <user-guide--customers--customer-user-invitations>` for the customer in the back-office and the storefront. When invitations are disabled, the invitation pages and actions are hidden. Enabled by default.
+* **Enable Customer User Invitations** --- Enables/disables :ref:`customer user invitations <user-guide--customers--customer-user-invitations>` for the customer in the back-office and the storefront. When invitations are disabled, the invitation pages and actions are hidden. Enabled by default.
 
 6. Click **Save Settings**.
 
