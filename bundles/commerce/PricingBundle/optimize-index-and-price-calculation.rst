@@ -42,7 +42,7 @@ Enterprise edition only).
 
 To launch the indexation process, use the following console command:
 
-``php bin/console oro:website:reindex``
+``php bin/console oro:website-search:reindex``
 
 Execution time may range from a few minutes to several hours, depending on the
 hardware and software configuration and the volume of data that is indexed.

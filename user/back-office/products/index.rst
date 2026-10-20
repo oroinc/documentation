@@ -82,6 +82,7 @@ This section provides shortcuts to topics that may be useful for various types o
    Product Attributes <product-attributes/index>
    Product Brands <product-brands/index>
    Price Attributes <price-attributes/index>
+   Customer Part Numbers <customer-part-numbers/index>
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
