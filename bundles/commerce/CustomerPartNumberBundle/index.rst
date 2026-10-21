@@ -3,7 +3,7 @@
 OroCustomerPartNumberBundle
 ===========================
 
-.. note:: OroCustomerPartNumberBundle is only available in the Enterprise edition as of OroCommerce version 7.0.5.
+.. note:: OroCustomerPartNumberBundle is only available in the Enterprise edition as of OroCommerce version 7.0.6.
 
 OroCustomerPartNumberBundle lets storefront customers assign their own Customer Part Numbers (CPNs) to
 products, using their own procurement or inventory-tracking numbering scheme.

@@ -3,7 +3,7 @@
 Manage Customer Part Numbers in the Back-Office
 ================================================
 
-.. note:: The Customer Part Number feature is only available in the Enterprise edition as of OroCommerce version 7.0.5.
+.. note:: The Customer Part Number feature is only available in the Enterprise edition as of OroCommerce version 7.0.6.
 
 A **Customer Part Number (CPN)**  is a product identifier that a specific customer uses internally to refer to one of your products. For example, the SKU from the customer's own purchase system or catalog. Customer part numbers let your sales and customer service teams recognize and look up products the way each customer already does, which speeds up order processing and reduces mismatched-SKU errors when customers place orders by phone, email, or purchase order. They also let your customers search for and filter products in the storefront using their own numbering system, instead of having to know your product SKUs.
 

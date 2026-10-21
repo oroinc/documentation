@@ -6,7 +6,7 @@ Configure Customer Settings per Website
 The **Customer Settings** configuration page brings together several settings that apply to storefront customers and how they can obtain product information. This section covers two groups of settings available here at the website level:
 
 * **Product Data Export** --- Controls whether registered customer users can export products, their prices, and price tiers into a .csv file from the storefront product collection and search results pages.
-* **Customer Part Number** --- (available in the EE as of OroCommerce v7.0.5) Controls whether :ref:`customer part numbers <back-office-customer-part-numbers>` are displayed to customers of this website in the storefront.
+* **Customer Part Number** --- (available in the EE as of OroCommerce v7.0.6) Controls whether :ref:`customer part numbers <back-office-customer-part-numbers>` are displayed to customers of this website in the storefront.
 
 You can configure these settings :ref:`globally <sys--commerce--product--customer-settings>`, :ref:`per organization <sys--users--organization--commerce--products--customer-settings>`, website, :ref:`customer group <user-guide--customer-groups--customer-settings>`, and :ref:`customer <user-guide--customers--customer-settings>`.
 
@@ -32,7 +32,7 @@ To configure these settings per website:
 
 5. Under **Customer Part Number**, enable the following option by clearing the **Use Organization** checkbox:
 
-   .. note:: The Customer Part Number feature is only available in the Enterprise edition as of OroCommerce version 7.0.5.
+   .. note:: The Customer Part Number feature is only available in the Enterprise edition as of OroCommerce version 7.0.6.
 
    * **Display Customer Part Numbers In The Storefront** --- Enable this option to let customers view their own part numbers in the storefront (e.g., on the product listing, search results, and product details pages), as well as create, delete, and filter by them. This option has no effect on its own unless option **Enable Customer Part Numbers** is :ref:`enabled on the global level <sys--commerce--product--customer-settings>`.
 

@@ -117,7 +117,20 @@ For more information on how to set up Smart Order automation, see :ref:`Create a
 
 .. image:: /user/img/concept-guides/ai/so-illustration.png
 
+.. _concept-guide--ai--mcp:
 
+Model Context Protocol (MCP)
+----------------------------
+
+.. note:: MCP tool support for OroIQ and Smart Agent is available as of OroCommerce version 7.0.5.
+
+The Oro AI capabilities are built on the Model Context Protocol (MCP), an open standard that defines how AI assistants connect to the tools and data they act on. Instead of relying on a fixed, hardcoded set of capabilities, the Oro AI microservices, such as OroIQ and the AI Smart Agent, discover the operations they can perform directly from OroCommerce, where each operation is exposed as an MCP tool.
+
+Because these tools are defined and managed within OroCommerce, you can customize which operations the AI is allowed to perform directly from the platform, tailoring the assistant to your business processes. For example, you can control whether the AI can find products, check inventory, create orders, or manage shopping lists, and expose additional operations built on top of the OroCommerce API as new MCP tools.
+
+This keeps the AI aligned with OroCommerce business logic and permission structures, while allowing its capabilities to be extended or restricted without changing the underlying AI microservices. OroCommerce provides MCP servers for both the back-office and the storefront, which can also be connected to external MCP-compatible clients.
+
+For configuration details, see the developer documentation for the :ref:`OroCommerceMcpBundle <bundle-docs-commerce-commerce-mcp-bundle>` and :ref:`OroFrontendCommerceMcpBundle <bundle-docs-frontend-commerce-commerce-mcp-bundle>`.
 
 **Related Articles:**
 
@@ -128,8 +141,8 @@ For more information on how to set up Smart Order automation, see :ref:`Create a
 * :ref:`Smart Order Widget <user-guide-dashboards-widgets>`
 * :ref:`OroOrderRecognitionBundle <bundle-docs-extensions-order-recognition>`
 * :ref:`OroIQ Back-Office Settings <admin-configuration-oroiq-settings>`
+* :ref:`OroCommerceMcpBundle <bundle-docs-commerce-commerce-mcp-bundle>`
+* :ref:`OroFrontendCommerceMcpBundle <bundle-docs-frontend-commerce-commerce-mcp-bundle>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
-
-
