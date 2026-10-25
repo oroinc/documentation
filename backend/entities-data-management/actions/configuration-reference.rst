@@ -82,6 +82,8 @@ A single operation configuration has the following properties:
 
 * **enabled** --- *boolean* - A flag that defines whether this operation is enabled. Disabled operations are used in applications.
 
+* **applications** --- *array* - An array of applications where the operation is available. Use ``[commerce]`` for a storefront-only operation, ``[default, commerce]`` for an operation shared between the back-office and the storefront, and ``[default]`` or empty for a back-office-only operation.
+
 * **page_reload** --- *boolean* - By default, it is set to *true*. A flag that defines whether this operation should reload the page after execution. It applies when redirect url or datagrid is not specified inside the *actions* block.
 
 * **entities** --- *array* - An array of entity class names. Operation button is shown on the view/edit pages of the entities.
