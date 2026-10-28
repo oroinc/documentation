@@ -28,11 +28,11 @@ Environment Setup
       brew install php@8.5 composer node
       echo 'export PATH="/usr/local/opt/php@8.5/bin:$PATH" \nexport PATH="/usr/local/opt/php@8.5/sbin:$PATH" \nexport PATH="/usr/local/opt/node@20/bin:$PATH"' >> ~/.bash_profile
 
-4. Install PNPM 10 Using NPM:
+4. Install PNPM 12 Using NPM:
 
    .. code-block:: none
 
-        npm install -g pnpm@latest-10
+        npm install -g pnpm@latest-12
 
 5. If you plan to use the Enterprise Edition, install the mongodb php extension:
 
