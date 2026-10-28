@@ -37,6 +37,11 @@ Application
 Customer/Implementation Partners
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Application
+~~~~~~~~~~~
+
+The customer and the implementation partner must upgrade the Oro application before the installed long-term support (LTS) version reaches the end of its support period. Upgrading on time keeps the application on an LTS version that Oro Inc. supports. For the supported versions and their support dates, see :ref:`Release Process <doc--community--release>`.
+
 Infrastructure
 ~~~~~~~~~~~~~~
 
