@@ -7,7 +7,6 @@ docker-bake.hcl
 
 # CI/CD
 .gitlab-ci.yml
-.travis.yml
 Jenkinsfile
 .circleci
 
