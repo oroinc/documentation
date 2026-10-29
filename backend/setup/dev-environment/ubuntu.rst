@@ -52,7 +52,7 @@ Environment Setup
 
    .. code-block:: none
 
-        npm install -g pnpm@latest-10
+        npm install -g pnpm@latest-12
 
 5. Install Docker and Docker Compose:
 
