@@ -128,6 +128,14 @@ The ``--verbose`` option can be used to show expanded output information about f
 
     php bin/console oro:assets:build --verbose
 
+The verbosity of the command sets the |Webpack Stats| preset of the build output: ``-v`` gives ``normal``, ``-vv`` gives ``detailed``, and ``-vvv`` gives ``verbose``. The ``ORO_WEBPACK_STATS`` environment variable sets the preset regardless of the verbosity. The ``oro:assets:install`` and ``composer`` commands pass their verbosity to ``oro:assets:build``, so this variable keeps the large ``verbose`` stats of ``-vvv`` out of the output:
+
+.. code-block:: none
+
+    ORO_WEBPACK_STATS=normal composer -vvv install
+
+The ``normal``, ``detailed`` and ``verbose`` presets also enable the expanded output of failed builds, the same as the ``--verbose`` option.
+
 oro:assets:install
 ------------------
 
@@ -180,3 +188,6 @@ The ``--iterate-themes`` option can be used to run webpack for each enabled them
 .. code-block:: none
 
     php bin/console oro:assets:install --iterate-themes other options
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

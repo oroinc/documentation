@@ -4089,6 +4089,10 @@ Links (Dev)
 
     <a href="https://webpack.js.org/configuration/resolve/#resolvealias" target="_blank">Webpack Resolve Alias</a>
 
+.. |Webpack Stats| raw:: html
+
+    <a href="https://webpack.js.org/configuration/stats/#stats-presets" target="_blank">webpack stats</a>
+
 .. |Webpack Shimming| raw:: html
 
     <a href="https://webpack.js.org/guides/shimming/" target="_blank">Webpack Shimming</a>
