@@ -476,19 +476,6 @@ The default configuration for extension with alias "oro_asset":
             # The link to the external resource
             link:                 ~ # Required
 
-        # Webpack Dev Server configuration
-        webpack_dev_server:
-
-            # Enable Webpack Hot Module Replacement. To activate HMR run `oro:assets:build --hot`
-            enable_hmr:           '%kernel.debug%'
-
-            # By Default `localhost` is used
-            host:                 localhost
-            port:                 8081
-
-            # By default dev-server will be served over HTTP. It can optionally be served over HTTP/2 with HTTPS
-            https:                false
-
 oro_attachment
 --------------
 

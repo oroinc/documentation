@@ -32,88 +32,6 @@ First, run the ``php bin/console assets:install --symlink`` command  to symlink 
 
 Next, run the :ref:`php bin/console oro:assets:build <bundle-docs-platform-asset-bundle-commands>` command to build assets with the webpack. During the first run, it installs npm dependencies required for the build.
 
-Replace Hot Module (HMR or Hot Reload) For SCSS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running, without a full reload. This can significantly speed up development.
-
-.. hint:: For more details, see |Hot Module Replacement|.
-
-Enable HMR for CSS links
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-To enable HMR for CSS links in HTML, import CSS within Javascript. But for performance reasons, it is better to load plain CSS files in the production environment. To handle that automatically we render CSS with the following macro:
-
-.. code-block:: none
-
-
-    {% import '@OroAsset/Asset.html.twig' as Asset %}
-
-    {{ Asset.css('css/custom.css', 'media="all"')}}
-
-That normally renders the link with rel stylesheet:
-
-.. code-block:: html
-
-
-    <link rel="stylesheet" media="all" href="/css/custom.css"/>
-
-But during development, when HMR is enabled, and webpack-dev-server is listening at the background, this macro renders javascript tag that imports CSS dynamically and reloads it on changes, like:
-
-.. code-block:: html
-
-
-    <script type="text/javascript" src="https://localhost:8081/css/custom.bundle.js"></script>
-
-Use HMR
-~~~~~~~
-
-To use HMR, run the ``php bin/console oro:assets:build --hot`` command in the background, open the page you want to customize in a Web Browser, and start editing SCSS files in an IDE. You will see the changes in a Browser instantly, without the need to reload the window.
-
-.. note:: To speed up the build operation provide the `theme` name as an argument:
-
-            .. code-block:: yaml
-
-
-                php bin/console oro:assets:build --hot -- default
-
-.. _enable-https-hmr:
-
-Enable HTTPS for Hot Module Replacement
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-In `config/config_dev.yml` file add the following lines:
-
-.. code-block:: yaml
-
-
-    oro_asset:
-        webpack_dev_server:
-            https: true
-
-With the above setting, a self-signed certificate is used, but you can provide your own when running `oro:assets:build` command, for example:
-
-.. code-block:: yaml
-
-
-    php bin/console oro:assets:build --hot --key=/path/to/server.key --cert=/path/to/server.crt --cacert=/path/to/ca.pem
-    # or
-    php bin/console oro:assets:build --hot --pfx=/path/to/file.pfx --pfx-passphrase=passphrase
-
-Enable HMR for Prod Environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. note:: Enabling of HMR for `prod` environment must not be committed to the git repository or published to the production web server for the performance reasons.
-
-To enable HMR for `prod` environment add below lines to `config/config.yml`
-
-.. code-block:: yaml
-
-
-    oro_asset:
-        webpack_dev_server:
-            enable_hmr: true
-
 .. _bundle-docs-platform-asset-bundle-load-css-from-bundle:
 
 Load SCSS or CSS Files from the Bundle
@@ -246,37 +164,6 @@ pnpm_install_timeout
 
 PNPM installation timeout in seconds, null to disable the timeout.
 
-webpack_dev_server
-^^^^^^^^^^^^^^^^^^
-
-Webpack Dev Server configuration
-
-enable_hmr:
-~~~~~~~~~~~
-
-**type: `boolean` optional, default: `%kernel.debug%`**
-
-Enable Webpack Hot Module Replacement. To activate HMR, run ``oro:assets:build --hot``
-
-host
-~~~~
-
-**type: `string` optional, default: `localhost`**
-
-.. _port:
-
-port
-~~~~
-
-**type: `integer` optional, default: `8081`**
-
-https
-~~~~~
-
-**type: `boolean` optional, default: `false`**
-
-By default, dev-server will be served over HTTP. It can optionally be served over HTTP/2 with HTTPS.
-
 Troubleshooting
 ---------------
 
@@ -322,22 +209,6 @@ To fix the error, install `pnpm`, remove the existing node modules and re-build 
 **Error: "output" for "assets" group in theme "oro" is not defined**
 
 Please follow |AssetBundle upgrade documentation| to update `assets.yml` files according to new requirements.
-
-**Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID**
-
-This happens because by default webpack-dev-server uses a self-signed SSL certificate.
-
-To fix an error we recommend to :ref:`provide your own SSL certificate <enable-https-hmr>`.
-
-Alternatively, you can open a stylesheet link in a new tab of a Browser, click "Show Advanced" and "Proceed to localhost (unsafe)". This loads the webpack-dev-server asset with a self-signed certificate.
-
-**Error: listen EADDRINUSE: address already in use 127.0.0.1:8081**
-
-There are two cases when the error can appear:
-
-1. You exited the ``oro:assets:build`` command with <kbd>control</kbd> + <kbd>z</kbd> and `node` process hanged up. To fix, stop the `node` process manually.
-2. The port is busy with a different process. To fix, change the :ref:`port configuration in config/config.yml <port>`.
-
 
 **ERROR in Entry module not found: Error: Can't resolve './src'**
 

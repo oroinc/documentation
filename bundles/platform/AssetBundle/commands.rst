@@ -62,18 +62,6 @@ or
 
 .. note:: When using the ``--watch``, option you should restart the command after you modify the assets configuration in assets.yml files, or it will not be able to detect the changes otherwise.
 
-The ``--hot`` option turns on the hot module replacement feature. It allows all styles to be updated at runtime without the need for a full page refresh:
-
-.. code-block:: none
-
-    php bin/console oro:assets:build --hot
-
-The ``--key``, ``--cert``, ``--cacert``, ``--pfx`` and ``--pfxPassphrase`` options can be used with the ``--hot`` option to allow the hot module replacement to work over HTTPS:
-
-.. code-block:: none
-
-    php bin/console oro:assets:build --hot --key=<path> --cert=<path> --cacert=<path> --pfx=<path> --pfxPassphrase=<passphrase>
-
 The ``--force-warmup`` option can be used to warm up the asset-config.json cache:
 
 .. code-block:: none

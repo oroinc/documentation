@@ -4300,10 +4300,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/50047c1d8abc5f811d0db759b501b8d27b0bff65/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature" target="_blank">UserBundle/Tests/Behat/Features/login.feature</a>
 
-.. |Hot Module Replacement| raw:: html
-
-   <a href="https://webpack.js.org/concepts/hot-module-replacement/" target="_blank">Hot Module Replacement</a>
-
 .. |AssetBundle upgrade documentation| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/CHANGELOG.md#assetbundle-1" target="_blank">upgrade documentation</a>
