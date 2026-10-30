@@ -106,7 +106,7 @@ Make sure that both the entity and entity fields are marked as **Auditable** if 
 View Configuration Settings Changes
 -----------------------------------
 
-.. note:: The ability to audit changes to system configuration settings is available as of OroCommerce version 7.0.6.
+.. note:: The ability to audit changes to system configuration settings is available as of OroCommerce version 7.0.5.
 
 Data Audit also tracks changes to configuration settings, not only to entities. This tracking works automatically for every setting, so you do not need to mark individual settings as *auditable*.
 

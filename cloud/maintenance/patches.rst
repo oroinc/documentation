@@ -128,6 +128,8 @@ Use the following commands to work with patches:
 
 * **patch:revert** --- reverts a patch, requires the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically reverted against your codebase.
 
+.. important:: A patch applied with the ``patch:apply`` command is temporary. The next upgrade or deployment removes the patch. To keep a patch permanently, add it to your codebase. Use the |Composer Patches| plugin or the dedicated patch directory, as described in `Apply Patches During Deployment`_.
+
 Usage examples:
 
 * Revert by a patch, dry-run mode (only shows what will be done):
