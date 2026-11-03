@@ -41,7 +41,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`AI Smart Agent <organization-ai-agent-settings>`
     * :ref:`OroIQ <organization-oroiq-settings>`
     * :ref:`AI Smart Order <organization-ai-smart-order-settings>`
-
+    * :ref:`Integration Flow Designer <organization-integration-flow-designer-settings>`
 
 * **Commerce**
 

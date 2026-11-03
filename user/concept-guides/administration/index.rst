@@ -21,3 +21,4 @@ This section includes the following elements:
    Consent Management <consents/index>
    Data Import <data-import/index>
    Identity Management <identity-management/index>
+   Integration Flows (Activepieces) <integration-flows/index>

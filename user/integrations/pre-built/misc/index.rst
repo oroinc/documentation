@@ -9,6 +9,7 @@ OroCommerce offers a versatile and dynamic ecosystem of integrations that extend
 * :ref:`Avatax <integrations-misc-avatax>`
 * :ref:`Hawksearch <integrations-search-hawksearch>`
 * :ref:`Marello <integrations-mics-marello>`
+* :ref:`Activepieces <integrations-misc-activepieces>`
 
 .. toctree::
    :hidden:
@@ -17,3 +18,4 @@ OroCommerce offers a versatile and dynamic ecosystem of integrations that extend
    Avatax <avatax>
    Hawksearch <hawksearch>
    Marello <marello>
+   Activepieces <activepieces>
