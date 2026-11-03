@@ -1086,3 +1086,7 @@ Links (User)
 
    <a href="https://www.globalpayments.com/" target="_blank">Global Payments</a>
 
+.. |Activepieces|  raw:: html
+
+   <a href="https://www.activepieces.com/" target="_blank">Activepieces</a>
+

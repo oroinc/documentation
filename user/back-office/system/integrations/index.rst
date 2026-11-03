@@ -56,6 +56,7 @@ Check the following integrations that can be enabled/disabled and configured in 
 * :ref:`Mailchimp Integration <user-guide-mc-integration>`
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`
 * :ref:`LDAP Integration <user-guide-ldap-integration>`
+* :ref:`Activepieces Integration <user-guide--integrations--activepieces>`
 
 * Embedded Forms
 
@@ -82,5 +83,6 @@ Check the following integrations that can be enabled/disabled and configured in 
    Mailchimp Integration <mailchimp-integration>
    Zendesk Integration <zendesk-integration>
    LDAP Integration <ldap-integration>
+   Activepieces Integration <activepieces-integration>
    Embedded Forms <embedded-forms/index>
    Webhooks <webhooks>

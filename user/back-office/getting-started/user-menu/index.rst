@@ -16,6 +16,7 @@ Follow the links below to find out what capabilities each section of this menu o
 * :ref:`My Tasks <doc-activities-tasks>`
 * :ref:`My Calendar <user-guide-calendars-manage>`
 * :ref:`My Conversations <doc-activities-conversations>`
+* :ref:`My Integrations <user-guide-my-integrations>`
 * :ref:`Log Out <doc-log-out>`
 
 
@@ -30,6 +31,7 @@ Follow the links below to find out what capabilities each section of this menu o
    my-configuration
    my-emails
    my-calendar
+   my-integrations
 
  
 
