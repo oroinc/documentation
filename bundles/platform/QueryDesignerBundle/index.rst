@@ -15,6 +15,7 @@ Related Documentation
 
    config
    condition-builder
+   Commands <commands>
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
