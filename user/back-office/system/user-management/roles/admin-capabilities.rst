@@ -134,6 +134,19 @@ In the System Capabilities section, the following capabilities are available:
 
 .. image:: /user/img/system/user_management/system-capabilities.png
 
+.. _admin-capabilities-integration-flows:
+
+Integration Flows
+^^^^^^^^^^^^^^^^^
+
+.. note:: This feature is available in the OroCommerce Enterprise Edition.
+
+* **My Integrations** --- Allows the user to open Activepieces flows page bound to their own account.
+* **System Flows** --- Allows the user to open the **System Flows** page with the shared Activepieces flows.
+* **User's Flows** --- Allows to view all Activepieces users and open flows on their behalf.
+
+.. note:: These permissions take effect only when an administrator has :ref:`enabled Integration Flow Designer <admin-configuration-integration-flow-designer-settings>` in the system configuration.
+
 Application
 ^^^^^^^^^^^
 

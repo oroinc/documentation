@@ -11,3 +11,4 @@ Configure Integration Settings per Organization
    OroIQ <organization-oroiq>
    AI Smart Order <organization-ai-smart-order>
    CAPTCHA Settings <organization-captcha>
+   Integration Flow Designer <organization-integration-flow-designer>

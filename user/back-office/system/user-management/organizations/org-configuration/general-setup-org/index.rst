@@ -24,6 +24,7 @@ Learn how to configure localization options, currency and tracking, as well and 
 * :ref:`OroIQ <organization-oroiq-settings>`
 * :ref:`AI Smart Order <organization-ai-smart-order-settings>`
 * :ref:`CAPTCHA Settings <organization-configuration-captcha>`
+* :ref:`Integration Flow Designer <organization-integration-flow-designer-settings>`
 
 
 .. toctree::
