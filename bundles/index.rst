@@ -92,6 +92,7 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
        - :ref:`FormBundle <bundle-docs-platform-form-bundle>`
        - :ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>`
        - :ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`
+       - :ref:`HeadlessApplicationBundle <bundle-docs-platform-headless-application-bundle>`
        - :ref:`ImapBundle <bundle-docs-platform-imap-bundle>`
 
      - - :ref:`PdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`
@@ -133,7 +134,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    :widths: 33 33 33
    :header-rows: 1
 
-   * - **C-F**
+   * - **C-H**
      - **I-R**
      - **S-W**
 
@@ -159,6 +160,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
        - :ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`
        - :ref:`ShoppingListBundle <bundle-docs-commerce-shopping-list-bundle>`
        - :ref:`SalesFrontendBundle <bundle-docs-commerce-sales-frontend-bundle>`
+       - :ref:`StorefrontEmbeddedBundle <bundle-docs-commerce-storefront-embedded-bundle>`
        - :ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`
        - :ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`
        - :ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`
@@ -167,6 +169,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
        - :ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`
        - :ref:`FrontendCommerceMcpBundle <bundle-docs-frontend-commerce-commerce-mcp-bundle>`
        - :ref:`FrontendPdfGeneratorBundle <bundle-docs-commerce-frontend-pdf-generator-bundle>`
+       - :ref:`HeadlessStorefrontBundle <bundle-docs-commerce-headless-storefront-bundle>`
 
      - - :ref:`ProductBundle <bundle-docs-commerce-product-bundle>`
        - :ref:`PromotionBundle <bundle-docs-commerce-promotion-bundle>`
@@ -291,6 +294,8 @@ CRM Bundles
    GaufretteBundle <platform/GaufretteBundle/index>
    GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
    GridFSConfigBundle <platform/GridFSConfigBundle/index>
+   HeadlessApplicationBundle <platform/HeadlessApplicationBundle/index>
+   HeadlessStorefrontBundle <commerce/HeadlessStorefrontBundle/index>
    ImapBundle <platform/ImapBundle/index>
    ImportExportBundle <platform/ImportExportBundle/index>
    InfinitePayBundle <extensions/InfinitePayBundle/index>
@@ -340,6 +345,7 @@ CRM Bundles
    ShoppingListBundle <commerce/ShoppingListBundle/index>
    SidebarBundle <platform/SidebarBundle/index>
    StorefrontAgentBundle <extensions/StorefrontAgentBundle/commands>
+   StorefrontEmbeddedBundle <commerce/StorefrontEmbeddedBundle/index>
    StripePaymentBundle <extensions/StripePaymentBundle/index>
    SyncBundle <platform/SyncBundle/index>
    TagBundle <platform/TagBundle/index>
