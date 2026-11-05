@@ -12,17 +12,6 @@ Responsibility
 Oro Inc
 ^^^^^^^
 
-Infrastructure
-~~~~~~~~~~~~~~
-
-1. The infrastructure provided by Oro must have both secure public and private connection points.
-
-   * Public connection means access for end-users over the Internet. Connections must use encrypted protocols (e.g., HTTPS) to exchange data, and standard web server configuration must prevent common vulnerabilities (XSS, clickjacking).
-   * Private connection means access for environment users (engineers) and administrators who work on the infrastructure level. Access should be allowed only through the private network connection (VPN) using encrypted protocols.
-
-2. The only application resource exposed to the Internet is the web server used by end-users to access the application. Direct access from the Internet to the internal application components (DBMS, search engine, MQ) should be disabled.
-3. Oro Inc. must grant developers and infrastructure engineers access to the Oro management tools (orocloud-cli) and application logs.
-
 Application
 ~~~~~~~~~~~
 
@@ -33,6 +22,17 @@ Application
 5. Standard Oro applications are compliant with PCI-DSS requirements for processing customer and financial data (cardholder data) in standard components.
 6. Standard Oro application does not store cardholder data, PANs, etc.
 7. Application data is encrypted at rest and in transit in a standard Oro-managed application environment.
+
+Infrastructure
+~~~~~~~~~~~~~~
+
+1. The infrastructure provided by Oro must have both secure public and private connection points.
+
+   * Public connection means access for end-users over the Internet. Connections must use encrypted protocols (e.g., HTTPS) to exchange data, and standard web server configuration must prevent common vulnerabilities (XSS, clickjacking).
+   * Private connection means access for environment users (engineers) and administrators who work on the infrastructure level. Access should be allowed only through the private network connection (VPN) using encrypted protocols.
+
+2. The only application resource exposed to the Internet is the web server used by end-users to access the application. Direct access from the Internet to the internal application components (DBMS, search engine, MQ) should be disabled.
+3. Oro Inc. must grant developers and infrastructure engineers access to the Oro management tools (orocloud-cli) and application logs.
 
 Customer/Implementation Partners
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -53,8 +53,8 @@ Infrastructure
 6. It is not recommended to use production data in a non-production environment to guarantee data consistency and security.
 7. Notification settings of the non-production instances must be configured in such a way as to avoid sending information to real customers.
 
-Development
-~~~~~~~~~~~
+Customization
+~~~~~~~~~~~~~
 
 1. Developers responsible for the Oro application customization must encrypt all sensitive information before storing it in any internal storage (database, session, cache, file system, search index, etc.) or passing it over to third-party applications.
 2. Developers responsible for the Oro application customization must not store sensitive information or credentials directly in code.
@@ -69,8 +69,8 @@ Development
 11. Developers responsible for the Oro application customization must implement and follow global and local data protection regulations (GDPR, etc.).
 12. Developers responsible for the Oro application customization are not allowed to expose the code of the Enterprise modules for public usage or to other people who do not have access to it.
 
-Usage
-~~~~~
+Operations
+~~~~~~~~~~
 
 1. The customer owns user accounts inside the Oro application.
 2. Customers must maintain and follow their own access management procedure when handling Oro application accounts and accounts provisioned by Oro Inc. for customer employees.
@@ -93,8 +93,8 @@ Infrastructure
 4. Check the list of executed commands (orocloud-cli log) for signs of hacking attempts.
 5. Use data sanitization for DB intended for debugging or testing.
 
-Development
-^^^^^^^^^^^
+Customization
+^^^^^^^^^^^^^
 
 1. Apply all the responsibilities and best practices to the customization and all external libraries or packages added to the application.
 2. Use the “minimum required access” approach to develop integrations when a third-party application is to interact with the Oro application (e.g., using API).
@@ -117,8 +117,8 @@ Development
 14. Log every attempt of unauthorized access with the WARNING level or higher, and monitor application logs to determine where they come from. They may indicate either an application issue (some actions or data are visible to a user who should not have access to it) or hacking attempts.
 
 
-Usage
-^^^^^
+Operations
+^^^^^^^^^^
 
 1. If you, as an application user, have found that some secure data is not encrypted, please inform the administrator and check for similar issues across the application.
 2. Plan permission for roles ahead and grant users the minimum permissions required for their work.
