@@ -13,11 +13,9 @@ With full control over the resources and infrastructure configuration that cloud
 
 OroCloud heavily uses the advantages of the different models of virtualization and cloud infrastructure-as-a-service providers, being completely vendor-agnostic. This means that Oro can support the deployment of OroCloud to the IaaS of your preference including customer on-premise instances.
 
-Oro’s cloud offering is based on two Infrastructure-as-a-Service (IaaS) platforms: |Google Cloud Platform (GCP)| and |Oracle Cloud Infrastructure (OCI)| from the shelf. Both IaaS platforms work well for OroCloud because they provide a flexible infrastructure that scales on-demand, end-to-end security, and high availability.
+Oro’s cloud offering is based on |Oracle Cloud Infrastructure (OCI)| as its Infrastructure-as-a-Service (IaaS) platform from the shelf. OCI works well for OroCloud because it provides a flexible infrastructure that scales on-demand, end-to-end security, and high availability.
 
-Using IaaS platform you can build and maintain the infrastructure that exactly fits any custom software and business domain, we have taken some steps to give you a hand in your Oro application roll-out. To enable flawless and seamless experience of launching and running Oro applications in the IaaS infrastructure, we have designed an optimized deployment architecture, a set of facilitating tools, services, and procedures and grouped them under the OroCloud offering.
-
-Although with GCP you can build and maintain the infrastructure that exactly fits any custom software and business domain, we have taken some steps to give you a hand in your Oro application roll-out. To enable flawless and seamless experience of launching and running Oro applications in the GCP infrastructure, we have designed an optimized deployment architecture, a set of facilitating tools, services, and procedures and grouped them under the OroCloud offering.
+Using the IaaS platform you can build and maintain the infrastructure that exactly fits any custom software and business domain. To enable a flawless and seamless experience of launching and running Oro applications in the IaaS infrastructure, we have designed an optimized deployment architecture, a set of facilitating tools, services, and procedures and grouped them under the OroCloud offering.
 
 With OroCloud, you get the following package of services:
 
@@ -31,7 +29,7 @@ With OroCloud, you get the following package of services:
 The following benefits come along:
 
 * Ease of use --- With OroCloud, you can focus on your business and save time and money on the in-house infrastructure technical support. OroCloud manages the application environment as part of the service, but we also offer a customized application maintenance service
-* Security --- OroCloud has been |PCI-DSS certified| since December 2017 and is scheduled for yearly reassessment and renewal. This means that every resource that the OroCloud environment uses -- the servers, network, software, and configuration -- comply with the |PCI DSS Shared Responsibility GCP v4.0| .
+* Security --- OroCloud has been |PCI-DSS certified| since December 2017 and is scheduled for yearly reassessment and renewal. This means that every resource that the OroCloud environment uses -- the servers, network, software, and configuration -- comply with our IaaS provider's PCI DSS shared responsibility model.
 * Reliability --- OroCloud is based on the highly reliable cloud platform and supports high-availability and fault-tolerant deployments out of the box and comes with 24x7 technical support for P1 issues.
 
 **What’s Next**
