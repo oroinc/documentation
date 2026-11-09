@@ -24,6 +24,30 @@ To enable inline editing on a grid:
 
 3. Open the corresponding page, all the columns for which the frontend type supports inline editing will become editable.
 
+Access to Entities Without ACL Protection
+-----------------------------------------
+
+When inline editing uses the default ``oro_api_patch_entity_data`` route, entities with their own ACL protection require the ``EDIT`` permission on the record. Entities without their own ACL protection require an inline editing access provider. Enabling inline editing in the datagrid configuration alone does not grant access to these entities.
+
+To enable inline editing for an entity without ACL protection, implement ``Oro\Bundle\EntityBundle\InlineEditing\InlineEditingEntityAccessProviderInterface``:
+
+* ``getSupportedEntityClass(): string`` returns the fully qualified name of the single entity class supported by the provider.
+* ``isGranted(object $entity): bool`` checks whether the current user may edit the record. The provider receives the existing entity before the submitted values are applied.
+
+Register the implementation as a service with the ``oro_entity.inline_editing.entity_provider`` tag in your bundle's ``Resources/config/services.yml``:
+
+.. code-block:: yaml
+
+    services:
+        acme_demo.inline_editing.entity_access_provider:
+            class: Acme\Bundle\DemoBundle\InlineEditing\EntityAccessProvider
+            tags:
+                - { name: oro_entity.inline_editing.entity_provider }
+
+Without a provider for the entity class, the API returns HTTP 403. If multiple providers support the same class, all must grant access. Providers are not called for ACL-protected entities, which use the standard ``EDIT`` permission check.
+
+For a dependent entity whose access is determined by an ACL-protected parent, you can register the existing ``Oro\Bundle\EntityBundle\InlineEditing\InlineEditingParentAclEntityProvider``.
+
 Datagrid Configuration Details
 ------------------------------
 
