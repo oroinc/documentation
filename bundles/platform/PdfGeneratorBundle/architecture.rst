@@ -147,7 +147,7 @@ The **default** preset declares the options common for all engines. It is config
 
 .. hint:: You can create your own ``PDF options preset`` by creating a new class that implements the ``\Oro\Bundle\PdfGeneratorBundle\PdfOptionsPreset\PdfOptionsPresetConfiguratorInterface`` and registering it as a service with the tag ``oro_pdf_generator.pdf_options_preset_configurator``.
 
-``PDF engine`` is responsible for generating the ``PDF file`` by interacting with the configured engine. The bundle provides the Gotenberg engine out of the box, which is implemented by the ``\Oro\Bundle\PdfGeneratorBundle\PdfEngine\GotenbergPdfEngine`` class. It uses the Gotenberg API to generate the ``PDF file`` based on the provided ``PDF options``.
+``PDF engine`` is responsible for generating the ``PDF file`` by interacting with the configured engine. The bundle provides the Gotenberg engine out of the box, which is implemented by the ``\Oro\Bundle\PdfGeneratorBundle\Gotenberg\GotenbergPdfEngine`` class. It uses the Gotenberg API to generate the ``PDF file`` based on the provided ``PDF options``.
 
 ``GotenbergPdfEngine`` makes use of ``PDF template renderer`` to render the ``PDF templates`` before sending them to ``Gotenberg API``. You can find more details about how ``PDF templates`` are rendered in the :ref:`PDF Template Renderer <bundle-docs-platform-pdf-generator-bundle-pdf-template-renderer>` section of the documentation.
 

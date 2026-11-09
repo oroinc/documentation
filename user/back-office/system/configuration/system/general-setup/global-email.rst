@@ -70,7 +70,16 @@ To configure email settings globally:
 
      * *Host* --- SMTP Host name, e.g., smtp.gmail.com
      * *Port* --- SMTP Port number, e.g., 465
-     * *Encryption* --- Encryption type: None, SSL or TLS
+     * *Encryption* --- Encryption type: **None**, **SSL**, or **TLS**. STARTTLS is a command that turns on the encryption of a connection that starts without encryption.
+
+       * **SSL** --- Encrypts the connection from the start, usually on port 465.
+       * **TLS** --- Requires STARTTLS, usually on port 587. If the SMTP server does not support STARTTLS, the email messages are not sent.
+       * **None** --- Encrypts the connection with STARTTLS only if the SMTP server supports it.
+
+       With port 465, the application uses **SSL** for any encryption type.
+
+       .. important:: As of OroCommerce version 7.0.6, **TLS** requires STARTTLS. In earlier versions, if the SMTP server did not support STARTTLS, the application sent the email messages without encryption. For such a server, select **None**, or enable STARTTLS on the server.
+
      * *Username* --- Your email address
      * *Password* --- The password for your email address
 
@@ -151,7 +160,15 @@ To configure a system mailbox globally:
      * *Enable SMTP* --- Select the checkbox to enable sending messages
      * *SMTP Host* --- Provide the SMTP host, e.g., smtp.gmail.com
      * *SMTP Port* --- Provide the SMTP port, e.g., 587
-     * *Encryption* --- Select the encryption type, SSL or TLS.
+     * *Encryption* --- Select the encryption type, **SSL** or **TLS**. STARTTLS is a command that turns on the encryption of a connection that starts without encryption.
+
+       * **SSL** --- Encrypts the connection from the start, usually on port 465.
+       * **TLS** --- Requires STARTTLS, usually on port 587. If the SMTP server does not support STARTTLS, the email messages are not sent.
+
+       If you do not select an encryption type, the application encrypts the connection with STARTTLS only if the SMTP server supports it. With port 465, the application uses **SSL** for any encryption type.
+
+       .. important:: As of OroCommerce version 7.0.6, **TLS** requires STARTTLS. In earlier versions, if the SMTP server did not support STARTTLS, the application sent the email messages without encryption. For such a server, select no encryption type, or enable STARTTLS on the server.
+
      * *User* --- Provide your email address
      * *Password* --- Provide your password
 

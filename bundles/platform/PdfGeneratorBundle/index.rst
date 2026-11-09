@@ -35,6 +35,14 @@ Or you can set it explicitly in the configuration:
             gotenberg:
                 api_url: 'http://your-gotenberg-url:3000'
 
+To connect to Gotenberg over TLS, use the ``https://`` scheme. If the certificate of Gotenberg comes from a private
+certificate authority (CA), add the ``ssl[cafile]`` option with the path to the CA certificate:
+
+.. code-block:: bash
+
+    export ORO_PDF_GENERATOR_GOTENBERG_API_URL='https://your-gotenberg-url:3000?ssl[cafile]=/etc/pki/oro/ca.pem'
+
+For the list of the TLS options, see :ref:`Gotenberg <backend--setup--env-vars--tls-connections--gotenberg>`.
 
 .. hint:: You can find more details about the bundle configuration in the :ref:`Configuration <bundle-docs-platform-pdf-generator-bundle-configuration>` section of the documentation.
 
