@@ -105,13 +105,40 @@ Application Configuration
 
 Use the default configuration for the application installed in the production mode.
 
-To test emails, install |Mailcatcher| and set up ORO_MAILER_DSN environment variable:
+To test emails, install |MailCatcher| or |Mailpit|. Then set the ``ORO_MAILER_DSN`` environment variable to the SMTP address of the mail server:
 
 .. code-block:: bash
 
     ORO_MAILER_DSN=smtp://127.0.0.1:1025
 
-Behat framework uses the mailcatcher UI to assert emails. By default, the framework expects the mailcatcher UI at ``http://127.0.0.1:1080/``. To change the URL, provide the ``ORO_MAILER_WEB_URL`` environment variable.
+The Behat framework uses the HTTP API of the mail server to check the email messages. By default, the framework expects the MailCatcher API at ``http://127.0.0.1:1080/``. To use another URL, set the ``ORO_MAILER_WEB_URL`` environment variable. For Mailpit, also set the ``ORO_MAILER_WEB_TYPE`` environment variable to ``mailpit``. The default value of ``ORO_MAILER_WEB_TYPE`` is ``mailcatcher``.
+
+To use Mailpit with its default HTTP port, set the following environment variables:
+
+.. code-block:: bash
+
+    ORO_MAILER_WEB_URL=http://127.0.0.1:8025
+    ORO_MAILER_WEB_TYPE=mailpit
+
+For both servers, the framework gives the email messages in the same form. The sender is the sender of the SMTP envelope. The recipients include the Cc and Bcc addresses. The attachments include the inline parts, such as the embedded images.
+
+For an HTTP API with TLS, use the ``https://`` scheme. If the certificate of the mail server comes from a private certificate authority (CA), add the ``ssl[cafile]`` option to the URL. The URL accepts the following options:
+
+* ``ssl[cafile]`` --- The path to the CA certificate.
+* ``ssl[capath]`` --- The path to a directory with CA certificates. This option needs the PHP ``curl`` extension.
+* ``ssl[verify_peer]`` --- ``0`` turns off the verification of the certificate and of the host name. Use this value only for testing.
+* ``ssl[verify_peer_name]`` --- Only ``1``, the default value, or ``0`` together with ``ssl[verify_peer]=0``. The HTTP client cannot turn off the verification of the host name alone.
+* ``ssl[local_cert]``, ``ssl[local_pk]``, and ``ssl[passphrase]`` --- The client certificate, its private key, and their passphrase.
+
+Another option, or an ``ssl[...]`` option with the ``http://`` scheme, causes an error.
+
+The SMTP connection uses the TLS options of ``ORO_MAILER_DSN``. See :ref:`SMTP <backend--setup--env-vars--tls-connections--smtp>`. The following variables verify the certificates of SMTP and of Mailpit with a private CA:
+
+.. code-block:: bash
+
+    ORO_MAILER_DSN='smtp://localhost:1025?ssl[cafile]=/etc/pki/oro/ca.pem'
+    ORO_MAILER_WEB_URL='https://localhost:8025?ssl[cafile]=/etc/pki/oro/ca.pem'
+    ORO_MAILER_WEB_TYPE=mailpit
 
 Behat Configuration
 ~~~~~~~~~~~~~~~~~~~

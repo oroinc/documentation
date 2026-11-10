@@ -40,6 +40,8 @@ Database connection is configured using the following environment variable:
 This parameter maps to the **url** parameter of the Doctrine configuration.
 For more information on this parameter, see the |Doctrine Configuration Reference| documentation.
 For the format, see the |PostgreSQL Connection URI Reference| documentation.
+Of the TLS parameters of the query string, Doctrine DBAL passes only ``sslmode``, ``sslrootcert``, ``sslcert``, ``sslkey``, and ``sslcrl`` to the database driver.
+For more information about these parameters, see :ref:`PostgreSQL <backend--setup--env-vars--tls-connections--postgresql>`.
 
 DBAL and ORM
 ^^^^^^^^^^^^

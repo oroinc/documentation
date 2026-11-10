@@ -61,6 +61,9 @@ You can now use a single environment variable with the DSN:
 
    ORO_DB_DSN=postgres://oro_db_user:oro_db_pass@127.0.0.1:5432/oro_db?sslmode=disable&charset=utf8&serverVersion=13.7
 
+The ``sslmode=disable`` parameter turns TLS off. To connect to the database over TLS, see
+:ref:`Secure (TLS) Connections <backend--setup--env-vars--tls-connections>`.
+
 Web Socket Connections
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -221,8 +224,17 @@ For a connection over TLS, use the ``amqps`` scheme, for example,
 Secure (TLS) Connections
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The application can connect to Redis, RabbitMQ, and Elasticsearch over TLS. The scheme of the DSN turns TLS on. The
-other parts of the DSN do not change.
+The application can connect to PostgreSQL, Redis, RabbitMQ, Elasticsearch, SMTP servers, and Gotenberg over TLS.
+
+For Redis, RabbitMQ, Elasticsearch, and Gotenberg, the scheme of the DSN or URL turns TLS on. The other parts of the
+DSN or URL do not change. For SMTP, the scheme and the port select the TLS mode. See `SMTP`_. PostgreSQL uses its own
+connection parameters. See `PostgreSQL`_.
+
+SMTP has two TLS modes:
+
+* Implicit TLS --- The connection is encrypted from the start.
+* STARTTLS --- The connection starts without encryption. Then the application sends the ``STARTTLS`` command, and the
+  connection continues with TLS.
 
 .. list-table::
    :header-rows: 1
@@ -248,9 +260,21 @@ other parts of the DSN do not change.
      - ``elastic-search://``, ``http://``
      - ``https://``
      - 80 for ``http://``, 443 for ``https://``
+   * - SMTP
+     - ``ORO_MAILER_DSN``
+     - ``smtp://`` (STARTTLS or implicit TLS, see `SMTP`_)
+     - ``smtps://``
+     - 465 for ``smtps://`` and for ``smtp://`` without a port, 25 for ``smtp://localhost`` without a port
+   * - Gotenberg
+     - ``ORO_PDF_GENERATOR_GOTENBERG_API_URL``
+     - ``http://``
+     - ``https://``
+     - 80 for ``http://``, 443 for ``https://``
 
 Elasticsearch listens on port 9200 by default. If your Elasticsearch server uses this port, specify the port in the
 DSN.
+
+For the TLS modes of the ``smtp://`` DSN, see `SMTP`_.
 
 Certificate Verification
 """"""""""""""""""""""""
@@ -259,16 +283,19 @@ The application verifies the certificate of the server and the host name of the 
 checks only with an option.
 
 * A certificate from a public certificate authority (CA) needs no option. Managed cloud services usually have such
-  certificates. The application uses the trust store of the operating system. Redis and RabbitMQ use the CA bundle
-  of OpenSSL. Elasticsearch uses the CA bundle of curl. Make sure that the image of the application contains the CA
-  certificates of the operating system, for example, the ``ca-certificates`` package.
+  certificates. The application uses the trust store of the operating system. Redis, RabbitMQ, and SMTP use the CA
+  bundle of OpenSSL. Elasticsearch and Gotenberg use the CA bundle of curl if the PHP ``curl`` extension is
+  installed. Otherwise, they use the CA bundle of OpenSSL. Make sure that the image of the application contains the
+  CA certificates of the operating system, for example, the ``ca-certificates`` package.
 * A certificate from a private or self-signed certificate authority needs the ``ssl[cafile]`` option. Set this
   option to the path of the CA certificate in PEM format.
+
+For PostgreSQL, see `PostgreSQL`_.
 
 TLS Options
 """""""""""
 
-Add the options to the query string of the DSN. The names of the options are the names of the PHP
+Add the options to the query string of the DSN or URL. The names of the options are the names of the PHP
 |SSL context options|.
 
 .. list-table::
@@ -280,35 +307,43 @@ Add the options to the query string of the DSN. The names of the options are the
      - Services
    * - ``ssl[cafile]``
      - The path to the CA certificate or the CA bundle that verifies the server certificate.
-     - Redis, RabbitMQ, Elasticsearch
+     - Redis, RabbitMQ, Elasticsearch, SMTP, Gotenberg
    * - ``ssl[capath]``
      - The path to a directory with CA certificates.
-     - Redis, RabbitMQ
+     - Redis, RabbitMQ, SMTP, Gotenberg
    * - ``ssl[verify_peer]``
      - ``0`` turns off the verification of the server certificate. Use this value only for testing.
 
-       For Redis, the application still verifies the host name. To turn off this verification too, set
-       ``ssl[verify_peer_name]`` to ``0``. For RabbitMQ and Elasticsearch, ``0`` also turns off the verification of
-       the host name.
-     - Redis, RabbitMQ, Elasticsearch
+       For Redis, SMTP, and Gotenberg, the application still verifies the host name. To turn off this verification
+       too, set ``ssl[verify_peer_name]`` to ``0``.
+
+       For RabbitMQ, ``0`` also turns off the verification of the host name. To keep this verification, set
+       ``ssl[verify_peer_name]`` to ``1``.
+
+       For Elasticsearch, ``0`` always turns off the verification of the host name.
+     - Redis, RabbitMQ, Elasticsearch, SMTP, Gotenberg
    * - ``ssl[verify_peer_name]``
      - ``0`` turns off the verification of the host name. Use this value only for testing.
-     - Redis, RabbitMQ, Elasticsearch
+     - Redis, RabbitMQ, Elasticsearch, SMTP, Gotenberg
    * - ``ssl[peer_name]``
      - The host name that the server certificate must contain, if it is not the host of the DSN.
-     - Redis, RabbitMQ
+     - Redis, RabbitMQ, SMTP
    * - ``ssl[local_cert]``
      - The path to the client certificate, if the server requires one (mutual TLS).
-     - Redis, RabbitMQ, Elasticsearch
+     - Redis, RabbitMQ, Elasticsearch, SMTP, Gotenberg
    * - ``ssl[local_pk]``
      - The path to the private key of the client certificate.
-     - Redis, RabbitMQ, Elasticsearch
+     - Redis, RabbitMQ, Elasticsearch, SMTP, Gotenberg
    * - ``ssl[passphrase]``
      - The passphrase of the client certificate or of its private key.
-     - Redis, RabbitMQ, Elasticsearch
+     - Redis, RabbitMQ, Elasticsearch, SMTP, Gotenberg
 
-Redis and RabbitMQ also accept the other PHP SSL context options. Elasticsearch accepts only the options in the table.
-Another option causes an error.
+The services accept the following options:
+
+* Redis, RabbitMQ, and SMTP --- The options in the table and the other PHP SSL context options.
+* Elasticsearch --- Only the options in the table. Another option causes an error.
+* Gotenberg --- The options in the table except ``ssl[peer_name]``, and the ``ssl[ciphers]``,
+  ``ssl[peer_fingerprint]``, and ``ssl[capture_peer_cert_chain]`` options. Another option causes an error.
 
 The boolean options, such as ``ssl[verify_peer]``, ``ssl[verify_peer_name]``, and ``ssl[allow_self_signed]``,
 accept ``1``, ``0``, ``true``, ``false``, ``yes``, ``no``, ``on``, and ``off``. Another value causes an error, also
@@ -321,7 +356,7 @@ for TLS 1.2. The ``ssl[min_proto_version]`` and ``ssl[max_proto_version]`` optio
 for Redis and RabbitMQ, because their client libraries set their own value.
 
 .. warning:: Do not turn off the verification in production. Without it, the application cannot detect a server that
-             pretends to be Redis, RabbitMQ, or Elasticsearch.
+             pretends to be Redis, RabbitMQ, Elasticsearch, an SMTP server, or Gotenberg.
 
 The TLS options need the TLS scheme:
 
@@ -331,8 +366,12 @@ The TLS options need the TLS scheme:
   <search--tuning-elastic--tls>`.
 * For Redis, the plain ``redis://`` scheme ignores the TLS options that have a correct value. Always use
   ``rediss://`` for TLS.
-* ``ssl=1`` does not turn on TLS. For Redis, PHP shows a warning, and the application ignores the parameter. For
-  RabbitMQ and Elasticsearch, it causes an error. Use the ``rediss://``, ``amqps://``, or ``https://`` scheme.
+* For SMTP, the TLS options apply to the TLS mode that the ``smtp://`` DSN uses, implicit TLS or STARTTLS. See
+  `SMTP`_.
+* For Gotenberg, the TLS options with the ``http://`` scheme cause an error.
+* ``ssl=1`` does not turn on TLS. For Redis, PHP shows a warning, and the application ignores the parameter. In debug
+  mode, this warning causes an error. For RabbitMQ, Elasticsearch, SMTP, and Gotenberg, ``ssl=1`` causes an error.
+  Use the ``rediss://``, ``amqps://``, ``https://``, or ``smtps://`` scheme.
 
 Encode the reserved characters in the username, in the password, and in the values of the options, such as
 ``ssl[passphrase]``. For example, encode ``@`` as ``%40`` and ``:`` as ``%3A``. An ``@`` that is not encoded can make
@@ -347,12 +386,132 @@ contain the connection URL without the options of the DSN. To turn on TLS, chang
 example, ``ORO_REDIS_URL=rediss://redis.example.com:6379``. To add TLS options, set the full DSN variables from the
 table above.
 
+.. _backend--setup--env-vars--tls-connections--postgresql:
+
+PostgreSQL
+""""""""""
+
+The database connection uses the TLS parameters of the PostgreSQL client library (libpq). Add them to the query string
+of ``ORO_DB_DSN``. Doctrine DBAL passes the following parameters to the database driver:
+
+* ``sslmode`` --- The TLS mode. Use ``verify-full`` in production. The mode has one of the following values:
+
+  * ``verify-full`` --- Encrypts the connection and verifies the server certificate and the host name.
+  * ``verify-ca`` --- Encrypts the connection and verifies the server certificate, but not the host name.
+  * ``require`` --- Encrypts the connection without any verification.
+  * ``prefer`` --- Tries TLS without any verification. If TLS fails, connects without TLS. This is the default value
+    of the client library.
+  * ``disable`` --- Turns TLS off.
+
+* ``sslrootcert`` --- The path to the CA certificate that verifies the server certificate. For a certificate from a
+  public certificate authority, set ``sslrootcert=system`` to use the trust store of the operating system. With
+  ``sslrootcert=system``, the default mode is ``verify-full``, and a weaker mode causes an error.
+* ``sslcert`` and ``sslkey`` --- The paths to the client certificate and its private key, if the server requires
+  a client certificate.
+* ``sslcrl`` --- The path to the certificate revocation list.
+
+The following DSN connects to the database over TLS and verifies the server certificate with a private CA:
+
+.. code-block:: bash
+
+   ORO_DB_DSN='postgres://oro_db_user:password@db.example.internal:5432/oro_db?sslmode=verify-full&sslrootcert=/etc/pki/oro/ca.pem&serverVersion=18'
+
+All connections of the application to the database use these parameters. This includes the separate Doctrine
+connections, such as the message queue and session connections, and the database isolation of Behat tests.
+
+.. important:: The ``sslrootcert=system`` value needs PostgreSQL client library version 16 or higher. This is the
+               library that the PHP ``pdo_pgsql`` extension uses. Without ``sslrootcert``, the client library reads
+               the ``~/.postgresql/root.crt`` file of the user that runs PHP, not the trust store of the operating
+               system.
+
+The application reads the database connection from ``ORO_DB_DSN``. If ``ORO_DB_DSN`` is not set, the application uses
+``ORO_DB_URL``. The ``.env-app`` file of the application sets ``sslmode=disable`` in ``ORO_DB_URL``. To turn on TLS, set
+``ORO_DB_DSN`` with the TLS parameters, or change ``sslmode`` in ``ORO_DB_URL``. A parameter in the DSN takes precedence
+over the ``PGSSLMODE`` environment variable of the client library. Thus, ``PGSSLMODE`` has no effect while the DSN
+contains ``sslmode=disable``. If you remove ``sslmode`` from the DSN, the client library uses the ``prefer`` mode,
+which does not verify the server.
+
+Doctrine DBAL does not pass the other TLS parameters of the client library, such as ``sslpassword``,
+``sslnegotiation``, and ``ssl_min_protocol_version``. To set them, use the |PostgreSQL Environment Variables|, for
+example, ``PGSSLMINPROTOCOLVERSION``. ``sslpassword`` has no environment variable. To use a client key that is
+protected with a password, set ``sslpassword`` in a connection service file of the client library and select the
+service with the ``PGSERVICE`` environment variable. For more information about the parameters, see
+|PostgreSQL SSL Support|.
+
+.. _backend--setup--env-vars--tls-connections--smtp:
+
+SMTP
+""""
+
+The application sends email messages over SMTP with the SMTP settings of the system configuration, under
+**System > Configuration > System Configuration > General Setup > Email Configuration**. If these settings are not
+configured, the application uses ``ORO_MAILER_DSN``. The scheme and the port of the DSN select the TLS mode:
+
+* ``smtps://`` --- Implicit TLS, on port 465 by default.
+* ``smtp://`` with port 465, or without a port --- Implicit TLS on port 465, the same as ``smtps://``.
+* ``smtp://`` with another port, for example, ``587`` --- STARTTLS if the server offers it.
+* ``smtp://localhost`` without a port --- Port 25 with STARTTLS if the server offers it.
+
+STARTTLS is optional. If the server does not offer STARTTLS, the application sends the credentials and the email
+message without TLS. In this case, the TLS options have no effect. Thus, use implicit TLS or an SMTP server that
+always offers STARTTLS. If the server offers STARTTLS, but the TLS connection fails, for example, because the
+application cannot verify the server certificate, sending fails.
+
+The following DSN uses STARTTLS and verifies the server certificate with a private CA:
+
+.. code-block:: bash
+
+   ORO_MAILER_DSN='smtp://user:password@smtp.example.internal:587?ssl[cafile]=/etc/pki/oro/ca.pem'
+
+The SMTP DSN also accepts the ``verify_peer`` and ``peer_fingerprint`` options of the Symfony mailer. If the DSN sets
+the same option in both forms, for example, ``verify_peer`` and ``ssl[verify_peer]``, the ``ssl[...]`` option takes
+precedence. Use the ``ssl[...]`` options, the same as for the other services.
+
+The **Encryption** option of the SMTP settings has the following values in the system configuration and in the
+organization configuration:
+
+* **SSL** --- Implicit TLS.
+* **TLS** --- Mandatory STARTTLS. If the server does not offer STARTTLS, sending fails.
+* **None** --- STARTTLS if the server offers it. Otherwise, the application sends email messages without TLS.
+
+The SMTP settings of a mailbox have the same **SSL** and **TLS** values. An empty value has the same effect as
+**None**.
+
+With port 465, the application uses implicit TLS for any **Encryption** value.
+
+The SMTP settings of the system configuration have no TLS options. The application verifies the server certificate
+with the trust store of the operating system and of OpenSSL. For a private certificate authority, add the CA
+certificate to the trust store of the operating system, or set the ``openssl.cafile`` option in ``php.ini``.
+
+The **Check Connection (Saved Settings)** and **Check Connection (New Settings)** buttons of the SMTP settings, and the
+health check of the mail transport, use the same TLS settings as sending.
+
+.. _backend--setup--env-vars--tls-connections--gotenberg:
+
+Gotenberg
+"""""""""
+
+The TLS options of ``ORO_PDF_GENERATOR_GOTENBERG_API_URL`` apply only to the requests to Gotenberg. These are the
+requests that generate PDF files and the request of the requirements check. The application removes the options from
+the URL before it sends a request.
+
+The following URL connects to Gotenberg over HTTPS and verifies its certificate with a private CA:
+
+.. code-block:: bash
+
+   ORO_PDF_GENERATOR_GOTENBERG_API_URL='https://gotenberg.example.internal:3000?ssl[cafile]=/etc/pki/oro/ca.pem'
+
+The TLS options need the default HTTP client of the Gotenberg PDF engine, the ``psr18.http_client`` service. If you
+replace this service with another client, the generation of PDF files with the TLS options fails with an error. The
+requirements check uses another HTTP client and is not affected. For more information about Gotenberg, see
+:ref:`OroPdfGeneratorBundle <bundle-docs-platform-pdf-generator-bundle>`.
+
 Example: Managed Services with Public Certificates (AWS)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-This example uses Amazon ElastiCache for Redis with encryption in transit, Amazon MQ for RabbitMQ, and Elastic Cloud
-for Elasticsearch. The certificates of these services come from public certificate authorities. Thus, the DSNs have
-no TLS options.
+This example uses Amazon ElastiCache for Redis with encryption in transit, Amazon MQ for RabbitMQ, Elastic Cloud
+for Elasticsearch, and Amazon Simple Email Service (SES) for SMTP. The certificates of these services come from public
+certificate authorities. Thus, the DSNs have no TLS options.
 
 .. code-block:: bash
 
@@ -369,6 +528,9 @@ no TLS options.
    ORO_SEARCH_ENGINE_DSN='https://elastic:es-password@oro.es.us-east-1.aws.elastic-cloud.com:443?prefix=oro_search'
    ORO_WEBSITE_SEARCH_ENGINE_DSN='https://elastic:es-password@oro.es.us-east-1.aws.elastic-cloud.com:443?prefix=oro_website_search'
 
+   # Amazon SES (SMTP credentials of SES, STARTTLS)
+   ORO_MAILER_DSN='smtp://ses-smtp-user:ses-smtp-password@email-smtp.us-east-1.amazonaws.com:587'
+
 .. note:: The ``cluster`` option of the Redis DSN configures one primary node and replica nodes. It does not configure
           the Redis Cluster protocol. The cluster mode of ElastiCache supports only the database ``0``, but the DSNs
           above use four databases. Thus, use an ElastiCache replication group with the cluster mode disabled.
@@ -377,11 +539,19 @@ no TLS options.
 .. note:: Amazon OpenSearch Service is not Elasticsearch. The application supports Elasticsearch, for example,
           Elastic Cloud or an Elasticsearch cluster that you manage.
 
+.. note:: The certificates of Amazon RDS for PostgreSQL come from the certificate authority of Amazon RDS, not from a
+          public certificate authority. Download the certificate bundle of Amazon RDS and set it in ``sslrootcert``,
+          for example, ``sslmode=verify-full&sslrootcert=/etc/pki/oro/rds-global-bundle.pem``.
+
 Example: Services with a Private Certificate Authority
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
+For services with certificates from a private certificate authority, add the ``ssl[cafile]`` option to each DSN. For
+PostgreSQL, add the ``sslmode`` and ``sslrootcert`` parameters:
+
 .. code-block:: bash
 
+   ORO_DB_DSN='postgres://oro_db_user:password@db.example.internal:5432/oro_db?sslmode=verify-full&sslrootcert=/etc/pki/oro/ca.pem&serverVersion=18'
    ORO_SESSION_DSN='rediss://:password@redis.example.internal:6379/0?ssl[cafile]=/etc/pki/oro/ca.pem'
    ORO_REDIS_CACHE_DSN='rediss://:password@redis.example.internal:6379/1?ssl[cafile]=/etc/pki/oro/ca.pem'
    ORO_REDIS_DOCTRINE_DSN='rediss://:password@redis.example.internal:6379/2?ssl[cafile]=/etc/pki/oro/ca.pem'
@@ -389,6 +559,8 @@ Example: Services with a Private Certificate Authority
    ORO_MQ_DSN='amqps://oro:password@rabbitmq.example.internal:5671/%2F?ssl[cafile]=/etc/pki/oro/ca.pem'
    ORO_SEARCH_ENGINE_DSN='https://elastic:password@es.example.internal:9200?prefix=oro_search&ssl[cafile]=/etc/pki/oro/ca.pem'
    ORO_WEBSITE_SEARCH_ENGINE_DSN='https://elastic:password@es.example.internal:9200?prefix=oro_website_search&ssl[cafile]=/etc/pki/oro/ca.pem'
+   ORO_MAILER_DSN='smtps://user:password@smtp.example.internal:465?ssl[cafile]=/etc/pki/oro/ca.pem'
+   ORO_PDF_GENERATOR_GOTENBERG_API_URL='https://gotenberg.example.internal:3000?ssl[cafile]=/etc/pki/oro/ca.pem'
 
 Example: Redis Sentinel
 """""""""""""""""""""""
