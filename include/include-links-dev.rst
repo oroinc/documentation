@@ -5787,9 +5787,13 @@ Links (Dev)
 
     <a href="https://v3.vuejs.org/guide/introduction.html" target="_blank">official Vue 3 documentation</a>
 
-.. |Mailcatcher| raw:: html
+.. |MailCatcher| raw:: html
 
-   <a href="https://mailcatcher.me/" target="_blank">Mailcatcher</a>
+   <a href="https://mailcatcher.me/" target="_blank">MailCatcher</a>
+
+.. |Mailpit| raw:: html
+
+   <a href="https://mailpit.axllent.org/" target="_blank">Mailpit</a>
 
 .. |official Microsoft WSL documentation| raw:: html
 
@@ -6683,3 +6687,11 @@ Links (Dev)
 .. |SSL context options| raw:: html
 
     <a href="https://www.php.net/manual/en/context.ssl.php" target="_blank">SSL context options</a>
+
+.. |PostgreSQL SSL Support| raw:: html
+
+    <a href="https://www.postgresql.org/docs/current/libpq-ssl.html" target="_blank">PostgreSQL SSL Support</a>
+
+.. |PostgreSQL Environment Variables| raw:: html
+
+    <a href="https://www.postgresql.org/docs/current/libpq-envars.html" target="_blank">PostgreSQL Environment Variables</a>

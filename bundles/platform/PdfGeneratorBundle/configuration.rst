@@ -23,7 +23,7 @@ The default configuration of OroPdfGeneratorBundle is illustrated below:
                     # - 'https://demo.gotenberg.dev'
                     # - 'http://127.0.0.1:3000'
 
-``oro_pdf_generator.engines.gotenberg.api_url`` can be set by the environment variable ``ORO_PDF_GENERATOR_GOTENBERG_API_URL``. If the environment variable is not set, the default value from the service container parameter ``oro_pdf_generator.gotenberg_api_url_default`` is applied, which is set to ``http://127.0.0.1:3000`` by default.
+``oro_pdf_generator.engines.gotenberg.api_url`` can be set by the environment variable ``ORO_PDF_GENERATOR_GOTENBERG_API_URL``. If the environment variable is not set, the default value from the service container parameter ``oro_pdf_generator.gotenberg_api_url_default`` is applied, which is set to ``http://127.0.0.1:3000`` by default. The URL can contain TLS options, for example, ``https://gotenberg.example.internal:3000?ssl[cafile]=/etc/pki/oro/ca.pem``. See :ref:`Gotenberg <backend--setup--env-vars--tls-connections--gotenberg>`.
 
 You can also get bundle configuration by running the following command:
 
