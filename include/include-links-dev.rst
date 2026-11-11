@@ -4268,6 +4268,10 @@ Links (Dev)
 
    <a href="https://sites.google.com/chromium.org/driver/" target="_blank">ChromeDriver</a>
 
+.. |axe-core| raw:: html
+
+   <a href="https://github.com/dequelabs/axe-core" target="_blank">axe-core</a>
+
 .. |NodeElement| raw:: html
 
    <a href="https://github.com/minkphp/Mink/blob/9ea1cebe3dc529ba3861d87c818f045362c40484/src/Element/NodeElement.php" target="_blank">NodeElement</a>

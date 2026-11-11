@@ -199,6 +199,12 @@ Install dev dependencies using the following command:
 
     composer install
 
+This command also installs axe-core for the :ref:`accessibility step <behat-accessibility-checks>` into the ``var/axe`` directory of the application with npm, so ``node`` and ``npm`` must be available. If the axe-core installation fails, ``composer install`` stops with an error. After fixing the cause, you can install axe-core without running ``composer install`` again:
+
+.. code-block:: none
+
+    vendor/oro/platform/src/Oro/Bundle/TestFrameworkBundle/Resources/bin/axe-bootstrap
+
 Application Initial State
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -863,6 +869,37 @@ Cucumber does not differentiate between the keywords, but choosing the right one
 3. The line ``Scenario: Success login`` starts the scenario and provides a description for it.
 4. The next six lines are the scenario steps. Every step is matched to a regular expression defined in the Context.
 5. The line ``Scenario Outline: Fail login`` starts the following scenario. In the scenario outline, the placeholders are used instead of the actual values, and the values for scenario execution are provided as examples below the outline. Scenario Outlines help you run these steps several times, iterating through the values provided in the ``Examples:`` section and thus testing the same flow with different inputs. The Scenario Outline is a template that is never run on its own. Instead, a Scenario that follows an outline runs once for each row in the Examples section beneath it (except for the first header row that is skipped). Think of a placeholder as a variable. It is replaced with a real value from the ``Examples:`` table row, where the text between the placeholder angle brackets (e.g., <login>) matches the text of the table column header (e.g., login).
+
+.. _behat-accessibility-checks:
+
+Accessibility Checks
+--------------------
+
+The ``the page state should have no accessibility violations`` step checks the current page with |axe-core|. The step fails when the page has accessibility violations or when an axe-core rule fails to run. The error message lists every violation with the CSS selectors and the HTML of the affected elements. It also lists the elements that axe-core cannot check automatically and the frames that it could not scan, but these do not fail the step.
+
+To use the step in the features of a bundle, add ``Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\AccessibilityContext`` to the contexts of the bundle suite in the ``Tests/Behat/behat.yml`` file of the bundle:
+
+.. code-block:: yaml
+
+    oro_behat_extension:
+      suites:
+        OroShoppingListBundle:
+          contexts:
+            - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
+            - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\AccessibilityContext
+          paths:
+            - '@OroShoppingListBundle/Tests/Behat/Features'
+
+Then add the step after the steps that bring the page to the state you want to check:
+
+.. code-block:: gherkin
+
+    When I click "Choose list"
+    Then the page state should have no accessibility violations
+
+The step checks the rules with the ``wcag2a``, ``wcag2aa``, ``wcag21a``, ``wcag21aa``, ``wcag22aa`` and ``best-practice`` tags of axe-core. The rules are set in the ``Resources/axe/config.json`` file of OroTestFrameworkBundle.
+
+The axe-core version is set in the ``Resources/axe/package.json`` file of OroTestFrameworkBundle. After a version change, ``composer install`` installs the new version.
 
 Troubleshooting
 ---------------
