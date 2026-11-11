@@ -13,3 +13,4 @@ This section covers the following elements:
    Customer Management <customers/index>
    RFQ and Quote Management <rfq-quotes/index>
    Order Management <orders/index>
+   Digital Sales Room <digital-sales-room/index>
