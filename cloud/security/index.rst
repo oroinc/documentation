@@ -18,7 +18,7 @@ Resources of the OroCloud environment are isolated in the dedicated GCP project 
 
 The following diagram illustrates the network segmentation of a typical Oro application deployment in OroCloud environment:
 
-.. image:: /cloud/img/production_network_highlevel_public_diagram.png
+.. image:: /cloud/img/production_network_highlevel_public_diagram-2026.png
    :alt: The network segmentation of an average Oro application deployment in OroCloud environment
 
 .. _cloud_security-application-subnet:
