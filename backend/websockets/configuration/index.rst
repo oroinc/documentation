@@ -159,6 +159,11 @@ For example, install |Supervisord| and configure it to run the WebSocket server 
     user=nginx
     redirect_stderr=true
 
+Memory Usage of the WebSocket Server
+------------------------------------
+
+The WebSocket server runs as a single long-running process. To keep its memory bounded, it closes the connections of the clients that stop reading the data sent to them and periodically releases the log records buffered after an error. Both behaviors are enabled by default and are configured with the ``oro_sync.websocket_server`` options. For details, see :ref:`Slow Client Protection <bundle-docs-platform-sync-bundle-slow-client-protection>` and :ref:`Error Log Buffer <bundle-docs-platform-sync-bundle-error-log-buffer>`.
+
 Logging Levels
 --------------
 
