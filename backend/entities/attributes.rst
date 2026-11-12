@@ -62,6 +62,15 @@ The product attribute storage type is set to *table column* for an attribute wit
 
 .. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
 
+Creating an Attribute Programmatically
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. important:: This applies to the Enterprise edition, where an attribute can be organization specific.
+
+Do not set the ``field_name`` option yourself. Create the field through ``Oro\Bundle\EntityConfigProBundle\Form\Handler\CreateUpdateConfigFieldHandler::createFieldModel()`` or through the attribute import. Both take the attribute name and derive the field name from it with ``FieldConfigHelper::getAttributeUniqueFieldName()``. The organization of the attribute comes from the current security token.
+
+For an organization specific attribute, setting the ``field_name`` option to the field name of the same field maps the attribute to itself in the entity schema. Saving such a configuration when the schema of the field is updated is rejected. A global attribute has no generated suffix, so its ``field_name`` option and its field name are legitimately equal. Use the ``oro:entity-config:attribute:fix-field-names`` command to repair the configuration that already contains it.
+
 Attribute Families and Groups
 -----------------------------
 
@@ -72,6 +81,35 @@ An *AttributeFamily* contains a collection of *AttributeGroups*. It requires *Co
 Create attribute groups directly on the family create/edit page by adding a new group to the collection. Each group (a collection element) has a required field, 'Label', and a select control for picking one or many attributes previously created for the entity (in a specific class).
 
 You can add attributes to a group, move them from one group to another, and delete them from a group. System attributes are an exception: on deletion, they move to the default group instead.
+
+Accessing Attribute Values from Code
+------------------------------------
+
+Use the field name returned by ``FieldConfigModel::getFieldName()`` for all entity access. Take the attributes from the attribute manager and read the values with the property accessor:
+
+.. code-block:: php
+
+    foreach ($this->attributeManager->getAttributesByFamily($family) as $attribute) {
+        $value = $this->propertyAccessor->getValue($product, $attribute->getFieldName());
+    }
+
+Write the values the same way, with ``PropertyAccessorInterface::setValue()``.
+
+.. warning:: Access the attribute values as properties, not as methods. Do not compose ``get<AttributeName>()`` calls: property access is served both for an attribute stored as a table column and for an attribute stored as a serialized field, while method access is not available for a serialized field of a type other than Select and Multi-Select.
+
+.. important:: The following applies to the Enterprise edition, where an attribute can be organization specific.
+
+An organization specific attribute has one field per organization, and the field name carries a generated suffix, such as ``my_attribute_68bd1a2b3c4d5``. The name that the user entered and that the UI shows, such as ``my_attribute``, is stored in the ``field_name`` option of the ``attribute`` scope, and the copy of the attribute in every organization shares it. Only the field name is a field on the entity.
+
+Prefer ``AttributeManager::getActiveAttributesByClassForOrganization()`` so that you get the fields of the current organization rather than the fields of every organization.
+
+When you only have the name that the user entered, for example from an import file, a mapping table, or the configuration, convert it to the field name before you touch the entity with ``EntityConfigHelper::getRealAttributeFieldName()``. It returns the name of an active field whose name matches the given one when both are normalized (case and underscores are ignored), such as a global attribute. Otherwise it returns the name of the active field of the organization of the current security token whose ``field_name`` option holds the given name, and throws an exception when there are several. When nothing matches, it returns the given name unchanged. Without a security token, for example in a console command or a message queue consumer, the organization specific fields are not found:
+
+.. code-block:: php
+
+    $fieldName = $this->entityConfigHelper->getRealAttributeFieldName(Product::class, $attributeName);
+
+.. note:: ``AttributeManager::getAttributeByFamilyAndName()`` matches on the field name, not on the name stored in the ``field_name`` option. Passing the latter to it returns ``null``.
 
 Attribute ACL
 -------------
