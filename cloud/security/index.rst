@@ -32,20 +32,19 @@ All nodes that run Oro application components and store production data reside i
 
 The following rules apply to the incoming traffic in the application subnet.
 
+
 Cloudflare
 ~~~~~~~~~~
 
-* There are no public IP addresses accepting any incoming traffic. Web servers are connected to Cloudflare using an encrypted tunnel using a lightweight daemon (``cloudflared``).
+* Web servers are connected to Cloudflare using an encrypted tunnel using a lightweight daemon (``cloudflared``).
 * The Oro application web server accepts connections only from the Cloudflare tunnel via port 80 over HTTP and port 8080 over the WebSocket connection.
 * Cloudflare terminates any HTTPS traffic.
-
-The following network rules are used for the CDN:
-
 * Nodes in the application subnet accept a connection to the service-specific ports that originated exclusively from the application subnet.
 * The outgoing public traffic is remapped by the NAT node with a public IP address. This public IP address may be added to any external whitelists and used to control the outgoing traffic from the application subnet.
 * The NAT node does not accept any incoming connections to the interface with the public IP address.
 * Only the bridge host is allowed to connect to nodes that reside in the application subnet. The bridge host has two network interfaces; one is connected to the application subnet, the other one is linked to the maintenance DMZ subnet.
 * To access the application subnet and perform application maintenance, the OroCloud support team uses the connection via the Secure Shell (SSH) protocol.
+* The Backup IP is optional and used for incoming HTTPS traffic in case of Cloudflare prolonged outage.
 
 Maintenance DMZ Subnet
 ^^^^^^^^^^^^^^^^^^^^^^

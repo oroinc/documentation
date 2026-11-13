@@ -81,7 +81,7 @@ Links (Cloud)
 
 .. |region| raw:: html
 
-   <a href="https://cloud.google.com/compute/docs/regions-zones" target="_blank">region</a>
+   <a href="https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm" target="_blank">region</a>
 
 .. |GCP Data center locations| raw:: html
 
@@ -275,3 +275,10 @@ Links (Cloud)
 
    <a href="https://blackfire.io/docs/introduction" target="_blank">Blackfire documentation</a>
 
+.. |PCI Data Security Standards| raw:: html
+
+   <a href="https://www.pcisecuritystandards.org/standards/pci-dss/" target="_blank">PCI Data Security Standards</a>
+
+.. |JuiceFS| raw:: html
+
+   <a href="https://juicefs.com/en/" target="_blank">JuiceFS</a>

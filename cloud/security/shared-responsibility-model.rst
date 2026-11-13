@@ -3,7 +3,7 @@
 Understanding the Shared Responsibility Model in PCI DSS v4.0.1
 ===============================================================
 
-As a service provider, Oro Inc. enables its customers to achieve PCI DSS v4.0.1 compliance by delivering secure hosting and application services through Oracle Cloud Infrastructure (OCI), our Infrastructure-as-a-Service (IaaS) platform.
+As a service provider, Oro Inc. enables its customers to achieve PCI DSS v4.0.1 compliance by delivering secure hosting and application services through the Oracle Cloud Infrastructure (OCI) Infrastructure-as-a-Service (IaaS) platform.
 
 To support a clear division of responsibilities, Oro Inc. formally defines its Shared Responsibility Model in the accompanying |Shared Responsibility Matrix|.
 
@@ -194,4 +194,3 @@ Please review this reference along with this guide to better understand how moni
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin
-

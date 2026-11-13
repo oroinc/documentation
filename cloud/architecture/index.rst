@@ -50,7 +50,7 @@ CDN and Load Balancing
 
 The content delivery network is the geographically distributed network of caching proxy servers that help improve response time for static content and provide high availability for the service.
 
-Load balancing is the process of distributing incoming traffic among web servers to improve service availability and performance. OroCloud provides CDN and load balancing through Cloudflare.
+Load balancing is the process of distributing incoming traffic among web servers to improve service availability and performance.
 
 Cloudflare
 ~~~~~~~~~~
@@ -112,7 +112,7 @@ See |Redis Sentinel Documentation| for more information.
 File Storage
 ~~~~~~~~~~~~
 
-OroCloud environments are configured with a |GridFS| clustered file system to store application files related to user data (attachments, images, documents).
+OroCloud environments are configured with a |JuiceFS| clustered file system to store application files related to user data (attachments, images, documents).
 
 Backups and Restore
 ^^^^^^^^^^^^^^^^^^^
