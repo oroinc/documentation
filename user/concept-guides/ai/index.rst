@@ -117,6 +117,18 @@ For more information on how to set up Smart Order automation, see :ref:`Create a
 
 .. image:: /user/img/concept-guides/ai/so-illustration.png
 
+.. _concept-guide--ai--smart-brief-overview:
+
+AI Smart Brief
+--------------
+
+AI Smart Brief shows a short summary at the top of the back-office customer and request for quote view pages. OroCommerce computes every fact in the summary, such as dates, totals, statuses, counts, and price differences, from its own data. The selected AI provider, OpenAI or Vertex AI, only turns these facts into a short paragraph. OroCommerce shows the facts next to the paragraph. Each user's summary reflects only the records that this user can view.
+
+For more information, see :ref:`AI Smart Brief <concept-guide--ai--smart-brief>`.
+
+.. image:: /user/img/concept-guides/ai/ai-smart-brief-customers.png
+   :alt: The AI Smart Brief block on the Customer A view page
+
 .. _concept-guide--ai--mcp:
 
 Model Context Protocol (MCP)
@@ -141,8 +153,14 @@ For configuration details, see the developer documentation for the :ref:`OroComm
 * :ref:`Smart Order Widget <user-guide-dashboards-widgets>`
 * :ref:`OroOrderRecognitionBundle <bundle-docs-extensions-order-recognition>`
 * :ref:`OroIQ Back-Office Settings <admin-configuration-oroiq-settings>`
+* :ref:`AI Smart Brief Concept Guide <concept-guide--ai--smart-brief>`
 * :ref:`OroCommerceMcpBundle <bundle-docs-commerce-commerce-mcp-bundle>`
 * :ref:`OroFrontendCommerceMcpBundle <bundle-docs-frontend-commerce-commerce-mcp-bundle>`
+
+.. toctree::
+   :hidden:
+
+   smart-brief
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

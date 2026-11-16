@@ -109,7 +109,11 @@ In the Display section, you can configure the following display options:
    * **Enable Left Sidebar** --- Select **Yes** to enable the user to see and use the left sidebar.
    * **Enable Right Sidebar** --- Select **Yes** to enable the user to see and use the right sidebar.
 
-7. In the **Reports Settings** section, configure the following settings:
+7. In the **AI Smart Brief** section, configure the setting:
+
+   * **Expand by Default** --- Select this checkbox to open the :ref:`AI Smart Brief <concept-guide--ai--smart-brief>` block expanded on customer and request for quote view pages. When you expand or collapse the block, it keeps that state for the record until the facts of the record change. The section is shown only when AI Smart Brief is enabled.
+
+8. In the **Reports Settings** section, configure the following settings:
 
    * **Display SQL In Reports And Segments** --- Select this checkbox to enable the user to review the SQL request sent to the system for a report or a segment. This way, users can check if a report has been developed correctly.
 
@@ -117,7 +121,7 @@ In the Display section, you can configure the following display options:
    .. image:: /user/img/system/config_system/user_configuration_showsql.png
       :alt: A sample of the enabled display SQL field
 
-8. In the **Window Settings** section, configure the following settings:
+9. In the **Window Settings** section, configure the following settings:
 
    * **Quick Create Actions** --- Select the preferred way to display the quick creation buttons form. The buttons with quick actions appear on the customer, customer user, and customer group view pages. When clicked, the form can be displayed in a new browser tab, a popup dialog window, or replace the current page.
 
