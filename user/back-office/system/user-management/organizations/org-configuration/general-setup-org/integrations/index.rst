@@ -7,6 +7,7 @@ Configure Integration Settings per Organization
    Google Settings <organization-google>
    Microsoft Settings <organization-microsoft>
    AI Content Generation <organization-ai-settings>
+   AI Smart Brief <organization-smart-brief>
    AI Smart Agent <organization-ai-agent>
    OroIQ <organization-oroiq>
    AI Smart Order <organization-ai-smart-order>
