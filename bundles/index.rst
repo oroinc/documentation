@@ -203,6 +203,7 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
      - - :ref:`OrderRecognitionBundle <bundle-docs-extensions-order-recognition>`
        - :ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`
+       - :ref:`SmartInsightsBundle <bundle-docs-extensions-smart-insights-bundle>`
        - :ref:`StorefrontAgentBundle <bundle-docs-extensions-storefront-agent-bundle-commands>`
        - :ref:`StripePaymentBundle <bundle-docs-extensions-stripe-payment-bundle>`
 
@@ -341,6 +342,7 @@ CRM Bundles
    SEOBundle <commerce/SEOBundle/index>
    ShoppingListBundle <commerce/ShoppingListBundle/index>
    SidebarBundle <platform/SidebarBundle/index>
+   SmartInsightsBundle <extensions/SmartInsightsBundle/index>
    StorefrontAgentBundle <extensions/StorefrontAgentBundle/commands>
    StripePaymentBundle <extensions/StripePaymentBundle/index>
    SyncBundle <platform/SyncBundle/index>
