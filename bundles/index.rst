@@ -191,6 +191,7 @@ Documentation that relates to extensions' bundles is collected below. You can do
      - **O-S**
 
    * - - :ref:`AiContentGenerationBundle <bundle-docs-extensions-ai-content-generation>`
+       - :ref:`SmartBriefBundle <bundle-docs-extensions-smart-brief>`
        - :ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`
        - :ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`
        - :ref:`DPDBundle <bundle-docs-extensions-dpd>`
@@ -241,6 +242,7 @@ CRM Bundles
    AddressBundle <platform/AddressBundle/index>
    AddressValidationBundle <commerce/AddressValidationBundle/index>
    AiContentGenerationBundle <extensions/AiContentGenerationBundle/index>
+   SmartBriefBundle <extensions/SmartBriefBundle/index>
    AnalyticsBundle <crm/AnalyticsBundle/index>
    ApiBundle <platform/ApiBundle/index>
    AssetBundle <platform/AssetBundle/index>
