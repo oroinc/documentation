@@ -15,6 +15,8 @@ As an example, let us implement a collect on delivery (cash on delivery, COD) pa
 
 By the end of the topic, you will understand the steps required to add a workable payment method and have a basic template that you can extend later.
 
+To let the merchant charge the stored credentials of a customer later, see :ref:`Add Merchant-Initiated Payments to a Payment Method <dev-extend-commerce-payment-merchant-initiated-payments>`.
+
 Create a Bundle
 ---------------
 
@@ -515,6 +517,12 @@ Now, the Collect On Delivery payment method is fully implemented.
 
 Clear the application cache, open the user interface and try to submit an order.
 
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   merchant-initiated-payments
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
