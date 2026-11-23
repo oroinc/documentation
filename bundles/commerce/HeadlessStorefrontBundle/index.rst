@@ -11,7 +11,7 @@ OroHeadlessStorefrontBundle
 
 .. important:: OroHeadlessStorefrontBundle is available in the Enterprise edition only.
 
-OroHeadlessStorefrontBundle is a bundle that adds the ``general_storefront`` headless application type to OroCommerce.
+OroHeadlessStorefrontBundle is a bundle that adds the **General Storefront** headless application type (``general_storefront``) to OroCommerce. An administrator selects this type in the back-office to connect an external storefront, such as OroCommerce Nuxt Storefront or a custom storefront, to an OroCommerce website. For the back-office options of the type, see :ref:`Configure Headless Applications in the Back-Office <back-office--integrations--headless-applications>`.
 
 A headless application is a record that represents a headless storefront. A headless storefront is a storefront application that runs separately from OroCommerce and communicates with OroCommerce through the storefront API.
 
@@ -21,13 +21,13 @@ The headless storefront can also open OroCommerce pages, such as the checkout, i
 
 For a ``general_storefront`` application, the bundle does the following:
 
-* Adds the website, URL, logo, and contact request form fields to the form and to the view and edit pages.
+* Adds the website, URL, logo, and contact request form fields to the form and to the view and edit pages. For the
+  field descriptions, see :ref:`Configure Headless Applications in the Back-Office <back-office--integrations--headless-applications--create>`.
 * Stores system configuration settings for the website of the application.
 * Shows the URLs and the logo of the application on the OroCommerce checkout opened through
   :ref:`Session Transfer <bundle-docs-platform-oauth2-server-bundle--session-transfer>`.
 
-Other application types can reuse these parts. For more information, see
-:ref:`Reuse and Customize the General Storefront Features <bundle-docs-commerce-headless-storefront-bundle--extend>`.
+Other application types can reuse these parts. For more information, see :ref:`Reuse and Customize the General Storefront Features <bundle-docs-commerce-headless-storefront-bundle--extend>`.
 
 The following parts apply to applications of all types:
 
@@ -66,9 +66,11 @@ System Configuration Settings
 
 A ``general_storefront`` application shows and saves the following system configuration settings:
 
-* ``oro_customer.non_authenticated_visitors_api``
-* ``oro_shopping_list.availability_for_guests``
-* ``oro_checkout.guest_checkout``
+* ``oro_customer.non_authenticated_visitors_api`` --- **Enable Guest Storefront API**
+* ``oro_shopping_list.availability_for_guests`` --- **Enable Guest Shopping List**
+* ``oro_checkout.guest_checkout`` --- **Enable Guest Checkout**
+
+For the descriptions of these options, see :ref:`Configure Headless Applications in the Back-Office <back-office--integrations--headless-applications--create>`.
 
 The application shows and saves these settings with the ``website`` start scope. OroCommerce stores the values for the
 website of the application. If the application has no website, OroCommerce stores the values for the organization of
@@ -83,7 +85,9 @@ Contact Request Form
 
 The contact request form is an embedded form of
 :ref:`OroEmbeddedFormBundle <bundle-docs-platform-embedded-form-bundle>`. The external storefront shows it with the
-embed code of this embedded form. The contact request form is not related to OroStorefrontEmbeddedBundle.
+embed code of this embedded form. The contact request form is not related to OroStorefrontEmbeddedBundle. In the
+back-office, an administrator enables the form with the **Enable Contact Request Form** checkbox of the application.
+For details, see :ref:`Configure Headless Applications in the Back-Office <back-office--integrations--headless-applications--create>`.
 
 The contact request form requires OroContactUsBundle. Without OroContactUsBundle, the bundle does not register the
 contact request form services. The form extension of the ``contact_request_form`` block adds the unmapped
@@ -169,6 +173,7 @@ Related Documentation
 * :ref:`OroHeadlessApplicationBundle <bundle-docs-platform-headless-application-bundle>`
 * :ref:`Session Transfer <bundle-docs-platform-oauth2-server-bundle--session-transfer>`
 * :ref:`OroStorefrontEmbeddedBundle <bundle-docs-commerce-storefront-embedded-bundle>`
+* :ref:`Configure Headless Applications in the Back-Office <back-office--integrations--headless-applications>`
 
 .. toctree::
    :hidden:

@@ -62,11 +62,13 @@ Check the following integrations that can be enabled/disabled and configured in 
 
   * :ref:`Embedded Forms <admin-embedded-forms>`
 
+* Headless Applications
+
+  * :ref:`Headless Applications <back-office--integrations--headless-applications>`
+
 * Webhooks
 
   * :ref:`Webhooks <back-office--integrations--webhooks>`
-
-
 
 
 
@@ -85,4 +87,5 @@ Check the following integrations that can be enabled/disabled and configured in 
    LDAP Integration <ldap-integration>
    Activepieces Integration <activepieces-integration>
    Embedded Forms <embedded-forms/index>
+   Headless Applications <headless-applications>
    Webhooks <webhooks>

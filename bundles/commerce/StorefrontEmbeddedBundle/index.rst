@@ -20,7 +20,8 @@ storefront account pages, such as orders, quotes, and shopping lists. The
 
 The bundle does not depend on headless applications. It works with any storefront session. Typically, a headless
 application of :ref:`OroHeadlessStorefrontBundle <bundle-docs-commerce-headless-storefront-bundle>` opens this session
-through Session Transfer. In this case, the
+through Session Transfer. For how an administrator creates a headless application, see
+:ref:`Configure Headless Applications in the Back-Office <back-office--integrations--headless-applications>`. In this case, the
 :ref:`website restriction <bundle-docs-commerce-headless-storefront-bundle--website-restriction>` of the application
 also applies to the fragment requests.
 

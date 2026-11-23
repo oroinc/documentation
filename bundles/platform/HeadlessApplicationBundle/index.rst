@@ -11,32 +11,27 @@ OroHeadlessApplicationBundle
 
 .. important:: OroHeadlessApplicationBundle is available in the Enterprise edition only.
 
-OroHeadlessApplicationBundle is a bundle that registers external applications that work with the API of an Oro
-application. A headless storefront is an example of such an application. Each registered application is a headless
-application. Each headless application has its own OAuth2 client, and the bundle creates and manages this client.
+OroHeadlessApplicationBundle is a bundle that registers external applications that work with the API of an Oro application. A headless storefront is an example of such an application. Each registered application is a headless application. Each headless application has its own OAuth2 client, and the bundle creates and manages this client.
 
-The bundle is part of the ``oro/headless`` package. It uses
-:ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>` for the OAuth2 clients.
+The bundle is part of the ``oro/headless`` package. It uses :ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>` for the OAuth2 clients.
 
-The bundle adds a back-office page to manage headless applications. The bundle does not include an application type
-of its own. Other bundles register the types and add fields, page blocks, and system configuration settings for them.
-For example, :ref:`OroHeadlessStorefrontBundle <bundle-docs-commerce-headless-storefront-bundle>` adds the
-``general_storefront`` type for an external storefront. It also restricts the storefront requests of an application
-to its website and adapts the OroCommerce checkout for Session Transfer. For a step-by-step example of a new storefront
-type, see
-:ref:`Create a New Headless Application Type <bundle-docs-commerce-headless-storefront-bundle--application-type>`.
+The bundle adds the **System > Integrations > Headless Applications** back-office page to manage headless applications. For the options on this page, see :ref:`Configure Headless Applications in the Back-Office <back-office--integrations--headless-applications>`.
 
-:ref:`OroStorefrontEmbeddedBundle <bundle-docs-commerce-storefront-embedded-bundle>` does not depend on headless
-applications. It shows OroCommerce storefront pages in an external application, for example, in a browser session that
-a headless application opens through
-:ref:`Session Transfer <bundle-docs-platform-oauth2-server-bundle--session-transfer>`.
+The bundle does not include an application type of its own. Other bundles register the types and add fields, page blocks, and system configuration settings for them. For example, :ref:`OroHeadlessStorefrontBundle <bundle-docs-commerce-headless-storefront-bundle>` adds the
+``general_storefront`` type for an external storefront. It also restricts the storefront requests of an application to its website and adapts the OroCommerce checkout for Session Transfer. For a step-by-step example of a new storefront
+type, see :ref:`Create a New Headless Application Type <bundle-docs-commerce-headless-storefront-bundle--application-type>`.
+
+The headless features consist of the following bundles:
+
+* OroHeadlessApplicationBundle (``oro/headless`` package) --- Adds the **Headless Applications** back-office page, the headless application entity, and the OAuth2 client of each application. Other bundles add the application types.
+
+* :ref:`OroHeadlessStorefrontBundle <bundle-docs-commerce-headless-storefront-bundle>` (``oro/headless-storefront`` package) --- Adds the **General Storefront** application type for an external storefront. The type adds the website, URLs, logos, guest options, and contact request form of the application. It also restricts the application to its website and adapts the checkout that the storefront opens through Session Transfer.
+* :ref:`OroStorefrontEmbeddedBundle <bundle-docs-commerce-storefront-embedded-bundle>` (``oro/headless-storefront``package) --- Shows OroCommerce storefront account pages inside the pages of an external application, for example, in a browser session that a headless application opens through :ref:`Session Transfer <bundle-docs-platform-oauth2-server-bundle--session-transfer>`. It does not depend on headless applications.
 
 Data Model
 ----------
 
-The ``Oro\Bundle\HeadlessApplicationBundle\Entity\HeadlessApplication`` entity stores a headless application in the
-``oro_headless_application`` table. The entity is extendable and is owned by an organization. It has the following
-fields:
+The ``Oro\Bundle\HeadlessApplicationBundle\Entity\HeadlessApplication`` entity stores a headless application in the ``oro_headless_application`` table. The entity is extendable and is owned by an organization. It has the following fields:
 
 * ``name`` --- The name of the application. It is unique within the organization.
 * ``type`` --- The name of the application type.
@@ -85,6 +80,7 @@ Related Documentation
 * :ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>`
 * :ref:`Session Transfer <bundle-docs-platform-oauth2-server-bundle--session-transfer>`
 * :ref:`OroHeadlessStorefrontBundle <bundle-docs-commerce-headless-storefront-bundle>`
+* :ref:`Configure Headless Applications in the Back-Office <back-office--integrations--headless-applications>`
 
 .. toctree::
    :hidden:
