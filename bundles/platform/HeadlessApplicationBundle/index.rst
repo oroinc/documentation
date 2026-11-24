@@ -26,7 +26,7 @@ The headless features consist of the following bundles:
 * OroHeadlessApplicationBundle (``oro/headless`` package) --- Adds the **Headless Applications** back-office page, the headless application entity, and the OAuth2 client of each application. Other bundles add the application types.
 
 * :ref:`OroHeadlessStorefrontBundle <bundle-docs-commerce-headless-storefront-bundle>` (``oro/headless-storefront`` package) --- Adds the **General Storefront** application type for an external storefront. The type adds the website, URLs, logos, guest options, and contact request form of the application. It also restricts the application to its website and adapts the checkout that the storefront opens through Session Transfer.
-* :ref:`OroStorefrontEmbeddedBundle <bundle-docs-commerce-storefront-embedded-bundle>` (``oro/headless-storefront``package) --- Shows OroCommerce storefront account pages inside the pages of an external application, for example, in a browser session that a headless application opens through :ref:`Session Transfer <bundle-docs-platform-oauth2-server-bundle--session-transfer>`. It does not depend on headless applications.
+* :ref:`OroStorefrontEmbeddedBundle <bundle-docs-commerce-storefront-embedded-bundle>` (``oro/headless-storefront`` package) --- Shows OroCommerce storefront account pages inside the pages of an external application, for example, in a browser session that a headless application opens through :ref:`Session Transfer <bundle-docs-platform-oauth2-server-bundle--session-transfer>`. It does not depend on headless applications.
 
 Data Model
 ----------
