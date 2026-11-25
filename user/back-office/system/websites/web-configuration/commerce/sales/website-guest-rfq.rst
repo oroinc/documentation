@@ -27,6 +27,10 @@ To configure the request for quote settings per website:
 
    * **Enable RFQ Project Name** --- this option enables project name management for RFQs in the storefront. In the back-office, the feature is enabled automatically if it is turned on for an organization or for at least one website within that organization. Once active, a Project Name field appears on RFQ edit pages, and a Project Name column is added to the RFQ grid in the back-office. The project name serves as an optional identifier that helps users search for and track RFQs by name, particularly when records originate from external systems or third parties.
 
+   * **Enable Shipping Address on Storefront** --- the option shows the shipping address on the RFQ form on the storefront.
+
+   * **Require Shipping Address on Storefront** --- the option makes the shipping address required on the RFQ form on the storefront. The option takes effect only when **Enable Shipping Address on Storefront** is selected.
+
 6. In the **Notifications** section, configure notifications for all the parties concerned, namely:
 
    * an assigned sales representatives of the customer
