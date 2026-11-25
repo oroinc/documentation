@@ -39,6 +39,12 @@ To configure the request for quote settings globally:
      .. image:: /user/img/system/config_commerce/sales/rfq-project-name.png
         :alt: Illustration of a project name field on the rfq edit page and a project name column in the rfq grid
 
+   * **Enable Shipping Address on Storefront** --- the option shows the shipping address on the RFQ form on the storefront.
+
+   * **Require Shipping Address on Storefront** --- the option makes the shipping address required on the RFQ form on the storefront. The option takes effect only when **Enable Shipping Address on Storefront** is selected.
+
+   * **Require Shipping Address in Back-Office** --- the option makes the shipping address required on the back-office RFQ edit page and in the back-office API.
+
 5. In the **Notifications** section, configure notifications for all the parties concerned, namely:
 
    * an assigned sales representatives of the customer

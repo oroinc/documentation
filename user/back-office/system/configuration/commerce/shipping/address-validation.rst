@@ -47,7 +47,7 @@ To enable the address validation feature:
 
 4. Save the settings for additional options to appear.
 
-5. Under the **Storefront** section, select the places where address validation should be triggered in the storefront, such as under **My Account > Address Book** menu when adding or modifying a billing or shipping address, or during checkout. By default, the system validates only shipping addresses.
+5. Under the **Storefront** section, select the places where address validation should be triggered in the storefront, such as under **My Account > Address Book** menu when adding or modifying a billing or shipping address, during checkout, or on the request for quote page when adding or selecting a shipping address for the RFQ. By default, the system validates only shipping addresses.
 
    .. image:: /user/img/system/config_commerce/shipping/address-validation-storefront-global.png
       :alt: Global address validation configuration with additional storefront options
@@ -57,6 +57,7 @@ To enable the address validation feature:
    * under the **Customers** menu when adding or modifying a billing or shipping address for a customer or customer user
    * under **Sales > Orders** when adding or modifying a billing or shipping address for the order receiver
    * under **Sales > Quotes** when adding or modifying a shipping address for the quote receiver
+   * under **Sales > Requests for Quote** when adding or modifying a shipping address for the RFQ
 
 By default, the system validates only shipping addresses.
 
